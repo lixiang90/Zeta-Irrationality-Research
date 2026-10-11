@@ -223,6 +223,7 @@
 | [movasati2021_course_hodge_theory_author_20261006.pdf](movasati2021_course_hodge_theory_author_20261006.pdf) | 3.27 |
 | [neumann_yang1997_rationality_k_theory_v1.pdf](neumann_yang1997_rationality_k_theory_v1.pdf) | 0.18 |
 | [neuschel_vanassche2016_zero_distribution_v2.pdf](neuschel_vanassche2016_zero_distribution_v2.pdf) | 0.21 |
+| [next_route_round262_20261012/asvv_0903.1761v2.pdf](next_route_round262_20261012/asvv_0903.1761v2.pdf) | 0.17 |
 | [nguyen_ramirez_young2020_kernel_newform_dedekind_sums_v1.pdf](nguyen_ramirez_young2020_kernel_newform_dedekind_sums_v1.pdf) | 0.41 |
 | [nyberg_brodda2024_two_parabolic_congruence_v2.pdf](nyberg_brodda2024_two_parabolic_congruence_v2.pdf) | 0.27 |
 | [ogg1974_hyperelliptic_modular_curves_20261006.pdf](ogg1974_hyperelliptic_modular_curves_20261006.pdf) | 1.30 |

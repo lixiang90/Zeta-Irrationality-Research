@@ -16,6 +16,7 @@
 | CDT、真实周期与整模型 | [周期与holonomy](period_holonomy_reading_map_20261005.md) |
 | 奇数权ζ/L | [奇数权地图](cdt_odd_reading_map_20261005.md) |
 | 最新混合周期与预算 | [第260轮](manifest_global_review_round260_20261010.json)、[第261轮](manifest_refined_budget_round261_20261010.json) |
+| 第262轮AP候选与精确域上界 | [原件与实际读域](next_route_round262_20261012/README.md)、[指定组合检索](../research/next_route_novelty_20261012.md) |
 
 ## 原件与重要更正
 

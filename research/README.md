@@ -15,7 +15,8 @@
 | CM、Fricke 与增长行列式 | [跨路线结算](research_global_review_round252_20261010.md) |
 | native χ−8 | [完整净结算](research_native_chi8_progress_round257_20261010.md) |
 | 多源混合周期 | [来源选择](research_source_selection_progress_round259_20261010.md)、[全局复盘](research_global_review_round260_20261010.md) |
-| 最新标准入口停止与 AP 候选 | [联合证书](refined_budget_gate_round261_20261010.md)、[进展报告](refined_budget_progress_round261_20261010.md) |
+| 标准入口停止与 AP 候选的原始门槛 | [第261轮联合证书](refined_budget_gate_round261_20261010.md)、[进展报告](refined_budget_progress_round261_20261010.md) |
+| 最新续研：AP指定组合首证书 | [第262轮结算](research_next_route_progress_round262_20261012.md)、[费用证明](next_route_ap_cost_20261012.md)、[全图上界](next_route_cover_bound_20261012.md)、[无穷远与载体](next_route_carrier_20261012.md)、[目标检索](next_route_novelty_20261012.md) |
 
 ## 数据与历史记录
 

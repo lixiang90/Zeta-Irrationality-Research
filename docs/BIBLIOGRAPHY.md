@@ -12,6 +12,7 @@
 | 检查局部算术与本原分母 | [本原路线地图](../literature/primitive_routes_reading_map_20261005.md) | Greene、Lucas、Dwork 输入与项目实际对象是否匹配 |
 | 理解 CDT 的既有定理及本项目推论 | [周期与 holonomy 地图](../literature/period_holonomy_reading_map_20261005.md)、[奇数权地图](../literature/cdt_odd_reading_map_20261005.md) | 真实周期投影、关系触发、共同解析域与整模型 |
 | 了解研究停止判断的最终依据 | [第260轮清单](../literature/manifest_global_review_round260_20261010.json)、[第261轮清单](../literature/manifest_refined_budget_round261_20261010.json) | 阅读范围和所用精确版本；不要把局部入口排除扩张为整个方法不可能 |
+| 核查第262轮的精确解析界与指定目标 | [新增原件与读取范围](../literature/next_route_round262_20261012/README.md)、[数值目标检索](../research/next_route_novelty_20261012.md) | 双穿孔度量的曲率规范；有界检索未发现适用定理不等于已确认开放 |
 
 K₂、覆盖与新周期方向另见 [K₂地图](../literature/k2_gap_reading_map_20261004.md)、[新路线地图](../literature/next_route_reading_map_20261004.md)及[桥梁地图](../literature/bridge_reading_map_20261004.md)。每张地图都说明文献能提供什么，以及仍需本项目自行证明什么。
 
