@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-06",
+  "kind": "NEW primary-source receipt for an all-scale paper proof",
+  "research_file": "research/cdt_odd_R0_regulator_derivative_20261006.md",
+  "proof_sha256": "5a3ba4ed679a5565375efdb0b9c39e4a69338e72bcce5938b5a34356d816e091",
+  "mathematical_producers_executed_or_imported": false,
+  "lean_formalization_claimed": false,
+  "numerical_irrationality_theorem_claimed": false,
+  "new_primary_pdf_count": 3,
+  "new_primary_pdf_pages_total": 103,
+  "download_provenance": {
+    "archived_by": "/root/toric_chow_completion/klm_current_interface",
+    "tls_certificate_verification": "enabled; no verification bypass",
+    "child_note_path": "research/cdt_odd_R0_klm_current_interface_20261006.md",
+    "child_note_sha256": "58efd06503589a35b442b4cd60625741514b51cf183308f1a9ef4a1ebf053e3a",
+    "child_receipt_path": "literature/manifest_cdt_odd_R0_klm_current_interface_20261006.json",
+    "child_receipt_sha256": "1b5e83273c5ac85cce91e79dcfb671eed1ddf733340c15fac0ca0add2ac1ca61",
+    "child_note_actual_read": "entire file"
+  },
+  "sources": [
+    {
+      "status": "NEW primary archived by this branch's source subagent",
+      "title": "The Abel-Jacobi map for higher Chow groups",
+      "authors": ["Matt Kerr", "James D. Lewis", "Stefan Muller-Stach"],
+      "publication": "Compositio Mathematica 142 (2006), 374-396",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/96E7B429B8B0E96C08890BE3BAC41724/S0010437X05001867a.pdf/abeljacobi_map_for_higher_chow_groups.pdf",
+      "local_path": "literature/kerr_lewis_muller_stach2006_abel_jacobi_published_20261006.pdf",
+      "bytes": 397166,
+      "pdf_pages": 23,
+      "sha256": "8e612fd409fc0f9ca392434a8c40c39b658e10ea27b69d84afdfdc03704114d9",
+      "actual_read_by_main_author_pdf_pages": ["1", "8-23"],
+      "premise_pages": {
+        "arbitrary_n_current_exterior_identity_eq_5_5": "PDF11 / printed384",
+        "cohomological_prefactor_p_minus_n": "PDF12 / printed385",
+        "membrane_even_n_correction_and_AJ_lift": "PDF13 / printed386",
+        "quasiprojective_case_and_log_pole_caution": "PDF17 / printed390"
+      },
+      "limitations": [
+        "Early integral-moving assertion is not used; rational moving is checked in KLII and Li.",
+        "Global absolute-Hodge comparison for the quasiprojective total space is not asserted from raw unrestricted current poles.",
+        "Here p=n=4, so the cohomological prefactor is exactly 1."
+      ]
+    },
+    {
+      "status": "NEW primary archived by this branch's source subagent",
+      "title": "The Abel-Jacobi Map for Higher Chow Groups, II",
+      "authors": ["Matt Kerr", "James D. Lewis"],
+      "version": "fixed arXiv math/0611333v1, cover date 2006-11-11",
+      "filename_date_note": "Local filename contains 2007; it is not the fixed-v1 date.",
+      "url": "https://arxiv.org/pdf/math/0611333v1",
+      "local_path": "literature/kerr_lewis2007_abel_jacobi_II_arxiv_v1_20261006.pdf",
+      "bytes": 845217,
+      "pdf_pages": 68,
+      "sha256": "cae5b98762f903000d731d730e3004dd20832c88dc1b27aa9efd83bbca07187d",
+      "actual_read_by_main_author_pdf_pages": ["1", "50-61"],
+      "premise_pages": {
+        "normal_intersection_current_definitions_and_filtered_quasiisomorphism_lemma_8_7": "PDF50-52",
+        "prescribed_smooth_subvariety_real_good_position": "PDF53 Definition8.12",
+        "rational_moving_and_quasiprojective_compatibility": "PDF54 Lemma8.14, Corollary8.15, Lemma8.16",
+        "moving_proof_with_rational_norm": "PDF55-58",
+        "current_complex_commutes_with_pullback": "PDF59 Section8.3"
+      },
+      "applicability": "The chosen projective compactification is toroidal Ptilde; its reduced vertical boundary is SNC and each smooth fibre is disjoint from it."
+    },
+    {
+      "status": "NEW primary archived by this branch's source subagent",
+      "title": "Integral Regulators for Higher Chow Complexes",
+      "authors": ["Muxi Li"],
+      "publication": "SIGMA 14 (2018), 118, 12 pages",
+      "url": "https://sigma-journal.com/2018/118/sigma18-118.pdf",
+      "local_path": "literature/li2018_integral_regulators_higher_chow_published_20261006.pdf",
+      "bytes": 426958,
+      "pdf_pages": 12,
+      "sha256": "5054852c48995a797d8fcae1e10f57905c9c8a3a4d48a7e3f7890dbb663dde90",
+      "actual_read_by_main_author_pdf_pages": ["1-4", "7-8", "11"],
+      "premise_pages": {
+        "rational_vs_integral_moving_correction": "PDF2",
+        "smooth_quasiprojective_Q_quasiisomorphism": "PDF3-4 Theorem2.4",
+        "all_degree_current_normalization": "PDF7 Section5.2",
+        "choice_independence_at_cohomology_level": "PDF11 Section7"
+      },
+      "limitations": ["Integral regulator existence is not used to claim integral completion uniqueness or integral Betti saturation."]
+    },
+    {
+      "status": "reused frozen primary, not newly downloaded",
+      "title": "Algebraic K-theory of toric hypersurfaces",
+      "authors": ["Charles F. Doran", "Matt Kerr"],
+      "publication": "Communications in Number Theory and Physics 5 (2011), 397-600",
+      "url": "https://intlpress.com/site/pub/files/_fulltext/journals/cntp/2011/0005/0002/CNTP-2011-0005-0002-a003.pdf",
+      "local_path": "literature/doran_kerr2011_algebraic_K_toric_published_20261006.pdf",
+      "bytes": 2496681,
+      "pdf_pages": 204,
+      "sha256": "1911f2f4a805e1a3d218ca247665209f3fe9505aa9bc0ae949b1163d7271ede4",
+      "actual_read_by_main_author_this_round_pdf_pages": ["5-15", "20-25", "30-37", "57-83"],
+      "premise_use": "General KLM conventions and proper-family current smoothing are cross-checked; the new proof is independently redone for ell=4.",
+      "excluded_direct_applications": ["Regular-family Theorem3.1", "Lemma4.1 stated only for ell=2,3", "Regular-family Corollary4.1 as a theorem for this nonregular example"]
+    },
+    {
+      "status": "reused frozen primary, not newly downloaded",
+      "title": "Theorie de Hodge, III",
+      "authors": ["Pierre Deligne"],
+      "publication": "Publications mathematiques de l'IHES 44 (1974), 5-77",
+      "url": "https://www.numdam.org/item/PMIHES_1974__44__5_0/",
+      "local_path": "literature/deligne1974_hodge_III_primary_20261006.pdf",
+      "bytes": 6791148,
+      "pdf_pages": 74,
+      "sha256": "d78d4f46742916cd669279e7db365e4db6a43f38d2dcdec6862c6d27d07216b3",
+      "actual_read_by_main_author_this_round_pdf_pages": ["35-41"],
+      "premise_pages": {
+        "graded_Gysin_exactness_for_resolution_of_closed_boundary": "PDF37 / printed40 Corollary8.2.8",
+        "functorial_MHS_and_smooth_proper_purity": "PDF35-36",
+        "relative_and_simplicial_MHS_exactness": "PDF38-41"
+      },
+      "application": "At target H3(Xlambda), Gysin source is the sum of H1 of the smooth projective rational boundary surfaces, with Tate shift (-1); it vanishes."
+    }
+  ],
+  "frozen_mathematical_inputs_actual_full_read": [
+    {
+      "path": "research/cdt_odd_R0_toric_completion_20261006.md",
+      "sha256": "abbb47907e85e2ae15c12bfaa6655f8f25497e804e299e15bd9277e7a6a667b0"
+    },
+    {
+      "path": "research/cdt_odd_R0_toric_completion_uniqueness_20261006.md",
+      "sha256": "b6baab390cd23c15b1edc717e11a3b97c42dfc4f5c16a8c87c10fe74676f66a2"
+    },
+    {
+      "path": "research/cdt_odd_R0_relative_cycle_mirror_20261006.md",
+      "sha256": "43009e569bba25b6f819f0e5f1de0b96fa2db57e1a73817e8b087d294a059912"
+    }
+  ],
+  "proved_scope": [
+    "Global top-form extension and equality Omega_C=Omega_Y for the specified rational family completion.",
+    "Compact cohomological Gauss-Manin derivative under left residue convention: nabla_dlambda R=+rho_lambda.",
+    "Exact conversion nabla_theta_x R=+16 sqrt(x) omega_x.",
+    "Rational compact H3 restriction to the actual open fibre is injective.",
+    "Regulator family nonflat and nonzero for very-general parameters in the stated analytic locus."
+  ],
+  "unproved_scope": [
+    "Raw positive-cut graph-current scalar integral equals a specified compact regulator Betti lift.",
+    "Removal of closed-period homogeneous ambiguity.",
+    "Rank-four integral projector, trace and saturation.",
+    "Conifold integral nearby-cycle marking or special-value regulator equality.",
+    "Any new numerical irrationality or linear-independence theorem."
+  ]
+}

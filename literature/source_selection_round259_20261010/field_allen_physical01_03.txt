@@ -1,0 +1,225 @@
+
+=== PHYSICAL PAGE 1 ===
+arXiv:1901.10511v1  [math.NT]  29 Jan 2019
+ET A-QUOTIENTS OF PRIME OR SEMIPRIME LEVEL AND ELLIPTIC
+CUR VES
+MICHAEL ALLEN, NICHOLAS ANDERSON, ASIMINA HAMAKIOTES, BEN OLTSIK, HOLLY SWISHER
+Abstract. From the Modularity Theorem proven by Wiles, Taylor, et al, w e know that all elliptic
+curves are modular. It has been shown by Martin and Ono exactl y which are represented by
+eta-quotients, and some examples of elliptic curves repres ented by modular forms that are linear
+combinations of eta-quotients have been given by Pathakjee , RosnBrick, and Yoong.
+In this paper, we ﬁrst show that eta-quotients which are modu lar for any congruence subgroup
+of level N coprime to 6 can be viewed as modular for Γ 0(N ). We then categorize when even weight
+eta-quotients can exist in Mk(Γ1(p)) and Mk(Γ1(pq)), for distinct primes p, q. We conclude by
+providing some new examples of elliptic curves whose corres ponding modular forms can be written
+as a linear combination of eta-quotients, and describe an al gorithmic method for ﬁnding additional
+examples.
+1. Introduction and Statement of Results
+Dedekind’s eta-function η(τ ), deﬁned for τ ∈ H := {τ ∈ C |Im(τ ) > 0} by
+η(τ ) := q
+1
+24
+∞∏
+n=1
+(1 − qn),
+where q := e2πiτ , is arguably the most well-known half-integral weight modu lar form. Its modular
+transformation properties for a matrix A =
+( a b
+c d
+)
+∈ SL2(Z) are given by
+(1) η(Aτ ) = v(A)(cτ + d)
+1
+2 η(τ ),
+where
+(2) v(A) :=
+
+
+
+( d
+|c|
+)
+e
+iπ
+12
+(
+(a+d)c+bd(c2− 1)− 3c
+)
+if c ≡ 1 (mod 2)
+( c
+d
+)
+e
+iπ
+12
+(
+(a+d)c+bd(c2− 1)+3d− 3− 3cd
+)
+if d ≡ 1 (mod 2) .
+Dedekind’s eta-function has been featured prominently in w ork motivated by Ramanujan’s study
+of the integer partition counting function p(n) (see [20] and [1] for example), as well as in the
+representation theory of the Monster group, studied by Conw ay and Norton [6], Borcherds [5],
+and others. Due to its expression as a simple inﬁnite product , it is easy to compute expansions
+numerically. Thus it is useful when a modular form can be expr essed in terms of products or
+quotients of η(τ ). By eta-quotient of level N , we mean a function of the form
+f (τ ) =
+∏
+δ|N
+ηrδ (δτ ).
+Work on various classiﬁcations of eta-quotients has been of interest, see in particular work of
+Dummit, Kisilevsky, and McKay [8], Martin [15], and Lemke Ol iver [12]. Moreover, the famous
+2010 Mathematics Subject Classiﬁcation. 11F20, 11F37, 11G05.
+Key words and phrases. eta-quotients, modular forms, elliptic curves.
+This work was supported by NSF grant DMS-1359173.
+1
+=== PHYSICAL PAGE 2 ===
+work of Wiles and Taylor [26, 24] in proving Fermat’s Last The orem, and in particular the Shimura-
+Taniyama conjecture, showed that elliptic curves were atta ched to modular forms, and thus the
+question of when these modular forms can be expressed in term s of eta-quotients is a natural one.
+Theorem 1.1 (Modularity Theorem [7]) . Every elliptic curve E over Q with conductor N has an
+L-function
+L(E, s) =
+∞∑
+n=1
+aE(n)
+ns
+such that the Fourier series
+f (τ ) =
+∞∑
+n=1
+aE(n)qn, q = e2πiτ , τ ∈ H
+represents a level N cusp form of weight 2.
+In light of Theorem 1.1, Martin and Ono [16] classiﬁed all eta -quotients which are weight 2
+newforms, as well as their associated elliptic curves. It is natural to ask when elliptic curves are
+associated to modular forms that can be written as linear com binationa of eta-quotients. Recently,
+Pathakjee, RosnBrick, and Toong [22] demonstrated four suc h examples, utilizing spaces of cusp
+forms which are spanned by eta-quotients. Further work on wh en spaces of modular forms are
+spanned by eta-quotients has been done by Rouse and Webb [23] , Arnold-Roksandich, James, and
+Keaton [3], and Kilford [10], for example.
+Given a congruence subgroup group Γ ⊆ SL2(Z), we use the notation Sk(Γ), Mk(Γ), and M !
+k(Γ)
+to denote the complex vector spaces of weight k cusp forms, holomorphic modular forms, and
+weakly holomorphic modular forms, respectively. When Γ = Γ 0(N ) for a positive integer N , then
+we write Sk(Γ0(N ), χ), Mk(Γ0(N ), χ), and M !
+k(Γ0(N ), χ) to denote the spaces of weight k cusp
+forms, holomorphic modular forms, and weakly holomorphic m odular forms, respectively, with
+Nebentypus χ.
+In this paper, we ﬁrst show that eta-quotients which are modu lar for any congruence subgroup
+of level N can be viewed as modular for Γ 0(N ). We then categorize when even weight eta-quotients
+can exist in Mk(Γ1(p)) and Mk(Γ1(pq)), for distinct primes p, q. We conclude by providing some
+new examples of elliptic curves whose corresponding modula r forms can be written as a linear
+combination of eta-quotients, and describe an algorithmic method for ﬁnding additional examples.
+1.1. Viewing eta-quotients over Γ0(N ). In order to state our ﬁrst result, we review a few key
+theorems about the modularity of eta-quotients and their or ders of vanishing at cusps.
+The following well-known theorem originating in work of New man [18, 19] as well as Gordon
+and Hughes [9], provides explicit modularity properties wi th respect to Γ 0(N ) for eta-quotients of
+speciﬁc shapes.
+Theorem 1.2 ([21], Theorem 1.64) . Let f be the eta-quotient of level N given by
+ηg(τ ) =
+∏
+δ|N
+ηrδ (δτ ).
+If ηg satisﬁes both
+∑
+δ|N
+δrδ ≡ 0 (mod 24) ,
+∑
+δ|N
+N
+δ rδ ≡ 0 (mod 24) ,
+2
+=== PHYSICAL PAGE 3 ===
+then for k = 1
+2
+∑
+δ|N rδ and χ(d) =
+( (− 1)k s
+d
+)
+where s = ∏
+δ|N δrδ , we have f ∈ M !
+k(Γ0(N ), χ), i.e
+for all M =
+( a b
+c d
+)
+∈ Γ0(N )
+f (M τ) = χ(d)(cτ + d)kf (τ ).
+Remark 1.3. In the case where gcd(N, 6) = 1 , the two conditions above are equivalent. This is
+because any δ |N must satisfy gcd(N, 24) = 1 , and hence δ is its own inverse modulo 24. Thus,
+∑
+δ|N
+N
+δ rδ ≡ N
+∑
+δ|N
+δrδ (mod 24) .
+As gcd(N, 24) = 1 , N is not a zero divisor in Z/24Z, so
+N
+∑
+δ|N
+δrδ ≡ 0 (mod 24) if and only if
+∑
+δ|N
+rδ ≡ 0 (mod 24) .
+The next theorem originating in work of Ligozat [13], and fur ther appearing in work of Biagioli
+[4] and Martin [15], provides a mechanism for calculating th e relative orders of vanishing at cusps
+for eta-quotients satisfying Theorem 1.2.
+Recall that if h is the width of the cusp r with respect to the group Γ, then the order of vanishing
+relative to the group Γ of a modular form f at the cusp r is given by vΓ
+(
+f, c
+d
+)
+= h ·invr(f), where
+invr(f) is the invariant order of vanishing of f at r, and is always integral. We note that for the
+cusp at inﬁnity, we always have vΓ
+(
+f, c
+d
+)
+= invr(f).
+Theorem 1.4 ([21], Theorem 1.65) . Let c, d, and N be positive integers with d |N and gcd(c, d) =
+1. Then if f (τ ) is an eta-quotient satisfying the conditions given in Theore m 1.2 for N , then the
+order of vanishing for f (τ ) at the cusp c
+d relative to Γ0(N ) is
+v c
+d
+:= vΓ0(N )
+(
+f, c
+d
+)
+= N
+24
+∑
+δ|N
+gcd(d, δ)2rδ
+gcd(d, N
+d )dδ .
+Calculating orders of vanishing of modular forms at cusps ca n be extremely useful, due to the
+following result known as Sturm’s bound.
+Theorem 1.5 (Sturm’s Bound [17]) . Let Γ be a congruence subgroup and f ∈ Mk(Γ). Let r1, . . . , rt
+be the Γ-inequivalent cusps of Γ. If
+t∑
+i=1
+invri(f) > k[SL2(Z) : {± I}Γ]
+12 ,
+then f = 0.
+Remark 1.6. We note that Theorem 1.5 provides a direct way to check if two mo dular forms are
+equal by considering their q-expansions. Namely, if f, g ∈ Mk(Γ) and their Fourier expansions at
+i∞ agree to a power of q past the bound in Theorem 1.5, then they must be equal.
+Our ﬁrst theorem shows that when gcd( N, 6) = 1, any eta-quotient which is modular for a
+congruence subgroup of level N is in fact modular for Γ 0(N ) for some Nebentypus character χ.
+Theorem 1.7. Let N be a positive integer with gcd(N, 6) = 1 and suppose f (τ ) = ∏
+δ|N ηrδ (δτ ) ∈
+M !
+k(Γ(N )). Then f (τ ) ∈ M !
+k(Γ0(N ), χ), where χ is deﬁned as in Theorem 1.2.
+In Section 2, Theorem 1.7 is proved by showing that f (τ ) ∈ M !
+k(Γ(N )) must satisfy the conditions
+of Theorem 1.2. Using that fact that M !
+k(Γ0(N ), χ) ⊂ M !
+k(Γ1(N )) as well as Remark 1.3, we thus
+get the following immediate corollary to the proof of Theore m 1.7.
+3

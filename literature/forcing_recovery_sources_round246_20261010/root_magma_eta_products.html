@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Computational Algebra Group -->
+<!-- Original web engine by Alexander M Kasprzyk -->
+<head>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+  <meta name="Author" content="Computational Algebra Group" />
+  <meta name="copyright" content="Copyright (c) 2010-2026 Computational Algebra Group" />
+  <meta name="description" content="A software package designed to solve computationally hard problems in algebra, number theory, geometry and combinatorics." />
+  <meta name="keywords" content="Magma computational algebra software" />
+  <link rel="alternate" type="application/rss+xml" title="A software package designed to solve computationally hard problems in algebra, number theory, geometry and combinatorics." href="/rss/magma.xml" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  <link rel="stylesheet" type="text/css" href="/magma/tools/handbook/display.css" />
+  <script src="/javascript/common.js" type="text/javascript"></script>
+  <script src="/javascript/handbook.js" type="text/javascript"></script>
+  <script src="/javascript/magma.js" type="text/javascript"></script>
+  <title>Documentation</title>
+</head>
+
+<!-- Begin Body -->
+<body>
+
+<!-- Begin Header -->
+<div id="pageheader">
+  <div class="navBar"><ul>
+    <li><a href="/magma/">About</a></li>
+    <li><a href="/calc/">Calculator</a></li>
+    <li><a href="/magma/ordering/">Ordering</a></li>
+    <li><a href="/magma/faq/">FAQ</a></li>
+    <li id="navbarexp"><a href="/magma/download/all/">Download</a></li>
+    <li class="selected" id="navbardoc"><a href="/magma/documentation/">Documentation</a></li>
+    <li><a href="/magma/citations/">Citations</a></li>
+    <li><a href="/magma/conferences/">Conferences</a></li>
+    <li><a href="/magma/links/">Links</a></li>
+    <li><a href="/magma/contact/">Contact</a></li>
+    <li class="split"><a href="/group/">CAG</a></li>
+    <li class="split" id="navbaraccount"><a href="/account/login" title="Log in to your account">Login</a></li>
+  </ul></div>
+  <div class="logo magma"><table>
+    <tr><td class="title"><a href="/magma/">Magma</a></td></tr>
+    <tr><td class="desc"><a href="/magma/">Computer &bull; algebra</a></td></tr>
+  </table></div>
+  <div class="pagetitle">
+    Documentation
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Begin Content -->
+<div id="pagecontent">
+<ul class="localnavigator ontop">
+  <li><a href="/magma/handbook/text/1672" title="Previous page">&laquo; Previous</a></li>
+  <li><a href="/magma/handbook/small_modular_curves" title="Up one level">Up</a></li>
+  <li><a href="/magma/handbook/" title="The table of contents">Contents</a></li>
+  <li><a href="/magma/handbook/ind/" title="The index">Index</a></li>
+  <li><a href="/magma/handbook/search" title="Search the handbook">Search</a></li>
+  <li><a href="/magma/handbook/text/1674" title="Next page">Next &raquo;</a></li>
+</ul>
+<h3><a name = "19244">Modular Generators and  q-Expansions</a></h3>
+<p>
+In the genus 0 cases, the database model is just the projective line (P)<sup>1</sup> and the uniformising parameter
+t=x/y (where x, y are the projective coordinates of (P)<sup>1</sup>) is a modular function on X<sub>0</sub>(N). We have
+normalised so that this function has a simple zero at the cusp 0 and a simple pole at the cusp &infin; with
+q-expansion of the form q<sup> - 1</sup> + ... when N &gt; 1. For N=1 we just take the j-invariant as our parameter.
+</p><p>
+In the elliptic and hyperelliptic cases, the model is a minimal Weierstrass equation y<sup>2</sup> + h(x)y=f(x) and the
+x and y coordinate functions are modular functions on X<sub>0</sub>(N). We have normalised so that one of the
+points at infinity of the model is the cusp &infin;, so x and y have poles there. In the elliptic cases,
+there is only one point at infinity. In the hyperelliptic cases, the other point at infinity is always the
+image of &infin; under the hyperelliptic involution: &infin; is never a Weierstrass point in these cases.
+</p><p>
+We sometimes refer to genus zero, elliptic and hyperelliptic curves by the semi-standard term subhyperelliptic.
+The models in the non-subhyperelliptic cases are ordinary projective and are sub-canonical images of X<sub>0</sub>(N).
+This means that there are linearly-independent weight 2 cusp forms f<sub>1</sub>, ..., f<sub>r</sub> (which correspond to
+holomorphic differentials on X<sub>0</sub>(N)) such that our model is the image of X<sub>0</sub>(N) under the map
+z |-&gt; [f<sub>1</sub>(z): ... : f<sub>r</sub>(z)] into (P)<sup>r - 1</sup>.
+</p><p>
+As stated earlier, although we sometimes used Magma's modular symbols machinery to compute a basis for forms
+when deriving models, we also worked out expressions for the modular functions t, x and y and the forms
+f<sub>i</sub> in terms of certain basic types. This gives the models a degree of independence from the modular symbol
+machinery and also allows for faster reconstruction of q-expansions of the generating functions/forms.
+We describe the basic types here. There is an intrinsic that the user may call to retrieve the information
+as to how the forms are built up and one to return the actual q-expansions up to any desired precision.
+In some cases, we have used the cusp forms associated to an elliptic curve of conductor N. We would have
+liked to avoid this and maybe with a bit more work we may be able to find alternative expressions that avoid
+using them. In fact, we should be using more of the theta series associated to quaternion algebras (this was
+an oversight only discovered recently: we are currently only using the theta series attached to one isomorphism
+class of maximal order for each quaternion algebra).
+Leaving aside the forms associated to elliptic curves, the basic types that we have looked at are
+all classical. We could also have tried to use some other basic types like the generalised eta products of Y. Yang.
+</p>
+<p>
+The basic types fall into a number of categories:
+</p><dl compact class='compact'>
+<dt>(i)</dt><dd>Dedekind eta products.
+<dt>(ii)</dt><dd>Theta series of binary quadratic forms of various kinds and theta series of quaternion algebras.
+<dt>(iii)</dt><dd>Weight 2 Eisenstein series of prime level.
+<dt>(iv)</dt><dd>Weight two cusp forms of elliptic curves.
+<p>
+</dl>
+Dedekind eta products for level N are of the form &eta;(d<sub>1</sub>z)<sup>r<sub>1</sub></sup>&eta;(d<sub>2</sub>z)<sup>r<sub>2</sub></sup> ... &eta;(d<sub>n</sub>z)<sup>r<sub>n</sub></sup>
+where the d<sub>i</sub> run over a subset of the positive divisors of N, the r<sub>i</sub> are integers and &eta;(z) is
+the Dedekind &eta;-function which has q-expansion q<sup>1/24</sup>&prod;<sub>n=1</sub>^&infin;(1 - q<sup>n</sup>). If &sum;r<sub>i</sub>
+is even and &sum;r<sub>i</sub>d<sub>i</sub> and &sum;r<sub>i</sub>(N/d<sub>i</sub>) are divisible by 24, the product gives a modular form of
+weight (1/2)&sum;r<sub>i</sub> for &Gamma;<sub>0</sub>(N) with a certain character mod N. The form only has zeroes and
+poles at cusps with order given by a formula depending on N, r<sub>i</sub> and d<sub>i</sub>. We use these products
+to give modular functions and weight 2 forms and occasionally weight one forms to be used in combination
+with weight one forms coming from theta series.
+</p>
+<p>
+The theta series associated to binary quadratic forms come in several flavours.
+</p><p>
+If Q(x, y)=ax<sup>2</sup> + bxy + cz<sup>2</sup> (with a, b, c &isin;(Z), a&gt;0) has discriminant -N, then the usual
+theta series &theta;<sub>Q</sub>(z) = &sum;_((x, y)&isin;(Z)<sup>2</sup>) q<sup>Q(x, y)</sup> is a weight one form of level N for
+the quadratic character given by the Jacobi symbol ((-N/.)). The product of two of these gives a weight
+2 integral form for &Gamma;<sub>0</sub>(N).
+</p><p>
+If N &equiv; 1 mod 4 and Q(x, y)=ax<sup>2</sup> + bxy + cz<sup>2</sup> is a form with discriminant -4N with a odd and b, c even,
+the function &theta;<sup>(1)</sup><sub>Q</sub>(z) = &sum;_((x, y)&isin;(Z)<sup>2</sup>, x odd)( - 1)<sup>y</sup>q<sup>Q(x, y)/4</sup> is a weight one form
+of level N for the character ((./N))&chi;<sup>a</sup> where &chi; is the quartic character giving the action of
+&Gamma;<sub>0</sub>(1) on &eta;(z)<sup>6</sup>. If Q<sub>1</sub>, Q<sub>2</sub> are two such forms, one of which has a &equiv; 1 mod 4 and
+a &equiv; 3 mod 4 for the other, then &theta;<sup>(1)</sup><sub>Q<sub>1</sub></sub>&theta;<sup>(1)</sup><sub>Q<sub>2</sub></sub> is a weight 2 integral
+form for &Gamma;<sub>0</sub>(N). Additionally, the function
+&theta;<sup>(2)</sup><sub>Q</sub>(z) = &sum;_((x, y)&isin;(Z)<sup>2</sup>, x odd)q<sup>Q(x, y)/4</sup> is a weight one form of level 2N
+for the character ((./N))&chi;<sup>a</sup>&delta; where &delta; is the unique non-trivial character that factors
+through the quotient &Gamma;<sub>0</sub>(2N)/&Gamma;<sub>0</sub>(4N). Again, &theta;<sup>(2)</sup><sub>Q<sub>1</sub></sub>&theta;<sup>(2)</sup><sub>Q<sub>2</sub></sub> is
+a weight 2 form for &Gamma;<sub>0</sub>(2N) if the as for Q<sub>1</sub> and Q<sub>2</sub> are non-congruent mod 4.
+</p><p>
+If N &equiv; 3 mod 8 and Q(x, y)=ax<sup>2</sup> + bxy + cz<sup>2</sup> is a form with discriminant -N (here a, b, c must all
+be odd), the function &theta;<sup>(3)</sup><sub>Q</sub>(z) = &sum;_((x, y)&isin;(Z)<sup>2</sup>, x odd)( - 1)<sup>y</sup>q<sup>Q(x, y)/2</sup> is
+a weight one form of level N for the character ((-N/.))&chi; where &chi; is the quadratic character giving
+the action of &Gamma;<sub>0</sub>(1) on &eta;(z)<sup>12</sup>. The product of any two of these gives a weight 2 integral
+form for &Gamma;<sub>0</sub>(N).
+</p><p>
+If N=p<sub>1</sub> ... p<sub>r</sub> is a product of an odd number of distinct primes, let H<sub>N</sub> be the quaternion algebra
+over (Q) which is ramified precisely at &infin; and the primes p<sub>i</sub>. Let O<sub>N</sub> be a maximal
+order of H<sub>N</sub>, which is a (Z)-lattice of rank 4, and Q<sub>N</sub> the positive-definite quadratic form on it
+given by the reduced norm Nm of H<sub>N</sub>. Then the theta function &theta;<sub>Q<sub>N</sub></sub>(z) = &sum;<sub>x &isin;O<sub>N</sub> </sub> q<sup>Nm(x)</sup>
+is a weight two integral form for &Gamma;<sub>0</sub>(N).
+</p>
+<p>
+The weight 2 Eisenstein series of prime level p is the form pE<sub>2</sub>(pz) - E<sub>2</sub>(z), which is an integral
+form of weight 2 for &Gamma;<sub>0</sub>(p). Here E<sub>2</sub>(z) is the usual normalised weight 2 Eisenstein series
+(which isn't a modular form for any level) with q-expansion 1 - 24q - 72q<sup>2</sup> - ... . We usually normalise
+the prime level Eisenstein series by dividing by GCD(24, p - 1) which is the GCD of its integral
+coefficients.
+</p>
+<p>
+If E is an elliptic curve over Q of conductor N, then the modular form f<sub>E</sub>(z) associated to E,
+which is returned by the call <tt>ModularForm(E)</tt>, is a weight 2 cusp form for &Gamma;<sub>0</sub>(N).
+</p>
+<p>
+We also use three standard operations on forms/functions.
+</p><p>
+If f(z) is a modular function on X<sub>0</sub>(N) then D(f) = (1/2&pi; i)(df/dz) is a weight 2 form for &Gamma;<sub>0</sub>(N).
+</p><p>
+If f(z) is a form/function on X<sub>0</sub>(M) and d is a positive integer dividing N/M then f(dz) is
+a form/function on X<sub>0</sub>(N).
+</p><p>
+If f is a form for &Gamma;<sub>0</sub>(N) and &chi; is the quadratic character with conductor d where |d|<sup>2</sup> divides
+N, then the twisted form f tensor &chi; is also a form for &Gamma;<sub>0</sub>(N) where if f has the q-expansion
+&sum;a<sub>n</sub>q<sup>n</sup> then f tensor &chi; has q-expansion &sum;a<sub>n</sub>&chi;(n)q<sup>n</sup>.
+</p>
+<p>
+The basic types are forms or functions of types (i)-(iv), possibly operated on by one of the above 3 operations.
+Basic functions are functions of basic type or quotients of forms of basic type of the same weight.
+We build modular functions as rational functions of basic functions. We build modular forms of weight 2 as
+linear combinations of weight 2 forms of basic type or products of modular functions with weight 2 forms of basic
+type. We give some examples below.
+</p><h5 class="intrinsic"><a name = "19245">qExpansionExpressions(N) : RngIntElt -&gt;</a></h5>
+<blockquote>
+This procedure prints out a mini-program that is used to compute the modular functions that correspond
+to t or to x, y on X<sub>0</sub>(N) in the subhyperelliptic cases or the weight 2 cusp forms f<sub>1</sub>, ..., f<sub>r</sub>
+on X<sub>0</sub>(N) in the other cases. These give expressions for the forms/functions in terms of forms/functions
+of basic type. The format of the mini-program is as follows.
+<p>
+There are a sequence of statements. Each except the last is of the form v = &lt; expr &gt; where v is a
+variable name, &lt; expr &gt; is an expression and the statement assigns the value of the expression
+(a modular form or
+function on X<sub>0</sub>(N)) to variable v. Each expression is a string of terms separated by binary arithmetic operators
+^ * / + - which have their usual meaning, are listed in precedence order and evaluate left to right for
+operators of the same precedence. There may also be subexpressions in () brackets. Subexpressions in brackets
+are evaluated first and replaced with their value, inner bracketed subexpressions being evaluated before
+outer ones. Terms are of one of the following types, possibly modified by an operator:
+</p><dl compact class='compact'>
+<dt>(i)</dt><dd>An integer. This either multiplies a form/function, is an exponent for powering or gives a constant function.
+<dt>(ii)</dt><dd>q. This is just e<sup>2&pi; i z</sup>, the 'q' of the q-expansion.
+<dt>(iii)</dt><dd>A variable that has previously been assigned to.
+<dt>(iv)</dt><dd>An eta product. e{&lt; d<sub>1</sub> r<sub>1</sub> &gt;&lt; d<sub>2</sub> r<sub>2</sub> &gt; ... &lt; d<sub>n</sub> r<sub>n</sub> &gt;} represents the
+eta product &eta;(d<sub>1</sub>z)<sup>r<sub>1</sub></sup>&eta;(d<sub>2</sub>z)<sup>r<sub>2</sub></sup> ... &eta;(d<sub>n</sub>z)<sup>r<sub>n</sub></sup>.
+<dt>(v)</dt><dd>Binary theta functions as described in the introduction. For a positive-definite binary quadratic form
+Q(x, y)=Ax<sup>2</sup> + Bxy + Cy<sup>2</sup>,
+<dl compact class='compact'>
+<dd>th0{A B C} is the usual theta series of Q.
+<dd>th1{A B C} is (1/2)q<sup> - a/4</sup>&theta;<sup>(1)</sup><sub>Q</sub> where a is A mod 4. This has q-integral q-expansion.
+<dd>th2{A B C} is (1/2)q<sup> - a/4</sup>&theta;<sup>(2)</sup><sub>Q</sub> where a is A mod 4. This has q-integral q-expansion.
+<dd>th3{A B C} is (1/2)q<sup> - 1/2</sup>&theta;<sup>(3)</sup><sub>Q</sub>. This has q-integral q-expansion.
+</dl>
+<dt>(vi)</dt><dd>Theta functions of quaternion algebras as described in the introduction. thQ{N} represents the weight 2
+theta function attached to a maximal order of the quaternion algebra of level N, where N is a product of an
+odd number of distinct primes. The notation is deficient here. The theta series depends on the
+isomorphism class of the maximal order chosen. Currently, we are only using the maximal order returned by
+Magma in the call <tt>MaximalOrder(QuaternionAlgebra(N))</tt>.
+<dt>(vii)</dt><dd>Eisenstein series. E{p} represents the weight 2 normalised Eisenstein series of prime level p,
+(pE<sub>2</sub>(pz) - E<sub>2</sub>(z))/GCD(24, p - 1).
+<dt>(viii)</dt><dd>Cusp forms from elliptic curves. f{a<sub>1</sub> a<sub>2</sub> a<sub>3</sub> a<sub>4</sub> a<sub>6</sub>} represents the weight two newform associated
+to the elliptic curve over <b>Q</b> with equation y<sup>2</sup> + a<sub>1</sub>xy + a<sub>3</sub>y=x<sup>3</sup> + a<sub>2</sub>x<sup>2</sup> + a<sub>4</sub>x + a<sub>6</sub>.
+<p>
+</dl>
+Modifying operators are
+</p><dl compact class='compact'>
+<dt>(i)</dt><dd>D. D(f) is (1/2&pi; i)(df/dz), where f is a modular function on X<sub>0</sub>(N).
+<dt>(ii)</dt><dd>[d]. d is a positive integer. If f represents a form or function f(z), then f[d] represents
+f(dz).
+<dt>(iii)</dt><dd>&lt; d &gt;. If f is a form, f&lt; d &gt;  represents the form twisted by the quadratic
+character of conductor d.
+<p>
+</dl>
+The last line of the mini-program is of the form [t, 1] if X<sub>0</sub>(N) is of genus 0, [x, y, 1] if
+X<sub>0</sub>(N) is elliptic or hyperelliptic, and [f<sub>1</sub>, ..., f<sub>r</sub>] otherwise, where t, x, y, f<sub>i</sub> are variables
+that were assigned to in earlier lines. These give the generating functions/forms for the X<sub>0</sub>(N) model.
+</p></blockquote></p>
+<h5 class="intrinsic"><a name = "19246">qExpansionsOfGenerators(N,R,r) : RngIntElt, RngSerLaur, RngIntElt -&gt; SeqEnum</a></h5>
+<blockquote>
+Returns q-expansions to precision r as Laurent series in the Laurent series ring R over <b>Q</b>
+for the sequence of modular forms/functions of level N that define the small modular curve database model of
+X<sub>0</sub>(N). As described in the introduction, the return sequence is of the form [t] if X<sub>0</sub>(N) is of genus 0,
+[x, y] if X<sub>0</sub>(N) is elliptic or hyperelliptic, and [f<sub>1</sub>, ..., f<sub>r</sub>] otherwise. Here t, x and y are
+Laurent series giving the q-expansions of functions which will have poles at the cusp &infin;, so have
+negative power terms, and the f<sub>i</sub> will actually be power series giving the q-expansions of weight 2
+cusp forms.
+<p>
+The q-expansions are computed from the expressions which are given in the mini-program output by
+<tt>qExpansionExpressions(N)</tt>, generating the forms/functions from ones of basic
+type for which there are fast routines to compute q-expansions.
+</p></blockquote></p>
+<div class="example">
+<h3><a name = "19247">Example <tt>SmallModCrv_q_exps_ex_sm_mod_crvs (H141E6)</tt></a></h3>
+We give some examples of the mini-programs for various levels
+<pre>
+&gt; qExpansionExpressions(8); //genus 0 case
+x=e{&lt;1 4&gt;&lt;2 -2&gt;&lt;4 2&gt;&lt;8 -4&gt;}
+[x,1]
+&gt; qExpansionExpressions(15); //genus 1 case
+F=e{&lt;1 1&gt;&lt;3 1&gt;&lt;5 1&gt;&lt;15 1&gt;}
+t=e{&lt;1 -3&gt;&lt;3 3&gt;&lt;5 3&gt;&lt;15 -3&gt;}
+s=-D(t)/F
+x=(t^2-5*t-3+s)/2
+y=(t^3-8*t^2-4*t+3+s*(t-3))/2
+[x,y,1]
+&gt; qExpansionExpressions(30); //hyperelliptic case
+F=e{&lt;1 -1&gt;&lt;2 3&gt;&lt;3 1&gt;&lt;5 1&gt;&lt;6 -1&gt;&lt;10 -1&gt;&lt;15 -1&gt;&lt;30 3&gt;}
+x=e{&lt;1 2&gt;&lt;2 -2&gt;&lt;3 -1&gt;&lt;5 -1&gt;&lt;6 1&gt;&lt;10 1&gt;&lt;15 2&gt;&lt;30 -2&gt;}
+s=-D(x)/F
+y=(s+x^4+x^3+x^2)/2
+[x,y,1]
+&gt; qExpansionExpressions(64); //genus 3 case
+F1=e{&lt;4 2&gt;&lt;8 2&gt;}
+F2=F1&lt;-8&gt;
+[(F2-F1)/4,(F2+F1)/2,F1[2]]
+&gt; qExpansionExpressions(53); //genus 4 case
+t1=th1{1 2 54}
+t2=th1{3 2 18}
+t3=th1{9 2 6}
+F1=q*t1*t2
+F2=q*t2*t3
+F3=(13*thQ{53}-E{53})/18
+F4=f{1 -1 1 0 0}
+[F1,(5*F1-3*F2-F3-F4)/2,-4*F1+2*F2+F3,-4*F1+F2+F3]
+&gt; qExpansionExpressions(63); //genus 5 case
+F1=(th0{1 1 16}-th0{4 1 4})*th0{2 1 8}/2
+F2=q*th1{1 2 22}*th1{3 6 10}
+F3=F2[3]
+F4=e{&lt;3 2&gt;&lt;21 2&gt;}
+[(F1-F2-F3+F4)/2,(F1-F2-F3-F4)/2,F3]
+&gt; R&lt;q&gt; := LaurentSeriesRing(Rationals());
+&gt; qExpansionsOfGenerators(49,R,30); //genus 1 case
+[
+    q^-2 - q^-1 + 1 + q^3 + q^5 - q^10 - q^13 + q^20 + q^24 + O(q^31),
+    q^-3 - 2*q^-2 + 2*q^-1 - 1 - q + q^2 - 2*q^3 + q^4 - 2*q^5 - q^9 + 2*q^10
+        + q^11 + 2*q^13 + q^15 + q^16 - 2*q^20 - q^22 - q^23 - 2*q^24 - q^25 -
+        q^29 + q^30 + O(q^31)
+]
+</pre>
+</div>
+<ul class="localnavigator onbottom">
+  <li><a href="/magma/handbook/text/1672" title="Previous page">&laquo; Previous</a></li>
+  <li><a href="/magma/handbook/small_modular_curves" title="Up one level">Up</a></li>
+  <li><a href="/magma/handbook/" title="The table of contents">Contents</a></li>
+  <li><a href="/magma/handbook/ind/" title="The index">Index</a></li>
+  <li><a href="/magma/handbook/search" title="Search the handbook">Search</a></li>
+  <li><a href="/magma/handbook/text/1674" title="Next page">Next &raquo;</a></li>
+</ul>
+<div class="versionstamp">V2.29, 3 August 2026</div>
+</div>
+<!-- End Content -->
+
+<!-- Begin Footer -->
+<div id="pagefooter">
+  <div class="producedby">
+    Magma is maintained and distributed by the <a href="/group/">Computational Algebra Group</a>, <a href="http://www.maths.usyd.edu.au/">School of Mathematics and Statistics</a>, <a href="http://sydney.edu.au/">University of Sydney</a>.
+  </div>
+  <div class="copyright">Copyright &copy; 2010-2026 Computational Algebra Group.</div>
+</div>
+<!-- End Footer -->
+
+</body>
+<!-- End Body -->
+
+</html>

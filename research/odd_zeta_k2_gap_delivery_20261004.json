@@ -1,0 +1,183 @@
+{
+  "status": "delivery_checks_passed",
+  "as_of": "2026-10-04",
+  "checked_at_utc": "2026-10-04T09:55:18.165784+00:00",
+  "main_report": "odd_zeta_k2_gap_progress_20261004.md",
+  "main_report_sha256": "fe3bac7691cce1594c27f0ed609c51cdf3d9dcbbaae6dd030a4ffbde5372ba92",
+  "new_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "reports": [
+    {
+      "report": "odd_zeta_k2_descent_20261004.md",
+      "report_sha256": "054e4855775e67fdbe13198d7b705c1d8615bbffa27b5cb5fcb490e3228de774",
+      "script": "odd_zeta_k2_descent_20261004_verify.py",
+      "script_sha256": "e1c67eb409015a450f0f2dd48aea2f5687465c5a1f76e2e44fde4398c5660773",
+      "certificate": "odd_zeta_k2_descent_20261004_verify.json",
+      "certificate_sha256": "1505f9000107c7f668dbe971af4278fbf877357353314172cee670fb22dfc544",
+      "certificate_status": "exact_function_field_inputs_passed"
+    },
+    {
+      "report": "odd_zeta_k2_vertical_20261004.md",
+      "report_sha256": "98c374714227f52e982419829d47c8ae4a6e94964840c57bc9ee538333ce2e59",
+      "script": "odd_zeta_k2_vertical_20261004_verify.py",
+      "script_sha256": "eb58ac552f6c74fa7b65289d66354453ea516b2cd8cc8e82ae37e770cc752d32",
+      "certificate": "odd_zeta_k2_vertical_20261004_verify.json",
+      "certificate_sha256": "4c47f24e46a656dffb2225fdc6f04f1cf9e098b9c7c52fc456bd0a4b85d684ff",
+      "certificate_status": "all fixed exact identities passed"
+    },
+    {
+      "report": "odd_zeta_k2_regulator_20261004.md",
+      "report_sha256": "911820ae48252c6757944003b4aa8b34b44627df99e888bf46a49bb23d66a9fb",
+      "script": "odd_zeta_k2_regulator_20261004_verify.py",
+      "script_sha256": "26fd8b7d0f7554b0acf5833c95f84e39f362636d297377179226b6f4477fe397",
+      "certificate": "odd_zeta_k2_regulator_20261004_verify.json",
+      "certificate_sha256": "8d3bc988f4a3e7d14a34bc5a0d9db83e16d47121d9de4ff7a520a6efc85f8f89",
+      "certificate_status": "fixed_exact_algebra_passed_no_period_numerics"
+    },
+    {
+      "report": "odd_zeta_bloch_boundary_20261004.md",
+      "report_sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+      "script": "odd_zeta_bloch_boundary_20261004_verify.py",
+      "script_sha256": "35252c5310857a3a7c8c1abed3fdc133413fb86db722e3322504824d366f7e23",
+      "certificate": "odd_zeta_bloch_boundary_20261004_verify.json",
+      "certificate_sha256": "2f198db55d984b0443090311527c042473514a12e7fb4f9c222854064e4ddc6a",
+      "certificate_status": "passed"
+    }
+  ],
+  "independent_reviews": {
+    "descent": "root and zeta7_moment_extension",
+    "vertical": "root and paper_mechanism",
+    "regulator": "root and paper_mechanism",
+    "bloch_boundary": "paper_mechanism and zeta7_distribution_new"
+  },
+  "written_review": "odd_zeta_bloch_boundary_20261004_review.md",
+  "written_review_sha256": "df39b915c089c168cc9b0051142853b8f751212e477094bab13b70f8a92bc000",
+  "frozen_previous_reports": [
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_content_geometry_20261004.md",
+      "sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_catalan_20261004.md",
+      "sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_new_period_systems_20261004.md",
+      "sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_next_routes_progress_20261004.md",
+      "sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    }
+  ],
+  "earlier_original_pdf_hash_checks": 40,
+  "new_original_source_pdfs": [
+    {
+      "file": "rost1996_chow_groups_coefficients.pdf",
+      "pages": 76,
+      "sha256": "a87d65d2e5b1744e00e7001fe29110c04c27c6e5e5a1aabc1d7b291e772e851f",
+      "fixed_version": "Documenta Mathematica 1 (1996), 319–393; author PDF",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "weibel2013_k_book_author_20130829.pdf",
+      "pages": 576,
+      "sha256": "a04f53c9393b20672fab2a6818279b2f9996dbc7cf74735789ed13804b058845",
+      "fixed_version": "author complete PDF dated 2013-08-29; Graduate Studies in Mathematics 145",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "suslin1991_k3_field_bloch_group_english.pdf",
+      "pages": 23,
+      "sha256": "ef16d5d93f6f9f6509f93e9b748f5cf06bda2a2a2da852404375638bab12994c",
+      "fixed_version": "English translation, Proceedings of the Steklov Institute of Mathematics 183 (1991), 217–239; Russian original 1990",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "zagier_gangl2000_classical_elliptic_polylogarithms.pdf",
+      "pages": 38,
+      "sha256": "af9c96fa702286a88ffdfe15cddf28db3b9f314419760122b0f4e44701e9a029",
+      "fixed_version": "MPIM preprint 2000-9, author PDF; based on Zagier Banff lectures",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "dokchitser_dejeu_zagier2005_k2_hyperelliptic_v2.pdf",
+      "pages": 39,
+      "sha256": "a9d5c2cce63f2351991789add5ac9cd213b9783b9cbb0e648313e314eadb3ccf",
+      "fixed_version": "arXiv:math/0405040v2, 2005-05-04; Compositio Mathematica 142 (2006), 339–373",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "neumann_yang1997_rationality_k_theory_v1.pdf",
+      "pages": 12,
+      "sha256": "07a6d72c31b7935486a93d5e49cfb58c202d903ee2ed05061db5eb50a960ee5b",
+      "fixed_version": "arXiv:math/9712225v1, 1997-12-04; published Enseignement Mathematique 41 (1995), 281–296; preprint corrects a five-term misprint",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "conrad_cyclotomic_integer_ring_handout.pdf",
+      "pages": 2,
+      "sha256": "fae71b1f89103ab1dd998cf4acc9c80083e246fa2d7277bde23aa013a1378af2",
+      "fixed_version": "Author Stanford course handout; undated, archived 2026-10-04",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    },
+    {
+      "file": "stacks_resolution_surfaces_snapshot_20261004.pdf",
+      "pages": 54,
+      "sha256": "6c6efffce73e982fa6c090792042a1842e7f53816a18c24ea172749571fa3db7",
+      "fixed_version": "Official chapter snapshot downloaded 2026-10-04; immutable local bytes fixed by SHA-256",
+      "original_bytes_preserved": true,
+      "visual_identity_checked": true
+    }
+  ],
+  "local_links_checked": 77,
+  "missing_links": [],
+  "scope": "Finite exact certificates check algebraic inputs. Transfer, local boundary lemma, arithmetic-surface resolution and full Borel regulator injectivity rely on written proofs and primary sources. The Bloch identity is rational; no integral T=0 or irrationality claim."
+}

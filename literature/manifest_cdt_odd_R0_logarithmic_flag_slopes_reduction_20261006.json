@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-06",
+  "status": "NEW_actual_primary_reading_and_frozen_paper_proof_receipt",
+  "proof_path": "research/cdt_odd_R0_logarithmic_flag_slopes_reduction_20261006.md",
+  "proof_initial_candidate_sha256": "0d4ec96a92e291a546a27cfd8b67a968ad89dcbf681411b98d06fb0566fe9a91",
+  "proof_final_sha256": "aeec82c8aa5a69b6e6ed8ada331ccca5846417d42c0d3a7591ac966b2f9b2d25",
+  "revision_before_freeze": "Root and quarter independently identified missing finite cut-exhaustion and cut-bank convergence assumptions in G3/G4. Final adds finite piecewise-C1 arcs with finite nodes, analytic continuation of artificial banks on compact subarcs or explicit thin-cut L1 convergence, and ordered thin-strip then endpoint-circle limits. Revision disclosed in final G11. All final sections actually read by author; root read initial full paper plus final changed sections; quarter final independent review separately registered.",
+  "sources": [
+    {
+      "path": "literature/bost_chambert_loir2008_analytic_curves_arxivv3_20261006.pdf",
+      "title": "Analytic curves in algebraic varieties over number fields",
+      "authors": [
+        "Jean-Benoît Bost",
+        "Antoine Chambert-Loir"
+      ],
+      "primary_url": "https://arxiv.org/pdf/math/0702593v3",
+      "version_observed": "PDF first-leaf arXiv math/0702593v3, 2 Oct 2008",
+      "bytes": 540667,
+      "pages": 55,
+      "sha256": "e04ad5408eb19d5da826363c0a775c36f9387fe72da8f81bc39e8733b1ec48f9",
+      "new_download_this_receipt": true,
+      "download_method": "Python urllib.request default certificate-verifying TLS context",
+      "tls_certificate_bypasses": 0,
+      "actual_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        37,
+        38,
+        39,
+        40,
+        47,
+        48,
+        49
+      ],
+      "actual_full_paper_read": false,
+      "used_for": [
+        "K-defined formal germs and evaluation maps",
+        "Canonical seminorm Definition4.6 and invariance",
+        "Theorem6.1 and all-place evaluation heights (6.3)-(6.9)",
+        "Theorems7.8/7.9 meromorphic extension hypotheses"
+      ]
+    },
+    {
+      "path": "literature/andre2009_slope_filtrations_arxivv2_20261006.pdf",
+      "title": "Slope filtrations",
+      "author": "Yves André",
+      "primary_url": "https://arxiv.org/pdf/0812.3921v2",
+      "version_observed": {
+        "first_leaf_arxiv_stamp": "arXiv:0812.3921v2 [math.AG] 3 Apr 2009",
+        "internal_date_text": "November 26, 2024",
+        "scope": "Source identity recorded exactly as served; not claimed to be a particular published journal version"
+      },
+      "bytes": 801926,
+      "pages": 95,
+      "sha256": "ef147278d1472d2a0f2dbacd4c660bbc040b6f99431677c23f4e44dfa32d17a9",
+      "new_download_this_receipt": true,
+      "download_method": "Python urllib.request default certificate-verifying TLS context",
+      "tls_certificate_bypasses": 0,
+      "actual_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        70,
+        71
+      ],
+      "actual_full_paper_read": false,
+      "used_for": [
+        "Different slope categories and regular-singular irregularity zero",
+        "Arithmetic hermitian lattices/Arakelov degree Section12.1-12.2"
+      ],
+      "reading_corrections": [
+        "Initial combined output truncated after the selected first leaves and at later p71-73; p70-71 subsequently output in full and actually read. p72-73 not counted."
+      ]
+    },
+    {
+      "path": "literature/bost2006_evaluation_slopes_icm_author_20261006.pdf",
+      "title": "Evaluation maps, slopes, and algebraicity criteria",
+      "author": "Jean-Benoît Bost",
+      "bytes": 358393,
+      "pages": 25,
+      "sha256": "46e5d09078d6e1ca1d20a5f811a3d27dafeb51fffc5867c541ba17416e504e9a",
+      "new_download_this_receipt": false,
+      "actual_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        15,
+        16,
+        17
+      ],
+      "actual_full_paper_read": false,
+      "used_for": [
+        "K-defined evaluation maps",
+        "Condition L and Liouville/parabolic Riemann surface Proposition5.3 distinction"
+      ]
+    },
+    {
+      "path": "literature/cdt2026_effective_holonomy_author_20261006.pdf",
+      "title": "Arithmetic holonomy bounds and effective Diophantine approximation",
+      "authors": [
+        "Frank Calegari",
+        "Vesselin Dimitrov",
+        "Yunqing Tang"
+      ],
+      "primary_url": "https://arxiv.org/abs/2510.04156",
+      "bytes": 657333,
+      "pages": 20,
+      "sha256": "368cc0af5584049a76c7cef0fd78886524143ee3935f56cfc2e35fb9bee22796",
+      "new_download_this_receipt": false,
+      "actual_read_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "actual_full_paper_read": false,
+      "used_for": [
+        "Theorems2.1/2.6 exact all-place arithmetic and meromorphic hypotheses",
+        "Lemma2.9 positive-part evaluation error",
+        "Source height and D~h(beta) balancing"
+      ]
+    }
+  ],
+  "local_mathematical_inputs": [
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "sha256": "1e0161b49ee96adae6cc30e9e7c89ca667b81877fd484919b86e7fd38e105f4c",
+      "actual_scope": "Current round full sections85-93 only; all prior sections retain prior-reading status"
+    },
+    {
+      "path": "research/cdt_odd_R0_origin_orbit_mod8_obstruction_20261006.md",
+      "sha256": "a510202c396b90fd95abc99fbba950cf6a8a53870f01b769a336ee380bf756dc",
+      "actual_scope": "Current round actual full paper read and independent hand review; separate NEW review14766f..."
+    },
+    {
+      "path": "research/cdt_odd_R0_regulator_Betti_extension_flag_20261006.md",
+      "sha256": "4abdcbc370b69413b07e837724867897760f493b7ee65e6d0b47a705f96292f4",
+      "actual_scope": "Own previously frozen full proof; exact rank-one endpoint operator and actual family reused without producer rerun"
+    },
+    {
+      "path": "research/cdt_odd_R0_endpoint_sensitive_exterior_packet_20261006.md",
+      "sha256": "b02f39ae453143b72572bef7e91e53697bed90388108e79b267e27168dae96ef",
+      "actual_scope": "Previous actual full independent reading; fixed W9 representation and actual q family reused; not claimed current round full reread"
+    }
+  ],
+  "new_primary_pdf_count": 2,
+  "new_primary_pdf_pages": 150,
+  "new_primary_pdf_actual_read_pages": 30,
+  "existing_primary_actual_read_pages": 14,
+  "old_or_peer_mathematical_producer_execution_import_rerun": 0,
+  "new_mathematical_producer_runs": 0,
+  "source_processing": [
+    "Verified TLS PDF downloads",
+    "fitz actual selected-page text reading",
+    "file hashes and metadata"
+  ],
+  "conclusions_scope": "New all-scale cut Cauchy/full-jump positive-part operator bound; conditional D^2 gain counting; fixed linear packet log metric O(DlogD); projective endpoint-row arithmetic descent iff K-rational. R0 full-jump suppression and actual comparison ratios remain unproved; no global vector-valued holonomy or numerical irrationality theorem."
+}

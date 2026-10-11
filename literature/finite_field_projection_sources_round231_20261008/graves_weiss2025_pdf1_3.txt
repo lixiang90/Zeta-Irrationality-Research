@@ -1,0 +1,135 @@
+                                                 The abc conjecture implies infinitely many
+                                               non-Wieferich places for fixed bases in number
+                                                                   fields
+
+                                                              Hester Graves1* and Benjamin Weiss2
+arXiv:2503.19144v1 [math.NT] 24 Mar 2025
+
+
+
+
+                                                         1*
+                                                          IDA/CCS, Bowie, 20715, Maryland, USA.
+                                           2
+                                               Unum: Attn Benjamin Weiss, Mailstop B299, 2211 Congress Street,
+                                                               Portland, 04122, Maine, USA.
+
+
+                                                   *Corresponding author(s). E-mail(s): hkgrave@super.org;
+                                                  Contributing authors: Benjamin.Leonard.Weiss@gmail.com;
+
+
+                                                                               Abstract
+                                           Silverman showed that, assuming the abc conjecture, there are ≫ log x non-
+                                           Wieferich primes base a less than x [1], for all non-zero a. This inspired Graves
+                                           and Murty [2], Chen and Ding [3] [4], and then Ding [5] to find growth results,
+                                           assuming the abc conjecture, for non-Wieferich primes p base a, where p ≡ 1
+                                           (mod k) for integers k ≥ 2. In light of Murty, Srinivas, and Subramani’s recent
+                                           work on ‘the Wieferich primes conjecture’ and Euclidean algorithms in number
+                                           fields [6], number theorists need results on non-Wieferich places in number fields.
+                                           We prove analogues of the results of Graves & Murty and Ding, and show Ding’s
+                                           result holds for all bases a in all imaginary quadratic fields’ rings of integers,
+                                           with 31 explicitly listed exceptions.
+                                           Along the way, we generalize useful results on rational integers to algebraic
+                                           integers.
+
+                                           Keywords: non-Wieferich prime, non-Wieferich place, abc conjecture, arithmetic
+                                           progressions, imaginary quadratic number fields
+
+                                           MSC Classification: 11A41 , 11B25 , 11R04 , 11R11
+
+
+
+
+                                                                                   1
+1 Introduction
+For all primes p and all integers a not divisible by p, Fermat’s little theorem states
+ap−1 ≡ 1 (mod p). If ap−1 ≡ 1 (mod p2 ), p is a Wieferich prime base a; otherwise,
+it is a non-Wieferich prime base a. Wieferich introduced this classification pursuing
+Fermat’s Last Theorem, but it is still useful today; for example, Milăilescu [7] proved
+Catalan’s conjecture using Wieferich primes. In spite of their utility, the only known
+Wieferich primes base two are 1093 and 3511 [8]. The two known Wieferich primes
+base three are 11 and 1006003, and there are no known Wieferich primes base 47 [8].
+   M. Ram Murty and his school use a generalization of non-Wieferich primes, ‘admis-
+sible sets of primes,’ to study Euclidean domains. If K is a quadratic number field,
+and if ε is a fundamental unit of K , an admissible prime is a non-Wieferich place base
+ε. Murty, Srinivas, and Subramani recently showed that if one assumes the Hardy-
+Littlewood conjecture and the ‘Wieferich primes conjecture,’ a growth result on sets
+of non-Wieferich places with multiplicative units of infinite order as their base, then
+all real quadratic number fields with class number one are Euclidean [6]. This new
+approach encourages studying growth results of non-Wieferich places in number fields,
+especially real quadratic number fields. Assuming the abc conjecture, Theorem 3 gives
+a growth result for all bases (except for thirty-one explicitly stated exceptions) for all
+imaginary quadratic fields.
+   There are few unconditional results on Wieferich primes. It is unknown whether
+there are infinitely many non-Wieferich primes for some non-unit base. In his seminal
+paper “Wieferich’s criterion and the ABC conjecture,” Silverman [1] showed that if the
+abc conjecture were true, then there would be ≫ log x non-Wieferich primes less than
+x for all bases a. Since then, DeKoninck and Doyon [9] proved the same growth result
+                                                                            log(2n −1)
+under the weaker assumption that for some ǫ > 0, the set {n ∈ N :        log(rad(2n −1))   <
+2 −ǫ} has density one. Graves and Murty [2] showed that, assuming the abc conjecture,
+for all non-units a and all integers k ≥ 2, there are ≫ log x/ log log x non-Wieferich
+primes p base a with p ≤ x and p ≡ 1 (mod k ). Chen and Ding improved the growth
+result to ≫ (log x/ log log x)(log log log x)M for any fixed M [3] [4], which Ding then
+substantially strengthened to ≫ log x [5].
+   This article generalizes these growth results to Galois number fields and Wieferich
+places p base a via the following theorems.
+
+
+                                             2
+Theorem 1 Suppose that K is a Galois number field, that ε > 0, that k ∈ Z+ , and that a
+is a non-zero algebraic integer (i.e. a ∈ OK \ {0}) that is not a root of unity. If one assumes
+the abc conjecture for K, then there are ≫ε,K,a,k log x/ log log x non-Wieferich places p base
+a such that Nm(p) ≤ x and Nm(p) ≡ 1 (mod k).
+
+
+Theorem 2 Suppose K is a Galois number field, k ∈ Z+ is a positive integer, and that
+a ∈ OK satisfies |σ(a)| ≥ 2 for all σ ∈ Gal(K/Q). Assuming the abc conjecture for K, then
+there are ≫K,a,k log x non-Wieferich places p base a such that Nm(p) ≤ x and Nm(p) ≡ 1
+(mod k).
+
+
+Theorem 3 If K is an imaginary quadratic number field, if k ∈ Z+ , if the abc conjecture
+holds in K, and if a ∈ OK but not in the set
+                       (                      √        √     )
+                         0, ±1,
+                             √
+                                ±i, ±1 ±√i, ± −2,√±1 ± −2,
+                                                         √
+                         ±1± −3 ±3± −3 ±1± −7 ±1± −11          ,
+                             2    ,     2    ,  2    ,   2
+
+then there are ≫K,a,k log x non-Wieferich places p base a with Nm(p) ≤ x and Nm(p) ≡ 1
+(mod k).
+
+
+   The proofs use new results on algebraic integers. While they are generalizations of
+known results on rational integers, we have not seen our statements in the literature.
+We hope readers find them useful in their own research.
+
+2 Background
+2.1 The abc conjecture and the abc conjecture for number
+    fields
+                         Qk
+Given an integer n =         pai i , where the pi > 0 are distinct primes and the ai are
+                           i=1
+                                            Qk
+positive, the radical of n, or rad(n), is i=1 pi .
+
+
+Conjecture 1 (abc Conjecture of Oesterlé and Masser, 1985 [10], [11]) If (a, b, c) ∈ Z3 , with
+a + b = c and (a, b) = 1, then for all ǫ > 0,
+                                     c ≪ǫ (rad(abc))1+ǫ .
+
+
+   Conjecture 2 below is equivalent to Elkies’ version ([12], p 100) of Vojta’s abc con-
+jecture for number fields, which originally appeared on page 84 of [13]. Before
+stating the generalized abc conjecture, we introduce the following definitions and
+notations, including (α) to represent the ideal generated by α.
+   For a1 , a2 , a3 ∈ K × , define the height and conductor [14] respectively by
+
+
+
+                                              3
+

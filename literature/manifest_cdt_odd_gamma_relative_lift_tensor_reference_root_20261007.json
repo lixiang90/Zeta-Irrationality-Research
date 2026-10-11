@@ -1,0 +1,799 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "created_at_utc": "2026-10-06T22:04:45.764062+00:00",
+  "author": "/root",
+  "scope": "One-way final documentary receipt: completed stable papers/reviews, peer FINAL receipts, prior audit and actual primary snapshots/renders only. No mutable main, future audit, self hash or circular pins.",
+  "baseline": {
+    "file": "research/cdt_odd_delivery_balanced_gamma_direction_20261007.json",
+    "sha256": "b3a9c11266257168b103c14a13541b503dc53df1d7ad56c327c8ea83a5c43d50",
+    "bytes": 191975,
+    "frozen_records": 588,
+    "mathematical_records": 583,
+    "guards": 5,
+    "preservation": "All588 physical SHA/bytes rechecked this round, unchanged; no mathematical producer rerun."
+  },
+  "formal_paper_reviews": "All four final main/review pairs actually FULL read. All authors received final reviews and performed final FULL main rereads. Root FULL all eight and three peer FINAL receipts. Paper PASS is not Lean.",
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "bytes": 18371
+    },
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_independent_review_20261007.md",
+      "sha256": "4d02fb1a8c75c8c3d7dc30aad161281296e9fb4e4520146970d4a3fb619203d0",
+      "bytes": 7949
+    },
+    {
+      "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_20261007.md",
+      "sha256": "78eb5777b649336c7906174878f1b5504e34dd012409fdcbb96e13d1390710c7",
+      "bytes": 13537
+    },
+    {
+      "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_independent_review_20261007.md",
+      "sha256": "2d522297ba596e4475434365d5e5cf2febecff360d29cd5fd9d6d88e90415566",
+      "bytes": 9092
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_20261007.md",
+      "sha256": "0a9eb062f5ca02f3337a9532457a01b6b8904e064b2ff1ebf187b302388adc9e",
+      "bytes": 18617
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_independent_review_20261007.md",
+      "sha256": "bac0eb168d7d731a21ab53d30ffd215447ac99cc05187b22e09da4934567f4ca",
+      "bytes": 7704
+    },
+    {
+      "file": "research/cdt_odd_gamma_relative_chain_candidate_20261007.md",
+      "sha256": "1031f489a261e6862d7b0e895e320272751740217a61d0d3f1ce8945f245a60e",
+      "bytes": 17041
+    },
+    {
+      "file": "research/cdt_odd_gamma_relative_chain_candidate_independent_review_20261007.md",
+      "sha256": "e03e84aabeee75917f1553e60d937b697e03bed8ed3b1f2600dc3e00be5abf55",
+      "bytes": 4478
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_gamma_dual_relation_extension_20261007.json",
+      "sha256": "b5186a4a03243e704396f7c9ac955291b8c2094a3deb29abc4425fd525872eca",
+      "bytes": 12930
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_tensor_taylor_projection_20261007.json",
+      "sha256": "5fdaad4e4376be955acdfcf2b10f654f2fbc966cb89c03add72086bcf49c2270",
+      "bytes": 9817
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_relative_chain_candidate_20261007.json",
+      "sha256": "8ffc358e612012d6f22ac3a8f15fb1d3440b81fcc04b000ea0e118a16402da5c",
+      "bytes": 11797
+    }
+  ],
+  "peer_receipt_physical_checks": [
+    {
+      "file": "literature/manifest_cdt_odd_gamma_dual_relation_extension_20261007.json",
+      "complete_json_parse": true,
+      "actual_full_text_read": true,
+      "physical_pins_checked": 16,
+      "all_physical_pins_match": true
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_tensor_taylor_projection_20261007.json",
+      "complete_json_parse": true,
+      "actual_full_text_read": true,
+      "physical_pins_checked": 17,
+      "all_physical_pins_match": true
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_relative_chain_candidate_20261007.json",
+      "complete_json_parse": true,
+      "actual_full_text_read": true,
+      "physical_pins_checked": 18,
+      "all_physical_pins_match": true
+    }
+  ],
+  "root_actual_full_read_frozen_inputs": [
+    {
+      "file": "research/cdt_odd_gamma_connection_projection_20261007.md",
+      "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+      "bytes": 18401
+    }
+  ],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/golyshev_zagier_interpolated_apery_motivic_gamma_author.pdf",
+      "sha256": "529a92d1ba0744e00c3d26ea97400ae3da25b0615dea5dacbaa0b3f25697d669",
+      "bytes": 398788,
+      "pages": 21,
+      "url": "https://people.mpim-bonn.mpg.de/zagier/files/tex/DubrovinVolume/GZ_AperyInterpolation.pdf",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "sha256": "98d13843bf09e0ae20e9df9c589dfdbb5973243578eb069749e4106754e06d0f",
+      "bytes": 309651,
+      "pages": 10,
+      "url": "https://arxiv.org/pdf/1206.1787v2",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "sha256": "4ab728305b71e6b6d5d551c9f25653cd0465eecb5ad3de11944a49d7b45982c7",
+      "bytes": 208949,
+      "pages": 18,
+      "url": "https://arxiv.org/pdf/1908.05123v1",
+      "download_owner": "/root",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_padic_expansions_arxiv1910_01961v1.pdf",
+      "sha256": "3a7a44bed4a5cca3e1ce0cb0fa6cb066c34c96d3b91acf8c245917194ba33365",
+      "bytes": 92409,
+      "pages": 5,
+      "url": "https://arxiv.org/pdf/1910.01961v1",
+      "download_owner": "/root",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    }
+  ],
+  "reused_primary_pdfs": [
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "sha256": "d8f04d9d6477c2da86cc05516d8a865fbb582e44b1e280749b690f707cc43994",
+      "bytes": 508766,
+      "pages": 43,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169,
+      "pages": 218,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "bytes": 938673,
+      "pages": 30,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "bytes": 735709,
+      "pages": 25,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "bytes": 1398608,
+      "pages": 30,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/apery1979_asterisque.pdf",
+      "sha256": "12781716e9c7744bc632e9c2afdf985bf8a7ca776cccc34638e17e35a0c70384",
+      "bytes": 217525,
+      "pages": 4,
+      "download": "existing registered snapshot; not downloaded again"
+    }
+  ],
+  "new_other_primary_sources": [],
+  "new_documentary_render": [
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_table5_page17.png",
+      "sha256": "97598cdc647d4cc0b080f676985cd197dadafcc3c7dbbbb1fe6c4e700d83a262",
+      "bytes": 223600,
+      "actual_view_owner": "/root",
+      "source_pdf": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "source_pdf_page": 17,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "research/artifacts/cdt_odd_gamma_relative_chain_candidate_20261007/laporte_walcher_pdf4.png",
+      "sha256": "b483c27bcb7dfceb86b904d0e3a89d43b6cdf3abcb5a9a309a0c99aad89a365b",
+      "bytes": 309672,
+      "actual_view_owner": "/root/masked_racah_finalize",
+      "source_pdf": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "source_pdf_page": 4,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "research/artifacts/cdt_odd_gamma_relative_chain_candidate_20261007/au_pdf26.png",
+      "sha256": "577fed4bee531d736cb3ebf6c3cc566c9106f1a53414e3432712817e8cbef055",
+      "bytes": 246570,
+      "actual_view_owner": "/root/masked_racah_finalize",
+      "source_pdf": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "source_pdf_page": 26,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/bh23.png",
+      "sha256": "82db6c8aa4895b8d44910fbfad0865c1701dc31ce2b813d81c5b50ad377bd341",
+      "bytes": 177155,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "source_pdf_page": 23,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/bv19.png",
+      "sha256": "3d1befc62db54611f49adfcf722ac0d7c467b9b0962a6b172f6cc4f84b9610bd",
+      "bytes": 153319,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "source_pdf_page": 19,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/apery4.png",
+      "sha256": "b5baf9661cb9fa2947e69fcfc888f341595a6de939e1e5c94facac5fb1037c7c",
+      "bytes": 40481,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/apery1979_asterisque.pdf",
+      "source_pdf_page": 4,
+      "counts_as_additional_pdf_page": false
+    }
+  ],
+  "new_successful_certificates": [],
+  "historical_apery_reference": {
+    "file": "literature/manifest_cdt_odd_paired_phase_kernel_content_extension_root_20261007.json",
+    "sha256": "ab22ac0309f765aa0a94e4802281284ddc01f85143a2c5538c5ba58a0499ec45",
+    "bytes": 27402,
+    "actual_read_scope": "Complete JSON parse and matching Apery reused/physical records, not FULL text read of this historical receipt. Existing Apery already registered there; not a new download."
+  },
+  "archive_running_table_scope": "Cumulative original_source_pdfs retains historical new-archive-table convention. Existing reused Apery is in the reused/pin tables and its historical registration, not silently counted as a new archive. Four new PDF downloads54 pages this round.",
+  "actual_reading_scope": {
+    "current_round_personal_primary_pdf_domains": {
+      "root": [
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+          "pages": [
+            2,
+            19,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_padic_expansions_arxiv1910_01961v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "source": [
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+          "pages": [
+            1,
+            2,
+            8,
+            9
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+          "pages": [
+            1,
+            2,
+            19,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+          "pages": [
+            2,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "file": "literature/apery1979_asterisque.pdf",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "scaled": [
+        {
+          "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            13,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "file": "literature/apery1979_asterisque.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+          "pages": [
+            19,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        }
+      ],
+      "masked": [
+        {
+          "file": "literature/cdt_gamma_relative_chain_sources_20261007/golyshev_zagier_interpolated_apery_motivic_gamma_author.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+          "pages": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+          "pages": [
+            19,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            17
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_padic_expansions_arxiv1910_01961v1.pdf",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "personal_distinct_primary_pdf_pages": {
+      "root": 20,
+      "source": 37,
+      "scaled": 26,
+      "masked": 37
+    },
+    "actual_team_source_snapshot_page_union": 67,
+    "new_pdf_archive_count": 4,
+    "new_pdf_archived_pages": 54,
+    "new_documentary_renders": 6,
+    "root_full_current_math_files": 8,
+    "root_full_peer_final_receipts": 3,
+    "root_full_old_input_files": [
+      {
+        "file": "research/cdt_odd_gamma_connection_projection_20261007.md",
+        "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+        "bytes": 18401
+      }
+    ],
+    "root_partial_old_input": "period-extension first210 lines only; not counted FULL current reading.",
+    "root_authority_read": "Actual FULL main181-185; new186-190 final reread at closure. Not FULL entire mutable main or all588 historical proofs.",
+    "guards": "All five actual FULL text read and physical fingerprints unchanged; never executed.",
+    "boundary": "No inherited personal reads; rendered pages counted once. Archive counts, hashes, actual reading and paper review differ. Personal counts20/37/26/37; team union67, not their sum120."
+  },
+  "mathematical_execution_history": {
+    "new_mathematical_producer_sources": 0,
+    "new_mathematical_executions": 0,
+    "old_or_peer_mathematical_imports_or_reruns": 0,
+    "mathematical_failures": 0,
+    "guard_executions": 0,
+    "new_prime_experiments_or_table_extensions": 0,
+    "lean_executions": 0,
+    "new_external_html_archives": 0,
+    "new_external_code_archives": 0,
+    "new_pdf_archives": 4,
+    "metadata_only_delivery_audit": "Unique NEW statically read source; first execution after this final receipt/main closure; no mathematical imports.",
+    "documentary_boundary": "PDF extraction/render, provenance correction and file/JSON/hash operations are documentary. Initial receipt-building metadata lookup stopped on an existing Apery filename absent from the running new-archive table; resolved from historical registration before any receipt was saved. This was not a mathematical run or failure."
+  },
+  "current_progress": {
+    "classification": "progress",
+    "proved_this_round": [
+      "Actual selfdual Green pairing recovers the complete rank9 reflection column and exact16pi8/5 normalization.",
+      "Published Au zeta5 identity yields explicit rational inverse-L forcing: B5 has Q-Taylor coefficients and full Delta_c B5=zeta5 psi. This is a mechanism calibration, not a new numerical theorem or replacement of the original paired source.",
+      "All-prime/all-n,m ratio proof sharpens the lift cap fromD5n9 toDn9. Mu has unavoidable nonzero y4logy and a complete nine-component jump; actual full-jet rank and minimal homogeneous order are10.",
+      "All target-admissible maps support the same log-power reference family. Exact CDT reference comparison excludes strict margin for the current uniform cap9 rank2 through10 arrays, including same-partition multimap data.",
+      "Exact Wilson/Lucas identity Np9 b_p=-A sum P(-k)h_k A^-k modp identifies the real highest denominator layer with a forward Ramanujan truncated sum. It is only a first-layer identity, not an all-prime cap improvement.",
+      "Actual quadratic/Wronskian Taylor tensor ranks, complete jumps and all-prime caps are paid. In the original three-point homogeneous PV field, expressions fixed by both generating loops are rational; this explicitly excludes the new forcing extension.",
+      "Positive Euler/Kummer relative chain produces the exact Gamma quotient and reciprocal Taylor resolvent with complete residue variation. Its normalized Taylor package retains a log-polynomial jump, with paid rank/cap."
+    ],
+    "not_proved": [
+      "New numerical zeta/L/Catalan irrationality or linear independence",
+      "CDT or original same-object strict margin",
+      "Improved all-n/all-prime-power inverse-L cap or the relevant forward supercongruence",
+      "Rational forcing C_R=kappa5 or kappa7",
+      "Paid lift for both original alpha*zeta4 and beta*zeta5 terms",
+      "Full integral Betti lattice or Lean verification for the new extension"
+    ],
+    "unchanged_original_safe_q_fee": "32lambda-1-13lambda^2/4; lambda1.5 endpoint635/16. Calibration caps do not replace original paired-source fee.",
+    "next_priority": "Prove higher-prime-power and partial-block reversal for actual reciprocal coefficients and a better mixed denominator array, or build an extension eliminating the complete added mu jump. Preserve true coefficients, all-prime costs, actual rank and full leaf together.",
+    "new_numerical_irrationality_theorem": false,
+    "new_lean_formalization": false,
+    "goal_status": "active"
+  },
+  "physical_pins": [
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "bytes": 18371
+    },
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_independent_review_20261007.md",
+      "sha256": "4d02fb1a8c75c8c3d7dc30aad161281296e9fb4e4520146970d4a3fb619203d0",
+      "bytes": 7949
+    },
+    {
+      "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_20261007.md",
+      "sha256": "78eb5777b649336c7906174878f1b5504e34dd012409fdcbb96e13d1390710c7",
+      "bytes": 13537
+    },
+    {
+      "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_independent_review_20261007.md",
+      "sha256": "2d522297ba596e4475434365d5e5cf2febecff360d29cd5fd9d6d88e90415566",
+      "bytes": 9092
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_20261007.md",
+      "sha256": "0a9eb062f5ca02f3337a9532457a01b6b8904e064b2ff1ebf187b302388adc9e",
+      "bytes": 18617
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_independent_review_20261007.md",
+      "sha256": "bac0eb168d7d731a21ab53d30ffd215447ac99cc05187b22e09da4934567f4ca",
+      "bytes": 7704
+    },
+    {
+      "file": "research/cdt_odd_gamma_relative_chain_candidate_20261007.md",
+      "sha256": "1031f489a261e6862d7b0e895e320272751740217a61d0d3f1ce8945f245a60e",
+      "bytes": 17041
+    },
+    {
+      "file": "research/cdt_odd_gamma_relative_chain_candidate_independent_review_20261007.md",
+      "sha256": "e03e84aabeee75917f1553e60d937b697e03bed8ed3b1f2600dc3e00be5abf55",
+      "bytes": 4478
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_dual_relation_extension_20261007.json",
+      "sha256": "b5186a4a03243e704396f7c9ac955291b8c2094a3deb29abc4425fd525872eca",
+      "bytes": 12930
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_tensor_taylor_projection_20261007.json",
+      "sha256": "5fdaad4e4376be955acdfcf2b10f654f2fbc966cb89c03add72086bcf49c2270",
+      "bytes": 9817
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_relative_chain_candidate_20261007.json",
+      "sha256": "8ffc358e612012d6f22ac3a8f15fb1d3440b81fcc04b000ea0e118a16402da5c",
+      "bytes": 11797
+    },
+    {
+      "file": "research/cdt_odd_gamma_connection_projection_20261007.md",
+      "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+      "bytes": 18401
+    },
+    {
+      "file": "research/cdt_odd_delivery_balanced_gamma_direction_20261007.json",
+      "sha256": "b3a9c11266257168b103c14a13541b503dc53df1d7ad56c327c8ea83a5c43d50",
+      "bytes": 191975
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_phase_kernel_content_extension_root_20261007.json",
+      "sha256": "ab22ac0309f765aa0a94e4802281284ddc01f85143a2c5538c5ba58a0499ec45",
+      "bytes": 27402
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/golyshev_zagier_interpolated_apery_motivic_gamma_author.pdf",
+      "sha256": "529a92d1ba0744e00c3d26ea97400ae3da25b0615dea5dacbaa0b3f25697d669",
+      "bytes": 398788,
+      "pages": 21,
+      "url": "https://people.mpim-bonn.mpg.de/zagier/files/tex/DubrovinVolume/GZ_AperyInterpolation.pdf",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "sha256": "98d13843bf09e0ae20e9df9c589dfdbb5973243578eb069749e4106754e06d0f",
+      "bytes": 309651,
+      "pages": 10,
+      "url": "https://arxiv.org/pdf/1206.1787v2",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "sha256": "4ab728305b71e6b6d5d551c9f25653cd0465eecb5ad3de11944a49d7b45982c7",
+      "bytes": 208949,
+      "pages": 18,
+      "url": "https://arxiv.org/pdf/1908.05123v1",
+      "download_owner": "/root",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_padic_expansions_arxiv1910_01961v1.pdf",
+      "sha256": "3a7a44bed4a5cca3e1ce0cb0fa6cb066c34c96d3b91acf8c245917194ba33365",
+      "bytes": 92409,
+      "pages": 5,
+      "url": "https://arxiv.org/pdf/1910.01961v1",
+      "download_owner": "/root",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "sha256": "d8f04d9d6477c2da86cc05516d8a865fbb582e44b1e280749b690f707cc43994",
+      "bytes": 508766,
+      "pages": 43,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169,
+      "pages": 218,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "bytes": 938673,
+      "pages": 30,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "bytes": 735709,
+      "pages": 25,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "bytes": 1398608,
+      "pages": 30,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/apery1979_asterisque.pdf",
+      "sha256": "12781716e9c7744bc632e9c2afdf985bf8a7ca776cccc34638e17e35a0c70384",
+      "bytes": 217525,
+      "pages": 4,
+      "download": "existing registered snapshot; not downloaded again"
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_table5_page17.png",
+      "sha256": "97598cdc647d4cc0b080f676985cd197dadafcc3c7dbbbb1fe6c4e700d83a262",
+      "bytes": 223600,
+      "actual_view_owner": "/root",
+      "source_pdf": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "source_pdf_page": 17,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "research/artifacts/cdt_odd_gamma_relative_chain_candidate_20261007/laporte_walcher_pdf4.png",
+      "sha256": "b483c27bcb7dfceb86b904d0e3a89d43b6cdf3abcb5a9a309a0c99aad89a365b",
+      "bytes": 309672,
+      "actual_view_owner": "/root/masked_racah_finalize",
+      "source_pdf": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "source_pdf_page": 4,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "research/artifacts/cdt_odd_gamma_relative_chain_candidate_20261007/au_pdf26.png",
+      "sha256": "577fed4bee531d736cb3ebf6c3cc566c9106f1a53414e3432712817e8cbef055",
+      "bytes": 246570,
+      "actual_view_owner": "/root/masked_racah_finalize",
+      "source_pdf": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "source_pdf_page": 26,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/bh23.png",
+      "sha256": "82db6c8aa4895b8d44910fbfad0865c1701dc31ce2b813d81c5b50ad377bd341",
+      "bytes": 177155,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "source_pdf_page": 23,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/bv19.png",
+      "sha256": "3d1befc62db54611f49adfcf722ac0d7c467b9b0962a6b172f6cc4f84b9610bd",
+      "bytes": 153319,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "source_pdf_page": 19,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "tmp/pdfs/gamma_tensor_scope_20261007/apery4.png",
+      "sha256": "b5baf9661cb9fa2947e69fcfc888f341595a6de939e1e5c94facac5fb1037c7c",
+      "bytes": 40481,
+      "actual_view_owner": "/root/scaled_root_finalize",
+      "source_pdf": "literature/apery1979_asterisque.pdf",
+      "source_pdf_page": 4,
+      "counts_as_additional_pdf_page": false
+    },
+    {
+      "file": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.guard.json",
+      "sha256": "25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c",
+      "bytes": 74
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.guard.json",
+      "sha256": "50d52715865eeb9cd6929a6b3ae4223c35d44b8294ec6513753860d9ae4656c8",
+      "bytes": 145
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "sha256": "7fed78788586ef456383eb136ae545405c4e6752858f280d8c196257679c7508",
+      "bytes": 133
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json",
+      "sha256": "e1e97654436d92dada737c0a9dee938008df3b976e85d67cc51a422647364189",
+      "bytes": 261
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json",
+      "sha256": "a8a55e407cea1a95cf34f4c08625237205260fbbed908544cfe9b5d64fe6fd77",
+      "bytes": 287
+    }
+  ],
+  "all_physical_pins_match": true
+}

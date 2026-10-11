@@ -1,0 +1,145 @@
+                                                 ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)
+
+                                                                      FRANCIS BROWN AND WADIM ZUDILIN
+
+                                                  Abstract. We analyse a certain family of cellular integrals, which are period
+                                                  integrals on the moduli space M0,8 of curves of genus zero with eight marked
+arXiv:2210.03391v3 [math.NT] 29 Jan 2026
+
+
+
+
+                                                  points, and give rise to simultaneous rational approximations to ζ(3) and ζ(5). By
+                                                  exploiting the action of a large symmetry group on these integrals, we construct
+                                                  an infinite effective sequence of rational approximations p/q to ζ(5) satisfying
+                                                                                                  p    1
+                                                                                  0 < ζ(5) −        < 0.86 .
+                                                                                                  q  q
+
+
+
+
+                                                                                   1. Introduction
+                                              Following Apéry’s legendary proof [1] of the irrationality of ζ(3), the traditional
+                                           strategy for approaching the irrationality of ζ(5) is to try to construct linear forms
+                                           in 1 and ζ(5) with rational coefficients and good arithmetic properties. At the time
+                                           of writing, it has not succeeded despite many years of effort. In this paper we
+                                           propose a different method for tackling this problem. It involves constructing small
+                                           linear forms in a larger set of multiple zeta values, which, after setting the unwanted
+                                           numbers to zero, leads to the approximations described in the abstract.
+                                              The starting point for this method is the recent work [6] of one of the authors which
+                                           revisits irrationality proofs from a new geometric perspective. It reproduces Apéry’s
+                                           irrationality proofs for ζ(2) and ζ(3), via Beukers’ famous re-interpretation [4] as
+                                           Euler-type double and triple integrals, and produces natural families of multiple
+                                           integrals of higher order which are linear forms in a controllable set of multiple zeta
+                                           values. Whilst a literal generalisation of Apéry’s approach for higher weight zeta
+                                           values remains a tough challenge, the machinery in [6] gives us hope that alternative
+                                           approaches can be found.
+                                              In this manuscript we investigate just one particular family of such 5-fold integrals,
+                                           which was disguised as the family 8π8∨ and highlighted in [6, Example 7.5],
+                                                I(a) = I(a1 , a2 , a3 , a4 , a5 , a6 , a7 , a8 )
+                                                                          ta11 (t2 − t1 )a2 (t3 − t2 )a3 (t4 − t3 )a4 (t5 − t4 )a5 (1 − t5 )a6
+                                                         Z        Z
+                                                     =       ···
+                                                                                (t3 − t1 )b24 tb314 (1 − t4 )b57 (t4 − t2 )b35 (t5 − t2 )b36
+                                                        0<t1 <t2 <···<t5 <1
+                                                                                dt1 dt2 dt3 dt4 dt5
+                                                                  ×                                              ,                               (1)
+                                                                      (t3 − t1 )t3 (1 − t4 )(t4 − t2 )(t5 − t2 )
+
+                                             Date: 17 October 2022. Revised : 26 January 2026.
+                                             2020 Mathematics Subject Classification. Primary 11J72; Secondary 11M06, 20B35, 32G15,
+                                           33C90.
+                                                                                              1
+2                            FRANCIS BROWN AND WADIM ZUDILIN
+
+where
+              b24 = a2 + a3 + a6 − a7 − a8 ,         b14 = a4 + a7 + a8 − a2 − a6 ,
+                                                                                                     (2)
+              b57 = a4 + a5 + a8 − a2 − a3 ,         b35 = a2 + a3 − a8 , b36 = a8
+and all the parameters a1 , . . . , a8 are assumed to be integers. According to [6,
+Sects. 5.1 and 5.2] the integral I(a) converges if and only if the following seventeen
+linear forms in the ai are non-negative:
+                 a1 , a 2 , a 3 , a 4 , a 5 , a 6 , a 7 , a 1 + a 5 − a 3 , a 3 + a 6 − a 8 ,
+a4 + a 5 + a 7 + a 8 − a 2 − a 3 − a 6 , a 7 + a 8 − a 6 , a 4 + a 8 − a 2 , a 2 + a 3 + a 6 − a 4 − a 8 ,
+        a1 + a8 − a3 , a1 + a2 − a4 , a4 + a5 − a2 , a4 + a7 + 2a8 − a2 − a3 − a6 .
+                                                                                                    (3)
+General results on the periods of the moduli spaces of genus zero curves with marked
+points [5] imply a priori that the family (1) of integrals is a Q-linear combination
+of multiple zeta values of weight ≤ 5, namely: 1, ζ(2), ζ(3), ζ(4), ζ(5) and ζ(3)ζ(2).
+The cellular nature of this integral (more precisely, Poincaré duality) suggests that
+the term of subleading weight ζ(4) vanishes, since it is dual to the non-existent
+‘ζ(1)’. Cohomological considerations furthermore imply that the coefficients of the
+two terms ζ(5) and ζ(2)ζ(3) always occur in the same proportion, i.e., there is a
+single period in leading weight, namely ζ(5) + 2ζ(3)ζ(2).
+   The main interest of this family is that, additionally, the coefficient of ζ(3) always
+vanishes [6, Sect. 10.2.4]. Therefore, as hinted at in [6], the decomposition of I =
+I(a) into a Q-linear combination of multiple zeta values takes the very special form:
+                        I = Q · (2ζ(5) + 4ζ(3)ζ(2)) − 4P̂ · ζ(2) − 2P                                (4)
+for some Q, P, P̂ ∈ Q (in fact, Q ∈ Z since it may be expressed as a 5-fold
+residue of the integrand). The fact that these linear forms in ζ(5) + 2ζ(3)ζ(2),
+ζ(2) and 1 are very small follows from bounds for the integrand along the domain
+of integration. From this one may deduce that at least one of the two numbers
+{ζ(2), ζ(5) + 2ζ(3)ζ(2)} is irrational, but since this is already known for ζ(2), one
+cannot deduce any new irrationality result from I. In this regard, the number ζ(2)
+is usually viewed as ‘parasitic’.
+   However, another hint from [6] suggests that the linear forms
+                                     I ′ = I ′ (a) = Qζ(5) − P,
+obtained by ‘setting ζ(2) to zero’, are also reasonably small. A priori this operation
+does not make sense, but can be justified either by cohomological arguments, or by
+passing to motivic versions of the integral I and motivic zeta values, for which it
+does.
+  The fact that the I ′ are small implies a posteriori that the linear forms
+                                     I ′′ = I ′′ (a) = Qζ(3) − P̂
+are small as well, since I = 2I ′ + 4I ′′ ζ(2). Thus the original cellular integral (4)
+is, in disguise, a pair of simultaneous approximations I ′ , I ′′ to ζ(5) and ζ(3). It is
+our principal goal here to quantify these hints from [6] as well as to analyse the
+arithmetic properties of the coefficients Q = Q(a), P = P (a) and P̂ = P̂ (a) of the
+                   ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)                               3
+
+simultaneous rational approximations to ζ(5) and ζ(3). As we will see below, there is
+a large transformation group G (of order 7! = 5040) acting on normalised versions of
+the integrals I(a) as well as on I ′ (a), I ′′ (a) and on the coefficients Q(a), P (a), P̂ (a);
+this group allows us to compute a sharp denominator D = D(a) ∈ Z for which DI ′ ∈
+Zζ(5) + Z. Such groups famously appear, and prove themselves to be arithmetically
+useful, in constructions of rational approximations to ζ(2), ζ(3) and ζ(4) (and other
+mathematical constants); see [13, 16, 17, 20, 27]. They are known in the literature by
+the name of Rhin–Viola groups. Our ‘group structure for ζ(5)’ shares similarities
+with its predecessors but also features interesting novelties which we will try to
+highlight in due course.
+   One outcome of our construction and analysis is the following result, for which we
+need to recall a related concept of effective rational approximations to a real number
+α, as explained by Nesterenko in his paper [14]. A family of linear forms qn α − pn ,
+with pn , qn ∈ Q, is called effective if pn , qn are solutions to a linear difference equation
+whose coefficients are polynomials in Q (also known as an Apéry-type recursion).
+Equivalently, their generating functions satisfy a differential equation. We say that
+a family of rational approximations to α is effective if it can be written in the form
+pn /qn , where pn , qn are effective. Such approximations1 pn /qn are distinguished from
+(ineffective!) solutions to
+                                                   p     1
+                                       0< α−          <
+                                                   q     q
+in integers p, q whose existence follows trivially from squeezing the number in ques-
+tion via the inequalities r/q ≤ α ≤ (r + 1)/q, with r = ⌊qα⌋.
+Theorem 1. There is an effective infinite sequence of rational approximations p/q,
+with p, q ∈ Z, to ζ(5) such that
+                                                p    1
+                                  0 < ζ(5) −      < 0.86 .
+                                                q  q
+   Note that this result does not imply the (expected!) irrationality of ζ(5) which
+would follow if the upper bound in the inequality were of the form 1/q 1+ε for some
+ε > 0. The ‘worthiness’ exponent 0.86 is nevertheless best possible when compared
+to any other known constructions of effective rational approximations to ζ(5) (see
+[14, 19] for a related comparison in the case of Catalan’s constant). In practice, the
+linear differential equations constructed in this way are Picard–Fuchs equations of
+geometric (Gauss–Manin) origin.
+   The result and analysis in this paper also give us confidence that further explo-
+ration of the cellular integrals from [6] will produce new arithmetic surprises.
+   A more general context for this subject is the study of Mellin transforms
+                                     Z
+                                        f1a1 · · · fnan ω
+                                        γ
+
+  1Note that passing from pn /qn to p/q with p, q ∈ Z may involve multiplying both pn and qn by
+the same rational factor: rescaling is implicit in the definition.
+

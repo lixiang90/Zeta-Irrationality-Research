@@ -1,0 +1,119 @@
+{
+  "description": "Classical all-odd derivative projection and corrected displayed telescoper",
+  "run_history": "Second execution after replacing structural equality of factored/expanded theta coefficients by exact polynomial equality; first run stopped at that audit check, no JSON was produced.",
+  "scope": "Formal n,t identity, declared n=0,1,2 initials, one n=1 derivative example. No numerical irrationality theorem or optimal denominator cost.",
+  "corrected_U": "48*n**5 - 24*n**3 + 3*n**2 + 48*n*t**3*(2*n + 1) + 4*n + t**4*(16*n + 8) + t**2*(4*n + 2)*(48*n**2 - 6*n - 5) + t*(160*n**4 + 32*n**3 - 56*n**2 - 6*n + 6) - 1",
+  "forcing_r2_polynomial": "n**2*(48*n**3 + 80*n**2 + 40*n + 5)",
+  "examples": [
+    {
+      "n": 0,
+      "A": "1",
+      "C_r1": "0",
+      "C_r2": "0"
+    },
+    {
+      "n": 1,
+      "A": "96",
+      "C_r1": "-1024",
+      "C_r2": "245760"
+    },
+    {
+      "n": 2,
+      "A": "14944",
+      "C_r1": "-181248",
+      "C_r2": "1129136128/27"
+    }
+  ],
+  "source_pdf_sha256": {
+    "cdt2026_effective_holonomy_author_20261006.pdf": "368cc0af5584049a76c7cef0fd78886524143ee3935f56cfc2e35fb9bee22796",
+    "lai_sprang_zudilin2025_zeta2_5_v1_20261006.pdf": "efc3a310f74fce709c97c0cf2fd2d9222672142a0c4ad95b38118a0e956b0c52"
+  },
+  "checks": [
+    {
+      "name": "all-n-t-cleared-telescoper-identity",
+      "passed": true
+    },
+    {
+      "name": "printed-v1-t3-coefficient-is-not-identity",
+      "passed": true
+    },
+    {
+      "name": "U-at-half",
+      "passed": true
+    },
+    {
+      "name": "antisymmetry-n0",
+      "passed": true
+    },
+    {
+      "name": "partial-fraction-reconstruction-n0",
+      "passed": true
+    },
+    {
+      "name": "only-total-r3-survives-n0",
+      "passed": true
+    },
+    {
+      "name": "antisymmetry-n1",
+      "passed": true
+    },
+    {
+      "name": "partial-fraction-reconstruction-n1",
+      "passed": true
+    },
+    {
+      "name": "only-total-r3-survives-n1",
+      "passed": true
+    },
+    {
+      "name": "antisymmetry-n2",
+      "passed": true
+    },
+    {
+      "name": "partial-fraction-reconstruction-n2",
+      "passed": true
+    },
+    {
+      "name": "only-total-r3-survives-n2",
+      "passed": true
+    },
+    {
+      "name": "A-initial-1-96-14944",
+      "passed": true
+    },
+    {
+      "name": "C-r1-initial",
+      "passed": true
+    },
+    {
+      "name": "C-r2-second-prefix",
+      "passed": true
+    },
+    {
+      "name": "C-r2-denominator-beyond-n2",
+      "passed": true
+    },
+    {
+      "name": "r1-forcing-vanishes",
+      "passed": true
+    },
+    {
+      "name": "r2-fourth-derivative-forcing-n1",
+      "passed": true
+    },
+    {
+      "name": "r2-C-recurrence-n1",
+      "passed": true
+    },
+    {
+      "name": "all-large-prime-forcing-unit",
+      "passed": true
+    },
+    {
+      "name": "normalized-five-theta-coefficients",
+      "passed": true
+    }
+  ],
+  "check_count": 21,
+  "all_passed": true
+}

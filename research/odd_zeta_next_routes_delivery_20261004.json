@@ -1,0 +1,185 @@
+{
+  "as_of": "2026-10-04",
+  "checked_at_utc": "2026-10-04T09:16:59.201372+00:00",
+  "status": "delivery_checks_passed",
+  "irrationality_theorem_obtained": false,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "reports": [
+    {
+      "report": "odd_zeta_staircase_catalan_20261004.md",
+      "report_sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "exact_certificate": "odd_zeta_staircase_catalan_20261004_verify.json",
+      "certificate_sha256": "6302176c861dc652aa423badd178763bd9a2c02be9d3939dcb351575a90be580",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_symbolic_checks_passed": true
+      },
+      "scope": "Fixed rational combinations in the old coordinate w only; no parameter or prime scan."
+    },
+    {
+      "report": "odd_zeta_cover_catalan_20261004.md",
+      "report_sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "exact_certificate": "odd_zeta_cover_catalan_20261004_verify.json",
+      "certificate_sha256": "261ff27a2f5b4acfe10c27877c71e4ebd1add43e9d0a5f4114d2e3558f554225",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_checks_passed": true
+      },
+      "scope": "Actual independence and continuation are proved separately; no global slit-domain assertion."
+    },
+    {
+      "report": "odd_zeta_cover_budget_20261004.md",
+      "report_sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "exact_certificate": "odd_zeta_cover_budget_20261004_verify.json",
+      "certificate_sha256": "b72a1c9c6bc685cb04ac5b04abad736b5b88da439b7bd529d1aebf55349248c9",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_checks_passed": true
+      },
+      "scope": "Natural 1,A,B,f_c(rho) table only; not arbitrary rational gauge or another cover."
+    },
+    {
+      "report": "odd_zeta_content_geometry_20261004.md",
+      "report_sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "exact_certificate": "odd_zeta_content_geometry_20261004_verify.json",
+      "certificate_sha256": "e0940964f245d021b43fa09653640467a7277cc8f5b86b8918c744d45e2bef7a",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_checks_passed": true
+      },
+      "scope": "Fixed exact identities, not a parameter search or proof by finite samples."
+    },
+    {
+      "report": "odd_zeta_new_period_systems_20261004.md",
+      "report_sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "exact_certificate": "odd_zeta_new_period_systems_20261004_verify.json",
+      "certificate_sha256": "db98ba3bb05c19fbe437888fc7c5066568efe7a4be16587d3f7f06838f0e3218",
+      "certificate_status": "exact_identities_passed_not_irrationality_proof",
+      "explicit_pass_flags": {},
+      "scope": "Exact algebra only; connection identity, slit analyticity, and functional independence have separate proofs in the Markdown report."
+    },
+    {
+      "report": "odd_zeta_bb_fine_budget_20261004.md",
+      "report_sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "exact_certificate": "odd_zeta_bb_fine_budget_20261004_verify.json",
+      "certificate_sha256": "ec57bc4f8cffd945560131b803c8a9173e3cff3e0f7543cfa9d6488763bf3248",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_exact_checks_passed": true
+      },
+      "scope": "Natural eight functions in the original coordinate, not an arbitrary rational gauge."
+    },
+    {
+      "report": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "report_sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "exact_certificate": "odd_zeta_bb_fixed_gauge_packet_20261004_verify.json",
+      "certificate_sha256": "8a8baa8a49fcca02ecff53ce845199e1e8bb0e581825ac10effb862770178f87",
+      "certificate_status": "exact_checks_passed",
+      "explicit_pass_flags": {
+        "all_exact_checks_passed": true
+      },
+      "scope": "Two prescribed fixed rational gauge examples; all-prime proof remains in the report."
+    },
+    {
+      "report": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "report_sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "exact_certificate": "odd_zeta_cover_elliptic_quotients_20261004_verify.json",
+      "certificate_sha256": "9c9584d257d38aa31a5c491bb02203388d75b2d6fac1fc1015544bff07d512b2",
+      "certificate_status": "fixed_exact_identities_passed_not_irrationality_or_arithmetic_integrality",
+      "explicit_pass_flags": {},
+      "scope": "Checks quotient equations, differential identities, j, and geometric tame symbols over Q(i,sqrt(2)); no vertical divisors, integral model, regulator nonzero theorem, or numerical period claim is checked."
+    }
+  ],
+  "main_report": "odd_zeta_next_routes_progress_20261004.md",
+  "main_report_sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+  "frozen_report_checks": [
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    }
+  ],
+  "library_new_original_pdfs": [
+    {
+      "file": "eskandari2026_improved_catalan_approximations.pdf",
+      "sha256": "47bc30efc97bb68c58f1cbacaafdf54a4de596183964a7609ddff11c8764ece6",
+      "pages": 11,
+      "fixed_version": "arXiv:2609.26354v1, 2026-09-22"
+    },
+    {
+      "file": "zudilin2002_catalan_linear_forms.pdf",
+      "sha256": "d48f9cec9b496bebf14087e10be6e481532c49693fc3cc2e3adc99aad455b53c",
+      "pages": 10,
+      "fixed_version": "arXiv:math/0210423v1, 2002-10-28"
+    },
+    {
+      "file": "krattenthaler_zudilin2018_hypergeometry_v1.pdf",
+      "sha256": "338c15cc9590b55fecb4e09acfea6310128c879592a33b7ec97246be2e81e906",
+      "pages": 14,
+      "fixed_version": "arXiv:1802.08856v1, 2018-02-24; later v2 exists (2018-08-05)"
+    },
+    {
+      "file": "kraus_roth2014_roots_unity_landau.pdf",
+      "sha256": "5fab80575c7b098c163a24ccf923b592195526dc55df1c510a38d734769a1224",
+      "pages": 18,
+      "fixed_version": "arXiv:1405.0383v1, 2014-05-02"
+    },
+    {
+      "file": "borwein_bradley1997_zeta4n3.pdf",
+      "sha256": "18d53c8d2c9c508c3731abc552908ef4c0d1b7fc0e83553026e5fa8022d944f2",
+      "pages": 23,
+      "fixed_version": "Experimental Mathematics6:3(1997),181-194; arXiv:math/0505124v1 upload 2005-05-07"
+    },
+    {
+      "file": "almkvist_granville1999_borwein_bradley_proof.pdf",
+      "sha256": "3ff6bacb11a10d78bbd645e82436dcbbb5a739412f40f25a2220bffae2f7040b",
+      "pages": 7,
+      "fixed_version": "Experimental Mathematics8:2(1999),197-203; published PDF in author-related repository"
+    },
+    {
+      "file": "goncharov_levin1997_zagier_elliptic_k2_v4.pdf",
+      "sha256": "f1478cb5723fe2f46a0cd3eea590037f8d80a988c361b11a7ae1e44c7abbf60a",
+      "pages": 38,
+      "fixed_version": "arXiv:alg-geom/9508008v4, 1997-06-15 (final arXiv version)"
+    }
+  ],
+  "independent_read_only_reviews": {
+    "staircase_catalan": "paper_mechanism",
+    "cover_catalan": "paper_mechanism",
+    "cover_budget": "paper_mechanism",
+    "content_geometry": "zeta7_moment_extension",
+    "new_period_systems": "root and paper_mechanism",
+    "bb_fine_budget": "root and paper_mechanism",
+    "bb_fixed_gauge_packet": "root and zeta7_distribution_new",
+    "cover_elliptic_quotients": "root"
+  },
+  "proof_scope": "Written all-scale proofs plus exact algebra certificates; finite checks do not replace analytic continuation, functional independence, or prime arguments. Natural-basis budget barriers are not impossibility results for arbitrary new systems.",
+  "local_links_checked": 79,
+  "missing_local_links": []
+}

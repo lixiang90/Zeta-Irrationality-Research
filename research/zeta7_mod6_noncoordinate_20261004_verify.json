@@ -1,0 +1,407 @@
+{
+  "status": "independently_verified",
+  "cases": [
+    {
+      "n": 1,
+      "K": 40,
+      "dimension": 34,
+      "integer_identity_checks": 6818,
+      "rigorous_global_log_floor": 1269,
+      "refined_log_bounds": [
+        "[1569.49086001211521230134973861472117102026 +/- 4.56e-39]",
+        "[1416.50238024060761924335633819549236443096 +/- 4.55e-40]",
+        "[1269.75668785226072220760059369328951219717 +/- 2.26e-39]"
+      ],
+      "u2_zero_above_baseline": "[8.83158681831780520379159030243919345516713 +/- 1.16e-42]",
+      "content_caps": [
+        {
+          "stratum": 0,
+          "content_upper": "283500",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 2,
+                "valuation": 2,
+                "log_contribution": 1.3862943611198906
+              },
+              {
+                "prime": 3,
+                "valuation": 4,
+                "log_contribution": 4.394449154672439
+              },
+              {
+                "prime": 5,
+                "valuation": 3,
+                "log_contribution": 4.828313737302301
+              },
+              {
+                "prime": 7,
+                "valuation": 1,
+                "log_contribution": 1.9459101490553132
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        },
+        {
+          "stratum": 1,
+          "content_upper": "144823513811434197505735756622926970880000000000",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 2,
+                "valuation": 28,
+                "log_contribution": 19.408121055678468
+              },
+              {
+                "prime": 3,
+                "valuation": 22,
+                "log_contribution": 24.169470350698415
+              },
+              {
+                "prime": 5,
+                "valuation": 10,
+                "log_contribution": 16.094379124341003
+              },
+              {
+                "prime": 7,
+                "valuation": 9,
+                "log_contribution": 17.51319134149782
+              },
+              {
+                "prime": 11,
+                "valuation": 4,
+                "log_contribution": 9.591581091193483
+              },
+              {
+                "prime": 13,
+                "valuation": 4,
+                "log_contribution": 10.259797429846147
+              },
+              {
+                "prime": 17,
+                "valuation": 2,
+                "log_contribution": 5.666426688112432
+              },
+              {
+                "prime": 19,
+                "valuation": 2,
+                "log_contribution": 5.8888779583328805
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        },
+        {
+          "stratum": 2,
+          "content_upper": "28334259207830203168821069317003841282427577745621832074747313894570829115555840000000000000000",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 2,
+                "valuation": 61,
+                "log_contribution": 42.281978014156664
+              },
+              {
+                "prime": 3,
+                "valuation": 39,
+                "log_contribution": 42.84587925805628
+              },
+              {
+                "prime": 5,
+                "valuation": 16,
+                "log_contribution": 25.751006598945605
+              },
+              {
+                "prime": 7,
+                "valuation": 16,
+                "log_contribution": 31.13456238488501
+              },
+              {
+                "prime": 11,
+                "valuation": 9,
+                "log_contribution": 21.581057455185338
+              },
+              {
+                "prime": 13,
+                "valuation": 12,
+                "log_contribution": 30.779392289538443
+              },
+              {
+                "prime": 17,
+                "valuation": 4,
+                "log_contribution": 11.332853376224865
+              },
+              {
+                "prime": 19,
+                "valuation": 4,
+                "log_contribution": 11.777755916665761
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        }
+      ],
+      "candidate_count": 97,
+      "all_candidates_above_baseline": true,
+      "best_candidate": {
+        "normal": [
+          "0",
+          "0",
+          "1"
+        ],
+        "content": "3211",
+        "log_primitive": 1490.4244774208048,
+        "log_primitive_interval": "[1490.424477420804790603975908215357081407 +/- 1.83e-37]",
+        "primitive_degree": 34
+      },
+      "best_genuine_noncoordinate": {
+        "normal": [
+          "0",
+          "1",
+          "13220923"
+        ],
+        "content": "720",
+        "log_primitive": 1518.2364090533363,
+        "log_primitive_interval": "[1518.236409053336318291236989753667364953 +/- 3.52e-37]",
+        "primitive_degree": 34
+      },
+      "large_normal_det_checks": {
+        "normal": [
+          0,
+          1,
+          13220923
+        ],
+        "points": [
+          -1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "n": 2,
+      "K": 80,
+      "dimension": 70,
+      "integer_identity_checks": 7178,
+      "rigorous_global_log_floor": 6043,
+      "refined_log_bounds": [
+        "[6554.05212458053138694897163383632774689033 +/- 1.37e-39]",
+        "[6312.86809751724773060818171902514973507488 +/- 4.59e-39]",
+        "[6043.26235975386550618508974905998061165178 +/- 2.80e-39]"
+      ],
+      "u2_zero_above_baseline": "[87.6260088533589616559194481720871178149794 +/- 2.61e-41]",
+      "content_caps": [
+        {
+          "stratum": 0,
+          "content_upper": "194481",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 3,
+                "valuation": 4,
+                "log_contribution": 4.394449154672439
+              },
+              {
+                "prime": 7,
+                "valuation": 4,
+                "log_contribution": 7.783640596221253
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        },
+        {
+          "stratum": 1,
+          "content_upper": "11585887598315328478375469556954141737020575252526980816101474639517463117875118080000000000000000",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 2,
+                "valuation": 33,
+                "log_contribution": 22.873856958478193
+              },
+              {
+                "prime": 3,
+                "valuation": 26,
+                "log_contribution": 28.563919505370855
+              },
+              {
+                "prime": 5,
+                "valuation": 16,
+                "log_contribution": 25.751006598945605
+              },
+              {
+                "prime": 7,
+                "valuation": 12,
+                "log_contribution": 23.350921788663758
+              },
+              {
+                "prime": 11,
+                "valuation": 9,
+                "log_contribution": 21.581057455185338
+              },
+              {
+                "prime": 13,
+                "valuation": 9,
+                "log_contribution": 23.08454421715383
+              },
+              {
+                "prime": 17,
+                "valuation": 7,
+                "log_contribution": 19.832493408393514
+              },
+              {
+                "prime": 19,
+                "valuation": 6,
+                "log_contribution": 17.66663387499864
+              },
+              {
+                "prime": 23,
+                "valuation": 4,
+                "log_contribution": 12.541976863716599
+              },
+              {
+                "prime": 29,
+                "valuation": 2,
+                "log_contribution": 6.734591659972948
+              },
+              {
+                "prime": 31,
+                "valuation": 2,
+                "log_contribution": 6.8679744089702925
+              },
+              {
+                "prime": 37,
+                "valuation": 2,
+                "log_contribution": 7.221835825288449
+              },
+              {
+                "prime": 41,
+                "valuation": 2,
+                "log_contribution": 7.427144133408616
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        },
+        {
+          "stratum": 2,
+          "content_upper": "214246356866135938956871495713185110239783430644569352404722295253340550403114782277955360210775027216431522531941610901169959292851854869215496695085281574912000000000000000000000000000",
+          "local": {
+            "primes_at_most_K": [
+              {
+                "prime": 2,
+                "valuation": 68,
+                "log_contribution": 47.13400827807628
+              },
+              {
+                "prime": 3,
+                "valuation": 50,
+                "log_contribution": 54.93061443340549
+              },
+              {
+                "prime": 5,
+                "valuation": 27,
+                "log_contribution": 43.45482363572071
+              },
+              {
+                "prime": 7,
+                "valuation": 20,
+                "log_contribution": 38.91820298110626
+              },
+              {
+                "prime": 11,
+                "valuation": 16,
+                "log_contribution": 38.36632436477393
+              },
+              {
+                "prime": 13,
+                "valuation": 16,
+                "log_contribution": 41.03918971938459
+              },
+              {
+                "prime": 17,
+                "valuation": 14,
+                "log_contribution": 39.66498681678703
+              },
+              {
+                "prime": 19,
+                "valuation": 13,
+                "log_contribution": 38.277706729163725
+              },
+              {
+                "prime": 23,
+                "valuation": 8,
+                "log_contribution": 25.083953727433197
+              },
+              {
+                "prime": 29,
+                "valuation": 5,
+                "log_contribution": 16.83647914993237
+              },
+              {
+                "prime": 31,
+                "valuation": 4,
+                "log_contribution": 13.735948817940585
+              },
+              {
+                "prime": 37,
+                "valuation": 4,
+                "log_contribution": 14.443671650576897
+              },
+              {
+                "prime": 41,
+                "valuation": 4,
+                "log_contribution": 14.854288266817232
+              }
+            ],
+            "residual": "1",
+            "residual_log": 0.0
+          }
+        }
+      ],
+      "candidate_count": 97,
+      "all_candidates_above_baseline": true,
+      "best_candidate": {
+        "normal": [
+          "0",
+          "0",
+          "1"
+        ],
+        "content": "1",
+        "log_primitive": 6483.863742620989,
+        "log_primitive_interval": "[6483.863742620988622369339828225749211979 +/- 3.00e-37]",
+        "primitive_degree": 70
+      },
+      "best_genuine_noncoordinate": {
+        "normal": [
+          "0",
+          "1",
+          "31303843426505"
+        ],
+        "content": "3825",
+        "log_primitive": 6530.529091533113,
+        "log_primitive_interval": "[6530.529091533113083826156069895099080282 +/- 4.51e-37]",
+        "primitive_degree": 70
+      },
+      "large_normal_det_checks": {
+        "normal": [
+          0,
+          1,
+          31303843426505
+        ],
+        "points": [
+          -1,
+          0,
+          1
+        ]
+      }
+    }
+  ]
+}

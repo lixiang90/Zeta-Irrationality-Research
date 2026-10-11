@@ -1,0 +1,318 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "author": "root",
+  "baseline": {
+    "records": 529,
+    "mathematical_files": 525,
+    "guards": 4,
+    "prior_delivery_file": "research/cdt_odd_delivery_multiroot_20261007.json",
+    "prior_delivery_sha256": "75205f58e3cce6660828b8ad28e27f13a4a1f978805b22cd97c1d9e69ae674f1",
+    "all_529_physical_hashes_checked_during_this_receipt_creation": true
+  },
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_paired_reference_jet_completion_20261007.md",
+      "sha256": "944a8bf8dcc19f1baba2c8f56bae480739ff5c2e2d4e28ea5483efeade13bd68"
+    },
+    {
+      "file": "research/cdt_odd_paired_exact_lift_boundary_20261007.md",
+      "sha256": "ca43e16f8e3ae6c0c70b3adfa8e4460a877ccdb939ce96675be9e94edee68a79"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007.md",
+      "sha256": "94bf11b559fba1035f05d6f8b19e0318a2fb51b3552ef5d51f7279bd5aca5d6d"
+    },
+    {
+      "file": "research/cdt_odd_paired_masked_high_compression_20261007.md",
+      "sha256": "bd107ba87fe707be5d8dc969b29949b05a4afd91e32baef4e41e5f9d4775bb1f"
+    },
+    {
+      "file": "research/cdt_odd_paired_reference_jet_completion_independent_review_20261007.md",
+      "sha256": "203c6a59ff68d1f4596f0d9e1e605d1cf3e4e9d9a3e18dbc4fedbd4db298785d"
+    },
+    {
+      "file": "research/cdt_odd_paired_exact_lift_boundary_independent_review_20261007.md",
+      "sha256": "634e4ed9e093467aebe13b01543bca1887ec25f198152addba10e391b8929f66"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_independent_review_20261007.md",
+      "sha256": "9135e661b511590d60501c7c254281b974f32b3b72d9570f237bf6d4a26cdbcd"
+    },
+    {
+      "file": "research/cdt_odd_paired_masked_high_compression_independent_review_20261007.md",
+      "sha256": "56f427256ab24688eb11061a60bcec30763142f2a17fc3998a9e244781eaf03c"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.py",
+      "sha256": "f873b6ea944f0dbb7fe4aafbf8f56d33bf9083a50ef21defc256c75a70bcee42"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.json",
+      "sha256": "d16792233e987d3777e75cc90b23d2509ee67d4ed2ba03732734422e715b8486"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json",
+      "sha256": "a8a55e407cea1a95cf34f4c08625237205260fbbed908544cfe9b5d64fe6fd77"
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_paired_exact_lift_boundary_20261007.json",
+      "sha256": "2360fe8b57470576280f7f32a3d795146bbd8761075f923a6d2a5bb9a76f3171",
+      "actual_root_read": "Actual FULL final JSON text and all fields before this root receipt"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_masked_high_compression_20261007.json",
+      "sha256": "5610176c026d9118e6129c5559ae0bc31f6842943c26f9af433e6b17e3ef5d2c",
+      "actual_root_read": "Actual FULL final JSON text and all fields before this root receipt"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_mirror_root_correlation_20261007.json",
+      "sha256": "79ccd9b706bb7a4c547bab036547d6dd3f453c2bcdc6c1b894cd7b5341cb9557",
+      "actual_root_read": "Actual FULL final JSON text and all fields before this root receipt"
+    }
+  ],
+  "new_successful_certificates": [
+    {
+      "kind": "mirror_root_correlation",
+      "source": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.py",
+      "result": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.json",
+      "guard": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json",
+      "report": "research/cdt_odd_paired_mirror_root_correlation_20261007.md",
+      "state": "PASS_FIRST1",
+      "scope": "4096 closed rational interval cells for explicit c+P+7tau²/9; no actual determinant or prime execution"
+    }
+  ],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_paired_reference_jet_sources_20261007/de_teran_mehl_mehrmann2019_low_rank_symmetry_arxiv1902_00444v1.pdf",
+      "sha256": "4a97d0fac414073aec97b3f534d1359b3abf37cfcf307880e91720f69ce23f94",
+      "pages": 37,
+      "bytes": 521780,
+      "source_url": "https://arxiv.org/pdf/1902.00444v1",
+      "title": "Low rank perturbation of regular matrix pencils with symmetry structures",
+      "full_pdf_read": false
+    },
+    {
+      "file": "literature/cdt_paired_mirror_root_sources_20261007/dragnev_saff1997_constrained_energy_author_168.pdf",
+      "sha256": "29c3c2b7d8595306addf83296980836c23be2e457daa60bfb43dd1c831d135ac",
+      "pages": 37,
+      "bytes": 4248097,
+      "source_url": "https://math.vanderbilt.edu/saffeb/texts/168.pdf",
+      "title": "Constrained energy problems with applications to orthogonal polynomials of a discrete variable",
+      "full_pdf_read": false
+    },
+    {
+      "file": "literature/cdt_paired_masked_high_sources_20261007/chu1998_partial_fraction_well_poised_acta64_495_513.pdf",
+      "sha256": "0a7e92173e94fab43ba04ee351cbc04eafeb0009948cc63404b3c20b8fe76dd5",
+      "pages": 19,
+      "bytes": 168085,
+      "source_url": "https://www.acta.hu/download.phtml?id=2471",
+      "title": "Partial-fraction expansions and well-poised bilateral series",
+      "full_pdf_read": false
+    }
+  ],
+  "reused_primary_pins": [
+    {
+      "file": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e"
+    },
+    {
+      "file": "literature/cdt_paired_modified_target_sources_20261006/krattenthaler2021_modified_hankel_christoffel_arxiv2101_04225v1.pdf",
+      "sha256": "6ee728bafe1ac1467050df139da6e86c9395f7fb7f7c77b769d0bb5388120fff"
+    },
+    {
+      "file": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e"
+    }
+  ],
+  "prior_delivery_pin": {
+    "file": "research/cdt_odd_delivery_multiroot_20261007.json",
+    "sha256": "75205f58e3cce6660828b8ad28e27f13a4a1f978805b22cd97c1d9e69ae674f1"
+  },
+  "actual_reading_scope": {
+    "root_new_main_manuscripts": "Actual FULL final reading of all four manuscripts, including root own final selfread and corrected final masked bd107",
+    "root_formal_reviews": "Actual FULL final reading of all four formal reviews, including own exact-lift review and corrected final masked review56f427",
+    "root_peer_receipts": "Actual FULL final JSON text and all fields of all three peer receipts before this last root receipt; recorded physical pins checked",
+    "root_certificate": "Entire NEW Python source statically pre-read before specific FIRST1 authorization; entire guard and all non-cell result fields read. Actual complete cells0,733,734,735,4095 read; all4096 parsed and metadata-only index/contiguity/saved-minimum checked. No manual FULL reading of all numeric cells, no c/P/log recomputation, no peer execution or handle polling",
+    "root_primary_pdf_pages": {
+      "de_teran_mehl_mehrmann2019": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dragnev_saff1997": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "chu1998": [
+        1,
+        10,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ],
+      "krattenthaler2021": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "li_long_tu2021": [
+        18,
+        19
+      ]
+    },
+    "root_distinct_primary_pages_this_round": 23,
+    "scaled_primary_pages": {
+      "dragnev_saff1997": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "chu1998": [
+        1,
+        10,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ],
+      "krattenthaler2021": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "li_long_tu2021": [
+        18,
+        19
+      ]
+    },
+    "masked_primary_pages": {
+      "chu1998": [
+        1,
+        10,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ],
+      "krattenthaler2021": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "li_long_tu2021": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        18,
+        19
+      ]
+    },
+    "source_primary_pages": {},
+    "unique_team_read_pages_by_source": {
+      "de_teran_mehl_mehrmann2019": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "dragnev_saff1997": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "chu1998": [
+        1,
+        10,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ],
+      "krattenthaler2021": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "li_long_tu2021": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        18,
+        19
+      ]
+    },
+    "unique_team_primary_pages_this_round": 28,
+    "new_primary_archive_pages": 93,
+    "new_primary_unique_team_pages_read": 15,
+    "limitations": "Archive totals, individual page reads and source/page union are separate. Scaled alone visually rendered Dragnev PDF5. No PDF claimed fully read. All-scale mathematics independently paper-reviewed; no Lean or producer proof of all-scale results."
+  },
+  "mathematical_execution_history": {
+    "logical_round_new_distinct_guarded_FIRST1_runs": 1,
+    "saved_successes": 1,
+    "saved_failures": 0,
+    "closed_interval_cells": 4096,
+    "root_mathematical_execution": 0,
+    "source_mathematical_execution": 0,
+    "masked_mathematical_execution": 0,
+    "scaled_mathematical_execution": 1,
+    "mathematical_reruns": 0,
+    "old_or_peer_execute_import": 0,
+    "auxiliary_unit_prime_table_extensions": 0,
+    "lean": 0,
+    "scope": "Sole mirror certificate FIRST1 preserved unchanged. Other three components pure paper. Receipt and audit metadata operations are not mathematical runs."
+  },
+  "non_mathematical_metadata_correction": "Initial root receipt builder sought lower_num directly in a cell and stopped before creating a receipt; actual saved schema nests it in bounds. Only builder addressing corrected; frozen source/result/guard unchanged, no mathematical failure or rerun.",
+  "literature_access_history": "Normal verified TLS only. Dragnev www hostname failed without saved file or bypass; canonical author hostname succeeded. Three new PDFs archived, reused PDFs not redownloaded, no external code executed.",
+  "current_progress": {
+    "original_object": "Original B6/kappa3/s5, degree<3n, rank2n saturated S and whole-X D_A(X)",
+    "paid_analytic_rate_strict_lower": 12.62342839512558,
+    "analytic_theorems": "Same mirror fraction jointly pays Hardy, kappa and actual root-head denominator; every finite positive root distribution strictly improves; exact positive-choice joint variational limit, unique optimizer and strict improvement over splitting",
+    "exact_lift_theorems": "Original E-weighted head constraints determine every L-boundary; weak boundary has explicit second-harmonic sums; exact head-cardinal correction stays in original lattice",
+    "reference_jet_theorems": "Actual first residual completed from literal reference modp² carry and known head sums; invariant source-invisible K0 subform; conditional tau-dimensional quadratic gate with explicit source leading coefficient",
+    "arithmetic_theorems": "Fourth single-mask cubic Racah all leading profiles unit; distinct actual Phi Christoffel gate and short balanced4F3 moments; r>=4 specified ordinary-Racah shortcut obstruction; actual high determinant reciprocal fifth-power complementary identity",
+    "safe_arithmetic_upper_scale": 40.314517426059346,
+    "unproved": [
+      "Actual completed residual regular infinitely often",
+      "Actual off-support or high-compression determinant unit infinitely often",
+      "Original fixed fifth-power M5 infinite nonzero",
+      "Fixed rational source infinite success",
+      "Actual whole determinant infinite nonzero",
+      "Sufficient same-object strict analytic-arithmetic margin",
+      "New numerical zeta/L/Catalan irrationality or linear independence theorem"
+    ],
+    "goal_status": "active"
+  },
+  "freeze_policy": "One-way last root receipt pins11 new records,3 final peer receipts,3 new PDFs,3 reused PDFs and1 prior audit:21 physical pins. No mutable main, new audit output, self hash or future receipt pinned. Pending labels in immutable manuscripts externally superseded by completed reviews and receipts. Actual FULL selfread/JSONparse and all pins checked after writing; successful mathematical producers never rerun."
+}

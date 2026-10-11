@@ -1,0 +1,182 @@
+8                                             DAVID LOEFFLER
+
+
+                              2. Modular curves as algebraic curves
+2.1. Modular curves over C.
+Theorem 2.1.1.      (1) The C-points of a smooth connected projective algebraic curve over C are
+      canonically a Riemann surface; X 7→ X an .
+  (2) Every compact Riemann surface is X an for a unique X.
+  (3) There exists an equaivalence of categories
+              {loc. free sheaves of OX -modules}      ⇔   {loc. free sheaves of OX an -modules}.
+Remark. (1) is basically the implicit function theorem. We will later see a bit about the proof of (2).
+(3) is Serre’s GAGA theorem. The functors are on the one hand
+                                             F 7→ OX an ⊗OX F
+and on the other hand
+    F 7→ {subsheaf of F whose sections over U are elts. of F(U ) extending to merom. sections on X}.
+   We deduce that for every Γ there is an algebraic variety X(Γ)C and invertible sheaves ωk on it such
+that
+                                        Mk (Γ) = H 0 (X(Γ)C , ωk ).
+Here is an alternative (nicer) construction:
+Theorem 2.1.2. X(Γ)C ∼
+                                    L           
+                           = Proj     k≥0 Mk (Γ) .
+
+    (Cf. Hartshorne §II.2 for the definition of Proj of a graded ring.)
+Proof. One knows that for any Noetherian graded C-algebra S with S0 ∼
+                                                                    = C,
+                                  Proj(S) = Proj(Sn• )      for any n ≥ 1,
+              L
+where Sn• = k≥0 Snk .
+  Choose n to be the r from the last section, so
+                                            M
+                                     Sn• =       H 0 (X(Γ), ωn⊗k ).
+                                                k≥0
+
+We now quote a standard fact in algebraic geometry: invertible sheaves of positive degree on curves are
+ample, so their sections give an embedding into projective space.                                    
+Remark. In fact, the same argument can be used to prove Theorem 2.1.1 (ii): take any ample invertible
+sheaf on a Riemann surface, then its sections give an embedding into PN for N  0.
+2.2. Descending the base field.
+Question. Does there exist an algebraic curve over some number field K such that we get X(Γ)C by
+base extension? (a “descent” of X(Γ)C to K?)
+  Let’s think a bit about what this means.
+     • Clearly not all varieties over C are definable over number fields: consider the elliptic curve
+                                                                                            6192
+       y 2 = X 3 + X + π. This is not defined over any number field, as its j-invariant is 27π 2 +4 .
+                                                                   2     3
+     • Sometimes descents exist for nonobvious reasons: e.g. πY = X + X has a descent to Q, even
+       though its defining equations aren’t rational, because it’s isomorphic over C to Y 2 = X 3 + X.
+     • Even if a descent exists, it may not be unique: e.g. P1Q and {X 2 + Y 2 + 2Z 2 } ⊂ P1Q become
+       isomorphic over C.
+So we need to ask: is there a descent to a number field that means something?
+    The curves – fields correspondence. For any field k, there is a bijection
+    smooth connected curves/k      ↔     field extensions K/k of transcendence deg. 1 with k̄ ∩ K = k.
+In particular, for X/Q a curve,
+            models of X/k     ↔    subfields K of Rat(X) generating it /C and st. K ∩ k̄ = k.
+This gives a promising candidate: we can try to find a good subfield of Rat(X(Γ)) (=meromorphic wt.
+0 modular functions) and use this to descend to smaller fields.
+                                             MODULAR CURVES                                                 9
+
+
+   The following result hands us a Q-model of X0 (N ) on a plate: the model with function field Q(j(z), j(N z)).
+One can handle X1 (N ) and X(N ) similarly, but it won’t be very illuminating, and we have lost sight of
+a vital ingredient: the sheaf ω.
+Theorem 2.2.1. Let N ≥ 2. Then                                                                                  Lecture 4
+  (1) C(X0 (N )) = C(j(z), j(N z));
+  (2) The minimal polynomial of j(N z) over C(j(z)) has coefficients in Z[j(z)], and = ΦN (j(z), j(N z))
+      for ΦN a symmetric polynomial.
+  (3) If N = p is prime, then Φp (X, Y ) ≡ (Y p − X)(Y − X p ) (mod p).
+Proof. It is clear that j(N z) is a meromorphic function on X0 (N ), so C(j(z), j(N z)) ⊆ C(X0 (N )).
+Moreover, C(X0 (N )) has degree [PSL2 (Z) : Γ0 (N )] = [SL2 (Z) : Γ0 (N )] =: m over C(j).
+   Let γ1 , . . . , γm be such that SL2 (Z) = qi Γ0 (N )γi . Then the functions z 7→ j(N γi z) are all mero-
+morphic functions on H, and they are conjugate to j(N z) under an automorphism leaving j(z) fixed
+(namely z 7→ γi z). If we can show that they are distinct, then Galois theory implies that [C(j(z), j(N z)) :
+C(j(z))] ≥ 1, so (1) would follow.
+   Suppose j(N γi z) = j(N γj z) for all z ∈ H. Then
+                                                     −1 !
+                                  N 0         −1 N     0
+                              j           γ γ                 z = j(z)       ∀z ∈ H.
+                                   0 1 j i         0 1
+                                                                               −1
+                                                            N 0        −1 N      0
+By a question from the problem sheet we must have                  γ γ                ∈ SL2 (Z), which forces
+                                                             0 1 j i         0 1
+γj ∈ Γ0 (N )γi , so j = i. So the j(N γi z) are distinct and we are done.
+   Now (2). We have from (1) that the minimal polynomial is
+                                                       Y
+                                       ΦN (j(z), Y ) =    (Y − j(N γi z)).
+                                                        i
+The coefficients are symmetric polynomials in the functions j(N γi z); in particular they are holomorphic
+on H. Thus they are polynomials inP      j(z) (not just rational functions). So ΦN (X, Y ) ∈ C[X, Y ].
+   Now we know that j(z) = q −1 + n≥0 an q n with ai ∈ Z. Moreover, by writing down coset represen-
+tatives γi explicitly, we see that all j(N γi z) are of the form j az+b
+                                                                          
+                                                                       d    with ad = N . Hence j(N γi z) has
+                           1
+q-expansion in Z[ζN ]((q N )) for all i.
+   Hence the coefficients of ΦN (j, Y ) are polynomials in j whose q-expension lie in Z[ζN ]((q)). We claim
+                                                           Pk
+that this implies that they lie in Z[ζN ][j]. Let P = n=1 bn j n , and suppose that the q-expansion of
+P (j(z)) is in Z[ζN ]((q)). Looking at the lowest-order term, we see that bk ∈ Z[ζN ]. Induction now gives
+that all bn ∈ Z[ζN ].
+   Hence ΦN (X, Y ) ∈ Z[ζN ][X, Y ], say ΦN (X, Y ) = cr,s X r Y s . By construction, c0,m = 1 and cr,m = 0
+                                                         P
+for r > 0. Substitute the q-expansion. We get a grotesque mess of infinitely many linear equations in
+the cr,s with coefficients in Q. This has a unique solution in C, but it must be Galois invariant, so it
+lands in Q. But Q ∩ Z[ζN ] = Z.
+   Let us finally show that ΦN (X, Y ) is symmetric. We have ΦN (j(z), j(N z)) = 0 for all z, so
+                                1          N 
+                      ΦN j −          ,j −          =0       ⇔       ΦN (j(N z), j(z)) = 0
+                                Nz          Nz
+for all z. Thus ΦN (Y, X) is a constant multiple of ΦN (X, Y ), necessarily ±1. But if ΦN (Y, X) =
+−ΦN (X, Y ), then ΦN (X, X) = 0, contradicting the irreducibility of ΦN (j, Y ) ∈ C(j)[Y ]. This proves
+(2).
+   Finally, let’s do (3), which is included since (a) it is the key to understanding (mod p) reductions of
+modular curves, and (b) it’s very cool.
+   For N = p, we can write down the γi explicitly, and we have
+                                                                                    
+                                                                   z + i
+                        {j(N γi z) : 1 ≤ i ≤ m} = {j(pz)} ∪ j             :0≤i<p .
+                                                                     p
+Hence ΦN (j(z), Y ) has q-expansion
+                                                  p−1
+                                                  Y                   
+                                                             (z + i) 
+                                    (Y − j(pz))         Y −j             .
+                                                  i=0
+                                                                p
+10                                               DAVID LOEFFLER
+
+                                     (z+i) 
+As elements of Z[ζN ]((Y )), the j     p       are all congruent modulo the unique prime ideal ℘ above p in
+Z[ζN ], so this is equal to
+                                (Y − j(pz))(Y − j(z/p))p         (mod ℘Z[ζN ]((q)))
+                                          p      p
+                              =(Y − j(z) )(Y − j(z))           (mod ℘Z[ζN ]((q))).
+But this is in Z((q)), so the congruence is (mod pZ((z))). Since we can read off coefficients of ΦN (X, Y )
+from q-expansions, this implies
+                                 ΦN (X, Y ) ≡ (Y − X p )(Y p − X)        (mod p).
+                                                                                                             
+Remark.      (1) This does not mean that X0 (N )C is the projective curve defined by ΦN (X, Y ) = 0.
+       This curve is highly singular in general; the statement is that the smooth curve X0 (N )C is
+       birational to this curve.
+   (2) The coefficients of ΦN are huge. For instance, for N = 2 we have
+     ΦN (X, Y ) = X 3 + Y 3 − X 2 Y 2 + 1488XY (X + Y ) − 162000(X 2 + Y 2 )
+                                                + 40773375XY + 8748000000(X + Y ) − 157464000000000.
+      (3) Note that the modp curve defined by Φp is reducible: it is two intersecting copies of P1 .
+Definition. We define X0 (N ) as the unique smooth projective curve /Q with function field Q(X)[Y ]/ΦN (X, Y ).
+   This is obviously a rather natural model, and the map X0 (N )C → X0 (1)C = P1 descends to Q, which
+is a good sign!
+Theorem 2.2.2. There is a sheaf ωk,Q on X0 (N )Q whose base-extension to C is ωk .
+Proof. Since −1 ∈ Γ0 (N ), ωk,C is the zero sheaf for odd k, so we may assume k is even.
+  We saw above that ω2 ∼  = Ω1X0 (N )C (cusps). More generally, we can always write
+                                                         ⊗k
+                                         ω2k = Ω1X0 (N )C     (Dk ),
+where Dk is a Z-linear combination of the divisors (cusps), (elliptic points of order 2) and (elliptic points
+of order 3).
+    Claim: These three divisors are defined over Q.
+    For (cusps) this is easy, since the cusps of X0 (N ) are just the preimages of the Q-point ∞ of X0 (1)Q .
+For (elliptic points of order 2) this is slightly harder, since not all preimages of the order 2 elliptic point
+[i] ∈ X0 (1)Q are elliptic. But the elliptic points of X0 (N ) are exactly the preimages of [i] at which
+the projection map X0 (N ) → X0 (1) is ramified, and the ramification degree of a map defined over Q
+depends only on the Galois orbit, so we’re fine. Similarly for elliptic points of order 3.
+    Now, we obviously have
+                                            Ω1X0 (N )C = C ⊗ Ω1X0 (N )Q
+and we’ve seen that the Dk are defined over Q, so we can take
+                                                            ⊗k
+                                         ω2k,Q = Ω1X0 (N )Q        (Dk ).
+                                                                                                             
+Corollary 2.2.3. For any k ≥ 2 even and any N ≥ 1, the spaces Sk (Γ0 (N )), Mk (Γ0 (N )) have a basis
+consisting of forms whose q-expensions have coefficients in Q.
+Proof. We give the argument for Mk ; the case of Sk is similar.
+                                   MK (Γ0 (N )) = H 0 (X0 (N )C , ωk )
+                                                     = C ⊗ H 0 (X0 (N )Q , ωk,Q )
+                                                                                                   k
+I claim that the image of H 0 (X0 (N )Q , ωk,Q ) consists of functions with q-expansions in (2πi) 2 Q[[q]].
+                                                                                 k
+   Now any section of ωk,Q is an element of Q(X0 (N )Q ) multiplied by (dj)⊗ 2 , which is a meromorphic
+                         k
+                      ⊗
+section of Ω1X0 (N )Q 2 . It therefore suffices to calculate
+                                       dj = j 0 (z)dz = J 0 (q) · 2πiq · dz
+

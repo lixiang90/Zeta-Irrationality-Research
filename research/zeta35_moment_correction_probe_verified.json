@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "K=40; no asymptotic conclusion; content was not rebuilt",
+  "exact_full_entry_equalities": 146,
+  "baseline_ldl_positive_pivots": 37,
+  "outer_prime_checks": [
+    {
+      "p": 41,
+      "s0": 60,
+      "rank": 13,
+      "full_functional_matches": true
+    },
+    {
+      "p": 43,
+      "s0": 62,
+      "rank": 11,
+      "full_functional_matches": true
+    },
+    {
+      "p": 47,
+      "s0": 66,
+      "rank": 7,
+      "full_functional_matches": true
+    },
+    {
+      "p": 53,
+      "s0": 72,
+      "rank": 1,
+      "full_functional_matches": true
+    }
+  ],
+  "corrections": [
+    {
+      "primes": [
+        41
+      ],
+      "rank": 13,
+      "trace_square_interval": "[1.58409541045747347864104465897e-17 +/- 2.49e-47]",
+      "positive_definite_certified": true
+    },
+    {
+      "primes": [
+        43
+      ],
+      "rank": 11,
+      "trace_square_interval": "[7.37533901734558850191480337827e-32 +/- 1.07e-62]",
+      "positive_definite_certified": true
+    },
+    {
+      "primes": [
+        47
+      ],
+      "rank": 7,
+      "trace_square_interval": "[1.88945252727214633680298577302e-61 +/- 2.94e-91]",
+      "positive_definite_certified": true
+    },
+    {
+      "primes": [
+        53
+      ],
+      "rank": 1,
+      "trace_square_interval": "[6.39719185808757163853544530521e-111 +/- 1.10e-141]",
+      "positive_definite_certified": true
+    },
+    {
+      "primes": [
+        41,
+        43,
+        47,
+        53
+      ],
+      "rank": 13,
+      "trace_square_interval": "[1.58409562661846915502027286996e-17 +/- 7.97e-48]",
+      "positive_definite_certified": true
+    }
+  ]
+}

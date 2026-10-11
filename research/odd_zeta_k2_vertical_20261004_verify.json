@@ -1,0 +1,68 @@
+{
+  "status": "all fixed exact identities passed",
+  "scope": "Symbolic identities only; integral 4T=0, resolution existence, and all-divisorial char-2 tame are mathematical proofs in the report.",
+  "curve": "s**8 - 14*s**4 + 1",
+  "disc_Q": "89060441849856",
+  "disc_Q_factorization": {
+    "2": 40,
+    "3": 4
+  },
+  "integer_ring": "Z[zeta_8]",
+  "disc_K": "256",
+  "Phi8_mod_3_factors": [
+    "z**2 + z - 1",
+    "z**2 - z - 1"
+  ],
+  "pullback_functions": {
+    "uplus": "(s**2 + sqrt(2)*s + 1)/(s**2 - sqrt(2)*s + 1)",
+    "Fplus": "(sqrt(2)*Y*s - I*(s**2 + 1)*(-s**4 + 4*s**2 - 1))/(sqrt(2)*Y*s + I*(s**2 + 1)*(-s**4 + 4*s**2 - 1))",
+    "uminus": "(s**2 - sqrt(2)*I*s - 1)/(s**2 + sqrt(2)*I*s - 1)",
+    "Fminus": "(sqrt(2)*Y*s - (s**2 - 1)*(s**4 + 4*s**2 + 1))/(sqrt(2)*Y*s + (s**2 - 1)*(s**4 + 4*s**2 + 1))"
+  },
+  "V4_actions": {
+    "uplus": {
+      "sigma": "inverse",
+      "tau": "fixed"
+    },
+    "Fplus": {
+      "sigma": "inverse",
+      "tau": "fixed"
+    },
+    "uminus": {
+      "sigma": "inverse",
+      "tau": "inverse"
+    },
+    "Fminus": {
+      "sigma": "inverse",
+      "tau": "inverse"
+    }
+  },
+  "quotient_conic": "y^2 = r^2 - 16",
+  "conic_parameter": {
+    "r": "2*lam + 2/lam",
+    "y": "2*lam - 2/lam"
+  },
+  "p3_fiber": "Y = +/- (s^4 - 1)",
+  "p3_nodes": "s^4 = 1, Y = 0 (four distinct residue-field-rational nodes)",
+  "p3_exact_node_chart": {
+    "u": "Y - s**4 + 7",
+    "v": "Y + s**4 - 7",
+    "uv": "-48"
+  },
+  "p3_A": "-s**6 - 1",
+  "p3_B": "s**6 - 1",
+  "p3_generic_nonzero_degree_witnesses": {
+    "a_s_Y_on_each_component": 5,
+    "i_A_on_each_component": 6,
+    "B_on_each_component": 6,
+    "uplus_numerator_and_denominator": 2,
+    "uminus_numerator_and_denominator": 2
+  },
+  "p2_naive_fiber": "(Y - (s+1)^4)^2 = 0",
+  "specialization_s0_Y1": {
+    "uplus": "1",
+    "Fplus": "-1",
+    "uminus": "1",
+    "Fminus": "-1"
+  }
+}

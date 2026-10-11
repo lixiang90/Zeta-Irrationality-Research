@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-07",
+  "goal_status": "active",
+  "classification": "progress",
+  "previous_turn": {
+    "classification": "progress",
+    "scope": "Completed repository-maintenance subtask, fresh fetch and full tracked-checkout/connectivity evidence; no new mathematical theorem."
+  },
+  "conclusion": {
+    "new_numerical_irrationality_or_linear_independence_theorem": false,
+    "formal_lean_verification": false,
+    "strict_arithmetic_analytic_contradiction": false
+  },
+  "notes": [
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_zeta_projection_all_prime_budget_20261007.md",
+      "bytes": 14807,
+      "sha256": "b5026c5b88760dd16669c61b4914a0d7131ac4a04e86c85e2b7bf4460d6c7808",
+      "id": "zeta_all_prime",
+      "author": "global_content",
+      "mathematical_labels": "Z1–Z25",
+      "sections": 8,
+      "author_final_full_reread": true,
+      "independent_full_paper_review": "PASS",
+      "reviewers": [
+        "root"
+      ]
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_zeta_projection_real_energy_20261007.md",
+      "bytes": 19963,
+      "sha256": "539cfa44d8557868aa5ecb604aa20efd4c7d637b336b9dd3400ca5e9d0c6c4eb",
+      "id": "zeta_real_energy",
+      "author": "weighted_energy",
+      "mathematical_labels": "Z1–Z41",
+      "sections": 8,
+      "author_final_full_reread": true,
+      "independent_full_paper_review": "PASS",
+      "reviewers": [
+        "root"
+      ]
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_catalan_jet_boundary_evaluation_20261007.md",
+      "bytes": 13113,
+      "sha256": "683deb2ef0574bbe1cd56f398aeacf32a35b677ca5dd97926465b78e65f56c31",
+      "id": "catalan_boundary_evaluation",
+      "author": "boundary_evaluation",
+      "mathematical_labels": "O1–O26",
+      "sections": 7,
+      "author_final_full_reread": true,
+      "independent_full_paper_review": "PASS",
+      "reviewers": [
+        "root"
+      ]
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_catalan_all_even_jet_boundary_20261007.md",
+      "bytes": 8846,
+      "sha256": "0ea25a186279cf28f8d6042ddd3d9c71ad1aaf1f4a19ba99455a128dfaa32dd3",
+      "id": "catalan_all_even",
+      "author": "root",
+      "mathematical_labels": "A1–A15",
+      "sections": 5,
+      "author_final_full_reread": true,
+      "independent_full_paper_review": "PASS",
+      "reviewers": [
+        "global_content",
+        "boundary_evaluation"
+      ]
+    }
+  ],
+  "main_progress": {
+    "path": "E:\\kimi-build\\zeta5\\research\\cdt_odd_background_progress_20261006.md",
+    "bytes": 429226,
+    "sha256": "b66891f23e035d9346552cb4e9abda51df29afc4ace7435285019bda3fee7b5f",
+    "new_section": 210,
+    "line": 3591,
+    "root_read_entire_new_section": true,
+    "edit_scope": "append_only"
+  },
+  "pinned_direct_inputs": [
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_beta4_large_prime_tail_content_20261007.md",
+      "bytes": 12033,
+      "sha256": "4d1c7631eb8b5d8e966d6cbf5f1941bb1a1871ba7790741dd0366c162d81132c"
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_beta4_projection_exact_arithmetic_20261007.md",
+      "bytes": 18981,
+      "sha256": "53b425c356f83c23d9be021f70873b84c441eb8debbdac485c1cf4582228f277"
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_beta_single_period_confluent_integral_model_20261007.md",
+      "bytes": 11668,
+      "sha256": "a008a54d3307f151911ad0fc1dfa3587e05fd54eb89bd0172be364d162d64f2c"
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_catalan_higher_jet_holonomy_bridge_20261007.md",
+      "bytes": 19508,
+      "sha256": "fcd231cafab9f77703c3d9f32fb8c4bd003917605707aa5c440d16f7b35f2e54"
+    },
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\cdt_catalan_jet_pool_projection_rank_20261007.md",
+      "bytes": 15669,
+      "sha256": "4b9379c47a231857517fe3bd3bc9f5b1c8523ae86c742ad42236f0d7946122ae"
+    }
+  ],
+  "source_repository_input": {
+    "path": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\foundations.tex",
+    "bytes": 17469,
+    "sha256": "21633dce32e242555dde97f82f1124f3524641bb69a2f16b7485177b667cb738",
+    "reading_scope": {
+      "boundary_evaluation": "all 434 lines",
+      "root": "displayed lines126–168; targeted catalog/source searches only"
+    }
+  },
+  "source_revision_verified_previous_maintenance": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "new_math_round_git_mutations": 0,
+  "proof_results": {
+    "zeta_all_prime": "G det(q+TI) integral; C_r=2r+(r−1/2)(H_(r−1)−1)−1/[2(r+1)]. Includes all n, all primes and all powers.",
+    "zeta5_fee": "649/60",
+    "zeta7_fee": "15949/840",
+    "zeta_energy": "For each fixed r>=4: log|det E|<=K_r n²+O_r(nlogn), explicit equilibrium and all prefactors; K4>1/4,K6>403/200.",
+    "energy_decimals": "K4~1.8042664364,K6~6.6957717210; explanatory, not rigorous interval certificates.",
+    "omega_identity": "Omega=195/64 zeta4−91/96 zeta3 log2−4/3 A+1/8 B; A,B defined by absolutely convergent colored Li31 sums.",
+    "omega_approximation": "Omega_N=alpha_N+(3/32)H_N zeta3+(195/64)zeta4, 0<Omega_N−Omega<=4/3*2^(−N)/(N+1). Complete coefficient cap M_N=192*2^N*D_(2N−1)^3*D_N.",
+    "omega_strict_interval": {
+      "lower": "2.5366889785183897331535011770827664395080804102784254349",
+      "upper": "2.5366889785183897331535011770827664395080804102784254350",
+      "precision": "55 decimal places; exact rational outward rounding",
+      "N": 192,
+      "M": 256
+    },
+    "all_even": "Every positive even jet boundary is positive; normalized sequence is a strictly positive Stieltjes moment sequence. Same seed-coefficient kernel leaves at most8N+1 original filtered columns before further actual period identities.",
+    "parameter_function": "Real boundary parameter function has double poles at all positive odd integers, hence is not D-finite in z; fixed-jet space-variable germs remain separate."
+  },
+  "new_inline_math_runs": {
+    "global_content": {
+      "count": 2,
+      "scope": "Four fixed exact Fraction matrices: two n2 tail certificates and two larger first-layer zero-window probes."
+    },
+    "weighted_energy": {
+      "count": 3,
+      "scope": "Six fixed q+zeta matrices at220dps, exploratory only; r4/r6 double integrals at50dps, explanatory only; exact logarithm/endpoint certificate."
+    },
+    "boundary_evaluation": {
+      "count": 1,
+      "scope": "N192/M256 exact Fraction rational interval;80/110dps independent u integrals; exact parity check at cutoff32."
+    },
+    "root": {
+      "count": 3,
+      "scope": "Independent exact n2 r4/r6 q and monic coefficients; independent complete N192/M256 rational interval using finite binomial JU and polynomial JV; independent m2/3/5/7 logarithm bounds and four endpoint lower bounds."
+    },
+    "total": 9,
+    "not_independently_recomputed": [
+      "Two larger zero-window probes",
+      "Six220dps fixed-scale determinant probes",
+      "Two50dps energy double integrals",
+      "Author80/110dps u-integral evaluations",
+      "Cutoff32 parity finite checks"
+    ],
+    "new_mathematical_producer_files": 0,
+    "old_mathematical_script_runs": 0,
+    "old_guard_runs": 0,
+    "old_prime_table_runs": 0,
+    "lean_runs": 0,
+    "pslq_runs": 0
+  },
+  "literature": {
+    "new_pdf_reads": 0,
+    "distinct_pdf_pages_read": 0,
+    "new_pdf_downloads": 0,
+    "primary_web_read": {
+      "url": "https://arxiv.org/html/2510.04156v1#S2",
+      "scope": "Root rechecked section2.1 / Theorem2.1 with complete displayed conditions; not a full paper read."
+    }
+  },
+  "local_links": {
+    "scope": "Four new notes and entire new section210",
+    "count": 17,
+    "all_exist_after_manifest_write": true
+  },
+  "previous_manifest_unchanged": {
+    "path": "E:\\kimi-build\\zeta5\\literature\\manifest_cdt_beta4_global_content_weighted_energy_20261007.json",
+    "bytes": 7991,
+    "sha256": "bc71052d00ec81ecd05ac51c56cbc233607658eb6b09b3471462b822032c894a"
+  },
+  "remaining_requirements": [
+    "New numerical irrationality/LI conclusion",
+    "Adequate negative real bound and infinite nonvanishing for current zeta model, or a different actual construction",
+    "Actual boundary-period relations or rebuilt pool with fully paid arithmetic and analytic bounds",
+    "Rational overconvergent space-variable germs, actual independent rank, complete denominator types and common meromorphic map for numerical CDT application"
+  ]
+}

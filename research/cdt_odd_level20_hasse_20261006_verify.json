@@ -1,0 +1,331 @@
+{
+  "status": "exact_level20_hasse_checks_passed",
+  "checks": [
+    "p7_coordinate_inverse",
+    "p7_global_hasse_degree_jets",
+    "p7_hasse_exact_degree",
+    "p7_hasse_multiplicities_at_most_two",
+    "p7_odd_hasse_support_on_branches",
+    "p7_radical_degree_bound",
+    "p7_log_derivative_radical",
+    "p7_whole_E_source_packet",
+    "p7_whole_F_source_packet",
+    "p7_whole_E_source_packet_mod_p_cubed",
+    "p7_whole_F_source_packet_mod_p_cubed",
+    "p7_integer_coordinate_Frobenius_packet",
+    "p7_embedding-1_first_order_hasse_relation",
+    "p7_embedding-1_actual_highest_packet",
+    "p7_embedding-1_highest_layer_removed",
+    "p7_embedding-1_differentiated_relation",
+    "p7_embedding-1_polynomial_operator_degree",
+    "p7_embedding-1_residueNone_actual_lattice_rank_bound",
+    "p7_embedding-1_residueNone_explicit_kernel_gain",
+    "p7_embedding1_first_order_hasse_relation",
+    "p7_embedding1_actual_highest_packet",
+    "p7_embedding1_highest_layer_removed",
+    "p7_embedding1_differentiated_relation",
+    "p7_embedding1_polynomial_operator_degree",
+    "p7_embedding1_residueNone_actual_lattice_rank_bound",
+    "p7_embedding1_residueNone_explicit_kernel_gain",
+    "p11_coordinate_inverse",
+    "p11_global_hasse_degree_jets",
+    "p11_hasse_exact_degree",
+    "p11_hasse_multiplicities_at_most_two",
+    "p11_odd_hasse_support_on_branches",
+    "p11_radical_degree_bound",
+    "p11_log_derivative_radical",
+    "p11_whole_E_source_packet",
+    "p11_whole_F_source_packet",
+    "p11_whole_E_source_packet_mod_p_cubed",
+    "p11_whole_F_source_packet_mod_p_cubed",
+    "p11_integer_coordinate_Frobenius_packet",
+    "p11_embedding-1_first_order_hasse_relation",
+    "p11_embedding-1_actual_highest_packet",
+    "p11_embedding-1_highest_layer_removed",
+    "p11_embedding-1_differentiated_relation",
+    "p11_embedding-1_polynomial_operator_degree",
+    "p11_embedding-1_residue4_actual_lattice_rank_bound",
+    "p11_embedding-1_residue4_explicit_kernel_gain",
+    "p11_embedding-1_residue7_actual_lattice_rank_bound",
+    "p11_embedding-1_residue7_explicit_kernel_gain",
+    "p11_embedding1_first_order_hasse_relation",
+    "p11_embedding1_actual_highest_packet",
+    "p11_embedding1_highest_layer_removed",
+    "p11_embedding1_differentiated_relation",
+    "p11_embedding1_polynomial_operator_degree",
+    "p11_embedding1_residue4_actual_lattice_rank_bound",
+    "p11_embedding1_residue4_explicit_kernel_gain",
+    "p11_embedding1_residue7_actual_lattice_rank_bound",
+    "p11_embedding1_residue7_explicit_kernel_gain",
+    "p13_coordinate_inverse",
+    "p13_global_hasse_degree_jets",
+    "p13_hasse_exact_degree",
+    "p13_hasse_multiplicities_at_most_two",
+    "p13_odd_hasse_support_on_branches",
+    "p13_radical_degree_bound",
+    "p13_log_derivative_radical",
+    "p13_whole_E_source_packet",
+    "p13_whole_F_source_packet",
+    "p13_whole_E_source_packet_mod_p_cubed",
+    "p13_whole_F_source_packet_mod_p_cubed",
+    "p13_integer_coordinate_Frobenius_packet",
+    "p13_embedding-1_first_order_hasse_relation",
+    "p13_embedding-1_actual_highest_packet",
+    "p13_embedding-1_highest_layer_removed",
+    "p13_embedding-1_differentiated_relation",
+    "p13_embedding-1_polynomial_operator_degree",
+    "p13_embedding-1_residueNone_actual_lattice_rank_bound",
+    "p13_embedding-1_residueNone_explicit_kernel_gain",
+    "p13_embedding1_first_order_hasse_relation",
+    "p13_embedding1_actual_highest_packet",
+    "p13_embedding1_highest_layer_removed",
+    "p13_embedding1_differentiated_relation",
+    "p13_embedding1_polynomial_operator_degree",
+    "p13_embedding1_residueNone_actual_lattice_rank_bound",
+    "p13_embedding1_residueNone_explicit_kernel_gain",
+    "local_lattice_dimension_D20_delta15",
+    "local_lattice_dimension_D30_delta21",
+    "local_lattice_dimension_D40_delta24"
+  ],
+  "fixed_samples": [
+    {
+      "prime": 7,
+      "truncation_exclusive": 49,
+      "hasse_polynomial": [
+        1,
+        4,
+        2,
+        3,
+        4,
+        2,
+        3,
+        6,
+        3,
+        1,
+        5,
+        5,
+        6,
+        0,
+        5,
+        2,
+        6,
+        5,
+        1
+      ],
+      "hasse_degree": 18,
+      "radical_degree": 9,
+      "odd_branch_factor": "1",
+      "operators": [
+        {
+          "embedding_sign": -1,
+          "operator_degree": 13,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": null,
+              "residue_degree": 2,
+              "polynomial_degree": 15,
+              "prefix_length": 49,
+              "ambient_dimension": 48,
+              "actual_rank": 40,
+              "proven_rank_bound": 42,
+              "actual_kernel_dimension": 8
+            }
+          ]
+        },
+        {
+          "embedding_sign": 1,
+          "operator_degree": 13,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": null,
+              "residue_degree": 2,
+              "polynomial_degree": 15,
+              "prefix_length": 49,
+              "ambient_dimension": 48,
+              "actual_rank": 40,
+              "proven_rank_bound": 42,
+              "actual_kernel_dimension": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 11,
+      "truncation_exclusive": 121,
+      "hasse_polynomial": [
+        1,
+        4,
+        5,
+        3,
+        7,
+        7,
+        3,
+        5,
+        1,
+        1,
+        1,
+        7,
+        9,
+        0,
+        9,
+        6,
+        7,
+        2,
+        6,
+        9,
+        10,
+        0,
+        8,
+        8,
+        6,
+        8,
+        6,
+        5,
+        3,
+        7,
+        1
+      ],
+      "hasse_degree": 30,
+      "radical_degree": 17,
+      "odd_branch_factor": "t**4 - 2*t**3 - t**2 + 2*t - 2",
+      "operators": [
+        {
+          "embedding_sign": -1,
+          "operator_degree": 21,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": 4,
+              "residue_degree": 1,
+              "polynomial_degree": 23,
+              "prefix_length": 121,
+              "ambient_dimension": 72,
+              "actual_rank": 57,
+              "proven_rank_bound": 66,
+              "actual_kernel_dimension": 15
+            },
+            {
+              "sqrt5_residue": 7,
+              "residue_degree": 1,
+              "polynomial_degree": 23,
+              "prefix_length": 121,
+              "ambient_dimension": 72,
+              "actual_rank": 57,
+              "proven_rank_bound": 66,
+              "actual_kernel_dimension": 15
+            }
+          ]
+        },
+        {
+          "embedding_sign": 1,
+          "operator_degree": 21,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": 4,
+              "residue_degree": 1,
+              "polynomial_degree": 23,
+              "prefix_length": 121,
+              "ambient_dimension": 72,
+              "actual_rank": 57,
+              "proven_rank_bound": 66,
+              "actual_kernel_dimension": 15
+            },
+            {
+              "sqrt5_residue": 7,
+              "residue_degree": 1,
+              "polynomial_degree": 23,
+              "prefix_length": 121,
+              "ambient_dimension": 72,
+              "actual_rank": 57,
+              "proven_rank_bound": 66,
+              "actual_kernel_dimension": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 13,
+      "truncation_exclusive": 169,
+      "hasse_polynomial": [
+        1,
+        4,
+        3,
+        2,
+        12,
+        10,
+        5,
+        12,
+        0,
+        12,
+        2,
+        3,
+        7,
+        9,
+        0,
+        10,
+        12,
+        5,
+        6,
+        1,
+        7,
+        11,
+        11,
+        0,
+        1,
+        0,
+        11,
+        4,
+        6,
+        11,
+        11,
+        2,
+        5,
+        4,
+        0,
+        8,
+        1
+      ],
+      "hasse_degree": 36,
+      "radical_degree": 20,
+      "odd_branch_factor": "t**4 - 2*t**3 + 5*t**2 - 4*t - 4",
+      "operators": [
+        {
+          "embedding_sign": -1,
+          "operator_degree": 24,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": null,
+              "residue_degree": 2,
+              "polynomial_degree": 26,
+              "prefix_length": 169,
+              "ambient_dimension": 81,
+              "actual_rank": 67,
+              "proven_rank_bound": 75,
+              "actual_kernel_dimension": 14
+            }
+          ]
+        },
+        {
+          "embedding_sign": 1,
+          "operator_degree": 24,
+          "local_lattice_samples": [
+            {
+              "sqrt5_residue": null,
+              "residue_degree": 2,
+              "polynomial_degree": 26,
+              "prefix_length": 169,
+              "ambient_dimension": 81,
+              "actual_rank": 67,
+              "proven_rank_bound": 75,
+              "actual_kernel_dimension": 14
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "source_sha256": "c3f0e3a736962dafbbd6f54885a337f3b623928a86c17f8dac1ae1bcff3eee4a",
+  "report_sha256": "2064be746279696499aadfa1146031bf405dc8f4bb2ba8a946f431f7fdd18c28",
+  "proof_scope": "Finite exact samples supplement global Hasse divisor and packet proofs. Local highest-layer lattice gain only; no revised global holonomy tau and no numerical irrationality theorem."
+}

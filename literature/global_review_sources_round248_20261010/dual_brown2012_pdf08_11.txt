@@ -1,0 +1,187 @@
+956                                               FRANCIS BROWN
+
+
+ I3: Reflection formulae. For all a1 , . . . , an ∈ {0, 1},
+ I m (0; a1 , . . . , an ; 1) = (−1)n I m (1; an , . . . , a1 ; 0) = I m (0; 1 − an , . . . , 1 − a1 ; 1).
+The motivic multiple zeta values of [5] are, up to a possible sign, the images of
+(2.16) under the map π : H → A which sends ζ m (2) to zero. We have shown
+(see (2.5), (2.10))
+       Theorem 2.4. The coaction for the motivic multiple zeta values
+(2.17)                                          ∆ : H → A ⊗Q H
+is given by the same formula as [5, Th. 1.2], with the factors interchanged. In
+particular, if a0 , . . . , an+1 ∈ {0, 1}, then ∆ I m (a0 ; a1 , . . . , an ; an+1 ) equals
+(2.18)
+       X                 k
+                        Y                                                   
+                    π             I m (aip ; aip +1 , . . , aip+1 −1 ; aip+1 ) ⊗ I m (a0 ; ai1 , . . , aik ; an+1 ),
+ i0 <i1 <...<ik+1         p=0
+ i0 =0,ik+1 =n+1
+
+
+where the first sum is also over all values of k for 0 ≤ k ≤ n.
+       Lastly, the period map per : H → R can be computed as follows:
+                              Ä                                    ä   Z an+1
+                        per I m (a0 ; a1 , . . . , an ; an+1 ) =                 ωa1 . . . ωan ,
+                                                                        a0
+
+where ω0 = dtt , ω1 = 1−tdt
+                            , and the right-hand side is a shuffle-regularized iter-
+ated integral (e.g., [4] §5.16). Note that the sign of ω1 varies in the literature.
+Here, the signs are chosen such that the period of the motivic multiple zeta
+values are
+                          Ä                        ä
+(2.19)              per ζ m (n1 , . . . , nr ) = ζ(n1 , . . . , nr )             when nr ≥ 2.
+
+       2.5. Structure of HMT+ . The structure of MT (Z) is determined by the
+data                                                           ®
+                                                           ∼       Q    if n ≥ 3 is odd,
+                        Ext1MT (Z) (Q(0), Q(n))            =
+                                                                   0    otherwise
+and the fact that the Ext2 ’s vanish. Thus MT (Z) is equivalent to the cate-
+gory of representations of a group scheme GMT over Q, which is a semi-direct
+product
+                               GMT ∼= GU o Gm ,
+where GU is a prounipotent group whose Lie algebra Lie GU is isomorphic to the
+free Lie algebra with one generator σ2i+1 in every degree −2i − 1 for i ≥ 1. Let
+AMT be the graded ring of functions on GU , where the grading is with respect
+to the action of Gm . Since the degrees of the σ2i+1 tend to minus infinity,
+no information is lost in passing to the graded version (Lie GU )gr of Lie GU
+(Proposition 2.2 (ii) of [4]). By the above, AMT is noncanonically isomorphic
+                             MIXED TATE MOTIVES OVER Z                                   957
+
+
+to the graded dual of the universal envelopping algebra of (Lie GU )gr over Q.
+We shall denote this by
+                                   U 0 = Qhf3 , f5 , . . .i.
+Its underlying vector space has a basis consisting of noncommutative words in
+symbols f2i+1 in degree 2i + 1, and the multiplication is given by the shuffle
+product x . The coproduct is given by the following deconcatenation formula:
+(2.20)                       ∆ : U 0 → U 0 ⊗Q U 0
+                                           n
+                                           X
+                     ∆(fi1 . . . fin ) =         fi1 . . . fik ⊗ fik+1 . . . fin
+                                           k=0
+
+when n ≥ 0. Let us consider the following universal comodule:
+(2.21)                        U = Qhf3 , f5 , . . .i ⊗Q Q[f2 ],
+where f2 is of degree 2, commutes with all generators f2n+1 of odd degree, and
+the coaction ∆ : U → U 0 ⊗Q U satisfies ∆(f2 ) = 1 ⊗ f2 . The degree will also be
+referred to as the weight. By the above discussion, there exists a noncanonical
+isomorphism
+(2.22)                                 φ : HMT+ ∼
+                                                =U
+of algebra comodules which sends f2 to f2 . These notations are useful for
+explicit computations, for which it can be convenient to vary the choice of
+map φ (see [2]).
+    Lemma 2.5. Let dk = dim Uk , where Uk is the graded piece of U of
+weight k. Then
+                                 X                      1
+(2.23)                                 dk tk =                 .
+                                 k≥0
+                                                   1 − t2 − t3
+
+In particular, d0 = 1, d1 = 0, d2 = 1, and dk = dk−2 + dk−3 for k ≥ 3.
+                                                                        1           1−t  2
+     Proof. The Poincaré series of Qhf3 , f5 , . . .i is given by 1−t3 −t5 −... = 1−t2 −t3 .
+                                           1
+If we multiply by the Poincaré series 1−t   2 for Q[f2 ], we obtain (2.23).              
+    Definition 2.6. It will be convenient to define an element f2n ∈ U2n , for
+n ≥ 2, by
+                                           f2n = bn f2n ,
+where bn ∈ Q× is the constant in Euler’s relation ζ(2n) = bn ζ(2)n .
+     Let us denote the Lie coalgebra of indecomposable elements of U 0 by
+                                                    0
+                                                   U>0
+(2.24)                                 L=         0 U0 ,
+                                                 U>0  >0
+958                                FRANCIS BROWN
+
+                              0 → L
+and for any N ≥ 1, let πN : U>0       N denote the quotient map followed by
+projection onto the graded part of weight N . For any r ≥ 1, consider the map
+(2.25)                       D2r+1 : U −→ L2r+1 ⊗Q U
+defined by composing ∆0 = ∆ − 1 ⊗ id with π2r+1 ⊗ id. Let
+                                           M
+(2.26)                        D<N =               D2i+1 .
+                                       1<2i+1<N
+
+      Lemma 2.7. (ker D<N ) ∩ UN = Q fN .
+      Proof. Every element ξ ∈ UN can be uniquely written in the form
+                                    X
+                           ξ=               f2r+1 vr + cfN ,
+                                1<2r+1<N
+
+where c ∈ Q, vr ∈ UN −2r−1 , and the multiplication on the right-hand side is
+the concatenation product. The graded dual of L is isomorphic to the free
+                              ∨
+Lie algebra with generators f2r+1 in degrees −2r − 1 dual to the f2r+1 . Each
+            ∨                   ∨
+element f2r+1 defines a map f2r+1    : L → Q which sends f2r+1 to 1. By
+definition,
+                            ∨
+                         (f2r+1 ⊗ id) ◦ D2r+1 ξ = vr
+for all 1 < 2r + 1 < N . It follows immediately that if ξ is in the kernel of D<N ,
+then it is of the form ξ = cfN . Since D<N fN = 0, the result follows.          
+
+                      3. Cogenerators of the coalgebra
+      3.1. Infinitesimal coaction. In order to simplify the formula (2.18), let
+                                           A>0
+(3.1)                               L=
+                                          A>0 A>0
+denote the Lie coalgebra of A = H/ζ m (2)H, and let π : H>0 → L denote
+the quotient map. Since L inherits a weight grading from H, let LN denote
+the elements of L of homogeneous weight N , and let pN : L → LN be the
+projection map.
+    Definition 3.1. By analogy with (2.25) and (2.26), for every r ≥ 1, define
+a map
+                        D2r+1 : H −→ L2r+1 ⊗Q H
+to be (π ⊗ id) ◦ ∆0 , where ∆0 = ∆ − 1 ⊗ id, followed by p2r+1 ⊗ id. Let
+                                           M
+(3.2)                         D<N =               D2r+1 .
+                                       3≤2r+1<N
+
+     It follows from this definition that the maps Dn , where n = 2r + 1, are
+derivations:
+(3.3)     Dn (ξ1 ξ2 ) = (1 ⊗ ξ1 )Dn (ξ2 ) + (1 ⊗ ξ2 )Dn (ξ1 )   for all ξ1 , ξ2 ∈ H.
+                               MIXED TATE MOTIVES OVER Z                                           959
+
+
+By (2.18), the action of Dn on I m (a0 ; a1 , . . . , aN ; aN +1 ) is given by
+        N
+        X −n    Ä                                      ä
+(3.4)          π I m (ap ; ap+1 , . . , ap+n ; ap+n+1 )
+         p=0
+                                             ⊗ I m (a0 ; a1 , . . , ap , ap+n+1 , . . , aN ; aN +1 ).
+By analogy with the Connes-Kreimer coproduct, we call the sequence of consec-
+utive elements (ap ; ap+1 , . . . , ap+n ; ap+n+1 ) on the left a subsequence of length n
+of the original sequence and (a0 ; a1 , . . , ap , ap+n+1 , . . , aN ; aN +1 ) will be called
+the quotient sequence.
+     3.2. Zeta elements and kernel of D<N .
+     Lemma 3.2. Let n ≥ 1. The zeta element ζ m (2n + 1) ∈ H is nonzero and
+satisfies
+           ∆ ζ m (2n + 1) = 1 ⊗ ζ m (2n + 1) + π(ζ m (2n + 1)) ⊗ 1.
+Furthermore, Euler’s relation ζ(2n) = bn ζ(2)n , where bn ∈ Q, holds for the
+ζ m ’s:
+(3.5)                                ζ m (2n) = bn ζ m (2)n .
+      Proof. Consider ζ m (N ) = I m (0; 10N −1 ; 1), where 10N −1 denotes a 1 fol-
+lowed by N − 1 zeros. By relation I0, its strict subsequences of length at
+least one are killed by I m , and so ∆ ζ m (N ) = 1 ⊗ ζ m (N ) + π(ζ m (N )) ⊗ 1 by
+(3.4). From the structure of U, it follows that an isomorphism φ (2.22) maps
+ζ m (2n + 1) to αn f2n+1 for some αn ∈ Q and ζ m (2n) to βn f2n for some βn ∈ Q.
+Taking the period map yields αn 6= 0, and βn = ζ(2n)ζ(2)−n = bn .                 
+
+     We can therefore normalize our choice of isomorphism (2.22) so that
+                                                          φ
+                                      H ⊆ HMT+ −→ U
+maps ζ m (2n + 1) to f2n+1 . By Definition 2.6, we can therefore write
+(3.6)                      φ(ζ m (N )) = fN        for all      N ≥ 2.
+In particular, ζ m (2) and ζ m (2n + 1), for n ≥ 1, are algebraically independent
+in H.
+    Theorem 3.3. Let N ≥ 2. The kernel of D<N is one-dimensional in
+weight N :
+                     ker D<N ∩ HN = Q ζ m (N ).
+     Proof. This follows from Lemma 2.7, via such an isomorphism φ.                                     
+
+    Note that the map L → L of Lie coalgebras induced by the inclusion
+A ⊆ AMT ∼ = U 0 is also injective, by standard results on Hopf algebras.
+

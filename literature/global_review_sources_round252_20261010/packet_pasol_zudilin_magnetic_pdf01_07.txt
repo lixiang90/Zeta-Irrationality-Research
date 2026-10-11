@@ -1,0 +1,300 @@
+PHYSICAL PDF PAGE 1
+               MAGNETIC (QUASI-)MODULAR FORMS
+
+
+                                VICENT¸IU PAS¸OL AND WADIM ZUDILIN
+
+
+                  Abstract. A (folklore?)  conjecture states that no holomorphic modular form               P∞
+                    F(τ)           P∞2022                =   n=1 anqn ∈qZ[[q]] exists, where q = e2πiτ, such that its anti-derivative
+                       n=1 anqn/n has integral coeﬃcients in the q-expansion. A recent observation
+                          of Broadhurst and Zudilin, rigorously accomplished by Li and Neururer, led to
+                     examples of meromorphic modular forms possessing the integrality property. InFeb
+                          this note we investigate the arithmetic phenomenon from a systematic perspective
+3                   and discuss related transcendental extensions of the diﬀerentially closed ring of
+                      quasi-modular forms.
+
+
+
+                                                   1. Introduction
+
+           One of the arithmetic features of modular and quasi-modular forms is integrality[math.NT]              of the coeﬃcients in their Fourier expansions. This is trivially seen on the generators
+        X∞  nqn      X∞  n3qn      X∞  n5qn
+            E2(τ) = 1−24    1        E4(τ) = 1+240    1        E6(τ) = 1−504    1
+                           n=1                         n=1                         n=1                         −qn,                  −qn,                −qn
+                                                                                                (1)
+              of the ring of quasi-modular forms, as well as on the ‘discriminant’ cusp form
+                Y∞           E34      6                              ∆(τ) = q    (1     =  −E2 ,                                          −qm)24     1728
+                                       m=1
+           where q = q(τ) = e2πiτ for τ from the upper half-plane Im τ > 0. All q-expansions
+            above converge for q inside the unit disk, and in fact have polynomial growth of
+            the coeﬃcients. A more suprising fact, brought to the mathematical community by
+          Ramanujan [21] more than 100 years ago, is that the three Eisenstein series in (1)arXiv:2009.14609v3
+               satisfy the algebraic system of diﬀerential equations
+                        1                   1                    1
+                                       2                 δE2 = 12(E2                          −E4),  δE4 = 3(E2E4 −E6),  δE6 = 2(E2E6 −E24),    (2)
+           where
+                                             1  d     d
+                                             δ =     = q                                             2πi dτ     dq.
+           Ramanujan’s notation for the Eisenstein series (1) was P(q), Q(q), R(q), respectively,
+             as he mainly viewed them as functions of the q-nome. Since the functions E2, E4, E6
+             are algebraically independent over C, and even over C(q) and over C(τ, q) [19, 22],
+
+                 Date: 8 October 2020. Revised: 3 February 2022.
+                2020 Mathematics Subject Classiﬁcation. 11F33 (Primary), 11F11, 11F32, 11F37, 13N99.
+              Key words and phrases. Ramanujan’s mathematics; modular forms; quasi-modular forms;
+              Shimura–Borcherds lift.
+                                                            1
+
+PHYSICAL PDF PAGE 2
+2                      VICENT¸IU PAS¸OL AND WADIM ZUDILIN
+
+this ﬁne structure gives rise to remarkable applications in transcendental number
+theory to the values of quasi-modular forms. One particular notable example in this
+direction is a famous theorem of Nesterenko [20], which states that, given a complex
+number q with 0 < |q| < 1, at least three of the four quantities q, P(q), Q(q), R(q)are algebraically independent over Q.
+  Establishing transformation properties of a double integral, which characterises
+the output voltage of a Hall plate aﬀected by the shape of the plates and sizes of the
+contacts and which is — for this reason — dubbed magnetic, in the work [5] Broad-
+hurst and the second author came across a meromorphic modular form (on a con-
+gruence subgroup), whose anti-derivative had integral coeﬃcients in its q-expansion
+and was not a modular object itself. This arithmetic observation was subsequently
+proven by Li and Neururer in [17] who also noticed that the formal anti-derivative
+                                    Z q                    ∆     ∆ dq
+                                  ˜F4a = δ−1    =
+                             E24        0 E24  q
+of the meromorphic modular form F4a(τ) = ∆/E24 has integer coeﬃcients in its q-
+expansion. (They proved a slightly weaker version about the integrality of the anti-
+derivative of 64∆/E24.) The function F4a(τ) has weight 4 and possesses the double
+pole at τ = ρ = e2πi/3 in the fundamental domain, and a simple analysis reveals
+that it is not the image under δ of an element from the (diﬀerentially closed) ﬁeld
+C(q, E2, E4, E6). This implies that the anti-derivative ˜F4a = δ−1F4a is transcendental
+over the ﬁeld, hence the addition of ˜F4a to the latter increases the transcendence
+degree by 1.  Following the background in [5], Li and Neururer coined the name
+‘magnetic modular form’ to a meromorphic modular form like F4a. A principal goal
+of this note is to investigate the ‘magnetic modular’ phenomenon further and to give
+more examples of those.
+
+Theorem 1. The meromorphic modular forms F4a(τ) = ∆/E24 and F4b(τ) = E4∆/E26
+of weight 4 are magnetic. In other words, their anti-derivatives δ−1F4a and δ−1F4b
+have integral q-expansions.
+
+Theorem 2. The meromorphic modular form F6(τ) = E6∆/E34 of weight 6 is doubly
+magnetic: its ﬁrst and second anti-derivatives δ−1F6 and δ−2F6 have integral q-ex-
+pansions.
+
+  There are other instances in the literature of related integrality phenomena; how-
+ever the existing methods of proofs seem to be quite diﬀerent from what we use
+below. Investigating the solution space of the linear diﬀerential equation
+                         + 1         k(k + 1)
+        Dkf(τ) = 0,  where Dk = δ2        E2(τ)δ +         δE2(τ),                     −k 6             12
+in [13] Honda and Kaneko found that, when k = 4, it is spanned by E4 and
+                                    ∆5/6
+                             ˜E4 = E4 · δ−1  E24    ∈q5/6Q[[q]].
+They numerically observed and proved some related results about the p-integrality
+of ˜E4 for primes p ≡1 mod 3. This theme was later analysed and generalised in
+
+PHYSICAL PDF PAGE 3
+                   MAGNETIC (QUASI-)MODULAR FORMS                         3
+
+[2, 11, 12]. Bringing some parallel to that investigations, it is easy to check that the
+functions E4 and E4 δ−1(∆/E24) (both with integer coeﬃcients in their q-expansions!)
+span the solution space of the diﬀerential equation Df = 0, where
+
+                    1                             1    δE4
+   D = δ2 −E2δ + 36  7E22 −5E4 −2E2E6E4  = D5 + 6  E2 E4 −5δE2   .
+At the same time, the only quasi-modular solutions of D5y = 0 are spanned by δE4
+(see [15, Theorem 2]).
+ A somewhat diﬀerent account of strong divisibility of the coeﬃcients of modular
+forms shows up in the context of arithmetic properties of traces of singular moduli
+initiated in Zagier’s work [23]. As this topic remains quite popular, we only list
+a selection of contributions [1, 3, 8, 9, 10, 14]. The methods involved make use
+of the Shimura correspondence, which is also the main ingredient of our proof of
+Theorems 1 and 2.
+
+                        2. Magnetic quasi-modular forms
+
+  In this part we formalise the notion of magnetic forms and give results, which
+may be thought of as generalisations of Theorems 1 and 2 but use the theorems as
+principal steps.
+  Consider the family
+                            fa,b,c = Ea2Eb4Ec6,  where a, b, c ∈Z, a ≥0,
+of meromorphic quasi-modular forms. Their q-expansions all belong to Z[[q]]. For
+k ∈Z even, denote by Wk the Q-vector space in Q ⊗Z Z[[q]] (the q-series f ∈Q[[q]]
+with Nf ∈Z[[q]] for some N ∈Z>0) spanned by the q-expansions of the forms fa,b,cof weight k, that is, with 2a + 4b + 6c = k. Because
+                k             δfa,b,c =  −a fa+1,b,c                                                  (3)                  12    −a12fa−1,b+1,c −b3fa,b−1,c+1 −c2fa,b+2,c−1,
+the diﬀerential operator δ deﬁnes a well deﬁned map Wk →Wk+2.0   Clearly, the
+                                                                  k+2 the cuspidalimage δWk in Wk+2 is a Q-subspace in Q ⊗Z qZ[[q]]; we will call Wsubspace of Wk+2, that is, the set of all elements in Wk+2 with vanishing constant
+term in their q-expansion.
+                                              0 is magnetic if its formal anti-derivative                                           k We will say that an element v ∈WZ q
+                                  dq
+                       δ−1v =    v              qZ[[q]].                                          0    q ∈Q ⊗Z
+We also call it strongly magnetic if δ−1v ∈qZ[[q]]. With the magnetic property, wecan associate the equivalence                                relation ∼on Wk writing v ∼w  if and only if the                             0                     and is magnetic.                            kdiﬀerence v −w is in W                               0  Let Vk (respectively, V k ) be the Q-vector subspace of Wk (respectively, of Wk0 )
+generated by the forms fa,b,c with a ∈{0, 1, . . ., k −2}. According to relation (3)this range of a makes the subspace Vk stable under the δ-diﬀerentiation. Notice that
+          0 .         4δV2 ⊆V
+Theorem 3. Any element of V 40 is magnetic.
+
+PHYSICAL PDF PAGE 4
+4                      VICENT¸IU PAS¸OL AND WADIM ZUDILIN
+
+Remark 1. It seems that the elements of W40 with a > 2 (that is, outside the
+range assumed in V 40 ) with the magnetic property are those that come as linear
+combinations of δ-derivatives of elements from W2. In other words, we expect that
+the choice of V 40 in the theorem as a magnetic space of weight 4 to be sharp.
+
+Derivation of Theorem 3 from Theorem 1. It follows from Theorem 1 that the forms
+          f0,1,0 −f0,−2,2 = 1728F4a  and   f1,2,−1 −f0,1,0 = 6δf0,2,−1 −5184F4b
+are magnetic; in other words, we have the equivalences f0,−2,2 ∼f0,1,0 and f1,2,−1 ∼f0,1,0.
+  Any element in V4 can be written as Ea2P(E4, E6)/(Em4 En6 ), for some a, m, n non-
+negative integers, a ≤2, and P(x, y) ∈Q[x, y]. Such an expression clearly splits
+into a linear combination of the form fa,b,c ∈V4 with 0 ≤a ≤2 and either b ≥0 or
+c ≥0.  If both b ≥0 and c ≥0 then we get only two elements in V4, namely, f0,1,0and f2,0,0 = f0,1,0 + 12δf1,0,0, both equivalent to f0,1,0. Therefore, we only need to
+prove the theorem in two situations: b ≥0 and c < 0, or b < 0 and c ≥0.
+   If b ≥0 and c < 0, then there is only one form fa,b,c ∈V4 with c = −1. Indeed,
+solving 4 = 2a + 4b + 6c = 2a + 4b −6 we get a = 1, b = 2. By the hypothesis, this
+form f1,2,−1 ∼f0,1,0. For c ≤−2 we use equation (3) (with k = 2) in the form
+   c + 1           fa,b,c =                   −2 fa,b−3,c+2   −2 fa+1,b−2,c+1,    2          −δfa,b−2,c+1 −a12fa−1,b−1,c+1 −b 3      −a 12
+and induction on −c to conclude that fa,b,c is equivalent to a linear combination of
+f1,2,−1 and f0,1,0, hence to f0,1,0 alone. (Notice that prefactors a/12 and (a −2)/12leave the terms on the right-hand side in V4.)
+   If b < 0 (and c ≥0), we use equation (3) in the form
+ b + 1         fa,b,c =          −2 fa+1,b+1,c−1            −1 fa,b+3,c−2. (4)   3          −δfa,b+1,c−1 −a 12      −a12fa−1,b+2,c−1 −c 2
+When b = −1 and b = −2, the only forms fa,b,c ∈V4 possible with c ≥0 are f1,−1,1
+and f0,−2,2, respectively. Substituting a = 0, b = −2, c = 2 in (4) leads to
+             −13f0,−2,2             1                  = −δf0,−1,1 + 6f1,−1,1 −12f0,1,0
+implying f1,−1,1 ∼f0,−2,2 ∼f0,1,0 from the hypothesis. For b ≤−3 we use (4) to
+conclude by induction on −b that any such fa,b,c is equivalent to a linear combinationof f0,−2,2, f1,−1,1 and f0,1,0, hence to f0,1,0. This completes the proof of the theorem.
+                                             □
+
+Remark 2. It follows from the proof that we can replace the generator f0,−2,2 −
+f0,1,0 with f1,−1,1 −f0,1,0.  Furthermore, alternative choices for f0,−2,2 −f0,1,0 and
+f1,2,−1 −f0,1,0 are ˜Fj = E2 · (δEj)/Ej or ˆFj = (δ2Ej)/Ej for j = 4, 6.
+  For weight 6 the situation is slightly diﬀerent. Only the following is true.
+
+Theorem 4. Let U6 be the subspace of V6 spanned over Q by fa,b,c with the additional
+
+                                         6                                          0 its cuspidal subspace. Then any element of U06constraint c ≥0, and U0                            6 = U6 ∩Vis magnetic.
+
+PHYSICAL PDF PAGE 5
+                   MAGNETIC (QUASI-)MODULAR FORMS                         5
+
+Remark 3. In fact, it seems that the space U06 possesses the strongly magnetic
+property: the anti-derivative of any diﬀerence of two fa,b,c from U6 has an integral
+q-expansion.
+Proof. For c = 0, we only have two elements f3,0,0 and f1,1,0 in U6, and f3,0,0 ∼f1,1,0
+since f3,0,0 −f1,1,0 = 6δf2,0,0. Moreover, they are both strongly equivalent to f0,0,1,
+because f1,1,0 −f0,0,1 = 3δE4.  For c = 1, we ﬁnd out that f0,0,1, f2,−1,1 and f4,−2,1 are in U6. Then f4,−2,1 is
+strongly equivalent to any of f3,0,0, f1,1,0 and f0,0,1 in accordance with f4,−2,1−f3,0,0 =3δf4,−1,0 and the above. With the help of Theorem 2 and derivation
+            f2,−1,1 −f0,0,1 = 4δf1,−1,1 −4δf0,−2,2 + 2(f1,1,0 −f0,0,1) −4608F6,
+we see that the same is true for f2,−1,1.
+ We have just shown that any element in the subspace U06 generated by fa,b,c with
+c ∈{0, 1} does have the (strongly) magnetic property. For the rest of our theorem,we proceed by induction over c using the following consequence of equation (3) when
+k = 4:
+          b                    4            =     + −a fa+1,b,c           3fa,b−1,c+1   −δfa,b,c    12    −a12fa−1,b+1,c −c2fa,b+2,c−1.    □
+
+     3. A magnetic extension of the field of quasi-modular forms
+
+  The functions τ, q, E2, E4, E6 are algebraically independent over C (see [19, 22]).
+We can identify the diﬀerential ﬁeld C⟨τ, q, E2, E4, E6⟩generated by them over C
+with the diﬀerential ﬁeld K = C⟨τ, q, X, Y, Z⟩equipped with the derivation
+         1  ∂     ∂    1          ∂    1          ∂    1          ∂
+  D =     + q  +             )  +         +             2)      .        2πi ∂τ    ∂q   12(X2 −Y ∂X  3(XY −Z) ∂Y   2(XZ −Y  ∂Z
+Our goal is to demonstrate that the elements
+               XZ           XY 2
+                       v1 =          and  v2 =                      Y −Y          Z  −Z,
+corresponding to f1,−1,1 −f0,1,0 and f1,2,−1 −f0,1,0, do not have D-anti-derivatives in
+K (not even in K⟨D−1v2⟩and K⟨D−1v1⟩, respectively). This follows trivially from
+noticing that ordY v1 = −1 and ordZ v2 = −1, so that if either D−1v1 or D−1v2 ex-
+isted then ordY D−1v1 < 0 and ordZ D−1v2 < 0, hence ordY v1 = ordY D(D−1v1) ≤
+−2 and similarly ordZ v2 ≤−2, contradiction.  By [16, Lemma 3.9] applied twice, the anti-derivatives
+               ˜E4a = δ−1(f1,−1,1 −f0,1,0)  and   ˜E4b = δ−1(f1,2,−1 −f0,1,0)
+are algebraically independent over the ﬁeld C⟨τ, q, E2, E4, E6⟩, the extended diﬀer-ential ﬁeld
+                          C⟨τ, q, E2, E4, E6, ˜E4a, ˜E4b⟩
+has transcendence degree 7 over C and is a Picard–Vessiot extension of the diﬀer-
+ential ﬁeld C⟨τ, q, E2, E4, E6⟩. Again, by identifying the former through the isomor-phism
+             ϕ: E2 7→X, E4 7→Y, E6 7→Z, ˜E4a 7→S, ˜E4b 7→T
+
+PHYSICAL PDF PAGE 6
+6                      VICENT¸IU PAS¸OL AND WADIM ZUDILIN
+with the diﬀerential ﬁeld ˆK = C⟨τ, q, X, Y, Z, S, T⟩equipped with the derivation
+         1  ∂     ∂    1          ∂    1          ∂    1          ∂
+    ˆD =     + q  +             )  +         +             2)        2πi ∂τ    ∂q   12(X2 −Y ∂X  3(XY −Z) ∂Y   2(XZ −Y  ∂Z
+        XZ      ∂   XY 2      ∂
+      +         +                           ,            Y −Y  ∂S    Z −Z  ∂T
+we want to demonstrate that the element
+                          X2Z
+                                   v3 =                               Y −Z
+corresponding to f2,−1,1 −f0,0,1 does not have a ˆD-anti-derivative in ˆK.
+  Assume on the contrary that there is an element u3                                                         such that ˆDu3 = v3.                                       ∈ˆKNotice that the functions τ, q = e2πiτ, E2(τ), E4(τ) and E6(τ) are all analytic at
+τ = ρ = e2πi/3, the latter three having the values
+
+                                                                         1     3                      2 √3                        3Γ( 3)6
+               E2(ρ) =        ,  E4(ρ) = 0,  E6(ρ) =                   .
+                     π                           8π4
+
+With the help of Ramanujan’s system (2) we ﬁnd out that
+
+             E4(τ) =      E6(ρ)(τ   + O (τ         as τ                 −2πi3       −ρ)      −ρ)2     →ρ,
+so that
+                               3iE2(ρ)   1
+                    f1,−1,1 −f0,1,0 =   2π   τ   + O(1),                         −ρ           as τ                                3iE2(ρ)2   1        →ρ
+                    f2,−1,1 −f0,0,1 =   2π    τ   + O(1)                         −ρ
+and f1,2,−1 −f0,1,0 is analytic at τ = ρ. In turn, this implies that
+                                ˜E4a = −3E2(ρ) ln(τ −ρ) + g1(τ),   as τ             δ−1(f2,−1,1     =           ln(τ   + g3(τ)   →ρ                       −f0,0,1)   −3E2(ρ)2   −ρ)
+for some functions g1(τ) and g3(τ) analytic at τ = ρ, while ˜E4b(τ) is analytic there.
+To summarise, the function
+               √ 3
+       δ−1(f2,−1,1 −f0,0,1) −2 π  ˜E4a(τ) = δ−1(f2,−1,1 −f0,0,1) −E2(ρ) ˜E4a(τ)
+is analytic at τ = ρ, hence only representable as a rational function of τ, q, E2, E4,
+E6, ˜E4b. Using the isomorphism ϕ we conclude that
+                      √ 3
+                        u = u3      S                     −2 π   ∈ˆK
+is a polynomial in τ, q, X, Y, Z, T. The latter is seen to be impossible after the
+                     √3
+operator ˆD is applied to u and to u3      S leading to a rational expression of S                    −2 π
+in terms of the other generators of   The contradiction we arrive at implies that                                            ˆK.the anti-derivative
+                                   ˜E6 = δ−1(f2,−1,1 −f0,0,1)
+
+PHYSICAL PDF PAGE 7
+                   MAGNETIC (QUASI-)MODULAR FORMS                         7
+is transcendental over the ﬁeld C⟨τ, q, E2, E4, E6, ˜E4a, ˜E4b⟩. On replacing the gener-ators of the latter with the anti-derivatives of magnetic modular forms from Theo-
+rems 1 and 2 we obtain the following result.
+
+Theorem 5. The diﬀerentially closed ﬁeld
+                        C⟨τ, q, E2, E4, E6, ˜F4a, ˜F4b, ˜F6⟩,
+generated by τ, q = e2πiτ, the Eisenstein series (1) and the anti-derivatives
+
+             ∆           E4∆           E6∆
+                ˜F4a = δ−1           ,    ˜F4b = δ−1             ,    ˜F6 = δ−1
+                  E24             E26              E34
+with integral coeﬃcients in their q-expansions, has transcendence degree 8 over C.
+Remark 4. Another way to see that no u3 exists in ˆK such that ˆDu3 = v3 is by
+casting u3 in the form p/q with p, q in the ring R[S], where R = C⟨τ, q, X, Y, Z, T⟩,and gcd(p, q) = 1. After clearing the denominators in ˆD(p/q) = v3 and comparing
+the degree in S on both sides, one concludes that ˆDq = uq for some u ∈R (that is,
+independent of S). This leads to conclusion q ∈R, so that u3 is a polynomial in S.
+Finally, the equation ˆDu3 = X2Z/Y −Z is seen to be impossible by comparing theorder in Y on both sides.
+
+Exercise 1. We leave to the reader the exercise to prove that the anti-derivative
+of ˜F6 (in turn, the second anti-derivative of F6) is transcendental over the ﬁeld in
+Theorem 5.
+
+
+     4. Half-integral weight weakly holomorphic modular forms
+
+  Following the ideas in [17], we will cast magnetic modular forms of weight 2k as
+the images of weakly holomorphic eigenforms of weight k + 1/2 under the Shimura–                            P
+Borcherds lift. In our settings, an input for the lift is a form f(τ) =  n≫−∞a(n)qn
+from the Kohnen plus space M!,+k+1/2 (meaning that a(n) vanishes when                            P (−1)kn ̸≡
+0, 1 mod 4); the output is the meromorphic modular form Ψ(f)(τ) =   n>0 A(n)qn
+with
+          X                                d
+                    A(n) =                    n2/d2),                      (5)                    D  dk−1a(|D|
+                                          d|n
+where D = Dk = 1 for k even (so that the Kronecker–Jacobi symbol Dd   is always 1)
+and D = Dk = −3 for k odd. In other words,
+      X     X X                                              d
+    Ψ = Ψk : f =      a(n)qn 7→F =    qn    Dk  dk−1a(|Dk| n2/d2),    (6)
+               n≫−∞               n>0     d|n
+               P   P
+and the latter expression is just F =   n>0 qn    d|n dk−1a(n2/d2) when k is even. We
+will also distinguish the Kohnen plus cuspidal space S!,+k+1/2 in M!,+k+1/2 by imposing
+the additional constraint a(0) = 0.

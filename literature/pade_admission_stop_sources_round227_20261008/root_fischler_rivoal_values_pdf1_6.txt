@@ -1,0 +1,328 @@
+                          On the values of G-functions
+                                    S. Fischler and T. Rivoal
+
+
+                                  À la mémoire de Philippe Flajolet
+
+                                                Abstract
+            In this paper we study the set G of values at algebraic points of analytic contin-
+        uations of G-functions (in the sense of Siegel). This subring of C contains values of
+        elliptic integrals, multiple zeta values, and values at algebraic points of generalized
+        hypergeometric functions p+1 Fp with rational coeﬃcients. Its group of units contains
+        non-zero algebraic numbers, π, Γ(a/b)b and B(x, y) (with a, b ∈ Z such that a/b ̸∈ Z,
+        and x, y ∈ Q such that B(x, y) exists and is non-zero). We prove that for any ξ ∈ G,
+        both Re ξ and Im ξ can be written as f (1), where f is a G-function with rational
+        coeﬃcients of which the radius of convergence can be made arbitrarily large. As an
+        application, we prove that quotients of elements of G ∩ R      ∑are            ∑numbers
+                                                                             exactly the
+        which can be written as limits of sequences an /bn , where n=0 an z and ∞
+                                                                         ∞       n
+                                                                                          n=0 bn z
+                                                                                                   n
+
+        are G-functions with rational coeﬃcients. This result provides a general setting for
+        irrationality proofs in the style of Apéry for ζ(3), and gives answers to questions asked
+        by T. Rivoal in [Approximations rationnelles des valeurs de la fonction Gamma aux
+        rationnels : le cas des puissances, Acta Arith. 142 (2010), no. 4, 347–365].
+
+
+1       Introduction
+The purpose of this text is to study the set of values of G-functions at algebraic numbers.
+Let us recall the following deﬁnition, which essentially goes back to Siegel [30].
+                                                                   ∑
+Deﬁnition 1. A G-function f is a formal power series f (z) = ∞               n
+                                                                     n=0 an z such that the
+coeﬃcients an are algebraic numbers and there exists C > 0 such that:
+
+    (i) the maximum of the moduli of the conjugates of an is ≤ C n .
+
+ (ii) there exists a sequence of integers dn , with |dn | ≤ C n , such that dn am is an algebraic
+      integer for all m ≤ n.
+
+(iii) f (z) satisﬁes a homogeneous linear diﬀerential equation with coeﬃcients in Q(z). (1 )
+    1
+   All diﬀerential equations considered in this text are homogeneous and consequently we will no longer
+mention the term “homogeneous”.
+
+
+
+                                                     1
+     Throughout this paper we ﬁx an embedding of Q into C; all algebraic numbers and all
+convergents series are considered in C.
+     G-functions occur frequently in analysis, number theory, geometry and physics: for ex-
+ample, algebraic functions over Q(z) which are holomorphic at 0, polylogarithms, Gauss’
+hypergeometric function with rational parameters, are G-functions. The exponential func-
+tion is not a G-function but an E-function (that is, it satisﬁes the requirements of Deﬁni-
+tion 1 if an is replaced with an /n! in the expansion of f (z)).
+     In Deﬁnition 1, condition (i) ensures that any non-polynomial G-function has ﬁnite non-
+zero radius of convergence at z = 0. Condition (iii) implies that in fact the coeﬃcients
+an , n ≥ 0, all belong to a same number ﬁeld. Classical references on G-functions are the
+books [1] and [17].
+     Siegel’s goal was to ﬁnd conditions ensuring that E and G-functions take irrational
+or transcendental values at algebraic points: the picture is very well understood for E-
+functions but largely unknown for G-functions. The main tool to study the nature of values
+of G-functions is inexplicit Padé-type approximation (see [3, 12, 14, 22]). In an explicit
+form, Padé approximation is also behind Apéry’s celebrated proof [7] of the irrationality
+of ζ(3), and similar results in speciﬁc cases (see for instance [9, 19]).
+
+    In this paper, we study the following set.
+Deﬁnition 2. Let G denote the set of all values f (α), where f is a G-function and α ∈ Q.
+More precisely, all values at α of analytic continuations of f are considered, as soon as
+they are ﬁnite.
+     This subset of C is a subring (this can be seen as a consequence of Theorem 1 below). It
+contains Q, and also (see §2.2 for proofs) multiple zeta values, elliptic integrals, and values
+at algebraic points of generalized hypergeometric functions p+1 Fp with rational coeﬃcients.
+André proved in [1, p. 123] that the units of the ring of G-functions are exactly the algebraic
+functions which are holomorphic and don’t vanish at the origin. The description of the
+units of G is an interesting open problem whose solution is not as simple as for functions,
+for we show in §2.2 that the group of units of G contains not only the non-zero algebraic
+numbers but also π, the values of the Gamma function Γ(a/b)b and that of Euler’s Beta
+function B(x, y) (with a, b ∈ Z such that a/b ̸∈ Z, and x, y ∈ Q such that B(x, y) exists
+and is non-zero). On the other hand, there is no explicit interesting number for which we
+are able to prove that it is not in G (2 ); it is likely that e, Euler’s constant γ, Γ(a/b) (with
+a, b integers such that a/b ̸∈ Z) or Liouville numbers do not belong to G.
+     A conjecture of Bombieri and Dwork predicts a strong relationship between diﬀerential
+equations satisﬁed by G-functions and Picard-Fuchs equations satisﬁed by periods of fam-
+ilies of algebraic varieties deﬁned over Q. See the precise formulation given by André in [1,
+p. 7], who proved half of the conjecture in [1, pp. 110-111]. Christol [13] also conjectured
+that globally bounded G-functions are diagonals of rational functions, which are known to
+   2
+     Since the set G is countable, there are complex numbers outside G but the real diﬃculty is to exhibit
+such a number by an eﬀective process leading to an analytic expression like a series or an integral for
+example.
+
+
+                                                    2
+satisfy Picard-Fuchs equations. This raises the question of a connection between the set
+G and the set P of periods considered by Kontsevich and Zagier [26]; all elements of P we
+have thought of belong also to G. However 1/π is conjectured not to belong to P, so that
+G is presumably distinct from P. However, a natural problem is the determination of the
+link between G and P[1/π] (see the discussion at the end of § 2.2).
+
+   Our main result is the following.
+
+Theorem 1. A complex number ξ belongs to G if, and only if, its real and imaginary
+parts can be written as f (1), where f is a G-function with rational coeﬃcients of which the
+radius of convergence can be made arbitrarily large.
+
+∑∞One ofn the consequences of this theorem is that the set of values of G-functions
+  n=0 an z with an ∈ Q at points z ∈ Q inside the disk of convergence (respectively
+at points where this series is absolutely convergent, respectively convergent) is equal to
+G ∩ R.
+
+    The main tool in the proof of Theorem 1 is André-Chudnovski-Katz’s theorem (stated
+as Theorem 6 in §4.1 below), which provides for any G-function f and any ζ ∈ Q a
+local basis (g1 , . . . , gµ ) of solutions around ζ of a minimal diﬀerential equation satisﬁed
+by f . Expanding an analytic continuation ∑µ       of f in this basis yields connection constants
+ϖ1 , . . . , ϖµ ∈ C such that f (z) = j=1 ϖj gj (z). As a step towards Theorem 1, we prove
+the following result which is of independent interest:
+
+Theorem 2. The connection constants ϖ1 , . . . , ϖµ belong to G.
+
+    We would like to emphasize that analytic continuation (and its properties encompassed
+in André-Chudnovski-Katz’s theorem) is the main tool in our approach. As the referee
+pointed out to us, it would be interesting to ﬁnd a connection with other methods used in
+similar contexts, including Dèbes-Zannier’s [15] or Euler’s for accelerating convergent
+                                                                               ∑         series;
+however we did not ﬁnd any. For instance, Euler’s binomial transform n≥0 (−1)n an =
+∑      ( ∑n         ( ) ) −n−1
+                   k k
+   n≥0    k=0 (−1) n ak 2        is involutive and therefore it cannot be used to obtain series
+with arbitrarily large radius of convergence.
+
+   As an application of Theorem 1, we answer questions asked in [28, p. 351], where
+the second author introduced the notion of rational G-approximations to a real number.
+This corresponds to assertion (ii) in the next result, which provides a characterization of
+numbers admitting rational G-approximations.
+   Given a subring A of C, we denote by Frac(A) the ﬁeld of fractions of A, namely the
+subﬁeld of C consisting in all elements ξ/ξ ′ with ξ, ξ ′ ∈ A, ξ ′ ̸= 0.
+
+Theorem 3. Let ξ ∈ R⋆ . The following statements are equivalent:
+
+  (i) We have ξ ∈ Frac(G) ∩ R = Frac(G ∩ R).
+
+
+                                               3
+            exist two sequences
+ (ii) There ∑               ∑∞ (an )nn≥0 and (bn )n≥0 of rational numbers such that the
+      series ∞    a
+              n=0 n z n
+                        and  n=0 bn z are G-functions, bn ̸= 0 for any n large enough and
+       lim an /bn = ξ.
+      n→+∞
+                                                       ∑                      ∑∞
+(iii) For any R ≥ 1 there exist two G-functions A(z) = ∞         n
+                                                         n=0 an z and B(z) =
+                                                                                        n
+                                                                                n=0 bn z ,
+      with rational coeﬃcients and radius of convergence = 1, such that A(z) − ξB(z) has
+      radius of convergence > R.
+Remark. When ξ ∈ G, we can take bn = 1 in (ii). However, it is not clear to us if this is
+also the case for other elements ξ ∈ Frac(G), in particular because it is doubtful that G
+itself is a ﬁeld.
+
+    Apéry has proved [7] that ζ(3) ̸∈ Q by constructing sequences (an )n≥0 and (bn )n≥0
+essentially as in (iii), such that bn ∈ Z and lcm(1,
+                                                   ∑∞2, . . . , n)3 an ∈ Z. Since ζ(3) = Li3 (1)
+(where the polylogarithms deﬁned by Lis (z) = n=1 n1s z n , s ≥ 1, are G-functions), we
+have ζ(3) ∈ G. Theorem 3 provides a general setting for such irrationality proofs and
+one may wonder if, given a real irrational number ξ ∈ Frac(G), there exists a proof à la
+Apéry that ξ is irrational. In particular, this would be a strategy to prove the following
+conjecture (see §7.2 below):
+Conjecture 1. No ξ ∈ Frac(G) can be a Liouville number.
+    Our approach does not yield (at least for now) any actual result towards this conjecture,
+because the denominators of the coeﬃcients of the G-functions we construct grow too fast.
+It would be interesting to control them in some way.
+
+    The paper is organized as follows. We introduce some notation in §2.1, and state slight
+generalizations of Theorems 1 and 3, namely Theorems 4 and 5. We prove in §2.2 that
+the numbers mentioned above actually belong to G. Then we start proving Theorems 4
+and 5 by gathering some lemmas in §§2.3 and 2.4. In §3, we prove that the conclusion
+of Theorem 1 holds for algebraic numbers and their logarithms. In §4, we review some
+classical results concerning the properties of diﬀerential equations satisﬁed by G-functions
+(namely Theorem 6, due to André, Chudnovski and Katz). We also prove in this section
+that connection constants belong to G, and the conclusion of Theorem 1 holds for them (see
+Theorem 7). This result, along with the analytic continuation properties of G-functions
+deduced from Theorem 6, is used to prove Theorem 4 in §5. In §6, we present the proof of
+Theorem 5: the main tool is the results of Singularity Analysis due to Flajolet and Odlyzko
+[21], described in details in the book [20]. Finally, we mention in §7 a few problems
+suggested by our results: what can be said about the case of E-functions and about
+Diophantine perspectives.
+
+Acknowledgements: We warmly thank Yves André, Daniel Bertrand, Frits Beukers,
+Gilles Christol, Julien Roques and Michel Waldschmidt for their constructive remarks. We
+are also indebted to the referee for his pertinent comments that helped us to improve this
+work, in particular those we present in §7.1. Both authors have been supported by the
+
+                                               4
+project HAMOT, and the second author partially by the project Q-DIFF, of the Agence
+Nationale de la Recherche.
+
+
+2     Background of the proofs
+2.1     Notation and results
+In this section we introduce some notation that will be used throughout this text. We also
+state Theorems 4 and 5, which are slight generalizations of Theorems 1 and 3 respectively.
+
+   The letter K will always stand for a (ﬁnite or inﬁnite) algebraic extension of Q, embed-
+ded into Q ⊂ C.
+
+Deﬁnition 3. Given an algebraic extension K of Q, we denote by Ga.c. K the set of all values,
+at points in K, of multivalued analytic continuations of G-functions with Taylor coeﬃcients
+at 0 in K.
+
+    For any G-function f with coeﬃcients in K and any α ∈ K, we consider all values
+of f (α) obtained by analytic continuation, as in the deﬁnition of G in the introduction;
+                   a.c.
+obviously G = GQ        . If α is a singularity of f , then we consider also these values if they are
+ﬁnite. Of course f (αz) is also a G-function with coeﬃcients in K so that we may restrict
+ourselves
+∑∞         to values at the ∑   point 1. By Abel’s theorem, Ga.c. K contains all convergent series
+                                  ∞
+                                  n=0 an z is a G-function with coeﬃcients in K and α ∈ K.
+           n                              n
+   n=0 an α where f (z) =
+
+Deﬁnition 4. Given an algebraic extension K of Q, we denote by GcvK the set of all ξ ∈ C
+such that, for any R ≥ 1, there exists a G-function f with Taylor coeﬃcients at 0 in K
+and radius of convergence > R such that ξ = f (1).
+
+   For any R ≥ 1, we denote by Gcv R,K the set of all ξ = f (1) where f is a G-function
+with Taylor coeﬃcients at 0 in K and radius of convergence > R. In this way we have
+  K = ∩R≥1 GR,K , and also GR,K ⊂ GK for any R ≥ 1.
+Gcv          cv             cv     a.c.
+
+
+                                            a.c.
+   With this notation, Theorem 1 reads GQ        = Gcv      cv    cv
+                                                    Q + iGQ = GQ(i) . Actually we prove
+        K is independent from K, so that it is always equal to G = GQ . Concerning GK ,
+that Ga.c.                                                           a.c.            cv
+
+there is an obvious remark: if K ⊂ R then Gcv K ⊂ R. Apart from this, GK is independent
+                                                                          cv
+
+from K, and equal (up to taking real parts) to G. Our result reads as follows.
+
+Theorem 4. Let K be an algebraic extension of Q. Then:
+
+    • We have Ga.c.     cv    cv
+               K = G = GQ + iGQ .
+
+
+                      K = G = GQ + iGQ ; if K ⊂ R then GK = G ∩ R = GQ .
+    • If K ̸⊂ R then Gcv       cv    cv                 cv           cv
+
+
+
+
+                                                 5
+    In particular this result contains the fact that Q ∩ R ⊂ Gcv  Q and Q ⊂ GQ + iGQ ;
+                                                                                  cv      cv
+
+
+                ∑∞in §3.1.
+this will be proved           Another consequence of this theorem is that the set of values
+of G-functions n=0 an z with an ∈ K at points z ∈ K inside the disk of convergence
+                          n
+
+(respectively at points where this series is absolutely convergent, respectively convergent)
+              K (so that it is equal to either G or G ∩ R).
+is equal to Gcv
+
+   We also generalize Theorem 3 as follows.
+
+Theorem 5. Let K be an algebraic extension of Q, and ξ ∈ C⋆ . Then the following
+statements are equivalent:
+
+  (i) We have ξ ∈ Frac(Gcv
+                        K ).
+                                                                                    ∑∞
+ (ii) There
+          ∑∞exist two sequences  (an )n≥0 and (b n )n≥0 of elements  of K such that  n=0 an z
+                                                                                              n
+
+      and n=0 bn z are G-functions, bn ̸= 0 for inﬁnitely many n and an − ξbn = o(bn ).
+                    n
+
+                                                           ∑                        ∑∞
+(iii) For any R ≥ 1 there exist two G-functions A(z) = ∞              n
+                                                              n=0 an z and B(z) =
+                                                                                             n
+                                                                                     n=0 bn z ,
+      with coeﬃcients an , bn ∈ K and radius of convergence = 1, such that A(z) − ξB(z)
+      has radius of convergence > R and an , bn ̸= 0 for any n suﬃciently large.
+
+    When K = Q, this is a reﬁnement of Theorem 3 because assumption (ii) of Theorem 3
+implies assumption (ii) of Theorem 5, and (iii) of Theorem 5 implies (iii) of Theorem 3
+(see also Lemma 2 below). The point in assertion (ii) of Theorem 5 is that bn may vanish
+for inﬁnitely many n; by asking an − ξbn = o(bn ) we require that an = 0 as soon as bn = 0
+and n is suﬃciently large.
+
+2.2     Examples and connection to periods
+In this section, we prove that the numbers mentioned in the introduction belong to G, and
+give some hints on the connection with periods. This section is independent from the rest
+of the paper, except that we assume here that G is a ring.
+    Many examples of G-functions are provided by the generalized hypergeometric series
+                                   ∑∞
+                                       (α1 )n (α2 )n · · · (αk )n n
+                                                                  z
+                                   n=0
+                                       (1)n (β1 )n · · · (βk−1 )n
+
+with rational coeﬃcients α’s and β’s, and∑ (x)nzn= x(x + 1) · · · (x + n − 1). ∑
+                                                                               Special cases are
+                                                                                                zn
+the polylogarithmic functions Lik (z) = n≥1 nk (k ≥ 1) and arctan(z) = n≥0 (−1)n 2n+1                .
+We deduce in particular that π = 4 arctan(1) and the values of the Riemann zeta function
+                                                                      ∑      (−1)n
+ζ(k) = Lik (1) are in G for any integer k ≥ 2. Catalan’s constant n≥0 (2n+1)       2 is also in G.
+                                                                           ∑                  z n1
+   Other examples of G-functions are the multiple polylogarithms              n1 >···>ns ≥1 k1     ks
+                                                                                              n1 ···ns
+where the k’s are positive integers. This is a consequence of the fact that for s = 1, we have
+a polylogarithm from which we obtain the multiple series by a succession of integrations
+and multiplications by 1/z or 1/(1 − z); this process does not leave the set of G-functions.
+
+                                                  6
+

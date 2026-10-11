@@ -1,0 +1,382 @@
+[
+  {
+    "p": 11,
+    "N": 4,
+    "a": 1,
+    "center": 2,
+    "status": "singular local block"
+  },
+  {
+    "p": 17,
+    "N": 6,
+    "a": 1,
+    "center": 2,
+    "reduced_size": 20,
+    "n": 7,
+    "d": 2,
+    "symmetric_reduction": true,
+    "first_nullity": 7,
+    "local_normal_form_verified": true,
+    "local_ranks": [
+      {
+        "kind": "zero",
+        "c": 0,
+        "rank": 2,
+        "size": 2
+      },
+      {
+        "kind": "inner",
+        "c": 1,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "outer",
+        "c": 7,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 8,
+        "rank": 4,
+        "size": 4
+      }
+    ],
+    "first_pairing_rank": 5,
+    "status": "certified second lift",
+    "second_pairing_rank": 1,
+    "model_rank": 1,
+    "same_radical": true,
+    "scalar_multiple": true,
+    "scalar": 16,
+    "naive_rank": 1,
+    "correction_rank": 1,
+    "correction_zero": false,
+    "universal_scalar_formula": true,
+    "predicted_scalar": 16,
+    "local_hensel_solve": true,
+    "third_directions": 1,
+    "third_status": "verified modulo p^3",
+    "determinant_bound": -98,
+    "second_lifts_verified": true,
+    "second_pairing": [
+      [
+        16,
+        1
+      ],
+      [
+        1,
+        16
+      ]
+    ],
+    "model": [
+      [
+        1,
+        16
+      ],
+      [
+        16,
+        1
+      ]
+    ]
+  },
+  {
+    "p": 31,
+    "N": 11,
+    "a": 2,
+    "center": 2,
+    "reduced_size": 36,
+    "n": 12,
+    "d": 3,
+    "symmetric_reduction": true,
+    "first_nullity": 12,
+    "local_normal_form_verified": true,
+    "local_ranks": [
+      {
+        "kind": "zero",
+        "c": 0,
+        "rank": 2,
+        "size": 2
+      },
+      {
+        "kind": "inner",
+        "c": 1,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "inner",
+        "c": 2,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "outer",
+        "c": 12,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 13,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 14,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 15,
+        "rank": 4,
+        "size": 4
+      }
+    ],
+    "first_pairing_rank": 9,
+    "status": "certified second lift",
+    "second_pairing_rank": 2,
+    "model_rank": 2,
+    "same_radical": true,
+    "scalar_multiple": true,
+    "scalar": 15,
+    "naive_rank": 2,
+    "correction_rank": 2,
+    "correction_zero": false,
+    "universal_scalar_formula": true,
+    "predicted_scalar": 15,
+    "local_hensel_solve": true,
+    "third_directions": 1,
+    "third_status": "verified modulo p^3",
+    "determinant_bound": -194,
+    "second_lifts_verified": true,
+    "second_pairing": [
+      [
+        0,
+        15,
+        18
+      ],
+      [
+        15,
+        18,
+        5
+      ],
+      [
+        18,
+        5,
+        27
+      ]
+    ],
+    "model": [
+      [
+        0,
+        1,
+        26
+      ],
+      [
+        1,
+        26,
+        21
+      ],
+      [
+        26,
+        21,
+        8
+      ]
+    ]
+  },
+  {
+    "p": 43,
+    "N": 16,
+    "a": 4,
+    "center": 2,
+    "reduced_size": 52,
+    "n": 18,
+    "d": 6,
+    "symmetric_reduction": true,
+    "first_nullity": 18,
+    "local_normal_form_verified": true,
+    "local_ranks": [
+      {
+        "kind": "zero",
+        "c": 0,
+        "rank": 2,
+        "size": 2
+      },
+      {
+        "kind": "inner",
+        "c": 1,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "inner",
+        "c": 2,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "inner",
+        "c": 3,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "inner",
+        "c": 4,
+        "rank": 3,
+        "size": 3
+      },
+      {
+        "kind": "outer",
+        "c": 17,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 18,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 19,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 20,
+        "rank": 4,
+        "size": 4
+      },
+      {
+        "kind": "outer",
+        "c": 21,
+        "rank": 4,
+        "size": 4
+      }
+    ],
+    "first_pairing_rank": 0,
+    "status": "certified second lift",
+    "second_pairing_rank": 4,
+    "model_rank": 4,
+    "same_radical": true,
+    "scalar_multiple": true,
+    "scalar": 15,
+    "naive_rank": 4,
+    "correction_rank": 4,
+    "correction_zero": false,
+    "universal_scalar_formula": true,
+    "predicted_scalar": 15,
+    "local_hensel_solve": true,
+    "third_directions": 2,
+    "third_status": "first pairing degenerates at this specialization",
+    "determinant_bound": -242,
+    "second_lifts_verified": true,
+    "second_pairing": [
+      [
+        0,
+        0,
+        0,
+        15,
+        23,
+        31
+      ],
+      [
+        0,
+        0,
+        15,
+        23,
+        31,
+        13
+      ],
+      [
+        0,
+        15,
+        23,
+        31,
+        13,
+        25
+      ],
+      [
+        15,
+        23,
+        31,
+        13,
+        25,
+        33
+      ],
+      [
+        23,
+        31,
+        13,
+        25,
+        33,
+        4
+      ],
+      [
+        31,
+        13,
+        25,
+        33,
+        4,
+        35
+      ]
+    ],
+    "model": [
+      [
+        0,
+        0,
+        0,
+        1,
+        13,
+        25
+      ],
+      [
+        0,
+        0,
+        1,
+        13,
+        25,
+        41
+      ],
+      [
+        0,
+        1,
+        13,
+        25,
+        41,
+        16
+      ],
+      [
+        1,
+        13,
+        25,
+        41,
+        16,
+        28
+      ],
+      [
+        13,
+        25,
+        41,
+        16,
+        28,
+        6
+      ],
+      [
+        25,
+        41,
+        16,
+        28,
+        6,
+        31
+      ]
+    ]
+  }
+]

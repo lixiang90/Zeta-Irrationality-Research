@@ -1,0 +1,135 @@
+                                                                                                 4
+
+derive from the Kronecker identities (2.7) a simple result about zeros of the polynomials Pr
+and Qr .
+   In 1881 Kronecker [12] also characterized all those nonzero sequences {sn }n≥0 of real
+numbers whose Hankel matrices (si+j )∞i,j=0 are of finite rank, see Theorem A of Section 2.
+   The results obtained by Frobenius [6] in 1894 are formulated in Theorem D of Section 3.
+   In Corollary 1 we provide a new interpretation of this result based on Theorem 3.
+   In Subsection 4.3 we use Theorem 3 to derive a recent theorem of Berg and Szwarc [1],
+see Theorem E.
+
+
+                                2. Kronecker’s results from 1881
+
+    Let 1 ≤ m ≤ n and An = {ai,j }ni,j=1 be a nonzero square matrix of order n, where An
+being nonzero means that it has at least one nonzero element. For arbitrary 1 ≤ i1 < i2 <
+... < im ≤ n and 1 ≤ j1 < j2 < ... < jm ≤ n the determinant det{aik1 ,jk2 }m
+                                                                           k1 ,k2 =1 is called
+a minor of An of order m. The largest order of the nonzero minors of An is called the rank
+of the matrix An and is denoted by rank An (see [8, p.2]). The rank of an infinite matrix
+A∞ = {ai,j }∞i,j=1 is defined by rank A∞ := sup n≥1 rank An ∈ N ∪ {∞}, where N := {1, 2, ...}
+(see [9, p.205]).
+
+Theorem A (Kronecker (1881)). Let {sn }n≥0 be a nonzero sequence of real numbers, Hn :=
+(si+j )ni,j=0 , Dn := det Hn , n ≥ 0, and H∞ := (si+j )∞
+                                                       i,j=0 . Then a necessary and sufficient
+condition for H∞ to have a finite rank r ∈ N is that
+                                  Dr−1 6= 0 ,       Dn = 0 ,   n≥r .                         (2.1)
+   The necessity of the condition is formulated in Kronecker [12, p.560], Frobenius [6, p. 204],
+Gantmacher [9, p.206] and Iohvidov [10, p. 74], while the sufficiency, proved by Kronecker
+[12, p.563], is less known and can be found in Iohvidov [10, item 11, p.79] .
+  It has been proved by Kronecker in [12, (G(m) ), (G′ ), p.567]) that if (si+j )∞
+                                                                                 i,j=0 is of finite
+rank r then
+                                           X
+                           Qr (x)/Pr (x) =          sk x−k−1 .                                (2.2)
+                                                        k≥0
+
+Since (1.3) yields xr Pr (1/x) ↾x=0 =Dr−1 6= 0, the change of variable x → 1/z in (2.2) shows
+that it is equivalent to the Taylor expansion at the origin
+                                               z r−1 Qr (1/z) X
+                                  ψrs (z) :=                  = sk z k
+                                                 z r Pr (1/z)
+                                                               k≥0
+
+of the analytic function  ψrs
+                            on the open disk |z| < 1/ρr where ρr := max{ |z| | Pr (z) = 0}.
+Therefore the series in the righthand side of (2.2) converges absolutely for every |x| > ρr ,
+and (2.3) below holds by the Cauchy-Hadamard formula (see [16, (2), p.200]).
+   Conversely, Kronecker proved in [12, p.568] that if the numbers {sn }n≥0 are the coefficients
+in the expansion (2.5) of q/p for p, q ∈ P[R], deg p = r ∈ N and deg q < r then H∞ has the
+rank r, provided Dr−1 6= 0 (see [14, Section 45, p.198], [9, Theorem 8, p.207]). Thus, the
+following characterization of the Hankel matrices of finite rank holds.
+
+Theorem B. Let {sn }n≥0 be a nonzero sequence of real numbers and H∞ := (si+j )∞
+                                                                               i,j=0 .
+
+  (a) If H∞ has a finite rank r ∈ N then deg Pr = r,
+                           p
+                      lim k |sk | = max{ |z| | z ∈ C , Pr (z) = 0 } ,                        (2.3)
+                        k→∞
+
+and                                      X sk     Qr (x)
+                                            k+1
+                                                =        ,                                   (2.4)
+                                          x       Pr (x)
+                                         k≥0
+
+where the series is absolutely convergent for every |x| > max{ |z| | z ∈ C , Pr (z) = 0 }.
+                                                                                              5
+                       p
+  (b) If R := limk→∞ k |sk | < +∞ and there exist p, q ∈ P[R], p of degree r ∈ N and q of
+degree at most r − 1 such that
+                               X sk     q(z)
+                                      =      ,   |z| > R ,                          (2.5)
+                                z k+1   p(z)
+                                 k≥0
+then rank H∞ ≤ r, where the equality is attained if p and q have no common roots.
+
+  The following theorem of Kronecker [12, pp.560, 561, 571] clarifies the structure of the
+sequences satisfying rank H∞ < ∞ (see also [9, Theorem 7, p.205] and [9, p.234]).
+
+Theorem C. Let {sn }n≥0 be a nonzero sequence of real numbers and H∞ := (si+j )∞
+                                                                               i,j=0 .
+
+   (a) H∞ has a finite rank r ∈ N if and only if Dr−1 6= 0 and there exist r numbers
+d0 , d1 , ... , dr−1 such that
+                             r−1
+                             X
+                                   dk sk+m = sr+m ,       m≥0.                             (2.6)
+                             k=0
+
+  (b) If H∞ has a finite rank r ∈ N then for every n ≥ 0 there exist r numbers
+dn,0 , dn,1 , ..., dn,r−1 such that
+                           r−1
+                           X
+                                 dn,k sk+m = sr+n+m ,       m≥0,
+                           k=0
+where d0,k is equal to dk from (2.6) for each 0 ≤ k ≤ r − 1.
+   (c) If H∞ has a finite rank r ∈ N then the sequence {sn }n≥0 is uniquely determined by the
+values of s0 , s1 , ..., s2r−1 .
+   Finally, we note that the equality (2.4) proved by Kronecker in [12, (G(m) ), (G′ ), p.567])
+asserts implicitly that the polynomials Pr and Qr have no common roots provided that
+Dr−1 6= 0. Furthermore, this fact also follows from the identity
+                                                              2
+                           Pr−1 (x)Qr (x) − Pr (x)Qr−1 (x) = Dr−1 ,                        (2.7)
+written by Kronecker in [12, (F), p.564] for arbitrary r ≥ 1 (see also [6, (14), p.220]).
+   Observe that (2.7) can easily be proved when Dn 6= 0 for all n ≥ 0 (see [7, III.15, p.48],
+[2, Theorem 2.12, p.54]). These restrictions can be removed by the so-called perturbation
+technique. More precisely, by using the Hilbert matrix M1n := ((i + j + 1)−1 )ni,j=0 , for every
+ε > 0 we introduce the perturbed sequence
+                                     εn+1             εi+j+1 n
+            {sεn }n≥0 ,  sεn := sn +        , Mεn :=                    , n≥0,
+                                     n+1               i + j + 1 i,j=0
+                                                               2
+whose Hankel determinant Dnε = det(Hn + Mεn ) = mn ε(n+1) + ... for every n ≥ 0 is a poly-
+nomial of degree (n +1)2 in the variable ε with positive leading coefficient mn := det M1n > 0
+(see [15, 3, p.92]) . Since the zeros of all polynomials Dnε , n ≥ 0, form an at most countable
+set, there exists a sequence {εk }k≥0 of positive numbers εk tending to zero as k → ∞ such
+that
+                                     εk n
+                                 det si+j   i,j=0
+                                                  6= 0 , n, k ≥ 0 .
+With (2.7) in hand for {snεk }n≥0 , k ≥ 0, we conclude by the continuous dependence of (2.7)
+on smεk , 0 ≤ m ≤ 2r − 1, that (2.7) holds for {s }
+                                                 n n≥0 .
+  It also follows from (2.7) that Pr and Pr−1 have no common roots, provided that Dr−1 6= 0.
+We have therefore proved the following property (cf. [2, Theorem 2.14, p.57]).
+Theorem 2. Let {sn }n≥0 be an arbitrary nonzero sequence of real numbers and r be a
+positive integer satisfying Dr−1 6= 0. Then deg Pr = r, Pr−1 6≡ 0, Qr 6≡ 0 and the polynomial
+Pr has no common zeros with the polynomials Pr−1 and Qr .
+
+   Observe, that Theorem 2 can also be easily deduced from [5, Theorem 1.9, p.80; Theorem
+1.3(ii), p.44]. We will in the sequel use the following notion.
+

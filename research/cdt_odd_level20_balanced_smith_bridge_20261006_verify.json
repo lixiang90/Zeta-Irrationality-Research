@@ -1,0 +1,82 @@
+{
+  "scope": "exact finite floor/transport/arithmetic checks only; DVR, tensor flag, all-prime and limits proved in report",
+  "checks_passed": 42,
+  "check_labels": [
+    "m4_local_floor_mass",
+    "m4_d2_tensor_rank",
+    "m4_d2_tensor_floor_mass",
+    "m4_d2_threshold_sum",
+    "m4_d4_tensor_rank",
+    "m4_d4_tensor_floor_mass",
+    "m4_d4_threshold_sum",
+    "m7_local_floor_mass",
+    "m7_d2_tensor_rank",
+    "m7_d2_tensor_floor_mass",
+    "m7_d2_threshold_sum",
+    "m7_d4_tensor_rank",
+    "m7_d4_tensor_floor_mass",
+    "m7_d4_threshold_sum",
+    "gamma_1",
+    "gamma_two_thirds",
+    "gamma_one_third",
+    "unit4_tau",
+    "unit7_tau",
+    "unit4_kappa",
+    "unit7_kappa",
+    "B3_actual_rows",
+    "B3_matching_window",
+    "B3_kappa",
+    "B3_necessary_scale",
+    "B3_still_above_29_10",
+    "B4_actual_rows",
+    "B4_matching_window",
+    "B4_kappa",
+    "B4_necessary_scale",
+    "B4_still_above_29_10",
+    "B5_actual_rows",
+    "B5_matching_window",
+    "B5_kappa",
+    "B5_necessary_scale",
+    "B5_still_above_29_10",
+    "B4_K2L_actual_rows",
+    "B4_K2L_matching_window",
+    "B4_K2L_kappa",
+    "B4_K2L_necessary_scale",
+    "B4_K2L_still_above_29_10",
+    "log16_below_29_10"
+  ],
+  "fixed_arrays": [
+    {
+      "name": "B3",
+      "m": 8,
+      "a0": "1",
+      "tau": "167/64",
+      "kappa": "31/12",
+      "necessary_rho": "62/21"
+    },
+    {
+      "name": "B4",
+      "m": 9,
+      "a0": "1",
+      "tau": "2597/972",
+      "kappa": "859/324",
+      "necessary_rho": "859/288"
+    },
+    {
+      "name": "B5",
+      "m": 10,
+      "a0": "1",
+      "tau": "1369/500",
+      "kappa": "2041/750",
+      "necessary_rho": "2041/675"
+    },
+    {
+      "name": "B4_K2L",
+      "m": 10,
+      "a0": "1",
+      "tau": "1087/400",
+      "kappa": "3241/1200",
+      "necessary_rho": "3241/1080"
+    }
+  ]
+}

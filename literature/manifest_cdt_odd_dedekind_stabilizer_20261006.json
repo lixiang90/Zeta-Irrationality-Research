@@ -1,0 +1,48 @@
+{
+  "created_date": "2026-10-06",
+  "purpose": "Primary literature for the actual D12 Eisenstein/Sym2 cocycle stabilizer problem; independent of affine_galois manifests",
+  "archive_policy": "Original fixed-version PDFs downloaded without rewriting; SHA256/page count/header and first-page title/author/version visually verified",
+  "entries": [
+    {
+      "title": "Higher Weight Generalized Dedekind Sums",
+      "authors": [
+        "Preston Tranbarger"
+      ],
+      "arxiv_id": "2512.17139",
+      "version": "v1",
+      "version_date": "2025-12-19",
+      "source_url": "https://arxiv.org/pdf/2512.17139v1",
+      "local_path": "literature/tranbarger2025_higher_weight_dedekind_sums_v1.pdf",
+      "sha256": "58f7f517201a6844e5a8de545a5c7a0b32f20e8e900a8588397ef1de95050612",
+      "bytes": 1039005,
+      "pdf_pages": 29,
+      "first_page_visual_verification": "Title, author, arXiv v1 identifier and 19 Dec 2025 date confirmed on rendered original page",
+      "actual_read_scope": "PDF pp. 1-5: definitions, finite-sum theorem 1.7, quantum-modular and lattice statements, Fricke setup; PDF pp. 22-23: section 6.2 proof of theorem 1.17, slash-stable lattice, finite-generator interpolation and containment/equality distinction. This is a targeted reading, not a claim that all 29 pages have been reviewed.",
+      "usable_input": "Higher-weight polynomial-valued period integral; B1 times B_(k-1) finite formula; all-group arithmetic containment follows from finite-generator period polynomials and slash-stable lattices.",
+      "application_limits": "Characters in the stated construction are both primitive and nontrivial. Our D12 source contains ordinary old E4 and character-times-trivial Eisenstein terms with regularized cusp constants, so the source-level statements do not directly apply. Theorem 1.17 gives image containment, not full kernel classification; numerical image conjectures remain conjectures."
+    },
+    {
+      "title": "The kernel of newform Dedekind sums",
+      "authors": [
+        "Evuilynn Nguyen",
+        "Juan J. Ramirez",
+        "Matthew P. Young"
+      ],
+      "arxiv_id": "2008.06077",
+      "version": "v1",
+      "version_date": "2020-08-13",
+      "published_reference": "Journal of Number Theory 223 (2021), 53-63; the archived file is the 9-page arXiv v1 preprint",
+      "source_url": "https://arxiv.org/pdf/2008.06077v1",
+      "local_path": "literature/nguyen_ramirez_young2020_kernel_newform_dedekind_sums_v1.pdf",
+      "sha256": "72e16ce2d37fbf30f6d0e2029536782fb82aa6fe2b94055439f6f1a485f010a9",
+      "bytes": 430233,
+      "pdf_pages": 9,
+      "first_page_visual_verification": "Title, three authors, arXiv v1 identifier and 13 Aug 2020 date confirmed on rendered original page",
+      "actual_read_scope": "PDF pp. 1-8: weight 2/scalar crossed homomorphism setup, finite B1-B1 sum, Fricke reciprocity, kernel theorems 1.9-1.11, propositions 2.1-2.5/corollary 2.7 and their proofs, index/commutator arguments, Galois kernel invariance. References/address page 9 was not needed for the mathematical review.",
+      "usable_input": "Structural use of reciprocity and unipotent powers to obtain infinite kernel families; separating strong nontriviality, infinite index and full kernel classification; algebraic Galois invariance applies only to the Dedekind-sum values.",
+      "application_limits": "On Gamma1 their weight 2 correction is a scalar group homomorphism, so commutator containment and power/root arguments use an abelian target. Our weight 4 correction is an actual Sym2-valued crossed homomorphism with nontrivial slash, and these assertions cannot be transferred without new proof. The paper does not classify our D12 origin stabilizer or prove a new odd-L irrationality statement."
+    }
+  ],
+  "new_local_result": "research/cdt_odd_level12_stabilizer_structure_20261006.md proves a concrete free-factor decomposition from the complete frozen Schreier presentation and a sign-restricted all-word strict-cone exclusion. This theorem is proved locally, not inferred from either archived paper.",
+  "unresolved": "Mixed-sign normal-form cancellations and the entire actual pureL/joint origin stabilizer remain open. Neither literature source closes this gap."
+}

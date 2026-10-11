@@ -1,0 +1,67 @@
+{
+  "state": "FINAL_PAPER_RECEIPT",
+  "date_local": "2026-10-07",
+  "author": "/root/masked_racah_finalize",
+  "scope": "Actual fixed lambda2 masked-cross Racah all-profile normality, degree<2r actual cross right inverse, exact middle sequence, and equivalent known restricted-H boundary; no restricted-H unit claim",
+  "baseline_frozen_records": 518,
+  "baseline_preservation": "All baseline records read-only; final root delivery auditor is responsible for whole-baseline physical verification",
+  "execution": {
+    "new_own_mathematical_runs": 0,
+    "old_or_peer_execute_import_rerun": 0,
+    "auxiliary_unit_table_extensions": 0,
+    "new_prime_data": 0,
+    "lean": false
+  },
+  "actual_completed_reading": {
+    "author_main": "Actual FULL self-read of final unchanged 074f55 main, all 8 sections/H1-H27",
+    "independent_review_received": "Actual FULL read of scaled-root author's final 7f708d independent arithmetic review, all 4 sections",
+    "independent_review_authored": "Actual FULL self-read of own final 47d03b analytic independent review V1-V6; scaled-root c529 main, entire 95e7 source, entire 321d saved JSON and every field, entire e1e9 guard were actually FULL read without execution",
+    "frozen_inputs": "Actual FULL read of frozen d540 cross C1-C30, frozen 2e04 cubic/middle R1-R30, and frozen 03a4 coupled main C1-C23/all sections",
+    "root_review": "Root message confirms actual FULL independent read of 074f55 candidate H1-H27 and KS PDF28-29; no requested change"
+  },
+  "primary_sources": [
+    {
+      "title": "The Askey-scheme of hypergeometric orthogonal polynomials and its q-analogue",
+      "authors": "Roelof Koekoek and René F. Swarttouw",
+      "source_url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "bytes": 737178,
+      "archive_pages": 170,
+      "actual_full_text_pages_this_round": [28, 29],
+      "actual_distinct_pages_this_round": 2,
+      "reading_purpose": "Eq1.2.1 definition/termination and Eq1.2.2 weight, M and every norm factor for the g=2r specialization",
+      "new_download": false,
+      "full_pdf_read": false,
+      "tls_bypass": false
+    }
+  ],
+  "frozen_artifact_pins": [
+    {"path": "research/cdt_odd_paired_restricted_H_normality_20261007.md", "sha256": "074f55c5d83547b6b9a301cd515d1b676a5c3a2723a40e9101cb45e48b7f703f", "role": "Own final paper; internal pending-status sentence is historical and superseded externally by this completed receipt"},
+    {"path": "research/cdt_odd_paired_restricted_H_normality_independent_review_20261007.md", "sha256": "7f708deca50eb821d282014ae33d3e6175304bdccbfaf5854f85628b1181b289", "role": "Independent actual FULL arithmetic review by scaled-root author"},
+    {"path": "research/cdt_odd_paired_scaled_root_optimum_independent_review_20261007.md", "sha256": "47d03bef6663f2103c18833f9d0ecf73ca48953bc317e968f79735aa9bdb7d73", "role": "Own actual FULL analytic independent review"},
+    {"path": "research/cdt_odd_paired_cross_racah_injectivity_20261007.md", "sha256": "d5401071966ba85d67a53794e29f6a253ecd3da1b6e6ae7cd923883ab7a9d63d", "role": "Frozen actual input"},
+    {"path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006.md", "sha256": "2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24", "role": "Frozen actual complete cubic and middle definitions"},
+    {"path": "research/cdt_odd_paired_coupled_gram_decay_20261007.md", "sha256": "03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965", "role": "Frozen actual analytic antecedent FULL read for independent review"},
+    {"path": "research/cdt_odd_paired_scaled_root_optimum_20261007.md", "sha256": "c529ece382b5e9959d35210a8ef3675d4ef76fa08ffab60daa232a7f359552e2", "role": "Peer final main FULL read for independent review"},
+    {"path": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.py", "sha256": "95e7ff89a97a6633de4441288a32c787d6ef59aa16efc93d7d50dec5f744e242", "role": "Peer preserved source FULL static read only"},
+    {"path": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.json", "sha256": "321d0da51964c27e6fa710d844b2d251071e2736cf6bc5b6047b8d0b1b1855ff", "role": "Peer preserved result FULL all-field read only"},
+    {"path": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json", "sha256": "e1e97654436d92dada737c0a9dee938008df3b976e85d67cc51a422647364189", "role": "Peer preserved guard FULL read only"}
+  ],
+  "proved": [
+    "J_m is a third exact Racah functional with g=2r and all leading profiles through 4r+1 units for every actual auxiliary prime",
+    "Actual C already has full row rank on Q degree<2r, with a known-unit degree<2r right inverse",
+    "Complete degree-filtered ker C basis, exact determinant scale and surjective middle evaluation with explicit r-dimensional middle-vanishing kernel",
+    "Actual middle update restricted to ker C has exact rank r",
+    "Restricted-H determinant and corank are equivalent to a 2r known boundary with no fifth-power seeds, without dividing any actual unknown Gram"
+  ],
+  "unproved": [
+    "Known boundary determinant nonzero and restricted-H unit",
+    "Compressed D_high normality",
+    "Actual fixed fifth-power M5 unit on an infinite auxiliary subsequence",
+    "Fixed rational source infinite success or actual higher Smith bound",
+    "Same-object global strict margin",
+    "New zeta/L/Catalan irrationality or linear independence theorem"
+  ],
+  "receipt_topology": "One-way final receipt; no future peer/root receipt pinned, no mutable main or delivery-audit pin, no circular final-receipt dependency"
+}

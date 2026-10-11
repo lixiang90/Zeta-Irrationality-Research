@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-06",
+  "author_agent": "/root/toric_chow_completion",
+  "status": "final frozen author proof and exact certificate; root and arithmetic agent full paper reviews passed",
+  "proof": {
+    "path": "research/cdt_odd_restored_zero_equilibrium_energy_20261006.md",
+    "sha256": "264cc3fce8d8417e04e3aea8963010b0f8804c2014692d4a64827c774454f0e6",
+    "actual_author_read": "Full saved E1-E35 proof read back in one untruncated UTF-8 output; paper derivations self-checked. Independent root and arithmetic agent actual full E1-E35 paper readings passed at the same final SHA; no mathematical change from the reviewed candidate.",
+    "scope": "Explicit positive-mixture equilibrium, global EL inequality, every-n complete-contour determinant upper bound, closed rational-log beta constants, exact leading energy for the specified positive envelope only.",
+    "not_proved": "Matched arithmetic margin; actual complex determinant optimality; new special-value irrationality or linear independence; Lean verification."
+  },
+  "frozen_read_only_inputs": [
+    {
+      "path": "research/cdt_odd_mixed_double_pole_analytic_decay_20261006.md",
+      "sha256": "c4e8f04f0debe34cf896780424e6ceb256747eaca0d3ed3b9698802757447218",
+      "actual_read": "Full D1-D31 proof reread this round; complete contour, uniform product and fixed-order kernel bounds reused within their proven scope."
+    },
+    {
+      "path": "research/cdt_odd_double_pole_layout_budget_root_20261006.md",
+      "sha256": "644f7dbf8e01ec85f938c49435becded48533c88577f712999b6eecb0ae7c3c5",
+      "actual_read": "Full R1-R9 proof reread this round; frozen tangent windows and safe arithmetic upper bounds only. Linked mathematical producers not run or imported."
+    }
+  ],
+  "primary_sources": [
+    {
+      "path": "literature/saff2010_logarithmic_potential_arxiv1010_3760v1_20261006.pdf",
+      "sha256": "cfbeaad8cf695fc1b5528fd56295d7e3053056634c6841765a434ce9b074d862",
+      "url": "https://arxiv.org/pdf/1010.3760v1",
+      "total_pages": 36,
+      "archived_by": "root this round, normal verified TLS; this agent did not download or modify PDF",
+      "actual_read_pages": [32, 33, 34, 35, 36],
+      "actual_read_detail": "Section 6, admissibility on unbounded line, Theorem 6.1 and (6.2) weighted equilibrium characterization. Initial GBK extraction failed; UTF-8 extraction then delivered all five pages completely. No full 36-page read claimed.",
+      "role": "Primary context and normalization check; finite-n upper/lower partition estimates are independently proved in NEW MD."
+    },
+    {
+      "path": "literature/lai2026_linear_independence_1_zeta3_zeta4_arxiv2610_06838v1_20261006.pdf",
+      "sha256": "838c0331efb1ea249b60308e00e1fbc2ae8771c55da4eaf22e7beb0243250a58",
+      "total_pages": 25,
+      "actual_read_prior_round_pages": [1, 2, 3, 4, 5, 6, 7, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "this_round_pdf_read_pages": [],
+      "role": "Previously read source underlying frozen complete-contour identity; not newly claimed as a full 25-page read."
+    }
+  ],
+  "own_new_mathematical_producer": {
+    "path": "research/cdt_odd_restored_zero_equilibrium_energy_verify_20261006.py",
+    "sha256": "8aabd288de14fa1b0c72fd72a4b9568ec610b9e22af7ea205de472c8b88e7804",
+    "execution_count": 1,
+    "execution_status": "First and only execution PASS, 18 exact Fraction checks",
+    "output_path": "research/cdt_odd_restored_zero_equilibrium_energy_verify_20261006.json",
+    "output_sha256": "ef3fc4a69593411eb6ae10b680f4b406a22c823c54a5182043e45fd03b339d66",
+    "scope": "Rational logarithm interval constants and endpoint algebra only; no finite-n fitting or proof of general n from samples."
+  },
+  "counts_this_agent_this_round": {
+    "new_pdf_downloads": 0,
+    "newly_archived_primary_pdf_pages_actually_read": 5,
+    "own_new_mathematical_producers": 1,
+    "own_new_mathematical_executions": 1,
+    "old_or_peer_mathematical_execution_import_rerun": 0
+  }
+}

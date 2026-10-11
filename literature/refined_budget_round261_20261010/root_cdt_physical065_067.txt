@@ -1,0 +1,171 @@
+PHYSICAL PAGE 65
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)               65
+
+  By the prime number theorem, our asymptotic is given by
+
+                   h0                                 !
+      n −l − X ((n −k)/a −n/(a + 1)) −(max(n/(h0 + 1), l) −n/(h0 + 1)) + o(n)
+                a=1
+       h0   !                                          h0   !
+= k X 1/a + max(n/(h0 + 1), l) −l + o(n) = k X 1/a + (n/(h0 + 1) −l)+ + o(n)
+     a=1                                        a=1
+
+                      n                    n
+and n/(h0 + 1) =              =                 ⌊(n −k)/ max(k, l)⌋+ 1   ⌊(n + (l −k)+)/ max(k, l)⌋.
+  The precise formulation of the second assertion (2) is that for any ϵ > 0, there
+exists N = N(ϵ) such that for all n > N and all 0 ≤k, l ≤n, we have
+
+        ⌊(n−k)/ max(k,l)⌋                            +
+                                       n
+  log L≥ln,k ≤ k  X     1/h +  ⌊(n + (l −k)+)/ max(k, l)⌋−l  + ϵn.
+                   h=1
+
+By Lemma 5.0.1 (2), there exists δ = δ(ϵ) such that for all n > N1(ϵ) and all
+k ≤δn, we have
+                              log L≥ln,k ≤log Ln,k < ϵn.
+
+Therefore, we now assume k > δn. For l < min{δ, ϵ/2}n < k, by Lemma 5.0.1(1),
+we have that for n > N2(δ, ϵ/2) = N2(ϵ),
+
+                  ⌊(n−k)/k⌋  
+                                        n
+          log L≥ln,k ≤log Ln,k ≤ k X   1/h + ⌊n/k⌋+ (ϵ/2)n
+                                 h=1
+
+                  ⌊(n−k)/k⌋             +
+                                         n
+                ≤ k X   1/h +  ⌊n/k⌋−l  + ϵn,
+                                 h=1
+
+which is the desired bound as max(k, l) = k in this case. For l > (1 −δ/2)n, by
+definition, we have log L≥ln,k ≤log L≥(1−δ/2)nn,k          . Applying (1) to γ0 = δ, γ′0 = 1 −δ/2,
+we have that there exists N3 = N3(δ) = N3(ϵ) such that for all n > N3, we have
+
+            ⌊(n−k)/ max(k,(1−δ/2)n)⌋  
+   log L≥(1−δ/2)nn,k    ≤ k   X        1/h 
+                             h=1
+                      n                           +
+  +                                         −δ/2)n  + (ϵ/2)n.       ⌊(n + ((1 −δ/2)n −k)+)/ max(k, (1 −δ/2)n)⌋−(1
+
+Note that the first term is 0 since n −k < (1 −δ/2)n and the second term ≤
+n −((1 −δ/2)n ≤(δ/2)n. For the above proof, we may shrink δ to make it < ϵ and
+then the above discussion shows that for all l ≥(1 −δ/2)n, we have the desired
+bound
+                              log L≥ln,k ≤log Ln,k ≤ϵn.
+
+Now we only remain to consider k ≥δn and min{δ, ϵ/2}n ≤l < (1 −δ/2)n and
+this case follows from (1).                               □
+
+PHYSICAL PAGE 66
+66                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                            6. The fine holonomy bound
+
+   In this section, we arrive at our first main holonomy bound (Theorem 6.0.2),
+which we prove by revisiting the method in [CDT21, § 2.5] and enhancing it by the
+(standard) results of § 3 and § 4. This elementary treatment of our bound suffices
+for the proof of Theorems A and C and for all our other applications in this paper.
+Later, in § 7 and § 8, we will prove other holonomy bounds, some of which involve
+a Bost–Charles double integral that is theoretically smaller than the rearrangement
+integral in (6.0.15); however, we will find in Remark 8.1.17 and § 8.3 the difference
+to be negligibly small in practice.  For our default treatment we have opted to
+highlight the increasing rearrangement feature which occurs, under a probabilistic
+interpretation, simultaneously in the top and bottom quantities in the holonomy
+quotient (6.0.10).
+   In order to state our holonomy bound, we first define (following Lemma 5.0.4) a
+function to measure up the additional contributions to the coefficient denominators
+in our multivariable evaluation module under including the integrals of our original
+set of functions, as discussed in § 5. (In the statement of Theorem 6.0.2, these will
+be the functions fi of the form (6.0.9) with ei > 0.)
+
+Definition 6.0.1. For 0 ≤max{u, 1} ≤v and w ≤v, set
+
+                  1                              v   ⌊(t−1)/ max(1,w)⌋  
+           Z
+                   max{t −w, 0} dt +                                 Z      X     1/h     Ivu(w) :=
+                min{u,1}                      max{u,1}      h=1      dt
+          Z v                                   t
+      +       max                                    0   dt.               max{u,1}        ⌊(t + max(0, w −1))/ max(1, w)⌋−w,
+
+  We now have:
+
+Theorem 6.0.2. Consider two positive integers m, r ∈N>0, a nonnegative integer
+vector e := (e1, . . . , em) ∈Nm, and an m × r rectangular array of nonnegative real
+numbers
+                    b :=  bi,j 1≤i≤m, 1≤j≤r,
+all of whose columns have the form
+
+   0 = b1,j = · · · = buj,j < buj+1,j = · · · = bm,j =: bj,     ∀j = 1, . . . , r,    (6.0.3)
+
+for some uj ∈{0, 1, . . . , m} depending on the column. Let
+
+                       σi := bi,1 + . . . + bi,r,      i = 1, . . . , m
+
+be the i-th row sum, and define
+
+              m                             r
+                 1          τ ♭(b) := X(2i −1)σi = σm −1               X u2jbj ∈[0, σm].          (6.0.4)             m2                m2
+                       i=1                      j=1
+and, with Imξ (ξ) as in Definition 6.0.1,
+
+                    ( m             )
+              τ ♯(e) := (2/m2) min   ξ X ei +  max ei  Imξ (ξ)   .        (6.0.5)
+                                  ξ∈[0,m]           1≤i≤m
+                                        i=1
+
+Define, finally,
+                           τ(b; e) := τ ♭(b) + τ ♯(e).                        (6.0.6)
+
+PHYSICAL PAGE 67
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)               67
+
+Consider a sequence of holomorphic mappings φ0, . . . , φl  : (D, 0) →(C, 0) with
+derivatives ( conformal sizes) satisfying
+      |φ′0(0)| < |φ′1(0)| < · · · < |φ′l(0)|   and    |φ′l(0)| > emax(σm,τ(b;e)).     (6.0.7)
+Accordingly, partition the segment [0, m] by introducing the division point parame-
+ters
+                       0 = γ0 < · · · < γl < γl+1 = m,
+and use these choices to define an L1 function by piecewise patching the functions
+log |φk| on the circle T according to the linear scaling of [0, 1) to [γk/m, γk+1/m):
+          gφ,γ : [0, 1) →R ∪{−∞},
+                               2πi mt−γk                                          (6.0.8)
+        gφ,γ(t) := log φk  e   γk+1−γk    on   t ∈[γk/m, γk+1/m) .
+
+If   there exists            an                 m-tuple f1,                                               . . . , fm
+functions          with             denominator                             types                                    of the∈QJxKform of Q(x)-linearly independent formal
+          ∞                 xn
+   fi(x) = ai,0 + X ai,n                                              ai,n ∈Z,   (6.0.9)                           nei[1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n],               n=1
+such     that          fi(φk(z))
+all   pairs           i      = 1, . . . , m∈CJzKand k =is 0,the. . germ. , l, thenof a meromorphic function on |z| < 1 for
+
+                                                                                       l
+                                         1                     Z 1                                                                    |φ′k(0)|               X                               2t · g∗φ,γ(t) dt +                                                γ2k log
+                               0         m k=1        |φ′k−1(0)|
+           m ≤
+                                       log |φ′l(0)| −τ(b; e)
+                                                                              (6.0.10)
+                                                                                      l
+                                        1       Z 1 Z 1                                                                   |φ′k(0)|               X           max (gφ,γ(s), gφ,γ(t)) ds dt +                                               γ2k log
+           0   0                m k=1        |φ′k−1(0)|
+   =                                                                                               .
+                             log |φ′l(0)| −τ(b; e)
+If moreover all functions fi are a priori assumed to be holonomic, the assumption
+|φ′l(0)| > emax(σm,τ(b;e)) on φl in equation (6.0.7) can be relaxed to |φ′l(0)| > eτ(b;e).
+   Here, in g∗, we use the notation from (2.4.1) of the increasing rearrangement
+                                                                                                                · g∗(t) dt =function of g. This is why we will often refer to quantities like R 01 2t
+RR   [0,1]2 max (|g(s)|, |g(t)|) ds dt as to rearrangement integrals.
+
+Remark 6.0.11 (Musical Notation). In the notation of Theorem 2.5.1, we have
+τ(b) = τ ♭(b) = τ(b; 0). Our reason for the musical notation is to think of τ =
+τ ♭(b) as the main reduction (flattening) of cruder values such as the value τ = σm
+from [CDT24] when we remove the powers ne from (7.0.1), and of τ ♯(e) as the extra
+term from adding those integrations to the original list of functions.      △
+
+Remark 6.0.12. In Theorem 6.0.2 (and all the other similar theorems that we
+prove), we may formally relax the denominator type (6.0.9) to allow for the looser
+form:
+                    nei[1, . . . , bi,1 · n + ci,1] · · · [1, . . . , bi,r · n + ci,r],           (6.0.13)
+for any fixed set of integers ci,j. This follows upon applying the original statement
+of our theorem where all the nonzero bi,j are changed to bi,j +ε, for some sufficiently
+small positive number ε > 0. This subsumes the denominator type (6.0.13) for all
+but finitely many n, and any finite initial string of coefficients can be made to have

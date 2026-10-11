@@ -1,0 +1,56 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                              71
+
+
+in how the denominators in the leading order coefficients of the auxiliary functions
+end up getting estimated in the proof of Theorem 6.0.2; the rate τ ♭ (b) + τ ♯ (e)
+serves as an upper bound, and that upper bound estimation turns out to be strict
+and lossful in the example at hand. We do not know whether or not the upper
+bound is an equality in the m = 14 case that we ultimately devise for the proof
+of Theorem A, but we expect it to be a fairly sharp denominator estimate, and
+possibly an equality.                                                             △
+Example 6.0.20. We give one final example, which we will use in § 6.8 to complete
+the proof of Theorem 2.8.4. For the case
+                                   
+                              0 0
+                             0 2 
+                       b=   0 2 ,
+                                         e = (0, 0, 1, 0)
+                              1 2
+relevant to a set of four functions with denominator types
+                       xn                 xn                           xn
+      xn ,                       ,                    ,                                 ,   (6.0.21)
+                 [1, . . . , 2n]     n[1, . . . , 2n]     [1, . . . , n][1, . . . , 2n]
+we have
+                       37              7                 21
+                 τ ♭ (b) =, τ ♯ (e) =    ,   τ (b; e) =      = 2.625,
+                       16             16                  8
+with the 7/16 value being attained on the identical interval minimizer ξ ∈ [2, 3].
+   But even the intermediate crude choice
+                                    
+                               0 0
+                            0 2 
+                            1 2 ,
+                      b0 =                e0 = (0, 0, 0, 0),
+                               1 2
+that minimally covers the types (6.0.21) within the framework of Theorem 2.5.1
+highlighted for the introduction, already gives
+                                 1                                   21
+          τ (b0 ; e0 ) = τ (b0 ) = (1 · 0 + 3 · 2 + 5 · 3 + 7 · 3) =    = 2.625.
+                                16                                    8
+In this case the value is the same, similarly to the situation in Basic Remark 6.0.17.
+                                                                                    △
+   In contrast to the examples above, exploiting a refined pair (b; e) does often
+lead to strictly better results than are possible by capping up to some cruder e = 0
+scheme. This is in particular true for the proof Theorem A laid out in § 13. There
+we have a local system of rank m = 14 with added integrals, meaning ei = 1
+for six of the indices, and ei = 0 for the remaining eight indices. Such a vector
+has τ # (e) = 27/80 after a simple computation (13.0.5). Overall the fine τ (b; e) used
+computes to 191/49 + 27/80 = 16603/3920 = 4.235459 . . .. But with e = 0 types
+in this example we do not get a better estimate than the rather poor 865/196 =
+4.413265 . . . of Remark 13.0.7.
+
+6.1. Horizontal integration. Our proof scheme follows precisely the d → ∞
+asymptotic method that we originally devised for our first solution [CDT21, route
+§ 2.5] of the unbounded denominators conjecture. This was the idea that we dubbed
+a cross-variables integration, where the given single-variable functions fi (x) were
+

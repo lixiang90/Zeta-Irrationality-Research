@@ -1,0 +1,143 @@
+{
+  "status": "independently_verified",
+  "cases": [
+    {
+      "N": 3,
+      "K": 40,
+      "h": 37,
+      "q": 17,
+      "head_full_polynomial_identity": true,
+      "baseline_full_polynomial_verified": true,
+      "rows": [
+        {
+          "label": "principal_part_step_one",
+          "status": "verified",
+          "M": "10884540241",
+          "logU_interval": "[1415.370133070597266080195689780498742048056407183560802 +/- 2.12e-52]",
+          "logPT_interval": "[1223.094100308309126678267576373360377615071965941609188 +/- 3.70e-52]",
+          "head_gap_interval": "[192.2760327622881394019281134071383644329844412419516146 +/- 1.93e-53]",
+          "endpoint_distance_over_L": "[0.5641208958413246047436085721799988727459413916545055727 +/- 2.45e-56]",
+          "extra_parameter_content": "1",
+          "actual_minus_baseline": "[140.4250543850539597419058479866281255821403682153804878 +/- 4.94e-54]",
+          "actual_minus_head": "[191.7035460661620443864102725715637781374142637137242542 +/- 1.08e-54]",
+          "independent_full_polynomial": false,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "status": "verified",
+          "M": "12734912081970",
+          "logU_interval": "[1268.618448793262505772884815259574560480707081590971083 +/- 1.41e-53]",
+          "logPT_interval": "[1223.094100308309126678267576373360377615071965941609188 +/- 3.70e-52]",
+          "head_gap_interval": "[45.52434848495337909461723888621418286563511564936189536 +/- 4.82e-54]",
+          "endpoint_distance_over_L": "[0.2728552316927264730100928519395787738925580777903662582 +/- 4.75e-56]",
+          "extra_parameter_content": "567",
+          "actual_minus_baseline": "[-13.39331647004950927438568744503464131153549361932805038 +/- 1.71e-54]",
+          "actual_minus_head": "[37.88517521105857537011873713990101124373840187901571603 +/- 4.43e-54]",
+          "independent_full_polynomial": true,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "K": 55,
+      "h": 51,
+      "q": 23,
+      "head_full_polynomial_identity": true,
+      "baseline_full_polynomial_verified": true,
+      "rows": [
+        {
+          "label": "principal_part_step_one",
+          "status": "verified",
+          "M": "279841",
+          "logU_interval": "[2792.260062571185184897618198700735045578250845700072185 +/- 2.96e-52]",
+          "logPT_interval": "[2506.705532353338833529296216288976213173788991830895121 +/- 2.77e-52]",
+          "head_gap_interval": "[285.5545302178463513683219824117588324044618538691770634 +/- 2.80e-53]",
+          "endpoint_distance_over_L": "[0.6218145557140820188541626233752565779649438412157547145 +/- 2.59e-57]",
+          "extra_parameter_content": "1",
+          "actual_minus_baseline": "[232.6290503633830168829697801385140084745992603175582145 +/- 3.28e-54]",
+          "actual_minus_head": "[285.0794168452114752585176321442750241118543648873880413 +/- 4.52e-53]",
+          "independent_full_polynomial": false,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "status": "verified",
+          "M": "99781754663808",
+          "logU_interval": "[2554.165811895706653555058035103535250328568788989389102 +/- 1.12e-52]",
+          "logPT_interval": "[2506.705532353338833529296216288976213173788991830895121 +/- 2.77e-52]",
+          "head_gap_interval": "[47.46027954236782002576181881455903715477979715849398061 +/- 1.83e-54]",
+          "endpoint_distance_over_L": "[0.5878132623595818712711064065671331316817229640601654964 +/- 2.41e-56]",
+          "extra_parameter_content": "150",
+          "actual_minus_baseline": "[-10.53206833950233723321071737361974029902114687789788672 +/- 2.36e-54]",
+          "actual_minus_head": "[41.91829814232612114233713463214127533823395769193194004 +/- 4.27e-54]",
+          "independent_full_polynomial": true,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "K": 70,
+      "h": 65,
+      "q": 29,
+      "head_full_polynomial_identity": true,
+      "baseline_full_polynomial_verified": true,
+      "rows": [
+        {
+          "label": "principal_part_step_one",
+          "status": "verified",
+          "M": "653188856401",
+          "logU_interval": "[4509.833352737727936669368278391780837580173208568317877 +/- 3.01e-52]",
+          "logPT_interval": "[4094.681623899202269332650301948230328122837509588801375 +/- 3.84e-54]",
+          "head_gap_interval": "[415.1517288385256673367179764435505094573356989795165023 +/- 4.15e-54]",
+          "endpoint_distance_over_L": "[0.6478917725310423814801666555930466935887461153600183288 +/- 3.64e-56]",
+          "extra_parameter_content": "64",
+          "actual_minus_baseline": "[341.8952838158336275911989989068393079537425737454433806 +/- 3.57e-53]",
+          "actual_minus_head": "[410.5588141408881153844783950813814432456726054606642954 +/- 1.02e-53]",
+          "independent_full_polynomial": false,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "status": "verified",
+          "M": "961402550182375860",
+          "logU_interval": "[4155.077507752865278776176674266922111745232431508056553 +/- 1.96e-53]",
+          "logPT_interval": "[4094.681623899202269332650301948230328122837509588801375 +/- 3.84e-54]",
+          "head_gap_interval": "[60.39588385366300944352637231869178362239492191925517798 +/- 4.30e-54]",
+          "endpoint_distance_over_L": "[0.6210785106895335702627876787449061877171324451223473395 +/- 4.35e-56]",
+          "extra_parameter_content": "16",
+          "actual_minus_baseline": "[-11.51653297595917815284281492265680061154071961910730141 +/- 2.40e-54]",
+          "actual_minus_head": "[57.14699734909530964043658125188533468038931209611361343 +/- 3.34e-54]",
+          "independent_full_polynomial": true,
+          "exact_determinant_X_checks": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

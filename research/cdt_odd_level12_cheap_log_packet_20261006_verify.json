@@ -1,0 +1,350 @@
+{
+  "scope": "Fixed k=2,3 columnwise upper arithmetic; no actual radius/J or rank tests.",
+  "passed_count": 56,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "m13c2 segment0 left",
+      "actual": "9/13",
+      "expected": "9/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment0 middle",
+      "actual": "9/13",
+      "expected": "9/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment0 right",
+      "actual": "9/13",
+      "expected": "9/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment1 left",
+      "actual": "9/13",
+      "expected": "9/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment1 middle",
+      "actual": "6/13",
+      "expected": "6/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment1 right",
+      "actual": "3/13",
+      "expected": "3/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment2 left",
+      "actual": "3/13",
+      "expected": "3/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment2 middle",
+      "actual": "3/13",
+      "expected": "3/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment2 right",
+      "actual": "3/13",
+      "expected": "3/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment3 left",
+      "actual": "3/13",
+      "expected": "3/13",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment3 middle",
+      "actual": "3/26",
+      "expected": "3/26",
+      "passed": true
+    },
+    {
+      "name": "m13c2 segment3 right",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "m13c2 exact integral",
+      "actual": "129/169",
+      "expected": "129/169",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment0 left",
+      "actual": "19/23",
+      "expected": "19/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment0 middle",
+      "actual": "19/23",
+      "expected": "19/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment0 right",
+      "actual": "19/23",
+      "expected": "19/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment1 left",
+      "actual": "19/23",
+      "expected": "19/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment1 middle",
+      "actual": "11/23",
+      "expected": "11/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment1 right",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment2 left",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment2 middle",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment2 right",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment3 left",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment3 middle",
+      "actual": "3/46",
+      "expected": "3/46",
+      "passed": true
+    },
+    {
+      "name": "m23c2 segment3 right",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "m23c2 exact integral",
+      "actual": "369/529",
+      "expected": "369/529",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment0 left",
+      "actual": "13/23",
+      "expected": "13/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment0 middle",
+      "actual": "13/23",
+      "expected": "13/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment0 right",
+      "actual": "13/23",
+      "expected": "13/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment1 left",
+      "actual": "13/23",
+      "expected": "13/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment1 middle",
+      "actual": "8/23",
+      "expected": "8/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment1 right",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment2 left",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment2 middle",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment2 right",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment3 left",
+      "actual": "3/23",
+      "expected": "3/23",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment3 middle",
+      "actual": "3/46",
+      "expected": "3/46",
+      "passed": true
+    },
+    {
+      "name": "m23c3 segment3 right",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "m23c3 exact integral",
+      "actual": "249/529",
+      "expected": "249/529",
+      "passed": true
+    },
+    {
+      "name": "m13 col1",
+      "actual": "168/169",
+      "expected": "168/169",
+      "passed": true
+    },
+    {
+      "name": "m13 col3",
+      "actual": "69/169",
+      "expected": "69/169",
+      "passed": true
+    },
+    {
+      "name": "m23 col1",
+      "actual": "528/529",
+      "expected": "528/529",
+      "passed": true
+    },
+    {
+      "name": "k2 monomial count",
+      "actual": "10",
+      "expected": "10",
+      "passed": true
+    },
+    {
+      "name": "k3 monomial count",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "m13 rank",
+      "actual": "13",
+      "expected": "13",
+      "passed": true
+    },
+    {
+      "name": "m23 rank",
+      "actual": "23",
+      "expected": "23",
+      "passed": true
+    },
+    {
+      "name": "k2 comonotone lower",
+      "actual": "348/169",
+      "expected": "348/169",
+      "passed": true
+    },
+    {
+      "name": "k3 comonotone lower",
+      "actual": "1078/529",
+      "expected": "1078/529",
+      "passed": true
+    },
+    {
+      "name": "k2 column upper",
+      "actual": "366/169",
+      "expected": "366/169",
+      "passed": true
+    },
+    {
+      "name": "k3 column upper",
+      "actual": "1146/529",
+      "expected": "1146/529",
+      "passed": true
+    },
+    {
+      "name": "k2 Jensen upper threshold",
+      "actual": "61/26",
+      "expected": "61/26",
+      "passed": true
+    },
+    {
+      "name": "k3 Jensen upper threshold",
+      "actual": "573/253",
+      "expected": "573/253",
+      "passed": true
+    },
+    {
+      "name": "k2 threshold below12/5",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "k3 threshold below12/5",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "sqrt3 below7/4",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "exp48/5 upper times15/4 below16^4",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    }
+  ],
+  "display_only": {
+    "Cstar_upper_cap": 2.443349248008577,
+    "k2_cost_safe_upper": 2.165680473372781,
+    "k3_cost_safe_upper": 2.166351606805293,
+    "k2_Jensen_threshold_safe_cost": 2.3461538461538463,
+    "k3_Jensen_threshold_safe_cost": 2.2648221343873516
+  }
+}

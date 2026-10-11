@@ -1,0 +1,208 @@
+                                                                                   APÉRY EXTENSIONS
+
+                                                                 VASILY GOLYSHEV, MATT KERR, AND TOKIO SASAKI
+arXiv:2009.14762v3 [math.AG] 10 Jul 2023
+
+
+
+
+                                                   Abstract. The Apéry numbers of Fano varieties are asymptotic invariants of their quantum
+                                                   differential equations. In this paper, we initiate a program to exhibit these invariants as
+                                                   (mirror to) limiting extension classes of higher cycles on the associated Landau-Ginzburg
+                                                   models — and thus, in particular, as periods. We also construct an Apéry motive, whose
+                                                   mixed Hodge structure is shown, as an application of the decomposition theorem, to contain
+                                                   the limiting extension classes in question.
+                                                      Using a new technical result on the inhomogeneous Picard-Fuchs equations satisfied by
+                                                   higher normal functions, we illustrate this proposal with detailed calculations for LG-models
+                                                   mirror to several Fano threefolds. By describing the “elementary” Apéry numbers in terms of
+                                                   regulators of higher cycles (i.e., algebraic K-theory/motivic cohomology classes), we obtain
+                                                   a satisfying explanation of their arithmetic properties. Indeed, in each case, the LG-models
+                                                   are modular families of K3 surfaces, and the distinction between multiples of ζ(2) and ζ(3)
+                                                   (or (2πi)3 ) translates ultimately into one between algebraic K1 and K3 of the family.
+
+
+
+
+                                                                                      1. Introduction
+                                             Over the years since Apéry’s discovery of a proof of irrationality of ζ(3) in 1979, his
+                                           recursions
+                                                           n3 un − (34n3 − 51n2 + 27n − 5)un−1 + (n − 1)3 un−2 = 0,            (A3)
+                                           and
+                                                                   n2 un − (11n2 − 11n + 3)un−1 − (n − 1)2 un−2 = 0,                               (A2)
+                                            originally viewed as interesting individuals rather than members of an important species
+                                           — to follow Siegel’s distinction — have gradually come to be seen as being the two most
+                                           basic instances of Fuchsian DEs arising from the class of extremal Calabi–Yau pencils which
+                                           appears in various subjects in algebraic and arithmetic geometry. This makes them natural
+                                           models for case studies of this class. In each of the two cases, a unique normalized integral
+                                                                           (A3)    P       2 n+k 2        (A2)   Pn      
+                                                                                                                         n 2 n+k
+                                                                                                                                  
+                                           solution {an } exists, namely an = nk=0 nk           k
+                                                                                                     , and an    =   k=0 k     k
+                                                                                                                                   . By
+                                           considering the solutions {bn } with the initial conditions b0 = 0, b1 = 1, and the rate of
+                                           convergence of the ratios bn /an to the limits
+                                                                           (A3)                               (A2)
+                                                                           bn       1                         bn       1
+                                                                     lim    (A3)
+                                                                                   = ζ(3)     and       lim    (A2)
+                                                                                                                      = ζ(2),
+                                                                    n→∞    an       6                  n→∞    an       5
+                                           Apéry was able to deduce the irrationality of ζ(3) and improve the known order of irra-
+                                                                                             (B3)       (A2)                (B3)
+                                           tionality of ζ(2). Now, to make a story, we put an     = 2n
+                                                                                                     n
+                                                                                                        an . Clearly, the {an }
+                                           satisfy
+                                                 n3 un − (22n3 − 33n2 + 17n − 3)un−1 + 16(n − 3/2)(n − 1)(n − 1/2)un−2 = 0,                        (B3)
+                                                                                                1
+2                            V. GOLYSHEV, M. KERR, AND T. SASAKI
+
+                            (B3)   (B3)1
+                                                                                            P
+and the limit of the ratio bn /an is 10  ζ(2). Passing to the generating series Φ(t) =          cn tn
+with cn = an or bn and translating recursions into differential equations, we have
+                  (D − 1)L(A3) Φ(A3) (t) = 0 resp. (D − 1)L(B3) Φ(B3) (t) = 0
+with                                                         
+                  L(A3) = D 3 − t (2 D + 1) 17 D 2 + 17 D + 5 + t2 (D + 1)3
+and
+                                                    
+       L(B3) = D 3 − 2 t (2 D + 1) 11 D 2 + 11 D + 3 − 4 t2 (D + 1) (2 D + 3) (2 D + 1)
+   The differental operators L(A3) and L(B3) have quite a lot in common:
+       • quite naively, both are linear third-order differential operators of degree 2 in t;
+       • more specifically, both are operators of D3 type [GS07], which implies that the ith
+         coefficient in t is odd as a polynomial in D + i/2;
+       • each is a Picard–Fuchs operator which controls the variation of polarized Hodge
+         structure arising in the relative H 2 in a Shioda–Inose pencil of K3 surfaces;
+       • both are extremal, in the sense that the parabolic cohomology groups IH1 (P1 , –) of
+         the associated local systems vanish;                                  P∞         n
+       • both are modular, in the sense that in each case the solution            n=0 an t can be
+         identified with the expansion of a certain weight 2 level N Eisenstein series with
+         respect to a Hauptmodul on X0∗ (N = 6 and 5, respectively);
+       • each is the regularized quantum differential operator of a Fano complete intersection in
+         a G/P (namely, a 7–fold hyperplane section of OG(5, 10) for (A3) and an intersection
+         of two hyperplanes and a quadric in G(2, 5) for (B3)). It is this interpretation of (A3)
+         and (B3) as Picard–Fuchs operators in the Landau–Ginzburg models of such ‘Mukai
+         threefolds’ that we are concerned with in the present paper.
+Yet, in spite of all these similarities, the Apéry limit bn /an is proportional to ζ(3) in the first
+case resp. to ζ(2) in the second. Two natural questions arise:
+   (1) On the A–side of mirror symmetry, does the Apéry limit reflect the geometry of a
+Fano? Inspecting the five cases of Mukai threefolds V2n , n = 5, . . . , 9, one notices that the
+cases with limn→∞ bn /an of weight 3 match the rational Fanos V12 , V16 and V18 , while those
+of weight 2 correspond to the irrational V10 and V14 .
+   (2) On the B–side, what properties of the Landau–Ginzburg pencil control the weight of
+the Apéry limit?
+   A conceptual answer to both questions, unconditional for (2) but HMS–contingent for (1),
+is that it is ultimately the structure of the ‘south pole’ (t = ∞) fiber of the LG pencil that
+is responsible for the weight of the Apéry limit. Indeed, by HMS for Fanos, the structure of
+a Landau–Ginzburg model in the neighborhood of the south pole is expected to be related
+to the residual category [KS20], i.e. the semiorthogonal complement to the subcategory
+      b
+of Dcoh  (F ) generated by an incomplete exceptional collection. For a rational threefold the
+                                                                                     b
+properties of the residual category are closer, in a sense, to those of the Dcoh         of a bona
+fide algebraic variety than in the irrational cases. One notices a similararity here with how
+the intermediate Jacobian of a threefold can have properties inconsistent with being the
+full motive of a curve. Nevertheless, one can unconditionally relate the structure of the
+                                       APÉRY EXTENSIONS                                           3
+
+south-pole fiber to the Lefschetz decomposition of the cohomology of the Fano unsections –
+ambient varieties in which our Fano sits as a hyperplane section or a complete intersection.
+If the first non–trivial primitive class occurs in H 4 , rather than in H 6 or higher, the Apéry
+constant is going to have weight 2, in agreement with the gamma conjecture.
+   The present paper offers mainly a Hodge–theoretic answer to (2). In a nutshell, the struc-
+ture of the south-pole fiber, or more precisely, the type of the south–pole LMHS, dictates the
+Hodge type of the Hodge module whose underlying differential operator is (D −1)L: the ζ(3)
+(and L(χ−3 , 3)) cases correspond to extensions encoded by a class in relative HM   3
+                                                                                      (K3, Q(3)),
+while the ζ(2) cases correspond to extensions associated with HM (K3, Q(2)). In K–theoretic
+                                                                    3
+
+terms, the distinction is between the K3 and K1 groups of relative K3 surfaces respectively.
+A more general, heuristic view that suggests itself is this: just as the Fano F knows the quan-
+tum cohomology of its unsection, the LG-model of F remembers the asymptotics of periods
+of the LG-model of its unsection, expressed as solutions to inhomogeneous PF-equations
+L(−) = g(t) which underlie generalized normal functions.
+   Arithmetic Mirror Symmetry. Despite a smattering of examples in recent years
+[MW09, DK11, JW14, DK14], the role of algebraic cycles and their invariants in mirror
+symmetry remains something of a mystery. The above discussion suggests a new link in the
+context of Fano/LG-model duality, whose formulation (backed up by nontrivial evidence) is
+a principal goal of this paper.
+   One of the features of local mirror symmetry uncovered in [DK14, BKV17] was the en-
+trance of mixed Hodge structures, whose extension classes are described on the B-model
+side by regulators on algebraic K-theory. These same regulator classes, called higher normal
+functions when they occur in families, are at the heart of the second author’s interpretation
+[Ke17] of Apéry’s irrationality proofs for ζ(2) and ζ(3). It was in an effort to “recombine”
+this with the first author’s enumerative, A-model interpretation [Go09] of Apéry’s recurrence
+(see also [Ga16]), that the animating slogan of this paper suggested itself:
+Arithmetic Mirror Symmetry Problem: For each Fano n-fold F admitting a toric
+degeneration, show that its Apéry numbers arise as
+     • limits of (classical and higher ) normal functions produced by cycles on a 1-parameter
+        family of CY (n−1)-folds defined over Q̄,
+together with
+     • extension classes in the monodromy-invariant part of a limiting MHS of the family.
+
+A more detailed statement of this problem may be found in §5.2.
+  While computations by G. da Silva [dS19] appeared to support this line of thinking for
+the rational Fano 3-folds in [Go09], there initially seemed to be little hope for the Apéry
+           1
+numbers 10   ζ(2), 71 ζ(2) of the non-rational Fanos V10 , V14 , with neither the “deresonation off
+the motivic setting” nor the “quantum Satake” argument on the irregular side offering an
+explanation of these numbers as periods. Moreover, the model of [Ke17], in its limitation to
+Knalg of CY (n − 1)-folds, could only produce rational multiples of (2πi)3 or ζ(3) if n = 3.
+However, a new paradigm began to emerge around two years ago, allowing a much greater
+variety of cycles to enter. Our main result is thus the following affirmative solution to the
+Arithmetic Mirror Symmetry Problem (more precisely, to Problem 5.3):
+4                               V. GOLYSHEV, M. KERR, AND T. SASAKI
+
+Theorem 1.1. The Apéry numbers of the five Mukai Fano threefolds1 are limits of higher
+normal functions arising from motivic cohomology classes on associated Landau-Ginzburg
+models.
+   The Theorem is proved in §§5.3-5.5 (modulo a detail deferred to §6), using a new result on
+inhomogeneous Picard-Fuchs equations satisfied by higher normal functions (Theorem 5.1).
+In §6 we propose a theory of “Apéry extensions” on the B-model side, which encompasses
+these examples, and highlight some implications of an affirmative solution to Problem 5.3.
+In §§2-4 we place our story in context, recalling the mixed Hodge theory of GKZ systems
+and local mirror symmetry, quantum D-modules and Apéry constants of Fanos, and higher
+normal functions on Landau-Ginzburg models. In the rest of this Introduction, we would
+like to convey the idea of what an Apéry extension is and why it is important.
+           π
+   Let X → P1 be a family of compact CY (n − 1)-folds with smooth total space and fibers2
+Xt = π −1 (t), smooth off Σ = {0, t1 , . . . , tc , ∞}. Laurent polynomials φ(x) ∈ Q̄[x±1           ±1
+                                                                                       1 , . . . , xn ]
+with reflexive Newton polytope ∆ are a key source for such families, with X obtained by
+blowing up P∆ along {φ = 0} ∩ (P∆ \Gnm ), and π extending 1/φ. In particular, the mirror
+LG-model of a Fano F degenerating to P∆◦ (like those in [Go09, Ga16]) arises in this way.
+                                                 πU
+   The cohomologies of the fibration XU →            U := P1 \Σ produce VHSs Hℓ = Hfℓ ⊕ Hvℓ with
+“fixed” and “variable” parts. At each σ ∈ Σ, we have the LMHS functor ψσ and monodromies
+Tσ . All our families will have maximal unipotent monodromy at the “north pole” σ = 0;3 for
+simplicity, here we also assume4 rk(Tσ −I) = 1 if σ 6= 0, ∞, and ker{H n (Xσ ) → ψσ Hn } = {0}
+(∀σ). Then we may write A†φ := H n (X \X0 , X∞ ) as an extension
+
+(1.1)                  0 → (ψ∞ Hvn−1 )T∞ → A†φ → IH1 (P1 \{0}, Hvn−1) → 0.
+of MHS. Now the Apéry numbers of F record limits of ratios of solutions to its quantum
+difference equation (Definition 3.5); and a first approximation to the Problem is to find them
+in the extension class of (1.1).
+   Unfortunately, extension classes of MHS do not produce well-defined numbers. For in-
+stance, we have Ext1MHS (Q(−a), Q(0)) ∼    = C/Q(a), which (say) would make 10    1
+                                                                                    ζ(2) trivial in
+C/Q(2). This is where writing them as limits of admissible normal functions 5 enters: if
+(1.1) arises as limt→0 ν(t) for some ν ∈ ANF(Hvn−1 (r)), and k := rk((ψ0 Hvn−1 )T0 ), then ν has
+a unique lift ν̃ on the disk |t| < |tk+1 | to a single-valued section of Hvn−1 . Pairing this with
+                                      n−1
+a suitable section ω ∈ Γ(P1 , F n−1 Hv,e   ) yields a truncated higher normal function (THNF)
+V (t) = hν̃, ωi whose first k Taylor coefficients in t are well-defined complex numbers refining
+the information in A†φ . So higher normal functions get us from extension data to constants,
+and this is why it is better to state the Problem in terms of their limits. But which HNF to
+choose? Here are two candidates.
+1These  are, by definition, the rank-one Fano 3-folds arising as complete intersections in the Grassmannians
+of simple Lie groups other than projective spaces [Go09]; they are V10 , V12 , V14 , V16 , and V18 .
+2written X̃ in the body of the paper
+           t
+3“North” refers to the infinity point of the Landau-Ginzburg potential; since we work primarily in a neigh-
+borhood of this point, however, it is t = 0 for us.
+4
+ in the Introduction, but not in the body of the paper
+5Admissible normal functions are reviewed in §4.2 below.
+

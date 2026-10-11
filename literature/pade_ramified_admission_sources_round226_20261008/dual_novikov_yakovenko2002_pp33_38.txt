@@ -1,0 +1,309 @@
+Meromorphic flat connections                                                                  33
+
+also logarithmic on smooth parts of {f = 0}. Since both Ω and f are globally defined, the
+standard arguments involving thin sets of codimension > 2 in Cm imply then that Ω has a
+logarithmic singularity on the whole of Σ ⊂ Cm .                                       
+    It is worth a remark that for a different choice of the coframe the period matrix X 0 (t)
+differing from the period matrix for a basic coframe X(t) by a polynomial matrix factor,
+X 0 = C(t)X(t), C ∈ GL(n, C[t]). This factor is in general non-invertible along an algebraic
+hypersurface Σ 0 different from Σ (and depending on the choice of the coframe), and the
+corresponding “logarithmic derivative” Ω0 = dX 0 · (X 0 )−1 has no reasons to be logarithmic
+on Σ 0 r Σ.
+    The elementary arguments proving Theorem 5.5, can be considerably generalized. A. Boli-
+bruch established in [Bol77] necessary and sufficient conditions for a matrix function of the
+form X(t) = V (t) f (t)A to have a logarithmic singularity on {f = 0}. As a particular case
+of his result, using elementary arguments one can show that the “logarithmic derivative”
+dX · X −1 of a holomorphic matrix function X(t) has a logarithmic pole on Σ = {det X = 0}
+at those smooth points of the latter hypersurface, where the determinant has a simple (first
+order) zero.
+    Concluding this section, note that a large part of the results described here can be modified
+for the multivariate quasihomogeneous case where the polynomial H = H(w1 , . . . , wp ) in
+p > 2 complex variables is a sum of the principal quasihomogeneous part P (w1 , . . . , wp )
+(subject to the nondegeneracy condition that dP has an isolated singularity) and lower degree
+monomials with indeterminate coefficients ta wa , deg wa < deg P . The weights assigned to
+the independent variables wj need not necessarily be equal to each other. Some of the details
+can be found in [Yak02], where it is shown that the system (1.2) for the period matrix of a
+basic coframe has the form
+                                      R(t) dX = R0 (t)X,
+where R(t) is as above and R0 (t) is another matrix polynomial.
+
+
+6     Poincaré–Dulac theorem for flat logarithmic connections
+In this section we make the first step towards holomorphic gauge classification of integrable
+connections with logarithmic poles. While the result itself is not new (see [YT75]; it can
+also be found in [Bol77]), the proof that we give below, close to [YT75] is more in vein
+with the traditional “ordinary” approach based on the Poincaré–Dulac technique. It admits
+immediate generalizations for some types of polar loci different from normal crossings.
+
+6.1   “Ordinary” normalization of univariate systems
+It is well-known that a system of linear ordinary differential equations
+
+                         ẋ = A(t)x,      A(t) = t−1 (A0 + tA1 + · · · )                    (6.1)
+
+near the singular point t = 0 ∈ C1 , by an appropriate holomorphic gauge transformation
+x 7→ H(t)x, H = E + tH1 + · · · , can be simplified to keep only resonant terms. The latter
+are defined by the residue matrix A0 of the system depending on the arithmetic properties
+of this residue. In particular, if A0 is nonresonant, i.e., no two eigenvalues of the residue
+matrix differ by a nonzero integer , then there are no resonant terms and the system (6.1) by
+34                                                                           D. Novikov and S. Yakovenko
+
+a suitable holomorphic gauge transformation can be made into the Euler system ẋ = t−1 A0 x;
+the corresponding Pfaffian matrix is A0 dtt , see (2.1).
+    The proof consists in application of the Poincaré–Dulac method of construction of a
+formal gauge transformation conjugating (6.1) with its normal form. Then it can be proved
+(relatively easy) that the formal gauge transformation in fact always converges.
+    We implement the same construction in the general Pfaffian case and prove a multi-
+dimensional analog of the Poincaré–Dulac theorem. Consider a flat connection with the
+holomorphic pole on the normal crossing Σ = {t1 · · · tk = 0} ⊂ U = (Cm , 0),
+                                   k
+                                   X              dts
+                             Ω=          As (t)       + holomorphic terms.                         (6.2)
+                                                   ts
+                                   s=1
+By Theorem 4.4, the holomorphic residues As corresponding to the smooth components
+Σs = {ts = 0}, can without loss of generality be assumed constant, As = const ∈ Matn (C).
+By Theorem 4.3, the residue matrices As commute with each other.
+    Following the persistent pedagogical tradition, we assume for simplicity that all the ma-
+trices A1 , . . . , Ak are diagonal: it will be automatically the case if one of them has only simple
+(pairwise different) eigenvalues. In this case the matrix 1-form
+                                           k
+                                           X           dts
+                                   Ω0 =           As       = diag{αi }ni=1                         (6.3)
+                                                        ts
+                                           s=1
+
+will be diagonal with the 1-forms αi = ks=1 asi dttss ∈ Λ1 (log Σ) on the diagonal. Note that
+                                          P
+any diagonal flat connection is necessarily closed, dΩ = 0, since dαi = αi ∧ αi = 0. The
+numbers asi are (constant by Lemma 3.9) residues of closed logarithmic forms αi on the
+irreducible components Σs ⊂ Σ of the polar locus.
+    The closed logarithmic diagonal matrix form Ω0 = diag{α1 , . . . , αn } will be called reso-
+nant, if some difference αi − αj ∈ Λ1 (log Σ) has all integer residues. This happens if and
+only if this difference is the logarithmic derivative dh/h of a meromorphic function h holo-
+morphically invertible outside Σ. If we denote by ai = (a1i , . . . , aki , 0, . . . , 0) ∈ Cn the vector
+of residues of the form αi , then the diagonal matrix Ω is resonant if and only if ai − aj ∈ Zn
+for some i 6= j. Otherwise Ω is non-resonant.
+    Non-resonance of a collection of several residues is a rather weak arithmetic condition
+compared to non-resonance of only one residue: for example, if only one of the matrices As is
+nonresonant (no two eigenvalues differ by an integer), the entire collection will be nonresonant
+in the sense of this definition.
+Theorem 6.1. Assume that the closed diagonal matrix form Ω0 with the logarithmic pole on
+the normal crossing Σ = Σ1 ∪ · · · ∪ Σk is non-resonant.
+    Then any flat logarithmic form Ω0 + (holomorphic terms) is holomorphically gauge equiv-
+alent to the principal part Ω0 .
+     The proof of this Theorem occupies sections §6.2 through §6.4
+
+6.2    Poincaré–Dulac method: derivation and simplification of the homo-
+       logical equation
+Recall that we grade meromorphic functions and differential forms on (Cm , 0), assigning the
+same weights to differentials dtj and the corresponding variables tj . Then the exterior deriva-
+Meromorphic flat connections                                                                   35
+
+tive d will be degree-compatible: for any monomial form ω we have deg dω = deg ω unless
+dω = 0. In principle the weights assigned to different tj , can (and will) be chosen unequal,
+so instead of homogeneous forms it is more accurate to speak about quasi homogeneity. Re-
+                                                                        dt
+gardless of the choice of the weights, the logarithmic residual terms Aj tjj always have degree
+0.
+    The connection form Ω can be explicitly expanded as a sum of (quasi)homogeneous terms,
+                                                     k
+                                                     X          dtj
+                   Ω = Ω0 + Ωr + · · · ,      Ω0 =         Aj       ,   deg Ωr = r,
+                                                                tj
+                                                     j=1
+
+where the “additive dots” denote (as customary) terms of degree higher than that of the terms
+explicitly specified, the first nontrivial term being Ωr . Consider a formal matrix function
+H = E + Hr + · · · , deg Hr = r, whose inverse and differential expand as
+
+            H = E + Hr + · · · ,       H −1 = E − Hr + · · · ,          dH = dHr + · · · ,
+
+Applying to Ω the formal gauge transform with the matrix H, we obtain the new matrix
+form
+                      Ω0 = Ω0 + Ωr + dHr + Hr Ω0 − Ω0 Hr + · · · .
+If the homogeneous term Hr can be found such that
+
+                                   dHr − Ω0 Hr + Hr Ω0 = −Ωr ,                               (6.4)
+
+then the homogeneous term Ωr will be eliminated from the expansion of Ω. If this step can
+be iterated for all higher degrees, then the proof of Theorem 6.1 will be achieved on the
+formal level. In analogy with the “ordinary” case, the equation (6.4) is called the homological
+equation.
+   The term Ωr in the right hand side of the homological equation cannot be arbitrary: the
+condition of flatness of Ω imposes a restriction on Ωr . Indeed, from (1.3) and the identity
+dΩ0 = 0 it follows that
+
+                            dΩr + · · · = Ω0 ∧ Ωr + Ωr ∧ Ω0 + · · · .
+
+This implies that on the level of r-homogeneous terms
+
+                                    dΩr = Ω0 ∧ Ωr + Ωr ∧ Ω0 .                                (6.5)
+
+One can immediately see that the equation (6.4) can be solved only for Ωr meeting the
+condition (6.5). Indeed, any connection obtained by a holomorphic gauge transform H =
+E + Hr + · · · from the flat Euler connection Ω0 , must necessarily be flat. We will show that
+in fact the homological equation (6.4) is always solvable with respect to Hr for Ωr satisfying
+the necessary condition (6.5).
+    Note the similarity between the equation (6.4) and the necessary condition (6.5) for
+its solvability: both can be written using the operator [Ω0 , cdot ] of commutation with the
+principal part Ω0 , if we agree that the “commutator” of two matrix 1-forms has the properly
+adjusted sign [Ω, Θ] = Ω ∧ Θ + Θ ∧ Ω. Using this “extended” commutator, (6.4) and (6.5)
+take the respective forms
+
+                        dH − [Ω0 , H] = −Ωr ,        dΩr − [Ω0 , Ωr ] = 0.                   (6.6)
+36                                                                      D. Novikov and S. Yakovenko
+
+While this similarity may be still regarded as artificial, the fact that Ω0 is diagonal allows
+to express the identities (6.6) using the same scalar differential operator. Indeed, since
+Ω0 = diag{α1 , . . . , αn }, both the homological equation and its solvability condition (6.5) split
+into scalar equations on the matrix elements ω = ωij ∈ Λ1 (U ) of Ωr and h = hij ∈ Λ0 (U ) of
+Hr . If we denote by
+                                      αij = αi − αj ∈ Λ1 (log Σ)
+the corresponding closed logarithmic forms, then (6.4) and (6.5) will take the scalar form
+which requires to find a solution h = hij of the equation
+
+                                         dhij − αij hij = −ωij ,                                  (6.7)
+
+for any homogeneous 1-form ωij meeting the condition
+
+                                         dωij − αij ∧ ωij = 0.                                    (6.8)
+
+6.3    Solvability of the scalar homological equation
+Denote provisionally by Λ̂p the collection of p-forms with coefficients being Laurent polyno-
+mials in t1 , . . . , tk and the (usual) Taylor polynomials in tk+1 , . . . , tm . Let α ∈ Λ1 (log Σ) be
+a closed logarithmic form with the residues as = resΣs α, s = 1, . . . , k.
+    Consider the formal differential operator ∇ acting on forms of all ranks,
+                                                                        k
+                                                                        X         dts
+                     ∇ : Λ̂p → Λ̂p+1 ,       ∇ = d − α ∧ ·,        α=        as       .           (6.9)
+                                                                                   ts
+                                                                         1
+
+Note that ∇ is degree-preserving for any quasihomogeneous grading of Λ• .
+   It can be immediately verified that
+
+                   ∇2 = d2 − d(α ∧ ·) − α ∧ d + (α ∧ α) ∧ · = −(dα) ∧ · = 0,
+
+that is, the diagram
+                                     ∇        ∇       ∇       ∇          ∇
+                          0−→Λ̂0 −→ Λ̂1 −→ Λ̂2 −→ · · · −→ Λ̂m −→ 0                              (6.10)
+
+is a cochain complex. In algebraic terms, the question on solvability of the equation (6.7)
+under the assumption (6.8) reduces essentially to proving that this complex is exact in the
+term Λ1 , i.e., ker ∇ = ∇(Λ̂0 ) in Λ̂1 . Somewhat more accurately, one has also to verify that the
+solution h will be a Taylor polynomial whenever ω ∈ ker ∇ is. The need to consider Laurent
+polynomials is caused by appearance of denominators in α so that in general ∇ takes Taylor
+polynomials to Laurent polynomials only.
+    The answer depends on the 1-form α ∈ Λ̂1 , more precisely, on arithmetic properties of its
+residues as ∈ C.
+Lemma 6.2. Assume that the vector of residues a = (a1 , . . . , ak , 0, . . . , 0) ∈ Cm of α is not
+integer, a ∈/ Zm .
+    Then the equation ∇h = ω has a unique solution h ∈ Λ̂0 if and only if the form ω ∈ Λ̂1
+satisfies the condition ∇ω = 0. This solution is a quasihomogeneous Laurent polynomial of
+the same degree as ω, if the latter is a quasihomogeneous Laurent polynomial 1-form.
+Meromorphic flat connections                                                                        37
+
+   Conditions for holomorphic solvability are slightly less stringent.
+
+Lemma 6.3. If the vector of residues a = (a1 , . . . , am ) is not nonnegative integer,
+
+                                                    / Zm
+                                                   a∈  +,                                       (6.11)
+
+then any holomorphic 1-form ω ∈ Λ1 satisfying the condition ∇ω = 0, is uniquely repre-
+sentable as ω = ∇h, with h ∈ Λ0 being a holomorphic function.
+
+    In other words, under the assumption a ∈     / Zm the cohomology of the complex (6.10) is
+trivial in the terms Λ̂0 and Λ̂1 . Both results are proved by the same simple computation.
+Proof. of both Lemmas. Because of the choice of the form α, the operator ∇ preserves the
+degrees of all forms independently of the choice of the weights wj assigned to the individual
+variables tj . Thus it is sufficient to prove the Lemma only for quasihomogeneous forms.
+    Choose the weights linear independent over Z (as in the proof of Theorem 2.11). Then
+the only quasihomogeneous holomorphic forms are those that have the structure
+                                     m
+                                     X         dtj
+                ω = tb γ,       γ=        cj       ,   cj ∈ C,   b = (b1 , . . . , bm ) ∈ Zm
+                                                tj
+                                      1
+
+(in the holomorphic case we necessarily have b ∈ Zm             b     b
+                                                  + ). Since d(t ) = t β (see below), the
+condition ∇ω = 0 means that
+                                                                             m
+                                                                             X          dtj
+                  tb β ∧ γ − tb α ∧ γ = tb (β − α) ∧ γ = 0,             β=         bj       .
+                                                                                        tj
+                                                                               1
+
+The equality (β − α) ∧ γ = 0 is possible if and only if (b − a) ∧ c = 0, where c = (c1 , . . . , cn ) ∈
+Cn . If
+                                       b − a 6= 0 ∈ Cn ,                                        (6.12)
+the last equality is possible if and only if c is proportional to a − b, that is, only if γ = α − β
+up to a scalar multiplier. Then
+
+                    ω = tb (α − β) = αtb − d(tb ) = ∇h,              h = −tb ∈ Λ0 ,
+
+as asserted. The solvability condition (6.12) for any b ∈ Zm (resp., for any b ∈ Zm  + ) follows
+from the non-resonance conditions on a from the assumptions of each Lemma.
+    To see that the equation ∇h = 0 has a unique solution h = 0, if α is non-resonant, it is
+sufficient again to consider only the monomial case h = tb , b ∈ Zm                 b     b
+                                                                    + . Then 0 = d(t ) − t α =
+tb (β − α) is possible only if b − a = 0, that is, never (unless h = 0).                      
+    In the resonant case the above computation allows to describe in simple terms the
+(co)kernel of the operator ∇.
+
+6.4    Convergence of the formal gauge transform
+Application of Lemma 6.3 proves that in the nonresonant case on each step r the homological
+equation (6.4) can be solved an a formal gauge transform conjugating the system (6.2) to its
+principal (Euler) part Ω0 , see (6.3).
+38                                                                  D. Novikov and S. Yakovenko
+
+    In order to complete the proof of Theorem 6.1, we have to prove that the formal series
+converges.
+    Note that the gauge transform H conjugating Ω with Ω0 , if it exists, satisfies the Pfaffian
+system
+                                     dH = Ω0 H − HΩ.                                     (6.13)
+Though this is not a matrix Pfaffian equation (1.2), it is still a system of n2 Pfaffian equations
+on the components of the matrix function H = H(t) arranged in any order. The “Pfaffian
+matrix” Ω of this system of size n2 × n2 is built from the entries of the matrix forms Ω
+and Ω0 . Therefore, Ω has a logarithmic pole on Σ. Flatness (integrability) of Ω outside Σ
+follows either from a straightforward computation or from the fact that the corresponding
+Pfaffian system has locally n2 linear independent solutions near any nonsingular point.
+    If the holomorphic matrix form Ω is formally gauge equivalent to the Euler matrix Ω0 ,
+then the holomorphic Pfaffian system (6.13) admits a formal solution. By Theorem 2.11,
+this formal solution is automatically convergent. This proves that in the assumptions of
+Theorem 6.1, Ω and Ω0 are holomorphically gauge equivalent.
+
+6.5   Resonant normal form
+In the resonant case, when some of the differences αi − αj have all residues nonnegative
+integers, Theorem 6.1 is no longer valid, since not all homological equations are solvable.
+    In the same way as with the “ordinary” Poincaré–Dulac theorem, one can remove from the
+expansion of Ω all non-resonant terms, leaving only those that correspond to the resonances:
+if
+                                         m
+                                        X      dts
+                             αi − αj =      as     ,     as ∈ Z+ ,                      (6.14)
+                                                ts
+                                         s=1
+
+then the (i, j)th matrix element of Ω is allowed to contain a linear combination
+                                            m
+                              a
+                                            X          dts
+                              t γ,     γ=         cs       ,   cs ∈ C,                     (6.15)
+                                                       ts
+                                            s=1
+
+with any complex coefficients cs , different from zero if as > 1.
+   The corresponding resonant normal form, a full analog of the Poincaré–Dulac normal form
+known in the “ordinary” case, is obtained by exactly the same arguments as those proving
+Theorem 6.1. Convergence of the formal gauge transform follows again from Theorem 2.11.
+Modulo minor technical details (assuming Ω0 diagonal rather than upper-triangular, which
+does not change the assertion), this is the main result announced in [YT75].
+
+6.6   Uniqueness of the normalizing gauge transform
+Theorem 6.4. In the assumptions of Theorem 6.1, the only holomorphic gauge transform
+conjugating the normal form Ω0 with itself, is a constant diagonal matrix.
+    Consequently, the gauge transformation putting Ω into the normal form Ω0 , is uniquely
+defined by the normalizing condition H(0) = E.
+

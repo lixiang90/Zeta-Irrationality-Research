@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "recurrence_certificate": "(75*n**6 + 15*n**5 + 3*n**4 + n**3 + t**5*(16*n + 4) + t**4*(104*n**2 + 10*n - 4) + t**3*(276*n**3 - 16*n) + t**2*(374*n**4 - 10*n**3 - 24*n**2) + t*(260*n**5 + 8*n**4 - 12*n**3))/n**3",
+  "moment_certificate": "(10*n + 4*t - 4)/(5*n**3)",
+  "determinant_ratio": "-4*(4*n - 3)*(4*n - 1)/n**2",
+  "determinant_initial": 48,
+  "determinant_closed_form": "(-1)^(n+1)*4*binomial(4*n,2*n)*binomial(2*n,n)",
+  "scope": "Polynomial identities in symbolic n,t; not finite interpolation."
+}

@@ -1,0 +1,454 @@
+{
+  "status": "PASS",
+  "own_new_execution_count": 1,
+  "old_or_peer_execution_import_rerun_count": 0,
+  "producer_sha256": "5c1df7cf287e6865561d22871f8f8ff61a03f1f090a25b9d04b0ad1c1516a17e",
+  "scope": "Finite exact primitive-constraint ranks and low jet divisibility for 1<=n<=10, all primes3n<p<=6n, sources(a,b)=(0,1),(1,1), target terms vanish modulo p2. Arbitrary weak polynomial representatives are not exact characteristic-zero paired lifts.",
+  "not_proved_by_code": [
+    "All-n theorem",
+    "Full Smith equality",
+    "Infinite nonzero evaluations",
+    "Matched margin"
+  ],
+  "case_count": 43,
+  "exact_checks": 15383,
+  "cases": [
+    {
+      "n": 1,
+      "p": 5,
+      "actual_constraint_rank": 1,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 1,
+      "negative_evaluation_rank": 1,
+      "unconditional_Gauss_lower_bound": -8,
+      "finite_jet_checks": 8
+    },
+    {
+      "n": 2,
+      "p": 7,
+      "actual_constraint_rank": 2,
+      "unit_tail_count": 3,
+      "actual_weak_dimension": 1,
+      "negative_evaluation_rank": 3,
+      "unconditional_Gauss_lower_bound": -18,
+      "finite_jet_checks": 14
+    },
+    {
+      "n": 2,
+      "p": 11,
+      "actual_constraint_rank": 2,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 2,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -16,
+      "finite_jet_checks": 30
+    },
+    {
+      "n": 3,
+      "p": 11,
+      "actual_constraint_rank": 3,
+      "unit_tail_count": 5,
+      "actual_weak_dimension": 1,
+      "negative_evaluation_rank": 5,
+      "unconditional_Gauss_lower_bound": -28,
+      "finite_jet_checks": 20
+    },
+    {
+      "n": 3,
+      "p": 13,
+      "actual_constraint_rank": 3,
+      "unit_tail_count": 6,
+      "actual_weak_dimension": 2,
+      "negative_evaluation_rank": 4,
+      "unconditional_Gauss_lower_bound": -26,
+      "finite_jet_checks": 42
+    },
+    {
+      "n": 3,
+      "p": 17,
+      "actual_constraint_rank": 3,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 4,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -22,
+      "finite_jet_checks": 92
+    },
+    {
+      "n": 4,
+      "p": 13,
+      "actual_constraint_rank": 4,
+      "unit_tail_count": 5,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 5,
+      "unconditional_Gauss_lower_bound": -34,
+      "finite_jet_checks": 84
+    },
+    {
+      "n": 4,
+      "p": 17,
+      "actual_constraint_rank": 4,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 2,
+      "negative_evaluation_rank": 6,
+      "unconditional_Gauss_lower_bound": -36,
+      "finite_jet_checks": 54
+    },
+    {
+      "n": 4,
+      "p": 19,
+      "actual_constraint_rank": 4,
+      "unit_tail_count": 6,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 5,
+      "unconditional_Gauss_lower_bound": -34,
+      "finite_jet_checks": 84
+    },
+    {
+      "n": 4,
+      "p": 23,
+      "actual_constraint_rank": 4,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 6,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -28,
+      "finite_jet_checks": 186
+    },
+    {
+      "n": 5,
+      "p": 17,
+      "actual_constraint_rank": 5,
+      "unit_tail_count": 7,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 7,
+      "unconditional_Gauss_lower_bound": -44,
+      "finite_jet_checks": 102
+    },
+    {
+      "n": 5,
+      "p": 19,
+      "actual_constraint_rank": 5,
+      "unit_tail_count": 9,
+      "actual_weak_dimension": 2,
+      "negative_evaluation_rank": 8,
+      "unconditional_Gauss_lower_bound": -46,
+      "finite_jet_checks": 66
+    },
+    {
+      "n": 5,
+      "p": 23,
+      "actual_constraint_rank": 5,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 4,
+      "negative_evaluation_rank": 6,
+      "unconditional_Gauss_lower_bound": -42,
+      "finite_jet_checks": 140
+    },
+    {
+      "n": 5,
+      "p": 29,
+      "actual_constraint_rank": 5,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 8,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -34,
+      "finite_jet_checks": 312
+    },
+    {
+      "n": 6,
+      "p": 19,
+      "actual_constraint_rank": 6,
+      "unit_tail_count": 7,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 7,
+      "unconditional_Gauss_lower_bound": -50,
+      "finite_jet_checks": 210
+    },
+    {
+      "n": 6,
+      "p": 23,
+      "actual_constraint_rank": 6,
+      "unit_tail_count": 11,
+      "actual_weak_dimension": 2,
+      "negative_evaluation_rank": 10,
+      "unconditional_Gauss_lower_bound": -56,
+      "finite_jet_checks": 78
+    },
+    {
+      "n": 6,
+      "p": 29,
+      "actual_constraint_rank": 6,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 7,
+      "unconditional_Gauss_lower_bound": -50,
+      "finite_jet_checks": 210
+    },
+    {
+      "n": 6,
+      "p": 31,
+      "actual_constraint_rank": 6,
+      "unit_tail_count": 6,
+      "actual_weak_dimension": 6,
+      "negative_evaluation_rank": 6,
+      "unconditional_Gauss_lower_bound": -48,
+      "finite_jet_checks": 258
+    },
+    {
+      "n": 7,
+      "p": 23,
+      "actual_constraint_rank": 7,
+      "unit_tail_count": 9,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 9,
+      "unconditional_Gauss_lower_bound": -60,
+      "finite_jet_checks": 240
+    },
+    {
+      "n": 7,
+      "p": 29,
+      "actual_constraint_rank": 7,
+      "unit_tail_count": 14,
+      "actual_weak_dimension": 4,
+      "negative_evaluation_rank": 10,
+      "unconditional_Gauss_lower_bound": -62,
+      "finite_jet_checks": 188
+    },
+    {
+      "n": 7,
+      "p": 31,
+      "actual_constraint_rank": 7,
+      "unit_tail_count": 12,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 9,
+      "unconditional_Gauss_lower_bound": -60,
+      "finite_jet_checks": 240
+    },
+    {
+      "n": 7,
+      "p": 37,
+      "actual_constraint_rank": 7,
+      "unit_tail_count": 6,
+      "actual_weak_dimension": 8,
+      "negative_evaluation_rank": 6,
+      "unconditional_Gauss_lower_bound": -54,
+      "finite_jet_checks": 408
+    },
+    {
+      "n": 7,
+      "p": 41,
+      "actual_constraint_rank": 7,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 12,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -46,
+      "finite_jet_checks": 660
+    },
+    {
+      "n": 8,
+      "p": 29,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 13,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 13,
+      "unconditional_Gauss_lower_bound": -74,
+      "finite_jet_checks": 156
+    },
+    {
+      "n": 8,
+      "p": 31,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 15,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 13,
+      "unconditional_Gauss_lower_bound": -74,
+      "finite_jet_checks": 156
+    },
+    {
+      "n": 8,
+      "p": 37,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 12,
+      "actual_weak_dimension": 6,
+      "negative_evaluation_rank": 10,
+      "unconditional_Gauss_lower_bound": -68,
+      "finite_jet_checks": 330
+    },
+    {
+      "n": 8,
+      "p": 41,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 8,
+      "negative_evaluation_rank": 8,
+      "unconditional_Gauss_lower_bound": -64,
+      "finite_jet_checks": 456
+    },
+    {
+      "n": 8,
+      "p": 43,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 6,
+      "actual_weak_dimension": 10,
+      "negative_evaluation_rank": 6,
+      "unconditional_Gauss_lower_bound": -60,
+      "finite_jet_checks": 590
+    },
+    {
+      "n": 8,
+      "p": 47,
+      "actual_constraint_rank": 8,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 14,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -52,
+      "finite_jet_checks": 882
+    },
+    {
+      "n": 9,
+      "p": 29,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 11,
+      "actual_weak_dimension": 7,
+      "negative_evaluation_rank": 11,
+      "unconditional_Gauss_lower_bound": -76,
+      "finite_jet_checks": 434
+    },
+    {
+      "n": 9,
+      "p": 31,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 13,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 13,
+      "unconditional_Gauss_lower_bound": -80,
+      "finite_jet_checks": 300
+    },
+    {
+      "n": 9,
+      "p": 37,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 18,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 13,
+      "unconditional_Gauss_lower_bound": -80,
+      "finite_jet_checks": 300
+    },
+    {
+      "n": 9,
+      "p": 41,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 14,
+      "actual_weak_dimension": 7,
+      "negative_evaluation_rank": 11,
+      "unconditional_Gauss_lower_bound": -76,
+      "finite_jet_checks": 434
+    },
+    {
+      "n": 9,
+      "p": 43,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 12,
+      "actual_weak_dimension": 8,
+      "negative_evaluation_rank": 10,
+      "unconditional_Gauss_lower_bound": -74,
+      "finite_jet_checks": 504
+    },
+    {
+      "n": 9,
+      "p": 47,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 10,
+      "negative_evaluation_rank": 8,
+      "unconditional_Gauss_lower_bound": -70,
+      "finite_jet_checks": 650
+    },
+    {
+      "n": 9,
+      "p": 53,
+      "actual_constraint_rank": 9,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 16,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -58,
+      "finite_jet_checks": 1136
+    },
+    {
+      "n": 10,
+      "p": 31,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 11,
+      "actual_weak_dimension": 9,
+      "negative_evaluation_rank": 11,
+      "unconditional_Gauss_lower_bound": -82,
+      "finite_jet_checks": 630
+    },
+    {
+      "n": 10,
+      "p": 37,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 17,
+      "actual_weak_dimension": 3,
+      "negative_evaluation_rank": 17,
+      "unconditional_Gauss_lower_bound": -94,
+      "finite_jet_checks": 192
+    },
+    {
+      "n": 10,
+      "p": 41,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 20,
+      "actual_weak_dimension": 5,
+      "negative_evaluation_rank": 15,
+      "unconditional_Gauss_lower_bound": -90,
+      "finite_jet_checks": 330
+    },
+    {
+      "n": 10,
+      "p": 43,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 18,
+      "actual_weak_dimension": 6,
+      "negative_evaluation_rank": 14,
+      "unconditional_Gauss_lower_bound": -88,
+      "finite_jet_checks": 402
+    },
+    {
+      "n": 10,
+      "p": 47,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 14,
+      "actual_weak_dimension": 8,
+      "negative_evaluation_rank": 12,
+      "unconditional_Gauss_lower_bound": -84,
+      "finite_jet_checks": 552
+    },
+    {
+      "n": 10,
+      "p": 53,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 8,
+      "actual_weak_dimension": 12,
+      "negative_evaluation_rank": 8,
+      "unconditional_Gauss_lower_bound": -76,
+      "finite_jet_checks": 876
+    },
+    {
+      "n": 10,
+      "p": 59,
+      "actual_constraint_rank": 10,
+      "unit_tail_count": 2,
+      "actual_weak_dimension": 18,
+      "negative_evaluation_rank": 2,
+      "unconditional_Gauss_lower_bound": -64,
+      "finite_jet_checks": 1422
+    }
+  ],
+  "old_safe_A": "1085983123/24190320",
+  "paper_all_prime_gain": "2/3",
+  "new_safe_A": "1069856243/24190320",
+  "new_safe_A_window": [
+    "44.226",
+    "44.227"
+  ]
+}

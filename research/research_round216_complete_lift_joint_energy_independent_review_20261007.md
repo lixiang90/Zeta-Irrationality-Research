@@ -1,0 +1,13 @@
+# Round216: bounded independent joint-energy review
+
+2026-10-07. Reviewer: theta_analytic_geometry. This is a paper/source audit; no program was executed by this reviewer.
+
+Actual reading: FULL seven sections E1-E16 of `catalan_parity_exact_second_kind_joint_energy_20261007.md`, 12446 bytes, SHA256 3e1c97ffa7c43581694be9315200f463c2a2a3df303753d9d5cd4699bcd3eec5. After the mathematical freeze, actually read complete updated section 7 and new section 8, E17-E18, from the 14853-byte version SHA256 8441775922889d5761346b7b69838835bb3c2d4ea6670094ac170f7386da1be9. This is FULL initial reading plus bounded follow-up, not a second FULL audit of eight sections.
+
+Mathematical PASS, no correction: secondary-Jacobi gauge, infinity roots/uniqueness and leading coefficient; low-coefficient monic products and every Vandermonde minor; exact optimal INPUT Gram and beta determinant ratio; all E12 leading layers and log-N cancellation; complete two-channel D norm/PSD output inequality; same-normalization full-mixed Hadamard exponent. Input equality is not output equality. D-only and M-only components do not bound the mixed exterior separately.
+
+E17-E18 PASS: the singular-value triangle bound, squared two-term inequality and single zero eigenvalue give the displayed determinant certificate. Its value is at least the scalar-M floor. This restricts one upper-bound construction, not the actual determinant or the carrier. The proposed improved arithmetic lower remains separately auditable.
+
+Actually FULL read evaluator source `catalan_parity_log_expression_bounds_20261007.py`, 4123 bytes, SHA256 fa32855f481da3e91546883b790c4f889fbb7f5805b954d9cd826eb6667ca659, and stored JSON, 5144 bytes, SHA256 be8981cfd88b2f3aa97bba574b49f81088c8b2ce94c8640b088e0fe98c410811. Source logic PASS: 160 exact positive atanh terms; tail starts at power 321 with denominator 321 and a geometric bound; binary range reduction keeps z<=1/3; coefficient signs propagate interval endpoints correctly; Decimal FLOOR/CEILING division gives outward endpoints. X, H, V, C, JD, both mixed/component exponents, scalar-M floor and gap encodings match the paper. All JSON log-coefficient maps were checked against those encodings.
+
+The reviewer did not rerun the evaluator or independently recompute its 70-digit endpoints. The JSON records root's one run; it verifies expression values only, not paper derivations, finite-N moments, rank, prime content or numerical independence. No producer, prime scan, matrix calculation, web/PDF reading or old cost-table transfer occurred in this review. Final receipt FULL reread and archive identity are reported on completion.

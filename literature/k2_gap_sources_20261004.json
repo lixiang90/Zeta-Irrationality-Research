@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-10-04",
+  "sources": [
+    {
+      "file": "rost1996_chow_groups_coefficients.pdf",
+      "title": "Chow Groups with Coefficients",
+      "authors": "Markus Rost",
+      "version": "Documenta Mathematica 1 (1996), 319–393; author PDF",
+      "category": "integral_transfer",
+      "status": "原始已发表论文；本轮使用Milnor K积分transfer及residue兼容",
+      "page_url": "https://www.math.uni-bielefeld.de/~rost/data/10000028002.pdf",
+      "pdf_urls": [
+        "https://www.math.uni-bielefeld.de/~rost/data/10000028002.pdf"
+      ],
+      "notes": "R1c、R3b、R3d，Theorem1.4；用于精确4T=0，而非仅有理化消失。"
+    },
+    {
+      "file": "weibel2013_k_book_author_20130829.pdf",
+      "title": "The K-book: An Introduction to Algebraic K-theory",
+      "authors": "Charles A. Weibel",
+      "version": "author complete PDF dated 2013-08-29; Graduate Studies in Mathematics 145",
+      "category": "milnor_k_and_bloch",
+      "status": "作者开放教材原稿；本文引用完整稿印刷页码",
+      "page_url": "https://sites.math.rutgers.edu/~weibel/Kbook.html",
+      "pdf_urls": [
+        "https://sites.math.rutgers.edu/~weibel/Kbook/Kbook.pdf"
+      ],
+      "notes": "III.7.3–7.4 specialization与有理函数域正合列；VI.5 Bloch group与K3ind。不把K群非零误作周期无理性。"
+    },
+    {
+      "file": "suslin1991_k3_field_bloch_group_english.pdf",
+      "title": "K3 of a field, and the Bloch group",
+      "authors": "A. A. Suslin",
+      "version": "English translation, Proceedings of the Steklov Institute of Mathematics 183 (1991), 217–239; Russian original 1990",
+      "category": "canonical_bloch_class",
+      "status": "原始已发表论文的作者学术主页开放英文扫描",
+      "page_url": "https://www.mathnet.ru/php/archive.phtml?jrnid=tm&option_lang=eng&paperid=1914&wshow=paper",
+      "pdf_urls": [
+        "https://www.maths.dur.ac.uk/users/herbert.gangl/Suslin_K3_Bloch_group.pdf"
+      ],
+      "notes": "Theorem5.2 relating K3ind and Bloch group；4[i]的整数boundary为零需明确antisymmetric-tensor约定。"
+    },
+    {
+      "file": "zagier_gangl2000_classical_elliptic_polylogarithms.pdf",
+      "title": "Classical and elliptic polylogarithms and special values of L-series",
+      "authors": "Don Zagier; Herbert Gangl",
+      "version": "MPIM preprint 2000-9, author PDF; based on Zagier Banff lectures",
+      "category": "regulator_scope",
+      "status": "作者综述原稿；只使用已证Bloch–Wigner与Borel/Suslin部分",
+      "page_url": "https://people.mpim-bonn.mpg.de/zagier/files/mpim/00-9/fulltext.pdf",
+      "pdf_urls": [
+        "https://people.mpim-bonn.mpg.de/zagier/files/mpim/00-9/fulltext.pdf"
+      ],
+      "notes": "§1–2的已证K3/Bloch/Borel事实与高权polylog猜想区别保存。非零调节子仍不提供无理性。"
+    },
+    {
+      "file": "dokchitser_dejeu_zagier2005_k2_hyperelliptic_v2.pdf",
+      "title": "Numerical verification of Beilinson's conjecture for K2 of hyperelliptic curves",
+      "authors": "Tim Dokchitser; Rob de Jeu; Don Zagier",
+      "version": "arXiv:math/0405040v2, 2005-05-04; Compositio Mathematica 142 (2006), 339–373",
+      "category": "curve_regulator_integrality",
+      "status": "数值验证及显式符号框架；不是本文曲线非零或Beilinson猜想全证",
+      "page_url": "https://arxiv.org/abs/math/0405040v2",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/math/0405040v2",
+        "https://people.mpim-bonn.mpg.de/zagier/files/doi/10.1112/S0010437X05001892/fulltext.pdf"
+      ],
+      "notes": "优先固定arXiv v2；§3 real regulator配对与算术曲面tame条件。若回退出版PDF，清单如实保留实际来源版本。"
+    },
+    {
+      "file": "neumann_yang1997_rationality_k_theory_v1.pdf",
+      "title": "Rationality problems for K-theory and Chern-Simons invariants of hyperbolic 3-manifolds",
+      "authors": "Walter D. Neumann; Jun Yang",
+      "version": "arXiv:math/9712225v1, 1997-12-04; published Enseignement Mathematique 41 (1995), 281–296; preprint corrects a five-term misprint",
+      "category": "rational_bloch_descent",
+      "status": "已发表论文的公开修正版；只引用Borel定理与有理Galois下降",
+      "page_url": "https://arxiv.org/abs/math/9712225v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/math/9712225v1",
+        "https://www.math.columbia.edu/department/neumann/preprints/cs2.pdf"
+      ],
+      "notes": "§2、Proposition2.1：全嵌入D向量核为挠，Bloch有理Galois下降；不是Catalan无理性定理。"
+    },
+    {
+      "file": "conrad_cyclotomic_integer_ring_handout.pdf",
+      "title": "Math 154. Integer ring of prime-power cyclotomic field",
+      "authors": "Brian Conrad",
+      "version": "Author Stanford course handout; undated, archived 2026-10-04",
+      "category": "integer_model_base",
+      "status": "作者讲义；Theorem0.1给cyclotomic整数环",
+      "page_url": "https://math.stanford.edu/~conrad/154Page/handouts/cycint.pdf",
+      "pdf_urls": [
+        "https://math.stanford.edu/~conrad/154Page/handouts/cycint.pdf"
+      ],
+      "notes": "用于K=Q(zeta8)的O_K=Z[zeta8]；未从文件日期推断发表年。"
+    },
+    {
+      "file": "stacks_resolution_surfaces_snapshot_20261004.pdf",
+      "title": "Resolution of Surfaces",
+      "authors": "The Stacks Project Authors",
+      "version": "Official chapter snapshot downloaded 2026-10-04; immutable local bytes fixed by SHA-256",
+      "category": "proper_regular_model",
+      "status": "官方持续维护参考文献快照；不是新的原始研究论文",
+      "page_url": "https://stacks.math.columbia.edu/tag/0BGP",
+      "pdf_urls": [
+        "https://stacks.math.columbia.edu/download/resolve.pdf"
+      ],
+      "notes": "Tags0ADX、0BGP：Lipman resolution及保持regular locus；归档快照2026-10-04，页尾显示编译2026-07-14，在线版本可能变化。"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+                                                                                                     11
+
+
+xα2 − xα1
+            which is log x, there we are: Rn does half of the job, as it is orthogonal with respect
+ α2 − α1
+to the logarithmic weight to polynomials of     degree < n/2 if n is even, of degree < (n − 1)/2 if
+                                   1       dn2      dn1
+n is odd. We have Rn (x) =                      xn2 n xn1 (x − 1)n [3, §3.3], symmetric in n1 and
+                                n1 ! n2 ! dxn2     dx 1
+                                  n!
+n2 , Rn (0) = (−1)n , Rn (1) =           , R0 = 1, R1 (x) = 2x − 1, R2 (x) = 9x2 − 8x + 1, R3 (x) =
+                                n1 !n2 !
+40x3 − 54x2 + 18x − 1, R4 (x) = 225x4 − 400x3 + 216x2 − 36x + 1, and the recurrence relation
+
+               4(n + 1)2 (n + 2)             4(n2 + 19n/9 + 1)
+  xRn (x) =                      R n+1 (x) +                    Rn (x)
+              (3n + 2)2 (3n + 4)              (3n + 2)(3n + 4)
+                    4n(27n2 − 16)                    4n(n − 1)
+              +                     2
+                                      Rn−1 (x) +                    Rn−2 (x) if n is even,
+                 9(3n − 2)(3n + 2)               3(3n − 2)(3n + 2)
+                4(n + 1)               4(9n2 − n − 1)                  4n2
+            =             Rn+1 (x) +                    Rn (x) +                    Rn−1 (x)
+               9(3n + 1)              9(3n − 1)(3n + 1)          3(n + 1)(3n + 1)
+                                                        4n(n − 1)2
+                                               +                           Rn−2 (x) if n is odd. (17)
+                                                 3(3n − 1)(3n + 1)(n + 1)
+  The vectors of scalar products v (n) = [(R0 , Pn ), (R1 , Pn ), . . . ] have only a finite number of
+nonzero elements from (Rn , Pn ) to (R2n+1 , Pn ).
+ v^{(0)} = [ 1 -1/2                       0         0      0   0         0 ... ]
+ v^{(1)} = [ 0 7/72 -11/144             -1/40       0      0   0         0 ... ]
+ v^{(2)} = [ 0 0    647/25200           -3/175 -89/4900 -1/504 0         0 ... ]
+   Unfortunately, numerical stability for large n is poor, the amplification of the effects of rounding
+errors is about 2n/2 after n steps. This may be related to the behaviour of |Rn (x)| on [0, 1],
+increasing from 1 to about 2n instead of keeping an approximately equal ripple, as orthogonal
+polynomials do.
+   Classical multiple orthogonal polynomials through the Sonine-Hahn criterium (the derivatives
+of the polynomials being multiple orthogonal polynomials themselves) have been studied by Douak
+& Maroni [23]. See also Van Assche & Coussement [93] for another approach.
+
+           6. Weights with logarithmic singularities. Interior singularity.
+6.1. Known results.
+
+   The influence of an algebraic singularity at c ∈ (a, b) on the recurrence coefficients has been
+discussed in [29, 63, 65], it has been observed, and sometimes proved, that
+                             an − a∞ = fn cos(2nθc + ϕc ) + o(fn ),
+                                                                                                  (18)
+                              bn − b∞ = 2fn cos((2n + 1)θc + ϕc ) + o(fn ),
+           a+b b−a                                      b−a        a+b
+where c =       +        cos θc , with 0 < θc < π, a∞ =     , b∞ =     from (8), and where fn
+             2       2                                   4          2
+and ϕc depend on the kind of singularity.
+  For weak singularities when the weight function remains bounded and bounded from below by
+a positive number in a neighbourhood of the singular point,
+                        w(x) ≈ w(c) + constant |x − c|α , α > 0, 0 < w(c) < ∞
+                                                                                                  (19)
+                              ⇒ fn = constant n−α−1 ,
+see [63, p.156], first part of [65].
+

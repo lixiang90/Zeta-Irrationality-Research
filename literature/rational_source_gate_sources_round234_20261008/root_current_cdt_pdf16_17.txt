@@ -1,0 +1,110 @@
+16                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+of § 6. (The high dimensional method accommodates further improvements in the
+denominators aspect, which could be of some interest in further developments or
+applications of our method.)
+Basic Remark 2.4.4. A basic way to understand the definition of g ∗ (t) in equa-
+tion (2.4.1) is as follows. Assume that g(t) is a continuous (and hence bounded)
+function on [0, 1]. If g(t) is monotonically increasing, then g ∗ (t) = g(t). For g(t) ar-
+bitrary, let gn (t) for n ≥ 1 denote the piecewise constant step function which takes
+the value g(k/n) on the interval Ik = [(k − 1)/n, k/n) for k = 1, . . . , n (extending
+the final interval In to include 1). The functions gn (t) converge uniformly to g(t)
+as n → ∞. Now let gn∗ (t) denote the step function which is also constant in the n
+intervals I1 , . . ., In , except now taking the n respective values
+                                {g(1/n), g(2/n), g(3/n), . . . g(n/n)}
+rearranged in increasing order (hence the name). Then gn∗ (t) is the increasing
+rearrangement of gn (t), and the functions gn∗ (t) converge uniformly to g ∗ (t). △
+2.5. Arithmetic holonomy bounds, basic form. Our first main result is the
+following simultaneous strengthening of all the holonomy bounds or arithmetic ra-
+tionality or algebraicity criteria that we have explicitly stated so far.
+Theorem 2.5.1. Consider two positive integers m, r ∈ N>0 and an m × r rect-
+angular array of nonnegative real numbers b := bi,j 1≤i≤m, 1≤j≤r , all of whose
+columns are of the form:
+        0 = b1,j = · · · = buj ,j < buj +1,j = · · · = bm,j =: bj ,                        ∀j = 1, . . . , r,
+for some uj ∈ {0, 1, . . . , m}. Let
+                            σi := bi,1 + . . . + bi,r ,                 i = 1, . . . , m
+be the i-th row sum, and define
+                               m                          r
+                           1 X                        1 X 2
+               τ (b) :=           (2i − 1)σ i = σ m −       u bj ∈ [0, σm ].                                    (2.5.2)
+                           m2 i=1                     m2 j=1 j
+
+Further, consider a holomorphic mapping φ : (D, 0) → (C, 0) with derivative (con-
+formal size) satisfying |φ′ (0)| > eσm .
+   Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+formal functions with denominator types of the form
+                   ∞
+                   X                                  xn
+        fi (x) =         ai,n                                                     ,    ai,n ∈ Z,                (2.5.3)
+                   n=0
+                                [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1, for
+all i = 1, . . . , m. Then we have the bound
+                           ZZ
+                                 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                              T2
+                       m≤                                             .  (2.5.4)
+                                       log |φ′ (0)| − τ (b)
+If, moreover, all functions fi are a priori assumed to be holonomic, the condition
+|φ′ (0)| > eσm can be relaxed to |φ′ (0)| > eτ (b) .
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      17
+
+
+   With elementary methods based on the phenomenon of measure concentration in
+high dimensions, we prove directly in § 6 the following variant using the increasing
+rearrangement function:
+       ZZ                                                   Z 1
+             log (max(|φ(z)|, |φ(w)|) µHaar (z)µHaar (w)         2t · (log |φ(e2πit )|)∗ dt
+          T2                                                  0
+m≤                                                        =                                 .
+                       log |φ′ (0)| − τ (b)                      log |φ′ (0)| − τ (b)
+                                                                                     (2.5.5)
+   To highlight the similarity of τ (b) with the increasing rearrangement function
+that emerges from a simple probabilistic consideration, let us note (writing σ0 := 0)
+that the weighted average in (2.5.2) can be expressed in a form rather similar
+to (2.4.2):
+              m     Z i/m              Z 1      m
+                                                                          !
+             X                                  X
+    τ (b) =      σi          2t dt =       2t ·   (σi − σi−1 )χ[0,i/m] (t) dt.       (2.5.6)
+            i=1      (i−1)/m           0        i=1
+                                               Pm
+Noting the monotonicity of the step function i=1 (σi −σi−1 )χ[0,i/m] (t), our require-
+ment that b is column-wise nondecreasing serves as the counterpart for denomi-
+nators of the increasing rearrangement function (log |φ|)∗ . As remarked above, we
+will see in § 8.1 that the Bost–Charles integral in (2.5.4) can be tightly majorized
+    R1
+by 0 2t · (log |φ(e2πit )|)∗ dt, with the effect that the bound (2.5.4) implies the
+bound (2.5.5). For either of the rearrangement integrals (2.5.5) and (2.5.6), the inte-
+gration weight 2t arises as the cumulative distribution function of ([0, 1], µLebesgue ).
+One mechanism for both these improvements over (2.2.3) is held by the concentra-
+tion of measure phenomenon § 4; it is explained in § 6.1.
+   For the rather rudimentary shape of the denominator type form (2.5.3) in our
+statement of Theorem 2.5.1, a single variable proof is nevertheless also possible, as
+we discover with the slopes method in § 7.3. In that context, both the denominators
+rate term τ (b) and the Bost–Charles double integral term in (2.5.4) emerge from
+the computation of the covolume of the Euclidean lattice of auxiliary polynomial
+functions chosen in the usual Diophantine analysis proof scheme: the former as the
+minimizer of a multivariable quadratic form arising from a basic template sought for
+the integral structure, and the latter as the “infinite part” based on a combination
+(due to Bost and Charles [BC22, § 5]) of the Poincaré–Lelong formula in complex
+analysis and the arithmetic Hilbert–Samuel formula in Arakelov theory.
+
+2.6. Siegel’s G-functions. As discussed above, Theorem 2.5.1 has a crude qual-
+itative corollary which we may read as an arithmetic holonomicity criterion. It is
+due to André [And89, § VIII 1.6] (where the set of places V in loc. cit. must be
+assumed to be finite); in a slightly different context, the first holonomicity result
+of such a kind is probably the one discovered by Perelli and Zannier [PZ84, Thm.
+1 B].
+Corollary 2.6.1. If a formal function f ∈ QJxK has rational coefficients of the
+form
+                      ∞
+                     X                        xn
+             f (x) =     an                                           , an ∈ Z (2.6.2)
+                     n=0
+                            [1, . . . , b1 n] · · · [1, . . . , br n]
+and admits an analytic mapping φ : (D, 0) → (C, 0) with conformal size |φ′ (0)| >
+eb1 +...+br and such that the composite function germ f (φ(z)) ∈ CJzK is the germ of
+

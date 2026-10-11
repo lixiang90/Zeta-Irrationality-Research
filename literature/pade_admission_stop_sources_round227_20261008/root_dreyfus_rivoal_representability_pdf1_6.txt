@@ -1,0 +1,314 @@
+  Representability of               G-functions            as rational functions
+                          in hypergeometric series
+
+                                T. Dreyfus and T. Rivoal
+
+
+                                       May 17, 2024
+
+
+
+
+                                           Abstract
+         Fresán and Jossen have given a negative answer to a question of Siegel about
+     the representability of every E -function as a polynomial with algebraic coecients
+     in E -functions of type p Fq [a; b; γxq−p+1 ] with q ≥ p ≥ 0, γ ∈ Q and rational pa-
+     rameters a, b. In this paper, we study, in a more general context, a similar ques-
+     tion for G-functions asked by Fischler and the second author: can every G-function
+     be represented as a polynomial with algebraic coecients in G-functions of type
+     µ(x) ·p Fp−1 [a; b; λ(x)] with p ≥ 1, rational parameters a, b and µ, λ algebraic over
+     Q(x) with λ(0) = 0? They have shown the answer to be negative under a general-
+     ization of Grothendieck's Period Conjecture and a technical assumption on the λ's.
+     Using dierential Galois theory, we prove that, for every N ∈ N, there exists a G-
+     function which can not be represented as a rational function with coecients in C(x)
+     of solutions of linear dierential equations with coecients in C(x) and at most N
+     singularities in P1 (C). As a corollary, we deduce that not all G-functions can be rep-
+     resented as a rational function in hypergeometric series of the above mentioned type,
+     when the λ's are rational functions with degrees of their numerators and denomina-
+     tors bounded by an arbitrarily large xed constant. This provides an unconditional
+     negative answer to the question asked by Fischler and the second author for such λ's.
+
+
+1 Introduction
+Siegel [23] dened in 1929 the notion of   E -functions   and   G-functions   as generalizations of
+the exponential and logarithmic functions respectively. We denote by           Q⊂C     the eld of
+algebraic numbers.
+
+
+Denition 1. A power series F (x) =
+                                        P∞                                            P∞
+                                               an n
+                                           n=0 n! x∈ Q[[x]], respectively F (x) =        n=0   an x n ∈
+Q[[x]], is an E -function, respectively a G-function, if
+
+  (i) F is solution of a non-zero linear dierential equation with coecients in Q(x).
+
+ (ii) There exists C > 0 such that for any σ ∈ Gal(Q/Q) and any n ≥ 0, |σ(an )| ≤ C n+1 .
+
+                                               1
+(iii) There exists D > 0 and a sequence of integers dn , with 1 ≤ dn ≤ Dn+1 , such that
+      dn am are algebraic integers for all m ≤ n.
+    Note that     (i)   implies that the       an 's    all lie in a certain number eld            K.   A   G-function
+has positive radius of convergence, nite unless it is a polynomial, and it can be ana-
+lytically continued to a suitable cut plane (the origin of the cuts are amongst the sin-
+gularities of the dierential equation satised by the                      G-function);      algebraic functions in
+Q[[x]]   are   G-functions. G-functions          form a subring of          Q[[x]] stable     by dierentiation and
+anti-dierentiation (with algebraic integration constants).
+    Classical examples of        E - and G-functions are given by specializations of the generalized
+hypergeometric function
+                                                           ∞
+                                    a1 , . . . , a p         X   (a1 )n · · · (ap )n n
+                              p Fq                    ; x :=                            x                         (1.1)
+                                     b1 , . . . , b q          (1)n (b1 )n · · · (bq )n
+                                                              n=0
+
+where  p, q ≥ 0 and we dene the Pochhammer symbol (a)n := a(a + 1) · · · (a + n − 1) for
+n ≥ 1, (a)0 := 1. We shall also denote it by p Fq [a1 , . . . , ap ; b1 , . . . , bq ; x]. The parameters aj
+and bj are a priori in C, with the restriction that bj ∈        / Z≤0 so that (bj )n ̸= 0 for all n ≥ 0.
+We write a list a := [a1 , . . . , ap ] = ∅ or b := [b1 , . . . , bq ] = ∅ if p = 0 or q = 0, and the
+                                                                                                          d
+corresponding empty product of Pochhammer symbols is then set equal to 1. Let δ = x .
+                                                                                                         dx
+The hypergeometric series (1.1) satises the hypergeometric equation
+
+                        δ(δ + b1 − 1) · · · (δ + bq − 1) − x(δ + a1 ) · · · (δ + ap ) = 0.                        (1.2)
+
+    Siegel proved in [24, 9] that, for any integers                      q ≥ p ≥ 0,   the series
+                                                                              
+                                                       a1 , . . . , ap q−p+1
+                                            p Fq                        ;x                                        (1.3)
+                                                       b1 , . . . , b q
+is an   E -function     when   aj ∈ Q    and   bj ∈ Q \ Z≤0 for all j .          Similarly, for any integer      p ≥ 1,
+the series                                                                
+                                                       a1 , . . . , a p
+                                             p Fp−1                     ;x                                        (1.4)
+                                                      b1 , . . . , bp−1
+is a G-function when aj ∈ Q and bj ∈ Q \ Z≤0 for all j . More generally, any function of
+the form  µ(x) · p Fp−1 [a1 , . . . , ap ; b1 , . . . , bp−1 ; λ(x)] is a G-function when λ, µ are algebraic
+functions in Q[[x]], with λ(0) = 0. Note that in both cases, the rationality of the parameters
+is sucient condition to obtain E and G-functions, but not a necessary one, as the following
+                                      ∗
+examples show (where α ∈ Q ):
+                                                                              
+                      α + 1, 1              α(1 − x) + x                   α+1       x+α x
+              2 F1               ;x =                            , 1 F1        ;x =       e .          (1.5)
+                         α                      α(1 − x)      2             α          α
+Galochkin has given in [13] necessary and sucient conditions on the parameters of                                non-
+terminating     hypergeometric series to be              E-   or   G-functions;    in particular these parameters
+must be algebraic.
+
+    Siegel stated [23, p. 225] a problem that we reformulate as the following question.
+
+
+                                                               2
+Question 1 (Siegel). Is it possible to write any E -function as a polynomial with coecients
+in Q of E -functions of the form p Fq [a1 , . . . , ap ; b1 , . . . , bq ; γxq−p+1 ], with q ≥ p ≥ 0, aj ∈ Q,
+bj ∈ Q \ Z≤0 and γ ∈ Q?
+
+    The parameters       p, q, γ   can take dierent values in the various hypergeometric series in
+the polynomial. This question has recently been answered in the negative by Fresán-Jossen
+[12] who exhibited an explicit         E -function   which cannot be written as such a polynomial
+in hypergeometric series. A little earlier, a strong reason towards a negative answer had
+been given by Fischler and the second author in [11]. This strong reason is based on the
+incompatibility of a positive answer and a widely believed generalization to exponential
+periods of Grothendieck's Period Conjecture. In the same paper, the following question
+was also asked for      G-functions,    in the spirit of Siegel's question above.
+
+
+Question 2 (Fischler-Rivoal).    Is it possible to write any G-function as a polynomial with
+coecients in Q of G-functions of the form µ(x) · p Fp−1 [a1 , . . . , ap ; b1 , . . . , bp−1 ; λ(x)], with
+p ≥ 1, aj ∈ Q, bj ∈ Q \ Z≤0 , λ, µ ∈ Q[[x]] algebraic over Q(x), and λ(0) = 0?
+
+    The parameter       p   and the functions     µ, λ   can be dierent in the various hypergeometric
+series in the polynomial. It was proved in [11] that a positive answer to Question 2 again
+contradicts the above mentioned generalization of Grothendieck's Period Conjecture, but
+under the further assumption that the various functions                  λ   all tend to   ∞   at a common
+singularity.
+    We observe also that certain           C(x)-linear       combinations of hypergeometric series with
+                                              *
+possibly transcendental parameters ( ) can represent         G-functions; for instance, from the
+                                                                                2
+rst identity in (1.5), we have α(2 F1 [α+1, 1; α; x]− 1 F0 [1; ∅; x]) = x/(1−x) , where α can be
+any non-zero complex number. For λ ∈ C(x) and non-constant, we consider p Hq [a; b; λ] the
+pullback of Eq. (1.2) by the algebraic function λ; see for instance [5, p. 4]. It is the monic
+linear dierential equation over C(x) with the y(λ(x)) as a C-basis of solutions, where the
+y(x) form a C-basis of solutions of Eq. (1.2). When λ ∈ C, we make the convention that
+                               ′
+p Hq [a; b; λ] corresponds to y = 0. We address the following more general problem.
+
+Question 3.       Is it possible to write any G-function as an element in the eld F of ra-
+tional functions with coecients in C(x) of solutions of dierential equations of the form
+p Hp−1 [a; b; λ] with p ≥ 1, aj ∈ C, bj ∈ C \ Z≤0 , λ ∈ C(x)?
+
+    The value of p and the function λ can be dierent in the various equations p Hp−1 [a; b; λ].
+    Since 1 − x = 1 F0 [−1; ∅; x], we have 1 − 1 F0 [−1; ∅; λ(x)] = λ(x) for every λ ∈ C(x) \ C.
+Therefore, in Question 3, we obtain the same eld F if we restrict the coecients to be in
+C(x) or C. However, this is no longer true if we restrict the functions λ to be in C(x), as
+in the corollaries below obtained by taking coecients in C(x) (the statements would be
+weaker with coecients in C(x) or C). Note that in contrast with Question 2, we replace
+in Question 3 polynomial relations by rational relations, so that that many elements of F
+are not G-functions, not even order 0 arithmetic Nilsson-Gevrey series, dened and studied
+
+   * hence   not necessarily G-functions
+
+                                                         3
+by André [2]. Furthermore even when we replace             rational functions by polynomial, thereby
+dening a ring      in place of F , certain
+                        Fe                          elements of Fe may not be G-functions because
+Fe ̸⊂ Q[[x]], and even Fe ̸⊂ C[[x]]. Question 3 is of course interesting only for transcendental
+G-functions because Q(x) ⊂ F .
+     Our main result is a negative answer to a special case of Question 3 when the                                   λ's
+are non-constant rational functions with coprime numerators and denominators of degree
+less than a xed integer           N . The various    dierential equations may have non-common
+singularities so it is       a priori not enough to   construct a      G-function      with suciently many
+singularities. To solve this problem, we use an adaptation in our context of Lemma 4.5
+of [12], namely Proposition 1 below. We give a proof using Picard-Vessiot theory, but we
+emphasize that we follow the main ideas of the proof of [12, Lemma 4.5], expressed in
+the Tannakian formalism. This result replaces the inclusion in a eld of rational functions
+in several functions by the inclusion in a eld of functions related by one single linear
+dierential equation; see 2.1 for the precise denition of the notions of dierential Galois
+theory used in this paper and 2.2 for the proof.
+
+
+Proposition 1.        Let f be a non-zero solution of a linear dierential equation with coe-
+cients in C(x) whose dierential Galois group we denote by Gf and with Picard-Vessiot ex-
+tension Kf containing f . Let f1 , . . . , fk be non-zero solutions of linear dierential equations
+with coecients in C(x), with Picard-Vessiot extensions Kf1 , . . . , Kfk containing f1 , . . . , fk
+respectively. Assume that f ∈ C(x)(f1 , . . . , fk ) \ C(x). If Gf is non commutative and
+has no normal algebraic subgroups other than itself and the trivial group, then there exists
+i ∈ {1, . . . , k} such that Kf ⊂ Kfi .
+
+     Roughly speaking,          K f ⊂ K fi   means that    f ∈ C(x)(fi,1 , . . . , fi,pi ),   where   fi,1 , . . . , fi,pi
+form a maximal set           of C-linearly   independent solutions of the linear dierential equation
+satised by     fi .
+     The elements of the Picard-Vessiot extension have the following property: there exists
+a nite set S ⊂ P1 (C) such that for all x0 ∈ P1 (C) \ S , there exists an open subset of P1 (C)
+containing      x0     and such that the elements can be analytically continued to that domain.
+The set     S   is a subset of the set of singularities of the linear dierential equation.                          By
+abuse of terminology, we shall say that elements of the Picard-Vessiot extension have a
+nite set of singularities. Since the elements of            F   are rational functions with coecients
+in   C(x)   of solutions of dierential equations of the form p Hp−1 [a; b; λ], so that they are
+rational functions with coecients in           C(x) of solutions of dierential equations of the form
+p Hp−1 [a; b; λ] and of algebraic functions. On the other hand, the elements of the Picard-
+Vessiot extension of an algebraic function are algebraic. Therefore, replacing the solutions
+of p Hp−1 [a; b; λ] by solutions of linear dierential equation with at most              N ∈ N singularities,
+to deduce Theorem 1 from Proposition 1, it is enough to display a transcendental                           G-
+function with a suitable dierential Galois group and with suciently many non-polar
+singularities.
+
+
+
+
+                                                       4
+Theorem 1.    Let N ∈ N. There exists a G-function ξN which is not an element of the
+eld KN of rational functions with coecients in C(x) of solutions of linear dierential
+equations with coecients in C(x) and at most N singularities in P1 (C).
+
+    As a corollary to Theorem 1, we obtain the following negative answer to a special case of
+Question 3 where the      λ's   are rational functions with coprime numerator and denominator
+of degree less than any xed integer        M.           In this case, the equations p Hp−1 [a; b; λ] are of
+order at most    p   with coecients in    C(x).
+
+Corollary 1.  Let M ∈ N∗ . There exists a G-function which is not an element of the eld
+FM of rational functions with coecients in C(x) of solutions of dierential equations of
+the form p Hp−1 [a; b; λ], with p ≥ 1, aj ∈ C, bj ∈ C \ Z≤0 , and λ ∈ C(x) with coprime
+numerators and denominators of degree less than M .
+
+    Specializing this corollary gives a negative answer to a special case of Question 2.
+
+
+Corollary 2.   Let M ∈ N∗ . There exists a G-function which cannot be written as a
+polynomial with coecients in Q of G-functions µ(x) · p Fp−1 [a1 , . . . , ap ; b1 , . . . , bp−1 ; λ(x)],
+with p ≥ 1, aj ∈ Q, bj ∈ Q \ Z≤0 , λ, µ ∈ Q[[x]], µ algebraic over Q(x), and λ ∈ Q(x) \ Q
+has coprime numerators and denominators of degree less than M and λ(0) = 0.
+
+    Again, it is understood that       p, µ   and    λ   can vary in the polynomial.
+
+    TheG-functions ξN        in Theorem 1 are all constructed using the                 G-function ξ(x) :=
+    2
+x(x − 34x + 1)1/2 α(x),      where   α            G-function of Apéry's
+                                         is the generating                                 numbers:
+
+                                   ∞   n  2     2 !
+                                  X   X   n    n+k
+                          α(x) :=                       xn ∈ Z[[x]],
+                                  n=0 k=0
+                                          k     n
+
+which is a solution of
+
+
+      x2 (1 − 34x + x2 )y ′′′ + x(3 − 153x + 6x2 )y ′′ + (1 − 112x + 7x2 )y ′ + (x − 5)y = 0.
+
+For our purpose, the crucial properties of           ξ    is that it is transcendental and the dierential
+Galois group of one linear dierential equation of order 3 it satises is                PSL2 (C).
+    As another direct application of Proposition 1, we shall also prove that the function                  ξ
+provides a negative answer to the question for                 G-functions   which is the closest to Siegel's
+original question for    E -functions.
+
+Corollary 3.   The G-function ξ cannot be written as a polynomial with coecients in Q of
+functions of the form p Fp−1 [a1 , . . . , ap ; b1 , . . . , bp−1 ; γxm ], with p ≥ 1, aj ∈ Q, bj ∈ Q \ Z≤0 ,
+      ∗
+γ ∈ Q , m ∈ Z∗ .
+
+    It is understood that the parameters of the hypergeometric functions can vary in the
+polynomial, as well as the values of          γ, p   and   m.
+
+
+                                                           5
+   We conclude this introduction by mentioning that the question of the relations between
+G-functions     of dierential order 2 and hypergeometric series 2 F1 was the subject of a
+conjecture of Dwork [9], disproved by Krammer [18]. See the introduction of [10] for more
+details, as well as some results on the nature of     G-functions   of dierential order   ≤ 2.   On
+a similar note, it is shown in [15] that a certain (explicit) period of a family hyperelliptic
+curves of genus 2 (related the    G-function   generating the squares of Legendre polynomials)
+satises a linear dierential equation of order 2 with monodromy group dense in             SL2 (R),
+amongst other examples, from which the authors concludes that this suggests that they
+(these equations) cannot be solved in terms of 2 F1 hypergeometric functions, which is
+novel for an arithmetic second order equation that is dened over           Q.   These results have
+no obvious intersection with our results, which are of a dierent nature.               Let us also
+mention the assertion that belongs to folklore that          G-functions   could all be obtained as
+suitable specializations of the parameters and variables of multivariate        A-hypergeometric
+functions (dened in [14]). This is already known to be true for algebraic functions over
+Q(x),    see [28] for instance.
+
+   The paper is organized as follows. Section 2 is devoted to a quick reminder of dierential
+Galois theory, and we prove there Proposition 1. In Section 3, we study the            G-function ξ
+and compute its dierential Galois group.         Finally in Section 4, we give the proofs of
+Theorem 1 and Corollaries 1 and 3.
+
+
+Acknowledgement.          We thank M. Mezzarobba for his explanations concerning his Maple
+code   NumGfun    and A. Bostan for his comments on Schwarz' classication. Both authors
+have partially been funded by the ANR project De Rerum Natura (ANR-19-CE40-0018).
+The IMB receives support from the EIPHI Graduate School (contract ANR-17-EURE-
+0002).
+
+
+
+
+2 A result in dierential Galois theory
+This section is devoted to dierential Galois theory.         It contains a short survey and the
+proof of Proposition 1. We also state and prove Lemma 1, which is necessary for the proof
+of Theorem 1.
+
+
+
+2.1 A quick survey of dierential Galois theory
+The goal of this section is to make a quick remainder of dierential Galois theory.               For
+convenience, we shall now focus on the case where the equation has coecients in   C(x).
+For a general theory, we refer to [21].    Let    B  p × p square matrix with entries in
+                                                      be a
+C(x) and let us consider the linear dierential system Y ′ = BY. In what follows, for K
+                                               ∂             ′
+a dierential eld extension of C(x), we set K := {a ∈ K|a = 0} its eld of constants.
+               ∂
+Note that C(x) = C has characteristic zero and is algebraically closed. A Picard-Vessiot
+               ′
+extension for Y = BY over C(x) is a dierential eld extension K/C(x) such that
+
+
+
+
+                                                 6
+

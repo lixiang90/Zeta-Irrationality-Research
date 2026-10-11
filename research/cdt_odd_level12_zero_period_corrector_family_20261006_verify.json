@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-06",
+  "scope": "Exact all-integer zero-Apery-period source correction and legitimate T/Jn leaf input; no global fullkernel, analytic-budget improvement or numerical irrationality theorem.",
+  "execution_history": "Second execution of this NEW fixed symbolic producer: first saved 39 checks; this second adds an independent exact finite Bernoulli endpoint check for R at rho7 squared. No frozen producer imported or executed.",
+  "passed": 40,
+  "checks": [
+    {
+      "name": "Jn explicit rational matrix",
+      "passed": true
+    },
+    {
+      "name": "Jn determinant 12 all n",
+      "passed": true
+    },
+    {
+      "name": "Jn trace zero all n",
+      "passed": true
+    },
+    {
+      "name": "Jn order two PSL all n",
+      "passed": true
+    },
+    {
+      "name": "eta W Tminus Wminus exact",
+      "passed": true
+    },
+    {
+      "name": "Jn nzero equals M",
+      "passed": true
+    },
+    {
+      "name": "all n p positive explicit square",
+      "passed": true
+    },
+    {
+      "name": "M unsigned plus eigline dimension one",
+      "passed": true
+    },
+    {
+      "name": "Q M plus eigenvector",
+      "passed": true
+    },
+    {
+      "name": "M signed order2 cocycle constraint",
+      "passed": true
+    },
+    {
+      "name": "transported eigenline exact normalization",
+      "passed": true
+    },
+    {
+      "name": "transported eigenline all n",
+      "passed": true
+    },
+    {
+      "name": "actual eta primitive period n1",
+      "passed": true
+    },
+    {
+      "name": "eta polynomial all n initial n0",
+      "passed": true
+    },
+    {
+      "name": "eta polynomial all n exact recurrence",
+      "passed": true
+    },
+    {
+      "name": "eta negative polynomial inverse law",
+      "passed": true
+    },
+    {
+      "name": "actual Jn cocycle plus-line projection",
+      "passed": true
+    },
+    {
+      "name": "all n true primitive correction zero",
+      "passed": true
+    },
+    {
+      "name": "corrector Jn cocycle nonzero all n",
+      "passed": true
+    },
+    {
+      "name": "integer corrector parameter coefficients",
+      "passed": true
+    },
+    {
+      "name": "parameter n0 zero",
+      "passed": true
+    },
+    {
+      "name": "parameter n1 fixed consistency",
+      "passed": true
+    },
+    {
+      "name": "parameter minus1 fixed consistency",
+      "passed": true
+    },
+    {
+      "name": "parameter cubic only real zero",
+      "passed": true
+    },
+    {
+      "name": "canonical M is lost except n0",
+      "passed": true
+    },
+    {
+      "name": "normalized real endpoint cancellation",
+      "passed": true
+    },
+    {
+      "name": "n1 verified old bad139 Tate",
+      "passed": true
+    },
+    {
+      "name": "n1 corrector finite Tate",
+      "passed": true
+    },
+    {
+      "name": "R zero at L argument 0",
+      "passed": true
+    },
+    {
+      "name": "R zero at L argument 1",
+      "passed": true
+    },
+    {
+      "name": "R zero at L argument 2",
+      "passed": true
+    },
+    {
+      "name": "R zero at L argument 3",
+      "passed": true
+    },
+    {
+      "name": "R anti W all old coefficients",
+      "passed": true
+    },
+    {
+      "name": "R rational integer source",
+      "passed": true
+    },
+    {
+      "name": "R coefficient q1 nonzero",
+      "passed": true
+    },
+    {
+      "name": "R cusp zero source constant zero",
+      "passed": true
+    },
+    {
+      "name": "R canonical M finite endpoint independently Bernoulli",
+      "passed": true
+    },
+    {
+      "name": "old sigma cusp zero remains 920",
+      "passed": true
+    },
+    {
+      "name": "old first other-infinity cusp remains nonzero",
+      "passed": true
+    },
+    {
+      "name": "all integer n first translation width minimum",
+      "passed": true
+    }
+  ],
+  "R_old_coefficients": {
+    "1": 1,
+    "2": -66,
+    "3": 495,
+    "4": -880,
+    "6": 594,
+    "12": -144
+  },
+  "Jn": [
+    [
+      "84*n + 24",
+      "-7"
+    ],
+    [
+      "1008*n**2 + 576*n + 84",
+      "-84*n - 24"
+    ]
+  ],
+  "p_n": "84*n**2 + 48*n + 7",
+  "s_n": "644*n**3 + 552*n**2 + 147*n",
+  "P_eta_n": [
+    "44160*n",
+    "529920*n**2",
+    "2119680*n**3 - 46080*n"
+  ],
+  "Q_n": [
+    "49",
+    "-168*(7*n + 2)",
+    "84*(84*n**2 + 48*n + 7)"
+  ],
+  "cL_Jn_over_ipi3": [
+    "13440*n*(644*n**2 + 552*n + 147)",
+    "-46080*n*(7*n + 2)*(644*n**2 + 552*n + 147)",
+    "23040*n*(84*n**2 + 48*n + 7)*(644*n**2 + 552*n + 147)"
+  ],
+  "cR_Jn_over_ipi3": [
+    "-13440",
+    "46080*(7*n + 2)",
+    "-23040*(84*n**2 + 48*n + 7)"
+  ],
+  "lambdaL_Jn_Tate": "(1236480*n**3 + 1059840*n**2 + 282240*n)/(84*n**2 + 48*n + 7)",
+  "lambdaR_Jn_Tate": "-1920/(84*n**2 + 48*n + 7)",
+  "first_source": "F_L+s_n R",
+  "conjugate_source": "sigma(F_L)+s_n R",
+  "period": "34560*sqrt(3)*L(3,chi12)",
+  "Hecke_second_parameter": "sqrt(12)*(84*n^2+48*n+7)",
+  "actual_rank_each_embedding": 4,
+  "rank_scope": "Follows in prose from the rational order4 closure and unchanged nonzero cubic cusp; not a symbolic numerical check."
+}

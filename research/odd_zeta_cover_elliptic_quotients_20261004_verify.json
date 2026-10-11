@@ -1,0 +1,108 @@
+{
+  "status": "fixed_exact_identities_passed_not_irrationality_or_arithmetic_integrality",
+  "curve_polynomial": "s**8 - 14*s**4 + 1",
+  "quotient_pullback_dx_over_y_coefficients": [
+    "2*s",
+    "(s - 1)*(s + 1)",
+    "s**2 + 1"
+  ],
+  "cotangent_matrix_determinant": "4",
+  "V4_average_on_holomorphic_forms": "zero",
+  "j_invariants": {
+    "E0": "35152/9",
+    "Eplus": "2048/3",
+    "Eminus": "2048/3"
+  },
+  "quartic_discriminants": {
+    "E0": "589824",
+    "Eplus": "-786432",
+    "Eminus": "-786432"
+  },
+  "elliptic_outer_kernels": {
+    "Eplus": "(4*x**2 + 24)/(x**2 - 2)",
+    "Eminus": "(4*x**2 - 24)/(x**2 + 2)"
+  },
+  "logarithmic_norm_factors": {
+    "Eplus": "(x**2 - 6)*(x**2 - 2)**2/2",
+    "Eminus": "-(x**2 + 2)**2*(x**2 + 6)/2"
+  },
+  "tame_symbols_at_all_horizontal_u_or_F_divisors": {
+    "Eplus": [
+      {
+        "x": "-sqrt(2)",
+        "y": "-4*I",
+        "ord_u": 1,
+        "leading_u": "-sqrt(2)/4",
+        "ord_F": 2,
+        "leading_F": "1/4",
+        "tame_symbol": "1/2"
+      },
+      {
+        "x": "-sqrt(2)",
+        "y": "4*I",
+        "ord_u": 1,
+        "leading_u": "-sqrt(2)/4",
+        "ord_F": -2,
+        "leading_F": "4",
+        "tame_symbol": "2"
+      },
+      {
+        "x": "sqrt(2)",
+        "y": "-4*I",
+        "ord_u": -1,
+        "leading_u": "2*sqrt(2)",
+        "ord_F": -2,
+        "leading_F": "4",
+        "tame_symbol": "1/2"
+      },
+      {
+        "x": "sqrt(2)",
+        "y": "4*I",
+        "ord_u": -1,
+        "leading_u": "2*sqrt(2)",
+        "ord_F": 2,
+        "leading_F": "1/4",
+        "tame_symbol": "2"
+      }
+    ],
+    "Eminus": [
+      {
+        "x": "-sqrt(2)*I",
+        "y": "-4*I",
+        "ord_u": -1,
+        "leading_u": "-2*sqrt(2)*I",
+        "ord_F": 2,
+        "leading_F": "-1/4",
+        "tame_symbol": "2"
+      },
+      {
+        "x": "-sqrt(2)*I",
+        "y": "4*I",
+        "ord_u": -1,
+        "leading_u": "-2*sqrt(2)*I",
+        "ord_F": -2,
+        "leading_F": "-4",
+        "tame_symbol": "1/2"
+      },
+      {
+        "x": "sqrt(2)*I",
+        "y": "-4*I",
+        "ord_u": 1,
+        "leading_u": "-sqrt(2)*I/4",
+        "ord_F": -2,
+        "leading_F": "-4",
+        "tame_symbol": "2"
+      },
+      {
+        "x": "sqrt(2)*I",
+        "y": "4*I",
+        "ord_u": 1,
+        "leading_u": "-sqrt(2)*I/4",
+        "ord_F": 2,
+        "leading_F": "-1/4",
+        "tame_symbol": "1/2"
+      }
+    ]
+  },
+  "scope": "Checks quotient equations, differential identities, j, and geometric tame symbols over Q(i,sqrt(2)); no vertical divisors, integral model, regulator nonzero theorem, or numerical period claim is checked."
+}

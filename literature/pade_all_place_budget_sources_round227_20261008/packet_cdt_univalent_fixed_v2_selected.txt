@@ -1,0 +1,165 @@
+Theorem 2.5.1. Consider two positive integers m, r ∈ N>0 and an m × r rect-
+angular array of nonnegative real numbers b := bi,j 1≤i≤m, 1≤j≤r , all of whose
+columns are of the form:
+        0 = b1,j = · · · = buj ,j < buj +1,j = · · · = bm,j =: bj ,                        ∀j = 1, . . . , r,
+for some uj ∈ {0, 1, . . . , m}. Let
+                            σi := bi,1 + . . . + bi,r ,                 i = 1, . . . , m
+be the i-th row sum, and define
+                               m                          r
+                           1 X                        1 X 2
+               τ (b) :=           (2i − 1)σ i = σ m −       u bj ∈ [0, σm ].                                    (2.5.2)
+                           m2 i=1                     m2 j=1 j
+
+Further, consider a holomorphic mapping φ : (D, 0) → (C, 0) with derivative (con-
+formal size) satisfying |φ′ (0)| > eσm .
+   Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+formal functions with denominator types of the form
+                   ∞
+                   X                                  xn
+        fi (x) =         ai,n                                                     ,    ai,n ∈ Z,                (2.5.3)
+                   n=0
+                                [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1, for
+all i = 1, . . . , m. Then we have the bound
+                           ZZ
+                                 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                              T2
+                       m≤                                             .  (2.5.4)
+                                       log |φ′ (0)| − τ (b)
+If, moreover, all functions fi are a priori assumed to be holonomic, the condition
+|φ′ (0)| > eσm can be relaxed to |φ′ (0)| > eτ (b) .
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    17
+
+
+   With elementary methods based on the phenomenon of measure concentration in
+high dimensions, we prove directly in § 6 the following variant using the increasing
+rearrangement function:
+       ZZ                                                  Z 1
+             log (max(|φ(z)|, φ(w)|) µHaar (z)µHaar (w)         2t · (log |φ(e2πit ))∗ dt
+          T2                                                 0
+ m≤                                                      =                                .
+                       log |φ′ (0)| − τ (b)                     log |φ′ (0)| − τ (b)
+                                                                                    (2.5.5)
+   To highlight the similarity of τ (b) with the increasing rearrangement function
+that emerges from a simple probabilistic consideration, let us note (writing σ0 := 0)
+that the weighted average in (2.5.2) can be expressed in a form rather similar
+to (2.4.2):
+             m     Z i/m              Z 1      m
+                                                                         !
+            X                                  X
+    τ (b) =     σi           2t dt =      2t ·   (σi − σi−1 )χ[0,i/m] (t) dt.       (2.5.6)
+            i=1     (i−1)/m           0        i=1
+                                               Pm
+Noting the monotonicity of the step function i=1 (σi −σi−1 )χ[0,i/m] (t), our require-
+ment that b is column-wise nondecreasing serves as the counterpart for denomi-
+nators of the increasing rearrangement function (log |φ|)∗ . As remarked above, we
+will see in § 8.1 that the Bost–Charles integral in (2.5.4) can be tightly majorized
+    R1
+by 0 2t · (log |φ(e2πit )|)∗ dt, with the effect that the bound (2.5.4) implies the
+bound (2.5.5). For either of the rearrangement integrals (2.5.5) and (2.5.6), the inte-
+gration weight 2t arises as the cumulative distribution function of ([0, 1], µLebesgue ).
+One mechanism for both these improvements over (2.2.3) is held by the concentra-
+tion of measure phenomenon § 4; it is explained in § 6.1.
+   For the rather rudimentary shape of the denominator type form (2.5.3) in our
+statement of Theorem 2.5.1, a single variable proof is nevertheless also possible, as
+we discover with the slopes method in § 7.3. In that context, both the denominators
+rate term τ (b) and the Bost–Charles double integral term in (2.5.4) emerge from
+the computation of the covolume of the Euclidean lattice of auxiliary polynomial
+functions chosen in the usual Diophantine analysis proof scheme: the former as the
+minimizer of a multivariable quadratic form arising from a basic template sought for
+the integral structure, and the latter as the “infinite part” based on a combination
+(due to Bost and Charles [BC22, § 5]) of the Poincaré–Lelong formula in complex
+analysis and the arithmetic Hilbert–Samuel formula in Arakelov theory.
+
+
+
+2.7. Univalent holonomy bounds and an arithmetic characterization of
+the logarithm. We now consider the specialization of Theorem 2.5.1 to the set-
+ting where the map φ is univalent. We remark that although, for general φ, we
+have various improvements of Theorem 2.5.1, such as Theorems 7.1.6 and 7.6.4
+(assuming e in loc. cit. is 0), in the case of univalent φ, all these reduce to the
+same Theorem 2.7.1 below.
+   For Ω ⊂ C a contractible domain containing 0, the Riemann mapping theorem
+                                         ≃
+supplies a biholomorphic map φ : D −     → Ω with φ(0) = 0, which by Schwarz’s
+lemma is uniquely defined up to pre-composing by a circle rotation. That makes
+the absolute value |φ′ (0)| ∈ (0, ∞] well-defined; we denote it by ρ(Ω, 0) and call
+it the conformal mapping radius of the pointed contractible domain (Ω, 0). The
+holomorphic mapping φ : D → C is said to be univalent if it is biholomorphic onto
+its image, or equivalently, if φ : D ,→ C is injective.
+Theorem 2.7.1 (Univalent holonomy bound). Under the notations and assump-
+tions of Theorem 2.5.1, consider Ω ⊂ C a contractible domain with 0 ∈ Ω and
+having a conformal mapping radius ρ(Ω, 0) > eτ (b) . For any m-tuple of Q(x)-
+linearly independent formal functions of the type (2.5.3) and meromorphic in Ω,
+the following holonomy bound holds:
+                                              log ρ(Ω, 0)
+                                    m≤                        .
+                                          log ρ(Ω, 0) − τ (b)
+Proof. This follows directly from Theorem 2.5.1. The point to observe is that the
+Bost–Charles double integral term satisfies the inequality
+              ZZ
+                    log |φ(z) − φ(w)| µHaar (z)µHaar (w) ≥ log |φ′ (0)|,
+                     T2
+with equality if and only if φ : D ,→ C is univalent on the open disc. To see this,
+simply observe that the univalence is equivalent to having the bivariate holomorphic
+function
+                    φ(z) − φ(w)
+                                 = φ′ (0) + O (|z| + |w|) ∈ O(D2 )
+                       z−w
+   8More precisely, of the form n[1, . . . , 2n + 3]2 , but this can more or less be treated as having
+the shape n[1, . . . , 2n]2 , by Remark 6.0.12.
+20                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+to be nonvanishing throughout the unit polydisc. Hence the function
+                                      φ(z) − φ(w)
+                 G(z, w) := log                   : D2 → R ∪ {−∞}
+                                         z−w
+is plurisubharmonic, and harmonic if and only if φ is univalent. Both claims now
+follow upon remarking that G(0, 0) = log |φ′ (0)| while
+     ZZ                                ZZ
+          G(z, w) µHaar (z)µHaar (w) =     log |φ(z) − φ(w)| µHaar (z)µHaar (w),
+       T2                                        T2
+                                      1
+                        RR
+by the basic integral    T2
+                              log   |z−w|   µHaar (z)µHaar (w) = 0.                   □
+   We note the following application of Theorem 2.7.1 to the logarithm function,
+which is the example of Basic Remark 2.6.3.
+                                        P∞
+
+
+Basic Remark 2.11.1. Koebe’s quarter theorem states that |φ′ (0)| ≤ 4 for all
+univalent holomorphic maps of pointed domains φ : (D, 0) → (C ∖ {1}, 0), and that
+equality holds if and only if φ(z) = G(cz) with |c| = 1, where
+                                                        2
+                                     4z            1−z
+                         G(z) :=           = 1 −
+                                  (1 + z)2         1+z
+is Koebe’s extremal function, the Riemann uniformization map at the origin of the
+slit complex plane C ∖ [1, ∞). In particular, if we restrict φ to univalent maps in
+Theorem 2.5.1 then we cannot hope to prove Theorem 2.8.4 since then
+                          |φ′ (0)| ≤ 4 < 4.481689 . . . = e3/2 .
+The Koebe map is 1 : 1 on the open unit disc but it extends to a 2 : 1 rational
+map C ∖ {±1} → C ∖ {1}. Pre-composing this quadratic rational map with the
+     p uniformization map D → C ∖ ((−∞, −1] ∪ [1, ∞)), which is simply the
+Riemann
+map G(z 2 ) = 2z/(1 + z 2 ), we end up with the bivalent map
+                                                   8(z + z 3 )              4
+                                       p                                1−z
+    φ : D → C ∖ {1},        φ(z) := G      G(z 2 ) =            =  1 −            .
+                                                      (1 + z)4           1+z
+                                                                              (2.11.2)
+In the present section, analogously to the role of Koebe’s univalent map for the proof
+of Theorem 2.7.2, we make a use of the basic properties of the bivalent map (2.11.2).
+                           ≃
+This map bijects (−1, 1) − → (−∞, 1) and is bivalent on D ∖ (−1, 1), taking either
+30                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+of the two connected halves conformally isomorphically onto C ∖ (−∞, 1]. This
+shows in particular that the case φ : (D, 0) → (C ∖ {1}, 0) in Proposition 2.9.3
+with Σ1 = {1, ∞} and an arbitrary Σ0 ⊂ (−∞, 1) can have a derivative as big as
+|φ′ (0)| = 8.                                                                 △
+   

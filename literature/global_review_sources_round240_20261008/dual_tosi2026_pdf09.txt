@@ -1,0 +1,58 @@
+                 AN EXPLICIT STUDY OF A FAMILY OF CELLULAR INTEGRALS                             9
+
+Hence, by a telescopic summation, we have
+                                          l
+                                         X            ∂f
+                                             (−1)i xi     = 0,
+                                         i=1
+                                                      ∂xi
+which proves the claim about the differential of αl .
+Suppose that l is odd, so αl is an algebraic primitive of ωl . Since ωl has no poles along
+the boundary divisors at finite distance from X n,δ0 , there is an algebraic primitive α
+                                                                                       el of
+ωl that also has no poles along along these divisors. To obtain α  el , one may apply to αl
+the regularization procedure explained in [Bro09, Proposition 8.1]. The so-constructed
+primitive remains algebraic because this procedure does not increase the weight.
+The absence of poles on the boundary of X n,δ0 ensures that α   el restricts continuously to
+the involved boundary divisors. By Stokes’ theorem,
+                                   Z         Z
+                                        ωl =          el .
+                                                      α
+                                          X nδ0          ∂X nδ0
+
+The boundary divisors of M0,n are isomorphic to products of the form M0,n1 × M0,n2 with
+n1 + n2 = n − 1, whose periods are linear combinations of multiple zeta values of weight
+at most l − 1. The claim follows.                                                     □
+1.3. A case of study in three dimensions. If l is odd, we have seen that ωl is exact
+as an algebraic form. However, in general, finding an explicit primitive can be a hard
+task. We will explain in this section how the observation about the poles of ωl exposed
+in Lemma 6 can help in this context. To simplify the computations, we will focus on the
+case l = 3.
+Recall that, by Lemma 6, ω3 has at most simple poles, with the only exception of a double
+pole along the divisor DX associated with the irreducible element X = ⟨y2 ⟩ ∈ F3 . Let
+us choose a local chart on M0,n for which this double pole becomes visible. Consider the
+maximal F3 -nested set S = {⟨y2 ⟩, ⟨y2 , y4 ⟩, ⟨y1 , y2 , y4 ⟩, V ∗ } with adapted basis
+               ⟨y2 ⟩ 7→ y2 ,   ⟨y2 , y4 ⟩ 7→ y2 − y4 ,   ⟨y1 , y2 , y4 ⟩ 7→ y1 ,   V ∗ 7→ y3 .
+The closure of the subscheme {u2 = 0} ⊆ US in M0,n coincides with DX . The induced
+standard coordinates u1 , u2 , u3 on the local chart US are given by
+                                y1            y2             y2 − y 4
+                        u1 = , u2 =                , u3 =             ,
+                                y3         y2 − y4              y1
+with inverse
+                      y1 = u1 , , y2 = u1 u2 u3 , y4 = (u2 − 1)u1 u3 .
+In these coordinates, we see that
+                                1             1
+                       ω3 = 2 ·                            du1 du2 du3 .
+                               u3 u1 (1 − u1 )u2 (1 − u2 )
+At this point, it is straightforward to find an algebraic primitive for ω3 , namely
+                                  1             1
+                          α3 = − ·                           du1 du2 .
+                                 u3 u1 (1 − u1 )u2 (1 − u2 )
+Going back to simplicial and cubical coordinates, we compute
+                               t3                               t1
+               α3 =                         dt1 dt2 +                        dt2 dt3
+                     t2 (t3 − t1 )(1 − t2 )           t2 (t3 − t1 )(1 − t2 )
+                     x1              x2              x3
+                  =      dx2 dx3 +      dx1 dx3 +       dx1 dx2 .
+                      f              f               f
+

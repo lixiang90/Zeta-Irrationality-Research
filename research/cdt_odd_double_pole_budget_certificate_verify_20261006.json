@@ -1,0 +1,53 @@
+{
+  "status": "exact_certificate_checks_passed",
+  "new_producer_execution_ordinal": 1,
+  "scope": "Exact rational integration consistency, weight-penalty identity and elementary log/atan energy intervals only; source applicability is paper proof. No irrationality theorem or lower bound for actual arithmetic cost.",
+  "old_or_peer_producer_execution_import_rerun": 0,
+  "checks": [
+    {
+      "layout": "old_6_3",
+      "s": 4,
+      "A_strict_upper": "30409/1000"
+    },
+    {
+      "layout": "old_6_3",
+      "s": 5,
+      "A_strict_upper": "46159/1000"
+    },
+    {
+      "layout": "old_6_3",
+      "s": 7,
+      "A_strict_upper": "77659/1000"
+    },
+    {
+      "layout": "restored_4",
+      "pole_B": 5,
+      "A_strict_upper": "8917/500",
+      "energy_strict_window": [
+        "3821/500",
+        "7643/1000"
+      ],
+      "proved_obtained_bounds_not_positive_margin": true
+    },
+    {
+      "layout": "restored_4",
+      "pole_B": 6,
+      "A_strict_upper": "35939/1000",
+      "energy_strict_window": [
+        "4369/250",
+        "17477/1000"
+      ],
+      "proved_obtained_bounds_not_positive_margin": true
+    },
+    {
+      "layout": "restored_4",
+      "pole_B": 8,
+      "A_strict_upper": "81249/1000",
+      "energy_strict_window": [
+        "43029/1000",
+        "4303/100"
+      ],
+      "proved_obtained_bounds_not_positive_margin": true
+    }
+  ]
+}

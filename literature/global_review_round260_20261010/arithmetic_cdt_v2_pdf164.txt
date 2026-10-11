@@ -1,0 +1,73 @@
+=== physical PDF page 164 ===
+164
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+and indeed the singularities of the linear ODE are at 0,
+
+1±
+√
+5
+2
+5
+, and ∞: precisely
+the same as for Ap´ery’s approximants to ζ(2).
+Unfortunately, due to the half-
+integral exponents in this integral representation, the denominators in these rational
+approximations are as big as 16n[1, . . . , 2n]2.
+A different holonomic sequence of rational approximants to G was given by case E
+in [Zag09], where the ODE singularities are {0, 1/8; 1/4, ∞} (the first two of which
+are overconvergent), and the denominator types are [1, . . . , n]2.
+Since e2 > 16 · (1/4) and e4 >
+
+1+
+√
+5
+2
+5
+(by a wide margin!), this definitely pre-
+cludes an approach to the irrationality of the Catalan constant by our method using
+either of these particular families of rational approximants, unless some completely
+new idea is discovered.
+△
+11.2. The symmetrization of H(x). Let a, b, and c be complex numbers such
+that
+a + b · L(2, χ−3)/2 + c · ζ(2)/4 = 0.
+Then we may define H(x) ∈CJxK as in equation (11.1.9). If we additionally assume
+that 1, π2, and L(2, χ−3) are linearly dependent over Q, then we can choose a, b,
+and c to be rational, although the arguments of this section will not require this
+hypothesis.
+We now let G(y) be the symmetrization of H(x):
+Definition 11.2.1. Let G(y) = Sym+H(x) as defined in equation (9.0.9), so
+G(y) = H(x) + H
+
+x
+x −1
+
+∈CJyK,
+and let GA(x) = Sym+HA(x), so
+GA(y) = HA(x) + HA
+
+x
+x −1
+
+∈ZJyK.
+Note that GA(y) = 2−27y +1014y2 −49536y3 +. . .; the function GA(y) satisfies
+an order 4 ODE
+3
+X
+i=0
+ci(y)G(i)
+A (y) = 0
+which we give explicitly later in equation (12.1.5).
+The span of GA(y) and its
+derivatives generates, over Q(x), the space spanned by HA(x) and HA(x/(x −1))
+and their derivatives (which are both vector spaces of dimension 4). By Lemma 9.0.3
+(2), we immediately have the following:
+Lemma 11.2.2. If a, b, c ∈Q, then G(y) has denominator type [1, 2, . . . , 2n]2.
+12. Functional Linear Independence
+Let Ai(x) ∈QJxK be a collection of holomorphic functions functions on P1 ∖S
+for some finite set S. (In our situation, they will all be Siegel G-functions.) Suppose
+we wish to prove that the Ai(x) are linearly independent over Q(x) or C(x). One
+strategy is as follows. Let γ be a path in C; for example, take a path starting
+at x = 0, avoiding other points in S, and then returning to 0. The functions Ai(x)
+can be analytically continued along γ, and as we return to x = 0 we obtain a
+sequence of functions bAi(x) which may now have singularities at x = 0. Certainly

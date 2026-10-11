@@ -1,0 +1,186 @@
+{
+  "status": "fixed_exact_congruence_background_checks_passed",
+  "all_fixed_checks_passed": true,
+  "fixed_checks": 31,
+  "checks": [
+    "symbolic diagonal root factorization",
+    "symbolic Fricke conjugation",
+    "symbolic Fricke translation conjugation",
+    "level12 fixed point",
+    "SL2 input at M=60,k=0",
+    "Gamma1(12) input at M=60,k=0",
+    "lower ideal M=60,k=0,arg=48",
+    "lower ideal M=60,k=0,arg=12",
+    "lower ideal M=60,k=0,arg=-156",
+    "complete root decomposition M=60,k=0",
+    "SL2 input at M=156,k=1",
+    "Gamma1(12) input at M=156,k=1",
+    "lower ideal M=156,k=1,arg=144",
+    "lower ideal M=156,k=1,arg=96",
+    "lower ideal M=156,k=1,arg=-9312",
+    "complete root decomposition M=156,k=1",
+    "SL2 input at M=60,k=1",
+    "Gamma1(12) input at M=60,k=1",
+    "lower ideal M=60,k=1,arg=36",
+    "lower ideal M=60,k=1,arg=0",
+    "lower ideal M=60,k=1,arg=0",
+    "complete root decomposition M=60,k=1",
+    "level12 units",
+    "projective diagonal quotient has two classes",
+    "nontrivial diagonal class realized",
+    "nontrivial class square lies in Gamma1",
+    "rank9 optimistic flat",
+    "rank9 bound exceeds 6.65",
+    "rank8 bound is larger",
+    "cover derivative 16(2+sqrt3)<60",
+    "positive Taylor lower bound exp(4.1)>60"
+  ],
+  "fixed_decompositions": [
+    {
+      "modulus": 60,
+      "k": 0,
+      "matrix": [
+        [
+          13,
+          2
+        ],
+        [
+          84,
+          13
+        ]
+      ],
+      "root_factors": [
+        [
+          "X",
+          0
+        ],
+        [
+          "Y",
+          48
+        ],
+        [
+          "X",
+          1
+        ],
+        [
+          "Y",
+          12
+        ],
+        [
+          "X",
+          -37
+        ],
+        [
+          "Y",
+          -156
+        ],
+        [
+          "X",
+          14
+        ]
+      ]
+    },
+    {
+      "modulus": 156,
+      "k": 1,
+      "matrix": [
+        [
+          13,
+          2
+        ],
+        [
+          84,
+          13
+        ]
+      ],
+      "root_factors": [
+        [
+          "X",
+          -1
+        ],
+        [
+          "Y",
+          144
+        ],
+        [
+          "X",
+          1
+        ],
+        [
+          "Y",
+          96
+        ],
+        [
+          "X",
+          -37
+        ],
+        [
+          "Y",
+          -9312
+        ],
+        [
+          "X",
+          87
+        ]
+      ]
+    },
+    {
+      "modulus": 60,
+      "k": 1,
+      "matrix": [
+        [
+          25,
+          4
+        ],
+        [
+          156,
+          25
+        ]
+      ],
+      "root_factors": [
+        [
+          "X",
+          -1
+        ],
+        [
+          "Y",
+          36
+        ],
+        [
+          "X",
+          1
+        ],
+        [
+          "Y",
+          0
+        ],
+        [
+          "X",
+          -1
+        ],
+        [
+          "Y",
+          0
+        ],
+        [
+          "X",
+          29
+        ]
+      ]
+    }
+  ],
+  "maximum_background_degree_over_Ct": 2,
+  "maximum_augmented_rank_with_target": 9,
+  "optimistic_flat_lower_bound": "539/81",
+  "scope": "All-modulus proof is CRT and symbolic root factorization in the report; finite cases only verify implementation of those identities.",
+  "external_proved_inputs": [
+    "Frozen level12 Hauptmodul and canonical alpha local quotient.",
+    "Frozen rank8 target quotient Sym6 and highest prime packet.",
+    "Classical Eisenstein integrality for algebraic rational power series."
+  ],
+  "new_odd_numeric_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "general_cover_impossibility_claim": false,
+  "report_sha256": "4357da98597236bf299a0530c22c0b1c452393eca918b65cc0228817d51aea8c",
+  "script_sha256": "f3429b8a0b1c26145fed44a4a5dc008a2af9166db4183acd4a076da77e235390"
+}

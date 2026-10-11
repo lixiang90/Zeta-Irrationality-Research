@@ -1,0 +1,416 @@
+=== PHYSICAL PDF PAGE 11 ===
+AT LEAST TWO OF ζ(5), ζ (7), . . . , ζ (35) ARE IRRATIONAL 11
+is negligible, so C1 = lim n→ +∞ (log Φn)/n becomes ˜C1 =C1 − 2 log 2. Thus, −C1 +C2 remains
+unchanged, so does Theorem 1.2.
+5. Computational Aspect
+In this section, we explain how to calculate C1 numerically. (The calculations for x0 and C2
+are straightforward.)
+The function ν(x,y ) (deﬁned in Lemma 3.1) can be rewritten as
+ν(x,y ) =
+H∑
+i=1
+hi, 1⌊hi, 2x +hi, 3y⌋,
+where h is the H × 3 matrix with integral entries:
+h =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 m2 − 2δ1 0
+− 1 −δ1 1
+− 1 m2 − δ1 − 1
+... ... ...
+1 m2 − 2δj 0
+− 1 −δj 1
+− 1 m2 − δj − 1
+... ... ...
+1 m2 − 2δs+1 0
+− 1 −δs+1 1
+− 1 m2 − δs+1 − 1
+1 2 m1 2
+− 1 m1 1
+1 2( m1 +m2) − 2
+− 1 ( m1 +m2) − 1
+1 3 m1 3
+1 3( m1 +m2) − 3
+− 1 0 1
+− 1 m2 − 1
+− (8m1 + 3m2) 1 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+Clearly,ν(x,y ) is 1-periodic in both variables x andy. In the xy-plane, all the lines hi, 2x+hi, 3y =
+k, (i = 1,...,H , k ∈ Z), cut apart the xy-plane into polygons, and ν(x,y ) is constant in the
+interior of each polygon. Moreover, the value of ν(x,y ) at a non-vertex point on the common
+side of two polygons is equal to the ν-value of the interior points of one of these two polygons.
+Thus the function ν0(x) = min y∈ Rν(x,y ) is 1-periodic, and any of its discontinuities must be
+the x-coordinate of the intersection point of some pair of lines.
+Let X = ⋃
+qi,j̸=0Xi,j where Xi,j = { k
+qi,j
+|k ∈ Z, 0 ⩽k ⩽qi,j } and qi,j is deﬁned as
+qi,j = abs
+(⏐
+⏐
+⏐
+⏐
+hi, 2 hi, 3
+hj, 2 hj, 3
+⏐
+⏐
+⏐
+⏐
+)
+.
+Suppose X = {0 = x0 < x1 < x2 < · · ·< xl = 1 }, then X contains all the discontinuities of
+ν0(x) in the interval [0 , 1], and there exists an index lmid such that xlmid = 1
+m2− 2δmin
+∈ X. Then
+ν0(x) is constant on each interval ( xi− 1,x i), and we can express the integration (4.3) as a ﬁnite
+summation:
+C1 =
+l∑
+i=1
+ν0
+(xi− 1 +xi
+2
+)
+·(ψ (xi) − ψ (xi− 1)) +
+lmid∑
+i=1
+ν0
+(xi− 1 +xi
+2
+)
+·
+( 1
+xi
+− 1
+xi− 1
+)
+.
+
+=== PHYSICAL PDF PAGE 12 ===
+12 LI LAI AND LI ZHOU
+(To reduce the eﬀect of round oﬀ errors, we choose to calculate ν0
+(
+xi− 1+xi
+2
+)
+on each interval
+(xi− 1,x i).)
+For a ﬁxed ˆx = xi− 1+xi
+2 , the function y ↦→ ν(ˆx,y ) is piecewise constant and any of its discon-
+tinuities must be the y-coordinate of the intersection point of the line x = ˆx and some line in
+the form hj, 2x +hj, 3y =k. Let Y =Y (ˆx) = ⋃
+hj,3̸=0Yj, where
+Yj =
+{
+k − hj, 2 ˆx
+hj, 3
+⏐
+⏐
+⏐
+⏐
+⏐ k ∈ Z, min{hj, 2 ˆx,h j, 2 ˆx +hj, 3} ⩽k ⩽ max{hj, 2 ˆx,h j, 2 ˆx +hj, 3}
+}
+,
+then Y contains all the discontinuities of the function y ↦→ ν(ˆx,y ) in [0, 1]. Let Y ′ be the set of
+middle points of two consecutive numbers in Y , then ν0(ˆx) = min y∈ Y ′ν(ˆx,y ) is the minimum of
+ﬁnitely many terms. In this way, we can calculate the value of C1.
+The MATLAB code zeta35.m can be downloaded at https://github.com/lzhou-xyz/zeta35/.
+It takes around one minute on a personal laptop to obtain the r esult.
+6. A related problem about Catalan’s constant
+It is natural to generalize the results about the Riemann zet a values to the Dirichlet L-values.
+We refer the reader to Fischler [Fis20] for recent progress. In the following, we consider the
+Dirichlet beta function; that is,
+β (s) = L(s,χ 4) =
+∞∑
+j=0
+(− 1)j
+(2j + 1)s, Re(s)> 0.
+As in the Riemann zeta case, a half of the β -values at positive integers are “trivially” transcen-
+dental: Euler showed that β (2k + 1) is a non-zero rational multiple of π 2k+1 for any non-negative
+integerk, so β (2k + 1) is transcendental. We know little about β (2k).
+The constant β (2) is called Catalan’s constant. Unlike Ap´ ery’s constant ζ(3), we still do not
+know whether β (2) is irrational or not. In 2003, Rivoal and Zudilin [RZ03] s howed that at least
+one of β (2),β (4),...,β (14) is irrational. Recently, Zudilin [Zud19] improved 14 t o 12. By using
+the same constructions in [Zud19] with just a diﬀerent collec tion of parameters, we ﬁnd that it
+can be improved further.
+Theorem 6.1. At least one of β (2),β (4),β (6),β (8),β (10) is irrational.
+The proof is identical to [Zud19, §3] except for small modiﬁcations: we need to take a diﬀerent
+normalization factor of the rational function. In the follo wing, we repeat the process of [Zud19,
+§3] and use tilde notation to indicate modiﬁcations.
+Take s = 11 instead of s = 13. Let ( η0,η 1,...,η s) be a collection of integral parameters
+satisfying
+0<η j < 1
+2η0 for j = 1,...,s, and η1 +η2 + · · ·+ηs ⩽ s − 1
+2 η0.
+We assign for each positive even integer n the collection
+h0 =η0n + 1, h j =ηjn + 1
+2 for j = 1,...,s.
+Let
+˜Rn(t) = ˜Rn,η (t) = ˜γn ·(2t +h0) (t + 1)h0− 1∏s
+j=1 (t +hj)1+h0− 2hj
+,
+where the normalization factor ˜γn is diﬀerent from γn in [Zud19, §3]:
+˜γn = 4 h0− 1
+∏s
+j=1 (h0 − 2hj)!
+n!η0
+.
+
+=== PHYSICAL PDF PAGE 13 ===
+AT LEAST TWO OF ζ(5), ζ (7), . . . , ζ (35) ARE IRRATIONAL 13
+Deﬁne the sum
+˜rn =
+∞∑
+ν=0
+(− 1)ν ˜Rn(ν).
+Let
+N = min
+1⩽j⩽s
+{
+hj − 1
+2
+}
+and ˜M =h0 − 2N − 1.
+Note that ˜M is diﬀerent from M = max
+{
+h0 − 2N − 1,h 1 − 1
+2
+}
+(in the third line before Lemma
+4 of [Zud19, §3].)
+The diﬀerent normalization factor ˜γn induces the obvious change in [Zud19, §3, Lemma 2]:
+lim
+n→∞
+˜r1/n
+n = (4η0)η0 · max
+t∈ [0, 1]s
+∏s
+j=1tηj
+j (1 − tj)η0− 2ηj
+(1 +t1t2 · · ·ts)η0 ,
+and ϕ (x,y ) in [Zud19, §3, Lemma 4] is replaced by
+˜ϕ (x,y ) = ⌊2 (η0x − y)⌋ + ⌊2y⌋ − ⌊η0x − y⌋ − ⌊y⌋ − η0 ⌊x⌋
++
+s∑
+j=1
+(⌊(η0 − 2ηj)x⌋ − ⌊y − ηjx⌋ − ⌊ (η0 − ηj)x − y⌋).
+Accordingly,ϕ 0(x) and Φ n in [Zud19, §3, Lemma 4] are replaced by ˜ϕ 0(x) = min 0⩽y<1 ˜ϕ (x,y )
+and
+˜Φn =
+∏
+√ 2h0<p⩽ ˜M
+p ˜ϕ 0(n/p ),
+respectively.
+Suppose that the partial-fraction decomposition of ˜Rn(t) is
+˜Rn(t) =
+s∑
+i=1
+h0− N − 1∑
+k=N
+˜ai,k
+(
+t +k + 1
+2
+)i.
+As usual, we denote by d ˜M the least common multiple of 1 , 2,..., ˜M . Most importantly, Lemma
+4 of [Zud19, §3] can be interpreted as
+(6.1) ˜Φ− 1
+n ds− i
+˜M ˜ai,k ∈ Z
+for any i = 1,...,s and N ⩽ k ⩽ h0 − N − 1. (For the parameters in [Zud19, §3], we have
+˜M = M . But for our parameters below, we have ˜M < M. This is the reason that we take
+the diﬀerent normalization factor ˜γn.) To prove (6.1), we need to replace the product of three
+integer-valued polynomials
+4h∗
+1
+(
+t + 1
+2
+)
+h∗
+1
+h∗
+1! ,
+4h0− 2h1
+(
+t +h∗
+1 + 1
+2
+)
+h0− 2h1
+(h0 − 2h1)! ,
+4h∗
+1
+(
+t +h0 − h∗
+1 − 1
+2
+)
+h∗
+1
+h∗
+1!
+(whereh∗
+1 =h1 − 1
+2 =η1n) in the proof of Lemma 4 of [Zud19, §3] by the product of the following
+η0 polynomials:
+4n (
+t + 1
+2
+)
+n
+n! , 4n (
+t +n + 1
+2
+)
+n
+n! , 4n (
+t + 2n + 1
+2
+)
+n
+n! ,..., 4n (
+t +h0 − n − 1
+2
+)
+n
+n! .
+(See also Remark 4.5 for some explanation about such replace ments.)
+Finally, by taking the parameters as
+(η0,η 1,...,η 11) = (94, 32, 32, 32, 32, 33, 34, 35, 36, 37, 38, 39),
+we obtain that
+lim
+n→ +∞
+˜r1/n
+n = exp(118. 624566... )
+
+=== PHYSICAL PDF PAGE 14 ===
+14 LI LAI AND LI ZHOU
+and
+lim
+n→ +∞
+(
+˜Φ− 1
+n d11
+˜M
+)1/n
+= exp(− 118. 836817... ).
+(The MATLAB code beta10.m can be downloaded at https://github.com/lzhou-xyz/zeta35/.)
+This means that the positive linear forms
+˜Φ− 1
+n d11
+˜M ˜rn ∈ Zβ (2) + Zβ (4) + · · ·+ Zβ (10) + Z
+tend to 0 as n → +∞ . Thus, one of the β -values considered is irrational. The proof of Theorem
+6.1 is complete.
+References
+[Ap´ e79] R. Ap´ ery,Irrationalit´ e deζ(2) et ζ(3), in Journ´ ees Arithm´ etiques (Luminy, 1978), Ast´ erisque, vol. 61
+(Soci´ et´ e Math´ ematique de France, Paris, 1979), 11-13.
+[BR01] K. Ball and T. Rivoal, Irrationalit´ e d’une inﬁnit´ e de valeurs de la fonction zˆ eta aux entiers impairs ,
+Invent. Math. 146 (2001), 193-207.
+[Fis04] S. Fischler, Irrationalit´ e de valeurs de zˆ eta (d’apr` es Ap´ ery, Rivoal, ...) , in S´ em. Bourbaki 2002/03,
+Ast´ erisque, vol. 294 (Soci´ et´ e Math´ ematique de France,Paris, 2004); exp. no. 910, pp. 27-62.
+[Fis20] S. Fischler, Irrationality of values of L-functions of Dirichlet characters , J. Lond. Math. Soc. (2) 101
+(2020), no. 2, 857-876.
+[Fis21] S. Fischler, Linear independence of odd zeta values using Siegel’s lemma , Preprint (2021), arXiv:
+2109.10136 [math.NT].
+[FSZ19] S. Fischler, J. Sprang, and W. Zudilin, Many odd zeta values are irrational , Compos. Math. 155(5)
+(2019), 938-952.
+[FZ10] S. Fischler and W. Zudilin, A reﬁnement of Nesterenko’s linear independence criterion with applications
+to zeta values . Math. Ann. 347 (2010), no. 4, 739-763.
+[Hat93] M. Hata, Rational approximations to π and some other numbers . Acta Arith. 63 (1993), no. 4, 335-349.
+[KR07] C. Krattenthaler and T. Rivoal, Hyperg´ eom´ etrie et fonction zˆ eta de Riemann, Mem. Amer. Math. Soc.
+186 (2007), no. 875.
+[LY20] L. Lai and P. Yu, A note on the number of irrational odd zeta values . Compos. Math. 156 (2020), no.
+8, 1699-1717.
+[Riv00] T. Rivoal, La fonction zˆ eta de Riemann prend une inﬁnit´ e de valeurs irrationnelles aux entiers impairs .
+C. R. Acad. Sci. Paris S´ er. I Math. 331 (2000), no. 4, 267-270 .
+[Riv02] T. Rivoal, Irrationalit´ e d’au moins un des neuf nombres ζ(5), ζ(7), . . ., ζ(21). Acta Arith. 103 (2002),
+no. 2, 157-167.
+[RZ03] T. Rivoal and W. Zudilin, Diophantine properties of numbers related to Catalan ’s con stant. Math. Ann.
+326 (2003), no. 4, 705-721.
+[RZ20] T. Rivoal and W. Zudilin, A note on odd zeta values , S´ em. Lothar. Combin. 81 (2020), Article B81b,
+13 pp.
+[Spr18] J. Sprang, Inﬁnitely many odd zeta values are irrational. By elementar y means, Preprint (2018), arXiv:
+1802.09410 [math.NT].
+[Zud01] W. Zudilin, One of the numbers ζ(5), ζ(7), ζ(9), ζ(11) is irrational, Uspekhi Mat. Nauk [Russian Math.
+Surveys] 56 (2001), 149-150 [774-776].
+[Zud02] W. Zudilin, Irrationality of values of the Riemann zeta function , Izvestiya Ross. Akad. Nauk Ser. Mat.
+[Izv. Math.] 66 (2002), 49-102 [489-542].
+[Zud04] W. Zudilin, Arithmetic of linear forms involving odd zeta values . J. Th´ eor. Nombres Bordeaux 16(1),
+251-291 (2004).
+[Zud18] W. Zudilin, One of the odd zeta values from ζ(5) to ζ(25) is irrational. By elementary means , SIGMA
+Symmetry Integrability Geom. Methods Appl. 14 (2018), no. 0 28.
+[Zud19] W. Zudilin, Arithmetic of Catalan ’s constant and its relatives . Abh. Math. Semin. Univ. Hambg. 89
+(2019), no. 1, 45-53.
+Department of Mathematical Sciences, Tsinghua University , Beijing, China
+Email address : lilaimath@gmail.com
+School of Mathematical Sciences, Fudan University, Shangh ai, China
+Email address : lzhou11@fudan.edu.cn

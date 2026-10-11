@@ -1,0 +1,176 @@
+18                                   YIFAN YANG
+
+
+Using the functional equations for ζ(s) and L(s, χ−1 ) and the Legendre duplication
+formula for Γ(s), we find the integral on the right-hand side is equal to
+                 Z 3/2+i∞
+           1 i
+                           Γ(s)ζ(s + 2)L(s, χ−1 )(1 − 2−s−2 )(−πiτ )−s ds.
+          2πi 2τ 3/2−i∞
+By the Mellin inversion formula again, this is equal to
+          Z qZ qX  ∞                            Z qZ q
+                        −1 n2 q n/2 dq dq               η(τ )4 η(4τ )8 dq dq
+                           
+        i                                      i
+                                           =                                 .
+       8τ 0 0 n=1 n          1 − qn q q       8τ 0 0       η(2τ )6      q q
+This establishes (20). In summary, what we have shown is the following result.
+Theorem 3. Let {an } and {bn } be the sequences satisfying
+     (n + 2)2 un+2 − (32n2 + 96n + 76)un+1 + (n + 1)2 un = 0      (un = an or bn )
+with the initial values a0 = 1, a1 = 12, b0 = 0, and b1 = 1. Then
+                              bn  1               1
+                                 − L(2, χ−1 ) ≪
+                              an  2             log n
+as n → ∞.
+Example 4. Let f (τ ) = η(2τ )3 η(6τ )3 be the cusp form of weight 3 on Γ0 (6) + ω3
+with character
+                                                      
+                    a b             c   d            3 −1
+               χ           = (−1)           ,    χ           = i.
+                   6c d                 3            6 −3
+We will find a rational approximation to L(f, 2).
+   Choose
+                           η(6τ )5 η(2τ )           η(τ )2 η(3τ )3
+(21)               t(τ ) =      5
+                                          , A(τ ) =                ,
+                           η(τ ) η(3τ )             η(2τ )η(6τ )
+where t(τ ) is modular on the smaller group Γ0 (6). The differential equation satisfied
+by t and A is
+          (1 + 8t)2 (1 + 9t)θ2 A + 9t(1 + 8t)2 θA + 2t(1 + 16t + 72t2 )A = 0.
+The singularities 0, −1/9, −1/8, and ∞ correspond to the cusps ∞, 1/2, 1/3, and
+0, respectively. Set g(t) = t/(1 + 8t)(1 + 9t) so that
+                                       2
+                                 qdt/dq    g(t)
+                                                = f (τ ).
+                                    t       A
+                 P∞                                P∞
+Let A(t) = 1 + n=1 an tn and B(t) = t − 7t2 + n=3 bn tn be the solution of
+       (1 + 8t)2 (1 + 9t)θ2 B + 9t(1 + 8t)2 θB + 2t(1 + 16t + 72t2 )B = t + 8t2
+holomorphic at t = 0. We now compute the limit of bn /an . For this purpose, we
+need to determine the behavior of
+                                   Z qZ q
+                                                 dq dq
+                           E(τ ) =        f (τ )
+                                    0  0          q q
+near the cusp 1/2. Choose
+                                          
+                             1      3    −2
+                          σ= √               ∈ Γ0 (6) + ω3 ,
+                              3     6    −3
+and consider E(στ ).
+                APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                         19
+
+                      √    √                                             P∞
+   Since f (στ ) = i(2 3τ − 3)3 f (τ ), according to Lemma 4, if f (τ ) = n=1 cn q n ,
+then the function
+                                  ∞
+                                 X           cn
+                          L(s) =      (−1)n 2 = −L(s, f )
+                                 n=1
+                                            n
+satisfies                 −s                         s−3
+                      π                           π
+                      √          Γ(s)L(s) =       √            Γ(3 − s)L(3 − s).
+                       3                            3
+Also, we have
+                          Z 3/2+i∞                  −s
+                1  1      1                        πi
+          E − √ +      =             Γ(s)L(s + 2) √        ds.
+              2 3τ 2     2πi 3/2−∞                  3τ
+The integrand has simple poles at s = 0 and s = −1 with residues
+                                                              
+                                                           πi        i
+      Ress=0 = L(2) = −L(2, f ),       Ress=−1 = −L(1) √         = L(2, f ).
+                                                            3τ       τ
+Using the functional equation for L(s) and the Mellin inversion formula, we find
+                                                                  
+                  1      1                i       τ     1
+          E − √ +            + L(2, f ) =    E    √ +       + L(2, f ) .
+                2 3τ     2                τ      2 3 2
+By Lemma 3, this amounts to
+                                      √     √
+               E(στ ) + L(2, f ) = i(2 3τ − 3)−1 (E(τ ) + L(2, f )).
+Since A(τ ) satisfies                         √    √
+                                 A(στ ) = −i(2 3τ − 3)A(τ ),
+we have
+               A(στ )(E(στ ) + L(2, f )) = A(τ )(E(τ ) + L(2, f )).
+From this we see that the function A(τ )(E(τ ) + L(2, f )), as a function of t, is
+holomorphic at t = −1/9. Therefore, we have the following approximation of
+L(2, f ).
+Theorem 4. Let f (τ ) = η(2τ )3 η(6τ )3 and L(s, f ) be its associated L-function. Let
+{an } and {bn } be the sequences satisfying
+(n+3)2 un+3 +(25n2 +109n+120)un+2+16(13n2+35n+24)un+1+144(2n+1)2un = 0
+with the initial values
+            a0 = 1,     a1 = −2,      a2 = 10,          b0 = 0,    b1 = 1,   b2 = −7.
+Then we have
+                                    bn
+                                       + L(2, f ) ≪ (8/9)n .
+                                    an
+Remark. Observe that the result in the above example shows that the composition
+t 7→ τ 7→ F (τ ) = A(τ )(E(τ ) + L(2, f )) is a single-valued analytic function at
+t = −1/9. This in turn implies that the function F (τ ) is invariant under the
+substitution τ 7→ γτ for any γ in the stabilizer subgroup of 1/2 in Γ0 (6). This
+observation leads us to some interesting identities for the values of L-functions. We
+will discuss these identities in the next section.
+Example 5. Consider the differential equation
+              θ3 A − 8t(2θ + 1)(2θ2 + 2θ + 1)A + 256t2 (θ + 1)3 A = 0.
+20                                        YIFAN YANG
+
+
+This is equation (β) in [1]. We now determine its Apéry limit.
+  The differential equation is satisfied by
+
+                              η(τ )8 η(4τ )16                    η(2τ )20
+                    t(τ ) =                   ,      A(τ ) =                  .
+                                 η(2τ )24                      η(τ )8 η(4τ )8
+
+They are modular on Γ0 (4). The singularities 0, 1/16, ∞ correspond to the cusps
+∞, 0, 1/2, respectively. The solution of the inhomogeneous differential equation
+
+                θ3 B − 8t(2θ + 1)(2θ2 + 2θ + 1)B + 256t2 (θ + 1)3 B = t
+
+is B(τ ) = A(τ )E(τ ), where
+                       Z qZ qZ q
+                   1                                                 dq dq dq
+          E(τ ) =                (E4 (τ ) − 17E4 (2τ ) + 16E4 (4τ ))          .
+                  240 0 0 0                                           q q q
+
+We have
+                                   A(−1/4τ ) = −4τ 2 A(τ ).
+
+To determine the Apéry limit, we should study how E(τ ) transforms under the
+substitution τ 7→ −1/4τ .
+  As usual, we apply the Mellin inversion formula and write
+                                          3/2+i∞                           −s
+                              1                                       2πi
+                                      Z
+                 E(−1/4τ ) =                       Γ(s)L(s + 3)                   ds,
+                             2πi        3/2−i∞                        4τ
+
+where
+                     L(s) = ζ(s)ζ(s − 3)(1 − 17 · 2−s + 16 · 2−2s )
+
+satisfies
+                        π −s Γ(s)L(s) = π s−4 Γ(4 − s)L(4 − s).
+
+Moving the line of integration to Re s = −7/2, counting the residues, making a
+change of variable s → −2 − s, using the functional equation above, and invoking
+the Mellin inversion formula, we obtain
+
+                                  7         π3 i    7           1
+                  E(−1/4τ ) =        ζ(3) −      −     2
+                                                         ζ(3) + 2 E(τ ).
+                                  16        64τ    64τ         4τ
+From this we deduce the following result.
+
+Theorem 5. Let {an } and {bn } be the sequences satisfying
+
+     (n + 2)3 un+2 − 8(2n + 3)(2n2 + 6n + 5)un+1 + 256n3 un = 0                   (un = an or bn )
+
+with the initial values a0 = 1, a1 = 8, b0 = 0, and b1 = 1. Then we have
+
+                                    bn  7         1
+                                       − ζ(3) ≪
+                                    an  16      log n
+as n → ∞.
+

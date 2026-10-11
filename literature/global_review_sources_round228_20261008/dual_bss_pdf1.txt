@@ -1,0 +1,52 @@
+      ON DECIDING TRANSCENDENCE OF POWER SERIES
+
+
+               ALIN BOSTAN, BRUNO SALVY, AND MICHAEL F. SINGER
+
+
+         Abstract. It is well known that algebraic power series are differentially fi-
+         nite (D-finite): they satisfy linear differential equations with polynomial coeffi-
+         cients. The converse problem, whether a given D-finite power series is algebraic
+         or transcendental, is notoriously difficult. We prove that this problem is de-
+         cidable: we give two theoretical algorithms and a transcendence test that is
+         efficient in practice.
+
+
+
+
+                                      1. Introduction
+1.1. Stanley’s problem and contribution. A power series f ∈ Q[[z]] is called
+algebraic if it is a root of some polynomial equation P (z, f (z)) = 0, where P ∈
+Q[x, y]\{0}; otherwise, f is called transcendental. A classical result, known to Abel
+(1827) and possibly much older, states that any algebraic power series f ∈ Q[[z]]
+is D-finite (or, differentially finite), that is it satisfies a linear differential equation
+with coefficients in Q[z]. Moreover, the minimal-order nontrivial homogeneous
+linear differential equation satisfied by f has order at most equal to degy (P ) and
+coefficients in Q[z] of degree at most 4 degx (P ) degy (P )2 [11].
+   Conversely, not every D-finite power series is algebraic; for instance, exp(z) and
+log(1 − z) are both D-finite and transcendental. Several methods are available to
+prove transcendence of exp(z) and log(1−z) (see e.g. [10]), but in general it is noto-
+riously difficult to decide if a given D-finite function is algebraic or transcendental.
+This is the topic of our article.
+   In his seminal article on D-finite functions [93, §4, (g), page 186], Richard Stanley
+asked the following question:
+         “Given the differential equation
+(1)                   L(f (z)) = ar (z)f (r) (z) + · · · + a0 (z)f (z) = 0
+        with polynomial coefficients ai ∈ Q[z], together with suitable (finitely
+        many) initial conditions, satisfied by a D-finite power series f ,
+        give an algorithm suitable for computer implementation for deciding
+        whether f is algebraic.”
+   For instance, f (z) := n≥1 z n /n is a D-finite power series represented by the
+                            P
+
+second-order differential equation (z − 1)f ′′ (z) + f ′ (z) = 0 and initial conditions
+f (0) = 0, f ′ (0) = 1, and such an algorithm should recognize the transcendence of
+f starting from only this data.
+   Deciding transcendence of formal power series has many motivations and appli-
+cations. For instance, in number theory a first step towards proving the transcen-
+dence of a complex number is proving the transcendence of some suitable power
+
+   Date: April 23, 2025.
+   2020 Mathematics Subject Classification. 11J81, 16S32, 34M15.
+                                                 1
+

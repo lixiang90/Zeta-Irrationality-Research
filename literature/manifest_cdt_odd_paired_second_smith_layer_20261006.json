@@ -1,0 +1,84 @@
+{
+  "kind": "NEW author source and execution receipt",
+  "date": "2026-10-06",
+  "author_agent": "/root/toric_chow_completion",
+  "status": "final_author_and_root_independently_reviewed_frozen",
+  "proof": {
+    "path": "research/cdt_odd_paired_second_smith_layer_20261006.md",
+    "sha256": "d4572c11e52ebdc05ad5338bfe4340e98b696252a5fff6250e1a78b3448a346d",
+    "scope": "S1-S17; exact actual C! Smith for every n,p with p>17, n/2<p<=n, p^2>8n; cap transfer pays no extra M4主率",
+    "author_actual_read": "Complete final d457 S1-S17, including S8/S17 source clarification and S16 credit-cap insertion; no final math changes after root review",
+    "prior_unfrozen_snapshots": [
+      "feaa2089052aa944412842fbd94ad50ccd5c473977b244b2d323abec9dbb8551",
+      "4a60418d1287615e02be862dc2939a6edcc6632c9f730688a52bf77b111b479b"
+    ]
+  },
+  "independent_review_confirmation": {
+    "reviewer": "/root",
+    "proof_read_scope": "Root message confirms complete final d457 S1-S17, including S16 insertion",
+    "source_read_scope": "Complete NEW17d76 source statically; all fields of all216 NEW516d output cases after compact supplement for initial outer truncation",
+    "manual_check": "S12 actual mixed L4 two-choice minor upper bounds; unknown first-order units do not affect extracted lowest coefficient; full0/1/2 Smith equality",
+    "peer_producer_executed_or_imported": false,
+    "scope_is_confirmation_not_author_pdf_read": true
+  },
+  "actual_read_sources": [
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006.md",
+      "sha256": "0fb995f69cefcd4e6c92f7ffa42a8e595add4dda9a94951ed27a4693fb127047",
+      "actual_read_scope": "Complete D1-D10 in this round, read-only"
+    },
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "actual_read_scope": "Sections116-120 and final audit paragraph; mutable root report, no claim of full-file reading"
+    },
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_layers_20261006_probe.json",
+      "sha256": "53b243b65a9a3c7a1a07279b52debabd33bb2c5188ebcf943f3ff82bf60e72d3",
+      "actual_read_scope": "13 stored cases satisfying n/2<p<=n, all selected cases' Smith fields; no other-case full-read claim",
+      "execution_or_import": false
+    },
+    {
+      "path": "research/cdt_odd_paired_residue_crt_integral_model_20261006.md",
+      "sha256": "3265da7c600ef8c1624f4208448ec35d75e32d71d92d78f4576b2cfdd5cfbd33",
+      "actual_read_scope": "Complete NEW R1-R21 and sources/finite-verification paragraph; paper manually checked, peer producer not run"
+    },
+    {
+      "path": "research/cdt_odd_paired_smith_credit_cap_transfer_20261006.md",
+      "sha256": "5548fcf69b24f2bab4d3ff9c2ef0023cb594e749e32ff8affc863160d0174647",
+      "actual_read_scope": "Complete NEW S1-S10; manual S4-S8 count/cap/affine comparison; conditional S14 maintained as that snapshot's author scope",
+      "peer_producer_executed_or_imported": false
+    }
+  ],
+  "new_primary_pdfs_archived": 0,
+  "author_primary_pdf_pages_actually_read_this_round": 0,
+  "own_new_math_producer": {
+    "path": "research/cdt_odd_paired_second_smith_layer_20261006_verify.py",
+    "sha256": "17d76f57b1ae6e8f26ecadc21036a71567759177ca01f2f1fdbccaed00f4e806",
+    "actual_static_read": "Complete source before first execution",
+    "execution_count": 1,
+    "first_execution_only": true,
+    "guard": "Output exists => abort; output guard created before arithmetic starts",
+    "exit_code": 0,
+    "result": "PASS",
+    "old_or_peer_inputs_read_by_producer": 0,
+    "old_or_peer_producers_executed_imported_rerun": 0,
+    "finite_scope": "n18..64, p>17, n/2<p<=n, p^2>8n; 216 cases;3977 actual primitive CRT blocks;4625 asserted checks",
+    "method": "Actual factorial integers/gcd; local step-Newton packet; exact Fraction DVR min-pivot/Schur elimination, retaining full actual units"
+  },
+  "own_new_output": {
+    "path": "research/cdt_odd_paired_second_smith_layer_20261006_verify.json",
+    "sha256": "516d84723f0a827dfafea94eb28db7917ffd1b2a45157b9b7adbdc154acff735",
+    "actual_static_read": "Complete metadata and all fields of all216 cases; first combined outer result truncated, standalone complete216-case reread supplied without truncation",
+    "finite_checks_are_not_all_scale_proof": true
+  },
+  "all_old_peer_math_files_read_only": true,
+  "old_peer_math_execute_import_rerun_count": 0,
+  "claims_not_made": [
+    "Exact Smith outside specified prime window",
+    "Auxiliary Gram units for infinitely many primes",
+    "Actual determinant infinitely nonzero",
+    "Actual cost equals its safe upper bound",
+    "New irrationality or linear-independence theorem",
+    "External Lean verification"
+  ]
+}

@@ -1,0 +1,120 @@
+10                     ROSTYSLAV KOZHAN AND MARCUS VAKTNÄS
+
+
+then it has at least n zeros on Γ̊.
+Proof. Let Q(x) be the monic polynomial whose zeros are the zeros of P that
+                                               P (x)
+lie in Γ̊. Then the Christoffel transform µ
+                                          p := Q(x)   µ of µ belongs to M(Γ),
+and therefore it has a unique orthogonal polynomial of degree n. But (4.3)
+implies           Z
+                    Q(x)xk dpµ(x) = 0,     k = 0, . . . , n − 1.         (4.4)
+                                  p cannot have degree less than n, which
+The n-th orthogonal polynomial of µ
+implies deg Q ≥ n.                                                     
+Corollary 4.7. Let µ be an Angelesco system and n ∈ Nr . Then Pn has
+exactly nj zeros on each Γ̊j , and each zero is simple.
+Proof. Since n is normal, we have deg Pn = |n|. By Proposition 4.6, Pn has
+at least nj zeros on each Γ̊j . Since Γ̊j ’s are pair-wise disjoint, we obtain the
+statement.                                                                      
+4.2. Zero location for Type I multiple orthogonal polynomials.
+
+Theorem 4.8. Let n be normal with respect to µ. Then
+           (1)
+  Z[An ] = {z0 ∈ C : n − e1 is not normal for ((x − z0 )µ1 , µ2 , . . . , µr )} .
+                                                                              (4.5)
+                                (j)
+Analogous statements work for An with any j.
+                                                                           (1)
+Remark 4.9. The same proof shows that if z0 is a zero of An of multiplicity
+≥ 2 then n − 2e1 and n − e1 are not normal for ((x − z0 )2 µ1 , µ2 , . . . , µr ).
+                               (j)
+Analogous statements work for An with any j.
+Remark 4.10. Suppose each µj ∈ M(R) and let z0 ∈ C \ R. Then the same
+                        (1)
+proof shows that An (z0 ) = 0 implies that n−2e1 and n−e1 are not normal
+                                                                       (j)
+for (|x − z0 |2 µ1 , µ2 , . . . , µr ). Analogous statements work for An with any j.
+Proof. Let us denote ((x − z0 )µ1 , µ2 , . . . , µr ) by µ
+                                                         p = (p                 pr ). Since n
+                                                                   µ1 , . . . , µ
+is µ-normal, we have
+            Xr Z
+                    (j)
+                  An (x)xk dµj (x) = 0,              k = 0, . . . , |n| − 2.             (4.6)
+                 j=1
+     (1)                                       (1)                   (2)             (r)
+If An (z0 ) = 0, then let B(x) be (An (x)/(x − z0 ), An (x), . . . , An (x)).
+By (4.6),
+             r Z
+             X
+                   B (j) (x)xk dp
+                                µj (x) = 0, k = 0, . . . , |n| − 2.     (4.7)
+                 j=1
+
+Since deg B (1) ≤ n1 − 2 and deg B (j) ≤ nj − 1 for j = 2, . . . , r, Remark 3.1
+shows that n − e1 is not µ-normal.
+                          p
+                  ZEROS OF MOPRL: LOCATION AND INTERLACING                                11
+
+   Conversely, if n − e1 is not normal for µ                   p then by Remark 3.1 there is
+a vector B = (B (1) , . . . , B (r) ) 6= 0 with deg B (1) ≤ n1 − 2 and deg B (j) ≤
+nj − 1 for j = 2, . . . , r, that satisfies (4.8). Then An (x) must be equal to
+(B (1) (x)(x − z0 ), B (2) (x), . . . , B (r) (x)), up to a multiplicative normalization,
+      (1)
+so An (z0 ) = 0.
+                                                  (1)
+   As for the remarks, assume that An (z0 ) = 0 of multiplicity ≥ 2. Denote
+((x − z0 )2 µ1 , µ2 , . . . , µr ) by µp
+                                       p = (µ   p            p
+                                                             pr ) and let B(x) be the system
+                                                p1 , . . . , µ
+   (1)                2       (2)            (r)
+(An (x)/(x − z0 ) , An (x), . . . , An (x)). By (4.6),
+              X  r Z
+                          B (j) (x)xk dµp
+                                        pj (x) = 0,             k = 0, . . . , |n| − 2. (4.8)
+               j=1
+
+Since deg B (1) ≤ n1 − 3 and deg B (j) ≤ nj − 1 for j = 2, . . . , r, Remark 3.1
+shows that both n − 2e1 and n − e1 are not µ-normal.
+                                              p                               
+                                                                         (j)
+Corollary 4.11. Let µ be an Angelesco system. Then Z[An ] ⊂ Γ̊j for any
+j = 1, . . . , r, and each zero is simple.
+Proof. For any j and any z0 ∈ R \ Γ̊j , replacing µj with (x − z0 )µj leads to
+another Angelesco system. By Theorems 3.3 and 4.8, we get that z0 is not
+             (j)
+a zero of An .
+   Let z0 ∈ C \ R. Then Remark 4.10 together with the Angelesco property
+                                                                          (j)
+of (|x − z0 |2 µ1 , µ2 , . . . , µr ) shows that z0 is not a zero of any An .
+   Simplicity of zeros follows from Remark 4.9 and the Angelesco property
+of ((x − z0 )2 µ1 , µ2 , . . . , µr ) for z0 ∈ R.                             
+4.3. Zero location in Nikishin Systems.
+
+   Note that if µ is AT on Γ, then if we replace µj with (x − z0 )µj with
+z0 ∈ R \ Γ, then the new system need not satisfy the AT property anymore.
+This shows that one should not expect any general results about the zeros of
+type I multiple polynomials for AT systems. This should not be surprising,
+since it is known that they do not even have to be real-rooted in general. We
+can say something about zeros of type I polynomials for Nikishin system,
+however. For simplicity we only consider the case r = 2. We will employ
+the following simple result.
+                                    e := (µ1 , µ
+Lemma 4.12. Let µ := (µ1 , µ2 ) and µ          e2 ), where
+                                                      X s
+         de
+          µ2 (x) = dµ2 (x) + Q(x)dµ1 (x), Q(x) =           kj xj .                     (4.9)
+                                                                   j=0
+
+Then for any n = (n1 , n2 ) ∈      N2
+                                   with n2 ≤ n1 − s, n is normal with respect
+                                                 e In this case,
+to µ if and only if it is normal with respect to µ.
+                        P‹n (x) = Pn (x),                              (4.10)
+                          e(1)
+                          A
+                                    (1)          (2)
+                           n (x) = An (x) − Q(x)An (x),                              (4.11)
+

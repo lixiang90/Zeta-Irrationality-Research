@@ -1,0 +1,241 @@
+ Linear independence of dilogarithmic values
+                         Carlo Viola and Wadim Zudilin
+
+
+                                        Abstract
+          We establish the linear independence over Q, in both qualitative and
+      quantitative forms, of the four numbers 1, Li1 (1/z) = − log(1−1/z), Li2 (1/z)
+      and Li2 (1/(1 − z)), for all integers z ≥ 9 or z ≤ −8 and for rationals z = s/r
+      or z = 1 − s/r with 1 < r < s, where s is large in comparison with r.
+
+
+
+
+1    Introduction
+Problems of irrationality and linear independence of values of the dilogarithmic
+function
+                                      ∞
+                                       xn
+                          Li2 (x) : =      ,   |x| < 1,
+                                        n2
+                                        n=1
+
+have a long history. The latest news in this direction is given in the work [RV] of
+G. Rhin and the ﬁrst-named author, where the best records of irrationality of the
+dilogarithm at positive rational points are established, in both qualitative and
+quantitative forms. The results in [RV] are more general, and can      be interpreted
+                                                                           ∞    n
+as linear independence results over Q for the set 1, Li1 (x) : =           n=1 x /n =
+− log(1 − x) and Li2 (x), for suitable x ∈ Q, x > 0.
+    In [RV], Rhin and the ﬁrst-named author adapted their permutation group
+method successfully used earlier to obtain record irrationality measures of ζ(2)
+and ζ(3). The method allowed them to improve some earlier results of M. Hata
+[Ha1], in particular to show that 1, Li1 (1/z) and Li2 (1/z) are linearly independent
+over Q for any integer z ≥ 6. The principal players in [RV] are the following
+integrals:
+   Mathematics Subject Classiﬁcation (2010): 11J72 (primary); 11J82, 33B30, 33C60 (sec-
+ondary).
+
+
+
+
+                                              1
+                                    11
+                                              xj (1 − x)h y k (1 − y)l
+Iz(0) (h, j, k, l, m)   =z   −l−m
+                                                                       dx dy,
+                                            (x(1 − y) + yz)j+k−m+1
+                                    0 0
+                                    1                                                     
+                                             1                    xj (1 − x)h y k (1 − y)l
+Iz(1) (h, j, k, l, m)   =z   −l−m
+                                                                                           dy dx,
+                                            2πi               (x(1 − y) + yz)j+k−m+1
+                                    0               x =
+                                                y− x−z
+                                                                                               
+                          z −l−m                     1                 xj (1 − x)h y k (1 − y)l
+Iz(2) (h, j, k, l, m)   =                                                                       dy dx,
+                            2πi                     2πi            (x(1 − y) + yz)j+k−m+1
+                                    |x−z|=σ                 x =
+                                                        y− x−z
+
+for any , σ > 0, and
+
+(1.1)        Iz (h, j, k, l, m) = Iz(0) (h, j, k, l, m) − (log z) Iz(1) (h, j, k, l, m),
+
+where z is assumed to be real and greater than 1, and where the parameters
+h, j, k, l, m are non-negative integers. In (1.1), the role of the double integral
+  (1)
+Iz (h, j, k, l, m) of mixed type (i.e., made over the real interval (0, 1) in x and
+over a complex contour in y) is essential to separate linear forms in 1 and Li2 (1/z)
+from those in 1 and Li1 (1/z) (see [RV, Theorem 2.1]). A similar structure occurs
+in the present paper, and to achieve this result we build upon Theorem 2.1 of
+[RV] (see the proof of Lemma 2.1 below).
+   In his doctorate thesis [Mi, Chap. 4], M.-A. Miladi establishes the linear in-
+dependence over Q of
+                 1            1            1              1
+          1, Li1      = − Li1         , Li2        and Li2           ,
+                   z            1−z           z                1−z
+for any integer z ≥ 11 (hence for any integer z ≤ −10 as well). His construc-
+tion was highly inﬂuenced by the works [Ha1, Ha3] of M. Hata, though he re-
+quired diﬀerent techniques to evaluate the asymptotics of numerical linear forms
+so constructed. The Padé-type approximations Miladi constructed depend on two
+parameters and have a symmetry under the involution z ↔ 1 − z.
+    The structure of Miladi’s Padé-type approximations is similar to the one in
+[RV] reproduced above, except that his integrands (in his notation) are
+                         xn2 (1 − x)n2 y n1 (1 − y)n2 −n1
+                                                          (1 − y + yz)n1 ,
+                              (x(1 − y) + yz)n2 +1
+where n2 ≥ n1 > 0 are integers.
+   The principal aim of this paper is to extend the Rhin–Viola permutation group
+method to integrals of Miladi’s type, which will depend below on six rather than
+
+                                                            2
+two parameters, in order to establish new linear independence results over Q for
+the set 1, Li1 (1/z), Li2 (1/z), Li2 (1/(1 − z)), in both qualitative and quantitative
+forms. We shall prove the following
+
+Main theorem. For any integer z ≥ 9 or z ≤ −8, the numbers
+
+                       1, Li1 (1/z), Li2 (1/z) and Li2 (1/(1 − z))
+
+are linearly independent over Q. Furthermore, for any ε > 0 and any quadruple
+(a0 , a1 , a2 , a3 ) ∈ Z4 \ {0}, the inequality
+
+        |a0 + a1 Li1 (1/z) + a2 Li2 (1/z) + a3 Li2 (1/(1 − z))| > C(ε, z) A−μ(z)−ε
+
+holds for some explicitly given exponent μ(z) > 0, where
+
+                             A = max{|a0 |, |a1 |, |a2 |, |a3 |}
+
+and the constant C(ε, z) > 0 does not depend on the quadruple.
+
+    We remark that Miladi was unable to get the full power even of his two-
+parametric construction, because of quite involved computation of the asymp-
+totics of the approximations; speciﬁcally, he uses n1 = n/3 and n2 = n − n1 ,
+where n > 0 is the increasing integer parameter. Miladi himself states on pp. 86–
+87 of [Mi] a ‘Remarque Importante’, where he claims that his result about the
+linear independence of 1, Li1 (1/z), Li2 (1/z) and Li2 (1/(1 − z)) over Q might be
+improved to the range z ≥ 8 by choosing n1 = 3n/8 and n2 = n − n1 . This is
+partly true: we now conﬁrm the range z ≥ 9 under the choice.
+    D. V. and G. V. Chudnovsky announce in [CC] the same linear independence
+result as Miladi’s, for the same range z ≥ 11, though they give no details of
+their construction besides a lengthy recursion satisﬁed by approximations. This
+recursion in fact allows one to check that their approximations coincide with those
+of Miladi for the choice n1 = n/3 and n2 = n − n1 .
+     We obtain the proof of the Main theorem stated above as a special case of our
+Proposition 6.1, which yields linear independence results of 1, Li1 (1/z), Li2 (1/z),
+Li2 (1/(1 − z)) not only for integers z, but also for rationals z = s/r, with integers
+1 < r < s where s is large in comparison with r. Speciﬁcally, as an instance
+of this, we prove the Q-linear independence, also in quantitative forms, of 1,
+Li1 (r/s), Li2 (r/s), Li2 (−r/(s − r)) for r = 2 and s ≥ 143, for r = 3 and s ≥ 742,
+and for r = 4 and s ≥ 2355. Similarly to [RV, formulae (5.27) and (5.29)], such
+results for r ≥ 2 rely on the formula
+
+(1.2)                            δ−α−β =h+j−l
+
+                                             3
+(see (2.1) below) relating the degree δ of the polynomials occurring in the linear
+forms with the degree α+β of the factor z α (1−z)β , repeatedly used in our results
+yielding the arithmetical structure of the linear forms, e.g., in Lemma 2.1. As a
+consequence of (1.2), the constant c3 used in our Proposition 6.1 turns out to be
+independent of the degree δ of the polynomials involved, and this independence
+is crucial to treat the cases z = s/r with r ≥ 2.
+      The present paper is organised as follows. In Section 2 we deﬁne, for z > 1,
+                            (0)  (1)        (2)                              (0)  (1)
+the double integrals Jz , Jz and Jz , similar to the above integrals Iz , Iz
+         (2)
+and Iz but containing the factor (1−y +yz)j+q−m of Miladi’s type, and we prove
+an arithmetical structure result (Lemma 2.1) for such integrals. We also apply to
+  (μ)
+Jz (μ = 0, 1, 2) a birational change of variables ((2.5) below) which simpliﬁes
+                                                                    (0)
+the analytic structure of the integrals, and allows us to deﬁne Jz also for z < 0.
+                        (1)          (2)
+The symmetry of Jz and of Jz under the involution z ↔ 1 − z is also proved
+                                                                 (0)
+(see Lemmas 2.2 and 2.3), while the symmetry property for Jz under z ↔ 1 − z
+                                                      (0)
+is subtler, and involves a new double integral Kz of mixed type (Lemma 2.4).
+      In Section 3 we show that the permutation group method applies to the in-
+               (μ)      (0)
+tegrals Jz and Kz , and we do this by means of a further birational change
+of variables ((3.2) below), and by the hypergeometric integral transformation
+already used in [RV, Section 3].
+      In Section 4 we apply Hata’s saddle point method in C2 and we get the
+                                         (μ)      (0)
+required asymptotic formulae for Jz and Kz , where the integer parameters h,
+j, k, l, m, q are replaced by hn, jn, kn, ln, mn, qn with n → ∞.
+      In Section 5 we introduce some arithmetical lemmas yielding the linear in-
+dependence over Q and a Q-linear independence measure of 1, γ1 , . . . , γS , where
+γ1 , . . . , γS ∈ R, under suitable asymptotic formulae, as n → ∞, for linear forms
+
+                     qn γμ − p(μ)
+                              n ∈ Zγμ + Z        (μ = 1, . . . , S)
+
+and for their common coeﬃcients qn .
+   Finally, in Section 6 we combine the permutation group method developed in
+Section 3 with the arithmetical lemmas in Section 5, together with the asymptotic
+formulae in Section 4, and we obtain the Q-linear independence results stated
+above for 1, Li1 (1/z), Li2 (1/z) and Li2 (1/(1 − z)), in qualitative and quantitative
+forms.
+    It is our pleasure to thank G. Rhin for providing us with the text of Miladi’s
+thesis [Mi] (for which he happened to be in the committee) and G. F. Gronchi for
+creating for us Figure 1.
+
+
+
+                                          4
+2       Rational approximations to Li1 and Li2
+Let z ∈ R, z > 1.
+
+2.1
+For integer parameters h, j, k, l, m, q ≥ 0 such that j +k −m, j +q −m, h+m−k
+and h + q − k are also ≥ 0, deﬁne the double integrals
+                          11
+                                   xj (1 − x)h y k (1 − y)l
+ Jz(0)      = z   k−l−q
+                                                      j+k−m+1
+                                                                (1 − y + yz)j+q−m dx dy,
+                                  x(1 − y) + yz
+                          0 0
+ Jz(1) = z k−l−q
+      1                                                                                   
+            1                         xj (1 − x)h y k (1 − y)l                    j+q−m
+  ×                                                     j+k−m+1
+                                                                   (1 − y + yz)            dy dx
+           2πi                     x(1 − y) + yz
+        0               x =
+                    y− x−z
+
+
+and
+
+ Jz(2) = z k−l−q
+                                                                                                  
+       1          1                            xj (1 − x)h y k (1 − y)l                    j+q−m
+  ×                                                             j+k−m+1
+                                                                            (1 − y + yz)           dy dx,
+      2πi        2πi                         x(1 − y) + yz
+             |x−z|=σ                x =
+                                y− x−z
+
+where , σ > 0 are arbitrary, and also set
+                                              Jz = Jz(0) − (log z)Jz(1) ,
+where log z is the real value of the logarithm. The quantities so deﬁned clearly
+generalise (apart from the normalisation factor z k−l−q in place of z −l−m ) the
+                         (μ)
+corresponding families Iz (μ = 0, 1, 2) and Iz in [RV], which are reproduced in
+the introduction.
+    In what follows, the notation dn is used for the least common multiple of
+1, 2, . . . , n.
+Lemma 2.1. Let
+                    H = max{l + q, h + m − k, h + j − l, j + k − m},
+                   H  = max{l + q, min{h + m − k, h + j − l}, j + k − m},
+(2.1)               α = max{0, l + q − k, l + q − m},
+                     β = max{0, k + l − h},
+                     δ = α + β + h + j − l.
+
+                                                          5
+

@@ -1,0 +1,285 @@
+                                                  MULTIPLE ZETA VALUES, PADÉ APPROXIMATION AND
+                                                              VASILYEV’S CONJECTURE
+
+                                                                               S. FISCHLER AND T. RIVOAL
+arXiv:1309.2534v1 [math.NT] 10 Sep 2013
+
+
+
+
+                                                 Abstract. Sorokin gave in 1996 a new proof that π is transcendental. It is based on
+                                                 a simultaneous Padé approximation problem involving certain multiple polylogarithms,
+                                                 which evaluated at the point 1 are multiple zeta values equal to powers of π. In this paper
+                                                 we construct a Padé approximation problem of the same flavour, and prove that it has
+                                                 a unique solution up to proportionality. At the point 1, this provides a rational linear
+                                                 combination of 1 and multiple zeta values in an extended sense that turn out to be values
+                                                 of the Riemann ζ function at odd integers. As an application, we obtain a new proof
+                                                 of Vasilyev’s conjecture for any odd weight, concerning the explicit evaluation of certain
+                                                 hypergeometric multiple integrals; it was first proved by Zudilin in 2003.
+
+
+
+                                                                                     1. Introduction
+                                             The goal of this paper is to provide a completely new proof of Vasilyev’s conjecture
+                                          for any odd weight d ≥ 3 by solving a simultaneous Padé approximation problem involv-
+                                          ing multiple polylogarithms. Before explaining in details our approach, we provide some
+                                          background. Vasilyev [15] conjectured in 1996, that for any integers d ≥ 2 and n ≥ 0,
+                                                     Z       Qd       n              n
+                                                               j=1 xj (1 − xj )
+                                             Jd,n :=                               n+1
+                                                                                       dxj ∈ Q + Qζ(2 + ed ) + Qζ(4 + ed ) + · · · + Qζ(d) (1.1)
+                                                      [0,1]d Qd (x1 , . . . , xd )
+
+                                          where ed = 0 if d is even, ed = 1 otherwise, and Q1 (x1 ) := 1 − x1 ,
+                                                           Qd (x1 , . . . , xd ) : = 1 − Qd−1 (x1 , . . . , xd−1 )xd ,   d≥2
+                                                                                = 1 − (1 − (· · · 1 − (1 − x1 )x2 · · · )xd−1 )xd .
+                                          This conjecture was already known to be true for d = 2 and d = 3, since Beukers [3]
+                                          used these integrals to get new and quick versions of Apéry’s proofs [1] of the irrationality
+                                          of ζ(2) and ζ(3). Vasilyev himself proved his conjecture in the cases d = 4 and d = 5,
+                                          results which in fact led him to the conjecture. The first complete proof was given by
+                                          Zudilin [18] who showed that Jd,n is equal to a very-well-poised hypergeometric series
+                                          whose value was already known to be in Q + Qζ(2 + ed ) + Qζ(4 + ed ) + · · · + Qζ(d). Two
+                                          other proofs of Vasilyev’s conjecture were subsequently found, one by Zlobin [16] (direct
+                                          attack) and another indirect one by Krattenthaler-Rivoal [10] (limiting case of Andrews’
+                                            Date: November 1, 2018.
+                                            2010 Mathematics Subject Classification. Primary 11M32, 41A21; Secondary 11J72, 33C60.
+                                            Key words and phrases. Multiple zeta value, Padé approximation, Hypergeometric integrals,
+                                          Polylogarithm.
+                                                                                                 1
+2
+
+hypergeometric identity, in the spirit of Zudilin). The fourth one, given in the present
+paper, is completely different since it relies on solving a simultaneous Padé approximation
+problem involving multiple polylogarithms.
+
+  To state this problem we need some notations. Given any finite word σ built on a
+(possibly infinite) alphabet {a, b, . . .}, we denote by {σ}j := σσ · · · σ the concatenation j
+times of σ. By convention, {σ}0 = ∅. We will use two alphabets, namely N∗ = {1, 2, . . .}
+and {ℓ, s}. We consider multiple polylogarithms in the following extended sense:
+                           a a ···a
+                                                       X                  z k1
+                         Lib11b22···bpp−1 (z) :=                     b1 b2          bp
+                                                                                          (1.2)
+                                                 k1 &k2 &···&kp ≥1 k 1 k 2  · · · k p
+
+where |z| < 1, bj ∈ N∗ and aj ∈ {ℓ, s} for all j. For j = 1, . . . , p − 1, the symbol
+& ∈ {>, ≥} in kj & kj+1 is determined by the following rule: it is set to > if aj = s, and
+to ≥ if aj = ℓ. In this way, s stands for a strict inequality, and ℓ for a large one. If aj = s
+for any j we obtain the usual multiple polylogarithm Lib1 b2 ···bp (z); if aj = ℓ for any j we
+obtain the variant denoted by Lab1 b2 ···bp (z) in [4] and by Leb1 b2 ···bp (z) by Ulanskiı̆ and Zlobin.
+                                         {sℓ}r                  {ℓs}       ℓ
+Sorokin used in [14] the functions Li{1}2r+1     (1 − x) and Li{1}2rr−1 (1 − x), which he denoted
+                                                                                             a a ···a
+respectively by εr (x) and ϕr (x). In this paper, all multiple polylogarithms Lib11b22···bpp−1 (z)
+will be considered for z ∈ C \ [1, ∞) using analytic continuation. As usual, the integer p
+in (1.2) is called the depth, and b1 + · · · + bp is the weight.
+
+  Our main result is the explicit resolution of the following simultaneous Padé approxi-
+mation problem. Given integers n, r ≥ 0, we want to find polynomials Aρ,r,n (z), Bρ,r,n (z),
+Cρ,r,n (z), Dr,n (z) ∈ C[z], for 0 ≤ ρ ≤ r, all of degree at most n, such that
+                  Xr                           1                          1
+                                     {ℓs}ρ ℓ                         {ℓs}ρ ℓ
+     Sr,n (z) :=       Aρ,r,n (z) Li2{1}2ρ+1          + Bρ,r,n (z) Li{1}2ρ+2
+                  ρ=0
+                                                 z                            z
+                                                        1                             
+                                                 {sℓ}ρ                                1
+                               + Cρ,r,n (z) Li{1}2ρ+1           + Dr,n (z) = O (r+1)(n+1)
+                                                         z                        z
+                  Xr
+                                   {ℓ}                                              
+   Uj,r,n (z) :=      Aρ,r,n (z) Li1{2}r−ρ
+                                        r−ρ
+                                             (1 − z) + Bj,r,n(z) = O (1 − z)n+1 , j = 0, . . . , r
+                    ρ=j
+                    Xr
+                                       {ℓ}                                          
+    Vj,r,n (z) :=         Aρ,r,n (z) Li{2}r−ρ
+                                           r−ρ+1
+                                                 (1 − z) + Cj,r,n (z) = O (1 − z)n+1 ,   j = 0, . . . , r.
+                    ρ=j
+
+We will denote by Pr,n this Padé approximation problem. The various symbols O have
+the following meaning. The function Sr,n (z) is obviously analytic at z = ∞ and we ask its
+order there to be at least (r + 1)(n + 1). Similarly, the functions Uj,r,n (z) and Vj,r,n(z) are
+analytic at z = 1 and we ask their orders there to be at least n + 1. This is a mixed Padé
+approximation problem, namely in between type I problems and type II problems. Similar
+mixed Padé approximation problems often occur in the Diophantine theory of (multiple)
+zeta values; see for instance [8, 13, 14].
+                                                                                                                                 3
+
+  The problem Pr,n can be trivially converted into a linear algebra problem: it amounts
+to solving a system of (3r + 4)(n + 1) − 1 linear equations in (3r + 4)(n + 1) unknowns (the
+coefficients of the polynomials). Hence, there is at least one non identically zero solution.
+Our main theorem shows that the solution is unique up to a multiplicative constant.
+
+Theorem 1. For any integers n, r ≥ 0, the function Sr,n (z) in Pr,n is given by the following
+hypergeometric integral (up to a multiplicative constant), which converges for any z ∈
+C \ [0, 1):
+
+  Sr,n (z) = (−1)n+1 z (r+1)(n+1)
+                                                    r+1
+                                                    Y
+                       (r+1)(n+1)−1                                                                                
+      Z               u0               (1 − u0 )n         (uj vj )(r−j+2)(n+1)−1 (1 − uj )n (1 − vj )n
+                                                    j=1
+  ×                        r+1
+                                                                                                                       dudv. (1.3)
+          [0,1]2r+3        Y                                                                                   
+                                                                     n+1                                 n+1
+                                 (z − u0 u1 v1 · · · uj−1 vj−1uj )         (z − u0 u1 v1 · · · uj vj )
+                           j=1
+
+  For r = 0, the problem P0,n and the integral for S0,n (z) exactly match those considered
+by Sorokin in [13], from which he deduced a new proof of Apéry’s theorem. However, our
+derivation of the integral for S0,n (z) is different from Sorokin’s.
+
+  For any r ≥ 0, the integral representation (1.3) provides a new proof of Vasilyev’s
+conjecture, by taking z = 1 (see § 2 for details). It would be very interesting to obtain
+a new proof of the infiniteness of irrational values among the ζ(2r + 1) (see [2, 11]) by
+solving a Sorokin-type Padé problem involving multiple polylogarithms as in Theorem 1,
+as Sorokin did [13] for Apéry’s theorem (see § 6 at the end of the paper).
+   Theorem 1 is based on Sorokin’s proof [14] of the transcendence of π, which relies on
+the resolution of a simultaneous Padé approximation problem involving certain multiple
+                                                                     {s}            π 2r
+polylogarithms (see § 5.3 for details), as well as on the identity Li{2}r−1
+                                                                         r
+                                                                            (1) = (2r+1)! for any
+integer r ≥ 1.
+  The integral for Sr,n (z) can be used to get explicit expression of the polynomials, all of
+which obviously have rational coefficients. This can be done by various means, for instance
+one can convert the integral into the series
+  Sr,n (z) =
+          X          (k0 − k1 + 1)n (k1 − k2 + 1)n · · · (k2r − k2r+1 + 1)n (k2r+1 − n)n       1
+  n!                  r
+                     Y                                ej                                z k0 +r(n+1)
+    k0 ≥···≥k2r+1 ≥1
+                          (k2j + (r − j + 1)(n + 1))n+1    (k2j+1 + (r − j)(n + 1))n+1
+                           j=0
+
+(where e0 = 2 and ej = 1 for j ≥ 1) and then use the algorithm described in [4].
+
+   The paper is organised as follows. In § 2, we deduce Vasilyev’s conjecture for odd values
+of d from Theorem 1. In § 3, we present a few tools needed for the proof of Theorem 1,
+4
+
+in particular an iterative construction of hypergeometric multiple integrals. In § 4, we
+prove an important representation formula for multiple polylogarithms and derive a few
+consequences useful in the resolution of Pr,n . Section 5, devoted to the proof of Theorem 1,
+is decomposed in many steps. The first two steps show how to reduce the problem Pr,n to
+Sorokin’s problem for π 2 (recalled in § 5.3) and the subsequent steps complete the proof.
+At last we construct in § 6 a family of integrals, containing (1.3), which enable one to prove
+that infinitely many odd zeta values ζ(2r + 1) are irrational [2, 11].
+
+                 2. New proof of Vasilyev’s conjecture for odd weights
+ To deduce Vasilyev’s conjecture from Theorem 1, we first define (when b1 ≥ 2) extended
+multiple zeta values by
+                   a a ···a            a a ···a
+                                                                  X                   1
+                  ζb11b22···bpp−1 := Lib11b22···bpp−1 (1) =                     b1 b2          bp
+                                                                                                  (2.1)
+                                                            k1 &k2 &···&kp ≥1 k 1 k 2  · · · k p
+
+with the same definition for the symbols & as in Eq. (1.2). In particular, when aj = s for
+                                               {s}
+all j, we have the usual multiple zeta values ζb1 b2p−1
+                                                     ···bp = ζ(b1 , b2 , . . . , bp ).
+
+
+  Then we remark that the Padé conditions for the functions Uj,r,n (z) and Vj,r,n (z) in Pr,n
+ensure that all polynomials Bj,r,n(z) and Cj,r,n (z) vanish at z = 1 (j = 0, . . . , r). Since
+multiple polylogarithms have (at most) a logarithmic singularity at z = 1, this implies that
+when we take the limit z → 1 in (1.3), we get
+                                                                r+1
+                                                                Y
+                              (r+1)(n+1)−1                                                                            
+                 Z           u0            (1   − u0 )      n
+                                                                       (uj vj )(r−j+2)(n+1)−1 (1 − uj )n (1 − vj )n
+           n+1                                                  j=1
+    (−1)                         r+1
+                                                                                                                          dudv
+                 [0,1]2r+3       Y                                                                             
+                                       (1 − u0 u1 v1 · · · uj−1vj−1 uj )n+1 (1 − u0 u1 v1 · · · uj vj )    n+1
+
+                                 j=1
+                                 Xr
+                                                     {ℓs} ℓ
+                             =         Aρ,r,n (1)ζ2{1}ρ2ρ+1 + Dr,n (1)
+                                 ρ=0
+
+where Aρ,r,n (1) and Dr,n (1) are rational numbers. Moreover, it is proved in [6, Corollaire 8]
+that this multiple integral is equal to J2r+3,n for any integer r ≥ 0 (see also § 6 below).
+To complete the proof of Vasilyev’s conjecture in this case, we simply need the following
+                                                             {s}             π 2r
+result, which plays the same role for us as the identity Li{2}r−1r
+                                                                    (1) = (2r+1)!  for Sorokin
+in [14].
+Proposition 1. For any integer k ≥ 1, we have
+                                              {ℓs}      ℓ        {ℓ}
+                                            ζ2{1}k−1
+                                                 2k−1
+                                                      = ζ{2}kk 1 = 2ζ(2k + 1).                                             (2.2)
+
+Proof. The second equality in (2.2) is due to Zlobin [17]. To prove the first equality, which
+we haven’t found in the literature, we use the representation of (extended) multiple zeta
+                                                                                                                 5
+
+values as Chen iterated integrals. Indeed, we have
+  {ℓs}     ℓ
+ ζ2{1}k−1
+      2k−1
+                  Z
+                                                                     dx
+    =
+                                x1 x2 (1 − x2 )(1 − x3 )x4 (1 − x4 )(1 − x5 ) · · · x2k (1 − x2k )(1 − x2k+1 )
+         {0≤x2k+1 ≤···≤x1 ≤1}
+                  Z
+                                                               dy                                    {ℓ}
+    =                                                                                             = ζ{2}kk 1 ,
+                                y1 y2 (1 − y2 )y3 y4 (1 − y4 )y5 · · · y2k (1 − y2k )(1 − y2k+1 )
+         {0≤y2k+1 ≤···≤y1 ≤1}
+
+where we have made the change of variables xj = 1 − y2k+2−j , j = 1, . . . , 2k + 1.                             
+
+                      3. General results on multiple polylogarithms
+ We gather in this section various results, useful in the proof of Theorem 1 but which
+may also be of independent interest.
+
+3.1. Differentiation rules for multiple polylogarithms. In this section, we describe
+how to differentiate a multiple polylogarithm. To begin with, we state formulas of which
+the proofs are straightforward; we will use them without further mentions. The letter a
+denotes a finite word built on the alphabet {ℓ, s}, the letter b a finite word built on the
+alphabet N∗ , and t any integer ≥ 2.
+
+       d               1                     dh      1 i       1
+          Li1 (z) =        ,                    Li1        =           ,
+       dz           1−z                     dz        z      z(1 − z)
+       d ℓa               1         a        d h ℓa  1 i      1         
+                                                                        a 1
+          Li (z) =               Li (z),        Li1b        =         Li       ,
+       dz 1b         z(1 − z) b             dz          z     1−z b z
+       d ℓa          1 ℓa                    d h ℓa  1 i      1 ℓa       1
+          Li (z) = Li(t−1)b (z),                Litb        = − Li(t−1)b          ,
+       dz tb         z                      dz         z        z             z
+       d sa             1                    d h sa  1 i         1          1
+          Li1b (z) =         Liab (z),           Li1b       =            Liab       ,
+       dz            1−z                     dz         z     z(1 − z)          z
+       d sa          1                       d h sa  1 i      1 sa        1
+          Litb (z) = Lisa        (z),           Li          = −    Li             .
+       dz            z (t−1)b               dz     tb
+                                                        z       z (t−1)b z
+  We now state a general lemma, whose proof can be done by induction using the formulas
+above.
+Lemma 1. Let d, n ≥ 0, and A(z) ∈ C[z] be a polynomial of degree ≤ d. Then we have
+                                                   p+1 bi
+               dn+1           a1 a2 ···ap−1      X    X        A bi,b′ (z)       a ai+1 ···ap−1
+                      A(z) Li b b  ···b     (z)  =                              Lib′ibi+1 bi+2 ···bp (z)
+               dz n+1          1 2     p
+                                                   i=0 b′ =1
+                                                             z (1 − z)
+                                                              n+1           n+1
+
+
+for some polynomials A bi,b′ (z) of degree ≤ d + n + 1; here we let bp+1 = 1 so that in the sum
+there is one term corresponding to i = p + 1, and the associated polylogarithm is equal to 1.
+

@@ -1,0 +1,96 @@
+2.1. Second-order hypergeometric deformations and variation of parameters
+Hereafter, we will use the following notation for a convergent generalized hypergeometric series
+$\displaystyle{{}_{p}F_{q}}\left(\left.\begin{array}[]{@{}c@{}}a_{1},\dots,a_{p}\\[4.0pt]
+b_{1},\dots,b_{q}\\
+\end{array}\right|t\right):=1+\sum_{n=1}^{\infty}\frac{\prod_{j=1}^{p}(a_{j})_{n}}{\prod_{k=1}^{q}(b_{k})_{n}}\frac{t^{n}}{n!},$
+where $(a)_{n}\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\prod_{m=0}^{n-1}(a+m)$ is the rising factorial, and $b_{1},\dots,b_{q}$ are neither zero nor negative integers. Occasionally, we will also write ${}_{p}F_{q}\left(\!\begin{smallmatrix}a_{1},\dots,a_{p}\\
+b_{1},\dots,b_{q}\end{smallmatrix}\!\middle|t\right)$ for the analytic continuation of the convergent series defined above.
+For example, the complete elliptic integral of the first kind
+$\displaystyle\mathbf{K}\big(\sqrt{t}\big)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\int_{0}^{\pi/2}\frac{\D\theta}{\sqrt{1-t\sin^{2}\theta}}=\frac{\pi}{2}{{}_{2}F_{1}}\left(\left.\begin{array}[]{@{}c@{}}\frac{1}{2},\frac{1}{2}\\[4.0pt]
+1\\
+\end{array}\right|t\right)$
+is defined for $t\in\mathbb C\smallsetminus[1,\infty)$ , whereas the corresponding hypergeometric series converges absolutely for $|t|<1$ .
+When we talk about a ‘‘hypergeometric deformation’’, we refer to every possible (first-order or higher-order) partial derivative of a generalized hypergeometric series ${}_{p}F_{q}\left(\!\begin{smallmatrix}a_{1},\dots,a_{p}\\
+b_{1},\dots,b_{q}\end{smallmatrix}\!\middle|t\right)$
+with respect to its hypergeometric parameters $a_{1},\dots,a_{p}$ and $b_{1},\dots,b_{q}$ . These hypergeometric deformations usually satisfy some inhomogeneous differential equations, which in turn, can be solved by a standard method called ‘‘variation of parameters’’. Such solutions lead to integral representations of certain hypergeometric deformations of our interest, as illustrated by the lemma below.
+Lemma 2.1.
+For $|4t(1-t)|\leq 1$ and $\RE t\leq\frac{1}{2}$ , we have the following integral representations for hypergeometric deformations:
+(2.5)
+$\displaystyle\begin{split}{}&\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{1}{4}\mathsf{H}_{k}^{(2)}\right]\left[\frac{t(1-t)}{2^{4}}\right]^{k}=-\frac{1}{8}\left.\!\frac{\partial^{2}}{\partial\nu^{2}}{{}_{3}}F_{2}\left(\left.\begin{array}[]{@{}c@{}}-\nu,1+\nu,\frac{1}{2}\\
+1,1\\
+\end{array}\right|4t(1-t)\right)\right|_{\nu=-1/2}\\
+={}&\left(\frac{2}{\pi}\right)^{3}\int_{0}^{t}\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)\big[\mathbf{K}\big(\sqrt{\mathstrut 1-s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)-\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)\big]\D s,\end{split}$
+(2.6)
+$\displaystyle\begin{split}{}&\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\mathsf{H}_{k}^{(2)}\left[\frac{t(1-t)}{2^{4}}\right]^{k}=\frac{1}{2}\left.\!\frac{\partial^{2}}{\partial\varepsilon^{2}}{{}_{3}}F_{2}\left(\left.\begin{array}[]{@{}c@{}}\frac{1}{2},\frac{1}{2},\frac{1}{2}\\
+1-\varepsilon,1+\varepsilon\\
+\end{array}\right|4t(1-t)\right)\right|_{\varepsilon=0}\\
+={}&\left(\frac{2}{\pi}\right)^{3}\int_{1/2}^{t}\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)\big[\mathbf{K}\big(\sqrt{\mathstrut 1-s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)-\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)\big]\frac{\D s}{s(1-s)}\\
+{}&-\frac{\big[\mathbf{K}\big(\sqrt{\mathstrut t}\big)\big]^{2}}{3}-\big[\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)\big]^{2}+\frac{2^{4}\mathbf{K}\big(\sqrt{\mathstrut t}\big)\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)G}{\pi^{2}},\end{split}$
+where $G=L_{-4}(2)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)^{2}}$ is Catalan’s constant.
+Proof.
+The first equalities in (2.5) and (2.6) are both consequences of termwise derivatives of the ${}_{3}F_{2}$ series.
+Before proceeding, we recall from [75, (3.21)] that an identity of Clausen’s type
+$\displaystyle{{}_{3}}F_{2}\left(\left.\begin{array}[]{@{}c@{}}-\nu,1+\nu,\frac{1}{2}\\
+1+\varepsilon,1-\varepsilon\\
+\end{array}\right|4t(1-t)\right)=\frac{\varepsilon\pi}{\sin(\varepsilon\pi)}P^{-\varepsilon}_{\nu}(1-2t)P^{\varepsilon}_{\nu}(1-2t)$
+holds for $\varepsilon\notin\mathbb Z$ , $|4t(1-t)|\leq 1$ and $\RE t\leq\frac{1}{2}$ , where (cf. [75, (3.20)])11
+1
+Throughout this article, Euler’s gamma function $\Gamma(s)$ for $s\in\mathbb C\smallsetminus\mathbb Z_{\leq 0}$ is defined by analytically continuing $\Gamma(s)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\int_{0}^{\infty}t^{s-1}e^{-t}\D t$ for $\RE s>0$ .
+(2.9)
+$\displaystyle\begin{split}P^{-\varepsilon}_{\nu}(1-2t)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{1}{\Gamma(1+\varepsilon)}{}&{{}_{2}}F_{1}\left(\left.\begin{array}[]{@{}c@{}}-\nu,1+\nu\\
+1+\varepsilon\\
+\end{array}\right|t\right)\left(\frac{t}{1-t}\right)^{\varepsilon/2}\end{split}$
+is the associated Legendre function of degree $\nu$ and order $-\varepsilon$ . In particular, $P_{\nu}\equiv P_{\nu}^{0}$ is the Legendre function of degree $\nu$ , and $P_{-1/2}(1-2t)=\frac{2}{\pi}\mathbf{K}\big(\sqrt{t}\big)$ .
+In view of the last paragraph, we may write the infinite series in (2.5) as
+(2.10)
+$\displaystyle-\frac{P_{-1/2}(1-2t)}{4}\left.\!\frac{\partial^{2}P_{\nu}(1-2t)}{\partial\nu^{2}}\right|_{\nu=-1/2}=-\frac{\mathbf{K}\big(\sqrt{t}\big)}{2\pi}\left.\!\frac{\partial^{2}P_{\nu}(1-2t)}{\partial\nu^{2}}\right|_{\nu=-1/2}.$
+Here, twice differentiating the Legendre differential equation
+(2.11)
+$\displaystyle\widehat{L}_{\nu}P_{\nu}(1-2t)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{\partial}{\partial t}\left[t(1-t)\frac{\partial P_{\nu}(1-2t)}{\partial t}\right]+\nu(1+\nu)P_{\nu}(1-2t)=0$
+with respect to $\nu$ at $\nu=-\frac{1}{2}$ , we get
+(2.12)
+$\displaystyle\widehat{L}_{-1/2}\left.\!\frac{\partial^{2}P_{\nu}(1-2t)}{\partial\nu^{2}}\right|_{\nu=-1/2}=-2P_{-1/2}(1-2t).$
+Such an inhomogeneous Legendre differential equation for a second-order hypergeometric deformation [equipped with a natural boundary condition
+(2.13)
+$\displaystyle\left.\!\frac{\partial^{2}P_{\nu}(1)}{\partial\nu^{2}}\right|_{\nu=-1/2}=0$
+that descends from the identity $P_{\nu}(1)\equiv 1$ ] can be solved by variation of parameters. The corresponding result
+(2.14)
+$\displaystyle\left.\!\frac{\partial^{2}P_{\nu}(1-2t)}{\partial\nu^{2}}\right|_{\nu=-1/2}=-\frac{16}{\pi^{2}}\int_{0}^{t}\mathbf{K}\big(\sqrt{\mathstrut s}\big)\big[\mathbf{K}\big(\sqrt{\mathstrut 1-s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)-\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)\big]\D s$
+has been essentially reported in [75, Theorem 4.2 and Lemma 4.4]. This explains (2.5) in full.
+Before deducing the integral representation in (2.6), we rewrite the infinite series in question as
+(2.15)
+$\displaystyle\frac{2\big[\mathbf{K}\big(\sqrt{t}\big)\big]^{2}}{3}-\left[\left.\!\frac{\partial P_{-1/2}^{\varepsilon}(1-2t)}{\partial\varepsilon}\right|_{\varepsilon=0}\right]^{2}+\frac{2\mathbf{K}\big(\sqrt{t}\big)}{\pi}\left.\!\frac{\partial^{2}P_{-1/2}^{\varepsilon}(1-2t)}{\partial\varepsilon^{2}}\right|_{\varepsilon=0}.$
+We may transcribe [75, (2.15)] into
+(2.16)
+$\displaystyle\left.\!\frac{\partial P_{-1/2}^{\varepsilon}(1-2t)}{\partial\varepsilon}\right|_{\varepsilon=0}=\mathbf{K}\big(\sqrt{1-t}\big)-\frac{2\mathbf{K}\big(\sqrt{t}\big)}{\pi}(\gamma_{0}+2\log 2),$
+where $\gamma_{0}$ is the Euler–Mascheroni constant. Meanwhile, extracting the $O(\varepsilon^{2})$ term from the associated Legendre differential equation
+(2.17)
+$\displaystyle\widehat{L}_{\nu,\varepsilon}P_{\nu}^{\varepsilon}(1-2t)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{\partial}{\partial t}\left[t(1-t)\frac{\partial P_{\nu}^{\varepsilon}(1-2t)}{\partial t}\right]+\left[\nu(1+\nu)-\frac{\varepsilon^{2}}{4t(1-t)}\right]P_{\nu}^{\varepsilon}(1-2t)=0,$
+we obtain an inhomogeneous version of the Legendre differential equation:
+(2.18)
+$\displaystyle\widehat{L}_{-1/2}\left.\!\frac{\partial^{2}P_{-1/2}^{\varepsilon}(1-2t)}{\partial\varepsilon^{2}}\right|_{\varepsilon=0}=\frac{P_{-1/2}(1-2t)}{2t(1-t)}.$
+Solving this inhomogeneous equation by variation of parameters, we get
+(2.19)
+$\displaystyle\begin{split}\left.\!\frac{\partial^{2}P_{-1/2}^{\varepsilon}(1-2t)}{\partial\varepsilon^{2}}\right|_{\varepsilon=0}={}&\frac{4}{\pi^{2}}\int_{1/2}^{t}\mathbf{K}\big(\sqrt{\mathstrut s}\big)\big[\mathbf{K}\big(\sqrt{\mathstrut 1-s}\big)\mathbf{K}\big(\sqrt{\mathstrut t}\big)-\mathbf{K}\big(\sqrt{\mathstrut s}\big)\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big)\big]\frac{\D s}{s(1-s)}\\
+{}&+c_{1}\mathbf{K}\big(\sqrt{\mathstrut t}\big)+c_{2}\mathbf{K}\big(\sqrt{\mathstrut 1-t}\big),\end{split}$
+where $c_{1}$ and $c_{2}$ are constants. One may deduce
+(2.20)
+$\displaystyle c_{1}={}$
+$\displaystyle-\frac{\pi}{2}+\frac{2(\gamma_{0}+2\log 2)^{2}}{\pi}$
+and
+(2.21)
+$\displaystyle c_{2}={}$
+$\displaystyle\frac{8G}{\pi}-2(\gamma_{0}+2\log 2)$
+from (cf. [12, §3.4(20) and §3.4(23), the latter being corrected in the errata])
+(2.22)
+$\displaystyle\left.\!\frac{\partial^{2}P_{-1/2}^{\varepsilon}(0)}{\partial\varepsilon^{2}}\right|_{\varepsilon=0}={}$
+$\displaystyle P_{-1/2}(0)\left[4G+(\gamma_{0}+2\log 2)^{2}-\pi(\gamma_{0}+2\log 2)-\frac{\pi^{2}}{4}\right]$
+and
+(2.23)
+$\displaystyle\left.\!\frac{\partial^{3}P_{-1/2}^{\varepsilon}(x)}{\partial\varepsilon^{2}\partial x}\right|_{\raisebox{2.3917pt}{$\begin{subarray}{c}\varepsilon=0\\
+x=0\end{subarray}$}}={}$
+$\displaystyle\left.\!\frac{\partial P_{-1/2}(x)}{\partial x}\right|_{x=0}\left[-4G-\frac{\pi^{2}}{4}+(\gamma_{0}+2\log 2)^{2}+\pi(\gamma_{0}+2\log 2)-\frac{\pi^{2}}{4}\right].$
+Thus far, we have verified (2.6) in its entirety. $\blacksquare$
+Later on, we will reparametrize (2.5) and (2.6) with $t=\alpha_{4}(z)=\lambda(2z)$ , using the modular lambda function given in (1.15), together with a key relation
+(2.24)
+$\displaystyle z=\frac{i\mathbf{K}\big(\sqrt{1-\lambda(z)}\big)}{\mathbf{K}\big(\sqrt{\lambda(z)}\big)},\quad\text{where }\I z>0,|\RE z|<1,\left|z+\frac{1}{2}\right|>\frac{1}{2},\left|z-\frac{1}{2}\right|>\frac{1}{2}.$

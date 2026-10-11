@@ -1,0 +1,2227 @@
+{
+  "status": "general_endpoint_theorem_exact_checks_passed",
+  "scope": "General written theorem plus finite exact checks; no irrationality result.",
+  "coefficient_checks": {
+    "highest_two_coefficient_identities": 198,
+    "mu3_specific_coefficients_checked": 9
+  },
+  "records": [
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 5,
+      "matrix_rows": 12,
+      "matrix_columns": 10,
+      "matrix_rank": 10,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-9/20"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/4"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 5,
+      "matrix_rows": 20,
+      "matrix_columns": 15,
+      "matrix_rank": 15,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-13/50"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-13/90"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 5,
+      "matrix_rows": 28,
+      "matrix_columns": 20,
+      "matrix_rank": 20,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-29/168"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-145/1512"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 5,
+      "matrix_rows": 36,
+      "matrix_columns": 25,
+      "matrix_rank": 25,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-12527/100800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-12527/181440"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 5,
+      "matrix_rows": 44,
+      "matrix_columns": 30,
+      "matrix_rank": 30,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-623/6600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-623/11880"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 5,
+      "matrix_rows": 52,
+      "matrix_columns": 35,
+      "matrix_rank": 35,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-26843/360360"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-26843/648648"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 5,
+      "matrix_rows": 60,
+      "matrix_columns": 40,
+      "matrix_rank": 40,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-169551/2802800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-18839/560560"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 5,
+      "matrix_rows": 12,
+      "matrix_columns": 10,
+      "matrix_rank": 10,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-1/10"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/18"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 5,
+      "matrix_rows": 20,
+      "matrix_columns": 15,
+      "matrix_rank": 15,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-859/166320"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-859/299376"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 5,
+      "matrix_rows": 28,
+      "matrix_columns": 20,
+      "matrix_rank": 20,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-527/19600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-527/35280"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 7,
+      "matrix_rows": 18,
+      "matrix_columns": 14,
+      "matrix_rank": 14,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-15/28"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-9/20"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/4"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 7,
+      "matrix_rows": 30,
+      "matrix_columns": 21,
+      "matrix_rank": 21,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-13/42"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-13/50"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-13/90"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 7,
+      "matrix_rows": 42,
+      "matrix_columns": 28,
+      "matrix_rank": 28,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-725/3528"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-29/168"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-145/1512"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 7,
+      "matrix_rows": 54,
+      "matrix_columns": 35,
+      "matrix_rank": 35,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-12527/84672"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-12527/100800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-12527/181440"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 7,
+      "matrix_rows": 66,
+      "matrix_columns": 42,
+      "matrix_rank": 42,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-89/792"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-623/6600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-623/11880"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 7,
+      "matrix_rows": 78,
+      "matrix_columns": 49,
+      "matrix_rank": 49,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-134215/1513512"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-26843/360360"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-26843/648648"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 7,
+      "matrix_rows": 90,
+      "matrix_columns": 56,
+      "matrix_rank": 56,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-56517/784784"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-169551/2802800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-18839/560560"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 7,
+      "matrix_rows": 18,
+      "matrix_columns": 14,
+      "matrix_rank": 14,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-5/42"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-1/10"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/18"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 7,
+      "matrix_rows": 30,
+      "matrix_columns": 21,
+      "matrix_rank": 21,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-4295/698544"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-859/166320"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-859/299376"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 7,
+      "matrix_rows": 42,
+      "matrix_columns": 28,
+      "matrix_rank": 28,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-527/16464"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-527/19600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-527/35280"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 9,
+      "matrix_rows": 24,
+      "matrix_columns": 18,
+      "matrix_rank": 18,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-7/12"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-15/28"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-9/20"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/4"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 9,
+      "matrix_rows": 40,
+      "matrix_columns": 27,
+      "matrix_rank": 27,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-91/270"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-13/42"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-13/50"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-13/90"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 9,
+      "matrix_rows": 56,
+      "matrix_columns": 36,
+      "matrix_rank": 36,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-145/648"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-725/3528"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-29/168"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-145/1512"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 9,
+      "matrix_rows": 72,
+      "matrix_columns": 45,
+      "matrix_rank": 45,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-12527/77760"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-12527/84672"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-12527/100800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-12527/181440"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 9,
+      "matrix_rows": 88,
+      "matrix_columns": 54,
+      "matrix_rank": 54,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-4361/35640"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-89/792"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-623/6600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-623/11880"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 9,
+      "matrix_rows": 104,
+      "matrix_columns": 63,
+      "matrix_rank": 63,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-26843/277992"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-134215/1513512"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-26843/360360"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-26843/648648"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 9,
+      "matrix_rows": 120,
+      "matrix_columns": 72,
+      "matrix_rank": 72,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-18839/240240"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-56517/784784"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-169551/2802800"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-18839/560560"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 9,
+      "matrix_rows": 24,
+      "matrix_columns": 18,
+      "matrix_rank": 18,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-7/54"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-5/42"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-1/10"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-1/18"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 9,
+      "matrix_rows": 40,
+      "matrix_columns": 27,
+      "matrix_rank": 27,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-859/128304"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-4295/698544"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-859/166320"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-859/299376"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 3,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 9,
+      "matrix_rows": 56,
+      "matrix_columns": 36,
+      "matrix_rank": 36,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 9,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "14/9",
+          "exact_endpoint_value": "-527/15120"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/7",
+          "exact_endpoint_value": "-527/16464"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/5",
+          "exact_endpoint_value": "-527/19600"
+        },
+        {
+          "target": 5,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/3",
+          "exact_endpoint_value": "-527/35280"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 3,
+      "matrix_rows": 6,
+      "matrix_columns": 6,
+      "matrix_rank": 6,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-3/20"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 3,
+      "matrix_rows": 10,
+      "matrix_columns": 9,
+      "matrix_rank": 9,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-13/150"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 3,
+      "matrix_rows": 14,
+      "matrix_columns": 12,
+      "matrix_rank": 12,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-29/504"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 3,
+      "matrix_rows": 18,
+      "matrix_columns": 15,
+      "matrix_rank": 15,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-12527/302400"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 3,
+      "matrix_rows": 22,
+      "matrix_columns": 18,
+      "matrix_rank": 18,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-623/19800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 3,
+      "matrix_rows": 26,
+      "matrix_columns": 21,
+      "matrix_rank": 21,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-26843/1081080"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 3,
+      "matrix_rows": 30,
+      "matrix_columns": 24,
+      "matrix_rank": 24,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-56517/2802800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 3,
+      "matrix_rows": 6,
+      "matrix_columns": 6,
+      "matrix_rank": 6,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-1/30"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 3,
+      "matrix_rows": 10,
+      "matrix_columns": 9,
+      "matrix_rank": 9,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-859/498960"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 7,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 3,
+      "matrix_rows": 14,
+      "matrix_columns": 12,
+      "matrix_rank": 12,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-527/58800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 5,
+      "matrix_rows": 12,
+      "matrix_columns": 10,
+      "matrix_rank": 10,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-9/28"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-3/20"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 5,
+      "matrix_rows": 20,
+      "matrix_columns": 15,
+      "matrix_rank": 15,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-13/70"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-13/150"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 5,
+      "matrix_rows": 28,
+      "matrix_columns": 20,
+      "matrix_rank": 20,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-145/1176"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-29/504"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 5,
+      "matrix_rows": 36,
+      "matrix_columns": 25,
+      "matrix_rank": 25,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-12527/141120"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-12527/302400"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 5,
+      "matrix_rows": 44,
+      "matrix_columns": 30,
+      "matrix_rank": 30,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-89/1320"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-623/19800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 5,
+      "matrix_rows": 52,
+      "matrix_columns": 35,
+      "matrix_rank": 35,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-26843/504504"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-26843/1081080"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 5,
+      "matrix_rows": 60,
+      "matrix_columns": 40,
+      "matrix_rank": 40,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-169551/3923920"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-56517/2802800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 5,
+      "matrix_rows": 12,
+      "matrix_columns": 10,
+      "matrix_rank": 10,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-1/14"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-1/30"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 5,
+      "matrix_rows": 20,
+      "matrix_columns": 15,
+      "matrix_rank": 15,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-859/232848"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-859/498960"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 9,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 5,
+      "matrix_rows": 28,
+      "matrix_columns": 20,
+      "matrix_rank": 20,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-527/27440"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-527/58800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 7,
+      "matrix_rows": 18,
+      "matrix_columns": 14,
+      "matrix_rank": 14,
+      "endpoint_T": "-3/8",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-5/12"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-9/28"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-3/20"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 7,
+      "matrix_rows": 30,
+      "matrix_columns": 21,
+      "matrix_rank": 21,
+      "endpoint_T": "-13/60",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-13/54"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-13/70"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-13/150"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 7,
+      "matrix_rows": 42,
+      "matrix_columns": 28,
+      "matrix_rank": 28,
+      "endpoint_T": "-145/1008",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-725/4536"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-145/1176"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-29/504"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "K": 5,
+      "h": 5,
+      "maximum_pole": 7,
+      "matrix_rows": 54,
+      "matrix_columns": 35,
+      "matrix_rank": 35,
+      "endpoint_T": "-12527/120960",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-12527/108864"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-12527/141120"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 10,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-12527/302400"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "K": 6,
+      "h": 6,
+      "maximum_pole": 7,
+      "matrix_rows": 66,
+      "matrix_columns": 42,
+      "matrix_rank": 42,
+      "endpoint_T": "-623/7920",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-623/7128"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-89/1320"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 12,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-623/19800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "K": 7,
+      "h": 7,
+      "maximum_pole": 7,
+      "matrix_rows": 78,
+      "matrix_columns": 49,
+      "matrix_rank": 49,
+      "endpoint_T": "-26843/432432",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-134215/1945944"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-26843/504504"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 14,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-26843/1081080"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "K": 8,
+      "h": 8,
+      "maximum_pole": 7,
+      "matrix_rows": 90,
+      "matrix_columns": 56,
+      "matrix_rank": 56,
+      "endpoint_T": "-56517/1121120",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-18839/336336"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-169551/3923920"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 16,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-56517/2802800"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "3"
+      ],
+      "K": 2,
+      "h": 2,
+      "maximum_pole": 7,
+      "matrix_rows": 18,
+      "matrix_columns": 14,
+      "matrix_rank": 14,
+      "endpoint_T": "-1/12",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-5/54"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-1/14"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 4,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-1/30"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "2",
+        "5",
+        "11"
+      ],
+      "K": 3,
+      "h": 3,
+      "maximum_pole": 7,
+      "matrix_rows": 30,
+      "matrix_columns": 21,
+      "matrix_rank": 21,
+      "endpoint_T": "-859/199584",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-4295/898128"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-859/232848"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 6,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-859/498960"
+        }
+      ]
+    },
+    {
+      "base_odd_value": 5,
+      "target_odd_value": 11,
+      "nodes": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "K": 4,
+      "h": 4,
+      "maximum_pole": 7,
+      "matrix_rows": 42,
+      "matrix_columns": 28,
+      "matrix_rank": 28,
+      "endpoint_T": "-527/23520",
+      "recursive_layers": [
+        {
+          "target": 11,
+          "maximum_pole": 7,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "10/9",
+          "exact_endpoint_value": "-527/21168"
+        },
+        {
+          "target": 9,
+          "maximum_pole": 5,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "6/7",
+          "exact_endpoint_value": "-527/27440"
+        },
+        {
+          "target": 7,
+          "maximum_pole": 3,
+          "normalized_moments_checked": 8,
+          "endpoint_factor": "2/5",
+          "exact_endpoint_value": "-527/58800"
+        }
+      ]
+    }
+  ],
+  "total_cases": 60,
+  "total_recursive_layers": 150,
+  "total_normalized_moments": 1320
+}

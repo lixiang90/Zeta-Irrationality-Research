@@ -1,0 +1,104 @@
+                        ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)                                        29
+
+in [6] allows one to generate a very large number of alternative forms of the inte-
+gral (1), which are slightly more involved but which potentially have arithmetic of
+their own. For example, a change of variables brings the integral to the form
+                            xa12 (1 − x1 )a1 x2a1 +a2 (1 − x2 )−a2 −a3 +a4 −a6 +a7 +2a8 xa31 −a3 +a4 +a8
+           Z Z
+                                     × (1 − x3 )a5 xa41 −a3 +a4 +a5 (1 − x4 )a6 xa54 (1 − x5 )a1 −a3 +a5
+  I(a) =        ···
+                             (1 − x2 x3 x4 x5 )a1 −a3 (1 − x1 x2 )a1 −a3 −a6 +a7 +a8 (1 − x2 x3 )a8
+               [0,1]5
+                                             × (1 − x3 x4 )−a2 −a3 +a4 +a5 +a8 (1 − x4 x5 )a5 +a6 −a8
+                       x2 x3 x4 dx1 dx2 dx3 dx4 dx5
+           ×                                                    ,                                     (37)
+               (1 − x1 x2 )(1 − x2 x3 )(1 − x3 x4 )(1 − x4 x5 )
+which is similar to (8) except for the extra factor (1 − x2 x3 x4 x5 )a1 −a3 in the de-
+nominator. Clearly, such representations (37) are available for every I(ga), where
+g ∈ G, and they do not degenerate to the form (8) if the exponent of 1 − x2 x3 x4 x5
+is nonzero.
+   The central idea of this note was to present a new approach to the elimination
+of parasitic terms amongst small linear forms in zeta values by viewing them as
+simultaneous approximations. The price to pay was that one must pass to the
+subleading asymptotic. The example we have studied here is by no means isolated,
+and extends to the case of 7-fold and higher-dimensional cellular integrals. By way
+of example, consider the cellular integral corresponding to (10, 2, 4, 1, 6, 3, 8, 5, 9, 7)
+on M0,10 , referred to as ‘vanishing in the middle’ in [6, Sect. 10.2.6, Example (4)].
+Experimentally, it underlies a motive of rank 4 with semi-simple pieces Q(0), Q(−2),
+Q(−5), Q(−7). The totally symmetric version of this family is given by the integrals
+                Z                                                                            n
+                     t1 (t2 − t1 )(t3 − t2 )(t4 − t3 )(t5 − t4 )(t6 − t5 )(t7 − t6 )(1 − t7 )
+        Z
+   In =     ···
+                          (t3 − t1 )t3 t5 (t5 − t2 )(t7 − t2 )(t7 − t4 )(1 − t4 )(1 − t6 )
+       0<t1 <···<t7 <1
+                                                   dt1 · · · dt7
+                 ×                                                                       .
+                        (t3 − t1 )t3 t5 (t5 − t2 )(t7 − t2 )(t7 − t4 )(1 − t4 )(1 − t6 )
+On the surface, they give linear forms in 1, ζ(2), ζ5 , ζ7 where ζ5 , ζ7 are (linear com-
+binations of) multiple zeta values of weights 5 and 7, respectively. Upon closer
+scrutiny, we may write them as a combination of two linear forms:
+                                            In = In′ + In′′ ζ(2),
+where In′′ is a linear form in 1, ζ(3), ζ(5) and In′ is a linear form in 1, ζ(5), ζ(7)
+obtained by setting ζ(2) = 0 in In . For example, the cases n = 0, 1, 2 give
+       75
+   I0 =   ζ(7) − 9ζ(5)ζ(2),
+        4
+            75                                                      
+   I1 = 61 · ζ(7) − 300 · 3ζ(5) − 220 − 61 · 9ζ(5) − 300 · 2ζ(3) + 152 ζ(2),
+              4
+               75                         6021219 
+   I2 = 52921 · ζ(7) − 261153 · 3ζ(5) −
+                 4                           32
+                                            535857 
+          − 52921 · 9ζ(5) − 261153 · 2ζ(3) +          ζ(2),
+                                                4
+30                          FRANCIS BROWN AND WADIM ZUDILIN
+
+where the linear forms In′ and In′′ are also small (but not as small as In itself). Thus,
+a similar analysis to the one undertaken in this note might possibly lead to a result
+of the form ‘at least one of ζ(5) and ζ(7) is irrational’.
+   The idea of using the subleading asymptotics of integrals to remove parasitic
+periods should prove fruitful in other contexts where it may take a more subtle
+form than simply setting ‘ζ(2) = 0’. There are several technical limitations at the
+moment to execute this strategy in higher weights. For example, calculating higher
+weight integrals for small values of the parameters does not seem practical with
+current tools. A possible way to overcome these difficulties is to create an entirely
+new theoretical machinery for the arithmetic and asymptotics of the integrals in
+question based on the underlying algebraic geometry and contiguity relations. This
+seems to be a good challenge already for the family 8π8∨ analysed in this note.
+   From a broader perspective, this note is possibly the first systematic exploration
+of a cellular family of integrals which goes beyond the previously known cases for
+ζ(2) and ζ(3). In the process, we have uncovered several inter-related mathematical
+structures which include: duality relations, the existence of large symmetry groups,
+and a recursive structure between cellular integrals of different weights via iterated
+residues. More subtle features include the role of the symmetric parameters si , the
+combinatorial structures underlying the asymptotic behaviour of the integrals (1),
+and the arithmetic of their denominators. We expect that all these structures point
+to a general theory for cellular integrals, which combines arithmetic, geometric, com-
+binatorial and analytic data. Several other promising ideas for a unifying approach
+to irrationality proofs may be found in [8, 10]. It would seem that the interplay
+between these different mathematical structures, which arguably gives the subject
+its appeal, lies at the heart of the difficulty of finding new irrationality proofs.
+
+Acknowledgements. This project has received funding from the European Re-
+search Council (ERC) under the European Union’s Horizon 2020 research and inno-
+vation programme (grant agreement no. 724638). Both authors wish to thank the
+Simons Foundation for their invitation to the Simons Symposium on ‘Periods and
+L-values of Motives II’, where the idea for this project was conceived.
+  We thank Ben Green for pointing out to us the vagueness in our original statement
+of Theorem 1, as well as Alin Bostan and Christoph Koutschan for illuminating
+discussions about the current state of arts for creative telescoping algorithms [21,22].
+We also acknowledge creative feedback from the anonymous referee which caused
+further improvements of the text.
+
+
+                                          References
+ [1] R. Apéry, Irrationalité de ζ(2) et ζ(3), Astérisque 61 (1979), 11–13.
+ [2] W. N. Bailey, Generalized hypergeometric series, Cambridge Math. Tracts 32 (Cambridge
+     University Press, 1935).
+ [3] K. Ball et T. Rivoal, Irrationalité d’une infinité de valeurs de la fonction zêta aux entiers
+     impairs, Invent. Math. 146 (2001), no. 1, 193–207.
+ [4] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (1979),
+     268–272.
+

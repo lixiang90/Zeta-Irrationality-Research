@@ -1,0 +1,39 @@
+{
+  "scope": "Fixed polynomial norms, degree identities and the full primitive certificate only. No prime scan or historical producer. Rational Cartier exactness, global pole bounds and off-p cancellation are proved in the Markdown.",
+  "checks_passed": 20,
+  "checks": [
+    "N discriminant is 37+8r",
+    "N discriminant norm is 1049",
+    "C discriminant is 32-16r",
+    "C discriminant norm is -256",
+    "own N C resultant is -80+60r",
+    "own resultant norm is -11600",
+    "resultant fixed prime factorization",
+    "1049 is prime",
+    "N values at 0 and 1",
+    "C values at 0 and 1",
+    "N leading coefficient norm is -4",
+    "C leading coefficient norm is 16",
+    "kernel denominator degree is 5",
+    "bounded primitive E degree is 3p-3",
+    "rational b denominator degree is 3p+2",
+    "degree5 numerator gives a finite infinity value",
+    "degree4 numerator gives vanishing infinity value",
+    "Hasse log derivative cancels from primitive equation",
+    "complete polynomial certificate has correct coefficients",
+    "bounded homogeneous numerator E is killed in characteristic p"
+  ],
+  "fixed_collision_bad_primes": [
+    2,
+    5,
+    29,
+    1049
+  ],
+  "Hasse_collision_scope": "Hasse/N and Hasse/C intersections are allowed; they only lower poles of b.",
+  "primitive": "u=J/P_Hasse, degJ<=3p-3, J(0)=0, theta_t(u*A)=Q*A mod p",
+  "coefficient_Frobenius": "Relative C(A^p*b)=sigma_p(A)*C(b), including inert residue fields.",
+  "forced_numerator_conditions": "Pc(0)=Pc(1)=0 and degPc<=4",
+  "polynomial_certificate": "NC*thetaJ+t*(Nprime*C+N*Cprime/2)*J=(Pc/(1-t))*P_Hasse",
+  "second_layer_scope": "Off-p component can be removed by u*Y; a slow-variable coker obstruction remains.",
+  "open": "Actual allowed-degree old-column representation, full-prefix slow elimination and original-CDT Smith/height budget."
+}

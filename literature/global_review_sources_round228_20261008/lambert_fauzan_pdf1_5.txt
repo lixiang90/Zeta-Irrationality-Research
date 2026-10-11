@@ -1,0 +1,271 @@
+                            ζ(5) IS IRRATIONAL
+
+                                          Aabir Fauzan
+                                      aabir.fauzan@aalto.fi
+
+                                       17 September 2026
+
+
+                                              Abstract
+         We prove that ζ(5) is irrational. The proof constructs integer polynomials Qn of degree
+     37n with 0 < Qn (ζ(5)) < exp(−139n2 /5) for all sufficiently large n. These polynomials are
+     rationally normalized Hankel determinants. A positive moment representation gives nonvan-
+     ishing and, through a logarithmic-energy estimate, bounds their real values. Local estimates
+     for the entire rational functional control the coefficients and show that the normalization
+     preserves the required decay. A perturbation estimate also gives |ζ(5) − a/b| > b−260 for
+     every integer a and all sufficiently large positive integers b.
+
+      Keywords. Riemann zeta function, irrationality, Hankel determinant, Bernoulli numbers,
+      logarithmic energy.
+
+
+1    Introduction
+Apéry proved in 1978 that ζ(3) is irrational [1]. For higher odd arguments, much of the
+subsequent progress has concerned families of values. Rivoal [10] and Ball and Rivoal [2] proved
+that infinitely many odd zeta values are irrational. Zudilin [12, 13] showed that at least one of
+ζ(5), ζ(7), ζ(9), ζ(11) is irrational. Later work has strengthened the lower bounds for the number
+of irrational values [6] and for the dimension of their rational span [5]. These theorems give
+information about the family as a whole, but do not determine the irrationality of a specified
+odd zeta value beyond ζ(3).
+    For ζ(5) itself, Brown and Zudilin [4, Theorem 1] constructed an effective infinite sequence
+of rational approximations satisfying
+                                          ⃓           ⃓
+                                                 p⃓
+                                     0 < ⃓⃓ζ(5) − ⃓⃓ < q −0.86 .
+                                          ⃓
+                                                 q
+Their construction uses cellular integrals and the arithmetic of the associated linear forms. The
+exponent 0.86 does not by itself imply irrationality. To obtain irrationality from approximations
+of this kind, one needs a decay estimate that remains sufficient after the denominators have
+been cleared. The same comparison between real decay and denominator growth also governs
+the polynomial construction used below.
+    The difficulty of the individual problem is reflected in recent accounts. Lai, Lupu, and Sprang
+[8, §1] described the irrationality of ζ(5) as a problem that “seems beyond reach”. Fischler [5,
+§1] likewise records the absence of an individual result beyond ζ(3). The present paper proves
+the next case.
+
+                                                  1
+Theorem 1.1. The number ζ(5) is irrational.
+    The proof uses integer polynomials of growing degree, rather than linear forms in 1 and ζ(5).
+They are obtained from Hankel determinants whose entries are affine in the polynomial variable.
+At ζ(5), a positive moment representation makes the determinants nonzero. The main estimates
+show that their values remain small enough to exclude rationality after every coefficient has
+been made integral. In this way, nonvanishing and the comparison between real decay and
+denominator growth are established for the same sequence of polynomials.
+    The construction also gives a bound for rational approximation. This requires a further
+estimate ensuring that the determinants remain positive at rational arguments sufficiently close
+to ζ(5).
+Corollary 1.2. There is a positive integer b0 such that
+                         ⃓         ⃓
+                         ⃓ζ(5) − a ⃓ > b−260
+                         ⃓         ⃓
+                                                (a ∈ Z, b ∈ Z, b ≥ b0 ).                    (1.1)
+                         ⃓       b⃓
+   Thus the irrationality exponent of ζ(5) is at most 260. The threshold b0 is not specified.
+The additional estimates and the proof of this corollary are given in Appendix C. They are not
+needed for Theorem 1.1.
+
+1.1   The construction and the proof
+The polynomial estimates needed for irrationality are stated in Theorem 2.1. For all sufficiently
+large n, they give
+                                                                              139 2
+                                                                            (︃        )︃
+       Qn := Q40n,200 ∈ Z[X],       deg Qn = 37n,       0 < Qn (ζ(5)) < exp −    n .
+                                                                               5
+These estimates imply Theorem 1.1 directly. Indeed, suppose that ζ(5) = a/b, where a ∈ Z and
+b ∈ Z>0 . Then
+                                                                 139 2
+                                                   (︃                  )︃
+                          0 < b37n Qn (a/b) < exp 37n log b −       n .
+                                                                  5
+The middle term is an integer and the right-hand side tends to zero. The quadratic decay
+therefore suffices, without an estimate for the heights of the polynomials. The rest of the proof
+is devoted to constructing polynomials with these properties.
+    We begin with an h × h Hankel matrix GK (X), where h = 37K/40, whose entries are
+values of a rational functional. Each entry is affine in X. At X = ζ(5), the functional becomes
+integration against a positive weight, and GK (ζ(5)) is a positive moment matrix. Its determinant
+is consequently positive. A multiple-integral representation expresses that determinant in terms
+of a squared Vandermonde factor and the weight. After scaling, the logarithm of the integrand
+is estimated by a logarithmic-energy inequality. This gives the required real bound on the K 2
+scale.
+    The arithmetic estimates must hold for every coefficient of the determinant, not only for its
+value at ζ(5). They must also account for the whole rational functional. Polynomial division
+produces both polynomial quotients and simple-pole terms, and an estimate based only on
+favorable residues would leave the former uncontrolled. We therefore retain both contributions
+in the local estimates over Qp [X].
+    The main determinant estimates take two forms. For the intermediate primes, a basis with
+prescribed vanishing at the pole classes gives a determinant valuation. For the larger primes,
+
+                                               2
+another basis isolates the possible negative valuations of the residue terms. The remaining
+polynomial contribution is handled by a rank bound. Together with a coarse bound for the
+smaller primes, these estimates give a positive rational normalization that turns the determinant
+into the integer polynomial QK,M . The cutoff M is kept fixed when the local estimates are
+summed. The cost of this normalization is smaller than the real decay. Choosing M = 200 and
+K = 40n gives the polynomials Qn above.
+    For Corollary 1.2, smallness at ζ(5) alone is not enough, since the polynomial could vanish
+at a nearby rational argument. We bound the coefficient matrix of X relative to the positive
+matrix GK (ζ(5)). This preserves positivity under the required perturbation and allows the
+integer argument to be applied at the rational point. The larger fixed cutoff used in the appendix
+provides the additional decay for that argument.
+
+1.2    Organization
+Section 2 defines the matrix and proves its degree and positivity. Sections 3 and 4 establish
+the local estimates, which are summed in Section 5. The real bound is proved in Section 6,
+and the two bounds are combined in Section 7. Appendices A and B contain the rational data
+and elementary estimates for the constants. Appendix C proves the approximation bound and
+records a coefficient height estimate.
+
+
+2     The determinant construction
+We first define a rational functional whose value at X = ζ(5) is integration against a positive
+weight. Applying it to rational functions with a common denominator gives the Hankel matrix.
+The residues determine the degree of its determinant, while the integral representation proves
+positivity.
+
+2.1    The functional and the matrix
+Throughout the paper,
+                                                        3               37                        23
+      K = 40n,      N = 3n,          h = 37n,   α=        ,   λ=           ,    H = 1 + 2α =         .   (2.1)
+                                                       40               40                        20
+Set D0 = 1 and
+                               m                            j
+                               ∏︂
+                                          2      (5)       ∑︂ 1                 (5)
+                    Dm (t) =        (t + j ),   Hj     =            ,          H0     = 0.
+                               j=1                         v=1
+                                                               v5
+
+We use the convention B1 = −1/2 for the Bernoulli numbers. Define a Q-linear functional with
+values in Q[X] by
+
+                              (−1)e B2e+2 (2e + 3)(2e + 4)(2e + 5)
+                  µX (te ) =                                       ,                         e ≥ 0,      (2.2)
+                                                   24
+                     1                             1  1
+               (︃        )︃
+                                4 (︁       (5) )︁
+            µX              = j      X − Hj       − + ,                                      j ≥ 1.      (2.3)
+                  t + j2                           4 2j
+Polynomial division and simple partial fractions extend µX to rational functions with simple
+poles among the negative integer squares. We write µ for its restriction to polynomials. Only
+the simple-pole values depend on X, and that dependence is affine.
+
+                                                 3
+   Define
+                        [︄     (︄                    )︄]︄
+                                    DN (t)6 ti+j
+              GK (X) = µX                                             ,        ∆K (X) = det GK (X),   (2.4)
+                                     DK (t)                 0≤i,j<h
+
+and
+                                        (K!)2h 4h−1
+                         SK =                  h−1
+                                                                 ,         FK = SK ∆K .               (2.5)
+                                               ∏︂
+                                    (N !)12h         ((2i)!)2
+                                               i=1
+For a fixed integer M ≥ 40, Section 5 defines a positive rational number mK,M whenever
+K ≥ 200M 2 . The polynomial used below is
+
+                                       QK,M (X) = mK,M FK (X).                                        (2.6)
+
+The factor mK,M will be specified by prime exponents, without computing the content of ∆K .
+
+2.2   The polynomial estimates
+The estimates required in the introduction are collected below. The cutoff M is always fixed
+before n tends to infinity.
+
+Theorem 2.1. For each integer M ≥ 40 and each K ∈ 40Z>0 with K ≥ 200M 2 , the polynomial
+QK,M belongs to Z[X], has degree h, and satisfies QK,M (ζ(5)) > 0. For all sufficiently large
+positive integers n,
+                                                            139 2
+                                                                          (︃         )︃
+                               0 < Q40n,200 (ζ(5)) < exp −      n ,                                   (2.7)
+                                                             5
+                                                            7907 2
+                                                         (︃        )︃
+                             0 < Q40n,100000 (ζ(5)) < exp −      n .                                  (2.8)
+                                                             100
+   The choice M = 200 suffices for irrationality. The larger cutoff gives the additional decay
+used in Appendix C. Neither eventual threshold is specified. We prove degree and positivity
+here, integrality in Section 5, and decay in Section 7.
+
+2.3   Degree
+Let Dtail = DK /DN and W = DN      5 . After cancellation, the rational functions in (2.4) have
+
+exactly the possible poles −j 2 with N < j ≤ K. If Vij = (−j 2 )i , then
+                                                       (︄                      )︄
+                                                            j 4 DN (−j 2 )5
+                       [X]GK (X) = V diag                       ′ (−j 2 )                 V T.
+                                                              Dtail             N <j≤K
+
+The Vandermonde identity therefore gives
+                                                                     K
+                                                                     ∏︂
+                     [X h ]∆K (X) = (−1)h(h−1)/2                           j 4 DN (−j 2 )5 ̸= 0.      (2.9)
+                                                                 j=N +1
+
+In particular, all the polynomials in (2.6) have degree h once their normalizations have been
+defined.
+
+                                                             4
+2.4   The positive integral representation
+To prove nonvanishing at ζ(5), we realize the matrix as a positive Gram matrix. The use of
+positive integrals in irrationality arguments is familiar from Beukers’ proofs for ζ(2) and ζ(3)
+[3]. The representation below will also give the real bound in Section 6.
+Proposition 2.2. For every rational function R in the domain of µX ,
+                                                                              (2π)4 y 5 ∑︂ 4 −2πℓy
+                               ∫︂ ∞
+                 µζ(5) (R) =             R(y 2 )w(y) dy,          w(y) =                  ℓ e      .   (2.10)
+                                0                                               12 ℓ≥1
+
+Hence GK (ζ(5)) is positive definite.
+Proof. The weight is positive. It tends to 1/π as y ↓ 0 and is O((1 + y)5 e−2πy ) at infinity. Euler’s
+formula for the even zeta values [9, (25.6.2)] gives
+                         ∫︂ ∞
+                                                          (2e + 5)!
+                                y 2e w(y) dy =                      ζ(2e + 2) = µ(te ).
+                          0                              12(2π)2e+2
+
+For a pole, put f (y) = (e2πy − 1)−1 . Then w(y) = y 5 f (4) (y)/12, and direct differentiation gives
+                                              )︃4
+                                         d              y5
+                                    (︃
+                                                             = 24a4 Im(a − iy)−5 .
+                                         dy         y 2 + a2
+Four integrations by parts have vanishing boundary terms. At zero each boundary product is
+O(y), and at infinity it decays exponentially. Hermite’s integral formula [9, (25.11.29)], with
+a > 0, yields                ∫︂ ∞
+                                   w(y)                      1  1
+                                   2    2
+                                          dy = a4 ζ(5, a) −    − .
+                               0  y +a                      2a 4
+                                               (5)
+At a = j ∈ Z>0 this is j 4 (ζ(5) − Hj ) − 1/4 + 1/(2j). Linearity proves (2.10).
+   If q ̸= 0 is a real polynomial of degree less than h, then
+                                              DN (y 2 )6 q(y 2 )2
+                                         ∫︂ ∞
+                                                                    w(y) dy > 0.
+                                          0           DK (y 2 )
+This is the quadratic form of GK (ζ(5)) at the coefficient vector of q.
+
+
+3     The local rational functional
+The arithmetic estimates are made with X indeterminate, so that they apply to every coefficient
+of the determinant. Under t = −x2 , the poles become integers and Bernoulli multiplication can
+be applied by residue class. We extend the resulting functional to convergent p-adic expansions,
+prove its distribution formula, and obtain a separate bound for the small primes.
+    For a polynomial A ∈ Qp [X], let vpG (A) be the minimum of the p-adic valuations of its
+coefficients, with vpG (0) = +∞. In particular, a lower bound for vpG (A) applies to the constant
+coefficient as well as to the coefficients of positive degree.
+    Let L(xk ) = Bk and τ (P ) = L(P ′′′ )/24. For an integer r, put
+                               {︄
+                                r,                   r ≥ 0,                  1
+                                                                       (︃         )︃
+                                                                                           (5)
+                     d(r) =                                       τX                   = Hd(r) − X.
+                                −r − 1,              r < 0,                 x−r
+
+                                                              5
+

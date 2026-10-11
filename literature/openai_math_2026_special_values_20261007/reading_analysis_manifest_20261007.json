@@ -1,0 +1,148 @@
+{
+  "state": "reading_and_static_analysis_completed_not_machine_reverified",
+  "created_at_utc": "2026-10-07T00:37:52.504432+00:00",
+  "snapshot_commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "old_research_goal_status": "paused",
+  "old_round_not_finalized": true,
+  "notes": [
+    {
+      "file": "research/openai_math_catalan_and_odd_zeta_reading_20261007.md",
+      "sha256": "fbdc08db23940abd9fda79294e6047813e98200f8efe5e02c8be2c271b32f831",
+      "bytes": 12734
+    },
+    {
+      "file": "research/openai_math_odd_zeta_scope_audit_20261007.md",
+      "sha256": "3d776ebb0416e84529adb364f70ad6fa8d0e3072de0ea18066cc9524731fbcdb",
+      "bytes": 10354
+    },
+    {
+      "file": "research/catalan2026_real_place_energy_explanation_20261007.md",
+      "sha256": "c2c1bd87e8bd3c85b82212da7487c265827aab462c23e41005371e758f5f04a7",
+      "bytes": 13426
+    },
+    {
+      "file": "research/catalan_odd_prime_nonvanishing_static_audit_20261007.md",
+      "sha256": "c0fcba73aee7bae6cf30da3d5835659732d1376b1cc618e452ffd89bf2d30a8d",
+      "bytes": 18638
+    }
+  ],
+  "new_archived_pdf_source_receipts": [
+    {
+      "file": "literature/openai_math_2026_special_values_20261007/catalan_source_receipt_20261007.json",
+      "sha256": "1d5ee324de5ced18ea0f05583c1e78dcf0c06a9f7a78957cee9cccb67d170fd9",
+      "bytes": 976
+    },
+    {
+      "file": "literature/openai_math_2026_special_values_20261007/deligne_drinfeld_source_receipt_20261007.json",
+      "sha256": "22d71a9d6d1f15215f272775a45819390009bf00776fa601105dae63a4e1ec38",
+      "bytes": 801
+    }
+  ],
+  "actual_pdf_reading": {
+    "root": {
+      "Catalan": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        24,
+        42,
+        43,
+        44
+      ]
+    },
+    "source": {
+      "Catalan": [
+        1,
+        2
+      ],
+      "DeligneDrinfeld": [
+        1,
+        2,
+        38
+      ],
+      "QuasiRiemann": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    "scaled": {
+      "Catalan": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        18,
+        19,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    "masked": {
+      "Catalan": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  },
+  "local_catalan_import_modules_static_scanned": 988,
+  "external_import_modules_not_rebuilt": 167,
+  "mathematical_programs_executed": 0,
+  "lean_compilation": false,
+  "comparator_execution": false,
+  "finite_certificate_recalculation": false,
+  "conclusions": [
+    "Catalan manuscript and actual Lean endpoint both target real G irrationality.",
+    "No odd-zeta numerical irrationality or full odd-zeta linear independence theorem found in this repository snapshot.",
+    "Finite-seed nonvanishing, two-prime-layer elimination and uniform Hardy energy are transferable strategies, not already paid inputs for the old matrices."
+  ],
+  "personal_pdf_page_total": 67,
+  "team_distinct_pdf_pages": {
+    "Catalan": 44,
+    "DeligneDrinfeld": 3,
+    "QuasiRiemann": 5
+  },
+  "team_distinct_pdf_page_total": 52
+}

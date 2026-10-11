@@ -1,0 +1,397 @@
+{
+  "independent_dilation_checks": 30,
+  "beta_zero_constant_verified": true,
+  "gram_comparison_half_filter_verified": true,
+  "small_results": [
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "baseline",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ]
+      ],
+      "beta": "1",
+      "positivity": {
+        "period": 1,
+        "minimum": "1",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "1",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 0.6088976061419775,
+      "score_ball": "[0.608897606141977533990235123464 +/- 1.59e-31]",
+      "arithmetic_ball": "[0.125719928444775085160208088215 +/- 2.73e-32]",
+      "real_ball": "[0.483177677697202448830027035249 +/- 1.32e-31]",
+      "raw_log_ball": "[-13.5654710437306029911569365463 +/- 2.92e-31]",
+      "precision_bits": 782,
+      "primitive_hash": "40e7b7089499e8ff6a90cbf8797a36fe532ef4587e6889524259a639548fa2bb"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "odd",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1"
+        ]
+      ],
+      "beta": "-63",
+      "positivity": {
+        "period": 2,
+        "minimum": "0",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "1/2",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 4.071817710958547,
+      "score_ball": "[4.07181771095854757549566466663 +/- 4.17e-31]",
+      "arithmetic_ball": "[3.58964066502834706393774159928 +/- 3.64e-30]",
+      "real_ball": "[0.482177045930200511557923067346 +/- 4.87e-32]",
+      "raw_log_ball": "[-13.6295114768187269765715904921 +/- 1.36e-29]",
+      "precision_bits": 1143,
+      "primitive_hash": "556114d02300660c9b74a40549e0d4c4785db40090a66b34cdb60efc092beabc"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "not_multiple_3",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          3,
+          "-1"
+        ]
+      ],
+      "beta": "-728",
+      "positivity": {
+        "period": 3,
+        "minimum": "0",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "2/3",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 7.993846364620593,
+      "score_ball": "[7.99384636462059248791272093366 +/- 4.27e-30]",
+      "arithmetic_ball": "[7.51084847250310747743919030140 +/- 4.13e-30]",
+      "real_ball": "[0.482997892117485010473530632260 +/- 1.46e-31]",
+      "raw_log_ball": "[-13.5769773208325190459727063376 +/- 3.35e-30]",
+      "precision_bits": 1530,
+      "primitive_hash": "65899764c197ba6e286ca92ca5b30081a362e1a39fa9d54af1adb29ff26fa343"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "coprime_6",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1"
+        ],
+        [
+          3,
+          "-1"
+        ],
+        [
+          6,
+          "1"
+        ]
+      ],
+      "beta": "45864",
+      "positivity": {
+        "period": 6,
+        "minimum": "0",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "1/3",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 19.254773439138656,
+      "score_ball": "[19.2547734391386576507497250879 +/- 2.91e-30]",
+      "arithmetic_ball": "[18.7727616016100517429541282863 +/- 3.83e-29]",
+      "real_ball": "[0.482011837528605907795596801565 +/- 3.56e-31]",
+      "raw_log_ball": "[-13.6400848145207816173604715021 +/- 9.90e-30]",
+      "precision_bits": 2612,
+      "primitive_hash": "43edc975bcbf61c5d7d98867977feee7c716b735ede8743763817fbceb842137"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "even_only",
+      "coefficients": [
+        [
+          2,
+          "1"
+        ]
+      ],
+      "beta": "64",
+      "positivity": {
+        "period": 2,
+        "minimum": "0",
+        "maximum": "1",
+        "a1": "0",
+        "mean": "1/2",
+        "first_frequency": 2
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 2.710546901104441,
+      "score_ball": "[2.71054690110444121643912986018 +/- 4.75e-30]",
+      "arithmetic_ball": "[3.80120708698945722534367945633 +/- 3.50e-30]",
+      "real_ball": "[-1.09066018588501600890454959614 +/- 1.76e-30]",
+      "raw_log_ball": "[-114.291094312992584286169840955 +/- 3.00e-28]",
+      "precision_bits": 1163,
+      "primitive_hash": "12778e95f7033512181d34424d19c9af81e50112b6b331d108d26ecd15ad41c8"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "lambda_1_2",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1/2"
+        ]
+      ],
+      "beta": "-31",
+      "positivity": {
+        "period": 2,
+        "minimum": "1/2",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "3/4",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 4.284262635066121,
+      "score_ball": "[4.28426263506612041280248143200 +/- 1.08e-30]",
+      "arithmetic_ball": "[3.80157765771785278850177862587 +/- 3.99e-30]",
+      "real_ball": "[0.482684977348267624300702806133 +/- 8.98e-32]",
+      "raw_log_ball": "[-13.5970038660624317610336872097 +/- 2.11e-29]",
+      "precision_bits": 1156,
+      "primitive_hash": "178f0f2fbc6ca1d14f9e49d3f8e27238bf449deca6bb3ea0b25fe5a5b2c540a5"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "lambda_1_63",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1/63"
+        ]
+      ],
+      "beta": "-1/63",
+      "positivity": {
+        "period": 2,
+        "minimum": "62/63",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "125/126",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 4.737524708824979,
+      "score_ball": "[4.73752470882497889207350181437 +/- 2.18e-30]",
+      "arithmetic_ball": "[4.25436244768853111308228730822 +/- 2.60e-30]",
+      "real_ball": "[0.483162261136447778991214506155 +/- 2.27e-31]",
+      "raw_log_ball": "[-13.5664577036189018608409384083 +/- 2.19e-29]",
+      "precision_bits": 1126,
+      "primitive_hash": "330abce1fe3006af86bd894690c7ba645a08de5c609801aacf5ae3775df958db"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "lambda_1_64",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1/64"
+        ]
+      ],
+      "beta": "0",
+      "positivity": {
+        "period": 2,
+        "minimum": "63/64",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "127/128",
+        "first_frequency": 1
+      },
+      "degree": 0,
+      "degenerate_constant": true,
+      "score": 0.0,
+      "score_ball": "0",
+      "arithmetic_ball": "[-0.483162502131313119176628128815 +/- 3.81e-31]",
+      "real_ball": "[0.483162502131313119176628128815 +/- 3.81e-31]",
+      "raw_log_ball": "[-13.5664422799475200889744665581 +/- 8.31e-30]",
+      "precision_bits": 401,
+      "primitive_hash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "lambda_1_65",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1/65"
+        ]
+      ],
+      "beta": "1/65",
+      "positivity": {
+        "period": 2,
+        "minimum": "64/65",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "129/130",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 4.7409434303418765,
+      "score_ball": "[4.74094343034187630076100297214 +/- 2.41e-30]",
+      "arithmetic_ball": "[4.25778069463429253432148769732 +/- 6.79e-31]",
+      "real_ball": "[0.483162735707583766439515274823 +/- 8.24e-32]",
+      "raw_log_ball": "[-13.5664273310661986641496892136 +/- 5.00e-29]",
+      "precision_bits": 1126,
+      "primitive_hash": "805ae66dc782cd8d380634eb271cab6acf3f2d425859ecb10cfdcded69f82585"
+    },
+    {
+      "K": 8,
+      "profile": [
+        [
+          1,
+          8
+        ]
+      ],
+      "h": 7,
+      "label": "lambda_1_128",
+      "coefficients": [
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "-1/128"
+        ]
+      ],
+      "beta": "1/2",
+      "positivity": {
+        "period": 2,
+        "minimum": "127/128",
+        "maximum": "1",
+        "a1": "1",
+        "mean": "255/256",
+        "first_frequency": 1
+      },
+      "degree": 7,
+      "degenerate_constant": false,
+      "score": 4.815067988769235,
+      "score_ball": "[4.81506798876923501870213216811 +/- 2.88e-30]",
+      "arithmetic_ball": "[4.33189789710566535286624779932 +/- 2.09e-30]",
+      "real_ball": "[0.483170091663569665835884368795 +/- 4.53e-32]",
+      "raw_log_ball": "[-13.5659565498831011027820671994 +/- 4.98e-29]",
+      "precision_bits": 1164,
+      "primitive_hash": "99a7edde056a41a23c811577e0a5394e326790b26a112154525a3e0e7e0ffb0f"
+    }
+  ]
+}

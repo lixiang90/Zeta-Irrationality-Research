@@ -1,0 +1,91 @@
+{
+  "status": "FINAL",
+  "date": "2026-10-07",
+  "author": "/root/source_pencil_finalize",
+  "task": "Actual rational-function polylog basis changes and denominator/monodromy interface",
+  "authority_scope": "main sections 166-170, read in full this round; the mutable main is not pinned",
+  "frozen_baseline": {
+    "records": 564,
+    "mathematical_records": 559,
+    "guards": 5,
+    "audit_path": "research/cdt_odd_delivery_hasse_bridge_20261007.json",
+    "audit_sha256": "94eec763f855689bda6ecfb6fd3e4c0af2fef50fcff2e357fc032c720d04d2d3",
+    "personal_audit_read_scope": "complete JSON syntax parse, metadata/current progress read, physical SHA verification; not a personal item-by-item mathematical reread of all 564 records",
+    "old_records_modified": 0
+  },
+  "actual_object": {
+    "source": "xi=alpha*zeta(4)+beta*zeta(5), fixed rational alpha,beta and beta nonzero",
+    "germ": "Xi=alpha*Li_4+beta*Li_5",
+    "preserved": "original B6/k3/s5, whole S, degree<3n, actual compound minors and their full Q(x) module",
+    "quantifiers": "First fix n,d,source,U(x),row,finite cap widths/offsets/e; then let the prime and Taylor index grow. Endpoint regularity and U(1) remain separately required."
+  },
+  "new_results": [
+    "R6: nonconstant rational top coefficient has a fixed offzero Laurent coefficient giving valuation -5j at jp+s",
+    "R7-R9: constant top coefficient of degree j>=2 retains the full same-layer response H=j*a_j*Xi+a_(j-1), yielding valuation -5(j-1) at (j-1)p+s",
+    "R4-R5: uniform p-integrality of the whole rational Laurent tail and fixed finite negative-tail bounds exclude extra pole-index multiples",
+    "R12: every nonrational row in the canonical finite polynomial module has prefix denominator liminf exponent at least 5",
+    "R14: degree>=2 rows need finite-LCM slope sum at least 5 even after any fixed N^e factor",
+    "R16: actual full Q(x) compound bases with d>=2 exceed log(4) in the selected CDT cap on the standard slit leaf, including q=1,2",
+    "R17: x*Xi to Xi is a true endpoint-preserving rational basis calibration lowering flat cap, with e=5 and the corresponding sharp fee retained"
+  ],
+  "limitations": [
+    "j=1 with constant top coefficient retains the N=p witness and the N^e exception; no shifted negative valuation is asserted",
+    "the obstruction is limited to the stated canonical module, fixed finite-LCM/N^e type and standard slit leaf",
+    "no universal no-go for other period realizations, meromorphic pullbacks, Hadamard/trace systems or different denominator theorems",
+    "no new numerical zeta/L/Catalan irrationality or linear independence, no Lean claim, no strict analytic margin supplied",
+    "the root kernel-quotient paper remains conditional on sufficient actual kernel height or nonzero phase loss"
+  ],
+  "review_closure": {
+    "own_main_author_read": "actual complete six-section R1-R17 read after receiving the independent review; physical hash unchanged",
+    "received_review": "actual full read of root review 24e320217b238cf3bccbf783c334ae372c5f3f5fccedb3c5514e15d0f59aba46; PASS, no requested correction",
+    "root_main_review": "actual full eight-section K1-K18 read at hash 996e261e7fd780f5247b0736380c0bb581e637fedb624de52982793ee8bb6f5b; own formal review 054658f9171e1ced0cb0ddc4a1477f46087e494a2e8d65d5fb499b72074cb932 read in full after writing; PASS",
+    "frozen_document_reads": "bridge and its review, Hasse, node, analytic, partial and coupled manuscripts read in full this round; combined analytic/partial truncation was supplemented by separate complete reads",
+    "receipt_direction": "one-way: no mutable main, future audit, own receipt hash or future peer receipt is pinned"
+  },
+  "actual_primary_pdf_reads": [
+    {
+      "path": "literature/cdt2024_l2_chi_minus3.pdf",
+      "source_url": "https://arxiv.org/abs/2408.15403v2",
+      "archived_pages": 218,
+      "physical_pdf_pages_read": [66, 67, 68, 69],
+      "distinct_pages": 4,
+      "scope": "Definitions6.0.1 and Theorem6.0.2 formulas6.0.3-6.0.9, Remark6.0.12, Corollary6.0.14, BasicRemark6.0.17; complete extracted page text"
+    },
+    {
+      "path": "literature/cdt_paired_kernel_height_sources_20261007/zhang_cheng2017_efficient_bombieri_vaaler_arxiv1707_05941v1.pdf",
+      "source_url": "https://arxiv.org/abs/1707.05941v1",
+      "archived_pages": 7,
+      "physical_pdf_pages_read": [1, 2, 3, 4, 5, 6, 7],
+      "distinct_pages": 7,
+      "scope": "complete document text, including Theorems1.3-1.4,2.4-2.7 and their kernel/minor-content distinctions; no algorithm executed"
+    }
+  ],
+  "personal_primary_pdf_distinct_pages_this_round": 11,
+  "primary_read_note": "No inherited ICM/Borodin/previous-round page counts. Zhang-Cheng first extraction could not display full text under GBK; UTF-8 retry completed all seven pages. PDF text extraction is document reading, not a mathematical producer run.",
+  "execution_counts": {
+    "mathematical_producer_created": 0,
+    "mathematical_producer_executed": 0,
+    "mathematical_producer_imported": 0,
+    "mathematical_producer_rerun": 0,
+    "old_or_peer_producer_runs": 0,
+    "prime_table_extensions": 0,
+    "lean_runs": 0,
+    "primary_downloads_by_this_agent": 0
+  },
+  "pinned_files": [
+    {"path":"research/cdt_odd_paired_rational_polylog_cap_20261007.md","bytes":12007,"sha256":"51ec9a76c83c612407d4c28e4017867a1db7a27a85b0f2727aabedf4701d351c"},
+    {"path":"research/cdt_odd_paired_rational_polylog_cap_independent_review_20261007.md","bytes":5123,"sha256":"24e320217b238cf3bccbf783c334ae372c5f3f5fccedb3c5514e15d0f59aba46"},
+    {"path":"research/cdt_odd_paired_primitive_kernel_quotient_20261007.md","bytes":12120,"sha256":"996e261e7fd780f5247b0736380c0bb581e637fedb624de52982793ee8bb6f5b"},
+    {"path":"research/cdt_odd_paired_primitive_kernel_quotient_independent_review_20261007.md","bytes":6453,"sha256":"054658f9171e1ced0cb0ddc4a1477f46087e494a2e8d65d5fb499b72074cb932"},
+    {"path":"research/cdt_odd_paired_compound_period_module_bridge_20261007.md","bytes":18055,"sha256":"e9e1ad8bd1553b53b7a0f901f33a9dec1fb1bedc5c51b6d2c9205d61defccc83"},
+    {"path":"research/cdt_odd_paired_compound_period_module_bridge_independent_review_20261007.md","bytes":6755,"sha256":"524bc98a4c2874982668fbaef6266ed32e90d037d9c72e631932646964bb2390"},
+    {"path":"research/cdt_odd_paired_hasse_jet_mixed_gram_20261007.md","bytes":9941,"sha256":"c178bf8540ff8a0697260ff3d5d137039d92b6288affc29f432934b100704112"},
+    {"path":"research/cdt_odd_paired_partial_minor_node_budget_20261007.md","bytes":11253,"sha256":"d5d9d9b5893a5ee23f1ee6cbce275f128f3925530cd6c5e82b56061679fd9b39"},
+    {"path":"research/cdt_odd_paired_compound_mixed_jet_analytic_20261007.md","bytes":12246,"sha256":"9123629b3115383dc148dd76bfd638ea786df1899d66577af4dce6ca9937104f"},
+    {"path":"research/cdt_odd_paired_partial_compound_transfer_20261007.md","bytes":7857,"sha256":"bece2d2f49def7809c5fe386e1bc247e31bd853d0aab3867b5f0ea28d2035866"},
+    {"path":"research/cdt_odd_paired_coupled_gram_decay_20261007.md","bytes":16381,"sha256":"03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965"},
+    {"path":"literature/cdt2024_l2_chi_minus3.pdf","bytes":4517169,"sha256":"84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771"},
+    {"path":"literature/cdt_paired_kernel_height_sources_20261007/zhang_cheng2017_efficient_bombieri_vaaler_arxiv1707_05941v1.pdf","bytes":283961,"sha256":"eb1ac14a228b64219dfef2814d430524fb6a7fa8846f6c92f4a27b033193656a"},
+    {"path":"research/cdt_odd_delivery_hasse_bridge_20261007.json","bytes":177521,"sha256":"94eec763f855689bda6ecfb6fd3e4c0af2fef50fcff2e357fc032c720d04d2d3"}
+  ]
+}

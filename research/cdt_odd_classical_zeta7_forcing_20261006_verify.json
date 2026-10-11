@@ -1,0 +1,96 @@
+{
+  "execution_record": "Second execution of this NEW fixed producer. First exact solver call returned None and four clearing checks passed, then file-pin path .verify.py caused FileNotFoundError before JSON. Corrected only input-pin filename convention and added independent full rational-obstruction proof identities. No old or peer producer imports or scans.",
+  "solver": "SymPy rsolve_ratio (Abramov universal denominator algorithm)",
+  "answer": "None",
+  "checks": [
+    {
+      "name": "h-forward-ratio denominator clearing",
+      "passed": true
+    },
+    {
+      "name": "h-backward-ratio denominator clearing",
+      "passed": true
+    },
+    {
+      "name": "zero-coefficient clearing",
+      "passed": true
+    },
+    {
+      "name": "forcing clearing",
+      "passed": true
+    },
+    {
+      "name": "fixed Abramov answer is none",
+      "passed": true
+    },
+    {
+      "name": "forward coefficient complete root factorization",
+      "passed": true
+    },
+    {
+      "name": "backward coefficient complete root factorization",
+      "passed": true
+    },
+    {
+      "name": "local n=1 c nonzero",
+      "passed": true
+    },
+    {
+      "name": "local n=-3/2 a nonzero",
+      "passed": true
+    },
+    {
+      "name": "n=1 remaining coefficient divisibility4",
+      "passed": true
+    },
+    {
+      "name": "n=-3/2 remaining coefficient divisibility4",
+      "passed": true
+    },
+    {
+      "name": "infinity leading13 cancellation",
+      "passed": true
+    },
+    {
+      "name": "infinity leading12 cancellation",
+      "passed": true
+    },
+    {
+      "name": "all-degree indicial exact",
+      "passed": true
+    },
+    {
+      "name": "forcing degree13",
+      "passed": true
+    },
+    {
+      "name": "forcing nonzero",
+      "passed": true
+    },
+    {
+      "name": "forced local factors coprime",
+      "passed": true
+    }
+  ],
+  "passed": 17,
+  "pins": {
+    "cdt_odd_classical_derivative_projection_20261006.md": "c24a4d7807bed750f63746b4506f2a238a7d9b9122e2e39ac4871653b39d5c1e",
+    "cdt_odd_classical_derivative_projection_20261006_verify.py": "bc15dfe4b9a44cff84be528d556c5ca4ac5080e6790a757e875ac589652b4a14",
+    "cdt_odd_classical_derivative_projection_20261006_verify.json": "66885c07c41e8cff3e0d0dbfeb51f931bc4f8ec3aebc2af77773061f24e6fc92"
+  },
+  "indicial": "256*(d - 5)*(d - 3)",
+  "forced_local_factor": "n^4*(n+1/2)^4",
+  "pole_endpoints": {
+    "leftmost": [
+      "0",
+      "1",
+      "2"
+    ],
+    "rightmost": [
+      "-1",
+      "-3/2",
+      "-5/2"
+    ]
+  },
+  "scope": "Exact proof inputs for no rational multiplier of the specified forcing term. Whole-pole orbit argument and all-hypergeometric reduction are in the new Markdown; no assertion about nested sums or arbitrary Dfinite particular solutions."
+}

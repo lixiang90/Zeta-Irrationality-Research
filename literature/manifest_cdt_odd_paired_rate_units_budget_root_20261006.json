@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-06",
+  "author": "/root",
+  "status": "final research source and execution receipt; mathematical files read-only after review",
+  "scope": "Root own primitive gcd limit; root actual paper reviews of same paired analytic rate, all-prime budget and finite-field structure; no new special-value theorem.",
+  "own_mathematical_paper": {
+    "path": "research/cdt_odd_paired_primitive_gcd_rate_20261006.md",
+    "sha256": "77079715fb996f6d2ef9eee370abbbecc1169acb8c14bebfb4515c3b3bf268e2",
+    "actual_author_read": "Complete G1-G10 sections and all formulae G1-G13; citation-only final amendment read in place. No mathematical change after peer full final reread.",
+    "independent_review_path": "research/cdt_odd_paired_primitive_gcd_rate_independent_review_20261006.md",
+    "independent_review_sha256": "9257bbfcf1f52916b460497ed0cb9a14425040382006a4b0b39646f44a718ad2",
+    "independent_review_scope": "Quarter actual full final proof, source and complete certificate, no rerun; root actual full final review reread.",
+    "proved": "All-scale fixed-B primitive binomial gcd limit; B6 exact folded integral and digamma expression; gamma in [1.455845,1.457795]; same analytic basis credit -2gamma."
+  },
+  "own_new_mathematical_producer": {
+    "path": "research/cdt_odd_paired_primitive_gcd_rate_20261006_verify.py",
+    "sha256": "a7bbefb04b33cbaf38937e7595d08fbaca1263da24537147dfd2ea7e55fd67f7",
+    "output_path": "research/cdt_odd_paired_primitive_gcd_rate_20261006_verify.json",
+    "output_sha256": "9ffb2bbacbddb85987ead5b938cafb488cafe798d301f141ffca3e51d9b46f43",
+    "execution_count": 1,
+    "exit_code": 0,
+    "first_execution_only": true,
+    "scope": "24 affine cells and folding consistency checks, exact 512-period integral plus paper-proved 1/513 tail, digamma coefficients and endpoint cancellation. Finite checks do not replace the all-scale limit proof.",
+    "saved_files_actual_read": "Own complete code and existing JSON statically read; peer did same independently without execution."
+  },
+  "actual_peer_mathematical_reading": [
+    {
+      "path": "research/cdt_odd_paired_plucker_energy_rate_20261006.md",
+      "sha256": "01c87202a292f9d977f58098bd609e99f9b6aa1b6701e9fff7c036bda7e2515a",
+      "scope": "Initial candidate and final E1-E8/formulae E1-E26 actually read completely, without truncation; failed v1, distinct v2 source and complete v2 JSON all read statically."
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_20261006.md",
+      "sha256": "55278a0ed68b645fc5cb2f3089563e49c30e608ace9de511cc80d37609b712dc",
+      "scope": "Full earlier98cf B2-B22 mathematical text; final two added B15/B18 paragraphs and surrounding text actually read. Full PY and complete 50-segment JSON static reads. Does not claim another full final-byte reread."
+    },
+    {
+      "path": "research/cdt_odd_paired_auxiliary_units_structure_20261006.md",
+      "sha256": "dcc6d4d670dbcc3960936d3ee1b21a877f73c03e2ba65c479c9d550e0624a8a5",
+      "scope": "Earlier candidate and final sections1-11/U1-U35 actually read completely; full PY and complete 40-case JSON static reads."
+    }
+  ],
+  "primary_sources": [
+    {
+      "file": "literature/nist_dlmf_5_4_special_values_paired_gcd_20261006.html",
+      "sha256": "8527350b609826de362b1c2e5818b0a8dc7152cd59a92a2c2788bde153f968fd",
+      "bytes": 145033,
+      "url": "https://dlmf.nist.gov/5.4",
+      "version": "DLMF1.2.8, released2026-09-15",
+      "actual_read": "Official web subsection5.4(ii), especially Gauss equation5.4.19 and its 0<p<q scope; not complete HTML markup or referenced books.",
+      "download": "Root NEW original HTML, urllib default verified TLS; no overwrite or certificate bypass."
+    },
+    {
+      "file": "literature/nist_dlmf_5_7_psi_series_paired_gcd_20261006.html",
+      "sha256": "e414ff91e957a27eb06cdb7d4e0a8ce72f7359f8dc4d877a4a1c17572d405029",
+      "bytes": 69357,
+      "url": "https://dlmf.nist.gov/5.7",
+      "version": "DLMF1.2.8, released2026-09-15",
+      "actual_read": "Official web subsection5.7(ii), equation5.7.6 digamma difference series; not complete markup or its cited books.",
+      "download": "Root NEW original HTML, urllib default verified TLS; no overwrite or certificate bypass."
+    },
+    {
+      "file": "literature/nist_dlmf_27_12_prime_asymptotics_paired_gcd_20261006.html",
+      "sha256": "12ddbf9698be9a9c6876d728a79c59df8a679ba8ccb4d7a89f7ad5f0ad706a93",
+      "bytes": 85507,
+      "url": "https://dlmf.nist.gov/27.12",
+      "version": "DLMF1.2.8, released2026-09-15",
+      "actual_read": "Official webpage27.12.4-5 PNT for pi(x); theta asymptotic derived separately by partial summation. Not complete markup.",
+      "download": "Root NEW original HTML, urllib default verified TLS; no overwrite or certificate bypass."
+    },
+    {
+      "file": "literature/cdt_paired_auxiliary_units_sources_20261006/rimanyi_varchenko2020_Fp_selberg_arxiv2011_14248v2.pdf",
+      "sha256": "e412b1b111dee5cd7eee3d471adaf436dc4e86084935038a30b7d876f47ef48f",
+      "pages": 19,
+      "version": "arXiv2011.14248v2",
+      "url": "https://arxiv.org/pdf/2011.14248v2",
+      "actual_read": "Root actual PDF1-8, eight full extracted pages without truncation; definition and Theorem4.1 conditions. No claimed match of actual middle-corrected weights to its master polynomial.",
+      "download": "Downloaded this round by arithmetic peer under its separate verified-TLS receipt; root download0."
+    }
+  ],
+  "other_primary_source_limits": "Root this round only metadata/abstract for Dominici/Rosengren, no body or full-paper claim; arithmetic and toric independently actual8/8/10 pages each, not counted as root26 pages. Existing Lai this round root0, toric9, arithmetic budget-review5.",
+  "late_actual_reading": "After own composite review was saved, root actually read complete final cross-review files and all three final peer source receipts; later peer receipt status-only pins supplied separately. Main progress record logs this timing rather than rewriting frozen reviews.",
+  "counts_this_root": {
+    "own_new_mathematical_execution": 1,
+    "old_or_peer_mathematical_execute_import_rerun": 0,
+    "new_primary_html_downloads": 3,
+    "new_primary_pdf_downloads": 0,
+    "actual_primary_pdf_pages_read_this_round": 8,
+    "new_external_repository_source_files": 0,
+    "external_lean_compilation_execution": 0
+  },
+  "all_author_execution_totals": {
+    "mathematical_executions": 5,
+    "successful": 4,
+    "failed": 1,
+    "scope": "Root gcd1, toric budget1, arithmetic structure1; quarter failed-v1 first1 plus distinct successful-v2 first1. Failed source retained and no v1 JSON. All old/peer mathematics execution0."
+  },
+  "unresolved": ["Infinite auxiliary-prime Padé normality and actual nonzero", "Same-determinant strict arithmetic-analytic margin", "Actual integer-valued local full rank/Smith saving", "New zeta/L/Catalan numerical theorem"]
+}

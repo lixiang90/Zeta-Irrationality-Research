@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-06",
+  "author_agent": "/root/toric_chow_completion",
+  "status": "FINAL_AUTHOR_ROOT_AND_FORMAL_INDEPENDENT_MATH_REVIEW_PASSED_FROZEN_READ_ONLY",
+  "proof": {
+    "path": "research/cdt_odd_paired_actual_local_gram_layers_20261006.md",
+    "sha256": "2856a47ab3aa407f1eb7477a57e1e44bd010a7dd95b8cb055a603b68ea091094",
+    "actual_author_read": "All G1-G15, including all equations and final GL clarification, exact gain and execution-history additions; final complete reread."
+  },
+  "own_first_only_producer": {
+    "source": "research/cdt_odd_paired_actual_local_gram_layers_20261006_verify.py",
+    "source_sha256": "e9a512a8bb9f40b6c84144eeeaf52eb9761a0ef0699adc4e82af07d8c0c1ebf9",
+    "output": "research/cdt_odd_paired_actual_local_gram_layers_20261006_verify.json",
+    "output_sha256": "0fd35bb97e6f16a6a7ac273e0bd8baba1b7afc8f91f321c8a038416d4fdd900e",
+    "successful_executions": 1,
+    "failed_executions": 0,
+    "reruns": 0,
+    "guard": "Exclusive-create output before mathematical computation; failure is preserved.",
+    "inputs": "Standard library only, literal definitions and rational affine rows. Reads no old or peer mathematics inputs.",
+    "actual_source_read": "Complete static source before first execution and before mathematical endorsement.",
+    "actual_output_read": "Initial combined output was truncated. A read-only JSON parser then displayed all 45 finite cases, every field and both sources, all 13 affine partition records, every metadata and rational-window field without truncation.",
+    "finite_scope": "n<=18 and n<p<=2n, p>5, p^2>8n: actual original S and exact characteristic-zero paired lifts; original scaled Gram modulo p^2, strong/weak p and weak/weak p^2, sources (0,1),(1,1) and formal X coefficient. Exact affine max comparison is independently certified using Fraction.",
+    "not_implied_by_finite_checks": ["All-scale DND or PNT", "Exact Gram Smith", "Infinite nonzero", "Irrationality or linear independence of any target"]
+  },
+  "new_external_material": {
+    "pdf_files_downloaded": 0,
+    "pdf_pages_archived": 0,
+    "primary_pdf_pages_actually_read_by_author_this_round": 9,
+    "primary_pdf_pages_used_for_own_new_G_theorem": 0,
+    "external_source_or_html_downloads": 0,
+    "reason": "The new local algebra and PNT reduction are self-contained from actually read frozen definitions; no new external theorem is invoked. Nine actual primary pages were read separately for the formal modified-target independent review below; those originals were downloaded by the peer, not this author."
+  },
+  "mathematical_inputs_and_cross_reads_actually_read_this_round": [
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_20261006.md",
+      "sha256": "55278a0ed68b645fc5cb2f3089563e49c30e608ace9de511cc80d37609b712dc",
+      "scope": "Complete B1-B22, including B18 and B20-B22"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "scope": "Complete I1-I25; actual primitive saturated basis and fixed source cost"
+    },
+    {
+      "path": "research/cdt_odd_mixed_double_pole_arithmetic_cost_20261006.md",
+      "sha256": "452b9202ab3460f95e1ac5500092146cbe2ba0f9ed1e0a22bf5acb0a291fe985",
+      "scope": "Complete A1-A14 including A30a; actual form and whole-X costs"
+    },
+    {
+      "path": "research/cdt_odd_paired_large_prime_jet_rank_20261006.md",
+      "sha256": "39a0b6f80c4020602aff6dccded6d8da71ce0288b06a4ad86890be3265deb0f5",
+      "scope": "Complete J1-J23; earlier direct weak-row mechanism and disjoint paid windows"
+    },
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006.md",
+      "sha256": "0fb995f69cefcd4e6c92f7ffa42a8e595add4dda9a94951ed27a4693fb127047",
+      "scope": "Complete D1-D10; current n<p<=2n mixed-carry baseline"
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_verify_20261006.json",
+      "sha256": "7cb512f237d3d29370e164ff3fe69bd319d8685582ef7c6d46d7adf9f738e14b",
+      "scope": "Metadata and all 50 saved affine rows, read-only; no producer execution"
+    },
+    {
+      "path": "research/cdt_odd_paired_weighted_jet_support_budget_20261006.md",
+      "scope": "Complete then-current candidate W1-W10; specified-row rank, matched node minor, joint bound and additional 1/84 paid window independently paper-checked. No source/JSON or Grinberg primary read in this cross-reading; no additional formal review claimed."
+    },
+    {
+      "path": "research/cdt_odd_paired_direct_gram_support_independent_review_20261006.md",
+      "sha256": "80c2095ba8fa2fbc7cf21c83335240c5666e573154644036a0490763b3a9c331",
+      "scope": "Complete actual V1-V7 read after peer froze the formal review; precisely preserves candidate-receipt 87be history, not a claim of future final receipt reading."
+    }
+  ],
+  "other_actual_reads": [
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "scope": "Complete baseline sections 121-126, read-only; no assertion of full main-report read"
+    },
+    {
+      "path": "research/cdt_odd_paired_support_correlated_budget_20261006.md",
+      "sha256_snapshot": "150bb58d8d5a0463bb8747bf1e9e8a549727973b89d133b620b5d3535fd1601e",
+      "scope": "Complete candidate C1-C10; actual support/ragged/DND and all 47 merged affine gain rows read; no peer source or output executed or imported, no formal review document claimed here"
+    }
+  ],
+  "cross_review_confirmations_received": [
+    {
+      "agent": "/root",
+      "scope": "Initially actual full G1-G15 at 57111377; then confirmed actual final complete 2856 G1-G15, full static e9a source, every field of all 45 finite JSON cases and all 13 affine records, mathematical review passed. Root formal combined review final a8493b979e4a3f6ea9dcf2e90819cb688c405461a724435ec47a9af6ea46d3c9 announced; this author does not claim to have read that root review here."
+    },
+    {
+      "agent": "/root/quarter_actual_rank",
+      "scope": "Actually read complete earlier 57111377 G1-G15 including all equations; independently checked DND, exact original S lifts, ragged psi/unit-tail kernel and paid comparison; source/output not yet read in this confirmation"
+    },
+    {
+      "agent": "/root/conifold_arithmetic_hypothesis",
+      "formal_review": "research/cdt_odd_paired_direct_gram_support_independent_review_20261006.md",
+      "formal_review_sha256": "80c2095ba8fa2fbc7cf21c83335240c5666e573154644036a0490763b3a9c331",
+      "scope": "Actual complete final 2856 G1-G15, full static own e9a source and all 45 case fields/two sources/all 13 affine records/metadata, candidate receipt87be, and old dual0fb complete; all-scale mathematical scope independently passed. Formal review frozen after actual full self-reread; no peer execution."
+    }
+  ],
+  "author_new_formal_independent_review": {
+    "path": "research/cdt_odd_paired_jacobi_modified_target_normality_independent_review_20261006.md",
+    "sha256": "e637161d8c60bad3f7795b559a0330b5c764be8d312a33179edbfdd739153e5b",
+    "peer_proof_sha256": "c4dcee183239be55ab6c4e06d4b1abb1979657838f02a5c64104c45cc1fed9c4",
+    "peer_source_sha256": "4f525b33ca7664912192daab4628db39a992ed9f3bea1df753bc6e3f253aa69b",
+    "peer_output_sha256": "b9f5285e3440101fa326a00c0303259262202aa428073374ec00727fa1d31a84",
+    "peer_final_receipt_sha256": "fa77214875c2beb909739791013054c8dbff87cbf9c587768e1ad2be8295fd4d",
+    "actual_read_scope": "Complete peer 13sections/T1-T27, complete static source and all three saved JSON cases/every field, candidate receipt d1d671 then complete final fa772 receipt; final own V1-V8 self-reread before freeze.",
+    "conclusion": "Actual fixed-lambda2 norm-free Loewner/bordered/compound identities, full-Q N-profile unit and finite-support Christoffel independent proof passed. Diagnostic lambda6/8 counterexamples are not actual lambda2 counterexamples; no critical infinite unit or fee/margin theorem endorsed.",
+    "mathematical_execution_for_review": 0,
+    "sources_actually_read": [
+      {
+        "path": "literature/cdt_paired_modified_target_sources_20261006/krattenthaler2021_modified_hankel_christoffel_arxiv2101_04225v1.pdf",
+        "sha256": "6ee728bafe1ac1467050df139da6e86c9395f7fb7f7c77b769d0bb5388120fff",
+        "actual_pdf_pages": [1,2,3,13,14],
+        "actual_distinct_pages": 5,
+        "scope": "Theorem1 characteristic zero/all nonzero norms and confluence ordinary-derivative factorial; PDF2 rendered/viewed. Not full PDF."
+      },
+      {
+        "path": "literature/cdt_paired_modified_target_sources_20261006/alvarez_fernandez_etal2015_matrix_christoffel_arxiv1511_04771v1.pdf",
+        "sha256": "082d479245929dc979f510fe5f082468de37d003623c6989c01def7c99759ded",
+        "actual_pdf_pages": [8,9,15,16],
+        "actual_distinct_pages": 4,
+        "scope": "All-leading-block nonsingularity/Gauss and Theorem2 explicit det Pi nonzero/inverse condition; PDF15 rendered/viewed. Not full PDF."
+      }
+    ],
+    "pdf_reading_operations": "Read-only pypdf extraction and two-page fitz render/view; no authored PDF, no mathematical producer execution."
+  },
+  "all_scale_mathematical_scope": {
+    "same_object": "Original B6/k3/s5, degree<3n, rank2n primitive paired integer-valued lattice; fixed original S.",
+    "direct_DND": "p>5, p^2>8n; weak directions are the actual unit-tail value and p-scaled derivative kernel in U/pU. Exact S-coordinate lifts give p^5 B=DND over Z_p[X], hence v_Gauss D_A>=-10n+2k.",
+    "window_rank_cap": "n<p<=2n; Q=floor(3n/p), R=3n-Qp, u=min(6n mod p+1,2p-2n); actual weak dimension >=[2n-Qu-min(R,u)]_+.",
+    "paid_gain": "16469/23100 against the already-paid entry/common-minor/Plucker baseline, not against entrycap alone.",
+    "standalone_safe_A": "3887231721011/89625135600 in (43.372115,43.372116).",
+    "limitations": "Safe upper fee, not actual content equality/cost lowerbound. No exact Gram Smith, infinite nonzero, strict analytic/arithmetic margin or new special-value theorem. Overlapping new windows must use common max; disjoint p<=n improvements may be added after review."
+  },
+  "execution_policy": {
+    "old_or_peer_mathematical_producer_execution_import_rerun": 0,
+    "external_lean_execution": 0,
+    "frozen_old_or_peer_file_edits": 0,
+    "read_only_locator_errors": "Two guessed old path names in a hash command were absent; actual rg locations were then used. No mathematical producer failure or execution occurred in that lookup."
+  }
+}

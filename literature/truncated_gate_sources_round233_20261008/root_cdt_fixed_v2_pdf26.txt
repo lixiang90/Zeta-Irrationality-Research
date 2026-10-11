@@ -1,0 +1,68 @@
+26                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+holomorphic function along all paths in DR ∖ Σ. Let us define the subset Σ+ f ⊂ Σ,
+to necessarily include 0 if 0 ∈ Σ, to consist of those β ∈ Σ for which the radial
+analytic continuation of f (x) ∈ CJxK from x = 0 towards x = β remains bounded.
+We say that the power series f (x) is overconvergent at Σ+
+                                                         f and extends to DR ∖Σ as
+a multivalued holomorphic function. Then the radius of convergence of the initial
+power series germ f (x) ∈ CJxK is equal to minβ∈({R}∪Σ)∖Σ+ |β|. The following
+                                                               f
+trivial lemma is crucial for our approach to Theorems A and C; we note that this
+type of statement on compatibility with integrations becomes completely false if we
+replace holomorphic by meromorphic everywhere in the previous paragraph.
+Lemma 2.9.1. There is an equality Σ+
+                                   Rx
+                                      f (t) dt
+                                               = Σ+
+                                                  f.
+                                        0
+
+   Given now a holomorphic mapping φ : D → DR with φ(0) = 0, we can apply
+the same notion to the pulled-back power series f (φ(z)) ∈ CJzK, which is a z = 0
+holomorphic function germ that extends to D ∖ φ−1 (Σ) as a multivalued holomor-
+phic function. In general, there is no relationship between the overconvergence sets
+                              +
+Σ+f ⊂ Σ ⊂ DR and φ
+                      −1
+                         (Σ) φ∗ f ⊂ φ−1 (Σ) ⊂ D for f and φ∗ f .
+   But suppose there is a contractible open neighborhood 0 ∈ Ω ∈ D on which
+         ≃
+φ|Ω : Ω −→ φ(Ω) is univalent and, therefore, a conformal isomorphism onto the
+image open neighborhood φ(U ) ∋ 0. Assume furthermore that φ−1 (0) = {0} and
+that each point in φ(Ω) ∩ Σ+ f has exactly one pre-image under the analytic map φ,
+that is:                                        
+                               φ−1 φ(Ω) ∩ Σ+   f   ⊂ Ω.
+Then, in particular, f (φ(z)) is holomorphic on at least Ω:
+                        +                                   
+          φ−1 (Σ) ∩ Ω φ∗ f = φ−1 Σ+   f  ∩ Ω = φ−1 Σ+   f ∩ φ(Ω) .           (2.9.2)
+This is the univalence input we alluded to. If now, in addition, φ(D) ∩ Σ =
+Σ+
+ f ∩ φ(Ω), it follows at once  that the multivalued holomorphic function f (φ(z)) on
+                                                         +
+      −1              −1     +
+D ∖ φ (Σ) = D ∖ φ           Σf ∩ φ(Ω) = D ∖ φ−1 (Σ) ∩ Ω φ∗ f is in fact a (single-
+valued) holomorphic function on the whole disc D, that is a convergent power series
+on that disc.
+   We summarize the basic property that we just proved:
+Proposition 2.9.3. Let f ∈ CJxK be a holomorphic function germ which extends
+as a multivalued holomorphic function on the Riemann surface P1 ∖ Σ, for some
+finite set of punctures Σ on the Riemann sphere. Consider a disjoint partition
+Σ = Σ0 ⊔ Σ1 , a holomorphic map φ : D → P1 ∖ Σ1 that takes φ(0) = 0, and
+a contractible open neighborhood 0 ∈ Ω ⊂ D on which φ restricts as a univalent
+                            ≃
+map (equivalently:          → φ(Ω) is a conformal isomorphism). We assume that
+                    φ|Ω : Ω −
+φ−1 Σ0 ⊂ Ω and that f ∈ O(φ(Ω)) is holomorphic on φ(Ω).
+         
+
+   Then, the pulled-back germ f (φ(z)) ∈ CJzK converges on the full disc D.
+Remark 2.9.4. The assumptions on the triple (φ, Ω, Σ) in Proposition 2.9.3 can
+alternatively, and slightly more succinctly, be summarized by having a holomor-
+phic mapping φ : (D, 0) → (C, 0) that restricts univalently on the contractible
+open neighborhood Ω ∋ 0, and such that φ−1 (Σ) ⊂ Ω for the finite puncture set Σ.
+We chose the formulation with Σ = Σ0 ⊔ Σ1 to highlight the practical presence of
+universal maps φ when the singularity type (Σ0 , Σ1 ) is given but the open neigh-
+borhood Ω ∋ 0 is kept unspecified.
+

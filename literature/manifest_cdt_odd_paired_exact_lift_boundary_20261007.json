@@ -1,0 +1,86 @@
+{
+  "schema": "cdt-odd-final-paper-source-receipt-v1",
+  "date": "2026-10-07",
+  "author_agent": "/root/source_pencil_finalize",
+  "state": "FINAL_FROZEN",
+  "main": {
+    "path": "research/cdt_odd_paired_exact_lift_boundary_20261007.md",
+    "sha256": "ca43e16f8e3ae6c0c70b3adfa8e4460a877ccdb939ce96675be9e94edee68a79",
+    "actual_complete_selfread": true,
+    "scope": "E1-E8, all E1-E19 equations; exact original paired lift boundary and harmonic closed forms"
+  },
+  "independent_review": {
+    "path": "research/cdt_odd_paired_exact_lift_boundary_independent_review_20261007.md",
+    "sha256": "634e4ed9e093467aebe13b01543bca1887ec25f198152addba10e391b8929f66",
+    "reviewer": "/root",
+    "result": "PASS_WITH_STATED_SCOPE",
+    "actual_complete_author_read_of_review": true,
+    "corrections_required": false
+  },
+  "actual_complete_read_pins": [
+    {
+      "path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006.md",
+      "sha256": "4d907340bf9752b3fee94173ecaaddfd81b11cfb5760e8c9954ae4528ce6581b",
+      "scope": "A1-A13, complete file; literal e_z product and original actual constraints"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "scope": "I1-I10, complete file; primitive gcd and saturated original lattice"
+    },
+    {
+      "path": "research/cdt_odd_paired_source_radical_response_20261007.md",
+      "sha256": "10897f75c7a2cb932988a751a25a85dafd79640b715090b7715fc96aeaa37a7a",
+      "scope": "S1-S14 and provenance, complete file; exact theta kernel reconstruction"
+    },
+    {
+      "path": "research/cdt_odd_paired_source_pencil_regular_20261007.md",
+      "sha256": "879d8889c956d63b7b3c840c94f958a3011541698c25c1b6938c80ef7e506f8a",
+      "scope": "P1-P7 and P1-P18 equations, complete file; actual first residual precision interface"
+    },
+    {
+      "path": "research/cdt_odd_paired_reference_jet_completion_20261007.md",
+      "sha256": "944a8bf8dcc19f1baba2c8f56bae480739ff5c2e2d4e28ea5483efeade13bd68",
+      "scope": "J1-J6, all J1-J14 equations, complete final file; preceded by actual complete candidate read"
+    },
+    {
+      "path": "research/cdt_odd_paired_reference_jet_completion_independent_review_20261007.md",
+      "sha256": "203c6a59ff68d1f4596f0d9e1e605d1cf3e4e9d9a3e18dbc4fedbd4db298785d",
+      "scope": "complete selfread of own final independent review, PASS"
+    }
+  ],
+  "verified_new_paper_results": [
+    "Every order-d exact correction of an original E-weighted paired reference has a unique L-boundary given by its normalized head pair defects",
+    "An explicit head-cardinal correction of degree below 8r satisfies the original characteristic-zero paired constraints exactly within the original saturated local lattice",
+    "Weak order-two boundary is the explicit finite head sum with H_(4r+z)^(2)+H_(6r+z-1)^(2), with no arbitrary negative-value corrections",
+    "Strong references can be chosen with exact A-weighted head pairing, then corrected to actual E-weighted pairing; their L-boundary is an explicit first-harmonic head sum",
+    "The actual first residual interface can therefore use fully known lift boundaries while retaining reference mod-p-squared carry",
+    "Independent review confirms root actual reference-jet completion, source-invisible known subform and conditional quadratic compressed gate"
+  ],
+  "not_proved": [
+    "Unit or regularity of the completed actual first residual on infinitely many auxiliary primes",
+    "A fixed rational source coefficient successful on infinitely many primes",
+    "Infinite actual whole determinant nonzero or actual higher Smith exponents",
+    "Strict analytic-arithmetic margin or new n-squared arithmetic credit",
+    "Any new numerical irrationality, linear independence or transcendence theorem for zeta, L values or Catalan constant"
+  ],
+  "execution_history_this_agent_this_round": {
+    "new_mathematical_producer_executions": 0,
+    "mathematical_failures": 0,
+    "mathematical_reruns": 0,
+    "old_or_peer_execute": 0,
+    "old_or_peer_import": 0,
+    "auxiliary_unit_prime_table_extensions": 0,
+    "lean_executions": 0,
+    "new_primary_pdf_downloads": 0,
+    "actual_primary_pdf_pages_read": 0,
+    "non_mathematical_locator_failure": "One unsupported Windows path glob failed; subsequent locating rg output was truncated and used only to identify the source file, followed by actual complete specified Markdown reads"
+  },
+  "baseline": {
+    "previous_frozen_records": 529,
+    "mutations_to_previous_frozen_records": 0,
+    "this_agent_did_not_independently_rehash_all_529": true,
+    "authoritative_global_baseline_verification_owned_by_root": true
+  },
+  "freeze_policy": "This receipt and all its new paper/review pins are immutable after final actual complete read, JSON parse and physical SHA verification. Candidate/pending prose in pinned papers is superseded by this final receipt. Root final receipt may pin this receipt without modifying it. No mutable main progress file, audit, or future receipt is pinned."
+}

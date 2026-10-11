@@ -1,0 +1,73 @@
+{
+  "status": "All checks passed; uniform determinant localization remains unproved.",
+  "q4_scan_count": 118,
+  "q4_lower_half_count": 79,
+  "q4_lower_half_equalities": 78,
+  "fixed_weight_count": 54,
+  "upper_slice_count": 25,
+  "repeated_count": 23,
+  "repeated_q_at_least4": 20,
+  "repeated_q_at_least4_equalities": 20,
+  "full_polynomial_cross_checks": [
+    {
+      "K": 120,
+      "N": 3,
+      "p": 29,
+      "exact_all_coefficients_gauss": -640,
+      "modular_gauss": -640,
+      "candidate": -640
+    },
+    {
+      "K": 160,
+      "N": 4,
+      "p": 37,
+      "exact_all_coefficients_gauss": -863,
+      "modular_gauss": -863,
+      "candidate": -863
+    },
+    {
+      "K": 160,
+      "N": 4,
+      "p": 31,
+      "exact_all_coefficients_gauss": -800,
+      "modular_gauss": -800,
+      "candidate": -800
+    }
+  ],
+  "laurent_rank_checks": 474,
+  "schur_count": 26,
+  "schur_model_verified": 22,
+  "singular_complements": [
+    {
+      "p": 11,
+      "N": 1,
+      "r": 1,
+      "unit_rank": 39,
+      "eliminated": 40
+    },
+    {
+      "p": 17,
+      "N": 1,
+      "r": 1,
+      "unit_rank": 50,
+      "eliminated": 64
+    },
+    {
+      "p": 17,
+      "N": 2,
+      "r": 2,
+      "unit_rank": 49,
+      "eliminated": 61
+    },
+    {
+      "p": 43,
+      "N": 4,
+      "r": 5,
+      "unit_rank": 127,
+      "eliminated": 160
+    }
+  ],
+  "rational_scalar": "1496248331341/26215472880",
+  "lower_half_conditional_gain": "13571/5184000",
+  "upper_slice_conditional_gain": "7/16000"
+}

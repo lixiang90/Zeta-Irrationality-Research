@@ -1,0 +1,141 @@
+and Theorem 4 follows. If K ⊂ R, we have:
+
+                             K ⊂ GQ ∩ R ⊂ GQ(i) ∩ R = GQ ⊂ GK
+                            Gcv   a.c.     cv          cv   cv
+
+
+so that GcvK = GQ . The inclusion GK ⊂ GQ = GQ + iGQ is trivial; let us prove that
+                  cv                   a.c.        a.c.         cv     cv
+
+  Q + iGQ ⊂ GK . Let ξ1 , ξ2 ∈ GQ , and f , g, h be G-functions with rational coeﬃcients
+Gcv       cv     a.c.               cv
+                                                                                          √
+                                                                                          4
+and radii of convergence
+                       √   >  2  such  that    f (1)   =   ξ1 ,  g(1) =   ξ2 , and h(1) =   2. Then
+k(z) = f (z) + g(z)h(z) 1 − 2 is a G-function with coeﬃcients in Q ⊂ K, and ξ1 + iξ2 is
+                        4      z
+
+the value at 1 of an analytic continuation of k (obtained after a small loop around z = 2).
+                                  K = GQ + iGQ if K ⊂ R.
+This concludes the proof that Ga.c.         cv          cv
+
+
+    The rest of the section is devoted to the proof that GQ         a.c.
+                                                                            Q(i) . Let ξ ∈ GQ ; we
+                                                                         ⊂ Gcv                   a.c.
+                                                              ∑∞
+may assume ξ ̸= 0. There exists a G-function f (z) = n=0 an z n with coeﬃcients an ∈ Q,
+and z0 ∈ Q, such that ξ is one of the values at z0 of the multivalued analytic continuation
+of f . Replacing f (z) with f (z0 z), we may assume z0 = 1. Let L denote the minimal
+diﬀerential equation satisiﬁed by f , and ξ1 , . . . , ξp be the singularities of L. To keep the
+notation simple (and because the general case can be proved along the same lines), we
+shall assume that there is an open subset D ⊂ C (as in §4.1) such that 1 ∈ D∑           ∪ {ξ1 , . . . , ξp }
+and ξ = f (1), where f denotes the analytic continuation of the G-function                an z n to D.
+If 1 is a singularity of L then f (1) is the (necessarily ﬁnite) limit of f (z) as z → 1, z ∈ D.
+    The coeﬃcients an (n ≥ 0) belong to a number ﬁeld K = Q(β) for some primitive
+element β of degree d say. We can assume without loss of generality that K is a Galois
+extension of Q, i.e, that all Galois conjugates of β are in K. There exist∑d sequences of
+rational numbers (uj,n )n≥0 , j = 0, . . . , d − 1, such that, for all n ≥ 0, an = d−1              j
+                                                                                       j=0 uj,n β and
+thus (at least formally)
+                                          ∑
+                                          ∞              ∑
+                                                         d−1              ∑
+                                                                          ∞
+                                                   n                  j
+                                f (z) =         an z =            β             uj,n z n .            (5.1)
+                                          n=0               j=0           n=0
+                                 ∑∞           n
+The power series Uj (z) =          n=0 uj,n z are G-functions (see [17], Proposition VIII.1.4,
+p. 266), so that Equation (5.1) holds as soon as |z| is suﬃciently small. Moreover Uj has
+rational coeﬃcients, so that it satisﬁes a diﬀerential equation with coeﬃcients in Q[z] (see
+for instance [17], Proposition VIII.2.1 (iv), p. 268). We let Lj denote a minimal one, of
+order µj . Let Sj denote the set of singularities of Lj , and S = S0 ∪ · · · ∪ Sd−1 . Let Γ
+denote a compact broken line without multiple points from 0 to 1 inside D ∪ {0, 1}. Since
+S is a ﬁnite set, we may assume that Γ ∩ S ⊂ {0, 1} and ﬁnd a (small) simply connected
+open subset Ω ⊂ C such that Γ \ {0, 1} ⊂ Ω ⊂ D \ {1} and Ω ∩ S = ∅. If Γ and Ω are
+chosen appropriately, it is possible to construct D0 , . . . , Dd−1 as in §4.1 (with respect to
+L0 , . . . , Ld−1 ) such that Ω ⊂ D0 ∩ · · · ∩ Dd−1 . Since Ω is simply connected and 1 ̸∈ Ω, we
+choose a continuous determination of log(1 − z) for z ∈ Ω. Now Equation (5.1) holds in a
+neighborhood of 0, and 0 lies in the closure of Ω so that, by analytic continuation,
+                                           ∑
+                                           d−1
+                                 f (z) =         β j Uj (z) for any z ∈ Ω.                            (5.2)
+                                           j=0
+
+
+                                                       19
+We shall now expand this equality around the point 1, which lies also in the closure
+of Ω. For any j ∈ {0, . . . , d − 1}, let (gj,1 , . . . , gj,µj ) denote a basis of solutions of the
+diﬀerential equation Lj y = 0 provided by Theorem 6 with ζ = 1. Then Theorem 7 gives
+                        Q(i) such that Uj (z) = ϖj,1 gj,1 (z) + · · · + ϖj,µj gj,µj (z) for any z ∈ Ω.
+ϖj,1 , . . . , ϖj,µj ∈ Gcv
+Since β ∈ GQ(i) by 7, Equation (5.2) yields ﬁnite subsets S ⊂ N and T ⊂ Q such that,
+            j       cv
+
+for z ∈ Ω suﬃciently close to 1:
+                                   ∑∑(                 )s
+                           f (z) =          log(1 − z) (1 − z)t Fs,t (1 − z)
+                                 s∈S t∈T
+
+where the functions Fs,t (z) are holomorphic at 0 and have Taylor coeﬃcients at 0 in Gcv    .
+                                                                       (            )σ Q(i)
+Then Lemma 5 gives c ∈ GQ(i) , σ ∈ N and τ ∈ Q such that f (z) = c log(1 − z) (1 −
+                               cv
+
+z)τ (1 + o(1)) as z → 1 with z ∈ Ω. Since lim f (z) = ξ ̸= 0, we have σ = τ = 0 and
+                                               z→1
+ξ = c ∈ GcvQ(i) . This concludes the proof of Theorem 4.
+
+
+
+6     Rational approximations to quotients of values of
+      G-functions
+This section is devoted to the proof of Theorem 5: in §6.1 we prove that (i) ⇒ (iii), and
+in §6.2 that (ii) ⇒ (i). Since (iii) obviously implies (ii), this will conclude the proof.
+
+6.1     Construction of rational approximants
+Assume that∑                       Let ξ1 , ξ2 ∈ Gcv
+              assertion (i) holds. ∑               K \ {0} be such that ξ = ξ1 /ξ2 . Let R ≥ 1,
+               ∞                     ∞
+                       n
+and U (z) = n=0 un z , V (z) = n=0 v∑         n
+                                          n z be G-functions with coeﬃcients
+                                                                      ∑∞         in K and radii
+                                             ∞
+of convergence > R, such that   U
+                               ∑n  (1) =         u   =
+                                             n=0 n ∑ 1 ξ and V (1) =   ∑n=0 v n = ξ2 .
+                                                                          ∞
+    For any n ≥ 0, let an = k=0 uk and bn = k=0 vk , A(z) = n=0 an z and B(z) =
+                                                       n                         n
+∑∞         n
+                                   ∑∞ n          U (z)              V (z)
+   n=0 bn z . Then A(z) = U (z)       n=0 z = 1−z and B(z) = 1−z are G-functions with
+coeﬃcients in K and radii of convergence = 1. Moreover lim an = ξ1 and lim bn = ξ2
+                                                                    n→+∞                     n→+∞
+so that an , bn ̸= 0 for any n suﬃciently large, and
+                                                      ∑
+                                                      ∞                     ∑
+                                                                            ∞
+                                                                                             (    )
+         an − ξbn = (an − ξ1 ) − ξ(bn − ξ2 ) ≤                |uk | + |ξ|           |vk | = O R−n
+                                                      k=n+1                 k=n+1
+
+because un , vn = O(R−n ) as n → +∞ and we may assume R ≥ 2. Therefore A(z) − ξB(z)
+has radius of convergence ≥ R, thereby concluding the proof that (i) ⇒ (iii).
+
+6.2     Application of Singularity Analysis
+Let us prove that
+                ∑(ii)   ⇒ (i) in Theorem ∑
+                                         5.
+   Let A(z) = n=0 an z and B(z) = ∞
+                   ∞      n
+                                            n=0 bn z be G-functions with coeﬃcients in K,
+                                                    n
+
+such that bn ̸= 0 for inﬁnitely many n and an − ξbn = o(bn ). Since ξ ̸= 0, we have an ̸= 0
+
+                                                 20
+

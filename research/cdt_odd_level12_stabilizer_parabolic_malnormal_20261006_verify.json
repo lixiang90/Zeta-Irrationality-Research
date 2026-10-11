@@ -1,0 +1,115 @@
+{
+  "execution_record": "First and single NEW fixed run; no old or peer producers imported or executed; no parameter, word, or prime scans.",
+  "passed": 24,
+  "checks": [
+    {
+      "name": "M determinant 12",
+      "passed": true
+    },
+    {
+      "name": "A4 determinant one",
+      "passed": true
+    },
+    {
+      "name": "A5 determinant one",
+      "passed": true
+    },
+    {
+      "name": "x4 primitive cusp scaling PSL central minus",
+      "passed": true
+    },
+    {
+      "name": "x5 primitive cusp scaling exact",
+      "passed": true
+    },
+    {
+      "name": "Gamma self-cusp 4 lower-left identity",
+      "passed": true
+    },
+    {
+      "name": "Gamma self-cusp 5 lower-left identity",
+      "passed": true
+    },
+    {
+      "name": "odd self-cusp 4 numerator identity",
+      "passed": true
+    },
+    {
+      "name": "odd self-cusp 5 numerator identity",
+      "passed": true
+    },
+    {
+      "name": "even cusp4 multiple four full congruence",
+      "passed": true
+    },
+    {
+      "name": "even cusp5 multiple three full congruence",
+      "passed": true
+    },
+    {
+      "name": "odd cusp4 bracket equals kappa modulo12",
+      "passed": true
+    },
+    {
+      "name": "odd cusp5 bracket equals kappa modulo12",
+      "passed": true
+    },
+    {
+      "name": "theta0 strictly between0 and1",
+      "passed": true
+    },
+    {
+      "name": "minimum common height exceeds1/12",
+      "passed": true
+    },
+    {
+      "name": "even cusp4 height exceeds reciprocal Csquare",
+      "passed": true
+    },
+    {
+      "name": "even cusp5 height exceeds reciprocal Csquare",
+      "passed": true
+    },
+    {
+      "name": "odd cusp4 r>=2 threshold",
+      "passed": true
+    },
+    {
+      "name": "odd cusp5 r>=2 threshold",
+      "passed": true
+    },
+    {
+      "name": "r1 discriminant ratio exact",
+      "passed": true
+    },
+    {
+      "name": "ratio is integer and congruent2 modulo3",
+      "passed": true
+    },
+    {
+      "name": "trace0 det12 fixed discriminant -48",
+      "passed": true
+    },
+    {
+      "name": "actual cocycle frozen pin",
+      "passed": true
+    },
+    {
+      "name": "full group frozen pin",
+      "passed": true
+    }
+  ],
+  "identities": {
+    "Gamma_cusp4": "4*a - 16*b + c - 4*d",
+    "Gamma_cusp5": "6*a - 9*b + 4*c - 6*d",
+    "odd_integer_cusp4": "208*a + 720*b + 52*c + 180*d",
+    "odd_integer_cusp5": "207*a + 720*b + 138*c + 480*d",
+    "r1_discriminant_ratio": "3916697600",
+    "theta0": "232577/844561"
+  },
+  "scope": "Only fixed algebra inputs; all-group cusp stabilizers, root transformation, and unknown stabilizer argument are proofs in the Markdown.",
+  "pins": {
+    "cdt_odd_level12_generator_cocycle_20261006.md": "a3f00c593a9fcc3f9b1791b854faa0ad7b721b6c76d67cc52598cd5f919f67ca",
+    "cdt_odd_level12_schreier_presentation_20261006.md": "92ed43b8a1426c66eb65898b016a38012263ae876e753c1bbae2496d104fff9e"
+  }
+}

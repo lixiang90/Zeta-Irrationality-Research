@@ -1,0 +1,616 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/23.17";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./23#PT3" title="Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="up up" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./23.16" title="§23.16 Graphics ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="next" href="./23.18" title="§23.18 Modular Transformations ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.1" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.2" title="§23.2 Definitions and Periodic Properties ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.3" title="§23.3 Differential Equations ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.4" title="§23.4 Graphics ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.5" title="§23.5 Special Lattices ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.6" title="§23.6 Relations to Other Functions ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.7" title="§23.7 Quarter Periods ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.8" title="§23.8 Trigonometric Series and Products ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.9" title="§23.9 Laurent and Other Power Series ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.10" title="§23.10 Addition Theorems and Other Identities ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.11" title="§23.11 Integral Representations ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.12" title="§23.12 Asymptotic Approximations ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.13" title="§23.13 Zeros ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.14" title="§23.14 Integrals ‣ Weierstrass Elliptic Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.15" title="§23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.16" title="§23.16 Graphics ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.18" title="§23.18 Modular Transformations ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.19" title="§23.19 Interrelations ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.20" title="§23.20 Mathematical Applications ‣ Applications ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.21" title="§23.21 Physical Applications ‣ Applications ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.22" title="§23.22 Methods of Computation ‣ Computation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.23" title="§23.23 Tables ‣ Computation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="section" href="./23.24" title="§23.24 Software ‣ Computation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Laurent series, elementary properties, infinite products, modular functions, power series, special values">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./23" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">23 </span>Weierstrass Elliptic and Modular <span class="ltx_text"> </span>Functions</span></a><a href="./23#PT3" title="In Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Modular Functions</span></a><a href="./23.16" title="In Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">23.16 </span>Graphics</span></a><a href="./23.18" title="In Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">23.18 </span>Modular Transformations</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§23.17 </span>Elementary Properties</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=elementary%20properties">elementary properties</a>, <a class="ltx_keyword" href="./search/search?q=modular%20functions">modular functions</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17" title="" class="ltx_ref">http://dlmf.nist.gov/23.17</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§23.17(i) </span>Special Values</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§23.17(ii) </span>Power and Laurent Series</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§23.17(iii) </span>Infinite Products</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§23.17(i) </span>Special Values</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=modular%20functions">modular functions</a>, <a class="ltx_keyword" href="./search/search?q=special%20values">special values</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Walker (<a href="./bib/W#bib2359" title="Elliptic Functions. A Constructive Approach" class="ltx_ref">1996</a>, §7.5)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.i" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<div class="ltx_equationgroup_container">
+<table id="E1" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">23.17.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m12.png" altimg-height="40px" altimg-valign="-7px" altimg-width="62px" alttext="\displaystyle\lambda\left(i\right)" display="inline"><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m5.png" altimg-height="31px" altimg-valign="-9px" altimg-width="48px" alttext="\displaystyle=\tfrac{1}{2}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m11.png" altimg-height="43px" altimg-valign="-9px" altimg-width="101px" alttext="\displaystyle\lambda\left(\textstyle e^{\pi i/3}\right)" display="inline"><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m6.png" altimg-height="30px" altimg-valign="-6px" altimg-width="78px" alttext="\displaystyle=e^{\pi i/3}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./23.15#E6" title="(23.15.6) ‣ Elliptic Modular Function ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\lambda\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math>: elliptic modular function</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E1" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E1a.tex">TeX</a>, <a href="./23.17.E1b.tex">TeX</a>, <a href="./23.17.E1a.pmml">pMML</a>, <a href="./23.17.E1b.pmml">pMML</a>, <a href="./23.17.E1a.png">png</a>, <a href="./23.17.E1b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#i.info" title="§23.17(i) Special Values ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(i)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equationgroup_container">
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">23.17.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m8.png" altimg-height="40px" altimg-valign="-7px" altimg-width="63px" alttext="\displaystyle J\left(i\right)" display="inline"><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=1," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m7.png" altimg-height="43px" altimg-valign="-9px" altimg-width="103px" alttext="\displaystyle J\left(\textstyle e^{\pi i/3}\right)" display="inline"><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="23px" altimg-valign="-6px" altimg-width="45px" alttext="\displaystyle=0," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./23.15#E7" title="(23.15.7) ‣ Klein’s Complete Invariant ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="J\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math>: Klein’s complete invariant</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a> and
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E2" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E2a.tex">TeX</a>, <a href="./23.17.E2b.tex">TeX</a>, <a href="./23.17.E2a.pmml">pMML</a>, <a href="./23.17.E2b.pmml">pMML</a>, <a href="./23.17.E2a.png">png</a>, <a href="./23.17.E2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#i.info" title="§23.17(i) Special Values ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(i)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equationgroup_container">
+<table id="E3" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="2" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">23.17.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m10.png" altimg-height="40px" altimg-valign="-7px" altimg-width="61px" alttext="\displaystyle\eta\left(i\right)" display="inline"><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="54px" altimg-valign="-17px" altimg-width="88px" alttext="\displaystyle=\frac{\Gamma\left(\tfrac{1}{4}\right)}{2\pi^{3/4}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mrow><mn>3</mn><mo>/</mo><mn>4</mn></mrow></msup></mrow></mfrac></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m9.png" altimg-height="43px" altimg-valign="-9px" altimg-width="100px" alttext="\displaystyle\eta\left(\textstyle e^{\pi i/3}\right)" display="inline"><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="59px" altimg-valign="-16px" altimg-width="225px" alttext="\displaystyle=\frac{3^{1/8}\left(\Gamma\left(\tfrac{1}{3}\right)\right)^{3/2}}%
+{2\pi}e^{\pi i/24}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mn>3</mn><mrow><mn>1</mn><mo>/</mo><mn>8</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo></mrow></mrow><mo>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></mrow><mo>/</mo><mn>24</mn></mrow></msup></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.14#E12" title="(27.14.12) ‣ §27.14(iv) Relation to Modular Functions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\eta\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">τ</mi><mo>)</mo></mrow></mrow></math>: Dedekind’s eta function (or Dedekind modular function)</a>,
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m20.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a> and
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./22.20#Px3.p1" title="Example 1 ‣ §22.20(iv) Lattice Calculations ‣ §22.20 Methods of Computation ‣ Computation ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.20(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E3" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E3a.tex">TeX</a>, <a href="./23.17.E3b.tex">TeX</a>, <a href="./23.17.E3a.pmml">pMML</a>, <a href="./23.17.E3b.pmml">pMML</a>, <a href="./23.17.E3a.png">png</a>, <a href="./23.17.E3b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#i.info" title="§23.17(i) Special Values ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(i)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">For further results for <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="J\left(\tau\right)" display="inline"><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math> see <cite class="ltx_cite ltx_citemacro_citet">Cohen (<a href="./bib/C#bib555" title="A Course in Computational Algebraic Number Theory" class="ltx_ref">1993</a>, p. 376)</cite>.</p>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§23.17(ii) </span>Power and Laurent Series</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Laurent%20series">Laurent series</a>, <a class="ltx_keyword" href="./search/search?q=modular%20functions">modular functions</a>, <a class="ltx_keyword" href="./search/search?q=power%20series">power series</a>
+</dd>
+<dt>Notes:</dt>
+<dd>Combine §<a href="./23.15#ii" title="§23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">23.15(ii)</span></a> with the <math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>-expansions of the theta
+functions obtained by setting <math class="ltx_Math" altimg="m27.png" altimg-height="17px" altimg-valign="-2px" altimg-width="53px" alttext="z=0" display="inline"><mrow><mi href="./23.1#t1.r4" title="complex">z</mi><mo>=</mo><mn>0</mn></mrow></math> in §<a href="./20.2#i" title="§20.2(i) Fourier Series ‣ §20.2 Definitions and Periodic Properties ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.2(i)</span></a>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.ii" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">When <math class="ltx_Math" altimg="m28.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|q|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./23.1#t1.r12" title="nome">q</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math></p>
+<div class="ltx_equation_container">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">23.17.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="40px" altimg-valign="-7px" altimg-width="350px" alttext="\lambda\left(\tau\right)=16q(1-8q+44q^{2}+\cdots)," display="block"><mrow><mrow><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>16</mn><mo>⁢</mo><mi href="./23.1#t1.r12" title="nome">q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>−</mo><mrow><mn>8</mn><mo>⁢</mo><mi href="./23.1#t1.r12" title="nome">q</mi></mrow></mrow><mo>+</mo><mrow><mn>44</mn><mo>⁢</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mn>2</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./23.15#E6" title="(23.15.6) ‣ Elliptic Modular Function ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\lambda\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math>: elliptic modular function</a>,
+<a href="./23.1#t1.r12" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>:  nome</a> and
+<a href="./23.1#t1.r10" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./23.1#t1.r10" title="complex variable">τ</mi></math>:  complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E4" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E4.tex">TeX</a>, <a href="./23.17.E4.pmml">pMML</a>, <a href="./23.17.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#ii.info" title="§23.17(ii) Power and Laurent Series ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(ii)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">23.17.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="40px" altimg-valign="-7px" altimg-width="606px" alttext="1728J\left(\tau\right)=q^{-2}+744+1\;96884q^{2}+214\;93760q^{4}+\cdots," display="block"><mrow><mrow><mrow><mn>1728</mn><mo>⁢</mo><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>744</mn><mo>+</mo><mrow><mn>1 96884</mn><mo>⁢</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>214 93760</mn><mo>⁢</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mn>4</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./23.15#E7" title="(23.15.7) ‣ Klein’s Complete Invariant ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="49px" alttext="J\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./23.15#E7" title="Klein’s complete invariant">J</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math>: Klein’s complete invariant</a>,
+<a href="./23.1#t1.r12" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>:  nome</a> and
+<a href="./23.1#t1.r10" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./23.1#t1.r10" title="complex variable">τ</mi></math>:  complex variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./23.17#ii.p2" title="§23.17(ii) Power and Laurent Series ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E5" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E5.tex">TeX</a>, <a href="./23.17.E5.pmml">pMML</a>, <a href="./23.17.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#ii.info" title="§23.17(ii) Power and Laurent Series ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(ii)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">23.17.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="74px" altimg-valign="-30px" altimg-width="333px" alttext="\eta\left(\tau\right)=\sum_{n=-\infty}^{\infty}(-1)^{n}q^{(6n+1)^{2}/12}." display="block"><mrow><mrow><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./23.1#t1.r2" title="integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./23.1#t1.r2" title="integer">n</mi></msup><mo>⁢</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>6</mn><mo>⁢</mo><mi href="./23.1#t1.r2" title="integer">n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><mn>12</mn></mrow></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.14#E12" title="(27.14.12) ‣ §27.14(iv) Relation to Modular Functions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\eta\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">τ</mi><mo>)</mo></mrow></mrow></math>: Dedekind’s eta function (or Dedekind modular function)</a>,
+<a href="./23.1#t1.r12" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>:  nome</a>,
+<a href="./23.1#t1.r2" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./23.1#t1.r2" title="integer">n</mi></math>:  integer</a> and
+<a href="./23.1#t1.r10" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./23.1#t1.r10" title="complex variable">τ</mi></math>:  complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E6" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E6.tex">TeX</a>, <a href="./23.17.E6.pmml">pMML</a>, <a href="./23.17.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#ii.info" title="§23.17(ii) Power and Laurent Series ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(ii)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">In (<a href="./23.17#E5" title="(23.17.5) ‣ §23.17(ii) Power and Laurent Series ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">23.17.5</span></a>) for terms up to <math class="ltx_Math" altimg="m26.png" altimg-height="25px" altimg-valign="-6px" altimg-width="32px" alttext="q^{48}" display="inline"><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mn>48</mn></msup></math> see <cite class="ltx_cite ltx_citemacro_citet">Zuckerman (<a href="./bib/Z#bib2501" title="The computation of the smaller coefficients of ⁢ J ( τ )" class="ltx_ref">1939</a>)</cite>,
+and for terms up to <math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-6px" altimg-width="40px" alttext="q^{100}" display="inline"><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mn>100</mn></msup></math> see <cite class="ltx_cite ltx_citemacro_citet">van Wijngaarden (<a href="./bib/V#bib2320" title="On the coefficients of the modular invariant ⁢ J ( τ )" class="ltx_ref">1953</a>)</cite>. See also
+<cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib119" title="Modular Functions and Dirichlet Series in Number Theory" class="ltx_ref">1990</a>, p. 22)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§23.17(iii) </span>Infinite Products</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=infinite%20products">infinite products</a>, <a class="ltx_keyword" href="./search/search?q=modular%20functions">modular functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>Combine (<a href="./23.15#E6" title="(23.15.6) ‣ Elliptic Modular Function ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">23.15.6</span></a>), (<a href="./23.15#E9" title="(23.15.9) ‣ Dedekind’s Eta Function (or Dedekind Modular Function) ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">23.15.9</span></a>), and
+(<a href="./20.5#E1" title="(20.5.1) ‣ §20.5(i) Single Products ‣ §20.5 Infinite Products and Related Results ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.5.1</span></a>)–(<a href="./20.5#E3" title="(20.5.3) ‣ §20.5(i) Single Products ‣ §20.5 Infinite Products and Related Results ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">20.5.3</span></a>).</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.iii" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">23.17.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="108px" altimg-valign="-28px" altimg-width="280px" alttext="\lambda\left(\tau\right)=16q\prod_{n=1}^{\infty}\left(\frac{1+q^{2n}}{1+q^{2n-%
+1}}\right)^{8}," display="block"><mrow><mrow><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>16</mn><mo>⁢</mo><mi href="./23.1#t1.r12" title="nome">q</mi><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi href="./23.1#t1.r2" title="integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./23.1#t1.r2" title="integer">n</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./23.1#t1.r2" title="integer">n</mi></mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo>)</mo></mrow><mn>8</mn></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./23.15#E6" title="(23.15.6) ‣ Elliptic Modular Function ‣ §23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\lambda\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./23.15#E6" title="elliptic modular function">λ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow></math>: elliptic modular function</a>,
+<a href="./23.1#t1.r12" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>:  nome</a>,
+<a href="./23.1#t1.r2" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./23.1#t1.r2" title="integer">n</mi></math>:  integer</a> and
+<a href="./23.1#t1.r10" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./23.1#t1.r10" title="complex variable">τ</mi></math>:  complex variable</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E7" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E7.tex">TeX</a>, <a href="./23.17.E7.pmml">pMML</a>, <a href="./23.17.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#iii.info" title="§23.17(iii) Infinite Products ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(iii)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">23.17.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="73px" altimg-valign="-28px" altimg-width="291px" alttext="\eta\left(\tau\right)=q^{1/12}\prod_{n=1}^{\infty}(1-q^{2n})," display="block"><mrow><mrow><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mn>1</mn><mo>/</mo><mn>12</mn></mrow></msup><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi href="./23.1#t1.r2" title="integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./23.1#t1.r2" title="integer">n</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./27.14#E12" title="(27.14.12) ‣ §27.14(iv) Relation to Modular Functions ‣ §27.14 Unrestricted Partitions ‣ Additive Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\eta\left(\NVar{\tau}\right)" display="inline"><mrow><mi href="./27.14#E12" title="Dedekind’s eta function (or Dedekind modular function)">η</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">τ</mi><mo>)</mo></mrow></mrow></math>: Dedekind’s eta function (or Dedekind modular function)</a>,
+<a href="./23.1#t1.r12" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./23.1#t1.r12" title="nome">q</mi></math>:  nome</a>,
+<a href="./23.1#t1.r2" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./23.1#t1.r2" title="integer">n</mi></math>:  integer</a> and
+<a href="./23.1#t1.r10" title="§23.1 Special Notation ‣ Notation ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\tau" display="inline"><mi href="./23.1#t1.r10" title="complex variable">τ</mi></math>:  complex variable</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./23.15#ii.info" title="§23.15(ii) Functions 𝜆(𝜏), 𝐽(𝜏), 𝜂(𝜏) ‣ §23.15 Definitions ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.15(ii)</span></a>,
+<a href="./23.19#info" title="§23.19 Interrelations ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.19</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./23.17.E8" title="" class="ltx_ref">http://dlmf.nist.gov/23.17.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./23.17.E8.tex">TeX</a>, <a href="./23.17.E8.pmml">pMML</a>, <a href="./23.17.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./23.17#iii.info" title="§23.17(iii) Infinite Products ‣ §23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17(iii)</span></a>,
+<a href="./23.17#info" title="§23.17 Elementary Properties ‣ Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§23.17</span></a> and
+<a href="./23#info" title="Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.23</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">with <math class="ltx_Math" altimg="m24.png" altimg-height="27px" altimg-valign="-6px" altimg-width="138px" alttext="q^{1/12}=e^{i\pi\tau/12}" display="inline"><mrow><msup><mi href="./23.1#t1.r12" title="nome">q</mi><mrow><mn>1</mn><mo>/</mo><mn>12</mn></mrow></msup><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./23.1#t1.r10" title="complex variable">τ</mi></mrow><mo>/</mo><mn>12</mn></mrow></msup></mrow></math>.</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./23.16" title="In Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">23.16 </span>Graphics</span></a><a href="./23.18" title="In Modular Functions ‣ Chapter 23 Weierstrass Elliptic and Modular Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">23.18 </span>Modular Transformations</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#8dc9c1c0cba0ebe8e8e9efeceee6cde3e4fef9a3eae2fb">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4611abee9e92ef7',t:'MTc5MTI1MjM2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

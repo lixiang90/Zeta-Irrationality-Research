@@ -1,0 +1,1387 @@
+{
+  "scope": "two actual normalized period tables, fixed complete nine-generator presentation",
+  "input_json_sha256": "387b30f338e5231397b905a64a58e5648bae1772af305b8baf9ed28e3b970fe4",
+  "passed": 174,
+  "checks": [
+    {
+      "name": "pure L source constraints",
+      "passed": true
+    },
+    {
+      "name": "pure Z source constraints",
+      "passed": true
+    },
+    {
+      "name": "input exactly the fixed nine matrices",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1/12 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1/24 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1/36 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1/48 admissible",
+      "passed": true
+    },
+    {
+      "name": "x1 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 517/876 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 949/1608 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1381/2340 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1813/3072 admissible",
+      "passed": true
+    },
+    {
+      "name": "x1 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x1 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x2 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x2 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x2 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x3 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 239/624 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 455/1188 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 671/1752 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 887/2316 admissible",
+      "passed": true
+    },
+    {
+      "name": "x3 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x3 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x4 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 157/204 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 277/360 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 397/516 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 517/672 admissible",
+      "passed": true
+    },
+    {
+      "name": "x4 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x4 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x5 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 95/312 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 179/588 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 263/864 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 347/1140 admissible",
+      "passed": true
+    },
+    {
+      "name": "x5 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x5 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x6 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 529/648 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1009/1236 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1489/1824 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 1969/2412 admissible",
+      "passed": true
+    },
+    {
+      "name": "x6 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x6 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x7 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 107/168 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 191/300 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 275/432 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 359/564 admissible",
+      "passed": true
+    },
+    {
+      "name": "x7 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x7 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x8 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 71/156 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 131/288 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 191/420 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 251/552 admissible",
+      "passed": true
+    },
+    {
+      "name": "x8 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x8 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "x9 Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 131/144 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 251/276 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 371/408 admissible",
+      "passed": true
+    },
+    {
+      "name": "finite cusp 491/540 admissible",
+      "passed": true
+    },
+    {
+      "name": "x9 at least three legal finite seeds",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample Z at1/12",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample L at1/12",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample Z at1/24",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample L at1/24",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample Z at1/36",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample L at1/36",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample Z at1/48",
+      "passed": true
+    },
+    {
+      "name": "x9 independent sample L at1/48",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x1",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x1",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x1",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x2",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x2",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x2",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x3",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x3",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x3",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x4",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x4",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x4",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x5",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x5",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x5",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x6",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x6",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x6",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x7",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x7",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x7",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x8",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x8",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x8",
+      "passed": true
+    },
+    {
+      "name": "M relation projective matrix x9",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle Z x9",
+      "passed": true
+    },
+    {
+      "name": "M signed cocycle L x9",
+      "passed": true
+    },
+    {
+      "name": "eta actual fixed free word",
+      "passed": true
+    },
+    {
+      "name": "pure Z eta zero",
+      "passed": true
+    },
+    {
+      "name": "pure L eta full actual polynomial",
+      "passed": true
+    },
+    {
+      "name": "Mprime Z canonical relation",
+      "passed": true
+    },
+    {
+      "name": "Mprime L canonical relation",
+      "passed": true
+    },
+    {
+      "name": "cusp P1 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P2 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P3 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P4 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P5 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P6 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P7 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P8 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P9 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "cusp P10 actual projective matrix",
+      "passed": true
+    },
+    {
+      "name": "complete parabolic relation projective matrix",
+      "passed": true
+    },
+    {
+      "name": "complete parabolic relation Z period",
+      "passed": true
+    },
+    {
+      "name": "complete parabolic relation L period",
+      "passed": true
+    }
+  ],
+  "generators": [
+    {
+      "name": "x1",
+      "matrix": [
+        59,
+        25,
+        -144,
+        -61
+      ],
+      "PZ": [
+        "-85017600",
+        "-401034240",
+        "-472780800"
+      ],
+      "PL": [
+        "-55466880",
+        "-261559680",
+        "-308275200"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "-121720320",
+            "-79404320"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "-102548160",
+            "-66900400"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "-96522240",
+            "-188910880/3"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "-93577680",
+            "-61049840"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x2",
+      "matrix": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "PZ": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x3",
+      "matrix": [
+        37,
+        29,
+        -60,
+        -47
+      ],
+      "PZ": [
+        "40884480",
+        "104509440",
+        "66769920"
+      ],
+      "PL": [
+        "27162080",
+        "69396480",
+        "44307840"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "50057280",
+            "99758440/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "45354960",
+            "90391570/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "43839040",
+            "786346600/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "43090740",
+            "171762425/6"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x4",
+      "matrix": [
+        11,
+        3,
+        -48,
+        -13
+      ],
+      "PZ": [
+        "-2367360",
+        "-17210880",
+        "-31311360"
+      ],
+      "PL": [
+        "-2266160",
+        "-16555200",
+        "-30256320"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "-4019040",
+            "-11567620/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "-3138840",
+            "-9025465/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "-2869600",
+            "-74233060/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "-2739510",
+            "-31490305/12"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x5",
+      "matrix": [
+        25,
+        16,
+        -36,
+        -23
+      ],
+      "PZ": [
+        "-1365120",
+        "-4354560",
+        "-3525120"
+      ],
+      "PL": [
+        "-1329040",
+        "-4311360",
+        "-3531840"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "-1752480",
+            "-5138540/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "-1552680",
+            "-4544435/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "-1488800",
+            "-39191180/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "-1457370",
+            "-17044715/12"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x6",
+      "matrix": [
+        11,
+        9,
+        -60,
+        -49
+      ],
+      "PZ": [
+        "-41230080",
+        "-101606400",
+        "-62622720"
+      ],
+      "PL": [
+        "-36342880",
+        "-89385600",
+        "-54983040"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "-50132160",
+            "-132520520/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "-45572400",
+            "-120488210/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "-44100800",
+            "-1049442440/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "-43374060",
+            "-229373665/6"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x7",
+      "matrix": [
+        13,
+        4,
+        -36,
+        -11
+      ],
+      "PZ": [
+        "-2609280",
+        "-17210880",
+        "-28408320"
+      ],
+      "PL": [
+        "-1899280",
+        "-12615360",
+        "-20973120"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "-4240800",
+            "-9288620/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "-3375720",
+            "-7383995/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "-3109280",
+            "-61179020/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "-2980170",
+            "-26054435/12"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x8",
+      "matrix": [
+        13,
+        6,
+        -24,
+        -11
+      ],
+      "PZ": [
+        "5218560",
+        "23639040",
+        "26956800"
+      ],
+      "PL": [
+        "2819360",
+        "12723840",
+        "14459520"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "7375680",
+            "11940280/3"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "6250320",
+            "10123870/3"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "5896000",
+            "85966840/27"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "5722740",
+            "18544295/6"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "x9",
+      "matrix": [
+        1,
+        1,
+        -12,
+        -11
+      ],
+      "PZ": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "-1587840",
+        "-3617280",
+        "-2073600"
+      ],
+      "samples": [
+        [
+          "1/12",
+          [
+            "0",
+            "-1903680"
+          ]
+        ],
+        [
+          "1/24",
+          [
+            "0",
+            "-1742160"
+          ]
+        ],
+        [
+          "1/36",
+          [
+            "0",
+            "-1689920"
+          ]
+        ],
+        [
+          "1/48",
+          [
+            "0",
+            "-1664100"
+          ]
+        ]
+      ]
+    }
+  ],
+  "cusps": [
+    {
+      "id": 1,
+      "cusp": "infinity",
+      "word": [
+        2
+      ],
+      "matrix": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "PZ": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": 2,
+      "cusp": "-5/12",
+      "word": [
+        -1
+      ],
+      "matrix": [
+        61,
+        25,
+        -144,
+        -59
+      ],
+      "PZ": [
+        "-91238400",
+        "-444994560",
+        "-542453760"
+      ],
+      "PL": [
+        "-48318720",
+        "-235551360",
+        "-286986240"
+      ]
+    },
+    {
+      "id": 3,
+      "cusp": "0",
+      "word": [
+        9,
+        -2
+      ],
+      "matrix": [
+        1,
+        0,
+        -12,
+        1
+      ],
+      "PZ": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "-44160",
+        "529920",
+        "-2073600"
+      ]
+    },
+    {
+      "id": 4,
+      "cusp": "-1/2",
+      "word": [
+        8
+      ],
+      "matrix": [
+        13,
+        6,
+        -24,
+        -11
+      ],
+      "PZ": [
+        "5218560",
+        "23639040",
+        "26956800"
+      ],
+      "PL": [
+        "2819360",
+        "12723840",
+        "14459520"
+      ]
+    },
+    {
+      "id": 5,
+      "cusp": "-2/3",
+      "word": [
+        5
+      ],
+      "matrix": [
+        25,
+        16,
+        -36,
+        -23
+      ],
+      "PZ": [
+        "-1365120",
+        "-4354560",
+        "-3525120"
+      ],
+      "PL": [
+        "-1329040",
+        "-4311360",
+        "-3531840"
+      ]
+    },
+    {
+      "id": 6,
+      "cusp": "-1/3",
+      "word": [
+        7
+      ],
+      "matrix": [
+        13,
+        4,
+        -36,
+        -11
+      ],
+      "PZ": [
+        "-2609280",
+        "-17210880",
+        "-28408320"
+      ],
+      "PL": [
+        "-1899280",
+        "-12615360",
+        "-20973120"
+      ]
+    },
+    {
+      "id": 7,
+      "cusp": "-3/4",
+      "word": [
+        -3,
+        -5
+      ],
+      "matrix": [
+        37,
+        27,
+        -48,
+        -35
+      ],
+      "PZ": [
+        "16467840",
+        "45411840",
+        "31311360"
+      ],
+      "PL": [
+        "15967280",
+        "43957440",
+        "30256320"
+      ]
+    },
+    {
+      "id": 8,
+      "cusp": "-1/4",
+      "word": [
+        -4
+      ],
+      "matrix": [
+        13,
+        3,
+        -48,
+        -11
+      ],
+      "PZ": [
+        "293760",
+        "2695680",
+        "6428160"
+      ],
+      "PL": [
+        "190640",
+        "1715520",
+        "4105920"
+      ]
+    },
+    {
+      "id": 9,
+      "cusp": "-2/5",
+      "word": [
+        1,
+        -8,
+        3,
+        -6,
+        4,
+        -7
+      ],
+      "matrix": [
+        121,
+        48,
+        -300,
+        -119
+      ],
+      "PZ": [
+        "-309381120",
+        "-1559761920",
+        "-1965772800"
+      ],
+      "PL": [
+        "-197310720",
+        "-994765440",
+        "-1253721600"
+      ]
+    },
+    {
+      "id": 10,
+      "cusp": "-1/6",
+      "word": [
+        6,
+        -9
+      ],
+      "matrix": [
+        13,
+        2,
+        -72,
+        -11
+      ],
+      "PZ": [
+        "-2246400",
+        "-30274560",
+        "-102435840"
+      ],
+      "PL": [
+        "-1896160",
+        "-25457280",
+        "-85349760"
+      ]
+    }
+  ],
+  "boundary_count": 36
+}

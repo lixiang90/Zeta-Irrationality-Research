@@ -1,0 +1,444 @@
+                APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                        5
+
+
+exceptionally large ratio t2 /t1 is sufficient to imply the irrationality of ζ(3). We
+now explain why the constant c is ζ(3)/6.
+Lemma 1. Let Γ be a discrete subgroup of SL(2, R) commensurable with SL(2, Z).
+Let A(τ ) be a modular form of weight k and t(τ ) be a non-constant modular function
+on Γ such that t(i∞) = 0. Let
+                           L : θk+1 + rk (t)θk + · · · + r0 (t)
+be the differential operator annihilating A. Assume that g(t) is a rational function
+of t. Then a solution of the inhomogeneous differential equation LB(t) = g(t) is
+given by
+                       Z q       Z q          k+1         ! !
+                                        qdt/dq      g(t) dq       dq
+(6)            B=A           ···                             ···     ,
+                                           t         A q           q
+
+where the integration is iterated k + 1 times, and q = e2πiτ .
+Remark. We did not specify the starting points and the paths of integration in
+(6) because different choices just give different coefficients di in general solutions
+d0 A + d1 τ A + · · · + dk τ k A + B0 (t), where B0 (t) is a fixed solution
+                                                                         P of LB(t)   =
+g(t). However, when the integrand is a holomorphic modular form ∞                  n
+                                                                           n=1 cn q that
+vanishes at i∞, we specify the solution to be
+                                     ∞                             ∞
+                 Z q           Z q X            ! ! !
+                                              n  dq       dq      X     cn n
+         B=A            ···              cn q       ···       =A         k+1
+                                                                             q .
+                    0           0   n=1
+                                                  q        q      n=1
+                                                                       n
+
+In particular, this is what we refer to in the examples in the next two sections.
+
+Proof. The proof uses the standard method of variation. Here we only prove the
+case k = 1; general cases can be proved in the same way.
+   For convenience, we set
+                                 qdt/dq               qdA/dq
+                          G1 =          ,      G2 =          .
+                                    t                   A
+Then we have
+                                     G2                 1
+(7)                         θA = A      ,      θτ =         .
+                                     G1               2πiG1
+We will look for two functions p1 (t) and p2 (t) such that B = p1 A + p2 τ A will solve
+the differential equation LB(t) = g(t). We have θB = Aθp1 + τ Aθp2 + p1 θA +
+p2 θ(τ A). At this point, we make an additional assumption that p1 and p2 satisfy
+                                   Aθp1 + τ Aθp2 = 0
+so that
+                                 θB = p1 θA + p2 θ(τ A).
+Differentiating again, we obtain
+                   θ2 B = θp1 θA + θp2 θ(τ A) + p1 θ2 A + p2 θ2 (τ A).
+Since A and τ A are solutions of L, we find
+                  LB = θ2 B + r1 θB + r2 B = θp1 θA + θp2 θ(τ A).
+6                                           YIFAN YANG
+
+
+Therefore, if p1 and p2 satisfy
+                           (
+                             Aθp1 + τ Aθp2 = 0,
+                             θAθp1 + θ(τ A)θp2 = g(t),
+then B = p1 A + p2 τ A is a solution of LB(t) = g(t). Solving the linear equations
+and using the expressions in (7), we find
+                                   2πiτ gG1                 2πigG1
+                         θp1 = −            ,       θp2 =
+                                      A                       A
+It follows that
+                                        t                      t
+                                    τ gG1 dt                       gG1 dt
+                                    Z                 Z
+                  B(t) = −2πiA               + 2πiτ A                     .
+                                      A t                           A t
+Making the change of variable t 7→ q, we obtain
+                               Z q                             q
+                                   τ gG21 dq                       gG21 dq
+                                                      Z
+               B(t) = −2πiA                  + 2πiτ A                      .
+                                      A q                           A q
+(Again, although t → q is a many-to-one mapping, different choices of branches just
+give different solutions.) Finally, applying integration by parts to the first integral,
+we conclude that                      Z q Z q
+                                               gG21 dq dq
+                                                      
+                           B(t) = A                        .
+                                                A q      q
+This proves the lemma for the case k = 1. General cases can be proved in the same
+way.                                                                                  
+Lemma 2. Let all the notations be given as in Lemma 1. The function
+                                     k+1
+                               qdt/dq       g(t)
+                                  t          A
+in the above lemma is a modular form of weight k + 2 on Γ with character χ.
+Proof. The lemma is an immediate consequence of the well-known property that
+(qdt/dq)/t is a modular form of weight 2 on Γ with trivial character.     
+Example. Let t(τ ) and A(τ ) be given as in (3), which satisfy Apéry’s differential
+equation (1) for ζ(3). Then we have
+               qdt/dq   1
+                      = (E2 (τ ) − 2E2 (2τ ) − 3E2 (3τ ) + 6E2 (6τ )) ,
+                  t     2
+                      P∞
+where E2 (τ ) = 1 − 24 n=1 nq n /(1 − q n ). By Lemma 1, a solution of the inhomo-
+geneous solution LB = t near t = 0 is given by
+                                   Z qZ qZ q
+                                                      dq dq dq
+                      B(t) = A(t)              f (τ )          ,
+                                    0    0   0         q q q
+where
+                             3
+                      qdt/dq              t
+              f (τ ) =
+                         t        (1 − 34t + t2 )A
+                      1
+                  =      (E4 (τ ) − 28E4 (2τ ) + 63E4 (3τ ) − 36E4 (6τ ))
+                     240
+                      P∞
+and E4 (τ ) = 1 + 240 n=1 n3 q n /(1 − q n ) is the normalized Eisenstein series of
+weight 4 on SL(2, Z).
+                APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                         7
+
+                                        √                                              √
+   Since the singularity   t = 17 − 12 2 corresponds to the elliptic point τ = i/ 6
+fixed by 60 −1
+                
+                 , the assertion that B(τ )−cA(τ ), as a function of t, is not singular at
+            √0
+t = 17 − 12 2 is equivalent to that B(τ ) − cA(τ ) is invariant under the substitution
+τ → −1/6τ . Now we have A(−1/6τ ) = −6τ 2 A(τ ). Thus, to prove the latter
+assertion, it suffices to show that the function
+                                    Z qZ qZ q
+                                                      dq dq dq
+                            E(τ ) =            f (τ )
+                                      0   0  0         q q q
+satisfies
+                                                               
+                                 ζ(3)    1                 ζ(3)
+(8)                  E(−1/6τ ) −      =− 2         E(τ ) −        .
+                                  6     6τ                  6
+For this purpose, Beukers invoked the standard method of Mellin transforms.
+  By the Mellin inversion formula, one can write
+                                Z 2+i∞                    −s
+                              1                        2πi
+               E(−1/6τ ) =              Γ(s)L(s + 3)           ds,
+                             2πi 2−i∞                  6τ
+where Γ(s) is the Gamma function and
+               L(s) = ζ(s)ζ(s − 3)(1 − 28 · 2−s + 63 · 3−s − 36 · 6−s )
+is the L-function associated with the modular form f (τ ). We then check that the
+integrand has simple poles only at s = 0 and s = −2. Moving the line of integration
+to the left of Re s = −2, counting residues, making a change of variable s 7→ −2 − s,
+using the functional equation
+                   −s                   s−4
+                    2π                     2π
+                           Γ(s)L(s) = −           Γ(4 − s)L(4 − s),
+                     6                      6
+and then applying the Mellin inversion formula again, we deduce that (8) indeed
+holds. (See [2, Proposition 1] for more details. See also the examples in Sections 3
+and 4.) This basically summarizes Beukers’ argument.
+   As we have remarked earlier, the focus of [2] is to give a modular-function proof of
+Apéry’s irrationality results. Therefore, the differential equations considered there
+are very well-behaved in some sense. That is, the Apéry limits c of them all have
+the special property that the the functions B(t) − cA(t) no longer have singularities
+at t1 . However, in many cases, we do not need such a strong property in order for
+the Apéry limits to exist. For example, consider the differential equation
+                  θ2 A + 3t(18θ2 + 18θ + 7)A + 729t2 (θ + 1)2 A = 0.
+It has three singularities 0, −1/27, and ∞. The local exponents at these points are
+            P −1/3}, and {1, 1}, respectively. Thus, near t = −1/27, the solution
+{0, 0}, {−2/3,
+A(t) = 1 + an tn has a series expansion
+                  A(t) = c1 (t + 1/27)−2/3 + c2 (t + 1/27)−1/3 + · · ·
+                                            of which is nonzero. On the other hand,
+for some constants c1 and c2 , at least one P
+we can show that the solution B(t) = t + bn tn of
+                  θ2 B + 3t(18θ2 + 18θ + 7)B + 729t2 (θ + 1)2 B = t
+behaves asymptotically as
+                           A(t)(d0 + d1 (t + 1/27)1/3 + · · · )
+8                                     YIFAN YANG
+
+
+near t = −27. Therefore, we have
+                    B(t) − d0 A(t) = A(t)(d1 (t + 1/27)1/3 + · · · ).
+We then can apply the Tauberian theorems to conclude that
+                                   bn         1
+                                      − d0 ≪ 1/3 .
+                                   an       n
+To determine the exact value of d0 , we use the theory of modular forms. The
+detailed computation is carried out in the next section.
+   In general, if the singular point t1 = t(τ1 ) closest to the origin corresponds
+to an elliptic point τ1 of order n, then the local exponents at t1 take the form
+a1 /n < · · · < ak+1 /n for some integers ai , at least one of which is relatively prime
+to n. If the (k + 1)-times iterated integral E(τ ) in Lemma 1 is a holomorphic
+function of τ at τ1 , then the same argument as that in the previous paragraph will
+imply that the Apéry limit is equal to E(τ1 ), provided that the differential equation
+does not have another singularity t2 of the same modulus as t1 . Likewise, if the
+singular point t1 corresponds to a cusp, then the local exponents are all equal to a
+rational number a. In this case, we have
+                                                                               
+             A(t) = (t − t1 )a ck logk (t − t1 ) + ck−1 logk−1 (t − t1 ) + · · · .
+
+Under the same condition on E(τ ), we will also be able to determine the Apéry
+limit, although the rate of convergence, in general, is |bn /an − d0 | ≪ 1/ log n, which
+is extremely slow.
+   In the following two sections, we will determine the Apéry limits of several ex-
+amples using the above ideas.
+
+                              3. Elliptic point cases
+   In this section, we will explain in more detail how to determine the Apéry limits
+when the singularity t1 closest to the origin corresponds to an elliptic point τ1 .
+Throughout the section, we assume that Γ is a discrete subgroup of SL(2, R) of
+genus zero commensurable with SL(2, Z), A(τ ) is a (meromorphic) modular form
+of weight k with character χ on Γ, and t(τ ) is a uniformizer of the modular curve
+X(Γ) so that the differential equation LA(t) = 0 satisfied by A and t has polynomial
+coefficients. We also assume that A(i∞) = 1 and t(i∞) = 0 so that the differential
+equation has local exponents all equal to 0 at t = 0. We let B(t) = tj + · · · be the
+solution of LB(t) = j k+1 tj holomorphic at t = 0, where j is a positive integer less
+than the maximal degree of the coefficients of L. For a function f , with a slight
+abuse of notations, we write f (τ ) if we consider f as a function of τ , and write f (t)
+if we consider it as a (multi-valued) function of t.
+   Let h(t) be the coefficient of θk+1 in the differential equation LA = 0. We assume
+that the integrand
+                                               k+1
+                                                        tj
+                                      
+                                        qdt/dq
+                             f (τ ) =
+                                           t          Ah(t)
+inside (6) is a holomorphic modular form so that its L-function converges in some
+                                       P∞that t(i∞) = 0 and A(i∞) = 1, the
+half-plane. Note that, by the assumption
+constant term of the Fourier expansion n=1 cn q n of f (τ ) is 0. According to the
+               APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                      9
+
+
+discussion in the previous section, the Apéry limit is equal to the value of the
+(k + 1)-times iterated integral
+                       Z q  Z q                         ∞
+                                           dq         dq   X    cn n
+               E(τ ) =      ···     f (τ )      ···      =       k+1
+                                                                     q
+                        0        0          q          q   n=1
+                                                               n
+
+at τ1 . Now to evaluate E(τ1 ), we express E(τ ) using the Mellin inversion formula
+                                      Z c+i∞
+                            −x      1
+                           e =                Γ(s)x−s ds
+                                   2πi c−i∞
+which holds for all c > 0 and all complex numbers x with Re x > 0, and then try
+to deduce information about E(τ1 ) by complex analytic argument. For example,
+if f (τ )is an eigenfunction with eigenvalue ǫ of the Atkin-Lehner involution ωN =
+   0 −1
+  N 0      for some positive integer N , then by an argument similar to that in the
+proof of (8), we can show that
+                                        √
+                      E(−1/N τ ) = ǫ−1 ( N τ )−k E(τ ) + (residues).
+                       √                           √
+Then we set τ = i/ N to get the value of E(i/ N ) (provided         that ik ǫ 6= 1).
+                                                         0 −1
+                                                              
+    When the elliptic element that fixes τ1 is not N 0 , the situation is more
+complicated. Assume that f (τ ) is modular on Γ0 (N ). If we apply the Mellin
+inversion formula in a straightforward manner and write
+                              Z c+i∞                           −s
+                           1                                2πτ
+                  E(τ ) =            Γ(s)L(s + k + 1, f )            ds,
+                          2πi c−i∞                           i
+the complex analytic argument will yield
+                                   ∞
+                               ǫ X c∗n −2πin/N τ
+                    E(τ ) =                e         + (residues),
+                              τ k n=1 nk+1
+                                               √
+where c∗n denote the Fourier coefficients of ( N τ )−k−2 f (−1/N τ ) (which is a mod-
+ular form on Γ0 (N ) since ωN normalizes Γ0 (N )). At this point, it is not clear how
+one should proceed to obtain information about E(τ1 ). In such a situation, we need
+to apply the Mellin inversion formula in a different way. The key observation is the
+following simple fact.
+Lemma 3. For a matrix ac db ∈ SL(2, R) with c > 0 and for a pair of functions
+                                  
+
+g, g ∗ : H → C, the relation
+                                       
+                                 aτ + b
+                            g             = ǫ(cτ + d)k g ∗ (τ )
+                                 cτ + d
+holds for some constant ǫ and some integer k if and only if
+                        τ                               
+                              a                   1    d
+                      g     +    = ǫ(−τ )−k g ∗ − −
+                          c   c                   cτ    c
+holds.
+Proof. We have
+                                                 
+                          τ  a       a    b     1 d
+                            + =               − −     .
+                          c  c        c   d    cτ c
+This proves the lemma.                                                             
+10                                          YIFAN YANG
+
+                    P∞         n
+                                                   P∞ ∗ n
+   Now if g(τ ) =     n=0 cn q    and g ∗ (τ ) =      n=0 cn q    in the above lemma are
+holomorphic modular forms, then the lemma yields a functional equation between
+the pair of functions
+                        ∞                                 ∞
+                       X   cn 2πina/c            ∗
+                                                         X     c∗n −2πind/c
+                L(s) =          e       ,      L   (s) =           e
+                       n=1
+                           ns                            n=1
+                                                               ns
+(See Lemma 4 below.) Using the functional equation, we deduce that
+                             
+                       1    d      ǫ τ      a
+                 E − −          = kE       +    + (residues).
+                      cτ    c     τ     c    c
+We then make a suitable choice of τ such that −1/cτ − d/c = τ /c + a/c = τ1 and
+an evaluation of E(τ1 ) follows.
+    We now prove the functional equation between L(s) and L∗ (s) in the following
+lemma. The lemma may have appeared somewhere in literature. However, failing
+to locate such a reference, we give a complete proof here. Notice that when g = g ∗
+is a modular form of weight k on Γ0 (N ) that is an eigenfunction of the Atkin-Lehner
+involution wN with eigenvalue ǫ, the lemma gives the familiar functional equation
+                     −s                       s−k
+             k    2π                        2π
+            i ǫ   √        Γ(s)L(s, g) =    √          Γ(k − s)L(k − s, g)
+                    N                        N
+for the L-function L(s, g) of g.
+Lemma 4. Let Γ and Γ∗ be two discrete subgroups of SL(2, R) commensurable P∞
+with SL(2, Z)Psuch that the cusp ∞ has width 1. Assume that g(τ ) = n=0 cn q n
+                ∞
+and g ∗ (τ ) = n=0 c∗n q n are holomorphic    modular forms of weight k on Γ and Γ∗ ,
+                                   a b
+                                       
+respectively. Suppose that γ = c d with c > 0 is a matrix in SL(2, R) such that
+                                        
+                                aτ + b
+(9)                         g              = ǫ(cτ + d)k g ∗ (τ )
+                                cτ + d
+for some constant ǫ. Then the two functions
+                       ∞                            ∞
+                      X   cn 2πina/c       ∗
+                                                   X   c∗n −2πind/c
+              L(s) =         e       ,   L   (s) =        e         .
+                      n=1
+                          ns                       n=1
+                                                       ns
+satisfy the functional equation
+                 −s                     s−k
+                  2π                      2π
+(10)                     Γ(s)L(s) = ik ǫ        Γ(k − s)L∗ (k − s).
+                   c                       c
+Proof. For the ease of representation, here we only prove the case where the constant
+terms c0 and c∗0 are 0. The case c0 , c∗0 6= 0 can be proved by a minor modification.
+   First of all, setting τ = (−dτ + b)/(cτ − a) in (9), we obtain
+                                    
+                         ∗   −dτ + b
+                       g               = ǫ−1 (−1)k (cτ − a)k g(τ ),
+                             cτ − a
+which by Lemma 3 is equivalent to
+                                              
+                      ∗   τ   d     −1 −k    1 a
+(11)                g       −     =ǫ τ g − +       .
+                          c   c             cτ c
+We now consider the integral
+                                    ∞                             
+                                                          iy a
+                           Z
+                                            s−1
+                                        y         g          +         dy.
+                                0                          c   c
+               APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                      11
+
+
+We have
+ Z ∞                      ∞                Z ∞
+       s−1   iy a          X
+                                     2πina/c
+      y g       +     dy =      cn e              y s−1 e−2πny/c dy
+   0          c   c        n=1                0
+                            −s              ∞                  −s
+                             2π              X   cn 2πina/c       2π
+                         =             Γ(s)        s
+                                                     e       =        Γ(s)L(s).
+                              c              n=1
+                                                 n                 c
+Now we break the integral into two parts as usual, one from 0 to 1 and the other
+from 1 to ∞. For the integral from 0 to 1, we make a change of variable y 7→ 1/y
+and obtain
+              Z 1                       Z ∞             
+                            iy a                      i   a dy
+                  y s−1 g      +     dy =      1−s
+                                              y g       +        .
+               0             c   c         1         cy   c y2
+Substituting the relation (11) with τ = iy into the last expression, we see that
+            Z 1                            Z ∞                     
+                          iy a                                 iy d
+                y s−1 g      +     dy = ik ǫ     y k−s−1 g ∗      −     dy
+              0            c   c              1                 c   c
+and
+  −s            Z ∞                            Z ∞                     
+   2π                           iy a                                 iy d
+       Γ(s)L(s) =     y s−1 g      +     dy + ik ǫ     y k−s−1 g ∗      −     dy.
+    c              1             c   c              1                 c   c
+By the same token, we can also show that
+          −s                Z ∞                  
+          2π           ∗            s−1 ∗   iy d
+                 Γ(s)L (s) =       y g          −     dy
+           c                    1            c    c
+                                            Z ∞                    
+                                    −1    k        k−s−1     iy a
+                                 + ǫ (−i)        y       g      +     dy.
+                                              1               c   c
+Upon the substitution s 7→ k − s into the last expression, we immediately get the
+claimed functional equation. This completes the proof.                         
+  We now give two examples to illustrate our method.
+Example 1. Consider the differential equation
+(12)             θ2 A + 3t(18θ2 + 18θ + 7)A + 729t2 (θ + 1)2 A = 0.
+This is case (h) that [1] fails to identify the Apéry limit. According to [1], Arne
+Meurman conjectures that the limit is 2π 2 /81  − L(2, χ3 )/2, where L(s, χ3 ) is the
+Dirichlet L-function associates with χ3 = 3· . Meurman also suggests the following
+Ramanujan-like formula
+                                       √
+                  ∞  
+                 X    n        (−e−π/ 3 )n          2π 2  1
+                                          √       =      − L(2, χ3 ).
+                 n=1
+                      3     2
+                          n (1 − (−e  −π/   3  n
+                                              ) )    81   2
+Here we prove that these conjectures are indeed correct.
+  We first note that (12) is the differential equation satisfied by
+                                                          ∞  
+                                                                         !
+                η(3τ )12                   1             X     n    qn
+        t(τ ) =          ,    A(τ ) =              1+6                     ,
+                η(τ )12               1 + 27t(τ )        n=1
+                                                                3 1 − qn
+where A(τ ) is a modular form of weight 1 on Γ0 (3) with character
+                                        
+                                  a b         d
+(13)                           χ         =        .
+                                   c d        3
+

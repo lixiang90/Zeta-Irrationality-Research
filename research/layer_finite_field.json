@@ -1,0 +1,74 @@
+{
+  "full_matrix_checks": [
+    {
+      "K": 32,
+      "N": 4,
+      "p": 11,
+      "entries": 784
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 17,
+      "entries": 1225
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 17,
+      "entries": 1764
+    },
+    {
+      "K": 56,
+      "N": 7,
+      "p": 19,
+      "entries": 2401
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 23,
+      "entries": 3136
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 11,
+      "entries": 1521
+    }
+  ],
+  "entries_checked": 10831,
+  "scaled": [
+    {
+      "K": 128,
+      "N": 16,
+      "p": 43,
+      "rows": 58,
+      "columns": 58,
+      "projected_rank": 20,
+      "uniform_cap": 20,
+      "seconds": 0.015486001968383789
+    },
+    {
+      "K": 256,
+      "N": 32,
+      "p": 89,
+      "rows": 120,
+      "columns": 110,
+      "projected_rank": 48,
+      "uniform_cap": 48,
+      "seconds": 0.14369893074035645
+    },
+    {
+      "K": 400,
+      "N": 50,
+      "p": 137,
+      "rows": 186,
+      "columns": 176,
+      "projected_rank": 72,
+      "uniform_cap": 72,
+      "seconds": 0.6574110984802246
+    }
+  ],
+  "seconds": 1.3182590007781982
+}

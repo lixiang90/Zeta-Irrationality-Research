@@ -1,0 +1,231 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                                             89
+
+                                                    h             i
+   Finally, the integral refinement over Q x, x1 , 1−x          1
+                                                                     follows at this point from
+the Hermite–Lindemann–Weierstrass and Mahler theorems in transcendence,              h       ex-i
+                                                                                        1   1
+actly as in the proof of Theorem 2.7.2; and then the upgrade from Q x, x , 1−x
+     h       i
+          1
+to Q x, 1−x    follows from our strict [1, . . . , n][1, . . . , n/2] denominators requirement
+exactly as in point (ii) in the proof of Theorem 2.7.2.                                                          □
+
+Example 6.8.6. With m = 3 and the true functions
+                                     √           √ 2
+                    p                  y            y
+                  1, y(4 − y) arcsin     , arcsin
+                                      2            2
+now using the type
+                                  
+                      0          0
+                                                                                               7
+                  b= 0          2 ,               e = (0, 0, 0),            τ (b; e) =         ,
+                                                                                               3
+                      1          2
+a short numerical experimentation, which we have not attempted to make rigorous,
+suggests that for l = 2 (two division points) and maps of the form
+       φY0 (2) (z) := h (Gob(r, e, f )(δz)) ,             φk (z) := φY0 (2) (γk z) ,             k = 0, 1, 2,
+the minimizing holonomy bound on the three functions should probably be attained
+at (for example) about the choice
+                    (r, e, f ) ≈ (0.55, ∞, 5);                (γ1 , γ2 ) ≈ (0.19, 0.65),
+                                        −4.3      −0.76
+                                                          
+                     (r0 , r1 ) ≈ e            ,e             ,   δ ≈ 0.77,
+with holonomy quotient value (6.0.10) being at ≈ 3.239.                                                          △
+
+                      7. Convexity in Bost’s slopes method
+   We begin with the following clean refinement of Theorem 2.5.1, which finally we
+prove in this section by a single variable method based on [BC22, § 5]. This simple
+result by itself suffices for our application to Theorems A and C, although (in the
+case of the former) only by the narrowest of margins. The tenor of this section,
+whose main results are stated in § 7.1 after a short introduction, is what we are
+calling the convexity input that leads up to sharpened holonomy bounds. The im-
+provements are usually fairly small, but they are significant enough to comfortably
+pass the numerical margin in the requisite numeric in the proof of Theorem A, and
+thereby make fully convincing the Arakelov theory path to the irrationality proof
+of L(2, χ−3 ).
+Theorem 7.0.1. With the same standing assumptions of Theorem 6.0.2, consider a
+holomorphic mapping φ : (D, 0) → (C, 0) with derivative (conformal size) satisfying
+the condition
+                         log |φ′ (0)| > max{σm , τ (b; e)}.                 (7.0.2)
+Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+formal functions with denominator types of the form
+                        ∞
+                        X                                    xn
+      fi (x) = ai,0 +         ai,n                                                         ,         ai,n ∈ Z,
+                        n=1
+                                     nei [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+90                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for all
+i = 1, . . . , m. Then
+                         RR
+                             2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                      m≤ T                                          .      (7.0.3)
+                                     log |φ′ (0)| − τ (b; e)
+In particular, the formal functions f1 , . . . , fm are holonomic.
+   If moreover all functions fi are a priori assumed to be holonomic, the condi-
+tion (7.0.2) can be relaxed to |φ′ (0)| > eτ (b;e) .
+   When e = 0, then (as previously noted after the statement of Theorem 6.0.2)
+τ (b; e) coincides with the τ (b) of Theorem 2.5.1. Hence Theorem 2.5.1 is an im-
+mediate corollary of Theorem 7.0.1.
+   As discussed in § 2.1, the b = 0, e = 0 case of ZJxK functions was established
+by Bost and Charles [BC22, Corollary 8.3.5]. Charles explained to us that their
+method can be modified to take denominators into account and obtain the following
+weaker form25 of (7.0.3) for a starting bound:
+                         RR
+                             2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                    m≤ T                                            .      (7.0.4)
+                            log |φ′ (0)| − (σm + max1≤i≤m ei )
+    The basic idea of Theorem 7.0.1 is to use the same archimedean estimate as in
+[BC22], but incorporate into it a closer nonarchimedean evaluation height coun-
+terpart that, sufficiently for our purposes in the paper, improves the denominator
+of the initial bound (7.0.4). Remarkably, despite two seemingly rather different
+methods being used (the concentration of measure method exploiting multivariable
+approximations in § 6, and a single variable evaluation heights scheme in the present
+section), the final denominator term is exactly the same in both Theorems 6.0.2
+and all the results in the present section. The measure concentration method is
+nevertheless theoretically more precise in the general denominators aspect, even
+though no difference is made to any case of relevance to this paper. In the next
+section § 8, we formulate the most precise of our holonomy bounds by blending
+together the measure concentration feature of § 6 with the Bost–Charles feature of
+the present § 7.
+    For the present section and the next, we use Bost’s slopes inequality in Arakelov
+theory. A practically equivalent framework would be the elementary dynamic box
+principle of § B; we stick to the former choice for variety in our paper, and because
+the archimedean evaluation height estimate requires in any event the appeal to
+some relatively deep theorems in Arakelov theory. We hope that the elementary
+evaluation heights arrangement in § B could nevertheless be helpful to some readers
+as an introduction to the tenor of the more elaborate method (due to Bost) that
+we take up here.
+    We also note that one can more intrinsically formulate the proof of (7.0.3) in
+terms of Bost’s theta invariants h0θ and h1θ as in [Bos20, BC22]. The latter pursue
+the concept of absolute dimension for the “space of global sections” of a (countably)
+infinite-dimensional Hermitian vector bundle over an arithmetic curve, under the
+traditional analogy between number fields and algebraic curves over finite ground
+fields. We do not pursue this approach here as the subsequent “convexity improve-
+ments” of the archimedean growth term in (7.0.3) seem to be more of an analytic
+than a geometric nature.
+     25Conditional, as always, on the positivity of the denominator.
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                         91
+
+
+7.1. Improvements from convexity. In § B.3, the dynamic pigeonholing in-
+volves a certain upper bound (B.3.2) on P   the interval of possibilities for each Tay-
+                                              m
+lor coefficient of a power series F (x) = i=1 Qi (x)fi (x) ∈ QJxK in the range of
+the auxiliary evaluation map, given all previous coefficients of that power series.
+This upper bound is the result of estimating a Cauchy contour integrand (B.3.1)
+over T to express the z n coefficient of the x = φ(z) pullback of an element of
+       (n)
+ψD ED ⊂ xn · QJxK. As in Theorem 6.0.2, there is no particular reason to stick
+to a single fixed analytic map φ for each filtration layer n in this set of analytic
+estimates. Notably, depending on n/D, the ambient map φ, and the choice of Eu-
+clidean metric structure in the evaluation module ED (cf. § 7.2 below), there is a
+certain optimal choice of an intermediate radius r = r(n) ∈ (0, 1] for estimating this
+n-th archimedean evaluation height analytically via the pullback by x = φ(r(n)z);
+the only difference is that now, in the single-variable analysis, the integration pro-
+cedure over n/D is “vertical” along the vanishing order, rather than “horizontal”
+across variables. The choice of r(n) has a geometric significance with convex hulls;
+incidentally giving another nuance to the name slopes method. It aligns with the
+well-known fact that the Nevanlinna growth characteristic, and various cognate
+quantities, are convex increasing functions of the logarithm of the radius.
+   In this section, we compute these optimal choices r(n) for two types of Euclidean
+metrics in the evaluation module: the Bost–Charles metric from [BC22], and an
+explicit family of binomial metric weights λtr + µt depending on three real parame-
+ters (r, λ, µ), which are better amenable to numerical computation and still tend in
+practice to return close-to-optimal bounds for the best triple (r, λ, µ). With either
+of these variations, the results of this section alone (which are independent of § 4
+and § 6, see also § 1.3) lead to a proof of Theorems A and C. We spell them out
+in § 7.1.1 and § 7.1.12 next, and prove them in § 7.4 and § 7.5 after preparations
+in § 7.2. Along the way, the proof of the more basic Theorem 7.0.1 appears in § 7.3.
+After that, in § 7.6, we discuss a further improvement that lines up with — and
+theoretically26 strengthens — Theorem 6.0.2 of the previous section.
+7.1.1. The Bost–Charles characteristic. Inspired by [BC22, § 5], we introduce a
+(doubled) Nevanlinna-type growth characteristic, sticking for simplicity to the case
+of relevance here of holomorphic (rather than meromorphic) disc maps D → C.
+Crucially for this approach, there turns out to be an interpretation of this growth
+characteristic as an arithmetic intersection number in the Bost–Charles theory.
+Definition 7.1.2. For a nonconstant holomorphic27 mapping φ : D → C, define
+the Bost–Charles characteristic function
+                                      ZZ
+   Tb(·, φ) : (0, 1] → R, Tb(r, φ) :=    log |φ(z) − φ(rw)| µHaar (z)µHaar (w).
+                                               T2
+                                                                                        (7.1.3)
+   As with the usual Nevanlinna and Ahlfors–Shimizu characteristics, see [Nev70,
+§ 3.3.5] or [BG06, Remark 13.3.8], we have:
+Lemma 7.1.4. The Bost–Charles characteristic Tb is a convex increasing function
+of log r.
+   26At least in all the cases that we encountered in practice; see Remark ??
+   27In the general meromorphic case, which we will not consider here, a suitable polar counting
+term would have to be added.
+92                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Proof. The Poisson–Jensen formula allows the following rewriting of the double
+continuous integral Tb(r, φ) as a single continuous integral of a discrete sum:
+                                                           
+                         Z                                
+                                                            
+                                                        + r
+                                             X             
+              T (r, φ) =
+              b                log |φ(z)| +         log       µHaar (z).       (7.1.5)
+                           T                             u
+                            
+                                             u∈D           
+                                                            
+                                                  φ(u)=φ(z)
+
+We have substituted here u := rw. The lemma now follows upon remarking that
+the finite sum in the curly brackets is itself a convex increasing function of log r for
+each given z ∈ T.                                                                     □
+
+   We give two essentially equivalent formulations for the main theorem of this
+section.
+Theorem 7.1.6. Assume the same conditions and notation as in Theorem 7.0.1.
+Let
+                      1 = rl > rl−1 > · · · > r0 > 0
+be a sequence of subradii, and consider the slopes
+                                        Tb(rk , φ) − Tb(rk−1 , φ)
+                                αk :=                             .                             (7.1.7)
+                                           log rk − log rk−1
+Assume that αl ∈ [0, m]. Then we have the following improvement over the bound (7.0.3):
+                                                                                                   2
+          RR                                                  1
+                                                                  Pl     (Tb(rk ,φ)−Tb(rk−1 ,φ))
+            T2
+                 log |φ(z) − φ(w)| µHaar (z)µHaar (w) −       m    k=1       log rk −log rk−1
+     m≤                                                                                                .
+                                         log |φ′ (0)| − τ (b; e)
+                                                                                                (7.1.8)
+   By Lemma 7.1.4, the bound of Theorem 7.1.6 is only improved if one refines the
+sequence of subradii, subject to the inequality αl ≤ m on the slopes. Thus, in the
+limit, we obtain a continuous version of this theorem (see Theorem 7.1.10 below).
+In our experience, the extra numerical saving obtained in the limit is negligible
+once one chooses just a few division points. Moreover, it seems more practical from
+a computational standpoint to compute bounds on specific values of Tb(r, φ) rather
+than integrals in terms of this function.
+   In order to formulate the continuous version of Theorem 7.1.6, we firstly intro-
+duce the following positive increasing function28 of r ∈ (0, 1]:
+
+                               b φ) := r d Tb(r, φ),
+                              A(r,                                           (7.1.9)
+                                           dr
+whose notation mirrors the traditional covering spherical area function
+                               |φ′ |2
+                   ZZ                          ZZ
+      ◦          1                                                  d ◦
+      A(r, φ) :=                      2
+                                        dxdy =           φ∗ ωFS =: r T (r, φ)
+                 π   D(0,r) (1 + |φ|)             D(0,r)            dr
+of the Ahlfors–Shimizu theory.
+
+    28This is, in fact, a continuous function. We will not use this, and we do not give a proof of
+the C 1 property of Tb(r, φ). For the abstract purpose (not used elsewhere in our paper, neither)
+of making an almost everywhere sense of the d/dr derivative in (7.1.9) and the r ∈ [0, 1] Riemann
+integral in (7.1.11), it suffices to appeal to Lebesgue’s theorem that a monotone function [0, 1] → R
+is differentiable almost everywhere.
+

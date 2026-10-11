@@ -1,0 +1,103 @@
+{
+  "scope": "exact restricted seed classification for degrees 0 through 20",
+  "rows": [
+    {
+      "r": 0,
+      "c": 0,
+      "characteristic_polynomial": "d",
+      "rational_seeds": [
+        {
+          "d": "0",
+          "w": "1",
+          "w0": "1",
+          "local_zeta3_ratio": "0",
+          "target_ratio_match": false
+        }
+      ]
+    },
+    {
+      "r": 1,
+      "c": 6,
+      "characteristic_polynomial": "d*(d + 4)",
+      "rational_seeds": [
+        {
+          "d": "0",
+          "w": "x**2 + x + 1/3",
+          "w0": "1/3",
+          "local_zeta3_ratio": "3",
+          "target_ratio_match": true
+        },
+        {
+          "d": "-4",
+          "w": "x**2 + x + 1",
+          "w0": "1",
+          "local_zeta3_ratio": "-1",
+          "target_ratio_match": false
+        }
+      ]
+    },
+    {
+      "r": 2,
+      "c": 16,
+      "characteristic_polynomial": "(d + 4)*(d**2 - 4*d - 160)",
+      "rational_seeds": [
+        {
+          "d": "-4",
+          "w": "x**4 + 2*x**3 + 19*x**2/5 + 14*x/5 + 4/5",
+          "w0": "4/5",
+          "local_zeta3_ratio": "11/4",
+          "target_ratio_match": false
+        }
+      ]
+    },
+    {
+      "r": 3,
+      "c": 30,
+      "characteristic_polynomial": "(d**2 - 60*d - 720)*(d**2 + 4*d - 336)",
+      "rational_seeds": []
+    },
+    {
+      "r": 4,
+      "c": 48,
+      "characteristic_polynomial": "(d**2 - 68*d - 1632)*(d**3 - 188*d**2 - 3840*d + 112896)",
+      "rational_seeds": []
+    },
+    {
+      "r": 5,
+      "c": 70,
+      "characteristic_polynomial": "(d**3 - 540*d**2 + 31360*d + 1433600)*(d**3 - 216*d**2 - 8816*d + 189440)",
+      "rational_seeds": []
+    },
+    {
+      "r": 6,
+      "c": 96,
+      "characteristic_polynomial": "(d**3 - 632*d**2 + 37776*d + 2868480)*(d**4 - 1160*d**3 + 205584*d**2 + 15436800*d - 240537600)",
+      "rational_seeds": []
+    },
+    {
+      "r": 7,
+      "c": 126,
+      "characteristic_polynomial": "(d**4 - 2360*d**3 + 1229424*d**2 - 64794240*d - 8509536000)*(d**4 - 1336*d**3 + 256624*d**2 + 29847936*d - 303609600)",
+      "rational_seeds": []
+    },
+    {
+      "r": 8,
+      "c": 160,
+      "characteristic_polynomial": "(d**4 - 2696*d**3 + 1586704*d**2 - 76800000*d - 16471920640)*(d**5 - 4216*d**4 + 4404624*d**3 - 783630080*d**2 - 142628720640*d + 576662732800)",
+      "rational_seeds": []
+    },
+    {
+      "r": 9,
+      "c": 198,
+      "characteristic_polynomial": "(d**5 - 7256*d**4 + 14823312*d**3 - 8507501568*d**2 + 316531556352*d + 125388013436928)*(d**5 - 4756*d**4 + 5563312*d**3 - 1022981568*d**2 - 266184603648*d - 819576963072)",
+      "rational_seeds": []
+    },
+    {
+      "r": 10,
+      "c": 240,
+      "characteristic_polynomial": "(d**5 - 8116*d**4 + 18516784*d**3 - 11727441600*d**2 + 305398425600*d + 239759460864000)*(d**6 - 11596*d**5 + 40280464*d**4 - 44595289920*d**3 + 7611147993600*d**2 + 2930300084736000*d + 33502277652480000)",
+      "rational_seeds": []
+    }
+  ],
+  "quartic_telescoping_verified": true
+}

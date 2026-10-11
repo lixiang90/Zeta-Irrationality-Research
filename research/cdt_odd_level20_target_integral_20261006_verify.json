@@ -1,0 +1,21 @@
+{
+  "scope": "Symbolic identities only. Actual rank, intersection, full-disk leaf and full denominator type are proved in the Markdown; no prime or parameter search.",
+  "checks_passed": 8,
+  "checks": [
+    "Euler operator conversion is exact",
+    "constant shift contributes H0*B0 to Euler forcing",
+    "highest target integral log4 coefficient is -17/480",
+    "four Euler log derivatives leave nonzero constant",
+    "highest packet norm is -109/16",
+    "I(0)=0 removes the origin logarithm but preserves the nonzero cusp coefficient",
+    "rank upper bound and local block lower bound agree at 5",
+    "P10+new target dimension with constant intersection is 14"
+  ],
+  "cusp_H_log3": "-17/120",
+  "cusp_I_log4": "-17/480",
+  "packet_norm": "-109/16",
+  "new_actual_rank": 5,
+  "pure10_plus_target_actual_rank": 14,
+  "denominator_type": "n*lcm(1,...,n)^3 with one fixed multiplier",
+  "open": "An additional primitive mixed Cartier row and its e=1 global budget; no numerical irrationality theorem."
+}

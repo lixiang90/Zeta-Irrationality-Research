@@ -1,0 +1,154 @@
+{
+  "scope": "Natural eight functions in the original coordinate, not an arbitrary rational gauge.",
+  "prescribed_exact_cases": [
+    {
+      "p": 7,
+      "a": 1,
+      "q": 7,
+      "coefficient_index": 8,
+      "valuations": {
+        "t_q": -7,
+        "min_t_k_for_k_below_q": -1,
+        "t_q_plus_one": -4,
+        "f_q_plus_one_constant_part": -7,
+        "U_q_plus_one": -4,
+        "V_q_plus_one": -4
+      },
+      "constant_part_f_exact": "-34040182540894276340051/2623025302732800000",
+      "c_coefficient_f_integer": 12870
+    },
+    {
+      "p": 11,
+      "a": 1,
+      "q": 11,
+      "coefficient_index": 12,
+      "valuations": {
+        "t_q": -7,
+        "min_t_k_for_k_below_q": -1,
+        "t_q_plus_one": -4,
+        "f_q_plus_one_constant_part": -7,
+        "U_q_plus_one": -4,
+        "V_q_plus_one": -4
+      },
+      "constant_part_f_exact": "-979777067952312845382014202500980601/359322603080612139859968000000",
+      "c_coefficient_f_integer": 2704156
+    },
+    {
+      "p": 7,
+      "a": 2,
+      "q": 49,
+      "coefficient_index": 50,
+      "valuations": {
+        "t_q": -14,
+        "min_t_k_for_k_below_q": -8,
+        "t_q_plus_one": -8,
+        "f_q_plus_one_constant_part": -14,
+        "U_q_plus_one": -8,
+        "V_q_plus_one": -8
+      },
+      "constant_part_f_exact": "-8303789320820826533697953445844329152322815811552245101850762416618352343049120262664048608796281238590239361473910586293522554882399331900327771940246717947484333345049/81622787219751710461233963806525217918194234718161910174518971141454387513899569941200095497453537314507824603986940508703293440000000000000",
+      "c_coefficient_f_integer": 100891344545564193334812497256
+    }
+  ],
+  "nested_lcm_safe_table": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "row_sums": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    4,
+    7
+  ],
+  "safe_e_vector": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    0
+  ],
+  "flat_cost_exact": "201/64",
+  "all_exact_checks_passed": true,
+  "not_proved_by_sampling": [
+    "all sufficiently large primes",
+    "all prime powers",
+    "fine-budget necessity"
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "created_at_utc": "2026-10-06T22:43:25.695763+00:00",
+  "owner": "/root",
+  "scope": "Paper proofs: all-index carry/full-partial blocks; algebraic-reference rank gate; all-pole splitting and actual quadratic pullback; exact Cartier/Frobenius bridge. No new numerical theorem.",
+  "prior_delivery": {
+    "file": "research/cdt_odd_delivery_relative_lift_tensor_reference_20261007.json",
+    "sha256": "61dc2465b76159ce315f083848266b6e8415543a63903b004cf944440e75c5cd",
+    "bytes": 198984
+  },
+  "previous_frozen_records_count": 596,
+  "previous_frozen_mathematical_records_count": 591,
+  "previous_guard_count": 5,
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_gamma_inverse_l_partial_blocks_20261007.md",
+      "sha256": "ac4ac0bf9886ebe1d7f48c0c0dff91c5e643c8fb7be7e69d0ca98f3e477ee204",
+      "bytes": 15582
+    },
+    {
+      "file": "research/cdt_odd_gamma_inverse_l_partial_blocks_independent_review_20261007.md",
+      "sha256": "853f915534ede3496477738d5b815a1c20d3655bccde6ba62e19b13ebb7b5793",
+      "bytes": 5835
+    },
+    {
+      "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_20261007.md",
+      "sha256": "d38ca46ee63aebf626309955a6347f40d3c018c42db810b827e20430d3c483a3",
+      "bytes": 11145
+    },
+    {
+      "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_independent_review_20261007.md",
+      "sha256": "c587e7c607d09fd8ae78256334addf04617c50c553dfc22497fab92394537bbc",
+      "bytes": 7194
+    },
+    {
+      "file": "research/cdt_odd_gamma_unramified_forcing_split_20261007.md",
+      "sha256": "611485070e8364a2b2905ea60654eac12770b8bb76d3b8d2c6f929b356de37ac",
+      "bytes": 22304
+    },
+    {
+      "file": "research/cdt_odd_gamma_unramified_forcing_split_independent_review_20261007.md",
+      "sha256": "33fed534b5a7138ad7466047754f50f5b769862aecca0b1612f3e7bc55528fd2",
+      "bytes": 10088
+    },
+    {
+      "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.md",
+      "sha256": "a73af0926ab50c256462ceaffe9fc68459861b74bf8f4f6b5a1afa8a8ab462af",
+      "bytes": 18032
+    },
+    {
+      "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_independent_review_20261007.md",
+      "sha256": "b9ebc4e063ecc5b6b77a235e8ac9abc434104b040bcc989ac5ce7d31c9293a31",
+      "bytes": 9360
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_gamma_inverse_l_partial_blocks_20261007.json",
+      "sha256": "8c11c737cc0e624329fffacdef16188ae7674f1c002e315df329c42af230ad64",
+      "bytes": 10818
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_unramified_forcing_split_20261007.json",
+      "sha256": "1bcb17e5efb1c29c38ce5e6918d0feae9fac3668f4f468a75ebfb28378d3b23d",
+      "bytes": 11042
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.json",
+      "sha256": "9f1ebbdfcfb6f343601c8a55b69d3d0f1cfd554a5d3bb047e3e57f98361e985f",
+      "bytes": 14967
+    }
+  ],
+  "peer_final_receipt_physical_pin_counts": {
+    "source": 13,
+    "scaled": 17,
+    "masked": 19
+  },
+  "new_successful_certificates": [],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2015_finite_hypergeometric_arxiv1505_02900v1.pdf",
+      "sha256": "4ddb1b57b4a154657099da7b9a15f6987b67f002cac74a1545751128e580dfee",
+      "bytes": 378825,
+      "pages": 24,
+      "url": "https://arxiv.org/pdf/1505.02900v1",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2016_finite_hypergeometric_arxiv1505_02900v2.pdf",
+      "sha256": "e6de6b7ea3e12cccc85c04a199baedf21328853244fb0b2d02470e9399522a09",
+      "bytes": 446404,
+      "pages": 26,
+      "url": "https://arxiv.org/pdf/1505.02900v2",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/cohen_guillera2021_rational_ramanujan_arxiv2101_12592v1.pdf",
+      "sha256": "9861a0f85466f7a99bea2cf8e4e37ed1572a4294feb79a8e2f18564d39441e3f",
+      "bytes": 203337,
+      "pages": 20,
+      "url": "https://arxiv.org/pdf/2101.12592v1",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/dembele_panchishkin_voight_zudilin2019_asai_arxiv1906_07384v3.pdf",
+      "sha256": "a2fea5e7ba86c8c6725fe0f7e5a414f6ff786f16dafcec48e0d80f7a0741b7d3",
+      "bytes": 293007,
+      "pages": 18,
+      "url": "https://arxiv.org/pdf/1906.07384v3",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/grove_long_rosen_tu2026_ehmm_iii_arxiv2607_25173v1.pdf",
+      "sha256": "aa41e64e9006cb80ab6a7c05a0da720045304769e768e7de835c2ecc7e725c10",
+      "bytes": 507859,
+      "pages": 35,
+      "url": "https://arxiv.org/pdf/2607.25173v1",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2023_heuristic_zudilin_arxiv2312_16827v1.pdf",
+      "sha256": "c19b25e17e5636ac05e11da92ab42ea856c3bcfd7122413f64b0e94cd7d65137",
+      "bytes": 134905,
+      "pages": 10,
+      "url": "https://arxiv.org/pdf/2312.16827v1",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2024_heuristic_zudilin_arxiv2312_16827v14.pdf",
+      "sha256": "af2311204870c46d271e8c37e035154ce283c88b9723bb6770a5e7ec21315074",
+      "bytes": 118013,
+      "pages": 9,
+      "url": "https://arxiv.org/pdf/2312.16827v14",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_tls": true,
+      "certificate_checks_disabled": false
+    }
+  ],
+  "reused_primary_pdfs": [
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169,
+      "pages": 218,
+      "download": "Existing registered snapshot reused; not downloaded this round."
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "sha256": "239c64b8bab41b12bc2a41d8eb3630d2935e04365bf6a3b9919193793551fc20",
+      "bytes": 171695,
+      "pages": 10,
+      "download": "Existing registered snapshot reused; not downloaded this round."
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "sha256": "4ab728305b71e6b6d5d551c9f25653cd0465eecb5ad3de11944a49d7b45982c7",
+      "bytes": 208949,
+      "pages": 18,
+      "download": "Existing registered snapshot reused; not downloaded this round."
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "bytes": 938673,
+      "pages": 30,
+      "download": "Existing registered snapshot reused; not downloaded this round."
+    },
+    {
+      "file": "literature/greene1987_hypergeometric_finite_fields_author.pdf",
+      "sha256": "6c504ae11f84feb37be18beadf588de6864adbe4499f35e70b37c239e3f7be98",
+      "bytes": 1946076,
+      "pages": 25,
+      "download": "Existing registered snapshot reused; not downloaded this round."
+    }
+  ],
+  "new_other_primary_sources": [],
+  "receipt_direction": "One-way: no self, mutable main, future audit or circular peer receipt pin.",
+  "review_closure": {
+    "cycle": [
+      "root reviews source",
+      "source reviews scaled",
+      "scaled reviews masked",
+      "masked reviews root"
+    ],
+    "all_four_reviews_pass_with_explicit_scope": true,
+    "all_authors_actual_full_incoming_review_and_final_main_reread": true,
+    "root_full_final_math_files": 8,
+    "root_full_peer_final_receipts": 3,
+    "unfrozen_corrections": [
+      "R(0)=0 stated as Q(t) intersect tQ[[t]].",
+      "F15 rational primitive equivalence and finite-characteristic pole461 scope.",
+      "Quadratic rank2 gate U34 independently reviewed before freezing."
+    ]
+  },
+  "actual_reading_scope": {
+    "current_round_personal_primary_pdf_domains": {
+      "root": [
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+          "pages": [
+            3,
+            4,
+            17
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2016_finite_hypergeometric_arxiv1505_02900v2.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "source": [
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+          "pages": [
+            3,
+            4,
+            17
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "scaled": [
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2016_finite_hypergeometric_arxiv1505_02900v2.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/cohen_guillera2021_rational_ramanujan_arxiv2101_12592v1.pdf",
+          "pages": [
+            1,
+            10,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2023_heuristic_zudilin_arxiv2312_16827v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2024_heuristic_zudilin_arxiv2312_16827v14.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/dembele_panchishkin_voight_zudilin2019_asai_arxiv1906_07384v3.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/grove_long_rosen_tu2026_ehmm_iii_arxiv2607_25173v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "masked": [
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/cohen_guillera2021_rational_ramanujan_arxiv2101_12592v1.pdf",
+          "pages": [
+            1,
+            8,
+            10,
+            11,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2023_heuristic_zudilin_arxiv2312_16827v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2024_heuristic_zudilin_arxiv2312_16827v14.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/dembele_panchishkin_voight_zudilin2019_asai_arxiv1906_07384v3.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2015_finite_hypergeometric_arxiv1505_02900v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2016_finite_hypergeometric_arxiv1505_02900v2.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/grove_long_rosen_tu2026_ehmm_iii_arxiv2607_25173v1.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+          "pages": [
+            19,
+            25,
+            26
+          ]
+        },
+        {
+          "file": "literature/greene1987_hypergeometric_finite_fields_author.pdf",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        }
+      ]
+    },
+    "personal_distinct_primary_pdf_pages": {
+      "root": 16,
+      "source": 10,
+      "scaled": 42,
+      "masked": 61
+    },
+    "actual_team_source_snapshot_page_union": 67,
+    "new_pdf_archive_count": 7,
+    "new_pdf_archived_pages": 142,
+    "new_unique_pdf_contents_relative_to_baseline": 6,
+    "new_unique_pdf_content_pages_relative_to_baseline": 107,
+    "new_documentary_renders": 0,
+    "root_existing_render_actual_view": "Guillera PDF17 PNG; not an extra PDF page.",
+    "masked_existing_render_actual_view": "Au PDF26 PNG; not an extra PDF page.",
+    "root_full_current_math_files": 8,
+    "root_full_peer_final_receipts": 3,
+    "root_full_old_input_files": [
+      {
+        "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_20261007.md",
+        "sha256": "78eb5777b649336c7906174878f1b5504e34dd012409fdcbb96e13d1390710c7",
+        "bytes": 13537
+      }
+    ],
+    "root_authority_read": "Actual FULL main186-190; new191-195 final reread at closure. Fingerprints are not manual rereview of596 historical proofs.",
+    "guards": "All five actual FULL text read and physically unchanged, never executed.",
+    "boundary": "No inherited personal reading. Personal16/10/42/61 sum129 page reads; content/page union67. Archive142 pages differ from actual reading."
+  },
+  "documentary_corrections": {
+    "duplicate_content": {
+      "new_file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/grove_long_rosen_tu2026_ehmm_iii_arxiv2607_25173v1.pdf",
+      "existing_file": "literature/grove_long_rosen_tu2026_ehmm_iii_v1_20261006.pdf",
+      "sha256": "aa41e64e9006cb80ab6a7c05a0da720045304769e768e7de835c2ecc7e725c10",
+      "pages": 35,
+      "disposition": "Preserve both snapshots and immutable peer receipt; root overrides peer no_duplicate_same_fingerprint_download=true. Filename search missed earlier snapshot; actual fingerprints establish duplicate."
+    },
+    "root_preflight": "Initial metadata count assertion stopped before saving any receipt; corrected new unique6/107 and running133/6303; physical root pins35, not36. This was documentary, not a mathematical execution or failure."
+  },
+  "mathematical_execution_history": {
+    "new_mathematical_producer_sources": 0,
+    "new_mathematical_executions": 0,
+    "old_or_peer_mathematical_imports_or_reruns": 0,
+    "mathematical_failures": 0,
+    "guard_executions": 0,
+    "new_prime_experiments_or_table_extensions": 0,
+    "lean_executions": 0,
+    "new_external_html_archives": 0,
+    "new_external_code_archives": 0,
+    "new_pdf_archives": 7,
+    "metadata_only_delivery_audit": "Unique NEW statically FULL read source; first execution only after final receipt/main closure; no mathematical imports.",
+    "documentary_boundary": "PDF/existing image reads, normal-TLS downloads, hashes/JSON and text edits. Peers separately record404/index/encoding/truncation/text-write retries; root corrected duplicate-content counting before receipt save."
+  },
+  "current_progress": {
+    "classification": "progress",
+    "proved_this_round": [
+      "All-n/all-finite-place N Gamma_n b_n integral; exact explicit growth5.4380 and model prefix lcm D_n9.",
+      "Actual full/partial reciprocal residues in5n<p2 with surviving boundary; UNPROVED S_p0 implies paid all-n and fixed-array limiting cost8.",
+      "Integral algebraic references exclude current rank10 at any nonnegative CDT fee and specified finite polynomial amplification at uniform9d cap.",
+      "All added ordinary full jumps zero in original rational forcing imply rational splitting/C_R; rational differential kill of nonzero homogeneous jump gives rational output.",
+      "Actual quadratic forcing x is nonsplit, with Q Taylor/all-prime cap and paid MUM/apparent point; current rank2/cap9 margin is itself excluded.",
+      "Exact9-variable CT, fixed-t weighted Cartier kernel/primitive equivalence, Lucas/all complete forward modp blocks, precise BCM final-v2 point-count application."
+    ],
+    "not_proved": [
+      "New numerical zeta/L/Catalan irrationality or LI.",
+      "All-large-prime S_p0/modp9 forward supercongruence.",
+      "Actual lower standard prefix cap or higher-layer/partial reciprocal supercongruence.",
+      "C_X zeta/L evaluation or irrationality, second-conifold full comparison.",
+      "Nontrivial relative projection admitting added point, full integral comparison or original paired-source carrier.",
+      "New strict CDT margin or Lean verification."
+    ],
+    "unchanged_original_safe_q_fee": "32lambda-1-13lambda^2/4; lambda1.5 endpoint635/16. Calibration fees do not replace original source.",
+    "next_priority": "Change actual period/jump structure via nontrivial relative/tensor projection admitting added point, or genuinely different base with paid full comparisons; identify C_X and prove exact weighted Cartier kernel by integral cycle/comparison. Stop only optimizing maps/caps for excluded current rank10 and quadratic rank2 packages.",
+    "new_numerical_irrationality_theorem": false,
+    "new_lean_formalization": false,
+    "goal_status": "active"
+  },
+  "physical_pins": [
+    {
+      "file": "literature/manifest_cdt_odd_gamma_inverse_l_partial_blocks_20261007.json",
+      "sha256": "8c11c737cc0e624329fffacdef16188ae7674f1c002e315df329c42af230ad64",
+      "bytes": 10818
+    },
+    {
+      "file": "research/cdt_odd_delivery_relative_lift_tensor_reference_20261007.json",
+      "sha256": "61dc2465b76159ce315f083848266b6e8415543a63903b004cf944440e75c5cd",
+      "bytes": 198984
+    },
+    {
+      "file": "research/cdt_odd_gamma_inverse_l_partial_blocks_20261007.md",
+      "sha256": "ac4ac0bf9886ebe1d7f48c0c0dff91c5e643c8fb7be7e69d0ca98f3e477ee204",
+      "bytes": 15582
+    },
+    {
+      "file": "research/cdt_odd_gamma_inverse_l_partial_blocks_independent_review_20261007.md",
+      "sha256": "853f915534ede3496477738d5b815a1c20d3655bccde6ba62e19b13ebb7b5793",
+      "bytes": 5835
+    },
+    {
+      "file": "research/cdt_odd_gamma_unramified_forcing_split_20261007.md",
+      "sha256": "611485070e8364a2b2905ea60654eac12770b8bb76d3b8d2c6f929b356de37ac",
+      "bytes": 22304
+    },
+    {
+      "file": "research/cdt_odd_gamma_unramified_forcing_split_independent_review_20261007.md",
+      "sha256": "33fed534b5a7138ad7466047754f50f5b769862aecca0b1612f3e7bc55528fd2",
+      "bytes": 10088
+    },
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "bytes": 18371
+    },
+    {
+      "file": "research/cdt_odd_gamma_lift_holonomy_reference_gate_20261007.md",
+      "sha256": "78eb5777b649336c7906174878f1b5504e34dd012409fdcbb96e13d1390710c7",
+      "bytes": 13537
+    },
+    {
+      "file": "research/cdt_odd_gamma_connection_projection_20261007.md",
+      "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+      "bytes": 18401
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_20261007.md",
+      "sha256": "0a9eb062f5ca02f3337a9532457a01b6b8904e064b2ff1ebf187b302388adc9e",
+      "bytes": 18617
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "sha256": "4ab728305b71e6b6d5d551c9f25653cd0465eecb5ad3de11944a49d7b45982c7",
+      "bytes": 208949
+    },
+    {
+      "file": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_table5_page17.png",
+      "sha256": "97598cdc647d4cc0b080f676985cd197dadafcc3c7dbbbb1fe6c4e700d83a262",
+      "bytes": 223600
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "sha256": "239c64b8bab41b12bc2a41d8eb3630d2935e04365bf6a3b9919193793551fc20",
+      "bytes": 171695
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_unramified_forcing_split_20261007.json",
+      "sha256": "1bcb17e5efb1c29c38ce5e6918d0feae9fac3668f4f468a75ebfb28378d3b23d",
+      "bytes": 11042
+    },
+    {
+      "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_independent_review_20261007.md",
+      "sha256": "b9ebc4e063ecc5b6b77a235e8ac9abc434104b040bcc989ac5ce7d31c9293a31",
+      "bytes": 9360
+    },
+    {
+      "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.md",
+      "sha256": "a73af0926ab50c256462ceaffe9fc68459861b74bf8f4f6b5a1afa8a8ab462af",
+      "bytes": 18032
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2016_finite_hypergeometric_arxiv1505_02900v2.pdf",
+      "sha256": "e6de6b7ea3e12cccc85c04a199baedf21328853244fb0b2d02470e9399522a09",
+      "bytes": 446404
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/cohen_guillera2021_rational_ramanujan_arxiv2101_12592v1.pdf",
+      "sha256": "9861a0f85466f7a99bea2cf8e4e37ed1572a4294feb79a8e2f18564d39441e3f",
+      "bytes": 203337
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2023_heuristic_zudilin_arxiv2312_16827v1.pdf",
+      "sha256": "c19b25e17e5636ac05e11da92ab42ea856c3bcfd7122413f64b0e94cd7d65137",
+      "bytes": 134905
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/guillera2024_heuristic_zudilin_arxiv2312_16827v14.pdf",
+      "sha256": "af2311204870c46d271e8c37e035154ce283c88b9723bb6770a5e7ec21315074",
+      "bytes": 118013
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/dembele_panchishkin_voight_zudilin2019_asai_arxiv1906_07384v3.pdf",
+      "sha256": "a2fea5e7ba86c8c6725fe0f7e5a414f6ff786f16dafcec48e0d80f7a0741b7d3",
+      "bytes": 293007
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/grove_long_rosen_tu2026_ehmm_iii_arxiv2607_25173v1.pdf",
+      "sha256": "aa41e64e9006cb80ab6a7c05a0da720045304769e768e7de835c2ecc7e725c10",
+      "bytes": 507859
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.json",
+      "sha256": "9f1ebbdfcfb6f343601c8a55b69d3d0f1cfd554a5d3bb047e3e57f98361e985f",
+      "bytes": 14967
+    },
+    {
+      "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_independent_review_20261007.md",
+      "sha256": "c587e7c607d09fd8ae78256334addf04617c50c553dfc22497fab92394537bbc",
+      "bytes": 7194
+    },
+    {
+      "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_20261007.md",
+      "sha256": "d38ca46ee63aebf626309955a6347f40d3c018c42db810b827e20430d3c483a3",
+      "bytes": 11145
+    },
+    {
+      "file": "literature/cdt_gamma_ramanujan_frobenius_sources_20261007/beukers_cohen_mellit2015_finite_hypergeometric_arxiv1505_02900v1.pdf",
+      "sha256": "4ddb1b57b4a154657099da7b9a15f6987b67f002cac74a1545751128e580dfee",
+      "bytes": 378825
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "bytes": 938673
+    },
+    {
+      "file": "literature/greene1987_hypergeometric_finite_fields_author.pdf",
+      "sha256": "6c504ae11f84feb37be18beadf588de6864adbe4499f35e70b37c239e3f7be98",
+      "bytes": 1946076
+    },
+    {
+      "file": "research/artifacts/cdt_odd_gamma_relative_chain_candidate_20261007/au_pdf26.png",
+      "sha256": "577fed4bee531d736cb3ebf6c3cc566c9106f1a53414e3432712817e8cbef055",
+      "bytes": 246570
+    },
+    {
+      "file": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.guard.json",
+      "sha256": "25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c",
+      "bytes": 74
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.guard.json",
+      "sha256": "50d52715865eeb9cd6929a6b3ae4223c35d44b8294ec6513753860d9ae4656c8",
+      "bytes": 145
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "sha256": "7fed78788586ef456383eb136ae545405c4e6752858f280d8c196257679c7508",
+      "bytes": 133
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json",
+      "sha256": "e1e97654436d92dada737c0a9dee938008df3b976e85d67cc51a422647364189",
+      "bytes": 261
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json",
+      "sha256": "a8a55e407cea1a95cf34f4c08625237205260fbbed908544cfe9b5d64fe6fd77",
+      "bytes": 287
+    }
+  ],
+  "all_physical_pins_match": true
+}

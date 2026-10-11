@@ -1,0 +1,105 @@
+                                      D. Zeilberger / Holonomic systems for special functions                              339
+
+
+analytic in some multi-annulus that contains T”, and if f(m) is supported in N”, then f^is a nice
+and honest formal power series.
+  Let us apply the operators z(d/dz) and z on a single-variable formal Laurent series
+
+           f-(z) = f             f(m)z?
+                        --oo
+
+We get
+
+           z&-(z)= g mf(m)zM
+                                  -CO
+and
+
+           zf(z) =        c      f(m)zm+l           = c      f(m   - l)zm,
+                          --oo                        --oo
+
+so the z-transform sends the operator z(d/dz) to the operator “multiplication                               by m”, and it
+sends the operator “z” into the “backward shift” E-l (E-‘f( m) = f( m - 1)).
+   In several variables we have
+           zj -   E,-I,             zjDj @ mj,
+where, as always, mj is shorthand for the operator “multiplication                              by mj”. A linear partial
+recurrence operator with polynomial coefficients is written
+           P(m,,.       .., m,,      El’,..    ., E;‘),
+and this corresponds to the differential operator
+           P(z$+,...,             z,D,,   zl,...,    zn).
+   Conversely any linear differential operator with polynomial coefficients                         can be written as
+             -a1 . . . z,V(zlD1,. . . , z,D,, zl,. . .., z,),
+          Zl
+
+
+ for some nonnegative integers al,. . . , a,. So it is obvious that f(m) is holonomic if and only if
+fiz) is holonomic. In fact this last sentence is a tautology since we have basically defined f(m)
+ to be holonomic when flz) is holonomic.
+    The same reasoning as in the continuous case yields.
+
+Proposition 3.1’. The sum of two holonomic discrete functions from                       (a subset of) H” to C is also
+holonomic.
+
+Proposition 3.2’. The product of two holonomic discrete functions from (a subset of) h” to C is also
+holonomic.
+
+Proposition 3.2 * ‘. If f and g are holonomic discrete functions,                so is their convolution,   if it is defined.
+
+   The characteristic function of the discrete hyperplane m, = a is clearly holonomic, so we have
+the following proposition.
+
+ Proposition 3.3’. Let f = f( m,, . . . , m,) be holonomic                   in Z”,   and let a be any constant;        then
+f(m 1,. . . , m,-,, a) is holonomic in B”-‘.
+340                                  D. Zeilberger / Holonomic systems for special functions
+
+
+   The characteristic function of the discrete line m, = . . . = m,_ 1 = 0 is obviously holonomic,
+so we have the next proposition.
+
+Proposition 3.4’. Let f (m,, . . . , m,)              be holonomic        in Z”;     then
+
+             Cf(m,,...,m,-,,                  m,)
+             m”
+is holonomic     in En-l,       if it is defined.
+
+
+   Since the property             of being holonomic                is preserved under addition         we have the next
+proposition.
+
+Proposition 3.5’. If f( m,, . . . , m,)             is holonomic        in h”,   then, for any constants a and b,
+
+
+               i    f(m,    , . . . , m,-,,     m,>
+             t?l,=Ll
+
+is holonomic     in Z”-’        (in the surviving variables m,, . . . , m, _ 1).
+
+
+3.2.1. The diagonal of a holonomic formal power series is D-finite
+   If
+
+            &,..       ., zn) =      C f(m,           ,...,   m,)z,“’     e-0 z,“n
+                                    mEWI”
+is a formal power series, we define the diagonal as
+            fo(w)      = Cf(m,...,m)wm.
+                            m
+In other words, we restrict f (m,, . . . , m,) to the diagonal and replace zi . - - z, by a new variable
+W.
+
+   The   z-transform of the characteristic set of the diagonal {(m, . . . , m), m > 0} is the rational
+formal power series l/(1 - (zi . . . z,)), which, by Proposition 2.1 (Section 2.5) is holonomic
+(this can be also checked directly). If f is a holonomic formal power series, then f itself must be
+a holonomic discrete function and it follows by Proposition 3.2’ that the product of f with the
+characteristic function of the diagonal {(m, . . . , m), m > 0} is holonomic. But this product is the
+restriction f ( m, . . . , m) of f to the diagonal, and so f (m, . . . , m) is a single variable holonomic
+discrete function (what Stanley [50] calls P-recursive), and its z-transform &w)                      must be a
+holonomic formal power series in one variable, what Stanley [50] calls D-finite.
+   By Proposition 2.1, a rational formal power series Q(z,, . . . , z,)/P(zl,.      . . , z,,) (P(0,. . . ,O) f 0)
+is holonomic, so it follows that the diagonal of a rational formal power series is D-finite. This
+fact was conjectured by Stanley [50], and incompletely proved in [60] and [29]. An elementary
+proof was given by Lipshitz [38].
+
+3.2.2.   Mixed     continuous and discrete functions
+   Our discussion extends immediately to mixed continuous-discrete functions f : R”’ X Z”’ - C
+(in fact the continuous component may be a distribution, i.e., f ( -, m) may be a distribution on
+lF8”’ for every m in a@).
+

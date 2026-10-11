@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-06",
+  "author": "/root/conifold_arithmetic_hypothesis",
+  "completed_date": "2026-10-07",
+  "status": "final_math_independently_reviewed_source_record_frozen",
+  "baseline": {
+    "math_inputs": 487,
+    "main_sha256": "ee3475aa18e73d8477d0cdece0a5e7504cfb99e3d5a52d6a66cfa1f2e7536837",
+    "audit_sha256": "8a74a9ed32e524467ffa9d5fd866f71d652ce056cc794410d540574880f72faf",
+    "author_actual_read": ["main sections 133-137", "audit first 40 lines", "frozen f988 entire eleven sections Z1-Z23"],
+    "main_audit_hash_semantics": "historical actual-read snapshots before root appended current sections; not assertions about future mutable main/audit hashes",
+    "frozen_inputs_mutated": false
+  },
+  "principal": {
+    "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006.md",
+    "sha256": "2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24",
+    "author_read": "complete eleven sections, equations R1-R30; no truncation",
+    "proved": ["true halfjet Racah limit for complete cubic weight", "all complete profiles up to 5r+1 have unit norms and leading coefficients", "known complete Christoffel-Darboux kernel", "actual middle rank-r update and corank H <= r", "fixed lambda2 actual M5 equivalent 2r determinant and exact kernel reconstruction", "actual middle exact rank-two spectral displacement", "actual H has no nonzero spectral-invariant kernel subspace", "two-sided polynomial Pearson with two rank-one middle jumps and full first-pole caveat"],
+    "not_proved": ["infinite actual M5 units", "actual 2r determinant anti-cancellation", "actual higher Smith alternative", "same-object strict arithmetic analytic margin", "new zeta or L-value irrationality or linear independence"]
+  },
+  "producer": {
+    "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.py",
+    "sha256": "f36a0ca4740926620306db99be3c4e07bc04c97d52ef4b67b498de410518395d",
+    "json_path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.json",
+    "json_sha256": "c99024507adc6419cde98bef171c63c44aa4090e30075bbe4c13edb3b03f5a62",
+    "guard_path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.guard.json",
+    "guard_sha256": "25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c",
+    "history": [{"run": 1, "guard": "exclusive create before mathematics", "result": "PASS", "exit_code": 0, "checks": 937}],
+    "successful_runs": 1,
+    "failed_runs": 0,
+    "reruns": 0,
+    "old_or_peer_execution_import_rerun": 0,
+    "frozen_after_run": true,
+    "cases": [1, 2, 4],
+    "scope": "mechanism identities only; old r1/2/4, no auxiliary prime table extension and no M5 unit assertion",
+    "author_actual_static_read": "complete source before run; complete output JSON three cases and all fields after run",
+    "not_program_asserted": ["diagonal CD removable limit", "polynomial Pearson R28-R30", "all-scale theorem", "infinite units"],
+    "paper_proof_responsible_for_all_scale": true
+  },
+  "primary_sources": [
+    {
+      "title": "Pearson Equations for Discrete Orthogonal Polynomials: I",
+      "authors": ["Manuel Manas", "Itsaso Fernandez-Irisarri", "Omar F. Gonzalez-Hernandez"],
+      "url": "https://arxiv.org/pdf/2107.01747v3",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/manas_fernandez_gonzalez2021_pearson_I_arxiv2107_01747v3.pdf",
+      "sha256": "43393a73930abe79405729233b4374dafca777dc26dd7279184083dfa48aa769",
+      "bytes": 633931,
+      "archive_pages": 25,
+      "author_actual_complete_text_pages": [1,2,3,4,5,6,7,8,9,10,13,14,15],
+      "distinct_read_pages": 13,
+      "role": "Theorem1 theta(0)=0 and complete-support moment Pearson, factorization normality premises, contiguous relations; no automatic actual normality",
+      "tls": "normal certificate verification"
+    },
+    {
+      "title": "A Whipple 7F6 Formula Revisited",
+      "authors": ["Wen-Ching Winnie Li", "Ling Long", "Fang-Ting Tu"],
+      "url": "https://arxiv.org/pdf/2103.08858v2",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e",
+      "bytes": 774289,
+      "archive_pages": 38,
+      "author_actual_complete_text_pages": [1,2,3,4,5],
+      "distinct_read_pages": 5,
+      "role": "primitive/selfdual and explicit very-well-poised hypotheses; actual fifth power not automatically this Whipple family",
+      "tls": "normal certificate verification"
+    },
+    {
+      "title": "The Askey-scheme of hypergeometric orthogonal polynomials and its q-analogue",
+      "authors": ["Roelof Koekoek", "Rene F. Swarttouw"],
+      "report": "98-17, 1998",
+      "url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf",
+      "author_landing_page": "https://tudelft.roelofkoekoek.nl/askey.html",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "archive_pages": 170,
+      "author_actual_complete_text_pages": [7,28,29,30],
+      "distinct_read_pages": 4,
+      "role": "preface and Racah equations 1.2.1-1.2.5; rational orthogonality extended and singular halfjet limit independently proved",
+      "tls": "normal certificate verification"
+    }
+  ],
+  "source_attempts": [
+    {"url": "https://fa.ewi.tudelft.nl/~koekoek/documents/as98.pdf", "tls": "normal", "result": "HTTP404", "archive_created": false},
+    {"url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf", "tls": "normal", "result": "success", "route": "actual link 98-17 from current author landing page"}
+  ],
+  "archive_totals": {"new_pdfs": 3, "archive_pages": 233, "author_distinct_complete_text_read_pages": 22},
+  "web_auxiliary_scope": "DLMF18.25 actual web read for formula cross-check; principal proof uses author report and self-proved finite-field limits. No external code or HTML archived; no TLS bypass.",
+  "formal_cross_reviews": {
+    "root": {
+      "path": "research/cdt_odd_paired_supported_racah_depth4_root_review_20261006.md",
+      "sha256": "b720e79b859ddb3b5f16b908fedd794e7ca378c9c2c598bbeaf5dd6fc8c13828",
+      "actual_scope_as_declared_by_reviewer": "complete principal eleven sections R1-R30, complete static producer, complete three-case JSON all fields, complete execution guard; independent all-scale paper check",
+      "reviewer_primary_pages": "KS PDF1,28-31,54-57, nine pages; 54-57 are limit relations rather than Racah norm pages",
+      "author_actual_read_of_final_review": "complete six sections with no truncation; final physical SHA verified"
+    },
+    "toric": {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_independent_review_20261006.md",
+      "sha256": "763e586e86ec1d967f9540e0d142743db43ca55c7eabfab8bc875df2a9c92e89",
+      "actual_scope_as_declared_by_reviewer": "complete principal R1-R30, complete static producer, complete three-case JSON all fields, candidate receipt00f7; frozen f988 complete reread; independent all-scale paper check",
+      "reviewer_primary_pages": "KS28-30, Pearson1-3/8-9, Li-Long-Tu1-2, ten pages within author's22-page union",
+      "author_actual_read_of_final_review": "complete V1-V6 with no truncation; final physical SHA verified"
+    },
+    "author_new_independent_review_of_peer_support_and_transfer": {
+      "path": "research/cdt_odd_paired_supported_jet_transfer_independent_review_20261006.md",
+      "sha256": "5e2201638eedae6fdb47600f6cd2cf8defcf60cf34061c01c100e0778e43af5d",
+      "author_final_actual_read": "complete V1-V7, exact allocation domain explicit; final physical SHA verified",
+      "principal_scope": "quarter35ed complete P1-P8/P1-P15; toric3a4b complete T1-T9/T1-T18; whole-X supported-rank, two-side matching, priced graph deletion, ragged layer and finite floor-jump fallback independently checked",
+      "static_saved_data_scope": "quarter PY complete static and all saved30profiles fields/labels,36faces,12counterexamples; toric PY complete static and all saved98mergedrows fields; 213cells internal and not individually saved",
+      "candidate_receipts_actually_read": ["quarter a5f6ffe119d306c77f45c0a6f16c3a15a37cb6ca7f321379e80c0a108c647786", "toric633f6bc78ad2b42b8c7d1cca3a8ee2fdcfdcc676a63bcff64601667cb97f20b2"],
+      "old_baseline_json_actual_scope": "frozen5bb metadata and all113 literal lo/hi/floors/combined-label/combined-affine fields; otherfields not claimed this round",
+      "math_execution_import_rerun": 0,
+      "additional_primary_download_or_pdf_pages": 0
+    },
+    "receipt_hash_cycles": "final review hashes are one-way pins; no peer final receipt is embedded, and no future receipt read is claimed"
+  },
+  "final_metadata_policy": {
+    "principal_producer_result_guard_bytes_unchanged_after_success": true,
+    "old_and_peer_mathematical_execution_import_rerun": 0,
+    "own_total_mathematical_first_runs": 1,
+    "own_successful_runs": 1,
+    "own_failed_runs": 0,
+    "formal_review_bytes_frozen": true,
+    "future_changes_require_distinct_new_artifact": true
+  }
+}

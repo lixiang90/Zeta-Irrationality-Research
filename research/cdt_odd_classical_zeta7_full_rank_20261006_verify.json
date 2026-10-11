@@ -1,0 +1,104 @@
+{
+  "scope": "Fixed exact operator reciprocity and branch-independent logarithmic coefficients; actual full rank10 and nonsplitting follow from the companion all-scale proof and already proved irreducible module inputs. No numerical irrationality, full Picard-Vessiot group, complete extension-class parameter classification, or capacity budget claim.",
+  "execution_record": "First execution of this NEW fixed certificate; retained only after all checks passed. No old or peer research producer executed or imported.",
+  "H0": "c0 + c1*l + c2*l**2 + c3*l**3 - 2*l**4/3",
+  "forcing_S0": "15*c2 + 45*c3*l - 360*c3 - 60*l**2 + 960*l - 2880",
+  "F_over_t_0": "b0 + b1*l + b2*l**2 + b3*l**3 + b4*l**4 + c2*l**5/8 + c3*l**6/16 - 3*c3*l**5 - l**7/42 + 4*l**6/3 - 24*l**5",
+  "highest_H_log_coefficient": "-2/3",
+  "highest_G_log_coefficient": "60",
+  "highest_F_t_log_coefficient": "-1/42",
+  "highest_F_x_log_coefficient": "1/42",
+  "input_pins": {
+    "cdt_odd_classical_derivative_projection_20261006.md": "c24a4d7807bed750f63746b4506f2a238a7d9b9122e2e39ac4871653b39d5c1e",
+    "cdt_odd_classical_zeta7_forcing_spin_20261006.md": "c3a4212bccdc4dd18331e6a1446cf22dd88462d27b1631c350c12d2f78c9a56a",
+    "cdt_odd_classical_spin_monodromy_20261006_verify.json": "3713973b1e3907d65b055a8ac465320ab05e9e623baf5ed5193016c478075517"
+  },
+  "checks": [
+    {
+      "name": "exact Q4 reciprocity",
+      "passed": true
+    },
+    {
+      "name": "all transformed K Euler coefficients",
+      "passed": true
+    },
+    {
+      "name": "full reciprocal operator with shifted F=tf",
+      "passed": true
+    },
+    {
+      "name": "forcing h0 fourth derivative exact -16",
+      "passed": true
+    },
+    {
+      "name": "S0 full logarithmic degree two",
+      "passed": true
+    },
+    {
+      "name": "S0 top coefficient independent of all connections",
+      "passed": true
+    },
+    {
+      "name": "G0 top coefficient independent of all connections",
+      "passed": true
+    },
+    {
+      "name": "f0 complete fifth derivative gives S0",
+      "passed": true
+    },
+    {
+      "name": "f0 degree exactly seven for every connection choice",
+      "passed": true
+    },
+    {
+      "name": "f0 top coefficient exact -1/42",
+      "passed": true
+    },
+    {
+      "name": "x-log sign gives exact positive 1/42",
+      "passed": true
+    },
+    {
+      "name": "Ore nonzero remainder witness at zero",
+      "passed": true
+    },
+    {
+      "name": "homogeneous infinity indicial rank4",
+      "passed": true
+    },
+    {
+      "name": "homogeneous infinity indicial rank5",
+      "passed": true
+    },
+    {
+      "name": "H fixed-space nilpotence degree5",
+      "passed": true
+    },
+    {
+      "name": "F fixed-space nilpotence degree8",
+      "passed": true
+    },
+    {
+      "name": "all n>=1 H recursion invertibility",
+      "passed": true
+    },
+    {
+      "name": "all n>=1 F recursion invertibility",
+      "passed": true
+    },
+    {
+      "name": "frozen input pin cdt_odd_classical_derivative_projection_20261006.md",
+      "passed": true
+    },
+    {
+      "name": "frozen input pin cdt_odd_classical_zeta7_forcing_spin_20261006.md",
+      "passed": true
+    },
+    {
+      "name": "frozen input pin cdt_odd_classical_spin_monodromy_20261006_verify.json",
+      "passed": true
+    }
+  ],
+  "check_count": 21,
+  "all_passed": true
+}

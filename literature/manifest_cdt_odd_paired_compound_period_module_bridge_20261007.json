@@ -1,0 +1,114 @@
+{
+  "schema": "cdt-odd-pure-paper-final-receipt-v1",
+  "state": "FINAL",
+  "date": "2026-10-07",
+  "author_agent": "/root/source_pencil_finalize",
+  "workspace": "E:/kimi-build/zeta5",
+  "baseline": {
+    "authority_read_scope": "research/cdt_odd_background_progress_20261006.md sections 161-165; mutable authority is not an artifact pin",
+    "audit_path": "research/cdt_odd_delivery_partial_global_20261007.json",
+    "audit_sha256": "f72fe28cbb874cedbb3e1e20b840d86f2ebd9e37ff7da1632364b9e04cb6729c",
+    "frozen_records": 556,
+    "mathematical_records": 551,
+    "guard_records": 5,
+    "global_baseline_rehash_owner": "/root",
+    "personal_scope": "Read baseline audit metadata and authority sections; no claim of personally rehashing all 556 records. All historical records remain read-only."
+  },
+  "method": {
+    "new_mathematical_producers_created": 0,
+    "mathematical_producer_executions": 0,
+    "mathematical_producer_imports": 0,
+    "mathematical_producer_reruns": 0,
+    "failed_mathematical_producer_runs": 0,
+    "old_or_peer_mathematical_runs": 0,
+    "auxiliary_prime_table_extensions": 0,
+    "lean_runs": 0,
+    "primary_downloads": 0,
+    "new_author_main_manuscripts": 1,
+    "new_author_formal_reviews": 1,
+    "nonmathematical_operations": "Read-only document extraction with pypdf; ordinary Markdown writing; SHA256, byte-count and JSON metadata checks. No mathematical producer is created or executed."
+  },
+  "mathematical_delivery": {
+    "scope": "Original B6/k3/s5, whole S and degree<3n; fixed rational alpha,beta with beta nonzero; actual xi=alpha*zeta(4)+beta*zeta(5).",
+    "main_equations": "B1-B21, six complete sections",
+    "new_paper_results": [
+      "Actual polynomial compound coefficients lift to Q(alpha*Li4+beta*Li5) with correct endpoint Q(xi), holonomicity and exact Q(x)-rank equal to polynomial coefficient-matrix rank.",
+      "All-prime prefix denominator of the actual source differs from L_N^5 by bounded fixed factors; exact jp and shifted (j-1)p+t0 coefficient valuations.",
+      "Degree>=2 shifted-index witnesses force finite-LCM row cost sigma>=5 even with any fixed N^e; column-step weighted bounds and actual SPD slope complete the all-q, d>=2 full-polynomial compound obstruction on the standard slit leaf.",
+      "Monodromy-invariant C(x)-part is rational functions, Q-span invariant part is constant polynomials; rational endpoint subtraction does not remove a nonconstant row's branch.",
+      "An explicit sufficient regular-singular monodromy/meromorphic interface and a fixed-version CDT Corollary 6.0.14 criterion with defined J_max, full tau_flat+tau_sharp, and radial-boundary conditions."
+    ],
+    "obstruction_scope": "Canonical polynomial lift, fixed-polynomial full basis, fixed finite LCM plus coefficient-index powers, and the standard C minus [1,infinity) leaf. Not an obstruction to arbitrary Q(x) basis changes, other meromorphic pullbacks, Hadamard systems or all odd-zeta methods.",
+    "unproved": [
+      "No new system satisfying B18-B20 has been constructed.",
+      "Root Hasse-jet mixed-Gram strict margin H17 remains unproved.",
+      "No new numerical zeta/L/Catalan irrationality or linear-independence theorem, and no Lean formalization."
+    ]
+  },
+  "final_full_read_evidence": {
+    "author_main": "Actual FULL reread of final e9e1 manuscript after the independent review, not merely the earlier 4c789 candidate.",
+    "received_independent_review": "Actual FULL read of root's stable 524bc review of final B1-B21; PASS, no change requested.",
+    "author_review_of_root": "Actual FULL read of stable c178 H1-H17 and independent derivation; author formal review 39f82 was also FULL self-read, PASS.",
+    "current_round_frozen_markdown_full_reads": [
+      "cdt_odd_paired_partial_compound_transfer_20261007.md P1-P14",
+      "period_holonomy_cdt_mechanism_20261005.md all sections",
+      "period_holonomy_target_projection_20261005.md all sections; truncated first output supplemented by complete separate segments",
+      "cdt_odd_paired_supported_weighted_dual_transfer_20261006.md T1-T18",
+      "cdt_odd_paired_low_price_support_domination_20261007.md L1-L18"
+    ],
+    "prior_round_full_reads_reused": [
+      "cdt_odd_paired_actual_local_gram_layers_20261006.md G1-G15",
+      "cdt_odd_paired_coupled_gram_decay_20261007.md C1-C23"
+    ],
+    "source_pdf_counting_rule": "Distinct physical snapshot SHA256 plus one-based PDF page; repeated reads count once. Archived document length is not the read count; no visual-render or whole-PDF read is claimed.",
+    "source_pdf_reads": [
+      {
+        "path": "literature/cdt2026_effective_holonomy_author_20261006.pdf",
+        "archived_pages": 20,
+        "actual_full_text_read_pages": [1, 2, 3, 4, 5, 6, 7],
+        "direct_mathematical_delivery_or_review_pages": [1, 2, 3, 4, 5, 6, 7],
+        "distinct_pages": 7,
+        "url": "https://math.berkeley.edu/~ytang/ICM.pdf"
+      },
+      {
+        "path": "literature/cdt2024_l2_chi_minus3.pdf",
+        "archived_pages": 218,
+        "actual_full_text_read_pages": [48, 61, 62, 66, 67, 68, 69, 70, 72, 74, 81, 82],
+        "direct_mathematical_delivery_or_review_pages": [66, 67, 68, 69, 70],
+        "additional_background_only_pages": [48, 61, 62, 72, 74, 81, 82],
+        "distinct_pages": 12,
+        "truncation_handling": "The initial definition search also emitted seven additional complete pages. These were final FULL reread for precise scope. A later combined output truncated part of page72; page72 was then independently FULL read without truncation.",
+        "url": "https://arxiv.org/abs/2408.15403v2"
+      },
+      {
+        "path": "literature/cdt_paired_complex_gram_sources_20261007/borodin1998_biorthogonal_ensembles_math9804027v1.pdf",
+        "archived_pages": 26,
+        "actual_full_text_read_pages": [2, 3, 4, 5, 6, 7],
+        "direct_mathematical_delivery_or_review_pages": [2, 3, 4, 5, 6, 7],
+        "distinct_pages": 6,
+        "url": "https://arxiv.org/abs/math/9804027v1"
+      }
+    ],
+    "personal_current_round_distinct_full_text_pdf_pages": 25,
+    "direct_mathematical_delivery_or_review_distinct_pdf_pages": 18,
+    "additional_background_only_distinct_pdf_pages": 7,
+    "scope_note": "Additional seven background pages are not seven extra mathematical verifications, new sources or a whole-book claim. Peer read counts and historical producer check counts are not credited to this author."
+  },
+  "artifacts": [
+    {"role": "author_final_main", "path": "research/cdt_odd_paired_compound_period_module_bridge_20261007.md", "bytes": 18055, "sha256": "e9e1ad8bd1553b53b7a0f901f33a9dec1fb1bedc5c51b6d2c9205d61defccc83"},
+    {"role": "received_root_independent_review", "path": "research/cdt_odd_paired_compound_period_module_bridge_independent_review_20261007.md", "bytes": 6755, "sha256": "524bc98a4c2874982668fbaef6266ed32e90d037d9c72e631932646964bb2390"},
+    {"role": "root_new_main_independently_reviewed", "path": "research/cdt_odd_paired_hasse_jet_mixed_gram_20261007.md", "bytes": 9941, "sha256": "c178bf8540ff8a0697260ff3d5d137039d92b6288affc29f432934b100704112"},
+    {"role": "author_formal_review_of_root", "path": "research/cdt_odd_paired_hasse_jet_mixed_gram_independent_review_20261007.md", "bytes": 5620, "sha256": "39f82bc66fe9b48ca2bb93b3971b77f42186173f784cae4839d305e62bce4d71"},
+    {"role": "frozen_partial_input", "path": "research/cdt_odd_paired_partial_compound_transfer_20261007.md", "bytes": 7857, "sha256": "bece2d2f49def7809c5fe386e1bc247e31bd853d0aab3867b5f0ea28d2035866"},
+    {"role": "frozen_mechanism_input", "path": "research/period_holonomy_cdt_mechanism_20261005.md", "bytes": 16857, "sha256": "27483fbfe9d54e0e2bbe982d6959da4586bd9e7490bbb2b64c5c6301e3478299"},
+    {"role": "frozen_target_projection_input", "path": "research/period_holonomy_target_projection_20261005.md", "bytes": 21732, "sha256": "36281c471fc0c4013b943222f1e8ab9f8a736e6c69fa63ab87422f120ffc5837"},
+    {"role": "frozen_whole_X_budget_input", "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006.md", "bytes": 12458, "sha256": "3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334"},
+    {"role": "frozen_budget_preservation_input", "path": "research/cdt_odd_paired_low_price_support_domination_20261007.md", "bytes": 11799, "sha256": "00d578e335cfee1326eb3369f8dfeea34455f075f61ee30663ca55988a5b4296"},
+    {"role": "frozen_prior_read_actual_Gram_input", "path": "research/cdt_odd_paired_actual_local_gram_layers_20261006.md", "bytes": 11647, "sha256": "2856a47ab3aa407f1eb7477a57e1e44bd010a7dd95b8cb055a603b68ea091094"},
+    {"role": "frozen_prior_read_contour_input", "path": "research/cdt_odd_paired_coupled_gram_decay_20261007.md", "bytes": 16381, "sha256": "03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965"},
+    {"role": "primary_effective_holonomy_snapshot", "path": "literature/cdt2026_effective_holonomy_author_20261006.pdf", "bytes": 657333, "sha256": "368cc0af5584049a76c7cef0fd78886524143ee3935f56cfc2e35fb9bee22796"},
+    {"role": "primary_fixed_CDT_v2_snapshot", "path": "literature/cdt2024_l2_chi_minus3.pdf", "bytes": 4517169, "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771"},
+    {"role": "primary_Borodin_snapshot", "path": "literature/cdt_paired_complex_gram_sources_20261007/borodin1998_biorthogonal_ensembles_math9804027v1.pdf", "bytes": 234234, "sha256": "c89a7cc9334e434531769f6a9202edd0ae58c2f4fa7da3490fc5f89ea88c75f0"}
+  ],
+  "one_way_receipt_policy": "Pins stable final manuscripts, completed reviews and existing actual sources only. Does not pin mutable authority, a future peer receipt or a future root audit. Root's later final receipt may pin this file. No circular receipt dependency."
+}

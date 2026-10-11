@@ -1,0 +1,29 @@
+{
+  "scope": "Symbolic identities only; the all-prime p-saturation and degree argument are proved in the companion Markdown. No target evaluation, prime search, or old producer run.",
+  "checks_passed": 15,
+  "checks": [
+    "Ds has degree 6 and constant 1",
+    "Ds*h is polynomial with denominator dividing 2",
+    "Ds*T=M",
+    "M has specified expansion",
+    "M has degree 6 and leading coefficient 144",
+    "T has first coefficient -8",
+    "curvature equals cleared polynomial R_Ds",
+    "R_Ds(beta*eta^2) is exactly eta^3 times displayed quotient",
+    "generic degree lower bound exceeds M at p=7, hence for every p>=7",
+    "leading coefficient of M has only excluded primes 2 and 3",
+    "squarefree root consequence requires only nonzero positive power",
+    "universal normalized image is quadratic in j",
+    "zero-constant tests 1,2,3 recover 2P2 by second difference",
+    "first difference recovers P1",
+    "first test then recovers P0"
+  ],
+  "Delta": "16*t**4 - 32*t**3 + 28*t**2 - 12*t + 1",
+  "Ds": "16*t**6 - 64*t**5 + 108*t**4 - 100*t**3 + 53*t**2 - 14*t + 1",
+  "Ds_times_h": "48*t**6 - 160*t**5 + 216*t**4 - 150*t**3 + 53*t**2 - 7*t",
+  "M": "144*t**6 - 432*t**5 + 512*t**4 - 304*t**3 + 88*t**2 - 8*t",
+  "M_degree": 6,
+  "M_leading_coefficient": 144,
+  "generic_H_degree_lower_bound": "(3*p-7)/2 >= 7 for p >= 7",
+  "theorem_scope": "Same complete excellent quotient G_p; eta monic of degree deg(H), eta modulo p = H; beta arbitrary polynomial. Separate universal all-W full-formal order<=2 content bound. No exclusion of special-packet S3/S4 rows, higher-order rows, or finite jets."
+}

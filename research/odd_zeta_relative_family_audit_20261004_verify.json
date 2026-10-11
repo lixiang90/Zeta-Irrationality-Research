@@ -1,0 +1,346 @@
+{
+  "status": "fixed_exact_identities_passed_no_parameter_scan",
+  "ordinary_Rodrigues_examples": [
+    {
+      "n": 1,
+      "A": 1,
+      "R": "-3*u**2 + 2*u",
+      "degree": 2,
+      "ordinary_moments": [
+        0
+      ],
+      "R_minus_one": "-5",
+      "I7": {
+        "constant": "637/128",
+        "target_coefficient": "-315/64",
+        "minimal_common_denominator": 128,
+        "coefficient_content": 7,
+        "primitive_constant": 91,
+        "primitive_target_coefficient": -90,
+        "actual_period_value_not_evaluated": true
+      },
+      "J7_odd_parity": {
+        "constant": "637/16384",
+        "target_coefficient": "-315/8192",
+        "minimal_common_denominator": 16384,
+        "coefficient_content": 7,
+        "primitive_constant": 91,
+        "primitive_target_coefficient": -90,
+        "actual_period_value_not_evaluated": true
+      },
+      "J2_even_parity": {
+        "constant": "14/3",
+        "target_coefficient": "-5",
+        "minimal_common_denominator": 3,
+        "coefficient_content": 1,
+        "primitive_constant": 14,
+        "primitive_target_coefficient": -15,
+        "actual_period_value_not_evaluated": true
+      }
+    },
+    {
+      "n": 2,
+      "A": 1,
+      "R": "15*u**4 - 20*u**3 + 6*u**2",
+      "degree": 4,
+      "ordinary_moments": [
+        0,
+        0
+      ],
+      "R_minus_one": "41",
+      "I7": {
+        "constant": "-1458167387/35831808",
+        "target_coefficient": "2583/64",
+        "minimal_common_denominator": 35831808,
+        "coefficient_content": 1,
+        "primitive_constant": -1458167387,
+        "primitive_target_coefficient": 1446149376,
+        "actual_period_value_not_evaluated": true
+      },
+      "J7_odd_parity": {
+        "constant": "-1458167387/4586471424",
+        "target_coefficient": "2583/8192",
+        "minimal_common_denominator": 4586471424,
+        "coefficient_content": 1,
+        "primitive_constant": -1458167387,
+        "primitive_target_coefficient": 1446149376,
+        "actual_period_value_not_evaluated": true
+      },
+      "J2_even_parity": {
+        "constant": "-82772/2205",
+        "target_coefficient": "41",
+        "minimal_common_denominator": 2205,
+        "coefficient_content": 1,
+        "primitive_constant": -82772,
+        "primitive_target_coefficient": 90405,
+        "actual_period_value_not_evaluated": true
+      }
+    },
+    {
+      "n": 3,
+      "A": 1,
+      "R": "-84*u**6 + 168*u**5 - 105*u**4 + 20*u**3",
+      "degree": 6,
+      "ordinary_moments": [
+        0,
+        0,
+        0
+      ],
+      "R_minus_one": "-377",
+      "I7": {
+        "constant": "1047543482818741/2799360000000",
+        "target_coefficient": "-23751/64",
+        "minimal_common_denominator": 2799360000000,
+        "coefficient_content": 1,
+        "primitive_constant": 1047543482818741,
+        "primitive_target_coefficient": -1038868740000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "J7_odd_parity": {
+        "constant": "1047543482818741/358318080000000",
+        "target_coefficient": "-23751/8192",
+        "minimal_common_denominator": 358318080000000,
+        "coefficient_content": 1,
+        "primitive_constant": 1047543482818741,
+        "primitive_target_coefficient": -1038868740000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "J2_even_parity": {
+        "constant": "65809796/190575",
+        "target_coefficient": "-377",
+        "minimal_common_denominator": 190575,
+        "coefficient_content": 13,
+        "primitive_constant": 5062292,
+        "primitive_target_coefficient": -5526675,
+        "actual_period_value_not_evaluated": true
+      }
+    },
+    {
+      "n": 2,
+      "A": 2,
+      "R": "28*u**6 - 42*u**5 + 15*u**4",
+      "degree": 6,
+      "ordinary_moments": [
+        0,
+        0
+      ],
+      "R_minus_one": "85",
+      "I7": {
+        "constant": "-47236631035937/559872000000",
+        "target_coefficient": "5355/64",
+        "minimal_common_denominator": 559872000000,
+        "coefficient_content": 7,
+        "primitive_constant": -6748090147991,
+        "primitive_target_coefficient": 6692220000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "J7_odd_parity": {
+        "constant": "-47236631035937/71663616000000",
+        "target_coefficient": "5355/8192",
+        "minimal_common_denominator": 71663616000000,
+        "coefficient_content": 7,
+        "primitive_constant": -6748090147991,
+        "primitive_target_coefficient": 6692220000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "J2_even_parity": {
+        "constant": "-186945698/2401245",
+        "target_coefficient": "85",
+        "minimal_common_denominator": 2401245,
+        "coefficient_content": 1,
+        "primitive_constant": -186945698,
+        "primitive_target_coefficient": 204105825,
+        "actual_period_value_not_evaluated": true
+      }
+    }
+  ],
+  "log_derivative_identities": [
+    {
+      "log_power": 1,
+      "derivative_order": 1,
+      "identity": "passed"
+    },
+    {
+      "log_power": 1,
+      "derivative_order": 3,
+      "identity": "passed"
+    },
+    {
+      "log_power": 2,
+      "derivative_order": 2,
+      "identity": "passed"
+    },
+    {
+      "log_power": 6,
+      "derivative_order": 1,
+      "identity": "passed"
+    },
+    {
+      "log_power": 6,
+      "derivative_order": 2,
+      "identity": "passed"
+    },
+    {
+      "log_power": 6,
+      "derivative_order": 3,
+      "identity": "passed"
+    }
+  ],
+  "Catalan_half_power_kernel_derivative_identities": [
+    {
+      "derivative_order": 1,
+      "exact_full_kernel_convolution": "passed"
+    },
+    {
+      "derivative_order": 2,
+      "exact_full_kernel_convolution": "passed"
+    },
+    {
+      "derivative_order": 3,
+      "exact_full_kernel_convolution": "passed"
+    }
+  ],
+  "root_log_moment_family_independent_checks": [
+    {
+      "n": 2,
+      "q": 2,
+      "degree": 4,
+      "M_constant": "6",
+      "M_factorized": "6*(z - 2)**2*(z - 1)**2/(z*(z + 1)*(z + 2)*(z + 3)*(z + 4))",
+      "vanishing_log_moments": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "R_minus_one": "878",
+      "normalized_first_toplog_moment": "206318371/259200000",
+      "I7": {
+        "constant": "-31198817365/35831808",
+        "target_coefficient": "27657/32",
+        "minimal_common_denominator": 35831808,
+        "coefficient_content": 1,
+        "primitive_constant": -31198817365,
+        "primitive_target_coefficient": 30968759808,
+        "actual_period_value_not_evaluated": true
+      },
+      "n_order_tail_identity": false,
+      "actual_nonzero_not_claimed": true
+    },
+    {
+      "n": 1,
+      "q": 6,
+      "degree": 6,
+      "M_constant": "720",
+      "M_factorized": "720*(z - 1)**6/(z*(z + 1)*(z + 2)*(z + 3)*(z + 4)*(z + 5)*(z + 6))",
+      "vanishing_log_moments": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "R_minus_one": "725200",
+      "normalized_first_toplog_moment": "1/7",
+      "I7": {
+        "constant": "-50376505709968967/69984000000",
+        "target_coefficient": "2855475/4",
+        "minimal_common_denominator": 69984000000,
+        "coefficient_content": 1,
+        "primitive_constant": -50376505709968967,
+        "primitive_target_coefficient": 49959390600000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "n_order_tail_identity": false,
+      "actual_nonzero_not_claimed": true
+    },
+    {
+      "n": 1,
+      "q": 7,
+      "degree": 7,
+      "M_constant": "-5040",
+      "M_factorized": "-5040*(z - 1)**7/(z*(z + 1)*(z + 2)*(z + 3)*(z + 4)*(z + 5)*(z + 6)*(z + 7))",
+      "vanishing_log_moments": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "R_minus_one": "17095248",
+      "normalized_first_toplog_moment": "0",
+      "I7": {
+        "constant": "-1629974324813608961345129/96058055520000000",
+        "target_coefficient": "67312539/4",
+        "minimal_common_denominator": 96058055520000000,
+        "coefficient_content": 1,
+        "primitive_constant": -1629974324813608961345129,
+        "primitive_target_coefficient": 1616477902113541320000000,
+        "actual_period_value_not_evaluated": true
+      },
+      "n_order_tail_identity": true,
+      "actual_nonzero_not_claimed": true
+    }
+  ],
+  "not_checked_by_computation": [
+    "complete-monotonicity nonzero theorem",
+    "fixed-weight asymptotic Rodrigues rate",
+    "positive-polynomial normalized geometric bound",
+    "actual nonzero or asymptotic budget for root log-moment family",
+    "any irrationality theorem"
+  ]
+}

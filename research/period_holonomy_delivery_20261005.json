@@ -1,0 +1,436 @@
+{
+  "status": "delivery_checks_passed",
+  "as_of": "2026-10-05",
+  "checked_at_utc": "2026-10-05T08:15:46.525089+00:00",
+  "main_report": "period_holonomy_progress_20261005.md",
+  "main_report_sha256": "c539689cc67ec91cea770ef15ba6ad9eed69bb0ece5404f9a117ed964ca0326c",
+  "reports": [
+    {
+      "report": "period_holonomy_cdt_mechanism_20261005.md",
+      "report_sha256": "27483fbfe9d54e0e2bbe982d6959da4586bd9e7490bbb2b64c5c6301e3478299",
+      "script": "period_holonomy_cdt_mechanism_20261005_verify.py",
+      "script_sha256": "6e843b7345894f275c86eea4b7a564f6a4c27d6eeeef0b94ce6eb2f07febb202",
+      "certificate": "period_holonomy_cdt_mechanism_20261005_verify.json",
+      "certificate_sha256": "533eefce36378ec8d1d430b325c45b9fb095abb2f63715b3c806828f24838159",
+      "certificate_status": "passed"
+    },
+    {
+      "report": "period_holonomy_target_projection_20261005.md",
+      "report_sha256": "36281c471fc0c4013b943222f1e8ab9f8a736e6c69fa63ab87422f120ffc5837",
+      "script": "period_holonomy_target_projection_20261005_verify.py",
+      "script_sha256": "ff3b6d55551851315f7fb585ebf1ea44b414e86f0cb7c6b2cd8d75d0befaaa25",
+      "certificate": "period_holonomy_target_projection_20261005_verify.json",
+      "certificate_sha256": "21b105fa5a174c27995107b96a4bf9b6d17b24fe63d8e93cef67d100a832653e",
+      "certificate_status": "exact_assertions_passed"
+    },
+    {
+      "report": "period_holonomy_integral_models_20261005.md",
+      "report_sha256": "b8d4199f6a3b1b97d59481a87157be85652a431b00d444ba04600797b0a9ab1d",
+      "script": "period_holonomy_integral_models_20261005_verify.py",
+      "script_sha256": "2e0930fc6206de551086f2199de6bc3fd46a0c726a38560c4889d789b1fa6732",
+      "certificate": "period_holonomy_integral_models_20261005_verify.json",
+      "certificate_sha256": "c23e725bb9a71f7069a2ad3569ac9c84174bf209bd299475fb120eb79b7b4c11",
+      "certificate_status": "exact_assertions_passed"
+    },
+    {
+      "report": "period_holonomy_dilog_model_20261005.md",
+      "report_sha256": "970191f95813c6f14ce45da71b1af2070fdfa000f28168a7d8ff89fa3b34d9be",
+      "script": "period_holonomy_dilog_model_20261005_verify.py",
+      "script_sha256": "12dd5bfce59114fa37fb860c353b0bd0b82f98d50a51f57521c0fbb4ff1a49e2",
+      "certificate": "period_holonomy_dilog_model_20261005_verify.json",
+      "certificate_sha256": "f593a1988f8947240dc3a7a16f44310c1105f573ef401df3d14d568528fb7e92",
+      "certificate_status": "fixed_exact_dilog_model_certificates_passed"
+    }
+  ],
+  "main_integral_classification_certificate": {
+    "script": "period_holonomy_progress_20261005_verify.py",
+    "script_sha256": "f5dbdc65a0ed017eaf6f361d692af76bd9c27af33efed95721095185f2f74374",
+    "certificate": "period_holonomy_progress_20261005_verify.json",
+    "certificate_sha256": "d9fa9cd6dae15de9cb622b892e16e1d971b743565bf1626ca7972f169f10c6ad",
+    "checks": 7
+  },
+  "written_review": "period_holonomy_review_20261005.md",
+  "written_review_sha256": "6a322057d8c5d33e8f5896a4dfc3bf80177911eb6951546acb4649bbd69b0762",
+  "closed_numeric_consequences_from_CDT": true,
+  "new_global_irrationality_theorem": false,
+  "new_project_structural_lemmas_proved": true,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "new_verifier_scripts_executed_successfully": 5,
+  "frozen_previous_reports": [
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004.md",
+      "sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004_review.md",
+      "sha256": "df39b915c089c168cc9b0051142853b8f751212e477094bab13b70f8a92bc000",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_content_geometry_20261004.md",
+      "sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_catalan_20261004.md",
+      "sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004.md",
+      "sha256": "9a2c843c9de0ff30c5790aff827869abd27b3e0681dc4ec1ccdd5fab1db6638e",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_exceptional_primes_20261005.md",
+      "sha256": "c539cc35792769f141deca440c5d47a65e745037358c6b7688cdc03e73a54157",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_progress_20261004.md",
+      "sha256": "2020a602b2f30671f6a13e66d0f56638db1ea8b2fb172715ec5b23d091775883",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_review_20261004.md",
+      "sha256": "25e940bd94924128a39043f6f55087367f9be4684fcf1e083d89955f42e88724",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004.md",
+      "sha256": "07a4224bdcaef15776bd8552258acd0aea6204819f12097e8706ae2938220736",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_fixed_shift_filters_20261005.md",
+      "sha256": "70c958736db4607eba9a4c164d4b71a80abc235006009a64028203deec6d5f99",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_descent_20261004.md",
+      "sha256": "054e4855775e67fdbe13198d7b705c1d8615bbffa27b5cb5fcb490e3228de774",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_gap_progress_20261004.md",
+      "sha256": "fe3bac7691cce1594c27f0ed609c51cdf3d9dcbbaae6dd030a4ffbde5372ba92",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_regulator_20261004.md",
+      "sha256": "911820ae48252c6757944003b4aa8b34b44627df99e888bf46a49bb23d66a9fb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_vertical_20261004.md",
+      "sha256": "98c374714227f52e982419829d47c8ae4a6e94964840c57bc9ee538333ce2e59",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005.md",
+      "sha256": "9e675637cdd5c5c38e0afc23ea8ec5326c6f39c1438581a3846fc3ce6149f36d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004.md",
+      "sha256": "f00c2b6f95844c8949350eb51968abda08b6904efce8687dcd4ab33845322f15",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_progress_20261005.md",
+      "sha256": "705768e9c35ce21244198ad67119afbb9430074ff718f0c7e6ae5c01097e5479",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_review_20261005.md",
+      "sha256": "4aa60114f6742cec80aee2668ba5380f34eee8ab74932f09e8511a1538f60fe6",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005.md",
+      "sha256": "b7a3b36ccbb5d4f9c208f1b58d2ca3407228120fa5453fc27e070751d717f171",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_primitive_20261005.md",
+      "sha256": "2fd4bfd843db5a12bfa32c4fce2de003e58d3b37f2ea258ef15f89dc9abc4a0c",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_saddle_20261005.md",
+      "sha256": "6389841b0700a5ab897ec395d8b83db3d2c09ccd679ef3e48ad9d7117c851288",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005.md",
+      "sha256": "a3ee91ef81375dc77b4171ce4b734be5453319a0433a70653347143ffeb9c952",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_mixed_pade_20261005.md",
+      "sha256": "d2ca842d8d4a7be71f9faf76d1721136ce110c779546af0fdd27c54c8d3c71d7",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_new_period_systems_20261004.md",
+      "sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_next_routes_progress_20261004.md",
+      "sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_primitive_routes_progress_20261005.md",
+      "sha256": "5b47a5dc7e610c62b153a07d696f3a4cbf05cef430ea7d530a531bcd0352a35c",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_primitive_routes_review_20261005.md",
+      "sha256": "816d78ebb182017104b6689cbda801688f38d86f797c9e961e8bd7759efd0dd1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004.md",
+      "sha256": "a732cc05e14fbe3a98bf591f48658410c0fff1ac7c1fb3d5e53097a837a46e19",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005.md",
+      "sha256": "f939374a37b6006b498c934575724520cd44cb793d20571926db0d111b683018",
+      "unchanged": true
+    }
+  ],
+  "frozen_previous_scripts_and_certificates": [
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004_verify.json",
+      "sha256": "c337596791be85adf5150fd9545f4776f85e27dc0f35701f505de2ae0e124be1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004_verify.py",
+      "sha256": "344e7b96ab0bd0b0d3eff5dc5d02e8ee4c6e64aa15fc8a7a6f6a76e70472c34b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_exceptional_primes_20261005_verify.json",
+      "sha256": "f9e0d0831baf04dd73925520d8ef4eec112c48ef8472d1e32a76102df17f1818",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_exceptional_primes_20261005_verify.py",
+      "sha256": "8d3f2254265944bad91b497768cadb3cd10f7dee840090b2594e90e587cc16a0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004_verify.json",
+      "sha256": "58c2c5c6a940c9f4917759533b084df04961f08961d2a3e0b8d1191bfd4be3ab",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004_verify.py",
+      "sha256": "adae64acc065389b718a069be023aef47a81f74071e70499d05ab47d629f8158",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_fixed_shift_filters_20261005_verify.json",
+      "sha256": "eaf408974530a04b396f9ca7569ddf4752d1e7536e76de777cb7444d560b69f9",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_fixed_shift_filters_20261005_verify.py",
+      "sha256": "cbbfe40571cf84feefdbf946983774bd889b94eb025009d96f6cbc7669ddf7f8",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005_verify.json",
+      "sha256": "63eacc3ba78a3f990fb697dd5955cf88c6aabde61b00be8ff2de1e189ecd9372",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005_verify.py",
+      "sha256": "385ff9be3842f8bf3dde88469f6d9791d226ba0be67c0c0da34b6e5824dc4c63",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004_verify.json",
+      "sha256": "167ccb0a28cff4e577a2404faf797c3203290e603cf87e2290d56bbd26a482bd",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004_verify.py",
+      "sha256": "19d38f06179811f78ca27e18a1ffff780750271b73fe7143a9894b715f24d423",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005_verify.json",
+      "sha256": "97d9ad31391206d9cb03021ed7d8cbdefa904d4af59149998116b8619a3c10b5",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005_verify.py",
+      "sha256": "71bbe632d1cc0b8f4ff0fb4ad55d42f256a5698e60ba6c0b0d7cb933c850ffe8",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_primitive_20261005_verify.json",
+      "sha256": "cdc70f0fff226a1e1e82f904de7bd47ff17a79f1c93379e804c8f74eec73e957",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_primitive_20261005_verify.py",
+      "sha256": "8f5338ec8ab4879d6847e66c66f0011aefae6f716bba01826269010df310ef9d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_saddle_20261005_verify.json",
+      "sha256": "3abc669f7d071046454e7428016f6b88f555fb78cef785181d980ee0091f17f4",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_saddle_20261005_verify.py",
+      "sha256": "58f55aaff7bc4081672726d2a46111628d9ab6c01923a6679e4561b32ff784e1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005_verify.json",
+      "sha256": "3ab417056bfe91ce835dce89efc08c67f2373382e28ff8bb77bf06c88457bdeb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005_verify.py",
+      "sha256": "0243f48622ac1e7e0a29224b6fb1e62e9bcf3da34565f65443772aeae3ccaa08",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_markov_rational_control_20261005_verify.json",
+      "sha256": "97c05b6d39b04506243fb602ce4a58cec337571bea107f7bc7468d620a9beaa6",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_markov_rational_control_20261005_verify.py",
+      "sha256": "007ffbfa9a30fcf6f72ad9977852c23676de2bf6a411d089aacff7db5e9d560b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_mixed_pade_20261005_verify.json",
+      "sha256": "8a03cb6749a64cf914af715c4459c0b218f50c2aaddc25b122a701b944aa6faf",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_mixed_pade_20261005_verify.py",
+      "sha256": "7edb7ee3fb2621069ceeff5073bc1936743df66c59e6d7d7473e2a36e96323c1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004_verify.json",
+      "sha256": "13699df3867eec49711b2b475f189b0fa4116edacae83bb6e66c4a03d606181c",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004_verify.py",
+      "sha256": "532bd6d970917a1e8987c70776228b42fa410fe49d0b6b566fa9cf711b78e529",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.json",
+      "sha256": "8f7d4e1704de9ffab64d8b52a9dd970ec7da5699fa294eddea3c9c2526015c10",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.py",
+      "sha256": "06a1dda07fd35f8e9033dd1e44aafe3c8a8926f402caba89b609d5418bc33c67",
+      "unchanged": true
+    }
+  ],
+  "earlier_original_pdf_hash_checks": 64,
+  "new_original_source_pdfs": [
+    {
+      "file": "maximon2003_dilogarithm_nist_original.pdf",
+      "pages": 14,
+      "sha256": "2d8a42c235c861d5236c508629eb42907782fbdff99b62594e7fe596089b049b",
+      "version": "Proceedings of the Royal Society A 459 (2003), 2807–2819; NIST-hosted original",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "cdt_l2_chi_minus3_author_20261005.pdf",
+      "pages": 220,
+      "sha256": "9d778fc22f82fb064371722ff457d54a2fc787608b8493ed9893a8fd39929a1c",
+      "version": "Author-hosted 220-page snapshot retrieved 2026-10-05, without a newly assigned arXiv version; fixed arXiv v2 (218 pages) remains the proof reference",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    }
+  ],
+  "new_original_pdf_pages": 234,
+  "new_original_web_sources": [
+    {
+      "file": "dlmf_5_15_polygamma_20261005.html",
+      "url": "https://dlmf.nist.gov/5.15",
+      "resolved_url": "https://dlmf.nist.gov/5.15",
+      "bytes": 74322,
+      "sha256": "61ce0ae5b8db53402babc606bbb5923c36c1184e53db8a79ac3dcf79942480a1",
+      "identity_token": "Polygamma",
+      "archive_status": "downloaded"
+    },
+    {
+      "file": "dlmf_25_12_polylogarithms_20261005.html",
+      "url": "https://dlmf.nist.gov/25.12",
+      "resolved_url": "https://dlmf.nist.gov/25.12",
+      "bytes": 183316,
+      "sha256": "1d68ee3849eedc2c5a4c67952795c19bf62a5ee80c091e68dfc43ee8c8925f9a",
+      "identity_token": "Polylogarithms",
+      "archive_status": "downloaded"
+    },
+    {
+      "file": "stacks_01OF_blowups_20261005.html",
+      "url": "https://stacks.math.columbia.edu/tag/01OF",
+      "resolved_url": "https://stacks.math.columbia.edu/tag/01OF",
+      "bytes": 42047,
+      "sha256": "3365721a3d34ee99480b9ff60fc454cce600ee4e01393c67df52b58ae80f45ed",
+      "identity_token": "Blowing up",
+      "archive_status": "downloaded"
+    }
+  ],
+  "scope": "Closed CDT consequences for five rational-dilog combinations and all sixth-point trigamma/polynomial-log integrals. Explicit full rank11 source, compatible rank6 integral quotient, all-content denominator exponents and marked bad support. Cyclotomic rank3 integral Betti model, exact prefix preservation but fine-type change, and natural cost25/18. Uniform periodic-polylog actual cyclic ranks and joint arithmetic/domain projection lattice. No new conductor L-value, odd-zeta or Catalan irrationality theorem; rationality-triggered overconvergence and required all-bad-prime log extensions remain unproved for new applications.",
+  "local_links_checked": 102,
+  "missing_links": []
+}

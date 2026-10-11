@@ -1,0 +1,306 @@
+{
+  "round": 241,
+  "date": "2026-10-09",
+  "filename_date_label": "20261008",
+  "classification": "progress",
+  "previous_interrupted_turn_classification": "no progress",
+  "goal_status": "active",
+  "new_numerical_irrationality_or_independence_theorem": false,
+  "formal_global_review": {
+    "last": 240,
+    "counter_reset_this_round": false,
+    "next_default": 246,
+    "allowed_window": [
+      244,
+      248
+    ]
+  },
+  "object": {
+    "target": "3 zeta(3) + zeta(5)",
+    "functional": "(3/2) B partial + (1/24) B partial^3 on t f",
+    "kernel": "D_n^4 / D_(5n)",
+    "matrix_size": "3n",
+    "edge": "n=p-1"
+  },
+  "paid": [
+    "Whole high-order rational distribution with exact polynomial quotient and all harmonic heads, local error valuation at least beta.",
+    "Complete CRT basis, same-disc unit weights independent of local indices, every off-disc positive excess, including half-valuations.",
+    "Three explicit fixed V3 Gram unit blocks, independently derived on paper and checked once by exact rational arithmetic.",
+    "Actual full primitive P_(p-1) has p-unit constant and coefficient k valuation at least 5k outside a fixed finite set.",
+    "Every fixed rational q has P_(p-1)(q) nonzero for every eligible prime not dividing its denominator, hence infinitely many unbounded scales.",
+    "Exact all-coefficient auxiliary-prime Gauss valuation of Q is 5-9p and of Qtilde is 5-3p; primitive ratio cost is 3p-5.",
+    "Independent complete-certificate, distribution-block, and final-progress-report paper reviews."
+  ],
+  "not_paid": [
+    "A new numerical irrationality/linear-independence theorem or completion of the original objective.",
+    "Whole-prime/window primitive Gauss cost below the strict same-object analytic threshold.",
+    "Independent complete certification of the original -6 FstarInput energy bound.",
+    "Lean kernel verification, full source/import audit, current remote freshness, or global novelty certification."
+  ],
+  "next_gate": "Round242: actual all-coefficient whole-prime/window Gauss budget, with S_n and F_n, for the same fixed complete source; no extra prime-edge sampling.",
+  "bounded_main_window": [
+    241,
+    244
+  ],
+  "runs": {
+    "mathematics": 1,
+    "fixed_constant_blocks_checked": 3,
+    "variable_prime_or_parameter_scans": 0,
+    "lean": 0,
+    "git_mutations": 0,
+    "old_archive_producers": 0,
+    "this_documentary_archive": 1
+  },
+  "sources": {
+    "repository": "dtq1997/zeta2-zeta3-linear-independence",
+    "pinned_commit": "669c92bf7a3728e0de9ad80c373bc29fb5ca3d58",
+    "reading_scope_records": [
+      {
+        "path": "literature/logistic_prime_edge_round241_20261008/root_reading_scope.md",
+        "bytes": 4562,
+        "sha256": "260a786bb4447a426954d7dbd22678c0cf65011223a91446514f13720a367be6"
+      },
+      {
+        "path": "literature/logistic_prime_edge_round241_20261008/packet_reading_scope.md",
+        "bytes": 2858,
+        "sha256": "c3b7fd93349cfd4e4cbb3f1a63b944d56ba8e0ae0027214bf4882c5208719f8c"
+      },
+      {
+        "path": "literature/logistic_prime_edge_round241_20261008/dual_reading_scope.md",
+        "bytes": 3788,
+        "sha256": "a2b637b0fe9eea34d7a979ee114e2a521d8a58ae6d8ecdb1403490c2a4723b41"
+      },
+      {
+        "path": "literature/logistic_prime_edge_round241_20261008/alternative_reading_scope.md",
+        "bytes": 4022,
+        "sha256": "ca0ac197c110439a7c2587d154de53735e2e921ce07c3520a8acafe27f50c560"
+      }
+    ]
+  },
+  "previous_manifest": {
+    "path": "literature/manifest_global_review_round240_20261008.json",
+    "bytes": 16485,
+    "sha256": "60735e2cd4f1a065fb7b5f3f98bc6e4aeeb4ed86bcac743e30e91f4b00377b77"
+  },
+  "previous_main": {
+    "bytes": 650997,
+    "sha256": "7fc6199892edaf7073fcef1933843dd48cb9d67a4429c8f61b7fb5312317e999"
+  },
+  "report": {
+    "path": "research/research_logistic_prime_edge_progress_round241_20261008.md",
+    "bytes": 3734,
+    "sha256": "0cbf6e65b6fb3ce980720d2b31be037a1a64aaa0a790071c51b8b9883a30e05d"
+  },
+  "certificate": {
+    "path": "research/logistic_prime_edge_full_certificate_round241_20261008.md",
+    "bytes": 9100,
+    "sha256": "57e591ba89c52556066ec502c8dbb9d5bc81521cbecfaa18bc0d793fd433c665"
+  },
+  "new_main": {
+    "path": "research/cdt_odd_background_progress_20261006.md",
+    "bytes": 654733,
+    "sha256": "43cf5b7f45b6991b3c5c21515eaab48cfd6cfd672032b05b89baa5dc283e1ad7"
+  },
+  "files": [
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_reading_scope.md",
+      "bytes": 4022,
+      "sha256": "ca0ac197c110439a7c2587d154de53735e2e921ce07c3520a8acafe27f50c560"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_Arith_Local_Binom.lean",
+      "bytes": 18337,
+      "sha256": "8404bb536bbf1453fdd0573ebaf6e371e28c22b600160f745dac8ad8ef4a626b"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_Arith_Local_Entry.lean",
+      "bytes": 15163,
+      "sha256": "c52102feb327500c245b356711ea4589c43f23c438402696cd17c14078e4308c"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_Arith_Local_Val.lean",
+      "bytes": 10703,
+      "sha256": "bbee1a826d443048a3094d95609e778625ccddff7b55cac379d0fed8c4065e95"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_Basis.lean",
+      "bytes": 6314,
+      "sha256": "4c5588291c6eff2277e79c872dc7e5d2876325ff3f345abd3b67f319ac80ef5e"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_EntryBounds.lean",
+      "bytes": 9674,
+      "sha256": "f24aa7e99ec562f3a46669fcb7bdc176ca419232ea27c32aa743c77da5583d95"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_Index.lean",
+      "bytes": 5468,
+      "sha256": "4afa3ab3a128f2bd98d758d66abb2102019556e426c9b750a52755eb60d28bbc"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_Local.lean",
+      "bytes": 3532,
+      "sha256": "88ea18b14350451a724a32f41cdb973f39b5ee7a7ad75f02c8ee308021caac38"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_Reduction.lean",
+      "bytes": 1939,
+      "sha256": "a72a538474adb01a300599371995b26350c7ee8a9d4144ce6b0260f8c6248e26"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/alternative_sources/Zeta32_PrimeEdge_Valuation.lean",
+      "bytes": 7182,
+      "sha256": "22a1f67eca040f4c38b8df9a44a08f51bb4a58a9466e1ea1e2842cd3652327ed"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_reading_scope.md",
+      "bytes": 3788,
+      "sha256": "a2b637b0fe9eea34d7a979ee114e2a521d8a58ae6d8ecdb1403490c2a4723b41"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_sources/Basis.lean",
+      "bytes": 6314,
+      "sha256": "4c5588291c6eff2277e79c872dc7e5d2876325ff3f345abd3b67f319ac80ef5e"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_sources/Blocks.lean",
+      "bytes": 2444,
+      "sha256": "cf3f0b1d648a592bdc6eaa9f3097ed10065f15f0b7475762eedc028a0d2f0f43"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_sources/Distribution.lean",
+      "bytes": 7494,
+      "sha256": "1351448e3a431860f5c30de3c3d2d87861da7d4c6d7314eb1392355b53fa2456"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_sources/Local.lean",
+      "bytes": 3532,
+      "sha256": "88ea18b14350451a724a32f41cdb973f39b5ee7a7ad75f02c8ee308021caac38"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/dual_sources/V0Table.lean",
+      "bytes": 6175,
+      "sha256": "188581abb6670e588d079a2d71e2f2521733c420c9eca6eb322071299dd43e59"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_reading_scope.md",
+      "bytes": 2858,
+      "sha256": "c3b7fd93349cfd4e4cbb3f1a63b944d56ba8e0ae0027214bf4882c5208719f8c"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_Arith_Local_Entry.lean",
+      "bytes": 15163,
+      "sha256": "c52102feb327500c245b356711ea4589c43f23c438402696cd17c14078e4308c"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Basis.lean",
+      "bytes": 6314,
+      "sha256": "4c5588291c6eff2277e79c872dc7e5d2876325ff3f345abd3b67f319ac80ef5e"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Blocks.lean",
+      "bytes": 2444,
+      "sha256": "cf3f0b1d648a592bdc6eaa9f3097ed10065f15f0b7475762eedc028a0d2f0f43"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Disc_Bernoulli.lean",
+      "bytes": 6604,
+      "sha256": "30240f0e8e00ac84b2dcb71b3803ed5994b49d7d7a4278185b00065c3eaef713"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Disc_Core.lean",
+      "bytes": 4125,
+      "sha256": "8983f741cbbbdd0963078f0a7f09138db7f745b6146a8963f7b6d1b825e85dd8"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Local.lean",
+      "bytes": 3532,
+      "sha256": "88ea18b14350451a724a32f41cdb973f39b5ee7a7ad75f02c8ee308021caac38"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/packet_sources/Zeta32_PrimeEdge_Reduction.lean",
+      "bytes": 1939,
+      "sha256": "a72a538474adb01a300599371995b26350c7ee8a9d4144ce6b0260f8c6248e26"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/root_reading_scope.md",
+      "bytes": 4562,
+      "sha256": "260a786bb4447a426954d7dbd22678c0cf65011223a91446514f13720a367be6"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/root_sources/Zeta32/Arith/Local/PoleFun.lean",
+      "bytes": 21159,
+      "sha256": "e41cc6eba194ea0b99cf56359d122b83ac773bfe9c2ade86ce8089e73baeb06a"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/root_sources/Zeta32/PrimeEdge/Dist/Basic.lean",
+      "bytes": 7239,
+      "sha256": "62399c2b9a72cbc5badcf4e04bab3400ec3a3a9f4a92faea0190faa3ec714536"
+    },
+    {
+      "path": "literature/logistic_prime_edge_round241_20261008/root_sources/Zeta32/PrimeEdge/Dist/Global.lean",
+      "bytes": 2325,
+      "sha256": "6b52da54bb3d2aa419e06012e722870bffc8de9c1d2e549ff1b65c9d5563b3f8"
+    },
+    {
+      "path": "research/archive_round241_20261008.py",
+      "bytes": 6490,
+      "sha256": "0943919962e31a7f4dadea294e81b772801cbf56f3bf675ee19210ea98f42e64"
+    },
+    {
+      "path": "research/logistic_prime_edge_arithmetic_round241_20261008.md",
+      "bytes": 7964,
+      "sha256": "25ebe4b6f030ddb53bd08e4a54aadc23615b85e98f1f7f01826a848a7d851795"
+    },
+    {
+      "path": "research/logistic_prime_edge_dual_round241_20261008.md",
+      "bytes": 7192,
+      "sha256": "4df224c01c24a18121b50810b910fdabba1e10d523e8c499e1bdd05395205b5d"
+    },
+    {
+      "path": "research/logistic_prime_edge_fixed_blocks_round241_20261008.json",
+      "bytes": 1921,
+      "sha256": "42c02ce2ead856b0787b892ff3bd10b4b502cd5947ee27bd61d5022e707ef590"
+    },
+    {
+      "path": "research/logistic_prime_edge_fixed_blocks_round241_20261008.py",
+      "bytes": 3992,
+      "sha256": "881a02e507ca7505c877f3f57d64ab8412363491355810bee660fe59ef8bd8fe"
+    },
+    {
+      "path": "research/logistic_prime_edge_full_certificate_round241_20261008.md",
+      "bytes": 9100,
+      "sha256": "57e591ba89c52556066ec502c8dbb9d5bc81521cbecfaa18bc0d793fd433c665"
+    },
+    {
+      "path": "research/logistic_prime_edge_packet_round241_20261008.md",
+      "bytes": 10089,
+      "sha256": "59d4c43165a0aac57d52868cb1e689c7bb5d7d0d3c764f2f2fcdf613f72db001"
+    },
+    {
+      "path": "research/research_global_review_policy.md",
+      "bytes": 4920,
+      "sha256": "1d0734fe99cdaaa92fa2430493e4eda19899e2e292a6ffc8b9dc908cac01e5af"
+    },
+    {
+      "path": "research/research_logistic_prime_edge_progress_round241_20261008.md",
+      "bytes": 3734,
+      "sha256": "0cbf6e65b6fb3ce980720d2b31be037a1a64aaa0a790071c51b8b9883a30e05d"
+    },
+    {
+      "path": "research/research_round241_distribution_block_review_20261008.md",
+      "bytes": 2690,
+      "sha256": "f66b9d334daeac1df36313b133225d93d5fb4bff5dfc8fd324ab619fb48df26f"
+    },
+    {
+      "path": "research/research_round241_full_certificate_review_20261008.md",
+      "bytes": 4595,
+      "sha256": "2cfb1cda288e401cb4cf645daf88d49b3041348dab5d83485bcd6397ff2cb788"
+    },
+    {
+      "path": "research/research_round241_progress_report_review_20261008.md",
+      "bytes": 2185,
+      "sha256": "96126238234768d2964ecfed58f4145eafd1002202c54fcc7059bfc6d305bb92"
+    }
+  ]
+}

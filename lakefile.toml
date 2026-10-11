@@ -1,0 +1,23 @@
+name = "zeta5"
+defaultTargets = ["Zeta5Irrational"]
+
+[leanOptions]
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.33.1"
+
+[[require]]
+name = "Apery"
+git = "https://github.com/mo271/Zeta5.git"
+rev = "00c55bdad2d9ce3870f1d5d73202297218d157b5"
+
+[[lean_lib]]
+name = "Zeta5Irrational"
+globs = ["Zeta5Irrational.+"]
+
+[[lean_lib]]
+name = "Main"
+globs = ["Main.+"]

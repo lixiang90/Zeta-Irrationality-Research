@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "kind": "symbolic operator and all-n coefficient identity only",
+  "script_sha256": "f2f0e3e9ffb785abb5f5a315590f0885f0f5964846975d1101c98b170f6236d1",
+  "identities": [
+    "Euler-to-conifold operator",
+    "P indicial polynomial",
+    "L indicial polynomial",
+    "five all-n recurrence coefficients",
+    "no missing Taylor offsets",
+    "first forced coefficient"
+  ],
+  "recurrence_coefficients": {
+    "-1": "(2*n - 1)**4/16",
+    "0": "-(64*n**4 + 32*n**3 + 40*n**2 + 8*n + 1)/16",
+    "1": "(n + 1)*(12*n**3 + 24*n**2 + 23*n + 8)/2",
+    "2": "-(n + 1)*(n + 2)*(8*n**2 + 20*n + 15)/2",
+    "3": "(n + 1)*(n + 2)**2*(n + 3)"
+  },
+  "old_or_peer_producer_executed": false,
+  "initial_periods_algebraic_proved": false,
+  "numeric_irrationality_proved": false,
+  "lean_verified": false
+}

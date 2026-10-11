@@ -1,0 +1,808 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "created_at_utc": "2026-10-06T23:23:40.561722+00:00",
+  "owner": "/root",
+  "scope": "One new paper-only research round, four actual models/gates with four independent FULL reviews; documentary provenance only, not formalized mathematics.",
+  "prior_delivery": {
+    "file": "research/cdt_odd_delivery_carry_cartier_split_algebraic_20261007.json",
+    "sha256": "44521a432fd71bdfef7e10a0d3ac63d636878b32aabfad5b293d8276a9fdf4a7",
+    "bytes": 205603
+  },
+  "previous_frozen_records_count": 604,
+  "previous_frozen_mathematical_records_count": 599,
+  "previous_guard_count": 5,
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_gamma_higher_slope_reference_gate_20261007.md",
+      "sha256": "debc1363d3ee14d751df60dcb62d8a457db4fc2717ea8d171aba5c2b4f754ebd",
+      "bytes": 10888,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_higher_slope_reference_gate_independent_review_20261007.md",
+      "sha256": "ee15d644469d71a61d23e8ff18b17d341282848b79d0a46cfe4bf0b7c8d2f5c0",
+      "bytes": 7498,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_paired_relative_projection_20261007.md",
+      "sha256": "cefd8f209a63bb344577fee0354076305e0e683c8189a1c63747b509262fc6a1",
+      "bytes": 18952,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_paired_relative_projection_independent_review_20261007.md",
+      "sha256": "ee2fd59ef2fec124f92e98697ad863d4899fdd17afa02cb67a43b31b66724c42",
+      "bytes": 9342,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_quadratic_antiinvariant_extension_20261007.md",
+      "sha256": "c0a492603f559ed92b08fb685f79284ab3daf5feb9e10c52daf2ae1ea101ba27",
+      "bytes": 26211,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_quadratic_antiinvariant_extension_independent_review_20261007.md",
+      "sha256": "f49a120f29e3ee4fb55afe006b18e1dc3ff5a9607dc2f5f6c11033394e0c1ee4",
+      "bytes": 5283,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_modular_relative_target_20261007.md",
+      "sha256": "29988ecc0b204b333d1ad2eaa71726fee21de4eb8393b55b5d9387ad1099e7ac",
+      "bytes": 21458,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_modular_relative_target_independent_review_20261007.md",
+      "sha256": "79e5687670358f914c4f49578dcbdc9db073621ae811733a7ec4c4eedbf70cb2",
+      "bytes": 9280,
+      "role": "new formal independent review"
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_gamma_paired_relative_projection_20261007.json",
+      "sha256": "4612871d42dfdc17c2c80c7fa556170919664fb5fc1d8441a935ea7859b5a2cb",
+      "bytes": 12217,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_quadratic_antiinvariant_extension_20261007.json",
+      "sha256": "2ae7fd850f1ef8f11c0009d36dcf009f73832aa632bc1f0934e0068c9a43f31d",
+      "bytes": 10578,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_modular_relative_target_20261007.json",
+      "sha256": "266fb0a19f33ed33d4541b0494756eaec537efeffe05c6f74c0757b683c9e2cd",
+      "bytes": 14501,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    }
+  ],
+  "peer_final_receipt_physical_pin_counts": {
+    "source": 13,
+    "scaled": 15,
+    "masked": 18
+  },
+  "new_successful_certificates": [],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_gamma_modular_relative_sources_20261007/bertolin_waldschmidt2025_split_semi_elliptic_author.pdf",
+      "sha256": "da8859a50282c5e87bd99b5b15ee38c7296d980628fb46a364f03f109b3540e1",
+      "bytes": 478905,
+      "pages": 20,
+      "source_url": "https://webusers.imj-prg.fr/~michel.waldschmidt/articles/pdf/Semi-Elliptic-Schanuel.pdf",
+      "download_owner": "/root/masked_racah_finalize",
+      "normal_verified_tls": true,
+      "unique_relative_to_prior_135_file_archive_table": true,
+      "mathematical_status_used": "Only unconditional Schneider statements; Schanuel-type conjectures retained as conjectures."
+    }
+  ],
+  "reused_primary_pdfs": [
+    {
+      "file": "literature/beukers1987_modular_irrationality.pdf",
+      "sha256": "fc28f8db316015fb349a47cf456e3037bb8fdabc3e92914eaad12e3f68176c38",
+      "bytes": 1042520,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 14
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "bytes": 1398608,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 30
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 218
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "sha256": "239c64b8bab41b12bc2a41d8eb3630d2935e04365bf6a3b9919193793551fc20",
+      "bytes": 171695,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 10
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "bytes": 735709,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 25
+    },
+    {
+      "file": "literature/golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+      "sha256": "d2d981d989a9e8fdfedd03017f9d10aeb285f7a33d9b34f037244c7a69a0d8b6",
+      "bytes": 628060,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 35
+    },
+    {
+      "file": "literature/pasol_popa_period_polynomials_20261006.pdf",
+      "sha256": "1de88be12c3d7bac48d263fe0f5143f622e76ff23db236520508de4d336fbfb5",
+      "bytes": 421603,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 32
+    },
+    {
+      "file": "literature/rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+      "sha256": "b5d3b4bbbb4fdc926ffe2002d7a50247926ec1336f97de3455d0b061bf0153b8",
+      "bytes": 211886,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 15
+    },
+    {
+      "file": "literature/singer2009_differential_galois_lms_author_20261006.pdf",
+      "sha256": "c805d45ed54e0e6734b4d7f125c197364b9eccab2a7e09a8c26c3bf63cf5db96",
+      "bytes": 537902,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 82
+    },
+    {
+      "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+      "sha256": "691258e04fb3f9f9fa6a4cc144c8be99d587d0af47f96cbf138ac797a1025109",
+      "bytes": 264199,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 24
+    }
+  ],
+  "new_other_primary_sources": [],
+  "receipt_direction": "One-way: immutable inputs and peer receipts; final current mutable main is pinned only by root. No self, future audit output, or circular peer receipt pins.",
+  "review_closure": {
+    "higher_slope": "source FULL final debc H1-H15 and ee15 V1-V7; root FULL incoming review and final author reread, accepted PASS.",
+    "paired_relative": "masked FULL cefd P1-P27 and ee2f V1-V7; source FULL incoming review and final author reread, accepted PASS.",
+    "quadratic_antiinvariant": "root FULL c0 A1-A29/formulasA1-A49 and final f49 selfread; scaled FULL incoming review and final author reread, accepted PASS.",
+    "modular_relative": "scaled FULL29988 M1-M25 and79e5 V1-V7; masked FULL incoming review and final author reread, accepted PASS.",
+    "root_delivery_reading": "Root actually FULL read all8 final current papers/reviews and3 peer FINAL receipts; all13/15/18 peer physical pins independently matched."
+  },
+  "actual_reading_scope": {
+    "current_round_personal_primary_pdf_domains": {
+      "root": [
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69,
+            89,
+            90,
+            91,
+            92,
+            93,
+            105,
+            106,
+            113,
+            114,
+            115,
+            116,
+            122,
+            123,
+            124
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+          "pages": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+          "pages": [
+            15,
+            16
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_modular_relative_sources_20261007/bertolin_waldschmidt2025_split_semi_elliptic_author.pdf",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "source": [
+        {
+          "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            20
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/singer2009_differential_galois_lms_author_20261006.pdf",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69,
+            89,
+            90,
+            91,
+            92,
+            93,
+            105,
+            106,
+            113,
+            114,
+            115,
+            116,
+            122,
+            123,
+            124
+          ]
+        }
+      ],
+      "scaled": [
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            15,
+            16
+          ]
+        },
+        {
+          "file": "literature/rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+          "pages": [
+            9,
+            10
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_modular_relative_sources_20261007/bertolin_waldschmidt2025_split_semi_elliptic_author.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ]
+        },
+        {
+          "file": "literature/golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "file": "literature/pasol_popa_period_polynomials_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "masked": [
+        {
+          "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        {
+          "file": "literature/beukers1987_modular_irrationality.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "file": "literature/rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+          "pages": [
+            1,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "file": "literature/golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+          "pages": [
+            1,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "file": "literature/pasol_popa_period_polynomials_20261006.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+          "pages": [
+            1
+          ]
+        },
+        {
+          "file": "literature/cdt2024_l2_chi_minus3.pdf",
+          "pages": [
+            66,
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_modular_relative_sources_20261007/bertolin_waldschmidt2025_split_semi_elliptic_author.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "file": "literature/singer2009_differential_galois_lms_author_20261006.pdf",
+          "pages": [
+            13,
+            14,
+            19,
+            20
+          ]
+        }
+      ]
+    },
+    "personal_distinct_primary_pdf_pages": {
+      "root": 29,
+      "source": 35,
+      "scaled": 36,
+      "masked": 65
+    },
+    "actual_team_source_snapshot_page_union": 89,
+    "sum_of_personal_distinct_page_reads": 165,
+    "new_pdf_archive_count": 1,
+    "new_pdf_archived_pages": 20,
+    "new_unique_pdf_contents_relative_to_baseline": 1,
+    "new_unique_pdf_content_pages_relative_to_baseline": 20,
+    "new_documentary_renders": 0,
+    "root_full_current_math_files": 8,
+    "root_full_peer_final_receipts": 3,
+    "root_full_old_input_files": [
+      {
+        "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_20261007.md",
+        "sha256": "d38ca46ee63aebf626309955a6347f40d3c018c42db810b827e20430d3c483a3",
+        "bytes": 11145,
+        "role": "root actual FULL current-round old mathematical input"
+      },
+      {
+        "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.md",
+        "sha256": "a73af0926ab50c256462ceaffe9fc68459861b74bf8f4f6b5a1afa8a8ab462af",
+        "bytes": 18032,
+        "role": "root actual FULL current-round old mathematical input"
+      },
+      {
+        "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+        "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+        "bytes": 18371,
+        "role": "root actual FULL current-round old mathematical input"
+      },
+      {
+        "file": "research/cdt_odd_gamma_unramified_forcing_split_20261007.md",
+        "sha256": "611485070e8364a2b2905ea60654eac12770b8bb76d3b8d2c6f929b356de37ac",
+        "bytes": 22304,
+        "role": "root actual FULL current-round old mathematical input"
+      }
+    ],
+    "root_authority_read": "Actual FULL main191-195 and final196-200; root actual current header; old604 SHA/bytes checks do not imply manual FULL review of604 historical proofs.",
+    "root_final_own_author_reread": "Actual FULL final higher-slope seven sections H1-H15 after FULL incoming review ee15, unchanged debc.",
+    "root_final_outgoing_reviewer_reread": "Actual FULL final anti-invariant review f49 V1-V6 after own save; author accepted and last FULL main reread c0.",
+    "guards": "All five actual FULL text read and physically unchanged, never executed.",
+    "boundary": "Personal29/35/36/65 sum165; physical source-SHA/page union89. New archive20 pages differs from actual reading89. No inherited reading, no whole-PDF claim."
+  },
+  "documentary_corrections": [
+    "Root k0 valuation boundary clarified before debc freeze and final independent review; no frozen main modified.",
+    "Current truncated combined outputs excluded from FULL counts; all claimed FULL inputs completed in separate untruncated reads.",
+    "Previous EHMMIII duplicate-content correction retained: baseline135files6417pages but133unique6303pages; only current BW adds one unique20-page content.",
+    "CM kappa classical transcendence and exact RWZ224 normalization documented; no scalar novelty or conjectural theorem promoted."
+  ],
+  "mathematical_execution_history": {
+    "producer_created": 0,
+    "producer_executed": 0,
+    "producer_imported": 0,
+    "producer_rerun": 0,
+    "guard_executed": 0,
+    "prime_experiments_or_expansion": 0,
+    "mathematical_failures": 0,
+    "lean_execution": 0,
+    "pdf_renders": 0,
+    "primary_pdf_downloads": 1,
+    "new_metadata_audit_sources": 1,
+    "metadata_audit_execution_protocol": "Only new paired_anti_modular_slopes source, static FULL read, then execute once after this receipt; never old audits/producers/guards.",
+    "documentary_retrieval_failures": "One Schneider original-scan HTTP404, no saved PDF. No TLS certificate validation disabled."
+  },
+  "current_progress": {
+    "classification": "progress",
+    "proved_this_round": [
+      "Exact scalar same-ordinary-point paired fulljump invariant field, rational jump ratio, genuine nonsplit integer calibration and relation-filled collapse to Q(t).",
+      "Actual finite rational-forcing extension is regular-singular including infinity; all-finite-generator-fixed fulljet/tensor/PV Q-Taylor expressions descend to Q(t).",
+      "Exact anti-invariant polynomial forcing split image and nine-dimensional quotient; complete nine-period comparison has precisely that split kernel.",
+      "Positive anti-forcing has canonical nonzero log8 and second-conifold residual; safe all-finite-place cap and actual rank10 retained.",
+      "Current same-rank integral-reference obstruction extends to explicitly checked CDT7-8 weighted/discrete/continuous/binomial metrics with complete scaling terms.",
+      "Actual level7 all-prime D_n2 model, scalar rank3, integer cubic cover eliminating full order3 branches and retaining rank/cap; concrete log-product fulljump failure."
+    ],
+    "not_proved": [
+      "New numerical zeta7/Catalan or other zeta/L irrationality or linear independence.",
+      "Q-linear independence of nine period entries; rational-coefficient forcing satisfying desired partial period gates.",
+      "Anti-forcing connection constants C_P zeta/L evaluation or irrationality.",
+      "Independent rational-Taylor relative carrier C with complete Delta_sigma C=log(2)Delta_sigma A, paid integral model and all remaining comparisons.",
+      "New linear independence of1,kappa,log(2); kappa is already classically transcendental by CM period/Schneider.",
+      "All-large-prime weighted Cartier S_p0, higher reciprocal/partial-block cancellation, original paired-source full carrier.",
+      "New strict CDT margin or Lean formalization."
+    ],
+    "unchanged_original_safe_q_fee": "32lambda-1-13lambda^2/4; lambda1.5 endpoint635/16; calibration models do not replace original source.",
+    "next_priority": "Seek rational-coefficient partial-period projection on the nine-dimensional quotient, or a low-rank low-cap independent genuine relative carrier with exact full log2 jump and all integral/geometric comparisons. Prioritize non-CM/noncritical elliptic L(E,2) targets over known CM scalar evaluations; do not merely optimize excluded fixed packages.",
+    "new_numerical_irrationality_theorem": false,
+    "new_lean_formalization": false,
+    "goal_status": "active"
+  },
+  "physical_pins": [
+    {
+      "file": "research/cdt_odd_delivery_carry_cartier_split_algebraic_20261007.json",
+      "sha256": "44521a432fd71bdfef7e10a0d3ac63d636878b32aabfad5b293d8276a9fdf4a7",
+      "bytes": 205603,
+      "role": "immutable previous authority; current JSON/header/current_progress, not all604 manual proof rereads"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_carry_cartier_split_algebraic_root_20261007.json",
+      "sha256": "c2265971556a81bfcbdc866c40fa4d7f192a6cf4b5dbd43233921fa83969642b",
+      "bytes": 28756,
+      "role": "previous root receipt; actual schema/reading/progress metadata inspected"
+    },
+    {
+      "file": "research/cdt_odd_gamma_higher_slope_reference_gate_20261007.md",
+      "sha256": "debc1363d3ee14d751df60dcb62d8a457db4fc2717ea8d171aba5c2b4f754ebd",
+      "bytes": 10888,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_higher_slope_reference_gate_independent_review_20261007.md",
+      "sha256": "ee15d644469d71a61d23e8ff18b17d341282848b79d0a46cfe4bf0b7c8d2f5c0",
+      "bytes": 7498,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_paired_relative_projection_20261007.md",
+      "sha256": "cefd8f209a63bb344577fee0354076305e0e683c8189a1c63747b509262fc6a1",
+      "bytes": 18952,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_paired_relative_projection_independent_review_20261007.md",
+      "sha256": "ee2fd59ef2fec124f92e98697ad863d4899fdd17afa02cb67a43b31b66724c42",
+      "bytes": 9342,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_quadratic_antiinvariant_extension_20261007.md",
+      "sha256": "c0a492603f559ed92b08fb685f79284ab3daf5feb9e10c52daf2ae1ea101ba27",
+      "bytes": 26211,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_quadratic_antiinvariant_extension_independent_review_20261007.md",
+      "sha256": "f49a120f29e3ee4fb55afe006b18e1dc3ff5a9607dc2f5f6c11033394e0c1ee4",
+      "bytes": 5283,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_modular_relative_target_20261007.md",
+      "sha256": "29988ecc0b204b333d1ad2eaa71726fee21de4eb8393b55b5d9387ad1099e7ac",
+      "bytes": 21458,
+      "role": "new paper proof"
+    },
+    {
+      "file": "research/cdt_odd_gamma_modular_relative_target_independent_review_20261007.md",
+      "sha256": "79e5687670358f914c4f49578dcbdc9db073621ae811733a7ec4c4eedbf70cb2",
+      "bytes": 9280,
+      "role": "new formal independent review"
+    },
+    {
+      "file": "research/cdt_odd_gamma_algebraic_reference_rank_barrier_20261007.md",
+      "sha256": "d38ca46ee63aebf626309955a6347f40d3c018c42db810b827e20430d3c483a3",
+      "bytes": 11145,
+      "role": "root actual FULL current-round old mathematical input"
+    },
+    {
+      "file": "research/cdt_odd_gamma_ramanujan_frobenius_bridge_20261007.md",
+      "sha256": "a73af0926ab50c256462ceaffe9fc68459861b74bf8f4f6b5a1afa8a8ab462af",
+      "bytes": 18032,
+      "role": "root actual FULL current-round old mathematical input"
+    },
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "bytes": 18371,
+      "role": "root actual FULL current-round old mathematical input"
+    },
+    {
+      "file": "research/cdt_odd_gamma_unramified_forcing_split_20261007.md",
+      "sha256": "611485070e8364a2b2905ea60654eac12770b8bb76d3b8d2c6f929b356de37ac",
+      "bytes": 22304,
+      "role": "root actual FULL current-round old mathematical input"
+    },
+    {
+      "file": "literature/beukers1987_modular_irrationality.pdf",
+      "sha256": "fc28f8db316015fb349a47cf456e3037bb8fdabc3e92914eaad12e3f68176c38",
+      "bytes": 1042520,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 14
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "bytes": 1398608,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 30
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "bytes": 4517169,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 218
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "sha256": "239c64b8bab41b12bc2a41d8eb3630d2935e04365bf6a3b9919193793551fc20",
+      "bytes": 171695,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 10
+    },
+    {
+      "file": "literature/cdt_gamma_modular_relative_sources_20261007/bertolin_waldschmidt2025_split_semi_elliptic_author.pdf",
+      "sha256": "da8859a50282c5e87bd99b5b15ee38c7296d980628fb46a364f03f109b3540e1",
+      "bytes": 478905,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 20
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "bytes": 735709,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 25
+    },
+    {
+      "file": "literature/golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+      "sha256": "d2d981d989a9e8fdfedd03017f9d10aeb285f7a33d9b34f037244c7a69a0d8b6",
+      "bytes": 628060,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 35
+    },
+    {
+      "file": "literature/pasol_popa_period_polynomials_20261006.pdf",
+      "sha256": "1de88be12c3d7bac48d263fe0f5143f622e76ff23db236520508de4d336fbfb5",
+      "bytes": 421603,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 32
+    },
+    {
+      "file": "literature/rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+      "sha256": "b5d3b4bbbb4fdc926ffe2002d7a50247926ec1336f97de3455d0b061bf0153b8",
+      "bytes": 211886,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 15
+    },
+    {
+      "file": "literature/singer2009_differential_galois_lms_author_20261006.pdf",
+      "sha256": "c805d45ed54e0e6734b4d7f125c197364b9eccab2a7e09a8c26c3bf63cf5db96",
+      "bytes": 537902,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 82
+    },
+    {
+      "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+      "sha256": "691258e04fb3f9f9fa6a4cc144c8be99d587d0af47f96cbf138ac797a1025109",
+      "bytes": 264199,
+      "role": "primary archive physical metadata; personal reading domains explicitly separated",
+      "pages": 24
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_paired_relative_projection_20261007.json",
+      "sha256": "4612871d42dfdc17c2c80c7fa556170919664fb5fc1d8441a935ea7859b5a2cb",
+      "bytes": 12217,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_quadratic_antiinvariant_extension_20261007.json",
+      "sha256": "2ae7fd850f1ef8f11c0009d36dcf009f73832aa632bc1f0934e0068c9a43f31d",
+      "bytes": 10578,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_gamma_modular_relative_target_20261007.json",
+      "sha256": "266fb0a19f33ed33d4541b0494756eaec537efeffe05c6f74c0757b683c9e2cd",
+      "bytes": 14501,
+      "role": "current one-way peer FINAL receipt; root actual FULL read"
+    },
+    {
+      "file": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.guard.json",
+      "sha256": "25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c",
+      "bytes": 74,
+      "role": "immutable guard: root actual FULL text read, never executed"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.guard.json",
+      "sha256": "50d52715865eeb9cd6929a6b3ae4223c35d44b8294ec6513753860d9ae4656c8",
+      "bytes": 145,
+      "role": "immutable guard: root actual FULL text read, never executed"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "sha256": "7fed78788586ef456383eb136ae545405c4e6752858f280d8c196257679c7508",
+      "bytes": 133,
+      "role": "immutable guard: root actual FULL text read, never executed"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json",
+      "sha256": "e1e97654436d92dada737c0a9dee938008df3b976e85d67cc51a422647364189",
+      "bytes": 261,
+      "role": "immutable guard: root actual FULL text read, never executed"
+    },
+    {
+      "file": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json",
+      "sha256": "a8a55e407cea1a95cf34f4c08625237205260fbbed908544cfe9b5d64fe6fd77",
+      "bytes": 287,
+      "role": "immutable guard: root actual FULL text read, never executed"
+    },
+    {
+      "file": "research/cdt_odd_background_progress_20261006.md",
+      "sha256": "a136c079541c7ac899081c7dd7609ff1daab00e193788bd21a5f56b30a8ab626",
+      "bytes": 384380,
+      "role": "final mutable summary; actual FULL191-195 and final196-200, header updated"
+    },
+    {
+      "file": "research/cdt_odd_delivery_paired_anti_modular_slopes_20261007.py",
+      "sha256": "195bbf400a55affc52fb4588759ef4823779aeb8225e09ce6f0978f2c5d01d0e",
+      "bytes": 7019,
+      "role": "new metadata-only audit source; actual FULL static read, no mathematical producer"
+    }
+  ],
+  "all_physical_pins_match": true
+}

@@ -1,0 +1,39 @@
+# 第260轮Root阅读范围与独立数学复核
+
+本轮是正式全局复盘；不是全部文献、仓库、Lean或全球新颖性审计。开始读取259 manifest前135行和policy尾45行，均PARTIAL；随后用JSON完整解析manifest并readonly重核当前193全部pins、new_main和new_policy，PASS。该metadata完整核验不是193份数学全文阅读。Root在259已actual FULL阅读并独核的冻结数学资产复用，不在260冒称整篇CDT或历史corpus重审。
+
+Root在本轮实际FULL阅读最终 arithmetic12736版及其scope；最终 architecture稿（见下表最终身份）实际FULL读取，与其原文/历史边界对应。Root独核 arithmetic A4 commutator闭合幂、sqrt奇数divisor、两primitive residue、A5 solvable/SL2交集、A6逐N整数composition/三列173/81、A7所有叶pure∞log和实两点11/2界；独核 architecture A5的正denominator、联合gain必要式及125/324、47/81下界，确认没有把J下界搬给corrected numerator，A6只准入一次bounded budget审查且不复开旧窗。对历史比较表只核其采用边界与冻结结算一致，不重新证明整张表的历史primary。
+
+Root是解析稿与global/report的作者，不把作者自核称独审。解析稿在原代理三次transport断流后由Root接手，精确实际primary范围另见analytic_reading_scope.md。Root本轮实际FULL读CDT固定物理89–90及122–124、Kim–Ma–Ma物理1–2文本，实际view物理2页render核公式；整篇PDF均PARTIAL。日志reviewer独核解析并捕获Taylor截断不足，已改最终0–5正项。Root全局稿/report以独立已核的arithmetic与architecture及该独审解析为基础；reviewer另独核Root稿而不自审其architecture。
+
+ROOT检索范围与截断纠正：最初rg包括JSON的22920911数字子串，误命中巨大整数行，输出及后续session8551poll均TRUNCATED，不采用为数学来源。后改为md限定+max-columns的有界locator，实际读所得md命中；旧zenodo review仅开头35行PARTIAL，未重跑其audit。最初CONTENTS宽关键词locator输出及同批web搜索曾有truncation，不声称其FULL；最终保存title-line keyword selection并实际FULL读该短selection，仅目录metadata，整CONTENTS/PDF均PARTIAL。Deligne–Drinfeld introduction Root本轮只读前40行PARTIAL；architecture作者实际FULL读引言，不继承为RootFULL。
+
+新ζ7 primary：API ref固定 main commit e37815e8fe5e3fd520f1f85b4c90991b9daa60a2，recursive tree完整JSON解析并列出所有Lean及blueprint md路径；metadata范围，不是全部blob FULL。Root实际FULL读README、root Lean153 bytes、Basic21 bytes、coverage1599 bytes。两Lean模块是该tree全Lean文件，root只import Basic，Basic为示例定义；coverage MAPPED。没有 theorem、没有Lean运行，不从repo描述领取形式化。固定原件及metadata在下表，不写该远程repo。
+
+本轮Root web：一次search调用2queries（回传批次truncated，PARTIAL）；一次open repo；一次click3目标，其中directory cache miss、另两网页成功；一次open DOI失败。共4 web调用，两个明确失败目标，不是全网络0。Python文档GET六次成功（ref、tree、README、Basic、root module、coverage），正常TLS，保存返回原字节；没有Root失败GET或cloud equality核验。原解析代理的PDF下载尝试另按analytic scope的明确报告记，Root不捏造其完整网络计数。
+
+数学程序/CAS/数值/interval、prime/parameter/map/word scans、Padé、Lean、旧producer、外Git写0。Python只metadata提取、下载、PDF文档处理、hash和文本写；archive准备不是数学运行，目前尚未执行。archive之后另readonly postcheck，不重跑producer。
+
+## 最终数学与report身份
+
+下列数学稿及report均已在本轮actual FULL读：Root自稿经作者核；arithmetic/architecture为Root独立数学复核。scope本身的identity由外部review/receipt记，避免自引用。
+
+|文件|bytes|SHA256|
+|---|---:|---|
+|research/research_global_review_round260_20261010.md|7505|6808414b6baa5919578980ab9590cef44d278108af286528a681843c01346647|
+|research/global_review_mixed_analytic_round260_20261010.md|5716|0a5058ab7181b0a9ea0bc84f53866e0de6c492e7f6fd74bad85213930fe2906d|
+|research/global_review_mixed_arithmetic_round260_20261010.md|12736|880c8ef349207fa110af8ee568a7d6a702e3e9f7db660bd2eca5bcd8a2d3bc08|
+|research/global_review_architecture_round260_20261010.md|13020|d16d012f3f0c6b4a7232c6791e18ff4fdd01b684e1e0cfa7f9949a07ff0bda25|
+|research/research_global_review_progress_round260_20261010.md|3125|f7d938e487254889c46dc611f6518ff4006fd7ce65167610d9e5e7d78b28ff97|
+
+## 本轮Root保存的fixed primary/metadata
+
+|文件|bytes|SHA256|
+|---|---:|---|
+|literature/global_review_round260_20261010/root_zeta7_main_ref.json|346|96e7497fdd2c746fbca27fcad233459b3d00f5f9a778ccde50407fc5fd86eb92|
+|literature/global_review_round260_20261010/root_zeta7_tree.json|6646|88d8581d872deefa967a322a68a64cada54b1ed26c49d14de28cf92b41446339|
+|literature/global_review_round260_20261010/root_zeta7_README.md|379|7aa9516ee7e41bd67e022bab8e4f043134ccdddbdb54aacba6253f869da47c2c|
+|literature/global_review_round260_20261010/root_zeta7_module.lean|153|3907b486a5b483c443cf1bb1cf633bfb098aa9c07baaaa87f0f3e67ebe9fe7e9|
+|literature/global_review_round260_20261010/root_zeta7_Basic.lean|21|a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4|
+|literature/global_review_round260_20261010/root_zeta7_coverage.md|1599|0724fbd1d3d1091bbc7b769bd6196b35f60b9cc4068f7f7b1af8a85ce2885ed4|
+|literature/global_review_round260_20261010/root_local_catalogue_title_selection.txt|1372|e28aba4967395a466569fdbe475dec12cd39b862cfa06261489abce0f2d0b1e0|

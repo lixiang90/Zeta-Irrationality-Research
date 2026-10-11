@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-10",
+  "checks": {
+    "cdt_HA_hypergeometric_C1_residual": "0",
+    "cdt_HA_hypergeometric_C0_residual": "0",
+    "cdt_1_minus_z": "(9*x - 1)/(3*x - 1)**3",
+    "F7_numerator_factor_residual": "0",
+    "F7_bound_residual": "0",
+    "t_cubic_discriminant": "-t**3*(1323*t**3 - 1026*t**2 + 323*t - 32)",
+    "branch_cubic_discriminant": "-2604341376",
+    "delta7_branch_cubic_value": "-2056/2401",
+    "delta7_fiber_polynomial": "(x - 8)*(64*x**2 - 121*x + 8)",
+    "elliptic_curve_discriminant": -21952,
+    "critical_points_polynomial": "x*(x-1)^2*(x^3+2*x^2-13*x-32)",
+    "status": "Exact algebra for the single fixed comparison carrier. Source admission failed: the complete level-14 field and actual two-period tuple duplicate rounds 247-248 by a rational gauge. No new analytic jump, functional rank, Pade, real-energy, prime implementation or holonomy budget certified."
+  },
+  "sources": {
+    "cdt2024_l2_chi_minus3.pdf": {
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "pages": 218
+    },
+    "cdt2026_effective_holonomy_author_20261006.pdf": {
+      "sha256": "368cc0af5584049a76c7cef0fd78886524143ee3935f56cfc2e35fb9bee22796",
+      "pages": 20
+    },
+    "zagier2009_apery_like_recurrences.pdf": {
+      "sha256": "9fe93aadda4a5dc0297c7b5d835d8c3026ebf026f5dc139eefc0ff7856f4fc97",
+      "pages": 15
+    },
+    "beukers1987_modular_irrationality.pdf": {
+      "sha256": "fc28f8db316015fb349a47cf456e3037bb8fdabc3e92914eaad12e3f68176c38",
+      "pages": 14
+    },
+    "source_admission_round258_20261010/cdt_colo2022_thesis_primary.pdf": {
+      "sha256": "90264d1d1eb5e6da8fc9f6bb555e73db37840a063bd4ecf3e5b1f3e77269559d",
+      "pages": 281
+    }
+  },
+  "execution_scope": {
+    "mathematical_cas_processes": 3,
+    "utc_call_times": [
+      "2026-10-10T00:05:19.632Z",
+      "2026-10-10T00:12:09.138Z",
+      "2026-10-10T00:13:18.480Z"
+    ],
+    "parameter_prime_map_scans": 0,
+    "old_producers_lean": 0,
+    "implementation_admission": false
+  },
+  "deduplication": {
+    "source": "Q(X0(14))",
+    "actual_primitives": "B7=R_old, C7=D_old",
+    "relation_carrier": "H258=(A7/A0)*H_old, A7/A0 in Q(X0(14))",
+    "admission": "duplicate-rejected",
+    "same_source_continuation": false,
+    "new_T_cyclic_rank_and_budget": "unpaid; old m=5 and tau=32/25 not transplanted"
+  }
+}

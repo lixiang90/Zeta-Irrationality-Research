@@ -1,0 +1,224 @@
+{
+  "status": "fixed_exact_mixed_pade_certificates_passed",
+  "endpoint_typeI_duality": [
+    {
+      "n_typeI": 2,
+      "s_typeII": 1,
+      "q": 3,
+      "a": 1,
+      "ordinary_moments_zero": 3,
+      "matrix_and_endpoint_constraints": "passed",
+      "Mellin_zeros": "passed",
+      "confluent_Cauchy_determinant": "passed",
+      "companion_determinant_identity": "passed",
+      "target_duality": "passed",
+      "R_at_minus_a": "170",
+      "typeI_rational_part": "-33101/36720",
+      "A_polynomials": [
+        "-707*u/36720 - 707/36720",
+        "209*u/1224 + 209/1224",
+        "-179*u/170 - 9/170"
+      ],
+      "canonical_primitive_identity": "passed",
+      "primitive_coefficients": [
+        "27540",
+        "-33101"
+      ],
+      "target_coefficient_bits": 15,
+      "exact_value_certificate": {
+        "Euler_terms": 256,
+        "primitive_sign": 1,
+        "primitive_absolute_value_at_least_power_of_two": 1,
+        "primitive_value_strictly_exceeds_one": true
+      }
+    },
+    {
+      "n_typeI": 2,
+      "s_typeII": 1,
+      "q": 7,
+      "a": 1,
+      "ordinary_moments_zero": 7,
+      "matrix_and_endpoint_constraints": "passed",
+      "Mellin_zeros": "passed",
+      "confluent_Cauchy_determinant": "passed",
+      "companion_determinant_identity": "passed",
+      "target_duality": "passed",
+      "R_at_minus_a": "17095248",
+      "typeI_rational_part": "-1629974324813608961345129/1642136281512168960000000",
+      "A_polynomials": [
+        "453976767367935330137*u/59116906134438082560000000 + 453976767367935330137/59116906134438082560000000",
+        "-57928041732144149449*u/234590897358881280000000 - 57928041732144149449/234590897358881280000000",
+        "193657032683971031315639*u/59116906134438082560000000 + 193657032683971031315639/59116906134438082560000000",
+        "-71043538281453829607*u/3127878631451750400000 - 71043538281453829607/3127878631451750400000",
+        "241426835808472534737997*u/2955845306721904128000000 + 241426835808472534737997/2955845306721904128000000",
+        "-4891560488232933452909*u/58647724339720320000000 - 4891560488232933452909/58647724339720320000000",
+        "862081120273599427/29922308336592000000 - 29060227216318400573*u/29922308336592000000"
+      ],
+      "canonical_primitive_identity": "passed",
+      "primitive_coefficients": [
+        "1616477902113541320000000",
+        "-1629974324813608961345129"
+      ],
+      "target_coefficient_bits": 81,
+      "exact_value_certificate": {
+        "Euler_terms": 256,
+        "primitive_sign": -1,
+        "primitive_absolute_value_at_least_power_of_two": 48,
+        "primitive_value_strictly_exceeds_one": true
+      }
+    },
+    {
+      "n_typeI": 3,
+      "s_typeII": 2,
+      "q": 7,
+      "a": 1,
+      "ordinary_moments_zero": 14,
+      "matrix_and_endpoint_constraints": "passed",
+      "Mellin_zeros": "passed",
+      "confluent_Cauchy_determinant": "passed",
+      "companion_determinant_identity": "passed",
+      "target_duality": "passed",
+      "R_at_minus_a": "23368557130265680",
+      "typeI_rational_part": "-915228461134847664491805522424812684112432201050706703/922057384163446203897187944440522641052826992640000000",
+      "A_polynomials": [
+        "-9483216282454756574576088236585916782891805775500047114779061*u**2/871344228034456662682842607496293895794921508044800000000 - 11041127723532004452456329874481522956448188457*u/54459014252153541417677662968518368487182594252800000000 + 9483216282454579916532511724514677481613814071132743943763749/871344228034456662682842607496293895794921508044800000000",
+        "-691036588249730391874724665074503216498381875492171362274703*u**2/108918028504307082835355325937036736974365188505600000000 - 5644771596686655930328195952238441672415105352423002780907*u/518657278591938489692168218747793985592215183360000000 - 4085664851689812838795012271864211030651159078650076212527/900148995903364320953349801132535016317067673600000000",
+        "-9318688221573107395933526744326900334435054994951180014087*u**2/2689334037143384761366798171284857703070745395200000000 - 1365771814854232224194375667130491477206500400618181908033*u/756375197946576964134411985673866228988647142400000000 + 40163495918822535389181719350766375739307482134778799069727/24204006334290462852301183541563719327636708556800000000",
+        "-1050089122171868531145321097502670126195379904510220977209*u**2/605100158357261571307529588539092983190917713920000000 - 5880540753139077950897997112656558507359087766803131739*u/2619481205009790351980647569433302957536440320000000 - 616631583606516951024232471041989778009138739242604909/1210200316714523142615059177078185966381835427840000",
+        "-397615073091395293043648079855512940979870387211232269*u**2/517179622527573992570538109862472635205912576000000 - 1085916101633353383348303667062019624541768594804501293*u/1680833773214615475854248857053036064419215872000000 + 33013261746189011046968414794943589382849626181120573/268933403714338476136679817128485770307074539520000",
+        "-6741632133850922388095077422357023518998496309405543*u**2/24011911045923078226489269386471943777417369600000 - 2411383994374107081444020405468633075712202101193531*u/8003970348641026075496423128823981259139123200000 - 58286372694840101329820567343062213980841419429/2841646277624032926211747856387212281351168000",
+        "-465733346277121706277987756626188557112141291*u**2/6663311978555632763483535738281702679936000 - 1535370004105214839212049156850929698140953273*u/22211039928518775878278452460939008933120000 + 9065890018548374829120419468608731038301007/5125624598888948279602719798678232830720000"
+      ],
+      "canonical_primitive_identity": "passed",
+      "primitive_coefficients": [
+        "907650237535892356961294382808639474786376570880000000",
+        "-915228461134847664491805522424812684112432201050706703"
+      ],
+      "target_coefficient_bits": 180,
+      "exact_value_certificate": {
+        "Euler_terms": 256,
+        "primitive_sign": -1,
+        "primitive_absolute_value_at_least_power_of_two": 117,
+        "primitive_value_strictly_exceeds_one": true
+      }
+    },
+    {
+      "n_typeI": 2,
+      "s_typeII": 1,
+      "q": 7,
+      "a": 2,
+      "ordinary_moments_zero": 7,
+      "matrix_and_endpoint_constraints": "passed",
+      "Mellin_zeros": "passed",
+      "confluent_Cauchy_determinant": "passed",
+      "companion_determinant_identity": "passed",
+      "target_duality": "passed",
+      "R_at_minus_a": "874022733",
+      "typeI_rational_part": "-1003655800034547277246676429/2014966181094147267840000000",
+      "A_polynomials": [
+        "4624469240018463366679*u/2686621574792196357120000000 + 4624469240018463366679/1343310787396098178560000000",
+        "-45224830243893332335063*u/805986472437658907136000000 - 45224830243893332335063/402993236218829453568000000",
+        "2046468607941176724640687*u/2686621574792196357120000000 + 2046468607941176724640687/1343310787396098178560000000",
+        "-440790267032307008875903*u/80598647243765890713600000 - 440790267032307008875903/40299323621882945356800000",
+        "26420902930481054745733*u/1279343607043903027200000 + 26420902930481054745733/639671803521951513600000",
+        "-24698069418989039418809*u/1142271077717770560000000 - 24698069418989039418809/571135538858885280000000",
+        "1153002870133930307/75547028949588000000 - 74394026079454069693*u/151094057899176000000"
+      ]
+    }
+  ],
+  "highest_log_ordinary_Pade": [
+    {
+      "s": 1,
+      "weight": "(-log u)^6/6!",
+      "monic_P": "u - 1/128",
+      "minimal_coefficient_multiplier": "128",
+      "P_at_minus_one": "-129/128",
+      "orthogonality_and_Sturm": "passed",
+      "integer_Q_at_minus_one": "-129",
+      "reduced_rational_part_numerator": "128",
+      "reduced_rational_part_denominator": 1,
+      "complete_target_content": 1,
+      "complete_primitive_interface": "passed",
+      "normalized_rational_part": "-128/129",
+      "primitive_coefficients": [
+        "8127",
+        "-8192"
+      ],
+      "target_coefficient_bits": 13,
+      "exact_value_certificate": {
+        "Euler_terms": 256,
+        "primitive_sign": 1,
+        "primitive_absolute_value_at_least_power_of_two": 1,
+        "primitive_value_strictly_exceeds_one": true
+      }
+    },
+    {
+      "s": 2,
+      "weight": "(-log u)^6/6!",
+      "monic_P": "u**2 - 2059*u/14197 + 2685817/3974251392",
+      "minimal_coefficient_multiplier": "3974251392",
+      "P_at_minus_one": "4553325433/3974251392",
+      "orthogonality_and_Sturm": "passed",
+      "integer_Q_at_minus_one": "4553325433",
+      "reduced_rational_part_numerator": "-4519590777",
+      "reduced_rational_part_denominator": 1,
+      "complete_target_content": 9,
+      "complete_primitive_interface": "passed",
+      "normalized_rational_part": "-4519590777/4553325433",
+      "primitive_coefficients": [
+        "31873278031",
+        "-32139312192"
+      ],
+      "target_coefficient_bits": 35,
+      "exact_value_certificate": {
+        "Euler_terms": 256,
+        "primitive_sign": 1,
+        "primitive_absolute_value_at_least_power_of_two": 16,
+        "primitive_value_strictly_exceeds_one": true
+      }
+    }
+  ],
+  "extra_integer_node": {
+    "q": 7,
+    "P_degree": 7,
+    "R_formula": "(u+2)P(u)",
+    "R_at_minus_two": "0",
+    "J1_R_minus_J2_R_equals_J1_P": "passed",
+    "old_R_at_minus_two": "874022733"
+  },
+  "Catalan_Markov": {
+    "s": 1,
+    "moment_formula": "1/(2m+1)^2",
+    "monic_P": "u - 1/9",
+    "integer_Q": "9*u - 1",
+    "B": "-10",
+    "S": "9",
+    "M": 1,
+    "complete_content": 1,
+    "primitive_coefficients": [
+      "10",
+      "-9"
+    ],
+    "orthogonality_and_primitive_interface": "passed",
+    "Euler_terms": 64,
+    "strict_value_bounds": [
+      "1/8",
+      "1/4"
+    ],
+    "strictly_positive_and_less_than_one": true
+  },
+  "fixed_combination": {
+    "target": "3*zeta(3)+zeta(5)",
+    "positive_weight": "4*w3+(16/15)*w5",
+    "rational_moment_formula": "4/(m+1)^3+16/(15*(m+1)^5)",
+    "exact_eta_to_zeta_identity": "passed",
+    "not_claimed": "primitive decay or irrationality"
+  },
+  "no_zeta_values_numerically_evaluated": true,
+  "not_proved": [
+    "irrationality",
+    "full-family primitive decay",
+    "ordinary-highest-log actual denominator asymptotics",
+    "numerical independence of Li_7(-1/2) and zeta(7)"
+  ]
+}

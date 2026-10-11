@@ -1,0 +1,135 @@
+=== PDF PAGE 10 ===
+In this result we denote by ord σ the order of vanishing at σ (recall that logarithmic
+factors may appear, but they have no influence on the order of vanishing; for instance,
+ord0(ze(log z)i) is the real part of e, for e ∈ C and i ∈ N).
+3 A non-explicit rational function
+In this section we construct the rational function Fn(X) that will be used in §4 to prove
+Theorems 1 and 2. The output of this construction is stated as Theorem 4 in §3.1. Its
+proof, based on Siegel’s lemma, is given in §3.5. It relies on a result of [13], which relates
+asymptotic estimates of Fn(X) at infinity to values at 1 of some functions Pk,1(z) related
+to a differential system arising from polylogarithms. In §3.2 we define these functions
+Pk,1(z), explain the setting and state as Proposition 2 a technical result used in the proof
+of Theorem 4. We prove Proposition 2 in §3.4, after dealing with a lemma of analytic
+number theory in §3.3.
+3.1 Output of the construction
+In this section we apply Siegel’s lemma (namely Lemma 1 stated in §2.1) to construct
+integers ci,j ∈ Z, for 1 ≤ i ≤ a and 0 ≤ j ≤ n, such that the rational function
+Fn(X) =
+aX
+i=1
+nX
+j=0
+ci,j
+(X + j)i ∈ Q(X) (3.1)
+has interesting properties. We denote by
+Fn(t) =
+∞X
+d=1
+Ad
+td
+the expansion of Fn(t) as |t| → ∞ .
+Theorem 4. Let a ∈ N and ω, Ω, r ∈ Q be such that a > Ω ≥ ω ≥ 1 and r ≥ 1. Then
+for any n ≥ 0 such that rn, ωn, Ωn ∈ N there exist integers ci,j ∈ Z for 1 ≤ i ≤ a and
+0 ≤ j ≤ n, not all zero, with the following properties:
+(i) As |t| → ∞ , we have Fn(t) = O(|t|−ωn).
+(ii) As n → ∞, we have |ci,j| ≤ χn(1+o(1)) for any i, j, with
+χ = exp
+ ω log 2 + 3ω2 + ω2 log(a + 1) + 1
+2Ω2 log r
+a − ω
+
+. (3.2)
+(iii) As n → ∞, we have
+|Ad| ≤
+ rd−Ωnnddaχn(1+o(1)) if d < Ωn,
+nddaχn(1+o(1)) if d ≥ Ωn.
+10
+
+=== PDF PAGE 11 ===
+Moreover in (ii) and (iii) the sequences denoted by o(1) do not depend on i, j, d, and tend
+to 0 as n → ∞.
+We point out that, even if it is not explicit in the notation, the integers ci,j depend on
+a, ω, Ω, r, n.
+This section is devoted to the proof of Theorem 4; it will be completed in §3.5. The
+strategy is to apply Lemma 1 in order to construct integers ci,j such that assertions ( i),
+(ii) and the first inequality of ( iii) hold; notice that this first inequality is interesting only
+when d ≥ ωn, since part ( i) means Ad = 0 for any d < ωn . Then we shall prove (at the
+end of §3.5) that the second inequality of ( iii) holds too.
+A rather easy construction of integers ci,j satisfying property ( i) of Theorem 4 would
+be to apply Lemma 1, translating ( i) as Ad = 0 for any d < ωn . However the explicit
+expression of Ad (see Eq. (3.20) in §3.5) shows that for d close to ωn, the equation Ad = 0
+is of the form P
+i,j λi,jci,j = 0 with integers λi,j such that |λi,j| ≤ nωn(1+o(1)). Applying
+Lemma 1 with such a huge bound would not give as n → ∞ a geometric bound on |ci,j|
+in ( ii), and therefore it would not seem possible to derive any Diophantine application.
+Instead, to prove Theorem 4 we translate assertion ( i) as Pk,1(1) = 0 for any k < ωn (see
+§3.5). We shall define these functions Pk,1(z) now.
+3.2 Setting of the proof
+Let a ≥ 1 and n ≥ 0. In this section we start with arbitrary real numbers ci,j, for 1 ≤ i ≤ a
+and 0 ≤ j ≤ n, which may either be fixed or considered as unknowns. We point out that
+the result of §§3.2 to 3.4, namely Proposition 2 below, will be used 3 times in this paper:
+in §3.5 to prove Theorem 4, in §4.3 to prove Lemma 5, and in §4.7 for Theorem 2.
+We let
+Pi(z) =
+nX
+j=0
+ci,jzj
+for 1 ≤ i ≤ a, and P0(z) = 0. We define Pk,i(z) for 0 ≤ i ≤ a and k ≥ 1 as follows:
+P1,i(z) = Pi(z) for any i, and for k ≥ 2:
+ Pk,i(z) = P ′
+k−1,i(z) − 1
+z Pk−1,i+1(z) for 1 ≤ i ≤ a
+Pk,0(z) = P ′
+k−1,0(z) + α1z+α0
+z(1−z) Pk−1,1(z) (3.3)
+where Pk−1,a+1 is taken to be the zero function; the motivation for this definition will be
+given in §§3.5 and 4.1 (see Eqns. (3.23) and (4.8)). Here ( α0, α1) ∈ Z2 is fixed; we shall
+take (α0, α1) = (1, 1) in the proof of Theorem 1, and ( α0, α1) = (1, 0) for Theorem 2. It is
+not difficult (as in [12, proof of Proposition 4.4]) to prove that zk−1Pk,i(z) is a polynomial
+of degree at most n for 1 ≤ i ≤ a, and that zk−1(1 − z)k−1Pk,0(z) is a polynomial of degree
+at most n + k − 1; this follows also from the proof of Proposition 2 below. We define the
+11
+
+=== PDF PAGE 12 ===
+coefficients pk,i,j by
+ zk−1Pk,i(z) =Pn
+j=0 pk,i,jzj if i ≥ 1,
+zk−1(1 − z)k−1Pk,0(z) =Pn+k−1
+j=0 pk,0,jzj. (3.4)
+It is clear that each coefficient pk,i,j is a Q-linear combination of the (fixed or unknown)
+coefficients ci′,j′ we have started with to define P0, . . . , Pa. In other words, there exist
+rational numbers ϑk,i,j,i′,j′ such that for any k, i, j:
+pk,i,j =
+aX
+i′=1
+nX
+j′=0
+ϑk,i,j,i′,j′ci′,j′. (3.5)
+The point of the next result, which is the main step in the proof of Theorem 4, is to provide
+a common denominator (depending only on k) and an upper bound on these coefficients
+ϑk,i,j,i′,j′.
+Proposition 2. For any k ≥ 1 there exists a positive integer δk = δk(a, n, α0, α1), which
+depends only on k, a, n, α0, α1, such that:
+(i) We have δk ≤ (e3(a + 1))max(n,k) provided n is large enough in terms of a.
+(ii) For any i, j, i′, j′ we have δk
+(k−1)! ϑk,i,j,i′,j′ ∈ Z.
+(iii) For any i, j, i′, j′ we have
+ δk
+(k − 1)! ϑk,i,j,i′,j′
+ ≤
+ ka2nδk if 1 ≤ i ≤ a,
+max(|α0|, |α1|) ka+18max(n,k)δk if i = 0.
+The first observation is that we have geometric bounds as n → ∞ (with k < ωn ): this
+solves the problem raised at the end of §3.1. Another crucial remark is the dependence
+with respect to a of the upper bound in (i): it is polynomial in a, whereas a direct approach
+would lead to an exponential bound, thereby ruining the Diophantine application we have
+in mind. Indeed we recall (see the end of the introduction, or §4.6 for details) that we
+plan to construct a linear combination of odd zeta values, with coefficients bounded by
+βn(1+o(1)) as n → ∞, where β is a polynomial in a. To achieve this, the bound in ( i) has
+to be polynomial in a. This property comes from Lemma 2 below.
+In the proof of Theorem 4 we shall not use the case i = 0 of parts ( ii) and ( iii), but
+they will be used in the proof of Lemma 5 in §4.3.
+3.3 A lemma from analytic number theory
+A crucial step in the proof of Proposition 2 is the use of the following lemma, which is of
+independent interest.
+12

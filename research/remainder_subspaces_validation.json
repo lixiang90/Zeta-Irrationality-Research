@@ -1,0 +1,119 @@
+{
+  "tests": [
+    {
+      "kind": "mixed_interpolation",
+      "K": 8,
+      "h": 4,
+      "passed": true
+    },
+    {
+      "kind": "mixed_interpolation",
+      "K": 9,
+      "h": 4,
+      "passed": true
+    },
+    {
+      "kind": "zero_gap_identity",
+      "mode": "mixed",
+      "passed": true
+    },
+    {
+      "kind": "zero_gap_identity",
+      "mode": "symmetric",
+      "passed": true
+    },
+    {
+      "kind": "Cauchy_Binet_polynomial_identity",
+      "mode": "mixed",
+      "terms": 6,
+      "passed": true
+    },
+    {
+      "kind": "Cauchy_Binet_polynomial_identity",
+      "mode": "symmetric",
+      "terms": 36,
+      "passed": true
+    },
+    {
+      "kind": "local_gauss_vs_all_exact_coefficients",
+      "K": 120,
+      "N": 3,
+      "p": 29,
+      "passed": true
+    }
+  ],
+  "experiments": [
+    {
+      "file": "mixed_subspaces24.json",
+      "cases": 104,
+      "genuine_subspace_changes": 96,
+      "min_score": 0.6937783228577635,
+      "min_per_lambda": 0.7073884745425816,
+      "min_score_increase_vs_matched_baseline": 0.09997059974599287
+    },
+    {
+      "file": "mixed_subspaces48.json",
+      "cases": 8,
+      "genuine_subspace_changes": 4,
+      "min_score": 0.8241873252768516,
+      "min_per_lambda": 0.8241873252768516,
+      "min_score_increase_vs_matched_baseline": 0.2007204945190435
+    },
+    {
+      "file": "partial_vanishing24.json",
+      "cases": 64,
+      "genuine_subspace_changes": 48,
+      "min_score": 0.7073884745425816,
+      "min_per_lambda": 0.7073884745425816,
+      "min_score_increase_vs_matched_baseline": 0.12624098204845868
+    },
+    {
+      "file": "partial_vanishing48.json",
+      "cases": 8,
+      "genuine_subspace_changes": 4,
+      "min_score": 0.8241873252768516,
+      "min_per_lambda": 0.8241873252768516,
+      "min_score_increase_vs_matched_baseline": 0.11931041237419149
+    }
+  ],
+  "conditional_gains": [
+    {
+      "alpha": "1/200",
+      "conditional_q4_gain": "167/288000",
+      "hypothetical_all_q_gain": "54988403171167943/29175784204406400000",
+      "qmax": 24
+    },
+    {
+      "alpha": "1/100",
+      "conditional_q4_gain": "67/72000",
+      "hypothetical_all_q_gain": "8712880201/3824449200000",
+      "qmax": 12
+    },
+    {
+      "alpha": "1/66",
+      "conditional_q4_gain": "5/4752",
+      "hypothetical_all_q_gain": "1145059/593008416",
+      "qmax": 8
+    },
+    {
+      "alpha": "1/40",
+      "conditional_q4_gain": "7/11520",
+      "hypothetical_all_q_gain": "7/11520",
+      "qmax": 4
+    },
+    {
+      "alpha": "1/33",
+      "conditional_q4_gain": "0",
+      "hypothetical_all_q_gain": "0",
+      "qmax": 4
+    }
+  ],
+  "new_window_census": {
+    "grid_cases": 92,
+    "grid_equalities": 69,
+    "large_cases": 3,
+    "large_equalities": 3,
+    "first_and_second_layer_targets_pass": true
+  },
+  "warning": "Finite checks do not prove the conjectured inner-window bound. No global arithmetic constant has been reduced by these conditional gains."
+}

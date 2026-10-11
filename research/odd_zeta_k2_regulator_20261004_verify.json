@@ -1,0 +1,158 @@
+{
+  "status": "fixed_exact_algebra_passed_no_period_numerics",
+  "V4_average_holomorphic_matrix": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "quotient": {
+    "R": "s**2 + s**(-2)",
+    "W": "Y/s**2",
+    "equation": "W^2=R^2-16",
+    "parameter": "(R+W)/4"
+  },
+  "corrected_symbols": {
+    "plus": "2{uplus,Fplus}-{2,v}",
+    "minus": "2{uminus,Fminus}+{2,v}",
+    "v": "(y-4i)/(y+4i)"
+  },
+  "corrected_tame_jets": {
+    "plus": [
+      {
+        "x": "-sqrt(2)",
+        "y": "-4*I",
+        "ord_u": 1,
+        "ord_F": 2,
+        "ord_v": -2,
+        "tame_S": "1/2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "-sqrt(2)",
+        "y": "4*I",
+        "ord_u": 1,
+        "ord_F": -2,
+        "ord_v": 2,
+        "tame_S": "2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "sqrt(2)",
+        "y": "-4*I",
+        "ord_u": -1,
+        "ord_F": -2,
+        "ord_v": -2,
+        "tame_S": "1/2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "sqrt(2)",
+        "y": "4*I",
+        "ord_u": -1,
+        "ord_F": 2,
+        "ord_v": 2,
+        "tame_S": "2",
+        "tame_corrected": "1"
+      }
+    ],
+    "minus": [
+      {
+        "x": "-sqrt(2)*I",
+        "y": "-4*I",
+        "ord_u": -1,
+        "ord_F": 2,
+        "ord_v": -2,
+        "tame_S": "2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "-sqrt(2)*I",
+        "y": "4*I",
+        "ord_u": -1,
+        "ord_F": -2,
+        "ord_v": 2,
+        "tame_S": "1/2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "sqrt(2)*I",
+        "y": "-4*I",
+        "ord_u": 1,
+        "ord_F": -2,
+        "ord_v": -2,
+        "tame_S": "2",
+        "tame_corrected": "1"
+      },
+      {
+        "x": "sqrt(2)*I",
+        "y": "4*I",
+        "ord_u": 1,
+        "ord_F": 2,
+        "ord_v": 2,
+        "tame_S": "1/2",
+        "tame_corrected": "1"
+      }
+    ]
+  },
+  "infinity_unit_limits": {
+    "plus": {
+      "u": "1",
+      "F": "-1",
+      "v": "1"
+    },
+    "minus": {
+      "u": "1",
+      "F": "-1",
+      "v": "1"
+    }
+  },
+  "endpoint": {
+    "s0": "sqrt(2)*(-1 + sqrt(3))/2",
+    "xplus": "sqrt(6)",
+    "xminus": "-sqrt(2)",
+    "uplus": "2+sqrt(3)",
+    "uminus": "i",
+    "Fplus": "1",
+    "Fminus": "-1",
+    "v": "-1"
+  },
+  "galois_point_actions": {
+    "aFlip": "sigma(B)",
+    "bFlip": "sigma*tau(B)"
+  },
+  "real_boundary_identity": "Im(log(u)dlog(F))=eta(u,F)+d(arg(u)log|F|)",
+  "closed_chain": {
+    "coefficients": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "boundary": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "eta_integral_multiple": 0
+  },
+  "not_computationally_checked": [
+    "4T=0 from transfer, Bass-Tate, and specialization",
+    "existence of a finite Steinberg/Bloch chain from Matsumoto exactness",
+    "actual value of the open integral from the frozen Catalan identity",
+    "full Borel--Suslin regulator injectivity",
+    "any arithmetic-model integrality or irrationality claim"
+  ]
+}

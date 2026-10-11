@@ -1,0 +1,155 @@
+392                           G EORGES R HIN AND C ARLO V IOLA
+
+
+
+valuation of the coefficients of the linear form in 1 and θ given by the integral (1.1)
+for suitably fixed a1 , . . . , a D ; b1 , . . . , b D ; c, so that, by removing common prime
+factors of such coefficients, one can significantly improve the irrationality measure
+of θ that can be obtained from (1.1) by purely analytic methods. In some cases,
+e.g. for θ = Li2 (1/6), the elimination of common prime factors of the coefficients
+provided by our permutation group allows us to prove the irrationality of θ, a result
+that cannot be obtained by any other known method.
+      The application of the general strategy outlined above to the study of Li2 (r/s),
+which we carry out in the present paper, is naturally related with our method for
+ζ (2) = Li2 (1) given in [4], but requires some essential modifications and involves
+some new difficulties. As in the case of ζ (2), the integrals of type (1.1) for Li2 (r/s)
+have dimension D = 2; however the polynomial ∆(x, y) = x(1 − y) + yz now
+appearing in the denominator contains a parameter z > 1, subsequently chosen to
+be z = s/r , and is no longer a symmetric function of x and y as it was for ζ (2). As
+a consequence, we are forced to employ in our integrals a birational transformation
+(i.e., the involution λ defined by (2.5) below) which transforms only the variable y
+and acts identically on x, with an (inevitable) lack of symmetry, with respect to the
+case of ζ (2), in the resulting permutation group. Moreover, the integrals (1.1) over
+the unit square (0, 1)2 , up to some controlled factors, yield linear forms not only in
+1 and Li2 (1/z), but also containing logarithmic terms involving log z and Li1 (1/z).
+In order to get rid of these, as we do in Theorem 2.1, we have to treat simultaneously
+both double integrals of type (1.1) over (0, 1)2 , defined in (2.1) below, and double
+integrals of mixed type, i.e. over the real interval (0, 1) in x and over a complex
+contour in y, defined in (2.2). Also, similarly to our paper [4], the double contour
+integrals defined in (2.3) yield the coefficient of Li2 (1/z) in the linear forms.
+
+
+ACKNOWLEDGEMENT. We are indebted to the referee for helpful comments and
+suggestions on an earlier version of this paper.
+
+
+2. Linear forms involving Li1 and Li2
+
+Let z ∈ R, z > 1. For integer parameters h, j, k, l, m ≥ 0 we define
+
+                                       11
+                                                x j (1 − x)h y k (1 − y)l
+      Iz(0) (h, j, k, l, m) = z −l−m                                      dx dy,       (2.1)
+                                              (x(1 − y) + yz) j+k−m+1
+                                       0 0
+      Iz(1) (h, j, k, l, m)
+                         1                                                 
+                  −l−m         1                  x j (1 − x)h y k (1 − y)l
+             =z                                                             dy dx,     (2.2)
+                              2πi             (x(1 − y) + yz) j+k−m+1
+                       0              x =
+                                  y− x−z
+              T HE PERMUTATION GROUP METHOD FOR THE DILOGARITHM                                  393
+
+
+   Iz(2) (h, j, k, l, m)
+                                                                                     
+                       1                 1                    x j (1−x)h y k (1− y)l
+         = z −l−m                                                                    dy   dx (2.3)
+                      2πi               2πi                 (x(1− y) + yz) j+k−m+1
+                           |x−z|=σ                 x |=
+                                              |y− x−z
+
+for any , σ > 0, and
+
+       Iz (h, j, k, l, m) = Iz(0) (h, j, k, l, m) − (log z) Iz(1) (h, j, k, l, m).              (2.4)
+
+Changing x into 1 − x and y into 1 − y in the integral (2.1) yields
+
+                                              11
+                                                            x h (1 − x) j y l (1 − y)k
+       Iz(0) (h,   j, k, l, m) = z   −l−m
+                                                                                       dx dy.
+                                                        (z − (z − 1)y − x y) j+k−m+1
+                                              0 0
+
+Hence in the limit case z = 1 we have
+                              (0)
+                             I1 (h, j, k, l, m) = I (h, j, k, l, m),
+
+where I (h, j, k, l, m) is the integral, related to ζ (2), defined through the notation
+of the paper [4].
+     Here we are interested in the case z > 1, which we assume. For x  = 0, x  = z,
+we consider the involution λ = λx,z : y → Y defined by the equation
+                                          1−y        x(1 − y)
+                        λ : Y =            x − z = x(1 − y) + yz ,                              (2.5)
+                                        1−      y
+                                             x
+which satisfies
+                                 dY                  dy
+                                            = −               .
+                            x(1 − Y ) + Y z     x(1 − y) + yz
+Clearly for any x > 0 the involution λ maps the interval 0 ≤ y ≤ 1 onto 0 ≤ Y ≤ 1.
+Hence the change of variable (2.5) in (2.1) transforms the double integral over the
+unit square (0, 1)2 into a double integral over (0, 1)2 . Also, for any fixed complex
+number τ  = 0, 1, ∞, the function Y = (1 − y)/(1 − τ y) of the complex variable
+y plainly transforms any circumference centred at 1/τ into a circumference centred
+at 1/τ . Therefore, (2.5) transforms the contour integral over |y − x/(x − z)| = 
+appearing in (2.2) and (2.3) into a contour integral over |Y − x/(x − z)| =  , for a
+suitable  > 0.
+     Consequently, if we apply the transformation λ to the above integrals, i.e., if
+we make the change of variable (2.5), we easily obtain, owing to the normalization
+factor z −l−m appearing in (2.1), (2.2) and (2.3),
+
+              Iz(ν) (h, j, k, l, m) = Iz(ν) (h, m, l, k, j)             (ν = 0, 1, 2),          (2.6)
+394                            G EORGES R HIN AND C ARLO V IOLA
+
+
+
+whence, by (2.4),
+
+                            Iz (h, j, k, l, m) = Iz (h, m, l, k, j).                (2.7)
+
+Thus with the action of the transformation λ on (2.1), (2.2), (2.3) and (2.4) we as-
+sociate the permutation λ of the set {h, j, k, l, m} mapping h, j, k, l, m respectively
+to h, m, l, k, j, i.e., given by
+
+                                      λ = ( j m)(k l),                              (2.8)
+
+and the values of (2.1), (2.2), (2.3) and (2.4) are invariant under the action of λ.
+     As usual, for any integer n ≥ 1 we define
+
+                                  dn = l.c.m.{1, . . . , n},
+
+and d0 = 1. Moreover, let
+
+        H    = max{l + m − j, m + h − k, h + j − l, j + k − m},
+        K    = max{l + m − j, min{m + h − k, h + j − l}, j + k − m},
+        α    = max{ j + k, k + l, l + m},                                           (2.9)
+        β    = max{0, k + l − h},
+         δ   = max{h, m + h − k, h + j − l, j + k, k + l, l + m}.
+
+By linearity, we extend the action of the permutation λ on any linear combination
+of h, j, k, l, m with integer coefficients. Thus λ ( j + k) = λ ( j) + λ (k) = l + m,
+λ (l + m − j) = λ (l) + λ (m) − λ ( j) = j + k − m, etc. We remark that l + m − j
+and j + k − m cannot be both < 0, because (l + m − j) + ( j + k − m) = k + l ≥ 0.
+Hence the integers H , K , α, β, δ defined by (2.9) are all non-negative and clearly
+invariant under the action of λ .
+Theorem 2.1. With the above notation and assumptions we have
+
+               d H d K z α (z − 1)β Iz (h, j, k, l, m) = P(z) − Q(z) Li2 (1/z)
+
+and
+
+              d H d K z α (z − 1)β Iz(1) (h, j, k, l, m) = R(z) − Q(z) Li1 (1/z),
+
+where
+
+      P(z), Q(z), R(z) ∈ Z[z],            max{deg P(z), deg Q(z), deg R(z)} ≤ δ.
+
+Moreover, the polynomial Q(z) is given by
+
+                       Q(z) = d H d K z α (z − 1)β Iz(2) (h, j, k, l, m).
+
+The proof of Theorem 2.1 is based on some arithmetical lemmas.
+

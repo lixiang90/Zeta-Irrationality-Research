@@ -1,0 +1,60 @@
+{
+  "status": "final-paper-proof-and-finite-probe-receipt",
+  "date": "2026-10-06",
+  "author": "conifold_arithmetic_hypothesis",
+  "proof": {
+    "path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006.md",
+    "sha256": "4d907340bf9752b3fee94173ecaaddfd81b11cfb5760e8c9954ae4528ce6581b",
+    "actual_read_scope": "Author actual complete saved final A1-A13 reread, including the final source D^(2n) and probe r -> a=-r,b=1 scope additions.",
+    "proved": [
+      "Actual saturated auxiliary-p constraints and negative evaluation rank 5m/2.",
+      "Explicit m/2-dimensional orthogonal trace matrix G0.",
+      "Actual paired lift mod p^2, with the shared-node first evaluation eta=1/2.",
+      "Full actual weak Schur factorization in H0-Cs G0^-1 Cs^T.",
+      "Conditional Smith and Gauss constant-reduction theorem under det G0 and det Ms nonzero."
+    ],
+    "not_proved": [
+      "The two finite-field determinants are units at infinitely many auxiliary primes.",
+      "A sufficiently cheap all-prime budget for the same saturated paired determinant.",
+      "Strict arithmetic/analytic margin or a new irrationality/linear-independence number theorem."
+    ]
+  },
+  "inputs": [
+    {
+      "path": "research/cdt_odd_mixed_double_pole_primitive_lattice_review_20261006.md",
+      "sha256": "93c9e1705cc63160ce7c212501df79b23b10b249d42acd26a715a538315b8ac8",
+      "actual_read_scope": "Current-round complete P1-P9 read; frozen input, never executed."
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "actual_read_scope": "Current-round actual complete final I1-I25 read after the I25 sqrt(8n)<p<=6n domain correction; peer proof only, never executed."
+    },
+    {
+      "path": "literature/lai2026_linear_independence_1_zeta3_zeta4_arxiv2610_06838v1_20261006.pdf",
+      "sha256": "838c0331efb1ea249b60308e00e1fbc2ae8771c55da4eaf22e7beb0243250a58",
+      "pages": 25,
+      "actual_read_scope": "Reused previous-round actual complete PDF1-25 reading. No new current-round PDF reading is claimed."
+    }
+  ],
+  "new_primary_pdfs": 0,
+  "new_own_producer": {
+    "path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006_verify.py",
+    "sha256": "256f5f32efa8755a6c3c234d25ed2d5395fbf7e45d9402af569c476bb6c94e42",
+    "output_path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006_verify.json",
+    "output_sha256": "f8b0f099507d284850fb66ff5236b8e4d5e5d46025ad798c97bca467274ab30a",
+    "command": "python research/cdt_odd_paired_head_free_auxiliary_prime_20261006_verify.py",
+    "execution_count": 1,
+    "exit_code": 0,
+    "edited_after_first_execution": false,
+    "rerun_count": 0,
+    "imports": ["json", "math", "pathlib"],
+    "actual_static_read_scope": "Author complete saved code and JSON reread after the only first execution.",
+    "scope": "Exact modulus p^8, s5, X0, a=-r,b=1 with r=0/1 at m=2,4,8,12,14, p=19,37,73,109,127. Ten finite cases. Actual local paired kernels and restricted p^5-Gram Smith probes.",
+    "finite_result": "Every case has negative-evaluation/leading-Gram rank 5m/2 and p^5 restricted Gram Smith 0^(5m/2),2^(3m/2); G0 has rank m/2. This does not remove the infinite-unit hypotheses."
+  },
+  "old_or_peer_producer_execution_import_rerun_count": 0,
+  "lean_execution_count": 0,
+  "new_pdf_download_count": 0,
+  "freeze_policy": "This receipt pins the final proof and first-run code/output. All historical receipts and old or peer mathematical artifacts remain read-only."
+}

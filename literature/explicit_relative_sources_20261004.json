@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-04",
+  "sources": [
+    {
+      "file": "fischler_rivoal2013_mzv_pade_vasilyev_v1.pdf",
+      "title": "Multiple zeta values, Padé approximation and Vasilyev's conjecture",
+      "authors": "Stéphane Fischler; Tanguy Rivoal",
+      "version": "arXiv:1309.2534v1, 2013-09-10 (only arXiv version)",
+      "category": "multiple_log_moment_pade",
+      "status": "已证特殊multiple-polylog Padé问题唯一解与Vasilyev积分评价；不证明ζ(7)无理",
+      "page_url": "https://arxiv.org/abs/1309.2534v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1309.2534v1"
+      ],
+      "notes": "用于本轮超越普通矩消元的对照；该文定理不可自动移植到本项目新矩族。 PDF内印Date November1,2018；与arXiv v1提交日期分别记录，不推断为新增2018版本。"
+    },
+    {
+      "file": "fischler_rivoal2003_pade_balanced_hypergeometry.pdf",
+      "title": "Approximants de Padé et séries hypergéométriques équilibrées",
+      "authors": "Stéphane Fischler; Tanguy Rivoal",
+      "version": "J. Math. Pures Appl.82(2003),1369–1394; author open PDF",
+      "category": "exact_simultaneous_pade",
+      "status": "作者原稿；已证具体polylog Padé problem，与本轮scalar族区分",
+      "page_url": "https://rivoal.perso.math.cnrs.fr/articles/fisridef.pdf",
+      "pdf_urls": [
+        "https://rivoal.perso.math.cnrs.fr/articles/fisridef.pdf"
+      ],
+      "notes": "同时approximation、balanced hypergeometry与singular point特化；没有声称个别ζ7全解。"
+    },
+    {
+      "file": "zudilin2004_approximations_di_tri_log_v1.pdf",
+      "title": "Approximations to -, di- and tri- logarithms",
+      "authors": "Wadim Zudilin",
+      "version": "arXiv:math/0409023v1, 2004-09-02",
+      "category": "integer_partial_fraction_polylogs",
+      "status": "作者预印本；明确属于方法与数值逼近贡献，不给新无理性定理",
+      "page_url": "https://arxiv.org/abs/math/0409023v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/math/0409023v1"
+      ],
+      "notes": "整数值多项式部分分式与微分的denominator成本；用于ordinary derivative并非自动突破的对照。"
+    },
+    {
+      "file": "krattenthaler_rivoal2008_catalan_linear_form_v1.pdf",
+      "title": "On a linear form for Catalan's constant",
+      "authors": "Christian Krattenthaler; Tanguy Rivoal",
+      "version": "arXiv:0810.1927v1, 2008-10-10; South East Asian J.Math.Math.Sci.6(No.2)(2008),3–15",
+      "category": "exact_catalan_arithmetic",
+      "status": "已证系数整性；原文明示仍不足证明G无理",
+      "page_url": "https://arxiv.org/abs/0810.1927v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/0810.1927v1"
+      ],
+      "notes": "Theorems1–2将标准LCM粗界降到真实整数结构；本轮强调不能只因粗预算失败就判primitivefamily无用。"
+    },
+    {
+      "file": "prevost_sorokin_hermite_pade_apery_author.pdf",
+      "title": "Hermite-Pade approximants and Apery theorem",
+      "authors": "M. Prevost; V.N. Sorokin",
+      "version": "Undated open author/institutional manuscript lmpa326, archived 2026-10-04",
+      "category": "cyclic_polylog_pade",
+      "status": "文中构造Apéry ζ3逼近；未将其推广到纯ζ7",
+      "page_url": "https://www-lmpa.univ-littoral.fr/publications/articles/lmpa326.pdf",
+      "pdf_urls": [
+        "https://www-lmpa.univ-littoral.fr/publications/articles/lmpa326.pdf"
+      ],
+      "notes": "cyclic generalized-polylog graph与endpoint/logarithm条件；本轮不推断未核实出版年。"
+    }
+  ]
+}

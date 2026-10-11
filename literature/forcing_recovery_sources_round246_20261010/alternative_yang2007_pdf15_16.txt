@@ -1,0 +1,116 @@
+                APÉRY LIMITS AND SPECIAL VALUES OF L-FUNCTIONS                         15
+
+
+Theorem 1. Let {an } and {bn } be the sequences satisfying the recursive relation
+   (n + 2)2 un+2 + (54n2 + 162n + 129)un+1 + (n + 1)2 un = 0         (un = an or bn )
+with the initial values a0 = 1, a1 = −21, b0 = 0, and b1 = 1. Then we have
+                            bn   2π 2  1
+                               −      + L(2, χ3 ) ≪ n−1/3
+                            an    81   2
+as n → ∞. Moreover, the evaluation
+                                   √
+               ∞  
+              X    n         (−e−π/ 3 )n        2π 2  1
+                                       √      =      − L(2, χ3 )
+              n=1
+                    3  n 2 (1 − (−e−π/ 3 )n )    81   2
+holds.
+Example 2. In this example, we will construct a differential equation whose Apéry
+limits give a good rational approximation to the value L(2, f ) at 2 of the L-function
+associated with the cusp form f (τ ) = η(τ )3 η(7τ )3 .
+   The Hauptmodul of the genus-zero group Γ0 (7) + ω7 is given by η(τ )4 /η(7τ )4 +
+49η(7τ )4 /η(τ )4 . We set
+                                            −1
+                  η(τ )4            η(7τ )4
+               
+      t(τ ) =             + 14 + 49              = q − 10q 2 + 49q 3 − 184q 4 + · · · .
+                  η(7τ )4            η(τ )4
+                                                                                        √
+The value
+     √      of t(τ ) at the unique
+                             √     cusp ∞ is obviously 0, and at the elliptic points i/ 7,
+(5 + −3)/14, and (7 + −7)/14, it takes the values 1/28, 1, and ∞, respectively.
+   According to Lemma 1 and the discussion at the beginning of this section, we
+can basically choose any rational function g(t) such that g(0) = 0 and its numerator
+has a degree smaller than its denominator and then set
+                                                  2
+                                            qdt/dq    g(t)
+                                 A(τ ) =                     .
+                                               t      f (τ )
+Then the differential equation satisfied by t and A will give us a rational approxi-
+mation to L(2, f ).
+  Here we choose g(t) = t/(1 − 29t + 28t2 ). With this choice, we find
+                                          ∞  
+                                         X     n   qn
+                           A(τ ) = 1 + 2
+                                         n=1
+                                               7 1 − qn
+and the differential equation satisfied by t and A is
+              (1 − t)2 (1 − 28t)θ2 A − 14t(1 − t)2 θA − (2t + 4t2 )A = 0.
+The solution B(t) of the inhomogeneous differential equation
+           (1 − t)2 (1 − 28t)θ2 B − 14t(1 − t)2 θB − (2t + 4t2 )B = t(1 − t)
+has a t-expansion B(t) = t + 45t2 /4 + · · · . Furthermore, we can show that B(t) −
+L(2, f )A(t) has no singularity at t = 1/28. Therefore, we have the following good
+rational approximation to L(2, f ).
+Theorem    2. Let f (τ ) = η(τ )3 η(7τ )3 be the cusp form of weight 3 with character
+χ c d = d7 on Γ0 (7) and L(s, f ) be its associated L-function. Let {an } and {bn }
+   a b
+       
+
+be sequences satisfying
+(n+3)2un+3 −(30n2 +134n+150)un+2+(57n2 +142n+81)un+1−(14n+28n2)un = 0
+16                                       YIFAN YANG
+
+
+with the initial values
+            a0 = 1,   a1 = 2,      a2 = 24,     b0 = 0,    b1 = 1,     b2 = 45/4.
+Then we have
+                                   bn
+                                      − L(2, f ) ≪ 28−n .
+                                   an
+
+                                      4. Cusp cases
+   Let t(τ ) and A(τ ) be given and assume that the integrand in (6) is a holomorphic
+modular form that vanishes at i∞ as before. In this section we consider the cases
+where the singularity t1 closest to the origin corresponds to a cusp α of the modular
+curve X(Γ). Pick an element in σ = ac db ∈ SL(2, R) (preferably lying in the
+                                                
+
+normalizer of Γ in SL(2, R)) such that σ∞ = α. Note that the asymptotic behavior
+of A(τ ) near α is determined by that of A(στ ) in a neighborhood of ∞. To be more
+precise, we have A(στ ) = (cτ + d)k A∗ (τ ) for some modular form A∗ (τ ) of weight
+k on the group σ −1 Γσ. Also, t∗ (τ ) = t(στ ) − t1 is an algebraic function of t that
+vanishes at ∞. Then for some positive integer r depending on the order of A∗ (τ ) at
+∞, A∗ (τ )r has a power series expansion in t∗ . The term (cτ +d)k gives a logarithmic
+factor dk logk t∗ + · · · + d0 . Therefore
+            A(στ ) = (dk logk t∗ + · · · + d0 )(t∗ )a × (a power series in t∗ )
+for some rational number a. (The number a in fact is equal to the local exponent
+of the differential equation at t1 .) This gives us the asymptotic behavior of A(τ )
+near α.
+    By the same token, to determine the asymptotic behavior of B(t) near t = t1 ,
+we need to consider B(στ ) in a neighborhood of ∞. Let f (τ ) be the modular
+form of weight k + 2 inside the integral in (6). We apply Lemma 4 to f (τ ) and
+f ∗ (τ ) = (cτ + d)−k−2 f (τ ), which is a modular form on σ −1 Γσ. We then use the
+functional equation to find the asymptotics of B(t). The actual computation is
+similar to that for the elliptic point cases. We now give some examples.
+Example 3. Consider the differential equation
+                  θ2 A − 4t(8θ2 + 8θ + 3)A + 256t2 (θ + 1)2 A = 0,
+which is case (e) in [1]. It is conjectured that the Apéry limit is L(2, χ−1 )/2, where
+χ−1 is the odd Dirichlet character modulo 4. We now show that this is indeed the
+case.
+   The differential equation is the one satisfied by
+                            η(τ )8 η(4τ )16                   η(2τ )22
+                  t(τ ) =                   ,    A(τ ) =                   ,
+                               η(2τ )24                    η(τ )12 η(4τ )8
+where A(τ ) is a meromorphic modular form of weight 1 on Γ0 (4) with character
+                                 
+                              a b
+(19)                      χ          = (−1)c χ−1 (d),
+                              4c d
+and t(τ ) is a modular function on Γ0 (4). By Lemma 1,
+                                    Z qZ q
+                                            η(τ )4 η(4τ )8 dq dq
+                      B(τ ) = A(τ )
+                                     0   0     η(2τ )6      q q
+is a solution of the inhomogeneous θ2 B − 4t(8θ2 + 8θ + 3)B + 256t2(θ + 1)2 B = t.
+

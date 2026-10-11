@@ -1,0 +1,30 @@
+{
+  "random_interval_cases": 560,
+  "enumerated_integer_candidates": 113976,
+  "rational_stagnation_examples": [
+    {
+      "n": 4,
+      "minimum_denominator": 2,
+      "optimal_bound": "9/16",
+      "area_with_cap_one_quarter": "1/2"
+    },
+    {
+      "n": 16,
+      "minimum_denominator": 2,
+      "optimal_bound": "32769/65536",
+      "area_with_cap_one_quarter": "2048"
+    },
+    {
+      "n": 64,
+      "minimum_denominator": 2,
+      "optimal_bound": "9223372036854775809/18446744073709551616",
+      "area_with_cap_one_quarter": "576460752303423488"
+    },
+    {
+      "n": 256,
+      "minimum_denominator": 2,
+      "optimal_bound": "57896044618658097711785492504343953926634992332820282019728792003956564819969/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "area_with_cap_one_quarter": "3618502788666131106986593281521497120414687020801267626233049500247285301248"
+    }
+  ]
+}

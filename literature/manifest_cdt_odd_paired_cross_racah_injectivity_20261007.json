@@ -1,0 +1,275 @@
+{
+  "schema": "cdt-research-source-receipt-v1",
+  "date": "2026-10-07",
+  "author": "/root/conifold_arithmetic_hypothesis",
+  "stem": "cdt_odd_paired_cross_racah_injectivity_20261007",
+  "state": "final_reviewed_frozen_read_only",
+  "baseline": {
+    "record_count": 504,
+    "math_files": 503,
+    "immutable_execution_guards": 1,
+    "all_existing_math_and_sources_frozen_read_only": true,
+    "historical_main_read_snapshot": {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "sha256_at_read": "0013e246f36b8d538e9555839b611283a3f90e7be9784c28e11469b1b0a9c2ab",
+      "scope": "FULL sections 138-141",
+      "current_hash_required": false
+    },
+    "historical_audit_read_snapshot": {
+      "path": "research/cdt_odd_delivery_20261006.json",
+      "sha256_at_read": "8963ba9b895508a2fed9438d3011175b556bf6fc4d1b3dacf3b75a314b58b603",
+      "scope": "first 70 lines and physical hash",
+      "current_hash_required": false
+    }
+  },
+  "principal": {
+    "path": "research/cdt_odd_paired_cross_racah_injectivity_20261007.md",
+    "sha256": "d5401071966ba85d67a53794e29f6a253ecd3da1b6e6ae7cd923883ab7a9d63d",
+    "state": "final_reviewed_frozen_read_only",
+    "actual_read_scope": "Author actual FULL final d540 sections1-11/equations C1-C30, after physical-half-fold revision; final hash reverified. Root actual FULL final d540 and toric formal FULL review passed."
+  },
+  "mathematics_execution": {
+    "own_new_producer_runs": 0,
+    "own_new_successes": 0,
+    "own_new_failures": 0,
+    "own_new_guards": 0,
+    "old_producer_execute": 0,
+    "old_producer_import": 0,
+    "peer_producer_execute": 0,
+    "peer_producer_import": 0,
+    "reruns": 0,
+    "new_auxiliary_prime_unit_table": false,
+    "lean_runs": 0,
+    "method": "all-scale paper proof; metadata/PDF read/render/hash tools are not mathematical producers"
+  },
+  "new_primary_archives": [
+    {
+      "title": "Pearson Equations for Discrete Orthogonal Polynomials: III. Christoffel and Geronimus Transformations",
+      "author": "Manuel Mañas",
+      "version": "arXiv:2107.02918v2",
+      "source_url": "https://arxiv.org/pdf/2107.02918v2",
+      "final_url": "https://arxiv.org/pdf/2107.02918v2",
+      "path": "literature/cdt_paired_cross_racah_sources_20261007/manas2021_pearson_III_arxiv2107_02918v2.pdf",
+      "sha256": "a6556f2d7b80841b8d0a26eac9a86f6274cf4a9a81af4996205f21ad36251763",
+      "pages": 18,
+      "bytes": 569955,
+      "actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "actual_distinct_pages": 11,
+      "tls_verified": true,
+      "tls_bypass": false,
+      "actual_scope": "Hankel/Cholesky premises on PDF2-3 and 7; Proposition4/Theorem3 denominators on PDF7-8; LU/UL and norms on PDF9-10; second-kind/Geronimus boundary masses on PDF12-14. These hypotheses are not asserted for actual modified moments."
+    },
+    {
+      "title": "Doubling (Dual) Hahn Polynomials: Classification and Applications",
+      "authors": [
+        "Roy Oste",
+        "Joris Van der Jeugt"
+      ],
+      "version": "arXiv:1507.01821v3; SIGMA 12 (2016), 003",
+      "source_url": "https://arxiv.org/pdf/1507.01821v3",
+      "final_url": "https://arxiv.org/pdf/1507.01821v3",
+      "path": "literature/cdt_paired_cross_racah_sources_20261007/oste_vanderjeugt2016_doubling_hahn_racah_arxiv1507_01821v3.pdf",
+      "sha256": "2ff7ada189c8e63cd06011f8ab631db37cb36d26b2c6b6e1fd7056f6aa67b158",
+      "pages": 27,
+      "bytes": 508493,
+      "actual_full_text_pages": [
+        1,
+        16,
+        17,
+        18,
+        23,
+        24,
+        25
+      ],
+      "actual_distinct_pages": 7,
+      "tls_verified": true,
+      "tls_bypass": false,
+      "actual_scope": "Eq5.3/5.5 evaluation denominators; Appendix Theorem11 specific Racah doubles and duality; Proposition12 real positive parameter restrictions. The natural Racah-I path rank collapse is self-proved, not an unqualified application of real positivity."
+    }
+  ],
+  "reused_primary": [
+    {
+      "title": "The Askey-scheme of Hypergeometric Orthogonal Polynomials and its q-Analogue",
+      "authors": [
+        "Roelof Koekoek",
+        "René F. Swarttouw"
+      ],
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "pages": 170,
+      "bytes": 737178,
+      "actual_full_text_math_pages": [
+        28,
+        29,
+        30
+      ],
+      "actual_full_text_metadata_pages": [
+        1
+      ],
+      "actual_distinct_pages": 4,
+      "actual_render_view_pages": [
+        29
+      ],
+      "render_scratch_path": "tmp/pdfs/cross_racah_20261007_ks29.png",
+      "scope": "Racah terminating rational orthogonality and exact norm Eq1.2.2; PDF29 rendered and visually checked. PDF1 is the short title-only metadata page, not additional mathematical reading."
+    }
+  ],
+  "source_counts": {
+    "new_downloads": 2,
+    "new_archive_pages": 45,
+    "new_primary_actual_distinct_pages": 18,
+    "reused_primary_actual_math_pages": 3,
+    "reused_primary_metadata_title_pages": 1,
+    "all_primary_actual_distinct_pages": 22,
+    "all_archive_pages_not_claimed_as_read": true,
+    "new_external_source_code_or_html_archives": 0
+  },
+  "frozen_mathematical_inputs_actually_read": [
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006.md",
+      "sha256": "2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24",
+      "state": "frozen_read_only",
+      "actual_read_scope": "FULL eleven sections/equations R1-R30"
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_gosper_reduction_20261006.md",
+      "sha256": "f988d6629b01188f175fabcfa0e87fc58d51d1bf482fda8196d1fd67f2bad4c7",
+      "state": "frozen_read_only",
+      "actual_read_scope": "FULL eleven sections/equations Z1-Z23"
+    },
+    {
+      "path": "research/cdt_odd_paired_single_bordered_nonzero_gate_20261006.md",
+      "sha256": "a60d8116c88581028669d9a91aaaf1b848761fcfc4a37b089ca6e5b490b590f8",
+      "state": "frozen_read_only",
+      "actual_read_scope": "B1-B2 actual L/J/D physical definitions; first160lines output read as available, not an assertion of full paper reading"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_analytic_plucker_root_20261006.md",
+      "sha256": "cf341860474546dc0d5a2a630ae73f6bbf50426fa7ee8c100975c6a2b1688e38",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL six sections/R1-R16 same-object contour antecedent"
+    },
+    {
+      "path": "research/cdt_odd_paired_plucker_energy_rate_20261006.md",
+      "sha256": "01c87202a292f9d977f58098bd609e99f9b6aa1b6701e9fff7c036bda7e2515a",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL eight sections/E1-E26 envelope/Hardy/factorial antecedent; its historical failed-v1+success-v2 were not re-executed or erased"
+    },
+    {
+      "path": "research/cdt_odd_paired_mirror_choice_energy_20261006.md",
+      "sha256": "cc3821c935474ea1b87011383230b91ac04dcb147c2b09d6ce65e5f899438dd7",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL nine sections/M1-M23 mirror-rate and already-paid gamma antecedent; old certificate not run"
+    }
+  ],
+  "new_peer_paper_read_snapshot": {
+    "path": "research/cdt_odd_paired_source_radical_response_20261007.md",
+    "sha256_at_read": "e68e814ebcb1bf303474e3dd26214ff1809f676d4453bc4235ebacfcdb4f9656",
+    "actual_read_scope": "FULL sections S1-S6 including S3b; equations S1-S14. Independent paper check of physical half-fold, mass identity and actual E injectivity; its source/PY/JSON/guard have not been read or executed by this author at this stage. Snapshot only, no future-current hash requirement.",
+    "paper_identity_not_program_coverage": "C29-C30 actual source map uses all-scale proof. Root FIRST1 S6/S8 verification is not claimed to cover S12-S14.",
+    "final_clarification_read": {
+      "sha256": "10897f75c7a2cb932988a751a25a85dafd79640b715090b7715fc96aeaa37a7a",
+      "scope": "Actual read S3b added sentence: rank G_K<=2tau excludes slope full rank if k>2tau, but does not exclude R0+8alpha G_K being a unit. Physical final hash checked. FULL initial e68 text plus actual final clarification read gives accurate final-paper coverage; producer/PY/JSON/guard remain unread/unexecuted by this author."
+    }
+  },
+  "proven_scope": [
+    "Complete inverse-S pairing is a second Racah family with every leading profile through a+1 a unit",
+    "Actual fixed-lambda2 r by 3r cross C is full row rank for every auxiliary prime",
+    "Explicit known-unit right inverse, full 2r basis of ker C and exact det U=5^-r det J2^-1",
+    "Canonical mixed-boundary determinant/corank identity without dividing unknown G or H blocks",
+    "Conditional r gate only if actual H restricted to ker C is nondegenerate",
+    "Complete two-Racah triangular connections and exact actual cross/middle border formulas",
+    "Natural Racah-I contiguous family has exact support/rank collapse, obstructing that particular all-unit intermediate path",
+    "Actual leading-radical mass map E is injective after physically verified half-fold; exact mass bilinear identity retained"
+  ],
+  "not_proven": [
+    "Actual H22 unit",
+    "General mixed-kernel exclusion or determinant M5 nonzero",
+    "Restricted Gram E^t D E nondegenerate",
+    "Infinitely many auxiliary target units",
+    "A fixed rational source specialization with infinite success",
+    "Improved global p-adic or archimedean fees or strict margin",
+    "Any new irrationality or linear-independence theorem"
+  ],
+  "global_fees": "All local changes use proved F_p units and do not replace original S or supply a free global rational gauge. Existing safe same-S arithmetic scale 40.314517426059346 is unchanged.",
+  "reviews": {
+    "root": "Root actual FULL final d540 C1-C30 plus KS28-30 norm check passed; root actual FULL final coupled formal review V1-V7 passed. Explicit root instruction allowed one-way final source receipt. No new duplicate root formal review required.",
+    "toric": "Final formal review79dd actual FULL d540/candidate98cb/ten own primary pages passed and frozen; author actual FULL final review read.",
+    "scope_boundary": "Root lowprice formal c688 and quarter source formal0dcb were not read by this author, are not claimed as read and are not pinned here. Future final peer receipts are not reverse-pinned.",
+    "finalization": "Final receipt author FULL self-reading/JSON syntax parse and physical current-pin validation will be recorded by the read-and-check step after this single final metadata update; no further mutation."
+  },
+  "receipt_history": {
+    "candidate_snapshot_sha256": "98cb1752215aa78c6c4c59a57cc678f81108785576a41ba2fba1539c7698fc94",
+    "candidate_actual_full_read_by_author": true,
+    "candidate_actual_full_read_by_toric": true,
+    "one_way_finalization": "Only metadata/status/review scopes updated after principal and independent-review mathematical bytes were frozen. Final peer receipts/root final receipt are not reverse-pinned."
+  },
+  "new_peer_paper_final": {
+    "path": "research/cdt_odd_paired_source_radical_response_20261007.md",
+    "sha256": "10897f75c7a2cb932988a751a25a85dafd79640b715090b7715fc96aeaa37a7a",
+    "state": "final_frozen_read_only",
+    "actual_read_scope": "FULL S1-S6/equations S1-S14 at e68 initial snapshot plus actual final S3b clarification read. Independent physical-fold/mass identities checked; mathematical source code/JSON/guard not read or executed."
+  },
+  "formal_reviews": {
+    "principal_independent_review": {
+      "path": "research/cdt_odd_paired_cross_racah_injectivity_independent_review_20261007.md",
+      "sha256": "79dd9d5b34a9290100f28295aeaf15f6e6b64a9059c99cf3c386ccab986a1054",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Author actual FULL V1-V7 of final toric review; exact independent primary scope 10 pages is toric only, not added to author pages."
+    },
+    "own_assigned_independent_review": {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_independent_review_20261007.md",
+      "sha256": "86c82d8e400ea188c2e4f4cbec54f7aaf027d8158334a3ebe4465e9e2ea7c338",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Author FULL V1-V7 self-read and fingerprint verified; root actual FULL review reading passed."
+    }
+  },
+  "assigned_review_artifacts_actually_read": [
+    {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_20261007.md",
+      "sha256": "03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL ten numbered sections C1-C10 including C5a; equations C1-C23; independent all-scale paper check of same-object shear/Fischer/7-over-50/head-tail/odd-n gain."
+    },
+    {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.py",
+      "sha256": "5853bf82e5078ca085a4cd83dc32dfbbddd9f9483f582234ab003a8b1151fc9a",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL static source reading only; no execute/import or function invocation."
+    },
+    {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.json",
+      "sha256": "a1426af9a604e8669a2d3f972265fcd327e49c88686046403946ae38af66614f",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL JSON text: all eight strict comparisons, all six value intervals, every metadata/limitation field."
+    },
+    {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "sha256": "7fed78788586ef456383eb136ae545405c4e6752858f280d8c196257679c7508",
+      "state": "final_frozen_read_only",
+      "actual_read_scope": "Actual FULL guard text; STARTED_FIRST1 retained, PASS recorded by saved JSON. No producer execution."
+    }
+  ],
+  "owned_new_mathematical_records": {
+    "count": 2,
+    "files": [
+      "research/cdt_odd_paired_cross_racah_injectivity_20261007.md",
+      "research/cdt_odd_paired_coupled_gram_decay_independent_review_20261007.md"
+    ],
+    "new_math_producers": 0,
+    "new_math_results": 0,
+    "new_execution_guards": 0
+  }
+}

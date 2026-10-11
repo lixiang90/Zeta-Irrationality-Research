@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "a": 77,
+      "b": 77,
+      "b_range": null,
+      "target_power": 7,
+      "all_unit_pairs_directly_evaluated": 4096,
+      "exact_protected_classes": 512,
+      "independently_corrected_classification": "protected_root_classes",
+      "producer_empty_class_label_needs_correction": false
+    },
+    {
+      "a": 78,
+      "b": 78,
+      "b_range": null,
+      "target_power": 5,
+      "all_unit_pairs_directly_evaluated": 256,
+      "exact_protected_classes": 64,
+      "independently_corrected_classification": "protected_root_classes",
+      "producer_empty_class_label_needs_correction": false
+    },
+    {
+      "a": 79,
+      "b": 79,
+      "b_range": null,
+      "target_power": 3,
+      "all_unit_pairs_directly_evaluated": 16,
+      "exact_protected_classes": 8,
+      "independently_corrected_classification": "protected_root_classes",
+      "producer_empty_class_label_needs_correction": false
+    },
+    {
+      "a": 80,
+      "b": 80,
+      "b_range": null,
+      "target_power": 1,
+      "all_unit_pairs_directly_evaluated": 1,
+      "exact_protected_classes": 1,
+      "independently_corrected_classification": "protected_root_classes",
+      "producer_empty_class_label_needs_correction": false
+    },
+    {
+      "a": 80,
+      "b": null,
+      "b_range": [
+        81,
+        "infinity"
+      ],
+      "target_power": 1,
+      "all_unit_pairs_directly_evaluated": 1,
+      "exact_protected_classes": 0,
+      "independently_corrected_classification": "excluded_all_units",
+      "producer_empty_class_label_needs_correction": true
+    }
+  ],
+  "file_hashes": {
+    "zeta7_two_moment_partial_20261004_coefficients.json": "42bdaa415c3872ed7ff1a6af18becdc11cd41ade6df0d5d7f1cb475fe817599f",
+    "zeta7_joint_lattice_20261004_completion.json": "b9a8f0b1d6948732f006001c64c666d4b885d60185bb9affbee6fc9e9c5128ff",
+    "zeta7_all_units_20261004_hensel_p2.json": "b7ba4b192ae40a2aa13a4e4f202720075d46263ec2e91660fd545146771ea07e"
+  },
+  "scope": "Every listed positive class set is complete by direct exhaustive residue evaluation. The one producer classes=0 label is an empty protection set, not existence. Original producer JSON preserved."
+}

@@ -1,0 +1,292 @@
+326                                                                F. Beukers and G. Heckman
+
+
+The case n = 2 corresponds to the expression (1.1) IT]. It is the solution of
+a linear differential equation on ]PI (112) of order n with regular singularities
+at the points z = 0 , 1, oo (see (2.5) or [E, Chap. 4]). As observed by Riemann
+the m o n o d r o m y group plays a crucial role in the study of these differential
+equations and their solutions [R]. For example the differential Galois group
+which carries all information about algebraic relations between the solutions
+and their derivatives is just the Zariski closure of the m o n o d r o m y group9 (see
+[Kap]).
+    In this paper we discuss the following problem.
+Problem 1.1. What is the differential Galois group of the function (1.3) for the
+various parameters ~1. . . . . ~,, ~1 . . . . . ft,- t ?
+      The answer to this problem has a surprisingly simple form
+Solution 1.2. Under a suitable primitivity assumption and up to scalars the differen-
+tial Galois group of the function (1.3) is either one of the classical groups SL(n, ffJ)
+SO(n, lI2), Sp(n, II;) or a finite primitive reflection group as listed in the table
+of Shephard and Todd [-ST]. Moreover, Theorems 6.5 and 7.1 give an explicit
+algorithm to decide which groups occur for which parameters.
+    In particular, Theorem 7.1 classifies the generalised hypergeometric functions
+which are algebraic over 112(z). F o r the case n = 2 this was already done by
+H.A. Schwarz [Sc] in 1873, but for the case n > 2 not much was known. The
+solution of this problem was the primary goal of this paper. However, it turned
+out that without too much effort one could also describe the differential Galois
+group of the hypergeometric differential equation in general. This is carried
+out in Sect. 6, Theorem 6.5.
+    An important element in the proof of the above results is a theorem of
+Levelt, which gives a simple algebraic characterisation of the m o n o d r o m y group
+of a hypergeometric differential equation [Le, Thm. 1.1]. The original transcen-
+dental problem 1.1 is now reduced to an algebraic problem which we set out
+to solve in this paper9
+    There remain some unanswered questions as well, the most important one
+being the determination of hypergeometric equations whose m o n o d r o m y group
+is discrete or arithmetic. In this respect we like to draw attention to the very
+interesting work of Mostow and Deligne [-Mo] which describes the monodromy
+of certain generalised hypergeometric functions in several variables.
+    Finally we like to thank Geert Verhagen for verifying our computations,
+settling some undecided cases and removing a number of errors in previous
+versions of our tables.
+
+
+2. The hypergeometric equation
+
+Fix an integer n > 2. For P l . . . . . p, ~ 112(z)consider the differential operator
+                                                                       d
+                       P:O"+pxO"-l+..                +p,_lO+p,,   O=z--                 (2.1)
+                                                 9                    dz
+on p1 (112).Using the criterion of Fuchs [-I, Chap. 15.3] the following proposition
+is immediate.
+Monodromy for the hypergeometric function ,/:~,_ 1                                                                          327
+
+
+Proposition 2.1. The differential equation P u = O has regular singularities in the
+points z = 0 , 1, oo and is regular elsewhere if and only if for all j = 1. . . . . n
+                                                                 J
+                                                   pj(z) = ~ p~R(Z-- 1) -k                                                 (2.2)
+                                                            k=O
+
+
+for suitable Pjkell~.
+Definition 2.2. The differential equation P u=O with regular singularities in the
+points z = O, 1, oo is called a hypergeometric equation if and only if
+
+                                         pjk=O            forall k>=2 andall j                                             (2.3)
+
+i.e. the functions pi(z) have simple poles at z = 1.
+    If P u = 0 is a h y p e r g e o m e t r i c e q u a t i o n then D = (1 - - z ) P has the f o r m
+
+       D = O " + ( P l o - p 1 1 ) O" - l + . . . + ( p . o - p . O - z ( O " + p l o O "                 x + . . . +p,o). (2.4)
+W e write
+                          D = D(c~;/3) = D(~ 1. . . . . c~, ;//1 . . . . . //.)
+                              =(O-l-~~       1 -- 1)...(O-l-~~       n -- 1)--   z(O"~"O~l)...(O-]-O~n)
+
+
+for ~1 . . . . . c~,, //1 . . . . . fl,~(E. F r o m n o w o n we shall d e n o t e the h y p e r g e o m e t r i c
+equation by
+                          D(c~ 1. . . . . c~,;//1 . . . . . / / , ) u = 0            or   D(ot;//)u=O.                     (2.5)
+
+Its local e x p o n e n t s read,
+
+                           1-- //1, . . . ,1--      //n                                       at z = 0                     (2.6)
+                          O~1, . . . , O~n                                                    at z = oo                    (2.7)
+                                                                     n           n
+                          0,1,2 ..... n-2,                 ~=Z//j--EO~i_I                     atz=l                        (2.8)
+                                                                     1           1
+
+
+a r o u n d the p o i n t s z = 0 , oo a n d 1 respectively. If the n u m b e r s //1 . . . . , / / , are
+distinct m o d Z , n i n d e p e n d e n t s o l u t i o n s of D(c~; fl) u = 0 are given by
+
+
+          z 1 - a ' , F , _ 1 (1 + a l - f l i ,    ..., 1 + a , - f l i ; 1 + f i x - f l i , .~.., 1 +fl,--flilz)
+                    ( i = 1, ..., n)                                                                                       (2.9)
+
+where v d e n o t e s o m i s s i o n of I + fli-fli. T h e f o l l o w i n g p r o p o s i t i o n is trivial.
+Proposition 2.3. For 6 ~ I1~ we have
+            ( O + 6 - 1 ) D ( c q . . . . . c~.;fl, . . . . . fl,)=D(C~l . . . . . c~,, c5; fll . . . . ,ft,,6)           (2.10)
+
+~md
+
+           O ( ~ . . . . , ~ , ; f l l . . . . . fl.)(O+6)=O(et a,...,c~.,6;flx . . . . . f l . , 6 + l ) .               (2.11)
+328                                                                                               F. Beukers and G. Heckman
+
+
+Corollary 2.4. We have
+
+                 D(~t, ..-, a, ; fll . . . . . ft,) (0 + a t - 1)
+                     = ( 0 + as.- 1) D(a 1. . . . , ~r-- 1. . . . . an ; fll . . . . . ft,)
+and
+                  D(~     . . . . , ~ . ; fl, . . . . .   fl.) (O + flj)
+                     (0+ fir- 1) D ( ~ ,              .....   ~. ; fl~ . . . . .   fir + 1 . . . . .   ft.).
+
+    Fix a base point Zo~H? 1 ( ~ ) \ { 0 , 1, oo}, e.g. z o = 89 Denote by G the fundamen-
+tal group ~Zl(IW(C)\{0, 1, ~ } , Zo). Clearly G is generated by go, g~,g~ with
+a single relation go g~ go = 1.
+
+
+
+
+Let V(~;fl) denote the local solution space of the hypergeometric equation
+D (~; fl) u = 0 a r o u n d z o. D e n o t e by
+
+                                       M(~; fl): G ~ G L ( V ( ~ ; fl))                                              (2.14)
+
+the m o n o d r o m y representation of D(a; f l ) u = 0 . The following proposition fol-
+lows immediately from Corollary 2.4
+Proposition 2.5. The operators
+
+                   (0+~. F1):               v ( ~ . . . . . ~ r - 1 . . . . , ~ . ; / / ~ . . . . . //,)
+                                            -~ v ( ~ , . . . . . ~. ;/~, . . . . .      /L)                          (2.15)
+and
+                        (0+/~j): V(~, . . . . . ~ . ; / ~ , ...,/~j+ 1. . . . . fin)
+                                        --* V(al . . . . , 7 . ; fl, . . . . . ft,)                                  (2.16)
+
+are intertwining operators for the monodromy representations. The operator (2.15)
+has a nontrivial kernel if and only if at=ilk for some k = 1. . . . , n. Similarly (2.16~
+has a nontrivial kernel if and only if ak= fir f o r some k = 1. . . . . n. Moreover.
+in case the kernel o f (2.15) or (2.16) is nontrivial it has dimension one.
+Monodromy for the hypergeometric function .F._ 1                                                                                                 329
+
+Corollary 2.6. I f ~ i - - f l k q ~ f o r all j, k = 1. . . . . n then the representations M ( c q
+ +kx, ..., ~ , + k , ; fll + 11,---, f t , + 1,) and M(~t 1. . . . , c t , ; f l l , ..., ft,) are equivalent
+for any k l . . . . . k , , 11, ..., 1 , e Z .
+
+Proposition 2.7. I f ~j--flkE7Z f o r some j, k = 1. . . . , n then the m o n o d r o m y represen-
+tation (2.14) is reducible.
+
+Proof.       Say ~ , - f l , = m ~ 7 Z .        If m = - l ,                            then            D(~l . . . . . at,;          fll . . . . . fl,)
+= D ( ~ I , ..., ct,- 1 ; fll . . . . , fl,-1) (0+~t,) and
+
+                                            ~-'~                   . . . . . ~ . ; ~ , . . . . . /~.)
+
+generates a one dimensional invariant subspace.
+   If m > 0 then consider the sequence
+
+                v(~ ..... ~.-,,/L-                     1;/~1 . . . . . /~,)
+
+                                 0+~q - 1                                                                            0+/7.
+                                                  , v(a~ ..... ~.-.fl.;/h                    . . . . ,/~,)                    ,...
+
+                              O+/~n+m-2
+                                                  ' W ( ~ 1. . . . .   o~,_l, f l , + m - - 1 ; f l l ,        ..., ft,)
+                              O+fl.+m- 1
+                                              )     V(O~l . . . . .    an ;ill ....      , fin)-
+
+
+Clearly 0 + f t , - 1 has a nontrivial kernel. Choose j e { - 1, 0 . . . . , m - 1 } maximal
+such that 0 + f l , + j has a nontrivial kernel. Then the image of the m a p ( 0 + ft,
++ m - 1 ) . . . ( 0 + ft. + j ) is a codimension one invariant subspace in V ( ~ , ..., ~, ;
+/~ . . . . ,/~.).
+     If m < - 2 then consider the sequence
+
+                                                                                        O+p~+m
+               V(~l ..... ~,-,            ~.=/L+             m;/h, ...,/L)                               , V(~l . . . . . ~ . - 1 ,
+
+                                                          O+fln+m+ 1                   O+fln- 2
+               fl . + m + l ; fl l , . . . , f t , )                          ,...                      , V ( a l . . . . . cr
+
+                                                  0+fin-1
+               fin-- 1;fll . . . . ,fin)                         ) V(~      ....     ,O~n-l,~n'~l            .....     ~n)"
+
+
+Clearly 0 + ft,-- 1 has a nontrivial kernel. C h o o s e j ~ {m, m + 1. . . . . - 1 } minimal
+such that O + f l . + j has a nontrivial kernel. Then the kernel of the m a p ( 0 + f t ,
+ +j)...(O+fl.+m)            is a one dimensional invariant subspace in V(~I . . . . , ~ , ;
+till .... , ft,). F o r the following proposition see also [Po].
+
+ Proposition 2.8 (Pochhammer). I f 7 q ~ l in the notation o f (2.8) then the hypergeo-
+ metric equation D(ct, fl) u = 0 has n - 1 analytic solutions near z = 1 o f the f o r m
+
+                                   u~(z)=(z-1)J-l+O((z-1)"-l),                                           z~l                                  (2.17)
+
+ :br j =- 1 . . . . . n - 1 corresponding to the e x p o n e n t s 0, 1. . . . . n - 2.
+330                                                                                           F. Beukers and G. Heckman
+
+P r o o f If ~ , - - n + 2 r then the equation D(ct; fl)u = 0 has an analytic solution
+near z = 1 of the form
+
+                             u(~;fi)(z)=(z-1)"-2+O((z-1)"-'),                                 z~i
+
+Hence the desired solution U._l(Z) can be obtained. The solution uj(z) can be
+obtained by a d o w n w a r d induction on j, the c a s e j = n - 1 being known. Suppose
+the solutions u j+ t(z) . . . . , u,_ ~(z) have been obtained. Using Corollary 2.4 it fol-
+lows that u~(z) can be obtained as a linear c o m b i n a t i o n of uj+ 1(z) . . . . . u,_ t (z)
+and the solution
+
+       (0 + f i , ) . . . ( 0 + f i , +   n - - 2 --j ) u(~a . . . . . ~. ;ill . . . . , fin-1, fin + n -   i --j) (Z).
+
+
+Observe that this solution is well defined since
+
+        n                                 n
+       ~fi~+(n-l-j)-~o~j-l-n+2=7-j+lCN                                                     for j = l . . . . . n - 1 .
+        1                                 1
+
+
+Definition 2.9. Let V be a finite dimensional complex vector space. A linear map
+g e GL(V) is called a reflection/f g - - I d has rank one. The determinant of a reflec-
+tion is called the special eigenvalue o f g.
+Remark. The reflections defined here are often called complex reflections or
+quasi-reflections to distinguish them from the s t a n d a r d ones of order 2.
+Proposition 2.10. I f ( ~ j - - f i k ~ . for all k, j = 1. . . . . n, then the monodromy matrix
+M(~t; fl) (gO around z = 1 is a reflection with special eigenvalue c = e x p ( 2 ~ i 7 ) .
+Proof. By Corollary 2.6 we can shift the p a r a m e t e r s ct1. . . . , ct,, ill, ..., fi, by
+integers such that the condition 761N is satisfied. By Proposition 2.8 we conclude
+that the r a n k of the matrix M(ct; fl) ( g 0 - I d is at most one. If M ( e ; fi) ( g 0 = I d
+then M(ct; fl) (g~) -- M(c~; fi) (go 1) a n d the condition ~j--flk~7Z for all j, k = 1. . . . . n
+becomes violated.
+
+
+3. The hypergeometric group
+
+Definition 3.1. Suppose a 1. . . . , a,, bl . . . . . b,~t12* with aj.l=bk for all j, k = 1. . . . . n.
+A hypergeometric group with numerator parameters at, ..., a, and denominator
+parameters bl . . . . . b, is a subgroup o f GL(n, rE) generated by elements
+
+                                                   ho, hi, h ~ e G L ( n , IF.)                                           (3.1)
+such that
+                                                         hoo hi h o = I d                                                 (3.2)
+Monodromy for the hypergeometric function .F._ t                                                                       331
+
+
+and
+
+                                             det ( t - h~) = f i ( t - at)                                            (3.3)
+                                                                  j=l
+
+
+                                            det ( t - h o 1) = f i ( t - b j)                                         (3.4)
+                                                                   j=l
+
+
+and hi is a reflection in the sense of Definition 2.9.
+Proposition 3.2.       Suppose al . . . . . a,, b l . . . . , b , ~ E * with aj +-bk for aU j, k = 1. . . . . n.
+ Let ~1 . . . . , an, //1, . . . , / / . ~ be such that a j = e x p 2 n i ~ j and b j = e x p 2ni//j for
+j = 1. . . . , n. Then the monodromy group of the hypergeometric equation
+
+                                         D(~I . . . . . ~, ;//1, .-.,//.) u = 0                                       (3.5)
+
+is a hypergeometric group with parameters al, ..., a,, bl, ..., b,.
+
+Proof D e n o t e by
+
+             H ( a ; b ) = H ( a l . . . . . a , ; b l . . . . . b , ) = M ( e l . . . . . an;//1 . . . . . //,)(G)   (3.6)
+
+the m o n o d r o m y g r o u p of (3.5). Observe that by Corollary 2.6 this g r o u p depends
+only on the n u m b e r s al . . . . . an, bl . . . . . b. and not on the choice of their loga-
+rithms ~l, -.-, ~n,/11 . . . . . //n. Also write
+
+                ho = M (~; fl) (g 0),             h 1 = M (~; fl) (g 1),           h 0o= M (~; fl) (g ~ )             (3.7)
+
+for the corresponding m o n o d r o m y matrices a r o u n d z = 0 , 1, oo. Using formu-
+las (2.6) and (2.7) and Proposition 2.10 it follows that H(a; b) is a hypergeometric
+group with n u m e r a t o r p a r a m e t e r s al, . . . , a , and d e n o m i n a t o r p a r a m e t e r s
+bl .... , b,.
+Proposition 3.3.  A n y hypergeometric group H generated by ho, hi, hoo as in Defini-
+tion 3.1 is an irreducible subgroup of GL(n, ~).
+Proof If V1 c C n is an H - i n v a r i a n t linear subspace and V z : = ~ " / V 1, then we
+get induced groups H1 c GL(Va) and H2 c GL(V2). Since hi is a reflection, either
+hi restricted to V1 or hi restricted to V2 is the identity. Hence if both 1/1 + 0
+and V2 + 0 we get a contradiction with the a s s u m p t i o n a t 4: bk for all j, k = 1, ..., n.
+      The following t h e o r e m was obtained by Levelt in his thesis [Le, T h m 1.1].
+Theorem 3.5 (Levelt). Suppose al, ..., a., bl . . . . . b , ~ C * with ajOebk for all j,
+Ir = 1. . . . , n. Let A~ . . . . . A . , B1 . . . . . B n e ~ be defined by
+
+
+       fi(t--aj)=t"+Altn-l+...+A,,
+       j=l
+                                                                     fi(t-bj)=tn+Bltn-~+...+Bn(3.8)
+                                                                    j=l
+

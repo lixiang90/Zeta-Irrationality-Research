@@ -1,0 +1,360 @@
+{
+  "status": "independent_hnf_kernel_polynomial_and_arb_checks_passed",
+  "source_sha256": "ff2557a5c067564ac5bb1e600ea2607222a90c125f57d7ed8e1d4bd0bfc5bfa2",
+  "records": [
+    {
+      "K": 4,
+      "h": 2,
+      "constraint_rank": 6,
+      "saturated_lattice_rank": 6,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 6,
+        "explicit_integer_basis_rank": 9,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[0.8077065262875409745901428081934633290186 +/- 3.14e-41]",
+          "degree_numerator": 6,
+          "numerator_height_bits": 18
+        },
+        {
+          "score_ball": "[0.9821990449569832255067135382075360696477 +/- 2.92e-41]",
+          "degree_numerator": 6,
+          "numerator_height_bits": 19
+        },
+        {
+          "score_ball": "[1.005473450535402545995969339967545407420 +/- 4.98e-40]",
+          "degree_numerator": 6,
+          "numerator_height_bits": 19
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 2,
+        "odd_multiplicity_positive_roots": 2,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 4,
+      "h": 3,
+      "constraint_rank": 10,
+      "saturated_lattice_rank": 2,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 4,
+        "explicit_integer_basis_rank": 7,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[2.563149474971577818559216918614615089458 +/- 7.27e-41]",
+          "degree_numerator": 11,
+          "numerator_height_bits": 46
+        },
+        {
+          "score_ball": "[2.630327495572990113560213467295715864031 +/- 4.45e-40]",
+          "degree_numerator": 11,
+          "numerator_height_bits": 47
+        },
+        {
+          "score_ball": "[2.708421808091451399264101129012993781725 +/- 3.69e-40]",
+          "degree_numerator": 11,
+          "numerator_height_bits": 48
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 0,
+        "odd_multiplicity_positive_roots": 0,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": true,
+        "halfline_sign_changes": false
+      }
+    },
+    {
+      "K": 6,
+      "h": 3,
+      "constraint_rank": 10,
+      "saturated_lattice_rank": 8,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 10,
+        "explicit_integer_basis_rank": 13,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[1.527838219416987384762180388328497214348 +/- 1.32e-40]",
+          "degree_numerator": 10,
+          "numerator_height_bits": 34
+        },
+        {
+          "score_ball": "[1.577262044270638054246066441729060179360 +/- 2.92e-40]",
+          "degree_numerator": 10,
+          "numerator_height_bits": 33
+        },
+        {
+          "score_ball": "[1.598415157618182153069766212228736800010 +/- 4.55e-41]",
+          "degree_numerator": 10,
+          "numerator_height_bits": 34
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 2,
+        "odd_multiplicity_positive_roots": 2,
+        "first_nonzero_coefficient_sign": -1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 6,
+      "h": 4,
+      "constraint_rank": 14,
+      "saturated_lattice_rank": 4,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 8,
+        "explicit_integer_basis_rank": 11,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[2.418555329005172391194423575861546198259 +/- 4.41e-40]",
+          "degree_numerator": 8,
+          "numerator_height_bits": 57
+        },
+        {
+          "score_ball": "[3.041926429227955632520169881799203852675 +/- 3.57e-40]",
+          "degree_numerator": 17,
+          "numerator_height_bits": 59
+        },
+        {
+          "score_ball": "[3.059305829096088442730479481538689437264 +/- 4.14e-40]",
+          "degree_numerator": 8,
+          "numerator_height_bits": 58
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 1,
+        "odd_multiplicity_positive_roots": 1,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 8,
+      "h": 4,
+      "constraint_rank": 14,
+      "saturated_lattice_rank": 10,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 14,
+        "explicit_integer_basis_rank": 17,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[1.920769722829853056800284772102779760390 +/- 1.04e-40]",
+          "degree_numerator": 14,
+          "numerator_height_bits": 52
+        },
+        {
+          "score_ball": "[1.957487380397803392282340354556564929475 +/- 3.35e-41]",
+          "degree_numerator": 14,
+          "numerator_height_bits": 52
+        },
+        {
+          "score_ball": "[1.968435778357070613993798615376019381852 +/- 1.08e-40]",
+          "degree_numerator": 14,
+          "numerator_height_bits": 52
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 2,
+        "odd_multiplicity_positive_roots": 2,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 8,
+      "h": 6,
+      "constraint_rank": 22,
+      "saturated_lattice_rank": 2,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 10,
+        "explicit_integer_basis_rank": 13,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[3.270599393547135676977135552296963017773 +/- 1.86e-41]",
+          "degree_numerator": 23,
+          "numerator_height_bits": 124
+        },
+        {
+          "score_ball": "[3.293943672861050108314047200114019364009 +/- 2.89e-40]",
+          "degree_numerator": 23,
+          "numerator_height_bits": 123
+        },
+        {
+          "score_ball": "[3.334570933931993257845261178243840373131 +/- 4.99e-40]",
+          "degree_numerator": 23,
+          "numerator_height_bits": 124
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 0,
+        "odd_multiplicity_positive_roots": 0,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": true,
+        "halfline_sign_changes": false
+      }
+    },
+    {
+      "K": 12,
+      "h": 6,
+      "constraint_rank": 22,
+      "saturated_lattice_rank": 14,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 22,
+        "explicit_integer_basis_rank": 25,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[2.440320000790155744210640337459863343483 +/- 1.26e-40]",
+          "degree_numerator": 22,
+          "numerator_height_bits": 88
+        },
+        {
+          "score_ball": "[2.461183501197681013698807934555023196182 +/- 3.45e-40]",
+          "degree_numerator": 22,
+          "numerator_height_bits": 89
+        },
+        {
+          "score_ball": "[2.474994188480363886860414984220008029456 +/- 2.38e-40]",
+          "degree_numerator": 22,
+          "numerator_height_bits": 88
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 2,
+        "odd_multiplicity_positive_roots": 2,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 12,
+      "h": 9,
+      "constraint_rank": 34,
+      "saturated_lattice_rank": 2,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 16,
+        "explicit_integer_basis_rank": 19,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[3.293049168020452003169975840268547253796 +/- 4.31e-40]",
+          "degree_numerator": 35,
+          "numerator_height_bits": 222
+        },
+        {
+          "score_ball": "[3.550826397030242855021712681825486198818 +/- 2.68e-40]",
+          "degree_numerator": 35,
+          "numerator_height_bits": 221
+        },
+        {
+          "score_ball": "[3.567571808184756832115177720146055227214 +/- 1.44e-40]",
+          "degree_numerator": 35,
+          "numerator_height_bits": 220
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 1,
+        "odd_multiplicity_positive_roots": 1,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 16,
+      "h": 8,
+      "constraint_rank": 30,
+      "saturated_lattice_rank": 18,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 30,
+        "explicit_integer_basis_rank": 33,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[2.564085084651960177460693470411180204522 +/- 4.52e-40]",
+          "degree_numerator": 30,
+          "numerator_height_bits": 131
+        },
+        {
+          "score_ball": "[2.596681197980249882055484183037137297111 +/- 4.19e-40]",
+          "degree_numerator": 30,
+          "numerator_height_bits": 131
+        },
+        {
+          "score_ball": "[2.617485873444369094624944546951249673011 +/- 2.96e-40]",
+          "degree_numerator": 30,
+          "numerator_height_bits": 131
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 4,
+        "odd_multiplicity_positive_roots": 4,
+        "first_nonzero_coefficient_sign": -1,
+        "global_nonnegative_on_halfline": false,
+        "halfline_sign_changes": true
+      }
+    },
+    {
+      "K": 24,
+      "h": 12,
+      "constraint_rank": 46,
+      "saturated_lattice_rank": 26,
+      "explicit_zeta5_basis": {
+        "low_degree_limit": 46,
+        "explicit_integer_basis_rank": 49,
+        "complete_saturated_zeta5_kernel_hnf_matched": true
+      },
+      "best_candidates_verified": [
+        {
+          "score_ball": "[3.182250086105298264002459355418537838060 +/- 1.34e-41]",
+          "degree_numerator": 46,
+          "numerator_height_bits": 221
+        },
+        {
+          "score_ball": "[3.198272212260886327613813345959943881915 +/- 2.44e-40]",
+          "degree_numerator": 46,
+          "numerator_height_bits": 221
+        },
+        {
+          "score_ball": "[3.208698679940872526501573335997435421289 +/- 4.57e-40]",
+          "degree_numerator": 46,
+          "numerator_height_bits": 221
+        }
+      ],
+      "best_halfline_positivity": {
+        "positive_real_roots_count": 0,
+        "odd_multiplicity_positive_roots": 0,
+        "first_nonzero_coefficient_sign": 1,
+        "global_nonnegative_on_halfline": true,
+        "halfline_sign_changes": false
+      }
+    }
+  ],
+  "independent_constraint_coefficients": 8256,
+  "independent_target_moments": 312,
+  "direct_exact_determinants": 201,
+  "scope": "All saved saturated lattice certificates and top three candidates per lattice are verified. Bounded search counts are producer records."
+}

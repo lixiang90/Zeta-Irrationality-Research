@@ -1,0 +1,122 @@
+{
+  "status": "all fixed exact certificates passed",
+  "scope": "No parameter scan; all-scale statements are proofs in the report.",
+  "quadratic_kernel_cases": [
+    {
+      "a": 1,
+      "b": 1,
+      "n": 4,
+      "k": 2,
+      "target": "beta",
+      "degree_P": 8,
+      "A": -4,
+      "B": 0,
+      "R": "8081/2205",
+      "M_den_R": "2205",
+      "integer_content": "1",
+      "gcd_bound": "4",
+      "prime_window_witnesses": []
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "n": 2,
+      "k": 7,
+      "target": "zeta",
+      "degree_P": 4,
+      "A": 0,
+      "B": 2,
+      "R": "-2123/139968",
+      "M_den_R": "139968",
+      "integer_content": "128",
+      "gcd_bound": "1032192",
+      "prime_window_witnesses": []
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "n": 4,
+      "k": 2,
+      "target": "beta",
+      "degree_P": 20,
+      "A": -4,
+      "B": 0,
+      "R": "258533202216559/70562989572075",
+      "M_den_R": "70562989572075",
+      "integer_content": "1",
+      "gcd_bound": "4",
+      "prime_window_witnesses": [
+        {
+          "p": 11,
+          "h": 1,
+          "v_p_R": -2,
+          "residue_p_to_k_R": 7,
+          "fixed_partial_sum": "1"
+        },
+        {
+          "p": 7,
+          "h": 2,
+          "v_p_R": -2,
+          "residue_p_to_k_R": 3,
+          "fixed_partial_sum": "1"
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "n": 10,
+      "k": 7,
+      "target": "zeta",
+      "degree_P": 50,
+      "A": 0,
+      "B": -32,
+      "R": "2765588524170796478245114482848477089606484533938705328102021921607425937985933601264949580581322449470631197/11144895197456734391775593588730085009880176316951914895324134427748969604955391861416562981931623383040000000",
+      "M_den_R": "11144895197456734391775593588730085009880176316951914895324134427748969604955391861416562981931623383040000000",
+      "integer_content": "8192",
+      "gcd_bound": "16515072",
+      "prime_window_witnesses": [
+        {
+          "p": 17,
+          "h": 2,
+          "v_p_R": -7,
+          "residue_p_to_k_R": 13,
+          "fixed_partial_sum": "-1/128"
+        },
+        {
+          "p": 13,
+          "h": 3,
+          "v_p_R": -7,
+          "residue_p_to_k_R": 10,
+          "fixed_partial_sum": "-1/128"
+        }
+      ]
+    }
+  ],
+  "parity_kernel_case": {
+    "a": 2,
+    "b": 1,
+    "n": 6,
+    "k": 7,
+    "degree_R": 18,
+    "degree_P": 37,
+    "B": 64,
+    "rational_in_2_to_k_J": "-1316527733442998632942803358589936246001197268515537/20724233238411670846843379119558954969989120000000",
+    "M": "20724233238411670846843379119558954969989120000000",
+    "content": "64",
+    "p": 11,
+    "h": 1,
+    "v_p_R": -7
+  },
+  "strict_rational_budget_lower_bounds": {
+    "beta_k2_at_a_over_b_4": "1177/1200",
+    "zeta_k7_at_a_over_b_4": "77/1200",
+    "parity_zeta_k7_at_a_over_b_2": "112/125"
+  },
+  "log_bounds": {
+    "log2_lower": "842/1215",
+    "log3_upper": "2095093903481/1907036651520",
+    "log5_upper": "140843762183149595956/87511133147661097875"
+  },
+  "Legendre_fixed_certificate_degree": 7
+}

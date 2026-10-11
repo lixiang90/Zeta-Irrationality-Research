@@ -1,0 +1,90 @@
+{
+  "status": "fixed_exact_certificates_passed",
+  "checks": {
+    "conic": true,
+    "rho_plus_rational_parameter": true,
+    "rho_minus_rational_parameter": true,
+    "rho_product_minus_one": true,
+    "plus_F_Mobius": true,
+    "plus_Steinberg_product": true,
+    "plus_u_nonconstant": true,
+    "plus_sigma_rho_fixed": true,
+    "plus_sigma_u_inverse": true,
+    "minus_F_Mobius": true,
+    "minus_Steinberg_product": true,
+    "minus_u_nonconstant": true,
+    "minus_sigma_rho_fixed": true,
+    "minus_sigma_u_inverse": true,
+    "plus_tau_rho_fixed": true,
+    "minus_tau_rho_fixed": true,
+    "plus_tau_u_fixed": true,
+    "minus_tau_u_inverse": true,
+    "universal_wedge_identity": true,
+    "four_five_terms_equal_two_inversion_pairs": true,
+    "five_terms_nondegenerate_sqrt(3) + 2_2": true,
+    "five_terms_nondegenerate_sqrt(3) + 2_1/2": true,
+    "five_terms_nondegenerate_sqrt(3) + 2_2*sqrt(3) + 4": true,
+    "five_terms_nondegenerate_sqrt(3) + 2_1/(2*sqrt(3) + 4)": true,
+    "five_terms_nondegenerate_I_2": true,
+    "five_terms_nondegenerate_I_1/2": true,
+    "five_terms_nondegenerate_I_2*I": true,
+    "five_terms_nondegenerate_I_-I/2": true,
+    "five_terms_nondegenerate_-1_2": true,
+    "five_terms_nondegenerate_-1_1/2": true,
+    "five_terms_nondegenerate_-1_-2": true,
+    "five_terms_nondegenerate_-1_-0.5": true,
+    "endpoint_curve": true,
+    "endpoint_t_is_one": true,
+    "rho_at_B": true,
+    "u_at_B": true,
+    "rho_at_P0": true,
+    "u_at_P0": true,
+    "endpoint_difference_formal": true,
+    "square_and_root_of_unity_inputs": true,
+    "holomorphic_primitive_differential": true,
+    "primitive_basepoint": true,
+    "primitive_plus_endpoint": true,
+    "primitive_minus_endpoint": true,
+    "primitive_total_increment": true
+  },
+  "curve": "Y^2=s^8-14*s^4+1",
+  "field": "K=Q(i,sqrt(2)); endpoint L=K(sqrt(3))",
+  "rho": {
+    "plus": "-I*(t + I)/(t - I)",
+    "minus": "-I*(t - I)/(t + I)",
+    "product": "-1"
+  },
+  "identities": {
+    "F": "-(u-rho)/(1-rho*u)",
+    "c": "(1-rho/u)*(1-rho*u)=-2*rho"
+  },
+  "rational_chain": [
+    {
+      "coefficient": -1,
+      "argument": "rho_plus/u_plus"
+    },
+    {
+      "coefficient": -1,
+      "argument": "rho_plus*u_plus"
+    },
+    {
+      "coefficient": -1,
+      "argument": "rho_minus/u_minus"
+    },
+    {
+      "coefficient": -1,
+      "argument": "rho_minus*u_minus"
+    }
+  ],
+  "integer_chain": "sum_plus_minus([u]+[1/u]+[rho]+[1/rho]-[rho/u]-[rho*u])+[-1]",
+  "integral_K2_conclusion": "T={rho_plus,2}+{rho_minus,2}={-1,2}=0, by integral Steinberg relations",
+  "endpoint_four_chain": {
+    "P0": "-4[-i]",
+    "B": "-[2-sqrt(3)]-[2+sqrt(3)]-[i]-[-i]",
+    "difference_rational": "-4[i]"
+  },
+  "inversion_certificate": "R(2,2z)+R(1/2,1/(2z))+R(2z,2)+R(1/(2z),1/2)=2([z]+[1/z])",
+  "holomorphic_primitive": "P=Log(u)^2/2+Log(u)(Log(1-rho/u)-Log(1-rho*u))-Li2(rho/u)-Li2(rho*u)-Log(rho)^2/2-(log(2)+i*pi)Log(rho)",
+  "primitive_total_increment": "4*Li2(-i)+pi^2/12=-4*i*G",
+  "scope": "Exact algebraic identities and formal expansions. Written bilinearity, Steinberg/five-term relations and Bloch-Wigner derivative complete the proof. No numerical period test, approximation family, irrationality theorem, or Lean theorem."
+}

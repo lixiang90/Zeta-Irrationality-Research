@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-06",
+  "scope": "Primary normal-function comparison for the actual R0 Kummer-forcing extension; no frozen or peer mathematical producer executed/imported.",
+  "documents": [
+    {
+      "title": "Apery extensions",
+      "authors": ["Vasily Golyshev", "Matt Kerr", "Tokio Sasaki"],
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+      "filename": "golyshev_kerr_sasaki2023_apery_extensions_v3_20261006.pdf",
+      "source_url": "https://arxiv.org/pdf/2009.14762v3",
+      "version": "arXiv2009.14762v3,2023-07-10; version to appear in JLMS, DOI10.1112/jlms.12825",
+      "pdf_pages": 35,
+      "sha256": "d2d981d989a9e8fdfedd03017f9d10aeb285f7a33d9b34f037244c7a69a0d8b6",
+      "actual_read_scope": "PDF1-4,18-21,24-25; arXiv fixed version metadata",
+      "limitations": "Theorem1.1 treats five Mukai Fano threefolds. Theorem5.1 assumes an actual admissible normal function and Hodge-line data. No actual R0 algebraic cycle or regulator L-value constructed."
+    },
+    {
+      "title": "Calculations for Mirror Symmetry with D-branes",
+      "authors": ["Johannes Walcher"],
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\walcher2009_mirror_symmetry_dbranes_v1_20261006.pdf",
+      "filename": "walcher2009_mirror_symmetry_dbranes_v1_20261006.pdf",
+      "source_url": "https://arxiv.org/pdf/0904.4905v1",
+      "version": "arXiv0904.4905v1,2009-04-30; JHEP0909:129 DOI10.1088/1126-6708/2009/09/129",
+      "pdf_pages": 42,
+      "sha256": "64a0917ae04d723435a796bb1c9fc0f605f0a9da687c89c9ccafee02ed715ba5",
+      "actual_read_scope": "PDF4-6,9-19; arXiv fixed version metadata",
+      "limitations": "Read detailed bicubic/quartic/sextic curve calculations, not half4 four-quadrics cycle. Source normalizations, moving-chain terms, and homogeneous-period boundary conditions cannot be transferred automatically. Not full42page audit."
+    },
+    {
+      "title": "Open Topological String Amplitudes and BPS Invariants on Complete Intersection Calabi-Yau Threefolds",
+      "authors": ["Xuan Li", "Yuan-Chun Jing", "Fu-Zhong Yang"],
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\li_jing_yang2022_open_cicy_v2_20261006.pdf",
+      "filename": "li_jing_yang2022_open_cicy_v2_20261006.pdf",
+      "source_url": "https://arxiv.org/pdf/2207.11499v2",
+      "version": "arXiv2207.11499v2,2022-07-28",
+      "pdf_pages": 39,
+      "sha256": "f06f322b326d80bd80a5953796d77eb51d7dd34740c78501d2796ada4144b406",
+      "actual_read_scope": "PDF1-3,10-11,16-17,19-24; PDF24 separately reread in full and visually checked; fixed version metadata",
+      "limitations": "Four stated CICY models are not four quadrics. Square-root-forcing instances do not evaluate R0 or L(f8,4), and no claim of all-scale OV integrality for our function."
+    }
+  ],
+  "new_pdf_count": 3,
+  "new_pdf_pages": 116,
+  "download_notes": [
+    {
+      "method": "Windows native curl with normal system TLS validation",
+      "outcome": "All three fixed PDF URLs downloaded successfully on first call; no insecure option or certificate bypass."
+    }
+  ],
+  "related_proof": "research/cdt_odd_R0_kummer_period_interface_20261006.md",
+  "not_claimed": [
+    "Geometric admissible normal function for the actual R0 source",
+    "Exact regulator or noncritical L(f8,4) evaluation",
+    "R0 and Z4 equality as full extensions",
+    "Free filled conifold or rank reduction",
+    "New numerical irrationality theorem",
+    "Full reading of all three PDFs"
+  ]
+}

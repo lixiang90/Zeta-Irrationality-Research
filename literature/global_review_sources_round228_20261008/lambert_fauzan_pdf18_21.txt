@@ -1,0 +1,256 @@
+6.1   A bound for every configuration
+The comparison rests on negativity of logarithmic energy for a measure of mass zero. We include
+a proof with the integrability hypothesis needed for the circle and arcsine measures in our
+application.
+
+Lemma 6.2 (Zero-mass logarithmic energy). Let ν be a finite real signed Borel measure on C
+with compact support. Suppose that ν(C) = 0 and
+                                 ∫︂∫︂
+                                                  ⃓           ⃓
+                                                  ⃓log |z − w|⃓ d|ν|(z) d|ν|(w) < ∞,
+                                        C×C
+
+where |ν| is the total variation measure. Then
+
+                                                                     I(ν) ≤ 0.                                                      (6.5)
+
+Proof. For s > 0, completing the square gives
+                                                           4s
+                                                                ∫︂
+                                              2                                      2                2
+                               e−s|z−w| =                            e−2s|z−u| e−2s|w−u| dA(u),
+                                                           π     C
+
+where A is planar Lebesgue measure. Fubini’s theorem therefore yields
+                                                                                                                 )︃2
+                                                      4s
+                    ∫︂∫︂                                                        ∫︂ (︃∫︂
+                           −s|z−w|2                                                              −2s|z−u|2
+          J(s) :=          e            dν(z) dν(w) =                                        e               dν(z)     dA(u) ≥ 0.
+                                                      π                          C
+
+These interchanges are justified by the bounded Gaussian kernel and the finiteness of |ν|.
+   For 0 < a < b < ∞ and r > 0, put
+                                                                      ∫︂ b −s      2
+                                                    1                     e − e−sr
+                                         La,b (r) =                                                 ds.
+                                                    2                  a                 s
+The identity
+                                                      ∫︂ ∞ −s      2
+                                              1           e − e−sr
+                                                                                     ds = log r
+                                              2        0               s
+                                 2                2
+follows by writing e−s − e−sr = 1r se−sv dv and integrating first in s. The integrand has a fixed
+                                         ∫︁
+
+sign for each r, so |La,b (r)| ≤ | log r|. Also, La,b (r) → log r as a ↓ 0 and b ↑ ∞. The mass-zero
+condition gives
+                                                             1 b J(s)
+                       ∫︂∫︂                                    ∫︂
+                            La,b (|z − w|) dν(z) dν(w) = −               ds ≤ 0.
+                                                             2 a s
+The logarithmic integrability assumption implies that the diagonal has zero |ν| ⊗ |ν| measure.
+Dominated convergence now proves (6.5).
+
+    We apply the lemma after regularizing a configuration t1 , . . . , th in [0, ∞). Let ωi be
+normalized arclength on the circle of radius ε > 0 centered at ti in C, and set σ = K −1 hi=1 ωi .
+                                                                                             ∑︁
+
+Since h/K = λ, the signed measure σ − ρ has mass zero.
+    The circle and arcsine measures have continuous finite logarithmic potentials. Hence the
+potential of the positive measure η = σ + ρ is bounded on∫︁∫︁its compact support. The positive part
+of the logarithmic kernel is bounded there as well, so         | log |z − w|| dη(z) dη(w) < ∞. Since
+|σ − ρ| ≤ η, Lemma 6.2 applies.
+
+                                                                           18
+                                                                               √      √
+     A unit arcsine measure on an interval of length L assigns at most 4 2r/(π L) to the
+intersection
+∫︁
+               with any interval of radius r. The circle-average identity [11, Example 1.10] gives
+   log |z − u| dωi (z) = log max(|ti − u|, ε). Integrating the preceding mass bound in r therefore
+gives                                                       √
+                             ∫︂
+                                 ρ          ρ
+                                                    ∑︂ 8cj 2ε          √
+                                U dωi − U (ti ) ≤        √︁       ≤ 60 ε.
+                                                     j
+                                                       π bj − aj
+
+The same circle-average identity gives I(ωi ) = log ε. For the mutual energy, applying it
+successively to the two circles gives
+   ∫︂∫︂                                         ∫︂
+          log |z − w| dωi (z) dωj (w) ≥              log |ti − w| dωj (w) = log max(|ti − tj |, ε) ≥ log |ti − tj |.
+
+Expanding I(σ − ρ) ≤ 0 now yields
+                            ∑︂                          ∑︂
+                        2         log |ti − tj | − K          V (ti ) ≤ (λM0 − I(ρ))K 2
+                            i<j                           i
+                                                                                  √
+                                                                         + 120λK 2 ε − h log ε.                    (6.6)
+
+The inequality includes coincident points by interpreting their left-hand side as −∞.
+    A uniform bound  √ on the exponent is not enough on an unbounded √   domain. We retain the
+integrable factor e−  t by changing the field from V (t) to V (t) − t/K. For K ≥ 2,
+                                                 √            √
+                                  ρ                t             2
+                                2U (t) − V (t) +     ≤ M0 +        .                      (6.7)
+                                                 K             K
+For t ≤ 2, this follows from (6.2). For t ≥ 2, use the support of ρ and log(1 + u) ≤ u to obtain
+
+                                                              13         6α3     √
+                                     2U ρ (t) − V (t) ≤          log t +     − 2π t.                               (6.8)
+                                                              10          t
+              √
+After adding t/K, the right-hand side is decreasing on [2, ∞) and     √ its value at 2 is less than
+M0 . These statements already follow from log 2 < 7/10, π > 3, and 2 > 7/5. Apply (6.6) with
+(6.7) and ε = K −2 . The result is
+               ∑︂                    ∑︂           ∑︂ √
+             2    log |ti − tj | − K    V (ti ) +      ti ≤ (λM0 − I(ρ))K 2
+                  i<j                           i                i
+                                                                                           √
+                                                                               + (120 +         2)h + 2h log K.    (6.9)
+
+6.2       The Gram integral and scaling
+Andréief’s integration identity [7, (1.7)], applied to the moment matrix in (2.4), gives
+                                                                               h
+                                          1                                      DN (yi2 )6
+                                               ∫︂        ∏︂                   ∏︂
+                        ∆K (ζ(5)) =                           (yi2 − yj2 )2                     w(yi ) dyi .      (6.10)
+                                          h!    (0,∞)h i<j                    i=1
+                                                                                    DK (yi2 )
+
+The identity also follows by expanding the two Vandermonde determinants and integrating term
+by term. Absolute convergence follows from the exponential decay of w. The elementary bound
+
+                                      w(y) ≤ 8192(1 + y)5 e−2πy                     (y > 0)                       (6.11)
+
+                                                                19
+follows from ℓ≥1 ℓ4 q ℓ = q(1 + 11q + 11q 2 + q 3 )/(1 − q)5 and 1 − e−u ≥ u/(1 + u).
+             ∑︁
+
+    For 1 ≤ m ≤ K and t ≥ 0, monotonicity gives
+                       m
+                       ∑︂                                    ∫︂ m/K
+                                                 2 )︁
+                                                                       log(t + u2 ) du ≤ 2 log K + 2.
+                               (︁
+                  0≤         log t + (j/K)              −K                                                                     (6.12)
+                       j=1                                    0
+
+
+The difference decreases with t, since u ↦→ (t + u2 )−1 is decreasing. At t = 0 the bound is the
+elementary factorial estimate log(m!) ≤ m log m − m + log m + 1.
+                         √
+   In (6.10), put yi = K ti . Combining (6.11) and (6.12) gives
+
+                                    K 2h(h+6N −K)+16h (4096e12 )h
+               ∆K (ζ(5)) ≤
+                                                 h!
+                                      ∫︂
+                                                                                        −1/2          √
+                                                                           e−KV (ti ) ti
+                                                  ∏︂                  ∏︂
+                                    ×                   (ti − tj )2                            (1 +       ti )5 dti .          (6.13)
+                                        (0,∞)h    i<j                 i
+
+Since                                   ∫︂ ∞                 √            √
+                                               t−1/2 (1 +         t)5 e−      t
+                                                                                  dt = 652,
+                                         0
+                                                                                                      ∏︁ −1/2           √        √
+the remaining integral is bounded by applying (6.9) and then integrating                                   i ti     (1 + ti )5 e− ti .
+Taking logarithms and enlarging the linear term gives
+
+                   log ∆K (ζ(5)) ≤ 2h(h + 6N − K) log K + (λM0 − I(ρ))K 2
+                                               + 18h log K + 160h.                                                             (6.14)
+
+   The factorial inequalities
+
+                       m log m − m + 1 ≤ log(m!) ≤ m log m − m + log m + 2
+
+and summation of log((2i)!) give
+                              h−1
+                              ∑︂
+                        −2          log((2i)!) ≤ −2h2 log(2h) + 3h2 + 4h log(2h).
+                              i=1
+
+It follows from (2.5) that
+
+                              log SK ≤ (2λ − 12αλ − 2λ2 )K 2 log K + C∗ K 2
+                                             + 6h log K + 6h.                                                                  (6.15)
+
+The K 2 log K terms in (6.14) and (6.15) cancel. The remaining quadratic coefficient is λM0 −
+I(ρ) + C∗ , bounded by U in Lemma 6.1. We have proved the following estimate.
+
+Proposition 6.3. For every K ∈ 40Z>0 ,
+
+                  0 < FK (ζ(5)),               log FK (ζ(5)) ≤ U K 2 + 24K log K + 200K.                                       (6.16)
+
+
+
+
+                                                               20
+7     Completion of the irrationality proof
+It remains to compare the normalizing factor with the real determinant. Both estimates have
+been obtained on the K 2 scale, with M fixed.
+
+Proof of Theorem 2.1. Proposition 5.1 gives QK,M ∈ Z[X]. Its degree is h by (2.9), and its value
+at ζ(5) is positive by Proposition 2.2 and the positivity of the normalizing factors. Moreover,
+(5.21) and Proposition 6.3 give
+
+                   lim sup K −2 log QK,M (ζ(5)) ≤ AM + U                          (M ∈ 40Z>0 ).           (7.1)
+                    K→∞
+                    40|K
+
+The rational constants satisfy
+                                              139                                               7907
+                  −1600(A200 + U ) >              ,          −1600(A100000 + U ) >                   .    (7.2)
+                                               5                                                100
+Their exact positive margins are given in Appendix B. Substituting K = 40n proves (2.7) and
+(2.8).
+
+Proof of Theorem 1.1. Apply Theorem 2.1 with M = 200. If ζ(5) = a/b with a ∈ Z and b ∈ Z>0 ,
+then b37n Q40n,200 (a/b) is a positive integer that tends to zero, by (2.7). This is impossible.
+
+
+A     The measure and its elementary bounds
+This appendix proves Lemma 6.1. We specify the sixteen arcsine components, bound their
+potential on a rational partition, and evaluate the energy using the nesting of the intervals. The
+same elementary enclosures give the constant needed in Proposition C.1.
+
+A.1      The sixteen intervals
+Let ω[a,b] be the probability measure on (a, b) with density
+                                                    1
+                                               √︁              .
+                                              π (t − a)(b − t)
+Define
+                                                      16
+                                                      ∑︂
+                                              ρ=            cj ω[aj ,bj ] ,
+                                                      j=1
+
+where Table 1 gives   1012 aj ,and 1012 cj . All entries in that table are integers. Direct
+                                  1012 bj ,
+                ∑︁
+summation gives cj = 37/40. The intervals satisfy
+
+                 0 < a16 < · · · < a1 < b1 < · · · < b16 < 2,                     bj − aj > 1/225.
+
+
+   The potential of a unit arcsine measure is given by the classical interval formula [11,
+Example 1.11], with our sign convention,
+                                 ⎧
+                                 ⎨log((b − a)/4),
+                                 ⎪                                                           a ≤ t ≤ b,
+                U ω[a,b] (t) =                                                                            (A.1)
+                                                                   √︁
+                                      |t − (a + b)/2| +                 (t − a)(t − b)
+                                 ⎩log
+                                 ⎪                                                       ,   t∈
+                                                                                              / [a, b].
+                                                               2
+
+                                                        21
+

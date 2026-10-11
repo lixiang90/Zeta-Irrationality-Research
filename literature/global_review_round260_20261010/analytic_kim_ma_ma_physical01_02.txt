@@ -1,0 +1,94 @@
+PHYSICAL PAGE 1
+Annales Academiæ Scientiarum Fennicæ
+Mathematica
+Volumen 40, 2015, 875–887
+
+    ESTIMATES OF THE HYPERBOLIC METRIC
+      ON THE TWICE PUNCTURED PLANE
+
+
+             Seong-A Kim, Jinxi Ma and William Ma
+
+               Dongguk University, Department of Mathematics Education
+                      Gyeongju, 780-714, Korea; sakim@dongguk.ac.kr
+
+                      Beihang University, Department of Mathematics
+              Haidian District, Beijing 100083, P. R. China; majinxi@buaa.edu.cn
+
+  Pennsylvania College of Technology, School of Sciences, Humanities & Visual Communications
+                        Williamsport, PA 17701, U.S.A.; wma@pct.edu
+
+    Abstract. We provide various estimates of the hyperbolic metric on the twice punctured plane
+C\{0, 1} and apply them to improve Landau’s Theorem. We also improve Ahlfors’ upper bound
+for the hyperbolic metric on the twice punctured plane C\{0, 1}.
+
+                                1. Introduction
+  A region Ωin the Riemann sphere P is hyperbolic if P\Ωcontains at least three
+points. The hyperbolic metric on a hyperbolic region Ωis denoted by λΩ(w)|dw| andis normalized to have curvature
+                                    λΩ(w)
+                   K(w) =         =                         −∆logλ2Ω(w)     −1,
+where w = u + iv and
+                                ∂2    ∂2       ∂2
+             ∆=   +   = 4
+                             ∂u2   ∂v2    ∂w∂¯w
+
+denotes the usual Laplacian. In particular, the hyperbolic metric on the unit disk
+D = {z : |z| < 1} is λD(z)|dz| = 2|dz|/(1 −|z|2).  Let Ω1 and Ω2 be hyperbolic
+regions in P and f : Ω1 →Ω2 be a conformal mapping. Then
+(1.1)                       λΩ1(z) = λΩ2(f(z))|f ′(z)|.
+We denote the hyperbolic metric on P\{a, b, c} by λabc(z)|dz| and on C\{a, b} by
+λab(z)|dz|. The domain monotonicity property asserts that larger regions have smallerhyperbolic metrics. It is a direct consequence of Schwarz’s Lemma.
+    Hyperbolic metric plays a very important role in complex analysis.  Unfortu-
+nately, except for very special hyperbolic regions, the actual calculation of the hy-
+perbolic metric is extremely diﬃcult. So we are often interested in estimating the
+hyperbolic metric by using various other metrics such as the quasi-hyperbolic metric
+and Möbius invariant metrics. For example, the Gardiner–Lakic metric [4] (also see
+Sugawa and Vuorinen [13] and Herron, Ma and Minda [7]),
+
+                           κΩ(z) =  sup   λabc(z)
+                                              a,b,c∈P\Ω
+
+     doi:10.5186/aasfm.2015.4058
+    2010 Mathematics Subject Classiﬁcation: Primary 30C80; Secondary 30F45, 53A35.
+    Key words: Hyperbolic metric, Landau’s Theorem.
+
+PHYSICAL PAGE 2
+876                         Seong-A Kim, Jinxi Ma and William Ma
+
+satisﬁes
+                      κΩ(z) ≤λΩ(z) ≤(2K + π/2)κΩ(z),
+where
+                           1      Γ4(1/4)
+(1.2)         K =     =     = 4.3768796 . . .
+                        λ01(−1)     4π2
+and λ01 is the hyperbolic density on C01 = C\{0, 1}. When studying these metrics,it is often necessary to use properties of the hyperbolic metric on a thrice punctured
+sphere in order to establish relationships with the hyperbolic metric. Since any thrice
+punctured sphere is Möbius equivalent to C01, we only focus on λ01. For example,
+when proving Hilditch’s conjecture [8]
+
+                                                  1
+                     sup{λΩ(z)δΩ(z): z ∈Ω} ≥12λ01  2
+
+for any hyperbolic region Ωin C, where δΩ(z) = dist(z, ∂Ω), we had to determine
+the maximum value for yλ01(1/2 + iy), 0 < y < +∞[6].   As Ahlfors pointed out in [1], there are known analytic expressions for λ01, but
+they are not of great use. So good estimates of λ01 are desired.
+   The following lower bound is due to Hempel [5] and Jenkins [9]; see also Minda
+[10],
+
+                                        1
+(1.3)                        λ01(z) ≥     log  + K),                                               |z|(|     |z||
+where K is given in (1.2) and strict inequality holds unless z = −1. This impliesLandau’s Theorem:
+                    (1 −|z|2)|f ′(z)| ≤2|f(z)|(| log |f(z)|| + K)
+for z ∈D if f is holomorphic on D and f(D) ⊂C01.    Ahlfors [1] also gave the following upper bound
+                
+                   1                         1      if 0 <  < 1,                                       log               |z|(1.4)                   λ01(z)       |z|       |z|                                  1                 ≤                                                                       if  > 1.                                       log          |z|                                           |z|     |z|
+    This paper is organized as follows: we obtain basic estimates of λ01(z) in Sec-
+tion 2. We derive a diﬀerential inequality and use it to obtain lower bounds of λ01(z)
+on the unit circle and on the vertical line with Re z = 1/2. For example, we show
+that
+        (    q
+   d                      1/3    01(1/2 + i√ 3/2) + λ201(eiθ)    if 0 < θ                 −λ01(eiθ) p   −λ2                           ≤π/3,   dθλ01(eiθ) ≤             λ201(eiθ)                                            if π/3                 −λ01(eiθ)       −λ201(−1)              ≤θ ≤π.
+On the unit circle, this is stronger than the fact that λ01(eiθ) is decreasing on (0, π]
+given by Hempel [5] and Weitsman [14].  In Section 3, we use these estimates to
+get better lower bound on λ01(z) than (1.3).  In particular, we improve Landau’s
+Theorem. Moreover, we provide a better upper bound than Ahlfors’ (1.4) in Section 4.

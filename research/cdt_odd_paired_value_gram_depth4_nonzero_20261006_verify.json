@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "first_execution": 1,
+  "successful_runs": 1,
+  "failed_runs": 0,
+  "reruns": 0,
+  "old_or_peer_execute_import": 0,
+  "source_sha256": "bc3a54157f1d36c892ecbbf1f4209737244ecdfe5533bec49da95e52b4e24785",
+  "checks": 66037,
+  "actual_cases": [
+    {
+      "r": 1,
+      "n": 4,
+      "p": 19,
+      "original_S_rank": 8,
+      "unit_tail_value_image_rank": 5,
+      "actual_weak_columns": 3,
+      "adapted_GL_det_mod_p": 18,
+      "exact_primitive_pair_checks": 32,
+      "unit_head_nodes": 6,
+      "unit_tail_nodes": 6,
+      "nonunit_nodes": 13,
+      "normalized_node_entry_divisibility_checks": 900,
+      "normalized_value_Gram_rank_mod_p": 8,
+      "normalized_X_derivative_precision_at_least": 5,
+      "actual_anchor_higher_Smith_computed": false
+    },
+    {
+      "r": 2,
+      "n": 8,
+      "p": 37,
+      "original_S_rank": 16,
+      "unit_tail_value_image_rank": 10,
+      "actual_weak_columns": 6,
+      "adapted_GL_det_mod_p": 1,
+      "exact_primitive_pair_checks": 128,
+      "unit_head_nodes": 12,
+      "unit_tail_nodes": 12,
+      "nonunit_nodes": 25,
+      "normalized_node_entry_divisibility_checks": 6664,
+      "normalized_value_Gram_rank_mod_p": 16,
+      "normalized_X_derivative_precision_at_least": 5,
+      "actual_anchor_higher_Smith_computed": false
+    },
+    {
+      "r": 4,
+      "n": 16,
+      "p": 73,
+      "original_S_rank": 32,
+      "unit_tail_value_image_rank": 20,
+      "actual_weak_columns": 12,
+      "adapted_GL_det_mod_p": 1,
+      "exact_primitive_pair_checks": 512,
+      "unit_head_nodes": 24,
+      "unit_tail_nodes": 24,
+      "nonunit_nodes": 49,
+      "normalized_node_entry_divisibility_checks": 51216,
+      "normalized_value_Gram_rank_mod_p": 32,
+      "normalized_X_derivative_precision_at_least": 5,
+      "actual_anchor_higher_Smith_computed": false
+    }
+  ],
+  "algebraic_toys": {
+    "scope": "general integral symmetric examples, not original lambda2 higher layers",
+    "p": 7,
+    "mixed_congruence_Smith_exponents": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "depth4_ladder": {
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dimensions": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    "determinant_valuation": 10,
+    "p5_perturbation_records": [
+      {
+        "x": 0,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 1,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 2,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 3,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 4,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 5,
+        "normalized_det_mod_p": 1
+      },
+      {
+        "x": 6,
+        "normalized_det_mod_p": 1
+      }
+    ],
+    "depth5_boundary_ladder": {
+      "ranks": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dimensions": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "depth5_boundary_target_x": 1,
+    "depth5_boundary_target_singular": true
+  },
+  "actual_higher_layer_condition_proved_by_finite_cases": false,
+  "infinite_nonzero_or_numerical_irrationality_proved": false
+}

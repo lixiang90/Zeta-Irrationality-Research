@@ -1,0 +1,225 @@
+                                                                    Determinants and permanents of an arbitrary
+
+                                                    the Hadamard degree of a Cau hy matrix and proof of a
+
+                                                             generalization of a                          onje ture of R.F.S ott(1881).
+
+                                                                                                       A.M.Kamenetsky
+arXiv:0907.2860v1 [math.CO] 16 Jul 2009
+
+
+
+
+                                                                                                            Abstra t.
+
+                                          In this paper we give the absolutely new proof of a                     onje ture of R.F.S ott(1881) on the permanent of a
+                                                                            
+                                                                       1
+                                          Cau hy matrix
+                                                                    xi −yj              , where x1 , . . . , xn and y1 , . . . , yn are the distin   t roots of the polynomials
+                                                                             16i,j6n
+                                          xn − 1 and y n + 1, respe tively. The simple formula is given for the permanent of the Cau hy matrix
+                                                     
+                                                  1
+                                          A = xi −y j
+                                                               , where x1 , . . . , xn and y1 , . . . , yn are the distin t roots of the polynomials xn + a
+                                                           16i,j6n
+                                          and   y n + b,   respe tively:
+
+
+                                                                                                                n−1
+                                                                                                           n    Y
+                                                                                         per(A) =                  [nb − k(b − a)] =
+                                                                                                       (b − a)n
+                                                                                                                 k=1
+                                                                
+                                                                                              n−1
+                                                                
+                                                                
+                                                                    n−1            n         Q2
+                                                                (−1) 2                             [−na − k(b − a)][nb − k(b − a)], if n ≡ 1(mod 2),
+                                                                
+                                                                
+                                                                                 (b −   a)n   k=1
+                                                            =
+                                                                
+                                                                
+                                                                 n n(a + b) n2Q
+                                                                               −1
+                                                                
+                                                                  ·             [na + k(b − a)][nb + k(a − b)], if n ≡ 0(mod 2).
+                                                                  2 (b − a)n k=1
+                                                                
+
+                                          from whi h the            orre ted formula of R.F.S ott follows instantly. Proof follows from obtained by the
+
+
+                                          author a formula for the determinant of an arbitrary of the Hadamard degree                                  m   of a Cau hy matrix
+
+
+                                          A   and Bor hard's theorem.
+
+
+                                                Key words       : Cau hy matrix, permanents, determinants, Hadamard degree.
+
+
+
+
+                                                                                                       1. Introdu tion.
+
+
+
+                                          In 1881 R.F.S ott [1℄ gave the following result without proof. Let
+
+                                                                                                    A = ((xi − yj )−1 )16i,j6n
+
+
+
+                                                                                                                 1
+be a Cau hy matrix, where x1 , . . . , xn and y1 , . . . , yn are the distin t roots of the polynomials
+xn − 1 and y n + 1, respe tively. Then
+                             
+                             n[1 × 3 × 5 × . . . × (n − 2)]2 /2n , if n is odd,
+                             
+                  per(A) =                                                                                (1)
+                             0,                                    if n is even.
+                             
+
+
+   In 1979 Henry Min [2℄ rst proved the orre t result
+                     
+                     (−1)(n−1)/2 n[1 × 3 × 5 × . . . × (n − 2)]2 /2n , if n is odd,
+                     
+            per(A) =                                                                                      (2)
+                     0,                                                if n is even.
+                     
+
+
+   Thus R.F.S ott guess formula for per(A) up to a sign. In [3℄ the proof of the formula (2)
+is the same as in [2℄. Both in [3℄ and in [2℄ evaluate of the determinant of the rst and the
+se ond Hadamard degree foregoing spe ialized a Cau hy matrix whi h is based in fa t on the
+proof of one and the same trigonometri identity. My proof is based on absolutely another
+idea, permitting obtain ompa t formula for determinant of an arbitrary Hadamard degree of
+spe ialized a Cau hy matrix if x1 , x2 , . . . xn and y1 , y2 , . . . yn are the distin t roots of polynomials
+xn + a and y n + b, respe tively.
+
+                                               2. Results.
+
+
+
+Theorem 1.       Let x1 , x2 , . . . , xn be independent variables over a eld K of hara teristi 0 and let
+y1 , y2 , . . . , yn ∈ K , A = ((xi −yj )−1 )16i,j6n be a Cau hy matrix, let A(m) = ((xi −yj )−m )i6i,j6n be
+m-th Hadamard degree of the Cau hy matrix A, let m > 1. Then
+                                               m−1      m−1          m−1
+                                             ∂          ∂              ∂
+           (m)
+      det(A ) = (−1) n(m−1)
+                            [(m − 1)!] −n
+                                                                ...            det(A),                    (3)
+                                            ∂x1        ∂x2            ∂xn
+                                               m−1      m−1          m−1
+                                             ∂          ∂              ∂
+           (m)
+      per(A ) = (−1) n(m−1)
+                            [(m − 1)!] −n
+                                                                ...            per(A).                    (4)
+                                            ∂x1        ∂x2            ∂xn
+
+Proof. Sin e
+
+                       X     n
+                             Y                                         X                n
+                                                                                        Y
+  per(A  (m)
+               ) =             (xi − yσ(i) )−m and det(A(m) ) =                 (sign σ) (xi − yσ(i) )−m ,
+                     σ∈Sym(n) i=1                                    σ∈Sym(n)           i=1
+
+
+
+
+                                                      2
+then
+            m−1   m−1            m−1
+        ∂         ∂                ∂
+                            ...              per(A) =
+       ∂x1      ∂x2               ∂xn
+                       m−1        m−1            m−1 X Y      n
+                     ∂             ∂               ∂
+               =                            ...                        (xi − yσ(i) )−1 =
+                    ∂x1          ∂x2              ∂xn
+                                                          σ∈Sym(n) i=1
+                 n
+              X Y ∂ m−1
+                                                   X Y   n
+       =                                      −1
+                                 (xi − yσ(i) ) =              (−1)m−1 (m − 1)!(xi − yσ(i) )−m =
+                i=1
+                      ∂x i                                i=1
+           σ∈Sym(n)                                                σ∈Sym(n)
+                                                  X        n
+                                                           Y
+             = (−1)n(m−1) [(m − 1)!]n                            (xi − yσ(i) )−m = (−1)n(m−1) [(m − 1)!]n per(A(m) ),
+                                                σ∈Sym(n) i=1
+
+            m−1      m−1          m−1
+        ∂            ∂              ∂
+                             ...              det(A) =
+       ∂x1          ∂x2            ∂xn
+                      m−1      m−1            m−1 X                    n
+                    ∂          ∂                ∂                          Y
+               =                         ...                      (sign σ) (xi − yσ(i) )−1 =
+                   ∂x1        ∂x2              ∂xn                          i=1
+                                                         σ∈Sym(n)
+                                X               n
+                                               Y ∂       m−1
+                           =          (sign σ)                 (xi − yσ(i) )−1 =
+                                               i=1
+                                                     ∂xi
+                                    σ∈Sym(n)
+                                    X              n
+                                                   Y
+                           =               (sign σ) (−1)m−1 (m − 1)!(xi − yσ(i) )−m =
+                                 σ∈Sym(n)                i=1
+
+                                      X                    n
+                                                           Y
+ = (−1)n(m−1) [(m − 1)!]n                       (sign σ)     (xi − yσ(i) )−m = (−1)n(m−1) [(m − 1)!]n det(A(m) ).
+                                    σ∈Sym(n)               i=1
+
+                                                                                                                           
+
+Lemma 1.         Let K be a eld and f (x) ∈ K[x], let E be the splitting eld of f (x) over K .
+                         n
+                         Y                                                n
+                                                                          Y
+               f (x) =     (x − xi ),           g(x) = xn f (x−1 ) =        (1 − xi x), xi ∈ E, 1 6 i 6 n
+                         i=1                                              i=1
+
+                                                . Then
+                                    Pn     k
+pk = pk (x1 , x2 , . . . , xn ) =     i=1 xi
+                                          ∞                                 
+                                         X                             d
+                                                     k
+                                                 pk x = −x               g(x) (g(x))−1                                 (5)
+                                           k=1
+                                                                      dx
+Proof.
+   ∞               n X
+                     ∞                    n                        n
+   X               X                      X                        X                 −xi
+         pk xk =               xki xk =     (1 − xi x)−1 xi x = −x                          =
+   k=1             i=1 k=1                i=1                                  i=1
+                                                                                   1 − xi x
+                                                                        n        d
+                                                                                   (1− xi x)
+                                                                                                              
+                                                                        X
+                                                                                dx                       d
+                                                                 = −x                        = −x          g(x) (g(x))−1
+                                                                         i=1
+                                                                                  1 − xi x              dx
+                                                                                                                           
+
+                                                                    3
+

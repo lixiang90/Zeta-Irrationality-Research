@@ -1,0 +1,111 @@
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 15
+
+
+                          5. Generalised cellular integrals
+5.1. Definition. Let n = |S| ≥ 5 and let δ, δ ′ be a pair of dihedral structures on S.
+Define a rational function on (P1 )∗S by the following formula:
+                                           Y (zδi − zδi+1 )aδi ,δi+1
+(5.1)                  feδ/δ′ (a, b) = ±                       b ′ ′
+                                         i∈Z/nZ (zδi′ − zδi+1
+                                                          ′   ) δi ,δi+1
+where the indices i are taken cyclically in Z/nZ and a = (aδi ,δi+1 ), b = (bδi′ ,δi+1
+                                                                                   ′   ) are
+integers satisfying the homogeneity equations :
+(5.2)          aδi−1 ,δi + aδi ,δi+1 = bδj−1
+                                         ′   ,δj′ + bδj′ ,δj+1
+                                                           ′     whenever δi = δj′ ,
+and all indices are considered modulo n. With these conditions, feδ/δ′ (a, b) is PGL2 -
+invariant and descends to a rational function fδ/δ′ (a, b) ∈ Ω0 (M0,S ; Q).
+Definition 5.1. Let S, δ, δ ′ be as above and suppose that δf ∩ δf′ = ∅. With a, b
+parameters satisfying (5.2), define a generalised cellular form to be
+(5.3)                          fδ/δ′ (a, b)ωδ′     ∈     Ωℓ (M0,S ; Q)
+Call the set of parameters a, b convergent if (5.3) has no poles along divisors D at finite
+distance with respect to δ. In this case define the generalised cellular integral to be
+                                            Z
+(5.4)                      Iδ/δ′ (a, b) = ±     fδ/δ′ (a, b)ωδ′ .
+                                                    Sδ
+It converges by (2.7). The action of Σ(S) extends to an action on pairs of dihedral
+structures (δ, δ ′ ) and also on parameters a, b by permuting indices. Clearly (5.4) is
+invariant under this action, up to a sign.
+   For any convergent pair (δ, δ)′ , setting all ai,j , bk,l = N clearly defines a solution to
+(5.2) and gives back the basic cellular integrals (3.7). We now show that there is a
+non-trivial n-parameter family of convergent integrals of the form (5.4).
+5.2. Parametrization. Let S = {1, . . . , n} and let σ ∈ Σ(n) be a choice of permuta-
+tion such that (δ, δ ′ ) ∼ (δ 0 , σδ 0 ). To simplify the notations, we can write
+                                              Y (zi − zi+1 )ai,i+1
+(5.5)                        feσ (a, b) = ±                    bσi ,σi+1
+                                               i (zσi − zσi+1 )
+
+It descends to a rational function fσ (a, b) ∈ Ω0 (M0,S ; Q). In the case when n is even,
+taking the alternating sum of the equations (5.2) yields the condition:
+                            n
+                            X
+(5.6)                          (−1)i (aσi −1,σi + aσi ,σi +1 ) = 0
+                               i=1
+When n = 2k + 1 odd, the equations (5.2) uniquely determine the bσi ,σi+1 in terms of
+the ai,i+1 , and we take the ai,i+1 as parameters in Zn . This defines a map
+(5.7)                          ρσ : Z2k+1        −→ Ωℓ (M0,S ; Q)
+                                        a         7→ fσ (a, b) ωσ
+where b is determined from a via (5.2). In the case n = 2k is even, we can choose a
+parameter b ∈ b. Equation (5.6) defines a lattice Hσ ⊂ Z2k isomorphic to Z2k−1 . We
+can parametrize the space of generalised cellular integrands in this case by
+(5.8)                        ρσ,b : Hσ × Z −→ Ωℓ (M0,S ; Q)
+                                      (a, b) 7→ fσ (a, b) ωσ
+where the remaining indices b are determined from (a, b) using (5.2).
+16                                       FRANCIS BROWN
+
+
+Proposition 5.2. Let D ⊂ M0,n be an irreducible boundary divisor isomorphic to
+M0,n−1 which is neither at finite distance with respect to σδ 0 nor to δ 0 . Then
+                                                
+(5.9)                            vD fσ (a, b) ωσ ≥ 0
+for all a, b satisfying the equations (5.2).
+   Let F ⊂ M0,n be an irreducible boundary divisor in δf0 . Then
+                                         X           X
+(5.10)                   vF fσ (a, b) ωσ ≥   ai,i−1 −   bσj ,σj+1
+                                               i∈I           j∈J
+
+where |I| = n − 2 and |J| < n − 2 are certain subsets of {1, . . . , n} depending on F . It
+has strictly fewer terms with negative coefficients than with positive coefficients.
+Proof. By lemma 3.4, ωσ has no poles along any such divisor D. Therefore
+                                        
+                         vD fσ (a, b) ωσ ≥ vD (fσ (a, b)) .
+For the latter, we have by (5.5)
+                              X
+(5.11)       vD (fσ (a, b)) =    ai,i+1 ID ({i, i + 1}) − bσi ,σi+1 ID ({σi , σi+1 }) .
+                                i∈Z/nZ
+
+A divisor D isomorphic to M0,n−1 corresponds to a partition S ∪T of {1, . . . , n}, where
+S = {p, q}, and p, q are not consecutive with respect to δ 0 and σδ 0 . Then
+                             X
+(5.12)    2 vD (fσ (a, b)) =     ai,i+1 I({i, i + 1} ⊆ T ) − bσi ,σi+1 I({σi , σi+1 } ⊆ T )
+                              i∈Z/nZ
+
+where T is the complement of S in {1, . . . , n}. If we denote by
+                      X                                   X
+                 A=        ai,i+1       and          B=        bσi ,σi+1
+                          i∈Z/nZ                              i∈Z/nZ
+
+then equation (5.2) implies that A = B. Adding B − A to (5.12) gives
+     2 vD (fσ (a, b)) = ap−1,p + ap,p+1 + aq−1,q + aq,q+1 − bp− ,p − bp,p+ − bq− ,q − bq,q+
+where p± are the adjacent neighbours of p with respect to the ordering σ, and likewise
+for q. This quantity vanishes by (5.2) and proves the first part.
+   For the second part, consider a stable partition S, T where the elements of S and T
+are consecutive (with respect to the standard dihedral ordering). Then by lemma 3.8,
+the first sum in equation (5.11) yields n − 2 terms which occur with a plus sign, and
+the second sum contributes at most n − 3 terms, which occur with a minus sign. 
+Remark 5.3. The conditions (5.9) mean that the integrand is ‘weakly cellular’ in the
+sense that its polar locus is contained in the set of divisors σf with certain extra divisors
+corresponding to stable partitions S ∪ T where |S|, |T | ≥ 3. With a little more work,
+one can find further constraints on the set of extra divisors which can occur, and yet
+more constraints under the assumption that the integrand is convergent.
+  The region of convergence for generalised forms in parameter space is defined by
+hyperplane inequalities. We know it is not compact because it contains the infinite
+family of basic cellular integrals. The following corollary shows that it is genuinely
+n-dimensional (i.e. not contained in a hyperplane).
+Corollary 5.4. Let Rσ denote the region in the parameter space (5.7) or (5.8), de-
+pending on the parity of n, which consists of points corresponding to convergent forms.
+Consider the region C n ⊂ Nn defined for all n ≥ 0 by
+          C n = {(x1 , . . . , xn ) ∈ Nn : for all i, |xi − m| <   m
+                                                                   n2   for some m ∈ N} .
+

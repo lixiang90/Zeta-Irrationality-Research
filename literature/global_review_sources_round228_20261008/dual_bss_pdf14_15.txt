@@ -1,0 +1,117 @@
+14                     A. BOSTAN, B. SALVY, AND M. F. SINGER
+
+
+2.5. An efficient conditional algorithm in the globally bounded case. To
+state our next results, we now recall a collection of conjectures on D-finite globally
+bounded power series.
+Conjecture 8 (Christol, André). Let f ∈ Q[[z]] be a globally bounded and D-finite
+power series. Then:
+   (1) f is the diagonal of a rational function;
+   (2) If z = 0 is an ordinary point for Lmin
+                                            f , then f is algebraic;
+   (3) If the monodromy of Lmin f   at z  =  0 is semisimple (i.e., z = 0 is not a
+       logarithmic singularity of Lmin
+                                   f   ), then f is algebraic.
+   Part (1) of Conjecture 8 is due to Gilles Christol, and formulated in the late
+1980s [21], see also [22, Conj. 4] and [23, Conj. 10]. Part (2) was formulated around
+1997 in private discussions between Gilles Christol and Yves André, and appeared
+in print in [3, Rem. 5.3.2] (there, the connection with the Grothendieck-Katz p-
+curvatures conjecture is also discussed). See also [70, §3.3] for a similar conjecture
+(called “Eisenstein’s Algebraicity Criterion” by the author). Part (3) is due to Yves
+André (private communication).
+   The global boundedness assumption in Conjecture 8 is crucial for the three parts.
+For instance, without this assumption, Part (1) does not hold for f (z) = log(1 − z),
+                                 = exp(z) and Part (3) does not hold for the power
+Part (2) does not hold for f (z)
+                    1/6 5/6
+series f (z) = 2 F1         ; z considered in [57, Prop. 2.3], which actually is the
+                       7/6
+particular case (a, b) = (1/6, 5/6) of the next remark.
+Example 9. There exist D-finite transcendental power series whose minimal-order
+operator is Fuchsian and such that all singular points (including infinity) are alge-
+                                     Take a and b in Q \ Z such that b − a is not a
+braic (not logarithmic) singularities.
+                                      ab
+positive integer. Then f (z) = 2 F1        ; z is such that its Lmin
+                                                                 f   is reducible, and
+                                     a+1
+equals
+                                                                                 
+z(1 − z)∂z2 + (a + 1 − (a + b + 1)z)∂z − ab = z(1 − z)∂z + 1 − (b + 1)z ∂z + a/z .
+
+Thus, Lmin
+         f   is Fuchsian, it admits the algebraic solution z −a , and its local expo-
+nents are {0, −a} at z = 0, {0, 1 − b} at z = 1, {a, b} at z = ∞. Since the
+exponent differences are not integers, the three singularities are algebraic. More-
+over, f (z) is transcendental, since otherwise the operator Lmin
+                                                               f   would have finite
+cyclic monodromy and this is impossible by [98, Thm. 2.2]. However, f (z) is not
+globally bounded by [21, Prop. 1], so this example does not contradict Part (3) of
+Conjecture 8.
+
+  We design now a more efficient version of Algorithm 1; this is Algorithm 3, based
+on Proposition 2, Corollary 3, and Conjecture 8.
+Theorem 10. Given a linear differential operator L ∈ Q[z]⟨∂z ⟩ and a power se-
+ries f ∈ Q[[z]] such that L(f ) = 0, Algorithm 3 is correct when it outputs T.
+Moreover, if f is globally bounded, then assuming Part (3) of Conjecture 8, Algo-
+rithm 3 is also correct when it outputs A.
+Proof. If f is algebraic, then, by Prop. 3, Lmin
+                                               f  is Fuchsian and it admits only
+rational exponents at all its singular points. Moreover, if Lmin
+                                                             f   has a logarithmic
+                  ON DECIDING TRANSCENDENCE OF POWER SERIES                            15
+
+
+Algorithm 3 Transcendence of globally bounded D-finite functions
+Input: L = ar (z)∂zr + · · · + a0 (z) with ai (z) ∈ Q(z);
+        ini: f0 a truncated power series at precision p0 ≥ r
+              specifying a unique solution f ∈ Q[[z]] of L(f ) = 0.
+        It is assumed that f is globally bounded.
+Output: Either T if f is transcendental, or A if f is algebraic.
+
+      In Algorithm 2, replace FAIL by A and line 8 by
+ 8:   if s = 0 and D ̸= ∅ then
+
+
+singularity at z = 0, then Lmin
+                            f   does not have algebraic solutions, hence f is tran-
+scendental by Prop. 2. This proves the first part of the result. The last part follows
+from Conjecture 8.                                                                  □
+Remark 11. Example 9 shows that the assumption “ f (z) is globally bounded” is
+necessary in Algorithm 3, even if we replaced “Lmin
+                                                  f   has a logarithmic singularity
+at z = 0” by “Lmin
+               f    has a logarithmic singularity at one of its singular points”.
+Remark 12. As already mentioned in §1.4, it is currently not known how to decide
+if a given D-finite power series f (z) is globally bounded. However, this property is
+known to be satisfied by large classes of power series, such as generating functions of
+multiple binomial sums or, equivalently, by diagonals of rational functions, see [15,
+Theorem 3.5]. In this case, the operator L annihilating f does not need to be part
+of the input: it can be computed from a diagonal representation of f using creative
+telescoping, see [15] and the references therein (Section 5.2 provides several non-
+trivial examples). Still in this case, Algorithm 3 can be enhanced in the following
+way: after computing Lmin   f , if it detects logarithms in the local basis of solutions
+of Lmin
+     f    at z =  0, then   it concludes transcendence; if it detects a term lns (z) in
+that local basis (e.g., if the indicial polynomial of Lmin
+                                                       f   at z = 0 is z s+1 · P (z) with
+P (0) ̸= 0), then it can conclude that the number of variables needed to express
+f (z) as the diagonal of a rational function is at least s + 2 [43, Corollary 2.6], thus
+proving a strong form of transcendence of f (z) if s > 1. For instance, in Example 4,
+the presence of terms ln2 (z) in the local basis of LminA   at z = 0 implies that this
+number is at least 4 (and in fact exactly 4, e.g. using the diagonal representations
+in Section A.2), see also [43, Example 3.9].
+
+
+                              3. Solving problem (P)
+    Given an operator L ∈ Q(x)⟨∂⟩ the aim in this section is to calculate another
+operator Lalg ∈ Q(x)⟨∂⟩ whose solution space is spanned by the algebraic solutions
+of Ly = 0. This is done by extending some of Singer’s results [86, 89].
+    Such an algorithm for computing Lalg can be used to solve Stanley’s problem (S)
+in full generality, providing a second proof that Stanley’s problem (S) is decidable.
+Starting with the D-finite power series f given as a solution of the input operator L
+together with finitely many initial conditions, one first computes Lalg , and then
+checks if f is a solution of Lalg (using [16, Lemma 2.1]). If it is, then f is algebraic,
+if it is not, then f is transcendental. Note however that the corresponding algorithm
+relies on several highly non-trivial algorithmic bricks, such as ODE factorization
+

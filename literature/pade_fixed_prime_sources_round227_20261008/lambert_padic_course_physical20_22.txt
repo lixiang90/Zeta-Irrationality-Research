@@ -1,0 +1,133 @@
+20                P -ADIC ANALYSIS, P -ADIC ARITHMETIC
+
+  It follows that Ω is a suitable domain in which to do p-adic analysis.
+For this reason we sometimes refer to it as the field of p-adic complex
+numbers.
+  Here is another interesting result that uses Krasner’s lemma.
+Proposition 4.6. Let d ≥ 1 be an integer. Then there are only finitely
+many extensions of Qp of degree bounded by d.
+Functions defined by power series. We begin with some notation.
+Definition 4.7. Given a ∈ Ω, r ∈ R, set
+                      D(a, r) = {x ∈ Ω||x − a| ≤ r}
+and
+                    D(a, r− ) = {x ∈ Ω||x − a| < r}.
+We call these respectively the closed and open disks around a of radius
+r.
+   If a = 0 we will abbreviate these as D(r) and D(r− ).
+     We will be considering functions defined by formal power series
+                                X ∞
+                        f (X) =     an X n , an ∈ Ω.
+                                  n=0
+
+Lemma 4.8. Let
+                                            1
+                       r = r(f ) =                     .
+                                     lim supn |an |1/n
+Then f (x) converges when |x| < r and diverges when |x| > r.
+Proof. Suppose that |x| < r Thus we can write |x| = (1 − )r for some
+positive , and hence
+                       |an xn | = (r|an |1/n )n (1 − )n .
+Since lim supn |an |1/n = 1/r, we see that |an |1/n ≤ 1/(r − r/2) for all
+sufficiently large n, and hence
+                                                 n
+                            n           (1 − )r
+                   lim |an x | ≤ lim                 = 0.
+                  n→∞            n→∞   (1 − /2)r
+A similar argument in reverse shows that if |x| > r then an xn 6→ 0 as
+n → ∞.                                                              
+Definition 4.9. We call r the radius of convergence of the power series
+f.
+  We have the following important lemma, whose proof is left as an
+exercise.
+                 p-ADIC ANALYSIS, p-ADIC ARITHMETIC                    21
+
+Lemma 4.10. Suppose that f (X) converges in the disk D(r). Then it
+defines a continuous function f : D(r) → Ω.
+
+Proposition 4.11. The radius of convergence of exp(X) is p−1/(p−1) .
+The radius of convergence of log(1 + X) is 1.
+
+Proof. An earlier exercise was to show that
+                                        n − Sn
+                          ordp (n!) =          ,
+                                         p−1
+where Sn is the sum of the digits in the p-adic expansion of n. We
+compute
+                  ordp n!        n − Sn
+               lim        = lim          = 1/(p − 1).
+              n→∞   n       n→∞ n(p − 1)
+
+The result for log is immediate.                                       
+
+Exercises to lecture 4.
+   (1) In the first example above, give a formula for fK/Qp .
+   (2) Let K be a finite extension of Qp . Show that there exists a
+       subfield F ⊂ K such that [F : Q] = [K : Qp ] and F is dense in
+       K.
+   (3) Show that the ring of integers in Qp (ζpr ) is equal to Zp [ζpr ].
+   (4) Let λ = 1 − ζp ∈ K = Qp (ζp ). Show that if σ ∈ Gal(K/Qp )
+       satisfies σ(ζp ) = ζpa , then σ(λ) ≡ aλ mod λ2 .
+   (5) What is |Ω|?
+   (6) Give another proof of Proposition 4.5 using the following more
+       general formulation of Hensel’s lemma:
+
+       Lemma 4.12. Let K be a complete non-Archimedean normed
+       field, and let f ∈ OK [x] be a monic polynomial. Suppose there
+       exists α ∈ OK such that |f (α)| < |f 0 (α)|2 . Then there exists a
+       unique y ∈ OK such that f (y) = 0 and |y − α| ≤ |f (α)|/|f 0 (α)|.
+
+   (7) Give a proof of Proposition 4.6.
+   (8) Decide whether exp(X) and log(1 + X) converge on the bound-
+       aries of their respective disks of convergence.
+            P the radii of convergence of the following power series:
+   (9) Compute
+        (a) Pn n!X n
+        (b) Pn (ζp − 1)X n /n!
+                      n
+        (c) n pn X p .
+22                 P -ADIC ANALYSIS, P -ADIC ARITHMETIC
+
+                                  Lecture 5
+   Last time we introduced the field Ω of p-adic complex numbers. In
+this lecture we can finally start introducing some analytic tools that
+are completely special to the p-adic situation. Since we’ll be working
+in Ω mostly from now on, we introduce the following valuation: ordp :
+Ω× → R is the valuation extending the usual one on Qp . It is given
+by the formula ordp = − logp | · |. (This brings us into line with the
+notation used in the course text).
+Newton polygons. Let K be a subfield of Ω, and let f (x) = 1 +
+a1 x + · · · + an xn ∈ K[x].
+Definition 5.1. The Newton polygon N (f ) of f is the lower convex
+hull of the points (0, 0), (1, ordp a1 ), . . . , (n, ordp an ). That is, it’s the
+highest polygonal line such that all the points (i, ordp ai ) lie on or above
+it.
+   See the course text for some pictures. Intuitively, it can be con-
+structed as follows: in the (x, y)-plane, imagine the points (i, ordp ai )
+as nails sticking outwards, and the negative y-axis as a piece of string
+with one end fixed at the origin, and the other end free.
+   We rotate the string counter-clockwise until it meets one of the nails.
+As we continue rotating, the segment of the string between this the
+origin and this point will be fixed. Continuing in this manner the
+string forms a polygon which is necessarily convex.
+Definition 5.2. Let f be as above. We call the slopes of the segments
+appearing in N (f ) the slopes of f . If λ is a slope, we call the length of
+the projection of the corresponding segment to the x-axis the length of
+λ.
+Lemma 5.3. Factor
+                                      n            
+                                      Y        x
+                            f (x) =         1−          .
+                                      i=1
+                                               αi
+Let λi = ordp 1/αi . Then if λ is a slope of f of length l, then exactly l
+of the λi are equal to λ. Let
+                                   Y          x
+                                                 
+                      fλ (x) =             1−      .
+                               ordp αi =−λ
+                                              αi
+                              Q
+Then fλ (x) ∈ K[x] and f = λ fλ .
+Example. Let f (x) = 1 − x/2 − x2 /2 − x3 ∈ Q2 [x]. One can check that
+f (x) is irreducible in Q[x]. However, its 2-adic Newton polygon has 3
+

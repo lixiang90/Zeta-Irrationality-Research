@@ -1,0 +1,30 @@
+# 第246轮Root实际读域与运行账
+
+2026-10-10。对应本轮Dirichlet χ−7源及进展报告。数学均为纸证；数学程序/CAS/区间/prime/parameter/map扫描/Lean/外Git mutation/旧归档producer执行0。只发生文献检索、官方文档下载/抽取、文档编辑、bytes/SHA登记与本轮一次性文档归档。下载全载体不等于全文或全部证明认证。
+
+## 实际FULL内部读域
+
+- 本轮A：forcing_apery_primary_round246_20261010.md，9499 B /3723695b1ff8f0a4574f4d34f31fa8c7132f434f0cf70dcbe7418ddc391ed310，全六节Y1–Y11。
+- 本轮B：forcing_success_source_review_round246_20261010.md，11325 B /c91cf368a62d142dcdb0603e85f107a803d86eb7a9b1936931838daffbd7b345，全五节F1–F15。
+- 本轮C：forcing_recovery_criterion_round246_20261010.md，15495 B /7527fb291f4f0b38e3992e5fdbc2e0841f07a4ecf460f2aacf4e806b5ad2f348，全八节G1–G16。
+- 上述三份reader scope本轮实际FULL读；它们记录的primary读域没有被转记为Root亲读。
+- Root新源最终稿dirichlet_chi7_eisenstein_source_round246_20261010.md，10448 B /544f1df14fc0bbac19756891f000a54961024fe2588b899b731c583ede531679，保存后实际FULL八节E1–E13；先前8753 B候选已被该final取代。独审必须指向final。
+- research_global_review_policy.md在246追加前9621 B /14ed72aa8212641c945d46b1bd439348b49a00d89d6492f0ac34428ac89f7c14，实际FULL读。
+- global_catalan_weight4_review_round236_20261008.md，本轮完整文本读取；global_repository_direction_review_round244_20261009.md实际完整读取。global_period_direction_review_round244_20261009.md曾与长输出合批，可能截断，不计Root FULL。
+
+旧level7 polynomial/third-kind源只作有界排重：合批长输出有截断，不计Root FULL；调用旧class边界以C本轮明确陈述和读域为依据。第一次全research文件名rg产生大截断输出，只作locator，不作完整仓库检索或全球新颖性证据。245冻结manifest是前轮权威，未重跑旧producer；246保存前独立审过，当前只做hash守卫。
+
+## Root亲读primary
+
+1. Yang官方唯一v1，Apéry limits and special values of L-functions，https://arxiv.org/abs/0709.1968v1 。原PDF复用literature/yang2007_apery_limits_v1_20261006.pdf，264199 B /691258e04fb3f9f9fa6a4cc144c8be99d587d0af47f96cbf138ac797a1025109。实际FULL选段physical PDF5–11（Lemma1–4与elliptic方法）及15–16（同A/t/f/算子/forcing/Theorem2/cusp说明），分别26752/db9c1a8ba3800cb53bfb3f12cde5fb1b92df1351b4b4c5c2ee3f49666fab23f7、6857/ea3870413f89313bdd648d51df5e3d321008cab6e25141cb528547aaafa495e4。18–20由A读，Root不领用FULL；不是本轮FULL24页原著。
+2. Stein作者官方章节 https://wstein.org/books/modform/modform/eisenstein.html 。保存HTML47822/eb50d5d211a33736da400c5953ce96cbb6a3d6332485cfe88d26888a760672fc；实际所用为Definition(4)、Theorem5.8/5.9完整statement及上下文，保存选段1314/a7c002b4d7a07b628b6ce3102d559bc8ec3d3bf3871eb6402c07762b5c7063ef并实际FULL读。选段开头的Bernoulli介绍不含完整Definition5.1，不声称保存了该定义全文。一般modularity按所引Miyake statement输入，未认证上游全书。
+3. Magma官方eta-products文档 https://magma.maths.usyd.edu.au/magma/handbook/text/1673 。HTML20452/5be5277355fb6c674f711057d19a6da665f8f82bcf46f63bbd4a4869aad637e2；实际FULL所用选段548/ea37f700238fd2a110472d2b203814f6697f10642a9be9cf86c0c77db874c0ac，仅weight/congruence/cusp陈述，非全handbook。
+4. Darmon–Daub–Lichtenstein–Rotger作者draft，Computation of triple Chow–Heegner points，https://wstein.org/papers/current/chow_heeegner/drafts/effchptrev12.pdf 。原PDF467983/a48c361baa84d57ae351783729ab043540bc77030e56a502cc59c1fd8c52278d共26页；Root实际FULLphysical14，选段3493/2b9685bca85ecf1982a1a246b53a6cd98582bf07bb440b1214dcd508ad322168。调用Definition4.3.1及紧邻Newman–Ligozat模单位statement和cusps，未重证判据、未读全26页。其余页文本仅定位。两次选段assertion失败属于文档提取：多页匹配与Unicode ligature，未运行数学，也未重复下载。
+
+原件、选段、下载receipt均在本轮sources目录。只有以上明确statement和Root独立纸证作为输入。没有将搜索摘要或保存整个carrier当完整认证。
+
+## 独立审计与边界
+
+Root纸核E4 divisor/degree identity、E6 chain rule、E7全prefix整数性、E8支配收敛、E9实际简单模非分裂、E11三系数收敛递推、E12 Ore过滤及E13两源family限制。E9稳定投影已明确，不假定L杀整个derivative module。E8删去未付的theta正性，直接使用全纯primitive。
+
+尚未支付完整关系补点/全leaf准入、增长周期投影、同对象无限非零或strict算术holonomy；没有新数值无理性或LI定理，也没有all-method no-go。同行final独审另有receipt，不以作者自读冒充。

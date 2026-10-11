@@ -1,0 +1,229 @@
+{
+  "status": "exact_level20_arithmetic_checks_passed",
+  "report": "cdt_odd_level20_arithmetic_20261006.md",
+  "report_sha256": "5405ff104a097c230fc0e45458ca845d674d84d4df02425df65b89185e2c5287",
+  "checks": [
+    {
+      "name": "fixed_integer_coordinate_and_inverse_jets",
+      "N": 56,
+      "t_first": [
+        "0",
+        "1",
+        "-3",
+        "4",
+        "-7",
+        "13",
+        "-20",
+        "32"
+      ],
+      "q_first": [
+        "0",
+        "1",
+        "3",
+        "14",
+        "82",
+        "539",
+        "3793",
+        "27940"
+      ]
+    },
+    {
+      "name": "formal_trace_difference_norm_target_identity",
+      "trace_constant": "0",
+      "trace_q4_target": "-25c/2",
+      "difference_constant": "-c/8",
+      "norm_constant": "-5c^2/256"
+    },
+    {
+      "name": "all_fixed_prefix_trace_difference_and_derivative_safety",
+      "N": 56,
+      "fixed_clear_factor": 80,
+      "safe_type": "L_N^3",
+      "formal_rational_c": "1",
+      "target_coefficient_checked_separately": true
+    },
+    {
+      "name": "preselected_both_prime_classes_and_fixed_mixed_row_packets",
+      "packets": [
+        {
+          "p": 11,
+          "chi": 1,
+          "trace_p1_residue": 2,
+          "difference_p1_residue": "-5/2"
+        },
+        {
+          "p": 13,
+          "chi": -1,
+          "trace_p1_residue": 2,
+          "difference_p1_residue": "5/2"
+        }
+      ],
+      "mixed_row": "(theta-1)^3*T+L",
+      "mixed_p": 13,
+      "mixed_offset": 2,
+      "mixed_residue": 4
+    },
+    {
+      "name": "norm_weighted_convolution_safety_and_fixed_six_layer_packet",
+      "safe_type": "L_N^3*L_floor(N/2)^3",
+      "safe_sigma": "9/2",
+      "necessary_sigma": "3",
+      "p_values": [
+        11,
+        13
+      ],
+      "offset": 1,
+      "residue": "109/40",
+      "no_actual_norm_rank_claim": true
+    },
+    {
+      "name": "quadratic_twist_nonsquare_divisor_exact_checks",
+      "resultant": "5/16",
+      "discriminants": [
+        "(sqrt5-1)/2",
+        "(-sqrt5-1)/2"
+      ],
+      "all_roots_simple_disjoint": true,
+      "cyclic_rank_not_inferred_from_jets": true
+    },
+    {
+      "name": "four_complete_lawful_rank10_fine_types",
+      "tables": [
+        {
+          "e_L": 0,
+          "e_T2": 0,
+          "flat": "279/100",
+          "sharp": "0",
+          "total": "279/100",
+          "sharp_minimizer": "0",
+          "actual_rank": 10,
+          "unit_column_start_rows": [
+            1,
+            2,
+            4
+          ],
+          "zero_prefix_constant_tail": true
+        },
+        {
+          "e_L": 0,
+          "e_T2": 1,
+          "flat": "137/50",
+          "sharp": "19/100",
+          "total": "293/100",
+          "sharp_minimizer": "5",
+          "actual_rank": 10,
+          "unit_column_start_rows": [
+            1,
+            3,
+            4
+          ],
+          "zero_prefix_constant_tail": true
+        },
+        {
+          "e_L": 1,
+          "e_T2": 0,
+          "flat": "69/25",
+          "sharp": "19/100",
+          "total": "59/20",
+          "sharp_minimizer": "5",
+          "actual_rank": 10,
+          "unit_column_start_rows": [
+            2,
+            2,
+            4
+          ],
+          "zero_prefix_constant_tail": true
+        },
+        {
+          "e_L": 1,
+          "e_T2": 1,
+          "flat": "271/100",
+          "sharp": "57/200",
+          "total": "599/200",
+          "sharp_minimizer": "10/3",
+          "actual_rank": 10,
+          "unit_column_start_rows": [
+            2,
+            3,
+            4
+          ],
+          "zero_prefix_constant_tail": true
+        }
+      ],
+      "best_fixed_type": "279/100",
+      "no_claim_of_global_optimum": true
+    },
+    {
+      "name": "closed_number_field_arithmetic_input",
+      "actual_K_rank": 7,
+      "safe_arithmetic_cost": "18/7",
+      "Q_trace_rank": 10,
+      "Q_trace_safe_cost": "279/100",
+      "closed_number_field_corollary_proved_in_report": true,
+      "full_G_common_cover_proved_in_companion_report": true,
+      "archimedean_capacity_data_sufficient": false,
+      "proof_not_inferred_from_finite_coefficients": true
+    },
+    {
+      "name": "plain_Jensen_capacity_necessary_thresholds",
+      "K_rank7_rho_necessary_strictly_above": "3",
+      "Q_rank10_rho_necessary_strictly_above": "31/10",
+      "K_rank8_arbitrary_matrix_necessary_strictly_above": "257/84",
+      "Jensen_proof_in_report_not_inferred_from_numerical_integrals": true
+    },
+    {
+      "name": "six_fixed_actual_transport_thresholds",
+      "costs": [
+        {
+          "actual_rank": 8,
+          "tau_double": "167/64",
+          "necessary_rho": "167/56"
+        },
+        {
+          "actual_rank": 11,
+          "tau_double": "340/121",
+          "necessary_rho": "34/11"
+        },
+        {
+          "actual_rank": 9,
+          "tau_double": "2597/972",
+          "necessary_rho": "2597/864"
+        },
+        {
+          "actual_rank": 12,
+          "tau_double": "4937/1728",
+          "necessary_rho": "4937/1584"
+        },
+        {
+          "actual_rank": 10,
+          "tau_double": "1369/500",
+          "necessary_rho": "1369/450"
+        },
+        {
+          "actual_rank": 10,
+          "tau_double": "1087/400",
+          "necessary_rho": "1087/360"
+        }
+      ],
+      "transport_optimality_proved_by_separate_full_interval_certificates": true,
+      "exp_29_over_10_positive_series_lower_exceeds_16": true,
+      "all_thresholds_strictly_above_log16": true,
+      "fixed_tables_only_not_adaptive_lattices": true
+    },
+    {
+      "name": "varying_positive_scale_rejection_and_legal_repair",
+      "varying_columns_not_CDT_6_0_3": true,
+      "retained_fraction_Q_rank11_cost": "2501/726",
+      "retained_fraction_K_rank8_cost": "595/192"
+    }
+  ],
+  "scope": [
+    "Actual rank proof depends on the full level20 geometry module and nonsplit extension.",
+    "Finite coefficients do not prove global cyclic rank.",
+    "The fixed rational test c=1 does not evaluate the unknown L3 value.",
+    "Q-rank10 cost279/100 is a lawful safe input, not a global minimum.",
+    "The report derives a limited closed-system e0 number-field corollary of CDT.",
+    "No admissible archimedean capacity contradiction established.",
+    "No new numerical irrationality or linear independence theorem proved."
+  ]
+}

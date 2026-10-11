@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-07T11:01:31.885611+08:00",
+  "classification": "progress",
+  "scope": "Metadata closure of the already completed beta(4) research round cited in section 207; this task opens no new research round and makes no mathematical proof or source-repository change.",
+  "goal_status": "active",
+  "new_numerical_irrationality_or_linear_independence_theorem": false,
+  "new_final_artifacts": [
+    {
+      "file": "research/cdt_beta_projection_mellin_oscillation_20261007.md",
+      "bytes": 7568,
+      "sha256": "9bc1aca6585459bb4f042bff3e2cfd83e3a0d78ba1546c402b8187e5265489f2",
+      "agent": "root",
+      "role": "main"
+    },
+    {
+      "file": "research/cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+      "bytes": 4131,
+      "sha256": "12e1daee636e3c10dfcd1b3a6c42a625597e388415cdb9768eb6bb35a91414d7",
+      "agent": "masked",
+      "role": "independent_review"
+    },
+    {
+      "file": "research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+      "bytes": 18981,
+      "sha256": "53b425c356f83c23d9be021f70873b84c441eb8debbdac485c1cf4582228f277",
+      "agent": "scaled",
+      "role": "main"
+    },
+    {
+      "file": "research/cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+      "bytes": 4389,
+      "sha256": "94670c801ded86601e5f421d2b020be71b5ecae0292ba281769f72ad57d4db90",
+      "agent": "root",
+      "role": "independent_review"
+    },
+    {
+      "file": "research/cdt_beta4_pade_perfectness_sources_20261007.md",
+      "bytes": 21052,
+      "sha256": "ba9e63bd8277c48065dabfcbaa997d1ace515bafa8dcd8fa232158c824b676aa",
+      "agent": "source",
+      "role": "main"
+    },
+    {
+      "file": "research/cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+      "bytes": 9049,
+      "sha256": "7e4979254bb674751ed416d7724f1e4fd9cef3721d879e0c4a3a3089b423d4df",
+      "agent": "scaled",
+      "role": "independent_review"
+    },
+    {
+      "file": "research/cdt_beta4_projection_nonvanishing_20261007.md",
+      "bytes": 12000,
+      "sha256": "72a6cf3df5263b9b27f726ca1bc66ca0da2456623d4bd655aef9b135b73a3996",
+      "agent": "masked",
+      "role": "main"
+    },
+    {
+      "file": "research/cdt_beta4_projection_nonvanishing_independent_review_20261007.md",
+      "bytes": 9038,
+      "sha256": "9531cebd72521e0dd0124dbbebc459c1fa91d4418143632514e6e2ecb83c461c",
+      "agent": "source",
+      "role": "independent_review"
+    }
+  ],
+  "current_main_progress": {
+    "file": "research/cdt_odd_background_progress_20261006.md",
+    "bytes": 409405,
+    "sha256": "49e3dc47ce411f9d2443a00adaf275ea44b1a75b1ed389b6f065699e64133328",
+    "section": 207,
+    "section_heading_line_1_based": 3417,
+    "section_end_line_1_based": 3467,
+    "pin_meaning": "Current physical report snapshot for this closure only; no old report version is revalidated."
+  },
+  "previous_round_manifest": {
+    "file": "literature/manifest_cdt_beta_cm_integral_models_20261007.json",
+    "bytes": 9121,
+    "sha256": "f24854cf880bfa3cf37884d8d6fdd9864ae5a6ab4e0f5ce429e1ec561eadd910",
+    "current_file_physical_pin": true,
+    "embedded_previous_main_pin_is_historical": true,
+    "historical_embedded_main": {
+      "file": "research/cdt_odd_background_progress_20261006.md",
+      "bytes": 402824,
+      "sha256": "431af7fee823961730c737a63974a832114af17461b24810dcae2106f1308c0a",
+      "new_section": 206
+    },
+    "historical_embedded_main_current_equality_required": false,
+    "old_manifest_not_modified": true
+  },
+  "direct_frozen_model_input": {
+    "file": "research/cdt_beta_single_period_confluent_integral_model_20261007.md",
+    "bytes": 11668,
+    "sha256": "a008a54d3307f151911ad0fc1dfa3587e05fd54eb89bd0172be364d162d64f2c"
+  },
+  "authoritative_legacy_baseline": {
+    "file": "research/cdt_odd_delivery_real_gates_kummer_cauchy_extensions_20261007.json",
+    "bytes": 216163,
+    "sha256": "7a7b7fe3621168e0399c5abf769d12cccec76b25eaabde0ce5f5c5b603155b5a",
+    "reference_only": true,
+    "legacy_620_hash_audit_rerun_in_this_metadata_task": false
+  },
+  "legacy_preservation": {
+    "previous_frozen_records": 620,
+    "previous_math_notes": 615,
+    "previous_guards": 5,
+    "legacy_counts_rewritten": false,
+    "frozen_files_modified": false,
+    "previous_manifest_modified": false,
+    "interrupted_old_round_finalized": false,
+    "old_620_record_audit_not_replayed": true
+  },
+  "paper_review_closure": [
+    {
+      "author": "root",
+      "reviewer": "masked",
+      "main_file": "research/cdt_beta_projection_mellin_oscillation_20261007.md",
+      "review_file": "research/cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+      "scope": "Six sections M1-M12; Mellin forced sign changes and exact Euler representation",
+      "result": "PASS",
+      "final_full_author_read_after_review_received": true,
+      "final_full_reviewer_read": true,
+      "review_received_in_full": true
+    },
+    {
+      "author": "scaled",
+      "reviewer": "root",
+      "main_file": "research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+      "review_file": "research/cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+      "scope": "Twelve sections E1-E27, equations E1-E37; all-prime complete determinant-polynomial model",
+      "result": "PASS",
+      "final_full_author_read_after_review_received": true,
+      "final_full_reviewer_read": true,
+      "review_received_in_full": true
+    },
+    {
+      "author": "source",
+      "reviewer": "scaled",
+      "main_file": "research/cdt_beta4_pade_perfectness_sources_20261007.md",
+      "review_file": "research/cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+      "scope": "Eight sections P1-P28, equations P1-P29; exact Schur identity, paid constraints and primary applicability",
+      "result": "PASS",
+      "final_full_author_read_after_review_received": true,
+      "final_full_reviewer_read": true,
+      "review_received_in_full": true
+    },
+    {
+      "author": "masked",
+      "reviewer": "source",
+      "main_file": "research/cdt_beta4_projection_nonvanishing_20261007.md",
+      "review_file": "research/cdt_beta4_projection_nonvanishing_independent_review_20261007.md",
+      "scope": "Eight sections N1-N23; matching Taylor remainder, paid prime blocks, finite p=23 certificate",
+      "result": "PASS after maximum odd-denominator endpoint correction 12p-7 to 12p-5",
+      "final_full_author_read_after_review_received": true,
+      "final_full_reviewer_read": true,
+      "review_received_in_full": true
+    }
+  ],
+  "proved_structural_results": [
+    "For the original beta(4) matrix E=q+beta(4)I, an explicit all-prime and all-prime-power integer Ghat_n satisfies Ghat_n det(q+TI) in Z[T], with log Ghat_n <= (771/40)n^2+o(n^2). This is an upper bound on the paid integral-model cost, not an optimality claim.",
+    "The actual full column pool obeys det[C|L]=delta_n det E, with delta_n a nonzero exact confluent Cauchy determinant; its local valuations are explicit. This proves constraint normality, not period-pairing nonvanishing.",
+    "Actual projected rows have forced Mellin sign changes, and explicit n=2 positive-interval and negative-axis evaluation counterexamples. These exclude the stated direct AT/Chebyshev shortcuts, not the actual integrated determinant.",
+    "For n=p>=13 the true projection is p-integral, its extra rows are p-divisible and matching extra rows are p^2-divisible. Paid p^3/p^4 column scalings give a low skew-Cauchy block and a unit high diagonal block.",
+    "For the single finite scale n=p=23 and every T in Z_23, det(q+TI_23) is nonzero with valuation -86, by the p-unit Pfaffian 2593/2160. Applied to a rational beta(4), this requires that its reduced denominator be coprime to 23; no unknown real period is directly specialized into Q_23."
+  ],
+  "important_limitations": [
+    "The 771/40 fee is only the safe all-prime integral-model upper rate. The nonzero integer lower bound additionally assumes a rational target with its fixed denominator paid and actual determinant nonvanishing.",
+    "A finite n=23 certificate is not infinitely many scales, does not establish n=23^j nonvanishing, and does not exclude rational targets with denominator divisible by 23.",
+    "The p=13 leading-layer failure and the odd-dimensional skew-block failures do not prove the actual determinant vanishes.",
+    "Constraint regularity, monicity and raw positive kernels do not imply the projected determinant is nonzero.",
+    "Paper reviews, physical hashes and repository synchronization are not Lean formal verification."
+  ],
+  "remaining_gaps": [
+    "Infinite-scale nonvanishing of the same actual projected single-beta determinant.",
+    "Sufficient real-place decay of that same E determinant to beat the paid 771/40 rate and produce a strict analytic-arithmetic margin.",
+    "A paid transfer of the finite p=23 block structure to growing prime-power scales, including new denominator layers, Taylor jets and Frobenius/carry changes."
+  ],
+  "primary_pdfs": [
+    {
+      "file": "literature/fidalgo_lopez2010_nikishin_perfect_v1.pdf",
+      "bytes": 443449,
+      "sha256": "4148ad332e97981c9c83dbc6c67391df35ed6a471618db269d9cf12a78025417",
+      "document_total_pdf_pages": 39,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scaled": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [
+          5
+        ],
+        "scaled": []
+      },
+      "new_download_this_research_round": false
+    },
+    {
+      "file": "literature/cdt_paired_complex_gram_sources_20261007/bertola_gekhtman_szmigielski2009_cauchy_biorthogonal_0904_2602v1.pdf",
+      "bytes": 424495,
+      "sha256": "50f854c05fd5d6b51df6cb2ea1a7ff36790634ceb69bfc2e8fd03f792c32ca29",
+      "document_total_pdf_pages": 38,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "scaled": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [
+          8
+        ],
+        "scaled": [
+          8
+        ]
+      },
+      "new_download_this_research_round": false
+    },
+    {
+      "file": "literature/cdt_beta4_pade_sources_20261007/zhang_filipuk2014_multiple_orthogonal_wronskians_1402_1569v2.pdf",
+      "bytes": 524270,
+      "sha256": "4d8bd906d67975c57d3a0ba81d340568c5af03956f9a3c09caa1b0c0580be2eb",
+      "document_total_pdf_pages": 19,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "scaled": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [
+          4,
+          6
+        ],
+        "scaled": [
+          4
+        ]
+      },
+      "new_download_this_research_round": true
+    },
+    {
+      "file": "literature/sorokin1994_nikishin_zeta3_english.pdf",
+      "bytes": 132465,
+      "sha256": "a3c616ceb17bbaa88bf7dd8ea65853eac517fca868fecdd04e1765c4d9e1f175",
+      "document_total_pdf_pages": 2,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          1,
+          2
+        ],
+        "scaled": [
+          1,
+          2
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [],
+        "scaled": []
+      },
+      "new_download_this_research_round": false
+    },
+    {
+      "file": "literature/prevost_sorokin_hermite_pade_apery_author.pdf",
+      "bytes": 152861,
+      "sha256": "d6b60f2c9b9ae2e4e0d5aa18dc7e6f38d6e2a9f80e05b65d69d9151a1f8cf4c6",
+      "document_total_pdf_pages": 8,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scaled": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [],
+        "scaled": []
+      },
+      "new_download_this_research_round": false
+    },
+    {
+      "file": "literature/wolfs2024_multiple_orthogonal_hypergeometric_v2.pdf",
+      "bytes": 420160,
+      "sha256": "974379282084888300a378f24d5d9cec605b744c6339418c01b8d2f75e9e163e",
+      "document_total_pdf_pages": 39,
+      "full_text_pdf_pages_1_based": {
+        "source": [
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        "scaled": [
+          2,
+          4,
+          5,
+          6,
+          7
+        ],
+        "root": [],
+        "masked": []
+      },
+      "full_page_images_read_1_based": {
+        "source": [],
+        "scaled": []
+      },
+      "new_download_this_research_round": false
+    }
+  ],
+  "new_pdf_archive": {
+    "new_downloads": 1,
+    "new_document_total_pages": 19,
+    "file": "literature/cdt_beta4_pade_sources_20261007/zhang_filipuk2014_multiple_orthogonal_wronskians_1402_1569v2.pdf",
+    "owner": "source",
+    "fixed_primary_url": "https://arxiv.org/pdf/1402.1569v2",
+    "normal_tls": true,
+    "tls_verification_disabled": false,
+    "prior_identifier_search_no_match": true,
+    "prior_physical_literature_pdf_sha_search_no_duplicate": true,
+    "publisher_406_response_not_archived": true,
+    "other_five_sources_reused_without_redownload": true,
+    "historical_download_checks_not_reenacted_in_metadata_task": true
+  },
+  "fresh_pdf_reading": {
+    "source": 35,
+    "scaled": 32,
+    "root": 0,
+    "masked": 0,
+    "personal_sum": 67,
+    "distinct_content_pages": 35,
+    "scaled_page_set_is_subset_of_source": true,
+    "source_full_page_images": 4,
+    "scaled_full_page_images": 2,
+    "images_are_page_set_subsets_and_add_zero_pages": true,
+    "official_tex_and_documentation_lines_not_counted_as_pdf_pages": true,
+    "old_round_page_counts_not_inherited": true,
+    "page_domains_reported_from_actual_completed_author_and_review_reads": true
+  },
+  "fresh_official_source_reading": [
+    {
+      "file": "E:/codex-build/math/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/nonvanishing.tex",
+      "bytes": 17218,
+      "sha256": "4f8ddcf4a8c8eec1c1225d38a48e63a26a996ca399fea5cce88d3d0d4ef3f93f",
+      "physical_total_lines": 413,
+      "actual_fresh_line_ranges_1_based_inclusive": {
+        "source": [
+          [
+            1,
+            413
+          ]
+        ],
+        "scaled": [
+          [
+            1,
+            413
+          ]
+        ]
+      },
+      "note": "Actual complete text read by source and scaled; numeric seed certificates were not recomputed."
+    },
+    {
+      "file": "E:/codex-build/math/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/odd-primes.tex",
+      "bytes": 26263,
+      "sha256": "42228a070b0d0e070f78d78146d0881869578cca9112327d72a7c6c7e8fbea10",
+      "physical_total_lines": 672,
+      "actual_fresh_line_ranges_1_based_inclusive": {
+        "source": [
+          [
+            298,
+            408
+          ]
+        ],
+        "scaled": [
+          [
+            298,
+            508
+          ]
+        ]
+      },
+      "note": "Only the listed whole-pool arithmetic paragraphs were read; neither range is described as a full-file read."
+    },
+    {
+      "file": "E:/codex-build/math/lean/docs/005.md",
+      "bytes": 615,
+      "sha256": "81e93bf39eeabe2264a6bb6ac6ee5adfd8a41e4dacdab6db780117312364a899",
+      "physical_total_lines": 15,
+      "actual_fresh_line_ranges_1_based_inclusive": {
+        "source": [
+          [
+            1,
+            15
+          ]
+        ],
+        "scaled": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      "note": "Actual full documentation read by source and scaled; repository scope is Catalan beta(2), not all even beta values."
+    }
+  ],
+  "official_source_repository": {
+    "path": "E:/codex-build/math",
+    "remote": "https://github.com/openai/math",
+    "changes_by_this_metadata_task": false,
+    "git_or_lean_execution_by_this_metadata_task": false,
+    "repository_sync_is_separately_performed_and_verified_by_root_and_assigned_agent": true
+  },
+  "execution_scope": {
+    "mathematical_producers_created": 0,
+    "mathematical_producers_run_or_imported_or_rerun": 0,
+    "prime_tables_executed_or_extended": 0,
+    "guard_runs": 0,
+    "lean_runs": 0,
+    "original_numeric_certificate_recomputed": false,
+    "new_pdf_downloads_in_this_metadata_task": 0,
+    "metadata_hash_json_and_link_checks_only_in_this_task": true,
+    "only_file_created_by_this_task": "literature/manifest_cdt_beta4_exact_arithmetic_prime_gate_20261007.json",
+    "new_research_branch_opened": false
+  },
+  "local_markdown_link_check": {
+    "scope": "All eight final manuscripts/reviews and current main section 207 only",
+    "checked": 18,
+    "missing": [],
+    "details": [
+      {
+        "source": "research/cdt_beta_projection_mellin_oscillation_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta_single_period_confluent_integral_model_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta_single_period_confluent_integral_model_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta_projection_mellin_oscillation_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_pade_perfectness_sources_20261007.md",
+        "scope": "full_final_note",
+        "target": "cdt_beta_single_period_confluent_integral_model_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta_single_period_confluent_integral_model_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_pade_perfectness_sources_20261007.md",
+        "scope": "full_final_note",
+        "target": "../literature/wolfs2024_multiple_orthogonal_hypergeometric_v2.pdf",
+        "resolved": "E:/kimi-build/zeta5/literature/wolfs2024_multiple_orthogonal_hypergeometric_v2.pdf",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_beta4_pade_perfectness_sources_20261007.md",
+        "scope": "full_final_note",
+        "target": "../literature/prevost_sorokin_hermite_pade_apery_author.pdf",
+        "resolved": "E:/kimi-build/zeta5/literature/prevost_sorokin_hermite_pade_apery_author.pdf",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_exact_arithmetic_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_pade_perfectness_sources_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_pade_perfectness_sources_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_pade_perfectness_sources_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta_projection_mellin_oscillation_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta_projection_mellin_oscillation_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta_projection_mellin_oscillation_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_projection_nonvanishing_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_nonvanishing_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "cdt_beta4_projection_nonvanishing_independent_review_20261007.md",
+        "resolved": "E:/kimi-build/zeta5/research/cdt_beta4_projection_nonvanishing_independent_review_20261007.md",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "../literature/manifest_cdt_beta4_exact_arithmetic_prime_gate_20261007.json",
+        "resolved": "E:/kimi-build/zeta5/literature/manifest_cdt_beta4_exact_arithmetic_prime_gate_20261007.json",
+        "exists": true
+      },
+      {
+        "source": "research/cdt_odd_background_progress_20261006.md",
+        "scope": "section_207_only",
+        "target": "../literature/cdt_beta4_pade_sources_20261007/zhang_filipuk2014_multiple_orthogonal_wronskians_1402_1569v2.pdf",
+        "resolved": "E:/kimi-build/zeta5/literature/cdt_beta4_pade_sources_20261007/zhang_filipuk2014_multiple_orthogonal_wronskians_1402_1569v2.pdf",
+        "exists": true
+      }
+    ],
+    "the_new_manifest_self_link_checked_after_creation": true
+  },
+  "pin_policy": {
+    "previous_manifest_current_file_checked": true,
+    "previous_manifest_embedded_old_main_is_historical_not_current_equality_constraint": true,
+    "old_620_baseline_reference_not_reaudited": true,
+    "no_peer_receipt_or_future_audit_pinned": true,
+    "no_self_hash_embedded": true
+  },
+  "next_priority": "The already recorded research goal remains active, but this metadata-only task does not resume it. Future work requires infinite-scale nonvanishing plus same-object real-place decay; no numerical irrationality theorem is claimed."
+}

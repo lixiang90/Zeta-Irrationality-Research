@@ -1,0 +1,83 @@
+{
+  "moment_checks": 15480,
+  "matrix_checks": [
+    {
+      "K": 32,
+      "N": 4,
+      "p": 11,
+      "entries": 784,
+      "precision": 6
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 17,
+      "entries": 1764,
+      "precision": 6
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 23,
+      "entries": 3136,
+      "precision": 6
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 11,
+      "entries": 1521,
+      "precision": 6
+    }
+  ],
+  "matrix_entries_checked": 7205,
+  "scaled": [
+    {
+      "K": 128,
+      "N": 16,
+      "p": 43,
+      "rows": 58,
+      "columns": 58,
+      "smith_multiplicities": {
+        "0": 20,
+        "1": 38
+      },
+      "at_least_six": 0,
+      "independent_minor_valuation": 38,
+      "rank_mod_p": 20,
+      "seconds": 0.2424619197845459
+    },
+    {
+      "K": 256,
+      "N": 32,
+      "p": 89,
+      "rows": 120,
+      "columns": 110,
+      "smith_multiplicities": {
+        "0": 48,
+        "1": 62
+      },
+      "at_least_six": 0,
+      "independent_minor_valuation": 62,
+      "rank_mod_p": 48,
+      "seconds": 2.3332982063293457
+    },
+    {
+      "K": 400,
+      "N": 50,
+      "p": 137,
+      "rows": 186,
+      "columns": 176,
+      "smith_multiplicities": {
+        "0": 72,
+        "1": 104
+      },
+      "at_least_six": 0,
+      "independent_minor_valuation": 104,
+      "rank_mod_p": 72,
+      "seconds": 13.94072437286377
+    }
+  ],
+  "seconds": 16.996359825134277,
+  "scope": "Smith layers of the rectangular pY correction projection only; not of A+XB or its determinant"
+}

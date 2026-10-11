@@ -1,0 +1,94 @@
+{
+  "totals": {
+    "normal_records": 84,
+    "invalid_after_saturation": 33,
+    "admissible_selected": 36,
+    "affine_families": 54,
+    "affine_test_points": 162,
+    "polynomial_recomputations": 138,
+    "all_witnesses_worse_than_baseline": true
+  },
+  "configurations": [
+    {
+      "K": 12,
+      "N": 1,
+      "m": 12,
+      "h": 11,
+      "unique_normalized_hyperplanes": 31,
+      "baseline": 0.5963471417482967,
+      "best_admissible_lll": 0.8320151106702904,
+      "best_affine_bound": 0.8360553584724989,
+      "best_constrained_affine_bound": 0.8360553584724989,
+      "best_affine_witness": 0.7479232342365087,
+      "best_adjugate_bound": 0.8360553584724989,
+      "selected_adjugate_conditions": [
+        {
+          "p": 5,
+          "rank": 1
+        },
+        {
+          "p": 7,
+          "rank": 2
+        },
+        {
+          "p": 3,
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "m": 24,
+      "h": 23,
+      "unique_normalized_hyperplanes": 26,
+      "baseline": 0.7475639091163641,
+      "best_admissible_lll": 0.8396023867152236,
+      "best_affine_bound": 0.8653399847941035,
+      "best_constrained_affine_bound": 0.8653399847941035,
+      "best_affine_witness": 0.7986942955796192,
+      "best_adjugate_bound": 0.8653399847941035,
+      "selected_adjugate_conditions": [
+        {
+          "p": 17,
+          "rank": 1
+        },
+        {
+          "p": 7,
+          "rank": 1
+        },
+        {
+          "p": 3,
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "m": 22,
+      "h": 21,
+      "unique_normalized_hyperplanes": 26,
+      "baseline": 0.8753394930598736,
+      "best_admissible_lll": 0.9866540716366548,
+      "best_affine_bound": 1.0090090449004454,
+      "best_constrained_affine_bound": 1.0090090449004454,
+      "best_affine_witness": 0.9656447870653472,
+      "best_adjugate_bound": 1.0090090449004454,
+      "selected_adjugate_conditions": [
+        {
+          "p": 17,
+          "rank": 1
+        },
+        {
+          "p": 11,
+          "rank": 1
+        },
+        {
+          "p": 7,
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

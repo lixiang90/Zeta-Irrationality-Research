@@ -1,0 +1,287 @@
+On the other hand, in Section 6, a contour representation, Heine’s identity, and orthogonal polynomials
+give
+                                                            2
+                                            |Jn | ⩽ e−31.6·n
+for all sufficiently large n. These bounds contradict each other along the infinite nonzero subsequence.
+Declaration of generative AI use: The author sent the following prompt to ChatGPT (GPT-6 Astra,
+CloseAI):
+                        (t−Bn)3Bn
+         Let Rn (t) =    (t)2An+1
+                                 and let ∆n be the determinant of size Cn, whose (i, j)-entry is
+                                  ,
+                                        P∞ d             i+j |
+                                                                      P∞ d2           i+j |
+     a suitable linear combination of     m=1 dt Rn (t)t      t=m and  m=1 dt2 Rn (t)t      t=m , where
+     A, B, C are positive integers such that 3B + 2C ⩽ 2A. Can you use this type of construction
+     to prove the linear independence of 1, ζ(3), ζ(4)?
+
+GPT-6 Astra thought about 40 minites and output a full proof. Then, the author verified and rewrote
+the proof, who takes full responsibility but no credit for this work.
+
+Acknowledgements. The author thanks Wadim Zudilin for many useful discussions and encourage-
+ment. This work was supported by [Research Foundation for Scholars of Xiamen University (Grant No.
+X2450218)].
+
+
+2    Rational functions and determinants
+Our proof is by contradiction. If 1, ζ(3), and ζ(4) are linearly dependent over Q, then there exist integers
+a, b, and c, not all being zero, such that aζ(3) + bζ(4) = c. By Apéry’s theorem (Theorem 1.2), we must
+have b ̸= 0. Throughout the paper, until we finally obtain a contradiction, we fix a choice of such integers
+a, b, and c. For later reference, we record our assumption below:
+
+                                      aζ(3) + bζ(4) = c,       a, b, c ∈ Z,     b ̸= 0.                       (2.1)
+                √
+    We use i := −1 ∈ C to denote the imaginary unit. The letter i will be frequently used as an integer
+index. Let t denote an ‌indeterminate. The Pochhammer symbol is defined by (t)n := t(t + 1) · · · (t + n − 1)
+for any n ∈ Z>0 , with the convention (t)0 := 1. For any rational function R(t) = P (t)/Q(t) ∈ Q(t) with
+P, Q ∈ Q[t], Q ̸= 0, define the degree of R(t) to be deg R := deg P − deg Q. We adopt the convention
+deg 0 := −∞. Denote by Q[t]<n the Q-linear space {P ∈ Q[t] | deg P < n} for any n ∈ Z>0 .
+Definition 2.1. For any n ∈ Z>0 , define the rational function
+
+                                                   (6n)!2 (t − 2n)32n
+                                       Rn (t) :=          ·           ∈ Q(t).                                 (2.2)
+                                                   (2n)!3   (t)26n+1
+
+Define the linear operator
+
+                Ln : C[t]<6n −→ C,
+                                        ∞                                     ∞
+                                        X d                                 X d2             
+                          P 7→ −3a           Rn (t)P (t)               +b            Rn (t)P (t)          .   (2.3)
+                                          dt                     t=m            dt2                 t=m
+                                        m=1                                   m=1
+
+Since deg(Rn P ) ⩽ −3, both series on the right-hand side of (2.3) converge absolutely in C. Define the
+symmetric bilinear form
+
+                                       Bn : Q[t]<3n × Q[t]<3n −→ R,
+
+                                                           3
+                                                                     (P, Q) 7→ Ln (P · Q).                                              (2.4)
+                                                                                                                               
+Note that the matrix of Bn with respect to the basis 1, t, t2 , . . . , t3n−1 of Q[t]<3n                           is Ln (ti+j )                .
+                                                                                                                                     0⩽i,j<3n
+Define
+                      1                                                   1                               
+             Jn := Q3n−1            · det Bn (ti , tj )                = Q3n−1               · det Ln (ti+j )                 ∈ R.      (2.5)
+                        i=0   i!2                           0⩽i,j<3n
+                                                                             i=0       i!2                       0⩽i,j<3n
+          Q3n−1
+Here 1/       i!2 is just a conventional normalization factor.
+            i=0
+                    (s)
+   As usual, let Hk := km=1 m−s denote the s-order kth harmonic number for any k, s ∈ Z>0 . By
+                           P
+             (s)                                                   (1)
+convention, H0 := 0 for any s ∈ Z>0 . Take the abbreviation Hk := Hk for k ∈ Z⩾0 .
+Lemma 2.2. For any P ∈ Q[t]<6n , we have
+                          6n 
+                               6n 2 2n + k 3 
+                          X                                            
+                Ln (P ) =                      Uk · P ′ (−k) + Vk · P (−k) ∈ Q,                                                         (2.6)
+                                k        k
+                                         k=0
+
+where
+                              (2)              (3)
+             Uk = −3aHk − 2bHk ∈ Q,                                                                                                     (2.7)
+                                                                                                                         
+                                                                     (2)         (3)                     (3)        (4)
+              Vk = (3H2n+k + 2H6n−k − 5Hk ) (3aHk + 2bHk ) + 6 c − aHk − bHk                                                  ∈ Q.      (2.8)
+
+In particular, Jn ∈ Q.
+Proof. Since the rational function Rn (t)P (t) has deg(Rn P ) ⩽ −3 and all poles lie in {0, −1, . . . , −6n}
+and have order ⩽ 2, there is a unique partial fraction decomposition of the form
+                                               6n                      
+                                              X     A1,k (P ) A2,k (P )
+                                Rn (t)P (t) =                +            ,                             (2.9)
+                                                     t+k       (t + k)2
+                                                               k=0
+
+where
+                                                                  2 
+                                                                        2n + k 3
+                                                                              
+                                     2                            6n
+             A2,k (P ) = (t + k) Rn (t)P (t)                   =                 P (−k),                                               (2.10)
+                                                        t=−k       k      k
+                           d
+                              (t + k)2 Rn (t)P (t)
+                                                  
+             A1,k (P ) =
+                           dt                                t=−k
+                                                                                    
+                           2        3               2n
+                           6n    2n + k              X
+                                          P ′ (−k) +       3      X   2           
+                        =                                         −           P (−k)
+                            k      k                     −k − j     −k + j        
+                                                                           j=1                  0⩽j⩽6n
+                                                                                                  j̸=k
+                           2 
+                                 2n + k 3  ′
+                                       
+                           6n                                                      
+                        =                  P (−k) + (5Hk − 3H2n+k − 2H6n−k ) P (−k) .                                                  (2.11)
+                            k      k
+By (2.9) and deg Rn P ⩽ −3, we have
+                                                 6n
+                                                 X
+                                                       A1,k (P ) = lim tRn (t)P (t) = 0.                                               (2.12)
+                                                                     t→∞
+                                                 k=0
+
+   Substituting (2.9) into (2.3), and using (2.12) and (2.1), we obtain
+                        6n                     ∞                                 ∞
+                                                                                                     !
+                        X                      X        1                   X    1
+         Ln (P ) = 3a          A1,k (P )                      + 2A 2,k (P )
+                                                     (m + k)2                 (m + k)3
+                        k=0                m=1                                   m=1
+
+
+                                                                       4
+                         6n                   ∞                                   ∞
+                                                                                                         !
+                         X                    X        1                  X    1
+                   +b            2A1,k (P )                3
+                                                             + 6A2,k (P )
+                                                    (m + k)                 (m + k)4
+                       k=0                    m=1                                 m=1
+                      6n                                                    
+                                                 (2)                        (3)
+                      X
+               = 3a            A1,k (P ) ζ(2) − Hk     + 2A2,k (P ) ζ(3) − Hk
+                      k=0
+                        6n                                                    
+                                                   (3)                        (4)
+                       X
+                   +b           2A1,k (P ) ζ(3) − Hk     + 6A2,k (P ) ζ(4) − Hk
+                         k=0
+                   6n                                                                                 
+                                    (2)         (3)                                       (3)   (4)
+                   X
+               =            −3aHk − 2bHk                  A1,k (P ) + 6 aζ(3) + bζ(4) − aHk − bHk A2,k (P )
+                   k=0
+                    6n                                                                    
+                                    (2)         (3)                           (3)   (4)
+                   X
+               =            −3aHk − 2bHk                  A1,k (P ) + 6 c − aHk − bHk A2,k (P ) .
+                   k=0
+
+Finally, substituting (2.10) and (2.11) into the right-hand side of the above equation, we obtain (2.6).
+Therefore, each entry of the determinant in (2.5) is a rational number. Thus, Jn ∈ Q.
+
+
+3     Nonvanishing of the determinants
+In this section, we prove that Jn ̸= 0 infinitely often. The method is by using auxiliary primes q. This
+idea appeared before in the study of p-adic zeta values by Sprang and the author [30].
+
+Proposition 3.1. Let q be a prime number such that q ≡ 1 (mod 9) and q > |b|. Set m = (q − 1)/9,
+then J2m ̸= 0. In particular, there are infinitely many positive integers n such that Jn ̸= 0.
+
+Proof. By (2.5) with n = 2m, we have
+                                              1                                      
+                                     J2m = Q6m−1                 · det B2m (ti , tj )                .
+                                                    i=0    i!2                            0⩽i,j<6m
+
+For 0 ⩽ k ⩽ 3m − 1, define the polynomial and canstant
+                                    Y         t+ℓ                                             X           1
+                   Fk (t) :=                      ∈ Q[t],            ck = Fk′ (−k) =                         ∈ Q.
+                                              ℓ−k                                                        ℓ−k
+                                 0⩽ℓ⩽3m−1                                                  0⩽ℓ⩽3m−1
+                                    ℓ̸=k                                                      ℓ̸=k
+
+Put
+         Pk (t) = q 2 · (1 − 2ck · (t + k)) · Fk (t)2 ,            Qk (t) = q · (t + k) · Fk (t)2 ,          0 ⩽ k ⩽ 3m − 1.
+These polynomials have degree at most 6m − 1, and
+
+          Pk (−ℓ) = q 2 δk,ℓ ,     Pk′ (−ℓ) = 0,          Qk (−ℓ) = 0,       Q′k (−ℓ) = qδk,ℓ ,          0 ⩽ k, ℓ ⩽ 3m − 1,    (3.1)
+
+where δk,ℓ ∈ {0, 1} is Kronecker’s delta. Therefore, P0 , Q0 , P1 , Q1 , . . . , P3m−1 , Q3m−1 form a basis of
+Q[t]<6m . To prove J2m ̸= 0, it suffices to show the matrix of the bilinear form B2m with repsect to this
+basis has a nonzero determinant.
+   For any P, Q ∈ Q[t]<6m , by (2.4), (2.3), and Lemma 2.2, we have
+                                                                     12m
+                                                                            (j)
+                                                                     X
+                                                B2m (P, Q) =               B2m (P, Q),                                         (3.2)
+                                                                     j=0
+
+
+                                                                     5
+where
+                                                                                                  
+           (j)           bj · P ′ (−j) · Q(−j) + U    bj · P (−j) · Q′ (−j) + Vbj · P (−j) · Q(−j) ,
+          B2m (P, Q) = U                                                                                            (3.3)
+                                                  12m 2 4m + j 3
+                                                                  
+                                (2)         (3)
+                  Uj = −(3aHj + 2bHj )
+                  b                                                      ,
+                                                     j          j
+                                                                                                       
+                                                                   (2)       (3)               (3)   (4)
+                  Vbj = (3H4m+j + 2H12m−j − 5Hj ) (3aHj + 2bHj ) + 6 c − aHj − bHj
+                           12m 2 4m + j 3
+                                             
+                       ×                           .
+                              j           j
+                                       bj ) ⩾ 0, vq (Vbj ) ⩾ −1, and Pk , Qk ∈ qZq [t] (0 ⩽ k ⩽ 3m − 1).
+   For 0 ⩽ j < q = 9m + 1, we have vq (U
+Thus, by (3.3), we have
+         (j)               (j)                  (j)
+        B2m (Pk1 , Pk2 ), B2m (Qk1 , Qk2 ), B2m (Pk1 , Qk2 ) ∈ qZq ,           0 ⩽ j ⩽ 9m, 0 ⩽ k1 , k2 ⩽ 3m − 1.    (3.4)
+                                                                (s)
+   For j = q +ℓ, where 0 ⩽ ℓ ⩽ 3m−1, we have Hj = q −s +O(Zq ) (s = 1, 2, 3, 4), H4m+j = q −1 +O(Zq ),
+H12m−j ∈ Zq , and
+
+                            12m 2 4m + j 3
+                                      
+                    bj :=                   ∈ Z×
+                                               q , 9m + 1 ⩽ j = q + ℓ ⩽ 12m.
+                             j       j
+Since q > |b| and b ̸= 0 by (2.1), we have
+                                                               b ∈ Z×
+                                                                    q .
+
+Thus,
+                         bj = −2bbj q −3 + O q −2 Zq ,                  Vbj = −10bbj q −4 + O q −3 Zq .
+                                                                                                    
+                         U                                                                                          (3.5)
+On the other hand, by Taylor expansion at −ℓ and using (3.1), we have
+
+                          Pk (−j) = q 2 δk,ℓ + O(q 4 Zq ),               Pk′ (−j) = O(q 3 Zq ),                     (3.6)
+                                           2
+                          Qk (−j) = −q δk,ℓ + O(q Zq ),    3
+                                                                           Q′k (−j)                 2
+                                                                                      = qδk,ℓ + O(q Zq ).           (3.7)
+
+Substituting (3.5)–(3.7) into (3.3), we obtain
+                          (j)
+                        B2m (Pk1 , Pk2 ) = −10bbj δk1 ,ℓ δk2 ,ℓ + O(qZq ),                                          (3.8)
+                         (j)
+                        B2m (Qk1 , Qk2 )   = −6bbj δk1 ,ℓ δk2 ,ℓ + O(qZq ),                                         (3.9)
+                         (j)
+                        B2m (Pk1 , Qk2 )   = 8bbj δk1 ,ℓ δk2 ,ℓ + O(qZq ),                                         (3.10)
+                                 where j = q + ℓ,         0 ⩽ ℓ ⩽ 3m − 1,             0 ⩽ k1 , k2 ⩽ 3m − 1.
+
+      Now, let M 2m be the matrix of the symmetric bilinear form B2m with respect to the basis P0 ,Q0 ,
+. . ., P3m−1 , Q3m−1 of Q[t]<6m . By (3.2), (3.4), and (3.8)–(3.10), we have
+                                                               
+                                                 −10bbj 8bbj
+        M 2m ∈ Mat6m (Zq ), M 2m ≡ diag                                         (mod Mat6m (qZq ))
+                                                   8bbj    −6bbj     9m+1⩽j⩽12m
+
+Therefore,
+                                               12m
+                                               Y
+                           det M 2m ≡                 (−4b2 b2j )     (mod qZq ),       det M 2m ∈ Z×
+                                                                                                    q .
+                                           j=9m+1
+
+So det M 2m ̸= 0 and thereby J2m ̸= 0.
+   Dirichlet’s theorem gives infinitely many primes q ≡ 1 (mod 9). Therefore, Jn ̸= 0 infinitely often.
+
+                                                                    6
+

@@ -1,0 +1,1333 @@
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    153
+
+
+In particular, the Y (2) integral involving log |L(τ ) − L(σ)| becomes, after dividing
+the integral up into four pieces, an integral of
+
+                                             L(τ )
+                         log |L(τ ) − L(σ)| + log     − L(σ)
+                                            L(τ ) − 1
+                              L(σ)           L(τ )        L(σ)
+               + log L(τ ) −          + log           −        .
+                             L(σ) − 1       L(τ ) − 1 L(σ) − 1
+
+But now (using only the multiplicativity property of the logarithm and some ele-
+mentary algebra) this is exactly
+
+                          L(τ )              L(σ)
+         2 log L(τ ) +             − L(σ) −          = 2 log |H(τ ) − H(σ)|.
+                         L(τ ) − 1          L(σ) − 1
+
+Taking into account the factors of 2 coming from the various scalings, this means
+that the integral in the Y0 (2) domain is precisely double the integral in the Y (2)
+domain. On the other hand, the conformal radius is also squared (this is clear for
+the factors of ψY (2) and ψY ′ (2) together with the equality |h′ (0)| = 256 = |λ′ (0)|2 ),
+and so the logarithm of the conformal radius is alsoPr doubled. At the same time, in
+the context of Lemma 9.0.3, the invariant σ = i=1 ci is also doubled, and so is
+the invariant τ (b) in the context of Theorem 2.5.1.
+   In summary, the bound (9.0.22) applied to dimQ(x) H and dimQ(y) Hw=1 (which
+are equal by equation (9.0.21)) gives the same result in both cases. This therefore
+gives a (rough) equivalence between these two problems on both the arithmetic
+and the analytic sides. However, it is also important to note is that this crisp
+equivalence of the bounds only applies to the framework of the crude denominator
+types as stated in Theorem 2.5.1 or Lemma 9.0.3, and that there is still a difference
+once we start to consider refined denominators data, such as with the τ ♯ from the
+added integrals in § 6. We shall see in § 10.3 that it can then be advantageous to
+perform the φY (2) ⇝ φY0 (2) analytic descent passage that we detailed in this Basic
+Remark.                                                                                 △
+
+
+
+
+         10. Pure functions on P1 ∖ {0, 1, ∞} and on P1 ∖ {0, 4, ∞}
+    The goal of this section is to write down a number of G-functions with nice
+integrality properties on P1 ∖ {0, 1, ∞}, and then, using the translation discussion
+in § 9, on P1 ∖ {0, 4, ∞} as well, where the point y = 4 should be though of as an
+elliptic point of order 2. In terms of local systems on an orbifold, the proper way
+to think of these domains is as the modular curves Y (2) in the coordinate x = λ,
+and respectively, Y0 (2) in the coordinate y = x2 /(x − 1) = λ2 /(λ − 1) = h.
+
+
+
+10.1. Five functions of type [1, . . . , n]2 on P1 ∖ {0, 1, ∞}. There are four ob-
+vious Q(x)-linearly independent G-functions we can write down on P1 ∖ {0, 1, ∞}
+154                             F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+with denominator type τ = [1, 2, 3, . . . , n]2 . Namely:
+
+                                                    A1 (x) = 1,
+                                                               ∞
+                                                              X   xn
+                                    A2 (x) = − log(1 − x) =          ,
+                                                              n=1
+                                                                  n
+                                                                   ∞
+                                                                           !2
+                                                2
+                                                                  X   xn             (10.1.1)
+                                     A3 (x) = log (1 − x) =                     ,
+                                                                  n=1
+                                                                      n
+                                                             ∞
+                                                            X   xn
+                                         A4 (x) = Li2 (x) =        .
+                                                            n=1
+                                                                n2
+
+Clearly A2 (x) additionally has type τ = [1, 2, 3, . . . , n], and A3 (x) has denominator
+type [1, 2, . . . , n][1, 2, . . . , n/2]. These functions are linearly independent over Q(x).
+Using symmetrizations, we also obtain 4 linearly independent functions over Q(y).
+These can be given explicitly as follows:
+
+      B1 (y) = 1,
+                 ∞                                                          √ 
+                 X              (n − 2)!n!         p                           y
+      B2 (y) =         2y n ·              = 2y − 2 y(4 − y) arcsin
+                 n=2
+                                  (2n)!                                       2
+                  ∞
+                 X     (n − 1)!2             √
+      B3 (y) =         yn ·      = 2 arcsin( y/2)2
+               n=1
+                         (2n)!
+                                                              
+                                      x                         x
+      B4 (y) = Sym− Li2 (y) = x −             Li2 (x) − Li2
+                                    x−1                       x−1                    (10.1.2)
+                                       √ 
+                                           y
+                             Z arcsin
+                   p                      2
+             = − 2 y(4 − y)
+                                      y
+                   ∞          n
+                                                                      !
+                  X y n+1 X 2k      
+                                        2n − 2k
+                                                 
+                                                               1
+             = 4·
+                  n=0
+                      16n          k     n − k (2k − 1)(2n − 2k + 1)2
+                                       k=0
+                                2
+                           4y   31y 3   389y 4
+            = − 4y +          +       +        + ....
+                            9   900     88200
+   These functions all have denominator type subsumed by [1, 2, . . . , 2n]2 (for a
+more precise description, see Lemma 10.2.2 and Remark 10.2.3).
+   We spent a possibly embarrassing period of time believing that the four func-
+tions A1 (x), . . . , A4 (x) spanned the Q(x)-vector space of functions on P1 ∖{0, 1, ∞}
+with denominator type τ = [1, 2, . . . , n]2 . However, there is also a fifth function one
+can write down. It arises more naturally in the Q(y)-domain, namely as
+                       ∞
+                                (n − 1)!2
+                                                                      
+                       X
+                                n                            1/2 1 1 y
+          B5 (y) =     y ·                      = y · 3 F2          ; .              (10.1.3)
+                   n=1
+                           (2n − 1)! · (2n − 1)              3/2 3/2 4
+
+The function B5 (y) arises in Nesterenko’s approximations [Nes16] to Catalan’s con-
+stant G = L(2, χ−4 ) [Cat1882] in association with the equality
+
+                                                B5 (4) = 8G                          (10.1.4)
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     155
+
+
+due to Nielsen [Nie1909, page 166]. Here B5 (y) is of type [1, 2, 3, . . . , 2n]2 (and even
+somewhat better than this, see Lemma 10.2.2). One can easily define a correspond-
+ing function
+                                                                  
+                                           1/2 1 1 1           x
+                A5 (x) = J(x) = x · 3 F2          ;     x+                          (10.1.5)
+                                           3/2 3/2 4        x−1
+on P1 ∖ {0, 1, ∞} with denominator type τ = [1, 2, 3, . . . , n]2 , which we originally
+missed! If
+                                  d2                      d
+                  L = 2x(1 − x)2 2 + (2 − x)(1 − x)           + 1,
+                                 dx                     dx
+then LJ(x) = 2 − 2x. We also see that
+                               dJ(x)
+                   2x(x − 1)         − xJ(x) = 2(1 − x) log(1 − x).                (10.1.6)
+                                dx
+   From the differential equation we see that J(x) is defined on P1 ∖ {0, 1, ∞}. The
+solutions to the homogenous differential equation L(F ) = 0 are given by
+                                          √
+                                  A(x) = 1 − x,
+                                                                    √
+                √                √           1 √
+                                                                          
+                                                               1+ 1−x
+       B(x) = 1 − x · arctanh( 1 − x) = · 1 − x · log               √        .
+                                             2                 1− 1−x
+   Using the method of variation of parameters, an explicit solution to the ODE is
+given by H(x) defined as follows:
+ √                √                      √                 √              √     
+2 1 − x·arctanh( 1 − x) log(−1+x)−2 1 − x −Li2 − 1 − x + Li2                 1−x ,
+and, having made suitable choices for the various analytic continuations of these
+terms, one can write
+                                                       π2
+                          J(x) = H(x) − 2πiB(x) +         A(x).
+                                                       2
+In retrospect, an easier (if equivalent) way to write a new Q(x)-linearly independent
+function (that gives the same span as J(x)) while remaining entirely on P1 ∖
+{0, 1, ∞} is to consider the integral:
+                                        Z x
+                                   1        log(1 − t)
+                                √             √        dt.                    (10.1.7)
+                                  1−x 0 t 1−t
+What is surprising in this formulation is the unexpected lack of extra powers of 2 in
+the denominators of the Taylor series expansion of (10.1.7). While the individual
+          √
+factors 1/ 1 − x and log(1−x)
+                        R
+                            √
+                           x 1−x
+                                 dx have 2-adic convergence discs |x|2 < 1/4 at
+x = 0, their product overconverges to the full unit open 2-adic disc |x|2 < 1.
+Remark 10.1.8. One can prove that the k ∈ N>0 for which the Taylor series of
+                                  logk−1 (1 − x)
+                               Z
+                          1
+                       √              √          dx                  (10.1.9)
+                         1−x         x 1−x
+converges on the 2-adic unit disc |x|2 < 1 are exactly the positive even integers,
+and that for these k, the Taylor expansion belongs to
+                                                       ∞
+                                  logk−1 (1 − x)                xn
+                              Z
+                          1                           X
+             Jk (x) := √              √          dx ∈                     Z.
+                         1−x         x 1−x            n=1
+                                                          [1, . . . , n]k
+156                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+This defines a sequence J2 , J4 , J6 , . . . (with J2 = J) of G-functions holonomic on
+P1 ∖ {0, 1, ∞}, of denominator types xn /[1, . . . , n]∗ , and independent over the mul-
+tiple polylogarithm ring § 10.3.                                                      △
+10.2. Added integrations. We define two more functions B6 (y) and B7 (y) as
+follows:
+
+                                                 √            ∞
+                                        2 arcsin( y/2)2               (n − 1)!2
+                  Z                 Z
+                      B3 (y)                                 X
+       B6 (y) =              dy =                       dy =     yn ·           ,
+                        y                       y            n=1
+                                                                       n(2n)!
+                  Z                                                                     (10.2.1)
+                      B4 (y)
+       B7 (y) =              dy.
+                        y
+      We have:
+Lemma 10.2.2. The denominator types of Bi (y) for i = 1, . . . 7, as defined in
+equations (10.1.2), (10.1.3), and (10.2.1) are as follows:
+   (1) B1 (y) has trivial denominator type.
+   (2) B2 (y) has denominator type [1, 2, , . . . , 2n].
+   (3) B3 (y) has denominator type [1, 2, . . . , 2n]n.
+   (4) B4 (y) has denominator type [1, 2, , . . . , 2n]2 .
+   (5) B5 (y) has denominator type [1, 2, , . . . , 2n](2n − 1), and thus in particular
+        of denominator type [1, 2, . . . , 2n]2 .
+   (6) B6 (y) has denominator type [1, 2, . . . , 2n]n2 , and thus in particular of de-
+        nominator type [1, . . . , n][1, . . . , 2n]n, and a fortiori [1, 2, . . . , 2n]2 n.
+   (7) B7 (y) has denominator type [1, 2, , . . . , 2n]2 n.
+Proof. This follows in the case of B4 (y) from Lemma 9.0.3, and in the case of B7 (y)
+from direct integration from the n = 4 case. For the remainder, it follows by direct
+computation since there is an explicit expression in terms of factorials for the general
+coefficient.                                                                          □
+Remark 10.2.3. In fact the denominators of these functions have a somewhat
+                                                                 2n
+                                    Q can be relaxed to n(n − 1) n . In practice this
+better type, namely the [1, . . . , 2n]
+means that the prime product 2n/3<p<n p is absent from the [1, . . . , 2n] part of
+these denominators. This remark seems to not make any improvement in the setup
+for Theorem A, but the possibility of canceling prime products could be useful to
+exploit in other contexts.                                                         △
+   We shall prove in § 12 that the seven functions Bi (y) are linearly independent
+over Q(y).
+10.3. The multiple polylogarithm ring. (This section is more of an extended
+aside and can be omitted on first reading.) Over P1 ∖ {0, 1, ∞}, a basic construc-
+tion of G-functions of type [1, . . . , n]• is supplied by the single variable multiple
+polylogarithm functions
+                                            X             x n1
+                    Lik1 ,...,kd (x) =                 k1 k2       kd
+                                                                      .        (10.3.1)
+                                       n1 >n2 >...>nd n1 n2 · · · nd
+
+Of these, the following eight functions form a maximal Q(x)-linearly independent
+set with type n[1, . . . , n]2 :
+           1,     Li1 ,   Li1,1 ,   Li2 ,   Li1,1,1 ,   Li1 · Li2 ,   Li1,2 ,   Li3 .   (10.3.2)
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                                157
+
+
+In Remark 10.1.8, we found that the multiple polylogarithms do not exhaust all
+the P1 ∖ {0, 1, ∞} functions of the type [1, . . . , n]• , and in particular, that we can
+add to (10.3.2) a ninth independent function (10.1.7) of the [1, . . . , n]2 type. By
+symmetrization, these nine Q(x)-linearly independent functions go to nine Q(y)-
+linearly independent functions on P1 ∖ {0, 4, ∞} with Z/2 local monodromies at
+the elliptic point y = 4. However, whereas in Lemma 9.0.3 we proved that the
+two symmetrization operations F (x) ⇝ F ± (y) take the type [1, . . . , n]σ to the
+type [1, . . . , 2n]σ , an examination of the polynomials (9.0.7) of the proof reveals
+that the plus symmetrization F + takes the integrated type n[1, . . . , n]σ to the
+integrated type n[1, . . . , 2n]σ , but the minus symmetrization F − spoils the in-
+tegrated type n[1, . . . , n]σ into [1, . . . , 2n]σ+1 . This is why, as it turns out, the
+nine Q(x)-independent functions of type n[1, . . . , n]2 on P1 ∖ {0, 1, ∞} go to only
+seven Q(y)-independent functions of type n[1, . . . , 2n]2 : the above Bi (y). A sim-
+ilar remark shall apply to § 12.1, where under a supposed Q-linear dependency
+among 1, ζ(2), L(2, χ−3 ) we would get as many as 17 independent functions over
+x ∈ P1 ∖ {0, 1/9, −1/8, 1, ∞} with the integrated type n[1, . . . , n]2 and holomor-
+phic at {0, 1/9, −1/8} (only the above-listed nine of which really exist), but only 14
+of the symmetrizations (seven of them genuine) have the corresponding integrated
+type n[1, . . . , 2n]2 .
+   One of the key ideas in our paper is that while — as explained                    Q in Basic Re-
+mark 9.0.20 — our holonomy           bounds     are equivalent for the data    (φ;  [1, . . . , bn]) :=
+  λ2 /(λ − 1), [1, . . . , 2n]2 and (φ; [1, . . . , bn]) := λ, [1, . . . , n]2 , the integrated
+                                              Q
+type
+                           Y
+                              ne [1, . . . , bn]) := λ2 /(λ − 1), n[1, . . . , 2n]2
+                                                                                    
+                     (φ;
+
+yields significantly better bounds than the integrated type
+                          Y
+                             ne [1, . . . , bn]) := λ, n[1, . . . , n]2 ;
+                                                                       
+                      (φ;
+
+so much so that the 14 functions in the former type turn out to be a far stronger
+constraint than the 17 functions in the latter type. We elaborate on this comparison
+in our next remark.
+
+Remark 10.3.3. (This remark is best appreciated after reading the entire proof of
+Theorem A, although it still makes the most sense to place it in this section.) The
+above 17 functions of denominator type n[1, . . . , n]2 fit into the following refined
+denominators scheme in Theorem 6.0.2:
+                                                                           t
+              0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+       b :=
+              0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+and the integrations vector
+
+                         e := (0, 1, 1, 1, 1, 1, 1, 1; 0; 0, 0, 0, 0, 1, 1, 1, 1).
+
+The first eight entries here are indexed by the row (10.3.2), in precisely this or-
+der, where, in view of the term maxi (ei ) in the definition (6.0.5) of τ ♯ , we opt to
+subsume Li2 into the type n[1, . . . , n] and Li3 into the type n[1, . . . , n]2 . The ninth
+entry is the function (10.1.7). Finally, writing H(x) ∈ QJxK for the function in
+158                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Proposition 11.1.8 below, the eight last entries are the fictive functions
+                                                        
+                                        x              x
+                   H(x), H ′ (x), H           , H′            ,
+                                      x−1             x−1
+                                                    
+                                         Z H x − H(0)
+                      H(x) − H(0)
+                   Z
+                                                 x−1
+                                    dx,                         dx,
+                            x                        x
+                                                    
+                                         Z H x − H(0)
+                      H(x) − H(0)
+                   Z
+                                                 x−1
+                                    dx,                         dx,
+                          x−1                     x−1
+which turn out to be Q(x)-linearly independent and holonomic on P1 ∖{0, 1/9, −1/8, 1, ∞}.
+  Recall that τ (b; e) = τ ♭ (b) + τ ♯ (e) is built out of two pieces. For these denomi-
+nator types, we calculate
+                   (1 + 3) · 0 + (5 + 7) · 1 + (9 + 11 + 13 + . . . + 33) · 2
+           τ ♭ (b) =
+                                              172
+                   558
+                 =     = 1.93079584 . . .
+                   289
+which improves over the crude main denominator cap σ = 2. The value for τ ♭ (b)
+we obtain here is even better than the corresponding value 191/49 = 2 · 1.948979 . . .
+        R use in § 13; for here we can further exploit the special integrated type n
+that we will
+of Li1 = dx/(x − 1). But for the other piece τ ♯ (e) of τ (b; e) we get
+
+                        τ ♯ (e) = 83711/242760 = 0.34483 . . . ,
+with the optimal ξ in (6.0.5) being a certain short interval containing the choice ξ =
+57/40. In total here,
+       τ (b; e) = 558/289 + 83711/242760 = 552431/242760 = 2.275626 . . . .
+This is very much inferior to the value 16603/3920 = 2 · 2.1173 . . . in (13.0.6), and
+the three additional functions are not nearly enough to compensate, as we now
+explain.
+   To look into the numerics of the holonomy quotients, we can choose the map φ
+as the optimal map of the form
+          φ(z) := λ(G(z)),       G : (D, 0) → (D, 0),       φ′ (0) = 16G′ (0),
+where concretely G can be (for example) the Riemann mapping for the topological
+disc inside D constrained by any simple closed contour that encircles the origin,
+precisely like the contours we study in § A. To be admissible, the contour must not
+enclose any of the non-real fiber points in λ−1 (1/9) and λ−1 (−1/8), but let us even
+ignore this point since it will only make the numerics worse. Then the holonomy
+bound, which would have to compare to m = 17, is by the quotient
+                       RR
+                         T2
+                            log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                                                     552431      .            (10.3.4)
+                             log 16 + log |G′ (0)| − 242760
+Using a (lightly) optimized choice Gob(0.92, 110, 23) from the gobble contours de-
+fined in § A.2, we find that |G′ (0)| = 0.9163768 . . . and the quotient (10.3.4) comes
+out to approximately 22.7527, a rather long distance from the requisite threshold
+of 17.                                                                               △
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  159
+
+
+10.3.5. Perspective on Theorems A and C. This is why we shall henceforth stick
+with the type n[1, . . . , 2n]2 functions fi (y) (such as the above Bi (y)), holonomic
+with singularities at y = ∞, at y = 4 with a Z/2 local monodromy, and with all
+other singularities being overconvergent for the fi (y), and close enough to 0. In the
+application to Theorems A and C, these latter “overconvergent” singularities turn
+out to be {0, −1/72}, as we find out in the next section. Armed with Theorem 6.0.2,
+we will find in § 13 that these singularities {0, −1/72} are indeed close enough to 0,
+and that a holonomy bound smaller than 14 can fortuitously be reached: prov-
+ing that such 14 independent functions cannot simultaneously exist. Ultimately,
+this contradicts the supposed Q-linear dependency among 1, ζ(2), and L(2, χ−3 ),
+where as many as 7 of the 14 functions arise from any such linear relationship via
+Lemma 12.1.1.
+
+                        11. Zagier’s sequences A and C
+11.1. Definitions and basic properties. In this section, we construct a number
+of holonomic functions converging on the unit disc and extending to holomorphic
+functions on the universal cover of P1 ∖ {0, 1/9, −1/8, 1, ∞}, and also on the uni-
+versal cover of (the orbifold/stack) P1 ∖ {0, −1/72, 4, ∞} where y = 4 is an elliptic
+point of order 2. Under the hypothesis that there is a Q-linear relation between 1,
+ζ(2), and L(2, χ−3 ), these functions would have rational coefficients and bounded
+denominator growth. These constructions all come — in a form very close to what
+is presented here — from a paper of Zagier [Zag09], but the sequences themselves
+were certainly considered before then in similar contexts, including in particular
+in [SB85], and the arguments required to prove the required identities were first
+observed by Beukers [Beu87]. They arise more or less as solutions to Picard–Fuchs
+equations associated to modular curves with precisely four cusps. The observa-
+tion that certain linear combinations of solutions in QJxK whose coefficients are
+interesting periods are overconvergent (that is, extend analytically across the sin-
+gular point of the ODE closest to x = 0) was exploited by Beukers [Beu87] to
+give a reinterpretation of Apéry’s original proof that ζ(2) and ζ(3) are irrational.
+As Zagier notes, however, the particular functions we consider (associated to the
+sequences A and C in the notation of [Zag09]) — while giving sequences which
+converge to both ζ(2) and L(2, χ−3 ) — “do not converge quickly enough to yield
+the irrationality of the limit” ([Zag09, p. 360]). To be precise, these simultaneous
+                                                                             −c
+approximations
+                     n → L(2, χ−3 ), vn /qn → ζ(2) converge at the rate qn where
+                  un /q
+c = log 9 2 + log 9 = 0.52349 . . ., whereas, in the classical scheme for irrationality
+proofs, an exponent c > 1 would be required. And yet, these functions are precisely
+the required input in our method to prove the desired irrationality results, by ex-
+ploiting not simply the convergence properties of these functions on the unit disc
+|x| < 1, but also their analytic continuations beyond the boundary point x = 1.
+   The following is standard, and can also be read off from [Zag09, Table 3, p. 357]:
+Lemma 11.1.1. The function
+                  ∞
+                 Y    (1 − q n )4 (1 − q 6n )8
+           x=q              2n )8 (1 − q 3n )4
+                                               = q − 4q 2 + 10q 3 + . . .     (11.1.2)
+                 n=1
+                     (1 − q
+
+with q = e2πiτ defines a uniformization map
+                    x : Y0 (6) = H/Γ0 (6) → P1 ∖ {0, 1/9, 1, ∞}
+160                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+taking the Γ0 (6) cusps τ = i∞, 0, 1/3, 1/2 to the respective cusps x = 0, 1/9, 1, ∞.
+      Note that one can formally invert this power series and write
+                                  q = x + 4x2 + 22x3 + . . . ∈ ZJxK.                     (11.1.3)
+It follows that any power series in ZJqK can be written formally as a power series
+in ZJxK, and any power series in QJqK can be written formally as a power series
+in QJxK.
+   Let                                            
+                                                −3
+                                    χ−3 (n) =
+                                                 n
+be the unique primitive character of conductor 3. Consider the theta function of
+the Eisenstein lattice Z[ζ3 ]:
+                                          X      2     2
+                             θ−3 (τ ) :=      q m +mn+n .
+                                                 m,n∈Z
+
+This is a weight one modular form of level Γ0 (3), and incidentally also an Eisenstein
+series                                        
+                               ∞
+                               X  X
+              θ−3 (τ ) = 1 + 6        χ−3 (n) q n ∈ M1 (Γ0 (3), χ−3 ).
+                                      n=1    d|n
+
+On Γ0 (6), we get the weight one Eisenstein series
+                                          ∞                  ∞
+               θ−3 (τ ) + θ−3 (2τ )      X   χ−3 (n)q n     X   χ−3 (n)q 2n
+          A :=                      =1+3                + 3
+                         2               n=1
+                                              1 − qn        n=1
+                                                                 1 − q 2n
+                                       = 1 + 3q + 3q 2 + 3q 3 + . . . ∈ M1 (Γ0 (6), χ−3 ).
+Further we have these weight three Eisenstein series in M3 (Γ0 (6), χ−3 ):
+                                                     
+                       X∞    X
+                            (−1)d−1 χ−3 (n/d)d2  q n
+                              n=1      d|n
+
+and                                                         
+                    ∞
+                    X      X                   ∞
+                                               X   X
+                            χ−3 (d)d2  q n −      χ−3 (d)d2  q 2n .
+                    n=1     d|n                     n=1      d|n
+
+Let us write them respectively as θ B and θ C, where θ = (2πi)−1 d/dτ = qd/dq,
+                                             2           2
+
+and the Eichler integrals B and C compute to the following:
+                                   
+        ∞                               n    ∞                     ∞
+       X     X
+                     d−1           2 q
+                                            X   χ−3 (n)q n        X   χ−3 (n)q 2n
+  B=            (−1) χ−3 (n/d)d          =                   − 2
+       n=1
+                                      n2    n=1
+                                                n2 (1 − q n )     n=1
+                                                                      n2 (1 − q 2n )
+                  d|n
+            ∞
+            X       qn           5q 2         11q 4   44q 5
+        =       χ−3 (n)n−2=  q −      + q 3
+                                            −       +        + ...,
+     n=1
+                  1 + qn          4            16      25
+                                                   
+      ∞                    n      ∞
+     X    X              q     1 X      X               q 2n
+  C=       χ−3 (d)d2  2 −                χ−3 (d)d2  2
+     n=1
+                         n     4 n=1                    n
+                  d|n                                d|n
+             ∞
+          1X                                                  q3        24q 5
+                χ−3 (n) 4Li2 (q n ) − Li2 (q 2n ) = q − q 2 +    + q4 −
+                                                 
+        =                                                                     + ...
+          4 n=1                                               9          25
+                    THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                                  161
+
+
+These formulas make it plain38 that limq→1 B = 12 L(2, χ−3 ) and limq→1 C = 14 ζ(2).
+Moreover, by canceling modularity factors in the opposite weights 1 and −1 (the
+latter coming from basic properties [Wei77] of Eichler integrals), the forms A(B −
+1                       1
+2 L(2, χ−3 )) and A(C − 4 ζ(2)) have a weight zero symmetry around the Γ0 (6) cusp
+τ = 0. Expressing these two products in the Hauptmodul coordinate x leads to
+holonomic functions on Y0 (6) ∼
+                              = P1 ∖ {0, 1/9, 1, ∞} (see, for example, [KZ01, § 2.3])
+which are overconvergent at x = 1/9, and such that the coefficients of the factors
+AB and AC in QJxK give rise to simultaneous Apéry limits 12 L(2, χ−3 ) and 14 ζ(2)
+when compared to the coefficients of A (also considered as a function of x). This
+is Beukers’s framework [Beu87] for irrationality proofs. Our next lemma collects
+these remarks with indications on how to read them off from [Zag09].
+Lemma 11.1.4. Define power series HA (x), HB (x), and HC (x) in terms of the
+following formulas:
+                                           HB (x)                     HC (x)
+                 HA (x) = A(q),                   = B(q),                    = C(q),
+                                           HA (x)                     HA (x)
+where x = x(q) is as in Equation 11.1.2, so
+                                                                    X
+                 HA (x) = 1 + 3x + 15x2 + 93x3 + . . . =  an xn ,
+                              23x2   145x3   3993x4           X
+                 HB (x) = x +      +       +          + ... =     bn x n ,
+                                4       4       16
+                                    343x3   788x4          X
+                 HC (x) = x + 6x2 +       +        + ... =     cn x n .
+                                      9       3
+Then:
+   (1) The functions HA (x), HB (x), HC (x) are multivalued holonomic functions
+       on P1 ∖ {0, 1/9, 1, ∞}; that is, they extend to holomorphic functions on the
+       universal cover.
+   (2) We have an ∈ Z and [1, 2, . . . , n]2 bn , [1, 2, . . . , n]2 cn ∈ Z.
+   (3) The radius of convergence of HA (x), HB (x), and HC (x) is R = 1/9. How-
+       ever, any linear combination of the following two functions:
+                           L(2, χ−3 )                   ζ(2)
+                   HB (x) −           HA (x),  HC (x) −      HA (x)
+                               2                         4
+          has radius of convergence R = 1, where
+                                      ∞                               ∞
+                                     X   χ−3 (n)                     X   1    π2
+                     L(2, χ−3 ) =                ,         ζ(2) =           =    .
+                                     n=1
+                                           n2                        n=1
+                                                                         n2   6
+
+Proof. This result follows from [Zag09, Table 3] and [Zag09, Table 5] (using an
+argument previously used by Beukers [Beu87]). To orient the reader, note that the
+sequence an is none other than Zagier’s sequence C from [Zag09]. Namely, there is
+an equality
+                                    n  2       
+                                   X      n    2k
+                              an =                  ,
+                                          k    k
+                                               k=0
+
+
+   38We have Li (1) = ζ(2), and the Cesàro regularization P∞ χ (n) := 1/3 out of the
+               2                                            n=1 −3
+average of the partial sums 1, 0, 0, 1, 0, 0, 1, 0, 0, . . . is the relevant interpretation in this context.
+This calculation and heuristic are readily made rigorous after an Abel summation.
+162                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+and an satisfies the recurrence
+                    (n + 1)2 an+1 − An(n + 1)an + Bn2 an−1 = λan               (11.1.5)
+for all n ([Zag09, Equation (3)]). Moreover, bn satisfies the same recurrence (11.1.5)
+for all n ̸= 0. In particular, the facts above concerning HA (x) and HB (x) are
+explained in §6 of [Zag09]. On the other hand, cn satisfies the recurrence
+                   (n + 1)2 cn+1 − An(n + 1)cn + Bn2 cn−1 = 1 + λcn            (11.1.6)
+for all n ≥ 0. While this sequence is not explicitly in [Zag09], it is a disguised form
+of Zagier’s sequence A. More precisely, if one defines the functions
+                                    
+                    1            x
+         GA (x) =       · HA           = 1 + 2x + 10x2 + 56x3 + . . .
+                  1+x          x+1
+                                               15x2
+                                    
+                    1            x
+         GB (x) =       · HB           =x+           + 22x3 + . . .             (11.1.7)
+                  1+x          x+1               4
+                                                      208x3
+                                    
+                    1            x
+         GC (x) =       · HC           = x + 4x2 +          + ...
+                  1+x          x+1                       9
+then the coefficients of GA (x) are exactly Zagier’s sequence A, that is, they satisfy
+equation (11.1.5) except now for the values (A, B, λ) = (7, −8, 2), and the coef-
+ficients of GC (x) now satisfy the same recurrence for n > 0. This can be easily
+proved by showing that both functions satisfy the same ODE and then checking
+that the first few coefficients are in agreement.                                   □
+
+      Using this, we deduce the following:
+Proposition 11.1.8. Suppose there exists a Q-linear relationship between 1, ζ(2),
+and L(2, χ−3 ), namely, suppose that
+                           a + b · L(2, χ−3 )/2 + c · ζ(2)/4 = 0
+for rational numbers a, b, and c. Let
+      H(x) := aHA (x) + bHB (x) + cHC (x)
+                                                                               (11.1.9)
+                                                                
+                         L(2, χ−3 )                     ζ(2)
+           = b HB (x) −             HA (x) + c HC (x) −      HA (x) .
+                             2                           4
+Then H(x) ∈ QJxK with denominators of shape [1, 2, . . . , n]2 , and H(x) satisfies
+the ODE
+                                                                    c
+   x(1 − x)(1 − 9x)y ′′ + (1 − 20x + 27x2 )y ′ + 3(−1 + 3x)y = b +       (11.1.10)
+                                                                   1−x
+Proof. The rationality claims were established above. Either from equation (11.1.5
+and (11.1.6) or more directly using the definitions in terms of Eichler integrals
+following [Beu87], one verifies that y = H(x) satisfies the given differential equation.
+                                                                                      □
+
+Remark 11.1.11. In [Beu79], Beukers gave alternate proofs of the irrationality
+of ζ(2) and ζ(3) in terms of multiple integrals. For example, Apéry’s approximations
+to ζ(2) were seen to be coming directly from the integral
+                                    tn (1 − t)n sn (1 − s)n
+                          ZZ
+                                                            dsdt,            (11.1.12)
+                             [0,1]2       (1 − st)n+1
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                               163
+
+
+when evaluated as an − bn ζ(2). We note that the approximations to L(2, χ−3 )
+and ζ(2) considered here (and in [Zag09]) can also be viewed in the same way.
+In particular, one can easily verify (either by hand using a little effort or by us-
+ing [AZ90] without any effort) the identities:
+                                       ∞
+                                                                9n sn tn (1 − s3 )n (1 − t3 )n
+                                       X          ZZ
+      L(2, χ−3 )HA (x) − 2HB (x) =           xn                                                dsdt,
+                                       n=0             [0,1]2      (1 + st + s2 t2 )2n+1
+                                                                                               (11.1.13)
+and
+                               ∞
+                                                                (1 − s2 )n (1 − t2 )n
+                               X                ZZ
+   ζ(2)GA (x) − 4GC (x) =            xn (−1)n                                         dsdt.   (11.1.14)
+                               n=0                  [0,1]2         (1 − st)n+1
+
+One easily finds that
+
+               9st(1 − s3 )(1 − t3 )                       (1 − s2 )(1 − t2 )
+       max2                          = 1,         max2                        = 1,            (11.1.15)
+       [0,1]    (1 + st + s2 t2 )2                [0,1]         1 − st
+
+the maxima being obtained at s = t = 1/2 in the first case and s = t = 0 in the
+second. It follows that the integrals are all bounded by 1 which gives a transparent
+proof that the functions H(x) considered in Proposition 11.1.8 overconverge beyond
+the singularity at x = 1/9 to the entire unit disc.
+   We can also evaluate the geometric series to express the integral formula (11.1.13)
+as
+                                                       1 + st + s2 t2
+                                ZZ
+ L(2, χ−3 )HA (x) − 2HB (x) =                        2 2 2            3      3
+                                                                                 dsdt.
+                                   [0,1]2 (1 + st + s t ) − 9st(1 − t )(1 − s )x
+                                                                              (11.1.16)
+By (11.1.15), this formula represents the function L(2, χ−3 )HA (x) − 2HB (x) as
+a continuous integral of a family of (rational, as it happens) functions fs,t (x) ∈
+O (C ∖ [1, ∞)) holomorphic on C ∖ [1, ∞). The property of being a holomorphic
+function over a complex domain is inherited by any continuous integration over a
+parameter (s, t) ∈ [0, 1]2 , and so the integral representation makes equally trans-
+parent the analyticity of (11.1.16) on C ∖ [1, ∞). This is Zudilin’s point of view
+in [Zud17].                                                                          △
+
+Remark 11.1.17. These integral representations, and especially (11.1.16), may
+also be compared to Zudilin’s [Zud03, Riv06, Nes16]
+                            ZZ
+                                                                 ds dt
+ L(2, χ−4 )U (x) − V (x) :=            p                                                     
+                                     2   (s −   s2 )(t − t2 ) · 1 − st − (s − s2 )(t − t2 )x
+                               [0,1]
+                              ∞
+                                                  (s − s2 )n−1/2 (t − t2 )n−1/2
+                             X         ZZ
+                         =−        xn                                           dsdt
+                             n=0          [0,1]2           (1 − st)n+1
+
+giving rational approximants to Catalan’s constant G = L(2, χ−4 ). In this instance,
+the integrand peak rate is
+                                                     √ !−5
+                             (s − s2 )(t − t2 )   1+ 5
+                      max                       =           ,
+                      [0,1]2      1 − st            2
+164                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                                                                  √ 5
+                                                                 1± 5
+and indeed the singularities of the linear ODE are at 0,           2    ,   and ∞: precisely
+the same as for Apéry’s approximants to ζ(2). Unfortunately, due to the half-
+integral exponents in this integral representation, the denominators in these rational
+approximations are as big as 16n [1, . . . , 2n]2 .
+   A different holonomic sequence of rational approximants to G was given by case E
+in [Zag09], where the ODE singularities are {0, 1/8; 1/4, ∞} (the first two of which
+are overconvergent), and the denominator types are [1, . . . , n]2 .
+                                     √ 5
+   Since e2 > 16 · (1/4) and e4 > 1+2 5 (by a wide margin!), this definitely pre-
+cludes an approach to the irrationality of the Catalan constant by our method using
+either of these particular families of rational approximants, unless some completely
+new idea is discovered.                                                             △
+11.2. The symmetrization of H(x). Let a, b, and c be complex numbers such
+that
+                         a + b · L(2, χ−3 )/2 + c · ζ(2)/4 = 0.
+Then we may define H(x) ∈ CJxK as in equation (11.1.9). If we additionally assume
+that 1, π 2 , and L(2, χ−3 ) are linearly dependent over Q, then we can choose a, b,
+and c to be rational, although the arguments of this section will not require this
+hypothesis.
+   We now let G(y) be the symmetrization of H(x):
+Definition 11.2.1. Let G(y) = Sym+ H(x) as defined in equation (9.0.9), so
+                                           
+                                         x
+                     G(y) = H(x) + H           ∈ CJyK,
+                                       x−1
+and let GA (x) = Sym+ HA (x), so
+                                                       
+                                                   x
+                      GA (y) = HA (x) + HA                  ∈ ZJyK.
+                                                  x−1
+  Note that GA (y) = 2 − 27y + 1014y 2 − 49536y 3 + . . .; the function GA (y) satisfies
+an order 4 ODE
+                                3
+                                          (i)
+                              X
+                                  ci (y)GA (y) = 0
+                                 i=0
+which we give explicitly later in equation (12.1.5). The span of GA (y) and its
+derivatives generates, over Q(x), the space spanned by HA (x) and HA (x/(x − 1))
+and their derivatives (which are both vector spaces of dimension 4). By Lemma 9.0.3
+(2), we immediately have the following:
+Lemma 11.2.2. If a, b, c ∈ Q, then G(y) has denominator type [1, 2, . . . , 2n]2 .
+
+                     12. Functional Linear Independence
+   Let Ai (x) ∈ QJxK be a collection of holomorphic functions functions on P1 ∖ S
+for some finite set S. (In our situation, they will all be Siegel G-functions.) Suppose
+we wish to prove that the Ai (x) are linearly independent over Q(x) or C(x). One
+strategy is as follows. Let γ be a path in C; for example, take a path starting
+at x = 0, avoiding other points in S, and then returning to 0. The functions Ai (x)
+can be analytically continued along γ, and as we return to x = 0 we obtain a
+sequence of functions A  bi (x) which may now have singularities at x = 0. Certainly
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    165
+
+
+any polynomial relationship between the Ai (x) extends to (the same) polynomial
+relationship between the A  bi (x), and hence also to a polynomial relationship between
+the Ai (x)−Ai (x), which can sometimes be useful. But we can alternatively consider
+     b
+any identity between the A  bi (x) modulo functions which are holomorphic at 0. What
+may (and often does) happen in principle is that this reduces a linear relationship
+between a large number of functions to a smaller number of functions, and one can
+hope to employ some form of inductive strategy to establish full linear independence.
+A typical example is as follows: Suppose that the path γ starts at 0 ∈ S and
+is a simple loop around a single point 1 ∈ S. Then, if a proper subset of the
+functions Ai (x) are actually holomorphic at x = 1, the corresponding A     bi (x) vanish
+modulo holomorphic functions, and we obtain a corresponding linear relationship
+between the A bi (x) with fewer terms. A basic example of this is as follows. Suppose
+that
+                  A1 (x) = 1, A2 (x) = log(1 − x), A3 (x) = Li2 (x).
+After a suitably oriented loop around zero, we have
+      A
+      b1 (x) = 1,    b2 (x) = log(1 − x) + 2πi,
+                     A                             b3 (x) = Li2 (x) + 2πi log(x).
+                                                   A
+Now, modulo holomorphic functions at zero, we obtain a linear relationship between
+                                                                                 b3 (x)
+the three functions 0, 0, and 2πi log(x). Clearly this forces the coefficient of A
+to be zero, and reduces us to showing that A1 (x) and A2 (x) are linearly independent
+because log(1 − x) is not a rational function. We will use this strategy a number
+of times below. Note that another argument in this case would be to consider the
+functions Abi (x)−Ai (x) which reduces the problem to the C(x)-linear independence
+of 1 and log x.
+Lemma 12.0.1. The seven functions Bi (y) for i = 1, . . . , 7 defined in Section 10
+in equations (10.1.2), (10.1.3), and (10.2.1) respectively are linearly independent
+over C(y).
+Proof. We first of all note that the Bi (y) are all elements of QJyK. Therefore any
+linear dependency over C(y) upgrades to one over Q(y), and so it suffices to prove
+the result over Q(y).
+   We begin by proving the linear independence of the Bi (y) for i = 1, . . . , 5. By
+Lemma 9.0.3, it suffices to prove the linear independence of the 5-functions 1,
+log(1 − x), log2 (1 − x), Li2 (x), and and J(x) of equation (10.1.5) over Q(x). Cer-
+tainly 1, log(1 − x), and log2 (1 − x) are independent since log(1 − x) is transcen-
+dental over Q(x). These three functions are also defined on P1 ∖ {1, ∞} which
+distinguishes then from Li2 (x) — take a path γ from 0 which winds around x = 1,
+then winds around x = 0, then winds (in the opposite way) around x = 1, and
+returns to zero (as in Figure 12.0.7). The first three functions will be invariant,
+but Li2 (x) has non-trivial monodromy on this path. So Li2 (x) is independent
+of these previous functions. Now suppose that J(x) was a Q(x)-linear combi-
+nation of 1, log(1 − x), log2 (1 − x), Li2 (x). If the coefficient of Li2 (x) was non-
+trivial, then, after scaling, we may assume that it is 1. But now by differenti-
+ation, and using the ODE 10.1.6 for J(x), we obtain a new relation over Q(x)
+with 1, log(1 − x), log2 (1 − x), and J(x) only (with a non-trivial coefficient of J(x)
+because of the ODE). But J(x) also has non-trivial monodromy over the path γ, so
+we conclude as for Li2 (x) above. Now let us return to the P1 ∖ {0, 4, ∞} domain
+166                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+and consider the functions B6 (y) and B7 (y). Recall that:
+                            Z                      Z
+                               B3 (y)                  B4 (y)
+                   B6 (y) =           dy, B7 (y) =            dy.
+                                 y                       y
+Using the derivation formula
+                   Z               Z
+           d
+               A(y) F (y) dy = A′ (y) F (y) dy + A(y)F (y),                     (12.0.2)
+          dy
+we can firstly assume that the coefficients of our linear relation in Q(y) are poly-
+nomials, and then by differentiation reduce to an equality of the form
+                    Z                Z                5
+                      B3 (y)            B4 (y)       X
+                 a0          dy + a1           dy =      bi (y)Bi (y),      (12.0.3)
+                        y                 y          i=1
+
+where now a0 and a1 are constants which are not both zero and bi (y) ∈ Q(y). We
+note the
+                d
+       y(4 − y) B2 (y) = (2 − y)B2 (y) + y 2 ,
+               dy
+                d
+       y(4 − y) B3 (y) = − B2 (y) + 2y,
+               dy
+                                                                        (12.0.4)
+                d
+       y(4 − y) B4 (y) = (2 − y)B4 (y) + (4 − y)B2 (y) − 2y(4 − y),
+               dy
+                d
+      2y(4 − y) B5 (y) = (4 − y)B5 (y) − 2B2 (y) + 4y),
+               dy
+But now let us differentiate (12.0.3) to get
+                                              5
+                      B3 (y)      B4 (y) X
+                 a0          + a1       =     bi (y)Bi′ (y) + b′i (y)Bi (y).    (12.0.5)
+                        y           y     i=1
+
+We see from equation (12.0.4) and equating the coefficients of B4 (y) and B3 (y)
+respectively (and using the linear independence of Bi (y) for i = 1, . . . , 5 that
+                            a0
+                               = b′3 (y),
+                            y
+                                                                                 (12.0.6)
+                            a1              (2 − y)
+                               = b′4 (y) +          b4 (y).
+                            y              y(4 − y)
+From the former equation we get (up to constant)
+                                     b3 (y) = a0 log(y),
+which, since b3 (y) ∈ Q(y), can only happen if a0 = 0. We may also write the latter
+equation as
+                         p
+                       a1 y(4 − y)      d        p        
+                                     =      b3 (y) y(4 − y)
+                             y         dy
+But the integral of the left-hand side is not algebraic (if a1 ̸= 0) but the integral
+of the right-hand side is, so once more this can only happen when a1 = 0, and the
+linear independence is established.                                                □
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                   167
+
+
+
+
+                                      δ               β
+
+                                  0   α           1
+
+
+
+
+                    Figure 12.0.7. The path γ = α−1 β −1 δβα
+
+
+12.1. Linear Independence of pure functions and Zagier functions. Recall
+from Definition 11.2.1 that
+                                                 
+                                               x
+                            G(x) = H(x) + H         .
+                                              x−1
+We also let                                         
+                                                 x
+                      GA (x) = HA (x) + HA             ∈ ZJxK,
+                                               x−1
+which is a homogenous solution to a degree 4 ODE (given explicitly in equa-
+tion (12.1.5) below). Our final functional linear independence result is as follows:
+Lemma 12.1.1 (14 functions). The seven functions
+                       G(y) − G(0)             G(y) − G(0) − G′ (0)y
+        Z           Z                        Z
+           G(y) dy,                      dy,                         dy,
+                               y                       y2
+           G(y), G′ (y), G′′ (y), G′′′ (y),
+together with the seven functions Bi (y) for i = 1, . . . , 7, are linearly independent
+over C(y).
+Remark 12.1.2. It is easy enough to discover Lemma 12.1.1 experimentally. A
+collection of power series Ai (x) which satisfy a linear relation over C(y) also satisfy
+a linear relation with coefficients in C[y], and thus with coefficients which are
+polynomials of degree ≤ D for some D ∈ N>0 . But the question as to whether
+there exists such a relation for any given D is equivalent to the vanishing of the
+determinant of an explicitly computable matrix. Once one establishes that there
+are no such linear relations for D of moderate size (say D = 20), one is sufficiently
+convinced the result is true and then one writes down a proof. We admit that this
+is how we arrived at both Lemma 12.1.1 and Lemma 14.3.1, even though there is
+most likely a higher level proof which better explains the precise numerology. See
+also Remark 12.1.12.                                                                  △
+Proof. Since the Bi (y) are linearly independent by Lemma 12.0.1, any dependence
+must include at least one of the terms above with a non-zero coefficient. Let γ
+denote a path which first traverses 4, then −1/72, then 4 in the opposite direction,
+and then back to 0. The function G(y) is replaced by G(y),b     which is a solution
+to the same non-homogenous differential equation at G(y). On the other hand,
+168                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+the functions Bbn (y) = Bn (y) remain invariant Since G(y) ̸= G(y),     b    we obtain an
+equivalent relation between the functions
+
+                            G(y) − G(0)               G(y) − G(0) − G′ (0)y
+            Z            Z b                        Z b
+               G(y)
+               b    dy,                         dy,                         dy,
+                                     y                        y2
+               G(y),
+               b              b ′′ (y), G
+                     b ′ (y), G
+                     G                  b ′′′ (y)
+
+and the Bi (y) with the same coefficients. Hence, with ∆ = G(y)
+                                                              b     − G(y), we obtain
+a non-zero C(y)-linear relationship between the seven functions
+          Z           Z            Z
+                         ∆(y)         ∆(y)
+             ∆(y) dy,          dy,         dy, ∆(y), ∆′ (y), ∆′′ (y), ∆′′′ (y)
+                           y           y2
+But ∆(y) is now a homogenous solution to the corresponding degree 4 ODE which
+is irreducible, and so by replacing ∆(y) by its translates under elements of the
+monodromy group π1 (P1 ∖ {0, −1/72, 4, ∞}), we deduce that the corresponding
+linear relation must hold for any such ∆(y), including in particular the holomorphic
+solution ∆(y) = GA (y).
+   Assume such a linear relation exists. After scaling, we may assume that the
+coefficients lie in C(y) Using (12.0.2) again:
+                     Z                   Z
+             d                         ′
+                  A(y) F (y) dy = A (y) F (y) dy + A(y)F (y),                (12.1.3)
+            dy
+after repeated differentiation we may assume that the coefficients of the three in-
+tegral terms are all constants, and that at least one is non-zero. Hence there exists
+a relation
+     Z                  Z                  Z                 3
+                           GA (y)              GA (y)       X          (i)
+  a0 GA (y) dy + a−1              dy + a−2            dy  =     bi (y)GA (y). (12.1.4)
+                             y                   y2         i=0
+
+Note that we cannot insist that the bi (y) ∈ C[y], for two reasons. First is that the
+derivative terms from the integrals involve GA (y) divided by powers of y. But also
+                       (3)                (4)
+when differentiating GA (y) we obtain GA (y), and to write this in terms of lower
+                      (i)
+order derivatives in GA (y) we need to divide by the leading term in the differential
+equation. In fact, GA (x) satisfies the ODE
+                                 4
+                                              (i)
+                                 X
+                                       ci (y)GA (y) = 0,
+                                 i=0
+
+where ci (y) are defined as follows:
+
+c0 (y) = − 18(3 + 126y − 712y 2 + 360y 3 ),
+c1 (y) = 2(−2 − 2761y + 141632y 2 − 280328y 3 + 176412y 4 − 95616y 5 + 20736y 6 ),
+c2 (y) = 2y(−34 − 6353y + 690355y 2 − 1065613y 3 + 867876y 4 − 438336y 5 + 72576y 6 ),
+c3 (y) = 2(−4 + y)y 2 (10 + 204y − 118195y 2 + 146946y 3 − 142848y 4 + 41472y 5 ),
+c4 (y) = (−4 + y)2 y 3 (1 + 72y)(−1 + 118y − 122y 2 + 144y 3 ).
+                                                                                (12.1.5)
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                          169
+
+
+Thus we can assume that bi (y) ∈ C[y, c4 (y)−1 ]. Differentiating equation (12.1.4)
+one more time gives an identity
+                                                    3
+                     GA (y)       GA (y) X ′         (i)            (i+1)
+ a0 GA (y) + a−1            + a−2       =     bi (y)GA (y) + bi (y)GA (y). (12.1.6)
+                       y           y2     i=0
+
+We rewrite (12.1.6) as
+                 GA (y)    GA (y)
+     aGA (y) + b        +c
+                   y         y2
+        3                  3
+                  (i)                  (i)
+        X                 X
+      =   b′i (y)GA (y) +     bi−1 (y)GA (y) + b3 (y)G(4) (y),                            (12.1.7)
+          i=0                     i=1
+          3                       3                           3
+          X             (i)
+                                  X              (i)
+                                                             X   ci (y)
+      =         b′i (y)GA (y) +         bi−1 (y)GA (y) −                b3 (y)G(i) (y),
+          i=0                     i=1                        i=0
+                                                                 c4 (y)
+and thus we deduce the simultaneous equations
+                                          c3 (y)
+                      b′3 (y) + b2 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                          c2 (y)
+                      b′2 (y) + b1 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                                                                          (12.1.8)
+                                          c1 (y)
+                      b′1 (y) + b0 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                          c0 (y)                       a−1  a−2
+                                b′0 (y) −        b3 (y) =    a0 +          + 2 ,
+                                          c4 (y)                        y    y
+Recall that b3 (y) ∈ C[y, c4 (y)−1 ]. Moreover, given b3 (y), one can inductively solve
+for bi for i ∈ {2, 1, 0} from the equation
+                                           ci+1 (y)
+                               bi (y) =             b3 (y) − b′i+1 (y).
+                                            c4 (y)
+Our strategy is as follows. Since b3 (y) ∈ C(y), we can consider the power series
+expansion of b3 (y) around ∞ and around any point α ∈ C. Then, by considering
+the final equation, we obtain an explicit bound on the order of any pole of b3 (y)
+at α (note that b3 (y) will be holomorphic unless α = ∞ or is a root of c4 (y)). But
+that confines b3 (y) to be a rational function such that divisor (b3 (y)) + D ≥ 0 for
+an explicit divisor D supported at the roots of c4 (y). This is a finite dimensional
+(explicitly computable) vector space, and then we can solve for all possible b3 (y)
+using linear algebra. Another way to view this is to think of this system as a (non-
+homogenous) ODE in b3 (y), and we are computing the (possible) local expansions
+around any point using the Frobenius method. Explicitly, with α ̸= ∞, and
+                                                ∞
+                                                X
+                                    b3 (y) =           ri (y − α)i ,
+                                                i=N
+
+(with N = Nα and ri − = ri,α , and suppressing the subscript below) then:
+    (1) If α = 0, the last equality becomes:
+                        a−1  a−2  −1
+                 a0 +       + 2 =    (3 − N )2 (5 − 2N )2 rN y N −4 + . . .
+                         y    y    4
+170                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+      (2) If α = 4, the last equality becomes:
+             a−1  a−2  −1
+      a0 +       + 2 =    (3 − N )(2 − N )(5 − 2N )(3 − 2N )rN (y − 4)N −4 + . . .
+              y    y    4
+      (3) If α = −1/72, the last equality becomes:
+                a−1  a−2
+          a0 +      + 2 = (3 − N )2 (2 − N )(1 − N )rN (y + 1/72)N −4 + . . .
+                 y    y
+      (4) If α is a root β of 144y 3 − 122y 2 + 118y − 1 = 0, then
+              a−1     a−2
+        a0 +       + 2 = (3 − N )(2 − N )(1 − N )(1 + N )rN (y − β)N −4 + . . .
+               y       y
+      (5) At α → ∞, with
+                                                     ∞
+                                                     X
+                                      b3 (y) = y N         ri y −i ,
+                                                     i=N
+             we have
+                         a−1  a−2  −1
+                  a0 +       + 2 =    (3 − N )2 (5 − 2N )2 rN y N −4 + . . .
+                          y    y    4
+From this we deduce that:
+                                               N0 ≥ 2
+                                               N4 ≥ 2
+                                          N−1/72 ≥ 1                            (12.1.9)
+                                              Nβ ≥ − 1
+                                              N∞ ≤ 4.
+From this, it follows that
+                                        y 2 (y − 4)2 (y + 1/72)
+                          b3 (y) =                                Q(y),        (12.1.10)
+                                     (144y 3 − 122y 2 + 118y − 1)
+where Q(y) is a polynomial of degree at most 2. However, if we write
+                                     Q(y) = q0 + q1 y + q2 y 2 ,
+then we find that
+                     a−1  a−2        52542464y 12 q2 + . . .
+              a0 +       + 2 =                                                 (12.1.11)
+                      y    y      2
+                               36y (−1 + 118y − 122y 2 + 144y 3 )4
+where the numerator on the right-hand side is a degree 12 polynomial with coeffi-
+cients linear in Zq0 ⊕ Zq1 ⊕ Zq2 . But now by linear algebra one can directly check
+that there are no choices of the parameters qi to even make the numerator vanish
+to order (at least) one at a non-zero root of the denominator. Hence no such b3 (y)
+exists, and we are done.                                                         □
+
+Remark 12.1.12. Suppose instead we had tried to prove the (false!) linear inde-
+pendence of the seven functions Bi (y) together with
+                      G(y) − G(0)         G(y) − G(0) − G′ (0)y
+       Z           Z                   Z
+          G(y) dy,                 dy,                               dy,
+                           y                         y2
+          G(y) − G(0) − G′ (0)y − G′′ (0)y 2
+       Z
+                                             , dy, G(y), G′ (y), G′′ (y), G′′′ (y),
+                         y3
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )               171
+
+
+that is, adding another integral. Then the argument would have proceeded exactly
+as above except now we could only deduce that N0 ≥ 1 rather than N0 ≥ 2. Then,
+writing
+                                   q−1
+                           Q(y) =      + q0 + q1 y + q2 y 2 ,
+                                    y
+just as in equation (12.1.11), we would have found that
+                 a−1  a−2 a−3        52542464y 13 q2 + . . .
+          a0 +       + 2 + 3 =
+                  y    y   y      3
+                               36y (−1 + 118y − 122y 2 + 144y 3 )4
+There is now a unique choice of the parameters qi up to scalar which allows us to
+remove a single factor of the numerator, namely (up to scalar)
+                                   1
+                          Q(y) =     − 278 − 844y − 4644y 2 .
+                                   y
+With this choice of b3 (y) as coming from equation (12.1.10), the powers of (144y 3 −
+122y 2 + 118y − 1) disappear completely, and we arrive at the equality
+                                a−1  a−2 a−3 676  2
+                         a0 +       + 2 + 3 = 2 + 3.
+                                 y    y   y  9y  y
+This, of course, does now have solutions. This reflects that there is a linear depen-
+dence between these functions. In fact, there is already a C(y)-linear dependence
+between the functions
+         Z             Z
+            GA (y)       GA (y)
+                   dy,          dy, GA (y), G′A (y), G′′A (y), G′′′
+                                                                A (y), and 1.
+              y2           y3
+Note as another consistency check with the solution a−2 = 676/9 and a−3 = 2, we
+have (in analogy with equation 12.1.6) that
+                     GA (y)       GA (y)       GA (y)   676 GA (y)    GA (y)
+   a0 GA (y) + a−1          + a−2        + a−3        =            +2
+                       y           y2           y3        9  y2         y3
+                                                        4    866 68728
+                                                      = 3+ 2 −            + ...
+                                                        y    9y       3
+with no 1/y term, consistent with it being a derivative of a meromorphic function
+at y = 0.                                                                      △
+
+     13. Proof of the linear independence of 1, ζ(2), and L(2, χ−3 )
+   In this section, we complete the proof of Theorem A using the results of Appen-
+dix A. The argument is by a contradiction, by proving that a certain G-function
+cannot exist. Suppose for the contradiction that there exists a Q-linear relation
+among the periods 1, ζ(2), L(2, χ−3 ), which we could write as
+                          a + b · L(2, χ−3 )/2 + c · ζ(2)/4 = 0              (13.0.1)
+with some rational integers a, b, c ∈ Z, not all zero. Proposition 11.1.8 then con-
+structs a certain G-function H(x) ∈ QJxK with denominator type [1, . . . , n]2 and
+continuing holonomically on P1 ∖ {0, 1/9, 1, ∞}.
+   Now § 11.2 converts the G-function H(x) to a G-function G(y) := Sym+ H(x) ∈
+QJyK in the symmetrization coordinate
+                          y := x + x/(x − 1) = x2 /(x − 1).
+172                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma 11.2.2 shows that the denominator type of G(y) ∈ QJyK is [1, . . . , 2n]2 .
+On the other hand, G(y) is holonomic on y ∈ P1 ∖ {0, 4, ∞, −1/72}, holomorphic
+on y ∈ C ∖ [4, ∞), and with Z/2 local monodromy around y = 4.
+  We apply Theorem 6.0.2 with the 14 × 2 denominators type array
+                                                            t
+                0 2 2 2 2 2 2 2 2 2 2 2 2 2
+        b :=                                                           (13.0.2)
+                0 0 0 2 2 2 2 2 2 2 2 2 2 2
+and the integrations vector
+
+                          e := (0, 0, 1; 0, 0, 0, 0, 0, 0; 1, 1, 1, 1, 1),
+
+taking over in (6.0.9) after replacing the letter x there by the symmetrization letter
+
+                            y := x + x/(x − 1) = x2 /(x − 1);
+
+and taking the following ordered list of functions {fi }14
+                                                        i=1 , see (10.1.2), (10.1.4), and
+(10.2.1):
+           B1 (y), B2 (y), B3 (y); B4 (y), B5 (y), G(y), G′ (y), G′′ (y), G′′′ (y),
+                                    G(y) − G(0)           G(y) − G(0) − G′ (0)y
+                      Z           Z                    Z
+      B6 (y), B7 (y),   G(y) dy,                   dy,                              dy.
+                                           y                          y2
+The Q(y)-linear independence of these 14 functions was proved in Lemma 12.1.1.
+The denominator types were computed in Lemma 10.2.2. For the integrals, we
+note that the shift in indexing caused by dividing by powers of y means that
+these functions are not literally of denominator type n[1, 2, . . . , 2n]2 but rather
+of type n[1, 2, . . . , 2n + 3]2 ; this is not an issue by Remark 6.0.12.
+   Let us denote by HY0 (2) the 14-dimensional Q(y)-linear span of these functions.
+For the analytic maps φ figuring in the various holonomy bounds we have developed,
+we take restrictions φ(rz) of the holomorphic mapping φ ∈ O(D) of Lemma A.4.4.
+From Corollary 9.0.19 used with Σ0Y0 (2) := {−1/72}, Σ1Y0 (2) := ∅, φY0 (2) := φ,
+and UY0 (2) a sufficiently small open neighborhood of the line segment [−1/72, 0],
+we have the analyticity φ∗ HY0 (2) ⊂ M(D).
+
+
+
+
+          Figure 13.0.3. The ξ ∈ [1.325, 3] fragment of the graph of (6ξ +
+          Iξ14 (ξ))/98, displaying the interval ξ ∈ [2, 13/6] as the identical
+          minimizer.
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                173
+
+
+  For the denominator rates, we calculate
+             1 · 0 + (3 + 5) · 2 + (7 + 9 + 11 + 13 + . . . + 27) · 4    191
+    τ ♭ (b) =                                                         =       (13.0.4)
+                                        142                                49
+and, from Figure 13.0.3 which reveals ξ ∈ [2, 13/6] to be the identical minimizer,
+                                      ( m                           )
+                  ♯       2              X
+                                                                  m
+                τ (e) = 2 min          ξ       ei + max ei Iξ (ξ)
+                         m ξ∈[0,m]       i=1
+                                                     1≤i≤m
+                                  (               )                           (13.0.5)
+                                    6ξ + Iξ14 (ξ)     12 + I214 (2)   27
+                      = min                         =               =    .
+                         ξ∈[0,14]       98                98          80
+  We obtain
+                                191 27        16603
+       τ (b; e) = τ ♭ (b) + τ ♯ (e) =+      =       = 4.235459 . . . ,     (13.0.6)
+                                 49      80    3920
+arriving at the number 191   27    16603
+                        49 + 80 = 3920 in (A.5.1).
+   We can now connect to our holonomy bounds to prove Theorem A. By Proposi-
+tion 11.1.8 and Lemma 12.1.1, we have a set of m = 14 (holonomic) functions lin-
+early independent over Q(y) that are in QJyK with the denominator types (13.0.2),
+contingent upon the Q-linear dependency (13.0.1). Hence it suffices to prove that
+(any one of) our holonomy bounds yields m < 14: this will refute (13.0.1).
+   For example:
+Proof via Theorem 7.0.1. Applying Theorem 7.0.1, we obtain the upper bound m ≤
+13.9938 . . ., as computed in (A.5.1).                                       □
+Proof via Theorem 6.0.2. Apply Theorem 6.0.2 with l = 1, r0 = e−1/2 , γ1 = 14 ·
+0.209 = 2.926; we pick this particular parameter based on the numerics in Exam-
+ple 7.6.8. In this case, we have
+                            Z 1
+                                      ∗
+                                2t · gφ,γ (t) dt = 11.316, . . .
+                               0
+and thus the holonomy bound reads
+                                     1            1
+                     11.316 . . . +    · 2.9262 ·
+                                    14            2
+m≤                                                           = 13.730 . . . < 14.
+               5448339453535586608000000000            27 191
+     log 256 ·                                      −     +
+               8658833407565631122430056127            80   49
+                                                                                 □
+Proof via Theorem 7.1.6. With the choice of parameters as in Example 7.4.6 with r0 =
+e−1/2 and r1 = 1, we obtain the bound (see equation 7.4.7)
+                                   m ≤ 13.7206 . . . < 14.                          □
+   Of course we may also apply other holonomicity bounds in § 7. See Example 7.4.6
+with four parameters ri rather than two, and Examples 7.5.9 and 7.6.8.
+Remark 13.0.7. Had we stayed in the cruder           framework e = 0 of Theorem 2.5.1
+without added integrals, we would have had to        augment b to the array
+                                                                      t
+                   0 2 2 2 2 2 2 2                   2 2 2 2 2 2
+          b′ :=  0 0 0 2 2 2 2 2                    2 2 2 2 2 2  .
+                   0 0 1 0 0 0 0 0                   0 1 1 1 1 1
+174                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Note that although this b′ is not of the particular form in Theorem 6.0.2, we could
+apply the more general denominator formula (8.0.2) in Theorem 8.0.1. However, for
+the sake of simplicity, we give a good enough estimate of τ ♭♭ (b′ ) which is sufficient
+to illustrate the necessity of working with nonzero e. On one hand, the upper
+bound argument in Remark 8.0.6 applies to those b′ such that every column in b′
+has two values including one of which is 0. Therefore we have τ ♭♭ (b′ ) ≤ (2 + 2 +
+1) − 1412 (12 · 2 + 32 · 2 + 82 · 1) = 32
+                                       7 = 4.571 . . ..
+   On the other hand, by the definition of (8.0.2), we have an easy lower bound
+by only considering n satisfying that nj1 > nj2 implies ij1 ≥ ij2 and then we
+have τ ♭♭ (b′ ) is at least
+1 · 0 + 3 · 2 + 5 · (2 + 1) + (7 + 9 + . . . + 17) · (2 + 2) + (19 + 21 + 23 + 25 + 27) · (2 + 2 + 1)
+                                                   142
+       884
+    =       = 4.510 . . . ,
+       196
+a significantly worse value than (13.0.6).                                                     △
+
+                          14. Products of two logarithms
+   In this section, we apply our methods to certain products of logarithms. Baker’s
+theorem [Bak22] gives a definitive result for linear forms in logarithms, even over Q,
+but we still do not know how to show that log 2 · log 3 or π · log 2 is irrational. While
+our methods cannot (as yet!) handle those cases either, we do prove Theorem C,
+which we recall again here:
+                                                                      m            1
+Theorem 14.0.1. Let m, n ∈ Z ∖ {−1, 0} be integers such that              − 1 < 6.
+                                                                       n         10
+Then                                                
+                                       1             1
+                             log 1 +        log 1 +                           (14.0.2)
+                                       m            n
+is irrational. Moreover, for m ̸= n, the following are linearly independent over Q:
+                                                               
+                   1                 1                 1            1
+      1, log 1 +       , log 1 +         , log 1 +         log 1 +      .     (14.0.3)
+                   m                 n                m             n
+Remark 14.0.4. We could certainly improve the constant 10−6 by our meth-
+ods, but some computation suggests that it is unlikely one could do better than
+(say) 10−4 , and most likely not even that far; we make this choice of constant for
+its relative simplicity.                                                         △
+   The degenerate case of m = n is a trivial consequence of the transcendence
+of log r for r > 0 in Q ∖ {1}, and so we shall assume that m ̸= n. We begin by
+recalling a proof of the irrationality of
+                                              
+                                             1
+                                     log 1 +                           (14.0.5)
+                                             m
+for m ≥ 1 from [AR79, AR80, Chu79, vdP79, vdP80]), based on the method of
+Apéry limits. It is closely related to the construction we recounted in Basic Re-
+mark 2.10.1, and also to the Hermite–Padé construction in § 3.3.7 for the logarithm
+function.
+   Let a > 1 be an integer. The function
+                                                    ∞
+                                        1          X
+                      A(a, x) := √               =     un (a)xn              (14.0.6)
+                                   1 − 2ax + x2    n=0
+

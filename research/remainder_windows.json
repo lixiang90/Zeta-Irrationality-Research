@@ -1,0 +1,1017 @@
+{
+  "status": "Exact finite contents; leading-envelope residuals are diagnostics, not finite/asymptotic gain certificates.",
+  "rows": [
+    {
+      "source": "joint_cache_K40_N1.json",
+      "K": 40,
+      "N": 1,
+      "alpha": "1/40",
+      "score": 0.8630928110210703,
+      "score_ball": null,
+      "arithmetic_exact": 2.8378712125386762,
+      "real_exact_numeric": -1.9747784015176058,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 11,
+          "q": 3,
+          "x": "40/11",
+          "actual_gauss": -219,
+          "projection_lower_bound": -233,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -233,
+          "finite_residual": 14,
+          "leading_candidate": "inner:1",
+          "leading_raw_estimate": "-237",
+          "leading_residual": "18",
+          "residual_over_K": "9/20",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 13,
+          "q": 3,
+          "x": "40/13",
+          "actual_gauss": -205,
+          "projection_lower_bound": -214,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -214,
+          "finite_residual": 9,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-214",
+          "leading_residual": "9",
+          "residual_over_K": "9/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 17,
+          "q": 2,
+          "x": "40/17",
+          "actual_gauss": -176,
+          "projection_lower_bound": -181,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -181,
+          "finite_residual": 5,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-184",
+          "leading_residual": "8",
+          "residual_over_K": "1/5",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 19,
+          "q": 2,
+          "x": "40/19",
+          "actual_gauss": -159,
+          "projection_lower_bound": -163,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -163,
+          "finite_residual": 4,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-166",
+          "leading_residual": "7",
+          "residual_over_K": "7/40",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "7",
+          "max_leading_residual": "8",
+          "max_residual_over_K": "1/5"
+        },
+        {
+          "q": 3,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "9",
+          "max_leading_residual": "18",
+          "max_residual_over_K": "9/20"
+        }
+      ]
+    },
+    {
+      "source": "joint_cache_K80_N2.json",
+      "K": 80,
+      "N": 2,
+      "alpha": "1/40",
+      "score": 0.9470891382803717,
+      "score_ball": null,
+      "arithmetic_exact": 3.0364752830747928,
+      "real_exact_numeric": -2.089386144794421,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 13,
+          "q": 6,
+          "x": "80/13",
+          "actual_gauss": -355,
+          "projection_lower_bound": -522,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -522,
+          "finite_residual": 167,
+          "leading_candidate": "inner:7",
+          "leading_raw_estimate": "-789/2",
+          "leading_residual": "79/2",
+          "residual_over_K": "79/160",
+          "harmonic_zero_indices": [
+            4
+          ]
+        },
+        {
+          "p": 17,
+          "q": 4,
+          "x": "80/17",
+          "actual_gauss": -418,
+          "projection_lower_bound": -494,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -494,
+          "finite_residual": 76,
+          "leading_candidate": "inner:4",
+          "leading_raw_estimate": "-445",
+          "leading_residual": "27",
+          "residual_over_K": "27/80",
+          "harmonic_zero_indices": [
+            3
+          ]
+        },
+        {
+          "p": 19,
+          "q": 4,
+          "x": "80/19",
+          "actual_gauss": -414,
+          "projection_lower_bound": -478,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -478,
+          "finite_residual": 64,
+          "leading_candidate": "inner:3",
+          "leading_raw_estimate": "-903/2",
+          "leading_residual": "75/2",
+          "residual_over_K": "15/32",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 23,
+          "q": 3,
+          "x": "80/23",
+          "actual_gauss": -454,
+          "projection_lower_bound": -462,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -462,
+          "finite_residual": 8,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-464",
+          "leading_residual": "10",
+          "residual_over_K": "1/8",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 29,
+          "q": 2,
+          "x": "80/29",
+          "actual_gauss": -415,
+          "projection_lower_bound": -418,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -418,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-418",
+          "leading_residual": "3",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 31,
+          "q": 2,
+          "x": "80/31",
+          "actual_gauss": -391,
+          "projection_lower_bound": -394,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -394,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-395",
+          "leading_residual": "4",
+          "residual_over_K": "1/20",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 37,
+          "q": 2,
+          "x": "80/37",
+          "actual_gauss": -335,
+          "projection_lower_bound": -338,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -338,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-341",
+          "leading_residual": "6",
+          "residual_over_K": "3/40",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 3,
+          "unflagged_count": 3,
+          "min_leading_residual": "3",
+          "max_leading_residual": "6",
+          "max_residual_over_K": "3/40"
+        },
+        {
+          "q": 3,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "10",
+          "max_leading_residual": "10",
+          "max_residual_over_K": "1/8"
+        },
+        {
+          "q": 4,
+          "count": 2,
+          "unflagged_count": 1,
+          "min_leading_residual": "75/2",
+          "max_leading_residual": "75/2",
+          "max_residual_over_K": "15/32"
+        }
+      ]
+    },
+    {
+      "source": "remainder_cache_K120_N3.json",
+      "K": 120,
+      "N": 3,
+      "alpha": "1/40",
+      "score": 0.9649962584986751,
+      "score_ball": "[0.964996258498675130220347128859 +/- 2.33e-31]",
+      "arithmetic_exact": 3.094789292146195,
+      "real_exact_numeric": -2.1297930336475197,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 17,
+          "q": 7,
+          "x": "120/17",
+          "actual_gauss": -506,
+          "projection_lower_bound": -814,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -814,
+          "finite_residual": 308,
+          "leading_candidate": "inner:10",
+          "leading_raw_estimate": "-558",
+          "leading_residual": "52",
+          "residual_over_K": "13/30",
+          "harmonic_zero_indices": [
+            3
+          ]
+        },
+        {
+          "p": 19,
+          "q": 6,
+          "x": "120/19",
+          "actual_gauss": -551,
+          "projection_lower_bound": -780,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -780,
+          "finite_residual": 229,
+          "leading_candidate": "inner:7",
+          "leading_raw_estimate": "-1177/2",
+          "leading_residual": "75/2",
+          "residual_over_K": "5/16",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 23,
+          "q": 5,
+          "x": "120/23",
+          "actual_gauss": -595,
+          "projection_lower_bound": -745,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -745,
+          "finite_residual": 150,
+          "leading_candidate": "inner:5",
+          "leading_raw_estimate": "-1267/2",
+          "leading_residual": "77/2",
+          "residual_over_K": "77/240",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 29,
+          "q": 4,
+          "x": "120/29",
+          "actual_gauss": -640,
+          "projection_lower_bound": -713,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -713,
+          "finite_residual": 73,
+          "leading_candidate": "inner:2",
+          "leading_raw_estimate": "-678",
+          "leading_residual": "38",
+          "residual_over_K": "19/60",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 31,
+          "q": 3,
+          "x": "120/31",
+          "actual_gauss": -678,
+          "projection_lower_bound": -723,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -723,
+          "finite_residual": 45,
+          "leading_candidate": "inner:2",
+          "leading_raw_estimate": "-706",
+          "leading_residual": "28",
+          "residual_over_K": "7/30",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 37,
+          "q": 3,
+          "x": "120/37",
+          "actual_gauss": -657,
+          "projection_lower_bound": -666,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -666,
+          "finite_residual": 9,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-666",
+          "leading_residual": "9",
+          "residual_over_K": "3/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 41,
+          "q": 2,
+          "x": "120/41",
+          "actual_gauss": -647,
+          "projection_lower_bound": -650,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -650,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-657",
+          "leading_residual": "10",
+          "residual_over_K": "1/12",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 43,
+          "q": 2,
+          "x": "120/43",
+          "actual_gauss": -599,
+          "projection_lower_bound": -633,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -633,
+          "finite_residual": 34,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-633",
+          "leading_residual": "34",
+          "residual_over_K": "17/60",
+          "harmonic_zero_indices": [
+            2
+          ]
+        },
+        {
+          "p": 47,
+          "q": 2,
+          "x": "120/47",
+          "actual_gauss": -582,
+          "projection_lower_bound": -585,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -585,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-588",
+          "leading_residual": "6",
+          "residual_over_K": "1/20",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 53,
+          "q": 2,
+          "x": "120/53",
+          "actual_gauss": -528,
+          "projection_lower_bound": -531,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -531,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-534",
+          "leading_residual": "6",
+          "residual_over_K": "1/20",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 59,
+          "q": 2,
+          "x": "120/59",
+          "actual_gauss": -481,
+          "projection_lower_bound": -484,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -484,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-487",
+          "leading_residual": "6",
+          "residual_over_K": "1/20",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 5,
+          "unflagged_count": 4,
+          "min_leading_residual": "6",
+          "max_leading_residual": "10",
+          "max_residual_over_K": "1/12"
+        },
+        {
+          "q": 3,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "9",
+          "max_leading_residual": "28",
+          "max_residual_over_K": "7/30"
+        },
+        {
+          "q": 4,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "38",
+          "max_leading_residual": "38",
+          "max_residual_over_K": "19/60"
+        },
+        {
+          "q": 5,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "77/2",
+          "max_leading_residual": "77/2",
+          "max_residual_over_K": "77/240"
+        },
+        {
+          "q": 6,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "75/2",
+          "max_leading_residual": "75/2",
+          "max_residual_over_K": "5/16"
+        }
+      ]
+    },
+    {
+      "source": "remainder_cache_K160_N4.json",
+      "K": 160,
+      "N": 4,
+      "alpha": "1/40",
+      "score": 0.9754065394912425,
+      "score_ball": "[0.975406539491242473629284828616 +/- 4.39e-31]",
+      "arithmetic_exact": 3.125846282070143,
+      "real_exact_numeric": -2.1504397425789006,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 19,
+          "q": 8,
+          "x": "160/19",
+          "actual_gauss": -616,
+          "projection_lower_bound": -1134,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -1134,
+          "finite_residual": 518,
+          "leading_candidate": "inner:13",
+          "leading_raw_estimate": "-666",
+          "leading_residual": "50",
+          "residual_over_K": "5/16",
+          "harmonic_zero_indices": [
+            7
+          ]
+        },
+        {
+          "p": 23,
+          "q": 6,
+          "x": "160/23",
+          "actual_gauss": -699,
+          "projection_lower_bound": -1060,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -1060,
+          "finite_residual": 361,
+          "leading_candidate": "inner:9",
+          "leading_raw_estimate": "-1513/2",
+          "leading_residual": "115/2",
+          "residual_over_K": "23/64",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 29,
+          "q": 5,
+          "x": "160/29",
+          "actual_gauss": -808,
+          "projection_lower_bound": -1005,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -1005,
+          "finite_residual": 197,
+          "leading_candidate": "inner:5",
+          "leading_raw_estimate": "-836",
+          "leading_residual": "28",
+          "residual_over_K": "7/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 31,
+          "q": 5,
+          "x": "160/31",
+          "actual_gauss": -800,
+          "projection_lower_bound": -988,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -988,
+          "finite_residual": 188,
+          "leading_candidate": "inner:5",
+          "leading_raw_estimate": "-1693/2",
+          "leading_residual": "93/2",
+          "residual_over_K": "93/320",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 37,
+          "q": 4,
+          "x": "160/37",
+          "actual_gauss": -863,
+          "projection_lower_bound": -964,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -964,
+          "finite_residual": 101,
+          "leading_candidate": "inner:3",
+          "leading_raw_estimate": "-1797/2",
+          "leading_residual": "71/2",
+          "residual_over_K": "71/320",
+          "harmonic_zero_indices": [
+            4
+          ]
+        },
+        {
+          "p": 41,
+          "q": 3,
+          "x": "160/41",
+          "actual_gauss": -904,
+          "projection_lower_bound": -963,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -963,
+          "finite_residual": 59,
+          "leading_candidate": "inner:2",
+          "leading_raw_estimate": "-940",
+          "leading_residual": "36",
+          "residual_over_K": "9/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 43,
+          "q": 3,
+          "x": "160/43",
+          "actual_gauss": -896,
+          "projection_lower_bound": -952,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -952,
+          "finite_residual": 56,
+          "leading_candidate": "inner:1",
+          "leading_raw_estimate": "-948",
+          "leading_residual": "52",
+          "residual_over_K": "13/40",
+          "harmonic_zero_indices": [
+            2
+          ]
+        },
+        {
+          "p": 47,
+          "q": 3,
+          "x": "160/47",
+          "actual_gauss": -907,
+          "projection_lower_bound": -916,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -916,
+          "finite_residual": 9,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-916",
+          "leading_residual": "9",
+          "residual_over_K": "9/160",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 53,
+          "q": 3,
+          "x": "160/53",
+          "actual_gauss": -853,
+          "projection_lower_bound": -862,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -862,
+          "finite_residual": 9,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-862",
+          "leading_residual": "9",
+          "residual_over_K": "9/160",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 59,
+          "q": 2,
+          "x": "160/59",
+          "actual_gauss": -821,
+          "projection_lower_bound": -824,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -824,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-824",
+          "leading_residual": "3",
+          "residual_over_K": "3/160",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 61,
+          "q": 2,
+          "x": "160/61",
+          "actual_gauss": -797,
+          "projection_lower_bound": -800,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -800,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-800",
+          "leading_residual": "3",
+          "residual_over_K": "3/160",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 67,
+          "q": 2,
+          "x": "160/67",
+          "actual_gauss": -739,
+          "projection_lower_bound": -742,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -742,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-745",
+          "leading_residual": "6",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 71,
+          "q": 2,
+          "x": "160/71",
+          "actual_gauss": -703,
+          "projection_lower_bound": -706,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -706,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-709",
+          "leading_residual": "6",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 73,
+          "q": 2,
+          "x": "160/73",
+          "actual_gauss": -685,
+          "projection_lower_bound": -688,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -688,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-691",
+          "leading_residual": "6",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 79,
+          "q": 2,
+          "x": "160/79",
+          "actual_gauss": -645,
+          "projection_lower_bound": -648,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -648,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-651",
+          "leading_residual": "6",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 6,
+          "unflagged_count": 6,
+          "min_leading_residual": "3",
+          "max_leading_residual": "6",
+          "max_residual_over_K": "3/80"
+        },
+        {
+          "q": 3,
+          "count": 4,
+          "unflagged_count": 3,
+          "min_leading_residual": "9",
+          "max_leading_residual": "36",
+          "max_residual_over_K": "9/40"
+        },
+        {
+          "q": 5,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "28",
+          "max_leading_residual": "93/2",
+          "max_residual_over_K": "93/320"
+        },
+        {
+          "q": 6,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "115/2",
+          "max_leading_residual": "115/2",
+          "max_residual_over_K": "23/64"
+        }
+      ]
+    },
+    {
+      "source": "joint_cache_K40_N3.json",
+      "K": 40,
+      "N": 3,
+      "alpha": "3/40",
+      "score": 0.7964828699933858,
+      "score_ball": null,
+      "arithmetic_exact": 1.4518541793880262,
+      "real_exact_numeric": -0.6553713093946405,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 11,
+          "q": 3,
+          "x": "40/11",
+          "actual_gauss": -121,
+          "projection_lower_bound": -158,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -158,
+          "finite_residual": 37,
+          "leading_candidate": "inner:3",
+          "leading_raw_estimate": "-285/2",
+          "leading_residual": "43/2",
+          "residual_over_K": "43/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 13,
+          "q": 3,
+          "x": "40/13",
+          "actual_gauss": -144,
+          "projection_lower_bound": -156,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -156,
+          "finite_residual": 12,
+          "leading_candidate": "projection",
+          "leading_raw_estimate": "-161",
+          "leading_residual": "17",
+          "residual_over_K": "17/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 17,
+          "q": 2,
+          "x": "40/17",
+          "actual_gauss": -138,
+          "projection_lower_bound": -145,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -145,
+          "finite_residual": 7,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-145",
+          "leading_residual": "7",
+          "residual_over_K": "7/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 19,
+          "q": 2,
+          "x": "40/19",
+          "actual_gauss": -123,
+          "projection_lower_bound": -128,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -128,
+          "finite_residual": 5,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-128",
+          "leading_residual": "5",
+          "residual_over_K": "1/8",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "5",
+          "max_leading_residual": "7",
+          "max_residual_over_K": "7/40"
+        },
+        {
+          "q": 3,
+          "count": 2,
+          "unflagged_count": 2,
+          "min_leading_residual": "17",
+          "max_leading_residual": "43/2",
+          "max_residual_over_K": "43/80"
+        }
+      ]
+    },
+    {
+      "source": "joint_cache_K80_N6.json",
+      "K": 80,
+      "N": 6,
+      "alpha": "3/40",
+      "score": 0.8712210280393314,
+      "score_ball": null,
+      "arithmetic_exact": 1.5785230309203682,
+      "real_exact_numeric": -0.7073020028810366,
+      "content_recomputed": true,
+      "rows": [
+        {
+          "p": 13,
+          "q": 6,
+          "x": "80/13",
+          "actual_gauss": -4,
+          "projection_lower_bound": -258,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -258,
+          "finite_residual": 254,
+          "leading_candidate": "inner:11",
+          "leading_raw_estimate": "-93/2",
+          "leading_residual": "85/2",
+          "residual_over_K": "17/32",
+          "harmonic_zero_indices": [
+            4
+          ]
+        },
+        {
+          "p": 17,
+          "q": 4,
+          "x": "80/17",
+          "actual_gauss": -152,
+          "projection_lower_bound": -284,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -284,
+          "finite_residual": 132,
+          "leading_candidate": "inner:7",
+          "leading_raw_estimate": "-186",
+          "leading_residual": "34",
+          "residual_over_K": "17/40",
+          "harmonic_zero_indices": [
+            3
+          ]
+        },
+        {
+          "p": 19,
+          "q": 4,
+          "x": "80/19",
+          "actual_gauss": -194,
+          "projection_lower_bound": -290,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -290,
+          "finite_residual": 96,
+          "leading_candidate": "inner:5",
+          "leading_raw_estimate": "-220",
+          "leading_residual": "26",
+          "residual_over_K": "13/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 23,
+          "q": 3,
+          "x": "80/23",
+          "actual_gauss": -270,
+          "projection_lower_bound": -314,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -314,
+          "finite_residual": 44,
+          "leading_candidate": "inner:3",
+          "leading_raw_estimate": "-290",
+          "leading_residual": "20",
+          "residual_over_K": "1/4",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 29,
+          "q": 2,
+          "x": "80/29",
+          "actual_gauss": -344,
+          "projection_lower_bound": -346,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -346,
+          "finite_residual": 2,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-350",
+          "leading_residual": "6",
+          "residual_over_K": "3/40",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 31,
+          "q": 2,
+          "x": "80/31",
+          "actual_gauss": -323,
+          "projection_lower_bound": -326,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -326,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-326",
+          "leading_residual": "3",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        },
+        {
+          "p": 37,
+          "q": 2,
+          "x": "80/37",
+          "actual_gauss": -251,
+          "projection_lower_bound": -254,
+          "third_lower_bound": null,
+          "best_available_finite_lower_bound": -254,
+          "finite_residual": 3,
+          "leading_candidate": "rank",
+          "leading_raw_estimate": "-254",
+          "leading_residual": "3",
+          "residual_over_K": "3/80",
+          "harmonic_zero_indices": []
+        }
+      ],
+      "summary": [
+        {
+          "q": 2,
+          "count": 3,
+          "unflagged_count": 3,
+          "min_leading_residual": "3",
+          "max_leading_residual": "6",
+          "max_residual_over_K": "3/40"
+        },
+        {
+          "q": 3,
+          "count": 1,
+          "unflagged_count": 1,
+          "min_leading_residual": "20",
+          "max_leading_residual": "20",
+          "max_residual_over_K": "1/4"
+        },
+        {
+          "q": 4,
+          "count": 2,
+          "unflagged_count": 1,
+          "min_leading_residual": "26",
+          "max_leading_residual": "26",
+          "max_residual_over_K": "13/40"
+        }
+      ]
+    }
+  ],
+  "exception43": [
+    {
+      "delta": 0,
+      "original_functional": true,
+      "tropical": -661,
+      "B_min": 2,
+      "smith": {
+        "0": 55,
+        "1": 62
+      },
+      "max_smith": 1,
+      "censored": 0,
+      "gauss_certified": true,
+      "gauss": -599,
+      "projection": -633
+    },
+    {
+      "delta": 1,
+      "original_functional": false,
+      "tropical": -661,
+      "B_min": 2,
+      "smith": {
+        "0": 86,
+        "1": 31
+      },
+      "max_smith": 1,
+      "censored": 0,
+      "gauss_certified": true,
+      "gauss": -630,
+      "projection": -633
+    }
+  ]
+}

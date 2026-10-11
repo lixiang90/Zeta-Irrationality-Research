@@ -1,0 +1,109 @@
+  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )
+
+
+        FRANK CALEGARI, VESSELIN DIMITROV, AND YUNQING TANG
+
+
+      Abstract. We prove the irrationality of the classical Dirichlet L-value
+                                 1    1     1    1     1     1
+                   L(2, χ−3 ) = 2 − 2 + 2 − 2 + 2 − 2 + . . . .
+                                 1   2     4     5     7    8
+      The argument applies a new kind of arithmetic holonomy bound to a well-
+      known construction of Zagier [Zag09]. In fact our work also establishes the
+      Q-linear independence of 1, ζ(2), and L(2, χ−3 ). We also give a number of
+      other applications of our method to other problems in irrationality.
+
+
+
+
+                                      Contents
+
+1. Introduction                                                                       3
+1.1. Dirichlet L-values                                                               3
+1.2. Comparisons to the work of Apéry                                                5
+1.3. The paths to Theorems A and C, and an outline of the paper                       9
+2. The main arithmetic holonomy bound                                                11
+2.1. The algebraic case                                                              11
+2.2. Denominators                                                                    12
+2.3. A preview of the various holonomy bounds                                        14
+2.4. Variants of the Nevanlinna growth characteristic                                15
+2.5. Arithmetic holonomy bounds, basic form                                          16
+2.6. Siegel’s G-functions                                                            17
+2.7. Univalent holonomy bounds and an arithmetic characterization of the logarithm   19
+2.8. Arithmetic characterizations beyond the logarithm                               23
+2.9. Overconvergence and univalent leaves                                            25
+2.10. First irrationality proofs                                                     27
+2.11. The multivalent case: first new linear independence results                    29
+2.12. How we prove holonomy bounds                                                   34
+2.13. Refined methods                                                                36
+3. Filtered evaluation modules and Functional Transcendence                          46
+3.1. The evaluation module for Cartesian products                                    46
+3.2. Functional bad approximability                                                  50
+3.3. Some explicit constructions of Hermite–Padé approximants                       54
+4. Concentration of measure                                                          59
+4.1. The Erdös–Turán bound                                                         60
+4.2. The large deviations bound                                                      60
+5. The cost of an integration                                                        62
+6. The fine holonomy bound                                                           66
+6.1. Horizontal integration                                                          71
+6.2. The auxiliary construction                                                      73
+6.3. The box principle step: proof of Lemma 6.2.6                                    76
+6.4. Seeding                                                                         77
+6.5. Equidistribution                                                                78
+6.6. Denominator arithmetic                                                          82
+6.7. Proof of Theorem 6.0.2                                                          88
+6.8. Completion of the proof of Theorem 2.8.4                                        88
+7. Convexity in Bost’s slopes method                                                 90
+                                          1
+2                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+    7.1. Improvements from convexity                                            92
+    7.2. A brief review of Bost’s slopes method                                 95
+    7.3. The Bost–Charles bound                                                 98
+    7.4. The convexity enhancement of the Bost–Charles bound                   106
+    7.5. Binomial metrics: proof of Theorem 7.1.13                             110
+    7.6. A further improvement                                                 114
+    7.7. On bypassing the Kolchin–Shidlovsky type theorems from § 3.2          118
+    8. The finer holonomy bound with the Bost–Charles integral                 123
+    8.1. Comparison of the Bost–Charles and the Rearrangement integrals        125
+    8.2. Proof of Theorem 8.0.1                                                130
+    8.3. The slopes method in Theorem 6.0.2                                    145
+    9. The relationship between Y (2) and Y0 (2)                               147
+    10. Pure functions on P1 ∖ {0, 1, ∞} and on P1 ∖ {0, 4, ∞}                 154
+    10.1. Five functions of type [1, . . . , n]2 on P1 ∖ {0, 1, ∞}             154
+    10.2. Added integrations                                                   157
+    10.3. The multiple polylogarithm ring                                      157
+    11. Zagier’s sequences A and C                                             160
+    11.1. Definitions and basic properties                                     160
+    11.2. The symmetrization of H(x)                                           165
+    12. Functional Linear Independence                                         166
+    12.1. Linear Independence of pure functions and Zagier functions           168
+    13. Proof of the linear independence of 1, ζ(2), and L(2, χ−3 )            172
+    14. Products of two logarithms                                             175
+    14.1. Hadamard products and Apéry limits                                  177
+    14.2. The differential equation L(GA ) = 0                                 181
+    14.3. Linear Independence of pure functions and functions arising from G   185
+    14.4. Location of the singularities                                        187
+    14.5. The proof of Theorem C                                               188
+    15. Complements and further questions                                      190
+    15.1. Comparison to the Siegel–Bombieri–Chudnovsky theory                  190
+    15.2. Integral holonomic modules                                           194
+    15.3. Quantitative aspects of linear independence                          197
+    15.4. The structure ring                                                   197
+    15.5. Algorithmic Questions                                                198
+    15.6. The Gelfond–Schnirelman topic                                        199
+    15.7. A historical note and acknowledgments                                200
+    Appendix A. Choosing a contour                                             200
+    A.1. Preliminaries on Lunes                                                201
+    A.2. Gobbles                                                               202
+    A.3. Slits                                                                 203
+    A.4. Combining multiple slits and lunes                                    204
+    A.5. A contour for the L(2, χ−3 ) problem                                  206
+    A.6. A contour for the logarithm problem                                   206
+    Appendix B. A dynamic box principle                                        207
+    B.1. Evaluation module                                                     208
+    B.2. Box principle                                                         209
+    B.3. Diophantine analysis of the lowest order coefficient                  210
+    References                                                                 211
+

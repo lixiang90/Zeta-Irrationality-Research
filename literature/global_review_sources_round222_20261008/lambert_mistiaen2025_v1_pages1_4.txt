@@ -1,0 +1,243 @@
+                                                Indépendance linéaire de valeurs de fonctions L de
+                                                                      Dirichlet
+                                                                                     Ludovic Mistiaen
+                                                                                      Novembre 2025
+arXiv:2512.02612v1 [math.NT] 2 Dec 2025
+
+
+
+
+                                                                                              Résumé
+                                                    Dans cet article, étant donné un caractère de Dirichlet
+                                                                                                        p        modulo un entier N non divisible
+                                                par 4, nous donnons une minoration de l’ordre de s/log(s) de la dimension du Q(e2iπ/N )-
+                                                espace vectoriel engendré par les valeurs de sa fonction L aux entiers 6 s d’une parité
+                                                donnée. Nous généralisons ainsi un résultat de Fischler de 2021 qui correspond au caractère
+                                                trivial. Pour cela, nous construisons à l’aide du lemme de Siegel des combinaisons linéaires
+                                                de ces valeurs de fonction L et nous leur appliquons un critère d’indépendance linéaire
+                                                généralisant celui utilisé par Fischler. Pour vérifier les hypothèses de ce critère, nous nous
+                                                appuyons sur un “lemme de Shidlovskii”.
+
+
+                                          1     Introduction
+                                              En 2001, Ball et Rivoal [Riv00, BR01] démontrent qu’une infinité de valeurs de la fonction
+                                          zêta de Riemann aux entiers impairs sont irrationnelles, en donnant une minoration de la
+                                          dimension du Q-espace vectoriel qu’elles engendrent.
+                                          Théorème 1.0.1. (Ball-Rivoal, 2001). Pour s > 3 un entier impair , on a
+                                                                                                    1 + o(1)
+                                                            dimQ VectQ 1, ζ(3), ζ(5), ..., ζ(s) >               log(s).
+                                                                                                s→+∞ 1 + log(2)
+
+
+                                              Pour cela ils appliquent le critère d’indépendance linéaire de Nesterenko (voir [Col02, Théo-
+                                          rème II.1.3]) à une suite de combinaisons linéaires explicites de 1, ζ(3), ζ(5), ..., ζ(s). Ces combi-
+                                          naisons sont construites en sommant les valeurs aux entiers d’une suite de fractions rationnelles.
+                                          Ce procédé, que nous détaillons dans la section 2, apparaı̂t chez Nikishin [Nik79] et est lié à la
+                                          notion d’approximation de Padé (à ce sujet, voir [Beu81, Section 3] pour l’exemple de ζ(3) et
+                                          [FR03] pour une vue d’ensemble dans ce contexte).
+                                              Ball et Rivoal utilisent une fraction rationnelle dont une symétrie du numérateur assure que
+                                          seules les valeurs de zêta aux entiers impairs apparaissent. Leur construction est généralisée par
+                                          Zudilin dans [Zud02].
+                                                                                                         1
+                                              Lai [Lai24] a récemment amélioré la constante, de 1+log(2)   ≈ 0.59 à environ 0.66.
+                                             En 2019, Fischler, Sprang et Zudilin [FSZ19] mettent en place un procédé d’élimination
+                                          qui permet de construire à partir de fractions rationnelles des combinaisons linéaires explicites
+                                                                                                   log(s)
+                                          de 1, ζ(3), ζ(5), ..., ζ(s) dans lesquelles jusqu’à 2 log log(s) (1+o(1)) des nombres ζ(i) au choix n’ap-
+                                                                                                                                         log(s)
+                                                                                                                                    (1+o(1))
+                                                                                    une minoration asymptotique en 2
+                                          paraissent pas. Cela leur permet d’obtenir                                     log log(s)          du
+                                          nombre d’irrationnels dans l’ensemble ζ(3), ζ(5), ..., ζ(s) . Cette minoration est asymptoti-
+                                          quement meilleure que log(s), mais obtenir l’irrationalité de certains nombres est plus faible
+                                          qu’obtenir leur indépendance linéaire sur Q. En modifiant la fraction rationnelle utilisée, Lai
+                                          et Yu [LY20] obtiennent le
+
+                                                                                                 1
+Théorème 1.0.2. (Lai-Yu, 2020). Pour s > 3 un entier impair, il y a au moins
+                                                  r s
+                                     1.19 + o(1)
+                                                     log(s)
+                            n                     o
+irrationnels dans l’ensemble ζ(3), ζ(5), ..., ζ(s) .
+
+   Lai [Lai25] a récemment amélioré la constante, de 1.19 à environ 1.28.
+                                                                                         P
+    En 2011, Nishimoto [Nis11] généralise le théorème 1.0.1 aux nombres L(f, i) := m>1 fm    (m)
+                                                                                                  i ,
+
+où une fonction f : N → C de période N > 1 est fixée. Le cas f = 1 constante égale à 1
+correspond à L(f, i) = ζ(i). Il construit à partir de fractions rationnelles une suite de combi-
+naisons linéaires explicites de 1 et des L(f, i) avec i dans l’intervalle d’entiers J2, sK et d’une
+parité fixée (voir la remarque 2 ci-dessous). Il applique le critère d’indépendance linéaire de
+Nesterenko à cette suite de combinaisons linéaires, en utilisant la méthode du col pour obtenir
+le comportement asymptotique de leur taille, et obtient le
+
+Théorème 1.0.3. (Nishimoto, 2011). Soit N > 1 un entier. Soit f : N → C une fonction
+N-périodique. Soit ε ∈ {0, 1}. Pour s > 2 un entier de parité ε, on a
+                           n                               o         1 + o(1)
+               dimQ VectQ L(f, i) | 2 6 i 6 s, i ≡ ε[2]        >               log(s).
+                                                             s→+∞   N + log(2)
+
+     En 2018, Fischler [Fis18] obtient le même résultat (en le raffinant légèrement dans le cas
+où f est un caractère de Dirichlet) par une méthode différente. Il construit encore une suite de
+combinaisons linéaires à partir de fractions rationnelles, mais d’une façon qui permet seulement
+d’obtenir une majoration asymptotique : le critère d’indépendance linéaire de Nesterenko ne
+s’applique plus. Il utilise un autre critère d’indépendance linéaire basé sur les idées de Siegel
+[Fis18, proposition 4.6, p.170] pour lequel l’hypothèse de minoration asymptotique des combi-
+naisons linéaires est remplacée par la nécessité de construire plusieurs suites de combinaisons
+linéaires indépendantes. Il s’appuie sur un “lemme de Shidlovskii” (théorème 6.1.1) pour vérifier
+cette indépendance.
+     En 2020, Fischler [Fis20, Théorème 1] améliore ce théorème en supprimant la dépendance
+                                                                                   1+o(1)
+en N au dénominateur de la constante : cette dernière est remplacée par 1+log(2)       .
+     Dans le même article [Fis20, Théorème 2], il généralise le résultat de [FSZ19] en minorant
+        log(s)                                                    
+par 2 log log(s) (1+o(1)) le nombre d’irrationnels dans l’ensemble L(f, i) | 2 6 i 6 s, i ≡ ε[2] .
+     Plus récemment, Calegari, Dimitrov et Tang [CDT24] ont démontré l’indépendance Q-
+linéaire des nombres 1, ζ(2) et L(χ−3 , 2), où χ−3 est le caractère de Dirichlet non principal
+modulo 3. Cela implique en particulier l’irrationalité du nombre L(χ−3 , 2).
+    En 2021, Fischler [Fis21] considère pour la première fois des combinaisons linéaires non ex-
+plicites de 1, ζ(3), ζ(5), ..., ζ(s). Cette innovation lui permet d’obtenir une minoration asympto-
+tique comparable à celle du théorème 1.0.2 tout en conservant le résultat plus fort d’indépendan-
+ce linéaire du théorème 1.0.1.
+
+Théorème 1.0.4. (Fischler, 2021). Pour tout entier impair s suffisament grand, on a
+                                                              r
+                                                                     s
+                     dimQ VectQ 1, ζ(3), ζ(5), ..., ζ(s) > 0.21          .
+                                                                  log(s)
+
+    Dans cet article, nous utilisons sa méthode couplée à la construction de [Fis18] afin d’obtenir
+le résultat suivant.
+
+
+                                                  2
+Théorème 1.0.5. Soit N > 3 un entier avec N 6≡ 0 [4]. Soit χ : N → C un caractère de
+                                                                                    2iπ
+Dirichlet modulo N. Soit ε ∈ {0, 1} la parité opposée à celle de χ. Soit K = Q(e N ).
+Pour tout entier s de parité ε et suffisament grand, on a
+                             n                                o         r
+                                                                   0.42       s
+                 dimK VectK L(χ, i) | 2 6 i 6 s, i ≡ ε [2] > 3/2                  .
+                                                                   N       log(s)
+
+Remarque 1. La preuve donne dans le cas N = 1 le même résultat avec une constante 0.21
+à la place de 0.42, en raison du facteur [K∞ : R] dans le critère d’indépendance linéaire utilisé
+(proposition 7.1.1). Nous retrouvons ainsi le résultat du théorème 1.0.4 dans le cas N = 1.
+Nous n’incluons donc pas ce cas dans notre énoncé afin d’en éclaircir la formulation. Quant au
+cas N = 2, il se ramène au cas N = 1 comme expliqué dans la section 2.
+Remarque 2. Ne considérer que les termes avec i ≡ ε[2] est indispensable pour obtenir un
+résultat non trivial. En effet, la parité d’un caractère de Dirichlet χ étant l’unique εχ ∈ {0, 1}
+tel que χ(−1) = (−1)εχ χ(1), on sait que L(χ, i) ∈ π i Q lorsque i ≡ εχ [2] (voir par exemple
+[Neu99, Corollary 2.10, p.443]). La transcendance de π implique alors que les L(χ, i), i ≡ εχ [2],
+sont tous K-linéairement indépendants et rendrait la borne du théorème 1.0.5 triviale.
+Remarque 3. L’hypothèse N 6≡ 0[4] est due à une difficulté technique que nous exposons dans
+la section 2. En particulier, le théorème 1.0.5 ne s’applique pas à la fonction bêta de Dirichlet
+                                                           +∞
+                                                           X     (−1)m
+                                                β(s) :=                  ,
+                                                           m=1
+                                                               (2m + 1)s
+
+puisqu’il s’agit de la fonction L associée au caractère de Dirichlet non principal modulo 4,
+qui est primitif. Nous n’améliorons donc pas le résultat de [Fis20, Théorème 1] selon lequel
+                                      1+o(1)
+dimQ VectQ 1, β(2), β(4), ..., β(s) > 1+log(2) log(s), pour s > 2 pair. Un résultat légèrement
+                                                                1+o(1)
+plus faible avait été donné dans [RZ03], avec une constante 2+log(2) à la place.
+                                                                                     
+    De plus, [Fis20, Théorème 2] minore le nombre d’irrationnels dans l’ensemble 1, β(2), β(4),
+                    log(s)
+..., β(s) par 2 log log(s) (1+o(1)) .
+
+
+2      Structure de la preuve
+    Pour un caractère de Dirichlet χ : N → C, nous introduisons la notation
+                                        +∞
+                                        X   χ(m)z m
+                     L(χ, i, z) :=             i
+                                                    ,       i ∈ N∗ ,   |z| 6 1,   (i, z) 6= (1, 1).
+                                        m=1
+                                              m
+
+Dans le cas du caractère trivial χ = 1, on retrouve les polylogarithmes
+                                         +∞ m
+                                         X   z
+                             Lii (z) =         i
+                                                 ,    i ∈ N∗ , |z| 6 1,      (i, z) 6= (1, 1),
+                                         m=1
+                                             m
+
+dont l’évaluation en z = 1 fait apparaı̂tre les valeurs de la fonction zêta de Riemann aux entiers.
+Dans le cas d’un caractère modulo M non primitif et de conducteur N, il existe un caractère
+χ′ modulo N induisant χ (voir par exemple [Neu99, p.440]) et on a
+                                           Y         χ′ (p)
+                                                             
+                                 L(χ, i) =        1− i         L(χ′ , i),
+                                            p|M
+                                                        p
+                                                     p∤N
+
+
+
+                                                             3
+de sorte que pour I ⊆ N fixé, les nombres L(χ, i) et L(χ′ , i), i ∈ I, engendrent le même espace
+                         2iπ
+vectoriel sur K = Q(e N ). Nous pourrons donc supposer sans perte de généralité que χ est
+un caractère primitif modulo N. D’après [IK04, (3.7) p.46], il n’y a aucun caractère primitif
+modulo N = 2[4]. Il est donc suffisant de démontrer le théorème 1.0.5 pour un caractère de
+Dirichlet χ primitif modulo N, où N est impair. L’imparité de N est nécessaire pour appliquer
+notre méthode, comme expliqué plus bas. C’est pourquoi nous excluons le cas N divisible par
+4, puisqu’il existe des caractères primitifs modulo un tel N.
+    Nous fixons pour l’entièreté de l’article un entier impair N > 1 et un caractère χ primitif
+modulo N. Nous désignons par ε la parité opposée à celle de χ. Nous fixons de plus µ = e2iπ/N et
+K = Q(µ). Nous désignons par U le plan complexe privé d’une demi-droite partant de l’origine
+et ne passant par aucun des points z = −µℓ , 0 6 ℓ 6 N − 1. La notation log représente alors
+une détermination fixée du logarithme sur l’ouvert simplement connexe U.
+   Si F est une fraction rationnelle dont les pôles sont des entiers négatifs > −r et d’ordre
+6 a ∈ N∗ , les sommes
+                                           +∞
+                                           X                                  +∞
+                                                                              X
+                             [∞]                          −t         [0]
+                         S         (z) =         F (t)z        et   S (z) =           F (−t)z t
+                                           t=1                                t=r+1
+
+sont des combinaisons linéaires à coefficients polynomiaux de 1, Li1 (1/z), ..., Lia (1/z), respecti-
+vement 1, Li1 (z), ..., Lia (z) (voir par exemple [BR01, Lemme 1] ou [Fis18, §4.3]). Si l’on utilise la
+fraction dérivée p-ième F (p) , ce sont les polylogarithmes d’ordre p + 1 à a + p qui apparaissent à
+la place (voir [Nes96] pour l’exemple de ζ(3), et [FR03, §4] pour le cas général). Ce mécanisme
+repose sur la décomposition en éléments simples d’une telle fraction rationnelle, comme on le
+voit dans la preuve du lemme 4.1.1 ci-dessous.
+     Ainsi nous fixons un entier a ∈ N∗ , nous introduisons des paramètres rationnels r, ω, Ω et
+nous construisons dans la section 3 une telle fraction rationnelle Fn pour une infinité d’entiers n
+(suffisamment grands (1) , multiples de N et tels que rn, ωn et Ωn soient entiers). Notre construc-
+tion n’est pas explicite, mais les propriétés de ces fractions rationnelles nous permettront de
+construire des combinaisons linéaires auxquelles le critère d’indépendance linéaire donné par la
+proposition 7.1.1 s’appliquera.
+     Dans la section 4, nous introduisons deux autres paramètres h ∈ N, κ ∈ Q. Nous notons N
+l’ensemble infini des n ∈ N suffisamment grands (1) , multiples de N et tels que rn, ωn, Ωn et
+κn soient entiers. Pour chaque n dans N , nous utilisons Fn pour construire des combinaisons
+               [∞]      [0]
+linéaires Sn,p et Sn,p à coefficients dans Q[z] de 1 et Li1 (1/z), ..., Lia+h (1/z), respectivement
+Li1 (z), ..., Lia+h (z). Nous les dérivons k − 1 fois par rapport à la variable z et les combinons à
+la manière de [Fis18, §4.3] pour obtenir des combinaisons linéaires
+
+                                    Λn,(p,k),        (p, k) ∈ J0, hK × J2rn + 2, κnK
+
+des nombres 1 et L(χ, i, −1), 2 6 i 6 a + h, i ≡ ε[2]. Nous évaluons en z = −1 pour éviter la
+singularité en z = 1 du système différentiel considéré dans la section 6. Nous pourrons tout de
+même conclure grâce à la relation
+                                                                   
+                        ∀i > 2,      L(χ, i, −1) = 21−i χ(2) − 1 L(χ, i, 1).
+
+La multiplicativité de χ est utilisée pour obtenir cette relation, voir (7.1).
+    Dans la section 5, nous montrons que les combinaisons Λn,(p,k) vérifient les hypothèses (i)
+et (ii) du critère d’indépendance linéaire (proposition 7.1.1), c’est-à-dire qu’elles décroissent
+ (1). En un sens précisé sous les équations (5.6) et (6.15).
+
+
+
+                                                               4
+

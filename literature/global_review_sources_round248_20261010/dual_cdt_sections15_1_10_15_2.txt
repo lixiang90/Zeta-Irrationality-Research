@@ -1,0 +1,218 @@
+15.1.10. Avenues from Hermite–Padé constructions. As explained in §§ 3.3.7, 3.3.13,
+our proof in § 14 of Theorem C can be conceptually linked to the Hermite–Padé
+approximants to the logarithm function, used with the Hadamard product con-
+struction § 14.1. While products of three or more logarithms appear unreachable
+by our method here (by the numerology e3 > 16), it could be worthwhile to at-
+tempt linear independence of more than a single pair of products of two logarithms,
+starting from the simultaneous Hermite–Padé approximation theory with several
+logarithms worked out explicitly in [RT86] and [DHKK22].
+   A more general scheme, such as we indicated on the most basic examples in § 3.3.3
+and § 3.3.7, could be sought with forming the generating function of the special lin-
+ear forms obtained from evaluating a regular sequence of functional Hermite–Padé
+approximants to a basic function. Beukers [Beu81, Beu84], using polylogarithms,
+and Prévost [Pré96], having ζ(3, 1 + 1/y) for the basic function to be evaluated
+at the points of the form y = 1/n, each were able to interpret the Apéry se-
+quences inside such a scheme. The former type was vastly generalized by Fischler
+and Rivoal [FR03]. It could be interesting to find a similar interpretation with
+simultaneous Hermite–Padé approximants for the simultaneous linear forms in ζ(2)
+and L(2, χ−3 ) that we exploited in § 11. We note however that such generating
+function procedures far from always give rise to G-functions, even if the starting
+function for the Hermite–Padé approximation is algebraic [BC97b]; for the Prévost
+type, some non-examples related to zeta values are in [PR21, § 8].
+   Two other subjects that we have omitted here (in part, for reasons of space)
+are applications to non-rational algebraic arguments for the two logarithms, as well
+as p-adic logarithms. Another reason for omitting the later application is that, in
+this paper, we have emphasized the archimedean place as special when it comes to
+overconvergence. In [CDT24], we plan to write our holonomicity bound in a more
+general Arakelov adelic form over a global field.
+   Finally, speaking more broadly of holonomic explicit constructions by any method,
+we remark that in many of the more intricate ones in the literature — such as in
+Zudilin’s work [Zud14] on simultaneous approximation to ζ(2) and ζ(3), and in
+Brown and Zudilin’s work [BZ22] on ζ(5) — progress towards a not-yet-attained ir-
+rationality goal is measured by setting up a complex set of parameters to maximize
+194                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                                n             o
+the worthiness exponent lim sup − log |η−p/q|
+                                       log q    . The latter is very far from faith-
+fully measuring worthiness as a potential for applying in our framework of rational
+holonomy bounds.
+15.2. Integral holonomic modules. Although N0 in Theorem 15.1.3 is effective,
+it is a wide open42 problem to precisely (in principle) determine the left-hand side set
+in (15.1.4). Moreover, as we have seen with a case as simple as [Hat98], the bound
+on N0 hin the general
+               i       property (15.1.4) is, in practice, very big. Our findings with
+the Q x, 1−x1
+                -integrality refinements in §§ 2.7, 2.8, see especially Remarks 2.7.6
+and 2.8.2, seem to point towards a completely different approach to those of the
+cases of (15.1.4) whose holonomicity is recognized by André’s arithmetic criterion
+(Corollary 2.6.1). Our inspiration for hoping to reverse the proof logic in Re-
+mark 2.7.6 for the purpose of applying to similar other potential linear independence
+setups — many of them unproved conjectures — stems from the ideas of Bézivin and
+Robba [BR89] which they used for reproving the Hermite–Lindemann–Weierstrass
+theorem as an application of Bertrandias’s arithmetic rationality criterion [Ami75,
+Théorème 5.4.6] (see also [BBR90] for a historical dissection of that proof); and,
+ultimately, the refinement of those ideas at the hands of André [And00a, And00b]
+and Beukers [Beu06], using the Chudnovskys’s theorem and the Fourier–Laplace
+duality between E- and G-functions, to reprove (and further refine) the qualitative
+Siegel–Shidlovsky theorem on special values of E-functions.
+   Let ∂ := x · (d/dx) be the multiplicatively invariant derivation. Consider (for
+simplicity here) an étale 43 holomorphic mapping φ : D → C taking φ(0) = 0, and
+a vector b := (b1 , . . . , br ) ∈ [0, ∞)r with |φ′ (0)| > eb1 +···+br . Consider the set D
+comprised of the formal power series of the shape
+                    ∞
+                   X                   xn
+           f (x) =       an Qr                           , an ∈ Z ∀n ∈ N            (15.2.1)
+                   n=0           h=1 [1, . . . , bi · n]
+
+such that φ∗ f ∈ O(D) is a holomorphic function on the disc. This is a module
+over the noncommutative ring Z[x, ∂]: the derivation ∂ acts on the monomials
+by ∂(xn ) = nxn , which preserves the integrality type in (15.2.1), while the chain
+rule with the étaleness of φ show that if f (φ(z)) is holomorphic, so also is
+                      φ(z)             ′
+                             (f (φ(z))) = φ(z)f ′ (φ(z)) = (∂f )(φ(z)).
+                      φ′ (z)
+By construction, the Z[x, ∂]-module D is embedded as a submodule of the ring QJxK.
+Within this ambient ring, D contains the subring comprised of the α ∈ ZJxK
+with φ∗ α ∈ O(D). Let us denote this ring by O(V),
+                                                 e for reasons related to [BC22]
+and our Remark 7.3.2, in which this ring is the ring of regular functions on the
+formal-analytic44 arithmetic surface we denoted V
+                                                e := V(φ).
+                                                       e      Then D is a module
+                e By Corollary 2.6.1, the field of fractions Frac(O(V))
+over the ring O(V).                                                  e is a finite
+
+   42Once again, the exception is the algebraic case f (x) ∈ Q(x) ∩ QJxK, in which case a finite
+                                                        i
+computer search is at least in theory enough to finish off this problem in finite computational
+time.
+   43In other words: the derivative φ′ is nowhere vanishing on D.
+   44If φ extends to a holomorphic function on some open neighborhood of the closed disc D,
+to match the convention in [BC22]. For applying the finiteness theorem [BC22, Theorem 9.1.1],
+this is not a restriction upon considering φ(z)
+                                           e    := φ ((1 − ε)z) with an ε > 0 small enough to still
+have |φe′ (0)| > eb1 +···+br ≥ 1.
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                           195
+
+
+field extension of Q(x), and D ⊗O(V)  e Frac(O(V)) is a finite-dimensional vector space
+                                                  e
+over that field. Since furthermore D is preserved by the derivation ∂, there is a
+finite and Gal(Q/Q)-stable set of complex algebraic points Σ ⊂ Q ,→ C such that
+all elements of D ⊗O(V)  e Frac(O(V)) (and, a fortiori, all elements of Frac(O(V)))
+                                     e                                                 e
+continue analytically as meromorphic functions along all paths in C ∖ Σ.
+    However, Bost and Charles proved a deeper finiteness theorem [BC22, Theo-
+rem 9.1.1]: the ring O(V)  e is a finitely generated Z-algebra. Moreover, their proof
+leads in principle to an effective algorithm for listing a finite set of generating
+elements for this Z-algebra. On the other hand, as shown by Remark 2.7.5 on
+the example b = (1) and φ(z) = 4z/(1 + z)2 , where O(V)           e = Z[x, 1/(1 − x)],
+the O(V)-module D is in general infinite. We hence tensor it with Q and con-
+         e
+sider DQ := D ⊗Z Q, which is a torsion-free module over O(V          eQ ) := O(V)e ⊗Z Q.
+           45
+The latter ring is a finitely generated Q-algebra but also, being of Krull dimen-
+sion one and integrally closed in its fraction field, it has the added simplicity of
+being a Dedekind domain. A module over a Dedekind domain is finite and torsion
+free if and only if it is locally free of finite rank, if and only if it is projective and
+generically finite (where the latter means the finite-dimensionality of the induced
+vector space over the field of fractions). The content of Theorem 2.7.2 is that, in
+the previous example of b = (1) and φ(z) = 4z/(1 + z)2 , the O(V       eQ )-module DQ is
+free of rank 2 with basis {1, log(1 − x)}. However, the content of Remark 2.7.4 is
+that, in the slightly modified example b = (1 + 1/100) and φ(z) = 4z/(1 + z)2 still
+having O(V)e = Z[x, 1/(1 − x)] and O(V       eQ ) = Q[x, 1/(1 − x)], the O(V  eQ )-module
+DQ is infinite while the O(VQ )[1/x]-module DQ [1/x] is once again free of rank 2
+                               e
+with basis {1, log(1 − x)}. Similar remarks apply to Theorem 2.8.4. In line with
+these we could ask:
+Question 15.2.2. Can one effectively construct an h ∈ O(V)        e ∖ {0} so that:
+          (⋆) The module DQ [1/h] is locally free over the ring O(V
+                                                                  eQ )[1/h]?
+Are there natural verifiable conditions such that this holds even with h = x?
+   As remarked above, the rings O(V        eQ ) and their localizations are Dedekind do-
+mains, and hence, since the O(VQ )[1/h]-module DQ [1/h] is torsion-free and generi-
+                                   e
+cally finite, the local freeness in (⋆) is equivalent to the module being finite, and also
+to the module being projective. We will see why the insistence on effectivity is the
+important point for deriving irrationality proofs on x = 1/n special values of certain
+functions from the holonomic module D. The reason for such a connection is the
+same as with the André–Beukers (qualitative) refinement [And00a, And00b, Beu06]
+of the Siegel–Shidlovsky theorem being ultimately derived from a commutative al-
+gebra statement formally similar to (⋆):
+Fact 15.2.3. The ring of E ⊂ QJxK of E-functions with rational coefficients gen-
+erates over the Laurent polynomial ring Q[x, x−1 ] an infinite free Q[x, x−1 ]-module
+E[1/x] = E ⊗Q[x] Q[x, x−1 ].
+   See [Beu06, Theorem 1.5] for the statement46 and [Beu06, proof of Cor. 2.2] for
+the mechanism. The inversion of x here is also necessary, just as we saw with (⋆) on
+   45This is a definition in our ad hoc notation here, which does not occur in [Bos20] or [BC22].
+   46A theorem of Kaplansky, see [Bos20, § 4.1.2], states that over a Dedekind domain any module
+which is projective and countably generated, but is not finitely generated, is a free module. Hence
+196                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+the example b = (1 + 1/100) and φ(z) = 4z/(1 + z)2 . In the setting of E-functions,
+take
+                           {(d/dx)j {(ex − 1)/x} : j ∈ N}
+as an example. This set generates an infinite Q[x]-module which localizes to a rank 2
+free Q[x, x−1 ]-module with basis {1, ex }. The special role of x = 0 in the André–
+Beukers theory reflects the presence of transcendental E-functions like f (x) = ex
+whose minimal ODE does not have 0 for singularity, but yet the special value f (0) =
+1 ∈ Q is rational.
+   There is a similar formal mechanism to [BR89, And00b, Beu06] for deriving
+linear independence proofs if Question 15.2.2 has a positive answer. Suppose h ∈
+O(V)e ∖ {0} is such that the localized O(V   eQ )[1/h]-module DQ [1/h] is locally free.
+Assume now additionally that, as in § 2.9, there is a contractible open neighborhood
+0 ∈ Ω ⊂ D to which φ restricts as a univalent map, and such that φ−1 (Σ) ⊂
+Ω. Consider f (x) ∈ DQ and a finite, Gal(Q/Q)-stable set of complex algebraic
+points Sf ⊂ Q ,→ C containing Σ, such that f (x) continues holomorphically along
+all paths in C ∖ Sf . Assume furthermore that those various analytic continuations
+end up taking on at least two distinct values at the point x = 1/n.
+   Now suppose n ∈ Z ∖ {0} obeys the following restrictions:
+     (1) φ−1 (1/n) ⊂ Ω;
+     (2) 1/n ∈/ Sf ;
+     (3) All analytic continuations of the element h in C1 ∖ Σ take nonzero values
+         at the point 1/n.
+Then the special47 value f (1/n) satisfies an irrationality property as in (15.1.4):
+either f (1/n) ∈/ Q, or else f (1/n) is divergent.
+   The point is formally the same as in [Beu06]. There is a non-zero polyno-
+mial Qf ∈ Z[x] ∖ {0} such that {Qf = 0} = Sf and Qf (x)f (x) continues holo-
+morphically along all paths in C ∖ Σ. If f (1/n) = p/q were rational, the local
+univalence property (1) in our setup from § 2.9 would apply to the function
+                                      f (x) − f (1/n)
+                      fe(x) := Qf (x)                  ∈ QJxK,
+                                          1 − nx
+with Σ1 := {s ∈ Σ : φ−1 (s) = ∅} and Σ0 := {1/n} ∪ (Σ ∖ Σ1 ) and Σ of Proposi-
+tion 2.9.3 augmented by Σ ∪ {1/n}, to derive that
+                          n     o
+                       ∂ j fe(x) ∈ DQ ,         for all j ∈ N.        (15.2.4)
+The assumptions (⋆), (2), and (3) imply that the functions (15.2.4) generate a
+                                                  1
+finite C(x)-module, as well as a finite CJ 1−nx     K-module. Hence L(fe) = 0 for
+some nonzero linear differential operator L over C(x) which is non-singular at
+the point x = 1/n. But this conflicts with our condition that fe has some analytic
+continuation Fe, necessarily also a solution of the ODE L(Fe) = 0, such that x = 1/n
+is a meromorphic pole of Fe(x).
+
+the Q[x, x−1 ]-freeness of E[1/x] reduces to the freeness of all its finitely generated Q[x, x−1 ]-
+submodules, that is to [Beu06, Theorem 1.5].
+    47This is meant as QJxK series evaluated at x = 1/n; hence the usual dichotomy with “either
+irrational or divergent.” We can, however, say here the more precise conclusion of irrationality of
+the value f (1/n) ∈ C, well-defined by analytic continuation from x = 0 staying within the univa-
+lent leaf Ω ⊃ {0, 1/n}. An inclusion into a Ball–Rivoal framework of special values beyond the disc
+of convergence for certain G-functions has been recently achieved by Fischler and Rivoal [FR21].
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      197
+
+
+   This puts some prize on constructing an element h ∈ O(V)∖{0}
+                                                              e         for the finiteness
+property (⋆) in Question 15.2.2. As a simple example, if h = 1 or even just h = x
+(analogously to the André–Beukers Fact 15.2.3 and the discussion preceding it) is
+admissible for the bivalent map φ(z) = 8(z + z 3 )/(1 + z)4 of Basic Remark 2.11.1
+and the [1, . . . , n]2 denominator type (b = (1, 1)), that by itself would suffice — in
+lieu of the full Conjecture 2.8.1 in that context, which could be more difficult —
+to embed Remark 2.8.2 into the above discussion, and conclude at one stroke the
+irrationalities Li2 (1/n) ∈ / Q for the remaining values n ∈ {−4, −3, −2, 2, 3, 4, 5}.
+Indeed, on this example, an easy computation (see, for example, [Rob68]) gives
+O(V)e = Z [x, 1/(1 − x)] with Σ = {0, 1, ∞}, and for Ω we can take any open
+neighborhood of (−1, 1) in D that is small enough to have φ−1 (φ(Ω)) = Ω.

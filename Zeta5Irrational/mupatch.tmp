@@ -1,0 +1,165 @@
+/-- `Module.Basis.sumExtend` 在原有指标上的取值。 -/
+private theorem sumExtend_apply_inl {K V ι : Type*} [DivisionRing K] [AddCommGroup V]
+    [Module K V] {v : ι → V} (hv : LinearIndependent K v) (i : ι) :
+    Module.Basis.sumExtend hv (Sum.inl i) = v i := by
+  simp only [Module.Basis.sumExtend, Module.Basis.reindex_apply, Equiv.symm_symm,
+    Equiv.trans_apply, Equiv.sumCongr_apply, Equiv.refl_apply, Equiv.ofInjective_apply,
+    Equiv.Set.sumDiffSubset_apply_inl, Module.Basis.extend_apply_self]
+
+/-- RatFunc ℚ 上两种 ℚ-数乘实例（分式环拉回与代数模结构）一致：
+    都等于 `RatFunc.C q * x`。 -/
+private theorem RatFunc.smul_eq_smul (q : ℚ) (x : RatFunc ℚ) :
+    q • x = q • x := by
+  rw [RatFunc.smul_eq_C_smul, Algebra.smul_def, RatFunc.algebraMap_C, Algebra.smul_def]
+
+/-- μ 泛函存在（论文 §2.1：由式 (2.2)/(2.3) 经多项式除法与部分分式延拓）。
+    证明：候选集 {X^e : e ∈ ℕ} ∪ {(X + j²)⁻¹ : j ∈ ℕ} 在 RatFunc ℚ 中线性无关
+    （关键：部分分式分解的唯一性 `Polynomial.quo_add_sum_rem_div_unique`），
+    将其扩充为基（`Module.Basis.sumExtend`）后按取值表作线性扩张（`Basis.constr`）。 -/
+theorem muFunctional_exists : ∃ μ : RatFunc ℚ → ℚ[X], IsMuFunctional μ := by
+  classical
+  haveI : FaithfulSMul ℚ[X] (RatFunc ℚ) :=
+    (faithfulSMul_iff_algebraMap_injective _ _).mpr (RatFunc.algebraMap_injective ℚ)
+  -- 第一步：候选集线性无关
+  have hli : LinearIndependent ℚ muCandidate := by
+    rw [linearIndependent_iff']
+    intro s c hsum i hi
+    -- 拆分为左（多项式）右（极点）两部分
+    rw [← Finset.sum_filter_add_sum_filter_not (p := (Sum.isLeft ·))] at hsum
+    set EL : Finset ℕ := (s.filter (Sum.isLeft ·)).image
+      (fun x => match x with | Sum.inl e => e | Sum.inr _ => 0) with hEL
+    set EJ : Finset ℕ := (s.filter (Sum.isRight ·)).image
+      (fun x => match x with | Sum.inr j => j | Sum.inl _ => 0) with hEJ
+    -- 左半部分：写成单个多项式的像
+    have hinjL : ∀ x ∈ s.filter (Sum.isLeft ·), ∀ y ∈ s.filter (Sum.isLeft ·),
+        (match x with | Sum.inl e => e | Sum.inr _ => 0)
+          = (match y with | Sum.inl e => e | Sum.inr _ => 0) → x = y := by
+      intro x _ y _
+      simp only [Finset.mem_filter]
+      rcases x with xe | xj
+      · rcases y with ye | yj
+        · exact fun h => congrArg Sum.inl h
+        · simp at hy
+      · simp at hx
+    have hL : (∑ x ∈ s.filter (Sum.isLeft ·), c x • muCandidate x)
+        = ((∑ e ∈ EL, Polynomial.C (c (Sum.inl e)) * Polynomial.X ^ e : ℚ[X]) :
+          RatFunc ℚ) := by
+      have h1 : (∑ x ∈ s.filter (Sum.isLeft ·), c x • muCandidate x)
+          = ∑ x ∈ s.filter (Sum.isLeft ·), (fun e => RatFunc.C (c (Sum.inl e))
+            * RatFunc.X ^ e)
+            ((fun x => match x with | Sum.inl e => e | Sum.inr _ => 0) x) := by
+        refine Finset.sum_congr rfl fun x hx => ?_
+        rcases x with e | j
+        · rw [RatFunc.smul_eq_C_smul, Algebra.smul_def, RatFunc.algebraMap_C]
+        · simp only [Finset.mem_filter, Sum.isLeft_inr] at hx
+      rw [h1]
+      have h3 := (Finset.sum_image hinjL (s := s.filter (Sum.isLeft ·))
+        (g := fun x => match x with | Sum.inl e => e | Sum.inr _ => 0)
+        (f := fun e => RatFunc.C (c (Sum.inl e)) * RatFunc.X ^ e)).symm
+      rw [h3, map_sum]
+      refine Finset.sum_congr rfl fun e he => ?_
+      rw [map_mul, map_pow, RatFunc.algebraMap_C, RatFunc.algebraMap_X]
+    -- 右半部分：写成 C (b j) / (X + j²) 的和
+    have hinjR : ∀ x ∈ s.filter (Sum.isRight ·), ∀ y ∈ s.filter (Sum.isRight ·),
+        (match x with | Sum.inr j => j | Sum.inl _ => 0)
+          = (match y with | Sum.inr j => j | Sum.inl _ => 0) → x = y := by
+      intro x _ y _
+      simp only [Finset.mem_filter]
+      rcases x with xe | xj
+      · simp at hx
+      · rcases y with ye | yj
+        · simp at hy
+        · exact fun h => congrArg Sum.inr h
+    have hJ : (∑ x ∈ s.filter (Sum.isRight ·), c x • muCandidate x)
+        = ∑ j ∈ EJ, (Polynomial.C (c (Sum.inr j)) : RatFunc ℚ)
+          / (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2) : RatFunc ℚ) := by
+      have h1 : (∑ x ∈ s.filter (Sum.isRight ·), c x • muCandidate x)
+          = ∑ x ∈ s.filter (Sum.isRight ·), (fun j => (Polynomial.C (c (Sum.inr j)) :
+            RatFunc ℚ) / (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2) : RatFunc ℚ))
+            ((fun x => match x with | Sum.inr j => j | Sum.inl _ => 0) x) := by
+        refine Finset.sum_congr rfl fun x hx => ?_
+        rcases x with e | j
+        · simp only [Finset.mem_filter, Sum.isRight_inl] at hx
+        · rw [RatFunc.smul_eq_C_smul, Algebra.smul_def, RatFunc.algebraMap_C,
+            div_eq_mul_inv, map_add, RatFunc.algebraMap_X, RatFunc.algebraMap_C,
+            RatFunc.algebraMap_C]
+      rw [h1]
+      have h3 := (Finset.sum_image hinjR (s := s.filter (Sum.isRight ·))
+        (g := fun x => match x with | Sum.inr j => j | Sum.inl _ => 0)
+        (f := fun j => (Polynomial.C (c (Sum.inr j)) : RatFunc ℚ)
+          / (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2) : RatFunc ℚ))).symm
+      rw [h3]
+    rw [← hL, ← hJ] at hsum
+    -- 第二步：部分分式分解的唯一性
+    have hcop : Set.Pairwise ↑EJ
+        (fun i j => IsCoprime (Polynomial.X + Polynomial.C ((i : ℚ) ^ 2))
+          (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2))) := by
+      intro x hx y hy hxy
+      have hsq : ((x : ℚ) ^ 2 - (y : ℚ) ^ 2) ≠ 0 := by
+        intro h0
+        apply hxy
+        have h1 : (x : ℚ) ^ 2 = (y : ℚ) ^ 2 := by linarith
+        have h2 : x ^ 2 = y ^ 2 := by exact_mod_cast h1
+        exact (Nat.pow_left_inj (by norm_num : 2 ≠ 0)).1 h2
+      refine ⟨Polynomial.C (((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹,
+        Polynomial.C (-(((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹), ?_⟩
+      have hu : (((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹ * ((x : ℚ) ^ 2 - (y : ℚ) ^ 2) = 1 :=
+        inv_mul_cancel₀ hsq
+      have hcalc : Polynomial.C (((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹
+            * (Polynomial.X + Polynomial.C ((x : ℚ) ^ 2))
+          + Polynomial.C (-(((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹)
+            * (Polynomial.X + Polynomial.C ((y : ℚ) ^ 2))
+          = Polynomial.C ((((x : ℚ) ^ 2 - (y : ℚ) ^ 2))⁻¹ * ((x : ℚ) ^ 2 - (y : ℚ) ^ 2)) := by
+        ring
+      rw [hcalc, hu, Polynomial.C_1]
+    have hf0 : ((∑ e ∈ EL, Polynomial.C (c (Sum.inl e)) * Polynomial.X ^ e : ℚ[X]) :
+          RatFunc ℚ)
+        + ∑ j ∈ EJ, (Polynomial.C (c (Sum.inr j)) : RatFunc ℚ)
+          / (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2) : RatFunc ℚ)
+        = ↑(0 : ℚ[X]) + ∑ j ∈ EJ, ((0 : ℚ[X]) : RatFunc ℚ)
+          / (Polynomial.X + Polynomial.C ((j : ℚ) ^ 2) : RatFunc ℚ) := by
+      rw [hsum]
+      simp
+    obtain ⟨hP, hb⟩ := Polynomial.quo_add_sum_rem_div_unique
+      (hg := fun j _ => Polynomial.monic_X_add_C _)
+      (hcop := hcop)
+      (hr₁ := fun j _ => lt_of_le_of_lt (Polynomial.degree_C_le _)
+        (by exact_mod_cast zero_lt_one : (0 : WithBot ℕ) < 1))
+      (hr₂ := fun j _ => lt_of_le_of_lt (Polynomial.degree_C_le _)
+        (by exact_mod_cast zero_lt_one : (0 : WithBot ℕ) < 1))
+      (hf := hf0)
+    -- 第三步：读出系数
+    rcases i with e | j
+    · have he : e ∈ EL := by
+        refine Finset.mem_image.2 ⟨Sum.inl e, ?_, rfl⟩
+        simp only [Finset.mem_filter]
+        exact ⟨hi, Sum.isLeft_inl⟩
+      have h1 := congrArg (fun p : ℚ[X] => p.coeff e) hP
+      simp only [Polynomial.coeff_finset_sum, Polynomial.coeff_C_mul, Polynomial.coeff_X_pow,
+        mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', Polynomial.coeff_zero] at h1
+      rw [if_pos he] at h1
+      exact h1
+    · have hj : j ∈ EJ := by
+        refine Finset.mem_image.2 ⟨Sum.inr j, ?_, rfl⟩
+        simp only [Finset.mem_filter]
+        exact ⟨hi, Sum.isRight_inr⟩
+      have h2 : Polynomial.C (c (Sum.inr j)) = 0 := hb j hj
+      rw [Polynomial.C_eq_zero] at h2
+      exact h2
+  -- 第二步：扩充为基并按取值表线性扩张
+  let b := Module.Basis.sumExtend hli
+  let g : (ℕ ⊕ ℕ) ⊩ Module.Basis.sumExtendIndex hli → ℚ[X]
+    | Sum.inl (Sum.inl e) => muMonomial e
+    | Sum.inl (Sum.inr j) => muPole j
+    | Sum.inr _ => 0
+  let μ := b.constr ℚ g
+  have hAB : ∀ q : ℚ, ∀ x : RatFunc ℚ, q • x = q • x := RatFunc.smul_eq_smul
+  refine ⟨μ, μ.map_zero, fun f₁ f₂ => μ.map_add f₁ f₂, fun q f => ?_, ?_, ?_⟩
+  · rw [hAB q f, hAB q (μ f), μ.map_smul]
+  · intro e
+    have h1 : b (Sum.inl (Sum.inl e)) = RatFunc.X ^ e := sumExtend_apply_inl hli _
+    rw [← h1, b.constr_basis g]
+  · intro j hj
+    have h1 : b (Sum.inl (Sum.inr j))
+        = (RatFunc.X + RatFunc.C ((j : ℚ) ^ 2))⁻¹ := sumExtend_apply_inl hli _
+    rw [← h1, b.constr_basis g]

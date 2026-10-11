@@ -1,0 +1,43 @@
+25.15.E5
+25.15.5 L ⁡ ( 1 − s , χ ) = k s − 1 ⁢ Γ ⁡ ( s ) ( 2 ⁢ π ) s ⁢ ( e − π ⁢ i ⁢ s / 2 + χ ⁡ ( − 1 ) ⁢ e π ⁢ i ⁢ s / 2 ) ⁢ G ⁡ ( χ ) ⁢ L ⁡ ( s , χ ¯ ) , ⓘ Symbols: L ⁡ ( s , χ ) : Dirichlet L -function , Γ ⁡ ( z ) : gamma function , π : the ratio of the circumference of a circle to its diameter , z ¯ : complex conjugate , e : base of natural logarithm , i : imaginary unit , k :  nonnegative integer , s :  complex variable and χ ⁡ ( n ) :  Dirichlet character Keywords: connection formula Source: Apostol ( 1976 , (16), p. 263) Referenced by: §25.15(ii) Permalink: http://dlmf.nist.gov/25.15.E5 Encodings: TeX , pMML , png See also: Annotations for §25.15(i) , §25.15 and Ch.25
+L\left(1-s,\chi\right)=\frac{k^{s-1}\Gamma\left(s\right)}{(2\pi)^{s}}\*{\left(%
+e^{-\pi is/2}+\chi(-1)e^{\pi is/2}\right)}\*G(\chi)L\left(s,\overline{\chi}%
+\right),
+L\left(\NVar{s},\NVar{\chi}\right)
+L
+\Gamma\left(\NVar{z}\right)
+\pi
+\overline{\NVar{z}}
+\mathrm{e}
+\mathrm{i}
+k
+s
+\chi(n)
+
+25.15.E6
+25.15.6 G ⁡ ( χ ) ≡ ∑ r = 1 k − 1 χ ⁡ ( r ) ⁢ e 2 ⁢ π ⁢ i ⁢ r / k . ⓘ Symbols: π : the ratio of the circumference of a circle to its diameter , ≡ : equals by definition , e : base of natural logarithm , i : imaginary unit , k :  nonnegative integer and χ ⁡ ( n ) :  Dirichlet character Keywords: definition Source: Apostol ( 1976 , p. 262) Referenced by: Erratum (V1.1.4) for  Equation ( 25.15.6 ) Permalink: http://dlmf.nist.gov/25.15.E6 Encodings: TeX , pMML , png Clarification (effective with 1.1.4): The upper-index of the finite sum which originally was k , was replaced
+with k − 1 since χ ⁡ ( k ) = 0 . Suggested 2021-08-23 by Gergő Nemes See also: Annotations for §25.15(i) , §25.15 and Ch.25
+G(\chi)\equiv\sum_{r=1}^{k-1}\chi(r)e^{2\pi ir/k}.
+\pi
+\equiv
+\mathrm{e}
+\mathrm{i}
+k
+\chi(n)
+k
+k-1
+\chi(k)=0
+
+25.15.E10
+25.15.10 L ⁡ ( 0 , χ ) = { − 1 k ⁢ ∑ r = 1 k − 1 r ⁢ χ ⁡ ( r ) , χ ≠ χ 1 , 0 , χ = χ 1 . ⓘ Symbols: L ⁡ ( s , χ ) : Dirichlet L -function , k :  nonnegative integer and χ ⁡ ( n ) :  Dirichlet character Keywords: zeros Source: Apostol ( 1976 , Theorem 12.20, p. 268) Referenced by: Erratum (V1.1.4) for  Equation ( 25.15.10 ) Permalink: http://dlmf.nist.gov/25.15.E10 Encodings: TeX , pMML , png Clarification (effective with 1.1.4): The upper-index of the finite sum which originally was k , was replaced
+with k − 1 since χ ⁡ ( k ) = 0 . Suggested 2021-08-23 by Gergő Nemes See also: Annotations for §25.15(ii) , §25.15 and Ch.25
+L\left(0,\chi\right)=\begin{cases}\displaystyle-\frac{1}{k}\sum_{r=1}^{k-1}r%
+\chi(r),&\chi\neq\chi_{1},\\
+0,&\chi=\chi_{1}.\end{cases}
+L\left(\NVar{s},\NVar{\chi}\right)
+L
+k
+\chi(n)
+k
+k-1
+\chi(k)=0

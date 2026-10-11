@@ -1,0 +1,472 @@
+{
+  "date": "2026-10-06",
+  "scope": "All-integer mirror geometry, fixed COMPLETE nine-generator R period table, exact arbitrary-reflection formula normalization, two algebraically prescribed next-denominator reflections; no word/prime/parameter scan or numerical theorem",
+  "execution_history": "First single execution of this NEW fixed producer; frozen JSON read as pinned data only.",
+  "input_sha256": "b8dfb80d30a4fc276d225d148c76ead7032de51523896664f5c743eb0af966ef",
+  "passed": 50,
+  "checks": [
+    {
+      "name": "frozen data hash only no producer execution",
+      "passed": true
+    },
+    {
+      "name": "M actual R finite normalization",
+      "passed": true
+    },
+    {
+      "name": "M actual L finite correction zero",
+      "passed": true
+    },
+    {
+      "name": "old sigma canonical chi plus finite kernel",
+      "passed": true
+    },
+    {
+      "name": "M mirror R exact opposite",
+      "passed": true
+    },
+    {
+      "name": "M mirror L zero",
+      "passed": true
+    },
+    {
+      "name": "known n1 actual R endpoint",
+      "passed": true
+    },
+    {
+      "name": "known n1 actual L endpoint",
+      "passed": true
+    },
+    {
+      "name": "x1 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x1 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x2 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x2 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x3 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x3 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x4 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x4 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x5 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x5 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x6 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x6 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x7 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x7 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x8 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x8 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "x9 actual Gamma matrix",
+      "passed": true
+    },
+    {
+      "name": "x9 independent fourth exact sample",
+      "passed": true
+    },
+    {
+      "name": "R T entire period zero",
+      "passed": true
+    },
+    {
+      "name": "R eta reconstructed by actual x2 x9inverse",
+      "passed": true
+    },
+    {
+      "name": "mirror genuine eta inverse orbit",
+      "passed": true
+    },
+    {
+      "name": "mirror order two entire n",
+      "passed": true
+    },
+    {
+      "name": "mirror never same integer J orbit",
+      "passed": true
+    },
+    {
+      "name": "integer s strict negative branch exact",
+      "passed": true
+    },
+    {
+      "name": "integer s strict positive branch coefficients",
+      "passed": true
+    },
+    {
+      "name": "circle discriminant source identity",
+      "passed": true
+    },
+    {
+      "name": "all n absolute a minimum24",
+      "passed": true
+    },
+    {
+      "name": "n0 translated separation exact",
+      "passed": true
+    },
+    {
+      "name": "positive n intercircle versus translation",
+      "passed": true
+    },
+    {
+      "name": "negative n intercircle versus translation",
+      "passed": true
+    },
+    {
+      "name": "boundary trace exact baseline142",
+      "passed": true
+    },
+    {
+      "name": "boundary trace derivative positive after24",
+      "passed": true
+    },
+    {
+      "name": "source c2 exact polynomial",
+      "passed": true
+    },
+    {
+      "name": "source c4 exact polynomial",
+      "passed": true
+    },
+    {
+      "name": "c2exception between consecutive integer family parameters",
+      "passed": true
+    },
+    {
+      "name": "c4exception not integer",
+      "passed": true
+    },
+    {
+      "name": "first actual c2zero derivative",
+      "passed": true
+    },
+    {
+      "name": "second actual c2zero derivative",
+      "passed": true
+    },
+    {
+      "name": "first actual c4zero endpoint",
+      "passed": true
+    },
+    {
+      "name": "second actual c4zero endpoint",
+      "passed": true
+    },
+    {
+      "name": "fixed next reflection determinant d19",
+      "passed": true
+    },
+    {
+      "name": "fixed next reflection determinant d31",
+      "passed": true
+    }
+  ],
+  "R_generator_periods": [
+    {
+      "name": "x1",
+      "matrix": [
+        59,
+        25,
+        -144,
+        -61
+      ],
+      "PR": [
+        "-566400",
+        "-2674560",
+        "-3156480"
+      ],
+      "PL": [
+        "-55466880",
+        "-261559680",
+        "-308275200"
+      ],
+      "samples": [
+        "-811200",
+        "-683320",
+        "-5788160/9",
+        "-623490"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x2",
+      "matrix": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "PR": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "0",
+        "0",
+        "0"
+      ],
+      "samples": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_zero_status": "all s",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x3",
+      "matrix": [
+        37,
+        29,
+        -60,
+        -47
+      ],
+      "PR": [
+        "351520",
+        "898560",
+        "574080"
+      ],
+      "PL": [
+        "27162080",
+        "69396480",
+        "44307840"
+      ],
+      "samples": [
+        "1291160/3",
+        "1169870/3",
+        "10176920/27",
+        "2222935/6"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x4",
+      "matrix": [
+        11,
+        3,
+        -48,
+        -13
+      ],
+      "PR": [
+        "-36400",
+        "-258240",
+        "-461760"
+      ],
+      "PL": [
+        "-2266160",
+        "-16555200",
+        "-30256320"
+      ],
+      "samples": [
+        "-183380/3",
+        "-143885/3",
+        "-1186100/27",
+        "-503765/12"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x5",
+      "matrix": [
+        25,
+        16,
+        -36,
+        -23
+      ],
+      "PR": [
+        "-182480",
+        "-578880",
+        "-459840"
+      ],
+      "PL": [
+        "-1329040",
+        "-4311360",
+        "-3531840"
+      ],
+      "samples": [
+        "-701740/3",
+        "-622195/3",
+        "-5370700/27",
+        "-2336875/12"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x6",
+      "matrix": [
+        11,
+        9,
+        -60,
+        -49
+      ],
+      "PR": [
+        "-214880",
+        "-528000",
+        "-324480"
+      ],
+      "PL": [
+        "-36342880",
+        "-89385600",
+        "-54983040"
+      ],
+      "samples": [
+        "-783400/3",
+        "-712330/3",
+        "-6204520/27",
+        "-1356125/6"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x7",
+      "matrix": [
+        13,
+        4,
+        -36,
+        -11
+      ],
+      "PR": [
+        "-38480",
+        "-258240",
+        "-436800"
+      ],
+      "PL": [
+        "-1899280",
+        "-12615360",
+        "-20973120"
+      ],
+      "samples": [
+        "-189100/3",
+        "-149995/3",
+        "-1241740/27",
+        "-528595/12"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x8",
+      "matrix": [
+        13,
+        6,
+        -24,
+        -11
+      ],
+      "PR": [
+        "27040",
+        "120960",
+        "136320"
+      ],
+      "PL": [
+        "2819360",
+        "12723840",
+        "14459520"
+      ],
+      "samples": [
+        "114200/3",
+        "96950/3",
+        "823640/27",
+        "177715/6"
+      ],
+      "source_zero_status": "no scalar entire vector not proportional",
+      "source_zero_scalar": null
+    },
+    {
+      "name": "x9",
+      "matrix": [
+        1,
+        1,
+        -12,
+        -11
+      ],
+      "PR": [
+        "0",
+        "0",
+        "0"
+      ],
+      "PL": [
+        "-1587840",
+        "-3617280",
+        "-2073600"
+      ],
+      "samples": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "source_zero_status": "no s R zero but L nonzero",
+      "source_zero_scalar": null
+    }
+  ],
+  "fixed_next_reflections": [
+    {
+      "a": 31,
+      "b": 7,
+      "d": 19,
+      "ell": "298560/19",
+      "R": "5760/19",
+      "scalar": "-311/6"
+    },
+    {
+      "a": 19,
+      "b": 7,
+      "d": 31,
+      "ell": "402240/31",
+      "R": "5760/31",
+      "scalar": "-419/6"
+    }
+  ]
+}

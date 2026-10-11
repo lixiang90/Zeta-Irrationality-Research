@@ -1,0 +1,906 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/19.5";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./19#PT2" title="Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="up up" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="next" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.2" title="§19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.3" title="§19.3 Graphics ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.4" title="§19.4 Derivatives and Differential Equations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.6" title="§19.6 Special Cases ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.7" title="§19.7 Connection Formulas ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.8" title="§19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.9" title="§19.9 Inequalities ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.10" title="§19.10 Relations to Other Functions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.11" title="§19.11 Addition Theorems ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.12" title="§19.12 Asymptotic Approximations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.13" title="§19.13 Integrals of Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.14" title="§19.14 Reduction of General Elliptic Integrals ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.15" title="§19.15 Advantages of Symmetry ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.16" title="§19.16 Definitions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.17" title="§19.17 Graphics ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.18" title="§19.18 Derivatives and Differential Equations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.19" title="§19.19 Taylor and Related Series ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.20" title="§19.20 Special Cases ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.21" title="§19.21 Connection Formulas ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.22" title="§19.22 Quadratic Transformations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.23" title="§19.23 Integral Representations ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.24" title="§19.24 Inequalities ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.25" title="§19.25 Relations to Other Functions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.26" title="§19.26 Addition Theorems ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.27" title="§19.27 Asymptotic Approximations and Expansions ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.28" title="§19.28 Integrals of Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.29" title="§19.29 Reduction of General Elliptic Integrals ‣ Symmetric Integrals ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.30" title="§19.30 Lengths of Plane Curves ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.31" title="§19.31 Probability Distributions ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.32" title="§19.32 Conformal Map onto a Rectangle ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.33" title="§19.33 Triaxial Ellipsoids ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.34" title="§19.34 Mutual Inductance of Coaxial Circles ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.35" title="§19.35 Other Applications ‣ Applications ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.36" title="§19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.37" title="§19.37 Tables ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.38" title="§19.38 Approximations ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="section" href="./19.39" title="§19.39 Software ‣ Computation ‣ Chapter 19 Elliptic Integrals">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Appell functions, Jacobi’s, Jacobi’s nome, Legendre’s elliptic integrals, nome, power-series expansion, power-series expansions, relation to Legendre’s elliptic integrals, relations to other functions">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./19" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19 </span>Elliptic Integrals</span></a><a href="./19#PT2" title="In Chapter 19 Elliptic Integrals" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Legendre’s Integrals</span></a><a href="./19.4" title="In Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.4 </span>Derivatives and Differential Equations</span></a><a href="./19.6" title="In Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.6 </span>Special Cases</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§19.5 </span>Maclaurin and Related Expansions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Appell%20functions">Appell functions</a>, <a class="ltx_keyword" href="./search/search?q=Jacobi%E2%80%99s">Jacobi’s</a>, <a class="ltx_keyword" href="./search/search?q=Jacobi%20nome">Jacobi’s nome</a>, <a class="ltx_keyword" href="./search/search?q=Legendre%20elliptic%20integrals">Legendre’s elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=nome">nome</a>, <a class="ltx_keyword" href="./search/search?q=power-series%20expansion">power-series expansion</a>, <a class="ltx_keyword" href="./search/search?q=power-series%20expansions">power-series expansions</a>, <a class="ltx_keyword" href="./search/search?q=relation%20to%20Legendre%20elliptic%20integrals">relation to Legendre’s elliptic integrals</a>, <a class="ltx_keyword" href="./search/search?q=relations%20to%20other%20functions">relations to other functions</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For (<a href="./19.5#E1" title="(19.5.1) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.1</span></a>)–(<a href="./19.5#E4" title="(19.5.4) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.4</span></a>) put <math class="ltx_Math" altimg="m24.png" altimg-height="22px" altimg-valign="-6px" altimg-width="84px" alttext="\sin\phi=1" display="inline"><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>=</mo><mn>1</mn></mrow></math> and
+<math class="ltx_Math" altimg="m34.png" altimg-height="26px" altimg-valign="-7px" altimg-width="69px" alttext="t=\sqrt{x}" display="inline"><mrow><mi>t</mi><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow></math> in (<a href="./19.2#E4" title="(19.2.4) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.2.4</span></a>)–(<a href="./19.2#E7" title="(19.2.7) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.2.7</span></a>). Then compare
+with <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, 2.1.3(10) and 2.1.1(2))</cite> in the first three
+cases, and with <cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib751" title="Higher Transcendental Functions. Vol. I" class="ltx_ref">1953a</a>, 5.8.2(5) and 5.7.1(6))</cite> in the
+fourth case. For (<a href="./19.5#E5" title="(19.5.5) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.5</span></a>) and (<a href="./19.5#E6" title="(19.5.6) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.6</span></a>) see
+<cite class="ltx_cite ltx_citemacro_citet">Kneser (<a href="./bib/K#bib1287" title="Neue Untersuchungen einer Reihe aus der Theorie der elliptischen Funktionen" class="ltx_ref">1927</a>, (12) and p. 218)</cite>; <cite class="ltx_cite ltx_citemacro_citet">Byrd and Friedman (<a href="./bib/B#bib400" title="Handbook of Elliptic Integrals for Engineers and Scientists" class="ltx_ref">1971</a>, 901.00)</cite>
+is incorrect. (<a href="./19.5#E8" title="(19.5.8) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.8</span></a>) and (<a href="./19.5#E9" title="(19.5.9) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.9</span></a>) follow from
+<cite class="ltx_cite ltx_citemacro_citet">Borwein and Borwein (<a href="./bib/B#bib315" title="Pi and the AGM, A Study in Analytic Number Theory and Computational Complexity" class="ltx_ref">1987</a>, (2.1.13) and (2.3.17), respectively)</cite>. For
+(<a href="./19.5#E10" title="(19.5.10) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.10</span></a>) iterate (<a href="./19.8#E12" title="(19.8.12) ‣ Descending Landen Transformation ‣ §19.8(ii) Landen Transformations ‣ §19.8 Quadratic Transformations ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.8.12</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./14.5#v.info" title="§14.5(v) 𝜇=0, 𝜈=±{1/2} ‣ §14.5 Special Values ‣ Real Arguments ‣ Chapter 14 Legendre and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§14.5(v)</span></a>,
+<a href="./19.36#iv.p2" title="§19.36(iv) Other Methods ‣ §19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.36(iv)</span></a>,
+<a href="./20.11#iii.p2" title="§20.11(iii) Ramanujan’s Change of Base ‣ §20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.11(iii)</span></a>,
+<a href="./22.5#ii.p2" title="§22.5(ii) Limiting Values of 𝑘 ‣ §22.5 Special Values ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§22.5(ii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5" title="" class="ltx_ref">http://dlmf.nist.gov/19.5</a></dd>
+<dt>Addition (effective with 1.1.0):</dt>
+<dd>
+Equations (<a href="./19.5#E4_1" title="(19.5.4_1) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.4_1</span></a>), (<a href="./19.5#E4_2" title="(19.5.4_2) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.4_2</span></a>) and (<a href="./19.5#E4_3" title="(19.5.4_3) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.4_3</span></a>) were added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m43.png" altimg-height="25px" altimg-valign="-7px" altimg-width="65px" alttext="|k|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math> and <math class="ltx_Math" altimg="m42.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="|\alpha|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>, then</p>
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="107px" altimg-valign="-28px" altimg-width="472px" alttext="K\left(k\right)=\frac{\pi}{2}\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2}%
+\right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{m!\;m!}k^{2m}=\frac{\pi}{2}{{}_{2%
+}F_{1}}\left({\tfrac{1}{2},\tfrac{1}{2}\atop 1};k^{2}\right)," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub></mrow><mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo lspace="0.280em">⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mn>1</mn></mfrac><mo>;</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.4))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.36#iv.p2" title="§19.36(iv) Other Methods ‣ §19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.36(iv)</span></a>,
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E1" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E1.tex">TeX</a>, <a href="./19.5.E1.pmml">pMML</a>, <a href="./19.5.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-5px" altimg-width="36px" alttext="{{}_{2}F_{1}}" display="inline"><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts></math> is the Gauss hypergeometric function
+(§§<a href="./15.1" title="§15.1 Special Notation ‣ Notation ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.1</span></a> and <a href="./15.2#i" title="§15.2(i) Gauss Series ‣ §15.2 Definitions and Analytical Properties ‣ Properties ‣ Chapter 15 Hypergeometric Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15.2(i)</span></a>).</p>
+<div class="ltx_equation_container">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="107px" altimg-valign="-28px" altimg-width="502px" alttext="E\left(k\right)=\frac{\pi}{2}\sum_{m=0}^{\infty}\frac{{\left(-\tfrac{1}{2}%
+\right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{m!\;m!}k^{2m}=\frac{\pi}{2}{{}_{2%
+}F_{1}}\left({-\tfrac{1}{2},\tfrac{1}{2}\atop 1};k^{2}\right)," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub></mrow><mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo lspace="0.280em">⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mn>1</mn></mfrac><mo>;</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the second kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.5))</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.36#iv.p2" title="§19.36(iv) Other Methods ‣ §19.36 Methods of Computation ‣ Computation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.36(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E2" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E2.tex">TeX</a>, <a href="./19.5.E2.pmml">pMML</a>, <a href="./19.5.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="107px" altimg-valign="-28px" altimg-width="481px" alttext="D\left(k\right)=\frac{\pi}{4}\sum_{m=0}^{\infty}\frac{{\left(\tfrac{3}{2}%
+\right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{(m+1)!\;m!}k^{2m}=\frac{\pi}{4}{{%
+}_{2}F_{1}}\left({\tfrac{3}{2},\tfrac{1}{2}\atop 2};k^{2}\right)," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="complete elliptic integral of Legendre’s type">D</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>4</mn></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo>⁢</mo><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub></mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow><mo lspace="0.280em">⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>4</mn></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mn>2</mn></mfrac><mo>;</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="53px" alttext="D\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="complete elliptic integral of Legendre’s type">D</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: complete elliptic integral of Legendre’s type</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E3" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E3.tex">TeX</a>, <a href="./19.5.E3.pmml">pMML</a>, <a href="./19.5.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="109px" altimg-valign="-28px" altimg-width="656px" alttext="\Pi\left(\alpha^{2},k\right)=\frac{\pi}{2}\sum_{n=0}^{\infty}\frac{{\left(%
+\tfrac{1}{2}\right)_{n}}}{n!}\sum_{m=0}^{n}\frac{{\left(\tfrac{1}{2}\right)_{m%
+}}}{m!}k^{2m}\alpha^{2n-2m}=\frac{\pi}{2}{F_{1}}\left(\tfrac{1}{2};\tfrac{1}{2%
+},1;1;k^{2},\alpha^{2}\right)," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" mathvariant="normal" title="Legendre’s complete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msub><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></munderover><mrow><mfrac><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mfrac><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></mrow></msup></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>,</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.13#E1" title="(16.13.1) ‣ §16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="172px" alttext="{F_{1}}\left(\NVar{\alpha};\NVar{\beta},\NVar{\beta^{\prime}};\NVar{\gamma};%
+\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">α</mi><mo>;</mo><mi class="ltx_nvar">β</mi><mo>,</mo><msup><mi class="ltx_nvar">β</mi><mo class="ltx_nvar">′</mo></msup><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>;</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: first Appell function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="29px" altimg-valign="-9px" altimg-width="86px" alttext="\Pi\left(\NVar{\alpha}^{2},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" mathvariant="normal" title="Legendre’s complete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi class="ltx_nvar" href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the third kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.1#p1.t1.r5" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="21px" altimg-valign="-2px" altimg-width="27px" alttext="\alpha^{2}" display="inline"><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup></math>:  real or complex parameter</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.10))</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E4" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E4.tex">TeX</a>, <a href="./19.5.E4.pmml">pMML</a>, <a href="./19.5.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E4_1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.4_1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="F\left(\phi,k\right)=\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2}\right)_{m}}{%
+\sin}^{2m+1}\phi}{(2m+1)m!}{{}_{2}F_{1}}\left({m+\tfrac{1}{2},\tfrac{1}{2}%
+\atop m+\tfrac{3}{2}};{\sin}^{2}{\phi}\right)k^{2m}=\sin\phi\,{F_{1}}\left(%
+\tfrac{1}{2};\tfrac{1}{2},\tfrac{1}{2};\tfrac{3}{2};{\sin}^{2}\phi,k^{2}{\sin}%
+^{2}\phi\right)," display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mtd><mtd class="ltx_align_left"><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mfrac><mo>;</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>⁢</mo><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>,</mo><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4_1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.13#E1" title="(16.13.1) ‣ §16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="172px" alttext="{F_{1}}\left(\NVar{\alpha};\NVar{\beta},\NVar{\beta^{\prime}};\NVar{\gamma};%
+\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">α</mi><mo>;</mo><mi class="ltx_nvar">β</mi><mo>,</mo><msup><mi class="ltx_nvar">β</mi><mo class="ltx_nvar">′</mo></msup><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>;</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: first Appell function</a>,
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./19.2#E4" title="(19.2.4) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the first kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.8))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./errata/#V1.1.2.I2.ix1.p1" title="In Other Changes ‣ Version 1.1.2 (June 15, 2021) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.2) for  Additions</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E4_1" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E4_1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E4_1.tex">TeX</a>, <a href="./19.5.E4_1.pmml">pMML</a>, <a href="./19.5.E4_1.png">png</a>
+</dd>
+<dt>Addition (effective with 1.1.2):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E4_2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.4_2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_Math ltx_eqn_cell ltx_align_center"><math class="ltx_Math" alttext="E\left(\phi,k\right)=\sum_{m=0}^{\infty}\frac{{\left(-\tfrac{1}{2}\right)_{m}}%
+{\sin}^{2m+1}\phi}{(2m+1)m!}{{}_{2}F_{1}}\left({m+\tfrac{1}{2},\tfrac{1}{2}%
+\atop m+\tfrac{3}{2}};{\sin}^{2}{\phi}\right)k^{2m}=\sin\phi\,{F_{1}}\left(%
+\tfrac{1}{2};\tfrac{1}{2},-\tfrac{1}{2};\tfrac{3}{2};{\sin}^{2}\phi,k^{2}{\sin%
+}^{2}\phi\right)," display="block"><mrow><mtable align="baseline 1" columnalign="left" columnspacing="0.1em" displaystyle="true"><mtr><mtd class="ltx_align_left"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mtd><mtd class="ltx_align_left"><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mfrac><mo>;</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_left"></mtd><mtd class="ltx_align_left"><mo>=</mo><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>⁢</mo><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mrow><mo>−</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>;</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>,</mo><mrow><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4_2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.13#E1" title="(16.13.1) ‣ §16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="172px" alttext="{F_{1}}\left(\NVar{\alpha};\NVar{\beta},\NVar{\beta^{\prime}};\NVar{\gamma};%
+\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">α</mi><mo>;</mo><mi class="ltx_nvar">β</mi><mo>,</mo><msup><mi class="ltx_nvar">β</mi><mo class="ltx_nvar">′</mo></msup><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>;</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: first Appell function</a>,
+<a href="./16.2" title="§16.2 Definition and Analytic Properties ‣ Generalized Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="25px" altimg-valign="-7px" altimg-width="123px" alttext="{{}_{2}F_{1}}\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mmultiscripts><mi href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">F</mi><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">1</mn><mrow></mrow><mprescripts></mprescripts><mn href="./16.2" title="=𝐹(𝑎,𝑏;𝑐;𝑧) notation for Gauss’ hypergeometric function">2</mn><mrow></mrow></mmultiscripts><mo>⁡</mo><mrow><mo>(</mo><mrow><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi></mrow><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: <math class="ltx_Math" altimg="m4.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="=F\left(\NVar{a},\NVar{b};\NVar{c};\NVar{z}\right)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi href="./15.2#E1" title="=₂𝐹₁(𝑎,𝑏;𝑐;𝑧) Gauss’ hypergeometric function">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">a</mi><mo>,</mo><mi class="ltx_nvar" href="./16.1#t1.r5" title="real or complex parameters">b</mi><mo>;</mo><mi class="ltx_nvar">c</mi><mo>;</mo><mi class="ltx_nvar" href="./16.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></mrow></math> notation for Gauss’ hypergeometric function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./19.2#E5" title="(19.2.5) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\NVar{\phi},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the second kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.9))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./errata/#V1.1.2.I2.ix1.p1" title="In Other Changes ‣ Version 1.1.2 (June 15, 2021) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.2) for  Additions</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E4_2" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E4_2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E4_2.tex">TeX</a>, <a href="./19.5.E4_2.pmml">pMML</a>, <a href="./19.5.E4_2.png">png</a>
+</dd>
+<dt>Addition (effective with 1.1.2):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E4_3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.4_3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4_3.png" altimg-height="110px" altimg-valign="-28px" altimg-width="703px" alttext="\Pi\left(\phi,\alpha^{2},k\right)=\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2}%
+\right)_{m}}{\sin}^{2m+1}\phi}{(2m+1)m!}{F_{1}}\left(m+\tfrac{1}{2};\tfrac{1}{%
+2},1;m+\tfrac{3}{2};{\sin}^{2}\phi,\alpha^{2}{\sin}^{2}\phi\right)k^{2m}," display="block"><mrow><mrow><mrow><mi href="./19.2#E7" mathvariant="normal" title="Legendre’s incomplete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mfrac><mrow><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>;</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>,</mo><mn>1</mn><mo>;</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></mrow><mo>;</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow><mo>,</mo><mrow><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi href="./4.14#E1" title="sine function">sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></mrow></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4_3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./16.13#E1" title="(16.13.1) ‣ §16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><math class="ltx_Math" altimg="m35.png" altimg-height="25px" altimg-valign="-7px" altimg-width="172px" alttext="{F_{1}}\left(\NVar{\alpha};\NVar{\beta},\NVar{\beta^{\prime}};\NVar{\gamma};%
+\NVar{x},\NVar{y}\right)" display="inline"><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">α</mi><mo>;</mo><mi class="ltx_nvar">β</mi><mo>,</mo><msup><mi class="ltx_nvar">β</mi><mo class="ltx_nvar">′</mo></msup><mo>;</mo><mi class="ltx_nvar">γ</mi><mo>;</mo><mi class="ltx_nvar">x</mi><mo>,</mo><mi class="ltx_nvar">y</mi><mo>)</mo></mrow></mrow></math>: first Appell function</a>,
+<a href="./5.2#iii" title="§5.2(iii) Pochhammer’s Symbol ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="26px" altimg-valign="-8px" altimg-width="43px" alttext="{\left(\NVar{a}\right)_{\NVar{n}}}" display="inline"><msub><mrow><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">(</mo><mi class="ltx_nvar" href="./5.1#t1.r5" title="real or complex variable">a</mi><mo href="./5.2#iii" title="Pochhammer’s symbol (or shifted factorial)">)</mo></mrow><mi class="ltx_nvar" href="./5.1#t1.r1" title="nonnegative integer">n</mi></msub></math>: Pochhammer’s symbol (or shifted factorial)</a>,
+<a href="./19.2#E7" title="(19.2.7) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m15.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\Pi\left(\NVar{\phi},\NVar{\alpha}^{2},\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E7" mathvariant="normal" title="Legendre’s incomplete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><msup><mi class="ltx_nvar" href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s incomplete elliptic integral of the third kind</a>,
+<a href="./front/introduction#common.t1.r15" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m1.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="!" display="inline"><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></math>: factorial (as in <math class="ltx_Math" altimg="m30.png" altimg-height="18px" altimg-valign="-2px" altimg-width="23px" alttext="n!" display="inline"><mrow><mi>n</mi><mo href="./front/introduction#common.t1.r15" title="factorial (as in 𝑛!)">!</mo></mrow></math>)</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a>,
+<a href="./19.1#p1.t1.r2" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="22px" altimg-valign="-6px" altimg-width="17px" alttext="\phi" display="inline"><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi></math>:  real or complex argument</a>,
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a> and
+<a href="./19.1#p1.t1.r5" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="21px" altimg-valign="-2px" altimg-width="27px" alttext="\alpha^{2}" display="inline"><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup></math>:  real or complex parameter</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Carlson (<a href="./bib/C#bib425" title="Some series and bounds for incomplete elliptic integrals" class="ltx_ref">1961b</a>, (2.11))</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./errata/#V1.1.2.I2.ix1.p1" title="In Other Changes ‣ Version 1.1.2 (June 15, 2021) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.2) for  Additions</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E4_3" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E4_3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E4_3.tex">TeX</a>, <a href="./19.5.E4_3.pmml">pMML</a>, <a href="./19.5.E4_3.png">png</a>
+</dd>
+<dt>Addition (effective with 1.1.2):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m36.png" altimg-height="25px" altimg-valign="-7px" altimg-width="172px" alttext="{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)" display="inline"><mrow><msub><mi href="./16.13#E1" title="first Appell function">F</mi><mn href="./16.13#E1" title="first Appell function">1</mn></msub><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mo>;</mo><mi>β</mi><mo>,</mo><msup><mi>β</mi><mo>′</mo></msup><mo>;</mo><mi>γ</mi><mo>;</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo></mrow></mrow></math> is an Appell function
+(§<a href="./16.13" title="§16.13 Appell Functions ‣ Two-Variable Hypergeometric Functions ‣ Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16.13</span></a>).
+</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">For <em class="ltx_emph ltx_font_italic">Jacobi’s nome</em> <math class="ltx_Math" altimg="m32.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./19.5#E5" title="nome">q</mi></math>:</p>
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="108px" altimg-valign="-7px" altimg-width="387px" alttext="q=\exp\left(-\pi{K^{\prime}}\left(k\right)/K\left(k\right)\right)=r+8r^{2}+84r%
+^{3}+992r^{4}+\cdots," display="block"><mrow><mrow><mi href="./19.5#E5" title="nome">q</mi><mo>=</mo><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mrow><msup><mi href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">K</mi><mo href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow><mo>/</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mi>r</mi><mo>+</mo><mrow><mn>8</mn><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>84</mn><mo>⁢</mo><msup><mi>r</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mn>992</mn><mo>⁢</mo><msup><mi>r</mi><mn>4</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m33.png" altimg-height="29px" altimg-valign="-9px" altimg-width="84px" alttext="r=\frac{1}{16}k^{2}" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>16</mn></mfrac><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup></mrow></mrow></math>, <math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq k\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>≤</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8_1" title="(19.2.8_1) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m37.png" altimg-height="25px" altimg-valign="-7px" altimg-width="60px" alttext="{K^{\prime}}\left(\NVar{k}\right)" display="inline"><mrow><msup><mi href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">K</mi><mo href="./19.2#E8_1" title="Legendre’s complementary complete elliptic integral of the first kind">′</mo></msup><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complementary complete elliptic integral of the first kind</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./4.2#E19" title="(4.2.19) ‣ §4.2(iii) The Exponential Function ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-6px" altimg-width="50px" alttext="\exp\NVar{z}" display="inline"><mrow><mi href="./4.2#E19" title="exponential function">exp</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: exponential function</a>,
+<a href="./22.2#E1" title="(22.2.1) ‣ §22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./22.2#E1" title="nome">q</mi></math>: nome</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E5" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E5.tex">TeX</a>, <a href="./19.5.E5.pmml">pMML</a>, <a href="./19.5.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">Also,</p>
+<div class="ltx_equation_container">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="28px" altimg-valign="-6px" altimg-width="423px" alttext="q=\lambda+2\lambda^{5}+15\lambda^{9}+150\lambda^{13}+1707\lambda^{17}+\cdots," display="block"><mrow><mrow><mi href="./19.5#E5" title="nome">q</mi><mo>=</mo><mrow><mi>λ</mi><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>λ</mi><mn>5</mn></msup></mrow><mo>+</mo><mrow><mn>15</mn><mo>⁢</mo><msup><mi>λ</mi><mn>9</mn></msup></mrow><mo>+</mo><mrow><mn>150</mn><mo>⁢</mo><msup><mi>λ</mi><mn>13</mn></msup></mrow><mo>+</mo><mrow><mn>1707</mn><mo>⁢</mo><msup><mi>λ</mi><mn>17</mn></msup></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m3.png" altimg-height="21px" altimg-valign="-5px" altimg-width="92px" alttext="0\leq k\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>≤</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./22.2#E1" title="(22.2.1) ‣ §22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./22.2#E1" title="nome">q</mi></math>: nome</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./19.5#p2" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E6" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E6.tex">TeX</a>, <a href="./19.5.E6.pmml">pMML</a>, <a href="./19.5.E6.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where</p>
+<div class="ltx_equation_container">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="31px" altimg-valign="-7px" altimg-width="262px" alttext="\lambda=(1-\sqrt{k^{\prime}})/(2(1+\sqrt{k^{\prime}}))." display="block"><mrow><mrow><mi>λ</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><msqrt><msup><mi href="./19.1#p1.t1.r4" title="complementary modulus">k</mi><mo href="./19.1#p1.t1.r4" title="complementary modulus">′</mo></msup></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msqrt><msup><mi href="./19.1#p1.t1.r4" title="complementary modulus">k</mi><mo href="./19.1#p1.t1.r4" title="complementary modulus">′</mo></msup></msqrt></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd><a href="./19.1#p1.t1.r4" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="20px" altimg-valign="-2px" altimg-width="22px" alttext="k^{\prime}" display="inline"><msup><mi href="./19.1#p1.t1.r4" title="complementary modulus">k</mi><mo href="./19.1#p1.t1.r4" title="complementary modulus">′</mo></msup></math>:  complementary modulus</a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E7" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E7.tex">TeX</a>, <a href="./19.5.E7.pmml">pMML</a>, <a href="./19.5.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">Coefficients of terms up to <math class="ltx_Math" altimg="m19.png" altimg-height="21px" altimg-valign="-2px" altimg-width="34px" alttext="\lambda^{49}" display="inline"><msup><mi>λ</mi><mn>49</mn></msup></math> are given in <cite class="ltx_cite ltx_citemacro_citet">Lee (<a href="./bib/L#bib1396" title="Application of theta functions for numerical evaluation of complete elliptic integrals of the first and second kinds" class="ltx_ref">1990</a>)</cite>,
+along with tables of fractional errors in <math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(k\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m2.png" altimg-height="24px" altimg-valign="-5px" altimg-width="165px" alttext="0.1\leq k^{2}\leq 0.9999" display="inline"><mrow><mn>0.1</mn><mo>≤</mo><msup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>2</mn></msup><mo>≤</mo><mn>0.9999</mn></mrow></math>, obtained by using 12 different truncations of
+(<a href="./19.5#E6" title="(19.5.6) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.6</span></a>) in (<a href="./19.5#E8" title="(19.5.8) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.8</span></a>) and (<a href="./19.5#E9" title="(19.5.9) ‣ §19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19.5.9</span></a>).</p>
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="114px" altimg-valign="-28px" altimg-width="264px" alttext="K\left(k\right)=\frac{\pi}{2}\left(1+2\sum_{n=1}^{\infty}q^{n^{2}}\right)^{2}," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi href="./19.5#E5" title="nome">q</mi><msup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mn>2</mn></msup></msup></mrow></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|q|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./19.5#E5" title="nome">q</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./22.2#E1" title="(22.2.1) ‣ §22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./22.2#E1" title="nome">q</mi></math>: nome</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./19.5#p2" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E8" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E8.tex">TeX</a>, <a href="./19.5.E8.pmml">pMML</a>, <a href="./19.5.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="102px" altimg-valign="-23px" altimg-width="414px" alttext="E\left(k\right)=K\left(k\right)+\frac{2\pi^{2}}{K\left(k\right)}\,\frac{\sum_{%
+n=1}^{\infty}(-1)^{n}n^{2}q^{n^{2}}}{1+2\sum_{n=1}^{\infty}(-1)^{n}q^{n^{2}}}," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></msup></mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mfrac><mo lspace="0.170em">⁢</mo><mfrac><mrow><msubsup><mo>∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msup><mo>⁢</mo><msup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./19.5#E5" title="nome">q</mi><msup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mn>2</mn></msup></msup></mrow></mrow><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∑</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></msup><mo>⁢</mo><msup><mi href="./19.5#E5" title="nome">q</mi><msup><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi><mn>2</mn></msup></msup></mrow></mrow></mrow></mrow></mfrac></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m44.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="|q|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi href="./19.5#E5" title="nome">q</mi><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="52px" alttext="E\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the second kind</a>,
+<a href="./22.2#E1" title="(22.2.1) ‣ §22.2 Definitions ‣ Properties ‣ Chapter 22 Jacobian Elliptic Functions" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="17px" altimg-valign="-6px" altimg-width="14px" alttext="q" display="inline"><mi href="./22.2#E1" title="nome">q</mi></math>: nome</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>,
+<a href="./19.5#p2" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E9" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E9.tex">TeX</a>, <a href="./19.5.E9.pmml">pMML</a>, <a href="./19.5.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">An infinite series for <math class="ltx_Math" altimg="m20.png" altimg-height="25px" altimg-valign="-7px" altimg-width="75px" alttext="\ln K\left(k\right)" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></mrow></math> is equivalent to the infinite
+product</p>
+<div class="ltx_equation_container">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="73px" altimg-valign="-28px" altimg-width="281px" alttext="K\left(k\right)=\frac{\pi}{2}\prod_{m=1}^{\infty}(1+k_{m})," display="block"><mrow><mrow><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msub><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./19.2#E8" title="(19.2.8) ‣ §19.2(ii) Legendre’s Integrals ‣ §19.2 Definitions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="54px" alttext="K\left(\NVar{k}\right)" display="inline"><mrow><mi href="./19.2#E8" title="Legendre’s complete elliptic integral of the first kind">K</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>: Legendre’s complete elliptic integral of the first kind</a>,
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E10" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E10.tex">TeX</a>, <a href="./19.5.E10.pmml">pMML</a>, <a href="./19.5.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m27.png" altimg-height="21px" altimg-valign="-5px" altimg-width="64px" alttext="k_{0}=k" display="inline"><mrow><msub><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mn>0</mn></msub><mo>=</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></mrow></math> and</p>
+<div class="ltx_equation_container">
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">19.5.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="64px" altimg-valign="-25px" altimg-width="211px" alttext="k_{m+1}=\frac{1-\sqrt{1-k_{m}^{2}}}{1+\sqrt{1-k_{m}^{2}}}," display="block"><mrow><mrow><msub><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msubsup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mn>2</mn></msubsup></mrow></msqrt></mrow><mrow><mn>1</mn><mo>+</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msubsup><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="114px" alttext="m=0,1,\dots" display="inline"><mrow><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./19.1#p1.t1.r1" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./19.1#p1.t1.r1" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./19.1#p1.t1.r3" title="§19.1 Special Notation ‣ Notation ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi></math>:  real or complex modulus</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./19.5.E11" title="" class="ltx_ref">http://dlmf.nist.gov/19.5.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./19.5.E11.tex">TeX</a>, <a href="./19.5.E11.pmml">pMML</a>, <a href="./19.5.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./19.5#info" title="§19.5 Maclaurin and Related Expansions ‣ Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§19.5</span></a> and
+<a href="./19#info" title="Chapter 19 Elliptic Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.19</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Series expansions of <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="E\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E5" title="Legendre’s incomplete elliptic integral of the second kind">E</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> are surveyed
+and improved in <cite class="ltx_cite ltx_citemacro_citet">Van de Vel (<a href="./bib/V#bib2315" title="On the series expansion method for computing incomplete elliptic integrals of the first and second kinds" class="ltx_ref">1969</a>)</cite>, and the case of <math class="ltx_Math" altimg="m11.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="F\left(\phi,k\right)" display="inline"><mrow><mi href="./19.2#E4" title="Legendre’s incomplete elliptic integral of the first kind">F</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math>
+is summarized in <cite class="ltx_cite ltx_citemacro_citet">Gautschi (<a href="./bib/G#bib882" title="Computational Methods in Special Functions – A Survey" class="ltx_ref">1975</a>, §1.3.2)</cite>. For series expansions of
+<math class="ltx_Math" altimg="m16.png" altimg-height="29px" altimg-valign="-9px" altimg-width="107px" alttext="\Pi\left(\phi,\alpha^{2},k\right)" display="inline"><mrow><mi href="./19.2#E7" mathvariant="normal" title="Legendre’s incomplete elliptic integral of the third kind">Π</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./19.1#p1.t1.r2" title="real or complex argument">ϕ</mi><mo>,</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo>,</mo><mi href="./19.1#p1.t1.r3" title="real or complex modulus">k</mi><mo>)</mo></mrow></mrow></math> when <math class="ltx_Math" altimg="m41.png" altimg-height="26px" altimg-valign="-7px" altimg-width="77px" alttext="|\alpha^{2}|&lt;1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><msup><mi href="./19.1#p1.t1.r5" title="real or complex parameter">α</mi><mn>2</mn></msup><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mn>1</mn></mrow></math> see
+<cite class="ltx_cite ltx_citemacro_citet">Erdélyi<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/E#bib752" title="Higher Transcendental Functions. Vol. II" class="ltx_ref">1953b</a>, §13.6(9))</cite>. See also <cite class="ltx_cite ltx_citemacro_citet">Karp<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/K#bib1228" title="Series expansions for the third incomplete elliptic integral via partial fraction decompositions" class="ltx_ref">2007</a>)</cite>.
+</p>
+</div>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./19.4" title="In Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.4 </span>Derivatives and Differential Equations</span></a><a href="./19.6" title="In Legendre’s Integrals ‣ Chapter 19 Elliptic Integrals" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">19.6 </span>Special Cases</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#cb8f87868de6adaeaeafa9aaa8a08ba5a2b8bfe5aca4bd">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4712226991a9bef',t:'MTc5MTQyMDQzNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

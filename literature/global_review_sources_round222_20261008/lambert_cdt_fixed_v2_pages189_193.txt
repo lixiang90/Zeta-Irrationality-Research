@@ -1,0 +1,269 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                189
+
+
+                    15. Complements and further questions
+  We close our paper with a discussion on some further open problems naturally
+posed by our method. But first, we discuss more closely the relationship between
+some of our results and more established methods.
+15.1. Comparison to the Siegel–Bombieri–Chudnovsky theory. Theorem C
+is an irrationality result in two parameters (subject to certain archimedean con-
+straints). In this section, we compare Theorem C to results previously available
+through the general arithmetic theory of special values of G-functions. We be-
+gin by recalling Siegel’s definition of a G-function, fixing for this purpose a field
+embedding Q ,→ C:
+                                                            P∞
+Definition 15.1.1 (G-function). A power series f (x) = n=0 an xn ∈ QJxK is a
+G-function if it satisfies the following two properties:
+    (1) f (x) is holonomic: it satisfies an ODE with coefficients in Q[x].
+    (2) Both an and the denominators of the an have moderate growth, namely,
+         the common denominator of a0 , . . . , an grows at most exponentially in n,
+         and the largest Galois conjugate an of an ∈ Q ,→ C grows as most expo-
+         nentially in n.
+  From condition (1), it follows that f (x) ∈ KJxK for some number field K/Q.
+As recalled in § 2.2, one expects ([FR17]) that for such an f (x), there should exist
+A ∈ N>0 , b ∈ Q>0 , and σ ∈ N such that
+                       an An+1 [1, . . . , bn]σ ∈ OK   ∀n ∈ N,               (15.1.2)
+and moreover this is known unconditionally under the (conjecturally unnecessary)
+additional assumption that f (x) arises from geometry [And89, § V app.]. In any
+case, all the holonomic functions in our paper do have denominators subsumed
+by (15.1.2); they are manifestly G-functions.
+   The basic paradigm of the arithmetic theory of G-functions is captured by the
+following theorem:
+Theorem 15.1.3. For any Q(x)-linearly independent set f1 , . . . , fh ∈ QJxK of
+G-functions with rational coefficients, there is a constant N0 = N0 (f ), effectively
+computable from the minimal ODEs of all the fi , such that the set
+   {n ∈ Z : the fi (1/n) are Q-linearly dependent or contain a divergent value}
+   ⊂ [−N0 , N0 ].
+                                                                             (15.1.4)
+   This result was envisioned in Siegel’s 1929 paper [Zan14, § VII] and proved,
+in the degree of abstraction that we state here, by David and Gregory Chud-
+novsky [CC85a], after the groundbreaking works of Galočkin [Gal74] (who had
+to assume the ‘factorials canceling property’ that reflects in the global nilpotence
+of the integrable connection; a difficulty already noted by Siegel himself), and
+Bombieri [Bom81] (who proved a general adelic theorem under the similar and ulti-
+mately equivalent condition — but by far easier to check than Galočkin’s — that the
+linear differential system is ‘Fuchsian of arithmetic type’.) The Chudnovskys’ main
+result [CC85a, Theorem III], [DGS94, Theorem VIII.1.5], [And89, § VI], [DV01]
+was precisely the proof of the global nilpotence property for all irreducible ODEs
+that possess at least one G-series formal solution.
+190                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Remark 15.1.5. In line with the discussion in § 3.3.3, the quantitative results on
+Siegel’s program are, of course, stronger and more general than this quintessen-
+tial form extracted from the works of Galočkin, Bombieri, and the Chudnovskys.
+See Bombieri’s Main Theorem39 in [Bom81, page 49], and [CC85a, Theorems I
+and II], [Dèb86, § 1.2 Théorème Principal], [And89, § VII] for other treatments
+with closely related results. A great picture of the pre-1997 state of the subject
+is in [PS98, ch. 5 § 7]. For a more recent survey we refer to [Riv19, § 5.6], as
+well as to [FR18] for further developments. Many of the standard relaxations, such
+as the admission of the √  apparently more general special arguments x = a/n ∈ Q
+with |a/n| < c1 exp −c2 log n · log log n , can be subsumed into the form (15.1.4)
+upon making explicit the dependence of N0 on the differential operator follow-
+ing [Bom81]. But (15.1.4) is also a form that directly connects to integral points
+on affine algebraic curves, and also to our framework in particular cases § 15.2. We
+comment on the former connection in our next paragraph.
+    While Bombieri’s general inequality is given in an adelic form over an arbitrary
+number field, the condition in Theorem 15.1.3 on rational coefficients is of a fun-
+damentally arithmetic nature, and it is crucial for the effectivity clause on N0 .
+If for instance in the {f1 , . . . , fh } := {1, f } case one wants to handle algebraic
+number coefficients f ∈ QJxK like in Remark 8.2.42, the Siegel–Shidlovsky-style
+proof logic in [CC85a, § 7] based on symmetric powers mandates that the hy-
+pothesis f (x) ∈ / Q(x) (non-rational functions) would need to be strengthened
+to f (x) ∈/ Q(x) (transcendental functions). And indeed, Siegel’s finiteness theo-
+rem on the integral points of non-rational affine algebraic curves has, to this day,
+not been resolved with an effective upper bound on the heights of the solutions40,
+but it can be shown to be equivalent to the f (x) ∈ Q(x), {f1 , . . . , fh } = {1, f } case
+of the statement (15.1.4) with the assumption f ∈ QJxK (of rational coefficients)
+relaxed to f ∈ QJxK (coefficients from a number field). Hence, a statement such
+as (15.1.4) is a wide open question for the case of algebraic power series with co-
+efficients from a number field other than Q or an imaginary quadratic field. The
+rational coefficients case handled by Theorem 15.1.3 reduces, in the algebraic case of
+f (x) ∈ Q(x)∩QJxK, to Bombieri’s extension [BG06, Theorem 9.6.6], [Bom83, § IV],
+[Dèb85] of the classical Runge theorem: an effective resolution in (x, y) ∈ Z × Q of
+an irreducible bivariate Diophantine equation F (x, y) = 0 over Q when the highest-
+order homogeneous part of F (x, y) is not proportional to a power of an irreducible
+polynomial over Q. (More intrinsically, under the Runge splitting condition: the
+“divisor at infinity” used to give meaning to the integral points problem does not
+consist of a single Galois orbit of algebraic points on the algebraic curve. As is
+apparent from the explicit form of Bombieri’s inequality [Bom81, page 49], the con-
+dition is arithmetic in nature and cannot be attained by extending to a number
+field; see [BG06, Equation (9.26)] for the general form of Runge’s condition over
+the ring OK,S of S-integers of a number field K.)                                        △
+
+
+
+
+    39Noting André’s remark [And89, page 79] that a scalar coefficient ’2’ should be added in front
+of the summation over ζ ∈ sing0 (L) in the term c24 in Bombieri’s Main Theorem.
+    40This is exactly the content of Hilbert’s Tenth problem for the case of Diophantine equations
+in two variables.
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        191
+
+
+  In these optics, our Theorem C may be considered as an (x, y) = (1/n, 1/m)
+special values analog for the particular bivariate G-function
+
+                             F (x, y) := log(1 − x) log(1 − y).                        (15.1.6)
+
+At least some basic results [Gal74, Gal75, Gal96, Hat98, Lys18] of this type are,
+of course, contained by the single variable Theorem 15.1.3, for instance one can
+evaluate the univariate G-function f (x) = log(1−x) log(1+x) at the point x = 1/n.
+Already on an example as simple as this, the threshold term N0 arising from the
+general theory is extremely big; it is estimated in [Hat98] to be on the order of e170
+in this example. As far as we are aware, the record-lowest threshold on which
+the irrationality log(1 − 1/n) log(1 + 1/n) ∈/ Q has been proved is Lysov’s n ≥ 33
+in [Lys18], by explicit (special!) Hermite–Padé constructions. In this section, we
+investigate the scope of the general G-function methods on our Theorem C.
+
+15.1.7. The scope of the single variable theory. To apply the single variable theory,
+we should treat k := m − n as a parameter, and consider the G-function
+                                          
+                                      x
+       f (x) := log(1 − x) log 1 −           ∈ QJxK; k := m − n ∈ Z,         (15.1.8)
+                                   1 + kx
+
+whose value at x = 1/n gives the desired product of two logarithms:
+
+                 f (1/n) = log(1 − 1/n) log(1 − 1/m) = F (1/n, 1/m).
+
+For notational simplicity alone, we shall only be concerned here with the irrational-
+ity of the product log(1 − 1/n) log(1 − 1/m), and not with its linear independence
+from the individual factors; this, of course, suffices for demonstrating the limita-
+tions of the general arithmetic theory of special values of G-functions. Thus we
+apply Theorem 15.1.3 with {f1 , . . . , fh } := {1, f }. Then we need to quantify the
+N0 = N0 (k) = N0 (m − n) in Theorem 15.1.3 as a function of k, that is essentially
+of the height of the linear ODE.
+   We claim that log N0 (k) ≍ log |k| for the minimal ODE of the function fk , by any
+of methods from the references that we listed in Remark 15.1.5 on the general arith-
+metic G-function theory.41 Given this claim, the condition that guarantees f (1/n) ∈/
+Q from (15.1.4) becomes |n| > |k|c for some absolute constant c ∈ R>0 , that is the
+condition
+                              |1 − m/n| < |k/n| < |n|1−1/c .
+This means that the cases of Theorem C that were implicitly known through the
+general G-functions theory are all under a condition of the form
+
+                    0 < |1 − m/n| ≪ |n|−κ ,          for some κ ∈ (0, 1),
+
+a condition necessary and sufficient for these general methods to apply; but a
+condition significantly stronger than our 0 < |1 − m/n| < 10−6 .
+
+
+   41We omit the details, but the enterprising reader can find them in the latex source code for
+this paper available on the arXiv.
+192                   F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+15.1.9. Multivariable G-function theory. The arithmetic theory of multivariable G-
+functions is still in its infancy; we refer to [AB97] for the geometric foundations,
+and to [Nag97] (for dimension two) and [DV01] (for arbitrary dimension) for the
+generalizations of the Chudnovskys’ fundamental theorem. It seems likely that a
+two-dimensional version of Siegel’s approximating forms scheme § 3.3.1, as carried
+out by Bombieri in [Bom81], might combine with standard nonvanishing meth-
+ods [Dys47, Bom82] for Diophantine auxiliary constructions at a special point,
+to give the irrationality f (1/n, 1/m) ∈ / Q of the specializations of a bivariate G-
+function f (x, y) ∈ QJx, yK ∖ Q(x, y) at arguments of the form x = 1/n, y = 1/m,
+where n, m ∈ Z ∖ {0} with log |n| ≫f 1 and log |m|/ log |n| ≫f 1; to our knowl-
+edge, this kind of program has not as yet been worked out in the literature. The
+range |1 − m/n| < 10−6 that we obtained for (15.1.6) from the Apéry limits method
+is entirely orthogonal to this!
+
+
+
+
+15.1.10. Avenues from Hermite–Padé constructions. As explained in §§ 3.3.7, 3.3.13,
+our proof in § 14 of Theorem C can be conceptually linked to the Hermite–Padé
+approximants to the logarithm function, used with the Hadamard product con-
+struction § 14.1. While products of three or more logarithms appear unreachable
+by our method here (by the numerology e3 > 16), it could be worthwhile to at-
+tempt linear independence of more than a single pair of products of two logarithms,
+starting from the simultaneous Hermite–Padé approximation theory with several
+logarithms worked out explicitly in [RT86] and [DHKK22].
+   A more general scheme, such as we indicated on the most basic examples in § 3.3.3
+and § 3.3.7, could be sought with forming the generating function of the special lin-
+ear forms obtained from evaluating a regular sequence of functional Hermite–Padé
+approximants to a basic function. Beukers [Beu81, Beu84], using polylogarithms,
+and Prévost [Pré96], having ζ(3, 1 + 1/y) for the basic function to be evaluated
+at the points of the form y = 1/n, each were able to interpret the Apéry se-
+quences inside such a scheme. The former type was vastly generalized by Fischler
+and Rivoal [FR03]. It could be interesting to find a similar interpretation with
+simultaneous Hermite–Padé approximants for the simultaneous linear forms in ζ(2)
+and L(2, χ−3 ) that we exploited in § 11. We note however that such generating
+function procedures far from always give rise to G-functions, even if the starting
+function for the Hermite–Padé approximation is algebraic [BC97b]; for the Prévost
+type, some non-examples related to zeta values are in [PR21, § 8].
+   Two other subjects that we have omitted here (in part, for reasons of space)
+are applications to non-rational algebraic arguments for the two logarithms, as well
+as p-adic logarithms. Another reason for omitting the later application is that, in
+this paper, we have emphasized the archimedean place as special when it comes to
+overconvergence. In [CDT24], we plan to write our holonomicity bound in a more
+general Arakelov adelic form over a global field.
+   Finally, speaking more broadly of holonomic explicit constructions by any method,
+we remark that in many of the more intricate ones in the literature — such as in
+Zudilin’s work [Zud14] on simultaneous approximation to ζ(2) and ζ(3), and in
+Brown and Zudilin’s work [BZ22] on ζ(5) — progress towards a not-yet-attained ir-
+rationality goal is measured by setting up a complex set of parameters to maximize
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                           193
+
+                                n             o
+the worthiness exponent lim sup − log |η−p/q|
+                                       log q    . The latter is very far from faith-
+fully measuring worthiness as a potential for applying in our framework of rational
+holonomy bounds.
+15.2. Integral holonomic modules. Although N0 in Theorem 15.1.3 is effective,
+it is a wide open42 problem to precisely (in principle) determine the left-hand side set
+in (15.1.4). Moreover, as we have seen with a case as simple as [Hat98], the bound
+on N0 hin the general
+               i       property (15.1.4) is, in practice, very big. Our findings with
+the Q x, 1−x1
+                -integrality refinements in §§ 2.7, 2.8, see especially Remarks 2.7.6
+and 2.8.2, seem to point towards a completely different approach to those of the
+cases of (15.1.4) whose holonomicity is recognized by André’s arithmetic criterion
+(Corollary 2.6.1). Our inspiration for hoping to reverse the proof logic in Re-
+mark 2.7.6 for the purpose of applying to similar other potential linear independence
+setups — many of them unproved conjectures — stems from the ideas of Bézivin and
+Robba [BR89] which they used for reproving the Hermite–Lindemann–Weierstrass
+theorem as an application of Bertrandias’s arithmetic rationality criterion [Ami75,
+Théorème 5.4.6] (see also [BBR90] for a historical dissection of that proof); and,
+ultimately, the refinement of those ideas at the hands of André [And00a, And00b]
+and Beukers [Beu06], using the Chudnovskys’s theorem and the Fourier–Laplace
+duality between E- and G-functions, to reprove (and further refine) the qualitative
+Siegel–Shidlovsky theorem on special values of E-functions.
+   Let ∂ := x · (d/dx) be the multiplicatively invariant derivation. Consider (for
+simplicity here) an étale 43 holomorphic mapping φ : D → C taking φ(0) = 0, and
+a vector b := (b1 , . . . , br ) ∈ [0, ∞)r with |φ′ (0)| > eb1 +···+br . Consider the set D
+comprised of the formal power series of the shape
+                    ∞
+                   X                   xn
+           f (x) =       an Qr                           , an ∈ Z ∀n ∈ N            (15.2.1)
+                   n=0           h=1 [1, . . . , bi · n]
+
+such that φ∗ f ∈ O(D) is a holomorphic function on the disc. This is a module
+over the noncommutative ring Z[x, ∂]: the derivation ∂ acts on the monomials
+by ∂(xn ) = nxn , which preserves the integrality type in (15.2.1), while the chain
+rule with the étaleness of φ show that if f (φ(z)) is holomorphic, so also is
+                      φ(z)             ′
+                             (f (φ(z))) = φ(z)f ′ (φ(z)) = (∂f )(φ(z)).
+                      φ′ (z)
+By construction, the Z[x, ∂]-module D is embedded as a submodule of the ring QJxK.
+Within this ambient ring, D contains the subring comprised of the α ∈ ZJxK
+with φ∗ α ∈ O(D). Let us denote this ring by O(V),
+                                                 e for reasons related to [BC22]
+and our Remark 7.3.2, in which this ring is the ring of regular functions on the
+formal-analytic44 arithmetic surface we denoted V
+                                                e := V(φ).
+                                                       e      Then D is a module
+                e By Corollary 2.6.1, the field of fractions Frac(O(V))
+over the ring O(V).                                                  e is a finite
+
+   42Once again, the exception is the algebraic case f (x) ∈ Q(x) ∩ QJxK, in which case a finite
+                                                        i
+computer search is at least in theory enough to finish off this problem in finite computational
+time.
+   43In other words: the derivative φ′ is nowhere vanishing on D.
+   44If φ extends to a holomorphic function on some open neighborhood of the closed disc D,
+to match the convention in [BC22]. For applying the finiteness theorem [BC22, Theorem 9.1.1],
+this is not a restriction upon considering φ(z)
+                                           e    := φ ((1 − ε)z) with an ε > 0 small enough to still
+have |φe′ (0)| > eb1 +···+br ≥ 1.
+

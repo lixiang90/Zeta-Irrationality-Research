@@ -1,0 +1,1392 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/1.8";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./1#PT2" title="Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="up up" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./1.7" title="§1.7 Inequalities ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="next" href="./1.9" title="§1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.1" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.2" title="§1.2 Elementary Algebra ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.3" title="§1.3 Determinants, Linear Operators, and Spectral Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.4" title="§1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.5" title="§1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.6" title="§1.6 Vectors and Vector-Valued Functions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.7" title="§1.7 Inequalities ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.9" title="§1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.10" title="§1.10 Functions of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.11" title="§1.11 Zeros of Polynomials ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.12" title="§1.12 Continued Fractions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.13" title="§1.13 Differential Equations ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.14" title="§1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.15" title="§1.15 Summability Methods ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.16" title="§1.16 Distributions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.17" title="§1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="section" href="./1.18" title="§1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Fourier series, Lebesgue constants, Parseval’s Formula, Poisson’s summation formula, Riemann–Lebesgue lemma, asymptotic behavior, coefficients, compendia, convergence, definition, derivatives, differentiation, integration, left-hand, properties, right-hand, uniqueness">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./1" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Algebraic and Analytic Methods</span></a><a href="./1#PT2" title="In Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Topics of Discussion</span></a><a href="./1.7" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.7 </span>Inequalities</span></a><a href="./1.9" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.9 </span>Calculus of a Complex Variable</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§1.8 </span>Fourier Series</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I2.ix1.I1.ix4" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8" title="" class="ltx_ref">http://dlmf.nist.gov/1.8</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§1.8(i) </span>Definitions and Elementary Properties</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§1.8(ii) </span>Convergence</a></li>
+<li class="ltx_tocentry"><a href="#iii"><span class="ltx_tag ltx_tag_subsection">§1.8(iii) </span>Integration and Differentiation</a></li>
+<li class="ltx_tocentry"><a href="#iv"><span class="ltx_tag ltx_tag_subsection">§1.8(iv) </span>Poisson’s Summation Formula</a></li>
+<li class="ltx_tocentry"><a href="#v"><span class="ltx_tag ltx_tag_subsection">§1.8(v) </span>Examples</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.8(i) </span>Definitions and Elementary Properties</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=coefficients">coefficients</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=properties">properties</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Protter and Morrey (<a href="./bib/P#bib1901" title="A First Course in Real Analysis" class="ltx_ref">1991</a>, Chapter 10)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Tolstov (<a href="./bib/T#bib2262" title="Fourier Series" class="ltx_ref">1962</a>, Chapter 1)</cite>, or
+<cite class="ltx_cite ltx_citemacro_citet">Titchmarsh (<a href="./bib/T#bib2253" title="The Theory of Functions" class="ltx_ref">1962b</a>, Chapter 13)</cite>.
+For the Riemann–Lebesgue lemma, see <cite class="ltx_cite ltx_citemacro_citet">Olver (<a href="./bib/O#bib1809" title="Asymptotics and Special Functions" class="ltx_ref">1997b</a>, p. 73)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./2.10#iv.p4" title="§2.10(iv) Taylor and Laurent Coefficients: Darboux’s Method ‣ §2.10 Sums and Sequences ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.10(iv)</span></a>,
+<a href="./2.4#ii.p3" title="§2.4(ii) Inverse Laplace Transforms ‣ §2.4 Contour Integrals ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.4(ii)</span></a>,
+<a href="./2.5#ii.p8" title="§2.5(ii) Extensions ‣ §2.5 Mellin Transform Methods ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§2.5(ii)</span></a>,
+<a href="./3.11#Px1.p1" title="Chebyshev Expansions ‣ §3.11(ii) Chebyshev-Series Expansions ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.11(ii)</span></a>,
+<a href="./3.11#Px1.p5" title="Chebyshev Expansions ‣ §3.11(ii) Chebyshev-Series Expansions ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.11(ii)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix4.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.i" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.i</a></dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+The first sentence of this subsection was changed from
+“Formally,” to “Formally, if <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a real- or complex-valued
+<math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="27px" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>-periodic function”.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">Formally,
+ if <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a real- or complex-valued <math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="27px" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>-periodic function,</p>
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="121px" altimg-valign="-28px" altimg-width="270px" alttext="f(x)=\tfrac{1}{2}a_{0}+\sum^{\infty}_{n=1}(a_{n}\cos\left(nx\right)+b_{n}\sin%
+\left(nx\right))," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.18#Px5.p4" title="Example 1: Three Simple Cases where 𝑞⁢(𝑥)=0, 𝑋=[0,𝜋] ‣ §1.18(v) Point Spectra and Eigenfunction Expansions ‣ §1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.18(v)</span></a>,
+<a href="./1.8#Px1.p1" title="Alternative Form ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.p1" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#ii.p1" title="§1.8(ii) Convergence ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(ii)</span></a>,
+<a href="./18.2#viii.p2" title="§18.2(viii) Uniqueness of Orthogonality Measure and Completeness ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.2(viii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E1" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E1.tex">TeX</a>, <a href="./1.8.E1.pmml">pMML</a>, <a href="./1.8.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equationgroup_container">
+<table id="E2" class="ltx_equationgroup ltx_eqn_table">
+<tbody>
+<tr id="Ex1" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="4" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equationgroup ltx_align_left">1.8.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="18px" altimg-valign="-5px" altimg-width="29px" alttext="\displaystyle a_{n}" display="inline"><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="62px" altimg-valign="-23px" altimg-width="246px" alttext="\displaystyle=\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)\cos\left(nx\right)\,\mathrm{d%
+}x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup></mstyle><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m64.png" altimg-height="21px" altimg-valign="-6px" altimg-width="127px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr id="Ex2" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m4.png" altimg-height="23px" altimg-valign="-5px" altimg-width="27px" alttext="\displaystyle b_{n}" display="inline"><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="62px" altimg-valign="-23px" altimg-width="244px" alttext="\displaystyle=\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)\sin\left(nx\right)\,\mathrm{d%
+}x," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup></mstyle><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m66.png" altimg-height="21px" altimg-valign="-6px" altimg-width="108px" alttext="n=1,2,\dots" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.18#Px5.p4" title="Example 1: Three Simple Cases where 𝑞⁢(𝑥)=0, 𝑋=[0,𝜋] ‣ §1.18(v) Point Spectra and Eigenfunction Expansions ‣ §1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.18(v)</span></a>,
+<a href="./1.8#Px1.p1" title="Alternative Form ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#Px2.p1" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./18.2#viii.p2" title="§18.2(viii) Uniqueness of Orthogonality Measure and Completeness ‣ §18.2 General Orthogonal Polynomials ‣ General Orthogonal Polynomials ‣ Chapter 18 Orthogonal Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§18.2(viii)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E2" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E2a.tex">TeX</a>, <a href="./1.8.E2b.tex">TeX</a>, <a href="./1.8.E2a.pmml">pMML</a>, <a href="./1.8.E2b.pmml">pMML</a>, <a href="./1.8.E2a.png">png</a>, <a href="./1.8.E2b.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">The series (<a href="./1.8#E1" title="(1.8.1) ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.1</span></a>) is called the <em class="ltx_emph ltx_font_italic">Fourier series</em> of <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>,
+and <math class="ltx_Math" altimg="m38.png" altimg-height="22px" altimg-valign="-6px" altimg-width="56px" alttext="a_{n},b_{n}" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>,</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> are the <em class="ltx_emph ltx_font_italic">Fourier coefficients</em> of <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>.
+</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m51.png" altimg-height="25px" altimg-valign="-7px" altimg-width="129px" alttext="f(-x)=f(x)" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, then <math class="ltx_Math" altimg="m43.png" altimg-height="21px" altimg-valign="-5px" altimg-width="63px" alttext="b_{n}=0" display="inline"><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><mn>0</mn></mrow></math> for all <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>.</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m50.png" altimg-height="25px" altimg-valign="-7px" altimg-width="145px" alttext="f(-x)=-f(x)" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, then <math class="ltx_Math" altimg="m39.png" altimg-height="20px" altimg-valign="-5px" altimg-width="65px" alttext="a_{n}=0" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><mn>0</mn></mrow></math> for all <math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>.</p>
+</div>
+<section id="Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Alternative Form</h3>
+<div id="Px1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+A sentence was added at the end of this paragraph.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px1.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E3.png" altimg-height="68px" altimg-valign="-30px" altimg-width="191px" alttext="f(x)=\sum^{\infty}_{n=-\infty}c_{n}{\mathrm{e}}^{\mathrm{i}nx}," display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.17#iii.p1" title="§1.17(iii) Series Representations ‣ §1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.17(iii)</span></a>,
+<a href="./1.18#Px5.p4" title="Example 1: Three Simple Cases where 𝑞⁢(𝑥)=0, 𝑋=[0,𝜋] ‣ §1.18(v) Point Spectra and Eigenfunction Expansions ‣ §1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.18(v)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E3" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E3.tex">TeX</a>, <a href="./1.8.E3.pmml">pMML</a>, <a href="./1.8.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px1.info" title="Alternative Form ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E4.png" altimg-height="56px" altimg-valign="-23px" altimg-width="246px" alttext="c_{n}=\frac{1}{2\pi}\int^{\pi}_{-\pi}f(x){\mathrm{e}}^{-\mathrm{i}nx}\,\mathrm%
+{d}x." display="block"><mrow><mrow><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.17#iii.p1" title="§1.17(iii) Series Representations ‣ §1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.17(iii)</span></a>,
+<a href="./1.18#Px5.p4" title="Example 1: Three Simple Cases where 𝑞⁢(𝑥)=0, 𝑋=[0,𝜋] ‣ §1.18(v) Point Spectra and Eigenfunction Expansions ‣ §1.18 Linear Second Order Differential Operators and Eigenfunction Expansions ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.18(v)</span></a>,
+<a href="./1.8#Px2.p1" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E4" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E4.tex">TeX</a>, <a href="./1.8.E4.pmml">pMML</a>, <a href="./1.8.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px1.info" title="Alternative Form ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">Here <math class="ltx_Math" altimg="m48.png" altimg-height="16px" altimg-valign="-5px" altimg-width="25px" alttext="c_{n}" display="inline"><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math> is related to <math class="ltx_Math" altimg="m40.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="a_{n}" display="inline"><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math> and <math class="ltx_Math" altimg="m44.png" altimg-height="21px" altimg-valign="-5px" altimg-width="25px" alttext="b_{n}" display="inline"><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math> in (<a href="./1.8#E1" title="(1.8.1) ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.1</span></a>), (<a href="./1.8#E2" title="(1.8.2) ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.2</span></a>) by
+<math class="ltx_Math" altimg="m47.png" altimg-height="29px" altimg-valign="-9px" altimg-width="155px" alttext="c_{n}=\frac{1}{2}(a_{n}-\mathrm{i}b_{n})" display="inline"><mrow><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>−</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, <math class="ltx_Math" altimg="m45.png" altimg-height="29px" altimg-valign="-9px" altimg-width="168px" alttext="c_{-n}=\frac{1}{2}(a_{n}+\mathrm{i}b_{n})" display="inline"><mrow><msub><mi>c</mi><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>+</mo><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for <math class="ltx_Math" altimg="m67.png" altimg-height="18px" altimg-valign="-3px" altimg-width="55px" alttext="n&gt;0" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>&gt;</mo><mn>0</mn></mrow></math>
+and <math class="ltx_Math" altimg="m46.png" altimg-height="29px" altimg-valign="-9px" altimg-width="84px" alttext="c_{0}=\frac{1}{2}a_{0}" display="inline"><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Parseval’s Formula</h3>
+<div id="Px2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=Parseval%20Formula">Parseval’s Formula</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously this paragraph was named <em class="ltx_emph ltx_font_italic">Bessel’s Inequality</em>.
+The equation which was originally (<a href="./1.8#E13" title="(1.8.13) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.13</span></a>) was moved to (<a href="./1.8#E6_1" title="(1.8.6_1) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6_1</span></a>).
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+Some text was added just after (<a href="./1.8#E6" title="(1.8.6) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6</span></a>).
+The equation (<a href="./1.8#E6_2" title="(1.8.6_2) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6_2</span></a>) was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px2.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="67px" altimg-valign="-28px" altimg-width="425px" alttext="\frac{1}{\pi}\int^{\pi}_{-\pi}{\left|f(x)\right|}^{2}\,\mathrm{d}x=\tfrac{1}{2%
+}{\left|a_{0}\right|}^{2}+\sum^{\infty}_{n=1}({\left|a_{n}\right|}^{2}+{\left|%
+b_{n}\right|}^{2})," display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><msub><mi>a</mi><mn>0</mn></msub><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="28px" alttext="\left|\NVar{x}\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mi class="ltx_nvar">x</mi><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math>:  absolute value of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\NVar{x}" display="inline"><mi class="ltx_nvar">x</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.2.0.I1.ix2" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equations (<span class="ltx_text ltx_ref_tag">1.8.5</span>), (<span class="ltx_text ltx_ref_tag">1.8.6</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E5" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E5.tex">TeX</a>, <a href="./1.8.E5.pmml">pMML</a>, <a href="./1.8.E5.png">png</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously this equation was given as an inequality.
+For square integrable functions this inequality <math class="ltx_Math" altimg="m20.png" altimg-height="20px" altimg-valign="-5px" altimg-width="20px" alttext="\geq" display="inline"><mo>≥</mo></math> can be sharpened to <math class="ltx_Math" altimg="m9.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="=" display="inline"><mo>=</mo></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="68px" altimg-valign="-30px" altimg-width="296px" alttext="\frac{1}{2\pi}\int^{\pi}_{-\pi}{\left|f(x)\right|}^{2}\,\mathrm{d}x=\sum^{%
+\infty}_{n=-\infty}{\left|c_{n}\right|}^{2}," display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" rspace="0em" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="28px" alttext="\left|\NVar{x}\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mi class="ltx_nvar">x</mi><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math>:  absolute value of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\NVar{x}" display="inline"><mi class="ltx_nvar">x</mi></math></a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./errata/#V1.2.0.I1.ix2" title="In Errata ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) for  Equations (<span class="ltx_text ltx_ref_tag">1.8.5</span>), (<span class="ltx_text ltx_ref_tag">1.8.6</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E6" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E6.tex">TeX</a>, <a href="./1.8.E6.pmml">pMML</a>, <a href="./1.8.E6.png">png</a>
+</dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+Previously this equation was given as an inequality.
+For square integrable functions this inequality <math class="ltx_Math" altimg="m20.png" altimg-height="20px" altimg-valign="-5px" altimg-width="20px" alttext="\geq" display="inline"><mo>≥</mo></math> can be sharpened to <math class="ltx_Math" altimg="m9.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="=" display="inline"><mo>=</mo></math>.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is square-integrable on <math class="ltx_Math" altimg="m12.png" altimg-height="25px" altimg-valign="-7px" altimg-width="66px" alttext="[-\pi,\pi]" display="inline"><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></math> and <math class="ltx_Math" altimg="m37.png" altimg-height="22px" altimg-valign="-6px" altimg-width="86px" alttext="a_{n},b_{n},c_{n}" display="inline"><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>,</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>,</mo><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow></math> are given
+by (<a href="./1.8#E2" title="(1.8.2) ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.2</span></a>), (<a href="./1.8#E4" title="(1.8.4) ‣ Alternative Form ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.4</span></a>). If <math class="ltx_Math" altimg="m60.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="g(x)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is also square-integrable
+with Fourier coefficients <math class="ltx_Math" altimg="m41.png" altimg-height="25px" altimg-valign="-7px" altimg-width="56px" alttext="a_{n}^{\prime},b_{n}^{\prime}" display="inline"><mrow><msubsup><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup><mo>,</mo><msubsup><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup></mrow></math> or <math class="ltx_Math" altimg="m49.png" altimg-height="25px" altimg-valign="-7px" altimg-width="25px" alttext="c_{n}^{\prime}" display="inline"><msubsup><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup></math> then</p>
+<div class="ltx_equation_container">
+<table id="E6_1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.6_1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6_1.png" altimg-height="67px" altimg-valign="-28px" altimg-width="443px" alttext="\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)\overline{g(x)}\,\mathrm{d}x=\tfrac{1}{2}a_{%
+0}\overline{a_{0}^{\prime}}+\sum^{\infty}_{n=1}(a_{n}\overline{a^{\prime}_{n}}%
++b_{n}\overline{b^{\prime}_{n}})," display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mover accent="true"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>a</mi><mn>0</mn></msub><mo>⁢</mo><mover accent="true"><msubsup><mi>a</mi><mn>0</mn><mo>′</mo></msubsup><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mover accent="true"><msubsup><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></mrow><mo>+</mo><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mover accent="true"><msubsup><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6_1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.9#E11" title="(1.9.11) ‣ Complex Conjugate ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="\overline{\NVar{z}}" display="inline"><mover accent="true"><mi class="ltx_nvar" href="./1.1#t1.r2" title="variable">z</mi><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></math>: complex conjugate</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.8#E13" title="In §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(1.8.13)</span></a>,
+<a href="./1.8#E13.info" title="In §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(1.8.13)</span></a>,
+<a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix4.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E6_1" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E6_1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E6_1.tex">TeX</a>, <a href="./1.8.E6_1.pmml">pMML</a>, <a href="./1.8.E6_1.png">png</a>
+</dd>
+<dt>Rearrangement (effective with 1.2.0):</dt>
+<dd>
+This equation, which was originally (<a href="./1.8#E13" title="(1.8.13) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.13</span></a>), was moved here.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E6_2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.6_2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6_2.png" altimg-height="68px" altimg-valign="-30px" altimg-width="313px" alttext="\frac{1}{2\pi}\int^{\pi}_{-\pi}f(x)\overline{g(x)}\,\mathrm{d}x=\sum^{\infty}_%
+{n=-\infty}c_{n}\overline{c_{n}^{\prime}}." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mover accent="true"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mover accent="true"><msubsup><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>′</mo></msubsup><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6_2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.9#E11" title="(1.9.11) ‣ Complex Conjugate ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m30.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="\overline{\NVar{z}}" display="inline"><mover accent="true"><mi class="ltx_nvar" href="./1.1#t1.r2" title="variable">z</mi><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></math>: complex conjugate</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix4.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E6_2" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E6_2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E6_2.tex">TeX</a>, <a href="./1.8.E6_2.pmml">pMML</a>, <a href="./1.8.E6_2.png">png</a>
+</dd>
+<dt>Addition (effective with 1.2.0):</dt>
+<dd>
+This equation was added.
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Asymptotic Estimates of Coefficients</h3>
+<div id="Px3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px3.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is of period <math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="27px" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>, and <math class="ltx_Math" altimg="m58.png" altimg-height="28px" altimg-valign="-7px" altimg-width="73px" alttext="f^{(m)}(x)" display="inline"><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi><mo stretchy="false">)</mo></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is piecewise continuous,
+then</p>
+<div class="ltx_equation_container">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="58px" altimg-valign="-9px" altimg-width="198px" alttext="a_{n},b_{n},c_{n}=o\left(n^{-m}\right)," display="block"><mrow><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>,</mo><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>,</mo><msub><mi>c</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></mrow><mo>=</mo><mrow><mi href="./2.1#E2" title="order less than">o</mi><mo>⁡</mo><mrow><mo>(</mo><msup><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mrow><mo>−</mo><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi></mrow></msup><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m69.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E2" title="(2.1.2) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m70.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="o\left(\NVar{x}\right)" display="inline"><mrow><mi href="./2.1#E2" title="order less than">o</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar">x</mi><mo>)</mo></mrow></mrow></math>: order less than</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m63.png" altimg-height="13px" altimg-valign="-2px" altimg-width="23px" alttext="m" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">m</mi></math>:  nonnegative integer</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./3.11#Px1.p2" title="Chebyshev Expansions ‣ §3.11(ii) Chebyshev-Series Expansions ‣ §3.11 Approximation Techniques ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.11(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E7" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E7.tex">TeX</a>, <a href="./1.8.E7.pmml">pMML</a>, <a href="./1.8.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px3.info" title="Asymptotic Estimates of Coefficients ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="Px4" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Uniqueness of Fourier Series</h3>
+<div id="Px4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=uniqueness">uniqueness</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px4.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math class="ltx_Math" altimg="m60.png" altimg-height="25px" altimg-valign="-7px" altimg-width="43px" alttext="g(x)" display="inline"><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> are continuous, have the same period and same Fourier
+coefficients, then <math class="ltx_Math" altimg="m52.png" altimg-height="25px" altimg-valign="-7px" altimg-width="111px" alttext="f(x)=g(x)" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for all <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math>.</p>
+</div>
+</section>
+<section id="Px5" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Lebesgue Constants</h3>
+<div id="Px5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Lebesgue%20constants">Lebesgue constants</a>, <a class="ltx_keyword" href="./search/search?q=asymptotic%20behavior">asymptotic behavior</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px5.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="62px" altimg-valign="-25px" altimg-width="273px" alttext="L_{n}=\frac{1}{\pi}\int^{\pi}_{0}\frac{\left|\sin\left(n+\frac{1}{2}\right)t%
+\right|}{\sin\left(\frac{1}{2}t\right)}\,\mathrm{d}t," display="block"><mrow><mrow><msub><mi href="./1.8#E8" title="Lebesgue constants">L</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mfrac><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></msubsup><mrow><mfrac><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mi>t</mi></mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>t</mi></mrow><mo>)</mo></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m65.png" altimg-height="21px" altimg-valign="-6px" altimg-width="108px" alttext="n=0,1,\dots" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="L_{n}" display="inline"><msub><mi href="./1.8#E8" title="Lebesgue constants">L</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math>:  Lebesgue constants (locally)</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.9#E7" title="(1.9.7) ‣ Modulus and Phase ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="25px" altimg-valign="-7px" altimg-width="28px" alttext="\left|\NVar{x}\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mi class="ltx_nvar">x</mi><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math>:  absolute value of <math class="ltx_Math" altimg="m16.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="\NVar{x}" display="inline"><mi class="ltx_nvar">x</mi></math></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E8" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E8.tex">TeX</a>, <a href="./1.8.E8.pmml">pMML</a>, <a href="./1.8.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px5.info" title="Lebesgue Constants ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Px5.p2" class="ltx_para">
+<p class="ltx_p">As <math class="ltx_Math" altimg="m69.png" altimg-height="13px" altimg-valign="-2px" altimg-width="70px" alttext="n\to\infty" display="inline"><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math></p>
+<div class="ltx_equation_container">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="29px" altimg-valign="-7px" altimg-width="161px" alttext="L_{n}\sim(4/{\pi}^{2})\ln n;" display="block"><mrow><mrow><msub><mi href="./1.8#E8" title="Lebesgue constants">L</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo href="./2.1#E1" title="asymptotic equality">∼</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>/</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./2.1#E1" title="(2.1.1) ‣ §2.1(i) Asymptotic and Order Symbols ‣ §2.1 Definitions and Elementary Properties ‣ Areas ‣ Chapter 2 Asymptotic Approximations" class="ltx_ref"><math class="ltx_Math" altimg="m32.png" altimg-height="11px" altimg-valign="-2px" altimg-width="20px" alttext="\sim" display="inline"><mo href="./2.1#E1" title="asymptotic equality">∼</mo></math>: asymptotic equality</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.2#E2" title="(4.2.2) ‣ §4.2(i) The Logarithm ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m26.png" altimg-height="18px" altimg-valign="-2px" altimg-width="36px" alttext="\ln\NVar{z}" display="inline"><mrow><mi href="./4.2#E2" title="principal branch of logarithm function">ln</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: principal branch of logarithm function</a>,
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./1.8#E8" title="(1.8.8) ‣ Lebesgue Constants ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m11.png" altimg-height="21px" altimg-valign="-5px" altimg-width="30px" alttext="L_{n}" display="inline"><msub><mi href="./1.8#E8" title="Lebesgue constants">L</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math>:  Lebesgue constants</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E9" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E9.tex">TeX</a>, <a href="./1.8.E9.pmml">pMML</a>, <a href="./1.8.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px5.info" title="Lebesgue Constants ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">see <cite class="ltx_cite ltx_citemacro_citet">Frenzen and Wong (<a href="./bib/F#bib837" title="Asymptotic expansions of the Lebesgue constants for Jacobi series" class="ltx_ref">1986</a>)</cite>.</p>
+</div>
+</section>
+<section id="Px6" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Riemann–Lebesgue Lemma</h3>
+<div id="Px6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=Riemann%E2%80%93Lebesgue%20lemma">Riemann–Lebesgue lemma</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="Px6.p1" class="ltx_para">
+<p class="ltx_p">For <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> piecewise continuous on <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="[a,b]" display="inline"><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mi>a</mi><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mi>b</mi><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></math> and real <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./1.8#Px6.p1" title="real">λ</mi></math>,
+</p>
+<div class="ltx_equation_container">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="59px" altimg-valign="-21px" altimg-width="189px" alttext="\int^{b}_{a}f(x){\mathrm{e}}^{\mathrm{i}\lambda x}\,\mathrm{d}x\to 0," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./1.8#Px6.p1" title="real">λ</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint">as <math class="ltx_Math" altimg="m23.png" altimg-height="18px" altimg-valign="-2px" altimg-width="69px" alttext="\lambda\to\infty" display="inline"><mrow><mi href="./1.8#Px6.p1" title="real">λ</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.8#Px6.p1" title="Riemann–Lebesgue Lemma ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./1.8#Px6.p1" title="real">λ</mi></math>:  real</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.8#Px6.p1" title="Riemann–Lebesgue Lemma ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E10" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E10.tex">TeX</a>, <a href="./1.8.E10.pmml">pMML</a>, <a href="./1.8.E10.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#Px6.info" title="Riemann–Lebesgue Lemma ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#i.info" title="§1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">(<a href="./1.8#E10" title="(1.8.10) ‣ Riemann–Lebesgue Lemma ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.10</span></a>) continues to apply if either <math class="ltx_Math" altimg="m36.png" altimg-height="13px" altimg-valign="-2px" altimg-width="15px" alttext="a" display="inline"><mi>a</mi></math> or <math class="ltx_Math" altimg="m42.png" altimg-height="18px" altimg-valign="-2px" altimg-width="13px" alttext="b" display="inline"><mi>b</mi></math> or both are
+infinite and/or <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> has finitely many singularities in <math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="50px" alttext="(a,b)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mi>a</mi><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi>b</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>, provided
+that the integral converges uniformly (§<a href="./1.5#iv" title="§1.5(iv) Leibniz’s Theorem for Differentiation of Integrals ‣ §1.5 Calculus of Two or More Variables ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5(iv)</span></a>) at <math class="ltx_Math" altimg="m35.png" altimg-height="22px" altimg-valign="-6px" altimg-width="33px" alttext="a,b" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></math>, and
+the singularities for all sufficiently large <math class="ltx_Math" altimg="m22.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="\lambda" display="inline"><mi href="./1.8#Px6.p1" title="real">λ</mi></math>.</p>
+</div>
+</section>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.8(ii) </span>Convergence</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=convergence">convergence</a>, <a class="ltx_keyword" href="./search/search?q=derivatives">derivatives</a>, <a class="ltx_keyword" href="./search/search?q=left-hand">left-hand</a>, <a class="ltx_keyword" href="./search/search?q=right-hand">right-hand</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Tolstov (<a href="./bib/T#bib2262" title="Fourier Series" class="ltx_ref">1962</a>, p. 77)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.17#iii.p1" title="§1.17(iii) Series Representations ‣ §1.17 Integral and Series Representations of the Dirac Delta ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.17(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.ii" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Let <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> be an absolutely integrable function of period <math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="27px" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>, and
+continuous except at a finite number of points in any bounded interval. Then
+the series (<a href="./1.8#E1" title="(1.8.1) ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.1</span></a>) converges to the sum</p>
+<div class="ltx_equation_container">
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.11</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E11.png" altimg-height="31px" altimg-valign="-9px" altimg-width="172px" alttext="\tfrac{1}{2}f(x-)+\tfrac{1}{2}f(x+)" display="block"><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo rspace="0em">−</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo rspace="0em">+</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E11.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E11" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E11</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E11.tex">TeX</a>, <a href="./1.8.E11.pmml">pMML</a>, <a href="./1.8.E11.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#ii.info" title="§1.8(ii) Convergence ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(ii)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">at every point at which <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> has both a left-hand derivative (that is,
+(<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.4</span></a>) applies when <math class="ltx_Math" altimg="m62.png" altimg-height="20px" altimg-valign="-4px" altimg-width="75px" alttext="h\to 0-" display="inline"><mrow><mi>h</mi><mo stretchy="false">→</mo><mrow><mn>0</mn><mo>−</mo></mrow></mrow></math>) and a right-hand derivative
+(that is, (<a href="./1.4#E4" title="(1.4.4) ‣ §1.4(iii) Derivatives ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.4</span></a>) applies when <math class="ltx_Math" altimg="m61.png" altimg-height="20px" altimg-valign="-4px" altimg-width="75px" alttext="h\to 0+" display="inline"><mrow><mi>h</mi><mo stretchy="false">→</mo><mrow><mn>0</mn><mo>+</mo></mrow></mrow></math>). The convergence is
+non-uniform, however, at points where <math class="ltx_Math" altimg="m57.png" altimg-height="25px" altimg-valign="-7px" altimg-width="145px" alttext="f(x-)\neq f(x+)" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo rspace="0em">−</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo rspace="0em">+</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>; see
+§<a href="./6.16#i" title="§6.16(i) The Gibbs Phenomenon ‣ §6.16 Mathematical Applications ‣ Applications ‣ Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.16(i)</span></a>.
+</p>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">For other tests for convergence see <cite class="ltx_cite ltx_citemacro_citet">Titchmarsh (<a href="./bib/T#bib2253" title="The Theory of Functions" class="ltx_ref">1962b</a>, pp. 405–410)</cite>.</p>
+</div>
+</section>
+<section id="iii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.8(iii) </span>Integration and Differentiation</h2>
+<div id="iii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=differentiation">differentiation</a>, <a class="ltx_keyword" href="./search/search?q=integration">integration</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Titchmarsh (<a href="./bib/T#bib2253" title="The Theory of Functions" class="ltx_ref">1962b</a>, p. 419)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.iii" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.iii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iii.p1" class="ltx_para">
+<p class="ltx_p">If <math class="ltx_Math" altimg="m40.png" altimg-height="16px" altimg-valign="-5px" altimg-width="27px" alttext="a_{n}" display="inline"><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math> and <math class="ltx_Math" altimg="m44.png" altimg-height="21px" altimg-valign="-5px" altimg-width="25px" alttext="b_{n}" display="inline"><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub></math> are the Fourier coefficients of a piecewise continuous
+function <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> on <math class="ltx_Math" altimg="m13.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="[0,2\pi]" display="inline"><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></math>, then</p>
+<div class="ltx_equation_container">
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.12</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E12.png" altimg-height="67px" altimg-valign="-28px" altimg-width="509px" alttext="\int^{x}_{0}(f(t)-\tfrac{1}{2}a_{0})\,\mathrm{d}t=\sum^{\infty}_{n=1}\frac{a_{%
+n}\sin\left(nx\right)+b_{n}(1-\cos\left(nx\right))}{n}," display="block"><mrow><mrow><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi>x</mi></msubsup><mrow><mrow><mo lspace="0em" stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msub><mi>a</mi><mn>0</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mrow><msub><mi>a</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msub><mi>b</mi><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m7.png" altimg-height="20px" altimg-valign="-5px" altimg-width="105px" alttext="0\leq x\leq 2\pi" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E12.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a>,
+<a href="./4.14#E1" title="(4.14.1) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="18px" altimg-valign="-2px" altimg-width="44px" alttext="\sin\NVar{z}" display="inline"><mrow><mi href="./4.14#E1" title="sine function">sin</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: sine function</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E12" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E12</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E12.tex">TeX</a>, <a href="./1.8.E12.pmml">pMML</a>, <a href="./1.8.E12.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#iii.info" title="§1.8(iii) Integration and Differentiation ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iii)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="iii.p2" class="ltx_para">
+<p class="ltx_p">If a function <math class="ltx_Math" altimg="m55.png" altimg-height="26px" altimg-valign="-7px" altimg-width="150px" alttext="f(x)\in C^{2}[0,2\pi]" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./front/introduction#common.t1.r10" title="element of">∈</mo><mrow><msup><mi href="./1.4#Px1.p2" title="continuously differentiable 𝑛 times on an interval 𝐼 or (𝑎,𝑏)">C</mi><mn>2</mn></msup><mo>⁡</mo><mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t1.r30" title="closed interval">,</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo href="./front/introduction#common.t1.r30" stretchy="false" title="closed interval">]</mo></mrow></mrow></mrow></math> is periodic, with period
+<math class="ltx_Math" altimg="m8.png" altimg-height="17px" altimg-valign="-2px" altimg-width="27px" alttext="2\pi" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></math>, then the series obtained by differentiating the Fourier series for
+<math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> term by term converges at every point to <math class="ltx_Math" altimg="m59.png" altimg-height="25px" altimg-valign="-7px" altimg-width="51px" alttext="f^{\prime}(x)" display="inline"><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="iv" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.8(iv) </span>Poisson’s Summation Formula</h2>
+<div id="iv.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=Poisson%20summation%20formula">Poisson’s summation formula</a>
+</dd>
+<dt>Notes:</dt>
+<dd>For Poisson’s summation formula see
+<cite class="ltx_cite ltx_citemacro_citet">Rademacher (<a href="./bib/R#bib1917" title="Topics in Analytic Number Theory" class="ltx_ref">1973</a>, pp. 71–75)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Titchmarsh (<a href="./bib/T#bib2254" title="Introduction to the Theory of Fourier Integrals" class="ltx_ref">1986a</a>, p. 61)</cite>.
+For (<a href="./1.8#E16" title="(1.8.16) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.16</span></a>) set
+<math class="ltx_Math" altimg="m53.png" altimg-height="30px" altimg-valign="-7px" altimg-width="124px" alttext="f(x)={\mathrm{e}}^{-\omega x^{2}}" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mi>ω</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></math> in (<a href="./1.8#E14" title="(1.8.14) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.14</span></a>).</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.14#Px4.p1" title="Poisson’s Summation Formula ‣ §1.14(i) Fourier Transform ‣ §1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.14(i)</span></a>,
+<a href="./20.11#i.p1" title="§20.11(i) Gauss Sum ‣ §20.11 Generalizations and Analogs ‣ Properties ‣ Chapter 20 Theta Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§20.11(i)</span></a>,
+<a href="./3.5#i.p4" title="§3.5(i) Trapezoidal Rules ‣ §3.5 Quadrature ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§3.5(i)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix4.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.iv" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.iv</a></dd>
+<dt>Modification (effective with 1.2.0):</dt>
+<dd>
+This subsection was previously called “Transformations”.
+</dd>
+<dt>Rearrangement (effective with 1.2.0):</dt>
+<dd>
+The equation which was originally (<a href="./1.8#E13" title="(1.8.13) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.13</span></a>) has been moved to (<a href="./1.8#E6_1" title="(1.8.6_1) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6_1</span></a>).
+A sentence was added just after (<a href="./1.8#E14" title="(1.8.14) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.14</span></a>).
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="iv.p1" class="ltx_para">
+<div class="ltx_equation_container">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="0" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.13</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><span class="ltx_text ltx_markedasmath">Moved to (<a href="./1.8#E6_1" title="(1.8.6_1) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6_1</span></a>).</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="3">
+<div id="E13.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.8#E6_1.info" title="In Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(1.8.6_1)</span></a>,
+<a href="./1.8#Px2.info" title="Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(i)</span></a>,
+<a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E13" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E13</a></dd>
+<dt>Rearrangement (effective with 1.2.0):</dt>
+<dd>
+This equation has been moved to (<a href="./1.8#E6_1" title="(1.8.6_1) ‣ Parseval’s Formula ‣ §1.8(i) Definitions and Elementary Properties ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.6_1</span></a>).
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="iv.p2" class="ltx_para">
+<p class="ltx_p">Suppose that <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is twice continuously differentiable and <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and
+<math class="ltx_Math" altimg="m25.png" altimg-height="25px" altimg-valign="-7px" altimg-width="67px" alttext="\left|f^{\prime\prime}(x)\right|" display="inline"><mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo><mrow><msup><mi>f</mi><mo>′′</mo></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./1.9#E7" title="absolute value (modulus)">|</mo></mrow></math> are integrable over <math class="ltx_Math" altimg="m5.png" altimg-height="25px" altimg-valign="-7px" altimg-width="87px" alttext="(-\infty,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">(</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo href="./front/introduction#common.t1.r29" title="open interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t1.r29" stretchy="false" title="open interval">)</mo></mrow></math>. Then</p>
+<div class="ltx_equation_container">
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.14</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E14.png" altimg-height="68px" altimg-valign="-30px" altimg-width="459px" alttext="\sum^{\infty}_{n=-\infty}f(x+n)=\sum^{\infty}_{n=-\infty}{\mathrm{e}}^{2\pi%
+\mathrm{i}nx}\int^{\infty}_{-\infty}f(t){\mathrm{e}}^{-2\pi\mathrm{i}nt}\,%
+\mathrm{d}t." display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>t</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E14.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m29.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./1.14#Px4.p1" title="Poisson’s Summation Formula ‣ §1.14(i) Fourier Transform ‣ §1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.14(i)</span></a>,
+<a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./1.8#iv.p2" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./errata/#V1.2.0.I2.ix1.I1.ix4.p1" title="In Erratum (V1.2.0) for Chapter 1 Additions ‣ Other Changes ‣ Version 1.2.0 (March 27, 2024) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.2.0) §<span class="ltx_text ltx_ref_tag">1.8</span></span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E14" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E14</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E14.tex">TeX</a>, <a href="./1.8.E14.pmml">pMML</a>, <a href="./1.8.E14.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">It follows from definition (<a href="./1.14#E1" title="(1.14.1) ‣ §1.14(i) Fourier Transform ‣ §1.14 Integral Transforms ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.14.1</span></a>) that the integral in (<a href="./1.8#E14" title="(1.8.14) ‣ §1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.8.14</span></a>)
+is equal to <math class="ltx_Math" altimg="m34.png" altimg-height="28px" altimg-valign="-7px" altimg-width="169px" alttext="\sqrt{2\pi}\mathscr{F}\left(f\right)\left(-2\pi n\right)" display="inline"><mrow><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow></msqrt><mo>⁢</mo><mrow><mi class="ltx_font_mathscript" href="./1.14#E1" title="Fourier transform">ℱ</mi><mo>⁡</mo><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="iv.p3" class="ltx_para">
+<p class="ltx_p">An alternative formulation is as follows. Suppose that <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is continuous and
+of bounded variation on <math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="[0,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">)</mo></mrow></math>. Suppose also that <math class="ltx_Math" altimg="m54.png" altimg-height="25px" altimg-valign="-7px" altimg-width="45px" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is integrable on
+<math class="ltx_Math" altimg="m14.png" altimg-height="25px" altimg-valign="-7px" altimg-width="58px" alttext="[0,\infty)" display="inline"><mrow><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">[</mo><mn>0</mn><mo href="./front/introduction#common.t2.r1" title="half-closed interval">,</mo><mi mathvariant="normal">∞</mi><mo href="./front/introduction#common.t2.r1" stretchy="false" title="half-closed interval">)</mo></mrow></math> and <math class="ltx_Math" altimg="m56.png" altimg-height="25px" altimg-valign="-7px" altimg-width="87px" alttext="f(x)\to 0" display="inline"><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math> as <math class="ltx_Math" altimg="m72.png" altimg-height="13px" altimg-valign="-2px" altimg-width="69px" alttext="x\to\infty" display="inline"><mrow><mi>x</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></math>. Then</p>
+<div class="ltx_equation_container">
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.15</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E15.png" altimg-height="134px" altimg-valign="-28px" altimg-width="592px" alttext="\tfrac{1}{2}f(0)+\sum^{\infty}_{n=1}f(n)=\int^{\infty}_{0}f(x)\,\mathrm{d}x+2%
+\sum^{\infty}_{n=1}\int^{\infty}_{0}f(x)\cos\left(2\pi nx\right)\,\mathrm{d}x." display="block"><mrow><mrow><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">+</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msubsup><mo href="./1.4#iv" title="integral">∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mi>f</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow><mo lspace="0em">⁢</mo><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi>x</mi></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E15.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="18px" altimg-valign="-2px" altimg-width="28px" alttext="\,\mathrm{d}\NVar{x}" display="inline"><mrow><mo href="./1.4#iv" rspace="0em" title="differential of 𝑥">d</mo><mi class="ltx_nvar">x</mi></mrow></math>: differential of <math class="ltx_Math" altimg="m71.png" altimg-height="13px" altimg-valign="-2px" altimg-width="16px" alttext="x" display="inline"><mi>x</mi></math></a>,
+<a href="./1.4#iv" title="§1.4(iv) Indefinite Integrals ‣ §1.4 Calculus of One Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m21.png" altimg-height="27px" altimg-valign="-8px" altimg-width="18px" alttext="\int" display="inline"><mo href="./1.4#iv" title="integral">∫</mo></math>: integral</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E15" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E15</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E15.tex">TeX</a>, <a href="./1.8.E15.pmml">pMML</a>, <a href="./1.8.E15.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="iv.p4" class="ltx_para">
+<p class="ltx_p">As a special case</p>
+<div class="ltx_equation_container">
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">1.8.16</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E16.png" altimg-height="70px" altimg-valign="-30px" altimg-width="529px" alttext="\sum_{n=-\infty}^{\infty}{\mathrm{e}}^{-(n+x)^{2}\omega}={\sqrt{\frac{\pi}{%
+\omega}}\*\left(1+2\sum_{n=1}^{\infty}{\mathrm{e}}^{-n^{2}{\pi}^{2}/\omega}%
+\cos\left(2n\pi x\right)\right)}," display="block"><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mi mathvariant="normal">∞</mi></munderover><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mi>ω</mi></mrow></mrow></msup></mrow><mo>=</mo><mrow><msqrt><mfrac><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mi>ω</mi></mfrac></msqrt><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><msup><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mn>2</mn></msup></mrow><mo>/</mo><mi>ω</mi></mrow></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m18.png" altimg-height="19px" altimg-valign="-3px" altimg-width="71px" alttext="\Re\omega&gt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi>ω</mi></mrow><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E16.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./4.14#E2" title="(4.14.2) ‣ §4.14 Definitions and Periodicity ‣ Trigonometric Functions ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m19.png" altimg-height="13px" altimg-valign="-2px" altimg-width="46px" alttext="\cos\NVar{z}" display="inline"><mrow><mi href="./4.14#E2" title="cosine function">cos</mi><mo lspace="0.167em">⁡</mo><mi class="ltx_nvar" href="./4.1#t1.r4" title="complex variable">z</mi></mrow></math>: cosine function</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m28.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m17.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a> and
+<a href="./1.1#t1.r5" title="§1.1 Special Notation ‣ Notation ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m68.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./1.1#t1.r5" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>
+</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.E16" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.E16</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./1.8.E16.tex">TeX</a>, <a href="./1.8.E16.pmml">pMML</a>, <a href="./1.8.E16.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#iv.info" title="§1.8(iv) Poisson’s Summation Formula ‣ §1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8(iv)</span></a>,
+<a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="v" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§1.8(v) </span>Examples</h2>
+<div id="v.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Fourier%20series">Fourier series</a>, <a class="ltx_keyword" href="./search/search?q=compendia">compendia</a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./1.8.v" title="" class="ltx_ref">http://dlmf.nist.gov/1.8.v</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./1.8#info" title="§1.8 Fourier Series ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.8</span></a> and
+<a href="./1#info" title="Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.1</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="v.p1" class="ltx_para">
+<p class="ltx_p">For collections of Fourier-series expansions see
+<cite class="ltx_cite ltx_citemacro_citet">Prudnikov<span class="ltx_text ltx_bib_etal"> et al.</span> (<a href="./bib/P#bib1902" title="Integrals and Series: Elementary Functions, Vol. 1" class="ltx_ref">1986a</a>, v. 1, pp. 725–740)</cite>,
+<cite class="ltx_cite ltx_citemacro_citet">Gradshteyn and Ryzhik (<a href="./bib/G#bib972" title="Table of integrals, series, and products" class="ltx_ref">2015</a>, §§1.44–1.45)</cite>, and <cite class="ltx_cite ltx_citemacro_citet">Oberhettinger (<a href="./bib/O#bib1743" title="Fourier Expansions. A Collection of Formulas" class="ltx_ref">1973</a>)</cite>.
+</p>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./1.7" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.7 </span>Inequalities</span></a><a href="./1.9" title="In Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.9 </span>Calculus of a Complex Variable</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#dc9890919af1bab9b9b8bebdbfb79cb2b5afa8f2bbb3aa">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"9ef5b487afff42a68917b2d63593a474","spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a47242d678c47abb',t:'MTc5MTQzMjI2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

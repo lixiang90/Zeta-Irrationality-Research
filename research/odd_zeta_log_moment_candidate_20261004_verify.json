@@ -1,0 +1,174 @@
+{
+  "status": "exact_candidate_inputs_passed",
+  "as_of": "2026-10-04",
+  "cases": [
+    {
+      "n": 1,
+      "q": 1,
+      "weight": 2,
+      "degree": 1,
+      "coefficients": [
+        1,
+        -2
+      ],
+      "Mellin_identity_exact": true,
+      "vanishing_moment_count": 1,
+      "R_minus1": 3,
+      "rational_part": "-2",
+      "least_rational_denominator": 1,
+      "integer_pair_for_zeta": {
+        "target_coefficient": 3,
+        "rational_coefficient": -4,
+        "full_gcd": 1,
+        "primitive_target_coefficient": 3,
+        "primitive_rational_coefficient": -4
+      },
+      "uniform_L_N_power_clears": true,
+      "top_moments_if_q_ge_weight": null
+    },
+    {
+      "n": 2,
+      "q": 2,
+      "weight": 2,
+      "degree": 4,
+      "coefficients": [
+        1,
+        -36,
+        216,
+        -400,
+        225
+      ],
+      "Mellin_identity_exact": true,
+      "vanishing_moment_count": 4,
+      "R_minus1": 878,
+      "rational_part": "-103987/144",
+      "least_rational_denominator": 144,
+      "integer_pair_for_zeta": {
+        "target_coefficient": 126432,
+        "rational_coefficient": -207974,
+        "full_gcd": 2,
+        "primitive_target_coefficient": 63216,
+        "primitive_rational_coefficient": -103987
+      },
+      "uniform_L_N_power_clears": true,
+      "top_moments_if_q_ge_weight": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "n": 1,
+      "q": 6,
+      "weight": 7,
+      "degree": 6,
+      "coefficients": [
+        1,
+        -384,
+        10935,
+        -81920,
+        234375,
+        -279936,
+        117649
+      ],
+      "Mellin_identity_exact": true,
+      "vanishing_moment_count": 6,
+      "R_minus1": 725200,
+      "rational_part": "-50376505709968967/69984000000",
+      "least_rational_denominator": 69984000000,
+      "integer_pair_for_zeta": {
+        "target_coefficient": 3197400998400000000,
+        "rational_coefficient": -3224096365438013888,
+        "full_gcd": 64,
+        "primitive_target_coefficient": 49959390600000000,
+        "primitive_rational_coefficient": -50376505709968967
+      },
+      "uniform_L_N_power_clears": true,
+      "top_moments_if_q_ge_weight": null
+    },
+    {
+      "n": 1,
+      "q": 7,
+      "weight": 7,
+      "degree": 7,
+      "coefficients": [
+        1,
+        -896,
+        45927,
+        -573440,
+        2734375,
+        -5878656,
+        5764801,
+        -2097152
+      ],
+      "Mellin_identity_exact": true,
+      "vanishing_moment_count": 7,
+      "R_minus1": 17095248,
+      "rational_part": "-1629974324813608961345129/96058055520000000",
+      "least_rational_denominator": 96058055520000000,
+      "integer_pair_for_zeta": {
+        "target_coefficient": 103454585735266644480000000,
+        "rational_coefficient": -104318356788070973526088256,
+        "full_gcd": 64,
+        "primitive_target_coefficient": 1616477902113541320000000,
+        "primitive_rational_coefficient": -1629974324813608961345129
+      },
+      "uniform_L_N_power_clears": true,
+      "top_moments_if_q_ge_weight": [
+        "0"
+      ]
+    },
+    {
+      "n": 2,
+      "q": 7,
+      "weight": 7,
+      "degree": 14,
+      "coefficients": [
+        1,
+        -30618,
+        25474176,
+        -3640000000,
+        171030234375,
+        -3605779259082,
+        40519264321536,
+        -268945811177472,
+        1122129367734375,
+        -3047915339218750,
+        5460615861757056,
+        -6393867063187968,
+        4702525276151521,
+        -1969940591718750,
+        358318080000000
+      ],
+      "Mellin_identity_exact": true,
+      "vanishing_moment_count": 14,
+      "R_minus1": 23368557130265680,
+      "rational_part": "-915228461134847664491805522424812684112432201050706703/39457180818804075649716764418048000000",
+      "least_rational_denominator": 39457180818804075649716764418048000000,
+      "integer_pair_for_zeta": {
+        "target_coefficient": 58089615202297110845522840499752926386328100536320000000,
+        "rational_coefficient": -58574621512630250527475553435188011783195660867245228992,
+        "full_gcd": 64,
+        "primitive_target_coefficient": 907650237535892356961294382808639474786376570880000000,
+        "primitive_rational_coefficient": -915228461134847664491805522424812684112432201050706703
+      },
+      "uniform_L_N_power_clears": true,
+      "top_moments_if_q_ge_weight": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "written_proof_sha256": "f00c2b6f95844c8949350eb51968abda08b6904efce8687dcd4ab33845322f15",
+  "all_scale_claims_from_written_proof": [
+    "Residue computation of the rational Mellin transform",
+    "Zeros of multiplicity q at 1,...,n and all log moments",
+    "One-dimensional solution space and integer normalization",
+    "Exact pure zeta reduction and finite kernel decomposition for q>=weight"
+  ],
+  "not_claimed": [
+    "Endpoint integral nonzero for every n",
+    "Exponential decay or negative primitive budget",
+    "Actual denominator exponent for the whole candidate family",
+    "Irrationality theorem or new Lean formalization"
+  ]
+}

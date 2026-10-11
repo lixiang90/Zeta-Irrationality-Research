@@ -1,0 +1,70 @@
+===== PHYSICAL PAGE 193 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+193
+the worthiness exponent lim sup
+n
+−log |η−p/q|
+log q
+o
+. The latter is very far from faith-
+fully measuring worthiness as a potential for applying in our framework of rational
+holonomy bounds.
+15.2. Integral holonomic modules. Although N0 in Theorem 15.1.3 is effective,
+it is a wide open42 problem to precisely (in principle) determine the left-hand side set
+in (15.1.4). Moreover, as we have seen with a case as simple as [Hat98], the bound
+on N0 in the general property (15.1.4) is, in practice, very big. Our findings with
+the Q
+h
+x,
+1
+1−x
+i
+-integrality refinements in §§ 2.7, 2.8, see especially Remarks 2.7.6
+and 2.8.2, seem to point towards a completely different approach to those of the
+cases of (15.1.4) whose holonomicity is recognized by Andr´e’s arithmetic criterion
+(Corollary 2.6.1).
+Our inspiration for hoping to reverse the proof logic in Re-
+mark 2.7.6 for the purpose of applying to similar other potential linear independence
+setups — many of them unproved conjectures — stems from the ideas of B´ezivin and
+Robba [BR89] which they used for reproving the Hermite–Lindemann–Weierstrass
+theorem as an application of Bertrandias’s arithmetic rationality criterion [Ami75,
+Th´eor`eme 5.4.6] (see also [BBR90] for a historical dissection of that proof); and,
+ultimately, the refinement of those ideas at the hands of Andr´e [And00a, And00b]
+and Beukers [Beu06], using the Chudnovskys’s theorem and the Fourier–Laplace
+duality between E- and G-functions, to reprove (and further refine) the qualitative
+Siegel–Shidlovsky theorem on special values of E-functions.
+Let ∂:= x · (d/dx) be the multiplicatively invariant derivation. Consider (for
+simplicity here) an ´etale43 holomorphic mapping φ : D →C taking φ(0) = 0, and
+a vector b := (b1, . . . , br) ∈[0, ∞)r with |φ′(0)| > eb1+···+br. Consider the set D
+comprised of the formal power series of the shape
+f(x) =
+∞
+X
+n=0
+an
+xn
+Qr
+h=1[1, . . . , bi · n],
+an ∈Z
+∀n ∈N
+(15.2.1)
+such that φ∗f ∈O(D) is a holomorphic function on the disc. This is a module
+over the noncommutative ring Z[x, ∂]: the derivation ∂acts on the monomials
+by ∂(xn) = nxn, which preserves the integrality type in (15.2.1), while the chain
+rule with the ´etaleness of φ show that if f(φ(z)) is holomorphic, so also is
+φ(z)
+φ′(z) (f(φ(z)))′ = φ(z)f ′(φ(z)) = (∂f)(φ(z)).
+By construction, the Z[x, ∂]-module D is embedded as a submodule of the ring QJxK.
+Within this ambient ring, D contains the subring comprised of the α ∈ZJxK
+with φ∗α ∈O(D). Let us denote this ring by O(eV), for reasons related to [BC22]
+and our Remark 7.3.2, in which this ring is the ring of regular functions on the
+formal-analytic44 arithmetic surface we denoted eV := eV(φ). Then D is a module
+over the ring O(eV). By Corollary 2.6.1, the field of fractions Frac(O(eV)) is a finite
+42Once again, the exception is the algebraic case fi(x) ∈Q(x) ∩QJxK, in which case a finite
+computer search is at least in theory enough to finish off this problem in finite computational
+time.
+43In other words: the derivative φ′ is nowhere vanishing on D.
+44If φ extends to a holomorphic function on some open neighborhood of the closed disc D,
+to match the convention in [BC22]. For applying the finiteness theorem [BC22, Theorem 9.1.1],
+this is not a restriction upon considering eφ(z) := φ ((1 −ε)z) with an ε > 0 small enough to still
+have |eφ′(0)| > eb1+···+br ≥1.

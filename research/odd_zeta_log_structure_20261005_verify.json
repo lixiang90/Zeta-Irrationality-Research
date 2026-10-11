@@ -1,0 +1,82 @@
+{
+  "status": "fixed_exact_structure_certificates_passed",
+  "cases": [
+    {
+      "n": 1,
+      "q": 2,
+      "N": 2,
+      "R": "9*z**2 - 8*z + 1",
+      "R_at_one": "2",
+      "R_minus_one": "18",
+      "scalar_polynomial_ODE": "passed",
+      "Mellin_shift_recurrence": "passed",
+      "epsilon_source_order_exact": 2,
+      "interior_roots_Sturm": 2,
+      "polylog_rational_gauge_identity": "passed",
+      "target_rational_part_at_minus_one": "-59/4",
+      "D_jet_cyclic_determinant": "-(99*z**3 - 167*z**2 + 61*z - 1)/(z**3*(z - 1))",
+      "log_normalized_scalar_solutions": [
+        {
+          "j": 0,
+          "L_gj_identity": "passed"
+        },
+        {
+          "j": 1,
+          "L_gj_identity": "passed"
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "q": 3,
+      "N": 3,
+      "R": "-64*z**3 + 81*z**2 - 24*z + 1",
+      "R_at_one": "-6",
+      "R_minus_one": "170",
+      "scalar_polynomial_ODE": "passed",
+      "Mellin_shift_recurrence": "passed",
+      "epsilon_source_order_exact": 3,
+      "interior_roots_Sturm": 3,
+      "polylog_rational_gauge_identity": "passed",
+      "target_rational_part_at_minus_one": "-33101/216",
+      "D_jet_cyclic_determinant": "(3026944*z**8 - 18733312*z**7 + 37651035*z**6 - 34116458*z**5 + 14926061*z**4 - 2959428*z**3 + 214825*z**2 + 1988*z + 9)/(9*z**6*(z - 1))",
+      "log_normalized_scalar_solutions": [
+        {
+          "j": 0,
+          "L_gj_identity": "passed"
+        },
+        {
+          "j": 1,
+          "L_gj_identity": "passed"
+        },
+        {
+          "j": 2,
+          "L_gj_identity": "passed"
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "q": 7,
+      "N": 7,
+      "R": "-2097152*z**7 + 5764801*z**6 - 5878656*z**5 + 2734375*z**4 - 573440*z**3 + 45927*z**2 - 896*z + 1",
+      "R_at_one": "-5040",
+      "R_minus_one": "17095248",
+      "scalar_polynomial_ODE": "passed",
+      "Mellin_shift_recurrence": "passed",
+      "epsilon_source_order_exact": 7,
+      "interior_roots_Sturm": 7,
+      "polylog_rational_gauge_identity": "passed",
+      "target_rational_part_at_minus_one": "-1629974324813608961345129/96058055520000000",
+      "D_jet_cyclic_determinant": null,
+      "log_normalized_scalar_solutions": []
+    }
+  ],
+  "no_period_values_computed": true,
+  "not_a_computational_claim": [
+    "strong remainder asymptotics",
+    "all-n endpoint nonzero",
+    "integer primitive decay",
+    "irrationality"
+  ]
+}

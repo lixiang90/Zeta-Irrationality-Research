@@ -1,0 +1,295 @@
+{
+  "scope": "fixed canonical seventh-root finite Bernoulli odd-odd Eisenstein periods and actual cusp slots; no irrationality or fullleaf claim",
+  "execution_history": "Third execution of this NEW fixed producer: first 21 checks passed but the unasserted odd-character cusp orientation was corrected for negative denominators; second saved the corrected 21-check data; this third adds the complete boundary map and new zero-period-corrector/parabolic-source proofs. No frozen producer imported or executed.",
+  "passed": 40,
+  "checks": [
+    {
+      "name": "chi-4 kernel exact all seventh roots",
+      "passed": true
+    },
+    {
+      "name": "chi-3 kernel exact all seventh roots",
+      "passed": true
+    },
+    {
+      "name": "chi-4 kernel at one",
+      "passed": true
+    },
+    {
+      "name": "chi-3 kernel at one",
+      "passed": true
+    },
+    {
+      "name": "kernel4 reciprocal real",
+      "passed": true
+    },
+    {
+      "name": "kernel3 reciprocal real",
+      "passed": true
+    },
+    {
+      "name": "weight4 anti pair L1/L3 exact",
+      "passed": true
+    },
+    {
+      "name": "weight4 plus pair L1/L3 exact",
+      "passed": true
+    },
+    {
+      "name": "anti critical period exact",
+      "passed": true
+    },
+    {
+      "name": "plus critical period exact",
+      "passed": true
+    },
+    {
+      "name": "both L2 zero by negative odd L values",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp1",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp2",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp3",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp4",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp5",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp6",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp7",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp8",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp9",
+      "passed": true
+    },
+    {
+      "name": "old pure sigma source constant at cusp10",
+      "passed": true
+    },
+    {
+      "name": "complete ten-dimensional Eisenstein boundary map",
+      "passed": true
+    },
+    {
+      "name": "whole old family infinity regular",
+      "passed": true
+    },
+    {
+      "name": "whole old family zeta3 coefficient zero",
+      "passed": true
+    },
+    {
+      "name": "whole old family L2 trivial coefficient zero",
+      "passed": true
+    },
+    {
+      "name": "c2 boundary exact",
+      "passed": true
+    },
+    {
+      "name": "c4 boundary exact",
+      "passed": true
+    },
+    {
+      "name": "root-minus-one derivative exact",
+      "passed": true
+    },
+    {
+      "name": "c2-zero witness derivative actual nonzero",
+      "passed": true
+    },
+    {
+      "name": "root-i finite Tate exact",
+      "passed": true
+    },
+    {
+      "name": "c4-zero witness endpoint actual nonzero",
+      "passed": true
+    },
+    {
+      "name": "zero-period corrector integer infinity zero",
+      "passed": true
+    },
+    {
+      "name": "zero-period corrector L3 zero",
+      "passed": true
+    },
+    {
+      "name": "zero-period corrector L2 zero",
+      "passed": true
+    },
+    {
+      "name": "zero-period corrector L1 polynomial zero",
+      "passed": true
+    },
+    {
+      "name": "corrector canonical M Tate exact",
+      "passed": true
+    },
+    {
+      "name": "old pure-L canonical witness Tate zero",
+      "passed": true
+    },
+    {
+      "name": "odd mixed carrier conjugacy ratio norm obstruction",
+      "passed": true
+    },
+    {
+      "name": "odd pair root-minus-one actual endpoint",
+      "passed": true
+    },
+    {
+      "name": "odd pair minus-one difference from true period",
+      "passed": true
+    }
+  ],
+  "K4": "x**6/2 + x**5/2 - x**4/2 - x**3/2 + x**2/2 + x/2 - 1/2",
+  "K3": "x**6/3 - 2*x**5/3 + x**4/3 + x**3/3 - 2*x**2/3 + x/3 + 1/3",
+  "Bernoulli_SA": "-239/1323",
+  "Bernoulli_SB": "269/1568",
+  "fA_at_rho7square_over_sqrt3pi3": "-478/11907",
+  "fB_at_rho7square_over_pi3": "269/4704",
+  "lambda_odd_original_over_sqrt3pi3": "509/47628",
+  "lambda_odd_sigma_over_sqrt3pi3": "-619/6804",
+  "Theta_odd_original_over_sqrt3pi3": "17/972",
+  "sigma_Theta_odd_over_sqrt3pi3": "-17/972",
+  "actual_plus_L3_over_sqrt3pi3": "-1/972",
+  "cusps": [
+    {
+      "id": 1,
+      "a": 1,
+      "c": 0,
+      "old_sigma_constant": "0",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    },
+    {
+      "id": 2,
+      "a": 5,
+      "c": -12,
+      "old_sigma_constant": "-132480",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    },
+    {
+      "id": 3,
+      "a": 0,
+      "c": -1,
+      "old_sigma_constant": "920",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    },
+    {
+      "id": 4,
+      "a": 1,
+      "c": -2,
+      "old_sigma_constant": "-36160/3",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    },
+    {
+      "id": 5,
+      "a": 2,
+      "c": -3,
+      "old_sigma_constant": "13785",
+      "odd_A": "0",
+      "odd_B": "23*I/128",
+      "odd_minus": "23*sqrt(3)*I/144",
+      "odd_plus": "-23*sqrt(3)*I/144"
+    },
+    {
+      "id": 6,
+      "a": 1,
+      "c": -3,
+      "old_sigma_constant": "13785",
+      "odd_A": "0",
+      "odd_B": "-23*I/128",
+      "odd_minus": "-23*sqrt(3)*I/144",
+      "odd_plus": "23*sqrt(3)*I/144"
+    },
+    {
+      "id": 7,
+      "a": 3,
+      "c": -4,
+      "old_sigma_constant": "-73520/3",
+      "odd_A": "23*sqrt(3)*I/81",
+      "odd_B": "0",
+      "odd_minus": "23*sqrt(3)*I/81",
+      "odd_plus": "23*sqrt(3)*I/81"
+    },
+    {
+      "id": 8,
+      "a": 1,
+      "c": -4,
+      "old_sigma_constant": "-73520/3",
+      "odd_A": "-23*sqrt(3)*I/81",
+      "odd_B": "0",
+      "odd_minus": "-23*sqrt(3)*I/81",
+      "odd_plus": "-23*sqrt(3)*I/81"
+    },
+    {
+      "id": 9,
+      "a": 2,
+      "c": -5,
+      "old_sigma_constant": "0",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    },
+    {
+      "id": 10,
+      "a": 1,
+      "c": -6,
+      "old_sigma_constant": "108480",
+      "odd_A": "0",
+      "odd_B": "0",
+      "odd_minus": "0",
+      "odd_plus": "0"
+    }
+  ],
+  "Eisenstein_boundary_rank": 10,
+  "zero_period_corrector": {
+    "1": 1,
+    "2": -66,
+    "3": 495,
+    "4": -880,
+    "6": 594,
+    "12": -144
+  },
+  "corrector_canonical_M_tate": "-1920/7",
+  "old_c2_boundary": "16*(6*a + b)/9",
+  "old_c4_boundary": "(1566*a + 151*b)/9",
+  "old_theta_at_minus1_over_zeta2": "(7362*a + 697*b)/23",
+  "old_root_i_tate": "(17274*a + 1349*b)/1104",
+  "odd_minus1_over_sqrt3pi3": "-37/972"
+}

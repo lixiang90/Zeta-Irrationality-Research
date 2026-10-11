@@ -1,0 +1,49 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                189
+
+
+                    15. Complements and further questions
+  We close our paper with a discussion on some further open problems naturally
+posed by our method. But first, we discuss more closely the relationship between
+some of our results and more established methods.
+15.1. Comparison to the Siegel–Bombieri–Chudnovsky theory. Theorem C
+is an irrationality result in two parameters (subject to certain archimedean con-
+straints). In this section, we compare Theorem C to results previously available
+through the general arithmetic theory of special values of G-functions. We be-
+gin by recalling Siegel’s definition of a G-function, fixing for this purpose a field
+embedding Q ,→ C:
+                                                            P∞
+Definition 15.1.1 (G-function). A power series f (x) = n=0 an xn ∈ QJxK is a
+G-function if it satisfies the following two properties:
+    (1) f (x) is holonomic: it satisfies an ODE with coefficients in Q[x].
+    (2) Both an and the denominators of the an have moderate growth, namely,
+         the common denominator of a0 , . . . , an grows at most exponentially in n,
+         and the largest Galois conjugate an of an ∈ Q ,→ C grows as most expo-
+         nentially in n.
+  From condition (1), it follows that f (x) ∈ KJxK for some number field K/Q.
+As recalled in § 2.2, one expects ([FR17]) that for such an f (x), there should exist
+A ∈ N>0 , b ∈ Q>0 , and σ ∈ N such that
+                       an An+1 [1, . . . , bn]σ ∈ OK   ∀n ∈ N,               (15.1.2)
+and moreover this is known unconditionally under the (conjecturally unnecessary)
+additional assumption that f (x) arises from geometry [And89, § V app.]. In any
+case, all the holonomic functions in our paper do have denominators subsumed
+by (15.1.2); they are manifestly G-functions.
+   The basic paradigm of the arithmetic theory of G-functions is captured by the
+following theorem:
+Theorem 15.1.3. For any Q(x)-linearly independent set f1 , . . . , fh ∈ QJxK of
+G-functions with rational coefficients, there is a constant N0 = N0 (f ), effectively
+computable from the minimal ODEs of all the fi , such that the set
+   {n ∈ Z : the fi (1/n) are Q-linearly dependent or contain a divergent value}
+   ⊂ [−N0 , N0 ].
+                                                                             (15.1.4)
+   This result was envisioned in Siegel’s 1929 paper [Zan14, § VII] and proved,
+in the degree of abstraction that we state here, by David and Gregory Chud-
+novsky [CC85a], after the groundbreaking works of Galočkin [Gal74] (who had
+to assume the ‘factorials canceling property’ that reflects in the global nilpotence
+of the integrable connection; a difficulty already noted by Siegel himself), and
+Bombieri [Bom81] (who proved a general adelic theorem under the similar and ulti-
+mately equivalent condition — but by far easier to check than Galočkin’s — that the
+linear differential system is ‘Fuchsian of arithmetic type’.) The Chudnovskys’ main
+result [CC85a, Theorem III], [DGS94, Theorem VIII.1.5], [And89, § VI], [DV01]
+was precisely the proof of the global nilpotence property for all irreducible ODEs
+that possess at least one G-series formal solution.
+

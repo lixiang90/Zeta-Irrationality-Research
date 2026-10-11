@@ -1,0 +1,55 @@
+Journal of Computational and Applied Mathematics 32 (1990) 321-368                                                     321
+North-Holland
+
+
+
+
+A holonomic systems approach                                                               to special
+functions identities *
+Doron     ZEILBERGER
+Department   of Mathematics,   Temple University, Philadelphia,   PA 19122, USA
+
+Received 14 November 1989
+
+
+Abstract: We observe that many special functions are solutions of so-called holonomic systems. Bernstein’s deep theory
+of holonomic systems is then invoked to show that any identity involving sums and integrals of products of these
+special functions can be verified in a finite number of steps. This is partially substantiated by an algorithm that proves
+terminating hypergeometric series identities, and that is given both in English and in MAPLE.
+
+
+
+Keywords: Elimination, Weyl algebra, partial difference operators, computer algebra, hypergeometric series.
+
+                                              Certain functions appear so
+                                              often that it is convenient to
+                                              give them names. These
+                                              functions are collectively
+                                              caNed special functions.
+                                               There are many examples and no
+                                              single way of looking at them
+                                              can illuminate aN examples or
+                                              even all the important properties
+                                              of a single example of a
+                                              special function.
+
+                                              Richard Askey (1984)
+
+
+
+1. Introduction
+
+   We are nowadays witnessing a spectacular comeback of the theory of special functions. This is
+expressed both by the various approaches [6,18,20,41] that are successfully used to explain and
+give insight to large families of previously unrelated results, and by the dramatic applications of
+special function identities to the solution of longstanding open problems in pure mathematics
+[7,16,55].
+   This paper initiates yet another approach to special functions that is based on Bernstein’s
+theory of holonomic systems. Unlike the other approaches, the present approach does not give
+insight on any one particular identity. Instead it gives a kind of universal insight on many
+
+* Supported in part by NSF grant DMS 8800663.
+
+
+0377-0427/90/$03.50     0 1990 - Elsevier Science Publishers B.V. (North-Holland)
+

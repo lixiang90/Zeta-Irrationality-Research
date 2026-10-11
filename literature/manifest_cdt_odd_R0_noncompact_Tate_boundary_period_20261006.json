@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-06",
+  "scope": "Actual bounding torus period a^4, invariant noncompact rational OPEN Tate discrepancy, explicit unit counterterm, and unchanged centered raw scalar. All-corner compact extension is a separate peer proof.",
+  "proof": {
+    "path": "research/cdt_odd_R0_noncompact_Tate_boundary_period_20261006.md",
+    "sha256": "00d1cb69f8cf783b842dd5c53331368bcf95fddf69135e80f614c4f0598372c1",
+    "actual_author_full_read": true
+  },
+  "frozen_inputs_actually_read_this_round": [
+    {
+      "path": "research/cdt_odd_R0_toric_completion_20261006.md",
+      "sha256": "abbb47907e85e2ae15c12bfaa6655f8f25497e804e299e15bd9277e7a6a667b0",
+      "scope": "Sections1-5 completely; beginning of section6 and further displayed context"
+    },
+    {
+      "path": "research/cdt_odd_R0_compact_positive_cut_class_20261006.md",
+      "sha256": "094aa342bb462a080c99b525110e8b1738acb58897aa2e4fbe9aa991a521c5d7",
+      "scope": "Full paper"
+    }
+  ],
+  "reused_primary_sources": [
+    {
+      "title": "The Abel-Jacobi map for higher Chow groups",
+      "local_path": "literature/kerr_lewis_muller_stach2006_abel_jacobi_published_20261006.pdf",
+      "version": "Published Compositio Math142(2006)374-396",
+      "source_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/96E7B429B8B0E96C08890BE3BAC41724/S0010437X05001867a.pdf/abeljacobi_map_for_higher_chow_groups.pdf",
+      "sha256": "8e612fd409fc0f9ca392434a8c40c39b658e10ea27b69d84afdfdc03704114d9",
+      "pdf_pages": 23,
+      "actual_current_round_pdf_pages": [8, 9, 10, 11, 12],
+      "scope": "Unit exterior cup, current conventions and ring homomorphism; independently read for peer all-corner review as well"
+    },
+    {
+      "title": "Theorie de Hodge III",
+      "local_path": "literature/deligne1974_hodge_III_primary_20261006.pdf",
+      "version": "Published IHES44(1974)5-77",
+      "source_url": "https://www.numdam.org/item/PMIHES_1974__44__5_0/",
+      "sha256": "d78d4f46742916cd669279e7db365e4db6a43f38d2dcdec6862c6d27d07216b3",
+      "pdf_pages": 74,
+      "actual_current_round_pdf_pages": [37, 38, 39, 40, 41],
+      "scope": "8.2.7-11 and relative filtered cone8.3.8-9; support, cup filtration and relative MHS, no integral saturation"
+    }
+  ],
+  "web_metadata_checks": [
+    "https://arxiv.org/abs/math/0409116",
+    "https://www.cambridge.org/core/journals/compositio-mathematica/article/abeljacobi-map-for-higher-chow-groups/96E7B429B8B0E96C08890BE3BAC41724",
+    "https://www.numdam.org/item/PMIHES_1974__44__5_0/"
+  ],
+  "new_primary_pdf_files": 0,
+  "new_primary_pdf_pages": 0,
+  "mathematical_producer_runs_or_imports": 0,
+  "execution_record": "Read-only PowerShell and Python fitz/hash metadata, NEW apply_patch papers/receipt. Initial PDF extraction failed GBK encoding and was successfully repeated with UTF-8; no files modified by extraction. Three TeX character/spacing typos corrected in own new proof before entering frozen-input audit, with final independent reread requested. Initial independent-read snapshot was fb91af4863780752de6cdd215efc1714c15e0d9bd0f3dcd086656071ac8d578b. No numerical verifier, PSLQ or Lean.",
+  "not_claimed": [
+    "Integral or saturated Betti/deRham comparison",
+    "All-corner compact extension as a consequence of this single chart alone",
+    "Irrationality or linear independence of any new odd zeta, L-value or Catalan target"
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "round": 219,
+  "date": "2026-10-08",
+  "goal_status": "active",
+  "new_numerical_theorem": false,
+  "round_outcome": "Substantive paper progress: actual algebraic Legendre source, exact target projection, full low-weight integral finite-jet lattice with two exact residue layers; restored high-weight symmetric-power contrast. No numerical theorem.",
+  "navigation": {
+    "default_completed_rounds_between_reviews": 6,
+    "allowed_window": [
+      4,
+      8
+    ],
+    "last_cross_target_review": 216,
+    "next_cross_target_review": 220,
+    "early_review_triggers": [
+      "quantitative method cap",
+      "two rounds without core progress"
+    ],
+    "fixed_Jacobi_support": "demoted by round218; do not resume local prime/parameter scans",
+    "next_direction": "Round220 global comparison of actual u-lattice cost with real-place benefit, relation-conditioned arithmetic holonomy and complete period source; high-weight log-depth contrast kept bounded"
+  },
+  "completed_math": {
+    "low_weight_global_source": "q=e^(2pi i tau), x=lambda(2tau), F=theta3(2tau)^2; paid Gamma0(4) Hauptmodul, all cusps, global E3,chi-4,1=xF^3/16 by index-six coset norm and valence; Theta x=PF^2.",
+    "actual_connection": "U=FK, L U=1/(16(1-x)); explicitly rational rank-three Fuchs frame (U,xUprime,1/(1-x)); actual holomorphic germ U(0)=0.",
+    "actual_Catalan_projection": "Exact reciprocal expression, known Tate leading term and G homogeneous period; ell=log(16/(1-x)) retained; U=ell^2/32-G ell/(2pi)+pi^2/48+O((1-x)ell^2).",
+    "complete_low_weight_jet": "u=x/16; integer rational frame (mathcalU,theta_u mathcalU,mathcalW), all-prime d_N^2 bound, 2-adic integral without multiplier; full source (Zp[u]degree<=D)^3 and every output coefficient 0..N.",
+    "exact_successive_flags": "For odd N/2<p<=N and either degree condition, actual quotient image is (Zp/p^2)^(N-p+1), index exponent 2(N-p+1); first and second ranks each N-p+1 on successive source lattices.",
+    "finite_place_cost": "N=3D covers entire stated window. Complete fallback 12D^2, proven saving15D^2/4; full finite-jet lattice index <=33D^2/4+o(D^2). All outside odd primes and powers retained; 2 index0. Rectangular source rank3D+3, output module rank3D+1.",
+    "high_weight_transport": "Exact symmetric-power Bol pullback; weighted recurrence Tj+1=delta Tj-j(s-j)P Tj-1/4 and explicit rank s+1 regular-singular system with infinity gauge.",
+    "actual_zeta7_branch": "U7=F^6(K7+(log q)^7/(480*7!)); 480T7U7=(1+14x+x^2)^2 at actual oldform tau, not2tau; rank8, retained degree7 Frobenius logs and Tate translation.",
+    "high_weight_coefficient_bound": "Integral u(q), q(u), period F(16u), ell=log(q(u)/u); 480*7!*d_N^7 clears all specified weighted logarithmic branch coefficients. This is not a full-source lattice index.",
+    "zeta7_projection": "lim[U7/F^6-zeta8 F/(pi B)]=-zeta7/2; ell^7/9450-zeta7 ell^6/(2pi^6)+O(ell^5), with all Tate scales retained."
+  },
+  "remaining_gates": [
+    "particular Eisenstein extension rational/integral Betti realization and Hodge comparison",
+    "actual arithmetic holonomy under proposed target relations, including singular-cusp projection",
+    "same-u real-place estimates and strict analytic/arithmetic comparison",
+    "unbounded nonzero actual evaluation/determinant; rectangular finitejet is not a square numerical determinant",
+    "high-weight full source, all deepest rows and successive residue kernels beyond coefficient clearing"
+  ],
+  "normalization_scope": {
+    "base": "x=lambda(2tau), u=x/16; theta nome exp(pi i 2tau)=q",
+    "integral_source": "all three degree<=D source rows and complete cutoff N=3D; mathcalW never removed",
+    "real_place": "coordinate/basis norm and capacity transport from x to u not free and not yet paid",
+    "endpoint": "singular cusp x=1; log16 and pi normalizations not discarded",
+    "deRham_vs_period": "rational differential connection alone is not a Betti/Hodge/global arithmetic-holonomy theorem",
+    "high_weight": "restored logarithmic branch cannot be replaced by F^6K7; depth-seven coefficient cap is not full source index"
+  },
+  "independent_review": {
+    "status": "PASS at the exact pinned versions for stated bounded paper scopes",
+    "connection": "research/research_round219_legendre_connection_review_20261008.md",
+    "integral_flags": "research/research_round219_integral_flags_review_20261008.md",
+    "high_weight": "research/research_round219_symmetric_power_review_20261008.md",
+    "report": "research/research_round219_report_review_20261008.md",
+    "necessary_math_corrections": "none to frozen final notes",
+    "citation_detour": "Original DLMF20.4.3-4 correctly gives theta constants; temporary equally valid20.5 replacement restored. Extra actual20.5 reading recorded; no math change."
+  },
+  "root_reading_receipt": {
+    "math_notes": "Actually FULL final low connection13940, integral15599, high15514; high separately FULL reread after original correct citation restored. Paper rederivation scopes in receipts.",
+    "report": "Actually FULL final7186-byte report; independent report pass at same version",
+    "reviews": "Actually FULL final four receipts, including Root own high receipt",
+    "source_scope": "Actually FULL saved reading_scope and final download_receipt. Primary sources limited to selected formulas/theorems; full HTML download is not FULL reading.",
+    "root_primary": "Actually visible Stein Theorem2.11 segment with adjacent explanation and DLMF20.4 E3/E4. Earlier combined/truncated web output is not root FULL source reading.",
+    "other_reviews": "Report reviewer bounded high sections2-6/low sections4-5; high author bounded round218 Lambert sections1-7, not new FULL primary or Lambert section8."
+  },
+  "source_claim_policy": {
+    "public_sources": "NIST DLMF and Stein official author textbook; selected precise equations/hypotheses only",
+    "literature_saved": "Nine HTML snapshots and final documentary download receipt; reused prior Stein Eisenstein HTML unchanged",
+    "OpenAI_repo": "No new repo survey or numerical theorem verification this round; no exhaustive claim about zeta results",
+    "formalization": "No Lean execution or formal verification claimed for these new notes"
+  },
+  "execution_ledger": {
+    "mathematical_program_runs": 0,
+    "prime_or_parameter_scans": 0,
+    "finite_matrix_runs": 0,
+    "symbolic_engines": 0,
+    "PSLQ": 0,
+    "Lean": 0,
+    "Git_operations": 0,
+    "old_interval_reruns": 0,
+    "new_downloads": {
+      "HTML": 9,
+      "PDF": 0,
+      "TEX": 0,
+      "README": 0
+    },
+    "documentary_operations": [
+      "selected public-source browsing",
+      "HTML downloads",
+      "file writes and full reads",
+      "Python/PowerShell byte/hash/link/control/prefix bookkeeping"
+    ],
+    "documentary_computation_is_not_a_math_experiment": true
+  },
+  "predecessor": {
+    "path": "literature/manifest_cdt_source_packets_gate_round218_20261008.json",
+    "bytes": 22634,
+    "sha256": "89994968ba08c174175f69eceb2e4c6d23ec5dde52c2ebcfa31fd6250237b7c5",
+    "unchanged": true,
+    "historical_mutable_main_pin_not_recursively_rechecked": true
+  },
+  "main_append": {
+    "path": "research/cdt_odd_background_progress_20261006.md",
+    "preserved_prefix_bytes": 483563,
+    "preserved_prefix_sha256": "c284b837dfdef3a12885b81e555e33fbd4a3eb525c5d434764d35bbee9c2c609",
+    "separator_hex": "0a0a",
+    "appended_report": "research/cdt_legendre_source_flags_round219_20261008.md",
+    "appended_report_bytes": 7186,
+    "appended_report_sha256": "9e705169df37dc88edab27de45d1c6efae9ffdfb24f0a44f52b6355f96bab5af",
+    "final_bytes": 490751,
+    "final_sha256": "891aba2b1ef57e50f387ef6cebc49c27ed047fecb6e968fd3dff5d9eada67573",
+    "report_heading_line": 4096,
+    "byte_for_byte_prefix_check": "PASS",
+    "exact_append_check": "PASS"
+  },
+  "pins": [
+    {
+      "path": "research/eisenstein_legendre_catalan_connection_round219_20261008.md",
+      "bytes": 13940,
+      "sha256": "67586f910a830e0fa458529c0d0b0eedab06a8550e512ffbb0a4a228b87cda39"
+    },
+    {
+      "path": "research/eisenstein_legendre_integral_flags_round219_20261008.md",
+      "bytes": 15599,
+      "sha256": "bc41296fb85c5548adae93d25cde5f9e4983f5d223ada8e6a39cd1b87b765730"
+    },
+    {
+      "path": "research/eisenstein_symmetric_power_transport_round219_20261008.md",
+      "bytes": 15514,
+      "sha256": "32910f3ad35dcf3307786b75764ae024a4eaca2d32eec013e482be99e177aaee"
+    },
+    {
+      "path": "research/cdt_legendre_source_flags_round219_20261008.md",
+      "bytes": 7186,
+      "sha256": "9e705169df37dc88edab27de45d1c6efae9ffdfb24f0a44f52b6355f96bab5af"
+    },
+    {
+      "path": "research/research_round219_integral_flags_review_20261008.md",
+      "bytes": 8976,
+      "sha256": "11d12af182d8acfe9632f0a44c300d1a3999a251bfbe9278c6dfbc59d5c05b3e"
+    },
+    {
+      "path": "research/research_round219_legendre_connection_review_20261008.md",
+      "bytes": 8476,
+      "sha256": "d1029c2a5348b7060c2108b4965547df9c54daea525dfe1df06398cbf98c7e8d"
+    },
+    {
+      "path": "research/research_round219_report_review_20261008.md",
+      "bytes": 4336,
+      "sha256": "7765a1e808b64361987d4e0020058a26f379ae721870a813504b159fc3013530"
+    },
+    {
+      "path": "research/research_round219_symmetric_power_review_20261008.md",
+      "bytes": 4607,
+      "sha256": "f65976707e9a5d1913b033752f475bd94eadbd94db8694f48804789011a36dd0"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+      "bytes": 3370,
+      "sha256": "d61c5042b9493bfa32d67bfd8675986b9b3ddd8af4fb8c8f91675917f22b9e58"
+    },
+    {
+      "path": "research/eisenstein_lambert_period_carrier_round218_20261008.md",
+      "bytes": 14236,
+      "sha256": "08de641c84b6342a6202d1a671477f8d9e9dbaeea1413a06a840780ec630e7fc"
+    },
+    {
+      "path": "research/arithmetic_packet_residue_flags_round218_20261007.md",
+      "bytes": 10923,
+      "sha256": "c8b136eee92e109c669f3a7c25f59cfed94fb2a36b83552f1746f5ac7b293a64"
+    },
+    {
+      "path": "research/cdt_decisive_gate_and_source_packets_round218_20261008.md",
+      "bytes": 8518,
+      "sha256": "5e11dd100044c456404becdd4b2e1c8100aac75376a3afa908a8a4ade1526216"
+    },
+    {
+      "path": "literature/manifest_cdt_source_packets_gate_round218_20261008.json",
+      "bytes": 22634,
+      "sha256": "89994968ba08c174175f69eceb2e4c6d23ec5dde52c2ebcfa31fd6250237b7c5"
+    },
+    {
+      "path": "research/research_global_review_round216_20261007.md",
+      "bytes": 8957,
+      "sha256": "60119f1598fa41ff07a23223a181735d34c23f9611e796df9ae885b2f9431450"
+    },
+    {
+      "path": "research/research_navigation_protocol.md",
+      "bytes": 2135,
+      "sha256": "13e03cdf0e5bc2234f46a7e4557f576c806ab69db50b16b1f40c9e720226bba0"
+    },
+    {
+      "path": "literature/eisenstein_lambert_sources_20261008/stein_eisenstein.html",
+      "bytes": 48189,
+      "sha256": "b39a4ba7806d0d94aaf48971067a465fe1a01442c8fa0d45a86d9c43a7bfc95b"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf23_15.html",
+      "bytes": 97707,
+      "sha256": "857840e85ca9f5278a307456c870617c99a6f55571efc71d311260d17572dd9e"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf23_17.html",
+      "bytes": 67450,
+      "sha256": "5bef30db007e490f05487d5c19052fda0b71e7999930c69383d13de07b4a3f17"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf20_5.html",
+      "bytes": 148573,
+      "sha256": "894feb78bce0871d8ef186542995ce5aa627baacec60a65868db93ff600b03c5"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf20_7.html",
+      "bytes": 230052,
+      "sha256": "b163ded9a6bb4ecf7964d6992d19bf2da839dc4dcb0b8d1d7074443026c5c4cc"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf20_9.html",
+      "bytes": 71439,
+      "sha256": "b031bcb21477aa3f3553a947ec058073a833b17574210a23eaf6a676c8b50712"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf19_5.html",
+      "bytes": 144771,
+      "sha256": "ae306a3a3c1386d145fb856f404a35ac84f2982492f03387d4d648e5e162f54b"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf19_12.html",
+      "bytes": 82773,
+      "sha256": "993b7d3281aa2cede542c62547b0ef3ecabe010023fd3ae5b88d5ca571cd3495"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/stein_level_one.html",
+      "bytes": 143465,
+      "sha256": "a70df0bd3ac3d092228c7f83df5fad545d3a4a41c97638d1060674ab6e044371"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/dlmf20_4.html",
+      "bytes": 75713,
+      "sha256": "19618a934bbfbc5aed30673f26dab7ee3f72fe6a3488fce38cf3509e662b4867"
+    },
+    {
+      "path": "literature/eisenstein_legendre_sources_20261008/download_receipt.json",
+      "bytes": 2392,
+      "sha256": "f97684787552e95655f610d5212adea46092d0318d6b8b96ee9880e50572d2b6"
+    },
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "bytes": 490751,
+      "sha256": "891aba2b1ef57e50f387ef6cebc49c27ed047fecb6e968fd3dff5d9eada67573"
+    }
+  ],
+  "local_markdown_links": {
+    "scope": "Only three new math notes, final report, four new reviews and new reading scope; not all historical main/source links.",
+    "documents": [
+      "research/eisenstein_legendre_catalan_connection_round219_20261008.md",
+      "research/eisenstein_legendre_integral_flags_round219_20261008.md",
+      "research/eisenstein_symmetric_power_transport_round219_20261008.md",
+      "research/cdt_legendre_source_flags_round219_20261008.md",
+      "research/research_round219_integral_flags_review_20261008.md",
+      "research/research_round219_legendre_connection_review_20261008.md",
+      "research/research_round219_report_review_20261008.md",
+      "research/research_round219_symmetric_power_review_20261008.md",
+      "literature/eisenstein_legendre_sources_20261008/reading_scope.md"
+    ],
+    "count": 24,
+    "links": [
+      {
+        "document": "research/eisenstein_legendre_integral_flags_round219_20261008.md",
+        "target": "eisenstein_legendre_catalan_connection_round219_20261008.md",
+        "resolved": "research/eisenstein_legendre_catalan_connection_round219_20261008.md"
+      },
+      {
+        "document": "research/eisenstein_legendre_integral_flags_round219_20261008.md",
+        "target": "arithmetic_packet_residue_flags_round218_20261007.md",
+        "resolved": "research/arithmetic_packet_residue_flags_round218_20261007.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "eisenstein_legendre_catalan_connection_round219_20261008.md",
+        "resolved": "research/eisenstein_legendre_catalan_connection_round219_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "eisenstein_legendre_integral_flags_round219_20261008.md",
+        "resolved": "research/eisenstein_legendre_integral_flags_round219_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "eisenstein_symmetric_power_transport_round219_20261008.md",
+        "resolved": "research/eisenstein_symmetric_power_transport_round219_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "research_round219_legendre_connection_review_20261008.md",
+        "resolved": "research/research_round219_legendre_connection_review_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "research_round219_integral_flags_review_20261008.md",
+        "resolved": "research/research_round219_integral_flags_review_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "research_round219_symmetric_power_review_20261008.md",
+        "resolved": "research/research_round219_symmetric_power_review_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "research_round219_report_review_20261008.md",
+        "resolved": "research/research_round219_report_review_20261008.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "../literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/reading_scope.md"
+      },
+      {
+        "document": "research/cdt_legendre_source_flags_round219_20261008.md",
+        "target": "../literature/manifest_cdt_legendre_source_flags_round219_20261008.json",
+        "resolved": "literature/manifest_cdt_legendre_source_flags_round219_20261008.json"
+      },
+      {
+        "document": "research/research_round219_integral_flags_review_20261008.md",
+        "target": "eisenstein_legendre_integral_flags_round219_20261008.md",
+        "resolved": "research/eisenstein_legendre_integral_flags_round219_20261008.md"
+      },
+      {
+        "document": "research/research_round219_symmetric_power_review_20261008.md",
+        "target": "eisenstein_symmetric_power_transport_round219_20261008.md",
+        "resolved": "research/eisenstein_symmetric_power_transport_round219_20261008.md"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "download_receipt.json",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/download_receipt.json"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf23_15.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf23_15.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf23_17.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf23_17.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf20_4.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf20_4.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf20_5.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf20_5.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf20_7.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf20_7.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf20_9.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf20_9.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf19_5.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf19_5.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "dlmf19_12.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/dlmf19_12.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "stein_level_one.html",
+        "resolved": "literature/eisenstein_legendre_sources_20261008/stein_level_one.html"
+      },
+      {
+        "document": "literature/eisenstein_legendre_sources_20261008/reading_scope.md",
+        "target": "../eisenstein_lambert_sources_20261008/stein_eisenstein.html",
+        "resolved": "literature/eisenstein_lambert_sources_20261008/stein_eisenstein.html"
+      }
+    ]
+  },
+  "archive_checks": {
+    "pin_count": 27,
+    "all_exact_pins": "PASS",
+    "frozen_inputs_unchanged": "PASS",
+    "source_receipts_vs_snapshot_bytes": "PASS",
+    "predecessor_identity": "PASS",
+    "main_prefix_and_exact_report_append": "PASS",
+    "new_md_control_characters": "PASS",
+    "new_local_links": "PASS"
+  }
+}

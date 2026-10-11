@@ -1,0 +1,322 @@
+{
+  "scope": "Exact algebraic certificates only; period independence uses CDT Theorem A.",
+  "checks_passed": true,
+  "base_image_matrix_for_2_trigamma": [
+    [
+      24,
+      8,
+      6,
+      8,
+      24,
+      2
+    ],
+    [
+      45,
+      9,
+      0,
+      -9,
+      -45,
+      0
+    ]
+  ],
+  "smith_invariant_factors": [
+    1,
+    18
+  ],
+  "saturated_kernel_basis": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      -5,
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      8,
+      -3,
+      -8,
+      -32
+    ]
+  ],
+  "unimodular_completion_determinant": 1,
+  "pure_L_and_mean_zero_kernel_basis": [
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      -5,
+      1,
+      5
+    ],
+    [
+      0,
+      2,
+      -3,
+      -13
+    ],
+    [
+      -1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      7
+    ]
+  ],
+  "pure_L_mean_zero_image_b": [
+    2,
+    0,
+    0,
+    0
+  ],
+  "pure_L_mean_zero_unimodular_completion": -1,
+  "periodic_character_G0": "x/(x**2 + x + 1)",
+  "periodic_weight_cyclic_certificates": [
+    {
+      "weight": 1,
+      "rank": 2,
+      "jet_determinant": "-x/(x**2 + x + 1)"
+    },
+    {
+      "weight": 2,
+      "rank": 3,
+      "jet_determinant": "-x/(x**2 + x + 1)"
+    },
+    {
+      "weight": 3,
+      "rank": 4,
+      "jet_determinant": "x/(x**2 + x + 1)"
+    }
+  ],
+  "character_prefix": {
+    "N": 12,
+    "safe_D": "768398400",
+    "full_content_including_D": "81",
+    "exact_denominator": "9486400"
+  },
+  "primitive_period_rows": [
+    {
+      "n": 1,
+      "period_row_C_A_B": [
+        "0",
+        "12",
+        "45/2"
+      ],
+      "D": 2,
+      "full_content": 3,
+      "primitive_row": [
+        0,
+        8,
+        15
+      ]
+    },
+    {
+      "n": 2,
+      "period_row_C_A_B": [
+        "0",
+        "4",
+        "9/2"
+      ],
+      "D": 2,
+      "full_content": 1,
+      "primitive_row": [
+        0,
+        8,
+        9
+      ]
+    },
+    {
+      "n": 7,
+      "period_row_C_A_B": [
+        "-36",
+        "12",
+        "45/2"
+      ],
+      "D": 2,
+      "full_content": 3,
+      "primitive_row": [
+        -24,
+        8,
+        15
+      ]
+    },
+    {
+      "n": 13,
+      "period_row_C_A_B": [
+        "-1800/49",
+        "12",
+        "45/2"
+      ],
+      "D": 98,
+      "full_content": 3,
+      "primitive_row": [
+        -1200,
+        392,
+        735
+      ]
+    }
+  ],
+  "joint_prefix_lattice": {
+    "m": 3,
+    "N": 2,
+    "D": "6350400",
+    "smith_factors": [
+      100,
+      6350400,
+      6350400
+    ],
+    "residue_rows": [
+      1,
+      3
+    ],
+    "index_in_Z2": "63504",
+    "integer_filter_basis_columns": [
+      [
+        784,
+        -196
+      ],
+      [
+        0,
+        81
+      ]
+    ],
+    "separate_row_denominator_product": "254016"
+  },
+  "scalar_prefix_models": [
+    {
+      "m": 3,
+      "coeffs": {
+        "1": 1,
+        "2": -1
+      },
+      "N": 3,
+      "safe_D": "768398400",
+      "integer_content_including_D": "81",
+      "exact_prefix_denominator": "9486400",
+      "coefficients": [
+        "3/4",
+        "9/400",
+        "15/3136",
+        "21/12100"
+      ]
+    },
+    {
+      "m": 3,
+      "coeffs": {
+        "1": 1,
+        "3": -4
+      },
+      "N": 3,
+      "safe_D": "768398400",
+      "integer_content_including_D": "484",
+      "exact_prefix_denominator": "1587600",
+      "coefficients": [
+        "5/9",
+        "-7/144",
+        "-115/3969",
+        "-4/225"
+      ]
+    },
+    {
+      "m": 6,
+      "coeffs": {
+        "1": 1,
+        "2": -5,
+        "6": 8
+      },
+      "N": 2,
+      "safe_D": "150117385017600",
+      "integer_content_including_D": "3496900",
+      "exact_prefix_denominator": "42928704",
+      "coefficients": [
+        "-1/36",
+        "-61/28224",
+        "13679/2683044"
+      ]
+    }
+  ],
+  "cyclic_rank_certificates": [
+    {
+      "m": 3,
+      "coeffs": {
+        "1": 1,
+        "2": -1
+      },
+      "rank": 5,
+      "confluent_jet_determinant": "1/729",
+      "forcing_polynomial": "6*n + 3"
+    },
+    {
+      "m": 6,
+      "coeffs": {
+        "1": 1,
+        "2": -5,
+        "6": 8
+      },
+      "rank": 7,
+      "confluent_jet_determinant": "15625/28697814",
+      "forcing_polynomial": "5184*n**4 - 1296*n**3 - 4068*n**2 - 792*n - 4"
+    }
+  ],
+  "coarse_rate_at_m1": "13/9",
+  "coarse_rate_at_m6": "1728/169",
+  "log2_rational_upper_bound": "10154967342503/14650521025140",
+  "CDT13_exact_tau": "16603/3920",
+  "prime_shift_certificates": [
+    {
+      "p": 5,
+      "shift_n": 11,
+      "rational_C": "-36/25",
+      "valuation": -2
+    },
+    {
+      "p": 7,
+      "shift_n": 13,
+      "rational_C": "-1800/49",
+      "valuation": -2
+    },
+    {
+      "p": 11,
+      "shift_n": 17,
+      "rational_C": "-5256/3025",
+      "valuation": -2
+    }
+  ]
+}

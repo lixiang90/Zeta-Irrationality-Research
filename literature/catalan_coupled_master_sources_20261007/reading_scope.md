@@ -1,0 +1,11 @@
+# Round217 selected primary sources and archive scope
+
+2026-10-07. Two full downloads succeeded; exact identities are in download_receipt.json. Downloading a whole PDF/page is not reading or validating its whole proof.
+
+1. G. López Lagomasino, S. Medina Peralta and J. Szmigielski, *Mixed type Hermite–Padé approximation inspired by the Degasperis–Procesi equation*, arXiv:1805.02195v1, 6 May2018. Root actually read the primary webPDF abstract and selected introduction, then pp3–6 (one-based), lines84–276: the two-measure coupled problem1.5–1.6, Definition1.1's generating measures/products, Definitions1.2–1.3's direct/reversed and multi-level interpolation, Theorems1.4–1.5, and relation1.21. It did not read the complete22-page proof. The later convergence theorem was printed in context but is not used or recorded as an audited result.
+
+   The hypotheses imported for comparison are actual Nikishin products and the exact full interpolation relations. The definition M(Delta) in this paper requires all nonnegative moments; a fixed power regularization with only finitely many moments is not automatically in that class. The earlier finite-moment extension1009.1922 has its separate already archived scope. No application of either perfectness theorem to the complete actual constrained space is claimed.
+
+2. NIST DLMF25.12, https://dlmf.nist.gov/25.12. Root actually read selected displayed equations25.12.1–6 and branch/connection qualifications (web lines43–149). In particular inversion25.12.4 is stated off the positive axis; its real boundary value, not an unqualified complex equality there, is used. The series and integral definitions, Euler reflection, Landen and inversion formulas fix the dilogarithm convention. Other material printed in context is not claimed as a complete subsection/chapter audit.
+
+The finite master-weight formulas, rational differential system and exact four-zero theorem in the NEW round217 research note are self-contained paper derivations. No mathematical program was run for them. Extracting the PDF text is a document operation, not a coefficient/rank experiment. New source-derived exposition is limited to assumption checking; no lengthy quotation is reproduced.

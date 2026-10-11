@@ -1,0 +1,239 @@
+{
+  "status": "delivery_checks_passed",
+  "as_of": "2026-10-05",
+  "checked_at_utc": "2026-10-05T01:42:13.725455+00:00",
+  "main_report": "odd_zeta_log_moment_progress_20261005.md",
+  "main_report_sha256": "705768e9c35ce21244198ad67119afbb9430074ff718f0c7e6ae5c01097e5479",
+  "new_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "reports": [
+    {
+      "report": "odd_zeta_log_saddle_20261005.md",
+      "report_sha256": "6389841b0700a5ab897ec395d8b83db3d2c09ccd679ef3e48ad9d7117c851288",
+      "script": "odd_zeta_log_saddle_20261005_verify.py",
+      "script_sha256": "58f55aaff7bc4081672726d2a46111628d9ab6c01923a6679e4561b32ff784e1",
+      "certificate": "odd_zeta_log_saddle_20261005_verify.json",
+      "certificate_sha256": "3abc669f7d071046454e7428016f6b88f555fb78cef785181d980ee0091f17f4",
+      "certificate_status": "saddle_input_certificates_passed"
+    },
+    {
+      "report": "odd_zeta_log_nonzero_20261005.md",
+      "report_sha256": "b7a3b36ccbb5d4f9c208f1b58d2ca3407228120fa5453fc27e070751d717f171",
+      "script": "odd_zeta_log_nonzero_20261005_verify.py",
+      "script_sha256": "71bbe632d1cc0b8f4ff0fb4ad55d42f256a5698e60ba6c0b0d7cb933c850ffe8",
+      "certificate": "odd_zeta_log_nonzero_20261005_verify.json",
+      "certificate_sha256": "97d9ad31391206d9cb03021ed7d8cbdefa904d4af59149998116b8619a3c10b5",
+      "certificate_status": "passed"
+    },
+    {
+      "report": "odd_zeta_uniform_endpoint_nonzero_20261005.md",
+      "report_sha256": "f939374a37b6006b498c934575724520cd44cb793d20571926db0d111b683018",
+      "script": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.py",
+      "script_sha256": "06a1dda07fd35f8e9033dd1e44aafe3c8a8926f402caba89b609d5418bc33c67",
+      "certificate": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.json",
+      "certificate_sha256": "8f7d4e1704de9ffab64d8b52a9dd970ec7da5699fa294eddea3c9c2526015c10",
+      "certificate_status": "passed"
+    },
+    {
+      "report": "odd_zeta_log_arithmetic_20261005.md",
+      "report_sha256": "9e675637cdd5c5c38e0afc23ea8ec5326c6f39c1438581a3846fc3ce6149f36d",
+      "script": "odd_zeta_log_arithmetic_20261005_verify.py",
+      "script_sha256": "385ff9be3842f8bf3dde88469f6d9791d226ba0be67c0c0da34b6e5824dc4c63",
+      "certificate": "odd_zeta_log_arithmetic_20261005_verify.json",
+      "certificate_sha256": "63eacc3ba78a3f990fb697dd5955cf88c6aabde61b00be8ff2de1e189ecd9372",
+      "certificate_status": "fixed_exact_arithmetic_certificates_passed"
+    },
+    {
+      "report": "odd_zeta_log_structure_20261005.md",
+      "report_sha256": "a3ee91ef81375dc77b4171ce4b734be5453319a0433a70653347143ffeb9c952",
+      "script": "odd_zeta_log_structure_20261005_verify.py",
+      "script_sha256": "0243f48622ac1e7e0a29224b6fb1e62e9bcf3da34565f65443772aeae3ccaa08",
+      "certificate": "odd_zeta_log_structure_20261005_verify.json",
+      "certificate_sha256": "3ab417056bfe91ce835dce89efc08c67f2373382e28ff8bb77bf06c88457bdeb",
+      "certificate_status": "fixed_exact_structure_certificates_passed"
+    }
+  ],
+  "independent_reviews": {
+    "saddle": "paper_mechanism sections1-5 plus algebraic Lambda and conditional budget; distribution1-5",
+    "nonzero": "root full; distribution4-5 and source matching",
+    "uniform_nonzero": "root and moment_extension full",
+    "arithmetic": "root1-6; distribution3-6 plus independent height; paper_mechanism1-6 and exact kappas",
+    "structure": "root and moment_extension mathematics2-4; external source matching by author",
+    "main_report": "root and zeta7_distribution_new"
+  },
+  "written_review": "odd_zeta_log_moment_review_20261005.md",
+  "written_review_sha256": "4aa60114f6742cec80aee2668ba5380f34eee8ab74932f09e8511a1538f60fe6",
+  "frozen_previous_reports": [
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004.md",
+      "sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004_review.md",
+      "sha256": "df39b915c089c168cc9b0051142853b8f751212e477094bab13b70f8a92bc000",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_content_geometry_20261004.md",
+      "sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_catalan_20261004.md",
+      "sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004.md",
+      "sha256": "9a2c843c9de0ff30c5790aff827869abd27b3e0681dc4ec1ccdd5fab1db6638e",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_progress_20261004.md",
+      "sha256": "2020a602b2f30671f6a13e66d0f56638db1ea8b2fb172715ec5b23d091775883",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_review_20261004.md",
+      "sha256": "25e940bd94924128a39043f6f55087367f9be4684fcf1e083d89955f42e88724",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004.md",
+      "sha256": "07a4224bdcaef15776bd8552258acd0aea6204819f12097e8706ae2938220736",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_descent_20261004.md",
+      "sha256": "054e4855775e67fdbe13198d7b705c1d8615bbffa27b5cb5fcb490e3228de774",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_gap_progress_20261004.md",
+      "sha256": "fe3bac7691cce1594c27f0ed609c51cdf3d9dcbbaae6dd030a4ffbde5372ba92",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_regulator_20261004.md",
+      "sha256": "911820ae48252c6757944003b4aa8b34b44627df99e888bf46a49bb23d66a9fb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_vertical_20261004.md",
+      "sha256": "98c374714227f52e982419829d47c8ae4a6e94964840c57bc9ee538333ce2e59",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004.md",
+      "sha256": "f00c2b6f95844c8949350eb51968abda08b6904efce8687dcd4ab33845322f15",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_new_period_systems_20261004.md",
+      "sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_next_routes_progress_20261004.md",
+      "sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004.md",
+      "sha256": "a732cc05e14fbe3a98bf591f48658410c0fff1ac7c1fb3d5e53097a837a46e19",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    }
+  ],
+  "earlier_original_pdf_hash_checks": 53,
+  "new_original_source_pdfs": [
+    {
+      "file": "smet_vanassche2008_mellin_author.pdf",
+      "pages": 25,
+      "sha256": "6b07eb6bca8248c917a1ec47db613ea7434386ff1ee691ef6cfb51e48f89d3da",
+      "fixed_version": "Author PDF dated August 6, 2008, 25 pages",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "kalmykov_lysov_shukla2026_jacobi_pineiro_asymptotics_v1.pdf",
+      "pages": 56,
+      "sha256": "61295e7da85061d9a5af4c75674fbfee7e6512d749c1eb3b45ba7fa10deeca5d",
+      "fixed_version": "arXiv:2608.20594v1, submitted 2026-08-20",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "lysov2019_jacobi_pineiro_integral_representations.pdf",
+      "pages": 13,
+      "sha256": "6be513eda4001e2cba896a47a130c6f2ca287b5b2c5a60bba25057a5b6432404",
+      "fixed_version": "Probl.Anal.Issues Anal.8(26):3(2019),83–95,13 pages; DOI10.15393/j3.art.2019.6830",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "neuschel_vanassche2016_zero_distribution_v2.pdf",
+      "pages": 19,
+      "sha256": "12c8faab0e1d57e8a91f1717fe43d89578fb0310b4593ce2c5146edfbc8b02a4",
+      "fixed_version": "arXiv:1509.04542v2, submission stamp 2016-01-07; PDF internal author date 2018-08-15",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "wolfs2024_multiple_orthogonal_hypergeometric_v2.pdf",
+      "pages": 39,
+      "sha256": "974379282084888300a378f24d5d9cec605b744c6339418c01b8d2f75e9e163e",
+      "fixed_version": "arXiv:2401.08312v2, 2024-04-16,39 pages",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "fidalgo_lopez2010_nikishin_perfect_v1.pdf",
+      "pages": 39,
+      "sha256": "4148ad332e97981c9c83dbc6c67391df35ed6a471618db269d9cf12a78025417",
+      "fixed_version": "arXiv:1001.0554v1, 2010-01-04,39 pages",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    }
+  ],
+  "new_original_pdf_pages": 191,
+  "scope": "The raw q7 endpoint has proved oscillatory strong asymptotics and positive limsup; adjacent two-term blocks contain an exponentially large nonzero term. Prime-filter arguments give eventual nonzero on specified infinite subsequences for fixed zeta weights and Catalan without assuming irrationality. Actual target height, local Lucas factors and full gcd formulas are proved. The bound on weighted exceptional primes needed for the primitive no-go criterion is unproved. Raw growth and safe-LCM failure are not unconditional primitive failure. Finite certificates, hashes and visual checks do not replace the all-scale written analytic and arithmetic proofs.",
+  "local_links_checked": 106,
+  "missing_links": []
+}

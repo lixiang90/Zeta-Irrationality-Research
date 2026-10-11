@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "K": 40,
+  "N": 3,
+  "h": 37,
+  "necessary_principal_block_size": 36,
+  "rank_moment47_in_block": 8,
+  "moment55_vanishes_in_block": true,
+  "rows": [
+    {
+      "sign": -1,
+      "last_positive_bit": 137,
+      "first_negative_bit": 138,
+      "inside_x": "-174224571863520493293247799005065324265472/17",
+      "outside_x": "-348449143727040986586495598010130648530944/17",
+      "inside_log_abs": "[92.127950392656291309911266021897063290755315394769225027235923562712633634047245 +/- 2.44e-79]",
+      "outside_log_abs": "[92.821097573216236619328498143355239858830815529129480281356603572206027256016939 +/- 4.73e-79]",
+      "positive_check_inside": {
+        "positive_definite": true,
+        "positive_pivot_count": 36
+      },
+      "positive_check_outside": {
+        "positive_definite": false,
+        "negative_pivot": 35,
+        "pivot_interval": "[-327567035921492985102763989510549884329890799687248071170428337930064.47504680612 +/- 4.34e-12]"
+      }
+    },
+    {
+      "sign": 1,
+      "last_positive_bit": 149,
+      "first_negative_bit": 150,
+      "inside_x": "713623846352979940529142984724747568191373312/17",
+      "outside_x": "1427247692705959881058285969449495136382746624/17",
+      "inside_log_abs": "[100.44571655937563502291805147939518210766131700709228807668408367663335709768358 +/- 1.35e-78]",
+      "outside_log_abs": "[101.13886373993558033233528360085335867573681714145254333080476368612675071965328 +/- 3.95e-78]",
+      "positive_check_inside": {
+        "positive_definite": true,
+        "positive_pivot_count": 36
+      },
+      "positive_check_outside": {
+        "positive_definite": false,
+        "negative_pivot": 35,
+        "pivot_interval": "[-198873388081796032651554477895337704390349789078163220018319179917302598.30165109 +/- 2.00e-10]"
+      }
+    }
+  ],
+  "tested_representative_valuation_product": "20437264909210806344944299939217990597214208000000000000",
+  "representative_minimum_log_abs_x": "[124.52374162330033127999089991159658584100271880747471701984467716866068213166251 +/- 7.97e-79]",
+  "scope": "The two-sided failed blocks imply a rigorous necessary open x interval for every real y, by convexity. The representative valuation product is not proved necessary for all local protection solutions. Comparison of this product excludes only that certified representative strategy."
+}

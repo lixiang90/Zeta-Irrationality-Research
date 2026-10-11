@@ -1,0 +1,137 @@
+=== PHYSICAL PDF PAGE 18 ===
+18
+yields, using Proposition 3:
+Sr,n (z) = ( − 1)n+1z(r+1)(n+1)
+×
+∫
+[0, 1]2r+3
+u(r+1)(n+1)− 1
+0 (1 − u0)n
+r+1∏
+j=1
+(
+(ujvj)(r− j+2)(n+1)− 1(1 − uj)n(1 − vj)n)
+r+1∏
+j=1
+(
+(z − u0u1v1 · · ·uj− 1vj− 1uj)n+1(z − u0u1v1 · · ·ujvj)n+1)
+dudv.
+This completes the proof of Theorem 1.
+6. Beyond V asilyev’s conjecture: irrationality of odd zeta va lues
+A natural problem is to ﬁnd a proof that the numbers ζ(2r + 1), r ≥ 0, span an inﬁnite-
+dimensional Q-vector space [2, 11] that would be analogous to Sorokin’s proof th at π is
+transcendental [14] (since Sorokin’s result is equivalent to the fac t that the numbers ζ(2r),
+r ≥ 0, span an inﬁnite-dimensional Q-vector space). In particular, such a proof would
+involve a Pad´ e approximation problem with multiple polylogarithms.
+Let σ be an integer such that 1 ≤ σ ≤ r + 2. To achieve this goal, it is enough to relate
+the very-well-poised hypergeometric series
+∞∑
+k=1
+(k + n
+2 ) (k − σn)σn (k + n + 1)σn
+(k)2r+4
+n+1
+, (6.1)
+which can be used to prove the above mentioned result (see for inst ance [7]), to such a
+Pad´ e approximation problem. An analogous work has been done in [8], where this series is
+related to a Pad´ e approximation problem involving only classical polylo garithms, namely
+of depth 1.
+We shall prove now that for σ = 1 the hypergeometric series (6.1) is equal (up to a sign)
+to Sr,n (1), thereby providing in this case the relation we are looking for. Fo r any σ we shall
+prove that this series is the value at z = 1 of a function Sr,n,σ (z) which generalizes Sr,n (z);
+what is missing is a Pad´ e approximation problem of which Sr,n,σ (z) would be a solution.
+We believe that a suitable generalisation of the problem Pr,n solved in Theorem 1 could
+have this property.
+With this aim in view, we consider the function Sr,n,σ (z) deﬁned by
+zn+1
+n! S(σn +1)
+r,n,σ (z) = ˜S∂
+r,n (z)
+and lim z→∞ Sr,n,σ (z) = 0; in this way we have Sr,n, 1(z) = Sr,n (z) (see Eq. (5.11)). We have
+Sr,n,σ (z) = Hσn +1
+n+1, 0( ˜S∂
+r,n )(z).
+The equality
+Hσn +1
+n+1, 0(Hn+1
+0,n +1Hn+1
+n+1,n +1)r+1(1)(z) = ( − 1)σn +1z(σ − 1)n
+∫ 1
+0
+u(1− σ )n− 1
+0 (1 − u0)σn ˜S∂
+r,n (z/u 0)du0
+
+=== PHYSICAL PDF PAGE 19 ===
+19
+yields, using Proposition 3:
+Sr,n,σ (z) = ( − 1)σn +1z(r+σ )n+r+1
+×
+∫
+[0, 1]2r+3
+u(r− σ +2)n+r
+0 (1 − u0)σn
+r+1∏
+j=1
+(
+(ujvj)(r− j+2)(n+1)− 1(1 − uj)n(1 − vj)n)
+r+1∏
+j=1
+(
+(z − u0u1v1 · · ·uj− 1vj− 1uj)n+1(z − u0u1v1 · · ·ujvj)n+1)
+dudv.
+This function has the following value at z = 1:
+Sr,n,σ (1) =
+(− 1)σn +1
+∫
+[0, 1]2r+3
+u(r− σ +2)n+r
+0 (1 − u0)σn
+r+1∏
+j=1
+(
+(ujvj)(r− j+2)(n+1)− 1(1 − uj)n(1 − vj)n)
+r+1∏
+j=1
+(
+(1 − u0u1v1 · · ·uj− 1vj− 1uj)n+1(1 − u0u1v1 · · ·ujvj)n+1)
+dudv.
+Using Proposition 17 of [6] (which amounts to a change of variables) o ne obtains
+Sr,n,σ (1) = ( − 1)σn +1
+∫
+[0, 1]a− 1
+∏a− 1
+j=1 xσn
+j (1 − xj)n
+(1 − x1x2 · · ·xa− 1)σn +1 ∏
+2≤ j≤ a− 2
+j even
+(1 − x1x2 · · ·xj)n+1 dx
+with a = 2 r + 4. Then using Zlobin’s result [16] or another change of variables (n amely
+Th´ eor` eme 10 of [6]), one obtains the Vasilyev-type integral
+Sr,n,σ (1) = ( − 1)σn +1
+∫
+[0, 1]a− 1
+∏a− 1
+j=1 xσn
+j (1 − xj)n
+Qa− 1(x1, · · ·, x a− 1)σn +1 dx.
+Now Theorem 5 of [18] yields
+Sr,n,σ (1) = ( − 1)σn +1
+∞∑
+k=1
+(k + n
+2 ) (k − σn)σn (k + n + 1)σn
+(k)a
+n+1
+.
+Up to a sign, this is exactly the very-well poised hypergeometric ser ies (6.1).
+Bibliography
+[1] R. Ap´ ery,Irrationalit´ e deζ(2) et ζ(3), Ast´ erisque61 (1979), 11–13.
+[2] K. M. Ball, T. Rivoal, Irrationalit´ e d’une inﬁnit´ e de valeurs de la fonction zˆ eta aux entiers impairs ,
+Invent. Math. 146.1 (2001), 193–207.
+[3] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (1979), 268–272.
+[4] J. Cresson, S. Fischler, T. Rivoal, S´ eries hyperg´ eom´ etriques multiples et polyzˆ etas, Bull. SMF 136.1
+(2008), 97–145.
+[5] S. Fischler, Formes lin´ eaires en polyzˆ etas et int´ egrales multiples, C. R. Acad. Sci. Paris Ser. I, 335
+(2002), 1–4.

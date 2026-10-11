@@ -1,0 +1,277 @@
+{
+  "created_utc": "2026-10-06T05:01:48.407960+00:00",
+  "execution_history": [
+    {
+      "attempt": 1,
+      "outcome": "passed",
+      "producer": "NEW; standard library only; no old or peer mathematical imports"
+    }
+  ],
+  "samples": [
+    {
+      "p": 5,
+      "N": 5
+    },
+    {
+      "p": 13,
+      "N": 40
+    },
+    {
+      "p": 17,
+      "N": 70
+    },
+    {
+      "p": 3,
+      "N": 1
+    },
+    {
+      "p": 7,
+      "N": 11
+    },
+    {
+      "p": 11,
+      "N": 29
+    },
+    {
+      "p": 19,
+      "N": 89
+    }
+  ],
+  "checks": [
+    {
+      "label": "whole_prefix_integrality_p5",
+      "passed": true,
+      "N": 5
+    },
+    {
+      "label": "fast_top_units_p5",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p5",
+      "passed": true,
+      "N": 5,
+      "blocks": 1
+    },
+    {
+      "label": "exact_second_annihilators_p5",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p5",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p5",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p5",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p13",
+      "passed": true,
+      "N": 40
+    },
+    {
+      "label": "fast_top_units_p13",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p13",
+      "passed": true,
+      "N": 40,
+      "blocks": 3
+    },
+    {
+      "label": "exact_second_annihilators_p13",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p13",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p13",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p13",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p17",
+      "passed": true,
+      "N": 70
+    },
+    {
+      "label": "fast_top_units_p17",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p17",
+      "passed": true,
+      "N": 70,
+      "blocks": 4
+    },
+    {
+      "label": "exact_second_annihilators_p17",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p17",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p17",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p17",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p3",
+      "passed": true,
+      "N": 1
+    },
+    {
+      "label": "fast_top_units_p3",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p3",
+      "passed": true,
+      "N": 1,
+      "blocks": 1
+    },
+    {
+      "label": "exact_second_annihilators_p3",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p3",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p3",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p3",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p7",
+      "passed": true,
+      "N": 11
+    },
+    {
+      "label": "fast_top_units_p7",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p7",
+      "passed": true,
+      "N": 11,
+      "blocks": 2
+    },
+    {
+      "label": "exact_second_annihilators_p7",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p7",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p7",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p7",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p11",
+      "passed": true,
+      "N": 29
+    },
+    {
+      "label": "fast_top_units_p11",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p11",
+      "passed": true,
+      "N": 29,
+      "blocks": 3
+    },
+    {
+      "label": "exact_second_annihilators_p11",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p11",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p11",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p11",
+      "passed": true
+    },
+    {
+      "label": "whole_prefix_integrality_p19",
+      "passed": true,
+      "N": 89
+    },
+    {
+      "label": "fast_top_units_p19",
+      "passed": true
+    },
+    {
+      "label": "shifted_four_row_packet_p19",
+      "passed": true,
+      "N": 89,
+      "blocks": 5
+    },
+    {
+      "label": "exact_second_annihilators_p19",
+      "passed": true
+    },
+    {
+      "label": "pure_first_and_second_relations_p19",
+      "passed": true
+    },
+    {
+      "label": "six_mixed_first_relations_p19",
+      "passed": true
+    },
+    {
+      "label": "three_mixed_second_relations_p19",
+      "passed": true
+    },
+    {
+      "label": "exact_denominator_product_N0_to64",
+      "passed": true,
+      "N_max": 64
+    },
+    {
+      "label": "gamma_and_rank5_cost",
+      "passed": true
+    },
+    {
+      "label": "conditional_mixed_gamma_and_cost",
+      "passed": true
+    }
+  ],
+  "check_count": 52,
+  "passed": true,
+  "scope": "Finite actual coefficient packets, polynomial identities and denominator product. All-prime proof remains in the NEW Markdown; actual rank19 is not verified.",
+  "numeric_irrationality_theorem": false,
+  "lean_formalization": false
+}

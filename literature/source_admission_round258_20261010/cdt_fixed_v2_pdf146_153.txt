@@ -1,0 +1,468 @@
+146                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+we do not need γk or βk to be exact the heuristically optimal choice. The bound
+(8.3.1) holds for any choice of γ = {γk }.
+
+                 9. The relationship between Y (2) and Y0 (2)
+   There is a natural identification of Y (2) with P1 ∖ {0, 1, ∞} given by the coordi-
+nate λ with equation (1.2.8). If we let Y0 (2) denote the modular curve of level Γ0 (2),
+then Y0 (2) is also rational with a hauptmodul
+                                ∞
+                 λ             Y                        ∆(2τ )
+    h := λ +          = −256q     (1 + q n )24 = −256 ·        , q = e2πiτ ,    (9.0.1)
+               λ−1             n=1
+                                                        ∆(τ )
+where this time we write q = e2πiτ in comparison to q = eπiτ in equation (1.2.8).
+Just as with λ, we also view h by abuse of notation as a function of the param-
+eter q ∈ D. The parameter h gives an identification of Y0 (2) with P1 ∖ {0, ∞}.
+The map Y (2) → Y0 (2) of modular curves is smooth as a map of algebraic stacks,
+but not of the underlying coarse moduli spaces. To properly account for this, it is
+better to remember that Y0 (2) has an elliptic point of order 2 at h = 4, which is
+the branch point of the double covering λ 7→ h = λ2 /(λ − 1), with λ = 2 for its
+unique preimage: the ramification divisor of the branched covering Y (2) → Y0 (2)
+as algebraic curves. On the stacks level, Y (2) → Y0 (2) is an étale map which is
+a Galois covering of degree 2, and so there is a natural relation between invariant
+functions on Y (2) and functions on Y0 (2).
+    However, as we shall see below, this relationship also respects some arithmetic
+properties of the corresponding power series expansions. First we remark that the
+transformation
+                                          x
+                                w : x 7→       ∈ ZJxK                        (9.0.2)
+                                         x−1
+is an involution of P1 ∖ {0, 1, ∞} that preserves 0 and swaps 1 and ∞. The in-
+tegrality properties of this map (and its inverse) means that if f (x) ∈ QJxK has a
+certain denominator type then so does f (w(x)). Second, we note that the map w of
+equation (9.0.2) is precisely the non-trivial Galois automorphism of (the function
+field of) Y (2) over Y0 (2).
+Lemma 9.0.3. Let S ⊂ P1 ∖ {0, 1, ∞} be a finite set invariant under the involu-
+tion w of equation (9.0.2), and define T ⊂ P1 ∖ {0, ∞} to be the image of S under
+the map x 7→ y, where
+                                                           x     x2
+                         y := x + w(x) = x +                 =      .              (9.0.4)
+                                                         x−1   x−1
+Consider c1 , . . . , cr ∈ [0, ∞), and let f (x) ∈ QJxK be a power series of the form
+                   ∞
+                  X                 xn
+      f (x) =           an Qr                       ∈ QJxK,   an ∈ Z ∀n ∈ N,       (9.0.5)
+                  n=0         i=1 [1, . . . , ci n]
+
+which converges on a neighborhood of x = 0 and continues analytically as a holo-
+morphic function along all paths in P1 ∖ {0, 1, S, ∞}. Then:
+   (1) The function f (w(x)) ∈ QJxK is also of the form (9.0.5).
+   (2) If f (x) = f (w(x)), then we may use (9.0.4) to formally write f (x) as a
+       power series f (x) = F (y) ∈ QJyK that satisfies
+                ∞
+               X              yn
+      2F (y) =     bn Qr                       ∈ QJyK, bn ∈ Z ∀n ∈ N,     (9.0.6)
+               n=0      i=1 [1, . . . , 2ci n]
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                            147
+
+
+         converges in a neighborhood of y = 0, continues analytically as a holo-
+         morphic function along all paths in P1 ∖ {0, 4, ∞, T }, and has finite local
+         monodromy36 of order dividing 2 around the point y = 4.
+                                                               
+                                                            x
+Conversely, if 2F (y) has the form (9.0.6), then 2F x +           has the form (9.0.5),
+                                                          x−1
+and if F(y) has the analyticity properties on P1 ∖ {0, 4, ∞, T } spelled out in (2),
+                x
+then F x +             has the analytic continuation property on P1 ∖ {0, 1, S, ∞}.
+              x−1
+Proof. The function-theoretic claims follow directly from Galois theory and the fact
+that x 7→ w(x) is the automorphism of Y (2) over Y0 (2). Hence it suffices to establish
+the claims concerning integrality. Property (1) is clear from the integral coefficients
+                                              −n
+in the expansion w(x)n = (−1)    n n
+                            Qr x (1 − x)           ∈ xn ZJxK together with the remark
+that the denominator type i=1 [1, . . . , ci n] is nested by division under n 7→ n + 1.
+Let x and y be related by the identity (9.0.4). Since both the elementary symmetric
+functions in x and w(x) = x/(x − 1) are equal to y = x + w(x) = xw(x), we may
+define polynomials Pn (y) by the rule
+
+                                 Pn (y) := xn + (x/(x − 1))n .                              (9.0.7)
+
+Then P0 (y) = 2, P1 (y) = y, and there is the elementary recurrence
+
+                               Pn (y) = yPn−1 (y) − yPn−2 (y).
+
+We find that Pn (y) has degree n and vanishesP       at y = 0 to order ⌈n/2⌉. Let us
+suppose now that we have a function
+                                Qr     f (x)   =      An xn whose coefficients An are
+rational numbers with an := An i=1 [1, . . . , ci n] ∈ Z. Then, in property (2) under
+proof, we exploit the assumption f (w(x)) = f (x) to write
+                            
+                          x                  X                  X
+             f (x) + f         = 2F (y) =          Ak Pk (y) =:   Bn y n .
+                         x−1
+
+The middle equality defines a legitimate QJyK series since Pk (y) is divisible by y ⌈k/2⌉ ,
+and it can be taken as a definition. To be more precise, all the nonzero co-
+efficients of the polynomial Pk (y) occur in the degree range [k/2, k], and they
+are integers. Thus Pk (y) contributes to the y n term only for k ∈ [n, 2n], and
+           Qr                                                   x        x2
+bn := Bn i=1 [1, 2, . . . , 2ci n] ∈ Z. Conversely, since x +       =       , if we write
+                                                              x−1      x−1
+                                                   k X
+                                                                  x2k
+                                        
+                X
+                           n
+                                 X             x
+                   An x =           Bk x +             =     Bk          ,
+                                             x−1                (x − 1)k
+then the terms on the right-hand side contributing to An occur only for k ≤ n/2.                 □
+
+   Motivated by this lemma, we have the following:
+
+    36In this generality, by a “finite local monodromy of order dividing 2” we simply mean that
+if γ : (0, 1] → P1 ∖ {0, 4, ∞, T } is any path with origin limt→0+ γ(t) = 0, and π is a simple loop
+around y = 4 in P1 ∖ {0, 4, ∞, T } based at the endpoint γ(1), then the analytic continuations
+of f (y) at the ends of the concatenated paths γ and π 2 · γ are equal. This, of course, agrees with
+the usual notion in the special (finite-dimensional) case of a local system on P1 ∖ {0, 4, ∞, T }.
+148                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Definition 9.0.8. Let F (x) ∈ QJxK. We define the plus and minus symmetrization
+functions F + (y) and F − (y) to be the elements of QJyK such that
+                                             
+                    +                      x
+                   F (y) = F (x) + F             ,
+                                         x−1
+                                                                  (9.0.9)
+                    −                x                    x
+                   F (y) = x −               F (x) − F           ,
+                                   x−1                   x−1
+                   x     x2
+where y := x +        =     .                                                              △
+                  x−1   x−1
+   We connect these symmetrizations to the analytic resolvents φ∗ f ∈ O(D) in
+the context of the arithmetic holonomy bounds. We firstly introduce an ad hoc
+definition (which will only be used in Lemma 9.0.13):
+Definition 9.0.10. A holonomic descent datum is a tuple
+                                                           
+                        Rf = UY (2) , Σ0Y (2) , Σ1Y (2) , f
+
+consisting of:
+    (1) A contractible open neighborhood 0 ∈ UY (2) ⊂ C ∖ {2} which is invariant
+        under the involution w.
+    (2) Finite subsets Σ0Y (2) ⊂ UY (2) and Σ1Y (2) ⊂ Y (2) = C∖{0, 1}, both invariant
+        under the involution w.                     
+    (3) A holomorphic function f ∈ O UY (2) which is w-invariant (f (w(x)) =
+        f (x)) and analytically continuable as a holomorphic function along all paths
+        in P1 ∖ {0, 1, Σ0Y (2) , Σ1Y (2) , ∞}.
+To every such datum Rf , we attach a quotient datum
+                                                             
+                       QF = UY0 (2) , Σ0Y0 (2) , Σ1Y0 (2) , F
+
+as follows. By expressing the w-invariant power series expansion f (x) ∈ CJxK
+formally into y := x + w(x), we have attached as37 in Lemma 9.0.3 a unique formal
+power series F (y) = Ff (y) ∈ CJyK such that
+                                                      
+                                                    x
+                  F (y) = F (x + w(x)) = F x +           = f (x).        (9.0.11)
+                                                 x−1
+In a similar manner, we define Σ0Y0 (2) , Σ1Y0 (2) , and UY0 (2) to be the images of Σ0Y (2) ,
+Σ1Y (2) , and UY (2) , under the map
+                                                           x
+                            x 7→ y := x + w(x) = x +
+                                                          x−1
+of (9.0.4).                                                                                △
+   For brevity we also adopt the following definition, which formalizes the idea of
+the univalent leaves from Proposition 2.9.3.
+Definition 9.0.12. Consider two pointed Riemann surfaces (D, O) and (X, P ) and
+an open neighborhood P ∈ U ⊂ X. A holomorphic mapping φ : (D, O) → (X, P )
+
+   37Except that, now in the analytic context, we can assume f ∈ CJxK rather than f ∈ QJxK;
+the proof, of course, is the same.
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     149
+
+
+has a univalent leaf over U at O if φ maps the connected component of φ−1 (U )
+containing O conformally isomorphically onto U :
+                                           ≃
+                             φ : φ−1 (U ) O − → U.
+
+We refer to φ−1 (U ) O ⊂ D itself as the univalent leaf (at O over U ).
+                     
+                                                                           △
+Lemma 9.0.13. Let Rf be a holonomic descent datum with quotient QF . Let φY (2)
+be a holomorphic mapping that obeys
+                φY (2) : D → C ∖ {1, Σ1Y (2) }, φ−1
+                                                 Y (2) (0) = {0},
+                                             
+and which has a univalent leaf φ−1
+                                Y (2) UY (2)     over UY (2) at 0 ∈ D containing
+                                                     0
+all the pre-images of Σ0Y (2) under φY (2) .
+   Suppose that
+                               w(φY (2) (z)) = φY (2) (−z).                        (9.0.14)
+The pullback φ∗Y (2) f is holomorphic on D. If φY0 (2) is the holomorphic map
+                                        √            √ 
+                  φY0 (2) (z) := φY (2)  z + φY (2) − z ∈ O(D),             (9.0.15)
+then:
+    (1) φ−1
+         Y0 (2) (0) = {0}.
+    (2) The range of φY0 (2) omits Σ1Y0 (2) .
+    (3) The ramification indices of φY0 (2) are even at all points of the fiber φ−1
+                                                                                 Y0 (2) (4).
+    (4) The neighborhood UY0 (2) ∋ 0 is a contractible domain, and φY0 (2) has a
+        univalent leaf over UY0 (2) at 0 ∈ D, which furthermore contains all the
+        pre-images of ΣY0 (2) under φY0 (2) .
+    (5) F |UY0 (2) ∈ O UY0 (2) is holomorphic, and the following relation holds:
+                                  √                   √ 
+       F φY0 (2) (z) = f φY (2) ( z) = f w φY (2) ( z)
+                                   √                   √                      (9.0.16)
+                         f φY (2) ( z) + f φY (2) (− z)
+                       =                                        ∈ O(D).
+                                           2
+          In particular, the pullback of F by φY0 (2) is holomorphic on D.
+   Conversely, every holomorphic mapping φY0 (2) ∈ O(D)
+                                                       obeying the conditions (1)
+through (4) determines through (9.0.15) a unique pair φY (2) , w ◦ φY (2) of holo-
+morphic mappings
+                       φ : D → C ∖ {1, Σ1Y (2) },    φ−1 (0) = {0}
+subject to w (φ(z)) = φ(−z).
+Proof. The holomorphy of φ∗Y (2) f on D follows directly from Proposition 2.9.3
+                          
+with Ω := φ−1
+                                             
+            Y (2) (UY (2) ) , as f ∈ O UY (2) . We observe that UY0 (2) — a domain,
+                            0
+by the open mapping theorem — is also a topological disc, as UY (2) ⊂ C ∖ {2}
+while the map y := x2 /(x − 1) has x ∈ {0, 2} for its only ramification points, with
+branching values y ∈ {0, 4}.
+   Assume now the symmetries f (x) = f (w(x)) and w(φY (2) (z)) = φY (2) (−z),
+and define the manifestly holomorphic map φY0 (2) ∈ O(D) by (9.0.15). It is the
+150                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+w(φY (2) (z)) = φY (2) (−z) symmetry that allows to descend the analytic data to
+the Y0 (2) picture, as the plus-symmetrization of φY (2) :
+                                          √             √ 
+                   φY0 (2) (z) := φY (2)    z + φY (2) − z ∈ O(D)
+                                          √              √ 
+                                = φY (2)    z + w φY (2)   z
+                                           √ 2                           (9.0.17)
+                                   φY (2) ( z)
+                                =         √       .
+                                  φY (2) ( z) − 1
+The second line — together with the definitional fact that Σ1Y (2) is the full inverse
+image of Σ1Y0 (2) under the double covering map y = x+w(x) — shows that the range
+of φY0 (2) omits the set Σ1Y0 (2) , as φY (2) omits the corresponding set Σ1Y (2) . The third
+line shows that φY0 (2) satisfies φ−1 (0) = {0} and has even ramification indices at all
+points in the fiber φ−1        (4) = φ−1Y (2) (2). Applying F (x + w(x)) = f (x) = f (w(x))
+                      √ Y0 (2)
+for the x = φY (2) ( z) given on the second line in (9.0.17), we get (9.0.16), and in
+particular the holomorphy of φ∗Y0 (2) F ∈ O(D). Lastly, the holomorphy F |UY0 (2) ∈
+                                                                                           
+O UY0 (2) follows directly from the corresponding holomorphy f |UY (2) ∈ O UY (2)
+thanks to the defining equation F (x + w(x)) = f (x) and the definition of UY0 (2) as
+the x + w(x) image of UY (2) .
+   For the converse, we get by the formal binomial expansion — choosing any
+branch for the square root signs — a power series φY (2) ∈ CJzK from resolving the
+quadratic relation on the third line in (9.0.17) with z changed to z 2 :
+                         φY0 (2) (z 2 ) + φY0 (2) (z 2 ) · φY0 (2) (z 2 ) − 4
+                                           p              p
+           φY (2) (z) :=                                                      .      (9.0.18)
+                                                    2
+The conditions on φ−1   Y0 (2) (0) = {0} and on even ramification indices for φY0 (2)
+along φ−1
+        Y0 (2) (4) show that the formal function (9.0.18) is in fact holomorphic on a
+neighborhood of D, and satisfies φ−1
+                                                                        
+                                        Y (2) (0) = {0} and w φY (2) (z) = φY (2) (−z).
+The other choice of the square      roots sign in (9.0.18) leads to the argument sign
+swap φY (2) (−z), and the pair φY (2) , w ◦ φY (2) is uniquely determined from φY0 (2)
+and satisfies (9.0.17), whence the range property φY (2) : D → C ∖ {1, Σ1Y (2) } is
+also inherited.                                                                      □
+
+   We spell out as a separate corollary the case that we will use of analytic pull-
+backs of the hauptmodul map (9.0.1). This should be regarded as a stacky version
+for Y0 (2) of Proposition 2.9.3 on overconvergence.
+Corollary 9.0.19. Consider an arbitrary power series F ∈ CJyK that defines
+a holomorphic function on a contractible open neighborhood 0 ∈ UY0 (2) ⊂ C ∖
+{4}. Suppose Σ0Y0 (2) ⊂ UY0 (2) and Σ1Y0 (2) ⊂ C are finite subsets such that F (y)
+continues analytically as a holomorphic function along all paths in y ∈ P1 ∖
+{0, 4, Σ0Y0 (2) , Σ1Y0(2) } and has around y = 4 a finite local monodromy of order di-
+viding 2. Let h : D → C be the map (9.0.1).
+   Then, under any holomorphic mapping φY0 (2) : D → C ∖ Σ1Y0 (2) that has a
+                                                                 
+univalent leaf over UY0 (2) at 0 ∈ D containing φ−1 Σ0Y0 (2) , and which factors
+as a composition φY0 (2) = h ◦ ψY0 (2) for some holomorphic ψY0 (2) : D → D
+with ψY−1
+        0 (2)
+              (0) = {0}, the pullback of F is holomorphic: φ∗Y0 (2) F ∈ O(D).
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  151
+
+
+Proof. Define UY (2) := y −1 UY0 (2) as the full inverse image under the map y :=
+                                    
+
+x + w(x) = x2 /(x − 1). Since 4 ∈   / UY0 (2) , this neighborhood UY (2) ∋ 0 is also
+                                                                                   
+contractible. Setting also f (x) := F (y) = F (x + w(x)) and Σ0Y (2) := y −1 Σ0Y (2) ,
+                      
+Σ1Y (2) := y −1 Σ1Y (2) , we have thus constructed a holonomic descent datum Rf
+                                                   
+with quotient QF = UY0 (2) , Σ0Y0 (2) , Σ1Y0 (2) , F .
+   Since (with our assumptions on ψY0 (2) ) the maps of the form φY0 (2) = h ◦ ψψY0 (2)
+satisfy the conditions (1) through (4) in Lemma 9.0.13, the converse direction of
+the lemma then constructs a holomorphic mapping φY (2) : D → C ∖ {1, Σ1Y (2) }
+with φ−1
+                                           
+        Y (2) (0) = {0} and w φY (2) (z) = φY (2) (−z), and inducing a conformal
+                               ≃
+isomorphism φ−1                  → UY (2) : a univalent leaf over UY (2) at 0 ∈ D. The
+                  Y (2) UY (2) 0 −
+forward direction of Lemma 9.0.13 now proves the holomorphy φ∗Y (2) f ∈ O(D)
+together with the symmetrization relation (9.0.16), which in particular manifests
+the holomorphy φ∗Y0 (2) F ∈ O(D).                                              □
+
+Basic Remark 9.0.20. We combine and interpret Lemmas 9.0.3 and 9.0.13 as
+follows. For the remainder of our paper, we will consistently reserve the letter y
+to denote the covering y := x2 /(x − 1). Suppose given a Q(x)-vector space H
+generated by QJxK power series of the arithmetic type (9.0.5), holomorphic on some
+neighborhood UY (2) ∋ 0, and analytically continuing as holomorphic functions along
+all paths in P1 ∖ {0, 1, S, ∞}. Lemma 9.0.3 then constructs a corresponding Q(y)-
+vector space Hw=1 over Q(y) of functions on P1 ∖ {0, 4, T, ∞}, with at most Z/2
+local monodromy around y = 4, and satisfying the arithmetic condition (9.0.6).
+Moreover, from basic Galois theory, we have
+                            dimQ(x) H = dimQ(y) Hw=1 .                        (9.0.21)
+                                                                            x
+Explicitly, we have dimQ(y) (Q(x)) = 2 with a basis given by 1 and y − = x −  .
+                                                                          x−1
+                                                    w=1      w=−1
+There is an isomorphism of Q(y)-vector spaces H = H      ⊕H        given by
+                                                                    
+               +     −      −
+                                               x                    x
+   F (x) 7→ F (y), F (y)/y = F (x) + F               , F (x) − F            ,
+                                              x−1                  x−1
+and an isomorphism Hw=1 → Hw=−1 given by multiplication by y − . Hence
+                                      1
+                    dimQ(y) Hw=1 =      dimQ(y) H = dimQ(x) H.
+                                      2
+One can now ask what happens (for example) to a holonomy bound of the form:
+                     RR
+                        2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+         dimQ(x) H ≤ T                                         ,     (9.0.22)
+                                  log |φ′ (0)| − σ
+when translated from the Y (2) or Q(x) domain into the Y0 (2) or Q(y) domain?
+   The answer to this question is that the corresponding bounds (9.0.22) are, like the
+dimensions (9.0.21) themselves, also equivalent in the framework of Theorem 2.5.1.
+Firstly, we need to make precise what we mean by the Y (2) versus the Y0 (2) do-
+main in the context of formal-analytic arithmetic surfaces and arithmetic holo-
+nomy bounds. This is the content and purpose of Lemma 9.0.13. Coming from
+the setting of § 2.9.5, “using the Y (2) domain” refers to the holomorphic mappings
+152                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+φ = φY (2) : D → C∖{1} = Y (2)∪{0} with φ−1 (0) = {0}, and therefore factorizing
+as
+
+                                    φY (2) = λ ◦ ψY (2) ,
+
+where ψY (2) : D → D is a holomorphic map still having ψY−1(2) (0) = {0}. The
+proof of this factorization (cf. [Car54, §§ 4.11, 4.12] for the details) reduces to
+the fact that τ 7→ λ(τ ), τ : H → P1 ∖ {0, 1, ∞} is a universal covering map
+at τ (i) = 1/2. On the other hand, the basic properties of the modular lambda
+map also include λ(τ + 1) = λ(τ )/(λ(τ ) − 1) in the τ ∈ H domain, that is
+λ(−q) = w(λ(q)) in the q = eπiτ ∈ D domain. Therefore, if we impose the
+condition ψY (2) (−z) = −ψY (2) (z) on the map ψY (2) , then the involution w acts
+                                                                              ≃
+as w(φY (2) (z)) = φY (2) (−z). In the special case that ψY (2) : (D, 0) −    → (Ψ, 0) is
+the Riemann map of a contractible domain Ψ with 0 ∈ Ψ ⊂ Ψ ⊂ D, this condition
+simply amounts to asking for the domain Ψ to be symmetric across the origin. We
+further assume that the open neighborhood UY (2) of the origin meets the condi-
+                                                                              ≃
+tions of Lemma 9.0.13: namely, w UY (2) = UY (2) , and φ−1
+                                               
+                                                                 Y (2) UY (2) 0 − → UY (2)
+                                                                           0
+is a univalent leaf of φY (2) at 0 ∈ D containing all pre-images of ΣY (2) . We note
+that this property implies, but is stronger than, the corresponding property for the
+inner map ψY (2) in the factorization φY (2) = λ ◦ ψY (2) .
+   We are now in the realm of Lemma 9.0.13, where we may look for a decomposi-
+tion S = Σ0Y (2) ⊔ Σ1Y (2) with Σ0Y (2) ⊂ UY (2) and φY (2) : D → C ∖ {1, Σ1Y (2) }. Under
+these conditions, we obtain from φY (2) a map φY0 (2) such that φ∗Y (2) f and φ∗Y0 (2) F
+are meromorphic on D for any f ∈ H or F ∈ Hw=1 respectively.
+   It is with these choices φY (2) and φY0 (2) for the analytic mapping φ, and with
+correspondingly the terms σ := τ (b), resp. σ := τ (2b) = 2τ (b) under the formu-
+lation of Theorem 2.5.1, that we are comparing the holonomy quotients (9.0.22)
+under the dictionary supplied by Lemma 9.0.3.
+   We now substantiate our claim that these two quotients (9.0.22) are exactly
+equal. The preceding analysis relies on the fact that the map Y (2) → Y0 (2) of
+algebraic stacks is étale. On the other hand, as the branched double covering of
+rational algebraic curves X(2) → X0 (2) is totally ramified over the center h = 0
+(the cusp τ = i∞) of our formal function expansions, it follows by the projection
+formula in Lemma 7.4.5 that both the corresponding integral and conformal radius
+terms on the Y0 (2) version of the holonomy quotient (9.0.22) are exactly scaled by
+the degree of that covering (which in our case is equal to two). In our basic situation,
+we can see this in a very direct and explicit way as follows. Let us write H(τ ) for
+the hauptmodul h evaluated at e2πiτ , and L(τ ) for λ evaluated at eπiτ , both with τ
+in the upper half plane H. If ψY (2) (eiθ ) = e2πiτ with τ ∈ H, then, making some
+(consistent) choice of square roots, we have
+
+                             φY0 (2) (eiθ ) = h(e2πiτ ) = H(τ ),
+
+whereas
+
+                                                                             L(τ )
+      φY (2) (eiθ/2 ) = λ(eπiτ ) = L(τ ),   φY (2) (−eiθ/2 ) = L(τ + 1) =             .
+                                                                            L(τ ) − 1
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    153
+
+
+In particular, the Y (2) integral involving log |L(τ ) − L(σ)| becomes, after dividing
+the integral up into four pieces, an integral of
+
+                                             L(τ )
+                         log |L(τ ) − L(σ)| + log     − L(σ)
+                                            L(τ ) − 1
+                              L(σ)           L(τ )        L(σ)
+               + log L(τ ) −          + log           −        .
+                             L(σ) − 1       L(τ ) − 1 L(σ) − 1
+
+But now (using only the multiplicativity property of the logarithm and some ele-
+mentary algebra) this is exactly
+
+                          L(τ )              L(σ)
+         2 log L(τ ) +             − L(σ) −          = 2 log |H(τ ) − H(σ)|.
+                         L(τ ) − 1          L(σ) − 1
+
+Taking into account the factors of 2 coming from the various scalings, this means
+that the integral in the Y0 (2) domain is precisely double the integral in the Y (2)
+domain. On the other hand, the conformal radius is also squared (this is clear for
+the factors of ψY (2) and ψY ′ (2) together with the equality |h′ (0)| = 256 = |λ′ (0)|2 ),
+and so the logarithm of the conformal radius is alsoPr doubled. At the same time, in
+the context of Lemma 9.0.3, the invariant σ = i=1 ci is also doubled, and so is
+the invariant τ (b) in the context of Theorem 2.5.1.
+   In summary, the bound (9.0.22) applied to dimQ(x) H and dimQ(y) Hw=1 (which
+are equal by equation (9.0.21)) gives the same result in both cases. This therefore
+gives a (rough) equivalence between these two problems on both the arithmetic
+and the analytic sides. However, it is also important to note is that this crisp
+equivalence of the bounds only applies to the framework of the crude denominator
+types as stated in Theorem 2.5.1 or Lemma 9.0.3, and that there is still a difference
+once we start to consider refined denominators data, such as with the τ ♯ from the
+added integrals in § 6. We shall see in § 10.3 that it can then be advantageous to
+perform the φY (2) ⇝ φY0 (2) analytic descent passage that we detailed in this Basic
+Remark.                                                                                 △
+
+
+
+
+         10. Pure functions on P1 ∖ {0, 1, ∞} and on P1 ∖ {0, 4, ∞}
+    The goal of this section is to write down a number of G-functions with nice
+integrality properties on P1 ∖ {0, 1, ∞}, and then, using the translation discussion
+in § 9, on P1 ∖ {0, 4, ∞} as well, where the point y = 4 should be though of as an
+elliptic point of order 2. In terms of local systems on an orbifold, the proper way
+to think of these domains is as the modular curves Y (2) in the coordinate x = λ,
+and respectively, Y0 (2) in the coordinate y = x2 /(x − 1) = λ2 /(λ − 1) = h.
+
+
+
+10.1. Five functions of type [1, . . . , n]2 on P1 ∖ {0, 1, ∞}. There are four ob-
+vious Q(x)-linearly independent G-functions we can write down on P1 ∖ {0, 1, ∞}
+

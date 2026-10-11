@@ -1,0 +1,323 @@
+=== PDF physical page 1 ===
+arXiv:2011.10497v1  [math.CV]  20 Nov 2020
+LOCAL MONODROMY FORMULA OF HADAMARD PRODUCTS
+RICARDO P ´EREZ-MARCO
+Abstract. We ﬁnd an explicit general formula for the iterated local monodromy of
+singularities of the Hadamard product of functions with integrable s ingularities. The
+formula implies the invariance by Hadamard product of the class of fu nctions with
+integrable singularities with recurrent monodromies. In particular, it implies the
+recurrence of the local monodromy of functions with ﬁnite Hadama rd grade as de-
+ﬁned by Allouche and Mend` es-France. We give other examples of na tural classes of
+functions with recurrent monodromies, functions with algebro-log arithmic singular-
+ities, and more generally with polylogarithm monodromies. We sketch a pplications
+to elliptic integrals, hypergeometric functions, and to fractional in tegration.
+Figure 1. “El mundo de la mareaci´ on” (2003, drawings from my 5 years old son Riki).
+2000 Mathematics Subject Classiﬁcation. 08A02, 32S05, 30D99, 30F99, 11G55, 35C05, 33C60,
+26A33.
+Key words and phrases. Hadamard product, Hadamard grade, singularities with monodromy ,
+recurrent monodromy, algebro-geometric singularities, polylogar ithm singularities, elliptic integrals,
+hypergeometric functions, fractional integration .
+1
+
+=== PDF physical page 2 ===
+2 R. P ´EREZ-MARCO
+1. Introduction.
+Given two power series
+F (z) = A0 + A1z + A2z2 + . . . =
+∑
+n≥ 0
+An zn
+G(z) = B0 + B1z + B2z2 + . . . =
+∑
+n≥ 0
+Bn zn
+their classical Hadamard product is deﬁned by
+F ⊙ G(z) = A0B0 + A1B1z + A2B2z2 + . . . =
+∑
+n≥ 0
+AnBn zn .
+In a previous article [9] we gave a formula for the monodromies of the singularities
+of the Hadamard product F ⊙ G of two holomorphic functions F and G with isolated
+singularities ( α ), resp. ( β ), with holomorphic monodromies ∆ α F and ∆ β G. More
+precisely, ∆ α F = F1 − F where F1 is the branch obtained as the local analytic
+continuation of F around α (following a loop of winding number 1 with respect to
+α ), and the monodromy ∆ α F is holomorphic if it deﬁnes a holomorphic germ at the
+point α . We consider also the operator Σ α = Id +∆α , thus F1 = Σ α F = F + ∆α F .
+The singularity at α is integrable, when we have
+S-limz→ α (z − α ) F (z) → 0
+where the limit is a Stolz limit at α , that is, z → α with arg( z − α ) bounded. In this
+case we have ∫
+Cǫ
+F (u)du → 0
+for a loop Cǫ around α with Cǫ → 0 when ǫ → 0. We prove the following result:
+Theorem 1.1 (Hadamard iterated monodromy formula for integrable singularities ).
+We consider F and G holomorphic germs at 0 with respective set of singularities (α )
+and (β ) in C. We assume that the singularities are isolated and integrab le. For k ≥ 0,
+we consider the diﬀerent branches around the singularities Fk = Σ k
+α F and Gk = Σ k
+β G.
+Then the set of singularities of the principal branch of F ⊙ G is contained in the
+product set (γ) = ( αβ ) and is composed by isolated singularities, and for N ≥ 1 we
+have the formula
+(1) (Σ N
+γ − Id)(F ⊙ G)(z) = − 1
+2πi
+∑
+α,β
+αβ =γ
+N − 1∑
+k=0
+∫ z/β
+α
+∆α
+(
+Σk
+α F
+)
+(u) . ∆β
+(
+Σk
+β G
+)
+(z/u ) du
+u
+For N = 1 this is the same formula from [9] except for the absence of the re sidual
+part, and generalized to integrable singularities (it was proved ther e for holomorphic
+singularities, which are not necessarily integrable and can produce a residual part).
+
+=== PDF physical page 3 ===
+LOCAL MONODROMY FORMULA OF HADAMARD PRODUCTS 3
+We use the following notation for the integral convolution 1
+F ¯⋆ G = − 1
+2πi
+∫ z/β
+α
+F (u) . G (z/u ) du
+u
+Then, the main formula can be written as
+(ΣN
+γ − Id)(F ⊙ G)(z) =
+N − 1∑
+k=0
+∑
+αβ =γ
+∆α Σk
+α F ¯⋆ ∆β Σk
+β G
+We have another form of the formula that follows from formula (1) a nd the formal
+identity
+∆Σk = Σ k+1 − Σk = (Σ k+1 − Id) − (Σk − Id)
+Proposition 1.2. We have
+∆γ Σk
+γ (F ⊙ G) =
+∑
+αβ =γ
+∆α Σk
+α F ¯⋆ ∆β Σk
+β G
+Therefore, the operators (∆γ Σk
+γ )k∈ Z deﬁne morphism from the Hadamard algebra to
+the integral convolution algebra in the associated monodro my spaces.
+As Corollary, by induction, we get the formula for the iterated mono dromy for a
+Hadamard product with several factors:
+Corollary 1.3. We have
+(2) (Σ N
+γ − Id)(F1 ⊙ F2 ⊙ . . . ⊙ Fn) =
+N − 1∑
+k=0
+∑
+α 1...α n=γ
+∆α 1Σk
+α 1F1 ¯⋆ . . . ¯⋆ ∆α 1Σk
+α nFn
+2. Proof of the iterated monodromy formula.
+2.1. Geometric proof. The proof follows the same lines than the proof given in [9]
+by starting with Plancherel-Hadamard convolution formula
+(3) F ⊙ G(z) = 1
+2πi
+∫
+η
+F (u)G(z/u ) du
+u
+where η is a positively oriented circle centered at 0 of radius r > 0 with |z|/R G < r <
+RF , where RF and RG are the respective radii of convergence of F and G.
+Hadamard Multiplication Theorem is derived from the convolution form ula. The
+singularities of F ⊙ G are located at points γ = αβ where α and β are singularities of
+F and G respectively. Also from the covolution formula we get that the singu larities
+γ are integrable.
+1We use ¯⋆ instead of ⋆ that we reserve for the e˜ ne product that we consider in [9].
+
+=== PDF physical page 4 ===
+4 R. P ´EREZ-MARCO
+We can consider the case with trivial multiplicity 1, i.e. when there is only one
+pair of singularities ( α, β ) that satisﬁes γ = αβ . The general case is a superposition
+of this case. We can also assume α = β = γ = 1 to simplify the notation. We follow
+the analytic continuation of F ⊙ G by moving the point z and deforming the path of
+integration homotopically into ηz so that the point z never crosses it.
+ηz0
+1
+z0
+ηz
+1z
+ˆηz0
+1
+z0
+1
+z0
+1
+z0
+1
+z0
+a
+Figure 2. Homotopical deformation of the integration path when z0 turns once around 1.
+We consider the situation where z starts at z = z0 and turns positively N ≥ 1 times
+around the point z = 1. Figure 2 shows the local homotopy deformation from the
+integration path ηz0 to ˆηz0 near 1 for N = 1. Figure 1 shows the resulting deformed
+path for N = 2. Using the convolution formula we have
+(ΣN
+1 − Id)(F ⊙ G)(z0) = 1
+2πi
+∫
+ˆηz0 − ηz0
+F (u)G(z/u ) du
+u
+Thus we are led to compute the last integral in the diﬀerence of the t wo paths that
+is the multi-loop path shown in Figure 1. As illustrated in Figure 2, we can deform
+into a train track composed by 4 N segments copies of [ z0, a ] and [ a, 1] where a ∈ C
+is an arbitrary point in between z0 and 1.
+The integral is independent of the collapsing point a and we can make a → 1,
+leaving a train track composed by 2 N segments copies of [ z0, 1]. There are no polar
+contributions at z = z0 or z = 1 since we assume that the singularities are integrable.
+Considering the 2 N paths, in the positive ordering given by the orientation of ˆ ηz0,
+and the corresponding signs given by the orientation, we have to int egrate on [1 , z 0]
+the maps
+F1G0, − F1G1, F 2G1, − F2G2, . . . , F N GN − 1, − FN GN , F N − 1GN , − FN − 1GN − 1, . . . , F 0G1, − F0G0
+
+=== PDF physical page 5 ===
+LOCAL MONODROMY FORMULA OF HADAMARD PRODUCTS 5
+for a total contribution of
+F1(G0 − G1) + F2(G1 − G2) + . . . + FN (GN − 1 − GN ) + FN − 1(GN − GN − 1) + . . . + F0(G1 − G0)
+= − F1∆1G0 − F2∆1G1 + . . . − FN ∆1GN − 1 + FN − 1∆1GN − 1 + . . . + F0∆1G1
+= − ∆1F0∆1G0 − ∆1F1∆1G1 − . . . − ∆1FN − 1∆1GN − 1
+and ﬁnally
+(ΣN
+1 − Id)(F ⊙ G)(z0) = − 1
+2πi
+∫ z0
+1
+N − 1∑
+k=0
+∆1Fk(u). ∆1Gk(z/u ) du
+u
+which is the main formula for α = β = 1.⋄
+3. Properties of monodromy operators and another derivation.
+We develop some general properties of the monodromy operators that provide a
+second derivation of the iterated monodromy formula from the cas e N = 1. This
+section is only used for this purpose and can be skipped in a ﬁrst read ing. The for-
+mulas developed here are useful for applications (for example we ge t a straightforward
+computation of the monodromy of polylogarithms).
+3.1. Properties of monodromy operators for integrable singular ities.
+Proposition 3.1 (Fundamental integro-monodromy formula) . Let f be a holomor-
+phic germ with an integrable isolated singularity at z = α . The local germ with an
+isolated singularity at α
+F (z) =
+∫ z
+α
+f (u) du
+is well deﬁned. We have
+∆α F (z) =
+∫ z
+α
+∆α f (u) du
+or
+∆α
+( ∫ z
+α
+f (u) du
+)
+=
+∫ z
+α
+∆α f (u) du
+In general, for z0 ∈ C which is path connected to α in a domain where f is holomor-
+phic, we have
+∆α
+( ∫ z
+z0
+f (u) du
+)
+=
+∫ z
+α
+∆α f (u) du
+Proof. The general case for z0 ∈ C follows from the case z0 = α since
+∫ z
+z0
+f (u) du =
+∫ α
+z0
+f (u) du +
+∫ z
+α
+f (u) du
+
+=== PDF physical page 6 ===
+6 R. P ´EREZ-MARCO
+where the integral from z0 to α is taken on a path where f is holomorphic, and
+∫ α
+z0
+f (u) du
+is constant on z.
+Now, we can integrate along the straight segment [ α, z ],
+F (z) =
+∫
+[α,z ]
+f (u) du
+then
+F1(z) =
+∫
+[α,z ]∪ ηz
+f (u) du
+where η(z) is the circle centered at α passing through z with the positive orientation.
+Then we have
+∆α F (z) =
+∫
+η(z)
+f (u) du .
+Now, we can collapse homotopically η(z) into the segment [ α, z ], which gives a double
+integral along this segment,
+∆α F (z) =
+∫ z
+α
+(f1(u) − f (u)) du =
+∫ z
+α
+∆α f (u) du .
+□
+Example. We recall that the polylogarithms can be deﬁned as Li 1(z) = − log(1− z)
+and
+Lik+1(z) =
+∫ z
+0
+Lik(u) du
+u .
+From the properties of the logarithmic function, we have
+∆1 Li1(z) = − 2πi
+and by induction using the Proposition 3.1 we prove
+∆1 Lik(z) = − 2πi (log z)k− 1
+(k − 1)!
+The one line proof by induction is the computation
+∆1 Lik+1(z) =
+∫ z
+1
+− 2πi
+(k − 1)!
+(log u)k− 1
+u du = − 2πi
+k!
+[
+(log u)k] z
+1 = − 2πi
+k! (log z)k
+which gives the result. ⋄
+We extend Proposition 3.1.

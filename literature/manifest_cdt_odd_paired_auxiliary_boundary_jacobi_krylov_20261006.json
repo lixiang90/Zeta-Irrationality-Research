@@ -1,0 +1,87 @@
+{
+  "schema": "independent_primary_source_and_research_receipt_v1",
+  "date": "2026-10-06",
+  "author_agent": "/root/conifold_arithmetic_hypothesis",
+  "state": "final_actual_full_author_read_independently_reviewed_frozen",
+  "research_file": "research/cdt_odd_paired_auxiliary_boundary_jacobi_krylov_20261006.md",
+  "research_sha256": "09b9e74683f4767c2a69eb5a7d67893fda1c6d6bb738d2b245f8f692fc20d17f",
+  "author_actual_read_scope": "Full K1-K26 proof, all source and execution sections, plus entire own NEW producer and entire own NEW output JSON were actually reread. Source PDF read scopes are independently specified below.",
+  "proved_scope": [
+    "For every p=18r+1 prime, the two polynomial difference operators share the actual scalar and half-jet matrix bilinear forms, with every endpoint and middle-jump edge flux canceled explicitly.",
+    "The common potential gives leading raising coefficients lambda0(d)=-(2d+1/3)(2d+98/9) and lambda4(d)=-(2d-13/9)(2d+82/9), all units in the actual critical ranges d<r and d<3r.",
+    "Degree-sorted four-seed scalar and eight-seed matrix Krylov bases are genuine auxiliary-local unimodular changes of the original critical spaces.",
+    "Actual folded middle and outer blocks are irreducible tridiagonal matrices over Fp, with explicit proper continuant recurrence, resolvent, and exact source-moment recurrence, without division by unknown target Gram determinants.",
+    "Derived endpoint Weyl Hankel determinants have explicit nonzero unit products at every prefix.",
+    "Actual outer source seeds have endpoint connection polynomial degree exactly 4r, so endpoint normality does not transfer freely to the actual critical unequal-profile minor."
+  ],
+  "not_proved": [
+    "Infinite simultaneous nonvanishing of the original G0 and M5 critical determinants.",
+    "A fixed-order recurrence across different auxiliary primes.",
+    "A global all-prime or archimedean cost for the Krylov polynomial basis; auxiliary-local units do not make such costs free.",
+    "A strict arithmetic-analytic margin or any new irrationality or linear-independence theorem for special values."
+  ],
+  "primary_sources": [
+    {
+      "title": "Spectra of Tridiagonal Matrices over a Field",
+      "authors": ["R. S. Costas-Santos", "C. R. Johnson"],
+      "source_url": "https://arxiv.org/pdf/1807.08877v1",
+      "local_path": "literature/cdt_paired_auxiliary_jacobi_sources_20261006/costas_santos_johnson2018_tridiagonal_field_arxiv1807_08877v1.pdf",
+      "sha256": "d80659f49ddc9cdd6e14cd292f033ff01ea207b9cb1e01d7c286f4fa27b5d808",
+      "archive_pages": 18,
+      "actual_read_pdf_pages": {"inclusive_ranges": [[1, 18]], "distinct_pages": 18},
+      "actual_read_method": "Full sequential UTF-8 PDF text extraction with fitz in inline source-reading commands; all 18 pages actually read without truncation.",
+      "mathematical_use": "PDF2-4 continuant/gcd and arbitrary-field irreducible tridiagonal proper-pair structure. Paper proof K18-K20 is self-contained. PDF3 allows multiple algebraic eigenvalues.",
+      "limitations": "Do not use PDF8-13 reconstructed quasi-definite functionals as normality of the actual dense source; no simplicity of spectrum or positivity is assumed."
+    },
+    {
+      "title": "Orthogonal matrix polynomials whose differences are also orthogonal",
+      "authors": ["Antonio J. Duran", "Vanesa Sanchez-Canales"],
+      "source_url": "https://idus.us.es/server/api/core/bitstreams/e8f63919-6c4c-4242-83fe-5a5083d4509c/content",
+      "local_path": "literature/cdt_paired_auxiliary_jacobi_sources_20261006/duran_sanchez_canales2014_matrix_orthogonal_differences.pdf",
+      "sha256": "d65afa9402977d031947395585c282188a5d76a78794a21d1305eaea9d557736",
+      "archive_pages": 16,
+      "actual_read_pdf_pages": {"inclusive_ranges": [[1, 9]], "distinct_pages": 9},
+      "actual_read_method": "Complete UTF-8 extraction and actual reading of PDF1-9 without truncation; PDF10-16 were not read.",
+      "mathematical_use": "PDF2-3 Theorems1/2 hypotheses and PDF8-9 Lemma4.1 distinguish degree-nonincreasing, Hermitian/quasi-definite OP operators from the actual degree-raising finite-field operator.",
+      "limitations": "No theorem of this source proves target units. Positive matrix measure, quasi-definiteness, and degree2/1 classical hypotheses are not assumed for this project."
+    }
+  ],
+  "source_archive_summary": {
+    "new_pdfs": 2,
+    "new_archive_pages": 34,
+    "actual_distinct_read_pages": 27,
+    "download_method": "Sequential PowerShell Invoke-WebRequest to new independent guarded paths with normal certificate verification; no TLS bypass.",
+    "source_reading_is_not_math_producer_execution": true
+  },
+  "new_own_math_producer": {
+    "path": "research/cdt_odd_paired_auxiliary_boundary_jacobi_krylov_20261006_verify.py",
+    "sha256": "ef2dd914c860485b76a29ce8566a2385c4e4bc12d285da72c6ad4a29ef1ab8fa",
+    "output_path": "research/cdt_odd_paired_auxiliary_boundary_jacobi_krylov_20261006_verify.json",
+    "output_sha256": "7ece9d110eb1f2580ccd549cf5250c5b3172f774e3af9501e3a63873be87a180",
+    "guard": "Reject execution if output already exists.",
+    "exact_execution_count": 1,
+    "exact_command": "python research/cdt_odd_paired_auxiliary_boundary_jacobi_krylov_20261006_verify.py",
+    "execution_history": [{"attempt": 1, "exit_code": 0, "status": "PASS", "cases": 3, "exact_checks": 364, "r_values": [1, 2, 4]}],
+    "run_scope": "Structural identities only on previously examined small primes; no extension of a prime table. Weights, operator polynomial degrees and leading units, R-conjugacy, folded detailed balance and cuts, Krylov determinant-square scaling, continuant/gcd identities and all endpoint norm products.",
+    "does_not_verify": "Original target infinite or all-r nonvanishing, paper all-scale proofs, global fees, or special-value theorems.",
+    "imports": ["pathlib", "math.comb", "json", "hashlib"],
+    "old_or_peer_math_producer_executions_imports_reruns": 0
+  },
+  "frozen_history_policy": "All old and peer mathematical proofs, producers, outputs, and receipts were read-only; no old or peer mathematical producer was executed, imported, or rerun. Old 439 pins and previous 452d/f050 remain unchanged.",
+  "actual_independent_review_confirmations": [
+    {
+      "reviewer": "root",
+      "scope": "Actual complete proof K1-K26 and all twelve sections, entire producer source static, all three JSON cases and all fields. Independently checked actual weights, cut edges, nodal R-conjugacy, common potential and all-prime resonance exclusions, endpoint norm products, and dense-connection limitations.",
+      "primary_actual_read_scope": "Costas-Santos-Johnson PDF1-4 and Duran-Sanchez-Canales PDF1-3, seven distinct pages only.",
+      "status": "Paper mathematics passed; no target-unit or global-cost upgrade."
+    },
+    {
+      "reviewer": "/root/toric_chow_completion",
+      "review_path": "research/cdt_odd_paired_auxiliary_boundary_jacobi_krylov_independent_review_20261006.md",
+      "scope": "Actual complete proof K1-K26, own producer and output static, candidate receipt actually read. Formal paper review passed all specified mathematical scopes.",
+      "primary_actual_read_scope": "Costas-Santos-Johnson PDF1-5 and Duran-Sanchez-Canales PDF1-4,8-9, eleven distinct pages only.",
+      "status": "Full mathematics passed; reviewer will separately pin this final source receipt. The final review fingerprint is deliberately not embedded here to avoid a receipt-review hash cycle."
+    }
+  ],
+  "final_freeze_policy": "Research MD09b9, PYef2d, JSON7ece and this final receipt are read-only after final actual rereading. The proof closing sentence about pending review is historical candidate-stage wording; this receipt records completed actual reviews. No producer rerun or change to frozen old inputs is permitted."
+}

@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "n": 4,
+      "m": 4,
+      "s": 7,
+      "coverage": {
+        "unique_candidates": 22,
+        "baseline": 3,
+        "covered": 3,
+        "additional": 0,
+        "failed": 19,
+        "frozen_failures": 15
+      },
+      "boundary": {
+        "positive_integer_lift_at_k1": 0,
+        "no_positive_integer_lift_at_k1": 19,
+        "unresolved": 0,
+        "exact_simplex_candidates": 5
+      },
+      "facet_residues": {
+        "facet_models": 2,
+        "residue_budgets": 22,
+        "negative_budgets": 0
+      }
+    },
+    {
+      "n": 8,
+      "m": 8,
+      "s": 7,
+      "coverage": {
+        "unique_candidates": 41,
+        "baseline": 22,
+        "covered": 22,
+        "additional": 0,
+        "failed": 19,
+        "frozen_failures": 17
+      },
+      "boundary": {
+        "positive_integer_lift_at_k1": 6,
+        "no_positive_integer_lift_at_k1": 7,
+        "unresolved": 6,
+        "exact_simplex_candidates": 0
+      },
+      "facet_residues": {
+        "facet_models": 2,
+        "residue_budgets": 41,
+        "negative_budgets": 0
+      }
+    },
+    {
+      "n": 16,
+      "m": 12,
+      "s": 7,
+      "coverage": {
+        "unique_candidates": 90,
+        "baseline": 53,
+        "covered": 55,
+        "additional": 2,
+        "failed": 35,
+        "frozen_failures": 31
+      },
+      "boundary": {
+        "positive_integer_lift_at_k1": 0,
+        "no_positive_integer_lift_at_k1": 3,
+        "unresolved": 32,
+        "exact_simplex_candidates": 0
+      },
+      "facet_residues": {
+        "facet_models": 2,
+        "residue_budgets": 90,
+        "negative_budgets": 0
+      }
+    },
+    {
+      "n": 24,
+      "m": 12,
+      "s": 7,
+      "coverage": {
+        "unique_candidates": 114,
+        "baseline": 114,
+        "covered": 114,
+        "additional": 0,
+        "failed": 0,
+        "frozen_failures": 0
+      },
+      "boundary": {
+        "positive_integer_lift_at_k1": 0,
+        "no_positive_integer_lift_at_k1": 0,
+        "unresolved": 0,
+        "exact_simplex_candidates": 0
+      },
+      "facet_residues": {
+        "facet_models": 2,
+        "residue_budgets": 114,
+        "negative_budgets": 0
+      }
+    },
+    {
+      "n": 32,
+      "m": 12,
+      "s": 7,
+      "coverage": {
+        "unique_candidates": 143,
+        "baseline": 143,
+        "covered": 143,
+        "additional": 0,
+        "failed": 0,
+        "frozen_failures": 0
+      },
+      "boundary": {
+        "positive_integer_lift_at_k1": 0,
+        "no_positive_integer_lift_at_k1": 0,
+        "unresolved": 0,
+        "exact_simplex_candidates": 0
+      },
+      "facet_residues": {
+        "facet_models": 2,
+        "residue_budgets": 143,
+        "negative_budgets": 0
+      }
+    }
+  ],
+  "complete_height_boxes": 90,
+  "unique_parameter_direction_pairs": 410,
+  "boundary_simplexes": 10
+}

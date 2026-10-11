@@ -1,0 +1,53 @@
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      25
+
+
+as a very particular case of the general Theorem 15.1.3 from the theory of special
+values of G-functions. For the dilogarithm function, the first such result was proved
+already by Maier [Mai27, § 8], in a work that foreshadowed (and directly inspired)
+Siegel’s 1929 paper [Zan14]. The irrationality Li2 (1/n) ∈  / Q has at present only
+been proved [Hat93, RV05, RV19] for n ∈     / {−4, −3, −2, 2, 3, 4, 5}. The issue is
+discussed further in § 15.2.                                                       △
+   In the main spirit of our paper, one could even ask for variations of Conjec-
+ture 2.8.1 that allow for further (possible) singularities in the convergence disc
+|x| < 1 of the original branch f (x), for example:
+Question 2.8.3. Do the conclusions of Conjecture 2.8.1 still hold if the meromor-
+phic continuability on P1 ∖ {0, 1, ∞} in condition (1) is relaxed to a meromorphic
+continuability on P1 ∖ {0, δ, 1, ∞}, for some δ ∈ [−1/2, 1/2]?
+   In particular, for a power series f (x) ∈ QJxK convergent on |x| < 1 and defin-
+ing holonomic functions on P1 ∖ {0, δ, 1, ∞} of the denominators type condition
+an [1, . . . , n]2 ∈ Z, where δ ∈ [−1/2, 1/2] is an arbitrary fourth puncture, does f (x)
+automatically extend through that fourth puncture x = δ to define a holonomic
+function on P1 ∖ {0, 1, ∞}?
+   While these questions seem rather awkward for our method of rational holonomy
+bounds as developed in this paper, we are able to fully resolve a sub-problem
+intermediate in difficulty between Theorem 2.7.2 and Conjecture 2.8.1, namely when
+the denominator type has the form [1, 2, . . . , n][1, 2, . . . , n/2], that is “a case of
+τ = 3/2” where the first new function after log(1−x) pops out, namely, the function
+log2 (1 − x). Here Conjecture 2.8.1 becomes the δ = 0 case of the following theorem,
+responding affirmatively to Question 2.8.3 for the subcase of [1, . . . , n][1, . . . , n/2]
+types:
+                                    P∞
+Theorem 2.8.4. Suppose f (x) = n=0 an xn ∈ QJxK has [1, . . . , n][1, . . . , n/2]an ∈
+Z for all n ∈ N, is holomorphic in C ∖ [1, ∞), and is analytically continuable as a
+meromorphic function along all paths in P1 ∖ {0, δ, 1, ∞}, for some δ ∈ (−∞, 1).
+   Then
+                f (x) = Q0 (x) + Q1 (x) log(1 − x) + Q2 (x) log2 (1 − x)            (2.8.5)
+                                                             h         i
+                                                                    1
+for some rational functions of the form Q0 , Q1 , Q2 ∈ Q x, 1−x ⊂ Q(x).
+   In particular,
+                   f (x) continues analytically as a meromorphic function
+            (∗)
+                   along all paths in P1 ∖ {0, 1, ∞}.
+   Some immediate applications of part (∗) of Theorem 2.8.4 to Q-linear inde-
+pendence proofs are treated in § 2.11.12 further down in this introduction, as a
+proof-of-concept for our method. It is there that (∗) is proved, as an application
+of Theorem 2.5.1. To conclude the full Theorem 2.8.4 requires a subtler holonomy
+bound and it is carried out in § 6.8.
+2.9. Overconvergence and univalent leaves. We now turn to the basic mech-
+anism for irrationality proofs by extending the method of Apéry limits. We will
+follow this in § 2.10 with some explicit examples, and in § 2.11 with a proof-of-
+concept application to some new Q-linear independence proofs.
+   Consider Σ ⊂ DR := {x ∈ C : |x| < R} a discrete subset of the open complex
+disc of radius R ∈ (0, ∞] (possibly including the disc center x = 0), and f (x) ∈ CJxK
+

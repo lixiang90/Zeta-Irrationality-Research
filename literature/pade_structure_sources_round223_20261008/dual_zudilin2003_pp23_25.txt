@@ -1,0 +1,168 @@
+          WELL-POISED HYPERGEOMETRIC SERVICE FOR ZETA VALUES                                     23
+
+          7. Further difference equations for zeta values
+  A natural very-well-poised generalization of Ball’s sequence (9),
+                           ∞
+                     k−1
+                           X                (t − 1) · · · (t − n) · (t + n + 1) · · · (t + 2n)
+(62)    Fk,n := n!               (2t + n)
+                           t=1
+                                                    tk+1 (t + 1)k+1 · · · (t + n)k+1
+
+                                     × (−1)(k−1)(t+n+1)
+                  (
+                   Qζ(k) + Qζ(k − 2) + · · · + Qζ(2) + Q                     for k ≥ 2 even,
+             ∈
+                   Qζ(k) + Qζ(k − 2) + · · · + Qζ(3) + Q                     for k ≥ 2 odd,
+where n = 1, 2, . . . , gives rise for searching difference equations satisfied by
+both linear forms Fk,n and their rational coefficients. Applying Zeilberger’s
+algorithm of creative telescoping in the manner of Section 2 we deduce the
+following result for the linear forms
+(63)                             F5,n = un ζ(5) + wn ζ(3) − vn .
+Theorem 4. The numbers un , wn , vn in the representation (63) are positive
+rationals satisfying the third-order difference equation
+                  (n + 1)(n + 2)5 b0 (n)un+2 − b1 (n)un+1 − b2 (n)un
+(64)
+                       + 2(2n + 1)n5 b0 (n + 1)un−1 = 0,
+        u0 = 2,      w0 = 0, v0 = 0,       u1 = 18, w1 = 66,                    v1 = 98,
+                                         6125         74463
+                       u2 = 938, w2 =         , v2 =        ,
+                                           2             16
+where
+b0 (n) = 41218n3 + 48459n2 + 20010n + 2871,
+b1 (n) = 2(n + 1)(3874492n8 + 33613836n7 + 123666762n6 + 250134420n5
+        + 301587620n4 + 220011738n3 + 94372815n2 + 21917736n + 2131500),
+b2 (n) = 2(48802112n9 + 350188128n8 + 1080631646n7 + 1882848690n6
+        + 2045758212n5 + 1442754107n4 + 663248761n3 + 192486369n2
+        + 32136756n + 2360484).
+   The characteristic polynomial λ3 − 188λ2 − 2368λ + 4 of the difference equa-
+tion (64) determines the asymptotic behaviour of the linear forms (63) and
+their coefficients as n → ∞.
+   A similar (but quite cumbersome) fourth-order recursion with characteristic
+polynomial λ4 − 828λ3 − 132246λ2 + 260604λ − 27 has been discovered by us
+for the linear forms F7,n and their coefficients. These recursions allow us to
+verify the inclusions
+   Dn5 F5,n ∈ Zζ(5) + Zζ(3) + Z,                  Dn7 F7,n ∈ Zζ(7) + Zζ(5) + Zζ(3) + Z
+24                                             W. ZUDILIN
+
+up to n = 1000, although we are able to prove that
+(65)          e −1
+        Dnk+1 Φ n Fk,n ∈ Zζ(k) + Zζ(k − 2) + · · · + Zζ(3) + Z for k odd,
+where
+(66)
+                  Y                         log Φ
+                                                en            2 1
+     e n :=
+     Φ                         p,       lim        = ψ(1) − ψ    − = 0.24101875 . . . ,
+                 p<n
+                                        n→∞    n               3  2
+              {n/p}∈[ 32 ,1)
+
+using our arithmetic results [Zu2], Lemmas 4.2–4.4.
+  Another story deals with the quantities
+            ∞                                                                     3 
+         1 X d2
+                            
+                               (t − 1) · · · (t − n) · (t + n + 1) · · · (t + 2n)
+   Fn :=
+   e                 (2t + n)
+         2 t=1 dt2                           (t(t + 1) · · · (t + n))2
+         =u         en ζ(5) − ven ,
+          en ζ(7) + w
+      en , w
+where u    en , ven are positive rationals. We have discovered a (quite cumber-
+some) fourth-order difference equation satisfied by u     en , ven ; its characteristic
+                                                     en , w
+polynomial is
+         λ4 + 9264λ3 − 12116166λ2 − 752300λ − 19683                   (19683 = 39 ).
+As we have proved in [Zu2], Proposition 4.1, the following inclusions hold:
+                         e −3 · Fen ∈ Zζ(7) + Zζ(5) + Z,
+                    D8 · Φ          n     n
+
+where Φe n is given in (66), while our calculations up to n = 1000 with a help
+of the recursion mentioned above show that
+                            e −2 · Fen ∈ Zζ(7) + Zζ(5) + Z.
+                       D7 · Φ       n     n
+     What is a trick that makes arithmetic as it is?
+                       8. Multiple-integral representation
+                    of very-well-poised hypergeometric series
+  In [Zu4], Section 9, we conjecture, for integer k ≥ 2, the coincidence of the
+very-well-poised hypergeometric series (62) and the multiple integral
+                   Z n
+                       x1 (1 − x1 )n xn2 (1 − x2 )n · · · xnk (1 − xk )n
+              Z
+(67) Jk,n := · · ·                                                       dx1 dx2 · · · dxk ,
+                                Qk (x1 , x2 , . . . , xk )n+1
+                       [0,1]k
+
+where Q0 := 1 and
+      Qk = Qk (x1 , x2 , . . . , xk ) := 1 − (1 − (· · · (1 − (1 − xk )xk−1 ) · · · )x2 )x1
+(68)
+         = 1 − x1 Qk−1 (x2 , . . . , xk ) = Qk−1 (x1 , . . . , xk−1 ) + (−1)k x1 x2 · · · xk
+for k ≥ 1. The integrals J2,n and J3,n have been studied by F. Beukers [Be1] in
+the connection with Apéry’s proof of the irrationality of ζ(2) and ζ(3). In [Zu4],
+we prove the coincidence of F3,n and J3,n with the help of Bailey’s identity
+([Ba], Section 6.3, formula (2)) and Nesterenko’s integral theorem ([Ne2], The-
+orem 2), and use similar arguments for showing that F2,n = J2,n . For general
+           WELL-POISED HYPERGEOMETRIC SERVICE FOR ZETA VALUES                             25
+
+integer k ≥ 2, the integrals (67) are introduced by O. Vasilenko [VaO] who
+states several results for Jk,0 . The cases k = 4, 5 and an arbitrary integer n
+in (67) are developed by D. Vasilyev [VaD]; in particular, he conjectures the
+inclusions
+
+           Dnk Jk,n ∈ Zζ(k) + Zζ(k − 2) + · · · + Zζ(3) + Z for k odd
+
+(cf. (65)), and proves them if k = 5.
+   There is a regular way to obtain difference equations for the quantities (67);
+it is a part of the general WZ-theory developed by H. Wilf and D. Zeil-
+berger [WZ]. However, difference equations for J4,n and J5,n by these means
+are out of calculative abilities of our computer, so we cannot use a ‘routine
+matter’ to verify the identity Fk,n = Jk,n even when k = 4, 5.
+   The aim of this section is to deduce the desired coincidence of (62) and (67)
+from a general analytic result on a multiple-integral representation of very-
+well-poised hypergeometric series.6
+   Consider two objects: very-well-poised hypergeometric series
+(69)
+                                         Γ(1 + h0 ) kj=1 Γ(hj )
+                                                      Q
+ Fk (h) = Fk (h0 ; h1 , . . . , hk ) := Qk
+                                             j=1 Γ(1 + h0 − hj )
+                               h0 , 1 + 12 h0 ,
+                                                                                         
+                                                    h1 ,      ...,        hk
+            × k+2Fk+1                 1                                           (−1)k+1
+                                      2
+                                        h0 ,    1 + h0 − h1 , . . . , 1 + h0 − hk
+            ∞                        Qk
+                                        j=0 Γ(hj + µ)
+          X
+        =      (h0 + 2µ) Qk                                   (−1)(k+1)µ ,
+           µ=0                    j=0 Γ(1 + h0 − hj + µ)
+
+and multiple integrals
+                                            
+                        a0 , a1 , . . . , ak
+         Jk (a, b) = Jk
+                             b1 , . . . , bk
+(70)                        Z Qk           aj −1
+                                   j=1 xj        (1 − xj )bj −aj −1
+                     Z
+                   := · · ·                                         dx1 dx2 · · · dxk .
+                                    Qk (x1 , x2 , . . . , xk )a0
+                         [0,1]k
+
+Theorem 5. For each k ≥ 1, there holds the identity
+      Qk+1
+        j=1 Γ(1 + h0 − hj − hj+1 )
+                                     · Fk+2 (h0 ; h1 , . . . , hk+2 )
+             Γ(h1 ) Γ(hk+2 )
+(71)                                                                    
+                  h1 ,     h2 ,          h3 ,       ...,          hk+1
+           = Jk                                                            ,
+                       1 + h0 − h3 , 1 + h0 − h4 , . . . , 1 + h0 − hk+2
+
+  6As  it is mentioned by G. E. Andrews in [An], Section 16, “an entire survey paper could
+be written just on integrals connected with well-poised series”. The following theorem would
+extend this survey a little bit.
+

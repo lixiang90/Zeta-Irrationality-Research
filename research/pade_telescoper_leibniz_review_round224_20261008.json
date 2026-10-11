@@ -1,0 +1,22 @@
+{
+  "scope": "One fixed n=6 6x7 matrix; all seven maximal minors by 720-term Leibniz sums each.",
+  "producer_rerun": false,
+  "arithmetic": "Fraction exact; independent of producer Gaussian elimination.",
+  "source_bytes": 26796,
+  "source_sha256": "a47a933aca74e035b49233d1f7cbd7106d770f679f5840934cdbfcfc69e4bbd0",
+  "all_seven_minors_match": true,
+  "all_seven_nonzero": true,
+  "cofactor_kernel": true,
+  "signed_minor_numerator_bit_lengths": [
+    518,
+    559,
+    578,
+    576,
+    568,
+    520,
+    445
+  ],
+  "global_scope_limit": "Checks the saved finite matrix. Does not replace the global rational reduction proof or pay minimal order/infinite nonzero.",
+  "mathematical_runs_for_this_verifier": 1,
+  "pass": true
+}

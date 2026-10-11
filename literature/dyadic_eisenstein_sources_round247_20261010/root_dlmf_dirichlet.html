@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DLMF: §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions</title>
+<link rel="shortcut icon" href="./style/DLMF-16.png" type="image/png">
+<script type="text/javascript"><!--
+	var PATH="DLMF:/25.15";
+	var ROOT="./";
+      //--></script>
+<script type="text/javascript" src="./style/jquery.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/jquery.leaveNotice.js"><!-- non-empty so ie6 will accept it --></script>
+<script type="text/javascript" src="./style/DLMF.js"><!-- non-empty so ie6 will accept it --></script>
+<script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NIST&amp;pua=UA-37115410-44&amp;yt=true&amp;exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"><!-- non-empty so ie6 will accept it --></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BZB64W4M0L"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BZB64W4M0L');
+      </script>
+<link rel="stylesheet" type="text/css" href="./style/LaTeXML.css">
+<link rel="stylesheet" type="text/css" href="./style/DLMF.css">
+<link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="top" href="./" title="DLMF">
+<link rel="copyright" href="./about/notices" title="Copyright">
+<link rel="search" href="./search/search" title="Search">
+<link rel="help" class="ltx_help" href="./help/" title="Help">
+<link rel="up" href="./25#PT3" title="Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="up up" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="start" href="./" title="">
+<link rel="prev" href="./25.14" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="next" href="./25.16" title="§25.16 Mathematical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.2" title="§25.2 Definition and Expansions ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.3" title="§25.3 Graphics ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.4" title="§25.4 Reflection Formulas ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.5" title="§25.5 Integral Representations ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.6" title="§25.6 Integer Arguments ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.7" title="§25.7 Integrals ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.8" title="§25.8 Sums ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.9" title="§25.9 Asymptotic Approximations ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.10" title="§25.10 Zeros ‣ Riemann Zeta Function ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.11" title="§25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.12" title="§25.12 Polylogarithms ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.13" title="§25.13 Periodic Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.14" title="§25.14 Lerch’s Transcendent ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.16" title="§25.16 Mathematical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.17" title="§25.17 Physical Applications ‣ Applications ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.18" title="§25.18 Methods of Computation ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.19" title="§25.19 Tables ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.20" title="§25.20 Approximations ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="section" href="./25.21" title="§25.21 Software ‣ Computation ‣ Chapter 25 Zeta and Related Functions">
+<link rel="document" href="./front/foreword" title="Foreword">
+<link rel="document" href="./front/preface" title="Preface">
+<link rel="document" href="./front/introduction" title="Mathematical Introduction">
+<link rel="chapter" href="./1" title="Chapter 1 Algebraic and Analytic Methods">
+<link rel="chapter" href="./2" title="Chapter 2 Asymptotic Approximations">
+<link rel="chapter" href="./3" title="Chapter 3 Numerical Methods">
+<link rel="chapter" href="./4" title="Chapter 4 Elementary Functions">
+<link rel="chapter" href="./5" title="Chapter 5 Gamma Function">
+<link rel="chapter" href="./6" title="Chapter 6 Exponential, Logarithmic, Sine, and Cosine Integrals">
+<link rel="chapter" href="./7" title="Chapter 7 Error Functions, Dawson’s and Fresnel Integrals">
+<link rel="chapter" href="./8" title="Chapter 8 Incomplete Gamma and Related Functions">
+<link rel="chapter" href="./9" title="Chapter 9 Airy and Related Functions">
+<link rel="chapter" href="./10" title="Chapter 10 Bessel Functions">
+<link rel="chapter" href="./11" title="Chapter 11 Struve and Related Functions">
+<link rel="chapter" href="./12" title="Chapter 12 Parabolic Cylinder Functions">
+<link rel="chapter" href="./13" title="Chapter 13 Confluent Hypergeometric Functions">
+<link rel="chapter" href="./14" title="Chapter 14 Legendre and Related Functions">
+<link rel="chapter" href="./15" title="Chapter 15 Hypergeometric Function">
+<link rel="chapter" href="./16" title="Chapter 16 Generalized Hypergeometric Functions and Meijer 𝐺-Function">
+<link rel="chapter" href="./17" title="Chapter 17 𝑞-Hypergeometric and Related Functions">
+<link rel="chapter" href="./18" title="Chapter 18 Orthogonal Polynomials">
+<link rel="chapter" href="./19" title="Chapter 19 Elliptic Integrals">
+<link rel="chapter" href="./20" title="Chapter 20 Theta Functions">
+<link rel="chapter" href="./21" title="Chapter 21 Multidimensional Theta Functions">
+<link rel="chapter" href="./22" title="Chapter 22 Jacobian Elliptic Functions">
+<link rel="chapter" href="./23" title="Chapter 23 Weierstrass Elliptic and Modular Functions">
+<link rel="chapter" href="./24" title="Chapter 24 Bernoulli and Euler Polynomials">
+<link rel="chapter" href="./25" title="Chapter 25 Zeta and Related Functions">
+<link rel="chapter" href="./26" title="Chapter 26 Combinatorial Analysis">
+<link rel="chapter" href="./27" title="Chapter 27 Functions of Number Theory">
+<link rel="chapter" href="./28" title="Chapter 28 Mathieu Functions and Hill’s Equation">
+<link rel="chapter" href="./29" title="Chapter 29 Lamé Functions">
+<link rel="chapter" href="./30" title="Chapter 30 Spheroidal Wave Functions">
+<link rel="chapter" href="./31" title="Chapter 31 Heun Functions">
+<link rel="chapter" href="./32" title="Chapter 32 Painlevé Transcendents">
+<link rel="chapter" href="./33" title="Chapter 33 Coulomb Functions">
+<link rel="chapter" href="./34" title="Chapter 34 3⁢𝑗,6⁢𝑗,9⁢𝑗 Symbols">
+<link rel="chapter" href="./35" title="Chapter 35 Functions of Matrix Argument">
+<link rel="chapter" href="./36" title="Chapter 36 Integrals with Coalescing Saddles">
+<link rel="bibliography" href="./bib/" title="Bibliography">
+<link rel="index" href="./idx/" title="Index">
+<link rel="glossary" href="./not/" title="Notations">
+<link rel="document" href="./lof/" title="List of Figures">
+<link rel="document" href="./lot/" title="List of Tables">
+<link rel="document" href="./software/" title="Software Index">
+<link rel="document" href="./errata/" title="Errata">
+<link rel="document" href="./help/" title="Need Help?">
+<link rel="document" href="./search/" title="Advanced Search">
+<link rel="document" href="./about/" title="About the Project">
+<meta name="keywords" lang="en" content="Dirichlet , Dirichlet , Dirichlet’s theorem, analytic properties, definition, functional equation, in arithmetic progressions, infinite products, prime numbers, zeros">
+</head>
+<body>
+<div class="ltx_page_navbar">
+<div class="ltx_page_navlogo"><a href="./" title="Digital Library of Mathematical Functions" class="DLMFLogo"><span>DLMF</span></a></div>
+<div id="navmenu" class="ltx_page_navitems">
+<button class="ltx_page_navbar_menubutton" onclick="toggleMenu(); return false;">Menu</button>
+<ul>
+<li><a class="ltx_navlink ltx_navindex" href="./idx/">Index</a></li>
+<li><a class="ltx_navlink ltx_navnotations" href="./not/">Notations</a></li>
+<li><small><form method="get" action="./search/search">
+<input type="text" name="q" value="" size="6" class="ltx_navsearch"><button type="submit" class="ltx_navlink ltx_navsearch">Search</button>
+</form></small></li>
+<li><a class="ltx_navlink ltx_help" href="./help/">Help?</a></li>
+<li><a class="ltx_navlink ltx_navciting" href="./help/cite">Citing</a></li>
+<li><a class="ltx_navlink ltx_customize" href="./help/customize">Customize</a></li>
+<li>
+<a class="ltx_navlink ltx_navshowinfo" id="showinfo" href="" onclick="showInfo(); return false;" title="Show Annotations">Annotate</a><a class="ltx_navlink ltx_navhideinfo" id="hideinfo" href="" onclick="hideInfo(); return false;">UnAnnotate</a>
+</li>
+<li><a class="ltx_navlink ltx_navabout" href="./about/">About the Project</a></li>
+</ul>
+</div>
+<div class="ltx_page_navbottom">
+</div>
+</div>
+<div class="ltx_page_main">
+<div class="ltx_page_header">
+<a href="./25" title="" class="ltx_ref" rel="up up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25 </span>Zeta and Related Functions</span></a><a href="./25#PT3" title="In Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title">Related Functions</span></a><a href="./25.14" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.14 </span>Lerch’s Transcendent</span></a><a href="./25.16" title="In Applications ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.16 </span>Mathematical Applications</span></a>
+</div>
+<div class="ltx_page_content">
+<section class="ltx_section ltx_authors_multiline ltx_leqno">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">§25.15 </span>Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-functions</h1>
+<div id="info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, Sections 12.1, 12.6, 12.10 and 12.13)</cite> and
+<cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib118" title="Note on the trivial zeros of Dirichlet L -functions" class="ltx_ref">1985b</a>)</cite>.</dd>
+<dt>Referenced by:</dt>
+<dd><a href="./24.17#iii.p1" title="§24.17(iii) Number Theory ‣ §24.17 Mathematical Applications ‣ Applications ‣ Chapter 24 Bernoulli and Euler Polynomials" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§24.17(iii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15" title="" class="ltx_ref">http://dlmf.nist.gov/25.15</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<h6>Contents</h6>
+<ol class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry"><a href="#i"><span class="ltx_tag ltx_tag_subsection">§25.15(i) </span>Definitions and Basic Properties</a></li>
+<li class="ltx_tocentry"><a href="#ii"><span class="ltx_tag ltx_tag_subsection">§25.15(ii) </span>Zeros</a></li>
+</ol>
+<section id="i" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§25.15(i) </span>Definitions and Basic Properties</h2>
+<div id="i.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Dirichlet%20L-functions">Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi>L</mi></math>-functions</a>, <a class="ltx_keyword" href="./search/search?q=analytic%20properties">analytic properties</a>, <a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=functional%20equation">functional equation</a>, <a class="ltx_keyword" href="./search/search?q=infinite%20products">infinite products</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, Sections 12.1, 12.6 and 12.10)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.i" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.i</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="i.p1" class="ltx_para">
+<p class="ltx_p">The notation <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(s,\chi\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math> was introduced by
+<cite class="ltx_cite ltx_citemacro_citet">Dirichlet (<a href="./bib/D#bib671" title="Beweis des Satzes, dass jede unbegrenzte arithmetische Progression, deren erstes Glied und Differenz ganze Zahlen ohne gemeinschaftlichen Factor sind, unendlich viele Primzahlen enthält" class="ltx_ref">1837</a>)</cite> for the meromorphic continuation of the function
+defined by the series
+</p>
+<div class="ltx_equation_container">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.1</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E1.png" altimg-height="73px" altimg-valign="-28px" altimg-width="258px" alttext="L\left(s,\chi\right)=\sum_{n=1}^{\infty}\frac{\chi(n)}{n^{s}}," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E1.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Defines:</dt>
+<dd><span class="ltx_text ltx_font_bold"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</span></dd>
+<dt>Symbols:</dt>
+<dd>
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=definition">definition</a>, <a class="ltx_keyword" href="./search/search?q=infinite%20series">infinite series</a>, <a class="ltx_keyword" href="./search/search?q=series%20representation">series representation</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 249)</cite></dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.11#E36" title="In §25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.11.36)</span></a>,
+<a href="./25.11#E36.info" title="In §25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.11.36)</span></a>,
+<a href="./25.11#x.info" title="§25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.11(x)</span></a>,
+<a href="./errata/#V1.0.23.I2.ix3.p1" title="In Other Changes ‣ Version 1.0.23 (June 15, 2019) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.23) for  Equation (<span class="ltx_text ltx_ref_tag">25.11.36</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E1" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E1</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E1.tex">TeX</a>, <a href="./25.15.E1.pmml">pMML</a>, <a href="./25.15.E1.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a Dirichlet character <math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="88px" alttext="\pmod{k}" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0.167em">mod</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow><mo stretchy="false">)</mo></mrow></math> (§<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>). For the
+principal character <math class="ltx_Math" altimg="m22.png" altimg-height="25px" altimg-valign="-7px" altimg-width="110px" alttext="\chi_{1}\pmod{k}" display="inline"><mrow><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub><mspace style="width:0.949em;" width="0.949em"></mspace><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0.167em">mod</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, <math class="ltx_Math" altimg="m9.png" altimg-height="25px" altimg-valign="-7px" altimg-width="79px" alttext="L\left(s,\chi_{1}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub><mo>)</mo></mrow></mrow></math> is
+analytic everywhere except for a simple pole at <math class="ltx_Math" altimg="m41.png" altimg-height="17px" altimg-valign="-2px" altimg-width="52px" alttext="s=1" display="inline"><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>=</mo><mn>1</mn></mrow></math> with residue
+<math class="ltx_Math" altimg="m29.png" altimg-height="25px" altimg-valign="-7px" altimg-width="73px" alttext="\phi\left(k\right)/k" display="inline"><mrow><mrow><mi href="./27.2#E7" title="Euler’s totient">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>)</mo></mrow></mrow><mo>/</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow></math>, where <math class="ltx_Math" altimg="m30.png" altimg-height="25px" altimg-valign="-7px" altimg-width="48px" alttext="\phi\left(k\right)" display="inline"><mrow><mi href="./27.2#E7" title="Euler’s totient">ϕ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>)</mo></mrow></mrow></math> is Euler’s totient
+function (§<a href="./27.2" title="§27.2 Functions ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.2</span></a>). If <math class="ltx_Math" altimg="m19.png" altimg-height="22px" altimg-valign="-6px" altimg-width="67px" alttext="\chi\neq\chi_{1}" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>≠</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow></math>, then <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(s,\chi\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math> is
+an entire function of <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>.
+</p>
+<div class="ltx_equation_container">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.2</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E2.png" altimg-height="110px" altimg-valign="-31px" altimg-width="266px" alttext="L\left(s,\chi\right)=\prod_{p}\left(1-\frac{\chi(p)}{p^{s}}\right)^{-1}," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∏</mo><mi href="./25.1#t1.r2" title="prime number">p</mi></munder><msup><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r2" title="prime number">p</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./25.1#t1.r2" title="prime number">p</mi><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac></mrow><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E2.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./1.9#E2" title="(1.9.2) ‣ Real and Imaginary Parts ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m14.png" altimg-height="18px" altimg-valign="-2px" altimg-width="19px" alttext="\Re" display="inline"><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo>⁡</mo></mrow></math>: real part</a>,
+<a href="./25.1#t1.r2" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./25.1#t1.r2" title="prime number">p</mi></math>:  prime number</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=infinite%20product">infinite product</a>, <a class="ltx_keyword" href="./search/search?q=product%20representation">product representation</a>
+</dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 231)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E2" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E2</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E2.tex">TeX</a>, <a href="./25.15.E2.pmml">pMML</a>, <a href="./25.15.E2.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">with the product taken over all primes <math class="ltx_Math" altimg="m40.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./25.1#t1.r2" title="prime number">p</mi></math>, beginning with <math class="ltx_Math" altimg="m39.png" altimg-height="21px" altimg-valign="-6px" altimg-width="53px" alttext="p=2" display="inline"><mrow><mi href="./25.1#t1.r2" title="prime number">p</mi><mo>=</mo><mn>2</mn></mrow></math>. This
+implies that <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="108px" alttext="L\left(s,\chi\right)\neq 0" display="inline"><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="i.p2" class="ltx_para">
+<p class="ltx_p">Equations (<a href="./25.15#E3" title="(25.15.3) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.15.3</span></a>) and (<a href="./25.15#E4" title="(25.15.4) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.15.4</span></a>) hold for all <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math> if
+<math class="ltx_Math" altimg="m19.png" altimg-height="22px" altimg-valign="-6px" altimg-width="67px" alttext="\chi\neq\chi_{1}" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>≠</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow></math>, and for all <math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math> (<math class="ltx_Math" altimg="m26.png" altimg-height="22px" altimg-valign="-6px" altimg-width="37px" alttext="\neq 1" display="inline"><mrow><mi></mi><mo>≠</mo><mn>1</mn></mrow></math>) if <math class="ltx_Math" altimg="m17.png" altimg-height="17px" altimg-valign="-6px" altimg-width="67px" alttext="\chi=\chi_{1}" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>=</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow></math>:</p>
+<div class="ltx_equationgroup_container">
+<table id="EGx1" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="E3">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.3</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="40px" altimg-valign="-7px" altimg-width="89px" alttext="\displaystyle L\left(s,\chi\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m2.png" altimg-height="77px" altimg-valign="-28px" altimg-width="227px" alttext="\displaystyle=k^{-s}\sum_{r=1}^{k-1}\chi(r)\zeta\left(s,\frac{r}{k}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mrow><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow></msup><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></munderover></mstyle><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mstyle displaystyle="true"><mfrac><mi>r</mi><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mfrac></mstyle><mo>)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E3.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./25.11#E1" title="(25.11.1) ‣ §25.11(i) Definition ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m33.png" altimg-height="25px" altimg-valign="-7px" altimg-width="64px" alttext="\zeta\left(\NVar{s},\NVar{a}\right)" display="inline"><mrow><mi href="./25.11#E1" title="Hurwitz zeta function">ζ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.1#t1.r4" title="real or complex parameter">a</mi><mo>)</mo></mrow></mrow></math>: Hurwitz zeta function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=finite%20sum">finite sum</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, (8), p. 255)</cite></dd>
+<dt>Notes:</dt>
+<dd>In the original source the upper-index of the finite sum is <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>.
+We use <math class="ltx_Math" altimg="m35.png" altimg-height="20px" altimg-valign="-4px" altimg-width="52px" alttext="k-1" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></math> since <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\chi(k)=0" display="inline"><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.</dd>
+<dt>Referenced by:</dt>
+<dd>
+<a href="./25.11#E36" title="In §25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.11.36)</span></a>,
+<a href="./25.11#E36.info" title="In §25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">(25.11.36)</span></a>,
+<a href="./25.11#x.info" title="§25.11(x) Further Series Representations ‣ §25.11 Hurwitz Zeta Function ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.11(x)</span></a>,
+<a href="./25.15#i.p2" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./errata/#V1.0.23.I2.ix3.p1" title="In Other Changes ‣ Version 1.0.23 (June 15, 2019) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.0.23) for  Equation (<span class="ltx_text ltx_ref_tag">25.11.36</span>)</span></a>
+</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E3" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E3</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E3.tex">TeX</a>, <a href="./25.15.E3.pmml">pMML</a>, <a href="./25.15.E3.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+<tbody id="E4">
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.4</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math class="ltx_Math" altimg="m3.png" altimg-height="40px" altimg-valign="-7px" altimg-width="89px" alttext="\displaystyle L\left(s,\chi\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math class="ltx_Math" altimg="m1.png" altimg-height="108px" altimg-valign="-33px" altimg-width="175px" alttext="\displaystyle=L\left(s,\chi_{0}\right)\prod_{p\mathbin{|}k}\left(1-\frac{\chi_%
+{0}(p)}{p^{s}}\right)," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>0</mn></msub><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mstyle displaystyle="true"><munder><mo movablelimits="false">∏</mo><mrow><mi href="./25.1#t1.r2" title="prime number">p</mi><mo fence="false" lspace="0.222em" rspace="0.222em">|</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow></munder></mstyle><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>0</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r2" title="prime number">p</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mi href="./25.1#t1.r2" title="prime number">p</mi><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="5">
+<div id="E4.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r2" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m40.png" altimg-height="17px" altimg-valign="-6px" altimg-width="15px" alttext="p" display="inline"><mi href="./25.1#t1.r2" title="prime number">p</mi></math>:  prime number</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=product%20representation">product representation</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 262)</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./25.15#i.p2" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E4" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E4</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E4.tex">TeX</a>, <a href="./25.15.E4.pmml">pMML</a>, <a href="./25.15.E4.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m20.png" altimg-height="17px" altimg-valign="-6px" altimg-width="27px" alttext="\chi_{0}" display="inline"><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>0</mn></msub></math> is a primitive character (mod <math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi>d</mi></math>) for some positive divisor
+<math class="ltx_Math" altimg="m34.png" altimg-height="18px" altimg-valign="-2px" altimg-width="15px" alttext="d" display="inline"><mi>d</mi></math> of <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math> (§<a href="./27.8" title="§27.8 Dirichlet Characters ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.8</span></a>).</p>
+</div>
+<div id="i.p3" class="ltx_para">
+<p class="ltx_p">When <math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi></math> is a primitive character (mod <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>)
+the <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-functions satisfy the functional equation:
+</p>
+<div class="ltx_equation_container">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.5</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E5.png" altimg-height="97px" altimg-valign="-21px" altimg-width="573px" alttext="L\left(1-s,\chi\right)=\frac{k^{s-1}\Gamma\left(s\right)}{(2\pi)^{s}}\*{\left(%
+e^{-\pi is/2}+\chi(-1)e^{\pi is/2}\right)}\*G(\chi)L\left(s,\overline{\chi}%
+\right)," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>−</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><msup><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>)</mo></mrow></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></mrow><mo stretchy="false">)</mo></mrow><mi href="./25.1#t1.r5" title="complex variable">s</mi></msup></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mo>−</mo><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>+</mo><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mi>G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mover accent="true"><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover><mo>)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E5.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./5.2#E1" title="(5.2.1) ‣ Euler’s Integral ‣ §5.2(i) Gamma and Psi Functions ‣ §5.2 Definitions ‣ Properties ‣ Chapter 5 Gamma Function" class="ltx_ref"><math class="ltx_Math" altimg="m10.png" altimg-height="25px" altimg-valign="-7px" altimg-width="47px" alttext="\Gamma\left(\NVar{z}\right)" display="inline"><mrow><mi href="./5.2#E1" mathvariant="normal" title="gamma function">Γ</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./5.1#t1.r4" title="complex variable">z</mi><mo>)</mo></mrow></mrow></math>: gamma function</a>,
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./1.9#E11" title="(1.9.11) ‣ Complex Conjugate ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m27.png" altimg-height="17px" altimg-valign="-2px" altimg-width="15px" alttext="\overline{\NVar{z}}" display="inline"><mover accent="true"><mi class="ltx_nvar" href="./1.1#t1.r2" title="variable">z</mi><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></math>: complex conjugate</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>:  nonnegative integer</a>,
+<a href="./25.1#t1.r5" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m42.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="s" display="inline"><mi href="./25.1#t1.r5" title="complex variable">s</mi></math>:  complex variable</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=connection%20formula">connection formula</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, (16), p. 263)</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./25.15#ii.p1" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E5" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E5</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E5.tex">TeX</a>, <a href="./25.15.E5.pmml">pMML</a>, <a href="./25.15.E5.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m28.png" altimg-height="21px" altimg-valign="-6px" altimg-width="17px" alttext="\overline{\chi}" display="inline"><mover accent="true"><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo href="./1.9#E11" stretchy="true" title="complex conjugate">¯</mo></mover></math> is the complex conjugate of <math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi></math>, and</p>
+<div class="ltx_equation_container">
+<table id="E6" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.6</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E6.png" altimg-height="71px" altimg-valign="-28px" altimg-width="219px" alttext="G(\chi)\equiv\sum_{r=1}^{k-1}\chi(r)e^{2\pi ir/k}." display="block"><mrow><mrow><mrow><mi>G</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo stretchy="false">)</mo></mrow></mrow><mo href="./front/introduction#common.t1.r9" rspace="0.111em" title="equals by definition">≡</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><msup><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi><mrow><mrow><mn>2</mn><mo>⁢</mo><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi><mo>⁢</mo><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi><mo>⁢</mo><mi>r</mi></mrow><mo>/</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E6.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./3.12#E1" title="(3.12.1) ‣ §3.12 Mathematical Constants ‣ Areas ‣ Chapter 3 Numerical Methods" class="ltx_ref"><math class="ltx_Math" altimg="m31.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="\pi" display="inline"><mi href="./3.12#E1" title="the ratio of the circumference of a circle to its diameter">π</mi></math>: the ratio of the circumference of a circle to its diameter</a>,
+<a href="./front/introduction#common.t1.r9" title="Common Notations and Definitions ‣ Mathematical Introduction" class="ltx_ref"><math class="ltx_Math" altimg="m23.png" altimg-height="13px" altimg-valign="-2px" altimg-width="20px" alttext="\equiv" display="inline"><mo href="./front/introduction#common.t1.r9" title="equals by definition">≡</mo></math>: equals by definition</a>,
+<a href="./4.2#E11" title="(4.2.11) ‣ §4.2(ii) Logarithms to a General Base 𝑎 ‣ §4.2 Definitions ‣ Logarithm, Exponential, Powers ‣ Chapter 4 Elementary Functions" class="ltx_ref"><math class="ltx_Math" altimg="m24.png" altimg-height="13px" altimg-valign="-2px" altimg-width="14px" alttext="\mathrm{e}" display="inline"><mi href="./4.2#E11" mathvariant="normal" title="base of natural logarithm">e</mi></math>: base of natural logarithm</a>,
+<a href="./1.9#E1" title="(1.9.1) ‣ §1.9(i) Complex Numbers ‣ §1.9 Calculus of a Complex Variable ‣ Topics of Discussion ‣ Chapter 1 Algebraic and Analytic Methods" class="ltx_ref"><math class="ltx_Math" altimg="m25.png" altimg-height="18px" altimg-valign="-2px" altimg-width="10px" alttext="\mathrm{i}" display="inline"><mi href="./1.9#E1" mathvariant="normal" title="imaginary unit">i</mi></math>: imaginary unit</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=definition">definition</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 262)</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.4.I1.ix6" title="In Errata ‣ Version 1.1.4 (January 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.4) for  Equation (<span class="ltx_text ltx_ref_tag">25.15.6</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E6" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E6</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E6.tex">TeX</a>, <a href="./25.15.E6.pmml">pMML</a>, <a href="./25.15.E6.png">png</a>
+</dd>
+<dt>Clarification (effective with 1.1.4):</dt>
+<dd>
+The upper-index of the finite sum which originally was <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>, was replaced
+with <math class="ltx_Math" altimg="m35.png" altimg-height="20px" altimg-valign="-4px" altimg-width="52px" alttext="k-1" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></math> since <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\chi(k)=0" display="inline"><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+
+<p><span class="ltx_font_italic">Suggested 2021-08-23 by Gergő Nemes</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#i.info" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(i)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="ii" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">§25.15(ii) </span>Zeros</h2>
+<div id="ii.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Keywords:</dt>
+<dd>
+<a class="ltx_keyword" href="./search/search?q=Dirichlet%20L-functions">Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi>L</mi></math>-functions</a>, <a class="ltx_keyword" href="./search/search?q=Dirichlet%20theorem">Dirichlet’s theorem</a>, <a class="ltx_keyword" href="./search/search?q=in%20arithmetic%20progressions">in arithmetic progressions</a>, <a class="ltx_keyword" href="./search/search?q=prime%20numbers">prime numbers</a>, <a class="ltx_keyword" href="./search/search?q=zeros">zeros</a>
+</dd>
+<dt>Notes:</dt>
+<dd>See <cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib118" title="Note on the trivial zeros of Dirichlet L -functions" class="ltx_ref">1985b</a>)</cite>.</dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.ii" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.ii</a></dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="ii.p1" class="ltx_para">
+<p class="ltx_p">Since <math class="ltx_Math" altimg="m8.png" altimg-height="25px" altimg-valign="-7px" altimg-width="108px" alttext="L\left(s,\chi\right)\neq 0" display="inline"><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></math> if <math class="ltx_Math" altimg="m13.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&gt;1" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&gt;</mo><mn>1</mn></mrow></math>,
+(<a href="./25.15#E5" title="(25.15.5) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25.15.5</span></a>) shows that for a primitive character <math class="ltx_Math" altimg="m18.png" altimg-height="17px" altimg-valign="-6px" altimg-width="17px" alttext="\chi" display="inline"><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi></math> the only
+zeros of <math class="ltx_Math" altimg="m7.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(s,\chi\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math> for <math class="ltx_Math" altimg="m11.png" altimg-height="19px" altimg-valign="-3px" altimg-width="67px" alttext="\Re s&lt;0" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>&lt;</mo><mn>0</mn></mrow></math> (the so-called trivial
+zeros) are as follows:</p>
+<div class="ltx_equation_container">
+<table id="E7" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.7</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E7.png" altimg-height="40px" altimg-valign="-7px" altimg-width="366px" alttext="L\left(-2n,\chi\right)=0\text{ if }\chi(-1)=1," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow></mrow><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> if </mtext><mo>⁢</mo><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m37.png" altimg-height="21px" altimg-valign="-6px" altimg-width="127px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>,</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E7.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=zeros">zeros</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib118" title="Note on the trivial zeros of Dirichlet L -functions" class="ltx_ref">1985b</a>, p. 29)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E7" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E7</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E7.tex">TeX</a>, <a href="./25.15.E7.pmml">pMML</a>, <a href="./25.15.E7.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#ii.info" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ltx_equation_container">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.8</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E8.png" altimg-height="40px" altimg-valign="-7px" altimg-width="453px" alttext="L\left(-2n-1,\chi\right)=0\text{ if }\chi(-1)=-1," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> if </mtext><mo>⁢</mo><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row"><td class="ltx_eqn_cell ltx_align_right" colspan="4"><span class="ltx_constraint"><math class="ltx_Math" altimg="m37.png" altimg-height="21px" altimg-valign="-6px" altimg-width="127px" alttext="n=0,1,2,\dots" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</span></td></tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E8.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m38.png" altimg-height="13px" altimg-valign="-2px" altimg-width="17px" alttext="n" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi></math>:  nonnegative integer</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=zeros">zeros</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib118" title="Note on the trivial zeros of Dirichlet L -functions" class="ltx_ref">1985b</a>, p. 29)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E8" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E8</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E8.tex">TeX</a>, <a href="./25.15.E8.pmml">pMML</a>, <a href="./25.15.E8.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#ii.info" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ii.p2" class="ltx_para">
+<p class="ltx_p">There are also infinitely many zeros in the critical strip
+<math class="ltx_Math" altimg="m4.png" altimg-height="21px" altimg-valign="-5px" altimg-width="105px" alttext="0\leq\Re s\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>≤</mo><mn>1</mn></mrow></math>, located symmetrically about the critical line
+<math class="ltx_Math" altimg="m12.png" altimg-height="29px" altimg-valign="-9px" altimg-width="70px" alttext="\Re s=\frac{1}{2}" display="inline"><mrow><mrow><mi href="./1.9#E2" mathvariant="normal" title="real part">ℜ</mi><mo lspace="0.167em">⁡</mo><mi href="./25.1#t1.r5" title="complex variable">s</mi></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>, but not necessarily symmetrically about the real
+axis.</p>
+<div class="ltx_equation_container">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.9</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E9.png" altimg-height="40px" altimg-valign="-7px" altimg-width="278px" alttext="L\left(1,\chi\right)\neq 0\text{ if }\chi\neq\chi_{1}," display="block"><mrow><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mn>1</mn><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>≠</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> if </mtext><mo>⁢</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi></mrow><mo>≠</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E9.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=zeros">zeros</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, p. 149)</cite></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E9" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E9</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E9.tex">TeX</a>, <a href="./25.15.E9.pmml">pMML</a>, <a href="./25.15.E9.png">png</a>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#ii.info" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p class="ltx_p">where <math class="ltx_Math" altimg="m21.png" altimg-height="17px" altimg-valign="-6px" altimg-width="27px" alttext="\chi_{1}" display="inline"><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></math> is the principal character <math class="ltx_Math" altimg="m32.png" altimg-height="25px" altimg-valign="-7px" altimg-width="88px" alttext="\pmod{k}" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0.167em">mod</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mrow><mo stretchy="false">)</mo></mrow></math>. This result plays an
+important role in the proof of Dirichlet’s theorem on primes in arithmetic
+progressions (§<a href="./27.11" title="§27.11 Asymptotic Formulas: Partial Sums ‣ Multiplicative Number Theory ‣ Chapter 27 Functions of Number Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">27.11</span></a>). Related results are:
+</p>
+<div class="ltx_equation_container">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody>
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_left"><span class="ltx_tag ltx_tag_equation ltx_align_left">25.15.10</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math class="ltx_Math" altimg="E10.png" altimg-height="107px" altimg-valign="-44px" altimg-width="408px" alttext="L\left(0,\chi\right)=\begin{cases}\displaystyle-\frac{1}{k}\sum_{r=1}^{k-1}r%
+\chi(r),&amp;\chi\neq\chi_{1},\\
+0,&amp;\chi=\chi_{1}.\end{cases}" display="block"><mrow><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mn>0</mn><mo>,</mo><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mi>r</mi><mo>⁢</mo><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>≠</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>0</mn><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>=</mo><msub><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mn>1</mn></msub></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr><td class="ltx_align_right" colspan="4">
+<div id="E10.info" class="ltx_metadata ltx_info">
+<span href="" class="ltx_infoicon ltx_icon" title="Show Annotations"><span class="ltx_font_bold">ⓘ</span></span>
+<div class="ltx_infocontent">
+<dl>
+<dt>Symbols:</dt>
+<dd>
+<a href="./25.15#E1" title="(25.15.1) ‣ §25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m6.png" altimg-height="25px" altimg-valign="-7px" altimg-width="70px" alttext="L\left(\NVar{s},\NVar{\chi}\right)" display="inline"><mrow><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi><mo>⁡</mo><mrow><mo>(</mo><mi class="ltx_nvar" href="./25.1#t1.r5" title="complex variable">s</mi><mo>,</mo><mi class="ltx_nvar" href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>)</mo></mrow></mrow></math>: Dirichlet <math class="ltx_Math" altimg="m5.png" altimg-height="18px" altimg-valign="-2px" altimg-width="18px" alttext="L" display="inline"><mi href="./25.15#E1" title="Dirichlet 𝐿-function">L</mi></math>-function</a>,
+<a href="./25.1#t1.r1" title="§25.1 Special Notation ‣ Notation ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>:  nonnegative integer</a> and
+<a href="./25.15#i.p1" title="§25.15(i) Definitions and Basic Properties ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><math class="ltx_Math" altimg="m16.png" altimg-height="25px" altimg-valign="-7px" altimg-width="46px" alttext="\chi(n)" display="inline"><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">n</mi><mo stretchy="false">)</mo></mrow></mrow></math>:  Dirichlet character</a>
+</dd>
+<dt>Keywords:</dt>
+<dd><a class="ltx_keyword" href="./search/search?q=zeros">zeros</a></dd>
+<dt>Source:</dt>
+<dd><cite class="ltx_cite ltx_citemacro_citet">Apostol (<a href="./bib/#bib115" title="Introduction to Analytic Number Theory" class="ltx_ref">1976</a>, Theorem 12.20, p. 268)</cite></dd>
+<dt>Referenced by:</dt>
+<dd><a href="./errata/#V1.1.4.I1.ix7" title="In Errata ‣ Version 1.1.4 (January 15, 2022) ‣ Errata" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Erratum (V1.1.4) for  Equation (<span class="ltx_text ltx_ref_tag">25.15.10</span>)</span></a></dd>
+<dt>Permalink:</dt>
+<dd><a href="./25.15.E10" title="" class="ltx_ref">http://dlmf.nist.gov/25.15.E10</a></dd>
+<dt>Encodings:</dt>
+<dd>
+<a href="./25.15.E10.tex">TeX</a>, <a href="./25.15.E10.pmml">pMML</a>, <a href="./25.15.E10.png">png</a>
+</dd>
+<dt>Clarification (effective with 1.1.4):</dt>
+<dd>
+The upper-index of the finite sum which originally was <math class="ltx_Math" altimg="m36.png" altimg-height="18px" altimg-valign="-2px" altimg-width="16px" alttext="k" display="inline"><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi></math>, was replaced
+with <math class="ltx_Math" altimg="m35.png" altimg-height="20px" altimg-valign="-4px" altimg-width="52px" alttext="k-1" display="inline"><mrow><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo>−</mo><mn>1</mn></mrow></math> since <math class="ltx_Math" altimg="m15.png" altimg-height="25px" altimg-valign="-7px" altimg-width="83px" alttext="\chi(k)=0" display="inline"><mrow><mrow><mi href="./25.15#i.p1" title="Dirichlet character">χ</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi href="./25.1#t1.r1" title="nonnegative integer">k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+
+<p><span class="ltx_font_italic">Suggested 2021-08-23 by Gergő Nemes</span></p>
+</dd>
+<dt>See also:</dt>
+<dd>Annotations for <a href="./25.15#ii.info" title="§25.15(ii) Zeros ‣ §25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15(ii)</span></a>,
+<a href="./25.15#info" title="§25.15 Dirichlet 𝐿-functions ‣ Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§25.15</span></a> and
+<a href="./25#info" title="Chapter 25 Zeta and Related Functions" class="ltx_ref"><span class="ltx_text ltx_ref_tag">Ch.25</span></a>
+</dd>
+</dl>
+</div>
+</div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+</div>
+<div class="ltx_page_footer">
+<div class="ltx_siblings">
+<a href="./25.14" title="In Related Functions ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.14 </span>Lerch’s Transcendent</span></a><a href="./25.16" title="In Applications ‣ Chapter 25 Zeta and Related Functions" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">25.16 </span>Mathematical Applications</span></a>
+</div>
+<div class="ltx_footer_links ltx_centering">
+<a href="./about/notices">© 2010–2026 NIST</a> / <a href="./about/notices#S2">Disclaimer</a> / <a href="/cdn-cgi/l/email-protection#1b5f57565d367d7e7e7f797a78705b7572686f357c746d">Feedback</a>;
+ Version 1.2.8;
+Release date 2026-09-15.</div>
+<span id="pagesettings"></span>
+<div class="ltx_nist_links">
+<span class="ltx_nist_logo"><a href="http://www.nist.gov/" title="National Institute of Standards and Technology" class="NISTLogo"><span>NIST</span></a></span><p class="ltx_nist_extra ltx_align_right"><a href="https://www.nist.gov/privacy-policy">Site Privacy</a> <a href="https://www.nist.gov/oism/accessibility">Accessibility</a> <a href="https://www.nist.gov/privacy">Privacy Program</a> <a href="https://www.nist.gov/oism/copyrights">Copyrights</a> <a href="https://www.commerce.gov/vulnerability-disclosure-policy">Vulnerability Disclosure</a> <a href="https://www.nist.gov/no-fear-act-policy">No Fear Act Policy</a> <a href="https://www.nist.gov/foia">FOIA</a> <a href="https://www.nist.gov/environmental-policy-statement">Environmental Policy</a> <a href="https://www.nist.gov/summary-report-scientific-integrity">Scientific Integrity</a> <a href="https://www.nist.gov/nist-information-quality-standards">Information Quality Standards</a> <a href="https://www.commerce.gov/">Commerce.gov</a> <a href="http://www.science.gov/">Science.gov</a> <a href="http://www.usa.gov/">USA.gov</a></p>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a47f7f435eaca708',t:'MTc5MTU3MTA1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

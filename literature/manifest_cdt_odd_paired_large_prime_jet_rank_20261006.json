@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-06",
+  "status": "final-paper-proved; author/root/quarter full mathematical and static verifier reviews passed; frozen read-only",
+  "proof": {
+    "path": "research/cdt_odd_paired_large_prime_jet_rank_20261006.md",
+    "sha256": "39a0b6f80c4020602aff6dccded6d8da71ce0288b06a4ad86890be3265deb0f5",
+    "actual_author_read": "Complete J1-J23 after save, untruncated",
+    "claims": [
+      "For every n>=1 and prime 3n<p<=6n, exact kernel dimension of the actual paired reduction evaluated on all unit-tail negative nodes",
+      "Whole-X strong/weak p and weak/weak p2 divisibility of p5 times the same actual form",
+      "All-minor polygon lower bound; full determinant Gauss bound -10n+2k without Gram unit hypothesis",
+      "Signed all-prime common-content bound with safe n2 cost 1069856243/24190320, reducing the frozen baseline by exactly 2/3"
+    ],
+    "not_claimed": ["Exact Smith exponents", "Infinite nonzero", "Matched analytic/arithmetic margin", "Special-value irrationality", "Nontrivial psi higher layers at p<=3n", "Combination with an unread peer Plucker refinement"]
+  },
+  "frozen_inputs_actual_read_this_round": [
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_20261006.md",
+      "sha256": "55278a0ed68b645fc5cb2f3089563e49c30e608ace9de511cc80d37609b712dc",
+      "scope": "Complete B1-B22, twice full output; same-object basis, whole-X form, cap, continuous model, PNT, primitive content accounting, true GL psi interface"
+    },
+    {
+      "path": "literature/manifest_cdt_odd_paired_all_prime_budget_20261006.json",
+      "sha256": "e8da21a80cd7a67e6ea9dfdfa95a054b49a8508ada547e46082c5bd5d9c296a5",
+      "scope": "Complete receipt, read only; historical source/read counts not promoted to current round"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "scope": "Complete I1-I25 after a truncated combined call was supplemented by a full separate read"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006.md",
+      "sha256": "4d907340bf9752b3fee94173ecaaddfd81b11cfb5760e8c9954ae4528ce6581b",
+      "scope": "Complete A1-A13, formula checks and actual weak-lift distinction; no producer execution"
+    },
+    {
+      "path": "research/cdt_odd_mixed_double_pole_arithmetic_cost_20261006.md",
+      "sha256": "452b9202ab3460f95e1ac5500092146cbe2ba0f9ed1e0a22bf5acb0a291fe985",
+      "scope": "Complete A1-A14 including A30a after truncated initial calls were supplemented; repeated exact U,V coefficient reads before own first execution"
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_verify_20261006.json",
+      "sha256": "7cb512f237d3d29370e164ff3fe69bd319d8685582ef7c6d46d7adf9f738e14b",
+      "scope": "Read-only three affine terminal segments 3<x<4, 4<x<5, 5<x<6; not a new run and not a full JSON read"
+    }
+  ],
+  "primary_sources": {
+    "new_pdf_download_count": 0,
+    "actual_primary_pdf_pages_used_by_this_proof": 0,
+    "note": "Wilson identities, parity dimensions, lifting and minor divisibility are proved in the NEW paper. PNT reduction is the actually reread frozen B15 proof. Subsequent independent peer review actually read 23 primary PDF pages and is documented in its own NEW receipt; these are not source pages for the jet proof."
+  },
+  "own_new_verifier": {
+    "path": "research/cdt_odd_paired_large_prime_jet_rank_20261006_verify.py",
+    "sha256": "5c1df7cf287e6865561d22871f8f8ff61a03f1f090a25b9d04b0ad1c1516a17e",
+    "output_path": "research/cdt_odd_paired_large_prime_jet_rank_20261006_verify.json",
+    "output_sha256": "190e0aea7a126438037709328576e779b8454c79c815067dc88d6c1b3ac5a99e",
+    "new_math_producer_count": 1,
+    "first_execution_count": 1,
+    "successful_execution_count": 1,
+    "failed_execution_count": 0,
+    "rerun_count": 0,
+    "status": "PASS",
+    "case_count": 43,
+    "exact_checks": 15383,
+    "actual_read": "Complete source before first execution and complete JSON afterward; no execution after output existed",
+    "pre_first_run_static_correction": "U_j a coefficient corrected from -4 to -8 before the first execution, as required by (s-1)(s-3)! at s=5. It was not a failed run or rerun.",
+    "scope": "n=1..10, every prime 3n<p<=6n; actual primitive-constraint ranks, exact kernel dimensions, stripped units and p2 jet checks for integer sources (0,1),(1,1). Weak modp coefficient representatives are not claimed to be exact characteristic-zero paired lifts.",
+    "does_not_replace": "All-n paper proof, whole-X proof, exact Smith unit proof, infinite nonzero or matched margin"
+  },
+  "independent_reviews": [
+    {
+      "reviewer": "root",
+      "scope_confirmed": "Complete J1-J23; exact Wilson units, overlap parity, actual paired lifts, whole-X DND; complete new Python source and all 43 JSON cases/fields read statically",
+      "status": "PASS notification received, no peer producer executed"
+    },
+    {
+      "reviewer": "quarter_actual_rank",
+      "formal_review_path": "research/cdt_odd_paired_dual_jet_budget_independent_review_20261006.md",
+      "formal_review_sha256": "7fa899348497a05b07eafa45fc75828f999550f0b6bc3d76e74b61c5b0db296a",
+      "scope_confirmed": "Complete J1-J23, complete new Python and all 43 JSON cases; actual paired lifts, polygon scope and full interval gain; author has actually read the saved formal review",
+      "status": "PASS"
+    },
+    {
+      "reviewer": "conifold_arithmetic_hypothesis",
+      "scope_confirmed": "Complete J1-J23 paper mathematics; factorial/Wilson/parity and actual lift/minor bounds; no claim that this reviewer read the own Python/JSON/receipt",
+      "status": "Paper PASS notification received; no duplicate formal review requested"
+    }
+  ],
+  "old_or_peer_math_execute_import_rerun_count": 0,
+  "subsequent_independent_peer_review": {
+    "path": "research/cdt_odd_paired_auxiliary_pade_symplectic_defect_independent_review_20261006.md",
+    "sha256": "c4b9df9278f5882666bed21f7f56bb718aa6d8ad5e0425abda3064f6d95b96ef",
+    "status": "final full author reread and root full review passed; frozen read-only",
+    "peer_proof_path": "research/cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006.md",
+    "peer_proof_sha256": "452d0271f294b304f3b8bd2a65b343ae5e8b1af128267750e7c9118862066be2",
+    "actual_read": "Complete ten sections/D1-D25; full peer Python 0000ef0f9b98659874603579fc9cf60d1ed5572940f1c150ab007fdd1fa84504 and full JSON e751f6c57b27ccf4624bd12b27827bd3edbcfb3e9413d08162238cef2ec7bef7 read statically; frozen dcc6 CRT structure full reread",
+    "author_receipt_read": {
+      "path": "literature/manifest_cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006.json",
+      "candidate_full_read_sha256": "2f6f331bae4c99ea18dbc9e1c11a953b8b0fa2982bd062fb10a5949abe742f7c",
+      "final_full_supplement_read_sha256": "f0502fc3539c08c95aa979c502eb5bda26d8c467734eb406e58ac68304d417da"
+    },
+    "actual_primary_reads": [
+      {
+        "path": "literature/cdt_paired_auxiliary_pade_sources_20261006/beckermann_labahn2000_fraction_free_matrix_interpolants.pdf",
+        "sha256": "be8c6e160d89d313c04ad5b3a9ec375d3a138a59aeb79d085c204bb3799397ec",
+        "source_url": "https://cs.uwaterloo.ca/~glabahn/Papers/exact.pdf",
+        "pdf_pages": 31,
+        "reviewer_actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+        "method": "Complete UTF-8 saved PDF text in two untruncated outputs, pages1-7 and8-15",
+        "used_scope": "Normality versus controllability, Mahler leading degrees, perfect-path Theorem6.1 with explicit nonzero stepping hypotheses; pages16-31 not read"
+      },
+      {
+        "path": "literature/cdt_paired_auxiliary_pade_sources_20261006/dandrea_krick_szanto2014_subresultants_rational_interpolation_arxiv1211_6895v3.pdf",
+        "sha256": "ae342d1a2085ce1052f8e78e1b9ff8e58d74ffab6343e6465753b291bf98ae65",
+        "source_url": "https://arxiv.org/pdf/1211.6895v3",
+        "pdf_pages": 14,
+        "reviewer_actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8],
+        "method": "Complete UTF-8 saved PDF text in one untruncated output",
+        "used_scope": "Padded monic principal-subresultant convention, PRS/reconstruction nonzero conditions and determinantal interpolation; pages9-14 not read"
+      }
+    ],
+    "actual_distinct_pdf_pages_read_for_review": 23,
+    "reviewer_new_pdf_download_count": 0,
+    "peer_mathematical_execute_import_rerun_count": 0,
+    "reviewer_math_producer_count_for_this_review": 0,
+    "passed_scope": "Weak-Popov/index, unimodular symplectic paired degree defects, exact actual coranks, padded PSC sign, ambient unit with target complementary minor retained, real p37 nonperfect intermediate profile",
+    "not_claimed": "Infinite simultaneous target units, all-r balanced profiles, new all-prime cost from the defect interface or special-value irrationality"
+  },
+  "guard": "Old and peer mathematical MD/PY/JSON/manifests read only. Own output guard prohibits rerun. Metadata hash/read and PDF extraction are not mathematical producer executions.",
+  "future_review_scope": "Additional peer independent review receipts, if any, are saved as separate NEW artifacts and are not retroactively added to frozen historical inputs."
+}

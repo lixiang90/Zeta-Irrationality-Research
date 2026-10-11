@@ -1,0 +1,48 @@
+{
+  "status": "fixed_late_packet_rank_checks_passed",
+  "source_sha256": "6993226db6febfae3c6fd1d58318491e14270b53b3505b86f5fbbf13e4be69db",
+  "script_sha256": "d645bbf731e174034a7162fe4ba5d5be5a1e1dadf10d8abcfa434fb6ab37ee24",
+  "fixed_results": [
+    {
+      "prime": 7,
+      "degree": 3,
+      "residue_root": null,
+      "diagnostic_cutoff": 16,
+      "late_length": 9,
+      "columns": 12,
+      "exact_rank": 9,
+      "late_defect": 0
+    },
+    {
+      "prime": 11,
+      "degree": 5,
+      "residue_root": 4,
+      "diagnostic_cutoff": 24,
+      "late_length": 13,
+      "columns": 18,
+      "exact_rank": 13,
+      "late_defect": 0
+    },
+    {
+      "prime": 11,
+      "degree": 5,
+      "residue_root": 7,
+      "diagnostic_cutoff": 24,
+      "late_length": 13,
+      "columns": 18,
+      "exact_rank": 13,
+      "late_defect": 0
+    },
+    {
+      "prime": 13,
+      "degree": 6,
+      "residue_root": null,
+      "diagnostic_cutoff": 28,
+      "late_length": 15,
+      "columns": 21,
+      "exact_rank": 15,
+      "late_defect": 0
+    }
+  ],
+  "scope": "Exact ranks of four preselected target late-packet matrices. No prime scan, no complete primitive Taylor flag, no all-prime normality theorem, no positive net Smith gain, no numerical theorem."
+}

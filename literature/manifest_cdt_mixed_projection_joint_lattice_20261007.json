@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-07",
+  "written_utc": "2026-10-07T10:42:21.520033+00:00",
+  "classification": "progress",
+  "objective_status": "active; numerical irrationality/LI objective not achieved",
+  "new_numerical_theorem": false,
+  "repository_sync": "Previously completed: E:/codex-build/math main=origin/main=verified cloud HEAD adc7f1241b42e322a6451854ab7e4b4c146bf78a; tracked132851,missing0,clean. No repeat Git operation this math round.",
+  "previous_main_prefix": {
+    "bytes": 442722,
+    "sha256": "2276470f73051002e5a62e8fe6724cadfc8ceed4fa9b728136b250f238a93fa2",
+    "byte_preservation_verified": true,
+    "scope": "historical full-main pin preserved as prefix; section213 appended"
+  },
+  "predecessor_manifest": {
+    "path": "literature/manifest_cdt_theta_involution_universal_20261007.json",
+    "sha256": "86e3ccb95fb16e135f18821866a36fb04006b07d3beda1e600a339bc4a6741cb",
+    "unchanged": true
+  },
+  "key_results": [
+    "Actual mixed rank4 projection versus full rank5; precise pure/mixed branch distinctions",
+    "Actual common glued surface r_R>pi; restricted derivative>pi and finite Jensen/fiber functional, no numerical uniformizer or sharp glued J",
+    "All finite primes and powers: mixed nonzero a,b min fixed N^e/finiteLCM cost over every full Q(x) basis61/32; does not exclude general joint lattices",
+    "Old mixed raw kernel36N-1,filtered40N-1 versus pure48N; explicit full-rank Jacobi integer sublattice with exp(O_mu(N)) height",
+    "Reduced nprime44N-1,Lprime55N-1,pool44N; enough independent polynomial pairs, not moment determinant nonvanishing"
+  ],
+  "remaining_required_proofs": [
+    "Nonvanishing of actual mixed moment determinant",
+    "Full primitive integer lattice or adequate index/prime estimates including every power",
+    "Real-place bound and strict comparison for this same moment object",
+    "Nonlinear wheel route: explicit rational Taylor deformation, target projection and integer model"
+  ],
+  "reviews": [
+    {
+      "path": "research/cdt_mixed_catalan_pi2_geometry_20261007.md",
+      "root": "FULL final nine sections M1-M31 paper PASS",
+      "independent": "universal FULL M1-M30; M31 from independently FULL reviewed arithmetic; author final FULL"
+    },
+    {
+      "path": "research/cdt_mixed_catalan_pi2_arithmetic_independent_20261007.md",
+      "root": "FULL five sections M1-M19,matching and eight costs paper PASS",
+      "independent": "theta FULL paper PASS; gamma author final FULL"
+    },
+    {
+      "path": "research/cdt_mixed_joint_taylor_lattice_20261007.md",
+      "root": "FULL six sections J1-J5 and source; all37 record summaries",
+      "independent": "theta FULL note/source,complete JSON metadata/table check; gamma FULL source/JSON and one D2 minors example"
+    },
+    {
+      "path": "research/catalan_mixed_two_end_contact_support_lemma_20261007.md",
+      "root": "FULL final ten sections paper PASS",
+      "independent": "gamma FULL note/scope and original1-263 PASS; author final FULL; review receipt pinned"
+    }
+  ],
+  "executions": {
+    "new_producer": "research/cdt_mixed_taylor_lattice_20261007.py",
+    "actual_runs": "initial12 then updated12+25 after adding wider kernels",
+    "independent_crosscheck": "one m4,D2,N6,36 maximal minors,delta16,ideal8/675Z",
+    "other_root_math": "inline exact fixed-type costs and small flint HNF matrix/API check",
+    "historical_producer_runs": 0,
+    "old_guard_runs": 0,
+    "prime_table_extensions": 0,
+    "PSLQ": 0,
+    "Lean": 0,
+    "formal_verification_claimed": false
+  },
+  "finite_JSON_scope": {
+    "parameters": {
+      "a": "1",
+      "b": "1",
+      "u": "0"
+    },
+    "target_relation_assumed": false,
+    "rank_one_records": 12,
+    "wider_records": 25,
+    "D_max": 6,
+    "full_H_U_inverse_unit_saved": false,
+    "minimality": "paper proof plus audited source assertions; not37 independent HNF recalculations",
+    "height": "returned witness only, notminimum or asymptotic",
+    "all_degree_perfectness_claimed": false
+  },
+  "actual_reading_scopes": {
+    "CDT_root": "v2 physical66-69;visual66;notfullpaper",
+    "Brown2026_root": "physical1,31-34;visual32/34;notfull35pages",
+    "BrownSchnetz_v3_root": "physical1-3,11-12;visual1;notfull39pages;v2HTML superseded",
+    "nonlinear_independent": "theta Brown32/34 and BS1/12 text+visual;BS2/3 text;no supplied code",
+    "original_foundations": "universal FULL1-434;root/gamma1-263;verbatim archive",
+    "novelty": "precise per-paper receipt in catalan_pi2_mixed_novelty_source_scope_20261007.md",
+    "DLMF": "selected Jacobi orthogonality/Rodrigues/E8 only;2HTML+1TeX archived;notfullchapter",
+    "new_root_PDF_downloads": 2,
+    "new_novelty_child_PDF_downloads": 1
+  },
+  "artifacts": [
+    {
+      "path": "research/cdt_mixed_catalan_pi2_geometry_20261007.md",
+      "bytes": 21079,
+      "sha256": "158a2f428d44d37bc717605c52dce2ae097755456757e9dba05ecf52a6997434"
+    },
+    {
+      "path": "research/cdt_mixed_catalan_pi2_arithmetic_independent_20261007.md",
+      "bytes": 10445,
+      "sha256": "2e860218a4286774cdc267a35b661f9faa1e38900afe807c2d3c502df3a75dcd"
+    },
+    {
+      "path": "research/cdt_mixed_joint_taylor_lattice_20261007.md",
+      "bytes": 8400,
+      "sha256": "48c2c3e5b90a57000ca01c1ea4b14a9dbb4cd81310452a9791d6b5dc8ccca853"
+    },
+    {
+      "path": "research/catalan_mixed_two_end_contact_support_lemma_20261007.md",
+      "bytes": 23790,
+      "sha256": "bf398657f8d4d4f8b2148768b960147be476c040cbdf05acafa9bca36b4e51e8"
+    },
+    {
+      "path": "research/catalan_mixed_two_end_contact_review_receipt_20261007.md",
+      "bytes": 3426,
+      "sha256": "bc9d2424c13f2466fab8612ff0ba9ad908f95da0ffc531e1ab26cfa93e808a22"
+    },
+    {
+      "path": "research/cdt_mixed_projection_round213_20261007.md",
+      "bytes": 7669,
+      "sha256": "33f23c3c8cad6f4ca5bde66e90e099511ddc4e205e690bd8d16de1401bbc3ea3"
+    },
+    {
+      "path": "research/cdt_mixed_taylor_lattice_20261007.py",
+      "bytes": 9341,
+      "sha256": "94fb54663427497eb6e192504d317ed8d073fc528f043215c25ffe238cd19158"
+    },
+    {
+      "path": "research/cdt_mixed_taylor_lattice_20261007.json",
+      "bytes": 161378,
+      "sha256": "ee64d2c955df9b4e6d53d9039cde33256070a27f707188860bb3629bf95e3345"
+    },
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "bytes": 450395,
+      "sha256": "00d0b0f54903deb32c8cce251961cddab75a90256b4b00d1bc828cc3199948d4"
+    },
+    {
+      "path": "research/cdt_theta_universal_cover_boundary_20261007.md",
+      "bytes": 16158,
+      "sha256": "d1454707b5868eed29e24cfcc6f5262e63806ca355c4cca9dc28a6a2ad27576b"
+    },
+    {
+      "path": "literature/catalan_pi2_mixed_novelty_source_scope_20261007.md",
+      "bytes": 11726,
+      "sha256": "48b44798a7f36352333c61aa65a1c06ca93a788d4de0e9e0f5cb97ccfdaaf101"
+    },
+    {
+      "path": "literature/catalan_mixed_contact_jacobi_source_scope_20261007.md",
+      "bytes": 2538,
+      "sha256": "089dc87166ff243f29405d1e067d483c56e842c82c242447cfd238644e55cece"
+    },
+    {
+      "path": "literature/viola_zudilin2014_dilogarithmic_li_mpim1426.pdf",
+      "bytes": 545480,
+      "sha256": "39b606010cb25a07595310de80208e3031d0c3b7046752f9a97f32a2eb64799a"
+    },
+    {
+      "path": "literature/cdt2024_l2_chi_minus3.pdf",
+      "bytes": 4517169,
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771"
+    },
+    {
+      "path": "literature/manifest_cdt_theta_involution_universal_20261007.json",
+      "bytes": 16032,
+      "sha256": "86e3ccb95fb16e135f18821866a36fb04006b07d3beda1e600a339bc4a6741cb"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/brown2026_nonlinear_mzv_v1.html",
+      "bytes": 1232407,
+      "sha256": "5cc440ea8bc9527a9775231231418d1134c6e2c101ff59254033f9ae3caa51fe"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/brown2026_nonlinear_mzv_v1.pdf",
+      "bytes": 1152163,
+      "sha256": "a772ebd41d15205ee1d8510f6cd824683d73bf49b792336977ac2b6b67d50b56"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/brown_schnetz2025_wheel_classes_v3.html",
+      "bytes": 3078706,
+      "sha256": "e8a98545a291f48868f1712dd9bd4f5d8e712ac976ab1f2d3c894b7b06472201"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/brown_schnetz2025_wheel_classes_v3.pdf",
+      "bytes": 639140,
+      "sha256": "d23dbaa93bacb31eaa4ef7787903a8fe2f8d9b1f35bf76542b4db8db812c9f8f"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/dlmf18_3_jacobi.html",
+      "bytes": 159368,
+      "sha256": "9b100d95d95bc5f4a7044b793aa43d70b8b5351e9165b607705f1cc932c7a6ca"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/dlmf18_5_e8.tex",
+      "bytes": 313,
+      "sha256": "6f95e87141d1cff33e22796229fe937e64d5a2bf58c81eb65bd73ffa77a088d3"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/dlmf18_5_jacobi.html",
+      "bytes": 385438,
+      "sha256": "9f2d14bf4a0162129f5c93b04a71d6690bea8cfa0ef067b003ab59f59b6df6fb"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/download_receipt.json",
+      "bytes": 1901,
+      "sha256": "9e82f1b928b251cf6c248a711cbc5dd20919139a273b3f6f4efc8b73669f08e9"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/openai_catalan_foundations_current.tex",
+      "bytes": 17469,
+      "sha256": "21633dce32e242555dde97f82f1124f3524641bb69a2f16b7485177b667cb738"
+    },
+    {
+      "path": "literature/cdt_mixed_new_sources_20261007/reading_scope.md",
+      "bytes": 4442,
+      "sha256": "d896c6b009fb1b0df1a859cc2313add19eccd22af337dc977be002f392856bc9"
+    }
+  ],
+  "local_links": {
+    "checked": 16,
+    "all_exist": true,
+    "scope": "new notes and scopes plus universal input; notallhistoricalmainlinks;currentmanifest checked separately after creation",
+    "links": [
+      {
+        "from": "research/cdt_mixed_catalan_pi2_geometry_20261007.md",
+        "target": "cdt_mixed_catalan_pi2_arithmetic_independent_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_catalan_pi2_geometry_20261007.md",
+        "target": "../literature/catalan_pi2_mixed_novelty_source_scope_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_joint_taylor_lattice_20261007.md",
+        "target": "E:/kimi-build/zeta5/research/cdt_mixed_catalan_pi2_arithmetic_independent_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_joint_taylor_lattice_20261007.md",
+        "target": "E:/kimi-build/zeta5/research/cdt_mixed_taylor_lattice_20261007.py"
+      },
+      {
+        "from": "research/cdt_mixed_joint_taylor_lattice_20261007.md",
+        "target": "E:/kimi-build/zeta5/research/cdt_mixed_taylor_lattice_20261007.json"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "cdt_mixed_catalan_pi2_geometry_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "cdt_mixed_catalan_pi2_arithmetic_independent_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "cdt_mixed_joint_taylor_lattice_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "cdt_mixed_taylor_lattice_20261007.py"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "catalan_mixed_two_end_contact_support_lemma_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "../literature/cdt_mixed_new_sources_20261007/reading_scope.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "../literature/catalan_pi2_mixed_novelty_source_scope_20261007.md"
+      },
+      {
+        "from": "research/cdt_mixed_projection_round213_20261007.md",
+        "target": "../literature/catalan_mixed_contact_jacobi_source_scope_20261007.md"
+      },
+      {
+        "from": "research/cdt_theta_universal_cover_boundary_20261007.md",
+        "target": "cdt_weight4_space_germ_bridge_20261007.md"
+      },
+      {
+        "from": "research/cdt_theta_universal_cover_boundary_20261007.md",
+        "target": "cdt_theta_rank_arithmetic_20261007.md"
+      },
+      {
+        "from": "research/cdt_theta_universal_cover_boundary_20261007.md",
+        "target": "cdt_new_repository_carriers_20261007.md"
+      }
+    ]
+  },
+  "not_claimed": [
+    "New numerical irrationality or LI",
+    "Whole original Catalan proof validation",
+    "Numeric period injectivity from DD or motivic freeness",
+    "Transfer of old Chebyshev prime/analytic/nonzero estimates",
+    "Globally complete literature search"
+  ]
+}

@@ -1,0 +1,156 @@
+6                   ROSTYSLAV KOZHAN AND MARCUS VAKTNÄS
+
+    For the converse, assume deg Q ≥ deg P and write
+                                                           N
+                                                           X        λj
+           W (P, Q; x) = −Q(x)2 (P/Q)′ (x) = Q(x)2                          ,     (2.7)
+                                                                 (x − xj )2
+                                                           j=1
+
+where λj is the residue of P/Q at xj . Interlacing P ∼ Q implies that all
+λj ’s are of the same sign, and then the last equality proves that W (P, Q; x)
+does not vanish on R. The case deg Q ≤ deg P can be handled by swapping
+the roles of P and Q.                                                       
+
+
+                    3. Multiple orthogonal polynomials
+3.1. Normality.
+
+  Let r ≥ 1 and consider a system of measures on the real line µ =
+(µ1 , . . . , µr ). µ = (µ1 , . . . , µr ) ∈ M(R)r . Recall the definition of the type I
+and type II multiple orthogonal polynomials (1.2), (1.3).
+  It is not hard to verify that existence and uniqueness of either type I or
+type II polynomials is equivalent to the condition det Hn [µ] 6= 0, where
+                                      (1)      (1)          (1)    
+                                         c0    c1    ···    c|n|−1
+                                      (1)      (1)            (1)  
+                                      c1      c2    ···     c|n| 
+                                                                   
+                                      .         ..  ..         ..  
+                                      ..         .      .       .  
+                                                                   
+                                      (1)      (1)        (1)      
+                                     cn1 −1 cn1 · · · c|n|+n1−2 
+                                                                   
+                                                     ..            
+                       Hn [µ] =                       .            .             (3.1)
+                                                                   
+                                      (r)      (r)          (r)    
+                                      c0      c1    ···    c|n|−1 
+                                      (r)                          
+                                      c        (r)
+                                               c2    ···     c|n| 
+                                                               (r)
+                                      1                            
+                                      .          .              .  
+                                      .          .. ..          .. 
+                                      .                 .          
+                                         (r)    (r)        (r)
+                                        cnr −1 cnr · · · c|n|+nr −2
+      (j)   R
+Here ck = xk dµj (x). If this happens then we say that n is normal with
+respect to µ. µ is perfect if every n ∈ Nr is normal.
+Remark 3.1. It is easy to see that n is normal if and only if there is no
+non-zero solution to (1.3) with deg Pn < |n|. Similarly, n is normal if and
+                                                 (j)
+only if there is no non-zero vector An with deg An ≤ nj − 1 and
+             X r Z
+                      (j)
+                    An (x)xk dµj (x) = 0,    k = 0, . . . , |n| − 1.   (3.2)
+              j=1
+
+3.2. Angelesco systems and their perfectness.
+                    ZEROS OF MOPRL: LOCATION AND INTERLACING                                           7
+
+Definition 3.2. For each 1 ≤ j ≤ r, let µj ∈ M(R). We call (µj )rj=1 an
+Angelesco system if there exist intervals Γj , 1 ≤ j ≤ r, such that supp µj ⊆
+Γj and for each j 6= k, Γj ∩ Γk is either empty or consists of a single point.
+Theorem 3.3. Angelesco systems are perfect.
+                     (j)
+Proof. Write Hnj ,|n| for the j-th block in (3.1). Apply (2.1) r times to each of
+        (j)
+the Hnj ,|n| sequentially (use N = |n| and M = nj ) and use the disjointness
+of the supports of µj to obtain
+                              Z         Z                             Yr
+                       1
+   det Hn =                         ...       ∆|n| (x1 , . . . , xr )     ∆nj (xj ) dnj µj (xj ),
+               n1 ! . . . nr ! Γn1 1       nr
+                                          Γr                          j=1
+                                                                     Q
+where xj = (xj,1 , . . . , xj,nj ), and ∆k (x1 , . . . , xk ) = i<j (xj − xi ) is the k × k
+Vandermonde determinant. We end up with the integral
+                          Z         Z     Y                 Y r
+                 1
+                                ...           ∆(xi , xj )        ∆(xj )2 dnj µj (xj ),       (3.3)
+           n1 ! . . . nr ! Γn1 1      Γnr
+                                       r i<j               j=1
+                          Q
+where ∆(xi , xj ) := α,β (xj,α − xi,β ). Clearly the integrand does not change
+sign, so cannot be zero, and we conclude that n is normal.                                        
+Remark 3.4. Assuming intervals Γj are ordered according to Γi ≤ Γj for
+all i < j, the above proof also shows that det Hn > 0. This fact can be used
+to show that all the nearest-neighbour recurrence coefficients [42] an,j for
+Angelesco systems are positive.
+3.3. AT systems and their perfectness.
+
+  Let Γ be a closed interval of R. A collection (uj (t))nj=1 of continuous real-
+valued functions on Γ is called a Chebyshev system on Γ if the determinant
+                           á                                    ë
+                               u1 (x1 ) u1 (x2 ) · · · u1 (xn )
+                               u2 (x1 ) u2 (x2 ) · · · u2 (xn )
+             Un (x) := det         ..       ..    ..       ..              (3.4)
+                                    .        .       .      .
+                                         un (x1 ) un (x2 ) · · ·        un (xn )
+is non-zero and has a constant sign for any x1 < x2 < . . . < xn on Γ. See [26]
+to more details about the Chebyshev property and its equivalent form.
+Definition 3.5. For each 1 ≤ j ≤ r, let dµj (x) = wj (x)dµ(x) be a mea-
+sure that is absolutely continuous with respect to some µ ∈ M(Γ). We
+call (µj )rj=1 an AT system on Γ for the multi-index n = (n1 , . . . , nr ) if the
+functions
+  {w1 , xw1 , . . . , xn1 −1 w1 , w2 , xw2 , . . . , xn2 −1 w2 , . . . , wr , xwr , . . . , xnr −1 wr }
+                                                                                                    (3.5)
+form a Chebyshev system on Γ.
+Theorem 3.6. If (µj )rj=1 is AT for the index n then n is normal.
+8                    ROSTYSLAV KOZHAN AND MARCUS VAKTNÄS
+
+Proof. Applying the Andreief identity ((2.1) with M = N = |n|) and per-
+forming elementary row operations we arrive to
+                              Z
+                           1
+             det Hn [µ] =           U (x)∆|n| (x) d|n| µ(x),      (3.6)
+                          |n|! Γ|n| |n|
+where W is (3.4) for the system (3.5), and ∆ is again the Vandermonde
+determinant. Since both U|n| and ∆|n| preserve sign on x1 < . . . < x|n| ,
+and simultaneously change sign when we permute the xj ’s, we see that the
+integrand does not change sign. Hence det Hn 6= 0, so that n is normal. 
+Remark 3.7. Similarly to Remark 3.4, we can see that sgn det Hn = sgn Un .
+The collection of signs of Un therefore determines the signs of the nearest-
+neighbour recurrence coefficients an,j for AT systems.
+3.4. Nikishin systems.
+
+   For any set S ⊆ R, we denote S̊ to be the interior of S in the topology
+of R. Given two closed intervals Γ1 and Γ2 with Γ̊1 ∩ Γ̊2 = ∅, and two
+measures σ1 ∈ M(Γ1 ), σ2 ∈ M(Γ2 ), denote hσ1 , σ2 i to be the measure in
+M(Γ1 ) given by
+                     d hσ1 , σ2 i (x) := mσ2 (x)dσ1 (x),              (3.7)
+where mσ2 is the m-function of σ2 (see Section 2.2). Note that the right-hand
+side of (3.7) always defines a finite sign-definite measure on Γ1 assuming that
+Γ1 and Γ2 are disjoint. If Γ1 and Γ2 share a common endpoint however, then
+by writing hσ1 , σ2 i, we implicitly assume that (3.7) defines a finite measure,
+as this is no longer automatic and depends on the behavior of σ1 and σ2 at
+that point.
+Definition 3.8. We say that µ = (µ1 , . . . , µr ) ∈ M(R)r forms a Nikishin
+system generated by (σ1 , . . . , σr ) (we then write µ = N (σ1 , . . . , σr )), if there
+is a collection of closed intervals Γj , j = 1, . . . , r such that
+
+                         Γ̊j ∩ Γ̊j+1 = ∅,           j = 1, . . . , r − 1,                    (3.8)
+and measures σj ∈ M(Γj ), j = 1, . . . , r, so that
+µ1 = σ1 , µ2 = hσ1 , σ2 i , µ3 = hσ1 , hσ2 , σ3 ii , . . . , µr = hσ1 , hσ2 , hσ3 , . . . , σr iii .
+                                                                                              (3.9)
+   It is well-known that Nikishin systems are perfect. The proof for r =
+2 appeared in [14], and for any r ≥ 2 this was shown in [17, 18]. See
+also [8, 11, 15, 16, 32, 33, 37] for related results.
+
+                                    4. Zero location
+4.1. Zero location for Type II multiple orthogonal polynomials.
+

@@ -1,0 +1,59 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                               117
+
+
+   Then,
+             Pl       ∗
+                                                       Pl−1      ∗
+                h=0 sh Lrk · L1            L1 · L1 −      h=0 sh (L1 · L1 − Lrh   · L1 )
+     m≤                              =                                                     .   (7.6.6)
+           log |φ′ (0)| − τ (b; e)                     log |φ′ (0)| − τ (b; e)
+Remark 7.6.7. The special assumption about the linear system (7.6.5) having a
+unique solution with nonnegative components is not automatic, but it seems to
+usually hold in practice. The heuristic behind this particular choice of sh = s∗h is to
+emulate the Euler–Lagrange stationary action principle on our upper bound (7.6.2).
+Namely, we compute the d/dsh derivatives of that upper bound
+                                                 l   ′            ′
+                       ′               ′     ′   X (L · Lrk − L · Lrk−1 )2
+                  2mL · L1 − mL · L −                                      ,
+                                                       log rk − log rk−1
+                                                 k=1
+and set these derivatives to 0.                                                                    △
+Example 7.6.8. Let us revisit now the first case in Example 7.4.6: l = 1, r0 =
+e−1/2 , and 14 putative functions for Theorem A. We have
+                                         C := L1 · L1 = 11.844 . . .
+                                  B := L1 · Le−1/2 = 10.573 . . .
+                              A := Le−1/2 · Le−1/2 = 8.3717 . . . .
+Now the point of the improvement over the previous bound is that
+                           2L1 · Le−1/2 > L1 · L1 + Le−1/2 · Le−1/2 .
+We calculate
+         s0 (B − A) + s1 (C − B)
+   β1 =                            = 2(s0 (B − A) + s1 (C − B)) > 2(C − B) = α1 ,
+              log r1 − log r0
+whence
+                                    1
+                              s∗0 = β1 (s∗0 , s∗1 ) > α1 /m.
+                                    m
+                                      s∗ (C−B)              1 (C−B)/m
+The new convexity saving is by log |φ0′ (0)|−τ (b;e) > logα|φ ′ (0)|−τ (b;e) , where the latter
+
+was the previous convexity saving in Example 7.4.6. Explicitly, we find s∗0 and s∗1
+as the solution of the two linear equations
+           2                                            2
+     s0 = (s0 (B − A) + s1 (C − B)), s1 = 1 − (s0 (B − A) + s1 (C − B)).
+           m                                           m
+The solution is
+                                    C −B
+                      s∗0 =                           = 0.20936 . . .
+                             m/2 + (A + C − 2B)
+resulting in the following improvement convexity saving over Example 7.4.6 (com-
+pare with equation (7.4.7)):
+                     s∗0 (C − B)
+                                        = 0.31426 . . . (> 0.27243 . . .).
+                log |φ′ (0)| − τ (b; e)
+   In other words, the refined holonomy bound on m is here
+                           13.99303 . . . − 0.31426 . . . = 13.678 . . . ,                     (7.6.9)
+giving a still more comfortable numerical margin for the ultimate contradiction
+to m = 14. (A similar but more complicated computation with four radii instead
+of two would also yield a slight improvement on equation (7.4.8) in Example 7.4.6.)
+                                                                                 △
+

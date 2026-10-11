@@ -1,0 +1,2214 @@
+{
+  "scope": "Two fixed exact parametric LPs; per-threshold couplings, endpoint primal/dual interpolation.",
+  "checks": [
+    {
+      "name": "k2 r0 x0 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x0 dual lower envelope",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x0 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x0 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x0 columns",
+      "passed": true,
+      "actual": "[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 1)]"
+    },
+    {
+      "name": "k2 r0 x0 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x0 primal dual equality",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x1/13 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/13 dual lower envelope",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x1/13 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x1/13 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x1/13 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(1, 13), Fraction(1, 13), Fraction(10, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(1, 13), Fraction(1, 13), Fraction(10, 13)]"
+    },
+    {
+      "name": "k2 r0 x1/13 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/13 primal dual equality",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x1/13 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/13 dual lower envelope",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x1/13 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x1/13 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x1/13 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(1, 13), Fraction(1, 13), Fraction(10, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(1, 13), Fraction(1, 13), Fraction(10, 13)]"
+    },
+    {
+      "name": "k2 r0 x1/13 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/13 primal dual equality",
+      "passed": true,
+      "actual": "24/13",
+      "expected": "24/13"
+    },
+    {
+      "name": "k2 r0 x7/26 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x7/26 dual lower envelope",
+      "passed": true,
+      "actual": "43/26",
+      "expected": "43/26"
+    },
+    {
+      "name": "k2 r0 x7/26 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x7/26 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x7/26 columns",
+      "passed": true,
+      "actual": "[Fraction(7, 26), Fraction(7, 26), Fraction(7, 26), Fraction(5, 26)]",
+      "expected": "[Fraction(7, 26), Fraction(7, 26), Fraction(7, 26), Fraction(5, 26)]"
+    },
+    {
+      "name": "k2 r0 x7/26 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x7/26 primal dual equality",
+      "passed": true,
+      "actual": "43/26",
+      "expected": "43/26"
+    },
+    {
+      "name": "k2 r0 x7/26 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x7/26 dual lower envelope",
+      "passed": true,
+      "actual": "43/26",
+      "expected": "43/26"
+    },
+    {
+      "name": "k2 r0 x7/26 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x7/26 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x7/26 columns",
+      "passed": true,
+      "actual": "[Fraction(7, 26), Fraction(7, 26), Fraction(7, 26), Fraction(5, 26)]",
+      "expected": "[Fraction(7, 26), Fraction(7, 26), Fraction(7, 26), Fraction(5, 26)]"
+    },
+    {
+      "name": "k2 r0 x7/26 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x7/26 primal dual equality",
+      "passed": true,
+      "actual": "43/26",
+      "expected": "43/26"
+    },
+    {
+      "name": "k2 r0 x1/3 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/3 dual lower envelope",
+      "passed": true,
+      "actual": "19/13",
+      "expected": "19/13"
+    },
+    {
+      "name": "k2 r0 x1/3 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r0 x1/3 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r0 x1/3 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r0 x1/3 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r0 x1/3 primal dual equality",
+      "passed": true,
+      "actual": "19/13",
+      "expected": "19/13"
+    },
+    {
+      "name": "k2 r1 x1/3 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r1 x1/3 dual lower envelope",
+      "passed": true,
+      "actual": "19/13",
+      "expected": "19/13"
+    },
+    {
+      "name": "k2 r1 x1/3 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r1 x1/3 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r1 x1/3 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r1 x1/3 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r1 x1/3 primal dual equality",
+      "passed": true,
+      "actual": "19/13",
+      "expected": "19/13"
+    },
+    {
+      "name": "k2 r1 x1/2 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r1 x1/2 dual lower envelope",
+      "passed": true,
+      "actual": "25/26",
+      "expected": "25/26"
+    },
+    {
+      "name": "k2 r1 x1/2 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r1 x1/2 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r1 x1/2 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r1 x1/2 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r1 x1/2 primal dual equality",
+      "passed": true,
+      "actual": "25/26",
+      "expected": "25/26"
+    },
+    {
+      "name": "k2 r2 x1/2 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x1/2 dual lower envelope",
+      "passed": true,
+      "actual": "25/26",
+      "expected": "25/26"
+    },
+    {
+      "name": "k2 r2 x1/2 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r2 x1/2 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r2 x1/2 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r2 x1/2 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x1/2 primal dual equality",
+      "passed": true,
+      "actual": "25/26",
+      "expected": "25/26"
+    },
+    {
+      "name": "k2 r2 x10/13 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x10/13 dual lower envelope",
+      "passed": true,
+      "actual": "9/13",
+      "expected": "9/13"
+    },
+    {
+      "name": "k2 r2 x10/13 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r2 x10/13 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r2 x10/13 columns",
+      "passed": true,
+      "actual": "[Fraction(10, 13), Fraction(3, 13), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(10, 13), Fraction(3, 13), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r2 x10/13 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x10/13 primal dual equality",
+      "passed": true,
+      "actual": "9/13",
+      "expected": "9/13"
+    },
+    {
+      "name": "k2 r2 x10/13 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x10/13 dual lower envelope",
+      "passed": true,
+      "actual": "9/13",
+      "expected": "9/13"
+    },
+    {
+      "name": "k2 r2 x10/13 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r2 x10/13 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r2 x10/13 columns",
+      "passed": true,
+      "actual": "[Fraction(10, 13), Fraction(3, 13), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(10, 13), Fraction(3, 13), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r2 x10/13 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x10/13 primal dual equality",
+      "passed": true,
+      "actual": "9/13",
+      "expected": "9/13"
+    },
+    {
+      "name": "k2 r2 x1 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x1 dual lower envelope",
+      "passed": true,
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "k2 r2 x1 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k2 r2 x1 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]",
+      "expected": "[Fraction(1, 13), Fraction(3, 13), Fraction(6, 13), Fraction(3, 13)]"
+    },
+    {
+      "name": "k2 r2 x1 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k2 r2 x1 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k2 r2 x1 primal dual equality",
+      "passed": true,
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "k2 at most certified column upper",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x0 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x0 dual lower envelope",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x0 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x0 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x0 columns",
+      "passed": true,
+      "actual": "[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 1)]",
+      "expected": "[Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 1)]"
+    },
+    {
+      "name": "k3 r0 x0 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x0 primal dual equality",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x1/23 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/23 dual lower envelope",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x1/23 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x1/23 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x1/23 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(1, 23), Fraction(1, 23), Fraction(20, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(1, 23), Fraction(1, 23), Fraction(20, 23)]"
+    },
+    {
+      "name": "k3 r0 x1/23 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/23 primal dual equality",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x1/23 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/23 dual lower envelope",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x1/23 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x1/23 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x1/23 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(1, 23), Fraction(1, 23), Fraction(20, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(1, 23), Fraction(1, 23), Fraction(20, 23)]"
+    },
+    {
+      "name": "k3 r0 x1/23 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/23 primal dual equality",
+      "passed": true,
+      "actual": "54/23",
+      "expected": "54/23"
+    },
+    {
+      "name": "k3 r0 x7/46 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x7/46 dual lower envelope",
+      "passed": true,
+      "actual": "103/46",
+      "expected": "103/46"
+    },
+    {
+      "name": "k3 r0 x7/46 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x7/46 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x7/46 columns",
+      "passed": true,
+      "actual": "[Fraction(7, 46), Fraction(7, 46), Fraction(7, 46), Fraction(25, 46)]",
+      "expected": "[Fraction(7, 46), Fraction(7, 46), Fraction(7, 46), Fraction(25, 46)]"
+    },
+    {
+      "name": "k3 r0 x7/46 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x7/46 primal dual equality",
+      "passed": true,
+      "actual": "103/46",
+      "expected": "103/46"
+    },
+    {
+      "name": "k3 r0 x7/46 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x7/46 dual lower envelope",
+      "passed": true,
+      "actual": "103/46",
+      "expected": "103/46"
+    },
+    {
+      "name": "k3 r0 x7/46 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x7/46 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x7/46 columns",
+      "passed": true,
+      "actual": "[Fraction(7, 46), Fraction(7, 46), Fraction(7, 46), Fraction(25, 46)]",
+      "expected": "[Fraction(7, 46), Fraction(7, 46), Fraction(7, 46), Fraction(25, 46)]"
+    },
+    {
+      "name": "k3 r0 x7/46 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x7/46 primal dual equality",
+      "passed": true,
+      "actual": "103/46",
+      "expected": "103/46"
+    },
+    {
+      "name": "k3 r0 x13/69 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x13/69 dual lower envelope",
+      "passed": true,
+      "actual": "49/23",
+      "expected": "49/23"
+    },
+    {
+      "name": "k3 r0 x13/69 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x13/69 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x13/69 columns",
+      "passed": true,
+      "actual": "[Fraction(13, 69), Fraction(13, 69), Fraction(13, 69), Fraction(10, 23)]",
+      "expected": "[Fraction(13, 69), Fraction(13, 69), Fraction(13, 69), Fraction(10, 23)]"
+    },
+    {
+      "name": "k3 r0 x13/69 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x13/69 primal dual equality",
+      "passed": true,
+      "actual": "49/23",
+      "expected": "49/23"
+    },
+    {
+      "name": "k3 r0 x13/69 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x13/69 dual lower envelope",
+      "passed": true,
+      "actual": "49/23",
+      "expected": "49/23"
+    },
+    {
+      "name": "k3 r0 x13/69 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x13/69 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x13/69 columns",
+      "passed": true,
+      "actual": "[Fraction(13, 69), Fraction(13, 69), Fraction(13, 69), Fraction(10, 23)]",
+      "expected": "[Fraction(13, 69), Fraction(13, 69), Fraction(13, 69), Fraction(10, 23)]"
+    },
+    {
+      "name": "k3 r0 x13/69 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x13/69 primal dual equality",
+      "passed": true,
+      "actual": "49/23",
+      "expected": "49/23"
+    },
+    {
+      "name": "k3 r0 x1/3 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/3 dual lower envelope",
+      "passed": true,
+      "actual": "29/23",
+      "expected": "29/23"
+    },
+    {
+      "name": "k3 r0 x1/3 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r0 x1/3 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r0 x1/3 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r0 x1/3 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r0 x1/3 primal dual equality",
+      "passed": true,
+      "actual": "29/23",
+      "expected": "29/23"
+    },
+    {
+      "name": "k3 r1 x1/3 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r1 x1/3 dual lower envelope",
+      "passed": true,
+      "actual": "29/23",
+      "expected": "29/23"
+    },
+    {
+      "name": "k3 r1 x1/3 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r1 x1/3 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r1 x1/3 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 3), Fraction(1, 3), Fraction(1, 3), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r1 x1/3 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r1 x1/3 primal dual equality",
+      "passed": true,
+      "actual": "29/23",
+      "expected": "29/23"
+    },
+    {
+      "name": "k3 r1 x1/2 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r1 x1/2 dual lower envelope",
+      "passed": true,
+      "actual": "35/46",
+      "expected": "35/46"
+    },
+    {
+      "name": "k3 r1 x1/2 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r1 x1/2 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r1 x1/2 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r1 x1/2 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r1 x1/2 primal dual equality",
+      "passed": true,
+      "actual": "35/46",
+      "expected": "35/46"
+    },
+    {
+      "name": "k3 r2 x1/2 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x1/2 dual lower envelope",
+      "passed": true,
+      "actual": "35/46",
+      "expected": "35/46"
+    },
+    {
+      "name": "k3 r2 x1/2 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r2 x1/2 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r2 x1/2 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 2), Fraction(1, 2), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r2 x1/2 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x1/2 primal dual equality",
+      "passed": true,
+      "actual": "35/46",
+      "expected": "35/46"
+    },
+    {
+      "name": "k3 r2 x20/23 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x20/23 dual lower envelope",
+      "passed": true,
+      "actual": "9/23",
+      "expected": "9/23"
+    },
+    {
+      "name": "k3 r2 x20/23 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r2 x20/23 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r2 x20/23 columns",
+      "passed": true,
+      "actual": "[Fraction(20, 23), Fraction(3, 23), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(20, 23), Fraction(3, 23), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r2 x20/23 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x20/23 primal dual equality",
+      "passed": true,
+      "actual": "9/23",
+      "expected": "9/23"
+    },
+    {
+      "name": "k3 r2 x20/23 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x20/23 dual lower envelope",
+      "passed": true,
+      "actual": "9/23",
+      "expected": "9/23"
+    },
+    {
+      "name": "k3 r2 x20/23 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r2 x20/23 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r2 x20/23 columns",
+      "passed": true,
+      "actual": "[Fraction(20, 23), Fraction(3, 23), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(20, 23), Fraction(3, 23), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r2 x20/23 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x20/23 primal dual equality",
+      "passed": true,
+      "actual": "9/23",
+      "expected": "9/23"
+    },
+    {
+      "name": "k3 r2 x1 dual all inequalities",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x1 dual lower envelope",
+      "passed": true,
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "k3 r2 x1 feasible flow",
+      "passed": true,
+      "actual": "1",
+      "expected": "1"
+    },
+    {
+      "name": "k3 r2 x1 rows",
+      "passed": true,
+      "actual": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]",
+      "expected": "[Fraction(1, 23), Fraction(3, 23), Fraction(6, 23), Fraction(10, 23), Fraction(3, 23)]"
+    },
+    {
+      "name": "k3 r2 x1 columns",
+      "passed": true,
+      "actual": "[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]",
+      "expected": "[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]"
+    },
+    {
+      "name": "k3 r2 x1 nonnegative",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "k3 r2 x1 primal dual equality",
+      "passed": true,
+      "actual": "0",
+      "expected": "0"
+    },
+    {
+      "name": "k3 at most certified column upper",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "passed_count": 184,
+  "all_passed": true,
+  "cases": {
+    "k2": {
+      "m": 13,
+      "counts": [
+        1,
+        3,
+        6,
+        3
+      ],
+      "cost_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3,
+          3
+        ]
+      ],
+      "exact_tau": "366/169",
+      "column_upper": "366/169",
+      "jensen_threshold": "61/26",
+      "pieces": [
+        {
+          "region": 0,
+          "left": "0",
+          "right": "1/13",
+          "A": "24/13",
+          "B": "0",
+          "row_potential": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "column_potential": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "left_flow": [
+            [
+              "0",
+              "0",
+              "0",
+              "1/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/13"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/13",
+              "1/13",
+              "1/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/13"
+            ]
+          ]
+        },
+        {
+          "region": 0,
+          "left": "1/13",
+          "right": "7/26",
+          "A": "25/13",
+          "B": "-1",
+          "row_potential": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "left_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/13",
+              "1/13",
+              "1/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/13"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/13"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/26",
+              "1/26",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "7/26",
+              "5/26"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 0,
+          "left": "7/26",
+          "right": "1/3",
+          "A": "32/13",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "left_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/26",
+              "1/26",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "7/26",
+              "5/26"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/39",
+              "4/39",
+              "1/3",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 1,
+          "left": "1/3",
+          "right": "1/2",
+          "A": "32/13",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "left_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/39",
+              "4/39",
+              "1/3",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/26",
+              "7/26",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 2,
+          "left": "1/2",
+          "right": "10/13",
+          "A": "19/13",
+          "B": "-1",
+          "row_potential": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "left_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/26",
+              "7/26",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 2,
+          "left": "10/13",
+          "right": "1",
+          "A": "3",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "column_potential": [
+            0,
+            3,
+            3,
+            3
+          ],
+          "left_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/13",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/13",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/13",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    "k3": {
+      "m": 23,
+      "counts": [
+        1,
+        3,
+        6,
+        10,
+        3
+      ],
+      "cost_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          3
+        ]
+      ],
+      "exact_tau": "1146/529",
+      "column_upper": "1146/529",
+      "jensen_threshold": "573/253",
+      "pieces": [
+        {
+          "region": 0,
+          "left": "0",
+          "right": "1/23",
+          "A": "54/23",
+          "B": "0",
+          "row_potential": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ],
+          "column_potential": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "left_flow": [
+            [
+              "0",
+              "0",
+              "0",
+              "1/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/23"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/23",
+              "1/23",
+              "1/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/23"
+            ]
+          ]
+        },
+        {
+          "region": 0,
+          "left": "1/23",
+          "right": "7/46",
+          "A": "55/23",
+          "B": "-1",
+          "row_potential": [
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/23",
+              "1/23",
+              "1/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "6/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "3/23"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/46",
+              "1/46",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "7/46",
+              "5/46"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 0,
+          "left": "7/46",
+          "right": "13/69",
+          "A": "62/23",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            2
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "5/46",
+              "1/46",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "7/46",
+              "5/46"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/69",
+              "4/69",
+              "13/69",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 0,
+          "left": "13/69",
+          "right": "1/3",
+          "A": "75/23",
+          "B": "-6",
+          "row_potential": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/69",
+              "4/69",
+              "13/69",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "10/23"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "11/69",
+              "0",
+              "7/69",
+              "0"
+            ],
+            [
+              "0",
+              "14/69",
+              "16/69",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 1,
+          "left": "1/3",
+          "right": "1/2",
+          "A": "52/23",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "11/69",
+              "0",
+              "7/69",
+              "0"
+            ],
+            [
+              "0",
+              "14/69",
+              "16/69",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/46",
+              "17/46",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 2,
+          "left": "1/2",
+          "right": "20/23",
+          "A": "29/23",
+          "B": "-1",
+          "row_potential": [
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "column_potential": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/46",
+              "17/46",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "10/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "region": 2,
+          "left": "20/23",
+          "right": "1",
+          "A": "3",
+          "B": "-3",
+          "row_potential": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "column_potential": [
+            0,
+            3,
+            3,
+            3
+          ],
+          "left_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "10/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3/23",
+              "0",
+              "0"
+            ]
+          ],
+          "right_flow": [
+            [
+              "1/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "6/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "10/23",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "3/23",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

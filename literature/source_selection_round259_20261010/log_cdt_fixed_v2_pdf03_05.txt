@@ -1,0 +1,298 @@
+
+===== PHYSICAL PAGE 3 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+3
+1. Introduction
+1.1. Dirichlet L-values. The values of the Riemann zeta function ζ(k) for positive
+integers k, and more generally the Dirichlet L-values
+L(k, χ) =
+∞
+X
+n=1
+χ(n)
+nk
+for quadratic characters χ, have long been a source of interest to mathematicians.
+Suppose that χ is a primitive quadratic character of conductor D, where we use
+the convention that the sign of D is the sign of χ(−1).
+Starting with work of
+Euler [Eul1735] and Dirichlet [Dir1837] (or even far before that in the special case
+of D = −4 and k = 1 [Roy90]), we know that, for positive integers k:
+L(k, χ) ∈
+
+
+
+
+
+
+
+πk ·
+√
+D · Q×,
+k even and χ(−1) = 1,
+πk ·
+√
+−D · Q×,
+k odd and χ(−1) = −1,
+√
+D log
+
+|Q
+×| ∖{1}
+
+,
+k = 1, χ(−1) = 1, and D ̸= 1.
+(1.1.1)
+Combined with Lindemann’s theorem [Lin1882] that π is transcendental and Weier-
+strass’s extension [Wei1885] to the transcendence of the natural logarithms of alge-
+braic numbers other than 0 or 1, one knows all of these values to be transcendental.
+The remaining L-values are far less well understood.
+Indeed, in the (approxi-
+mately) last 140 years since [Wei1885] only a single further explicit number L(k, χ)
+has been shown to be irrational, namely Ap´ery’s unexpected 1978 proof that ζ(3)
+is irrational [Ape79, vdP79, Coh78]. In this paper, we establish the irrationality
+of a new L-value L(k, χ); in some sense the “simplest” open case corresponding
+to k = 2 and the character χ = χ−3 of smallest possible conductor:
+Theorem A. The period
+L(2, χ−3) =
+∞
+X
+n=0
+
+1
+(3n + 1)2 −
+1
+(3n + 2)2
+
+= 0.7813024128964862968 . . .
+=
+ZZ
+1≥y≥x≥0
+dxdy
+y(1 + x + x2) = −
+Z 1
+0
+log(x)dx
+1 + x + x2
+is irrational. More generally, the three periods 1, π2, L(2, χ−3) are linearly indepen-
+dent over Q.
+The formula above exhibits L(2, χ−3) as a period in the sense of Kontsevich–
+Zagier [KZ01].
+There are a panoply of other more complicated expressions for
+L(2, χ−3) as an integral, or an infinite sum, for example, the following sum of
+hypergeometric type ([HPHP11, §3]):
+L(2, χ−3) = 1
+27
+∞
+X
+n=1
+(4 −15n)(−27)n
+n3
+2n
+n
+23n
+n
+ ,
+or, more serendipitously, in terms of the sum of the inverse squares of the entries
+greater than one in Pascal’s triangle [Sta23]:
+L(2, χ−3) = −1
+3 +
+X
+n>m>0
+1
+n
+m
+2 .
+
+===== PHYSICAL PAGE 4 =====
+4
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+The constant 3
+√
+3 L(2, χ−3)/4 = Im(Li2(eπi/3)) = 3
+2 ·Im(Li2(e2πi/3)) = 1.014941 . . .
+is the volume of the regular ideal hyperbolic tetrahedron (the one of the maximal
+volume), and is also the volume of the non-compact hyperbolic manifold with min-
+imal volume [Ada87] (the Gieseking manifold, whose orientable double cover is the
+complement of the figure 8 knot [Thu97]). It is an open problem to show that
+the volumes of hyperbolic 3-manifolds are not all rationally related (see [Thu82,
+Problem 23], and [Mil82, Mil83]). While our result does not have any direct impli-
+cations for this question, it is the first unconditional result to make contact with the
+arithmetic nature of these volumes. Another appearance of L(2, χ−3) is in Smyth’s
+formula [BZ20, Prop. 3.4]
+3
+√
+3
+4π L(2, χ−3) = m(1 + x + y) :=
+Z 1
+0
+Z 1
+0
+log |1 + e2πis + e2πit| ds dt
+(1.1.2)
+linking L(2, χ−3) to the Mahler measure of the simplest essentially bivariate poly-
+nomial 1 + x + y, or equivalently in the language of Diophantine and Arakelov
+geometry [Phi91, BGS94], to the canonical height of the subvariety 1 + x + y = 0
+of the linear algebraic torus G2
+m. Unfortunately, while the nonvanishing Mahler
+measures of the integer univariate polynomials are all known to be transcendental
+by the Hermite–Lindemann–Weierstrass theorem [Her1874, Lin1882, Wei1885], our
+result has no direct bearing on the conjectured irrationality of any such canonical
+heights! (We do, incidentally, also prove the irrationality of the Mahler measure of
+the rational coefficients bivariate polynomial (1+x+y)4/3, which is not a canonical
+height. This is in Theorem 2.11.17.)
+An immediate consequence of Theorem A is the irrationality of the following
+values of the “trigamma” function ψ1(z) =
+∞
+X
+n=0
+1
+(z + n)2 = ζ(2, z):
+Corollary B. The following numbers are irrational:
+1
+12 + 1
+42 + 1
+72 +
+1
+102 + . . . =
+L(2, χ−3)
+2
++ 2π2
+27 ,
+1
+22 + 1
+52 + 1
+82 +
+1
+112 + . . . = −L(2, χ−3)
+2
++ 2π2
+27 ,
+1
+12 + 1
+72 +
+1
+132 +
+1
+192 + . . . =
+5L(2, χ−3)
+8
++ π2
+18,
+1
+52 +
+1
+112 +
+1
+172 +
+1
+232 + . . . = −5L(2, χ−3)
+8
++ π2
+18.
+Note that since ψ1(x + 1) −ψ1(x) + 1/x2 = 0, it also follows from Theorem A
+(together with the fact that ψ1(1) = π2/6 and ψ1(1/2) = π2/2) that ψ1(n/6) is
+irrational for any n ∈N>0. These are the first new irrationality results for ψ1 since
+Legendre’s proof in 1794 [Leg1794] that π2 is irrational!
+As another application of what turns out to be exactly the same argument, we
+also prove the following irrationality result for certain products of two logarithms
+(see Theorem 14.0.1 in § 14).
+Theorem C. Let m, n ∈Z ∖{−1, 0} be integers such that
+m
+n −1
+ <
+1
+106 . Then
+log
+
+1 + 1
+m
+
+log
+
+1 + 1
+n
+
+
+===== PHYSICAL PAGE 5 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+5
+is irrational. Moreover, for m ̸= n, the following are linearly independent over Q:
+1,
+log
+
+1 + 1
+m
+
+,
+log
+
+1 + 1
+n
+
+,
+log
+
+1 + 1
+m
+
+log
+
+1 + 1
+n
+
+.
+1.2. Comparisons to the work of Ap´ery. Ap´ery’s proof [vdP79] consisted of
+finding an explicit sequence of rational approximations which converged “sufficiently
+quickly” to ζ(3) to prove that ζ(3) is irrational. Ever since Ap´ery’s result, consid-
+erable effort has been expended in searching for analogous sequences which demon-
+strate the irrationality of other L-values L(k, χ) beyond those of the form (1.1.1).
+Unfortunately, despite enormous efforts, no such sequences have ever been found.1
+In particular, in this paper, we do not find (directly) any new convergent sequences
+to L(2, χ−3). Instead, we show how one can exploit the arithmetic nature of known
+approximations (found by Ap´ery and others) in a more subtle way using both
+methods from transcendental number theory and complex analysis.
+In order to introduce our main idea, we begin with an exposition and then a
+reformulation of some of the key features of Ap´ery’s proof. The first remark to
+make is that Ap´ery’s proof uses very little number theory; indeed the only number
+theoretic input is a (weak form) of the prime number theorem and the following
+elementary lemma:
+Lemma 1.2.1. If there is a δ > 0 and a sequence of rational numbers pn/qn ̸= β
+with qn →∞such that
+β −pn
+qn
+ <
+1
+q1+δ
+n
+n = 1, 2, . . . ,
+then β is irrational.
+This lemma is true even with the weaker hypothesis that |β −pn/qn| = o(1/qn).
+Ap´ery writes down a pair of power series A(x), B(x) ∈QJxK and the linear combi-
+nation
+P(x) = B(x) −ζ(3)A(x) =
+∞
+X
+n=0
+xn (bn −ζ(3)an) .
+The coefficients an and bn are rational numbers, and more precisely:
+an ∈Z,
+[1, 2, 3, . . . , n]3bn ∈Z.
+Here and throughout our paper, we follow the conventional notation [1, 2, . . . , n]
+for the lowest common multiple of the first n integers. The prime number theorem
+determines the growth rate of these denominators:
+log[1, 2, 3, . . . , n] = n + o(n).
+At the same time, Ap´ery proves that A(x) (and B(x)) have radius of conver-
+gence (
+√
+2 −1)4 whereas P(x) has radius of convergence exactly (
+√
+2 + 1)4. Now
+one exploits the inequality
+4 log(
+√
+2 + 1) > 3
+(1.2.2)
+1One significant step which is not directly related to the irrationality of specific L-values is the
+theorem of Ball and Rivoal [Riv00, BR01] that infinitely many odd zeta values are irrational. One
+refinement by Zudilin [Zud01] proves that at least one of the values ζ(5), ζ(7), ζ(9) and ζ(11) is
+irrational.

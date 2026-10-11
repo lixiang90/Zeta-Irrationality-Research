@@ -1,0 +1,216 @@
+{
+  "scope": "Specialized modular obstruction test; a root is inconclusive.",
+  "rational_recurrence_reduction_checks": 4,
+  "rows": [
+    {
+      "prime": 7,
+      "field": "Context for fq_default in GF(7^2)[a]/(a^2 + 6*a + 3)",
+      "monodromy": [
+        [
+          "4*a + 5",
+          "a + 4",
+          "5*a + 3",
+          "4*a + 5"
+        ],
+        [
+          "a + 5",
+          "a + 4",
+          "3*a + 1",
+          "4*a + 1"
+        ],
+        [
+          "4*a + 4",
+          "a + 3",
+          "4*a + 1",
+          "5"
+        ],
+        [
+          "3*a + 3",
+          "3*a + 3",
+          "4*a + 6",
+          "5*a + 4"
+        ]
+      ],
+      "rational_specialization_eigenvalues": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "has_eigenvalue": true,
+      "exceptional_minus27_eigenvalue_present": true
+    },
+    {
+      "prime": 11,
+      "field": "Context for fq_default in GF(11^2)[a]/(a^2 + 7*a + 2)",
+      "monodromy": [
+        [
+          "6*a + 4",
+          "a + 6",
+          "9*a + 1",
+          "8*a + 2"
+        ],
+        [
+          "5*a + 2",
+          "8*a + 1",
+          "8*a + 9",
+          "9*a + 3"
+        ],
+        [
+          "5*a + 8",
+          "4*a + 9",
+          "10*a + 5",
+          "2*a + 3"
+        ],
+        [
+          "2",
+          "2*a + 3",
+          "5*a + 10",
+          "9*a + 5"
+        ]
+      ],
+      "rational_specialization_eigenvalues": [
+        [
+          6,
+          0
+        ]
+      ],
+      "has_eigenvalue": true,
+      "exceptional_minus27_eigenvalue_present": true
+    },
+    {
+      "prime": 13,
+      "field": "Context for fq_default in GF(13^2)[a]/(a^2 + 12*a + 2)",
+      "monodromy": [
+        [
+          "7",
+          "10*a + 9",
+          "6*a + 8",
+          "4*a"
+        ],
+        [
+          "11*a",
+          "a + 8",
+          "5*a + 9",
+          "10*a + 6"
+        ],
+        [
+          "11*a + 2",
+          "11*a + 2",
+          "11*a + 2",
+          "3*a + 5"
+        ],
+        [
+          "5*a + 10",
+          "a + 5",
+          "12*a + 1",
+          "a + 9"
+        ]
+      ],
+      "rational_specialization_eigenvalues": [
+        [
+          12,
+          0
+        ]
+      ],
+      "has_eigenvalue": true,
+      "exceptional_minus27_eigenvalue_present": true
+    },
+    {
+      "prime": 17,
+      "field": "Context for fq_default in GF(17^2)[a]/(a^2 + 16*a + 3)",
+      "monodromy": [
+        [
+          "a",
+          "5*a + 4",
+          "7",
+          "12*a + 16"
+        ],
+        [
+          "3*a + 10",
+          "15*a + 6",
+          "8*a + 6",
+          "5*a + 12"
+        ],
+        [
+          "a + 10",
+          "7*a + 2",
+          "8*a + 5",
+          "3*a + 6"
+        ],
+        [
+          "5*a + 13",
+          "6*a + 13",
+          "4*a + 9",
+          "10*a + 9"
+        ]
+      ],
+      "rational_specialization_eigenvalues": [
+        [
+          7,
+          0
+        ]
+      ],
+      "has_eigenvalue": true,
+      "exceptional_minus27_eigenvalue_present": true
+    },
+    {
+      "prime": 19,
+      "field": "Context for fq_default in GF(19^2)[a]/(a^2 + 18*a + 2)",
+      "monodromy": [
+        [
+          "17*a + 8",
+          "17*a + 2",
+          "3*a",
+          "15*a + 8"
+        ],
+        [
+          "15*a + 18",
+          "4*a + 8",
+          "10*a + 8",
+          "6*a + 2"
+        ],
+        [
+          "12*a + 5",
+          "16*a + 14",
+          "12*a + 17",
+          "5*a + 15"
+        ],
+        [
+          "10*a + 3",
+          "7*a + 6",
+          "5*a + 1",
+          "5*a + 3"
+        ]
+      ],
+      "rational_specialization_eigenvalues": [
+        [
+          2,
+          7
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "has_eigenvalue": true,
+      "exceptional_minus27_eigenvalue_present": true
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+§1.3. Modular curves                                                                                                       I. Algebraic curves
+
+
+
+Lemma 1.38. The projection π : U → π(U) and the map ψ : U → V identify the same points.
+
+   Thus, there is an injection ϕ : π(U) → V commuting with π and ψ which will play the role of local
+coordinates.
+
+                   U                                                                       U
+
+
+        τ                                                                         i
+
+
+
+
+                                ψ                                                                            ψ
+             δτ                                                                       δi
+
+
+
+                                                                 V                                                                       V
+
+
+                       0            ρ                   0                                      0              ρ : z → z2         0
+
+
+
+
+                   Figure 1.3 – Coordinate chart around an elliptic point and specialization to i .
+
+   computing the number of elliptic points of period 2 and 3 for the congruence subgroup Γ0 (N).
+
+
+1.3.5       Genus formula
+We will now derive an equivalent formula to compute the genus of X(Γ). We suppose again to have a non-
+constant holomorphic map between modular curves f : X(Γ1 ) → X(Γ2 ). We already know from Proposition
+1.33 that                                     (
+                                               [Γ2 : Γ1 ] /2   If − I ∈ Γ2 and − I 6∈ Γ1
+               deg(f ) = [{±I}Γ2 : {±I}Γ1 ] =
+                                               [Γ2 : Γ1 ]      Otherwise
+Now, from previous sections we have the following commutative diagram where U is an open neighborhood
+of a point τ ∈ H.
+
+                                                id
+                                    U                            U
+                           δ                                          δ
+                                        π1                  π2                                       πi : H −→ X(Γi )
+                                                 f
+                  δ(U)          π1 (U)                      π2 (U)         δ(U)                        ρi : z −→ z hi
+
+                                        ϕ1                  ϕ2                                     flocal ◦ ρ1 ◦ δ = ρ2 ◦ δ
+                           ρ1                                         ρ2
+                                    V                            V
+                                               flocal
+
+   The local map turns out to be q → q h2 /h1 . Now if Γ0 j, τ is the isotropy group of τ in Γj for j = 1, 2,
+then the periods hj live in {1, 2, 3} and since the quotient is integral we have h1 = 1 or h1 = h2 . Therefore
+the ramification degree is
+                                       (
+                                         h2    If τ is an elliptic point for Γ2 but not for Γ1
+                   eπ1 (τ ) = h2 /h1 =
+                                         1     Otherwise
+                                             = [{±I}Γ2,τ : {±I}Γ1,τ ]
+
+   Viceversa, if s ∈ Q ∪ {∞} is a cusp, then ρ1 (z) = e 2πiz/h1 and ρ2 (z) = e 2πiz/h2 so the local map is
+q → q h1 /h2 where hj = [Γ(1)∞ : {±1}Γj,s ] and the ramification degree is
+
+                                             eπ1 (s) = h1 /h1 = [{±1}Γ2,s : {±1}Γ1,s ]
+
+                                                                     21
+I. Algebraic curves                                                                                                   §1.3. Modular curves
+
+
+
+Remark. If Γ1 is normal in Γ2 then all points of X(Γ1 ) lying over a given point of X(Γ2 ) have the same
+ramification degree.
+
+    Finally, we get back to our map X(Γ) → X(1) for a congruence subgroup Γ of SL2 (Z).
+    We denote y2 = SL2 (Z)i , y3 = SL2 (Z)ρ and y∞ = SL2 (Z)∞ the set of elliptic points of period 2, 3 and
+the cusps of X(1). In the same way 2 and 3 indicate the set of elliptic points of Γ in f −1 (y2 ) and f −1 (y3 )
+- of period 2 and 3 in X(Γ) - and ∞ the set of cusps. Now,
+                                                                                number of
+                                                                              points that are
+                                                                              not elliptic in Γ
+                                                        X                z        }|       {
+                                              d=                   ex = h |f −1 (yh )| − h +1 · h
+                                                    x∈f −1 (yh )
+
+
+Thus, if νh = |f −1 (yh )|, then hνh − hh + h = d =⇒ d − h = h (νh − h ), from which
+        X                                                                                         h−1
+                    (ex − 1) = h |f −1 (yh )| − h + h + |f −1 (yh )| = (h − 1) |f −1 (yh )| − h =    (d − h )
+                                                                                                     h
+     x∈f −1 (yh )
+
+    And for the cusps                           X
+                                                            (ex − 1) = d − |f −1 (y∞ )| = d − ∞
+                                             x∈f −1 (y∞ )
+
+    Putting all the pieces together, from Theorem 1.31, we get
+
+Theorem 1.39 (Riemann-Hurwitz). The genus of the modular curve X(Γ) is
+
+                                                                          d    2   3   ∞
+                                                   g (X(Γ)) = 1 +            −    −    −
+                                                                          12   4    3     2
+Remark. From Corollary 1.32 and the expression for νh = #f −1 (yh ), we obtain the same result
+
+                                 1X                           1                          X
+  g (X(Γ)) = 1 − d +                (d − #f −1 (Q)) = 1 − d +                                     (d − #f −1 (Q)) =
+                                 2                            2
+                                      Q∈B                                          Q∈y2 ∪y3 ∪y∞
+                         −1                      −1                      −1
+             d − #f           (y2 )       d − #f      (y3 )    d − #f (y∞ )       d #f −1 (y2 ) #f −1 (y3 ) #f −1 (y∞ )
+= 1−d +                               +                       +              = 1+ −            −           −            =
+                  2                            2                     2            2       2         2             2
+                                                                   d   d + 2   d + 23    ∞      d      2   3   ∞
+                                                              =1+ −           −         −     =1+      −     −    −
+                                                                   2     4         6        2      12      4   3     2
+
+
+
+
+                                                                          22
+

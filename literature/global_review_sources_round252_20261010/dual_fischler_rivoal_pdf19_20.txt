@@ -1,0 +1,110 @@
+=== PHYSICAL PDF PAGE 19 ===
+19
+yields, using Proposition 3:
+Sr,n,σ (z) = ( − 1)σn +1z(r+σ )n+r+1
+×
+∫
+[0, 1]2r+3
+u(r− σ +2)n+r
+0 (1 − u0)σn
+r+1∏
+j=1
+(
+(ujvj)(r− j+2)(n+1)− 1(1 − uj)n(1 − vj)n)
+r+1∏
+j=1
+(
+(z − u0u1v1 · · ·uj− 1vj− 1uj)n+1(z − u0u1v1 · · ·ujvj)n+1)
+dudv.
+This function has the following value at z = 1:
+Sr,n,σ (1) =
+(− 1)σn +1
+∫
+[0, 1]2r+3
+u(r− σ +2)n+r
+0 (1 − u0)σn
+r+1∏
+j=1
+(
+(ujvj)(r− j+2)(n+1)− 1(1 − uj)n(1 − vj)n)
+r+1∏
+j=1
+(
+(1 − u0u1v1 · · ·uj− 1vj− 1uj)n+1(1 − u0u1v1 · · ·ujvj)n+1)
+dudv.
+Using Proposition 17 of [6] (which amounts to a change of variables) o ne obtains
+Sr,n,σ (1) = ( − 1)σn +1
+∫
+[0, 1]a− 1
+∏a− 1
+j=1 xσn
+j (1 − xj)n
+(1 − x1x2 · · ·xa− 1)σn +1 ∏
+2≤ j≤ a− 2
+j even
+(1 − x1x2 · · ·xj)n+1 dx
+with a = 2 r + 4. Then using Zlobin’s result [16] or another change of variables (n amely
+Th´ eor` eme 10 of [6]), one obtains the Vasilyev-type integral
+Sr,n,σ (1) = ( − 1)σn +1
+∫
+[0, 1]a− 1
+∏a− 1
+j=1 xσn
+j (1 − xj)n
+Qa− 1(x1, · · ·, x a− 1)σn +1 dx.
+Now Theorem 5 of [18] yields
+Sr,n,σ (1) = ( − 1)σn +1
+∞∑
+k=1
+(k + n
+2 ) (k − σn)σn (k + n + 1)σn
+(k)a
+n+1
+.
+Up to a sign, this is exactly the very-well poised hypergeometric ser ies (6.1).
+Bibliography
+[1] R. Ap´ ery,Irrationalit´ e deζ(2) et ζ(3), Ast´ erisque61 (1979), 11–13.
+[2] K. M. Ball, T. Rivoal, Irrationalit´ e d’une inﬁnit´ e de valeurs de la fonction zˆ eta aux entiers impairs ,
+Invent. Math. 146.1 (2001), 193–207.
+[3] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (1979), 268–272.
+[4] J. Cresson, S. Fischler, T. Rivoal, S´ eries hyperg´ eom´ etriques multiples et polyzˆ etas, Bull. SMF 136.1
+(2008), 97–145.
+[5] S. Fischler, Formes lin´ eaires en polyzˆ etas et int´ egrales multiples, C. R. Acad. Sci. Paris Ser. I, 335
+(2002), 1–4.
+
+=== PHYSICAL PDF PAGE 20 ===
+20
+[6] S. Fischler, Groupes de Rhin-Viola et int´ egrales multiples, J. Th´ eor. Nombres Bordeaux 15.2 (2003),
+479–534.
+[7] S. Fischler, Irrationalit´ e de valeurs de zˆ eta (d’apr` es Ap´ ery, Rivoal, . . . ), S´ eminaire Bourbaki 2002-2003,
+no. 910 (Nov. 2002), Ast´ erisque 294 (2004), 27–62.
+[8] S. Fischler, T. Rivoal, Approximants de Pad´ e et s´ eries hyperg´ eom´ etriques ´ equilibr´ ees, J. Math. Pures
+Appl. 82.10 (2003), 1369–1394.
+[9] P. Henrici, Applied and computational complex analysis, Vol. 2. Specia l functions, integral transforms,
+asymptotics, continued fractions , Wiley Classics Library, John Wiley & Sons, Inc., New York, 1991.
+x+662 pp.
+[10] C. Krattenthaler, T. Rivoal, An identity of Andrews, multiple integrals, and very-well- poised hyperge-
+ometric series , Ramanujan J. 13 (2007), vol. 1-3, 203–219.
+[11] T. Rivoal, La fonction zˆ eta de Riemann prend une inﬁnit´ e de valeurs irrationnelles aux entiers impairs ,
+C. R. A. S. Paris S´ er. I Math. 331.4 (2000), 267–270.
+[12] A. B. Shidlovskii, Transcendental numbers, De Gruyter Studies in Math. 12.
+[13] V. N. Sorokin, Ap´ ery’s theorem, Vestnik Moskov. Univ. Ser. I Mat. Mekh. no. 3 (1998), 48–52 (in
+russian); English translation in Moscow Univ. Math. Bull. no. 3 (1998), 48–52.
+[14] V. N. Sorokin, A transcendence measure for π2, Mat. Sbornik 187 (1996), 87–120 (in russian); English
+translation in Sb. Math. 187 (1996), 1819–1852.
+[15] D. Vasilyev, Approximations of zero by linear forms in values of the Riema nn zeta-function , Doklady
+Nat. Acad. Sci Belarus 45.5 (2001), 36–40 (in russian). Extended version in english : On small linear
+forms for the values of the Riemann zeta-function at odd poin ts, preprint no. 1 (558), Nat. Acad. Sci.
+Belarus, Institute Math., Minsk (2001), 14 pages.
+[16] S. A. Zlobin, Integrals that can be represented as linear forms of general ized polylogarithms, Mat.
+Zametki 71 (2002), no. 5, 782–787 (in russian). English translation in Math. No tes 71 (2002), no. 5-6,
+711–716.
+[17] S. A. Zlobin, Generating functions for the values of a multiple zeta funct ion, Vestnik Moskov. Univ.
+Ser. I Mat. Mekh. 73 (2005), no. 2, 55–59. English translation in Moscow Univ. Math. Bull. 60 (2005),
+no. 2, 44–48.
+[18] W. Zudilin, Well-poised hypergeometric service for Diophantine probl ems of zeta values , J. Th´ eor.
+Nombres Bordeaux 15.2 (2003), 593–626.
+S. Fischler, ´Equipe d’Arithm´ etique et de G´ eom´ etrie Alg´ ebrique, Universit´ e Paris-Sud,
+Bˆ atiment 425, 91405 Orsay Cedex, France
+T. Rivoal, Institut Fourier, CNRS et Universit´ e Grenoble 1, 100 rue des maths, BP 74,
+38402 St Martin d’H` eres Cedex, France

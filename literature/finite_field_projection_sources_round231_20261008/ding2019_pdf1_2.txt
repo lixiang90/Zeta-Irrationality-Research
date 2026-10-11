@@ -1,0 +1,146 @@
+                                                        C. R. Acad. Sci. Paris, Ser. I 357 (2019) 483–486
+
+
+
+                                                      Contents lists available at ScienceDirect
+
+
+                                                  C. R. Acad. Sci. Paris, Ser. I
+                                                                 www.sciencedirect.com
+
+
+Number theory
+
+Non-Wieferich primes under the abc conjecture
+
+La conjecture abc et les nombres premiers qui ne satisfont pas la condition
+de Wieferich
+Yuchen Ding
+Department of Mathematics, Nanjing University, Nanjing 210093, People’s Republic of China
+
+
+
+a r t i c l e          i n f o                         a b s t r a c t
+
+Article history:                                       Assuming the abc conjecture, Silverman proved that, for any given positive integer a  2,
+Received 10 April 2019                                 there are  log x primes p  x such that a p −1 ≡ 1 (mod p 2 ). In this paper, we show that,
+Accepted after revision 17 May 2019                    for any given integers a  2 and k  2, there still are  log x primes p  x satisfying
+Available online 6 June 2019
+                                                       a p −1 ≡ 1 (mod p 2 ) and p ≡ 1 (mod k), under the assumption of the abc conjecture. This
+Presented by the Editorial Board                       improves a recent result of Chen and Ding.
+                                                             © 2019 Académie des sciences. Published by Elsevier Masson SAS. All rights reserved.
+
+
+
+                                                       r é s u m é
+
+                                                       Admettant la conjecture abc, Silverman a montré que, pour tout entier a  2, il existe au
+                                                       moins  log x nombres premiers p  x tels que a p −1 ≡ 1 (mod p 2 ). Admettant toujours
+                                                       la conjecture abc, nous montrons ici que, pour tous entiers a  2 et k  2 donnés, il y
+                                                       a encore au moins  log x nombres premiers p  x tels que a p −1 ≡ 1 (mod p 2 ) et p ≡
+                                                       1 (mod k). Ceci améliore un résultat récent de Chen et Ding.
+                                                            © 2019 Académie des sciences. Published by Elsevier Masson SAS. All rights reserved.
+
+
+
+
+1. Introduction
+
+
+   The famous abc conjecture asserts that, for every                  > 0, there exists a constant κ ( ) such that, for any nonzero coprime
+integers a, b and c with a + b = c, we have
+
+
+        max{|a|, |b|, |c |}  κ ( ) · (rad(abc ))1+ ,
+
+where rad(abc ) denotes the product of all distinct prime factors of abc.
+   It is well known that Wiefereich primes and the ﬁrst case of Fermat’s last theorem are closely related [4]. For any positive
+integer a with a  2, we say that p is a Wieferich prime for base a if a p −1 ≡ 1 (mod p 2 ). A Wieferich prime for base 2 is
+
+
+
+    E-mail address: 840172236@qq.com.
+
+https://doi.org/10.1016/j.crma.2019.05.007
+1631-073X/© 2019 Académie des sciences. Published by Elsevier Masson SAS. All rights reserved.
+484                                                              Y. Ding / C. R. Acad. Sci. Paris, Ser. I 357 (2019) 483–486
+
+
+just called a Wieferich prime. It seems that almost all primes are non-Wieferich primes. However, we cannot even prove
+that non-Wieferich primes are inﬁnite.
+   For a  2 a positive integer, Silverman [3] proved that there are  log x non-Wieferich primes for base a, if the abc
+conjecture holds. For any integers a  2 and k  2, this result was extended to
+
+                                                                                                 log x
+       #{ p : p  x, a p −1 ≡ 1 (mod p 2 ), p ≡ 1 (mod k)} 
+                                                                                                log log x
+by Graves and Murty [2], assuming the abc conjecture. Recently, Chen and Ding [1] improved this bound to obtain
+
+         log x
+                     (log log log x) M
+       log log x
+for any ﬁxed number M. The bound is improved further in this paper. Let P be the set of all primes. Our result is stated in
+the following.
+
+Theorem 1.1. Let a and k be given integers with a  2 and k  2. If one assumes the abc conjecture, then we have
+
+       #{ p : p  x, p ∈ P , a p −1 ≡ 1 (mod p 2 ), p ≡ 1 (mod k)}  log x.
+
+2. Some lemmas
+
+    As usual, let n (x) denote the n-th cyclotomic polynomial. Let a, k be ﬁxed positive integers with a  2 and k  2. We
+follow the notation of Chen and Ding [1] for convenience. Let C n and D n be the square-free and powerful part of an − 1
+respectively. This means that we factor an − 1 as follows:
+                           k
+                                                                             k
+       an − 1 =            pi i , Cn =                 pi , Dn =              p i i , an − 1 = C n D n .
+                       i                      k i =1                 k i >1
+
+Let C n = (C n , n (a)), D n = ( D n , n (a)).
+   We give some lemmas in the following.
+
+Lemma 2.1. ([2, Lemma 2.3]). If p is a prime with p |n (a), then either p |n or p ≡ 1 (mod n).
+
+Lemma 2.2. ([2, Lemma 2.4]). If p is a prime with p |C n , then a p −1 ≡ 1 (mod p 2 ).
+
+Lemma 2.3. ([1, Lemma 2.4]). Let  be a positive number. Suppose that the abc conjecture is true. Then C n  aφ(n)− n .
+
+                                                , C  ) = 1.
+Lemma 2.4. ([1, Lemma 2.5]). If m < n, then (C m    n
+
+
+Lemma 2.5. Let ϕ (n) be the Euler totient function. For any given positive integer k, we have
+        ϕ (nk)
+                       = c (k)x + O (log x),
+              nk
+       nx
+
+                          ( p ,k)
+                                      
+where c (k) =         1−        p2
+                                          > 0 and the implied constant depends on k.
+                 p
+
+                                              
+Proof. Noting that         ϕ (nk) =               μ(d) nk
+                                                       d
+                                                          , we have
+                                          d|nk
+
+        ϕ (nk)                                  nk       1          μ(d)
+                       =                  μ(d)          ·        =
+              nk                                    d       nk                      d
+       nx                 nx d|nk                                  nx d|nk
+                            μ(d)                            μ(d)                            μ(d)          x
+                       =                               1=                                 1=
+                                          d                            d                              d     d/(d, k)
+                           dxk                nx           dxk               nx            dxk
+                                               d|nk                              d
+                                                                               (d,k) |n
+
+                                 μ(d)(d, k)                                        ∞
+                                                                                     μ(d)(d, k)
+                       =x                                   + O (log x) = x                               + O (log x)
+                                              d2                                                d2
+                            dxk                                                    d =1
+

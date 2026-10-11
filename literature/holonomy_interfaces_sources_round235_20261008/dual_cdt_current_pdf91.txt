@@ -1,0 +1,54 @@
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                91
+
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for all
+i = 1, . . . , m. Then
+                         RR
+                             2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                      m≤ T                                          .      (7.0.3)
+                                     log |φ′ (0)| − τ (b; e)
+In particular, the formal functions f1 , . . . , fm are holonomic.
+   If moreover all functions fi are a priori assumed to be holonomic, the condi-
+tion (7.0.2) can be relaxed to |φ′ (0)| > eτ (b;e) .
+   When e = 0, then (as previously noted after the statement of Theorem 6.0.2)
+τ (b; e) coincides with the τ (b) of Theorem 2.5.1. Hence Theorem 2.5.1 is an im-
+mediate corollary of Theorem 7.0.1.
+   As discussed in § 2.1, the b = 0, e = 0 case of ZJxK functions was established
+by Bost and Charles [BC22, Corollary 8.3.5]. Charles explained to us that their
+method can be modified to take denominators into account and obtain the following
+weaker form25 of (7.0.3) for a starting bound:
+                         RR
+                             2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                    m≤ T                                            .      (7.0.4)
+                            log |φ′ (0)| − (σm + max1≤i≤m ei )
+    The basic idea of Theorem 7.0.1 is to use the same archimedean estimate as in
+[BC22], but incorporate into it a closer nonarchimedean evaluation height coun-
+terpart that, sufficiently for our purposes in the paper, improves the denominator
+of the initial bound (7.0.4). Remarkably, despite two seemingly rather different
+methods being used (the concentration of measure method exploiting multivariable
+approximations in § 6, and a single variable evaluation heights scheme in the present
+section), the final denominator term is exactly the same in both Theorems 6.0.2
+and all the results in the present section. The measure concentration method is
+nevertheless theoretically more precise in the general denominators aspect, even
+though no difference is made to any case of relevance to this paper. In the next
+section § 8, we formulate the most precise of our holonomy bounds by blending
+together the measure concentration feature of § 6 with the Bost–Charles feature of
+the present § 7.
+    For the present section and the next, we use Bost’s slopes inequality in Arakelov
+theory. A practically equivalent framework would be the elementary dynamic box
+principle of § B; we stick to the former choice for variety in our paper, and because
+the archimedean evaluation height estimate requires in any event the appeal to
+some relatively deep theorems in Arakelov theory. We hope that the elementary
+evaluation heights arrangement in § B could nevertheless be helpful to some readers
+as an introduction to the tenor of the more elaborate method (due to Bost) that
+we take up here.
+    We also note that one can more intrinsically formulate the proof of (7.0.3) in
+terms of Bost’s theta invariants h0θ and h1θ as in [Bos20, BC22]. The latter pursue
+the concept of absolute dimension for the “space of global sections” of a (countably)
+infinite-dimensional Hermitian vector bundle over an arithmetic curve, under the
+traditional analogy between number fields and algebraic curves over finite ground
+fields. We do not pursue this approach here as the subsequent “convexity improve-
+ments” of the archimedean growth term in (7.0.3) seem to be more of an analytic
+than a geometric nature.
+  25Conditional, as always, on the positivity of the denominator.
+

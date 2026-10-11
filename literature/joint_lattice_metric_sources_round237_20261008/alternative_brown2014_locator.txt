@@ -1,0 +1,2238 @@
+                                          IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES
+                                                          AND DINNER PARTIES
+
+                                                                                  FRANCIS BROWN
+arXiv:1412.6508v1 [math.NT] 19 Dec 2014
+
+
+
+
+                                                  Abstract. A simple geometric construction on the moduli spaces M0,n of curves
+                                                  of genus 0 with n ordered marked points is described which gives a common frame-
+                                                  work for many irrationality proofs for zeta values. This construction yields Apéry’s
+                                                  approximations to ζ(2) and ζ(3), and for larger n, an infinite family of small lin-
+                                                  ear forms in multiple zeta values with an interesting algebraic structure. It also
+                                                  contains a generalisation of the linear forms used by Ball and Rivoal to prove that
+                                                  infinitely many odd zeta values are irrational.
+
+
+                                                                                 1. Introduction
+                                          1.1. Summary. A folklore conjecture states that the values of the Riemann zeta func-
+                                          tion at odd integers ζ(3), ζ(5), . . . and π are algebraically independent over Q. Very
+                                          little is known about this conjecture, except for the following remarkable facts:
+                                               (1) That π is transcendental, proved by Lindemann in 1882.
+                                               (2) That ζ(3) is irrational, proved by Apéry in 1978.
+                                               (3) That the Q-vector space spanned by the odd zeta values ζ(3), ζ(5), . . . is infinite
+                                                    dimensional (proved by Ball and Rivoal [32, 4]).
+                                               (4) That at least one amongst ζ(5), ζ(7), ζ(9), ζ(11) is irrational (Zudilin [39]).
+                                          The irrationality of ζ(5), or ζ(3)/π 3 , are open problems. All of the above results can
+                                          be proved by constructing small linear forms in zeta values using elementary integrals.
+                                          Quantitive results, such as bounds on the irrationality measures of ζ(2) and ζ(3) [30,
+                                          31], and bounds on the transcendence measure of π 2 [35], can also be obtained by
+                                          similar methods.
+                                              The starting point for this paper is the observation that the integrals in all these
+                                          proofs are equivalent, after a suitable change of variables, to period integrals on the
+                                          moduli space M0,n of curves of genus zero with n marked points. Conversely, we
+                                          know by [7], or [22] together with [9], that all period integrals on M0,n are linear
+                                          forms in multiple zeta values. This provides a huge family of potential candidates for
+                                          generalising the above results. Unfortunately, the typical period integral involves all
+                                          multiple zeta values up to weight n − 3 and is ill-adapted for an irrationality proof.
+                                          In this paper, we describe a narrower class of period integrals on M0,n , based on a
+                                          variant of the classical dinner table problem [3, 29], in which certain multiple zeta values
+                                          vanish. We show that this restricted family of integrals has some special properties,
+                                          and reproduces most, and possibly all, the results alluded to in the first paragraph.
+                                          1.2. Structure of irrationality proofs. The basis for the above results is the con-
+                                          struction of small linear forms in zeta values. More generally, suppose that we have:
+                                              (1) For all n ≥ 0, a non-zero Q-linear combination
+                                                                            In = a(1)             (k)
+                                                                                  n ζ1 + . . . + an ζk ,
+                                                           (i)
+                                                  where an ∈ Q, and ζ1 , . . . , ζk are fixed multiple zeta values.
+                                                                                           1
+2                                         FRANCIS BROWN
+
+
+     (2) A bound on the linear forms In . For example, they satisfy an inequality
+                                              0 < |In | < εn
+         for all n ≥ 0, where ε is a small positive real number.
+                                                   (i)
+     (3) Some control on the coefficients aj . At its most basic, this is simply a bound
+                                        (k)
+         on the denominators of an as a function of n. This is often a function of
+                                        dn = lcm{1, . . . , n}
+                                                                         1/n
+        The prime number theorem implies that limn→∞ dn = e.
+Only in very specific cases, when the bounds (3) on the coefficients are favourable
+compared to the constant ε in (2), can one deduce irrationality results. For Apéry’s
+theorem, k = 2 and one constructs linear forms In = an ζ(3) + bn , for example, as
+integrals (9.2). In this case, a bound on the denominators of an , bn suffices: we have
+                          √
+                     ε = ( 2 − 1)4      and      an ∈ Z, d3n bn ∈ Z
+and the inequality
+                                  e3 ε = 0.591 . . . < 1
+is enough to deduce the irrationality of ζ(3). For Ball and Rivoal’s theorem, one
+constructs linear forms in odd zeta values ζ(2m + 1) and applies a criterion due to
+Nesterenko [25] which depends on the size of both the denominators and the numerators
+                     (i)
+of the coefficients aj to deduce a lower bound for dimQ hζ1 , . . . , ζk iQ . 1
+   Unfortunately, there are very few cases where this works, which motivates trying to
+reach a better understanding of the general principles involved. We refer to Fischler’s
+Bourbaki talk for an excellent survey of known results [18].
+1.3. Periods of moduli spaces M0,n . A large supply of linear forms satisfying (1) −
+(3) comes from period integrals on moduli spaces. Let n ≥ 3 and let M0,n denote the
+moduli space of curves of genus zero with n ordered marked points. It is isomorphic
+to the complement in affine space Aℓ , where ℓ = n − 3, of a hyperplane configuration
+                        M0,n = {(t1 , . . . , tℓ ) ∈ Aℓ : ti 6= tj , ti 6= 0, 1} .
+A connected component of M0,n (R) is given by the simplex
+                      Sn = {(t1 , . . . , tℓ ) ∈ Rℓ : 0 < t1 < . . . < tℓ < 1} .
+Examples of period integrals on M0,n can be expressed as
+                       Z Y
+(1.1)                         tai i (1 − tj )bj (ti − tj )cij dt1 . . . dtℓ
+                             Sn
+for suitable ai , bj , cij ∈ Z such that the integral converges. For such a family of
+integrals, the first property (1) is guaranteed by the following theorem:
+Theorem 1.1. The periods of moduli spaces M0,n are Q[2πi]- linear combinations of
+multiple zeta values of total weight ≤ ℓ.
+   A general recipe for constructing linear forms in multiple zeta values is to consider
+a family of convergent integrals
+                                              Z
+(1.2)                             If,ω (N ) =   fNω
+                                                         Sn
+
+    1Condition (2) must be slightly modified: one can assume by clearing denominators that I has
+                                                                                            n
+integer coefficients, and one needs to know that |In |1/n has a small positive limit as n → ∞.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES                 3
+
+
+where ω ∈ Ωℓ (M0,n ; Q) is a regular ℓ-form, and f ∈ Ω0 (M0,n ; Q). If, furthermore, one
+imposes that the rational function f has zeros along the boundary2 of Sn , then the
+integrals Iℓ will be small, and condition (2) will automatically hold as well, for some
+small ε. The proof of theorem 1.1 given in [7] is effective and should in principle yield
+                                                                                       (i)
+explicit bounds on the denominators (and numerators) of the rational coefficients aj
+as a function of the order of the poles of the integrand. Furthermore,
+Proposition 1.2. All diophantine constructions mentioned above (with the possible
+exception of Zudilin’s theorem (4)) can be expressed as integrals of the type (1.2).
+    The proof of this proposition uses results due to Fischler to convert the integrals
+listed in Appendix 1 into a form equivalent to (1.2). Nonetheless, finding good linear
+forms in zeta values amongst the integrals (1.2) is significantly harder than finding a
+needle in a haystack. For example, the general integral yielding linear forms in multiple
+zeta values of weight at most 5 (of interest, if one seeks linear forms in 1 and ζ(5))
+depends on 20 independent parameters, which is hopelessly large.
+
+1.4. Vanishing of coefficients. Therefore examples such as (1.2) provide an enor-
+mous supply of candidates IN for irrationality proofs. The problem with this approach
+is that the linear forms IN involved are rather weak, and only enable one to deduce
+linear independence of a small fraction of the numbers ζi . Furthermore, the generic
+integral (1.1) contains all multiple zeta values of weight up to and including ℓ. Thus,
+the presence of terms such as ζ(2n), for example, for which one already knows the
+linear independence by Lindemann’s theorem, blocks any further progress.
+  One therefore requires, in addition to (1) − (3) above:
+                                                             (i)
+    (4) Vanishing theorems for some of the coefficients aj .
+
+   This is already clear in the case of Apéry’s proof for ζ(3). Indeed, the generic period
+integral on M0,6 gives rise to linear forms in 1, ζ(2) and ζ(3), and a naive attempt at
+constructing linear forms IN only gives back a proof that one of the two numbers ζ(2)
+and ζ(3) is irrational. The entire difficulty is thus to find integrals IN for which the
+coefficient of ζ(2) always vanishes (without destroying properties (1) − (3)). The key
+insight of Ball and Rivoal’s proof, likewise, is the use of very well-poised hypergeometric
+series to construct linear forms in odd zeta values, and odd zeta values only.
+   The vanishing problem (4) can be rephrased in terms of algebraic geometry, and
+more precisely, the cohomology of moduli spaces. In principle, this part of the problem
+is purely combinatorial. An integral of the form (1.2) can be expressed as a period of
+a certain relative cohomology group first introduced in [22]
+                          m(A, B) = H ℓ (M0,n \A, B\(B ∩ A))
+where A, B are boundary divisors on the Deligne-Mumford compactification M0,n .
+The divisor A is determined from the singularities of the integrand, and B contains the
+boundary of the closure of the domain of integration. It was shown in [22] that m(A, B)
+is a mixed Tate motive over Z (which, by [9], gives another proof that its periods are
+multiple zeta values). Its de Rham realisation m(A, B)dR is a finite-dimensional Q-
+vector space graded in even degrees, and a naive observation (theorem 11.2) is that
+                                                                    (i)
+      grW
+        2k m(A, B)dR = 0        ⇒        vanishing of coefficients aj in weight k .
+
+   2or more precisely, the boundary of the inverse image of S in the Deligne-Mumford-Knudsen
+                                                             n
+compactification M0,n of M0,n
+4                                          FRANCIS BROWN
+
+
+This gives a sufficient condition for all multiple zeta values of weight k to disappear.3
+The dimensions of the graded weight pieces grW  2k m(A, B)dR can be computed from the
+data of the divisors A, B, and so reduces to a (rather tricky) combinatorial problem. I
+expect that the recent work of Dupont [15, 16] may shed light on how to understand
+the vanishing problem (4) from this viewpoint.
+   As a final remark, an irreducible boundary divisor D occurs in A if and only if a
+certain linear form ℓD in the exponents ai , bj , cij of the integrand (1.1) is negative.
+Thus the flow of information goes as follows:
+(1.3)     linear inequalities ℓD ≤ 0 in the exponents of (1.1)
+                     −→ vanishing of certain components grW
+                                                          2k m(A, B)dR
+                                                                                         (i)
+                                                   −→ vanishing of coefficients aj
+The challenge is to make this philosophy work, or failing that, to show that one cannot
+construct moduli space motives m(A, B) with arbitrary vanishing properties. Moti-
+vated by (1.3), I was only able to find a general method to force the coefficients of
+sub-maximal weight 2ℓ − 2 to vanish (corresponding to MZV’s of weight ℓ − 1), via the
+following construction.
+1.5. A variant of the dinner table problem [3]. Suppose that we have n guests
+for dinner, sitting at a round table. Since it could be boring to talk to the same person
+for the whole duration of the meal, the guests should be permuted after the main
+course in such a way that no-one is sitting next to someone they previously sat next
+to. We can represent the new seating arrangement (non-uniquely) by a permutation
+σ on {1, . . . , n}, which we write as (σ(1), . . . , σ(n)). The number of dinner table
+arrangements was first computed by Poulet in 1919 [29].
+
+                                   1                                  1
+
+
+
+                        5                      2           4                      3
+                                  δ0                                 σδ 0
+
+
+                            4              3                   2              5
+
+
+
+          Figure 1. The first solution for the classical dinner table problem
+          is for n = 5, and is unique up to symmetries. On the left is the
+          original seating plan of guests; on the right, the new arrangement
+          after applying a permutation σ. No two neighbours are consecutive.
+
+   We need the following variant. Let δ 0 denote the standard circular arrangement on
+{1, . . . , n} given by the integers modulo n (the initial seating plan), and let σ be any
+permutation on {1, . . . , n} (the new seating plan). Call a permutation σ convergent if
+no set of k elements in {1, . . . , n} are simultaneously consecutive for δ 0 and σδ 0 , for
+all 2 ≤ k ≤ n − 2. For n ≤ 7 this is equivalent to the classical dinner table problem
+but for n ≥ 8 this imposes a genuinely new condition. The figure below illustrates a
+seating arrangement σ = (2, 4, 1, 3, 6, 8, 5, 7) which is a solution to the classical dinner
+table problem but fails our condition for k = 4.
+    3It is not a necessary condition: there could be more subtle reasons for the vanishing of coefficients
+ (i)
+aj . For example, the action of a group of symmetries on the m(A, B)dR together with representation-
+theoretic arguments might give more powerful vanishing criteria.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES                            5
+
+
+                                                   2
+                                          7                  4
+
+
+
+
+                                      5          σδ 0            1
+
+
+
+
+                                          8                  3
+                                                   6
+
+
+
+         Figure 2. An arrangement of 8 guests which is not convergent: the
+         guests 1, 2, 3, 4 (and 5, 6, 7, 8) are consecutive for both δ 0 and σδ 0 .
+
+   Now, given a permutation σ we associate a rational function and regular n-form
+             Y       (zi − zi+1 )                            dz1 . . . dzn
+      feσ =                           and      eσ = Q
+                                               ω
+                  (zσ(i) − zσ(i+1) )                    i∈Z/nZ (zσ(i) − zσ(i+1) )
+              i∈Z/nZ
+
+on the space C n = {(z1 , . . . , zn ) ∈ (P1 )n : zi 6= zj } of configurations of n distinct points
+in P1 . They are defined up to an overall sign, which plays almost no role and shall be
+ignored. They are both PGL2 -invariant. The former descends to a rational function
+fσ on M0,n = PGL2 \C n , the latter, after dividing by an invariant volume form on
+PGL2 , descends to a regular ℓ-form ωσ on M0,n .
+   Define the basic cellular integral to be
+                                                    Z
+(1.4)                                    Iσ (N ) =      fσN ωσ
+                                                       Sn
+
+It converges if and only if σ is a convergent permutation, as defined above. This integral
+can be written in the form (1.1) by substituting (0, t1 , . . . , tℓ , 1, ∞) for (z1 , . . . , zn ) and
+formally omitting dz1 dzn−1 dzn and all factors equal to ∞.
+   Clearly, the definition of the forms feσ , ω
+                                              eσ , and hence fσ , ωσ only depend on the di-
+hedral ordering defined by the permutation σ. Furthermore, the domain of integration
+in the integrals (1.4) admits a second dihedral symmetry of order 2n, and these two
+dihedral symmetry groups define an equivalence relation on the set of permutations
+σ. Two equivalent permutations give rise to the same family of integrals, and we call
+the equivalence class a configuration. A list of convergent configurations for small n
+is given in Appendix 2, together with the corresponding basic cellular integrals. As
+mentioned above, the basic cellular integrals reproduce Apéry’s theorems for ζ(2) and
+ζ(3) and a one-dimensional subfamily of the (two-parameter family) of linear forms in
+odd zeta values used in the proof of Ball and Rivoal.
+   A generalisation of this construction involves replacing feσn with
+                                      Y          (zi − zi+1 )ai,i+1
+                       feσ (a, b) =
+                                    i∈Z/N Z
+                                            (zσ(i) − zσ(i+1) )bσ(i),σ(i+1)
+
+where ai,i+1 and bσ(i),σ(i+1) are integers satisfying
+                            aσi −1,σi + aσi ,σi +1 = bσi−1 ,σi + bσi ,σi+1
+for all indices i modulo Z/nZ. It descends again to a rational function fσ (a, b) on
+M0,n and we define an n-parameter family of integrals
+                                         Z
+(1.5)                        Iσ (a, b) =   fσ (a, b)ωσ
+                                                  Sn
+6                                        FRANCIS BROWN
+
+
+It converges under some linear conditions on the indices a, b, and specialises to the
+basic cellular integrals if one sets all parameters equal to n. For n = 5, 6, this family of
+integrals reproduces precisely Rhin and Viola’s integrals for ζ(2) and ζ(3), and hence
+gives the best irrationality measures for these numbers which are presently known.4 For
+other convergent configurations, it gives n-parameter generalisations of the Ball-Rivoal
+linear forms, and many new families which remain to be explored.
+1.6. Contents. Section 2 consists of reminders on moduli spaces M0,n and basic facts
+about their geometry. Section 3 defines dinner table configurations, and establishes
+convergence properties for the corresponding cellular integrals. In section 4 we show
+that the basic cellular integrals satisfy recurrence relations and study the effect of
+duality upon them. Section 5 is concerned with properties of general cellular integrals,
+and section 6 studies a certain multiplicative structure on cellular integrals coming
+from functorial maps between moduli spaces. In section 7, it is shown that a very
+specific family of configurations, after an appropriate change of variables, gives back
+the linear forms in odd zeta values discovered by Ball and Rivoal. Section 8 discusses
+the vanishing problem (4) from the cohomological point of view and some more subtle
+structures, such as Poincaré-Verdier duality, which are not obviously apparent from an
+inspection of integrals.
+   For the convenience of the reader, appendix 1 gives a list of existing integrals from
+the literature which have led to the main diophantine results for zeta values. They
+nearly all arise as special cases of generalised cellular integrals. Appendix 2 tabulates
+some examples of basic cellular integrals in low degrees. Finally, appendix 3 is devoted
+to a somewhat technical computation of the motives underlying Apery’s proofs of the
+irrationality of ζ(2) and ζ(3).
+1.7. Outlook and related work. Whether the ideas in this paper lead to new dio-
+phantine applications remains to be seen. Insofar as it contains the linear forms of [4],
+[30], [31] as special cases, it is fair to expect that it could lead to an improvement in
+quantitative diophantine results. The methods described here also lead to new approx-
+imations to single odd zeta values such as ζ(5) (§7.1) but it is unclear if they could
+lead to an irrationality proof. Much more optimistically still, one might hope to prove
+the transcendence of ζ(3) by optimizing our polynomial forms in ζ(3) along the lines of
+[35]. Finally, it would be interesting to combine the geometric methods of this paper
+with the conditions on numerators studied in [12, 13, 19, 37] to obtain linear forms in
+antisymmetric multiple zeta values with odd arguments. There are connections with
+disparate subjects such as the theory of hypergeometric functions on the one hand,
+and operads [1] on the other, which remain to be explored. It would also be interesting
+to compare our method with the quantum cohomology computations of [20, 21].
+
+    Acknowledgements. This work was begun in 2004, and continued periodically dur-
+ing a stay at the Mittag-Leffler Institute in Stockholm in 2007, and finally written up at
+Humboldt University, Berlin and the Institute for Advanced Study, Princeton in 2014.
+I thank all three institutes for hospitality and financial support. The impetus to finish
+this project came from the recent implementations, due especially to Erik Panzer, and
+independently, Christian Bogner, for the algorithmic computation of Feynman inte-
+grals. Many thanks to Erik Panzer, Stephane Fischler, Clement Dupont for comments
+and corrections, and Wadim Zudilin for many many helpful remarks. This work was
+partially supported by ERC grant 257638 and NSF grant DMS-1128155.
+
+    4The record for ζ(2) has recently been broken by Zudilin [41].
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES                         7
+
+
+                  2. Moduli spaces M0,n : geometry and periods
+2.1. Coordinates. Let n ≥ 3, and let S denote a set with n elements. Let M0,S
+denote the moduli space of Riemann spheres with n points labelled with elements of
+S. If (P1 )S∗ denotes the space of n-tuples of distinct points zs ∈ P1 , for s ∈ S, then
+                                     M0,S = PGL2 \(P1 )S∗ ,
+where PGL2 is the group of automorphisms of P1 acting diagonally by Möbius trans-
+formations. Throughout this paper, we shall set
+(2.1)                                      ℓ=n−3 .
+When S = {s1 , . . . , sn }, we often write i instead of si , and M0,n instead of M0,S .
+Since the action of PGL2 on P1 is triply transitive, we can place the coordinates z1 at
+0, zn−1 at 1, and zn at ∞ (note that this convention differs slightly from [7]).
+   We define simplicial coordinates t1 , . . . , tℓ on M0,n to be:
+(2.2)                             t1 = z2 , . . . , tℓ = zℓ+1 .
+The above argument shows that M0,n is isomorphic to the complement of a hyperplane
+arrangement in affine space Aℓ of dimension ℓ:
+(2.3)        M0,n ∼
+                  = {(t1 , . . . , tℓ ) ∈ Aℓ : ti ∈
+                                                  / {0, 1},   ti 6= tj for all i 6= j} .
+Cubical coordinates x1 , . . . , xℓ are defined by
+(2.4)                  t1 = x1 . . . xℓ , t2 = x2 . . . xℓ , . . . , tℓ = xℓ .
+We can also identify M0,n with a complement of hyperbolae:
+(2.5)      M0,n ∼
+                = {(x1 , . . . , xℓ ) ∈ Aℓ : xi ∈
+                                                / {0, 1},     xi . . . xj 6= 1 for all i < j} .
+
+2.2. Compactification. There is a smooth projective compactification M0,S ⊂ M0,S
+defined by Deligne, Mumford and Knudsen [24] such that the complement M0,S \M0,S
+is a simple normal crossing divisor. A boundary divisor D is a union of irreducible
+components of M0,S \M0,S . We shall only require the following basic facts.
+    (1) The irreducible boundary divisors are in one-to-one correspondence with stable
+        partitions S = S1 ∪ S2 , where |S1 |, |S2 | ≥ 2 and S1 ∩ S2 = ∅. They can be
+        denoted by DS1 |S2 or simply DS1 (or DS2 ) when S is clear from the context.
+    (2) There is a canonical isomorphism
+                                DS1 |S2 ∼
+                                        = M0,S1 ∪x × M0,S2 ∪x
+        which can be pictured as a bouquet of two spheres joined at a point x, with
+        the points S1 lying in one of these spheres, the points S2 on the other.
+    (3) Given two distinct stable partitions S1 |S2 and T1 |T2 of S, the divisors DS1 |S2
+        and DT1 |T2 have non-empty intersection if and only if
+               Si ⊆ Tk and Tl ⊆ Sj            for some {i, j} = {k, l} = {1, 2} .
+By taking repeated intersections of boundary divisors one obtains a stratification on
+M0,S by closed subschemes. The irreducible strata of codimension k are indexed by
+trees with k internal edges and |S| leaves labelled by every element of S. The large
+stratum M0,S is indexed by a corolla with no internal edges, and divisors DS1 |S2 by two
+corollas with leaves labelled by S1 and S2 respectively, joined along a single internal
+edge. The inclusion of strata corresponds to contracting internal edges on trees.
+8                                      FRANCIS BROWN
+
+
+2.3. Real components and dihedral structures. The set of real points M0,S (R)
+is isomorphic to the space of configurations of |S| distinct points on P1 (R). Therefore
+the set of connected components is in one-to-one correspondence
+                   π0 (M0,S (R))      ↔      {Dihedral structures on S} .
+A dihedral structure δ on S is an equivalence class of cyclic orderings on S, where a
+cyclic ordering is equivalent to its reversed ordering. If S = {1, . . . , n}, we denote the
+standard dihedral ordering 1 < 2 < . . . < n < 1 by δ 0 . In simplicial coordinates, the
+corresponding connected component is the open simplex
+                   Sδ0 = {(t1 , . . . , tℓ ) ∈ Rℓ : 0 < t1 < . . . < tℓ < 1} .
+We say that an irreducible boundary divisor D of M0,S is at finite distance with respect
+to a dihedral structure δ if D(C) meets the closure of Sδ0 in M0,S (C) in the analytic
+topology. Equivalently, D = DS1 |S2 is at finite distance if and only if the elements of S1
+and S2 are consecutive with respect to δ. Let δf denote the set of irreducible divisors at
+finite distance with respect to δ. If one depicts a dihedral structure δ as a set of points
+S around a circle (up to reversing its orientation), then the set of divisors at finite
+distance correspond to chords in the circle which separate S into the two subsets S1
+and S2 . All remaining irreducible boundary divisors are said to be at infinite distance
+with respect to δ. Let δ∞ denote the set of irreducible divisors at infinite distance with
+respect to δ.
+                                                                 0
+Example 2.1. On M0,4 , δf0 = {D{1,2}|{3,4} , D{2,3}|{1,4} } and δ∞ = {D{1,3}|{2,4} }.
+2.4. Periods. We shall consider periods of M0,S of the form
+                                         Z
+(2.6)                                I=     ω
+                                                 Sδ
+             ℓ
+where ω ∈ Ω (M0,S ; Q) is a global regular ℓ-form on M0,S . Such an integral can be
+written as a Q-linear combination of integrals (1.1). It converges if and only if the order
+of vanishing along all divisors D at finite distance with respect to δ is non-negative:
+(2.7)                           vD (ω) ≥ 0       for all D ∈ δf .
+The singular locus of ω is defined to be the set of irreducible divisors (necessarily
+boundary divisors) along which ω has a pole:
+                          Sing(ω) = {D irred. s.t. vD (ω) < 0}
+Then condition (2.7) is equivalent to Sing(ω) ⊆ δ∞ .
+   The set of permutations σ of S which preserve a dihedral structure δ is isomorphic
+to the dihedral group Dδ on 2|S| elements. We have
+                        Z       Z
+(2.8)                       ω=      σ ∗ (ω)    for all σ ∈ Dδ .
+                           Sδ        Sδ
+
+Remark 2.2. It is sometimes convenient to write period integrals on M0,S in terms of
+the dihedral ‘coordinates’ uc indexed by chords in an |S|-gon, which were defined in [7].
+The convergence condition (2.7) and symmetry (2.8) are obvious in these coordinates.
+   Let S = {1, . . . , n}. In cubical coordinates, the domain Sδ0 is isomorphic to the unit
+hypercube [0, 1]ℓ , and a general period integral (2.6) can be written in the form
+                          Z
+                                       P (x1 , . . . , xℓ )
+(2.9)                             Q                          cij
+                                                                 dx1 . . . dxℓ
+                           [0,1]ℓ  1≤i<j≤ℓ (1 − xi . . . xj )
+where cij ∈ Z and P is a polynomial with rational coefficients. All examples in
+Appendix 1 are either of this form, or equivalent to it by a change of variables.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES                        9
+
+
+2.5. Denominators. The algorithm of [7] for computing integrals (1.1) by taking
+primitives in a bar complex is effective, and should lead to bounds on the denomina-
+tors. The basic observation is that a differential form P (x)dx where P (x) ∈ Z[x] is a
+polynomial of degree n − 1, has a primitive
+                                 Z
+                                                1
+                                    P (x)dx ∈     Z[x]
+                                               dn
+where dn = lcm(1, 2, . . . , n). The denominator is thus bounded by dn , where n is the
+order of the pole at infinity. An analysis of the steps in [7], working with Z coefficients,
+should lead to effective bounds on the denominators of the coefficients of the linear
+forms §1.2 in terms of the orders of the poles at infinity of the integrand.
+
+                     3. Configurations and cellular integrals
+3.1. Convergent configurations.
+Definition 3.1. A configuration on a finite set S is an equivalence class [δ, δ ′ ] of pairs
+(δ, δ ′ ) of dihedral structures on S modulo the equivalence relations
+(3.1)                         (δ, δ ′ ) ∼ (σδ, σδ ′ )     for σ ∈ Σ(S) .
+A pair of dihedral structures (δ, δ ′ ) is convergent if it satisfies (see §2.3)
+(3.2)                                           δf ∩ δf′ = ∅ .
+A configuration is convergent if it has a convergent representative (δ, δ ′ ).
+   Let CS denote the set of convergent configurations on S. We can view convergent
+configurations as pairs of connected components of M0,S up to automorphisms
+                                                               
+(3.3)              CS ֒→ Σ(S)\ π0 (M0,S (R)) × π0 (M0,S (R))
+Definition 3.2. The dual of a pair of dihedral structures (δ, δ ′ ) is
+                                          (δ, δ ′ )∨ = (δ ′ , δ) .
+It is well-defined on configurations, and defines an involution ∨ : CS → CS .
+   In order to write down convergent configurations, it is convenient to identify S with
+{1, . . . , n}. A pair of dihedral structures (δ, δ ′ ) is equivalent to (δ 0 , σδ 0 ) where δ 0 is
+the standard dihedral ordering, where σ ∈ Σ(n) is a permutation on n letters. Define
+an equivalence relation σ ∼ σ ′ on permutations if (δ 0 , σδ 0 ) ∼ (δ 0 , σ ′ δ 0 ), and denote
+the equivalence classes by [σ]. The condition (3.2) is equivalent to the condition that
+no set of k consecutive elements (where the indices are taken modulo n)
+                                         {σi , σi+1 , . . . , σi+k }
+is itself a set of consecutive integers modulo n, for all 2 ≤ k ≤ n − 2. It does not
+depend on the choice of representative for [σ].
+   The above equivalence relation on permutations can be spelt out as follows. Consider
+the space of double cosets of bijections
+                            D2n \Bij({1, . . . , n}, {1, . . . , n})/D2n
+where the dihedral groups act on the source and target respectively as symmetries of
+δ 0 . A double coset is represented by an equivalence class of permutations (σ1 , . . . , σn ),
+where σ ∈ Σ(n), modulo the group generated by cyclic rotations
+                           (σ1 , . . . , σn )    ∼ (σ2 , . . . , σn , σ1 )
+                           (σ1 , . . . , σn )    ∼ (σ1 + 1, . . . , σn + 1)
+10                                      FRANCIS BROWN
+
+
+where the entries are taken modulo n in the second line, and the reflections
+                     (σ1 , . . . , σn ) ∼   (σn , . . . , σ1 )
+                     (σ1 , . . . , σn ) ∼   (n + 1 − σ1 , . . . , n + 1 − σn )
+Given such a class of permutations σ, the pair of dihedral structures (δ 0 , σδ 0 ) is well-
+defined modulo the relations (3.1). This establishes a bijection between configurations
+and equivalence classes of permutations. The dual of the configuration corresponding
+to [σ] is the configuration represented by the inverse permutation [σ]∨ = [σ −1 ].
+
+3.2. Cellular forms. To any dihedral structure δ we associate the connected compo-
+nent Sδ of M0,S (R). This will serve as a domain of integration. We can also associate
+a regular ℓ-form as follows. Let
+                          Y          dzi
+                eδ = ±
+                ω                              ∈ Ωℓ+3 ((P1 )S∗ ; Q) ,
+                               zδ(i) − zδ(i+1)
+                          i∈Z/nZ
+
+where the indices are taken modulo n. Clearly ω  eδ is homogeneous of degree zero and
+is easily verified to be PGL2 -invariant. Furthermore σ ∗ ω     ωσδ for any σ ∈ Σ(S),
+                                                          eδ = ±e
+which acts on (P1 )S∗ by permuting the components. Let
+                                      π : (P1 )S∗ → M0,S
+                                                                   e by a rational
+be the natural map obtained by quotienting by PGL2 . We can divide ω
+invariant volume form v on PGL2 to obtain a differential form [11]
+                                     ωδ ∈ Ωℓ (M0,S ; Q) .
+It satisfies π ∗ (ωδ ) ∧ v = ω
+                             eδ for any local trivialisation of π. If we normalise v so that
+ωδ = ±1, whenever |S| = 3, then ωδ is unique up to a sign for all δ. It follows that
+(3.4)                     σ ∗ ωδ = ±ωσ(δ)       for all    σ ∈ Σ(S) .
+Remark 3.3. It is possible to fix all the signs by considering cyclic structures instead
+of dihedral structures, as was done in [11]. The sign plays no role for us.
+Lemma 3.4. The form ωδ has a simple pole along every irreducible boundary divisor
+at finite distance with respect to δ, and no other poles. In other words,
+                                        Sing(ωδ ) = δf .
+Proof. This is proposition 2.7 in [11].                                                   
+   When S = {1, . . . , n}, the form ωδ can be written explicitly in simplicial coordinates
+as follows. We can assume by dihedral symmetry that δ(n) = n, in which case
+                                            dt1 . . . dtℓ
+                                ωδ = ± Qn−2
+                                        i=1 (tδ(i) − tδ(i+1) )
+
+where we write t0 = 0 and tn−1 = 1.
+
+3.3. Basic cellular integrals. Given a pair of dihedral structures (δ, δ ′ ) consider the
+rational function on (P1 )∗S defined as follows:
+                               Y zδ(i) − zδ(i+1)
+                    feδ/δ′ = ±                            ∈ Ω0 ((P1 )∗S ; Q) .
+                                   z δ ′ (i) − zδ ′ (i+1)
+                                 i
+
+It is PGL2 -invariant. It therefore descends to a rational function
+                                   ±fδ/δ′ ∈ Ω0 (M0,S ; Q) .
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 11
+
+
+Duality corresponds to inversion:
+                                                           −1
+(3.5)                                  fδ/δ′ = ± fδ′ /δ          ,
+and furthermore,
+(3.6)                                    fδ/δ′ ωδ = ±ωδ′ .
+Definition 3.5. For all N ≥ 0, and any pair of dihedral structures (δ, δ ′ ) define the
+family of basic cellular integrals to be
+                                            Z
+                                                   N
+(3.7)                          Iδ/δ′ (N ) =   fδ/δ′ ωδ′
+                                                    Sδ
+It may or may not be finite.
+  The numbers Iδ/δ′ (0) are essentially the cell-zeta values studied in [11].
+Lemma 3.6. The integral Iδ/δ′ (N ) is finite if and only if (δ, δ ′ ) satisfy δf ∩ δf′ = ∅.
+Proof. See §3.4.                                                                          
+  Since Sδ , ωδ′ , and fδ/δ′ are Σ(S)-equivariant (up to orientation and sign) we have
+                         Iδ/δ′ (N ) = Iσδ/σδ′ (N )        for all σ ∈ Σ(S) .
+In particular, we obtain a well-defined map
+                                      CS × N        −→ R≥0
+                                 ([δ, δ ′ ], N )    7→    Iδ/δ′ (N ) .
+Remark 3.7. Let δ be a dihedral structure with δ(n) = n. Then the function fδ0 /δ can
+be written explicitly in simplicial coordinates
+                                      t1 (t2 − t1 ) · · · (tℓ − tℓ−1 )(1 − tℓ )
+                         fδ0 /δ = ±            Qn−2
+                                                  i=1 tδ(i)−δ(i+1)
+where t0 = 0 and tn−1 = 1. In particular, it has no zeros or poles on the open standard
+simplex Sℓ , and is therefore either positive or negative definite on Sℓ .
+   Notice that, in the case when (δ, δ ′ ) is convergent, we have
+                                                      N
+(3.8)                    Iδ/δ′ (N ) ≤ max |fδ/δ′ (t)| Iδ/δ′ (0) .
+                                             t∈Sℓ
+
+One can write fδ/δ′ as a product of dihedral coordinates [6], [7] which take value in
+[0, 1] on Sℓ . This immediately implies that the maximum of |fδ/δ′ (t)| on Sℓ is strictly
+less than 1. One can certainly obtain much sharper bounds.
+    When σ ∈ Σ(n) is a permutation, we shall sometimes write
+                          fσ for fδ0 /σδ0           and    ωσ for ωσδ0 .
+3.4. Proof of convergence. We wish to compute the order of vanishing of fδ/δ′ along
+an irreducible boundary divisor D of M0,S . For this, define
+                                1                                 
+                     ID (i, j) = I({i, j} ⊂ S1 ) + I({i, j} ⊂ S2 )
+                                2
+for any i, j ∈ S and where D corresponds to the stable partition S1 ∪ S2 of S. The
+symbol I on the right-hand side denotes the indicator function: I(A ⊂ B) is 1 if A is
+a subset of B, and 0 otherwise. In [7], corollary 2.36, it was shown that
+                   (zi − zj )(zk − zl )
+            ordD                        = ID (i, j) + ID (k, l) − ID (i, k) − ID (j, l)
+                   (zi − zk )(zj − zl )
+12                                       FRANCIS BROWN
+
+
+where the cross-ratio on the left is viewed in Ω0 (M0,S ; Q). If we define
+                                 X                                      1
+                     ID (σ) =            ID ({σ(i), σ(i + 1)})    ∈       N,
+                                                                        2
+                                i∈Z/nZ
+
+then it follows from the definition of fδ/δ′ that
+
+(3.9)                           ordD fδ/δ′ = ID (δ) − ID (δ ′ ) .
+
+Lemma 3.8. Let σ be a dihedral ordering on S. Then ID (σ) ≤ n2 − 1 with equality if
+and only if D ∈ σf , i.e., D is at finite distance with respect to σ.
+                                                               P
+Proof. Let D = DS1 |S2 . Since S1 ( {1, . . . , n}, the sum i I({σ(i), σ(i + 1)} ⊆ S1 ) is
+bounded above by |S1 | − 1 and attains the maximum   P      if and only if the elements of S1
+are consecutive with respect to σ. Likewise for i I({σ(i), σ(i + 1)} ⊆ S2 ). Therefore
+ID (σ) ≤ 21 (|S1 | + |S2 | − 2) = n2 − 1 with equality if and only if D ∈ σf .             
+
+Corollary 3.9. Let δ, δ ′ be two dihedral structures. Then
+
+                ordD fδ/δ′ > 0 for all D ∈ δf            ⇐⇒           δf ∩ δf′ = ∅
+
+Proof. Let D ∈ δf . By the previous lemma
+                                                            n
+(3.10)               ordD (fδ/δ′ ) = ID (δ) − ID (δ ′ ) =     − 1 − ID (δ ′ )
+                                                            2
+                                            / δf′ .
+which is strictly positive if and only if D ∈                                               
+
+   We can now prove lemma 3.6. Let δ, δ ′ be two dihedral structures. Then by (2.7),
+the integral (3.7) converges if and only if
+                                N
+(3.11)                   ordD (fδ/δ ′ ωδ ′ ) ≥ 0      for all D ∈ δf .
+
+Now, if δf ∩ δf′ = ∅, then lemma 3.4 implies that ordD (ωδ′ ) = 0, and the previous
+                               N
+corollary implies that ordD (fδ/δ ′ ) ≥ N for all D ∈ δf . Therefore (3.11) holds. On the
+                          ′                                                   N
+other hand, if D ∈ δf ∩ δf then ordD (ωδ′ ) = −1 by lemma 3.4 and ordD (fδ/δ     ′ ) ≤ 0 by
+
+(3.10). Therefore (3.11) fails for this divisor D.
+                                                                                 (δ,δ ′ )
+Remark 3.10. The above argument shows that when the integral IN       converges,
+its integrand vanishes to order at least N along every boundary component of the
+compactification of the domain of integration:
+                                 N
+                          ordD (fδ/δ ′ ωδ ′ ) ≥ N      for all D ∈ δf
+
+This explains why it decays rapidly as N → ∞.
+
+     The following lemma (which implies lemma 3.4) is stated here for later use.
+
+Lemma 3.11. For any dihedral structure σ and irreducible boundary divisor D
+                                                ℓ−1
+(3.12)                          ordD (ωσ ) =        − ID (σ) .
+                                                 2
+Proof. See [11] equation (2.7).                                                             
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 13
+
+
+                              4. Picard-Fuchs equations
+   The family of basic cellular integrals satisfy interesting recurrence relations. We
+briefly sketch their properties. Let (δ, δ ′ ) be any convergent configuration and fix signs
+of fδ/δ′ , ωδ′ throughout this section. Define the generating series
+                                   XZ                           Z
+                                               N      N
+                       Fδ/δ′ (t) =           fδ/δ ′ t   ω δ ′ =   ωδ/δ′ (t)
+                                  N ≥0   Sδ                   Sδ
+
+where
+                                               1
+                                 ωδ/δ′ (t) =          ωδ ′ .
+                                           1 − tfδ/δ′
+The series Fδ/δ′ (t) converges for t ≤ 1 by (3.8) and the remarks which follow. Define
+a hypersurface in M0,S × A1 by the vanishing locus of the following equation
+                                Hδ/δ′    :     1 − tfδ/δ′ = 0 .
+Let H δ/δ′ denote its Zariski closure in M0,S × A1 . It is well-known how to construct,
+over some open U ⊂ A1 defined over Q containing 0, an algebraic vector bundle
+            rel     ℓ
+          HdR   = HdR ((M0,S \(H δ/δ′ ∪ Aδ′ ), Aδ \((H δ/δ′ ∪ Aδ′ ) ∩ Aδ ))/U )
+                                        S
+where Aσ denotes the boundary divisor D∈Sing(ωσ ) D for any dihedral structure σ,
+equipped with an integrable Gauss-Manin connection
+                                    rel
+                            ∇rel : HdR                  rel
+                                        −→ Ω1U/Q ⊗OU/Q HdR  .
+                                                                  rel
+Its analytic vector bundle corresponds to a complex local system HB   . It is the sheaf
+whose stalks at t ∈ U are the relative singular cohomology groups
+             rel       ℓ
+(4.1)      (HB   )t = HB (M0,S \(H δ/δ′ (t) ∪ Aδ′ ), Aδ \((H δ/δ′ (t) ∪ Aδ′ ) ∩ Aδ )) ⊗ C
+where H δ/δ′ (t) denotes the fiber of H δ/δ′ over the point t. Here, and later on in this
+           ℓ
+section, HB  (X, Y ) denotes H ℓ (X(C), Y (C)), for X, Y defined over Q.
+   The differential form ωδ/δ′ (t) is defined over Q and has singularities in H δ/δ′ ∪ Aδ′ ,
+                       rel       rel                          rel
+so defines a section ωδ/δ  ′ of HdR . There is a polynomial Dδ/δ ′ ∈ Q[t, ∂t ], such that
+
+                                     rel     rel
+                                    Dδ/δ ′ (ωδ/δ ′ (t)) = 0
+
+
+where ∂t stands for ∇rel
+                      ∂/∂t . Finally, since the boundary of the closure of the real simplex
+Sδ is contained in Aδ (C), its relative homology class defines a locally constant section
+      rel ∨
+of (HB   ) near t = 0, and we obtain the homogeneous Picard-Fuchs equation:
+                                              Z
+                         rel                     rel     rel
+                       Dδ/δ  ′ (Fδ/δ ′ (t)) =   Dδ/δ ′ (ωδ/δ ′ (t)) = 0 .
+                                               Sδ
+This equation is equivalent to a recurrence relation on the coefficients of Fδ/δ′ (t).
+4.0.1. Duality. The effect of duality is not yet visible due to the asymmetric roles
+played by δ and δ ′ . To remedy this, consider, as above, the algebraic vector bundle
+(perhaps after making U smaller) denoted by
+                              ℓ
+                       HdR = HdR ((M0,S \(H δ/δ′ ∪ Aδ′ ∪ Aδ ))/U )
+equipped with the Gauss-Manin connection ∇. Its complex local system HB has stalks
+                               ℓ
+                     (HB )t = HB (M0,S \(H δ/δ′ (t) ∪ Aδ′ ∪ Aδ )) ⊗ C
+at t ∈ U . As before, the class of ωδ/δ′ (t) defines a section ωδ/δ′ of HdR , which is
+annihilated by an operator we denote by Dδ/δ′ ∈ Q[t, ∂t ].
+Lemma 4.1. Let (δ, δ ′ ) be convergent. For all t ∈ A1 , H δ/δ′ (t) ∩ Aδ = ∅.
+14                                     FRANCIS BROWN
+
+
+Proof. By corollary 3.9, fδ/δ′ vanishes along any irreducible component D of Aδ .             
+
+                             rel
+   There is a natural map (HdR                                     rel
+                                 , ∇rel ) → (HdR , ∇) which sends ωδ/δ ′ to ωδ/δ ′ . There
+                                             rel
+is a corresponding map on local systems HB → HB . Let t ∈ U and consider the sets
+
+                 U1 = M0,S \Aδ                  ⊃       A1 = ∅
+                 U2 = M0,S \(H δ/δ′ (t) ∪ Aδ′ ) ⊃       A2 = Aδ \(Aδ′ ∩ Aδ )
+
+in M0,S . The second ⊃ follows from the previous lemma, which also gives
+
+          U1 ∪ U2     =   M0,S \(Aδ ∩ Aδ′ )                      ⊃    A1 ∪ A2 = A2
+          U1 ∩ U2     =   M0,S \(H δ/δ′ (t) ∪ Aδ ∪ Aδ′ )         ⊃    A1 ∩ A2 = ∅
+
+A relative Mayer-Vietoris sequence gives
+    ℓ                         ℓ               ℓ               ℓ
+ → HB (U1 ∪ U2 , A1 ∪ A2 ) → HB (U1 , A1 ) ⊕ HB (U2 , A2 ) → HB (U1 ∩ U2 , A1 ∩ A2 ) →
+                       rel
+The natural morphism HB    → HB corresponds on stalks to the second map, restricted
+to the second component in the middle. Its kernel has stalks at t ∈ U the image of
+                           ℓ                         ℓ
+                                                                 
+                    ker HB   (U1 ∪ U2 , A1 ∪ A2 ) → HB (U1 , A1 )
+      ℓ
+in HB   (U2 , A2 ). This has no dependence on t, and is therefore constant. Thus the
+                             rel,an
+kernel of the morphism (HdR                       an
+                                    , ∇rel ) → (HdR  , ∇) of vector bundles on U an has the
+                                              rel                 m
+trivial connection. It follows that Dδ/δ′ ωδ/δ′ is a section of OU  for some m. By clearing
+denominators, we obtain an inhomogenous Picard-Fuchs equation of the form
+
+(4.2)                              Dδ/δ′ Fδ/δ′ (t) = Pδ/δ′ (t)
+
+where Pδ/δ′ (t) ∈ C[t]. The duality is finally visible for the operator Dδ/δ′ because on
+the open set M0,S \(H δ/δ′ (t) ∪ Aδ′ ∪ Aδ ), we have the identity
+
+                                   tωδ/δ′ (t) = ±ωδ′ /δ (t−1 )
+
+which follows from equation (3.6), and relates Dδ/δ′ and Dδ′ /δ . If we write (4.2) as a
+recurrence relation between the coefficients of Fδ/δ′ in the form
+
+(4.3)                          p0 (n)un + . . . + pk (n)un+k = 0
+
+where pi ∈ Q[t], then the corresponding recurrence relation for Fδ′ /δ is its dual:
+
+(4.4)                         p∨                  ∨
+                               0 (n)un + . . . + pk (n)un+k = 0
+
+where (after possibly multiplying p∨        i
+                                   i by (−1) owing to sign ambiguities),
+
+                     p∨
+                      i (t) = pk−i (−k − 1 − t)         for all 0 ≤ i ≤ k .
+
+In particular, if a convergent configuration [δ, δ ′ ] is self-dual, then the coefficients of the
+generating series Fδ/δ′ (t) satisfy a recurrence relation (4.3) whose coefficients satisfy
+pi (t) = λ pk−i (−k − 1 − t) for all 0 ≤ i ≤ k, and some λ ∈ Q× .
+
+Remark 4.2. The multiplicative structures on cellular integrals §6 implies that for
+certain convergent configurations [δ1 , δ1′ ] and [δ2 , δ2′ ], there exists a convergent config-
+uration [α, α′ ] such that Fα/α′ (t) is the Hadamard product of Fδ1 /δ1′ (t) and Fδ2 /δ2′ (t).
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 15
+
+
+                          5. Generalised cellular integrals
+5.1. Definition. Let n = |S| ≥ 5 and let δ, δ ′ be a pair of dihedral structures on S.
+Define a rational function on (P1 )∗S by the following formula:
+                                           Y (zδi − zδi+1 )aδi ,δi+1
+(5.1)                  feδ/δ′ (a, b) = ±                       b ′ ′
+                                         i∈Z/nZ (zδi′ − zδi+1
+                                                          ′   ) δi ,δi+1
+where the indices i are taken cyclically in Z/nZ and a = (aδi ,δi+1 ), b = (bδi′ ,δi+1
+                                                                                   ′   ) are
+integers satisfying the homogeneity equations :
+(5.2)          aδi−1 ,δi + aδi ,δi+1 = bδj−1
+                                         ′   ,δj′ + bδj′ ,δj+1
+                                                           ′     whenever δi = δj′ ,
+and all indices are considered modulo n. With these conditions, feδ/δ′ (a, b) is PGL2 -
+invariant and descends to a rational function fδ/δ′ (a, b) ∈ Ω0 (M0,S ; Q).
+Definition 5.1. Let S, δ, δ ′ be as above and suppose that δf ∩ δf′ = ∅. With a, b
+parameters satisfying (5.2), define a generalised cellular form to be
+(5.3)                          fδ/δ′ (a, b)ωδ′     ∈     Ωℓ (M0,S ; Q)
+Call the set of parameters a, b convergent if (5.3) has no poles along divisors D at finite
+distance with respect to δ. In this case define the generalised cellular integral to be
+                                            Z
+(5.4)                      Iδ/δ′ (a, b) = ±     fδ/δ′ (a, b)ωδ′ .
+                                                    Sδ
+It converges by (2.7). The action of Σ(S) extends to an action on pairs of dihedral
+structures (δ, δ ′ ) and also on parameters a, b by permuting indices. Clearly (5.4) is
+invariant under this action, up to a sign.
+   For any convergent pair (δ, δ)′ , setting all ai,j , bk,l = N clearly defines a solution to
+(5.2) and gives back the basic cellular integrals (3.7). We now show that there is a
+non-trivial n-parameter family of convergent integrals of the form (5.4).
+5.2. Parametrization. Let S = {1, . . . , n} and let σ ∈ Σ(n) be a choice of permuta-
+tion such that (δ, δ ′ ) ∼ (δ 0 , σδ 0 ). To simplify the notations, we can write
+                                              Y (zi − zi+1 )ai,i+1
+(5.5)                        feσ (a, b) = ±                    bσi ,σi+1
+                                               i (zσi − zσi+1 )
+
+It descends to a rational function fσ (a, b) ∈ Ω0 (M0,S ; Q). In the case when n is even,
+taking the alternating sum of the equations (5.2) yields the condition:
+                            n
+                            X
+(5.6)                          (−1)i (aσi −1,σi + aσi ,σi +1 ) = 0
+                               i=1
+When n = 2k + 1 odd, the equations (5.2) uniquely determine the bσi ,σi+1 in terms of
+the ai,i+1 , and we take the ai,i+1 as parameters in Zn . This defines a map
+(5.7)                          ρσ : Z2k+1        −→ Ωℓ (M0,S ; Q)
+                                        a         7→ fσ (a, b) ωσ
+where b is determined from a via (5.2). In the case n = 2k is even, we can choose a
+parameter b ∈ b. Equation (5.6) defines a lattice Hσ ⊂ Z2k isomorphic to Z2k−1 . We
+can parametrize the space of generalised cellular integrands in this case by
+(5.8)                        ρσ,b : Hσ × Z −→ Ωℓ (M0,S ; Q)
+                                      (a, b) 7→ fσ (a, b) ωσ
+where the remaining indices b are determined from (a, b) using (5.2).
+16                                       FRANCIS BROWN
+
+
+Proposition 5.2. Let D ⊂ M0,n be an irreducible boundary divisor isomorphic to
+M0,n−1 which is neither at finite distance with respect to σδ 0 nor to δ 0 . Then
+                                                
+(5.9)                            vD fσ (a, b) ωσ ≥ 0
+for all a, b satisfying the equations (5.2).
+   Let F ⊂ M0,n be an irreducible boundary divisor in δf0 . Then
+                                         X           X
+(5.10)                   vF fσ (a, b) ωσ ≥   ai,i−1 −   bσj ,σj+1
+                                               i∈I           j∈J
+
+where |I| = n − 2 and |J| < n − 2 are certain subsets of {1, . . . , n} depending on F . It
+has strictly fewer terms with negative coefficients than with positive coefficients.
+Proof. By lemma 3.4, ωσ has no poles along any such divisor D. Therefore
+                                        
+                         vD fσ (a, b) ωσ ≥ vD (fσ (a, b)) .
+For the latter, we have by (5.5)
+                              X
+(5.11)       vD (fσ (a, b)) =    ai,i+1 ID ({i, i + 1}) − bσi ,σi+1 ID ({σi , σi+1 }) .
+                                i∈Z/nZ
+
+A divisor D isomorphic to M0,n−1 corresponds to a partition S ∪T of {1, . . . , n}, where
+S = {p, q}, and p, q are not consecutive with respect to δ 0 and σδ 0 . Then
+                             X
+(5.12)    2 vD (fσ (a, b)) =     ai,i+1 I({i, i + 1} ⊆ T ) − bσi ,σi+1 I({σi , σi+1 } ⊆ T )
+                              i∈Z/nZ
+
+where T is the complement of S in {1, . . . , n}. If we denote by
+                      X                                   X
+                 A=        ai,i+1       and          B=        bσi ,σi+1
+                          i∈Z/nZ                              i∈Z/nZ
+
+then equation (5.2) implies that A = B. Adding B − A to (5.12) gives
+     2 vD (fσ (a, b)) = ap−1,p + ap,p+1 + aq−1,q + aq,q+1 − bp− ,p − bp,p+ − bq− ,q − bq,q+
+where p± are the adjacent neighbours of p with respect to the ordering σ, and likewise
+for q. This quantity vanishes by (5.2) and proves the first part.
+   For the second part, consider a stable partition S, T where the elements of S and T
+are consecutive (with respect to the standard dihedral ordering). Then by lemma 3.8,
+the first sum in equation (5.11) yields n − 2 terms which occur with a plus sign, and
+the second sum contributes at most n − 3 terms, which occur with a minus sign. 
+Remark 5.3. The conditions (5.9) mean that the integrand is ‘weakly cellular’ in the
+sense that its polar locus is contained in the set of divisors σf with certain extra divisors
+corresponding to stable partitions S ∪ T where |S|, |T | ≥ 3. With a little more work,
+one can find further constraints on the set of extra divisors which can occur, and yet
+more constraints under the assumption that the integrand is convergent.
+  The region of convergence for generalised forms in parameter space is defined by
+hyperplane inequalities. We know it is not compact because it contains the infinite
+family of basic cellular integrals. The following corollary shows that it is genuinely
+n-dimensional (i.e. not contained in a hyperplane).
+Corollary 5.4. Let Rσ denote the region in the parameter space (5.7) or (5.8), de-
+pending on the parity of n, which consists of points corresponding to convergent forms.
+Consider the region C n ⊂ Nn defined for all n ≥ 0 by
+          C n = {(x1 , . . . , xn ) ∈ Nn : for all i, |xi − m| <   m
+                                                                   n2   for some m ∈ N} .
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 17
+
+
+It contains the diagonal N ֒→ Nn . Then if n = 2k + 1 is odd,
+                                       C 2k+1 ⊂ Rσ ⊂ N2k+1
+and if n = 2k is even,
+                         C 2k+1 ∩ (Hσ × Z) ⊂ Rσ ⊂ (Hσ ∩ N2k ) × Z
+Proof. For the upper bound, observe that an application of formula (5.11) for the order
+of vanishing along a divisor at finite distance D corresponding to a stable partition
+{i, i + 1} ∪ {1, . . . , i − 1, i + 2, . . . , n} gives
+                                                        
+(5.13)                                   ordD fσ (a, b) = ai,i+1
+One verifies using (3.12) that ordD (ωσ ) = 0 for such divisors D. Therefore, by (2.7),
+convergence requires that all indices ai,i+1 be ≥ 0.
+  For the lower bound, consider the case n = 2k. The case when n is odd is similar.
+  Choose a cyclic ordering on σ, and assume without loss of generality that b = bσn ,σ1 .
+Consider a linear form (5.11). Substitute an equation (5.2) of the form
+(5.14)                          bσ1 ,σ2 = aσ2 −1,σ2 + aσ2 ,σ2 +1 − bσ2 ,σ3
+to replace the indeterminate bσ1 ,σ2 with its successor bσ2 ,σ3 . Proceed in this manner
+until (5.11) is written in terms of the ai,i+1 and b only. At the end there will be at most
+n2 terms. Furthermore, the sum of the positive coefficients will exceed the sum of the
+negative coefficients by at least one by proposition 5.2 and since (5.14) preserves the
+number of positive minus the number of negative terms. Any linear form with these
+properties takes positive values on C n . By (5.10), this region is contained in Rσ . 
+   The above upper and lower bounds on Rσ can easily be improved if one wishes.
+
+5.3. Examples.
+
+5.3.1. Dixon’s integrals [14] for 1, ζ(2). Let n = 5 and σ = (5, 2, 4, 1, 3). The gener-
+alised cellular integrand is
+                        (z1 − z2 )a1,2 (z2 − z3 )a2,3 (z3 − z4 )a3,4 (z4 − z5 )a4,5 (z5 − z1 )a5,1
+         feσ (a, b) = ±
+                         (z5 − z2 )b5,2 (z2 − z4 )b2,4 (z4 − z1 )b4,1 (z1 − z3 )b1,3 (z3 − z5 )b3,5
+where the exponents satisfy a1,2 + a2,3 = b5,2 + b2,4 , . . ., a5,1 + a1,2 = b4,1 + b1,3 . Since
+n is odd, we can take as our set of parameters ai = ai,i+1 for i ∈ Z/5Z and solve for
+the bi,j . The generalised cellular integral in simplicial coordinates is
+                      Z
+                                    ta1 1 (t2 − t1 )a2 (1 − t2 )a3 dt1 dt2
+                                            b                     (1 − t1 )t2
+                        0≤t1 ≤t2 ≤1        t21,3 (1 − t1 )b2,4
+where b1,3 = a1 + a2 − a4 and b2,4 = a2 + a3 − a5 , which follows from solving the
+homogeneity equations (5.2). By (5.13) and (3.12), the valuation of the integrand
+along the divisor D{12}|{345} is a1,2 . There are exactly five divisors at finite distance
+obtained from this one by cyclic symmetry, and therefore the convergence conditions
+are exactly ai ≥ 0 for i ∈ Z/5Z. Now one can change variables to transform the
+previous integral into cubical coordinates t1 = xy, t2 = y. This results in the integrals
+                                          Z
+                                                  xa1 (1 − x)a2 y a4 (1 − y)a3 dxdy
+             I(a1 , a2 , a3 , a4 , a5 ) =
+                                           [0,1]2      (1 − xy)a2 +a3 −a5     1 − xy
+which coincide with (9.3). This family of integrals has a large group of symmetries
+[31]. A geometric derivation of these transformations in terms of natural morphisms
+between moduli spaces was given in [7] §7.7.
+18                                             FRANCIS BROWN
+
+
+   This family of integrals yields linear forms in 1 and ζ(2). The order of vanishing of
+the integrand along the five divisors at infinity are ai−2 − ai − ai+1 − 1 for i ∈ Z/5Z.
+If any of these forms is ≥ 0, the coefficient of ζ(2) in I vanishes, by lemma 11.4.
+5.3.2. Rhin-Viola’s integrals for ζ(3). Let n = 6 and σ = (1, 4, 2, 6, 3, 5). We choose
+parameters ai = ai,i+1 and b = b3,6 . Then equation (5.6) is the equation
+                                             a4 + a5 = a1 + a2 .
+The generalised cellular form (up to an overall sign chosen to ensure that it is positive
+on the simplex 0 ≤ t1 ≤ t2 ≤ t3 ≤ 1) is
+                   ta1 1 (t2 − t1 )a2 (t3 − t2 )a3 (1 − t3 )a4             dt1 dt2 dt3
+(5.15)                   b
+                                                                                            .
+                        t31,4 (t3   − t1   )b2,4 (1   − t2   )b3,5   t3 (t3 − t1 )(1 − t2 )
+Using the homogeneity equations (5.2) it can be rewritten in terms of our parameters
+via b1,4 = a6 + a3 − b, b2,4 = a4 − a6 + b, and b3,5 = a2 + a3 − b. The convergence
+conditions for the six divisors obtained from {12|3456} by cyclic permutations lead,
+by equation (5.13) and (3.12), to inequalities ai ≥ 0 for all i ∈ Z/6Z . There are three
+further divisors at finite distance, which, on applying (5.11) yield the following linear
+forms, which can be reduced to our choice of parameters using (5.2):
+                       1
+         123|456 :     2 (a1,2 + a2,3 + a4,5 + a1,6              + 2) = a1 + a2 + 1 ≥ 0
+                       1
+         126|345 :     2 (a1,2 + a3,4 + a4,5 + a1,6              − b2,6 − b3,5 ) = a4 + b − a2 ≥ 0
+                       1
+         156|234 :     2 a2,3 + a3,4 + a5,6 + a1,6               = a6 + a2 + a3 − a4 − b ≥ 0
+Thus, in our choice of parameter space, the region of convergence is defined by the
+second and third hyperplanes (since the first linear form is trivially non-negative).
+Lemma 5.5. Rhin and Viola’s family of integrals (9.4) for ζ(3) coincides, up to
+reparametrization, with the family of generalised cellular integrals for σ = (1, 4, 2, 6, 3, 5).
+Proof. Pass to cubical coordinates t1 = xyz, t2 = yz, t3 = z, and rename the parame-
+ters (a1 , a2 , a3 , a4 , a6 , b) by (l, s, k, q, r, r − q − h + s + k) respectively. Then (5.15) leads
+to the family of period integrals on M0,6 of the form
+                Z
+                          xl (1 − x)s y l+s (1 − y)k z l+s−q (1 − z)q        dxdydz
+                                          k−h+s             h+q−r
+                                                                                          ,
+                 [0,1]3         (1 − xy)           (1 − yz)             (1 − xy)(1 − yz)
+depending on the six new parameters h, k, l, q, r, s. The convergence conditions above
+translate into the inequalities h, l, s, k, q, r ≥ 0, l + s − q ≥ 0, r + k − h ≥ 0. This is
+exactly the family of integrals (9.4), after applying the change of variables
+                                                    1−y 
+(5.16)                      (x, y, z) 7→ 1 − xy,            ,z .
+                                                    1 − xy
+                                                                                         
+     In particular, this family of integrals gives linear forms in 1, ζ(3) by [31].
+5.3.3. Generalised cellular family for σ = (8, 2, 7, 3, 6, 4, 1, 5). Choose as parameters
+ai = ai,i+1 for i ∈ Z/8Z and b = b5,8 . The equation (5.6) is then the relation
+                             Hσ :             a6 + a7 + a8 = a2 + a3 + a4
+A reduced set of convergence conditions are given by ai ≥ 0 for all i ∈ Z/8Z, and
+                            128|34567           a1 + b − a7                    ≥0
+                            1278|3456          a3 + a4 − a6                    ≥0
+                            1234|5678 a5 + a6 + a7 − b + 1                     ≥0
+                            456|12378 a1 + a2 + b − a6 − a7                    ≥0
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 19
+
+
+The corresponding divisor is indicated on the left hand-side. All other convergence
+conditions are a consequence of these ones. The integral is given by
+                  Z
+                      ta1 1 (t2 − t1 )a2 (t3 − t2 )a3 (t4 − t3 )a4 (t5 − t4 )a5 (1 − t5 )a6
+        I(a, b) =                                    b1,4 b1,5
+                                                                                            ωσ
+                   S5 (1 − t1 )b2,7 (1 − t2 )b3,7 t3 t4 (t5 − t2 )b3,6 (t5 − t3 )b4,6
+
+where
+                                          dt1 . . . dt5
+                        ωσ =
+                           (1 − t1 )(1 − t2 )(t5 − t2 )(t5 − t3 )t3 t4
+and the parameters in the denominator are given by
+        b2,7 = a1 + a6 − a3 − a4 + b      , b4,6 = a4 + a5 + a6 + a7 − a1 − a2 − b
+        b3,7 = a3 + a4 + a7 − a1 − b      , b1,4 = a1 + a2 + a3 − a5 − a6 − a7 + b
+        b3,6 = a1 + a2 − a4 − a7 + b      , b1,5 = a4 + a5 − b
+Using the symbolic integration programs due to Erik Panzer [27, 28], or [10], one can
+compute many examples of such generalised cellular integrals and finds experimentally
+that they are linear combinations of 1, ζ(3), ζ(5) only.5. I made a half-hearted attempt
+to search for I(a1 , . . . , a7 , b) in which the coefficient of ζ(3) vanishes. Tantalisingly,
+I found the following examples, which could be part of an infinite sequence of ap-
+proximations to ζ(5) (perhaps after applying a symmetry argument or modifying the
+numerators of the family I(a, b)), or could just be accidental:
+                      I(1, 0, 0, 1, 0, 0, 0, 0) = 2ζ(5) − 2
+                                                          33
+                      I(2, 0, 0, 2, 0, 0, 0, 0) = 2ζ(5) −
+                                                          16
+                                                            161263
+                      I(3, 2, 0, 3, 2, 0, 2, 2) = 60ζ(5) −
+                                                             2592
+In a different direction, a residue computation shows that a large family of these
+integrals has vanishing ζ(5) coefficient, and hence gives linear forms in 1, ζ(3). It can
+be made explicit by applying a version of lemma 11.4 and computing the order of
+vanishing of the integrand along a cellular boundary divisor corresponding to σ. It
+would be interesting to know whether this leads to new approximations to ζ(3).
+
+                             6. Multiplicative structures
+  There are partial multiplication laws between cellular integrals generated by ‘prod-
+uct maps’ between moduli spaces.
+6.1. Product maps. Let S be a set with n ≥ 3 elements, and let S1 , S2 ⊂ S be
+subsets satisfying
+                     |S1 ∩ S2 | = 3       and       S = S1 ∪ S2 .
+A product map, defined in [7] §2.2, §7.5, is the product of forgetful maps
+                               m : M0,S −→ M0,S1 × M0,S2 .
+It follows from the assumptions on S1 and S2 that is an open immersion, and that the
+dimensions of the source and target are equal.
+   Now if δ1 , δ2 are dihedral structures on S1 , S2 then
+                                                     [
+                               m−1 (Sδ1 × Sδ2 ) =         Sδ
+                                                     δ:δ|Si =δi
+
+
+   5Wadim Zudilin has very recently proved that this family of integrals is equivalent to another
+family considered by Viola [36], and similar to integrals in [37], [38] (private communication)
+20                                              FRANCIS BROWN
+
+
+where the union is over the set of dihedral structures δ on S whose restrictions to
+S1 , S2 coincide with δ1 , δ2 . Let ωi ∈ Ω|S|i −3 (M0,Si ) for i = 1, 2. Then
+                     Z            Z         Z
+(6.1)                       ω1 ×       ω2 =                  m∗ (ω1 ⊗ ω2 )
+                           Sδ1          Sδ2           m−1 (Sδ1 ×Sδ2 )
+
+in the case when all terms converge. This formula can be used to multiply two cellular
+integrals. It gives a third cellular integral under certain conditions on δ1 , δ2 .
+6.2. Multiplication of pairs of dihedral structures. Fix a set
+                                                  T = {1, 2, 3}
+on three elements, with the ordering 1 < 2 < 3. Define a triple in a set S with n ≥ 3
+elements to be an injective map t : T ֒→ S.
+Definition 6.1. Let (δ, δ ′ ) be a pair of dihedral structures on S, and let t : T ֒→ S be
+a triple. We say that (δ, δ ′ ) is multipliable along t if:
+    (1) The elements t(1), t(2), t(3), in that order, are consecutive with respect to δ.
+    (2) The elements t(1), t(3) are consecutive with respect to δ ′ .
+We say that a configuration on S is multipliable, if for some, and hence any represen-
+tative (δ, δ ′ ), there exists a triple t in S satisfying (1) and (2).
+Remark 6.2. Note that (δ, δ ′ ) is multipliable along t : T ֒→ S if and only if it is
+                   t : T ֒→ S, where (e
+multipliable along e                        t(2), e
+                                      t(1), e     t(3)) = (t(3), t(2), t(1)).
+   Suppose that we have two pairs of dihedral structures (δ1 , δ1′ ) on S1 and (δ2 , δ2′ ) on
+S2 , and ti : T ֒→ Si , for i = 1, 2 such that
+     (δ1 , δ1′ )   and   (δ2 , δ2′ )∨ = (δ2′ , δ2 )   are multipliable along t1 , t2 respectively .
+Note that it is the dual of       (δ2 , δ2′ )   which must be multipliable along t2 . Let
+                                                S = S1 ∪t1 =t2 S2
+denote the disjoint union of the sets S1 and S2 modulo the identification t1 (i) = t2 (i)
+for i = 1, 2, 3. Finally, we can define the product to be
+                                    (δ1 , δ1′ ) ⋆t1 ,t2 (δ2 , δ2′ ) = (α, α′ )
+where α (respectively α′ ) is the unique dihedral structure on S whose restrictions to
+Si coincide with δi (respectively, δi′ ) for i = 1, 2. In the language of [11], α is a relative
+shuffle of (cyclic structures representing) δ1 and δ2 , and similarly for α′ , δ1′ , δ2′ .
+Example 6.3. In the following examples, a tuple (s1 , . . . , sn ) denotes the dihedral
+structure in which si are arranged consecutively around a circle (considered modulo
+reflections). Firstly, the pair of dihedral structures
+                                                                               
+                           (p1 , p2 , p3 , p4 , p5 ), (p2 , p4 , p1 , p3 , p5 )
+is multipliable along (1, 2, 3) 7→ (p3 , p4 , p5 ). Consider the pair of dihedral structures
+                                                                                    
+                      (q1 , q2 , q3 , q4 , q5 , q6 ), (q6 , q2 , q4 , q1 , q5 , q3 ) .
+Its dual is multipliable along (1, 2, 3) 7→ (q4 , q1 , q5 ). Let S = {p1 , p2 , p3 , p4 , p5 , q2 , q3 , q6 }.
+The product of these two dihedral structures is
+                                                                                                    
+                  (p1 , p2 , p3 , q3 , q2 , p4 , q6 , p5 ), (p3 , p1 , p4 , p2 , p5 , q3 , q6 , q2 )
+The configuration class of this pair is denoted by 8 π1 in appendix 1.
+   Note that the multiplication laws on configurations are not unique: two configura-
+tions can have different representatives which multiply together in different ways.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 21
+
+                       p3                          q4                                                p3
+
+                  p2                                      q3                                    p2        q3
+                                                                              7→
+             p1                                                q2                          p1                  q2
+
+            p5                    p4      q5       q6               q1                     p5        q6             p4
+
+          Figure 3. A graphical depiction of the left-hand factors in example
+          6.3: a dihedral structure can be depicted as a set of points around the
+          triangle ti (T ). The triangle on the right is obtained by superimposing
+          the two triangles on the left and identifying p3 = q4 , p5 = q5 , p4 = q1 .
+
+6.3. Multiplication of generalised cellular integrals.
+Lemma 6.4. Let (δ, δ ′ ) be a pair of dihedral structures which is multipliable along
+t : T ֒→ S, and let aδi ,δi+1 , bδi′ ,δi+1
+                                       ′   denote parameters which are defined whenever
+                             {δi , δi+1 } 6⊂ t(T )                      ′
+                                                         (resp. {δi′ , δi+1 } 6⊂ t(T ))
+and satisfy the homogeneity equations
+                          aδi−1 ,δi + aδi ,δi+1 = bδj−1
+                                                    ′   ,δj′ + bδj′ ,δj+1
+                                                                      ′   if δi = δj′ ,
+whenever all terms are defined. Then there is a unique way to define parameters
+aδi ,δi+1 , bδi′ ,δi+1
+                   ′   for all i such that the homogeneity equations (5.2) hold.
+    Furthermore, if all parameters aij and bij which were initially defined were equal to
+N , then the extended set of parameters are also all equal to N .
+Proof. For simplicity, we can renumber labels so that t(T ) = (1, 2, 3), and the dihedral
+orderings can be assumed to be of the form
+        δ = (. . . , p1ℓ , 1, 2, 3, p3r , . . .)        and δ ′ = (1, q1r , . . . , q2ℓ , 2, q2r , . . . , q3ℓ , 3)
+The extra homogeneity equations which need to be satisfied are of the form
+                                       ap1ℓ ,1 + a1,2       =       b3,1 + b1,q1r
+                                         a1,2 + a2,3        =       bq2ℓ 2 + b2q2r
+                                       a2,3 + a3,p3r        =       bq3ℓ 3 + b31
+which can be uniquely solved for a1,2 , a2,3 and b3,1 .                                                                  
+   The lemma is clearly true if one replaces a pair of dihedral structures by their dual.
+   Now let (δ1 , δ1′ ) and (δ2 , δ2′ )∨ be two pairs of dihedral structures on S1 , S2 and let
+(α, α′ ) denote their product with respect to ti : Ti ֒→ Si for i = 1, 2 as defined above.
+Then α, α′ are dihedral structures on S = S1 ∪t1 =t2 S2 .
+   Consider a set of parameters a, b:
+                                    aαi ,αi+1 ∈ Z          and           bα′i ,α′i+1 ∈ Z
+which satisfy the homogeneity equations (5.2). Since the restrictions of α, α′ to Si are
+δi , δi′ , the restriction of the sets of parameters a, b to those terms whose indices lie in
+Si satisfy the conditions of lemma 6.4. Denote their extensions defined in the lemma
+by ai , bi , for i = 1, 2.
+Proposition 6.5. With the above notations,
+(6.2)                          Iα/α′ (a, b) = ±Iδ1 /δ1′ (a1 , b1 ) Iδ2 /δ2′ (a2 , b2 )
+22                                            FRANCIS BROWN
+
+
+The integral on the left-hand side is finite if and only if both integrals on the right-hand
+side are finite.
+   In particular, in the case when all parameters are equal to N , we obtain a multi-
+plicative formula for basic cellular integrals
+(6.3)                 Iα/α′ (N ) = Iδ1 /δ1′ (N )Iδ2 /δ2′ (N )           for all N ≥ 0 .
+Proof. The proof is an application of the product formula (6.1). Let
+                                   m : M0,S −→ M0,S1 × M0,S2
+be the product map. By construction, α is the unique dihedral structure on S which
+restricts to δ1 and δ2 , so the domain of integration is m−1 (Sδ1 × Sδ2 ) = Sα .
+   Therefore it suffices to show that
+               m∗ (fδ1 /δ1′ (a1 , b1 )ωδ1′ ⊗ fδ2 /δ2′ (a2 , b2 )ωδ2′ ) = ± fα/α′ (a, b)ωα′ .
+The case when all parameters are equal to zero is the identity m∗ (ωδ1′ ⊗ ωδ2′ ) = ±ωα′
+and follows from [11], proposition 2.19, since α′ is the unique dihedral structure which
+restricts to δ1′ , δ2′ . It remains to show that
+(6.4)                m∗ (fδ1 /δ1′ (a1 , b1 ) ⊗ fδ2 /δ2′ (a2 , b2 )) = ± fα/α′ (a, b) .
+To see this, denote the marked points of S1 by x1 , . . . , xr and S2 by y1 , . . . , ys . Us-
+ing PGL2 , we can place the elements of t1 (T ) ⊂ S at 0, 1, ∞, and so (x1 , x2 , x3 ) =
+(0, 1, ∞) = (y1 , y2 , y3 ). The expression fδ1 /δ1′ (a1 , b1 ) ⊗ fδ2 /δ2′ (a2 , b2 ) is given by the
+limit, as both (x1 , x2 , x3 ) and (y1 , y2 , y3 ) tend to (0, 1, ∞), of
+          Y (xδ1 (i) − xδ1 (i+1) )aδ1 (i),δ1 (i+1)        Y (yδ2 (i) − yδ2 (i+1) )aδ2 (i),δ2 (i+1)
+                                     bδ′ (i),δ′ (i+1)
+                                                      ×                              bδ′ (i),δ′ (i+1)
+        i∈Z/rZ (xδ1 (i) − xδ1 (i+1) )                   i∈Z/sZ (yδ2 (i) − yδ2 (i+1) )
+                  ′          ′         1      1                   ′         ′          2      2
+
+
+since terms of the form (xi − xj )n or (yi − yj )n where i, j ∈ {1, 2, 3}, will drop out in
+the limit. Denote the marked points of S by (z1 , . . . , zr+s−3 ). The map m sends
+                 (z1 , . . . , zr+s ) 7→ (z1 , . . . , zr ) × (z1 , z2 , z3 , zr+1 , . . . , zr+s )
+By definition of the dihedral structures α, α′ the left-hand side of (6.4) is exactly the
+limit as (z1 , z2 , z3 ) tends to (0, 1, ∞) of the following expression
+                                      Y       (zαi − zαi+1 )aαi ,αi+1
+                                                                       bα′ ,α′
+                                 i∈Z/(r+s−3)Z       (zα′i − zα′i+1 )     i   i+1
+
+
+which is fα/α′ (a, b) up to a sign.                                                                   
+
+                            7. Linear forms in odd zeta values
+   The Ball-Fischler-Rivoal integrals, which can be used [4, 32, 18] to prove that the
+Q-vector space generated by odd zeta values is infinite dimensional, are a special case
+of a certain family of generalised cellular integrals.
+Definition 7.1. Let m ≥ 3. Consider the family of convergent configurations defined
+by the equivalence class of permutations
+                     m
+(7.1)               πodd = (2m, 2, 2m − 1, 3, 2m − 2, 4, . . . , m, 1, m + 1)
+Proposition 7.2. Let 1 ≤ r < m. With the special choice of parameters
+                            am,m+1 = a2m,1 = bm+1,2m = bm,1 = rn
+and setting all other parameters a, b equal to n, the generalised cellular integrals I(a, b)
+coincide with the family of integrals (9.8) where a = 2m.
+                                                    m
+   In particular, the basic cellular integrals for πodd correspond to the case r = 1.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 23
+
+                                   m
+Proof. Set p = m− 1, and π = πodd     . The integrand corresponding to this configuration
+is fπn g rn ωπ where fπ is the basic cellular integrand (all parameters equal to 1), and g
+is the function represented by the cross-ratio
+                                       (zm − zm+1 )(z2m − z1 )
+                                  g=                           .
+                                       (zm+1 − z2m )(zm − z1 )
+Writing these in cubical coordinates x1 , . . . , x2p−1 gives
+                    Qp−1                     Q2p−1
+                       i=1 (xi . . . x2p−i )  i=1 (1 − xi )                      xp − 1
+          fπ = Qp−1                                                    ,    g=          .
+                  i=1 (1 − xi . . . x2p−i )(1 − xi+1 . . . x2p−i )
+                                                                                   xp
+Perform the following change of variables in two stages. First set xp = 1 − s2p−1 , and
+                      s2i−1 − 1                   s2p−2i − 1
+               xi =                ,    xp+i =                       for 1 ≤ i < p .
+                       s2i − 1                   s2p−2i+1 − 1
+Next perform the change of variables si = y1 . . . yi for 1 ≤ i ≤ 2p − 1. One easily
+verifies that this gives the integral (9.8). The details are somewhat tedious and are
+omitted, but one checks that in the new variables is:
+                          Q2p−1
+                             i=1 yi (1 − yi )                      y1 . . . y2p−1
+        fπ =                      Qp−1                     , g=
+             (1 − y1 . . . y2p−1 ) i=1 (1 − y1 . . . y2i )       1 − y1 . . . y2p−1
+The differential form ωπ can be computed similarly and becomes
+                                           dy1 . . . dy2p−1
+                                                  Qp−1
+                            (1 − y1 . . . y2p−1 ) i=1 (1 − y1 . . . y2i )
+Finally, one must check that the above change of variables defines a homeomorphism of
+the unit hypercube {(x1 , . . . , x2p−1 ) : 0 ≤ xi ≤ 1} with {(y1 , . . . , y2p−1 ) : 0 ≤ yi ≤ 1}.
+   The generalised cellular integrals for the above choice of parameters is then
+                                      Z
+                                                 fπn g rn ωπ
+                                         [0,1]2p−1
+
+which coincides with the family of integrals (9.8).                                            
+
+   In particular, by [32, 4] this family of integrals yield linear forms in odd zeta values
+1, ζ(3), . . . , ζ(2m − 3). It is highly likely that the same holds for Iπodd
+                                                                          m (a, b) (including
+
+the example of §5.3.3), for any convergent values of the parameters.
+Remark 7.3. The evidence suggests that these families of integrals have symmetry
+groups and identities of hypergeometric type generalising those discovered by Rhin
+and Viola. It would be interesting to study these groups with a view to applying the
+group method of Rhin and Viola to linear forms in odd zeta values.
+Proposition 7.4. Let m ≥ 2. The generalised cellular integrals corresponding to the
+sequence of convergent configurations
+                  m
+(7.2)            πeven = (2m + 1, 2, 2m, 3, 2m − 1, 4, . . . , m + 2, 1, m + 1)
+with parameters given by
+                      a1,2m+1 = am+1,m+2 = bm+1,2m+1 = b1,m+2 = rn
+and all other parameters equal to n, are equal to the family (9.8) where a = 2m − 1.
+24                                         FRANCIS BROWN
+
+
+Proof. Write the integrand corresponding to this configuration in cubical coordinates
+x1 , . . . , x2m−2 . Perform the change of variables, xm = 1 − s2m−2 , and
+            s2i−1 − 1                                        s2m−2i − 1
+     xi =                 for 1 ≤ i < m ,         xm+i =                          for 1 < i ≤ m .
+             s2i − 1                                        s2m−2i+1 − 1
+
+A final change of variables si = y1′ . . . yi′ gives the integral (9.8).                              
+
+   This family seems to yield linear forms in even zeta values 1, ζ(2), . . . , ζ(2m − 2)
+for all values of the parameters. Note that there are many other families with an
+(apparently) similar property such as the following family for all n ≥ 2:
+
+                        (2n + 1, n, 2n − 1, n − 1, . . . , 2, n + 2, 1, n + 1)
+
+It would be interesting to know if they can be used to improve on the presently known
+transcendence measures for π 2 .
+
+7.1. The
+        dual linear forms. The generalised cellular integrals of the configurations
+   m ∨
+ πodd   which are dual to (7.1) experimentally produce linear forms in
+
+                                  1, ζ(2), . . . , ζ(2m − 6), ζ2m−3
+
+where ζ2m−3 is a polynomial in odd zeta values and even powers of π of weight 2m − 3.
+As discussed in §8, we can define motivic versions of the generalised cellular integrals
+taking values in motivic multiple zeta values. It now makes perfect sense to project
+the ζ m (2) to zero, yielding linear forms in 1 and ζ m (2m − 3) only. Taking the period
+gives linear forms in 1 and ζ(2m − 3). These linear forms are often small.
+
+Example 7.5. Consider the case m = 4, denoted 8 π8∨ in Appendix 1. Then
+                                                    dt1 . . . dt5
+                          ω8 π8∨ =
+                                     (t1 − t3 )t3 (1 − t4 )(t4 − t2 )(t2 − t5 )
+and an example of a generalised cellular integral is:
+   Z
+        t81 (t1 − t2 )8 (t2 − t3 )8 (t3 − t4 )7 (t4 − t5 )8 (t5 − 1)8
+                                                                      ω8 π8∨ = a0 + a1 ζ(2) + a2 ζ5
+     S8        (t1 − t3 )6 t93 (1 − t4 )9 (t4 − t2 )6 (t2 − t5 )10
+
+where ζ5 = 2ζ(2)ζ(3) + ζ(5) and a0 , a1 , a2 ∈ Q. Either by computing with motivic
+multiple zeta values, or working with relative cohomology classes, one can ensure the
+coefficients ai are well-defined. We obtain using [28] a linear form a0 + a2 ζ(5) where
+                  48144548550856003417243773593
+         a0 = −                                 , a2 = 2407028604043866880
+                           19289340000
+The Z-linear form obtained by clearing denominators is less than 1, which is what
+is required for an irrationality proof. There are many similar examples. An infinite
+family of such examples would suffice to prove the irrationality of ζ(5).
+
+
+                                          8. Cohomology
+  A proper understanding of problem (4) seems to require cohomological and motivic
+methods. For this reason, I include a brief discussion of these ideas.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 25
+
+
+8.1. Moduli space motives. The integrals (1.1) are periods of the motives considered
+in [22]. For |S| ≥ 4 let A, B ⊂ M0,S be a pair of boundary divisors such that A and
+B have no common irreducible components. Let ℓ = |S| − 3 and define
+                          m(A, B) = H ℓ (M0,S \A, B\(B ∩ A))
+in the category MT (Z) of mixed Tate motives over Z. In particular, it has a de Rham
+realisation m(A, B)dR which is a finite dimensional graded vector space over Q, and a
+Betti realisation m(A, B)B which is a finite dimensional vector space over Q, equipped
+with an increasing weight filtration W . There is a comparison isomorphism
+                                                      ∼
+                   compB,dR : m(A, B)dR ⊗Q C −→ m(A, B)B ⊗Q C
+which is compatible with weight filtrations, where the weight filtration on m(A, B)dR
+is the filtration associated to its grading. A convergent period integral of the form
+                            Z
+                       I=      ω       where ω ∈ Ωℓ (M0,S \A; Q)
+                            Sδ
+
+can be interpreted as follows. Let A = ∪D∈Sing(ω) D and B = ∪D∈δf D. By (2.7), A
+and B have no common irreducible components. The integrand ω defines a relative
+cohomology class [ω] ∈ m(A, B)dR via the surjective map of global forms
+                    Ωℓ (M0,S \A, B\(A ∩ B); Q) −→ Ωℓ (M0,S \A; Q)
+It is surjective because the irreducible components of B have dimension ℓ − 1 and
+so the restriction of ω to B necessarily vanishes. On the other hand, the domain
+Sδ defines a relative homology cycle in singular (Betti) homology of the underlying
+complex manifolds with Q coefficients:
+                                                                       ∨
+                                                ℓ
+            [Sδ ] ∈ HℓB (M0,S \A, B\(B ∩ A)) = HB (M0,S \A, B\(B ∩ A))
+Thus we have [ω] ∈ mdR (A, B) and [Sδ ] ∈ m(A, B)∨ B , and the period integral can be
+interpreted via the Betti-de Rham comparison map
+                           Z
+                              ω = hcompB,dR [ω], [Sδ ]i ∈ C
+                              Sδ
+
+The pair of divisors A, B - which are described by combinatorial data - determine the
+numbers which can occur in the previous integral, as we shall presently explain.
+
+8.2. Motivic periods and vanishing. We refer to [8], §2 for background on motivic
+periods. The ring of motivic periods of MT (Z) is defined to be
+                            P m = O(IsomMT (Z) (ωdR , ωB )) .
+It is a graded ring, equipped with a period homomorphism
+                                      per : P m −→ C
+by evaluating on compdR,B . We apply this construction to integrals on moduli spaces.
+Let ω, Sδ , be as above and define the motivic period integral to be
+                      I m (ω, Sδ ) = [m(A, B), [ω], [Sδ ]]m   ∈   Pm ,
+which is the function φ 7→ hφ(ω), Sδ i : IsomMT (Z) (ωdR , ωB ) → A1 . Its period is
+                                                  Z
+                               per I m (ω, Sδ ) =     ω.
+                                                      Sδ
+26                                      FRANCIS BROWN
+
+
+Theorem 8.1. The motivic period I m (ω, Sδ ) is a Q-linear combination of motivic
+multiple zeta values of weights ≤ ℓ. Furthermore, if
+                                       grW
+                                         2m m(A, B) = 0
+then the coefficients of motivic multiple zeta values of weight m in I m (ω, Sδ ) vanish.
+Proof. The motivic period I m (ω, Sδ ) is in fact a real, effective motivic period because
+Sδ is invariant under real Frobenius, and m(A, B) has weights in [0, ℓ] (see [8], §2).
+The first part follows from [8], proposition 7.1 (i), which is a corollary of [9]. 6
+                (m)
+   Now let {[ωi ]} be a basis for grW  2m m(A, B)dR for 0 ≤ m ≤ ℓ. Then there exist
+                    (m)
+rational numbers ai ∈ Q such that
+                                         X (m) (m)
+                                  [ω] =      ai [ωi ]
+                                            i,m
+
+and hence, by bilinearity of motivic periods,
+                                   X (m)            (m)
+                    I m (ω, Sδ ) =   ai [m(A, B), [ωi ], [Sδ ]]m ,
+                                      i,m
+                    (m)
+where                        ∈ P m are motivic periods of weight m, since the weight-
+        [m(A, B), [ωi ], [Sδ ]]m
+grading is determined from the de Rham grading [8] (2.13). The second part is imme-
+diate.                                                                             
+     Applying the period homomorphism immediately gives the
+Corollary 8.2. The integral I is a Q-linear combination of multiple zeta values of
+weights ≤ ℓ. If grW
+                  2m m(A, B)dR vanishes, then this linear combination does not involve
+multiple zeta values of weight m.
+   Thus a simple-minded method to achieve vanishing is to find boundary divisors
+A, B, such that certain graded pieces of the de Rham cohomology m(A, B)dR vanish.
+This is possible for Apéry’s approximations to ζ(2) and ζ(3) (Appendix 3).
+Remark 8.3. A more promising approach to force vanishing of coefficients, which I
+have not explored, is via representation theory. Suppose that there is a finite group
+G which acts upon m(A, B)dR (for instance, via birational transformations of M0,S ).
+Then each graded piece (m(A, B)dR )n is a finite-dimensional Q[G]-module. Let V
+be an irreducible representation of G over Q and πV the corresponding projector.
+Consider the motivic periods πV I m (ω, Sδ ) = I m (πV ω, Sδ ) . If the representation V
+does not occur in a component grW  2m m(A, B)dR , then πV I (ω, X) cannot contain a
+                                                              m
+
+motivic multiple zeta value of weight m.
+8.3. Remarks on the Galois coaction. The ring of motivic periods carries an action
+of the de Rham motivic Galois group GdR = Isom(ωdR , ωdR ). This is equivalent to a
+coaction by O(U dR ), where U dR is the unipotent radical of GdR . General nonsense
+provides an abstract formula for this coaction (see for example [8], equation (2.12).)
+Problem 8.1. Find a combinatorial formula for the motivic coaction on the I m (ω, Sδ ).
+   The analogous problem for motivic multiple zeta values is known, due to Goncharov,
+Ihara, and [9]. The reason this problem is relevant for irrationality questions is the
+fact that a motivic period which is primitive for this coaction is necessarily a linear
+combination of single motivic zeta values only ([9]). Thus a solution to this problem
+   6This proof uses the main theorem of [9] and is not effective. It would be interesting to have a
+version along the lines of proof of [7] which actually enables one to control denominators.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 27
+
+
+would give a criterion for obtaining linear forms in single zeta values, as opposed to
+multiple zeta values. It is already an interesting problem to try to prove geometrically
+that the examples of §7 are primitive.
+8.4. Duality. Poincaré-Verdier duality states that
+(8.1)                        m(A, B) = m(B, A)∨ ⊗ Q(−ℓ)
+where both sides have weights in the interval [0, 2ℓ], since M0,S is smooth projective
+and A ∪ B normal crossing. In particular,
+(8.2)                  grW             ∼ W
+                         m m(A, B)dR = gr2ℓ−m m(B, A)dR ,
+
+which enables us to transfer vanishing theorems from m(A, B) to m(B, A).
+   The effect of duality on motivic periods is more subtle, and requires some more
+definitions. In [8], (2.20), we defined a canonical homomorphism
+                                          m,+           dR
+(8.3)                       π = π u,m+ : PMT (Z) −→ O(U    )
+         m,+
+where PMT    (Z) ⊂ PMT (Z) denotes the subspace of effective motivic periods. The kernel
+                    m
+
+of π is the ideal generated by Lm , the motivic version of 2πi. There is an antipode
+                                S : O(U dR ) −→ O(U dR ),
+which corresponds to duality in the Tannakian category MT (Z). Since, in a graded
+Hopf algebra there is a recursive formula for the antipode in terms of the coproduct,
+the map S can be computed explicitly on the level of unipotent de Rham versions of
+motivic multiple zeta values (see [8], §2.4). In particular, we have
+(8.4)                        S(ζ u (2n + 1)) = −ζ u (2n + 1) ,
+where ζ u is the image of ζ m under the map (8.3).
+   The periods of m(A, B) and m(B, A) are therefore related by passing to unipotent
+de Rham periods via the map π, which kills ζ m (2), and applying the antipode S.
+To state this cleanly we make some simplifying assumptions. Let A, B be boundary
+divisors on M0,S with no common components, and let ℓ = |S| − 3. Suppose that
+                     ω ∈ m(A, B)dR          and       ω ′ ∈ m(B, A)dR
+                    X ∈ m(A, B)∨   B     and          X ′ ∈ m(B, A)∨
+                                                                   B
+and to simplify matters, let us assume that
+              grW          ∼                        grW          ∼
+                0 m(A, B) = Q(0)       and            2ℓ m(A, B) = Q(−ℓ) .
+
+Then the same is true for m(B, A), by duality (8.1). For any object M ∈ MT (Z)
+satisfying W−1 M = 0, we defined in [8], (2.21) a map of Q-vector spaces
+                                                  ∨
+                                    ct0 : MB∨ −→ MdR
+as the dual of the map c0 : MdR = ⊕grW           W       ∼ W
+                                     2k MdR → gr0 MdR = gr0 MB = W0 MB ⊂ MB .
+                                                      ′
+                                                t
+With the above assumptions, the classes of ω and c0 (X )(−ℓ) in grW
+                                                                  2ℓ m(A, B)dR differ
+by a rational number. Therefore let α ∈ Q such that
+                         [t c0 (X ′ )(−ℓ)] = α [ω] ∈ grW
+                                                       2ℓ m(A, B)dR
+
+Likewise, let α′ ∈ Q such that [t c0 (X)(−ℓ)] = α′ [ω ′ ] ∈ grW
+                                                              2ℓ m(B, A)dR .
+
+Lemma 8.4. With these assumptions, we have
+                          α′ πI m (ω, X) ≡ α S(π(I m (ω ′ , X ′ )))
+where the equivalence means modulo the image under the map π of motivic multiple
+zeta values of weight ≤ ℓ − 1.
+28                                         FRANCIS BROWN
+
+
+Proof. We have I m (ω ′ , X ′ ) = [m(B, A), ω ′ , X ′ ]m and hence by [8], (2.22),
+                        π[m(B, A), ω ′ , X ′ ]m = [m(B, A), ω ′ , t c0 (X ′ )]u
+The antipode S on matrix coefficients [M, v1 , v2 ]u is [M ∨ , v2 , v1 ]u , so we have
+          SπI m (ω ′ , X ′ ) = [m(B, A)∨ , t c0 (X ′ ), ω ′ ]u = [m(A, B)(ℓ), t c0 (X ′ ), ω ′ ]u
+Now [V (r), v1 (r), v2 (r)]u = (Lu )r [V, v1 , v2 ]u , and since Lu = 1, we have [V, v1 , v2 ]u =
+[V (r), v1 (r), v2 (r)]u for all r ∈ Z. Since πI m (ω, X) = [m(A, B), ω, t c0 X)]u , the state-
+ment follows.                                                                                   
+   In other words, the highest weight part of I m (ω, X) is related, modulo ζ m (2), to the
+highest weight part of I m (ω ′ , X ′ ) via the antipode on unipotent de Rham periods.
+Remark 8.5. In the case when the motive m(A, B) is self-dual, these observations give
+some non-trivial constraints on the periods which can occur. For example, via the
+equation S(ζ u (3, 5)) = ζ u (3, 5) + 5ζ u (3)ζ u (5), we see that ζ(3, 5) can never occur as a
+period of a self-dual motive. Therefore the self-dual cellular values for M0,11 (which
+we expect to be periods of self-dual motives) should evaluate to polynomials in single
+zeta values only.
+
+                 9. Appendix 1: A short compendium of integrals
+   The literature which has grown out of Apéry’s irrationality proofs for ζ(2) and ζ(3),
+and in particular, Beuker’s interpretation (found independently by Cordoba) using
+elementary integrals [5], is vast. I have selected a very incomplete list of integrals with
+various irrationality applications and reproduced them here in their original notations.
+The integrals below are referred to in the main text, but there are many others that
+could also have been included.
+9.1. Beukers’ integrals for ζ(2) and ζ(3). The following family of integrals:
+                Z 1Z 1 n
+                       x (1 − x)n y n (1 − y)n
+(9.1)                                          dxdy  [5], Eqn.(5)
+                  0 0       (1 − xy)n+1
+for n ≥ 0, are linear forms in 1 and ζ(2), and give exactly Apéry’s proof of the
+irrationality of ζ(2). In [5], Beukers introduces the following family of integrals
+            Z 1Z 1Z 1 n
+                        x (1 − x)n y n (1 − y)n wn (1 − w)n
+(9.2)                                                       dxdydw    [5], Eqn. (7)
+             0 0 0             (1 − (1 − xy)w)n+1
+and proves that they give linear forms in 1 and ζ(3), identical to those considered by
+Apéry, and hence leads to the irrationality of ζ(3) ([5], [18] §1.3).
+9.2. Rhin and Viola’s generalisations to several parameters. In [30], Rhin and
+Viola consider a generalisation of (9.1) depending on parameters h, i, j, k, l ≥ 0
+                          Z 1Z 1 h
+                                 x (1 − x)i y j (1 − y)k dxdy
+(9.3)
+                           0 0        (1 − xy)i+j−l     1 − xy
+which give linear forms in 1, ζ(2). These integrals had previously been considered by
+Dixon [14] in 1905.
+   In [31], Rhin and Viola consider a family of integrals generalising (9.2) which depend
+on parameters h, j, k, l, m, q, r, s ≥ 0:
+                 Z 1Z 1Z 1 h
+                            x (1 − x)l y k (1 − y)s z j (1 − z)q    dxdydz
+(9.4)                                             q+h−r
+                  0 0 0            (1 − (1 − xy)z)               1 − (1 − xy)z
+subject to the conditions j +q = l+s and m = k +r −h. This family yields linear forms
+in 1, ζ(3). The families (9.3) and (9.4), combined with the group method initiated in
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 29
+
+
+the same papers yield the best irrationality measures for ζ(2) and ζ(3) which are
+presently known (see [31], [18] §3.1).
+
+9.3. Sorokin’s integrals in ζ(2n). In [35] Sorokin considers the integrals
+                  Z 1 Z 1Y  n
+                                 unj (1 − uj )n vjn (1 − vj )n
+(9.5)                ...                   1                 n+1
+                                                                 duj dvj
+                   0     0 j=1 ( u1 v1 ...uj−1 vj−1 − uj vj )
+
+and proves that they give linear forms in even zeta values to deduce a new proof of the
+transcendence of π. By clearing the terms in the denominator and renaming variables
+in accordance with [17] (7), one obtains the family for n = 2p even:
+       Z
+                (y1 y2 )p(N +1)−1 (y3 y4 )(p−1)(N +1)−1 . . . (yN −1 yN )N
+(9.6)                   Q                                        N +1
+         [0,1]N           k∈{2,...,N } even (1 − y1 y2 . . . yk )
+                                                                      N
+                                                                      Y
+                                                                    ×    (1 − yk )N dy1 . . . dyN .
+                                                                       k=1
+
+This family of integrals are periods of the moduli space M0,2n+3 of the form (2.9). I
+do not know if this family of integrals can be written as special cases of generalised
+cellular integrals on M0,2n+3 .
+
+9.4. Rivoal and Fischler’s integrals for odd zeta values. Rivoal’s linear forms
+[32] are equivalent to the following family of integrals:
+                       Z            Qa      rn           n
+                                      i=0 xi (1 − xi )
+(9.7)                                              (2r+1)n+2
+                                                             dx0 . . . dxa
+                        [0,1]a+1 (1 − x0 . . . xa )
+
+where n ≥ 0 and a, r ≥ 1 such that (a + 1)n > (2r + 1)n + 2. He proves in particular
+that if n is even and a is odd ≥ 3 then it gives linear forms in odd zeta values 1, ζ(3),
+. . . , ζ(a) and goes on to deduce that infinitely many of them are irrational. This
+integral has weight drop in the sense that it is an a + 1-fold integral whose periods
+are of weight at most a. I did not consider weight-drop integrals here, although the
+apparent simplicity of (9.7) suggests that it would be interesting to do so.
+     Instead, at the end of section 2.4 in [18], Fischler gives a variant of the above
+integrals (which are very well-poised, as opposed to simply well-poised), by multiplying
+the integrand of (9.7) by (1 + x0 . . . xa )/(1 − x0 . . . xa ) ([18], §2.3.1). He proves that
+the latter integrals are equivalent (with slightly different notation) to:
+              Z                              Qa−1 rn             n
+                                                 j=1 yj (1 − yj ) dyj
+(9.8)                                           rn+1
+                                                      Q                                n+1
+                [0,1]a−1 (1 − y1 y2 . . . ya−1 )        2≤2j≤a−2 (1 − y1 y2 . . . y2j )
+
+where n ≥ 0, a ≥ 3 and 1 ≤ r < a2 are integers. In the case when a is even, it gives
+linear forms in the odd zeta values 1, ζ(3), . . . , ζ(a − 1) ([18], proposition 2.5). The
+relationship between (9.7) and (9.8) is discussed in the two paragraphs preceding §3
+of [18] and builds on theorem 5 in [40]. See the discussion below. Note that when a is
+odd, (9.8) apparently gives linear forms in even zeta values 1, ζ(2), . . . , ζ(a − 1).
+
+9.5. Generalisations. Some generalisations of Rivoal’s integrals (9.7) to a three-
+parameter family of integrals yielding linear forms in 1, ζ(2), . . . , ζ(n) are given in
+[33], theorem 1. In [40] equation (70), Zudilin considers the family of integrals
+                                                    Z        Qk    aj −1
+                                                              j=1 xj     (1 − xj )bj −aj −1
+(9.9)     Jk (a0 , . . . , ak , b1 , . . . , bk ) =                                         dx1 . . . dxk
+                                                      [0,1]k     Qk (x1 , . . . , xk )a0
+30                                             FRANCIS BROWN
+
+
+generalising work of Vasilyev and Vasilenko. Here, k ≥ 4 and
+                      Qk (x1 , . . . , xk ) = 1 − x1 (1 − x2 (1 − · · · (1 − xk ))) .
+In [40], theorem 5, he relates a certain sub-family of these integrals to hypergeometric
+series, and proves as a consequence that if
+                                b1 + a2 = b2 + a3 = . . . = bk−1 + ak
+then the integrals Jk (a, b) yield linear forms in odd zeta values when k is odd, and even
+zeta values when k is even. For example, when k = 5, this gives a 6-parameter family
+of integrals which are linear forms in 1, ζ(3), ζ(5) (note that our generalised cellular
+               8
+integrals for πodd apparently yields an 8-parameter family which is strictly bigger, with
+the same property). A version of this family of integrals is considered by Fischler in
+[17] (5). His family of integrals is denoted by
+                                                         Z       Qn    ak         bk
+                                                                  k=1 xk (1 − xk )   dx1 . . . dxn
+(9.10)        I(a1 , . . . , an , b1 , . . . , bn , c) =                    c
+                                                          [0,1]n      δn (x)           δn (x)
+where he writes δn (x) for Qn (xn , . . . , x1 ) and is clearly equivalent to (9.9). These
+families of integrals are not obviously of moduli space type.
+  However, in [17] equation (9), Fischler defines the family of integrals
+                                                            Z        Qn      Ak             Bk
+                                                                    Q  k=1 yk (1 − yk )
+  K(A1 , . . . , An , B1 , . . . , Bn , C2 , . . . , Cn ) =          n                     Ck +1
+                                                                                                 dy1 . . . dyn
+                                                             [0,1]n  k=2 (1 − y1 . . . yk )
+
+which are evidently period integrals on M0,n+3 written in cubical coordinates y1 , . . . , yn .
+By applying a carefully-constructed change of variables, he proves that the K(A, B, C)
+can be re-expressed as integrals of the form
+                     Z          Qn                    e
+                                      xeak (1 − xk )bk
+(9.11)                       Qn k=1 k                      ck
+                                                           e
+                                                              dx1 . . . dxn
+                      [0,1]n  k=2 Qk (xn , . . . , xn+k−1 )
+
+in new parameters e   a, eb, e
+                             c expressible in terms of the A, B, C. In addition he shows
+that the families of integrals (9.10), and hence (9.9), form a sub-family of the integrals
+K(A, B, C). Thus all the integrals considered in this section are in fact equivalent to
+periods of moduli spaces M0,n . Both Fischler and Zudilin construct symmetry groups
+for their respective families of integrals (9.9) and (9.10), similar to those introduced
+by Rhin and Viola [30, 31].
+
+              10. Appendix 2: Examples of basic cellular integrals
+10.1. Convergent configurations. Let CN denote the number of convergent config-
+urations of size N . Then we find that
+                              N     4    5 6       7 8   9  10   11
+                             CN     0    1 1       5 17 105 771 7028
+Here follows a list of convergent configurations of size N , where 4 ≤ N ≤ 8.
+
+10.1.1. N = 5. There is a unique convergent configuration:
+                                        5π    = 5 π ∨ = [5, 2, 4, 1, 3]
+
+10.1.2. N = 6. There is a unique convergent configuration:
+                                        6π   = 6 π ∨ = [6, 2, 4, 1, 5, 3]
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 31
+
+
+10.1.3. N = 7. There are five convergent configurations. There are two pairs of con-
+figurations and their duals:
+                                                                   ∨
+                 7 π1= [7, 2, 4, 1, 6, 3, 5]             ,      7 π1   = [7, 2, 5, 1, 4, 6, 3]
+                                                                   ∨
+                  π
+                 7 2 = [7, 2, 4, 6, 1, 3, 5]             ,      7 π2   = [7, 3, 6, 2, 5, 1, 4]
+
+and a single self-dual configuration:
+
+                                 7 π3    = 7 π3∨ = [7, 2, 5, 1, 3, 6, 4]
+
+10.1.4. N = 8. There are 17 convergent configurations, comprising 7 pairs of configu-
+rations and their duals:
+                                                                   ∨
+              8 π1  = [8, 2, 4, 1, 5, 7, 3, 6]           ,      8 π1   = [8, 2, 5, 1, 7, 4, 6, 3]
+                                                                   ∨
+               8 π4 = [8, 2, 4, 7, 1, 6, 3, 5]           ,      8 π4   = [8, 2, 4, 7, 3, 6, 1, 5]
+                                                                   ∨
+               8 π5 = [8, 2, 5, 3, 7, 1, 6, 4]           ,      8 π5   = [8, 2, 6, 1, 5, 3, 7, 4]
+                                                                   ∨
+               8 π7 = [8, 2, 4, 6, 1, 3, 7, 5]           ,      8 π7   = [8, 2, 5, 1, 6, 3, 7, 4]
+                                                                   ∨
+               8 π8 = [8, 2, 5, 1, 6, 4, 7, 3]           ,      8 π8   = [8, 2, 4, 1, 7, 5, 3, 6]
+                                                                   ∨
+               8 π9 = [8, 2, 5, 7, 3, 1, 6, 4]           ,      8 π9   = [8, 3, 6, 1, 5, 2, 7, 4]
+                                                                   ∨
+              8 π10 = [8, 2, 5, 7, 3, 6, 1, 4]           ,       π
+                                                                8 10   = [8, 2, 5, 7, 4, 1, 6, 3]
+
+and three self-dual configurations:
+
+                              8 π2   = 8 π2∨         =   [8, 2, 4, 1, 6, 3, 7, 5]
+                                        ∨
+                              8 π3 = 8 π3            =   [8, 2, 5, 1, 7, 3, 6, 4]
+                                            ∨
+                              8 π6   =   8 π6        =   [8, 3, 6, 1, 4, 7, 2, 5]
+
+10.2. Basic cellular integrals.
+
+10.2.1. n=5. In simplicial coordinates (t1 , t2 ), and σ = (5, 2, 4, 1, 3) we have
+                            t1 (t1 − t2 )(t2 − 1)                               dt1 dt2
+                     fσ =                                    and       ωσ =
+                                  (t1 − 1)t2                                  (t1 − 1)t2
+From theorem 1.1, for example, we know that Iσ (N ) is a linear form in 1 and ζ(2).
+Furthermore, we verify that
+                                   Z
+                         Iσ (N ) =   fσN ωσ = aN ζ(2) − bN
+                                                S5
+
+where aN , bN are solutions to the recurrence A005258 in [34]
+
+(10.1)          (N + 1)2 uN +2 − (11N 2 + 11N + 3)uN +1 − N 2 uN = 0 .
+
+with initial conditions a0 = 1, a1 = 3, b0 = 0, b1 = 5. This is precisely Apéry’s
+sequence for ζ(2). It is self-dual; i.e., the polynomial p(N ) = 11N 2 + 11N + 3 satisfies
+p(−1 − N ) = p(−N ) (equivalently, the coefficient of N 2 equals the coefficient of N ).
+
+Remark 10.1. Changing to cubical coordinates via t1 = xy, t2 = y, we get
+                           Z 1Z 1
+                                    xy(1 − x)(1 − y) N dxdy
+                 Iσ (N ) =
+                            0   0       (1 − xy)        1 − xy
+which, is exactly Beuker’s integral for (9.1).
+32                                         FRANCIS BROWN
+
+
+10.2.2. n=6. There is again a unique convergent configuration up to symmetry, namely
+σ = (6, 2, 4, 1, 5, 3). In simplicial coordinates (t1 , t2 , t3 ), we have
+                      t1 (t2 − t1 )(t3 − t2 )(t3 − t1 )                              dt1 dt2 dt3
+(10.2)         fσ =                                             and   ωσ =
+                           t2 (t1 − 1)(t2 − 1)t3                              t2 (t1 − 1)(t2 − 1)t3
+It follows, for example, from theorem 1.1 that Iσ (N ) is a linear form in 1 and ζ(3)
+only, i.e., the coefficient of ζ(2) that could have occurred by theorem 1.1 vanishes.
+Furthermore                      Z
+                       Iσ (N ) =              f N ω = 2 aN ζ(3) − bN
+                                      0≤t1 ≤t2 ≤t3 ≤1
+
+where aN , bN satisfy the recurrence (A005259 in [34])
+
+(10.3)          (N + 1)3 uN +2 − (2N + 1)(17N 2 + 17N + 5)uN +1 + N 3 uN = 0 .
+
+which is precisely Apéry’s sequence for ζ(3), with initial conditions a0 = 1, a1 = 5 and
+b0 = 0, b1 = 6. This equation is again self-dual, which implies that the coefficient of
+uN +1 is of the form (2N + 1)(aN 2 + aN + b) for some a, b ∈ Q. By passing to cubical
+coordinates t1 = xyz, t2 = yz, t3 = z and applying the change of variables (5.16), we
+see that this family of integrals exactly coincides with Beuker’s integrals (9.2). This
+follows on setting all parameters in (5.15) equal to N .
+
+10.2.3. n=7. For σ one of the five convergent configurations 7 πi , for i = 1, . . . , 5 listed
+above, the integrals Iσ (N ) are distinct linear forms
+
+                                        aN ζ σ + bN ζ(2) + cN
+
+for some Iσ (0) = ζ σ ∈ Q× ζ(4), and aN , bN , cN are solutions to an equation
+                          (i)           (i)               (i)          (i)
+                         p3 uN +3 + p2 uN +2 + p1 uN +1 + p0 uN = 0
+         (i)
+where pj are polynomials of degree 6 in N . The sequences aN appear to satisfy
+interesting congruence properties along the lines of [26].
+   The numbers which are observed to occur as basic cellular integrals (or indeed as
+generalised cellular integrals) are indicated in the table below. A dark • indicates that
+the corresponding period can occur with non-zero coefficient, a 0 indicates that the
+corresponding period is not observed to occur in the generalised cellular integrals. The
+sign of Iπ (0) has been chosen to make the integral positive.
+
+                        Configurations        1 ζ(2)        ζ(3) ζ(4)         Iπ (0)
+                                                                             17      2
+                                   7 π1       •  •           0    •          10 ζ(2)
+                                                                             27      2
+                                   7 π2       •  •           0    •          10 ζ(2)
+                                                                                   2
+                                   7 π3       •  •           0    •           ζ(2)
+                                      ∨                                      7      2
+                                  7 π1        •  •           0    •          10 ζ(2)
+                                      ∨                                      3      2
+                                  7 π2        •  •           0    •          10 ζ(2)
+
+                                                                                         2
+  For 7 π3 = (7, 2, 5, 1, 3, 6, 4), the basic cellular integrals satisfy In7 π3 = In5 π1 , the
+square of the Apéry sequences for ζ(2). The configuration πeven  7
+                                                                        of §7 is 7 π1∨ .
+
+10.2.4. n=8. Experimentally, we find that the 17 convergent configurations only give
+rise to 13 distinct families of linear forms, given in the table below.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 33
+
+
+
+
+       Configurations         1 ζ(2)       ζ(3) ζ(4)         ζ(5)     ζ(3)ζ(2)             Iπ (0)
+                      ∨
+           8 π1 , 8 π1        •  •          •    0            0          •               2ζ(2)ζ(3)
+                      ∨
+           8 π2 , 8 π3        •  •          •    0            •          •            ζ(5) + ζ(3)ζ(2)
+            8 π4 , 8 π5       •  •          •    0            •          •          9ζ(5) − 2ζ(2)ζ(3)
+              ∨       ∨
+           8 π4 , 8 π5        •  •          •    0            •          •          9ζ(5) − 4ζ(3)ζ(2)
+                   8 π6       •  •          •    0            •          •          16ζ(5) − 8ζ(3)ζ(2)
+                   8 π7       •  •          •    0            •          •           ζ(5) + 3ζ(3)ζ(2)
+                      ∨
+                   8 π7       •  •          •    0            •          •            ζ(3)ζ(2) − ζ(5)
+                   8 π8       •  0          •    0            •          0                 2ζ(5)
+                      ∨
+                   8 π8       •  •          0    0            •          •          2ζ(5) + 4ζ(3)ζ(2)
+                   8 π9       •  •          •    0            •          •          6ζ(3)ζ(2) − 7ζ(5)
+                      ∨
+                   8 π9       •  •          •    0            •          •          4ζ(3)ζ(2) − 7ζ(5)
+                  8 π10       •  •          •    0            •          •          5ζ(3)ζ(2) − 8ζ(5)
+                      ∨
+                  8 π10       •  •          •    0            •          •          8ζ(5) − 3ζ(3)ζ(2)
+
+
+   The values of the integrals Iπ (0) are consistent with Poincaré-Verdier duality:
+
+                                     |Iπ (0)| ≡ |Iπ∨ (0)| (mod ζ(2))
+
+as expected, since the antipode acts by −1 on single odd zeta values (8.4). The first
+set of entries of the table gives the series which is the product of the Apéry sequences
+for ζ(2), ζ(3) via the multiplicative structure §6 (example 6.3)
+
+                                        I8 π1 (N ) = I5 π1 (N )I6 π1 (N )
+
+There is a unique entry, 8 π8 = 8 πodd which gives a linear form in 1, ζ(3), ζ(5) only. It
+is amply sufficient to prove that dimQ h1, ζ(3), ζ(5)iQ ≥ 2 but insufficient to prove their
+linear independence. The dual 8 π8∨ of this sequence gives linear forms in 1, ζ(2) and
+2ζ(5) + 4ζ(3)ζ(2) from which we can extract linear forms in 1, ζ(5) (see §7.1).
+
+10.2.5. n=9. There are 105 convergent configuration classes. By computing all of
+them in low degrees, one observes that all the linear forms vanish in weight 5, and so
+in particular, the coefficient of ζ(5) and ζ(2)ζ(3) always vanishes. All possible products
+of previously occurring sequences arise, namely, the product of the canonical sequence
+for M0,5 with one of the five sequences for M0,7 , and the square of the canonical
+sequence for M0,6 . Other than that there are five configurations
+
+              [9, 2, 4, 1, 8, 6, 3, 5, 7] , [9, 2, 4, 6, 8, 1, 3, 5, 7] , [9, 2, 5, 8, 1, 4, 7, 3, 6]
+
+                              [9, 2, 6, 1, 5, 7, 4, 8, 3] , [9, 4, 8, 3, 7, 2, 6, 1, 5]
+which give distinct irreducible sequences (i.e., not reducing to products of previously-
+occuring sequences) which are new linear forms in 1, ζ(2), ζ(2)2 , ζ(2)3 . Generalising
+such families may lead to new estimates for the transcendence measure of π 2 .
+   Finally, there are exactly four self-dual configurations
+
+[9, 2, 4, 1, 5, 7, 3, 8, 6] , [9, 2, 4, 1, 5, 8, 6, 3, 7] , [9, 2, 4, 6, 1, 7, 5, 8, 3] , [9, 2, 4, 7, 5, 1, 6, 8, 3]
+
+which give (the same) linear forms in 1, ζ(3), ζ(3)2 .
+34                                     FRANCIS BROWN
+
+
+10.2.6. n=10. There are 771 convergent configurations. They all (experimentally) van-
+ish in sub-leading weight. Many cases are products of previously occurring sequences.
+We find some new phenomena:
+                                                                 10
+     (1) Odd zeta values only. A unique configuration πodd           which gives rise to a family
+         of linear forms in 1, ζ(3), ζ(5), ζ(7). It vanishes in weights 1, 2, 4, 6.
+                                                                   10 ∨
+     (2) Dual of the previous case. The configuration (πodd           ) gives a family of linear
+         forms in 1, ζ(2), ζ(4), ζ7 where ζ7 denotes a multiple zeta value of weight 7. It
+         vanishes in weights 1, 3, 5, 6.
+     (3) Double vanishing at next to leading order. Two families of linear forms (rep-
+         resented by (10, 2, 4, 1, 6, 8, 5, 3, 9, 7) for the first, and its dual for the second)
+         which give linear forms in quantities
+                                     1, ζ(3), ζ(4) and ζ7
+         where ζ7 is an MZV of weight 7. These families vanish in weights 1, 2, 5, 6.
+     (4) Vanishing in the middle. A unique family of self-dual linear forms (represented
+         by (10, 2, 4, 1, 6, 3, 8, 5, 9, 7)), which give rise to linear forms in the quantities
+                                       1, ζ(2), ζ5 and ζ7
+        where ζ5 and ζ7 are certain multiple zeta values of weights 5 and 7 respectively.
+        Therefore this family vanishes in weights 1, 3, 4, 6.
+   These (experimental) examples show that the vanishing phenomena can be quite
+diverse. It would be interesting to know if it is possible to find sequences of higher
+order with stronger vanishing properties.
+
+                                      11. Appendix 3
+  The purpose of this section is to prove some vanishing of cohomology of the moduli
+space motives m(A, B) in certain cases which covers Apéry’s theorems.
+11.1. Statement.
+Definition 11.1. Let A ⊂ M0,S denote a boundary divisor. Say that A is cellular if
+there exists a dihedral structure δ on S such that the irreducible components of A are
+exactly the divisors at finite distance with respect to δ. Equivalently,
+                                           [
+                                   A=           DS1 |S2
+                                          S=S1 ∪S2
+
+where the union is over all stable partitions of S with S1 , S2 consecutive for δ.
+  A divisor A is cellular if it is the Zariski closure of the boundary of a cell Sδ for
+some δ. The following theorem states that cellular divisors always fulfil cohomological
+vanishing in sub-maximal weights.
+Theorem 11.2. Suppose that A, B ⊂ M0,n are cellular boundary divisors with no
+common irreducible components. Let ℓ = n − 3. Then
+(11.1)                       grW             W
+                               2 m(A, B) = gr2ℓ−2 m(A, B) = 0
+
+and grW               W
+      0 m(A, B) and gr2ℓ m(A, B) are both 1-dimensional.
+
+   In the case n = 5 and n = 6, there is a unique choice of divisors A, B satisfying
+the conditions of the previous theorem, up to automorphisms of M0,n . Denote the
+corresponding motives m(A, B) by m5 and m6 respectively. They could be called
+Apéry motives by the following corollary.
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 35
+
+
+Corollary 11.3. The basic cellular integrals for n = 5 and n = 6 (§10.1.1, §10.1.2)
+are periods of m5 , m6 respectively. These motives satisfy
+                              grW        ∼
+                                         = Q(0) ⊕ Q(−2)
+                                • m5
+                              grW        ∼
+                                         = Q(0) ⊕ Q(−3) .
+                                • m6
+
+In particular, this implies that the basic cellular integals for n = 5 give linear forms in
+1, ζ(2), and for n = 6 in 1, ζ(3) only.
+Proof. Use equations (3.9) and (3.12) to verify that for all N ≥ 0,
+                                      N
+                                Sing(fδ/δ ′ ωδ ′ ) = Sing(ωδ ′ )
+
+
+is cellular for n = 5, 6. For n = 5 this is trivial, for n = 6 one must check the divisor of
+singularities using (3.10) and (3.12). Therefore the basic cellular integral Iδ/δ′ (N ) is a
+period of m(A, B) where A = Sing(ωδ′ ), which is cellular by lemma 3.4 and where B
+is the Zariski closure of the boundary of the domain of integration Sδ , which is cellular
+by definition.                                                                            
+
+   Unfortunately, the basic cellular integrals for n ≥ 7 marked points have divisors
+which are not cellular, but are weakly cellular in the sense, for example, of remark 5.3.
+It would be interesting to generalise the previous theorem to cover this case (and even
+the case of generalised cellular integrals). This would explain the observed vanishing
+of subleading coefficients in all cases.
+
+11.2. Cohomology computations. We require the following general observations.
+Let X be a smooth projective scheme over a field k of characteristic 0, and A ∪ B a
+simple normal crossing divisor in X. Denote the irreducible components of A and B
+by Ai , Bi , respectively, and write C∅ = X, and CI = ∩i∈I Ci , whenever C = A or
+C = B, and I is an indexing set. All cohomology has Q coefficients.
+   The relative cohomology spectral sequence is:
+                       M
+(11.2)         E1p,q =      H q (BI \(BI ∩ A)) ⇒ H p+q (X\A, B\(B ∩ A))
+                      |I|=p
+
+The other spectral sequence we need is the weight (or Gysin) spectral sequence
+                            M
+(11.3)              E1p,q =      H 2p+q (AI )(p) ⇒ H p+q (X\A)
+                              |I|=−p
+
+which degenerates at E2 for reasons of purity. The following lemmas give some control
+over the lowest graded weight pieces of moduli space motives.
+   We shall say that a boundary divisor D ⊂ M0,S1 × . . . × M0,Sr is at finite (resp.
+infinite) distance with respect to dihedral structures δ1 on S1 , . . . , δr on Sr if its
+irreducible components are of the form M0,S1 ×. . .×Di ×. . .×M0,Sr where D ⊂ M0,Si
+is at finite (resp. infinite) distance with respect to δi .
+   When D is at finite distance, we say that D is complete if its set of irreducible
+components consists of all divisors at finite distance, and broken otherwise.
+Lemma 11.4. Let δi be a dihedral structure on Si , for i = 1, 2, where |Si | ≥ 3. Let
+C ⊂ M0,S1 × M0,S2 be a boundary divisor at finite distance with respect to δ1 , δ2 . If
+n = |S1 | + |S2 | − 6 > 0 then
+                                          (
+             grW     n                  ∼ Q(0) if C is complete
+                0 H (M0,S1 × M0,S2 , C) =                              .
+                                            0     if C is broken
+36                                        FRANCIS BROWN
+
+
+Proof. The relative cohomology spectral sequence, applied to X = M0,r ×M0,s , A = ∅,
+B = C, degenerates at E2 because E1p,q is pure of weight q in this case. This implies
+that grW  n
+       0 H (M0,r × M0,s , C) is the n
+                                      th
+                                         cohomology group of the complex
+            •,0
+                              M               M                        M
+                      0             0
+(11.4)    E1 = H (C∅ ) →          H (CI ) →        H 0 (CI ) → · · · →   H 0 (CI )
+                                   |I|=1            |I|=2                    |I|=n
+
+By assumption, the irreducible components of C are in one-to-one correspondence with
+a subset of the set of facets of the product Xδ1 ×Xδ2 where Xδ = Sδ denotes the closure
+of a cell in the analytic topology. They have the combinatorial structure of Stasheff
+polytopes. Consider the simplical complex S which is dual to the one generated by
+the facets of Xδ1 × Xδ2 . Then the 0-simplices of S are indexed by facets of Xδ1 × Xδ2 ,
+the 1-simplices by codimension 2 faces of Xδ1 × Xδ2 , and so on. Since each Xδi is
+homotopic to a ball, the same is true of Xδ1 × Xδ2 , and therefore S is homotopic to its
+boundary, which is a sphere Sn−1 of dimension n − 1. The complex (11.4), shifted by
+one to the left, computes the reduced cohomology of the simplical subcomplex T ⊂ S
+whose 0-simplices correspond to irreducible divisors of C. Therefore, if C is complete,
+then T = S and the (n − 1)th reduced cohomology group of S is that of Sn−1 and
+one-dimensional. If C is broken, then T ( S is a simplicial subcomplex of a punctured
+n − 1-sphere, and homotopic to a simplical complex in Rn−2 . Therefore its (n − 1)th
+cohomology group vanishes.                                                            
+   The following lemma provides a canonical basis for H 2 (M0,S ) for every dihedral
+ordering δ on S.
+Lemma 11.5. Let |Si | ≥ 3, with dihedral orderings δi on Si , for i = 1, . . . , r. Then
+                                                 M
+                 H 2 (M0,S1 × . . . × M0,Sr ) ∼
+                                              =       [D]Q(−1)
+                                                        D∈δ∞
+
+where δ∞ is the set of irreducible divisors at infinite distance, and for each D ∈ δ∞ ,
+[D] is the image of the canonical class of H 0 (D) under the Gysin map
+                        H 0 (D)(−1) → H 2 (M0,S1 × . . . × M0,Sr ) .
+Proof. Let r = 1. By the results of Keel [23], the Gysin map
+                           M
+                                  H 0 (D)(−1) −→ H 2 (M0,S )
+                            D∈δf ∪δ∞
+
+where the left-hand sum is over all irreducible boundary divisors D, is surjective, and
+its kernel is generated by relations
+                          X                        X
+(11.5)                             [DS1 |S2 ] =            [DS1 |S2 ]
+                     {j,k}∈S1 ,{i,l}∈S2           {i,k}∈S1 ,{j,l}∈S2
+
+for all sets of four distinct elements i, j, k, l ∈ S. We first show that
+                                M
+(11.6)                              H 0 (D)(−1)−→H 2 (M0,S )
+                               D∈δ∞
+
+is surjective. For this, choose i, j, k, l ∈ S such that i < j < k < l are in order with
+respect to δ and the pairs {i, j} and {k, l} are consecutive, and {j, k} ,{l, i} are not
+consecutive. Then there is a single term in (11.5) which corresponds to a divisor in
+δf , namely DS1 |S2 with S1 = {j, j + 1, . . . , k}, S2 = {l, l + 1, . . . , i}. This proves that
+the [D]S1 |S2 for S1 , S2 consecutive are linear combinations of [D] with D ∈ δ∞ . On
+the other hand, we know from [23], page 550, that the dimension of H 2 (M0,S ) is
+2n−1 − n2 − 1, which by a straightforward calculation, is the cardinality of δ∞ , so
+(11.6) is injective. The case when r ≥ 2 follows from the Künneth formula.                    
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 37
+
+
+   The basis is functorial in the following sense. Let S have a dihedral structure δ, and
+let B be an irreducible divisor at finite distance on M0,S corresponding to a stable
+partition S1 ∪ S2 of S. Then B = M0,S1 ∪x × M0,S2 ∪x and S1 ∪ x and S2 ∪ x inherit
+canonical dihedral structures from δ. The restriction morphism in this basis is
+                           [D] 7→ [D ∩ B] : H 2 (M0,S ) −→ H 2 (B) .
+   The key geometric property of cellular divisors is the following.
+Lemma 11.6. Let C ⊂ M0,S be a cellular boundary divisor and let D be an irreducible
+boundary divisor such that D ( C and C ∩ D 6= ∅. Then for all k ≥ 0,
+                                    grW  k
+                                      0 H (D, D ∩ C) = 0 .
+
+Proof. Apply the relative cohomology spectral sequence with X = D, A = ∅ and
+B = C ∩ D. It suffices to show that the complex
+                              M                   M
+(11.7)      E1•,0 = H 0 (D) →     H 0 (D ∩ Ci ) →   H 0 (D ∩ Ci,j ) → . . .
+                                     i                     i,j
+
+is acyclic. Consider the simplicial complex T whose k-dimensional simplices are given
+by codimension k intersections of irreducible components (D ∩ C)I , where |I| = k.
+Then (11.7) computes the reduced homology of T . Now C is cellular with respect to a
+dihedral ordering δ, and its irreducible components are indexed by stable partitions of
+S which are consecutive with respect to δ. Since D ( C, the divisor D corresponds to
+a partition V1 ∪ V2 of S where Vi are not consecutive with respect to δ. The set S can
+be written as a disjoint union of subsets S = I1 ∪ I2 ∪ . . . ∪ Ir , where each Ik is maximal
+such that its elements are consecutive for δ, and each Ik is alternately contained in
+either V1 or V2 . The irreducible components of C ∩ D are indexed by stable partitions
+S = P ∪ (S\P ) where |P | ≥ 2 and P ranges over all consecutive subsets of each Ik
+(see example below). Choose a k such that |Ik | ≥ 2. Then the divisor corresponding
+to P = Ik intersects the divisors corresponding to all other Pi . It follows that the
+simplical complex T is a cone with apex P , and is therefore contractible.                 
+Example 11.7. Let S = {1, . . . , 7} and δ = δ 0 . Then irreducible components of
+C are divisors corresponding to stable partitions S1 , S2 of S where S1 , S2 consist
+of consecutive elements. Let D be the divisor corresponding to the stable partition
+{1, 4} ∪ {2, 3, 5, 6, 7}. Then write S = {1} ∪ {2, 3} ∪ {4} ∪ {5, 6, 7}, and the irreducible
+components of D ∩ C correspond to stable partitions Pi ∪ (S\Pi ) where
+             P1 = {2, 3} ,       P2 = {5, 6} ,       P3 = {6, 7} ,      P4 = {5, 6, 7}
+Denote by Pij = Pi ∩ Pj , and Pijk = Pij ∩ Pk . The simplical complex T has vertices
+P1 , . . . , P4 , lines P12 , P13 , P14 , P24 , P34 and 2-faces P134 , P124 . Since P4 meets all other
+Pi , the complex T is a cone, with apex P4 , over the subcomplex generated by P1 , P2 , P3 .
+Lemma 11.8. Let C ⊂ M0,S be a cellular boundary divisor with respect to δ. Then
+                          grW
+                            2 H
+                                k+2
+                                    (M0,S , C) = 0           for all k > 0
+and grW  2
+      2 H (M0,S , C) has dimension equal to the number of irreducible divisors D ∈ δ∞
+on M0,S which do not meet C.
+Proof. Apply the relative cohomology spectral sequence, with X = M0,S , A = ∅
+and B = C. It degenerates at E2 by purity. Thus grW  2 H
+                                                          k+2
+                                                                (M0,S , C) is the k th
+cohomology group of the complex
+                                    M             M
+              E1•,2 = H 2 (M0,n ) →   H 2 (Ci ) →   H 2 (Ci,j ) → . . .
+                                             i                i,j
+38                                       FRANCIS BROWN
+
+
+By lemma 11.5, this complex splits as a direct sum of complexes, one for each irre-
+ducible divisor D ∈ δ∞ . The previous complex is isomorphic to
+        M               M                  M                         
+               H 0 (D) →    H 0 (D ∩ Ci ) →    H 0 (D ∩ Ci,j ) → . . . ⊗ Q(−1)
+        D∈δ∞                  i                     i,j
+
+This is a direct sum of complexes (11.7), which are acyclic in the case that C ∩D 6= ∅ by
+lemma 11.6. The only contributions are from the divisors D ∈ δ∞ such that C ∩D = ∅,
+which each contribute a Q(−1) to E10,2 and nothing else.                                
+   By way of example: on M0,6 , with the standard dihedral ordering, there is a unique
+irreducible boundary component which does not meet the standard cell, namely the
+divisor defined by {135} ∪ {246}. On M0,5 there are none.
+11.3. Proof of theorem 11.2. Let ℓ = n − 3. The restriction map
+                                          ∼
+                    grW  ℓ                W  ℓ
+                      0 H (M0,n , B) −→ gr0 H (M0,n \A, B\(B ∩ A))
+
+is an isomorphism by a relative version of the Gysin sequence. Therefore grW         ∼
+                                                                           0 m(A, B) =
+                                       W              ∼
+Q(0) follows from lemma 11.4, and gr2ℓ m(A, B)dR = Q(−ℓ) follows by duality.
+    Next, apply the relative cohomology spectral sequence (11.2) with X = M0,n . By
+general facts about mixed Hodge structures (or from (11.3)), we know that
+                                      M
+                             E1p,q =      H q (BI \(BI ∩ A))
+                                         |I|=p
+
+has weights in the interval [q, 2q]. Therefore it suffices to prove that
+                              0,ℓ                                 1,ℓ−1
+                      grW
+                        2ℓ−2 E1 = 0           and         grW
+                                                            2ℓ−2 E1     =0.
+First of all,
+                 grW     0,ℓ   W     ℓ          ∼    W  ℓ           ∨
+                   2ℓ−2 E1 = gr2ℓ−2 H (M0,n \A) = (gr2 H (M0,n , A))
+
+by duality. This vanishes for ℓ > 2 on application of lemma 11.8. For ℓ = 2 (n = 5),
+it vanishes from the second part of the same lemma and the remark following it.
+   On the other hand,
+                       M                                M
+      grW
+        2ℓ−2 E1
+               1,ℓ−1
+                     =    grW
+                            2ℓ−2 H
+                                   ℓ−1
+                                       (Bi \(Bi ∩ A)) ∼
+                                                      =   (grW
+                                                             0 m(Bi , Bi ∩ A))
+                                                                              ∨
+
+                          i                                      i
+by duality. The summands on the right vanish by lemma 11.6, since A is cellular.
+
+                                          References
+ [1] J. Alm, Formal weights in Kontsevich’s formality construction and multiple zeta values,
+     arXiv:1410.8377 (2014).
+ [2] R. Apéry, Irrationalité de ζ(2) et ζ(3), Astérisque 61 (1979), 11-13.
+ [3] B. Aspvall, F. M. Liang, The dinner table problem, Technical Report STAN-CS-80- 829,
+     Computer Science Department, Stanford University (1980)
+ [4] K. Ball, T. Rivoal, Irrationalite d’une infinité de valeurs de la fonction zêta aux entiers
+     impairs, Inventiones Mathematicae, 146 (1) 193-207 (2001).
+ [5] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (1979),
+     268-272.
+ [6] F. Brown, Périodes des espaces des modules M0,n et multizêtas, C.R. Acad. Sci. Paris, Ser. I
+     342 (2006), 949-954.
+ [7] F. Brown, Multiple zeta values and periods of moduli spaces M0,n , Ann. Scient. Éc. Norm. Sup.,
+     4e série, t. 42, p. 373-491, (2009)
+ [8] F. Brown, Single-valued motivic periods and multiple zeta values, Forum of mathematics Sigma,
+ [9] F. Brown, Mixed Tate motives over Z, Annals of Mathematics, vol. 175, no.1 (2012), 949-976
+[10] F. Brown, C. Bogner, Feynman integrals and iterated integrals on moduli spaces of curves of
+     genus zero, arXiv:1408.1862 (2014)
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 39
+
+
+[11] F. Brown, S. Carr, L. Scheps, The algebra of cell-zeta values, Compositio Math., vol. 146,
+     issue 03, 731-771 (2010)
+[12] J. Cresson, S. Fischler, T. Rivoal, Phénomènes de symétrie dans des formes linéaires en
+     polyzêtas, J. Reine Angew. Math 617 (2008), 109-152
+[13] J. Cresson, S. Fischler, T. Rivoal, Séries hypergéométriques multiples et polyzêtas, Bull.
+     Soc. Math. France 136 (2008), no. 1, 97-145
+[14] A. C. Dixon, On a certain double integral, Proc. London Math. Soc (2), (1905), 8-15.
+[15] C. Dupont, Relative cohomology of bi-arrangments, arXiv:1410.6348 (2014).
+[16] C. Dupont, Hypersurface arrangements and a global Brieskorn-Orlik-Solomon theorem,
+     arXiv:1302.2103 (2014)
+[17] S. Fischler, Groupes de Rhin-Viola et intégrales multiples, J. Théor. Nombres Bordeaux 15
+     (2003), no. 2, 479-534
+[18] S. Fischler, Irrationalité de valeurs de zêta (d’après Apéry, Rivoal, ...), Séminaire Bourbaki
+     2002-2003, exposé numéro 910.
+[19] S. Fischler, Multiple series connected to Hoffman’s conjecture on multiple zeta values, Journal
+     of Algebra 320 (2008), 1682-1703
+[20] S.         Galkin,        On       Apery        constants      of     homogeneous          varieties,
+     mat.univie.ac.at/~ sergey/papers/zetagrass.pdf
+[21] V. Golyshev, Deresonating a Tate period, arXiv:0908.1458 (2009)
+[22] A. Goncharov, Y. Manin, Multiple ζ-motives and moduli spaces M 0,n , Compos. Math. 140
+     (2004), no. 1, 1-14.
+[23] S. Keel, Intersection theory of moduli space of stable n-pointed curves of genus zero, Trans.
+     Amer. Math. Soc. 330 (1992), no. 2, 545-574.
+[24] F. Knudsen, The projectivity of the moduli space of stable curves. II Math. Scand. 52 (1983),
+     no. 2, 161-199.
+[25] Y. Nesterenko, On the linear independence of numbers, Vestnik Moskov. Univ. Ser. I Mat.
+     Mekh. 40 (1985), no. 1, p. 46-49, Moscow Univ. Math. Bull., p. 69-74.
+[26] R. Osburn, B. Sahu, : Supercongruences for Apry-like numbers, Advances in Applied Mathe-
+     matics, 47, no. 3, (2011) 631-638.
+[27] E. Panzer, Feyman integrals and hyperlogarithms, Ph.D thesis, Humboldt University, (2015).
+[28] E. Panzer, Algorithms for the symbolic integration of hyperlogarithms with applications to
+     Feynman integrals, arXiv:1403.3385 , doi:10.1016/j.cpc.2014.10.019 (2014)
+[29] P. Poulet, Permutations, Intermédiaire des mathématiciens, XXVI, (1919), 117-121.
+[30] Rhin, C. Viola, On a permutation group related to ζ(2), Acta. Arith. 77 (1996), 23-56.
+[31] Rhin, C. Viola, The group structure for ζ(3) , Acta. Arith. 91 (2007), 269-293.
+[32] T. Rivoal, La fonction zêta de Riemann prend une infinité de valeurs irrationnelles aux entiers
+     impairs , C. R. Acad. Sci. Paris, t. 331, Srie I, p. 267-270 (2000).
+[33] T. Rivoal, Selberg’s integral and linear forms in zeta values, Journal Comp. App. Math. 160
+     (2003) 265-270.
+[34] N. Sloane, Online encyclopaedia of integer sequences, https://oeis.org/
+[35] V. N. Sorokin, A transcendence measure for π 2 , Mat. Sbornik 187 (1996), 87-120 [1819-1852]
+[36] C. Viola, On the equivalence of Beukers and Sorokin multiple integrals, Fundam. Prikl. Mat.
+     16 (2010), no. 5, 49-59; English translation in J. Math. Sci. (N.Y.) 180 (2012), no. 5, 561-568.
+[37] S. Zlobin, Expansion of multiple integrals in linear forms, Mat. Zametki 77 (2005), no. 5,
+     683-706; English translation in Math. Notes 77 (2005), no. 5-6, 630-652.
+[38] S. Zlobin, Properties of the coefficients of some linear forms of generalised polylogarithms,
+     Fundam. Prikl. Mat. 11 (2005), no. 6, 41-58; English translation in J. Math. Sci. (N.Y.) 146
+     (2007), no. 2, 5655-5668.
+[39] W. Zudilin, Arithmetic of linear forms involving odd zeta values, Journal Th. Nombres Bor-
+     deaux 16 (2004), 251-291.
+[40] W. Zudilin, Well-poised hypergeometric service for diophantine problems of zeta values, Journal
+     Th. Nombres Bordeaux 15 (2003), 593-626.
+[41] W. Zudilin, Two hypergeometric tales and a new irrationality measure of ζ(2), Ann. Math.
+     Québec 38 (2014) 101–117.
+

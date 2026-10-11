@@ -1,0 +1,378 @@
+{
+  "status": "delivery_checks_passed",
+  "as_of": "2026-10-05",
+  "checked_at_utc": "2026-10-05T04:16:18.515771+00:00",
+  "main_report": "odd_zeta_primitive_routes_progress_20261005.md",
+  "main_report_sha256": "5b47a5dc7e610c62b153a07d696f3a4cbf05cef430ea7d530a531bcd0352a35c",
+  "reports": [
+    {
+      "report": "odd_zeta_log_primitive_20261005.md",
+      "report_sha256": "2fd4bfd843db5a12bfa32c4fce2de003e58d3b37f2ea258ef15f89dc9abc4a0c",
+      "script": "odd_zeta_log_primitive_20261005_verify.py",
+      "script_sha256": "8f5338ec8ab4879d6847e66c66f0011aefae6f716bba01826269010df310ef9d",
+      "certificate": "odd_zeta_log_primitive_20261005_verify.json",
+      "certificate_sha256": "cdc70f0fff226a1e1e82f904de7bd47ff17a79f1c93379e804c8f74eec73e957",
+      "certificate_status": "fixed_exact_primitive_jet_certificates_passed"
+    },
+    {
+      "report": "odd_zeta_exceptional_primes_20261005.md",
+      "report_sha256": "c539cc35792769f141deca440c5d47a65e745037358c6b7688cdc03e73a54157",
+      "script": "odd_zeta_exceptional_primes_20261005_verify.py",
+      "script_sha256": "8d3f2254265944bad91b497768cadb3cd10f7dee840090b2594e90e587cc16a0",
+      "certificate": "odd_zeta_exceptional_primes_20261005_verify.json",
+      "certificate_sha256": "f9e0d0831baf04dd73925520d8ef4eec112c48ef8472d1e32a76102df17f1818",
+      "certificate_status": "passed"
+    },
+    {
+      "report": "odd_zeta_fixed_shift_filters_20261005.md",
+      "report_sha256": "70c958736db4607eba9a4c164d4b71a80abc235006009a64028203deec6d5f99",
+      "script": "odd_zeta_fixed_shift_filters_20261005_verify.py",
+      "script_sha256": "cbbfe40571cf84feefdbf946983774bd889b94eb025009d96f6cbc7669ddf7f8",
+      "certificate": "odd_zeta_fixed_shift_filters_20261005_verify.json",
+      "certificate_sha256": "eaf408974530a04b396f9ca7569ddf4752d1e7536e76de777cb7444d560b69f9",
+      "certificate_status": "fixed_exact_filter_certificates_passed"
+    },
+    {
+      "report": "odd_zeta_mixed_pade_20261005.md",
+      "report_sha256": "d2ca842d8d4a7be71f9faf76d1721136ce110c779546af0fdd27c54c8d3c71d7",
+      "script": "odd_zeta_mixed_pade_20261005_verify.py",
+      "script_sha256": "7edb7ee3fb2621069ceeff5073bc1936743df66c59e6d7d7473e2a36e96323c1",
+      "certificate": "odd_zeta_mixed_pade_20261005_verify.json",
+      "certificate_sha256": "8a03cb6749a64cf914af715c4459c0b218f50c2aaddc25b122a701b944aa6faf",
+      "certificate_status": "fixed_exact_mixed_pade_certificates_passed"
+    }
+  ],
+  "written_review": "odd_zeta_primitive_routes_review_20261005.md",
+  "written_review_sha256": "816d78ebb182017104b6689cbda801688f38d86f797c9e961e8bd7759efd0dd1",
+  "rational_control": {
+    "script": "odd_zeta_markov_rational_control_20261005_verify.py",
+    "script_sha256": "007ffbfa9a30fcf6f72ad9977852c23676de2bf6a411d089aacff7db5e9d560b",
+    "certificate": "odd_zeta_markov_rational_control_20261005_verify.json",
+    "certificate_sha256": "97c05b6d39b04506243fb602ce4a58cec337571bea107f7bc7468d620a9beaa6"
+  },
+  "new_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "new_verifier_scripts_executed_successfully": 5,
+  "frozen_previous_reports": [
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004.md",
+      "sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004_review.md",
+      "sha256": "df39b915c089c168cc9b0051142853b8f751212e477094bab13b70f8a92bc000",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_content_geometry_20261004.md",
+      "sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_catalan_20261004.md",
+      "sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004.md",
+      "sha256": "9a2c843c9de0ff30c5790aff827869abd27b3e0681dc4ec1ccdd5fab1db6638e",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_progress_20261004.md",
+      "sha256": "2020a602b2f30671f6a13e66d0f56638db1ea8b2fb172715ec5b23d091775883",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_relative_review_20261004.md",
+      "sha256": "25e940bd94924128a39043f6f55087367f9be4684fcf1e083d89955f42e88724",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004.md",
+      "sha256": "07a4224bdcaef15776bd8552258acd0aea6204819f12097e8706ae2938220736",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_descent_20261004.md",
+      "sha256": "054e4855775e67fdbe13198d7b705c1d8615bbffa27b5cb5fcb490e3228de774",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_gap_progress_20261004.md",
+      "sha256": "fe3bac7691cce1594c27f0ed609c51cdf3d9dcbbaae6dd030a4ffbde5372ba92",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_regulator_20261004.md",
+      "sha256": "911820ae48252c6757944003b4aa8b34b44627df99e888bf46a49bb23d66a9fb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_vertical_20261004.md",
+      "sha256": "98c374714227f52e982419829d47c8ae4a6e94964840c57bc9ee538333ce2e59",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005.md",
+      "sha256": "9e675637cdd5c5c38e0afc23ea8ec5326c6f39c1438581a3846fc3ce6149f36d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004.md",
+      "sha256": "f00c2b6f95844c8949350eb51968abda08b6904efce8687dcd4ab33845322f15",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_progress_20261005.md",
+      "sha256": "705768e9c35ce21244198ad67119afbb9430074ff718f0c7e6ae5c01097e5479",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_review_20261005.md",
+      "sha256": "4aa60114f6742cec80aee2668ba5380f34eee8ab74932f09e8511a1538f60fe6",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005.md",
+      "sha256": "b7a3b36ccbb5d4f9c208f1b58d2ca3407228120fa5453fc27e070751d717f171",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_saddle_20261005.md",
+      "sha256": "6389841b0700a5ab897ec395d8b83db3d2c09ccd679ef3e48ad9d7117c851288",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005.md",
+      "sha256": "a3ee91ef81375dc77b4171ce4b734be5453319a0433a70653347143ffeb9c952",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_new_period_systems_20261004.md",
+      "sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_next_routes_progress_20261004.md",
+      "sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004.md",
+      "sha256": "a732cc05e14fbe3a98bf591f48658410c0fff1ac7c1fb3d5e53097a837a46e19",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005.md",
+      "sha256": "f939374a37b6006b498c934575724520cd44cb793d20571926db0d111b683018",
+      "unchanged": true
+    }
+  ],
+  "frozen_previous_scripts_and_certificates": [
+    {
+      "file": "odd_zeta_log_saddle_20261005_verify.py",
+      "sha256": "58f55aaff7bc4081672726d2a46111628d9ab6c01923a6679e4561b32ff784e1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_saddle_20261005_verify.json",
+      "sha256": "3abc669f7d071046454e7428016f6b88f555fb78cef785181d980ee0091f17f4",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005_verify.py",
+      "sha256": "71bbe632d1cc0b8f4ff0fb4ad55d42f256a5698e60ba6c0b0d7cb933c850ffe8",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_nonzero_20261005_verify.json",
+      "sha256": "97d9ad31391206d9cb03021ed7d8cbdefa904d4af59149998116b8619a3c10b5",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.py",
+      "sha256": "06a1dda07fd35f8e9033dd1e44aafe3c8a8926f402caba89b609d5418bc33c67",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_uniform_endpoint_nonzero_20261005_verify.json",
+      "sha256": "8f7d4e1704de9ffab64d8b52a9dd970ec7da5699fa294eddea3c9c2526015c10",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005_verify.py",
+      "sha256": "385ff9be3842f8bf3dde88469f6d9791d226ba0be67c0c0da34b6e5824dc4c63",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_arithmetic_20261005_verify.json",
+      "sha256": "63eacc3ba78a3f990fb697dd5955cf88c6aabde61b00be8ff2de1e189ecd9372",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005_verify.py",
+      "sha256": "0243f48622ac1e7e0a29224b6fb1e62e9bcf3da34565f65443772aeae3ccaa08",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_structure_20261005_verify.json",
+      "sha256": "3ab417056bfe91ce835dce89efc08c67f2373382e28ff8bb77bf06c88457bdeb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004_verify.py",
+      "sha256": "adae64acc065389b718a069be023aef47a81f74071e70499d05ab47d629f8158",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_explicit_steinberg_20261004_verify.json",
+      "sha256": "58c2c5c6a940c9f4917759533b084df04961f08961d2a3e0b8d1191bfd4be3ab",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004_verify.py",
+      "sha256": "344e7b96ab0bd0b0d3eff5dc5d02e8ee4c6e64aa15fc8a7a6f6a76e70472c34b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cyclotomic_mellin_20261004_verify.json",
+      "sha256": "c337596791be85adf5150fd9545f4776f85e27dc0f35701f505de2ae0e124be1",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004_verify.py",
+      "sha256": "532bd6d970917a1e8987c70776228b42fa410fe49d0b6b566fa9cf711b78e529",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_relative_family_audit_20261004_verify.json",
+      "sha256": "13699df3867eec49711b2b475f189b0fa4116edacae83bb6e66c4a03d606181c",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004_verify.py",
+      "sha256": "19d38f06179811f78ca27e18a1ffff780750271b73fe7143a9894b715f24d423",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_log_moment_candidate_20261004_verify.json",
+      "sha256": "167ccb0a28cff4e577a2404faf797c3203290e603cf87e2290d56bbd26a482bd",
+      "unchanged": true
+    }
+  ],
+  "earlier_original_pdf_hash_checks": 59,
+  "new_original_source_pdfs": [
+    {
+      "file": "greene1987_hypergeometric_finite_fields_author.pdf",
+      "pages": 25,
+      "sha256": "6c504ae11f84feb37be18beadf588de6864adbe4499f35e70b37c239e3f7be98",
+      "version": "Author-hosted Transactions AMS original",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "ghosh_ward2016_truncated_hypergeometric_v2_withdrawn.pdf",
+      "pages": 41,
+      "sha256": "440b942ed62b7a24ceab7a4ad9526a1f167a0c351ab57f9a0c01b401c423613f",
+      "version": "arXiv v2 (2016-06-08); paper later withdrawn in v4 (2020-04-23)",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "straub2025_partial_lucas_v1.pdf",
+      "pages": 15,
+      "sha256": "a6acfe99fc9cb41f7f8dd8e00db1346ca298072584b4a869ffb79eb46b9c57c5",
+      "version": "arXiv v1 (2025-11-03)",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "samol_vanstraten2009_dwork_reflexive_v1.pdf",
+      "pages": 14,
+      "sha256": "752dd7b97a1fb59839cfa4d184096baa410f39b9239651a9ff48c898b107779d",
+      "version": "arXiv v1 (2009-11-04)",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "sorokin1994_nikishin_zeta3_english.pdf",
+      "pages": 2,
+      "sha256": "a3c616ceb17bbaa88bf7dd8ea65853eac517fca868fecdd04e1765c4d9e1f175",
+      "version": "Russian Mathematical Surveys 49:2, 176–177, English original",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    }
+  ],
+  "new_original_pdf_pages": 97,
+  "new_original_web_sources": [
+    {
+      "file": "dlmf_2_4_saddle_20261005.html",
+      "url": "https://dlmf.nist.gov/2.4",
+      "resolved_url": "https://dlmf.nist.gov/2.4",
+      "bytes": 243172,
+      "sha256": "d372770811353740a68c38f7f59e0d4d7526111d577de55cf69aef130baf4b88",
+      "identity_token": "Saddle Points",
+      "archive_status": "existing_preserved"
+    },
+    {
+      "file": "dlmf_5_11_stirling_20261005.html",
+      "url": "https://dlmf.nist.gov/5.11",
+      "resolved_url": "https://dlmf.nist.gov/5.11",
+      "bytes": 211737,
+      "sha256": "b70274ace6c2e0fd3e10ef82f292fb6f7a713b07600cd66c8651b4a2560f76f5",
+      "identity_token": "Asymptotic Expansions",
+      "archive_status": "existing_preserved"
+    },
+    {
+      "file": "ghosh_ward_arxiv_v4_metadata_20261005.html",
+      "url": "https://arxiv.org/abs/1601.06765v4",
+      "resolved_url": "https://arxiv.org/abs/1601.06765v4",
+      "bytes": 39016,
+      "sha256": "e53ebc5b698657e7471848f8600ba2b7ab13155962df3cea4b764fd69918a04c",
+      "identity_token": "withdraw",
+      "archive_status": "existing_preserved"
+    }
+  ],
+  "withdrawn_source_theorems_adopted": false,
+  "scope": "True root-denominator costs and a second p-adic jet are proved; weighted residual layer losses remain unbounded. A three-row true-denominator exponential lower bound is unconditional but insufficient for the primitive net budget. Fixed rational filters and a specified endpoint type-I family do not change the relevant raw/normalized exponential advantage. Single positive rational-moment measures give common strictly positive Markov errors and a verified bare exponential rate for fixed odd zeta values, Catalan and the specified positive combination; the complete integer coefficient budget is unproved. A rational-target control input proves that positivity and rational moments alone cannot close a universal below-threshold arithmetic bound. Finite certificates do not replace the written all-scale proofs.",
+  "local_links_checked": 99,
+  "missing_links": []
+}

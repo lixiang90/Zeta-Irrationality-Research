@@ -1,0 +1,59 @@
+{
+  "schema": "independent-source-receipt-v1",
+  "date": "2026-10-06",
+  "agent": "/root/conifold_arithmetic_hypothesis",
+  "status": "FROZEN",
+  "proof": {
+    "path": "research/cdt_odd_mixed_double_pole_arithmetic_cost_20261006.md",
+    "sha256": "452b9202ab3460f95e1ac5500092146cbe2ba0f9ed1e0a22bf5acb0a291fe985",
+    "scope": "A1-A14 including A30a: all finite primes, Gauss valuation of the entire target polynomial, exact finite residue optimization, signed common content, a rank-one head correction, confluent Vandermonde determinant, corrected zero-order layouts and their infinite nonzero auxiliary-prime subsequences; actual auxiliary-prime change-of-basis index and general factorial fee retained; no numerical zeta irrationality or linear independence claim."
+  },
+  "sources": [
+    {
+      "type": "frozen-project-input",
+      "path": "research/cdt_odd_mixed_zeta_character_hankel_reduction_20261006.md",
+      "sha256": "e6e174a7306d4a9458ff9873d76e5bc40866b258d5d6f760bbf68a28c99ae463",
+      "actual_read": "Full text H1-H9 and scope, with authoritative double-pole H9 as baseline.",
+      "use": "Exact original (B,kappa)=(6,3) family, derivative functional, W/C/U/V, normalization, and existing nonzero statement.",
+      "operations": "Read and SHA256 verification only; no modification."
+    },
+    {
+      "type": "primary-research-preprint",
+      "title": "The linear independence of 1, zeta(3), and zeta(4)",
+      "author": "Li Lai",
+      "identifier": "arXiv:2610.06838v1",
+      "date_as_printed": "2026-10-05",
+      "primary_url": "https://arxiv.org/abs/2610.06838",
+      "path": "literature/lai2026_linear_independence_1_zeta3_zeta4_arxiv2610_06838v1_20261006.pdf",
+      "sha256": "838c0331efb1ea249b60308e00e1fbc2ae8771c55da4eaf22e7beb0243250a58",
+      "pages": 25,
+      "actual_read": "All PDF pages 1-25, extracted with PyMuPDF in three reading batches: 1-8, 9-17, 18-25; no truncated batch was used.",
+      "specific_scope": {
+        "pages_1_8": "Introduction and double-pole family, auxiliary-prime nonzero proof, classical all-prime integrality and definition of residue minors.",
+        "pages_9_11": "Full proof of Lemma 4.3 and determinant/factorial normalization in Lemma 4.4.",
+        "pages_12_17": "Actual prime summation, Proposition 5.5 and the opening contour statement.",
+        "pages_18_22": "Triple-zero vanishing needed for right-contour equality; weight-four real estimates and Proposition 6.6 with explicit 31.614437... proof constant but stated bound 31.",
+        "pages_23_25": "References; these referenced papers were not treated as independently read."
+      },
+      "use": "Independently hand-generalized minor and integrality proofs; strict limitation of the original analytic estimate to its actual weight-four functional.",
+      "download_this_round": false,
+      "tls_this_round": "Not applicable: existing archived PDF read only, no new network download."
+    }
+  ],
+  "execution_audit": {
+    "old_math_producer_execute_import_rerun": 0,
+    "peer_math_producer_execute_import_rerun": 0,
+    "new_own_math_producer_runs": 0,
+    "source_processing": "Read-only PyMuPDF text extraction and SHA256 verification only.",
+    "new_pdf_count": 0,
+    "new_math_producer_files": [],
+    "frozen_source_files_modified": []
+  },
+  "limitations": [
+    "The universal signed common content is a lower bound, not an exact primitive content calculation.",
+    "No weight-four 30.83 arithmetic or 31.614437 real constant is carried into s>=5.",
+    "The repaired layouts need their own quantitative archimedean energy and arithmetic summation.",
+    "The original triple-zero layout has a nonzero finite crossing correction from s=5 onward.",
+    "No peer numerical optimization output is used or rerun in this proof."
+  ]
+}

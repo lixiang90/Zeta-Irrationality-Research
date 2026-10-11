@@ -1,0 +1,134 @@
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 13
+
+
+                              4. Picard-Fuchs equations
+   The family of basic cellular integrals satisfy interesting recurrence relations. We
+briefly sketch their properties. Let (δ, δ ′ ) be any convergent configuration and fix signs
+of fδ/δ′ , ωδ′ throughout this section. Define the generating series
+                                   XZ                           Z
+                                               N      N
+                       Fδ/δ′ (t) =           fδ/δ ′ t   ω δ ′ =   ωδ/δ′ (t)
+                                  N ≥0   Sδ                   Sδ
+
+where
+                                               1
+                                 ωδ/δ′ (t) =          ωδ ′ .
+                                           1 − tfδ/δ′
+The series Fδ/δ′ (t) converges for t ≤ 1 by (3.8) and the remarks which follow. Define
+a hypersurface in M0,S × A1 by the vanishing locus of the following equation
+                                Hδ/δ′    :     1 − tfδ/δ′ = 0 .
+Let H δ/δ′ denote its Zariski closure in M0,S × A1 . It is well-known how to construct,
+over some open U ⊂ A1 defined over Q containing 0, an algebraic vector bundle
+            rel     ℓ
+          HdR   = HdR ((M0,S \(H δ/δ′ ∪ Aδ′ ), Aδ \((H δ/δ′ ∪ Aδ′ ) ∩ Aδ ))/U )
+                                        S
+where Aσ denotes the boundary divisor D∈Sing(ωσ ) D for any dihedral structure σ,
+equipped with an integrable Gauss-Manin connection
+                                    rel
+                            ∇rel : HdR                  rel
+                                        −→ Ω1U/Q ⊗OU/Q HdR  .
+                                                                  rel
+Its analytic vector bundle corresponds to a complex local system HB   . It is the sheaf
+whose stalks at t ∈ U are the relative singular cohomology groups
+             rel       ℓ
+(4.1)      (HB   )t = HB (M0,S \(H δ/δ′ (t) ∪ Aδ′ ), Aδ \((H δ/δ′ (t) ∪ Aδ′ ) ∩ Aδ )) ⊗ C
+where H δ/δ′ (t) denotes the fiber of H δ/δ′ over the point t. Here, and later on in this
+           ℓ
+section, HB  (X, Y ) denotes H ℓ (X(C), Y (C)), for X, Y defined over Q.
+   The differential form ωδ/δ′ (t) is defined over Q and has singularities in H δ/δ′ ∪ Aδ′ ,
+                       rel       rel                          rel
+so defines a section ωδ/δ  ′ of HdR . There is a polynomial Dδ/δ ′ ∈ Q[t, ∂t ], such that
+
+                                     rel     rel
+                                    Dδ/δ ′ (ωδ/δ ′ (t)) = 0
+
+
+where ∂t stands for ∇rel
+                      ∂/∂t . Finally, since the boundary of the closure of the real simplex
+Sδ is contained in Aδ (C), its relative homology class defines a locally constant section
+      rel ∨
+of (HB   ) near t = 0, and we obtain the homogeneous Picard-Fuchs equation:
+                                              Z
+                         rel                     rel     rel
+                       Dδ/δ  ′ (Fδ/δ ′ (t)) =   Dδ/δ ′ (ωδ/δ ′ (t)) = 0 .
+                                               Sδ
+This equation is equivalent to a recurrence relation on the coefficients of Fδ/δ′ (t).
+4.0.1. Duality. The effect of duality is not yet visible due to the asymmetric roles
+played by δ and δ ′ . To remedy this, consider, as above, the algebraic vector bundle
+(perhaps after making U smaller) denoted by
+                              ℓ
+                       HdR = HdR ((M0,S \(H δ/δ′ ∪ Aδ′ ∪ Aδ ))/U )
+equipped with the Gauss-Manin connection ∇. Its complex local system HB has stalks
+                               ℓ
+                     (HB )t = HB (M0,S \(H δ/δ′ (t) ∪ Aδ′ ∪ Aδ )) ⊗ C
+at t ∈ U . As before, the class of ωδ/δ′ (t) defines a section ωδ/δ′ of HdR , which is
+annihilated by an operator we denote by Dδ/δ′ ∈ Q[t, ∂t ].
+Lemma 4.1. Let (δ, δ ′ ) be convergent. For all t ∈ A1 , H δ/δ′ (t) ∩ Aδ = ∅.
+14                                     FRANCIS BROWN
+
+
+Proof. By corollary 3.9, fδ/δ′ vanishes along any irreducible component D of Aδ .             
+
+                             rel
+   There is a natural map (HdR                                     rel
+                                 , ∇rel ) → (HdR , ∇) which sends ωδ/δ ′ to ωδ/δ ′ . There
+                                             rel
+is a corresponding map on local systems HB → HB . Let t ∈ U and consider the sets
+
+                 U1 = M0,S \Aδ                  ⊃       A1 = ∅
+                 U2 = M0,S \(H δ/δ′ (t) ∪ Aδ′ ) ⊃       A2 = Aδ \(Aδ′ ∩ Aδ )
+
+in M0,S . The second ⊃ follows from the previous lemma, which also gives
+
+          U1 ∪ U2     =   M0,S \(Aδ ∩ Aδ′ )                      ⊃    A1 ∪ A2 = A2
+          U1 ∩ U2     =   M0,S \(H δ/δ′ (t) ∪ Aδ ∪ Aδ′ )         ⊃    A1 ∩ A2 = ∅
+
+A relative Mayer-Vietoris sequence gives
+    ℓ                         ℓ               ℓ               ℓ
+ → HB (U1 ∪ U2 , A1 ∪ A2 ) → HB (U1 , A1 ) ⊕ HB (U2 , A2 ) → HB (U1 ∩ U2 , A1 ∩ A2 ) →
+                       rel
+The natural morphism HB    → HB corresponds on stalks to the second map, restricted
+to the second component in the middle. Its kernel has stalks at t ∈ U the image of
+                           ℓ                         ℓ
+                                                                 
+                    ker HB   (U1 ∪ U2 , A1 ∪ A2 ) → HB (U1 , A1 )
+      ℓ
+in HB   (U2 , A2 ). This has no dependence on t, and is therefore constant. Thus the
+                             rel,an
+kernel of the morphism (HdR                       an
+                                    , ∇rel ) → (HdR  , ∇) of vector bundles on U an has the
+                                              rel                 m
+trivial connection. It follows that Dδ/δ′ ωδ/δ′ is a section of OU  for some m. By clearing
+denominators, we obtain an inhomogenous Picard-Fuchs equation of the form
+
+(4.2)                              Dδ/δ′ Fδ/δ′ (t) = Pδ/δ′ (t)
+
+where Pδ/δ′ (t) ∈ C[t]. The duality is finally visible for the operator Dδ/δ′ because on
+the open set M0,S \(H δ/δ′ (t) ∪ Aδ′ ∪ Aδ ), we have the identity
+
+                                   tωδ/δ′ (t) = ±ωδ′ /δ (t−1 )
+
+which follows from equation (3.6), and relates Dδ/δ′ and Dδ′ /δ . If we write (4.2) as a
+recurrence relation between the coefficients of Fδ/δ′ in the form
+
+(4.3)                          p0 (n)un + . . . + pk (n)un+k = 0
+
+where pi ∈ Q[t], then the corresponding recurrence relation for Fδ′ /δ is its dual:
+
+(4.4)                         p∨                  ∨
+                               0 (n)un + . . . + pk (n)un+k = 0
+
+where (after possibly multiplying p∨        i
+                                   i by (−1) owing to sign ambiguities),
+
+                     p∨
+                      i (t) = pk−i (−k − 1 − t)         for all 0 ≤ i ≤ k .
+
+In particular, if a convergent configuration [δ, δ ′ ] is self-dual, then the coefficients of the
+generating series Fδ/δ′ (t) satisfy a recurrence relation (4.3) whose coefficients satisfy
+pi (t) = λ pk−i (−k − 1 − t) for all 0 ≤ i ≤ k, and some λ ∈ Q× .
+
+Remark 4.2. The multiplicative structures on cellular integrals §6 implies that for
+certain convergent configurations [δ1 , δ1′ ] and [δ2 , δ2′ ], there exists a convergent config-
+uration [α, α′ ] such that Fα/α′ (t) is the Hadamard product of Fδ1 /δ1′ (t) and Fδ2 /δ2′ (t).
+

@@ -1,0 +1,131 @@
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      3
+
+
+                                  1. Introduction
+1.1. Dirichlet L-values. The values of the Riemann zeta function ζ(k) for positive
+integers k, and more generally the Dirichlet L-values
+                                           ∞
+                                          X   χ(n)
+                                L(k, χ) =
+                                          n=1
+                                               nk
+for quadratic characters χ, have long been a source of interest to mathematicians.
+Suppose that χ is a primitive quadratic character of conductor D, where we use
+the convention that the sign of D is the sign of χ(−1). Starting with work of
+Euler [Eul1735] and Dirichlet [Dir1837] (or even far before that in the special case
+of D = −4 and k = 1 [Roy90]), we know that, for positive integers k:
+               
+                  k
+                     √      ×
+               π · √D · Q ,             k even and χ(−1) = 1,
+               
+               
+                  k           ×
+     L(k, χ) ∈ π · −D    ·Q ,       k odd and χ(−1) = −1,                  (1.1.1)
+                √
+                D log |Q× | ∖ {1} , k = 1, χ(−1) = 1, and D ̸= 1.
+               
+               
+
+Combined with Lindemann’s theorem [Lin1882] on the transcendence of π and,
+more generally, of the natural logarithms of algebraic numbers other than 0 or 1,
+one knows all of these values to be transcendental. The remaining L-values are far
+less well understood. Indeed, in the (approximately) last 140 years since [Lin1882,
+Wei1885] only a single further explicit number L(k, χ) has been shown to be irra-
+tional, namely Apéry’s unexpected 1978 proof that ζ(3) is irrational [Ape79, vdP79,
+Coh78]. In this paper, we establish the irrationality of a new L-value L(k, χ);
+in some sense the “simplest” open case corresponding to k = 2 and the charac-
+ter χ = χ−3 of smallest possible conductor:
+Theorem A. The period
+                  ∞                         
+                 X        1            1
+    L(2, χ−3 ) =                −              = 0.7813024128964862968 . . .
+                 n=0
+                      (3n + 1)2    (3n + 2)2
+                   ZZ                            Z 1
+                                  dx dy              log(x) dx
+                 =                       2
+                                             = −              2
+                     1≥y≥x≥0 y(1 + x + x )        0 1+x+x
+is irrational. More generally, the three periods 1, π 2 , L(2, χ−3 ) are linearly indepen-
+dent over Q.
+  The formula above exhibits L(2, χ−3 ) as a period in the sense of Kontsevich–
+Zagier [KZ01]. There are a panoply of other more complicated expressions for
+L(2, χ−3 ) as an integral, or an infinite sum, for example, the following sum of
+hypergeometric type ([HPHP11, §3]):
+                                           ∞
+                                        1 X (4 − 15n)(−27)n
+                        L(2, χ−3 ) =               2   ,
+                                       27 n=1      2n   3n
+                                              n 3
+                                                    n    n
+or, more serendipitously, in terms of the sum of the inverse squares of the entries
+greater than one in Pascal’s triangle [Sta23]:
+                                        1      X     1
+                         L(2, χ−3 ) = − +           .
+                                        3 n>m>0 n 2
+                                                        m
+4                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                √
+The constant 3 3 L(2, χ−3 )/4 = Im(Li2 (eπi/3 )) = 23 ·Im(Li2 (e2πi/3 )) = 1.014941 . . .
+is the volume of the regular ideal hyperbolic tetrahedron (the one of the maximal
+volume), and is also the volume of the non-compact hyperbolic manifold with min-
+imal volume [Ada87] (the Gieseking manifold, whose orientable double cover is the
+complement of the figure 8 knot [Thu97]). It is an open problem to show that
+the volumes of hyperbolic 3-manifolds are not all rationally related (see [Thu82,
+Problem 23], and [Mil82, Mil83]). While our result does not have any direct impli-
+cations for this question, it is the first unconditional result to make contact with the
+arithmetic nature of these volumes. Another appearance of L(2, χ−3 ) is in Smyth’s
+formula (see [BZ20, Prop. 3.4] or [MS21, Prop. 2.42])
+      √                                     Z 1Z 1
+     3 3
+          L(2, χ−3 ) = m(1 + x + y) :=             log |1 + e2πis + e2πit | ds dt (1.1.2)
+      4π                                     0  0
+linking L(2, χ−3 ) to the Mahler measure of the simplest essentially bivariate poly-
+nomial 1 + x + y, or equivalently in the language of Diophantine and Arakelov
+geometry [Phi91, BGS94], to the canonical height of the subvariety 1 + x + y = 0
+of the linear algebraic torus G2m . Unfortunately, while the nonvanishing Mahler
+measures of the integer univariate polynomials are all known to be transcendental
+by the Hermite–Lindemann–Weierstrass theorem [Her1874, Lin1882, Wei1885], our
+result has no direct bearing on the conjectured irrationality of any such canonical
+heights! (We do, incidentally, also prove the irrationality of the Mahler measure of
+the rational coefficients bivariate polynomial (1+x+y)4 /3, which is not a canonical
+height. This is in Theorem 2.11.17.)
+   An immediate consequence of Theorem A is the irrationality of the following
+                                              ∞
+                                             X       1
+values of the “trigamma” function ψ1 (z) =                 = ζ(2, z):
+                                             n=0
+                                                 (z +  n)2
+
+Corollary B. The following numbers are irrational:
+                    1     1   1     1              L(2, χ−3 ) 2π 2
+                     2
+                       + 2+ 2     +      + ... =              +      ,
+                   1      4  7     102                 2         27
+                    1     1   1     1              L(2, χ−3 ) 2π 2
+                       + 2+ 2     + 2    + ... = −            +       ,
+                   22     5  8     11                   2        27
+                  1      1   1      1              5L(2, χ−3 ) π 2
+                   2
+                      + 2+ 2      + 2    + ... =               +     ,
+                 1      7   13     19                   8         18
+                1       1    1      1              5L(2, χ−3 ) π 2
+                    + 2+ 2        + 2    + ... = −             +      .
+                52     11   17     23                   8         18
+   Note that since ψ1 (x + 1) − ψ1 (x) + 1/x2 = 0, it also follows from Theorem A
+(together with the fact that ψ1 (1) = π 2 /6 and ψ1 (1/2) = π 2 /2) that ψ1 (n/6) is
+irrational for any n ∈ N>0 . These are the first new irrationality results for ψ1 since
+Legendre’s proof in 1794 [Leg1794] that π 2 is irrational!
+   As another application of what turns out to be exactly the same argument, we
+also prove the following irrationality result for certain products of two logarithms
+(see Theorem 14.0.1 in § 14).
+                                                        m       1
+Theorem C. Let m, n ∈ Z ∖ {−1, 0} be integers such that   − 1 < 6 . Then
+                                                        n      10
+                                              
+                                 1             1
+                        log 1 +      log 1 +
+                                 m             n
+

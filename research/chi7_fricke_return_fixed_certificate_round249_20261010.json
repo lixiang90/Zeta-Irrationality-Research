@@ -1,0 +1,260 @@
+{
+  "scope": "Exactly four prescribed returns; exact finite sums only",
+  "math_executions": 1,
+  "parameter_scans": 0,
+  "floating_point": false,
+  "rows": [
+    {
+      "label": "native",
+      "gamma": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "return_matrix": [
+        [
+          0,
+          -1
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "fixed_point_re": "0",
+      "fixed_point_im_times_sqrt14": "1",
+      "character_d": 1,
+      "reduced_form": [
+        1,
+        0,
+        14
+      ],
+      "form_reduction": [
+        [
+          14,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          14
+        ]
+      ],
+      "period": {
+        "T_cyclic_coefficients": [
+          "1"
+        ],
+        "C_over_pi2": "1/6",
+        "D_over_pi2": "1/8",
+        "Im_R_over_pi2_sqrt7": "0"
+      }
+    },
+    {
+      "label": "plus_cubic",
+      "gamma": [
+        [
+          5,
+          1
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "return_matrix": [
+        [
+          14,
+          -5
+        ],
+        [
+          42,
+          -14
+        ]
+      ],
+      "fixed_point_re": "1/3",
+      "fixed_point_im_times_sqrt14": "1/3",
+      "character_d": -1,
+      "reduced_form": [
+        3,
+        2,
+        5
+      ],
+      "form_reduction": [
+        [
+          42,
+          -28,
+          5
+        ],
+        [
+          5,
+          28,
+          42
+        ],
+        [
+          5,
+          -2,
+          3
+        ],
+        [
+          3,
+          2,
+          5
+        ]
+      ],
+      "period": {
+        "T_cyclic_coefficients": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "C_over_pi2": "-5/18",
+        "D_over_pi2": "-5/24",
+        "Im_R_over_pi2_sqrt7": "4/147"
+      }
+    },
+    {
+      "label": "minus_cubic",
+      "gamma": [
+        [
+          5,
+          -1
+        ],
+        [
+          -14,
+          3
+        ]
+      ],
+      "return_matrix": [
+        [
+          -14,
+          -5
+        ],
+        [
+          42,
+          14
+        ]
+      ],
+      "fixed_point_re": "-1/3",
+      "fixed_point_im_times_sqrt14": "1/3",
+      "character_d": -1,
+      "reduced_form": [
+        3,
+        -2,
+        5
+      ],
+      "form_reduction": [
+        [
+          42,
+          28,
+          5
+        ],
+        [
+          5,
+          -28,
+          42
+        ],
+        [
+          5,
+          2,
+          3
+        ],
+        [
+          3,
+          -2,
+          5
+        ]
+      ],
+      "period": {
+        "T_cyclic_coefficients": [
+          "-1",
+          "1",
+          "1"
+        ],
+        "C_over_pi2": "-5/18",
+        "D_over_pi2": "-5/24",
+        "Im_R_over_pi2_sqrt7": "-4/147"
+      }
+    },
+    {
+      "label": "other_real",
+      "gamma": [
+        [
+          25,
+          4
+        ],
+        [
+          56,
+          9
+        ]
+      ],
+      "return_matrix": [
+        [
+          56,
+          -25
+        ],
+        [
+          126,
+          -56
+        ]
+      ],
+      "fixed_point_re": "4/9",
+      "fixed_point_im_times_sqrt14": "1/9",
+      "character_d": 1,
+      "reduced_form": [
+        2,
+        0,
+        7
+      ],
+      "form_reduction": [
+        [
+          126,
+          -112,
+          25
+        ],
+        [
+          25,
+          112,
+          126
+        ],
+        [
+          25,
+          12,
+          2
+        ],
+        [
+          2,
+          -12,
+          25
+        ],
+        [
+          2,
+          0,
+          7
+        ]
+      ],
+      "period": {
+        "T_cyclic_coefficients": [
+          "1",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "1",
+          "0"
+        ],
+        "C_over_pi2": "67/162",
+        "D_over_pi2": "25/72",
+        "Im_R_over_pi2_sqrt7": "44/441"
+      }
+    }
+  ],
+  "status": "PASS"
+}

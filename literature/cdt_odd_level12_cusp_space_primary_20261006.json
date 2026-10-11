@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06",
+  "scope": "Primary LMFDB page data directly read with web tool; concise provenance facts, not archived full HTML/PDF and not a period-relation proof.",
+  "sources": [
+    {
+      "url": "https://www.lmfdb.org/ModularForm/GL2/Q/holomorphic/6/4/a/a/",
+      "label": "6.4.a.a",
+      "facts": {
+        "level": 6,
+        "weight": 4,
+        "dimension": 1,
+        "coefficient_field": "Q",
+        "fricke_sign": "+1",
+        "eta_expression": "eta(z)^2 eta(2z)^2 eta(3z)^2 eta(6z)^2"
+      }
+    },
+    {
+      "url": "https://www.lmfdb.org/ModularForm/GL2/Q/holomorphic/12/4/a/",
+      "label": "12.4.a",
+      "facts": {
+        "cusp_total": 3,
+        "cusp_new": 1,
+        "cusp_old": 2,
+        "sturm_bound": 8,
+        "cusp_fricke_minus": 1,
+        "new_fricke_sign": "+1"
+      }
+    },
+    {
+      "url": "https://www.lmfdb.org/ModularForm/GL2/Q/holomorphic/12/4/b/a/",
+      "label": "12.4.b.a",
+      "facts": {
+        "level": 12,
+        "weight": 4,
+        "character": "primitive chi12, chi(5)=chi(7)=-1",
+        "newspace_dimension": 4,
+        "coefficient_field": "Q(sqrt(3),sqrt(-5))",
+        "inner_twists": [
+          "1",
+          "chi_-3",
+          "chi_-4",
+          "chi12"
+        ],
+        "scope": "entire cuspidal newspace; inner twists do not by themselves provide the K critical-period relation needed here."
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "integer_polynomial_in_x2": [
+    "-N^4",
+    "4*N^3-6*N^2",
+    "4*N-1"
+  ],
+  "identity": "J_N=G_N(t)-G_N(t+1)",
+  "numerator_positive_coefficients_for_N_ge_1": true,
+  "G_N": "8*N^4*(2*t+N-1)*F_(N-1)(t)",
+  "proof": "Polynomial expansion in symbolic N,t. G_N is a sum of products of reciprocal positive linear factors, so G_N(t)-G_N(t+1) is strictly completely monotone."
+}

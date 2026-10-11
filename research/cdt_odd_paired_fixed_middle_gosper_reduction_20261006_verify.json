@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "execution_count": 1,
+  "cases": [
+    {
+      "r": 1,
+      "p": 19,
+      "actual_initial_G_constant": 1,
+      "actual_initial_G_x2": 13,
+      "actual_initial_H_constant": 12,
+      "cross_boundary_identities": 3,
+      "G_two_seed_reductions": 1,
+      "H_one_seed_reductions": 5,
+      "full_QQ_Dixon_unit": 17,
+      "critical_determinant_nonzero_asserted": false
+    },
+    {
+      "r": 2,
+      "p": 37,
+      "actual_initial_G_constant": 0,
+      "actual_initial_G_x2": 12,
+      "actual_initial_H_constant": 15,
+      "cross_boundary_identities": 7,
+      "G_two_seed_reductions": 3,
+      "H_one_seed_reductions": 11,
+      "full_QQ_Dixon_unit": 34,
+      "critical_determinant_nonzero_asserted": false
+    },
+    {
+      "r": 4,
+      "p": 73,
+      "actual_initial_G_constant": 31,
+      "actual_initial_G_x2": 47,
+      "actual_initial_H_constant": 68,
+      "cross_boundary_identities": 15,
+      "G_two_seed_reductions": 7,
+      "H_one_seed_reductions": 23,
+      "full_QQ_Dixon_unit": 5,
+      "critical_determinant_nonzero_asserted": false
+    }
+  ],
+  "moment_identity_count": 75,
+  "old_peer_execute_import_rerun_count": 0,
+  "source_sha256": "4b6dce00c79c0d26d89a418af05966d8f8a7ada32b00ce636c9de20b6576b012",
+  "scope": "Fixed original lambda2 moments and true middle boundaries on old r1,2,4 only; no prime-table extension.",
+  "not_proved": [
+    "Infinite M5 units",
+    "Infinite rational-target nonzero",
+    "Global integer model and norm improvement",
+    "Strict margin",
+    "New special-value theorem"
+  ]
+}

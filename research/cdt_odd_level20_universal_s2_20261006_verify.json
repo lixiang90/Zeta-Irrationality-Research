@@ -1,0 +1,141 @@
+{
+  "scope": "only preassigned actual packet probes and universal local coefficient checks; no finite-jet no-go",
+  "checks_passed": 43,
+  "check_labels": [
+    "p7_actual_integer_coordinate",
+    "p7_rootNone_sign-1_source_simple_origin_zero",
+    "p7_rootNone_sign-1_firstorder_reduced_quotients",
+    "p7_rootNone_sign-1_exact_firstorder_relation",
+    "p7_rootNone_sign-1_source_denominator_unit_at_origin",
+    "p7_rootNone_sign-1_pole_lowerbound_m0_m1_m2",
+    "p7_rootNone_sign1_source_simple_origin_zero",
+    "p7_rootNone_sign1_firstorder_reduced_quotients",
+    "p7_rootNone_sign1_exact_firstorder_relation",
+    "p7_rootNone_sign1_source_denominator_unit_at_origin",
+    "p7_rootNone_sign1_pole_lowerbound_m0_m1_m2",
+    "p11_actual_integer_coordinate",
+    "p11_root4_sign-1_source_simple_origin_zero",
+    "p11_root4_sign-1_firstorder_reduced_quotients",
+    "p11_root4_sign-1_exact_firstorder_relation",
+    "p11_root4_sign-1_source_denominator_unit_at_origin",
+    "p11_root4_sign-1_pole_lowerbound_m0_m1_m2",
+    "p11_root4_sign1_source_simple_origin_zero",
+    "p11_root4_sign1_firstorder_reduced_quotients",
+    "p11_root4_sign1_exact_firstorder_relation",
+    "p11_root4_sign1_source_denominator_unit_at_origin",
+    "p11_root4_sign1_pole_lowerbound_m0_m1_m2",
+    "p11_root7_sign-1_source_simple_origin_zero",
+    "p11_root7_sign-1_firstorder_reduced_quotients",
+    "p11_root7_sign-1_exact_firstorder_relation",
+    "p11_root7_sign-1_source_denominator_unit_at_origin",
+    "p11_root7_sign-1_pole_lowerbound_m0_m1_m2",
+    "p11_root7_sign1_source_simple_origin_zero",
+    "p11_root7_sign1_firstorder_reduced_quotients",
+    "p11_root7_sign1_exact_firstorder_relation",
+    "p11_root7_sign1_source_denominator_unit_at_origin",
+    "p11_root7_sign1_pole_lowerbound_m0_m1_m2",
+    "p13_actual_integer_coordinate",
+    "p13_rootNone_sign-1_source_simple_origin_zero",
+    "p13_rootNone_sign-1_firstorder_reduced_quotients",
+    "p13_rootNone_sign-1_exact_firstorder_relation",
+    "p13_rootNone_sign-1_source_denominator_unit_at_origin",
+    "p13_rootNone_sign-1_pole_lowerbound_m0_m1_m2",
+    "p13_rootNone_sign1_source_simple_origin_zero",
+    "p13_rootNone_sign1_firstorder_reduced_quotients",
+    "p13_rootNone_sign1_exact_firstorder_relation",
+    "p13_rootNone_sign1_source_denominator_unit_at_origin",
+    "p13_rootNone_sign1_pole_lowerbound_m0_m1_m2"
+  ],
+  "samples": [
+    {
+      "prime": 7,
+      "source_cutoff_exclusive": 7,
+      "packets": [
+        {
+          "sqrt5_residue": null,
+          "residue_degree": 2,
+          "sign": -1,
+          "source_degree": 6,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 5,
+          "pulled_back_logderivative_denominator_degree": 35
+        },
+        {
+          "sqrt5_residue": null,
+          "residue_degree": 2,
+          "sign": 1,
+          "source_degree": 6,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 5,
+          "pulled_back_logderivative_denominator_degree": 35
+        }
+      ]
+    },
+    {
+      "prime": 11,
+      "source_cutoff_exclusive": 11,
+      "packets": [
+        {
+          "sqrt5_residue": 4,
+          "residue_degree": 1,
+          "sign": -1,
+          "source_degree": 10,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 9,
+          "pulled_back_logderivative_denominator_degree": 99
+        },
+        {
+          "sqrt5_residue": 4,
+          "residue_degree": 1,
+          "sign": 1,
+          "source_degree": 10,
+          "gcd_F_thetaF_degree": 2,
+          "minimal_firstorder_source_coefficient_degree": 8,
+          "pulled_back_logderivative_denominator_degree": 88
+        },
+        {
+          "sqrt5_residue": 7,
+          "residue_degree": 1,
+          "sign": -1,
+          "source_degree": 10,
+          "gcd_F_thetaF_degree": 2,
+          "minimal_firstorder_source_coefficient_degree": 8,
+          "pulled_back_logderivative_denominator_degree": 88
+        },
+        {
+          "sqrt5_residue": 7,
+          "residue_degree": 1,
+          "sign": 1,
+          "source_degree": 10,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 9,
+          "pulled_back_logderivative_denominator_degree": 99
+        }
+      ]
+    },
+    {
+      "prime": 13,
+      "source_cutoff_exclusive": 13,
+      "packets": [
+        {
+          "sqrt5_residue": null,
+          "residue_degree": 2,
+          "sign": -1,
+          "source_degree": 12,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 11,
+          "pulled_back_logderivative_denominator_degree": 143
+        },
+        {
+          "sqrt5_residue": null,
+          "residue_degree": 2,
+          "sign": 1,
+          "source_degree": 12,
+          "gcd_F_thetaF_degree": 1,
+          "minimal_firstorder_source_coefficient_degree": 11,
+          "pulled_back_logderivative_denominator_degree": 143
+        }
+      ]
+    }
+  ]
+}

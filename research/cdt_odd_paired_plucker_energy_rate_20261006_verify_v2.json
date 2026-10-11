@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "Exact rational intervals for two scalar saddle constants and beta0 only.",
+  "execution_count": 1,
+  "prior_failed_new_producer_runs": 1,
+  "prior_failed_source": "cdt_odd_paired_plucker_energy_rate_20261006_verify.py",
+  "prior_failure": "Python huge-integer serialization after mathematical assertions; v1 never rerun",
+  "old_or_peer_math_import_execute_rerun": 0,
+  "external_lean": 0,
+  "series_terms": 80,
+  "root_bisections_each": 72,
+  "pi": {
+    "lower": "314159265358979/100000000000000",
+    "upper": "15707963267949/5000000000000",
+    "approx_lower": 3.14159265358979,
+    "approx_upper": 3.1415926535898
+  },
+  "y0": {
+    "lower": "24684715238231/50000000000000",
+    "upper": "49369430476463/100000000000000",
+    "approx_lower": 0.49369430476462,
+    "approx_upper": 0.49369430476463
+  },
+  "y1": {
+    "lower": "20817965374373/25000000000000",
+    "upper": "83271861497493/100000000000000",
+    "approx_lower": 0.83271861497492,
+    "approx_upper": 0.83271861497493
+  },
+  "M0": {
+    "lower": "-246028452661873/25000000000000",
+    "upper": "-984113810647491/100000000000000",
+    "approx_lower": -9.84113810647492,
+    "approx_upper": -9.84113810647491
+  },
+  "M1": {
+    "lower": "-237103057293509/25000000000000",
+    "upper": "-189682445834807/20000000000000",
+    "approx_lower": -9.48412229174036,
+    "approx_upper": -9.48412229174035
+  },
+  "basis_constant": {
+    "lower": "1107344841280971/100000000000000",
+    "upper": "276836210320243/25000000000000",
+    "approx_lower": 11.07344841280971,
+    "approx_upper": 11.07344841280972
+  },
+  "beta0": {
+    "lower": "395261919756279/50000000000000",
+    "upper": "790523839512559/100000000000000",
+    "approx_lower": 7.90523839512558,
+    "approx_upper": 7.90523839512559
+  },
+  "proved_constant_checks": [
+    "0<y0<1",
+    "0<y1<1",
+    "7<beta0<8"
+  ],
+  "not_proved_by_script": [
+    "all-n determinant bound",
+    "infinite nonzero",
+    "arithmetic margin"
+  ]
+}

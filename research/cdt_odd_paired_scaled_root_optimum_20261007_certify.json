@@ -1,0 +1,95 @@
+{
+  "state": "PASS_FIRST1",
+  "source_sha256": "95e7ff89a97a6633de4441288a32c787d6ef59aa16efc93d7d50dec5f744e242",
+  "scope": "Elementary constants and unique single-scale crossing brackets; no determinant/prime experiments",
+  "assertion_count": 7,
+  "s_fixed": "4/7",
+  "curvature_left": "121/20",
+  "curvature_right": "1403/612",
+  "fixed_values": {
+    "Q_half": {
+      "lower_num": -9841198709822,
+      "upper_num": -9841198709821,
+      "denominator": 1000000000000
+    },
+    "left_upper": {
+      "lower_num": -10604814987801,
+      "upper_num": -10604814987800,
+      "denominator": 1000000000000
+    },
+    "right_upper": {
+      "lower_num": -10635521815580,
+      "upper_num": -10635521815579,
+      "denominator": 1000000000000
+    },
+    "I_s": {
+      "lower_num": -151796758678,
+      "upper_num": -151796758677,
+      "denominator": 1000000000000
+    },
+    "gain_left": {
+      "lower_num": 611819519300,
+      "upper_num": 611819519301,
+      "denominator": 1000000000000
+    },
+    "gain_right": {
+      "lower_num": 642526347079,
+      "upper_num": 642526347080,
+      "denominator": 1000000000000
+    },
+    "left_derivative_at_quarter": {
+      "lower_num": -219665108523,
+      "upper_num": -219665108522,
+      "denominator": 1000000000000
+    },
+    "right_derivative_at_four_thirds": {
+      "lower_num": -4398227420,
+      "upper_num": -4398227419,
+      "denominator": 1000000000000
+    }
+  },
+  "optimum": {
+    "s": {
+      "lower_num": 560665893554,
+      "upper_num": 560666656495,
+      "denominator": 1000000000000
+    },
+    "a": {
+      "lower_num": 219991954803,
+      "upper_num": 219992117751,
+      "denominator": 1000000000000
+    },
+    "b": {
+      "lower_num": 1328867966712,
+      "upper_num": 1328868225789,
+      "denominator": 1000000000000
+    },
+    "M0": {
+      "lower_num": -9841138106485,
+      "upper_num": -9841138106464,
+      "denominator": 1000000000000
+    },
+    "Mstar": {
+      "lower_num": -10626590636977,
+      "upper_num": -10626590356646,
+      "denominator": 1000000000000
+    },
+    "Istar": {
+      "lower_num": -165040558215,
+      "upper_num": -165039612581,
+      "denominator": 1000000000000
+    },
+    "gain": {
+      "lower_num": 620411691946,
+      "upper_num": 620412917931,
+      "denominator": 1000000000000
+    },
+    "outer_bisections_completed": 18
+  },
+  "limitations": [
+    "All-n determinant estimate and all-s unique-optimum theorem are paper proofs, not finite tests",
+    "Single-scale optimum is not the global optimum over multiple roots or actual complex phase",
+    "Original high/mirror/Gamma arithmetic-analytic fees remain paid once",
+    "No infinite determinant nonzero, auxiliary-unit, strict margin or irrationality theorem asserted"
+  ]
+}

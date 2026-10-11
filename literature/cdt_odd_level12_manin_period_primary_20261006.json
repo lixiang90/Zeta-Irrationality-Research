@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-06",
+  "scope": "Actual primary reading and local files used in NEW level12 Manin period interface; no source code downloaded or executed. Existing Paşol–Popa and Stein PDF files are reused unchanged.",
+  "sources": [
+    {
+      "authors": "Vicenţiu Paşol; Alexandru A. Popa",
+      "title": "Modular forms and period polynomials",
+      "url": "https://arxiv.org/abs/1202.5802",
+      "pdf_url": "https://arxiv.org/pdf/1202.5802",
+      "doi": "10.1112/plms/pdt003",
+      "file": "literature/pasol_popa_period_polynomials_20261006.pdf",
+      "sha256": "1de88be12c3d7bac48d263fe0f5143f622e76ff23db236520508de4d336fbfb5",
+      "bytes": 421603,
+      "pages": 32,
+      "reused": true,
+      "actual_read": "PDF pp3–5,13–16,18: §§2,5.3–5.5,7; Theorems2.1/5.14, Proposition5.11. Also web primary PDF read.",
+      "used_for": "Induced period action; Nebentypus extension; injectivity and coboundary quotient; normalized newform period rationality. Extra relations caveat explicitly retained."
+    },
+    {
+      "authors": "William A. Stein",
+      "title": "Modular Forms: A Computational Approach",
+      "url": "https://www.williamstein.org/books/modform/stein-modform.pdf",
+      "file": "literature/stein_modular_forms_computational_author.pdf",
+      "sha256": "883586b6de92e853ecfb12c0ae6341985f975aeb820995231460ffee147a0198",
+      "bytes": 2215292,
+      "pages": 278,
+      "reused": true,
+      "actual_read": "PDF pp145–147 and150–153; printed pp131–133,136–139, §§8.4–8.5.",
+      "used_for": "Cuspidal boundary map, modular-symbol integration pairing, critical-value normalization and Hecke compatibility. Star convention difference explicitly retained."
+    },
+    {
+      "authors": "Yu. I. Manin",
+      "title": "Periods of parabolic forms and p-adic Hecke series",
+      "year": 1973,
+      "journal": "Math. USSR-Sbornik 21(3),371–393",
+      "url": "https://www.mathnet.ru/php/archive.phtml?jrnid=sm&option_lang=eng&paperid=3354&wshow=paper",
+      "pdf_url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=sm&option_lang=eng&paperid=3354&what=fullteng",
+      "doi": "10.1070/SM1973v021n03ABEH002022",
+      "file": "literature/manin1973_periods_parabolic_mathnet_20261006.pdf",
+      "sha256": "3acb3fb9abff659d74587f9985593c47309151c9ba71dfb9f144736f795f6117",
+      "bytes": 1209510,
+      "pages": 23,
+      "reused": false,
+      "actual_read": "Primary web PDF pp1–5; local PDF pp1–3 and5, printed pp371–373,375.",
+      "used_for": "Original periods theorem and parity separation. Main theorem is full modular group, not directly Γ0(12). The paper explicitly leaves arithmetic nature of common period factors open.",
+      "download_history": "Python urllib certificate-chain validation failed; PowerShell system trust HTTPS download succeeded with TLS validation, no bypass."
+    },
+    {
+      "authors": "LMFDB collaboration",
+      "title": "Newform orbit 12.4.b.a",
+      "url": "https://www.lmfdb.org/ModularForm/GL2/Q/holomorphic/12/4/b/a/",
+      "actual_read": "Primary data page q expansion, coefficient field, inner twist parity table and Hecke characteristic polynomials.",
+      "used_for": "Independent cross-check only: dim4, Q(sqrt3,sqrt(-5)), four twists with two odd parities, T5 polynomial(T²+80)², T7 polynomial(T²+60)². No numerical period relation inferred.",
+      "file": null
+    }
+  ]
+}

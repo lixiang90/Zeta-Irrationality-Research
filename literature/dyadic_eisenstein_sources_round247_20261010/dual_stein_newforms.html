@@ -1,0 +1,1186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Computing with Newforms &mdash; Modular Forms, A Computational Approach v0.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Modular Forms, A Computational Approach v0.1 documentation" href="index.html" />
+    <link rel="next" title="Computing Periods" href="periods.html" />
+    <link rel="prev" title="General Modular Symbols" href="modular_symbols.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="periods.html" title="Computing Periods"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modular_symbols.html" title="General Modular Symbols"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Modular Forms, A Computational Approach v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  
+  <div class="section" id="computing-with-newforms">
+<span id="ch-modformcomp"></span><h1>Computing with Newforms<a class="headerlink" href="#computing-with-newforms" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter we pull together results and algorithms from
+Chapter <a class="reference external" href="weight_two.html#ch-modform2"><em>Modular Forms of Weight 2</em></a>, <a class="reference external" href="dirichlet_characters.html#ch-dirichlet"><em>Dirichlet Characters</em></a>, <a class="reference external" href="linear_algebra.html#ch-linalg"><em>Linear Algebra</em></a>, and
+<a class="reference external" href="modular_symbols.html#ch-modsym"><em>General Modular Symbols</em></a> and explain how to use linear algebra techniques to
+compute cusp forms and eigenforms using modular symbols.</p>
+<p>We first discuss in Section <a class="reference internal" href="#sec-decompdirchar"><em>Dirichlet Character Decomposition</em></a> how to decompose
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> as a direct sum of subspaces corresponding to
+Dirichlet characters.  Next in Section <a class="reference internal" href="#sec-all"><em>Atkin-Lehner-Li Theory</em></a> we state the main
+theorems of Atkin-Lehner-Li theory, which
+decomposes <img class="math" src="_images/math/6b83af676e1fa2e2b68f2a8bbeecb9e38d807901.png" alt="S_k(\Gamma_1(N))" /> into subspaces on which the
+Hecke operators act diagonalizably with &#8220;multiplicity one&#8221;.
+In Section <a class="reference internal" href="#sec-compcuspforms"><em>Computing Cusp Forms</em></a> we describe two
+algorithms for computing modular forms. One algorithm finds
+a basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions, and the other computes eigenvalues
+of newforms.</p>
+<div class="section" id="dirichlet-character-decomposition">
+<span id="sec-decompdirchar"></span><h2>Dirichlet Character Decomposition<a class="headerlink" href="#dirichlet-character-decomposition" title="Permalink to this headline">¶</a></h2>
+<p>The group <img class="math" src="_images/math/c7eb697f0fcf56d5c0ee9008b39d0b698ddcfc37.png" alt="(\Z/N\Z)^*" /> acts on <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> through
+<span class="target" id="index-212"></span><em>diamond-bracket operators</em> <img class="math" src="_images/math/d397d682e18f5adaa8ced37a0d2c5061feadf17c.png" alt="\langle d \rangle" />, as follows.
+For <img class="math" src="_images/math/e218b3115e5404ea810ba41f006149b9ab4d07f2.png" alt="d\in(\Z/N\Z)^*" />, define</p>
+<div class="math">
+<p><img src="_images/math/5251ec5739f742252c1dc951b32443e1029010a6.png" alt="f|\dbd{d} = f^{\left[\abcd{a}{b}{c}{d'}\right]_k}," />
+</div></p><p>where <img class="math" src="_images/math/822ef259ed646c3f1e875c6eaab60597f3b87a8c.png" alt="\abcd{a}{b}{c}{d'} \in \SL_2(\Z)" /> is congruent to
+<img class="math" src="_images/math/f55ca2ef82289ded16904a01033e495f80ded730.png" alt="\abcd{d^{-1}}{0}{0\hfill }{d}\pmod{N}" />.  Note that the map
+<img class="math" src="_images/math/f037c10feaf0ca90d5b74e6098bf61102d9b9f12.png" alt="\SL_2(\Z)\to \SL_2(\Z/N\Z)" /> is surjective (see <a class="reference external" href="modular_symbols.html#ex:surjred"><em>Exercise 1.12</em></a>),
+so the matrix <img class="math" src="_images/math/fbc5022f826bf48f74f38914ffca1f27fe46ebb0.png" alt="\abcd{a}{b}{c}{d'}" /> exists.
+To prove that <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> preserves <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />,
+we prove the more general fact that <img class="math" src="_images/math/e1ce758e7944584095efc8e60f73a69edd624a20.png" alt="\Gamma_1(N)" /> is a
+normal subgroup of</p>
+<div class="math">
+<p><img src="_images/math/46bff655fae9e6628f18b714005c4e9114b2fbd4.png" alt="\Gamma_0(N) = \left\{ \mtwo{a}{b}{c}{d} \in \SL_2(\Z) :
+\mtwo{a}{b}{c}{d}\con \mtwo{*}{*}{0}{*}\pmod{N}
+\right\}." />
+</div></p><p>This will imply that <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> preserves <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />
+since <img class="math" src="_images/math/96975ade930170bf3611cd1bfa439a5e7b8b72f2.png" alt="\abcd{a}{b}{c}{d'} \in \Gamma_0(N)" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Lemma 9.1</p>
+<p class="last">The group <img class="math" src="_images/math/e1ce758e7944584095efc8e60f73a69edd624a20.png" alt="\Gamma_1(N)" /> is a normal subgroup of <img class="math" src="_images/math/0ce4343a7316d048508371ec15ac0cc5c641e53c.png" alt="\Gamma_0(N)" />,
+and the quotient <img class="math" src="_images/math/d5379f3c2acefca610d89675533359199b27e423.png" alt="\Gamma_0(N)/\Gamma_1(N)" /> is
+isomorphic to <img class="math" src="_images/math/c7eb697f0fcf56d5c0ee9008b39d0b698ddcfc37.png" alt="(\Z/N\Z)^*" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">See <a class="reference internal" href="#ex:g0g1quo"><em>Exercise 9.1</em></a>.</p>
+</div>
+<p>Alternatively, one can prove that <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> preserves
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> by showing that <img class="math" src="_images/math/a9880858893270de91b5ec72e251f967b50d51f2.png" alt="\dbd{d}\in \T" /> and noting that
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> is preserved by <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" /> (see
+Remark <a class="reference internal" href="#rem:dbdinhecke"><em>Remark 9.11</em></a>).</p>
+<p>The <span class="target" id="index-213"></span><em>diamond-bracket action</em> is the action of
+<img class="math" src="_images/math/7aab203a268c13b7d259a977376e99c7f03a47e6.png" alt="\Gamma_0(N)/\Gamma_1(N)\isom(\Z/N\Z)^*" /> on <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />.  Since
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> is a finite-dimensional vector space over <img class="math" src="_images/math/4bc70c1f8d69237ced724d62addf80df8c690c12.png" alt="\C" />, the
+<img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> action breaks <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> up as a direct sum of
+factors corresponding to the Dirichlet characters <img class="math" src="_images/math/f1ddf5dcddabae198704faf857227b87705b87ed.png" alt="D(N,\C)" /> of
+modulus <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />.</p>
+<div class="admonition " id="prop:dcdecomp">
+<p class="first admonition-title">Proposition 9.2</p>
+<p>We have</p>
+<div class="math">
+<p><img src="_images/math/8b047173a157d8336db8ef30146fcb631d19595f.png" alt="M_k(\Gamma_1(N)) = \bigoplus_{\eps \in D(N,\C)} M_k(N,\eps)," />
+</div></p><p>where</p>
+<div class="last math">
+<p><img src="_images/math/f8c945f1185add8aee23e80fdf9f40df0f1ccf39.png" alt="M_k(N,\eps) = \bigl\{ f \in \M_k(\Gamma_1(N)) : f|\dbd{d} = \eps(d) f,
+\text{ all }d \in (\Z/N\Z)^*\bigr\}." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">The linear transformations <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" />, for the <img class="math" src="_images/math/e218b3115e5404ea810ba41f006149b9ab4d07f2.png" alt="d\in(\Z/N\Z)^*" />, all
+commute, since <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> acts through the abelian group
+<img class="math" src="_images/math/d5379f3c2acefca610d89675533359199b27e423.png" alt="\Gamma_0(N)/\Gamma_1(N)" />.  Also, if <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> is the exponent of
+<img class="math" src="_images/math/c7eb697f0fcf56d5c0ee9008b39d0b698ddcfc37.png" alt="(\Z/N\Z)^*" />, then <img class="math" src="_images/math/8be42c02319279a514ef1ba843e1cac2541dedc0.png" alt="\dbd{d}^e = \dbd{d^e} = \dbd{1} = 1" />, so the
+matrix of <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> is diagonalizable.  It is a standard fact from
+linear algebra that any commuting family of diagonalizable linear
+transformations is simultaneously diagonalizable (see
+<a class="reference external" href="eisenstein.html#ex:diag"><em>Exercise 5.1</em></a>), so there is a basis <img class="math" src="_images/math/23bd91df7470dbf85e498dac7edc776f45a10f6a.png" alt="f_1,\ldots, f_n" />
+for <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> such that all <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> act by diagonal
+matrices.  The system of eigenvalues of the action of <img class="math" src="_images/math/c7eb697f0fcf56d5c0ee9008b39d0b698ddcfc37.png" alt="(\Z/N\Z)^*" /> on a fixed
+<img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" /> defines a Dirichlet character, i.e., each <img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" /> has
+the property that <img class="math" src="_images/math/7387485c9f161f246cc8782e3b11b66f94675968.png" alt="f_i |\dbd{d} = \eps_i(d)" />, for all
+<img class="math" src="_images/math/e218b3115e5404ea810ba41f006149b9ab4d07f2.png" alt="d\in(\Z/N\Z)^*" /> and some Dirichlet character <img class="math" src="_images/math/19275c02741fde91486faaa9b4b43aaf47c2ce7d.png" alt="\eps_i" />.  The <img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" />
+for a given <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> then span <img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" />, and taken together the
+<img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" /> must span <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Definition 9.3</p>
+<p class="last">If <img class="math" src="_images/math/d916d5b910ec5032a1dbb0ebec0dc3ed51fa8e39.png" alt="f\in M_k(N,\eps)" />, we say that <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> is
+the <span class="target" id="index-214"></span><em>character of the modular form</em> <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />.</p>
+</div>
+<p>The spaces <img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" /> are a direct sum of subspaces
+<img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> and <img class="math" src="_images/math/738646a8a82c3c6f0c69f2f3ad8c5e8fc38c2ab0.png" alt="E_k(N,\eps)" />, where <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> is the
+subspace of cusp forms, i.e., forms that vanish at <em>all</em>
+cusps (elements of <img class="math" src="_images/math/72a7de6d780312bbdb6c16a0523941fe26499cfc.png" alt="\Q \union \{\infty\}" />), and <img class="math" src="_images/math/738646a8a82c3c6f0c69f2f3ad8c5e8fc38c2ab0.png" alt="E_k(N,\eps)" />
+is the subspace of Eisenstein series, which is the unique
+subspace of <img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" /> that is invariant under all Hecke
+operators and is such that
+<img class="math" src="_images/math/da3e69f48acf3b4ca31e74f0b8a578e639422573.png" alt="M_k(N,\eps) = S_k(N,\eps) \oplus E_k(N,\eps)" />.
+The space <img class="math" src="_images/math/738646a8a82c3c6f0c69f2f3ad8c5e8fc38c2ab0.png" alt="E_k(N,\eps)" /> can also be defined as the space
+spanned by all Eisenstein series of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> and level <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />,
+as defined in Chapter <a class="reference external" href="eisenstein.html#ch-eisen"><em>Eisenstein Series and Bernoulli Numbers</em></a>.
+The space <img class="math" src="_images/math/738646a8a82c3c6f0c69f2f3ad8c5e8fc38c2ab0.png" alt="E_k(N,\eps)" /> can be defined in a third way using the Petersson
+inner product (see [<a class="reference external" href="bibliography.html#lan95"><strong>Lan95</strong></a>, Section VII.5]).</p>
+<p id="index-215">The diamond-bracket operators preserve cusp forms, so
+the isomorphism of <a class="reference internal" href="#prop:dcdecomp"><em>Proposition 9.2</em></a> restricts to an
+isomorphism of the corresponding cuspidal subspaces.
+We illustrate how to use Sage
+to make a table of dimension of <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />
+and <img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" /> for <img class="math" src="_images/math/2af3c2e5d21894bfbbc7a1086a07bb21f0429ec0.png" alt="N=13" />.</p>
+<blockquote>
+</blockquote>
+<div class="highlight-python" id="index-216"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">G</span> <span class="o">=</span> <span class="n">DirichletGroup</span><span class="p">(</span><span class="mf">13</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">G</span>
+<span class="go">Group of Dirichlet characters of modulus 13 over</span>
+<span class="go">Cyclotomic Field of order 12 and degree 4</span>
+<span class="gp">sage: </span><span class="n">dimension_modular_forms</span><span class="p">(</span><span class="n">Gamma1</span><span class="p">(</span><span class="mf">13</span><span class="p">),</span><span class="mf">2</span><span class="p">)</span>
+<span class="go">13</span>
+<span class="gp">sage: </span><span class="p">[</span><span class="n">dimension_modular_forms</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="mf">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">G</span><span class="p">]</span>
+<span class="go">[1, 0, 3, 0, 2, 0, 2, 0, 2, 0, 3, 0]</span>
+</pre></div>
+</div>
+<p>Next we do the same for <img class="math" src="_images/math/85710a1e86eb80e50393384531ce9c83f3f1dfbc.png" alt="N=100" />.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">G</span> <span class="o">=</span> <span class="n">DirichletGroup</span><span class="p">(</span><span class="mf">100</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">G</span>
+<span class="go">Group of Dirichlet characters of modulus 100 over</span>
+<span class="go">Cyclotomic Field of order 20 and degree 8</span>
+<span class="gp">sage: </span><span class="n">dimension_modular_forms</span><span class="p">(</span><span class="n">Gamma1</span><span class="p">(</span><span class="mf">100</span><span class="p">),</span><span class="mf">2</span><span class="p">)</span>
+<span class="go">370</span>
+<span class="gp">sage: </span><span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="n">dimension_modular_forms</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="mf">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">G</span><span class="p">];</span> <span class="n">v</span>
+<span class="go">[24, 0, 0, 17, 18, 0, 0, 17, 18, 0, 0, 21, 18, 0, 0, 17,</span>
+<span class="go">18, 0, 0, 17, 24, 0, 0, 17, 18, 0, 0, 17, 18, 0, 0, 21,</span>
+<span class="go">18, 0, 0, 17, 18, 0, 0, 17]</span>
+<span class="gp">sage: </span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="go">370</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="atkin-lehner-li-theory">
+<span id="sec-all"></span><h2>Atkin-Lehner-Li Theory<a class="headerlink" href="#atkin-lehner-li-theory" title="Permalink to this headline">¶</a></h2>
+<p>In Section <a class="reference external" href="modular_symbols.html#sec-degen"><em>Degeneracy Maps</em></a> we defined maps between modular symbols
+spaces of different level.  There are similar maps between spaces of
+cusp forms.  Suppose <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> and <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> are positive integers with <img class="math" src="_images/math/89dde62dcbfdb9ca891680cb96d3257b5d4e8f03.png" alt="M\mid N" />
+and that <img class="math" src="_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t" /> is a divisor of <img class="math" src="_images/math/c8d98b13225f98afd23689884c27def5dd6c156c.png" alt="N/M" />.  Let</p>
+<div class="math" id="equation-eqn:degenmf">
+<p><span class="eqno">(1)</span><img src="_images/math/184b710208c40cba99b7442124d4427406fb3e29.png" alt="\alpha_t : S_k(\Gamma_1(M)) \to S_k(\Gamma_1(N))" />
+</div></p><p>be the <span class="target" id="index-217"></span><em>degeneracy map</em>, which is given by <img class="math" src="_images/math/8f05c6f71f6ff2479742b07fc1a396d50cfd9b14.png" alt="f(q) \mapsto f(q^t)" />.
+There are also maps <img class="math" src="_images/math/70d5b6acd4fe3adbf7020b535c3f36f89766568e.png" alt="\beta_t" /> in the other direction; see
+[<a class="reference external" href="bibliography.html#lan95"><strong>Lan95</strong></a>, Ch. VIII].</p>
+<p>The <span class="target" id="index-218"></span><em>old subspace</em> of <img class="math" src="_images/math/6b83af676e1fa2e2b68f2a8bbeecb9e38d807901.png" alt="S_k(\Gamma_1(N))" />, denoted <img class="math" src="_images/math/72407cc19ac096fefc0710aaa4740d5f1fa5044b.png" alt="S_k(\Gamma_1(N))_{\old}" />,
+is the sum of the images of all maps <img class="math" src="_images/math/046ccac8c6ce938494c9d2d3fcbf682dfc14d19a.png" alt="\alpha_t" /> with <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> a proper divisor
+of <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> and <img class="math" src="_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t" /> any divisor of <img class="math" src="_images/math/c8d98b13225f98afd23689884c27def5dd6c156c.png" alt="N/M" /> (note that <img class="math" src="_images/math/046ccac8c6ce938494c9d2d3fcbf682dfc14d19a.png" alt="\alpha_t" /> depends on
+<img class="math" src="_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t" />, <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />, and <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" />, so there is a slight abuse of notation).
+The <span class="target" id="index-219"></span><em>new subspace</em> of <img class="math" src="_images/math/6b83af676e1fa2e2b68f2a8bbeecb9e38d807901.png" alt="S_k(\Gamma_1(N))" />, which we denote by
+<img class="math" src="_images/math/f912f044345047fd1f5f3b64ac85f73809a51625.png" alt="S_k(\Gamma_1(N))_{\new}" />, is the intersection
+of the kernel of all maps <img class="math" src="_images/math/70d5b6acd4fe3adbf7020b535c3f36f89766568e.png" alt="\beta_t" /> with <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> a proper divisor
+of <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />.  One can use the Petersson inner product to show
+that</p>
+<div class="math">
+<p><img src="_images/math/16983823e9c26c1d4dcdc8d95aed3fbc2f5f120e.png" alt="S_k(\Gamma_1(N)) = S_k(\Gamma_1(N))_{\new} \oplus S_k(\Gamma_1(N))_{\old}." />
+</div></p><p>Moroever, the new and old subspaces are preserved by all
+Hecke operators.</p>
+<p>Let <img class="math" src="_images/math/6a9e3fe78b30a2bace2ae1b4f66feb94fe0f9c2d.png" alt="\T = \Z[T_1, T_2, \ldots ]" /> be the commutative polynomial ring
+in infinitely many indeterminates <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />. This
+ring acts (via <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> acting as the <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" /> Hecke operator)
+on <img class="math" src="_images/math/6b83af676e1fa2e2b68f2a8bbeecb9e38d807901.png" alt="S_k(\Gamma_1(N))" /> for every integer <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />.  Let
+<img class="math" src="_images/math/3fc9b97007c0141b4f1385bf233d2d6429d36970.png" alt="\T^{(N)}" /> be the subring of <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" /> generated by the <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> with
+<img class="math" src="_images/math/8ee17f4a28237f80270667535435820d94d68105.png" alt="\gcd(n,N)=1" />.</p>
+<div class="admonition " id="thm:all">
+<p class="first admonition-title">Theorem 9.4</p>
+<p>We have a decomposition</p>
+<div class="math" id="equation-eqn:decomp">
+<p><span class="eqno">(2)</span><img src="_images/math/0887bdf0db0d8a9fc1a81817edcbc5d8462ca038.png" alt="S_k(\Gamma_1(N)) =
+\bigoplus_{M\mid N} \bigoplus_{d\mid N/M} \alpha_d(S_k(\Gamma_1(M))_{\new})." />
+</div></p><p class="last">Each space <img class="math" src="_images/math/2d90dddf1b2ccfdd99d0b6c9643fcb02b07cb1c1.png" alt="S_k(\Gamma_1(M))_{\new}" /> is a direct
+sum of distinct (nonisomorphic) simple <img class="math" src="_images/math/7eb369bbb187789f52bc56469d0ce893fbe3638f.png" alt="\T^{(N)}_{\C}" />-modules.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">The complete proof is in [<a class="reference external" href="bibliography.html#li75"><strong>Li75</strong></a>].
+See also [<a class="reference external" href="bibliography.html#ds05"><strong>DS05</strong></a>, Ch. 5] for a beautiful
+modern treatement of this and related results.</p>
+</div>
+<p>The analogue of <a class="reference internal" href="#thm:all"><em>Theorem 9.4</em></a> with <img class="math" src="_images/math/d002c517784078b5834f12efe45ad224596f75ad.png" alt="\Gamma_1" /> replaced by
+<img class="math" src="_images/math/837e7cde8b45ee51913292350ad6910a26059295.png" alt="\Gamma_0" /> is also true (this is what was proved in
+[<a class="reference external" href="bibliography.html#al70"><strong>AL70</strong></a>]).  The analogue for <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> is also valid,
+as long as we omit the spaces <img class="math" src="_images/math/c12c83ee2476791ebb9025405a6e21ec539ab289.png" alt="S_k(\Gamma_1(M),\eps)" /> for which
+<img class="math" src="_images/math/ac7049028ee78bf1e3f2685ad05f313a6f85d647.png" alt="\cond(\eps) \nmid M" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Example 9.5</p>
+<p class="last">If <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> is prime and <img class="math" src="_images/math/ac0193033cf61cf45883f114e63ad020ab86cb6b.png" alt="k\leq 11" />, then
+<img class="math" src="_images/math/db004434eb004f0ce08ca0bf2c5397bf01ec5a3b.png" alt="S_k(\Gamma_1(N))_{\new} = S_k(\Gamma_1(N))" />,
+since <img class="math" src="_images/math/6e5d76cc0640fc3e3e6012c4b0ffb8cb2c76e9cd.png" alt="S_k(\Gamma_1(1))=0" />.</p>
+</div>
+<p>One can prove using the Petersson inner product that the
+operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> on <img class="math" src="_images/math/6b83af676e1fa2e2b68f2a8bbeecb9e38d807901.png" alt="S_k(\Gamma_1(N))" />, with <img class="math" src="_images/math/8ee17f4a28237f80270667535435820d94d68105.png" alt="\gcd(n,N)=1" />, are
+diagonalizable.  Another result of Atkin-Lehner-Li theory is that the
+ring of endomorphisms of <img class="math" src="_images/math/f912f044345047fd1f5f3b64ac85f73809a51625.png" alt="S_k(\Gamma_1(N))_{\new}" /> generated by all
+Hecke operators equals the ring generated by the Hecke operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />
+with <img class="math" src="_images/math/eb9583fefd98e714d775762b16ac64f87381289b.png" alt="(n,N)=1" />.  This statement need not be true if we do not
+restrict to the new subspace, as the following example shows.</p>
+<div class="admonition " id="ex:onlyold">
+<p class="first admonition-title">Example 9.6</p>
+<p>We have</p>
+<div class="math">
+<p><img src="_images/math/7c8159469e646e591670b5001047fb71f78beba3.png" alt="S_2(\Gamma_0(22)) = S_2(\Gamma_0(11)) \oplus \alpha_2(S_2(\Gamma_0(11)))," />
+</div></p><p class="last">where each of the spaces <img class="math" src="_images/math/8c5a844d333283631bfb8229578f8b53e03871a1.png" alt="S_2(\Gamma_0(11))" /> has dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.  Thus
+<img class="math" src="_images/math/2edfce8f43a9c9f9504668cd82a9ab7e92236e9d.png" alt="S_2(\Gamma_0(22))_{\new} = 0" />.  The Hecke operator <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on
+<img class="math" src="_images/math/116edac351759868b23a33c76bd24bdeaa798afc.png" alt="S_2(\Gamma_0(22))" /> has characteristic polynomial <img class="math" src="_images/math/9d2aad2a89eb800ca54b0cee95242c11337e0a6b.png" alt="x^2+2x+2" />,
+which is irreducible.  Since <img class="math" src="_images/math/8fcdd27c8c8d3d90409dcb7b1e7ea7052c6b899b.png" alt="\alpha_2" /> commutes with all Hecke
+operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />, with <img class="math" src="_images/math/4baba05ba72838a937b25c3730b8b8a783734b51.png" alt="\gcd(n,2)=1" />, the subring <img class="math" src="_images/math/a2c865dad34256113013aa5f0a000ab6600b4693.png" alt="\T^{(22)}" /> of the Hecke
+algebra generated by operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> with <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> odd is isomorphic
+to <img class="math" src="_images/math/325dee00b013782b6b1c920637728d687b12db43.png" alt="\Z" /> (the <img class="math" src="_images/math/7901356dd65ec4da1b694937cc4ffc663e90d800.png" alt="2\times 2" /> scalar matrices).  Thus on the full space
+<img class="math" src="_images/math/116edac351759868b23a33c76bd24bdeaa798afc.png" alt="S_2(\Gamma_0(22))" />, we do not have <img class="math" src="_images/math/cb1c020a0597eec281fcc15617491d0e02b979f9.png" alt="\T^{(22)}=\T" />.  However, on the new subspace
+we do have this equality, since the new subspace has dimension <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.</p>
+</div>
+<div class="admonition " id="ex:new_old">
+<p class="first admonition-title">Example 9.7</p>
+<p>The space <img class="math" src="_images/math/00479c09f37443a84930eea0969af94a48916b42.png" alt="S_2(\Gamma_0(45))" /> has dimension <img class="math" src="_images/math/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="3" /> and basis</p>
+<div class="math">
+<p><img src="_images/math/5408c63ec5b4f6054ff814cdba37f5c1d0cf96f5.png" alt="f_{0} &amp;= q - q^{4} - q^{10} - 2q^{13} - q^{16} + 4q^{19} + \cdots, \\
+f_{1} &amp;= q^{2} - q^{5} - 3q^{8} + 4q^{11} - 2q^{17} + \cdots, \\
+f_{2} &amp;= q^{3} - q^{6} - q^{9} - q^{12} + q^{15} + q^{18} + \cdots. \\" />
+</div></p><p>The new subspace <img class="math" src="_images/math/1f868a0601e124ca6753e861a29a141025d5360f.png" alt="S_2(\Gamma_0(45))_{\new}" /> is spanned by the single cusp form</p>
+<div class="math">
+<p><img src="_images/math/c51cac91ad09ad4b541f6a63917c86197cf617c4.png" alt="q + q^{2} - q^{4} - q^{5} - 3q^{8} - q^{10} + 4q^{11} - 2q^{13} + \cdots." />
+</div></p><p>We have <img class="math" src="_images/math/51ab16a539f7d28500fe49f20417ff411ead849b.png" alt="S_2(\Gamma_0(45/5)) = 0" /> and <img class="math" src="_images/math/0dbfe2707e80a0938c58cb9458e159c3ac535af0.png" alt="S_2(\Gamma_0(15))" />
+has dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> with basis</p>
+<div class="math">
+<p><img src="_images/math/dc9ee294de8420ab844e5edfe5e97e3d535384c6.png" alt="q - q^{2} - q^{3} - q^{4} + q^{5} + q^{6} + 3q^{8} + q^{9} - q^{10} - 4q^{11} + q^{12} - 2q^{13} + \cdots." />
+</div></p><p>We use Sage to verify the above assertions.</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">S</span> <span class="o">=</span> <span class="n">CuspForms</span><span class="p">(</span><span class="n">Gamma0</span><span class="p">(</span><span class="mf">45</span><span class="p">),</span> <span class="mf">2</span><span class="p">,</span> <span class="n">prec</span><span class="o">=</span><span class="mf">14</span><span class="p">);</span> <span class="n">S</span>
+<span class="go">Cuspidal subspace of dimension 3 of Modular Forms space</span>
+<span class="go">of dimension 10 for Congruence Subgroup Gamma0(45) of</span>
+<span class="go">weight 2 over Rational Field</span>
+<span class="gp">sage: </span><span class="n">S</span><span class="o">.</span><span class="n">basis</span><span class="p">()</span>
+<span class="go">[</span>
+<span class="go">q - q^4 - q^10 - 2*q^13 + O(q^14),</span>
+<span class="go">q^2 - q^5 - 3*q^8 + 4*q^11 + O(q^14),</span>
+<span class="go">q^3 - q^6 - q^9 - q^12 + O(q^14)</span>
+<span class="go">]</span>
+<span class="gp">sage: </span><span class="n">S</span><span class="o">.</span><span class="n">new_subspace</span><span class="p">()</span><span class="o">.</span><span class="n">basis</span><span class="p">()</span>
+<span class="go">(q - q^4 - q^10 - 2*q^13 + O(q^14),)</span>
+<span class="gp">sage: </span><span class="n">CuspForms</span><span class="p">(</span><span class="n">Gamma0</span><span class="p">(</span><span class="mf">9</span><span class="p">),</span><span class="mf">2</span><span class="p">)</span>
+<span class="go">Cuspidal subspace of dimension 0 of Modular Forms space</span>
+<span class="go">of dimension 3 for Congruence Subgroup Gamma0(9) of</span>
+<span class="go">weight 2 over Rational Field</span>
+<span class="gp">sage: </span><span class="n">CuspForms</span><span class="p">(</span><span class="n">Gamma0</span><span class="p">(</span><span class="mf">15</span><span class="p">),</span><span class="mf">2</span><span class="p">,</span> <span class="n">prec</span><span class="o">=</span><span class="mf">10</span><span class="p">)</span><span class="o">.</span><span class="n">basis</span><span class="p">()</span>
+<span class="go">[</span>
+<span class="go">q - q^2 - q^3 - q^4 + q^5 + q^6 + 3*q^8 + q^9 + O(q^10)</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 9.8</p>
+<p>This example is similar to <a class="reference internal" href="#ex:onlyold"><em>Example 9.6</em></a>, except that there
+are newforms.
+We have</p>
+<div class="math">
+<p><img src="_images/math/a3beb3594feac0cfaf998fee499f643b60ff1fd7.png" alt="S_2(\Gamma_0(55)) = S_2(\Gamma_0(11)) \oplus \alpha_5(S_2(\Gamma_0(11)))
+\oplus S_2(\Gamma_0(55))_{\new}," />
+</div></p><p>where <img class="math" src="_images/math/8c5a844d333283631bfb8229578f8b53e03871a1.png" alt="S_2(\Gamma_0(11))" /> has dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and
+<img class="math" src="_images/math/59696f3d0a8a8d84f744ae740c3d7087f015d935.png" alt="S_2(\Gamma_0(55))_{\new}" /> has dimension <img class="math" src="_images/math/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="3" />.
+The Hecke operator <img class="math" src="_images/math/35d4698fff01484f830b3a88bd694e16f24bbfd2.png" alt="T_5" /> on
+<img class="math" src="_images/math/59696f3d0a8a8d84f744ae740c3d7087f015d935.png" alt="S_2(\Gamma_0(55))_{\new}" /> acts  via the matrix</p>
+<div class="math">
+<p><img src="_images/math/7b65187010f981372152e939b320fed5b0c145ba.png" alt="\mthree
+{-2}{\hfill 2}{\hfill -1}
+{-1}{\hfill 1}{-1}
+{\hfill 1}{-2}{\hfill 0}" />
+</div></p><p class="last">with respect to some basis.
+This matrix has eigenvalues <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and <img class="math" src="_images/math/bae5aba07d37ff6ff813107e76260fb31ad5794e.png" alt="-1" />.
+Atkin-Lehner theory asserts that <img class="math" src="_images/math/35d4698fff01484f830b3a88bd694e16f24bbfd2.png" alt="T_5" /> must be a
+linear combination of <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />, with
+<img class="math" src="_images/math/f700b7d34d01e7bc6bbca391ac7588a9308ea9c8.png" alt="\gcd(n,55)=1" />.
+Upon computing the matrix for <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" />,
+we find by simple linear algebra that <img class="math" src="_images/math/087febcc3bde933ee17460786f360d3ac98a28dc.png" alt="T_5 = 2T_2 - T_4" />.</p>
+</div>
+<div class="admonition " id="def:newform">
+<p class="first admonition-title">Definition 9.9</p>
+<p class="last">A <span class="target" id="index-220"></span><em>newform</em> is a <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenform <img class="math" src="_images/math/17ffe20ff4118d8a4411167ec732a823fae05bf3.png" alt="f\in S_k(\Gamma_1(N))_{\new}" />
+that is normalized so that the coefficient of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" /> is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.</p>
+</div>
+<p>We now motivate this definition by explaining why any <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenform
+can be normalized so that the coefficient of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" /> is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and how such
+an eigenform has the property that its Fourier
+coefficients are exactly the Hecke eigenvalues.</p>
+<div class="admonition " id="prop:eigncoeffs">
+<p class="first admonition-title">Proposition 9.10</p>
+<p class="last">If <img class="math" src="_images/math/909f60c01ea6d762f4f674abfb21713e4e494170.png" alt="f=\sum_{n=0}^{\infty} a_n q^n \in M_k(N,\eps)" />
+is an eigenvector for all Hecke operators
+<img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> normalized so that <img class="math" src="_images/math/2b02a491e6fc8db3a577b344b1a53b7a8e77e0f9.png" alt="a_1=1" />,
+then <img class="math" src="_images/math/d81810056cc1cc636881be8b43d53f14eb7a65b3.png" alt="T_n(f) = a_n f" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>If <img class="math" src="_images/math/926e1cd4d244f16556e29e60b88a85a3997e37a9.png" alt="\eps=1" />, then <img class="math" src="_images/math/a5c835dbfd6fee6575d96b54c7c479f14e4ed825.png" alt="f\in M_k(\Gamma_0(N))" /> and this
+is <a class="reference external" href="weight_two.html#lem:hecketn"><em>Lemma 3.22</em></a>.   However, we have not
+yet considered Hecke operators on <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions for
+more general spaces of modular forms.</p>
+<p>The Hecke operators <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" />, for <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> prime, act on <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" />
+by</p>
+<div class="math">
+<p><img src="_images/math/534e6e60cd50b8d52ab86d8e224ddd40a34fd97f.png" alt="T_p\left(\sum_{n=0}^{\infty} a_n q^n\right) =
+\sum_{n=0}^{\infty} \left( a_{np}q^n + \eps(p) p^{k-1}
+a_{n}q^{np}\right)," />
+</div></p><p>and there is a similar formula for <img class="math" src="_images/math/38c9b08aba051c18344b0de5889b24a25c0f8b71.png" alt="T_m" /> with <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> composite.
+If <img class="math" src="_images/math/e019d150bea7e437a2c1e9fe6c8d44482d99cc82.png" alt="f=\sum_{n=0}^{\infty} a_n q^n" /> is an eigenform for all
+<img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" />, with eigenvalues <img class="math" src="_images/math/3d1ddce4717a0bf6096160e523175c6603fb01ae.png" alt="\lambda_p" />, then by the above formula</p>
+<div class="math" id="equation-eqn:eigenexp">
+<p><span class="eqno">(3)</span><img src="_images/math/80d8baf84b529dfe030b5dee597bbc072326efd3.png" alt="\lambda_p f = \lambda_p a_1 q + \lambda_p a_2 q^2 + \cdots = T_p(f) = a_{p} q +
+\text{higher terms}." />
+</div></p><p>Equating coefficients of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />, we see that if
+<img class="math" src="_images/math/84b16161509fc81d43ce3983057c5f36feba3fa7.png" alt="a_1=0" />, then <img class="math" src="_images/math/1683388dcf98dfacee9910a1f6ff984a265552fb.png" alt="a_p=0" /> for all <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />; hence
+<img class="math" src="_images/math/abb88988bde58a51f19f59c763ee7e64b140e96d.png" alt="a_n=0" /> for all <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, because of the multiplicativity of Fourier
+coefficients and the recurrence</p>
+<div class="math">
+<p><img src="_images/math/8609807b51c33855b96ef6639e6f5ccae4a3e645.png" alt="a_{p^r} = a_{p^{r-1}} a_p - \eps(p)
+p^{k-1} a_{p^{r-2}}." />
+</div></p><p class="last">This would mean that <img class="math" src="_images/math/28bed41d466dc67e5323eb633d7cba364ac7cd7d.png" alt="f=0" />, a contradiction.  Thus <img class="math" src="_images/math/6df63e27baa4dfeb6708e7f80347313785b79942.png" alt="a_1\neq 0" />,
+and it makes sense to normalize <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> so that <img class="math" src="_images/math/2b02a491e6fc8db3a577b344b1a53b7a8e77e0f9.png" alt="a_1=1" />.
+With this normalization, <a href="#equation-eqn:eigenexp">(3)</a> implies that <img class="math" src="_images/math/40b946ae6eb898a7466a551629aa82d0e659bf0d.png" alt="\lambda_p = a_p" />,
+as desired.</p>
+</div>
+<div class="admonition " id="rem:dbdinhecke">
+<p class="first admonition-title">Remark 9.11</p>
+<p class="last">The Hecke algebra <img class="math" src="_images/math/3659276f8680534d9317ad055e9855898c2d0f21.png" alt="\T_\Q" /> on <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> contains the
+operators <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" />, since they satisfy the relation <img class="math" src="_images/math/6b3bfaed402bb76b072ac3ceaea4bf809a80b4e3.png" alt="T_{p^2} =
+T_p^2 - \dbd{p}p^{k-1}" />.  Thus any <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenform in
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> lies in a subspace <img class="math" src="_images/math/fd8a388aabac45bdeca35b54e4b3afb250924ae3.png" alt="M_k(N,\eps)" /> for some
+Dirichlet character <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" />. Also, one can even prove that
+<img class="math" src="_images/math/9dc797ae4ce7b1376dad3999d3a632b593495d6e.png" alt="\dbd{d} \in \Z[\ldots,T_n,\ldots]" /> (see
+<a class="reference internal" href="#ex:dbdinhecke"><em>Exercise 9.2</em></a>).</p>
+</div>
+</div>
+<div class="section" id="computing-cusp-forms">
+<span id="sec-compcuspforms"></span><h2>Computing Cusp Forms<a class="headerlink" href="#computing-cusp-forms" title="Permalink to this headline">¶</a></h2>
+<p>Let <img class="math" src="_images/math/2b28738acccbb80ae54c76b1dc991733c78470aa.png" alt="\sS_k(N,\eps;\C)" /> be the space of cuspidal modular symbols as in
+Chapter <a class="reference external" href="modular_symbols.html#ch-modsym"><em>General Modular Symbols</em></a>.  Let <img class="math" src="_images/math/9845f34c6d3a745a4d7b69ffb6c158387c266fab.png" alt="\iota^*" /> be the map of
+<a href="#equation-eqn:iota">(?)</a>, and let <img class="math" src="_images/math/c70454415522a75cf4c48176951c0d9013f166a6.png" alt="\sS_k(N,\eps;\C)^+" />
+be the <span class="target" id="index-221"></span><em>plus one quotient</em> of cuspidal modular symbols,
+i.e., the quotient of <img class="math" src="_images/math/2b28738acccbb80ae54c76b1dc991733c78470aa.png" alt="\sS_k(N,\eps;\C)" /> by the image of <img class="math" src="_images/math/6799bb9ef5eccc77b3c51d93c3a373b67b39cbe8.png" alt="\iota^*-1" />.
+It follows from
+<a class="reference external" href="modular_symbols.html#thm:modsymformpairing"><em>Theorem 1.44</em></a> and compatibility of the
+degeneracy maps (for modular symbols they are defined
+in Section <a class="reference external" href="modular_symbols.html#sec-degen"><em>Degeneracy Maps</em></a>) that the <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-modules <img class="math" src="_images/math/f2cae670e43a86180159121dc50683ab8150c9c8.png" alt="S_k(N,\eps)_{\new}" />
+and <img class="math" src="_images/math/a8db0c1a06bc7e36d8583854e4af380b1fd97054.png" alt="\sS_k(N,\eps;\C)^+_{\new}" /> are dual as <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-modules.
+Thus finding the systems of <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenvalues on cusp forms is the same
+as finding the systems of <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenvalues on cuspidal modular
+symbols.</p>
+<p>Our strategy to compute <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> is to first compute spaces
+<img class="math" src="_images/math/f2cae670e43a86180159121dc50683ab8150c9c8.png" alt="S_k(N,\eps)_{\new}" /> using the Atkin-Lehner-Li decomposition
+<a href="#equation-eqn:decomp">(2)</a>.  To compute <img class="math" src="_images/math/f2cae670e43a86180159121dc50683ab8150c9c8.png" alt="S_k(N,\eps)_{\new}" /> to a given
+precision, we compute the systems of eigenvalues of the Hecke
+operators <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" /> on the space <img class="math" src="_images/math/9b07ef415fbcc033a0a6d25a093109b8448a9640.png" alt="V=\sS_k(N,\eps;\C)^+_{\new}" />, which we
+will define below.  Using <a class="reference internal" href="#prop:eigncoeffs"><em>Proposition 9.10</em></a>, we then
+recover a basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions for newforms.  Note that we only
+need to compute Hecke eigenvalues <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" />, for <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> prime, not the <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />
+for <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> composite, since the <img class="math" src="_images/math/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png" alt="a_n" /> can be quickly recovered in terms
+of the <img class="math" src="_images/math/a2205a574bf35511af0c75a074c072406257086d.png" alt="a_p" /> using multiplicativity and the recurrence.</p>
+<p>For some problems, e.g., construction of models for modular curves,
+having a basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions is enough.  For many other problems,
+e.g., enumeration of modular abelian varieties, one is really
+interested in the newforms.  We next discuss algorithms aimed at each
+of these problems.</p>
+<div class="section" id="a-basis-of-expansions">
+<h3>A Basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-Expansions<a class="headerlink" href="#a-basis-of-expansions" title="Permalink to this headline">¶</a></h3>
+<p>The following algorithm generalizes <a class="reference external" href="weight_two.html#alg:s2basis"><em>Algorithm 3.26</em></a>.
+It computes <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> without finding any eigenspaces.</p>
+<div class="admonition " id="alg:merelqexp">
+<p class="first admonition-title">Algorithm 9.12</p>
+<p>Given integers <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" />, <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> and <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> and a Dirichlet character <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> with
+modulus <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />, this algorithm computes a basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions
+for <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> to precision <img class="math" src="_images/math/9bd7b3b80d94c07cdb8bd62c5c75845b2e8eada9.png" alt="O(q^{m+1})" />.</p>
+<ol class="last arabic">
+<li><p class="first">[Compute Modular Symbols] Use  <a class="reference external" href="modular_symbols.html#alg:modsympresent"><em>Algorithm 1.59</em></a> to
+compute</p>
+<div class="math">
+<p><img src="_images/math/5900b03649a63f5a3621eaa107df7c7c7c061983.png" alt="V = \sS_k(N,\eps)^+\tensor \Q(\eps)," />
+</div></p><p>viewed as a <img class="math" src="_images/math/ed09da114388ecef9d149b9c5bb3f5ea3cf9cddd.png" alt="K=\Q(\eps)" /> vector space,
+with an action of the <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />.</p>
+</li>
+<li><p class="first">[Basis for Linear Dual]
+Write down a basis for <img class="math" src="_images/math/b1fc0d59af7bb31e602f466de8ddd4a8c5c92357.png" alt="V^* = \Hom(V,\Q(\eps))" />.  E.g., if we identify
+<img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> with <img class="math" src="_images/math/26778acbe9fb26fbc9f825b77e86286177ea8657.png" alt="K^n" /> viewed as column vectors, then <img class="math" src="_images/math/2d98c2bcba96160b6d03f6ebfb7f6586d6e4cab3.png" alt="V^*" /> is the space
+of row vectors of length <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, and the pairing is the row <img class="math" src="_images/math/bac4dbe1c696d11e8dc43dd7f613199b2120daa1.png" alt="\times" /> column product.</p>
+</li>
+<li><p class="first">[Find Generator]
+Find <img class="math" src="_images/math/bc271b4a12eeb1e69fe525c7506c547d5b0bace3.png" alt="x\in V" /> such that
+<img class="math" src="_images/math/50072e245db81c1c1fa89d344497c7b5a5e5b9dc.png" alt="\T{} x = V" /> by choosing random <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" /> until we find
+one that generates.  The set of <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" /> that fail
+to generate lie in a union of a finite number of
+proper subspaces.</p>
+</li>
+<li><p class="first">[Compute Basis]
+The set of power series</p>
+<div class="math">
+<p><img src="_images/math/48389ff854ddad8c9c629f4ebac6f3c6ff923260.png" alt="f_i = \sum_{n=1}^{m} \psi_i(T_n(x)) q^n + O(q^{m+1})" />
+</div></p><p>forms a basis for <img class="math" src="_images/math/46908f80dbf868a3dfe954da8045fd970d2854e1.png" alt="S_k(N,\eps)" /> to precision <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" />.</p>
+</li>
+</ol>
+</div>
+<p>In practice <a class="reference internal" href="#alg:merelqexp"><em>Algorithm 9.12</em></a> seems slower than the
+eigenspace algorithm that we will describe in the rest of this
+chapter.  The theoretical complexity of <a class="reference internal" href="#alg:merelqexp"><em>Algorithm 9.12</em></a>
+<em>may</em> be better, because it is not necessary to factor any
+polynomials. Polynomial factorization is difficult from the worst-case
+complexity point of view, though it is usually fast in practice.  The
+eigenvalue algorithm only requires computing a few images <img class="math" src="_images/math/b7f1db41d29f35c793bd296b1acdf42857bcfde4.png" alt="T_p(x)" /> for
+<img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> prime and <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" /> a Manin symbol on which <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" /> can easily be
+computed.  The Merel algorithm involves computing <img class="math" src="_images/math/e4fe51661da2eabbd80cb6c7080652f96263b19d.png" alt="T_n(x)" /> for
+all <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> and for a fairly easy <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" />, which is potentially more work.</p>
+<div class="admonition ">
+<p class="first admonition-title">Remark 9.13</p>
+<p class="last">By &#8220;easy <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" /> &#8220;, I mean that computing <img class="math" src="_images/math/e4fe51661da2eabbd80cb6c7080652f96263b19d.png" alt="T_n(x)" /> is easier on <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" />
+than on a completely random element of <img class="math" src="_images/math/2f68d6d2954487e3a6526f1c9ccd6ca1dd13710c.png" alt="\sS_k(N,\eps)^+" />,
+e.g., <img class="math" src="_images/math/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" alt="x" /> could be a Manin symbol.</p>
+</div>
+</div>
+<div class="section" id="newforms-systems-of-eigenvalues">
+<span id="sec-syseigen"></span><h3>Newforms: Systems of Eigenvalues<a class="headerlink" href="#newforms-systems-of-eigenvalues" title="Permalink to this headline">¶</a></h3>
+<p>In this section we describe an algorithm for computing
+the system of Hecke eigenvalues associated to a simple
+subspace of a space of modular symbols.   This algorithm
+is better than  doing linear algebra directly
+over the number field generated by the eigenvalues.  It
+only involves linear algebra over the base field and also
+yields a compact representation for the answer, which
+is better than writing the eigenvalues in terms of
+a power basis for a number field.
+In order to use this algorithm, it is necessary to
+decompose the space of cuspidal modular symbols as a
+direct sum of simples, e.g., using <a class="reference external" href="linear_algebra.html#alg:decomp"><em>Algorithm 7.17</em></a>.</p>
+<p>Fix <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> and a Dirichlet character <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> of modulus <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />,
+and let</p>
+<div class="math">
+<p><img src="_images/math/66e60dcf6cde7b5c72119e9495db1a7ca54f3073.png" alt="V=\sM_k(N,\eps)^+" />
+</div></p><p>be the <img class="math" src="_images/math/1178af8fcc5f3f3acb9f151f7dcc2c4eefe88fd9.png" alt="+1" /> quotient of
+modular symbols (see equation <a href="#equation-eqn:iota">(?)</a>).</p>
+<div class="admonition " id="alg:eigsys">
+<p class="first admonition-title">Algorithm 9.14</p>
+<p>Given a <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-simple subspace <img class="math" src="_images/math/8ae4e1471a1467493a355adb9b425be3b219d15f.png" alt="W\subset V" /> of modular symbols, this
+algorithm outputs maps <img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" /> and <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" />, where <img class="math" src="_images/math/7258e22ce3b3daee95ec70725da169896a57ebf9.png" alt="\psi : \T_K \to W" />
+is a <img class="math" src="_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K" />-linear map and <img class="math" src="_images/math/e5ea4578bc06ecc9c4d80f2ac6efa78b74de08d6.png" alt="e:W \isom L" /> is an isomorphism of <img class="math" src="_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W" /> with
+a number field <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" />, such that <img class="math" src="_images/math/c02dfd4bfd8391e0e1d629a017e6f56d859d94e8.png" alt="a_n = e (\psi(T_n))" /> is the
+eigenvalue of the <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" /> Hecke operator acting on a fixed
+<img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-eigenvector in <img class="math" src="_images/math/b12147d0260663ff46d8df042e4d4ab58715871b.png" alt="W\tensor\Qbar" />.  (Thus
+<img class="math" src="_images/math/e8a3e1bdb133cfb9d4ab13d2c72e0e086c121fad.png" alt="f = \sum_{n=1}^{\infty} e(\psi(T_n)) q^n" /> is a newform.)</p>
+<ol class="last arabic">
+<li><p class="first">[Compute Projection]
+Let <img class="math" src="_images/math/a8f41b517b18f903478ce3ecfdee969d4435b92d.png" alt="\vphi:V \to W'" /> be any surjective linear map
+such that <img class="math" src="_images/math/f706e8629cba8fb01aa4e4b39c8b3c14e401d6e5.png" alt="\ker(\vphi)" /> equals the kernel
+of the <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />-invariant projection onto <img class="math" src="_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W" />.
+For example, compute <img class="math" src="_images/math/21102aca8efa58241a3530776270138c976b370c.png" alt="\vphi" /> by finding a simple submodule
+of <img class="math" src="_images/math/d329bcb4f6767b713ae167d0c9240cc659599d5b.png" alt="V^*=\Hom(V,K)" /> that is isomorphic to <img class="math" src="_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W" />, e.g., by applying
+<a class="reference external" href="linear_algebra.html#alg:decomp"><em>Algorithm 7.17</em></a> to <img class="math" src="_images/math/2d98c2bcba96160b6d03f6ebfb7f6586d6e4cab3.png" alt="V^*" /> with <img class="math" src="_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T" /> replaced by
+the transpose of <img class="math" src="_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T" />.</p>
+</li>
+<li><p class="first">[Choose <img class="math" src="_images/math/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" alt="v" />]label{step:eig:v} Choose a nonzero element
+<img class="math" src="_images/math/e316aa06e07db1c6df0d4f96c6249f18b9d5a556.png" alt="v\in{}V" /> such that <img class="math" src="_images/math/2f0074498178976f07333cbfb2c4f59fcbc252e0.png" alt="\pi(v)\neq 0" /> and computation of <img class="math" src="_images/math/bba8c434bc34b0f269b38cdd92f0ef36b95c0bc3.png" alt="T_n(v)" /> is
+&#8220;easy&#8221;, e.g., choose <img class="math" src="_images/math/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" alt="v" /> to be a Manin symbol.</p>
+</li>
+<li><p class="first">[Map from Hecke Ring] Let <img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" /> be the map <img class="math" src="_images/math/c7b88bae729565b9d5147089cc631daa8bb47959.png" alt="\T \to W'" />, given
+by <img class="math" src="_images/math/3d6a80087a4cf6257bd485dbe1875d0697d31451.png" alt="\psi(t) = \pi(t v)" />.  Note that computation of <img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" />
+is relatively easy, because <img class="math" src="_images/math/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" alt="v" /> was chosen so that
+<img class="math" src="_images/math/02c45196998558e32a7651a591be41b8aa9dd02d.png" alt="tv" /> is relatively easy to compute.  In particular,
+if <img class="math" src="_images/math/1aaa1f1c0846339910acd1ef6fcd7a5497c34f34.png" alt="t=T_p" />, we do not need to compute the full matrix
+of <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" /> on <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" />; instead we just compute <img class="math" src="_images/math/f2bbb6a66e2c2a14d71eee0c16e75b8264ce4185.png" alt="T_p(v)" />.</p>
+</li>
+<li id="alg-ap-gen"><p class="first">[Find Generator]
+Find a random <img class="math" src="_images/math/b7d2fc300e950135a98bdd06e86f58ce8d829737.png" alt="T \in \T" /> such that the iterates</p>
+<div class="math">
+<p><img src="_images/math/d44604a4793c2cbe7cd2648ae21cbc799383fff3.png" alt="\psi(T^0), \quad \psi(T), \quad \psi(T^2), \quad \ldots, \quad \psi(T^{d-1})" />
+</div></p><p>are a basis for <img class="math" src="_images/math/4f338cd08406782122fa14dc2cbc97752cdf0ec2.png" alt="W'" />, where <img class="math" src="_images/math/10cb764f88509fb1c8012366993fdbee98f31bc5.png" alt="W" /> has dimension <img class="math" src="_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d" />.</p>
+</li>
+<li><p class="first">[Characteristic Polynomial] Compute the characteristic polynomial
+<img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> of <img class="math" src="_images/math/cbb7473448b36218d91230f3b3c697b4caf04fa4.png" alt="T|_W" />, and let <img class="math" src="_images/math/918072d86ef54b6d9452212a795c3fddf9be60c6.png" alt="L=K[x]/(f)" />.
+Because
+of how we chose <img class="math" src="_images/math/2554b6496c3b678897e9b060ef00aa9f0a7d7ece.png" alt="T" /> in step <a class="reference internal" href="#alg-ap-gen"><em>(4)</em></a>, the minimal
+and characteristic polynomials of <img class="math" src="_images/math/cbb7473448b36218d91230f3b3c697b4caf04fa4.png" alt="T|_W" /> are equal, and
+both are irreducible, so <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> is an extension of <img class="math" src="_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K" />
+of degree <img class="math" src="_images/math/25ef573a78755b4fe0611269ea92b4cbf5d6d3ac.png" alt="d=\dim(W)" />.</p>
+</li>
+<li><p class="first">[Field Structure]
+In this step we endow <img class="math" src="_images/math/4f338cd08406782122fa14dc2cbc97752cdf0ec2.png" alt="W'" /> with a field structure.
+Let <img class="math" src="_images/math/c8f05f6e5c16bcfa2c538ab9a32ec9e4ec8760df.png" alt="e:W'\to L" /> be the unique <img class="math" src="_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K" />-linear isomorphism such that</p>
+<div class="math">
+<p><img src="_images/math/089490602d42a3022598b93ea65e305116f3f0ad.png" alt="e(\psi(T^i)) \con x^i \pmod{f}" />
+</div></p><p>for <img class="math" src="_images/math/f165c8f4e96943bd915128d123497270aad86e56.png" alt="i = 0,1,2,...,\deg(f)-1" />.
+The map <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> is uniquely determined since the <img class="math" src="_images/math/151c8e3b995d9895850b97a28efdb61e9cc0977f.png" alt="\psi(T^i)" /> are a
+basis for <img class="math" src="_images/math/4f338cd08406782122fa14dc2cbc97752cdf0ec2.png" alt="W'" />.  To compute <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" />, we compute
+the change of basis matrix from the standard basis for <img class="math" src="_images/math/4f338cd08406782122fa14dc2cbc97752cdf0ec2.png" alt="W'" />
+to the basis <img class="math" src="_images/math/d09c84fa2add6f233bc9dbab1619ebdea82b1374.png" alt="\{\psi(T^i)\}" />.
+This change of basis matrix is the inverse
+of the matrix whose rows are the <img class="math" src="_images/math/151c8e3b995d9895850b97a28efdb61e9cc0977f.png" alt="\psi(T^i)" />
+for <img class="math" src="_images/math/9c167ffeb32dd0f87128e0b95583cff5726f857e.png" alt="i=0,...,\deg(f)-1" />.</p>
+</li>
+<li><p class="first">[Hecke Eigenvalues] Finally for each integer
+<img class="math" src="_images/math/9ccd696a5d0cbab8337ceb8a4cdfa202a54a6eae.png" alt="n\geq 1" />, we have</p>
+<div class="math">
+<p><img src="_images/math/3e4d95da294dae98bf722055fa235dc8d22dafa3.png" alt="a_n = e(\psi(T_n)) = e(\pi(T_n(v)))," />
+</div></p><p>where <img class="math" src="_images/math/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png" alt="a_n" /> is the eigenvalue of <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />.
+Output the maps <img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" /> and <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> and terminate.</p>
+</li>
+</ol>
+</div>
+<p>One reason we separate <img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" /> and <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> is that when <img class="math" src="_images/math/ceb3ab906367396af008767b7aa91808c13078ab.png" alt="\dim(W)" /> is large,
+the values <img class="math" src="_images/math/0bbd5dda2a4cfb815471a060cb1908f668b5f8f3.png" alt="\psi(T_n)" /> take less space to store and are easier to
+compute, whereas each one of the values <img class="math" src="_images/math/19f13b755d8573925dfdb0fceb3e213d4fcb6253.png" alt="e(\psi(n))" /> is
+huge. <a class="footnote-reference" href="#f1" id="id1">[1]</a>  The function <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> typically involves
+large numbers if <img class="math" src="_images/math/ceb3ab906367396af008767b7aa91808c13078ab.png" alt="\dim(W)" /> is large, since <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> is obtained from the
+iterates of a single vector.  For many applications, e.g., databases,
+it is better to store a matrix that defines <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> and the images under
+<img class="math" src="_images/math/8ada738001410f131563551fb68731e4f302048d.png" alt="\psi" /> of many <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />.</p>
+<div class="admonition " id="ex:23">
+<p class="first admonition-title">Example 9.15</p>
+<blockquote>
+<p>The space <img class="math" src="_images/math/854b20f8ceae379f59c08c5b82a1dc0b7062e77f.png" alt="S_2(\Gamma_0(23))" /> of cusp forms has dimension <img class="math" src="_images/math/41c544263a265ff15498ee45f7392c5f86c6d151.png" alt="2" />
+and is spanned by two <img class="math" src="_images/math/5f85ce5950b19262b3d36770ac5bee17017c4d6f.png" alt="\Gal(\Qbar/\Q)" />-conjugate newforms,
+one of which is</p>
+<div class="math">
+<p><img src="_images/math/39f203d37bdd1147143e39df72aebe2f740eaa03.png" alt="f = q + aq^2 + (-2a - 1)q^3 + (-a - 1)q^4 + 2aq^5 + \cdots," />
+</div></p><p>where <img class="math" src="_images/math/caf969d9740be44de7cd741599f8a28ee77be3f6.png" alt="a=(-1+\sqrt{5})/2" />.
+We will use <a class="reference internal" href="#alg:eigsys"><em>Algorithm 9.14</em></a> to compute a few
+of these coefficients.</p>
+<p>The space <img class="math" src="_images/math/184c0bb65ecc1a1f28f7ae87ce2a8cae9f3a4db9.png" alt="\sM_2(\Gamma_0(23))^+" /> of modular symbols has dimension <img class="math" src="_images/math/7cde695f2e4542fd01f860a89189f47a27143b66.png" alt="3" />.
+It has the following basis of Manin symbols:</p>
+<div class="math">
+<p><img src="_images/math/48962b2ac25543c14b6bf281bcb52ae49b90c69f.png" alt="[(0,0)],\quad [(1,0)], \quad [(0,1)]," />
+</div></p><p>where we use square brackets to differentiate Manin symbols from
+vectors.  The Hecke operator</p>
+<div class="math">
+<p><img src="_images/math/988fd3f6d28e64d6991e7ba450efbf94c8510609.png" alt="T_2 = \left(\begin{array}{ccc}
+3&amp;0&amp;0\\
+0&amp;0&amp;2\\
+-1&amp;1/2&amp;-1
+\end{array}\right)" />
+</div></p><p>has characteristic polynomial <img class="math" src="_images/math/1ba42db7e565097e3641a85fadd40c55892f21e0.png" alt="(x-3)(x^2 + x - 1)" />.  The kernel of
+<img class="math" src="_images/math/806f4f8a4c638f54335be8df43255e1526dd6bae.png" alt="T_2-3" /> corresponds to the span of the Eisenstein series of level
+<img class="math" src="_images/math/9a1b2497e7b125cd721bab4c6e2385f954fe35cb.png" alt="23" /> and weight <img class="math" src="_images/math/41c544263a265ff15498ee45f7392c5f86c6d151.png" alt="2" />, and the kernel <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> of <img class="math" src="_images/math/be322180dee60f837990de3cf4ed58135cd3a641.png" alt="T_2^2+T_2-1" /> corresponds
+to <img class="math" src="_images/math/854b20f8ceae379f59c08c5b82a1dc0b7062e77f.png" alt="S_2(\Gamma_0(23))" />.  (We could also have computed <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> as the
+kernel of the boundary map
+<img class="math" src="_images/math/42ac08af1ccffaa137ecd457a807c33b328fce12.png" alt="\sM_2(\Gamma_0(23))^+\to \sB_2(\Gamma_0(23))^+" />.)
+Each of the following steps corresponds to
+the step of <a class="reference internal" href="#alg:eigsys"><em>Algorithm 9.14</em></a> with the same number.</p>
+<ol class="arabic simple">
+<li>[Compute Projection] We compute projection
+onto <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> (this will suffice to give us a map <img class="math" src="_images/math/2c175f60eecef1de7560c3bdea495d69f26f719d.png" alt="\phi" /> as in the
+algorithm).  The matrix whose first two columns are the echelon basis
+for <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> and whose last column is the echelon basis for the Eisenstein
+subspace is</li>
+</ol>
+<blockquote>
+<div class="math">
+<p><img src="_images/math/9efa2f0e1653fd639d1b53e19703c145b40d53be.png" alt="\left(\begin{array}{ccc}
+0&amp;0&amp;1\\
+1&amp;0&amp;-2/11\\
+0&amp;1&amp;-3/11
+\end{array}\right)" />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/4e4b2d6b2a1f7d9301edb9f2ccdbf6a30f5ce631.png" alt="B^{-1} = \left(\begin{array}{ccc}
+2/11&amp;1&amp;0\\
+3/11&amp;0&amp;1\\
+1&amp;0&amp;0
+\end{array}\right)," />
+</div></p><p>so projection onto <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> is given by the first two rows:</p>
+<div class="math">
+<p><img src="_images/math/232ba5c2f6084449eaec24ef8566e2be79ff8746.png" alt="\pi = \left(\begin{array}{ccc}
+2/11&amp;1&amp;0\\
+3/11&amp;0&amp;1
+\end{array}\right)." />
+</div></p></blockquote>
+</blockquote>
+<ol class="last arabic" start="2">
+<li><p class="first">[Choose <img class="math" src="_images/math/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" alt="v" />] Let <img class="math" src="_images/math/d5216329bae1080576e7ce26ebbd33f6f5320d4e.png" alt="v=(0,1,0)^t" />. Notice that <img class="math" src="_images/math/49cb2ee4eeecaa2512fc22f3d94250edf793b5b1.png" alt="\pi(v)=(1,0)^t\neq 0" />,
+and <img class="math" src="_images/math/c41bb330b44348e764d9d463c387ae21a6e31654.png" alt="v=[(1,0)]" /> is a sum of
+only one Manin symbol.</p>
+</li>
+<li><p class="first">[Map from Hecke Ring]
+This step is purely conceptual, since no actual work needs to be
+done.  We illustrate it by computing <img class="math" src="_images/math/e7590390b71bd4418a3e737d0c9e7859c9b45bb9.png" alt="\psi(T_1)" /> and <img class="math" src="_images/math/82b16257008c2cf9c1d2495d9f7a98fd7fae983e.png" alt="\psi(T_2)" />.
+We have</p>
+<div class="math">
+<p><img src="_images/math/235124943071910539148a36a2a1b1940fe98746.png" alt="\psi(T_1) = \pi(v) = (1,0)^t" />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/9a0e3d356c37c55cecb11060befea5b6c17ba18f.png" alt="\psi(T_2) = \pi(T_2(v)) = \pi((0,0,1/2)^t) = (0,1/2)^t." />
+</div></p></li>
+<li><p class="first">[Find Generator] We have</p>
+<div class="math">
+<p><img src="_images/math/bb0a8fff0a8cc49ecaee32c2a84650963ef5265c.png" alt="\psi(T_2^0) = \psi(T_1) = (1,0)^t," />
+</div></p><p>which is clearly independent from <img class="math" src="_images/math/d63e3524c692278061615772c20948642ac9595f.png" alt="\psi(T_2)=(0,1/2)^t" />.  Thus we
+find that the image of the powers of <img class="math" src="_images/math/f296211fdf94dbbbd17e6e08ecb7827f0db7be3a.png" alt="T=T_2" /> generate <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" />.</p>
+</li>
+<li><p class="first">[Characteristic Polynomial]  The matrix
+of <img class="math" src="_images/math/a4245d45a2e1affccfb8d9d97cbd45170ad18792.png" alt="T_2|_V" />  is <img class="math" src="_images/math/26888609f11214eaea9c60777ce1a68385399430.png" alt="\abcd{0}{2}{1/2}{-1}" />, which has characteristic
+polynomial <img class="math" src="_images/math/b645d89108de05664696d2134dc01f3fb3379431.png" alt="f=x^2+x-1" />.   Of course, we already knew this because
+we computed <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> as the kernel of <img class="math" src="_images/math/be322180dee60f837990de3cf4ed58135cd3a641.png" alt="T_2^2+T_2-1" />.</p>
+</li>
+<li><p class="first">[Field Structure] We have</p>
+<div class="math">
+<p><img src="_images/math/5313fd6012b2a1598d274c7da9111d5622922472.png" alt="\psi(T_2^0) = \pi(v) = (1,0)^t
+\text{ and }
+\psi(T_2) = (0,1/2)." />
+</div></p><p>The matrix with rows the <img class="math" src="_images/math/016120cf3b467cb874fc305d3970d84ecc01f720.png" alt="\psi(T_2^i)" />
+is <img class="math" src="_images/math/3b4225f6ed966875de47ac3b2c46981bba797ce3.png" alt="\abcd{1}{0}{0}{1/2}" />, which has inverse <img class="math" src="_images/math/9d3f0ba0eb5274396fa2f6a3b18120c8566c6c0c.png" alt="e=\abcd{1}{0}{0}{2}" />.
+The matrix <img class="math" src="_images/math/a3a59bb1293ee3f6dec19de4019a7178874219ae.png" alt="e" /> defines an isomorphism between <img class="math" src="_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V" /> and
+the field</p>
+<div class="math">
+<p><img src="_images/math/31caf7df130f76e69deb412c736f0f0defbd63d6.png" alt="L=\Q[x]/(f) = \Q((-1+\sqrt{5})/2)." />
+</div></p><p>I.e., <img class="math" src="_images/math/ff78b4300ceacdb8faa9661a85c90a4b3dca8e55.png" alt="e((1,0))=1" /> and <img class="math" src="_images/math/58ebe463d3796ddfb947fbdc4557a07662714a60.png" alt="e((0,1))=2x" />, where <img class="math" src="_images/math/1a12d6a0b5f925ff80b68505f49d6f3d5dff5aa5.png" alt="x=(-1+\sqrt{5})/2" />.</p>
+</li>
+<li><p class="first">[Hecke Eigenvalues] We have <img class="math" src="_images/math/441729e156d65557affdcdde9e32fac8387f07ef.png" alt="a_n = e(\Psi(T_n))" />.  For example,</p>
+<div class="math">
+<p><img src="_images/math/966ae02a79d9d4648346bbc6caf4aadfbd95d0e2.png" alt="\qquad\qquad  a_1 &amp;= e(\Psi(T_1)) = e((1,0)) = 1,\\
+a_2 &amp;= e(\Psi(T_2)) = e((0,1/2)) = x,\\
+a_3 &amp;= e(\Psi(T_3)) = e(\pi(T_3(v))) \!=\! e(\pi((0,-1,-1)^t))\\
+&amp;= e((-1,-1)^t)\!=\! -1-2x,\\
+a_4 &amp;= e(\Psi(T_4)) = e(\pi((0,-1,-1/2)^t)) = e((-1,-1/2)^t) = -1-x,\\
+a_5 &amp;= e(\Psi(T_5)) = e(\pi((0,0,1)^t)) = e((0,1)^t) = 2x,\\
+a_{23} &amp;=   e(\Psi(T_{23})) = e(\pi((0,1,0)^t)) = e((1,0)^t) = 1,\\
+a_{97} &amp;= e(\Psi(T_{23})) = e(\pi((0,14,3)^t)) = e((14,3)^t) = 14+6x." />
+</div></p></li>
+</ol>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 9.16</p>
+<p>It is easier to appreciate <a class="reference internal" href="#alg:eigsys"><em>Algorithm 9.14</em></a> after seeing
+how big the coefficients of the power series expansion of a newform
+typically are, when the newform is defined over a large field. For
+example, there is a newform</p>
+<div class="math">
+<p><img src="_images/math/00576a9ff487c5027b34fdb5ba80d749b8fe320c.png" alt="f = \sum_{n=1}^{\infty} a_n q^n\in S_2(\Gamma_0(389))" />
+</div></p><p>such that if <img class="math" src="_images/math/79f31312f5b9efcd61070567622d2c7575067ee1.png" alt="\alpha = a_2" />, then</p>
+<div class="math">
+<p><img src="_images/math/65372f110869983932a5bfe4eaf4f7195c86c6a8.png" alt="1097385680 \cdot &amp;a_3(f) =
+-20146763x^{19} + 102331615x^{18} + 479539092x^{17} \\
+&amp;- 3014444212x^{16} - 3813583550x^{15} + 36114755350x^{14} \\
+&amp;+ 6349339639x^{13} - 227515736964x^{12} + 71555185319x^{11} \\
+&amp;+ 816654992625x^{10} - 446376673498x^{9} - 1698789732650x^{8} \\
+&amp;+ 1063778499268x^{7} + 1996558922610x^{6} - 1167579836501x^{5}\\
+&amp; - 1238356001958x^{4} + 523532113822x^{3} + 352838824320x^{2} \\
+&amp;- 58584308844x - 25674258672." />
+</div></p><p>In contrast, if we take
+<img class="math" src="_images/math/910b841c444169277aac21bb0d1332f75bd7e95e.png" alt="v=\{0,\infty\} = (0,1) \in \sM_2(\Gamma_0(389))^+" />, then</p>
+<div class="math">
+<p><img src="_images/math/95a089619256f67e4a2bc0964427e8b2ec449c9d.png" alt="T_3(v) = -4(1,0) + 2(1,291) - 2(1,294) - 2(1,310) + 2(1,313) + 2(1,383)." />
+</div></p><p class="last">Storing <img class="math" src="_images/math/0462bd5b19feaeceb8d3d988b970e880c57e7071.png" alt="T_3(v), T_5(v), \ldots" /> as vectors
+is more compact than storing
+<img class="math" src="_images/math/ef2083e2b608acb676bc4f762bf1781f913169f2.png" alt="a_3(f)" />, <img class="math" src="_images/math/4ff2ab2e4a56db108bf0e223cba8903494f3029d.png" alt="a_5(f)" />, <img class="math" src="_images/math/3958e984d2597b35da7975f4503cdcf965a777f7.png" alt="\ldots" /> directly as polynomials in <img class="math" src="_images/math/5e97a8af68fbc8e357d3ee0eba452022b06c1875.png" alt="a_2" />!</p>
+</div>
+</div>
+</div>
+<div class="section" id="congruences-between-newforms">
+<h2>Congruences between Newforms<a class="headerlink" href="#congruences-between-newforms" title="Permalink to this headline">¶</a></h2>
+<p>This section is about congruences between modular forms.
+Understanding congruences is crucial for studying Serre&#8217;s
+conjectures, Galois representations, and explicit construction of
+Hecke algebras.  We assume more background in algebraic number theory
+here than elsewhere in this book.</p>
+<div class="section" id="congruences-between-modular-forms">
+<h3>Congruences between Modular Forms<a class="headerlink" href="#congruences-between-modular-forms" title="Permalink to this headline">¶</a></h3>
+<p>Let <img class="math" src="_images/math/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png" alt="\Gamma" /> be an arbitrary congruence subgroup of <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />,
+and suppose <img class="math" src="_images/math/3eb232066b17e99af2d0cc6a8b41eb6015c9fc55.png" alt="f\in M_k(\Gamma)" /> is a modular form of integer weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />
+for <img class="math" src="_images/math/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png" alt="\Gamma" />. Since <img class="math" src="_images/math/c6b4962c94dc21b70abfbf4db9647ceb56ad589f.png" alt="\abcd{1}{N}{0}{1}\in\Gamma" /> for some integer <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />,
+the form <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> has a Fourier expansion in
+nonnegative powers of <img class="math" src="_images/math/775f92dde0bd43edfbb52d19d672b9acefb18c8c.png" alt="q^{1/N}" />.  For a rational
+number <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, let <img class="math" src="_images/math/a1ad13f4ed829b39429be2a27f545675b0ad6e83.png" alt="a_n(f)" /> be the coefficient of <img class="math" src="_images/math/10c1452f6d94cfa7c46f53505c93fed0e95b6741.png" alt="q^n" /> in
+the Fourier expansion of <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />.
+Put</p>
+<div class="math">
+<p><img src="_images/math/68a775d95fcdace860707b1fd7a189ad746c873c.png" alt="\ord_q(f) = \min\{n\in \Q : a_n \neq 0\}," />
+</div></p><p>where by convention we take <img class="math" src="_images/math/06b076b14719071860074a30bdd70b247bc481b7.png" alt="\min \emptyset = +\infty" />,
+so <img class="math" src="_images/math/cca53777accfd7f2805a097527887c34351d7985.png" alt="\ord_q(0)=+\infty" />.</p>
+<div class="section" id="the-invariant">
+<h4>The <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" />-invariant<a class="headerlink" href="#the-invariant" title="Permalink to this headline">¶</a></h4>
+<p>Let</p>
+<div class="math">
+<p><img src="_images/math/8ba4dafc708c4581b523baec2e5cd05ab2bb8ac8.png" alt="j = \frac{1}{q} + 744 + 196884 q + \cdots" />
+</div></p><p id="index-222">be the <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" />-function,
+which is a weight <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> modular function
+that is holomorphic except for a simple pole at <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" /> and
+has integer Fourier coefficients (see, e.g.,
+[<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section VIII.3.3]).</p>
+<div class="admonition " id="lem:jform">
+<p class="first admonition-title">Lemma 9.17</p>
+<p class="last">Suppose <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> is a weight <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />
+modular function that is holomorphic except possibly
+with a pole of order <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> at <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" />.
+Then <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> is a polynomial in <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" /> of degree at most <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />.
+Moreover, the coefficients of this polynomial lie in
+the ideal <img class="math" src="_images/math/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" alt="I" /> generated by the coefficients <img class="math" src="_images/math/78b93bc9723123d3566a4c3e111b4d5644b058f2.png" alt="a_m(g)" />
+with <img class="math" src="_images/math/c0cfaada5d0ab67fc43ad9f10e01817679289da5.png" alt="m\leq  0" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>If <img class="math" src="_images/math/02349576cee613512cdf301a365f06c0760acab5.png" alt="n=0" />, then <img class="math" src="_images/math/bf48d872cdc1a719f34ec4ba0c75378c95cb8a1f.png" alt="g\in M_0(\SL_2(\Z))=\C" />, so <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> is constant with
+constant term in <img class="math" src="_images/math/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" alt="I" />, so the statement is true.  Next suppose <img class="math" src="_images/math/0247db3d702b5ce6be98f50771750a2723cddcea.png" alt="n&gt;0" /> and the lemma
+has been proved for all functions with smaller order poles.
+Let <img class="math" src="_images/math/6d9e1cbc852a941fc329506adf5e276381098e31.png" alt="\alpha = a_n(g)" />, and note that</p>
+<div class="math">
+<p><img src="_images/math/961ce0b333a6d538041a0fd15294a3294fcd0f77.png" alt="\ord_q(g - \alpha j^n) =
+\ord_q\left(g - \alpha \cdot \left(\frac{1}{q} + 744 + 196884 q + \cdots \right)^n\right) &gt; -n." />
+</div></p><p class="last">Thus by induction <img class="math" src="_images/math/54993495dd08a5bb4081a193ce8fea710cffa7ca.png" alt="h=g - \alpha j^{n}" /> is a polynomial in <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" />
+of degree <img class="math" src="_images/math/af3ad96f94a37923c699fd673de54a9f014a1d91.png" alt="&lt;n" /> with coefficients in the ideal generated
+by the coefficients <img class="math" src="_images/math/78b93bc9723123d3566a4c3e111b4d5644b058f2.png" alt="a_m(g)" /> with <img class="math" src="_images/math/39a519300cf989061a0869ab8fb5979259f548d3.png" alt="m&lt; 0" />.  It follows
+that <img class="math" src="_images/math/7aca2d29565024628b2ceace95dd20fa0c657169.png" alt="g=\alpha \cdot j^n - h" /> satisfies the conclusion
+of the lemma.</p>
+</div>
+</div>
+<div class="section" id="sturm-s-theorem">
+<h4>Sturm&#8217;s Theorem<a class="headerlink" href="#sturm-s-theorem" title="Permalink to this headline">¶</a></h4>
+<p>If <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> is the ring of integers of a number field, <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" />
+is a maximal ideal of <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" />, and <img class="math" src="_images/math/d1772c706fb58c32a5305cd2c53d2c38a3233c37.png" alt="f=\sum a_n q^n \in \O[[q^{1/N}]]" />
+for some integer <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />,
+let</p>
+<div class="math">
+<p><img src="_images/math/49b303d179d8502489589c04133d0e17df81d605.png" alt="\ord_\m(f) = \ord_q(f \!\!\mod{\m}) = \min\{n\in\Q : a_n \not\in \m\}." />
+</div></p><p>Note that <img class="math" src="_images/math/804df5aee9edc236f27b4f5bf397cf19206f36c8.png" alt="\ord_\m(fg) = \ord_\m(f) + \ord_\m(g)" />.
+The following theorem was first proved in [<a class="reference external" href="bibliography.html#stu87"><strong>Stu87</strong></a>].</p>
+<div class="admonition " id="thm:sturm">
+<p class="first admonition-title">Theorem 9.18</p>
+<p>Let <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" /> be a prime ideal in the ring of integers <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> of a
+number field <img class="math" src="_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K" />, and let <img class="math" src="_images/math/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png" alt="\Gamma" /> be a congruence subgroup
+of <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" /> of index <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> and level <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />.
+Suppose <img class="math" src="_images/math/fe4aa55341694606a87a8efcf6675752bb2fa65c.png" alt="f\in M_k(\Gamma,\O)" /> is a modular form
+and</p>
+<div class="math">
+<p><img src="_images/math/2a071fe5e91ec7a9608babfabc34d9a253e1a5fb.png" alt="\ord_\m(f) &gt; \frac{km}{12}" />
+</div></p><p>or <img class="math" src="_images/math/0bef3e8fed5b41e28bbc957adb227318aa58fe35.png" alt="f \in S_k(\Gamma,\O)" /> is a cusp form
+and</p>
+<div class="math">
+<p><img src="_images/math/d25945340ab19d8a1f3067f4cb79a2b83e529d48.png" alt="\ord_\m(f) &gt; \frac{km}{12} - \frac{m-1}{N}." />
+</div></p><p class="last">Then <img class="math" src="_images/math/b1c9dc88cf345fb35ed2638a292b2a979d81ec45.png" alt="f\con 0\pmod{\m}" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p><strong>Case 1: First we assume</strong> <img class="math" src="_images/math/95cbe1eb8d85c43697003bf09d0c965bf8518a5c.png" alt="\Gamma=\SL_2(\Z)" />.
+Let</p>
+<div class="math">
+<p><img src="_images/math/57064783ab6a9b4de474bc2105f5d9669b9bf525.png" alt="\Delta  = q + 24q^2 + \cdots \in S_{12}(\SL_2(\Z),\Z)" />
+</div></p><p>be the <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> function.
+Since <img class="math" src="_images/math/68f126a3006fc5544364291f9de942371bd20af4.png" alt="\ord_\m(f) &gt; k/12" />, we have <img class="math" src="_images/math/7e1cf68b82efb48de281f9deb6cd84d605a96eba.png" alt="\ord_\m(f^{12}) &gt; k" />.
+We have</p>
+<div class="math" id="equation-eqn:sturm1">
+<p><span class="eqno">(4)</span><img src="_images/math/49816c38afab5ebe5a4ad43f79de571fb5558b8c.png" alt="\ord_q(f^{12}\cdot\Delta^{-k})
+= 12 \cdot \ord_q(f) - k\cdot \ord_q(\Delta) \geq -k," />
+</div></p><p>since <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is holomorphic at infinity and <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> has a zero of order <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.
+Also</p>
+<div class="math" id="equation-eqn:sturm2">
+<p><span class="eqno">(5)</span><img src="_images/math/dbab311d8043f1680d680e8e9b5e8d4dd33c68df.png" alt="\ord_\m(f^{12}\cdot \Delta^{-k}) =  \ord_\m(f^{12}) - k\cdot \ord_\m(\Delta)
+&gt; k - k = 0." />
+</div></p><p>Combining <a href="#equation-eqn:sturm1">(4)</a> and <a href="#equation-eqn:sturm2">(5)</a>, we see that</p>
+<div class="math">
+<p><img src="_images/math/027c122a95c7352edf84afcc1ed56d149b952d65.png" alt="f^{12} \cdot \Delta^{-k} = \sum_{n\geq -k} b_n q^n," />
+</div></p><p>with <img class="math" src="_images/math/48ba9ecdd6912ca1957c324664c9510d46900c08.png" alt="b_n \in \O" /> and <img class="math" src="_images/math/f58b28b625fcbd1fe6630ef24333f4734a36a64d.png" alt="b_n\in \m" /> if <img class="math" src="_images/math/c1c885ee31c4cebaa9911332d3a68b193a9ef8e8.png" alt="n\leq 0" />.</p>
+<p>By <a class="reference internal" href="#lem:jform"><em>Lemma 9.17</em></a>,</p>
+<div class="math">
+<p><img src="_images/math/2c5cb9acf6cc96636663a56034caaf38b7141bd9.png" alt="f^{12} \cdot \Delta^{-k} \in \m[j]" />
+</div></p><p>is a polynomial in <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" /> of degree at most <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> with coefficients
+in <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" />.
+Thus</p>
+<div class="math">
+<p><img src="_images/math/84ab08fa8031286209064bd97d91a23be0b2cbac.png" alt="f^{12} \in \m[j]\cdot \Delta^k," />
+</div></p><p>so since the coefficients of <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> are integers, every
+coefficient of <img class="math" src="_images/math/9408d5423a035b3059743eacf2e8c9ef29a90fdb.png" alt="f^{12}" /> is in <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" />.  Thus
+<img class="math" src="_images/math/859df107e97ea2067af81f49b3d69715c4674363.png" alt="\ord_\m(f^{12}) = +\infty," /> hence
+<img class="math" src="_images/math/b5a6f70ebf502e31f003755bef582b4a1126969b.png" alt="\ord_\m(f) = +\infty" />, so <img class="math" src="_images/math/28bed41d466dc67e5323eb633d7cba364ac7cd7d.png" alt="f=0" />, as claimed.</p>
+<p><strong>Case 2:</strong> <img class="math" src="_images/math/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png" alt="\Gamma" /> <strong>Arbitrary</strong></p>
+<p>Let <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> be such that <img class="math" src="_images/math/5007041277ac2df637f91d2148c1bf3bd2ee7fd1.png" alt="\Gamma(N)\subset \Gamma" />, so also
+<img class="math" src="_images/math/01482d944afaca9c6a99cd88d42dda253884f749.png" alt="f \in M_k(\Gamma(N))" />.
+If <img class="math" src="_images/math/78e7ae90dc2c995a24fe49bc16a92868057dd8c7.png" alt="g\in M_k(\Gamma(N))" /> is arbitrary, then
+because <img class="math" src="_images/math/4f65dd07071f850ebb49bd877cd3b18e16bdddb0.png" alt="\Gamma(N)" /> is a normal subgroup of <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />,
+we have that for any <img class="math" src="_images/math/ccd7f5a9b188d475db0d3d5f1f9a771afafe7fb3.png" alt="\gamma \in\Gamma(N)" /> and <img class="math" src="_images/math/4eed3df105dfdd473f241414b0d9914042ca0d6e.png" alt="\delta \in \SL_2(\Z)" />,</p>
+<div class="math">
+<p><img src="_images/math/f9b53d468b58bcc2c4c7544b61d1ccb4187ff632.png" alt="(g^{[\delta]_k})^{[\gamma]_k} = g^{[\delta\gamma]_k}
+= g^{[\gamma'\delta]_k} = (g^{[\gamma']_k})^{[\delta]_k}
+= g^{[\delta]_k}," />
+</div></p><p>where <img class="math" src="_images/math/022bc08f1de086266be42560251788e4d612ff08.png" alt="\gamma'\in\SL_2(\Z)" />.  Thus for any <img class="math" src="_images/math/09172b6a0ccec963b00066885a7c1bf6af471fe5.png" alt="\delta\in \SL_2(\Z)" />,
+we have that <img class="math" src="_images/math/3111279588c55172d28fcea05a0e98212418ac8e.png" alt="g^{[\delta]_k} \in M_k(\Gamma(N))" />, so <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />
+acts on <img class="math" src="_images/math/a3b94f7851e8be2a9fdf7b23dda2fbe55edfae9f.png" alt="M_k(\Gamma(N))" />.</p>
+<p>It is a standard (but nontrivial) fact about modular forms, which
+comes from the geometry of the modular curve <img class="math" src="_images/math/f045d29e4ee64cecfcf1a98ef17d846963ed904f.png" alt="X(N)" /> over <img class="math" src="_images/math/42409c32ba9611edb9663d7950d2b142b6ec2f6a.png" alt="\Q(\zeta_N)" />
+and <img class="math" src="_images/math/fd2555c28a7d149d9eae9deaf661502d6df4ba52.png" alt="\Z[\zeta_N]" />, that <img class="math" src="_images/math/a3b94f7851e8be2a9fdf7b23dda2fbe55edfae9f.png" alt="M_k(\Gamma(N))" /> has a basis with Fourier
+expansions in <img class="math" src="_images/math/d734ab779d2f2afb5fb5704cfc48d04980a86909.png" alt="\Z[\zeta_N][[q^{1/N}]]" /> and that the action of
+<img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" /> on <img class="math" src="_images/math/a3b94f7851e8be2a9fdf7b23dda2fbe55edfae9f.png" alt="M_k(\Gamma(N))" /> preserves</p>
+<div class="math">
+<p><img src="_images/math/15021475c76cd150790d71bf6f0132258bfa06b8.png" alt="M_k(\Gamma(N),\Q(\zeta_N)) = M_k(\Gamma(N)) \cap{}
+(\Q(\zeta_N)[[q^{1/N}]])" />
+</div></p><p>and the cuspidal subspace
+<img class="math" src="_images/math/d8b1608399a90ca2bc0800cbd38007ce8061267b.png" alt="S_k(\Gamma(N),\Q(\zeta_N))" />.  In particular, for any
+<img class="math" src="_images/math/cf83a14e1a45b28ba06a1de246eec9f4d2b96b88.png" alt="\gamma\in\SL_2(\Z)" />,</p>
+<div class="math">
+<p><img src="_images/math/9c15b73652b634318028d3d4176c0a306485eca6.png" alt="f^{[\gamma]_k} \in M_k(\Gamma(N), K(\zeta_N))" />
+</div></p><p>Moreover, the denominators of <img class="math" src="_images/math/6598c12197d74870e3b7b4f310ae83d100a42400.png" alt="f^{[\gamma]_k}" /> are bounded, since <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />
+is an <img class="math" src="_images/math/8e97af206a4d40dbb5c23d7f69297cb99bf50b10.png" alt="\O[\zeta_N]" />-linear combination of a basis for
+<img class="math" src="_images/math/f08bbf8ef64d05850b33942f18614409e0201e71.png" alt="M_k(\Gamma(N),\Z[\zeta_N])" />, and the denominators of <img class="math" src="_images/math/6598c12197d74870e3b7b4f310ae83d100a42400.png" alt="f^{[\gamma]_k}" />
+divide the product of the denominators of the images of each of these
+basis vectors under <img class="math" src="_images/math/b982a736e025e060e88c63508ea36be04390f660.png" alt="[\gamma]_k" />.</p>
+<p>Let <img class="math" src="_images/math/f6842f0d5195a781d437afd0b0a9dd75e1ae9eff.png" alt="L=K(\zeta_N)" />.
+Let <img class="math" src="_images/math/a3dc18181cc12701987b72d11e229db7691b515d.png" alt="\wM" /> be a prime of <img class="math" src="_images/math/88da49cbdd01c94bd02388efc99ab39638a6e5f2.png" alt="\O_L" /> that divides
+<img class="math" src="_images/math/97c14b67bf7079bcc3344bd79593f28daaef555f.png" alt="\m \O_L" />.   We will now show that for each <img class="math" src="_images/math/cf83a14e1a45b28ba06a1de246eec9f4d2b96b88.png" alt="\gamma\in\SL_2(\Z)" />, the
+Chinese Remainder Theorem implies that there is an element <img class="math" src="_images/math/2522959807b0225caabef69e903c740c8dfedd53.png" alt="A_\gamma\in L^*" />
+such that</p>
+<div class="math" id="equation-eqn:sturm_crt">
+<p><span class="eqno">(6)</span><img src="_images/math/af0161390e80bf66285c5e8d02333071ec044bd0.png" alt="A_\gamma \cdot f^{[\gamma]_k} \in M_k(\Gamma(N), \O_L)
+\qquad \text{and}
+\qquad \ord_{\wM} (A_{\gamma} \cdot f^{[\gamma]_k}) &lt; \infty." />
+</div></p><p>First find <img class="math" src="_images/math/53fdeda5ee48054fe67d7ee0ba3333ba271412a2.png" alt="A \in L^*" /> such that
+<img class="math" src="_images/math/c06fb30ddfa5bcc9f4322119a1eb8a64ec720765.png" alt="A\cdot f^{[\gamma]_k}" /> has coefficients in <img class="math" src="_images/math/88da49cbdd01c94bd02388efc99ab39638a6e5f2.png" alt="\O_L" />.
+Choose <img class="math" src="_images/math/0af2cdcdd47e97366dba65dab3090f35a4434d06.png" alt="\alpha\in \wM" /> with <img class="math" src="_images/math/7790203cd899ea36b93ca891cdec676bd6611982.png" alt="\alpha \not\in \wM^2" />, and find a negative power
+<img class="math" src="_images/math/e24343433f18d79386f798a110637a2a54ce3c8a.png" alt="\alpha^t" /> such that <img class="math" src="_images/math/1e5d430a373980eff87f674bd3b68b5d6d8cc476.png" alt="\alpha^t\cdot A\cdot f^{[\gamma]_k}" />
+has <img class="math" src="_images/math/a3dc18181cc12701987b72d11e229db7691b515d.png" alt="\wM" />-integral coefficients and finite valuation.
+This is possible because we assumed that <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is nonzero.
+Use the Chinese Remainder Theorem to find <img class="math" src="_images/math/a271b3103fb74e5db29ad67bf55bb9d3b2007129.png" alt="\beta\in \O_L" />
+such that <img class="math" src="_images/math/cc798ab6d7d7ee78b741f17f8c2bb72953395026.png" alt="\beta\con 1\pmod{\wM}" /> and <img class="math" src="_images/math/1163af4b27e6b7136be5db3a54ff2a6c5e6dc7bd.png" alt="\beta\con 0\pmod{\wp}" />
+for each prime <img class="math" src="_images/math/ed927ea4d02dbd33db43ff4f807b85bd593a07e7.png" alt="\wp\neq \wM" /> that divides <img class="math" src="_images/math/10aaaed7766718fbb945f4eb2e83f86de5db4027.png" alt="(\alpha)" />.
+Then for some <img class="math" src="_images/math/f37bba504894945c07a32f5496d74299a37aa51c.png" alt="s" /> we have</p>
+<div class="math">
+<p><img src="_images/math/fbd192d3c468f16ad4a892079388c9c19855e071.png" alt="\beta^s \cdot \alpha^t \cdot A\cdot f^{[\gamma]_k}
+= A_\gamma \cdot f^{[\gamma]_k}
+\in M_k(\Gamma(N),\O_L)" />
+</div></p><p>and <img class="math" src="_images/math/89f0ef6badc3682b081f9970073ab3939cdfa99f.png" alt="\ord_{\wM}(A_\gamma \cdot f^{[\gamma]_k}) &lt; \infty" />.</p>
+<p>Write</p>
+<div class="math">
+<p><img src="_images/math/4a5024f86616299a3e0999dc878f389c76acab18.png" alt="\SL_2(\Z) = \bigcup_{i=1}^m \Gamma{} \gamma_i" />
+</div></p><p>with <img class="math" src="_images/math/c185d25c477baa33425c6ac1ae0fde9af366ab9c.png" alt="\gamma_1 = \abcd{1}{0}{0}{1}" />, and let</p>
+<div class="math">
+<p><img src="_images/math/29b456589a08c500642bac71dceb9575cd3c0c28.png" alt="F = f \cdot \prod_{i=2}^m A_{\gamma_i} \cdot f^{[\gamma_i]_k}." />
+</div></p><p>Then <img class="math" src="_images/math/f1e3c9b022952a5a2cd7ee98e1a6176beb408a00.png" alt="F \in M_{km}(\SL_2(\Z))" /> and since <img class="math" src="_images/math/d47b34cbb3685afaeb9f438dbe88e2491c1b102a.png" alt="\wM\cap \O_K = \m" />, we
+have <img class="math" src="_images/math/58be3b5fea1d8efe4c93f5b82985f298d0b040bd.png" alt="\ord_{\wM}(f) = \ord_{\m}(f)" />, so</p>
+<div class="math">
+<p><img src="_images/math/e03e2775dd902caabf102378361821193970fbdd.png" alt="\ord_{\wM}(F) \geq \ord_{\wM}(f) = \ord_{\m}(f) &gt; \frac{km}{12}." />
+</div></p><p>Thus we can apply Case 1 to conclude that</p>
+<div class="math">
+<p><img src="_images/math/f12b64844d5c6078fff42b7953f64b00beb30413.png" alt="\ord_{\wM}(F) = +\infty." />
+</div></p><p>Thus</p>
+<div class="math" id="equation-eqn:sturm:ords">
+<p><span class="eqno">(7)</span><img src="_images/math/894af91a24f017c9b69930749dba139df238a632.png" alt="\infty = \ord_{\wM}(F) = \ord_\m(f) + \sum_{i=2}^m \ord_{\wM}(A_{\gamma_i}
+f^{[\gamma]_k})," />
+</div></p><p>so <img class="math" src="_images/math/2ec12149226f3833b2e5224802442138827d6e5d.png" alt="\ord_\m(f)=+\infty" />, because of <a href="#equation-eqn:sturm_crt">(6)</a>.</p>
+<p>We next obtain a better bound when <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is a cusp form.
+Since <img class="math" src="_images/math/b982a736e025e060e88c63508ea36be04390f660.png" alt="[\gamma]_k" /> preserves
+cusp forms, <img class="math" src="_images/math/554fe22c959eca073331461601d8db4efecb1c49.png" alt="\ord_{\wM}(A_{\gamma_i} f^{[\gamma]_k}) \geq \frac{1}{N}" />
+for each <img class="math" src="_images/math/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png" alt="i" />.
+Thus</p>
+<div class="math">
+<p><img src="_images/math/e0e7cdf083d497e0e2a540b26e2b5e155f030179.png" alt="\ord_{\wM}(F) \geq \ord_{\wM}(f)  + \frac{m-1}{N} = \ord_{\m}(f) + \frac{m-1}{N} &gt; \frac{km}{12}," />
+</div></p><p>since now we are merely assuming that</p>
+<div class="math">
+<p><img src="_images/math/f5b4e67e2340ad3fc2b589f3419638916d345134.png" alt="\ord_{\m}(f) &gt; \frac{km}{12}
+- \frac{m - 1}{N}." />
+</div></p><p class="last">Thus we again apply Case 1 to conclude that
+<img class="math" src="_images/math/5bafbb70bbbb7ff628f383567d0da56f9fefd26c.png" alt="\ord_{\wM}(F) = +\infty," /> and using <a href="#equation-eqn:sturm:ords">(7)</a>, conclude that
+<img class="math" src="_images/math/2ec12149226f3833b2e5224802442138827d6e5d.png" alt="\ord_\m(f)=+\infty" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Corollary 9.19</p>
+<p>Let <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" /> be a prime ideal in the ring of integers <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> of a
+number field.  Suppose <img class="math" src="_images/math/348f771acb48390a3d648e74bb9b456fe0750a5f.png" alt="f,g\in M_k(\Gamma,\O)" /> are modular
+forms and</p>
+<div class="math">
+<p><img src="_images/math/66c3f9091fc50c8706dbc3dde8f2714679ca4c36.png" alt="a_n(f) \con  a_n(g) \pmod{\m}" />
+</div></p><p>for all</p>
+<div class="math">
+<p><img src="_images/math/dcd9b286531d784fa7ccc96a73234afe8224e058.png" alt="n\leq
+\begin{cases}
+\ds\frac{km}{12} - \frac{m-1}{N} &amp; \text{ if }f-g \in S_k(\Gamma,\O),\vspace{2pt}\\
+\ds\frac{km}{12} &amp; \text{otherwise},
+\end{cases}" />
+</div></p><p class="last">where <img class="math" src="_images/math/ed667d3eecfa5190d947d52146b1212979c036d9.png" alt="m=[\SL_2(\Z):\Gamma]" />.
+Then <img class="math" src="_images/math/8b3e8682e8ef948f90db1a829b6c0ef4a3e55441.png" alt="f\con g\pmod{\m}" />.</p>
+</div>
+<p>Buzzard proved the following corollary, which is extremely useful
+in practical computations.
+It asserts that the Sturm bound for modular forms with character
+is the same as the Sturm bound for <img class="math" src="_images/math/0ce4343a7316d048508371ec15ac0cc5c641e53c.png" alt="\Gamma_0(N)" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Corollary 9.20</p>
+<p>Let <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" /> be a prime ideal in the ring of integers <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> of a
+number field.
+Suppose <img class="math" src="_images/math/471fb65871481795f116083931cad7c65ed9f652.png" alt="f,g\in M_k(N,\eps,\O)" /> are modular
+forms with Dirichlet character <img class="math" src="_images/math/50caef81b9e44b904fa39678a56345f4a23c15fe.png" alt="\eps:(\Z/N\Z)^* \to \C^*" /> and assume
+that</p>
+<div class="math">
+<p><img src="_images/math/da91f1ac9ed9c162c51debfed681180bf704ec7d.png" alt="a_n(f) \con  a_n(g) \pmod{\m}
+\qquad\text{for all}\qquad
+n \leq  \frac{km}{12}," />
+</div></p><p>where</p>
+<div class="math">
+<p><img src="_images/math/e49680865e13ec6570e88b88564f1dd786d8790f.png" alt="m=[\SL_2(\Z):\Gamma_0(N)] =
+\#\P^1(\Z/N\Z) = N \cdot \prod_{p|N}\left(1+\frac{1}{p}\right)." />
+</div></p><p class="last">Then <img class="math" src="_images/math/8b3e8682e8ef948f90db1a829b6c0ef4a3e55441.png" alt="f\con g\pmod{\m}" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Let <img class="math" src="_images/math/1540739245508d55086cb48813642471018a1106.png" alt="h=f-g" /> and
+let <img class="math" src="_images/math/23057b232d0637a68699c26e7a68e837b38d01cd.png" alt="r=km/12" />,
+so <img class="math" src="_images/math/b39707a6f61c54631945a6e1696f796b71d1ac48.png" alt="\ord_\m(h) &gt; r" />.  Let <img class="math" src="_images/math/f37bba504894945c07a32f5496d74299a37aa51c.png" alt="s" /> be the order of the
+Dirichlet character <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" />.  Then <img class="math" src="_images/math/2cf311089c5ea498c3f2b0e78cf9ebda4b3b4c4a.png" alt="h^s \in M_{ks}(\Gamma_0(N))" />
+and</p>
+<div class="math">
+<p><img src="_images/math/def4b8f26ef330b2c98f6bdfcd6bbbe3eacd3e59.png" alt="\ord_\m(h^s) &gt; sr = \frac{ksm}{12}." />
+</div></p><p class="last">By <a class="reference internal" href="#thm:sturm"><em>Theorem 9.18</em></a>, we have <img class="math" src="_images/math/442a805b33289b8cb90687ae7ad2b963e53a8c81.png" alt="\ord_\m(h^s) = \infty" />,
+so <img class="math" src="_images/math/4181e70114e702166911ebecad4c43e7bf9bb829.png" alt="\ord_\m(h) = \infty" />.  It follows that <img class="math" src="_images/math/8b3e8682e8ef948f90db1a829b6c0ef4a3e55441.png" alt="f\con g\pmod{\m}" />.</p>
+</div>
+</div>
+<div class="section" id="congruence-for-newforms">
+<h4>Congruence for Newforms<a class="headerlink" href="#congruence-for-newforms" title="Permalink to this headline">¶</a></h4>
+<p>Sturm&#8217;s paper [<a class="reference external" href="bibliography.html#stu87"><strong>Stu87</strong></a>] also applies some results of Asai on
+<img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions at various cusps to obtain a more refined result for
+newforms.</p>
+<div class="admonition ">
+<p class="first admonition-title">Theorem 9.21</p>
+<p>Let <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> be a positive integer that is square-free, and
+suppose <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> and <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> are two newforms in
+<img class="math" src="_images/math/29380e663cd7a7fb69de2dcc9218e5ee59f590d8.png" alt="S_k(N,\eps,\O)" />,
+where <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> is the ring of integers of a number field,
+and suppose that <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" /> is a maximal ideal of <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" />.
+Let <img class="math" src="_images/math/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" alt="I" /> be an arbitrary subset of the prime divisors of <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" />.
+If <img class="math" src="_images/math/6ea6cbe9aa66907b5b757460de07831cd4e08ab4.png" alt="a_p(f) = a_p(g)" /> for all <img class="math" src="_images/math/1fe5bc0c8fec3fe0a51a060ee9b549b33817f679.png" alt="p\in I" /> and if</p>
+<div class="math">
+<p><img src="_images/math/5138c4beee6f3045e11c114cbce9208750fe6b19.png" alt="a_p(f) \con a_p(g)\pmod{\m}" />
+</div></p><p>for all primes</p>
+<div class="math">
+<p><img src="_images/math/c12c977c2688bfe6507ea095381f96cc2342d3d9.png" alt="p \leq \frac{k\cdot [\SL_2(\Z):\Gamma_0(N)]}{12 \cdot 2^{\#I}}," />
+</div></p><p class="last">then <img class="math" src="_images/math/8b3e8682e8ef948f90db1a829b6c0ef4a3e55441.png" alt="f\con g\pmod{\m}" />.</p>
+</div>
+<p>The paper [<a class="reference external" href="bibliography.html#bs02"><strong>BS02</strong></a>] contains a similar  result about
+congruences between newforms, which does not require that the level be
+square-free.  Recall from Definition <a class="reference external" href="dirichlet_characters.html#defn:conductordir"><em>Definition 4.18</em></a> that the
+conductor of a Dirichlet character <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> is the largest divisor <img class="math" src="_images/math/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png" alt="c" />
+of <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> such that <img class="math" src="_images/math/5f1c6c749a58643b8269936f03d0629396ee47ad.png" alt="\eps" /> factors through <img class="math" src="_images/math/e133de5622395702a975c8484b5921256a17ef9a.png" alt="(\Z/c\Z)^\times" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Theorem 9.22</p>
+<p>Let <img class="math" src="_images/math/1222b13f6279d1bd4f58a4f90ec9af85462db8ad.png" alt="N&gt;4" /> be any integer, and
+suppose <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> and <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> are two normalized eigenforms in <img class="math" src="_images/math/ad67c453c8cff80d8bda80c0e456013f410abfe8.png" alt="S_k(N,\eps;\O)" />,
+where <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" /> is the ring of integers of a number field,
+and suppose that <img class="math" src="_images/math/1ba2ac3bcfdaa4e86a5f058dab63db34915a45c5.png" alt="\m" /> is a maximal ideal of <img class="math" src="_images/math/4854c1a755ace05a64cd1bcb0c9814f8fc8973f8.png" alt="\O" />.
+Let <img class="math" src="_images/math/027f4a11d6090f9eac0ce2488df6384dad1263ea.png" alt="I" /> be the set of prime divisors of <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> that
+do not divide <img class="math" src="_images/math/1275ed2276f3e767e02fdd2dcbff31cfed697dad.png" alt="\frac{N}{\cond(\eps)}" />.
+If</p>
+<div class="math">
+<p><img src="_images/math/5138c4beee6f3045e11c114cbce9208750fe6b19.png" alt="a_p(f) \con a_p(g)\pmod{\m}" />
+</div></p><p>for all primes <img class="math" src="_images/math/1fe5bc0c8fec3fe0a51a060ee9b549b33817f679.png" alt="p\in I" /> and for all primes</p>
+<div class="math">
+<p><img src="_images/math/c12c977c2688bfe6507ea095381f96cc2342d3d9.png" alt="p \leq \frac{k\cdot [\SL_2(\Z):\Gamma_0(N)]}{12 \cdot 2^{\#I}}," />
+</div></p><p class="last">then <img class="math" src="_images/math/8b3e8682e8ef948f90db1a829b6c0ef4a3e55441.png" alt="f\con g\pmod{\m}" />.</p>
+</div>
+<p>For the proof, see Lemma 1.4 and Corollary 1.7 in [<a class="reference external" href="bibliography.html#bs02"><strong>BS02</strong></a>, Section 1.3].</p>
+</div>
+</div>
+<div class="section" id="generating-the-hecke-algebra">
+<h3>Generating the Hecke Algebra<a class="headerlink" href="#generating-the-hecke-algebra" title="Permalink to this headline">¶</a></h3>
+<p>The following theorem appeared in [<a class="reference external" href="bibliography.html#ls02"><strong>LS02</strong></a>, Appendix], except that
+we give a better bound here.  It is a nice application of the
+congruence result above, which makes possible explicit computations
+with Hecke rings <img class="math" src="_images/math/b0ae1facb3f76cb57cb07859baffe197987fb876.png" alt="\T" />.</p>
+<div class="admonition " id="thm:heckegen">
+<p class="first admonition-title">Theorem 9.23</p>
+<p>Suppose <img class="math" src="_images/math/913e49ea63c6c130bb8d9d1c3556b052ecc404f8.png" alt="\Gamma" /> is a congruence subgroup that contains
+<img class="math" src="_images/math/e1ce758e7944584095efc8e60f73a69edd624a20.png" alt="\Gamma_1(N)" /> and let</p>
+<div class="math" id="equation-eqn:perfectR">
+<p><span class="eqno">(8)</span><img src="_images/math/4389a895e19c64144e9d7ab37c525723f8492b97.png" alt="r=\frac{km}{12} - \frac{m - 1}{N}," />
+</div></p><p>where <img class="math" src="_images/math/ed667d3eecfa5190d947d52146b1212979c036d9.png" alt="m=[\SL_2(\Z):\Gamma]" />.
+Then the Hecke algebra</p>
+<div class="math" id="index-223">
+<p><img src="_images/math/773b46e304024d8dbdf1477ce4fd6b1b5183d520.png" alt="\T=\Z[\ldots, T_n,\ldots] \subset \End(S_k(\Gamma))" />
+</div></p><p class="last">is generated as a <img class="math" src="_images/math/325dee00b013782b6b1c920637728d687b12db43.png" alt="\Z" />-module by the Hecke operators
+<img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> for <img class="math" src="_images/math/70c5c625d9d6e926d609d3188fe17ca7729d6b0d.png" alt="n\leq r" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>For any ring <img class="math" src="_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R" />, let <img class="math" src="_images/math/e82e4821887f2b111a1ee810d96ffc845e51837a.png" alt="S_k(N,R) = S_k(N;\Z)\otimes{}R" />, where
+<img class="math" src="_images/math/51f1ec56f3a0cbbeb534a89ff9c4a351d5e14ae1.png" alt="S_k(N;\Z)\subset \Z[[q]]" /> is the submodule of cusp forms with
+integer Fourier expansion at the cusp <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" />, and let <img class="math" src="_images/math/6719fcfdb85c61256dddeb0811190704bfecc017.png" alt="\T{}_R =
+\T{}\otimes_\Z R" />.  For any ring <img class="math" src="_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R" />, there is a perfect pairing</p>
+<div class="math">
+<p><img src="_images/math/3a12057e51aef45c27483d9eac703a172bbf3b4a.png" alt="S_k(N,R) \otimes_R \T{}_R \rightarrow R" />
+</div></p><p>given by <img class="math" src="_images/math/82ee05020eb21d999e78627fee00217b94fb1915.png" alt="\langle f,T\rangle\mapsto a_1(T(f))" /> (this is true
+for <img class="math" src="_images/math/6c8d1d21a15d23ef86f19bcb9975e76d63d275ec.png" alt="R=\Z" />, hence for any <img class="math" src="_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R" />).</p>
+<p>Let <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> be the submodule of <img class="math" src="_images/math/92cbd4692e0d3cacd21e02cc482b4bfb843f7bf4.png" alt="\T{}" /> generated by
+<img class="math" src="_images/math/520aff5cb02c834b87eec6e78f228221deeb73af.png" alt="T_1,T_2,\ldots,T_r" />, where <img class="math" src="_images/math/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" alt="r" /> is the largest integer
+<img class="math" src="_images/math/52e72467050498603011d1e133dfa45ff21c58a4.png" alt="\leq {\frac{kN}{12}}\cdot [\SL_2(\Z):\Gamma]" />.
+Consider the exact sequence of additive abelian groups</p>
+<div class="math">
+<p><img src="_images/math/59f1f1e2633fc89d43f22063a0d5194701852980.png" alt="0\rightarrow M \mathop{\rightarrow}\limits^{i}\ \T{}
+\rightarrow \T{}/M \rightarrow 0." />
+</div></p><p>Let <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> be a prime and use the fact that
+tensor product is right exact to obtain an exact sequence</p>
+<div class="math">
+<p><img src="_images/math/ed7526ddbffecdf21a36f065f1a5680c6878bf5c.png" alt="M\otimes \F_p \mathop{\rightarrow}\limits^{\overline{i}}\
+\T \otimes\F_p \rightarrow (\T{}/M)\otimes\F_p\rightarrow 0." />
+</div></p><p>Suppose that <img class="math" src="_images/math/14485465d5f0168d897f94b8a91d796ce196169a.png" alt="f\in S_k(N,\F_p)" /> pairs to <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> with each of
+<img class="math" src="_images/math/72f49f0cabcde5644378b7383decf19609da7fee.png" alt="T_1,\ldots, T_r" />.  Then</p>
+<div class="math">
+<p><img src="_images/math/ce437c227b94eacba974658042fa4325acbd69c6.png" alt="a_m(f)=a_1(T_m f)=\langle f, T_m\rangle =
+0" />
+</div></p><p>in <img class="math" src="_images/math/738cac663d0000945f432045e7b49a65a4f0d520.png" alt="\F_p" /> for each <img class="math" src="_images/math/cdd9b88eb1356b56a3bd80d2ad961031a0a05426.png" alt="m\leq r" />.  By <a class="reference internal" href="#thm:sturm"><em>Theorem 9.18</em></a>, it
+follows that <img class="math" src="_images/math/f9634788fe892149a6e443bea3d92a8000a18591.png" alt="f = 0" />. Thus the pairing restricted to the image of
+<img class="math" src="_images/math/277ad655cbd45ae5e09ddf860775875e62be4cdf.png" alt="M\otimes\F_p" /> in <img class="math" src="_images/math/9fa5778d090a1707d8e98b51f5fc8bc25d734ccb.png" alt="\T_{\F_p}" /> is nondegenerate, so
+because <a href="#equation-eqn:perfectR">(8)</a> is perfect, it follows that</p>
+<div class="math">
+<p><img src="_images/math/84bc8bd0b8e47e5b3a08e03078109b19de2d2973.png" alt="\dim_{\F_p} \overline{i}(M\otimes\F_p) =  \dim_{\F_p} S_k(N,\F_p)." />
+</div></p><p class="last">Thus <img class="math" src="_images/math/bc2b37a68fab8436ede477399cd0c03950ee4aa0.png" alt="(\T{}/M) \tensor \F_p = 0" />.
+Repeating the argument for all primes <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> shows that <img class="math" src="_images/math/ca824521a0cec9f4d611eff01c94039a8de493c0.png" alt="\T{}/M=0" />,
+as claimed.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 9.24</p>
+<p class="last">In general, the conclusion of
+<a class="reference internal" href="#thm:heckegen"><em>Theorem 9.23</em></a> is not true if one considers only
+<img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> where <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> runs over the primes less than the bound.
+Consider, for example, <img class="math" src="_images/math/1f08353646411db5a5db21cf288bca1cb9474c02.png" alt="S_2(11)" />, where the bound is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and
+there are no primes <img class="math" src="_images/math/9401b119762fbe0a7460f07fdc0eae8d266d5cc4.png" alt="\leq 1" />.
+However, the Hecke algebra is generated as an algebra
+by operators <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" /> with <img class="math" src="_images/math/8a5b8ce761aef0e524f61e85c7325140e9424559.png" alt="p\leq r" />.</p>
+</div>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="admonition " id="ex:g0g1quo">
+<p class="first admonition-title">Exercise 9.1</p>
+<p class="last">Prove that the group <img class="math" src="_images/math/e1ce758e7944584095efc8e60f73a69edd624a20.png" alt="\Gamma_1(N)" /> is a normal subgroup of
+<img class="math" src="_images/math/0ce4343a7316d048508371ec15ac0cc5c641e53c.png" alt="\Gamma_0(N)" /> and that the quotient <img class="math" src="_images/math/d5379f3c2acefca610d89675533359199b27e423.png" alt="\Gamma_0(N)/\Gamma_1(N)" /> is
+isomorphic to <img class="math" src="_images/math/c7eb697f0fcf56d5c0ee9008b39d0b698ddcfc37.png" alt="(\Z/N\Z)^*" />.</p>
+</div>
+<div class="admonition " id="ex:dbdinhecke">
+<p class="first admonition-title">Exercise 9.2</p>
+<p class="last">Prove that the operators <img class="math" src="_images/math/39100709caac346f66867045353c2dc6f1a68352.png" alt="\dbd{d}" /> are elements of
+<img class="math" src="_images/math/720b4867a6081836c716cd0c519d9c2148da5f20.png" alt="\Z[\ldots,T_n,\ldots]" />.  [Hint: Use Dirichlet&#8217;s theorem on primes in
+arithmetic progression.]</p>
+</div>
+<div class="admonition " id="exer:onlyold">
+<p class="first admonition-title">Exercise 9.3</p>
+<p class="last">Find an example like <a class="reference internal" href="#ex:onlyold"><em>Example 9.6</em></a> but in which the new subspace
+is nonzero.  More precisely, find an integer <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> such that the Hecke
+ring on <img class="math" src="_images/math/252d190820aad2217f31f27efbcbea106b1d99c9.png" alt="S_2(\Gamma_0(N))" /> is not equal to the ring generated by
+Hecke operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> with <img class="math" src="_images/math/8ee17f4a28237f80270667535435820d94d68105.png" alt="\gcd(n,N)=1" /> and
+<img class="math" src="_images/math/c8319e5f711e99aa4c8f0ebcf62b53e81b7e2eac.png" alt="S_2(\Gamma_0(N))_{\new}\neq 0" />.</p>
+</div>
+<div class="admonition " id="ex:31">
+<p class="first admonition-title">Exercise 9.4</p>
+<ol class="last loweralpha simple">
+<li>Following <a class="reference internal" href="#ex:23"><em>Example 9.15</em></a>, compute a basis for <img class="math" src="_images/math/8fbda7d9608b1db7f77083cba7652e099c826b9b.png" alt="S_2(\Gamma_0(31))" />.</li>
+<li>Use <a class="reference internal" href="#alg:merelqexp"><em>Algorithm 9.12</em></a> to compute a basis for
+<img class="math" src="_images/math/8fbda7d9608b1db7f77083cba7652e099c826b9b.png" alt="S_2(\Gamma_0(31))" />.</li>
+</ol>
+</div>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>John Cremona initially suggested to me the idea of separating
+these two maps.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Computing with Newforms</a><ul>
+<li><a class="reference external" href="#dirichlet-character-decomposition">Dirichlet Character Decomposition</a></li>
+<li><a class="reference external" href="#atkin-lehner-li-theory">Atkin-Lehner-Li Theory</a></li>
+<li><a class="reference external" href="#computing-cusp-forms">Computing Cusp Forms</a><ul>
+<li><a class="reference external" href="#a-basis-of-expansions">A Basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-Expansions</a></li>
+<li><a class="reference external" href="#newforms-systems-of-eigenvalues">Newforms: Systems of Eigenvalues</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#congruences-between-newforms">Congruences between Newforms</a><ul>
+<li><a class="reference external" href="#congruences-between-modular-forms">Congruences between Modular Forms</a><ul>
+<li><a class="reference external" href="#the-invariant">The <img class="math" src="_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j" />-invariant</a></li>
+<li><a class="reference external" href="#sturm-s-theorem">Sturm&#8217;s Theorem</a></li>
+<li><a class="reference external" href="#congruence-for-newforms">Congruence for Newforms</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#generating-the-hecke-algebra">Generating the Hecke Algebra</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#exercises">Exercises</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="modular_symbols.html" title="previous chapter">General Modular Symbols</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="periods.html" title="next chapter">Computing Periods</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/newforms.txt">Show Source</a></li>
+            </ul>
+    
+          <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" /> <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+    <br><br>
+    <h3>
+    <a
+href="http://www.ams.org/bookstore?co1=AND&co2=AND&co3=AND&d=BOOK&f=G&fn=105&l=100&op1=AND&op2=AND&op3=AND&p=1&pg1=&pg2=&pg3=ALLF&r=12&s1=&s2=&s3=modular%20forms&subject=genint&u=">
+Purchase a hardcopy of this book from the AMS</a></h3>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="periods.html" title="Computing Periods"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modular_symbols.html" title="General Modular Symbols"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Modular Forms, A Computational Approach v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009, William Stein.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.5.1.
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"c56c591b59be469aa916eeb2b6ecdcc9","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        57
+
+
+exploit the ensuing small linear forms whose generating function
+          ∞
+          X
+                 Bn,n (ξ) − (1 − ξ)ν An,n (ξ) z n
+                                             
+          n=0
+         ∞                                                       
+         X                 −ν − n − n              ν       ν−n −n
+     =          2 F1                  ; ξ − (1 − ξ) 2 F1          ;ξ    zn            (3.3.5)
+         n=0
+                               −2n                           −2n
+         ∞                                      ∞
+         X           zn                      ν
+                                               X            zn
+     ∈                           Z + (1 − ξ)                           Z
+           den(ν)2n den(ξ)n 2n                     den(ν)2n den(ξ)n 2n
+                               
+       n=0                   n                 n=0                  n
+                           √       −2      
+is holonomic on P1 ∖ 0, 1± 21−ξ          , ∞ and overconvergent at the smaller
+                         √     −2
+of these singularities 1+ 21−ξ      ; so the convergence disc of (3.3.5) is |z| <
+ √      −2
+  1− 1−ξ
+     2       , the distance to the next singularity. Baker [Bak64] famously used
+the {2, 3, ∞}-adic properties
+                         √      of (3.3.5) with the choice ν := −1/3 and    √ ξ := 3/128
+— so (1 − ξ)ν = (8/5) 3 2, and the 3-adic convergence      √  radius  is  1/  3, thanks to
+|ξ|3 = |3/128|3 = 1/3, rather
+                           √     than the “generic” 1/3 3, — to derive the explicit
+sub-Liouville inequality | 3 2 − p/q| > 10−6 q −2.955 . (Baker’s analysis is synthesized
+by [Chu83b, Theorem 3.5], following which Chudnovsky sets forth            to compute the
+exact denominators asymptotic to refine the crude 4n from 2n
+                                                                     
+                                                                   n   , and thus improve
+Baker’s effective irrationality measure to 2.43;
+                                             p      see also [Chu79].)
+   For the general cubic (or higher) root r a/b, this analysis stands no chance for
+a sub-Liouville effective irrationality measure (unless b is much bigger than |b − a|).
+But Thue [Thu77, § 9], in his groundbreaking paper Bemerkungen über gewisse
+Näherungsbrüche algebraischer Zahlen written in 1907, proved the ineffective irra-
+tionality measure 1 +p r/2 + ϵ by — in effect — observing that one excellent rational
+approximant p/q ≈ r a/b ∈ Q× ∩ (0, 1) yields the infinite set of fair rational ap-
+proximants
+                              pBn,n (1 − aq r /bpr )
+                                                        r
+                                                           a
+                                            r    r
+                                                     ≈ r ,
+                              qAn,n (1 − aq /bp )          b
+and that these form a fairly dense net of fair approximants, thus precluding
+                                                                          p          — by
+the gap principle — the existence of a second excellent p′ /q ′ ≈ r a/b. For that
+Thue used the x := 1 − aq r /bpr specialization in the polynomial identity (cf. [Sie37,
+Hilfssatz 2], or [AR80, Lemma 2] for an axiomatization)
+                                                             (n!)2
+   An,n (x)Bn+1,n+1 (x) − An+1,n+1 (x)Bn,n (x) = (−1)n−1               x2n+1 ,
+                                                        (2n)!(2n + 1)!
+                                                                          (3.3.6)
+with the nonvanishing determinant proving at once the requisite non-equality
+    pBn+1,n+1 (1 − aq r /bpr )     pBn,n (1 − aq r /bpr )
+                               ̸ =                        ,   for all n = 0, 1, 2, . . . .
+    qAn+1,n+1 (1 − aq r /bpr )     qAn,n (1 − aq r /bpr )
+For arbitrary algebraic targets α ∈ Q (other than r-th roots or cubic irrational-
+ities), where Thue could not rely on the explicit Hermite–Padé approximants to
+the binomial functions (1 − x)ν , he instead employed [Thu77, § 11] the Dirichlet
+box principle, in a flash of insight in the 1908 paper Om en generel i store hele tal
+uløsbar ligning, to derive the existence of similar (but vaguer) polynomial identities.
+58                               F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+His key discovery was that the inexplicit polynomial identities found nonconstruc-
+tively by the Dirichlet box principle worked, grosso modo, in essentially the same
+way as in the explicit special case of (3.3.4) and (3.3.6). In particular, Thue used a
+Wronskian determinant to replace the explicit determinant (3.3.6), now evaluating
+to some nonzero degree-2n+1 polynomial of the form x(2−η)n V (x), with small coef-
+ficients, for a suitably small parameter η > 0. As deg V ≤ ηn+1 — or alternatively,
+as Thue argued, since the coefficients of V are small, — the polynomial V (x) has
+forcibly a low order of vanishing at the point x = 1 − aq r /bpr . Then Thue runs the
+construction after taking the corresponding derivative of his auxiliary polynomials.
+(See also Zannier [Zan09, § 2] or Masser [Mas16, § 12] for a detailed treatment and
+a discussion of nuances.)
+    Shidlovsky’s lemma is a different generalization of Thue’s Wronskian argument,
+whose proofs can still roughly be summarized by a (higher rank) determinantal
+identity akin to (3.3.6) (of which the latter is strictly speaking a particular and
+representative case) remaining “almost in the monomial form.” It includes Theo-
+rems 3.2.8 and 3.2.10, and their multiple variations such as [Bom81, § 3] from the
+proof of Bombieri’s G-functions theorem that we discuss in § 15.1, and [DGS94,
+Prop. VIII.2.3], [CC85a, Theorem 3.1, Lemma 8.3] from the proof of the Chud-
+novskys’ fundamental theorem that we mentioned in Remark 3.2.12.
+
+
+3.3.7. The Hermite–Padé approximants to log(1 − x). We have [Jac1859, § 8] (see
+also Feldman–Nesterenko [PS98, ch. 2, § 3.2], Jager [Jag64], and Chu [Chu05] for
+various generalizations)
+            n  2                                                 n  2
+            X  n                                                   X  n
+        2                 (Hn−k − Hk ) (1 − x)k + log(1 − x)                 (1 − x)k
+                  k                                                      k
+            k=0                                                    k=0
+                                                                                         (3.3.8)
+                           1    n       n             2n+1
+                                t (t − 1)
+                      Z
+              2n+1                                   x                   2n+2
+        =x                                 dt = −            2n
+                                                                   + O(x       ),
+                       0       (tx − 1)n+1        (2n + 1)   n
+                  Pr
+where Hr :=           k=1      1/k are the harmonic numbers.
+
+Remark 3.3.9. In terms of the general Meijer G function
+                                Qm              Qn
+                                  j=1 Γ(bj − s)  j=1 Γ(1 − aj + s)
+                  Z                                                   ds
+   m,n a1 ··· ap
+  Gp,q b1 ··· bq z =         Qq                    Qp                zs     ,
+                      ℜ(s)=σ   j=m+1 Γ(1 − bj + s)   j=n+1 Γ(aj − s)    2πi
+
+the remainder term in (3.3.8) can be expressed also as −(n!)2 G2,0  n+1 n+1
+                                                                                 
+                                                               2,2   0   0  1−x .
+This general definition as a Barnes integral is valid under the assumption that all
+poles of all Γ(bj − s) are on the right of the integration line ℜ(s) = σ, while all
+poles of all Γ(1 − aj + s) are on the left of that line.                        △
+
+     Here,
+         n  2                                                 
+         X  n                       k  −n − n             n    2−x
+                       (1 − x) = 2 F1         ; 1 − x = x Pn         ,
+                  k                      1                      x
+         k=0                                                                            (3.3.10)
+                                         n
+                                     1    d
+                          Pn (x) := n           (x2 − 1)n
+                                   2 n! dx
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                   59
+
+
+in terms of the Legendre polynomials Pn (x): the complete orthogonal system on
+[−1, 1] under the Lebesgue measure and the normalization Pn (1) = 1. Their gen-
+erating series
+                                               ∞
+                                  1           X
+                           √                =     Pn (x)z n                 (3.3.11)
+                             1 − 2xz + z 2    n=0
+is precisely the function whose integrality properties — namely: that Pn is integer-
+valued on the odd integers, amounting to the Z[x] polynomials (2x)n Pn (1/x) in § 3.3.13
+below — we exploit in § 14.
+   If like in § 3.3.3 we multiply (3.3.8) by z n and sum the generating series over
+n ∈ N, the resulting
+                            Q[x]JzK + log(1 − x) Z[x]JzK
+function is holonomic in z and has its Z[x]JzK and Q[x]JzK components satisfy the
+homogeneous and inhomogeneous first-order ODEs
+         (−1 + 4z − 2xz − x2 z 2 )Y ′ (z) + (2 − x − x2 z)Y (z) = 0
+                                                      and                      (3.3.12)
+                             2 2    ′                 2
+         (−1 + 4z − 2xz − x z )Y (z) + (2 − x − x z)Y (z) = −x,
+respectively. These are holonomic functions on
+                                                              √      2
+                                                          1±    1−x
+               C ∖ {p− (x), p+ (x)} ,     p± (x) :=                        ,
+                                                               x
+where these singularities can be also directly obtained from (3.3.10) and (3.3.11).
+  Specializing x = 1/n and y = 1/m, we have
+                     p− (1/n)p+ (1/m)/|mn| = 1 + o|m/n|→1 (1).
+This asymptotic is related to the analyticity mechanism with Hadamard products
+in § 14.1, and could be also used there as an alternative, but ultimately equivalent
+given § 3.3.13 just below, proof of Theorem C.
+                                                       
+3.3.13. The Hermite–Padé approximants to log 1−x   1+x . The change of variables
+x 7→ 2x/(1 + x) in (3.3.8) rewrites the formula thus:
+        n  2                                                  
+       X    n                                             1−x
+     2           (Hn−k − Hk ) (1 − x)k (1 + x)n−k + log            (2x)n Pn (1/x)
+            k                                             1+x
+       k=0
+                      Z 1
+                             tn (t − 1)n              x2n+1
+      = (x + x2 )2n+1                   n+1
+                                            dt = −          2n + O(x
+                                                                       2n+2
+                                                                             ).
+                       0  (2tx −  1 − x)           (2n + 1)  n
+In § 14 we use the generating functions of these formulas specialized to x := 1/a
+with a a large odd integer.
+
+                         4. Concentration of measure
+   If we randomly and independently sample a very large number n−1 of uniformly
+distributed points of the segment [0, 1], the n spacings that remain will be almost
+surely close to some ordering of the set {log(n/j)/n : 1 ≤ j ≤ n}, while the n − 1
+sample points themselves will be almost surely close to some ordering of the set
+{j/n : 1 ≤ j < n}. These facts are simplest expressions of the Law of Large
+Numbers in statistics, with the precise quantitative decay rates being captured by
+the concentration of measure phenomenon of Dvoretzky and Milman [MS86, Mil92,
+60                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Led01] for the high-dimensional ℓr -ball, in the respective cases r = 1 and r = ∞. A
+popular expression of the measure concentration principle, due to Gromov [Gro07,
+§ 3 12 .20], is to say that the observable diameter of the unit volume ℓr -ball in the
+asymptotic of high dimension n is on the order of only √1n = o(1), in contrast to
+                                                                     √
+its diameter as a metric space which is on the order of n. It is the observable
+and not the metric properties that are relevant to the various auxiliary polynomial
+constructions undertaken in Diophantine approximation.
+   These specific distributions (and the finer statistics) are best expressed by the
+fact [BGMN05, Theorem 1] (going back18 to Émile Borel [Bor1914, § V] for the
+r = 2 case of the Euclidean ball; see also [SZ90, Lemma 1] or [RR91, § 3]) that the
+normalized volume measure of the n-dimensional ℓr ball is generated stochastically
+by the random vector
+                                                                                      !
+                             X1                                     Xn
+                                          1/r
+                                              ,...,                               1/r
+                                                                                        ,
+             (|X1 |r + . . . + |Xn |r + Z)          (|X1 |r + . . . + |Xn |r + Z)
+where X1 , . . . , Xn are independent and identically distributed random variables
+                                                    r
+                                         1
+with probability density function 2Γ(1+1/r)    e−|t| , and Z is a jointly independent
+random variable with the exponential density function e−t · χ[0,∞) (t). Moreover,
+the concentration function is Gaussian. These features are general, while for our
+purposes here, only the simplest statement with the ℓ∞ -ball is used. In this r → ∞
+limiting case, one additional (but only technical) simplification is that the random
+vector components in the stochastic generation of µ[−1,1]n are independent rather
+than merely asymptotically independent.
+   In the multivariable auxiliary Diophantine constructions §§ 6 and 8, we will
+use measure concentration ideas as described in § 2.13.4. One aspect of this is
+to constrict the component sets {kj } of the high-dimensional exponent vectors k
+in all the monomials xk occurring in the auxiliary polynomial constructions from
+the evaluation modules that we introduced in § 2.13.1 and studied in § 3.1. This
+type of application is among the most standard in Diophantine approximation,
+after the classic works of Roth [BG06, § 6.3.5] and Schmidt19 [BG06, § 7.5.15], and
+especially Wirsing [Wir71, § 4.2] (see also [Sto74, Theorem 7.2.1] for two alternative
+and more detailed treatments of the relevant material from Wirsing’s argument).
+Methodologically our high-dimensional Diophantine analysis in § 6 is rather similar
+to the multivariable auxiliary polynomial constructions that Wirsing used in the
+
+    18
+      The classic theorem relating the normal distribution to the Euclidean sphere is popularly
+ascribed to Poincaré in 1912, but see [DF87, § 6] for a scrupulous historical research, and a
+discussion of a broader context.
+    19In the proof of Schmidt’s Subspace theorem, the “d + 1” exponent for the bad approxima-
+bility in projective space Pd receives a probabilistic explanation as the reciprocal of the equal
+expectations of the individual coordinates of a point ξ taken at random from the surface bound-
+ary of the d+1-dimensional standard simplex. The concentration property, used for the parameter
+count at the auxiliary polynomial construction in the Thue–Siegel lemma, states precisely that all
+the column sums in a tall n × (d + 1) matrix made of n → ∞ such independent and identically
+distributed random rows ξ converge in probability to the expectation n/(d + 1), at an asymptotic
+rate exponential in −n. See [FW94, § 3, Example 1 ] for a broader context of Harder–Narasimhan
+filtrations on graded algebras of auxiliary functions. The work of Faltings and Wüstholz made a
+deeper use of probability measures which, in combination with the Faltings product theorem for
+directly treating the nonvanishing of the auxiliary construction at the special point, ultimately
+eliminates the difficult geometry of numbers part from Schmidt’s proof.
+               THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                 61
+
+
+proof of his theorem on the bad approximability of a fixed algebraic target by
+algebraic approximants of a given degree.
+
+4.1. The Erdös–Turán bound. Recall the definition of the box discrepancy func-
+tion on the hypercube; cf [CDT21, § 2.5.3].
+Definition 4.1.1. The (normalized, box) discrepancy function D : [0, 1]n →
+(0, 1] is the supremum over all closed intervals I = [a, b] ⊂ [0, 1] of the defect
+between the length µLebesgue (I) = b − a of I and the proportion of points falling
+inside I:
+                                                         1
+               D(t1 , . . . , tn ) := sup µLebesgue (I) − #{i : ti ∈ I} .
+                                     I⊂[0,1)             n
+                                  ≃
+  With the identification [0, 1)n −  → Tn induced from e(t) := exp(2πit), harmonic
+analysis on the circle supplies a basic way to upper-bound the discrepancy function.
+The Erdös–Turán inequality states [DT97, Theorem 1.14]
+                                   K
+                                                                  !
+                            1     X   1 e(kt1 ) + . . . + e(ktn )
+  D(t1 , . . . , tn ) ≤ 3      +                                    ∀K ∈ N, (4.1.2)
+                          K +1        k            n
+                               k=1
+
+in terms of the character sums on the group T.
+
+4.2. The large deviations bound. The following estimate will be critical.
+Theorem 4.2.1. There exist two absolute positive constants C, c ∈ R>0 such that
+for any ε > 0 and any n ∈ N with n ≥ C/ε5 , the set
+                          Bεn := {t ∈ [0, 1]n : D(t) ≥ ε}
+                                                       4
+has n-dimensional Lebesgue measure smaller than e−cε n .
+   The simple proof below will show that we can take c = 1/600 and C = 6000 in
+                                                              4
+this theorem. This particular ad hoc exponential bound e−ε n/600 is not the best
+possible; the Dvoretzky–Kiefer–Wolfowitz–Massart theorem, see Remark 4.2.9 after
+                                                                  2
+the proof of Theorem 4.2.1, leads to the clean volume bound 2e−ε n/2 . However, all
+we need in our present paper is the exponential decay in −n for a fixed ε, and for
+Theorem 4.2.1 we can give a very short proof from combining the Erdös–Turán the-
+orem with the most standard form of Hoeffding’s concentration inequality [Hoe63].
+   For the sum of independent random variables X1 , . . . , Xn taking values in the
+interval [−1, 1], Hoeffding’s inequality [BLM13, Theorem 2.8] bounds the large de-
+viation tail probability exponentially by
+                                                              2
+          P X1 + . . . + Xn − E[X1 + . . . + Xn ] ≥ εn ≤ 2e−ε n/2 .         (4.2.2)
+
+On changing ε to ε/2 and using the triangle inequality and the subadditivity of
+probability, we can apply this to the real and imaginary parts of T-valued indepen-
+dent random variables Z1 , . . . , Zn to get the following variant:
+Lemma 4.2.3 (Hoeffding). The sum of independent random variables Z1 , . . . , Zn
+taking values in the complex unit circle T has the tail probability large deviations
+bound
+                                                            2
+         P Z1 + . . . + Zn − E[Z1 + . . . + Zn ] ≥ εn ≤ 4e−ε n/8 .           (4.2.4)
+62                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Proof of Theorem 4.2.1. In combination with the Erdös–Turán bound, we derive a
+proof of the theorem, with the following explicit estimate. Take Z1 , . . . , Zn to be
+independent and uniformly distributed points of the circle T. Then E[Z1k + . . . +
+Znk ] = 0 for all k = 1, 2, . . ., giving uniformly by Hoeffding’s bound (4.2.4)
+
+                             1 Z1k + . . . + Znk
+                                                    
+                                                              2 2
+                       P                          ≥ ε ≤ 4e−ε k n/8 .             (4.2.5)
+                             k           n
+It follows that for every K ∈ N and ε > 0 the probability
+                   K
+                                                     !
+             3     X 1 Z1k + . . . + Znk     3               2
+      P         +3                       ≥      + 3Kε ≤ 4Ke−ε n/8 .
+           K +1      k        n            K +1
+                      k=1
+
+If we firstly change ε to (ε/6)2 and then select K := ⌊6/ε⌋, we derive
+       (                 K
+                                                   !)
+                3       X   1 Z1k + . . . + Znk                          4
+                                                                               
+   inf P            +3                          ≥ε    ≤ min 1, (24/ε)e−ε n/288 .
+  K∈N         K +1          k        n
+                        k=1
+                                                                            (4.2.6)
+By the Erdös–Turán inequality (4.1.2), the left-hand side of (4.2.6) is an upper
+bound on our requisite vol(Bεn ) = vol({D(t) ≥ ε}). The right-hand side of (4.2.6)
+                     4
+is majorized by e−ε n/600 for all ε > 0 and all n ≥ 6000/ε5 .                    □
+
+Remark 4.2.7. For a reader who may prefer to avoid all appeal to probability the-
+ory in these volume estimates, we point out that the appeal to Hoeffding’s inequality
+can be straightforwardly replaced by the proof technique in [BG06, Lemma 6.3.5].
+                                                                                   △
+
+Remark 4.2.8. The existence of an exponential (in the negative of the dimension)
+asymptotic decay rate is a hallmark of basic concepts of entropy in the theory of
+large deviations [Ell06]. The specific rate estimate worked out in Theorem 4.2.1 is of
+no consequence for our purposes, but its existence is used crucially in §§ 6, 8. An al-
+ternative path to Theorem 4.2.1, not using harmonic analysis and the Erdös–Turán
+bound (and with different, indeed better numerical constants c, C), but instead
+taking for base the rudimentary Chebyshev estimate [Wir71, Lemma 12], can be
+                                2
+derived from the bound ≤ e−πr on the concentration function [Led01, Prop. 2.8] for
+                              n
+the uniform measure on [0, 1] . In Ledoux’s book, the latter concentration inequal-
+ity is obtained as a consequence [Led01, Cor. 2.6] under a contraction of the sharp
+                2
+estimate ≤ e−r /2 for the concentration function of the canonical Gaussian measure
+on Rn . The latter, in turn, is traditionally a consequence of Lévy’s isoperimetric
+inequality on the Euclidean sphere [Led01, Theorem 2.3].                            △
+
+Remark 4.2.9. In fact the true decay exponent is on the order of ε2 n and not ε4 n.
+Even within the simple line of approach that we gave, the cε4 term is not optimal,
+and with more careful work it readily improves to cε2 / log2 (1/ε), with c = 1/300.
+                                            2
+   The clean bound turns out to be 2e−ε n/2 . This ultimate refinement seems to
+require a longer and altogether different path; it can be proved from the Dvoretzky–
+Kiefer–Wolfowitz theorem [DKW56] as strengthened by Massart [Mas90]. We refer
+to [Dud14, § 1.5 of the Second Edition] for a treatment in the context of the
+Brownian bridge, and to [Ree24] for a different and more recent approach.         △
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                 63
+
+
+                        5. The cost of an integration
+   The basic idea of our solution [CDT21] of the unbounded denominators con-
+jecture is that we can get useful holonomy bounds on certain Q(x)-linear spaces
+of algebraic functions that come from a supposed ZJqK modular function f (τ ) on
+a noncongruence subgroup of SL2 (Z), expanded formally in the modular function
+x = λ/16 via the equality of rings ZJqK = ZJxK. In that setting, the key point
+was in getting an asymptotically tight holonomy bound which only runs into a
+contradiction upon successively including more and more functions with the trans-
+formation f (τ ) ⇝ f (pτ ) for a range of primes p, and finding that the increase in
+the dimension of ZJqK modular functions is more than the increase in the holonomy
+bound, unless f (τ ) was congruence to begin with.
+   In our present paper, we have a somewhat analogous scheme where the      R role of
+the transformation f (τ ) ⇝ f (pτ ) is taken up by an integration f (x) ⇝ (f (x) −
+f (0)) dx
+        x . Here it is more of a gamble whether or not the increase in the dimension
+(which we compute in § 12 and § 14.3 for our main application to Theorems A and C)
+turns out enough of a compensation for the increase in the bound (which comes
+entirely through the added denominators, and is handled in the present section by
+a prime number theorem estimate). We find it astonishing that the integrations
+gamble succeeds as a crucial ingredient for both of our main applications in the
+present paper: Theorem A on the Q-linear independence of 1, ζ(2), and L(2, χ−3 ),
+and Theorem C on the irrationality of certain products of two logarithms.
+   This section establishes some preparatory Lemmas which will be used to com-
+pute the added denominator cost for including such integrations into the setup of
+Theorem 2.5.1. The upshot will be the integration cost function of Definition 6.0.1
+of the next section, and our main result Theorem 6.0.2 where this function is used
+to define an added denominators term τ ♯ to the τ (b) of Theorem 2.5.1.
+   The following lemma is a direct consequence of the prime number theorem.
+Lemma 5.0.1.
+  (1) If k ∼ γn for a fixed γ ∈ (0, 1], the lowest common multiple Ln,k of the
+      consecutive integers n − k, n − k + 1, . . . , n is asymptotic under n → ∞ to
+                                                          
+                            ⌊1/γ⌋−1
+                              X 1                n
+                    exp             k +             + o(n) .              (5.0.2)
+                                    h        ⌊1/γ⌋
+                               h=1
+
+       This bound is uniform for all γ ≥ γ0 , where γ0 > 0 is a fixed constant.
+       Precisely: for each ϵ > 0, there exists an N = N (γ0 , ϵ) ∈ R such that
+       for all n ≥ N and γ ≥ γ0 , if we set k := ⌊γn⌋, then the estimate (5.0.2)
+       on Ln,k holds with the o(n) replaced by an error term that does not exceed
+       ϵn in absolute value.
+   (2) If k = o(n), then the lowest common multiple Ln,k of the consecutive inte-
+       gers n − k, n − k + 1, . . . , n is exp(o(n)).
+   (3) In either case, as n → ∞, we have uniformly for 0 ≤ k < n the upper bound
+                                                               
+                                    ⌊1/γ⌋−1
+                                       X 1              n
+                 Ln,k ≤ exp                  k +         + o(n) ,
+                                             h        ⌊1/γ⌋
+                                     h=1
+
+        where γ := k/n. For k = 0, γ = 0, the last formula is to be interpreted
+        as exp(o(n)). The error term o(n) in this upper bound is uniform.
+64                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Basic Remark 5.0.3. If k ≥ n/2, then [1, 2, . . . , n] = [(n − k), . . . , n], because
+if p ≤ n then some multiple of p lies in [n/2, n]. Hence Ln,k does not depend on k
+within this range. With γ = k/n and n → ∞, the exponent in this inequality in
+terms of γ as a multiple of n is given in Figure 5.0.4.                             △
+
+
+
+
+        Figure 5.0.4. The bound for log(Ln,k )/n as a function of γ = k/n
+        with n → ∞.
+
+Proof of Lemma 5.0.1. We begin with part (1). By the        Pprime number theorem, the
+main term in [1, . . . , n] (after taking log) is given by p≤n log p (i.e., we may just
+count primes without counting multiplicities). The error term here is independent
+of γ. Thus the exponential asymptotic rate of [n − k, . . . , n] is given by counting
+how many of the primes p ≤ n divide at least one among n − k, . . . , n. The only
+primes p ≤ n not occurring in this count are those that admit an a ∈ N>0 such that
+ap < n − k and (a + 1)p > n. Given such an a, the primes p in question are exactly
+the primes from the interval (n/(a + 1), (n − k)/a). This is a non-empty interval if
+and only if a + 1 < 1/γ; in which case its length equals n((1 − γ)/a − 1/(a + 1)).
+Hence, log [n − k, . . . , n] amounts to
+                                                             
+                               ⌊1/γ⌋−1
+                                 X
+                   n 1 −              ((1 − γ)/a − 1/(a + 1)) + o(n)
+                            a=1
+                                                       
+                               ⌊1/γ⌋−1
+                                  X
+                    = n γ              1/a + 1/(⌊1/γ⌋) + o(n).
+                                  a=1
+
+Note that from our assumption γ ≥ γ0 , the above sum is a finite sum with a uniform
+upper bound on its number of terms. Also, the error term from the prime number
+theorem is uniformly controlled as it is only being applied to intervals whose lengths
+and endpoints are controlled uniformly in n.
+   We now consider case (2) of Lemma 5.0.1. The precise formulation of the first
+assertion is that for each ϵ > 0, there exist N = N (ϵ) and δ = δ(ϵ) such that for all
+n > N and all k < δn, we have log Ln,k < ϵn. This is a consequence of (1). More
+precisely, for δ < 1/2 by definition, for all k < δn, we have
+                                                                
+                                   ⌊1/δ⌋−1
+                                     X 1               n
+          Ln,k ≤ Ln,δn = exp                 δn +       + oδ (n)
+                                           h         ⌊1/δ⌋                   .
+                                     h=1
+
+                         ≤ exp δ(1 + log(1/δ)) + (1/δ − 1)−1 n + oδ (n)
+                                                                          
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  65
+
+
+Note that limδ→0 δ(1 + log(1/δ)) + (1/δ − 1)−1 = 0; we pick a δ = δ(ϵ) with
+                   
+
+δ(1 + log(1/δ)) + (1/δ − 1)−1 < ϵ/2. For this δ, by (1), there exists N = N (δ, ϵ) =
+N (ϵ) such that for n > N , the error term oδ (n) < (ϵ/2)n. Then for all n > N and
+k < δn, we have Ln,k < ϵn.
+   The precise formulation of part (3) is that for each ϵ > 0, there exists N = N (ϵ)
+such that for all n > N and all 0 ≤ k < n, we have
+                                            
+                                   ⌊1/γ⌋−1
+                                     X 1
+                      log Ln,k ≤             k + n + ϵn.
+                                           h        ⌊1/γ⌋
+                                     h=1
+
+From the proof of part (2), there exists δ = δ(ϵ) such that the above inequality
+holds for all n > N1 (ϵ) and all k < δn. From part (1) with γ0 := δ, the requisite
+inequality is also true for all n > N2 (δ, ϵ) = N2 (ϵ) and all k ≥ δn. Combining these
+cases, we arrive at the requisite upper bound for all n > max{N1 (ϵ), N2 (ϵ)} and
+all k ∈ {0, 1, . . . , n}.                                                          □
+
+  The following is a variant of the above lemma.
+
+Lemma 5.0.5.
+   (1) Fix γ0 ≤ γ0′ ∈ (0, 1). For k, l ≤ n such that γ0 ≤ k/n and γ0 ≤ l/n ≤ γ0′ ,
+       the logarithm of the product L≥ln,k of the primes p > l that have some multiple
+       in the interval [n − k, n] is asymptotic — as n → ∞ uniformly with respect
+       to k, l — to
+                             
+         ⌊(n−k)/ max(k,l)⌋                                            +
+               X                                   n
+     k                    1/h +                                 −  l    + o(n),
+                                     ⌊(n + (l − k)+ )/ max(k, l)⌋
+               h=1
+
+                                                                   Pb
+         where α+ := max(0, α) and the convention being that           h=a is over all
+         integers in the range a ≤ h ≤ b, and the empty sum is zero.
+    (2) Moreover, as n → ∞, for all 0 ≤ k, l ≤ n, we have
+                                    
+                ⌊(n−k)/ max(k,l)⌋                                         +
+      ≥l
+                       X                               n
+log Ln,k ≤ k                     1/h +
+                                                                       −l    + o(n),
+                                          ⌊(n + (l − k)+ )/ max(k, l)⌋
+                     h=1
+
+        where the error term is uniform with respect to all k, l.
+           (If k = l = 0, the right-hand side of the above bound is to be interpreted
+        as o(n).)
+
+Proof. We begin with part (1). As in the proof of Lemma 5.0.1, the primes p ≤
+n that do not have any multiples among n − k, . . . , n are the ones that lie in
+ ⌊n/k⌋−1
+∪a=1     (n/(a + 1), (n − k)/a). The new assumption p > l here implies that a <
+(n − k)/l, and hence that
+                                           
+           ⌊(n−k)/k⌋
+         ∪a=1         (n/(a + 1), (n − k)/a) ∩ (l, n]
+                                         
+               0 −1
+       = ∪ha=1      (n/(a + 1), (n − k)/a) ∪ (max(n/(h0 + 1), l), (n − k)/h0 ),
+
+where h0 = ⌊(n − k)/ max(k, l)⌋.
+

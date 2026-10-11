@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-06",
+  "author": "/root/conifold_arithmetic_hypothesis",
+  "state": "FINAL REVIEWED FROZEN: author actual full reread; root and toric actual full independent mathematical review passed. Proof, successful first-only source and JSON are frozen read-only; receipt final metadata is pinned one-way.",
+  "baseline": {"frozen_math_input_count": 455, "old_and_peer_mathematical_execute_import_rerun_count": 0},
+  "mathematical_artifacts": [
+    {"path": "research/cdt_odd_paired_jacobi_modified_target_normality_20261006.md", "sha256": "c4dcee183239be55ab6c4e06d4b1abb1979657838f02a5c64104c45cc1fed9c4", "read_scope": "author actual complete 13 sections and equations T1-T27; no truncation"},
+    {"path": "research/cdt_odd_paired_jacobi_modified_target_normality_20261006_verify.py", "sha256": "4f525b33ca7664912192daab4628db39a992ed9f3bea1df753bc6e3f253aa69b", "read_scope": "author actual complete source before first execution; no old or peer producer read/import/execute by this source"},
+    {"path": "research/cdt_odd_paired_jacobi_modified_target_normality_20261006_verify.json", "sha256": "b9f5285e3440101fa326a00c0303259262202aa428073374ec00727fa1d31a84", "read_scope": "author actual complete saved JSON after execution, all three cases and all fields"}
+  ],
+  "execution_history": [{"command": "python research/cdt_odd_paired_jacobi_modified_target_normality_20261006_verify.py", "ordinal": 1, "exit_code": 0, "status": "PASS", "cases": 3, "exact_checks": 692, "case_r": [1,2,4], "scope": "Structural identities on previously considered scales only; no auxiliary-prime table expansion. Output-exists guard; source and result remain unmodified after execution.", "failure_count": 0}],
+  "sources": [
+    {
+      "title": "Hankel determinants of linear combinations of moments of orthogonal polynomials, II",
+      "author": "Christian Krattenthaler",
+      "url": "https://arxiv.org/pdf/2101.04225v1",
+      "path": "literature/cdt_paired_modified_target_sources_20261006/krattenthaler2021_modified_hankel_christoffel_arxiv2101_04225v1.pdf",
+      "sha256": "6ee728bafe1ac1467050df139da6e86c9395f7fb7f7c77b769d0bb5388120fff",
+      "archive_pages": 24,
+      "actual_author_read_pdf_pages": [1,2,3,4,5,7,8,9,10,11,12,13,14,15,16,17],
+      "actual_author_distinct_pages": 16,
+      "scope": "Printed Theorem 1 characteristic-zero and nonzero-norm hypotheses; condensation, confluence and polynomial-transform formulas. Does not supply finite-field target normality; paper T24 is proved separately. PDF6 and18-24 not read."
+    },
+    {
+      "title": "Christoffel transformations for matrix orthogonal polynomials in the real line and the non-Abelian 2D Toda lattice hierarchy",
+      "authors": ["Carlos Alvarez-Fernandez", "Gerardo Ariznabarreta", "Juan Carlos Garcia-Ardila", "Manuel Manas", "Francisco Marcellan"],
+      "url": "https://arxiv.org/pdf/1511.04771v1",
+      "path": "literature/cdt_paired_modified_target_sources_20261006/alvarez_fernandez_etal2015_matrix_christoffel_arxiv1511_04771v1.pdf",
+      "sha256": "082d479245929dc979f510fe5f082468de37d003623c6989c01def7c99759ded",
+      "archive_pages": 34,
+      "actual_author_read_pdf_pages": [1,2,3,4,5,8,9,10,14,15,16],
+      "actual_author_distinct_pages": 11,
+      "scope": "Nondegenerate all-prefix matrix moment hypothesis, Gauss factorization, Theorem 2 explicit nonzero interpolation determinant and inverse. No direct application to unequal finite-field actual profile; other23pages not read."
+    }
+  ],
+  "source_transport": "Normal verified TLS via Invoke-WebRequest; independent new originals; no certificate bypass.",
+  "archive_page_total": 58,
+  "actual_author_distinct_pdf_page_total": 27,
+  "proved_scope": [
+    "Actual four-Q-source full N=5r+1 unequal-profile determinant is a unit for every auxiliary p=18r+1; actual source realization rank N",
+    "Actual fixed lambda2 G0/M5 exact norm-free Loewner, bordered update and multiseed compound Christoffel determinant identities",
+    "Finite-support Christoffel polynomial identity allowing singular later profiles and zero norms beyond support, proved independently of characteristic-zero printed theorem",
+    "Same-node chi- and halfjet-preserving diagnostic parameter-family counterexamples at p19 lambda8 scalar and lambda6 matrix; neither is a counterexample to original fixed lambda2"
+  ],
+  "not_proved": ["Infinite original simultaneous critical G0/M5 units", "Global Krylov arithmetic model or archimedean fee reduction", "Strict arithmetic-analytic margin", "New zeta or L-value irrationality theorem", "Free physical choice of diagnostic lambda"],
+  "independent_review_confirmations": {"root": "Actual full c4dcee proof, complete static PY4f525 and all three cases/every JSON field read; paper T1-T27 passed without mathematical corrections. Root primary actual Kratt1-3 and Alvarez8-9,15-16 is distinct from author27pages.", "toric": "Actual full c4dcee proof, complete static PY4f525/JSONb9f and candidate receipt d1d671 read; paper passed without mathematical corrections. Reviewer primary actual Kratt1-3,13-14 and Alvarez8-9,15-16,9distinct pages. Formal review path research/cdt_odd_paired_jacobi_modified_target_normality_independent_review_20261006.md; its eventual final SHA is pinned separately by root, not cyclically embedded here."},
+  "author_new_formal_peer_review": {
+    "path": "research/cdt_odd_paired_direct_gram_support_independent_review_20261006.md",
+    "sha256": "80c2095ba8fa2fbc7cf21c83335240c5666e573154644036a0490763b3a9c331",
+    "actual_scope": "Complete quarter150bb C1-C10/equations C1-C21 and47merged rows; complete toric2856 G1-G15 and frozen dual0fb995 D1-D10. Both peer PY complete static reads. Toric JSON0fd35 all45cases/everyfield/twosources/all13affine records and metadata; quarter JSON6db2 complete syntax parse, metadata and first/last complete raw records, not manual all471rawrecords. Candidate quarter receipt6c246 and toric87be actual complete reads. New formal review complete author reread then frozen.",
+    "conclusion": "Actual psi GL, degree/ragged support cap, exact paired lifts, whole-X DND, already-paid max credit, uniform endpoint errors and PNT passed. Disjoint p<=n and n<p<=2n paid windows can combine; new overlapping weighted windows require common max. Does not prove nonzero, exact GramSmith or special-value theorem.",
+    "reviewer_math_execute_import_rerun_count": 0,
+    "reviewer_new_primary_read_pages": 0
+  }
+}

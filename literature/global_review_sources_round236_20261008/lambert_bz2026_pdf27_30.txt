@@ -1,0 +1,205 @@
+                   ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)                                 27
+
+  Returning now to the original normalisation (35) of well-poised hypergeometric
+series F7 (b), the above can equivalently be expressed by saying that
+                                             Y
+                                    F7 (b) ·   hi !
+                                                 i∈F
+
+is invariant under G, for the 17-element index set F defined in equation (27).
+    This change in normalisation enables us to compare the asymptotics of (1) with
+that of its dual. More precisely, it is known that there are three asymptotic quantities
+λ̂1 , λ̂2 , λ̂3 ∈ R assigned to the behaviour of F7 (bn) as n → ∞ (see, e.g., [24, 26]),
+which are related to the real numbers (21). With appropriate labels (for example,
+setting λ̂3 = limn→∞ F7 (bn)1/n ) they satisfy
+                            λ̂1 = λ−1
+                                   1 ,     λ̂2 = λ−1
+                                                  2 ,     λ̂3 = λ−1
+                                                                 3
+
+for any fixed choice of a.
+   The above analysis gives good reasons to expect that the symmetries and duality
+between 8π8∨ and 8 π8 (namely, of cellular integrals (1) and (33)) extend to general
+k-fold cellular integrals. This is bolstered by an analysis of the (known!) cases
+k = 4, 5, which correspond to (self-dual) rational approximations to ζ(2) and ζ(3).
+
+                               11. Proof of Theorem 1
+  Let us look at a concrete example a         = (8, 16, 10, 15, 12, 16, 18, 13) corresponding
+to the following matrix (36):
+                            17 8 9             10   11   12   13
+                                                               
+                           8 16 10            11   12   13   14
+                           9 10 15            12   13   14   15
+                                                               
+                          10 11 12            14   14   15   16
+                                                               
+                          11 12 13            14   13   16   17
+                                                               
+                          12 13 14            15   16   12   18
+                            13 14 15           16   17   18   11
+The ordered version of the corresponding 28-multiset h is
+         {8, 9, 10, 10, 11, 11, 11, 12, 12, 12, 12, 13, 13, 13, 13,
+                                   14, 14, 14, 14, 15, 15, 15, 16, 16, 16, 17, 17, 18},
+so that m1 = 18, m2 = m3 = 17 and m4 = m5 = 16. (If the refined estimate on the
+denominators were known, as discussed in Remark 5, then in view of
+    h′ = {8, 9, 10, 10, 11, 11, 12, 12, 12, 13, 13, 13, 14, 14, 14, 15, 15, 16, 16, 17, 18},
+                              h′′ = {11, 12, 13, 14, 15, 16, 17},
+the only way that it could coincide with the above selection m = {18, 17, 17, 16, 16}
+would be if ℓ = 3 or 4 in the notation of that remark. If the true value of ℓ in
+this case were to differ from 3 and 4, there would be a small potential gain for the
+worthiness of our approximations to ζ(5).) The orbit of the vector a under the
+28                              FRANCIS BROWN AND WADIM ZUDILIN
+
+group G is of full order 5040; by computation, the gain in the denominator coming
+from the factorial prefactors in the action of G is
+                                    log Φn
+                               lim          = 34.39425186 . . . .
+                              n→∞      n
+For the asymptotics, we find that
+                                 log |I(an)|
+                           lim                = −66.05784567 . . . ,
+                          n→∞         n
+               log |I ′ (an)|           log |Qn ζ(5) − Pn |
+           lim                  = lim                       = −31.55296934 . . . ,
+          n→∞        n             n→∞           n
+                                    log Qn
+                               lim          = 85.08768883 . . . .
+                              n→∞      n
+Because
+              −31.55296934 . . . + 18 + 17 + 17 + 16 + 16 − 34.39425186 . . . > 0,
+we cannot make any conclusions about the irrationality of ζ(5). However, in the
+notation
+                         log |Qn ζ(5) − Pn |              log Qn
+              C0 = lim                       , C1 = lim          > C0 ,
+                    n→∞           n                 n→∞       n
+                                                     log Φn
+                         C2 = m1 + · · · + m5 − lim           ,
+                                                 n→∞    n
+we can apply the calculation from Section 2 with c0 = C0 + C2 , c1 = C1 + C2 to
+conclude that the worthiness of our approximations is
+                                 C1 − C 0
+                         γ(a) =            = 0.86597135 . . . .
+                                 C1 + C 2
+This establishes the result in Theorem 1.
+
+                                  12. (In)conclusive comments
+   There are still some mysteries remaining behind the true arithmetic of the inte-
+grals (1). We have observed numerically that the exponents νp in (29) extracted
+from the group G action are not always optimal (although any losses are insignifi-
+cant). For example, with the choice a = (15, 20, 16, 14, 18, 17, 16, 20) (which leads to
+a slightly worse worthiness exponent γ = 0.85163139 . . . ) we obtain νp = 3 for the
+                     1                1
+primes p satisfying 19 ≤ {n/p} < 18     ; experimentally, we find (for n up to 40) that
+the inclusions (30) remain valid if one replaces this exponent by 4 in the definition
+of Φn (a). This additional gain will increase the worthiness in this case (very mod-
+erately) to 0.85665016 . . . . Such arithmetic losses5 do not mean that there exists in
+reality a larger group of transformations acting on the integrals I(a); as explained
+in Section 8, the group G is exhaustive. Nevertheless, we expect the extra savings to
+come from different integral representations, each possessing their own arithmetic.
+Such a phenomenon has been observed for the simultaneous rational approximations
+to ζ(2) and ζ(3) in [29]. But what are those other representations? The machinery
+     5No   losses are detected for our choice a = (8, 16, 10, 15, 12, 16, 18, 13) in Section 11.
+                        ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)                                        29
+
+in [6] allows one to generate a very large number of alternative forms of the inte-
+gral (1), which are slightly more involved but which potentially have arithmetic of
+their own. For example, a change of variables brings the integral to the form
+                            xa12 (1 − x1 )a1 x2a1 +a2 (1 − x2 )−a2 −a3 +a4 −a6 +a7 +2a8 xa31 −a3 +a4 +a8
+           Z Z
+                                     × (1 − x3 )a5 xa41 −a3 +a4 +a5 (1 − x4 )a6 xa54 (1 − x5 )a1 −a3 +a5
+  I(a) =        ···
+                             (1 − x2 x3 x4 x5 )a1 −a3 (1 − x1 x2 )a1 −a3 −a6 +a7 +a8 (1 − x2 x3 )a8
+               [0,1]5
+                                             × (1 − x3 x4 )−a2 −a3 +a4 +a5 +a8 (1 − x4 x5 )a5 +a6 −a8
+                       x2 x3 x4 dx1 dx2 dx3 dx4 dx5
+           ×                                                    ,                                     (37)
+               (1 − x1 x2 )(1 − x2 x3 )(1 − x3 x4 )(1 − x4 x5 )
+which is similar to (8) except for the extra factor (1 − x2 x3 x4 x5 )a1 −a3 in the de-
+nominator. Clearly, such representations (37) are available for every I(ga), where
+g ∈ G, and they do not degenerate to the form (8) if the exponent of 1 − x2 x3 x4 x5
+is nonzero.
+   The central idea of this note was to present a new approach to the elimination
+of parasitic terms amongst small linear forms in zeta values by viewing them as
+simultaneous approximations. The price to pay was that one must pass to the
+subleading asymptotic. The example we have studied here is by no means isolated,
+and extends to the case of 7-fold and higher-dimensional cellular integrals. By way
+of example, consider the cellular integral corresponding to (10, 2, 4, 1, 6, 3, 8, 5, 9, 7)
+on M0,10 , referred to as ‘vanishing in the middle’ in [6, Sect. 10.2.6, Example (4)].
+Experimentally, it underlies a motive of rank 4 with semi-simple pieces Q(0), Q(−2),
+Q(−5), Q(−7). The totally symmetric version of this family is given by the integrals
+                Z                                                                            n
+                     t1 (t2 − t1 )(t3 − t2 )(t4 − t3 )(t5 − t4 )(t6 − t5 )(t7 − t6 )(1 − t7 )
+        Z
+   In =     ···
+                          (t3 − t1 )t3 t5 (t5 − t2 )(t7 − t2 )(t7 − t4 )(1 − t4 )(1 − t6 )
+       0<t1 <···<t7 <1
+                                                   dt1 · · · dt7
+                 ×                                                                       .
+                        (t3 − t1 )t3 t5 (t5 − t2 )(t7 − t2 )(t7 − t4 )(1 − t4 )(1 − t6 )
+On the surface, they give linear forms in 1, ζ(2), ζ5 , ζ7 where ζ5 , ζ7 are (linear com-
+binations of) multiple zeta values of weights 5 and 7, respectively. Upon closer
+scrutiny, we may write them as a combination of two linear forms:
+                                            In = In′ + In′′ ζ(2),
+where In′′ is a linear form in 1, ζ(3), ζ(5) and In′ is a linear form in 1, ζ(5), ζ(7)
+obtained by setting ζ(2) = 0 in In . For example, the cases n = 0, 1, 2 give
+       75
+   I0 =   ζ(7) − 9ζ(5)ζ(2),
+        4
+            75                                                      
+   I1 = 61 · ζ(7) − 300 · 3ζ(5) − 220 − 61 · 9ζ(5) − 300 · 2ζ(3) + 152 ζ(2),
+              4
+               75                         6021219 
+   I2 = 52921 · ζ(7) − 261153 · 3ζ(5) −
+                 4                           32
+                                            535857 
+          − 52921 · 9ζ(5) − 261153 · 2ζ(3) +          ζ(2),
+                                                4
+30                          FRANCIS BROWN AND WADIM ZUDILIN
+
+where the linear forms In′ and In′′ are also small (but not as small as In itself). Thus,
+a similar analysis to the one undertaken in this note might possibly lead to a result
+of the form ‘at least one of ζ(5) and ζ(7) is irrational’.
+   The idea of using the subleading asymptotics of integrals to remove parasitic
+periods should prove fruitful in other contexts where it may take a more subtle
+form than simply setting ‘ζ(2) = 0’. There are several technical limitations at the
+moment to execute this strategy in higher weights. For example, calculating higher
+weight integrals for small values of the parameters does not seem practical with
+current tools. A possible way to overcome these difficulties is to create an entirely
+new theoretical machinery for the arithmetic and asymptotics of the integrals in
+question based on the underlying algebraic geometry and contiguity relations. This
+seems to be a good challenge already for the family 8π8∨ analysed in this note.
+   From a broader perspective, this note is possibly the first systematic exploration
+of a cellular family of integrals which goes beyond the previously known cases for
+ζ(2) and ζ(3). In the process, we have uncovered several inter-related mathematical
+structures which include: duality relations, the existence of large symmetry groups,
+and a recursive structure between cellular integrals of different weights via iterated
+residues. More subtle features include the role of the symmetric parameters si , the
+combinatorial structures underlying the asymptotic behaviour of the integrals (1),
+and the arithmetic of their denominators. We expect that all these structures point
+to a general theory for cellular integrals, which combines arithmetic, geometric, com-
+binatorial and analytic data. Several other promising ideas for a unifying approach
+to irrationality proofs may be found in [8, 10]. It would seem that the interplay
+between these different mathematical structures, which arguably gives the subject
+its appeal, lies at the heart of the difficulty of finding new irrationality proofs.
+
+Acknowledgements. This project has received funding from the European Re-
+search Council (ERC) under the European Union’s Horizon 2020 research and inno-
+vation programme (grant agreement no. 724638). Both authors wish to thank the
+Simons Foundation for their invitation to the Simons Symposium on ‘Periods and
+L-values of Motives II’, where the idea for this project was conceived.
+  We thank Ben Green for pointing out to us the vagueness in our original statement
+of Theorem 1, as well as Alin Bostan and Christoph Koutschan for illuminating
+discussions about the current state of arts for creative telescoping algorithms [21,22].
+We also acknowledge creative feedback from the anonymous referee which caused
+further improvements of the text.
+
+
+                                          References
+ [1] R. Apéry, Irrationalité de ζ(2) et ζ(3), Astérisque 61 (1979), 11–13.
+ [2] W. N. Bailey, Generalized hypergeometric series, Cambridge Math. Tracts 32 (Cambridge
+     University Press, 1935).
+ [3] K. Ball et T. Rivoal, Irrationalité d’une infinité de valeurs de la fonction zêta aux entiers
+     impairs, Invent. Math. 146 (2001), no. 1, 193–207.
+ [4] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11 (1979),
+     268–272.
+

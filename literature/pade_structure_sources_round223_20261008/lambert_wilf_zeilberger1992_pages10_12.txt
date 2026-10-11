@@ -1,0 +1,154 @@
+584                                                                              H.S. Wilf and D. Zeilberger
+
+go through this roundabout way. The advantage is that we get brand-new compan-
+ion identities quite different from the ones one gets by the direct approach.
+For example, Dixon's identity (see [EK2])
+
+                                      (a+b](a+c]{b+c] (a+b+c)!
+                         2k( - 1 ) k \ a + k l \ c + k ] \ b + k ] = ~.b!c!
+
+can be rewritten as the multi-contour integral
+
+             (27.t5i)3    dZl  d22 S d2"3 (21 --z2)a+b(z3--Zl)a+c(22--Z3)b+c
+                 l~c            ~c  C
+                                                   Z~a+'z2b+lz~ c+'
+                   = ( _ l)a+b+ ~ (a+b+c)!
+                                    a!b!c!
+
+
+1.4 Hypergeometric and holonomic functions, and the fundamental lemma
+It's about time that we formally define the notion of hypergeometric that we
+informally introduced above. It will be convenient, at this point, to recall the
+shift operators E, acting on functions that depend on the discrete variable a
+(and possibly other variables) by changing a to a + 1. In symbols:
+
+                                     E,~f(a, b, x) =f(a + 1, b, x).
+      Also, as always, Dr will denote the partial derivative w.r.t.x.
+Definition. A function F(x~ ..... x,, al,..., a,,) of n continuous and m discrete
+variables is a hypergeometric term if for every discrete variable ai, and every
+continuous variable x j,
+
+                                     E~ F _ P~           (i=1, ..,m)
+                                      F     Qi'
+and
+                                     Dxs F = P j
+                                                         0"=1 ..... n),
+                                       F      Q)
+where P~, Q~, Pj and Q) are all polynomials in the variables (x~ . . . . . x,, a~, ..., a,~).
+    Phrased otherwise, F is a solution of the system of linear recurrence and
+linear differential equations
+
+                                (Q,E,-P~)F =0,              (i=1 . . . . . m);
+                                (Qj' O xj - Pj) F = 0,      ( j = 1,.. ., n).
+
+    Note that these m+n equations are of first order! Functions that satisfy
+a system of linear differential-recurrence equations with polynomial coefficients,
+not necessarily of the first order, such that the dimension of the space of solutions
+of that system is finite are called holonomic. The theory of holonomic functions
+and D-modules (for functions of continuous variables) was initiated by Joseph
+N. Bernstein [-Be], and today is a very active field, see for example [-Bo]. It
+Algorithmic theory for hypergeometric multisum/integral identities                                                585
+
+was observed in [ZI] that the theory extends naturally to functions of several
+discrete and continuous variables, and its importance for proving special func-
+tion identities is realized. We refer the reader to [Z1] for a leisurely treatment,
+but the present paper is largely independent of holonomic functions, as will
+become apparent soon.
+    For nice things to happen the terms have to be first of all holonomic, and
+for really nice things to happen, they have to be also hypergeometric. Note
+that being hypergeometric is not enough, and one has to require that our terms
+be both hypergeometric and holonomic. For example F ( n , k ) = l / ( n 2 + k 2 ) , is
+hypergeometric but not holonomic, as will be proved in the next subsection.
+    In [Z1] it is shown how to check for holonomicity, and in particular it
+is proved that the following class of proper-hypergeometric .[unctions are holon-
+omic.
+Definition. A term F ( x l . . . . . x,, al . . . . . am) is proper-hypergeometric if it has
+the form
+                                                                                 P
+            P ( x t .... , x,, al . . . . . am) exp{R0(Xl ..... x,)} ]-I Sp(xt . . . . . x,) ~''
+                                                                               p=l
+
+                       m                                 1
+
+                      lq R (x, ..... x.) ~ 1-1                     +...         am +f,)!
+                     j=l                            i-1
+
+
+where
+(i) P(x~ . . . . . x,, a~ .... , am) is a polynomial,
+(ii) Ro, Sp, and Rj are rational functions in (xl ..... x,),
+(iii) c. and f~ are commuting indeterminates, or, if one wishes, complex numbers,
+(iv) e~) ..... el~~and gi(i= 1. . . . . I), are (positive or negative) integers.
+   Our examples are all proper-hypergeometric. We conjecture that a hypergeo-
+metric term is proper-hypergeometric if and only if it is holonomic.
+
+
+1.5 The .fundamental lemma
+
+Our major tool is the following result, which is due to J. Bernstein, and is
+reproduced in [Z1], lemma 4.1.
+The fundamental lemma. For every holonomic function F(x~ . . . . . x,, a~ .... , a,,),
+and any continuous variable xi (respectively discrete variable aj), there exist non-
+zero linear recurrence-differential operators
+
+    Pi(xl; D . . . . . . . Dx.; E . . . . . . . E~,,),       (resp. Cj(aj; D . . . . . . . Dx,; Eo,, .... E~m))
+
+that annihilate F.
+     An operator P is said to annihilate a function F if P F = O . For example
+E 2 - E. - I annihilates the Fibonacci sequence, and D 2 + I annihilates cos x.
+     The drawback of the proof in [ZI] is that it doesn't give a priori bounds
+for the orders (i.e. degrees) in the D's and E's. Hence we also give an entirely
+elementary proof of the fundamental lemma for the special case of discrete proper-
+hypergeometric functions that yields explicit a priori bounds for the orders.
+586                                                                H.S. Wilf and D. Zeilberger
+
+We are sure that this proof can be generalized to proper-hypergeometric functions
+of discrete and continuous variables, but the formidable details deter us from
+carrying it out. At any rate, the a priori bounds are of only theoretical interest,
+since they are more pessimistic than one obtains in practice.
+      The main raison d'Otre of the elementary approach is that it generalizes
+to q-sums/integrals, for which there is no holonomic theory yet, and which
+is of even greater significance than the ordinary case. Before discussing these,
+let's fulfill our promise and prove that F(n, k ) = 1/(n2+k 2) is not holonomic,
+although it's obviously hypergeometric. Were it holonomic, the fundamental
+lemma would have guaranteed a non-empty set S of non-negative integer pairs
+(i, j), such that
+                                           a~,~(n)
+                                 ~" (n + i)2 + (k +j)2 = 0,
+                               (i,j)eS
+
+
+where not all the ai.j are identically zero. Looking at the left side as a mero-
+morphic function of k, we see that at any pole of one term, the other terms
+remain finite, getting that ~ = finite, a contradiction.
+
+
+
+1.6 q-series and integrals
+
+The simplest non-trivial hypergeometric sequence is f(n):=n!, since f(n)/f(n
+ - 1 ) = n , and n is the simplest non-constant rational function. As we saw, it
+is the building block from which all discrete proper-hypergeometric functions
+are built. Combinatorially, n! is the number of permutations of n objects. If
+instead of naive counting, one assigns to every permutation n, qinV(~), where
+inv(n), denotes the number of inversions of n, i.e. the number of pairs 1 <=i<j <=n
+such that n(i)>n(j), then we find (e.g. [-An]) that the weighted count, denoted
+by [n] I, is
+               In] ! = (1)(1 +q)(1 +q+q2)... (1 + q + q 2 + ... + q,-1),
+
+
+which is called the q-analog of n !, and it can be rewritten in the form
+
+                                     (1--q)(1--q2)...(1--q")
+                             Enid-           (1 --q)"
+
+     It turns out that the denominator ( l - q ) " is inessential, so one discards
+it, and instead considers the numerator above, written (q),, as the fundamental
+atom of q-theory. In fact, one needs a slightly more general creature, that emu-
+lates (n + c) !. It is
+                         (c),.'=(1 --c)(1 - cq)... (1 - cq"- '),
+
+which agrees with the previous notation when c=q. What's nice a b o u t it is
+that f(n),=(c),, satisfies f(n + 1)/f(n)=(1--cq"), which is the simplest non-con-
+stant rational function of q". There is also a natural q-analog of the binomial
+

@@ -1,0 +1,297 @@
+    Let v = K − p ⌊K/p⌋ and set
+
+                          u = max(0, N + v − p + 1),                   tp = min(N, v) + u.
+
+Summing (4.12) and applying Lemma 4.2 gives the integer
+                          {︄
+                               −7(K − p) + 6tp − 1 − min(rp , p − 1 − N + u), K < 2p,
+              γpout   =                                                                             (4.14)
+                               −7(K − p) + 3 + 12N + 5tp − min(rp , p + u),   K ≥ 2p.
+
+For a class containing a removed pole, the counts used in this sum are
+                                    ℓ in a removed class 2 3 4 5 6
+                                         −2 i wa,i
+                                             ∑︁
+                                                         0 1 2 4 6
+                                       #{i | wa,i = 0}   1 1 2 2 3
+
+An unremoved class has cost 7(ℓ − 2) and two zero weights. The conditions a ≤ v and a ≥ p − v
+among a ≤ N give tp , with overlap u. The zero-class costs are 1 and 4. These counts prove
+(4.14).
+Proposition 4.3. Under (4.9), vpG (∆K ) ≥ γpout . For p > K, one has vpG (∆K ) ≥ 0.
+Proof. The first assertion follows from (4.10) and Lemma 4.2. If p > K, every pole is less than
+p. Each square class contains at most two poles, and the same divided- difference argument
+makes its contribution integral. The polynomial correction vanishes because K + 4N + 1 < 2p.
+Thus the whole matrix is integral in a unimodular local basis.
+
+
+5    Normalization and the prime sum
+We combine the local bounds into a positive rational factor mK,M for which mK,M FK is
+integral. The exponents must retain their signs. A negative valuation bound requires clearing a
+denominator, but a positive bound allows division by a power of p. Both contributions enter the
+growth estimate for mK,M .
+    For p > K, put γpout = 0. For a fixed integer M ≥ 40 and K ≥ 200M 2 , define
+                                    ⎧    ⌊︂          ⌋︂
+                                    ⎪
+                                    ⎪
+                                    ⎨−6h   log p (5K)   − hvp (24),               pM ≤ K,
+                Lp (K, M ) =
+                                    ⎪vp (SK ) +    γpin ,                         pM > K, 3p ≤ K,    (5.1)
+                                                   γpout ,
+                                    ⎪
+                                    ⎩
+                                      vp (SK ) +                                  3p > K.
+
+Only the primes p ≤ 2h enter the normalization
+
+                                                                  p−Lp (K,M ) .
+                                                         ∏︂
+                                          mK,M =                                                     (5.2)
+                                                        p≤2h
+
+This is a positive rational number. Its exponents are determined by (4.8), (4.14), and Legendre’s
+formula
+                                                ∑︂                        ∑︂
+                                vp (SK ) = 2h         ⌊K/pa ⌋ − 12h             ⌊N/pa ⌋
+                                                a≥1                       a≥1
+                                                 h−1
+                                                 ∑︂ ∑︂
+                                           −2                ⌊2i/pa ⌋ + (h − 1)vp (4).               (5.3)
+                                                 i=1 a≥1
+
+
+                                                             13
+Proposition 5.1. The polynomial QK,M = mK,M FK belongs to Z[X].
+
+Proof. At every prime p ≤ 2h, the assertion follows from (3.12) and Propositions 4.1 and 4.3.
+At p > 2h, all factorials in SK are units, and ∆K is integral by Proposition 4.3. Thus every
+coefficient of QK,M is integral at every prime.
+
+5.1      The inner limiting function
+To estimate mK,M , we first express the inner exponents in the variable x = K/p. The discrete
+pole counts become floor functions, and the weighted allocation has the following limiting form.
+   For x ≥ 3 and 0 < z < 1/2, set
+
+                    ℓ(x, z) = ⌊x − z⌋ + ⌊x + z⌋ + 1,            b(x, z) = 3ℓ(αx, z).
+
+In the following formulas,
+
+                 T = ⌊2Hx⌋ ,       s = Hx − T /2,        q = ⌊2x⌋ ,   n+ = (2x − q)/2.
+
+Define
+                              ∫︂ 1/2
+                     Γ(x) =            (T − b(x, z))(T + b(x, z) − ℓ(x, z) − 5) dz
+                               0
+                              + s(2T − q − 5) + (s − n+ )+ .                                 (5.4)
+
+The last two terms allocate the extra rows first to the classes with the larger value of ℓ(x, z).
+Put
+                                           m(m + 1)
+                              J(u) = mu −            ,    m = ⌊2u⌋ ,
+                                               4
+                             N (x) = 2λx ⌊x⌋ − 12λx ⌊αx⌋ − 2J(λx),                           (5.5)
+                             R(x) = −Γ(x) − N (x).                                           (5.6)
+
+These functions are bounded and piecewise polynomial on each compact subinterval of [3, ∞).
+   For fixed M , uniformly in the inner range,
+
+                  γpin = pΓ(K/p) + OM (1),           vp (SK ) = pN (K/p) + OM (1).           (5.7)
+
+Here and below M remains fixed as K tends to infinity. For the first formula, note that
+ℓA (a) = ℓ(A/p, a/p). Each interval on which these counts are constant has its number of grid
+points equal to its length times p, up to an error bounded by two. There are O(M ) such intervals,
+and all dimensions and weights are O(M ). The reserved zero block and the change from p/2 to
+(p − 1)/2 alter the number of allocated rows by OM (1). Altering that number by one changes the
+weight sum by OM (1). If 2Hx crosses an integer, allocating one extra row to every ordinary class
+gives exactly the next base allocation. The estimate is therefore uniform at these transitions as
+well. The second formula follows from (5.3), since p2 > 5K and
+                                   h−1
+                                   ∑︂
+                                         ⌊2i/p⌋ = pJ(h/p) + OM (1).
+                                   i=1
+
+
+
+
+                                                    14
+5.2     The outer limiting function
+In the outer range we use y = p/K, so that the interval of integration is fixed. We write the
+residue contribution and the rank correction separately. Define R0 (y) by
+      ⎧
+      ⎪8 − 9y − 8α − 5 min(α, 1 − 2y) − 5 (1 + α − 3y)+ ,
+      ⎪
+      ⎨                                                                1/3 < y < 1/2,
+       7(1 − y) − 6 min(α, 1 − y) − 6 (1 + α − 2y)+ + (1 + 4α − 2y)+ , 1/2 < y < 1,                                   (5.8)
+      ⎪
+      ⎪
+      ⎩0,                                                              y > 1,
+
+and put                             (︂                                      )︂
+                        d(y) = 1 + 4α − 3y − (1 + α − 3y)+                           1(1/3,1/2) (y).                  (5.9)
+                                                                                 +
+
+Formula (4.14) gives
+                                   −γpout = K R0 (p/K) − d(p/K) + O(1).
+                                                  (︁                        )︁
+
+The subtraction of d records the zero-weight restriction in Lemma 4.2.                                       In particular,
+∫︁ 1/2
+  1/3 d(y) dy = 9/640. The scalar contribution in this range is
+                                              ⎛                                         ⎞
+                                                                   5
+                                                                  ∑︂
+                        −vp (SK ) = K ⎝−2λ ⌊1/y⌋ +                      (2λ − jy)+ ⎠ + O(1).
+                                                                  j=1
+
+The relevant integral is
+                              ⎛                                                             ⎞
+                      ∫︂ 2λ                                          5
+                              ⎝R0 (y) − d(y) − 2λ ⌊1/y⌋ +
+                                                                    ∑︂                                 127751
+             Iout =                                                       (2λ − jy)+ ⎠ dy =                   .      (5.10)
+                       1/3                                          j=1
+                                                                                                       96000
+
+An exact evaluation is given in Appendix B.
+   The prime number theorem now converts the local bounds into integrals. We use only its
+asymptotic form [9, §27.12].
+
+Proposition 5.2. For each fixed integer M ≥ 40,
+                                                                           ∫︂ M
+                                      log mK,M          6λ                      R(x)
+                              lim sup      2
+                                               ≤ Iout +    +                                dx.                      (5.11)
+                               K→∞       K              M                   3          x3
+                                  40|K
+                √                                                       √
+Proof. For p ≤ 5K, (3.12) contributes O(K 3/2 log K) = o(K 2 ). For 5K < p ≤ K/M , its
+logarithmic factor is one. The prime number theorem gives the contribution 6λK 2 /M + o(K 2 ).
+    For a bounded piecewise continuous function f on [3, M ], partial summation and the prime
+number theorem give
+                                                                            ∫︂ M
+                              1          ∑︂                                      f (x)
+                                                       pf (K/p) log p −→                    dx.
+                              K2    K/M <p≤K/3
+                                                                             3         x3
+
+Use (5.7) with f = R. The OM (1) errors contribute OM (K) = o(K 2 ). The same argument in
+the variable y = p/K gives (5.10) for the outer range. This proves (5.11).
+
+
+
+
+                                                             15
+5.3    The tail integral
+We split the inner integral at 20. Its bounded part is evaluated in Appendix B. For the tail,
+write R(x) as a linear term with periodic coefficient plus a bounded remainder. This gives
+explicit bounds at both 20 and the cutoff M .
+   Let f = {x}, g = {αx}, τ = {2Hx}, σ = {2x}, and η = {2λx}. Set
+
+                         A(z) = ℓ(x, z) − 2x,        B(z) = ℓ(αx, z) − 2αx.
+
+Expanding (5.4) and (5.5) gives
+
+      R(x) = xF (x) + Q(x),         F (x) = 4λ + 2λf − 12λg,                                         (5.12)
+               τ (τ − σ) − (τ − σ)+ + η(1 − η)
+                                                     ∫︂ 1/2                  ∫︂ 1/2
+      Q(x) =                                   +9             B(z)2 dz − 3            A(z)B(z) dz.   (5.13)
+                               2                         0                    0
+
+Both A and B have mean zero. Each squared integral is at most 1/8, and Cauchy–Schwarz
+bounds the absolute value of the mixed integral by 1/8. The first numerator in (5.13) lies
+between −1/4 and 1/4. Consequently
+                                              1        13
+                                             − ≤ Q(x) ≤ .                                            (5.14)
+                                              2        8
+   Define the continuous periodic functions
+                                                                      2923
+               P(x) = 74g(1 − g) − λf (1 − f ),                    P=      ,
+                                                                       240
+                       v(1 − v)(2v − 1)                               74
+            G0 (v) =                    ,                       C(x) = G0 (g) − λG0 (f ).
+                              6                                       α
+Away from their finitely many breakpoints in a period,
+
+                                  P ′ = F + λ,           C ′ = P − P.
+                                   √
+The identity max[0,1] |G0 | = 1/(36 3) implies
+                                                   118511
+                                       |C(x)| ≤        √ < 16.
+                                                   4320 3
+Two integrations by parts now give
+                         ∫︂ ∞
+                              R(x)            λ     P(T )    P     2C(T )
+                                     dx = −       −       + 2−
+                          T    x3             T      T 2    T       T3
+                                                ∫︂ ∞           ∫︂ ∞
+                                                     C(x)           Q(x)
+                                             +6         4
+                                                          dx +            dx.                        (5.15)
+                                                  T   x          T   x3
+At T = 20, one has P(T ) = 37/2 and C(T ) = 0. Using (5.14) gives
+                                      ∫︂ ∞
+                                           R(x)              2689
+                                                   dx ≤ −          .                                 (5.16)
+                                        20    x3             48000
+If 40 | M , then P(M ) = C(M ) = 0, so
+                          ∫︂ ∞
+                               R(x)            λ   2923/240 − 1/4  32
+                                      dx ≥ −     +                − 3.                               (5.17)
+                           M    x3             M        M2         M
+
+                                                    16
+Appendix B proves                ∫︂ 20
+                                       R(x)               322437603634266857629
+                                              dx =                              .                         (5.18)
+                                  3    x3                7535670527041937280000
+Put
+                                         9928298118277006344769
+                                  A∗ =                          ,                                         (5.19)
+                                         7535670527041937280000
+                                              7λ 2923/240 − 1/4    32
+                                 AM    = A∗ +    −                + 3.                                    (5.20)
+                                              M         M2         M
+Combining (5.11) with (5.16)–(5.18) proves
+
+                           lim sup K −2 log mK,M ≤ AM                         (M ∈ 40Z>0 ).               (5.21)
+                                K→∞
+                                40|K
+
+
+6      The real determinant
+We next bound FK (ζ(5)). The positive moment representation expresses ∆K (ζ(5)) as a multiple
+                                                              √
+integral with a squared Vandermonde factor. On scaling yi = K ti , the exponent is a discrete
+logarithmic energy in the field V below. We bound it for every configuration by comparison
+with an explicit measure of mass h/K = λ.
+    Define the external field on [0, ∞) by
+                              √    ∫︂             1                           ∫︂ α
+                    V (t) = 2π t +                    log(t + u2 ) du − 6            log(t + u2 ) du.      (6.1)
+                                              0                                0
+
+For a measure ρ, write
+                           ∫︂                                          ∫︂∫︂
+               U ρ (t) =        log |t − u| dρ(u),            I(ρ) =           log |t − u| dρ(t) dρ(u).
+
+We use the same notation for measures on C whenever the integrals are absolutely convergent.
+
+Lemma 6.1. There is a positive measure ρ of mass λ, supported in (0, 2), such that
+                                                                   1329
+                                 2U ρ (t) − V (t) ≤ M0 = −                           (t ≥ 0).              (6.2)
+                                                                    200
+It is a sum of sixteen arcsine measures on nested intervals, each of length greater than 1/225.
+Moreover, if
+                       C∗ = −2λ + 12αλ(1 − log α) + 3λ2 − 2λ2 log(2λ),                    (6.3)
+then
+                                                                  2733991    136699
+                           λM0 − I(ρ) + C∗ ≤ U = −                        <−        .                      (6.4)
+                                                                  2000000    100000
+    Appendix A gives the measure and proves these bounds. The argument needs a comparison
+measure, not an explicit solution of the equilibrium problem. The lower bound for the interval
+lengths controls the error in the regularization below.
+
+
+
+
+                                                             17
+

@@ -1,0 +1,1017 @@
+{
+  "status": "PASS finite structural mechanism only",
+  "own_new_execution_count": 1,
+  "old_or_peer_execution_import_rerun_count": 0,
+  "producer_sha256": "0000ef0f9b98659874603579fc9cf60d1ed5572940f1c150ab007fdd1fa84504",
+  "scope": "Five already examined r-values, exact graph weak-Popov shift profiles, symplectic degree constraints, corank equivalence, scalar padded-PSC/Hankel sign and PRS degree flag. Nearby profiles are diagnostics, not the original target.",
+  "not_proved": [
+    "Infinite actual unit subsequence",
+    "All-r balanced module",
+    "Any new arithmetic cost or irrationality"
+  ],
+  "cases": [
+    {
+      "r": 1,
+      "p": 19,
+      "P_degree": 6,
+      "scalar_Euclidean_remainder_degrees": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        0
+      ],
+      "scalar_profiles": [
+        {
+          "profile_T": 1,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 1,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 2,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 2,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 2,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 4,
+          "graph_symplectic_degree_checks": 6
+        }
+      ],
+      "matrix_profiles": [
+        {
+          "profile_T_Q": [
+            1,
+            2
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 16,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            1,
+            3
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": true,
+          "weak_Popov_reductions": 22,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            1,
+            4
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 26,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            2
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 19,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            3
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 26,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            4
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 30,
+          "graph_symplectic_degree_checks": 24
+        }
+      ]
+    },
+    {
+      "r": 2,
+      "p": 37,
+      "P_degree": 11,
+      "scalar_Euclidean_remainder_degrees": [
+        11,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "scalar_profiles": [
+        {
+          "profile_T": 1,
+          "shifted_degrees": [
+            -1,
+            1
+          ],
+          "corank": 1,
+          "padded_psc": 0,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 1,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 2,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 33,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 3,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 3,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 33,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 5,
+          "graph_symplectic_degree_checks": 6
+        }
+      ],
+      "matrix_profiles": [
+        {
+          "profile_T_Q": [
+            1,
+            5
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 36,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            1,
+            6
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 44,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            1,
+            7
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 49,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            5
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 37,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            6
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": true,
+          "weak_Popov_reductions": 45,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            2,
+            7
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 53,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            3,
+            5
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 41,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            3,
+            6
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 46,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            3,
+            7
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 55,
+          "graph_symplectic_degree_checks": 24
+        }
+      ]
+    },
+    {
+      "r": 4,
+      "p": 73,
+      "P_degree": 21,
+      "scalar_Euclidean_remainder_degrees": [
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "scalar_profiles": [
+        {
+          "profile_T": 3,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 60,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 6,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 4,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 31,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 8,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 5,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 59,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 10,
+          "graph_symplectic_degree_checks": 6
+        }
+      ],
+      "matrix_profiles": [
+        {
+          "profile_T_Q": [
+            3,
+            11
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 82,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            3,
+            12
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 89,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            3,
+            13
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 96,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            4,
+            11
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 83,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            4,
+            12
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": true,
+          "weak_Popov_reductions": 94,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            4,
+            13
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 101,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            5,
+            11
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 86,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            5,
+            12
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 93,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            5,
+            13
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 103,
+          "graph_symplectic_degree_checks": 24
+        }
+      ]
+    },
+    {
+      "r": 6,
+      "p": 109,
+      "P_degree": 31,
+      "scalar_Euclidean_remainder_degrees": [
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "scalar_profiles": [
+        {
+          "profile_T": 5,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 67,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 10,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 6,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 45,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 12,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 7,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 9,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 14,
+          "graph_symplectic_degree_checks": 6
+        }
+      ],
+      "matrix_profiles": [
+        {
+          "profile_T_Q": [
+            5,
+            17
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 129,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            5,
+            18
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 138,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            5,
+            19
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 143,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            6,
+            17
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 134,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            6,
+            18
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": true,
+          "weak_Popov_reductions": 141,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            6,
+            19
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 148,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            17
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 134,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            18
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 142,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            19
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 149,
+          "graph_symplectic_degree_checks": 24
+        }
+      ]
+    },
+    {
+      "r": 7,
+      "p": 127,
+      "P_degree": 36,
+      "scalar_Euclidean_remainder_degrees": [
+        36,
+        35,
+        34,
+        33,
+        32,
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "scalar_profiles": [
+        {
+          "profile_T": 6,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 79,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 11,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 7,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 27,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 13,
+          "graph_symplectic_degree_checks": 6
+        },
+        {
+          "profile_T": 8,
+          "shifted_degrees": [
+            0,
+            0
+          ],
+          "corank": 0,
+          "padded_psc": 101,
+          "subresultant_Hankel_identity": true,
+          "weak_Popov_reductions": 15,
+          "graph_symplectic_degree_checks": 6
+        }
+      ],
+      "matrix_profiles": [
+        {
+          "profile_T_Q": [
+            6,
+            20
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 155,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            6,
+            21
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 162,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            6,
+            22
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 169,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            20
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 157,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            21
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": true,
+          "weak_Popov_reductions": 166,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            7,
+            22
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 174,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            8,
+            20
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 157,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            8,
+            21
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 169,
+          "graph_symplectic_degree_checks": 24
+        },
+        {
+          "profile_T_Q": [
+            8,
+            22
+          ],
+          "shifted_degrees": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "corank": 0,
+          "actual_profile": false,
+          "weak_Popov_reductions": 174,
+          "graph_symplectic_degree_checks": 24
+        }
+      ]
+    }
+  ]
+}

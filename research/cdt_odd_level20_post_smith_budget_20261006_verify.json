@@ -1,0 +1,51 @@
+{
+  "status": "exact_post_smith_prescribed_family_budget_passed",
+  "scope": "Three preclassified families, ordinary Jensen numerator, original log16 cover, only the certified two target layers. Optimistic lower bound, not a transport optimum or a new irrationality theorem.",
+  "checks_passed": 15,
+  "check_labels": [
+    "original_classification_scope_is_prescribed",
+    "three_original_families",
+    "m13_input_identity",
+    "m13_original_threshold",
+    "m13_optimistic_threshold",
+    "m13_threshold_at_least_14_over_5",
+    "m14_input_identity",
+    "m14_original_threshold",
+    "m14_optimistic_threshold",
+    "m14_threshold_at_least_14_over_5",
+    "m15_input_identity",
+    "m15_original_threshold",
+    "m15_optimistic_threshold",
+    "m15_threshold_at_least_14_over_5",
+    "exp_14_over_5_positive_series_lower_exceeds_16"
+  ],
+  "families": [
+    {
+      "m": 13,
+      "type_count": 768,
+      "cost_lower": "1345/507",
+      "optimistic_kappa_lower": "1340/507",
+      "optimistic_necessary_rho_lower": "335/117"
+    },
+    {
+      "m": 14,
+      "type_count": 1536,
+      "cost_lower": "2577/980",
+      "optimistic_kappa_lower": "3853/1470",
+      "optimistic_necessary_rho_lower": "3853/1365"
+    },
+    {
+      "m": 15,
+      "type_count": 3072,
+      "cost_lower": "1769/675",
+      "optimistic_kappa_lower": "196/75",
+      "optimistic_necessary_rho_lower": "14/5"
+    }
+  ],
+  "input_certificate": "cdt_odd_level20_pure_budget_20261006_verify.json",
+  "input_sha256": "79cf92faad4b0b3d8ae350fb3381d0321b77658ccb3d01689d2459380af5bd82",
+  "source_sha256": "7aa3b0498222117ce049c8baa26d1b0bafe3a48a3f3f39208517957746407f32",
+  "report_sha256": "0c63edbec81ac4a7969b135300dd37c809705cf92b678e51dbc16076fb6d1592",
+  "exp_positive_partial_sum": "325146068153/19775390625",
+  "new_numerical_irrationality_theorem": false
+}

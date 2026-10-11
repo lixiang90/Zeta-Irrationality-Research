@@ -1,0 +1,60 @@
+{
+  "status": "saddle_input_certificates_passed",
+  "as_of": "2026-10-05",
+  "precision_bits": 256,
+  "rouche": {
+    "center": "2782183/2500000 + 3049593*I/2000000",
+    "radius": "1/1000000",
+    "exact_l1_upper_left": "710600957312003115621499328600491969037913633634161/50000000000000000000000000000000000000000000000000000000",
+    "exact_component_lower_right": "46548102044282442634902870908356939474794422195199/125000000000000000000000000000000000000000000000000000",
+    "passed": true,
+    "conclusion": "exactly one zero in the disk by Rouche"
+  },
+  "checks": {
+    "F_double_prime_rational_identity": true,
+    "Gamma_recurrence_q7_n1": true,
+    "Gamma_recurrence_q3_n2": true,
+    "connector_rational_bound": true,
+    "full_gaussian_prefactor": true,
+    "Stirling_power_n": true,
+    "right_upper_root_rectangle": true,
+    "positive_peak_A": true,
+    "Omega_interval": true,
+    "log_branch_Fprime": true,
+    "nondegenerate_gaussian": true,
+    "connector_origin_less_zero": true,
+    "connector_half_less_one": true,
+    "saddle_beyond_turn": true,
+    "nonzero_complex_amplitude": true,
+    "phase_sine_nonzero": true,
+    "algebraic_growth_factor_nonreal": true,
+    "real_B_saddle_root_bracket": true,
+    "real_B_height_upper": true,
+    "conditional_budget_strict_positive": true
+  },
+  "root_enclosure": "[1.11287 +/- 4.21e-6] + [1.52480 +/- 4.51e-6]j",
+  "H_enclosure": "[1.818 +/- 1.99e-4] + [9.1779 +/- 7.79e-5]j",
+  "Fprime_enclosure": "[+/- 1.11e-5] + [-3.1416 +/- 1.83e-5]j",
+  "Fdouble_enclosure": "[2.0414 +/- 5.46e-5] + [1.16498 +/- 8.84e-6]j",
+  "amplitude_enclosure": "[-0.005092 +/- 3.39e-7] + [0.002429 +/- 3.00e-7]j",
+  "theta_enclosure": "[-0.2469 +/- 5.73e-5]",
+  "sine_theta_enclosure": "[-0.2444 +/- 5.64e-5]",
+  "algebraic_Lambda_enclosure": "[5.972 +/- 2.02e-4] + [-1.505 +/- 2.59e-4]j",
+  "real_B_height_upper_at_bracket_endpoint": "[23.18410047747387387573661487761798498622930584033850414926054218651141951437 +/- 3.82e-75]",
+  "connector_origin_enclosure": "[-0.6868 +/- 4.75e-5]",
+  "connector_half_enclosure": "[0.4124 +/- 5.41e-5] + [7.7774 +/- 3.25e-5]j",
+  "gamma_product_cases": [
+    {
+      "q": 7,
+      "n": 1,
+      "passed": true
+    },
+    {
+      "q": 3,
+      "n": 2,
+      "passed": true
+    }
+  ],
+  "written_proof_sha256": "6389841b0700a5ab897ec395d8b83db3d2c09ccd679ef3e48ad9d7117c851288",
+  "scope": "Exact rational Rouche bound proves a zero exists in a specified disk. Arb/Acb bounds enclose the whole disk and certify branches, positive peak and amplitude inputs. Contour deformation, global maximum, uniform tails and all-scale Gaussian asymptotics rely on the written proof, not numerical integral fitting. No irrationality or Lean theorem."
+}

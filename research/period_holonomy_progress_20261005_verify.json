@@ -1,0 +1,97 @@
+{
+  "status": "fixed_exact_log_integral_coordinates_passed",
+  "as_of": "2026-10-05",
+  "report_sha256": "c539689cc67ec91cea770ef15ba6ad9eed69bb0ece5404f9a117ed964ca0326c",
+  "script_sha256": "f5dbdc65a0ed017eaf6f361d692af76bd9c27af33efed95721095185f2f74374",
+  "checks": [
+    {
+      "name": "pure_L_positive_integral",
+      "passed": true
+    },
+    {
+      "name": "rational_positive_integral",
+      "passed": true
+    },
+    {
+      "name": "mixed_positive_integral",
+      "passed": true
+    },
+    {
+      "name": "zero_true_period_integral",
+      "passed": true
+    },
+    {
+      "name": "trigamma7_boundary",
+      "passed": true
+    },
+    {
+      "name": "trigamma13_boundary",
+      "passed": true
+    },
+    {
+      "name": "complete_integral_content",
+      "passed": true
+    }
+  ],
+  "check_count": 7,
+  "fixed_examples": [
+    {
+      "name": "pure_L_positive_integral",
+      "polynomial": {
+        "1": 1,
+        "3": -1
+      },
+      "C_A_B": [
+        "0",
+        "0",
+        "1/4"
+      ],
+      "is_rational_by_CDT": false
+    },
+    {
+      "name": "rational_positive_integral",
+      "polynomial": {
+        "0": 1,
+        "6": -1
+      },
+      "C_A_B": [
+        "1",
+        "0",
+        "0"
+      ],
+      "is_rational_by_CDT": true
+    },
+    {
+      "name": "mixed_positive_integral",
+      "polynomial": {
+        "0": 1,
+        "1": -1
+      },
+      "C_A_B": [
+        "0",
+        "2/9",
+        "1/2"
+      ],
+      "is_rational_by_CDT": false
+    },
+    {
+      "name": "zero_true_period_integral",
+      "polynomial": {
+        "0": 1,
+        "1": -5,
+        "5": 8
+      },
+      "C_A_B": [
+        "0",
+        "0",
+        "0"
+      ],
+      "is_rational_by_CDT": true
+    }
+  ],
+  "external_input": "CDT Theorem A: 1,zeta(2),L(2,chi_-3) are Q-linearly independent.",
+  "scope": "Exact period coordinates; actual integral identities and complete-family proofs are in the report.",
+  "new_global_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "parameter_scan": false
+}

@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "execution_count": 1,
+  "cases": [
+    {
+      "r": 1,
+      "p": 19,
+      "N": 6,
+      "QQ_full_profile_unit": 5,
+      "delta4_full_N": 17,
+      "G_lambda_coefficients": [
+        14,
+        3
+      ],
+      "M_lambda_coefficients": [
+        13,
+        1
+      ],
+      "endpoint_connection_columns_checked": 6,
+      "actual_G2_for_identity_only": 1,
+      "actual_M2_for_identity_only": 15
+    },
+    {
+      "r": 2,
+      "p": 37,
+      "N": 11,
+      "QQ_full_profile_unit": 6,
+      "delta4_full_N": 27,
+      "G_lambda_coefficients": [
+        17,
+        5,
+        22
+      ],
+      "M_lambda_coefficients": [
+        11,
+        16,
+        21
+      ],
+      "endpoint_connection_columns_checked": 11,
+      "actual_G2_for_identity_only": 4,
+      "actual_M2_for_identity_only": 16
+    },
+    {
+      "r": 4,
+      "p": 73,
+      "N": 21,
+      "QQ_full_profile_unit": 24,
+      "delta4_full_N": 14,
+      "G_lambda_coefficients": [
+        21,
+        22,
+        29,
+        27,
+        41
+      ],
+      "M_lambda_coefficients": [
+        65,
+        16,
+        6,
+        71,
+        46
+      ],
+      "endpoint_connection_columns_checked": 21,
+      "actual_G2_for_identity_only": 31,
+      "actual_M2_for_identity_only": 38
+    }
+  ],
+  "exact_checks": 692,
+  "old_or_peer_execute_import_rerun_count": 0,
+  "source_sha256": "4f525b33ca7664912192daab4628db39a992ed9f3bea1df753bc6e3f253aa69b",
+  "scope": "Structural modified-target identities on old r=1,2,4 only; no auxiliary-prime table extension.",
+  "counterexample_scope": "p19 lambda8 is a genuine chi-preserving parameter-family critical singularity, not the actual lambda2.",
+  "not_proved": [
+    "Infinite actual critical G2/M2 units",
+    "Global Krylov fees",
+    "Strict margin",
+    "Special-value theorem",
+    "External Lean"
+  ]
+}

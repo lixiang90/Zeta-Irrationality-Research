@@ -1,0 +1,279 @@
+{
+  "status": "passed",
+  "scope": "Regular p-integral finite nodes, atom weights with p*d integral; no exclusion of singular nodes, derivative functionals, or different rational corrections.",
+  "cases": [
+    {
+      "n": 1,
+      "K": 40,
+      "N": 3,
+      "m": 6,
+      "h": 37,
+      "w": 18,
+      "degree": 50,
+      "rows": [
+        {
+          "p": 41,
+          "first_bad_moment": 38,
+          "first_bad_matrix_antidiagonal": 60,
+          "bad_matrix_rank": 13,
+          "all_regular_atom_span_rank": 41,
+          "augmented_span_rank": 42,
+          "frobenius_witness": {
+            "early": 20,
+            "late": 60,
+            "early_value": 0,
+            "late_value": 22
+          },
+          "obstruction": true
+        },
+        {
+          "p": 43,
+          "first_bad_moment": 40,
+          "first_bad_matrix_antidiagonal": 62,
+          "bad_matrix_rank": 11,
+          "all_regular_atom_span_rank": 43,
+          "augmented_span_rank": 44,
+          "frobenius_witness": {
+            "early": 20,
+            "late": 62,
+            "early_value": 0,
+            "late_value": 23
+          },
+          "obstruction": true
+        },
+        {
+          "p": 47,
+          "first_bad_moment": 44,
+          "first_bad_matrix_antidiagonal": 66,
+          "bad_matrix_rank": 7,
+          "all_regular_atom_span_rank": 47,
+          "augmented_span_rank": 48,
+          "frobenius_witness": {
+            "early": 20,
+            "late": 66,
+            "early_value": 0,
+            "late_value": 25
+          },
+          "obstruction": true
+        },
+        {
+          "p": 53,
+          "first_bad_moment": 50,
+          "first_bad_matrix_antidiagonal": 72,
+          "bad_matrix_rank": 1,
+          "all_regular_atom_span_rank": 53,
+          "augmented_span_rank": 54,
+          "frobenius_witness": {
+            "early": 20,
+            "late": 72,
+            "early_value": 0,
+            "late_value": 28
+          },
+          "obstruction": true
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "K": 80,
+      "N": 6,
+      "m": 6,
+      "h": 74,
+      "w": 36,
+      "degree": 102,
+      "rows": [
+        {
+          "p": 83,
+          "first_bad_moment": 80,
+          "first_bad_matrix_antidiagonal": 124,
+          "bad_matrix_rank": 23,
+          "all_regular_atom_span_rank": 83,
+          "augmented_span_rank": 84,
+          "frobenius_witness": {
+            "early": 42,
+            "late": 124,
+            "early_value": 0,
+            "late_value": 43
+          },
+          "obstruction": true
+        },
+        {
+          "p": 89,
+          "first_bad_moment": 86,
+          "first_bad_matrix_antidiagonal": 130,
+          "bad_matrix_rank": 17,
+          "all_regular_atom_span_rank": 89,
+          "augmented_span_rank": 90,
+          "frobenius_witness": {
+            "early": 42,
+            "late": 130,
+            "early_value": 0,
+            "late_value": 46
+          },
+          "obstruction": true
+        },
+        {
+          "p": 97,
+          "first_bad_moment": 94,
+          "first_bad_matrix_antidiagonal": 138,
+          "bad_matrix_rank": 9,
+          "all_regular_atom_span_rank": 97,
+          "augmented_span_rank": 98,
+          "frobenius_witness": {
+            "early": 42,
+            "late": 138,
+            "early_value": 0,
+            "late_value": 50
+          },
+          "obstruction": true
+        },
+        {
+          "p": 101,
+          "first_bad_moment": 98,
+          "first_bad_matrix_antidiagonal": 142,
+          "bad_matrix_rank": 5,
+          "all_regular_atom_span_rank": 101,
+          "augmented_span_rank": 102,
+          "frobenius_witness": {
+            "early": 42,
+            "late": 142,
+            "early_value": 0,
+            "late_value": 52
+          },
+          "obstruction": true
+        },
+        {
+          "p": 103,
+          "first_bad_moment": 100,
+          "first_bad_matrix_antidiagonal": 144,
+          "bad_matrix_rank": 3,
+          "all_regular_atom_span_rank": 103,
+          "augmented_span_rank": 104,
+          "frobenius_witness": {
+            "early": 42,
+            "late": 144,
+            "early_value": 0,
+            "late_value": 53
+          },
+          "obstruction": true
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "K": 120,
+      "N": 9,
+      "m": 6,
+      "h": 111,
+      "w": 54,
+      "degree": 154,
+      "rows": [
+        {
+          "p": 127,
+          "first_bad_moment": 124,
+          "first_bad_matrix_antidiagonal": 190,
+          "bad_matrix_rank": 31,
+          "all_regular_atom_span_rank": 127,
+          "augmented_span_rank": 128,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 190,
+            "early_value": 0,
+            "late_value": 65
+          },
+          "obstruction": true
+        },
+        {
+          "p": 131,
+          "first_bad_moment": 128,
+          "first_bad_matrix_antidiagonal": 194,
+          "bad_matrix_rank": 27,
+          "all_regular_atom_span_rank": 131,
+          "augmented_span_rank": 132,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 194,
+            "early_value": 0,
+            "late_value": 67
+          },
+          "obstruction": true
+        },
+        {
+          "p": 137,
+          "first_bad_moment": 134,
+          "first_bad_matrix_antidiagonal": 200,
+          "bad_matrix_rank": 21,
+          "all_regular_atom_span_rank": 137,
+          "augmented_span_rank": 138,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 200,
+            "early_value": 0,
+            "late_value": 70
+          },
+          "obstruction": true
+        },
+        {
+          "p": 139,
+          "first_bad_moment": 136,
+          "first_bad_matrix_antidiagonal": 202,
+          "bad_matrix_rank": 19,
+          "all_regular_atom_span_rank": 139,
+          "augmented_span_rank": 140,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 202,
+            "early_value": 0,
+            "late_value": 71
+          },
+          "obstruction": true
+        },
+        {
+          "p": 149,
+          "first_bad_moment": 146,
+          "first_bad_matrix_antidiagonal": 212,
+          "bad_matrix_rank": 9,
+          "all_regular_atom_span_rank": 149,
+          "augmented_span_rank": 150,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 212,
+            "early_value": 0,
+            "late_value": 76
+          },
+          "obstruction": true
+        },
+        {
+          "p": 151,
+          "first_bad_moment": 148,
+          "first_bad_matrix_antidiagonal": 214,
+          "bad_matrix_rank": 7,
+          "all_regular_atom_span_rank": 151,
+          "augmented_span_rank": 152,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 214,
+            "early_value": 0,
+            "late_value": 77
+          },
+          "obstruction": true
+        },
+        {
+          "p": 157,
+          "first_bad_moment": 154,
+          "first_bad_matrix_antidiagonal": 220,
+          "bad_matrix_rank": 1,
+          "all_regular_atom_span_rank": 157,
+          "augmented_span_rank": 158,
+          "frobenius_witness": {
+            "early": 64,
+            "late": 220,
+            "early_value": 0,
+            "late_value": 80
+          },
+          "obstruction": true
+        }
+      ]
+    }
+  ]
+}

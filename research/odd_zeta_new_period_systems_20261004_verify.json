@@ -1,0 +1,209 @@
+{
+  "status": "exact_identities_passed_not_irrationality_proof",
+  "cutoff": 12,
+  "uses_numerical_zeta_values": false,
+  "lift_recurrence_checked_n": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "closed_polylog_system_taylor_checked_n": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "basis_order": [
+    "f",
+    "V",
+    "U",
+    "Li4(-z)",
+    "Li3(-z)",
+    "Li2(-z)",
+    "Li1(-z)",
+    "1"
+  ],
+  "cyclic_pivots": [
+    "1",
+    "-5/(2*(4*z - 1))",
+    "-5/(2*(4*z - 1))",
+    "5/(2*(z + 1))",
+    "5/(2*(z + 1))",
+    "5/(2*(z + 1))",
+    "5/(2*(z + 1))",
+    "-5*z/(2*(z + 1)**2)"
+  ],
+  "cyclic_determinant": "-78125*z/(128*(z + 1)**6*(4*z - 1)**2)",
+  "cyclic_determinant_expected": "-78125*z/(128*(z + 1)**6*(4*z - 1)**2)",
+  "prime_prefix_lower_bound_samples": [
+    {
+      "p": 2,
+      "forcing_coefficient": "81/64",
+      "valuation": -6
+    },
+    {
+      "p": 3,
+      "forcing_coefficient": "-6901/11664",
+      "valuation": -6
+    },
+    {
+      "p": 5,
+      "forcing_coefficient": "-69923861/324000000",
+      "valuation": -6
+    },
+    {
+      "p": 7,
+      "forcing_coefficient": "-33643869761/304946208000",
+      "valuation": -6
+    },
+    {
+      "p": 11,
+      "forcing_coefficient": "-638881527146060977/14288553647165952000",
+      "valuation": -6
+    }
+  ],
+  "prime_power_lower_bound_samples": [
+    {
+      "p": 2,
+      "power": 2,
+      "n": 4,
+      "valuation": -12
+    },
+    {
+      "p": 2,
+      "power": 3,
+      "n": 8,
+      "valuation": -18
+    },
+    {
+      "p": 3,
+      "power": 2,
+      "n": 9,
+      "valuation": -12
+    }
+  ],
+  "prefix_denominator_identity_checks": [
+    {
+      "N": 1,
+      "delta_V": "1",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 2,
+      "delta_V": "64",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 3,
+      "delta_V": "46656",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 4,
+      "delta_V": "2985984",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 5,
+      "delta_V": "46656000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 6,
+      "delta_V": "46656000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 7,
+      "delta_V": "5489031744000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 8,
+      "delta_V": "351298031616000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 9,
+      "delta_V": "256096265048064000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 10,
+      "delta_V": "256096265048064000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 11,
+      "delta_V": "453690155404813307904000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    },
+    {
+      "N": 12,
+      "delta_V": "453690155404813307904000000",
+      "equals_L_N_power_6": true,
+      "delta_f_constant_divides_2_L_N_power_7": true
+    }
+  ],
+  "parameter_recurrences": {
+    "parameter_orders": [
+      0,
+      1,
+      2
+    ],
+    "BB_checked_n": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "Koecher_checked_n": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "lifted_coefficients": [
+    "c",
+    "2*c - 5/2",
+    "6*c - 1515/256",
+    "20*c - 5660195/279936",
+    "70*c - 5056479385/71663616"
+  ],
+  "scope": "Exact algebra only; connection identity, slit analyticity, and functional independence have separate proofs in the Markdown report."
+}

@@ -1,0 +1,3887 @@
+{
+  "status": "PASS",
+  "first_only": true,
+  "rerun_allowed": false,
+  "producer_runs": {
+    "new_first": 1,
+    "failed": 0,
+    "rerun": 0,
+    "old_peer_execution_import": 0
+  },
+  "scope": "closed exact affine cover; no finite-prime samples; no old/peer mathematical file reads/imports",
+  "domain": [
+    "1/4",
+    "6"
+  ],
+  "raw_literal_rows": 47,
+  "dual_candidates": 36,
+  "initial_cells": 49,
+  "branch_cells": 261,
+  "arrangement_cells": 1601,
+  "merged_certificate_rows": 113,
+  "closed_endpoint_checks": 266036,
+  "baseline_A471": "224674976889262531/5354135180994600",
+  "baseline_integral": "-211289638936776031/5354135180994600",
+  "paid_gain_omega_only": "1433895329207009209/2765986534444032900",
+  "paid_gain_combined": "4594551260881450309261834591/2837232739731183068973297600",
+  "new_A_omega_only": "90135864061549507/2174857836049080",
+  "new_A_combined": "68678357676574195925297901887/1702339643838709841383978560",
+  "decimal_information_only": {
+    "gain_omega": 0.5184028596492152,
+    "gain_combined": 1.6193776409462857,
+    "A_omega": 41.444485504989764,
+    "A_combined": 40.343510723692695
+  },
+  "manual_independent_gain": "1/24",
+  "all_places": "only large primes in [n/4,6n] changed; small primes and p>6n retain proven baseline bounds",
+  "not_claimed": [
+    "actual Gram Smith exactness",
+    "target nonzero",
+    "strict margin",
+    "special-value irrationality"
+  ],
+  "closed_certificate_rows": [
+    {
+      "lo": "1/4",
+      "hi": "27/106",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-560",
+        "intercept": "136"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-560",
+        "intercept": "136"
+      },
+      "omega_gain": {
+        "slope": "-368",
+        "intercept": "94"
+      },
+      "combined_gain": {
+        "slope": "-368",
+        "intercept": "94"
+      },
+      "omega_area": "15/2809",
+      "combined_area": "15/2809"
+    },
+    {
+      "lo": "27/106",
+      "hi": "47/184",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-560",
+        "intercept": "136"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-136",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "-368",
+        "intercept": "94"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "49/516856",
+      "combined_area": "4851/23775376"
+    },
+    {
+      "lo": "47/184",
+      "hi": "8/31",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-136",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "8085/8133904"
+    },
+    {
+      "lo": "8/31",
+      "hi": "7/27",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "608",
+        "intercept": "-164"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "406/700569"
+    },
+    {
+      "lo": "7/27",
+      "hi": "89/343",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "230",
+        "intercept": "-66"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-322",
+        "intercept": "84"
+      },
+      "omega_area": "0",
+      "combined_area": "1280/12252303"
+    },
+    {
+      "lo": "89/343",
+      "hi": "20/77",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "1924",
+        "intercept": "-506"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "230",
+        "intercept": "-66"
+      },
+      "omega_gain": {
+        "slope": "1372",
+        "intercept": "-356"
+      },
+      "combined_gain": {
+        "slope": "-322",
+        "intercept": "84"
+      },
+      "omega_area": "2/41503",
+      "combined_area": "219/2033647"
+    },
+    {
+      "lo": "20/77",
+      "hi": "6/23",
+      "floors_Q_h_a2": [
+        11,
+        23,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "552",
+        "intercept": "-150"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "1924",
+        "intercept": "-506"
+      },
+      "combined_label": "lambda4_eta2",
+      "combined_bound": {
+        "slope": "1924",
+        "intercept": "-506"
+      },
+      "omega_gain": {
+        "slope": "1372",
+        "intercept": "-356"
+      },
+      "combined_gain": {
+        "slope": "1372",
+        "intercept": "-356"
+      },
+      "omega_area": "576/448063",
+      "combined_area": "576/448063"
+    },
+    {
+      "lo": "6/23",
+      "hi": "5/19",
+      "floors_Q_h_a2": [
+        11,
+        22,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-192",
+        "intercept": "42"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-136",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "294/190969"
+    },
+    {
+      "lo": "5/19",
+      "hi": "4/15",
+      "floors_Q_h_a2": [
+        11,
+        22,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-154",
+        "intercept": "32"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-154",
+        "intercept": "32"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-98",
+        "intercept": "18"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "238/81225"
+    },
+    {
+      "lo": "4/15",
+      "hi": "7/26",
+      "floors_Q_h_a2": [
+        11,
+        22,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "506",
+        "intercept": "-144"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "506",
+        "intercept": "-144"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "562",
+        "intercept": "-158"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "98/38025"
+    },
+    {
+      "lo": "7/26",
+      "hi": "3/11",
+      "floors_Q_h_a2": [
+        11,
+        22,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "506",
+        "intercept": "-144"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "506",
+        "intercept": "-144"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "198",
+        "intercept": "-60"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-308",
+        "intercept": "84"
+      },
+      "omega_area": "0",
+      "combined_area": "7/3718"
+    },
+    {
+      "lo": "3/11",
+      "hi": "8/29",
+      "floors_Q_h_a2": [
+        10,
+        21,
+        7
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-120",
+        "intercept": "24"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-120",
+        "intercept": "34"
+      },
+      "omega_area": "0",
+      "combined_area": "346/101761"
+    },
+    {
+      "lo": "8/29",
+      "hi": "64/231",
+      "floors_Q_h_a2": [
+        10,
+        21,
+        7
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "518",
+        "intercept": "-152"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "518",
+        "intercept": "-142"
+      },
+      "omega_area": "0",
+      "combined_area": "9232/6410943"
+    },
+    {
+      "lo": "64/231",
+      "hi": "7/25",
+      "floors_Q_h_a2": [
+        10,
+        21,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "462",
+        "intercept": "-138"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "462",
+        "intercept": "-138"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "518",
+        "intercept": "-152"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "56",
+        "intercept": "-14"
+      },
+      "omega_area": "0",
+      "combined_area": "22406/4764375"
+    },
+    {
+      "lo": "7/25",
+      "hi": "2/7",
+      "floors_Q_h_a2": [
+        10,
+        21,
+        7
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "462",
+        "intercept": "-138"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "462",
+        "intercept": "-138"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "168",
+        "intercept": "-54"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-294",
+        "intercept": "84"
+      },
+      "omega_area": "0",
+      "combined_area": "3/625"
+    },
+    {
+      "lo": "2/7",
+      "hi": "47/161",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-154",
+        "intercept": "38"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-434",
+        "intercept": "120"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-434",
+        "intercept": "120"
+      },
+      "omega_gain": {
+        "slope": "-280",
+        "intercept": "82"
+      },
+      "combined_gain": {
+        "slope": "-280",
+        "intercept": "82"
+      },
+      "omega_area": "26/3703",
+      "combined_area": "26/3703"
+    },
+    {
+      "lo": "47/161",
+      "hi": "41/140",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-154",
+        "intercept": "38"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-434",
+        "intercept": "120"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-112",
+        "intercept": "26"
+      },
+      "omega_gain": {
+        "slope": "-280",
+        "intercept": "82"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "9/74060",
+      "combined_area": "387/1481200"
+    },
+    {
+      "lo": "41/140",
+      "hi": "5/17",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-154",
+        "intercept": "38"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-154",
+        "intercept": "38"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-112",
+        "intercept": "26"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "333/809200"
+    },
+    {
+      "lo": "5/17",
+      "hi": "8/27",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-120",
+        "intercept": "28"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-120",
+        "intercept": "28"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-78",
+        "intercept": "16"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "61/70227"
+    },
+    {
+      "lo": "8/27",
+      "hi": "14/47",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "462",
+        "intercept": "-144"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "404/536787"
+    },
+    {
+      "lo": "14/47",
+      "hi": "79/265",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "180",
+        "intercept": "-60"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-240",
+        "intercept": "72"
+      },
+      "omega_area": "0",
+      "combined_area": "720/6205081"
+    },
+    {
+      "lo": "79/265",
+      "hi": "97/325",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "omega_label": "lambda4_eta0",
+      "omega_bound": {
+        "slope": "1480",
+        "intercept": "-448"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "180",
+        "intercept": "-60"
+      },
+      "omega_gain": {
+        "slope": "1060",
+        "intercept": "-316"
+      },
+      "combined_gain": {
+        "slope": "-240",
+        "intercept": "72"
+      },
+      "omega_area": "72/1119625",
+      "combined_area": "8496/59340125"
+    },
+    {
+      "lo": "97/325",
+      "hi": "3/10",
+      "floors_Q_h_a2": [
+        10,
+        20,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "420",
+        "intercept": "-132"
+      },
+      "omega_label": "lambda4_eta0",
+      "omega_bound": {
+        "slope": "1480",
+        "intercept": "-448"
+      },
+      "combined_label": "lambda4_eta0",
+      "combined_bound": {
+        "slope": "1480",
+        "intercept": "-448"
+      },
+      "omega_gain": {
+        "slope": "1060",
+        "intercept": "-316"
+      },
+      "combined_gain": {
+        "slope": "1060",
+        "intercept": "-316"
+      },
+      "omega_area": "77/42250",
+      "combined_area": "77/42250"
+    },
+    {
+      "lo": "3/10",
+      "hi": "4/13",
+      "floors_Q_h_a2": [
+        9,
+        19,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-140",
+        "intercept": "34"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-140",
+        "intercept": "34"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-98",
+        "intercept": "22"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "99/16900"
+    },
+    {
+      "lo": "4/13",
+      "hi": "14/45",
+      "floors_Q_h_a2": [
+        9,
+        19,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "380",
+        "intercept": "-126"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "380",
+        "intercept": "-126"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "422",
+        "intercept": "-138"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "388/114075"
+    },
+    {
+      "lo": "14/45",
+      "hi": "6/19",
+      "floors_Q_h_a2": [
+        9,
+        19,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "380",
+        "intercept": "-126"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "380",
+        "intercept": "-126"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "152",
+        "intercept": "-54"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-228",
+        "intercept": "72"
+      },
+      "omega_area": "0",
+      "combined_area": "32/12825"
+    },
+    {
+      "lo": "6/19",
+      "hi": "8/25",
+      "floors_Q_h_a2": [
+        9,
+        18,
+        6
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-66",
+        "intercept": "12"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-66",
+        "intercept": "22"
+      },
+      "omega_area": "0",
+      "combined_area": "968/225625"
+    },
+    {
+      "lo": "8/25",
+      "hi": "55/171",
+      "floors_Q_h_a2": [
+        9,
+        18,
+        6
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "384",
+        "intercept": "-132"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "384",
+        "intercept": "-122"
+      },
+      "omega_area": "0",
+      "combined_area": "11914/6091875"
+    },
+    {
+      "lo": "55/171",
+      "hi": "14/43",
+      "floors_Q_h_a2": [
+        9,
+        18,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "342",
+        "intercept": "-120"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "342",
+        "intercept": "-120"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "384",
+        "intercept": "-132"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "42",
+        "intercept": "-12"
+      },
+      "omega_area": "0",
+      "combined_area": "113129/18022203"
+    },
+    {
+      "lo": "14/43",
+      "hi": "1/3",
+      "floors_Q_h_a2": [
+        9,
+        18,
+        6
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "342",
+        "intercept": "-120"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "342",
+        "intercept": "-120"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "126",
+        "intercept": "-48"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-216",
+        "intercept": "72"
+      },
+      "omega_area": "0",
+      "combined_area": "12/1849"
+    },
+    {
+      "lo": "1/3",
+      "hi": "40/117",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-312",
+        "intercept": "100"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-312",
+        "intercept": "100"
+      },
+      "omega_gain": {
+        "slope": "-204",
+        "intercept": "70"
+      },
+      "combined_gain": {
+        "slope": "-204",
+        "intercept": "70"
+      },
+      "omega_area": "44/4563",
+      "combined_area": "44/4563"
+    },
+    {
+      "lo": "40/117",
+      "hi": "35/102",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-312",
+        "intercept": "100"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-78",
+        "intercept": "20"
+      },
+      "omega_gain": {
+        "slope": "-204",
+        "intercept": "70"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "25/155142",
+      "combined_area": "1825/5274828"
+    },
+    {
+      "lo": "35/102",
+      "hi": "8/23",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-78",
+        "intercept": "20"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "1045/611524"
+    },
+    {
+      "lo": "8/23",
+      "hi": "7/20",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "336",
+        "intercept": "-124"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "43/42320"
+    },
+    {
+      "lo": "7/20",
+      "hi": "130/371",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "136",
+        "intercept": "-54"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-170",
+        "intercept": "60"
+      },
+      "omega_area": "0",
+      "combined_area": "2073/11011280"
+    },
+    {
+      "lo": "130/371",
+      "hi": "20/57",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "1048",
+        "intercept": "-374"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "136",
+        "intercept": "-54"
+      },
+      "omega_gain": {
+        "slope": "742",
+        "intercept": "-260"
+      },
+      "combined_gain": {
+        "slope": "-170",
+        "intercept": "60"
+      },
+      "omega_area": "100/1205379",
+      "combined_area": "82700/447195609"
+    },
+    {
+      "lo": "20/57",
+      "hi": "6/17",
+      "floors_Q_h_a2": [
+        8,
+        17,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "306",
+        "intercept": "-114"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "1048",
+        "intercept": "-374"
+      },
+      "combined_label": "lambda4_eta2",
+      "combined_bound": {
+        "slope": "1048",
+        "intercept": "-374"
+      },
+      "omega_gain": {
+        "slope": "742",
+        "intercept": "-260"
+      },
+      "combined_gain": {
+        "slope": "742",
+        "intercept": "-260"
+      },
+      "omega_area": "2164/938961",
+      "combined_area": "2164/938961"
+    },
+    {
+      "lo": "6/17",
+      "hi": "5/14",
+      "floors_Q_h_a2": [
+        8,
+        16,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-108",
+        "intercept": "30"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-78",
+        "intercept": "20"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "155/56644"
+    },
+    {
+      "lo": "5/14",
+      "hi": "4/11",
+      "floors_Q_h_a2": [
+        8,
+        16,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-80",
+        "intercept": "20"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-80",
+        "intercept": "20"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-50",
+        "intercept": "10"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "125/23716"
+    },
+    {
+      "lo": "4/11",
+      "hi": "7/19",
+      "floors_Q_h_a2": [
+        8,
+        16,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "272",
+        "intercept": "-108"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "272",
+        "intercept": "-108"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "302",
+        "intercept": "-118"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "205/43681"
+    },
+    {
+      "lo": "7/19",
+      "hi": "3/8",
+      "floors_Q_h_a2": [
+        8,
+        16,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "272",
+        "intercept": "-108"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "272",
+        "intercept": "-108"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "112",
+        "intercept": "-48"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-160",
+        "intercept": "60"
+      },
+      "omega_area": "0",
+      "combined_area": "5/1444"
+    },
+    {
+      "lo": "3/8",
+      "hi": "8/21",
+      "floors_Q_h_a2": [
+        7,
+        15,
+        5
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-66",
+        "intercept": "16"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-66",
+        "intercept": "26"
+      },
+      "omega_area": "0",
+      "combined_area": "59/9408"
+    },
+    {
+      "lo": "8/21",
+      "hi": "23/60",
+      "floors_Q_h_a2": [
+        7,
+        15,
+        5
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "270",
+        "intercept": "-112"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "270",
+        "intercept": "-102"
+      },
+      "omega_area": "0",
+      "combined_area": "11/3920"
+    },
+    {
+      "lo": "23/60",
+      "hi": "7/18",
+      "floors_Q_h_a2": [
+        7,
+        15,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "240",
+        "intercept": "-102"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "240",
+        "intercept": "-102"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "270",
+        "intercept": "-112"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "30",
+        "intercept": "-10"
+      },
+      "omega_area": "0",
+      "combined_area": "19/2160"
+    },
+    {
+      "lo": "7/18",
+      "hi": "2/5",
+      "floors_Q_h_a2": [
+        7,
+        15,
+        5
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "240",
+        "intercept": "-102"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "240",
+        "intercept": "-102"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "90",
+        "intercept": "-42"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-150",
+        "intercept": "60"
+      },
+      "omega_area": "0",
+      "combined_area": "1/108"
+    },
+    {
+      "lo": "2/5",
+      "hi": "33/80",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-80",
+        "intercept": "26"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-220",
+        "intercept": "84"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-220",
+        "intercept": "84"
+      },
+      "omega_gain": {
+        "slope": "-140",
+        "intercept": "58"
+      },
+      "combined_gain": {
+        "slope": "-140",
+        "intercept": "58"
+      },
+      "omega_area": "9/640",
+      "combined_area": "9/640"
+    },
+    {
+      "lo": "33/80",
+      "hi": "29/70",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-80",
+        "intercept": "26"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-220",
+        "intercept": "84"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-60",
+        "intercept": "18"
+      },
+      "omega_gain": {
+        "slope": "-140",
+        "intercept": "58"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "1/4480",
+      "combined_area": "3/6272"
+    },
+    {
+      "lo": "29/70",
+      "hi": "5/12",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-80",
+        "intercept": "26"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-80",
+        "intercept": "26"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-60",
+        "intercept": "18"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "13/17640"
+    },
+    {
+      "lo": "5/12",
+      "hi": "8/19",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-56",
+        "intercept": "16"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-56",
+        "intercept": "16"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-36",
+        "intercept": "8"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "43/25992"
+    },
+    {
+      "lo": "8/19",
+      "hi": "14/33",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "230",
+        "intercept": "-104"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "568/393129"
+    },
+    {
+      "lo": "14/33",
+      "hi": "110/259",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "98",
+        "intercept": "-48"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-112",
+        "intercept": "48"
+      },
+      "omega_area": "0",
+      "combined_area": "320/1490841"
+    },
+    {
+      "lo": "110/259",
+      "hi": "134/315",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "omega_label": "lambda4_eta0",
+      "omega_bound": {
+        "slope": "728",
+        "intercept": "-316"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "98",
+        "intercept": "-48"
+      },
+      "omega_gain": {
+        "slope": "518",
+        "intercept": "-220"
+      },
+      "combined_gain": {
+        "slope": "-112",
+        "intercept": "48"
+      },
+      "omega_area": "64/524475",
+      "combined_area": "5248/19405575"
+    },
+    {
+      "lo": "134/315",
+      "hi": "3/7",
+      "floors_Q_h_a2": [
+        7,
+        14,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "210",
+        "intercept": "-96"
+      },
+      "omega_label": "lambda4_eta0",
+      "omega_bound": {
+        "slope": "728",
+        "intercept": "-316"
+      },
+      "combined_label": "lambda4_eta0",
+      "combined_bound": {
+        "slope": "728",
+        "intercept": "-316"
+      },
+      "omega_gain": {
+        "slope": "518",
+        "intercept": "-220"
+      },
+      "combined_gain": {
+        "slope": "518",
+        "intercept": "-220"
+      },
+      "omega_area": "53/14175",
+      "combined_area": "53/14175"
+    },
+    {
+      "lo": "3/7",
+      "hi": "4/9",
+      "floors_Q_h_a2": [
+        6,
+        13,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-70",
+        "intercept": "22"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-70",
+        "intercept": "22"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-50",
+        "intercept": "14"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "46/3969"
+    },
+    {
+      "lo": "4/9",
+      "hi": "14/31",
+      "floors_Q_h_a2": [
+        6,
+        13,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "182",
+        "intercept": "-90"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "182",
+        "intercept": "-90"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "202",
+        "intercept": "-98"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "536/77841"
+    },
+    {
+      "lo": "14/31",
+      "hi": "6/13",
+      "floors_Q_h_a2": [
+        6,
+        13,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "182",
+        "intercept": "-90"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "182",
+        "intercept": "-90"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "78",
+        "intercept": "-42"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-104",
+        "intercept": "48"
+      },
+      "omega_area": "0",
+      "combined_area": "64/12493"
+    },
+    {
+      "lo": "6/13",
+      "hi": "8/17",
+      "floors_Q_h_a2": [
+        6,
+        12,
+        4
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-28",
+        "intercept": "4"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-28",
+        "intercept": "14"
+      },
+      "omega_area": "0",
+      "combined_area": "420/48841"
+    },
+    {
+      "lo": "8/17",
+      "hi": "37/78",
+      "floors_Q_h_a2": [
+        6,
+        12,
+        4
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "176",
+        "intercept": "-92"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "176",
+        "intercept": "-82"
+      },
+      "omega_area": "0",
+      "combined_area": "1915/439569"
+    },
+    {
+      "lo": "37/78",
+      "hi": "14/29",
+      "floors_Q_h_a2": [
+        6,
+        12,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "156",
+        "intercept": "-84"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "156",
+        "intercept": "-84"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "176",
+        "intercept": "-92"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "20",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "33763/2558322"
+    },
+    {
+      "lo": "14/29",
+      "hi": "1/2",
+      "floors_Q_h_a2": [
+        6,
+        12,
+        4
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "156",
+        "intercept": "-84"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "156",
+        "intercept": "-84"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "60",
+        "intercept": "-36"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-96",
+        "intercept": "48"
+      },
+      "omega_area": "0",
+      "combined_area": "12/841"
+    },
+    {
+      "lo": "1/2",
+      "hi": "13/25",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-136",
+        "intercept": "64"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-136",
+        "intercept": "64"
+      },
+      "omega_gain": {
+        "slope": "-88",
+        "intercept": "46"
+      },
+      "combined_gain": {
+        "slope": "-88",
+        "intercept": "46"
+      },
+      "omega_area": "14/625",
+      "combined_area": "14/625"
+    },
+    {
+      "lo": "13/25",
+      "hi": "23/44",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-136",
+        "intercept": "64"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-36",
+        "intercept": "12"
+      },
+      "omega_gain": {
+        "slope": "-88",
+        "intercept": "46"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "9/27500",
+      "combined_area": "423/605000"
+    },
+    {
+      "lo": "23/44",
+      "hi": "8/15",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-36",
+        "intercept": "12"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "259/72600"
+    },
+    {
+      "lo": "8/15",
+      "hi": "7/13",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "144",
+        "intercept": "-84"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "28/12675"
+    },
+    {
+      "lo": "7/13",
+      "hi": "41/76",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "66",
+        "intercept": "-42"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-66",
+        "intercept": "36"
+      },
+      "omega_area": "0",
+      "combined_area": "423/976144"
+    },
+    {
+      "lo": "41/76",
+      "hi": "20/37",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "436",
+        "intercept": "-242"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "66",
+        "intercept": "-42"
+      },
+      "omega_gain": {
+        "slope": "304",
+        "intercept": "-164"
+      },
+      "combined_gain": {
+        "slope": "-66",
+        "intercept": "36"
+      },
+      "omega_area": "9/52022",
+      "combined_area": "3033/7907344"
+    },
+    {
+      "lo": "20/37",
+      "hi": "6/11",
+      "floors_Q_h_a2": [
+        5,
+        11,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "132",
+        "intercept": "-78"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "436",
+        "intercept": "-242"
+      },
+      "combined_label": "lambda4_eta2",
+      "combined_bound": {
+        "slope": "436",
+        "intercept": "-242"
+      },
+      "omega_gain": {
+        "slope": "304",
+        "intercept": "-164"
+      },
+      "combined_gain": {
+        "slope": "304",
+        "intercept": "-164"
+      },
+      "omega_area": "872/165649",
+      "combined_area": "872/165649"
+    },
+    {
+      "lo": "6/11",
+      "hi": "5/9",
+      "floors_Q_h_a2": [
+        5,
+        10,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-48",
+        "intercept": "18"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-36",
+        "intercept": "12"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "20/3267"
+    },
+    {
+      "lo": "5/9",
+      "hi": "4/7",
+      "floors_Q_h_a2": [
+        5,
+        10,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-30",
+        "intercept": "8"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-30",
+        "intercept": "8"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-18",
+        "intercept": "2"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "16/1323"
+    },
+    {
+      "lo": "4/7",
+      "hi": "7/12",
+      "floors_Q_h_a2": [
+        5,
+        10,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "110",
+        "intercept": "-72"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "110",
+        "intercept": "-72"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "122",
+        "intercept": "-78"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "13/1176"
+    },
+    {
+      "lo": "7/12",
+      "hi": "3/5",
+      "floors_Q_h_a2": [
+        5,
+        10,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "110",
+        "intercept": "-72"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "110",
+        "intercept": "-72"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "50",
+        "intercept": "-36"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-60",
+        "intercept": "36"
+      },
+      "omega_area": "0",
+      "combined_area": "1/120"
+    },
+    {
+      "lo": "3/5",
+      "hi": "8/13",
+      "floors_Q_h_a2": [
+        4,
+        9,
+        3
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-28",
+        "intercept": "8"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-28",
+        "intercept": "18"
+      },
+      "omega_area": "0",
+      "combined_area": "64/4225"
+    },
+    {
+      "lo": "8/13",
+      "hi": "28/45",
+      "floors_Q_h_a2": [
+        4,
+        9,
+        3
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "102",
+        "intercept": "-72"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "102",
+        "intercept": "-62"
+      },
+      "omega_area": "0",
+      "combined_area": "872/114075"
+    },
+    {
+      "lo": "28/45",
+      "hi": "7/11",
+      "floors_Q_h_a2": [
+        4,
+        9,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "90",
+        "intercept": "-66"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "90",
+        "intercept": "-66"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "102",
+        "intercept": "-72"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "12",
+        "intercept": "-6"
+      },
+      "omega_area": "0",
+      "combined_area": "1792/81675"
+    },
+    {
+      "lo": "7/11",
+      "hi": "2/3",
+      "floors_Q_h_a2": [
+        4,
+        9,
+        3
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "90",
+        "intercept": "-66"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "90",
+        "intercept": "-66"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "36",
+        "intercept": "-30"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-54",
+        "intercept": "36"
+      },
+      "omega_area": "0",
+      "combined_area": "3/121"
+    },
+    {
+      "lo": "2/3",
+      "hi": "19/27",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-30",
+        "intercept": "14"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-78",
+        "intercept": "48"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-78",
+        "intercept": "48"
+      },
+      "omega_gain": {
+        "slope": "-48",
+        "intercept": "34"
+      },
+      "combined_gain": {
+        "slope": "-48",
+        "intercept": "34"
+      },
+      "omega_area": "10/243",
+      "combined_area": "10/243"
+    },
+    {
+      "lo": "19/27",
+      "hi": "17/24",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-30",
+        "intercept": "14"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-78",
+        "intercept": "48"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-24",
+        "intercept": "10"
+      },
+      "omega_gain": {
+        "slope": "-48",
+        "intercept": "34"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "1/1944",
+      "combined_area": "17/15552"
+    },
+    {
+      "lo": "17/24",
+      "hi": "5/7",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-30",
+        "intercept": "14"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-30",
+        "intercept": "14"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-24",
+        "intercept": "10"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "5/3136"
+    },
+    {
+      "lo": "5/7",
+      "hi": "8/11",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-16",
+        "intercept": "4"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-16",
+        "intercept": "4"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-10",
+        "intercept": "0"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "25/5929"
+    },
+    {
+      "lo": "8/11",
+      "hi": "14/19",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "72",
+        "intercept": "-60"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "72",
+        "intercept": "-60"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "78",
+        "intercept": "-64"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "164/43681"
+    },
+    {
+      "lo": "14/19",
+      "hi": "31/42",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "72",
+        "intercept": "-60"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "72",
+        "intercept": "-60"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "40",
+        "intercept": "-36"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-32",
+        "intercept": "24"
+      },
+      "omega_area": "0",
+      "combined_area": "80/159201"
+    },
+    {
+      "lo": "31/42",
+      "hi": "37/50",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_root_weighted_paid",
+      "baseline": {
+        "slope": "240",
+        "intercept": "-184"
+      },
+      "omega_label": "471_root_weighted_paid",
+      "omega_bound": {
+        "slope": "240",
+        "intercept": "-184"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "40",
+        "intercept": "-36"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-200",
+        "intercept": "148"
+      },
+      "omega_area": "0",
+      "combined_area": "4/11025"
+    },
+    {
+      "lo": "37/50",
+      "hi": "3/4",
+      "floors_Q_h_a2": [
+        4,
+        8,
+        2
+      ],
+      "baseline_label": "471_root_weighted_paid",
+      "baseline": {
+        "slope": "240",
+        "intercept": "-184"
+      },
+      "omega_label": "471_root_weighted_paid",
+      "omega_bound": {
+        "slope": "240",
+        "intercept": "-184"
+      },
+      "combined_label": "471_root_weighted_paid",
+      "combined_bound": {
+        "slope": "240",
+        "intercept": "-184"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "3/4",
+      "hi": "4/5",
+      "floors_Q_h_a2": [
+        3,
+        7,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-24",
+        "intercept": "10"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-24",
+        "intercept": "10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-18",
+        "intercept": "6"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "13/400"
+    },
+    {
+      "lo": "4/5",
+      "hi": "14/17",
+      "floors_Q_h_a2": [
+        3,
+        7,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "56",
+        "intercept": "-54"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "56",
+        "intercept": "-54"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "62",
+        "intercept": "-58"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "148/7225"
+    },
+    {
+      "lo": "14/17",
+      "hi": "6/7",
+      "floors_Q_h_a2": [
+        3,
+        7,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "56",
+        "intercept": "-54"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "56",
+        "intercept": "-54"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "28",
+        "intercept": "-30"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-28",
+        "intercept": "24"
+      },
+      "omega_area": "0",
+      "combined_area": "32/2023"
+    },
+    {
+      "lo": "6/7",
+      "hi": "8/9",
+      "floors_Q_h_a2": [
+        3,
+        6,
+        2
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-6",
+        "intercept": "-4"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-6",
+        "intercept": "6"
+      },
+      "omega_area": "0",
+      "combined_area": "32/1323"
+    },
+    {
+      "lo": "8/9",
+      "hi": "19/21",
+      "floors_Q_h_a2": [
+        3,
+        6,
+        2
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "48",
+        "intercept": "-52"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "48",
+        "intercept": "-42"
+      },
+      "omega_area": "0",
+      "combined_area": "22/1323"
+    },
+    {
+      "lo": "19/21",
+      "hi": "14/15",
+      "floors_Q_h_a2": [
+        3,
+        6,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "42",
+        "intercept": "-48"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "42",
+        "intercept": "-48"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "48",
+        "intercept": "-52"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "6",
+        "intercept": "-4"
+      },
+      "omega_area": "0",
+      "combined_area": "53/1225"
+    },
+    {
+      "lo": "14/15",
+      "hi": "1",
+      "floors_Q_h_a2": [
+        3,
+        6,
+        2
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "42",
+        "intercept": "-48"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "42",
+        "intercept": "-48"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "18",
+        "intercept": "-24"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-24",
+        "intercept": "24"
+      },
+      "omega_area": "0",
+      "combined_area": "4/75"
+    },
+    {
+      "lo": "1",
+      "hi": "15/14",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-12",
+        "intercept": "6"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "-20",
+        "intercept": "22"
+      },
+      "combined_gain": {
+        "slope": "-20",
+        "intercept": "22"
+      },
+      "omega_area": "9/98",
+      "combined_area": "9/98"
+    },
+    {
+      "lo": "15/14",
+      "hi": "14/13",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "16",
+        "intercept": "-24"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "-48",
+        "intercept": "52"
+      },
+      "combined_gain": {
+        "slope": "-48",
+        "intercept": "52"
+      },
+      "omega_area": "20/8281",
+      "combined_area": "20/8281"
+    },
+    {
+      "lo": "14/13",
+      "hi": "12/11",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "-10",
+        "intercept": "4"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-32",
+        "intercept": "28"
+      },
+      "omega_gain": {
+        "slope": "-22",
+        "intercept": "24"
+      },
+      "combined_gain": {
+        "slope": "-22",
+        "intercept": "24"
+      },
+      "omega_area": "4/1859",
+      "combined_area": "4/1859"
+    },
+    {
+      "lo": "12/11",
+      "hi": "8/7",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "-10",
+        "intercept": "4"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "-10",
+        "intercept": "4"
+      },
+      "combined_label": "old_common_minor_carry",
+      "combined_bound": {
+        "slope": "-10",
+        "intercept": "4"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "8/7",
+      "hi": "7/6",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "32",
+        "intercept": "-44"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "7",
+        "intercept": "-8"
+      },
+      "omega_area": "0",
+      "combined_area": "1/504"
+    },
+    {
+      "lo": "7/6",
+      "hi": "74/63",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "20",
+        "intercept": "-30"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-5",
+        "intercept": "6"
+      },
+      "omega_area": "0",
+      "combined_area": "37/31752"
+    },
+    {
+      "lo": "74/63",
+      "hi": "20/17",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "88",
+        "intercept": "-110"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "20",
+        "intercept": "-30"
+      },
+      "omega_gain": {
+        "slope": "63",
+        "intercept": "-74"
+      },
+      "combined_gain": {
+        "slope": "-5",
+        "intercept": "6"
+      },
+      "omega_area": "2/18207",
+      "combined_area": "262/1147041"
+    },
+    {
+      "lo": "20/17",
+      "hi": "6/5",
+      "floors_Q_h_a2": [
+        2,
+        5,
+        1
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "25",
+        "intercept": "-36"
+      },
+      "omega_label": "lambda4_eta2",
+      "omega_bound": {
+        "slope": "88",
+        "intercept": "-110"
+      },
+      "combined_label": "lambda4_eta2",
+      "combined_bound": {
+        "slope": "88",
+        "intercept": "-110"
+      },
+      "omega_gain": {
+        "slope": "63",
+        "intercept": "-74"
+      },
+      "combined_gain": {
+        "slope": "63",
+        "intercept": "-74"
+      },
+      "omega_area": "146/7225",
+      "combined_area": "146/7225"
+    },
+    {
+      "lo": "6/5",
+      "hi": "5/4",
+      "floors_Q_h_a2": [
+        2,
+        4,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-12",
+        "intercept": "6"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-12",
+        "intercept": "6"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-10",
+        "intercept": "4"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "2",
+        "intercept": "-2"
+      },
+      "omega_area": "0",
+      "combined_area": "9/400"
+    },
+    {
+      "lo": "5/4",
+      "hi": "4/3",
+      "floors_Q_h_a2": [
+        2,
+        4,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "-4",
+        "intercept": "-4"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "-4",
+        "intercept": "-4"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-2",
+        "intercept": "-6"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "2",
+        "intercept": "-2"
+      },
+      "omega_area": "0",
+      "combined_area": "7/144"
+    },
+    {
+      "lo": "4/3",
+      "hi": "7/5",
+      "floors_Q_h_a2": [
+        2,
+        4,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "20",
+        "intercept": "-36"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "20",
+        "intercept": "-36"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "22",
+        "intercept": "-38"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "2",
+        "intercept": "-2"
+      },
+      "omega_area": "0",
+      "combined_area": "11/225"
+    },
+    {
+      "lo": "7/5",
+      "hi": "3/2",
+      "floors_Q_h_a2": [
+        2,
+        4,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "20",
+        "intercept": "-36"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "20",
+        "intercept": "-36"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "12",
+        "intercept": "-24"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-8",
+        "intercept": "12"
+      },
+      "omega_area": "0",
+      "combined_area": "1/25"
+    },
+    {
+      "lo": "3/2",
+      "hi": "8/5",
+      "floors_Q_h_a2": [
+        1,
+        3,
+        1
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "-6",
+        "intercept": "0"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-6",
+        "intercept": "10"
+      },
+      "omega_area": "0",
+      "combined_area": "7/100"
+    },
+    {
+      "lo": "8/5",
+      "hi": "5/3",
+      "floors_Q_h_a2": [
+        1,
+        3,
+        1
+      ],
+      "baseline_label": "entrycap",
+      "baseline": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "omega_label": "entrycap",
+      "omega_bound": {
+        "slope": "0",
+        "intercept": "-10"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "14",
+        "intercept": "-32"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "14",
+        "intercept": "-22"
+      },
+      "omega_area": "0",
+      "combined_area": "13/225"
+    },
+    {
+      "lo": "5/3",
+      "hi": "7/4",
+      "floors_Q_h_a2": [
+        1,
+        3,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "12",
+        "intercept": "-30"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "12",
+        "intercept": "-30"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "14",
+        "intercept": "-32"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "2",
+        "intercept": "-2"
+      },
+      "omega_area": "0",
+      "combined_area": "17/144"
+    },
+    {
+      "lo": "7/4",
+      "hi": "2",
+      "floors_Q_h_a2": [
+        1,
+        3,
+        1
+      ],
+      "baseline_label": "471_unit_sector_C_G",
+      "baseline": {
+        "slope": "12",
+        "intercept": "-30"
+      },
+      "omega_label": "471_unit_sector_C_G",
+      "omega_bound": {
+        "slope": "12",
+        "intercept": "-30"
+      },
+      "combined_label": "actual_paired_unit_sector",
+      "combined_bound": {
+        "slope": "6",
+        "intercept": "-18"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "-6",
+        "intercept": "12"
+      },
+      "omega_area": "0",
+      "combined_area": "3/16"
+    },
+    {
+      "lo": "2",
+      "hi": "16/7",
+      "floors_Q_h_a2": [
+        1,
+        2,
+        0
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "-1",
+        "intercept": "-4"
+      },
+      "omega_label": "lambda3_eta2",
+      "omega_bound": {
+        "slope": "-8",
+        "intercept": "12"
+      },
+      "combined_label": "lambda3_eta2",
+      "combined_bound": {
+        "slope": "-8",
+        "intercept": "12"
+      },
+      "omega_gain": {
+        "slope": "-7",
+        "intercept": "16"
+      },
+      "combined_gain": {
+        "slope": "-7",
+        "intercept": "16"
+      },
+      "omega_area": "2/7",
+      "combined_area": "2/7"
+    },
+    {
+      "lo": "16/7",
+      "hi": "8/3",
+      "floors_Q_h_a2": [
+        1,
+        2,
+        0
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "-1",
+        "intercept": "-4"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "-1",
+        "intercept": "-4"
+      },
+      "combined_label": "old_common_minor_carry",
+      "combined_bound": {
+        "slope": "-1",
+        "intercept": "-4"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "8/3",
+      "hi": "3",
+      "floors_Q_h_a2": [
+        1,
+        2,
+        0
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "8",
+        "intercept": "-28"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "8",
+        "intercept": "-28"
+      },
+      "combined_label": "old_common_minor_carry",
+      "combined_bound": {
+        "slope": "8",
+        "intercept": "-28"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "3",
+      "hi": "11/3",
+      "floors_Q_h_a2": [
+        0,
+        1,
+        0
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "-2",
+        "intercept": "-2"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "-2",
+        "intercept": "-2"
+      },
+      "combined_label": "old_common_minor_carry",
+      "combined_bound": {
+        "slope": "-2",
+        "intercept": "-2"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "11/3",
+      "hi": "4",
+      "floors_Q_h_a2": [
+        0,
+        1,
+        0
+      ],
+      "baseline_label": "old_jet_3_4_B",
+      "baseline": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "omega_label": "old_jet_3_4_B",
+      "omega_bound": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "combined_label": "old_jet_3_4_B",
+      "combined_bound": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "4",
+      "hi": "5",
+      "floors_Q_h_a2": [
+        0,
+        1,
+        0
+      ],
+      "baseline_label": "old_jet_4_6_B",
+      "baseline": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "omega_label": "old_jet_4_6_B",
+      "omega_bound": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "combined_label": "old_jet_4_6_B",
+      "combined_bound": {
+        "slope": "1",
+        "intercept": "-13"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    },
+    {
+      "lo": "5",
+      "hi": "6",
+      "floors_Q_h_a2": [
+        0,
+        1,
+        0
+      ],
+      "baseline_label": "old_common_minor_carry",
+      "baseline": {
+        "slope": "12",
+        "intercept": "-68"
+      },
+      "omega_label": "old_common_minor_carry",
+      "omega_bound": {
+        "slope": "12",
+        "intercept": "-68"
+      },
+      "combined_label": "old_common_minor_carry",
+      "combined_bound": {
+        "slope": "12",
+        "intercept": "-68"
+      },
+      "omega_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "combined_gain": {
+        "slope": "0",
+        "intercept": "0"
+      },
+      "omega_area": "0",
+      "combined_area": "0"
+    }
+  ]
+}

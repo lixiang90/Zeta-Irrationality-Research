@@ -1,0 +1,59 @@
+10
+
+
+5k       n            an          n^2(1/4-an) e_k -1/A       bn      n^2(1/2-bn)f_k 1/B
+             0                                           0.250000000000
+             1   0.220479275922    0.02952               0.464285714286 0.0357
+             2   0.242249473181    0.03100               0.485482446456 0.0581
+             3   0.246431702341    0.03211               0.492103081871 0.0711
+             4   0.247955681921    0.03271               0.495028498758 0.0795
+             5   0.248678124353    0.03305               0.496579511644 0.0855
+...
+ 45     819 0.249999952108 0.03212 1143.6 21.8 0.499999816678 0.1230      491.5 13.3
+                                          25.4                                  10.9
+ 50    1177 0.249999976866 0.03205 1253.6 22.0 0.499999911064 0.1232      557.2 13.2
+                                          25.1                                  11.1
+...
+ 95 17099 0.249999999892 0.03169 2263.7 22.5 0.499999999576 0.1241 1114.5 11.9
+                                        23.8                              11.7
+100 22026 0.249999999935 0.03167 2376.4 22.5 0.499999999744 0.1241 1173.3 11.8
+                                        23.8                              11.7
+                                                                        √ logarithmic weight
+             Table 2. Recurrence coefficients values and behaviour for the
+             − log t on (0, 1). When n (of the form integer part of exp 5k) is large enough,
+             ek := 1/[n2 (1/4 − an ) − 1/32] ∼ − log2 n/A ∼ 5k/A is shown, leading to estimates
+             of −1/A by two different methods; for bn , fk = 1/[1/8 − n2 (1/2 − bn )] ∼ 5k/B is
+             shown.
+
+
+a)n P̃2n (t), where P̃2n is the even monic orthogonal polynomial of degree 2n with respect to the
+even weight function |t|w(a + (b − a)t2 ) on [−1, 1], as well known ( [17, chap. 1,§8], etc.), as is
+the recurrence " relation:                                                 #
+                                              P̃   (t) + ã2    P̃     (t)
+                                                2n         2n−1   2n−2
+P̃2n+2 (t) = t P̃2n+1 (t) = tP̃2n (t) − ã22n                                − ã22n+1 P̃2n (t),
+                                                            t
+so, an = (b − a)ã2n ã2n−1 , bn = a + (b − a)(ã22n + ã22n+1 ). As ãn = 1/2 + (−1)n Ã/(n log n) + · · ·
+is expected from the conjecture of § 6.2 (here, c = 0 and θc = π/2 in (18)), then a part of (16)
+follows, with A = −(b − a)Ã2 /4. We have no check for A (just its negative sign), as |t| log |t|
+singularities are not considered in (21).
+
+5.3. Trying multiple orthogonal polynomials.
+
+   Warning: this subsection deals with a trend which proved not to be fruitful in the present case,
+but could be inspiring in other situations. Fact is that I do not know any other explicit family of
+orthogonal (of some sort) polynomials with respect to a logarithmic weight function.
+    Quite another trend is given by known formulas for some multiple orthogonal polynomials,
+summarized here [40, § 12]: the polynomial Rn = R{n1 ,...,np } of degree n = n1 + · · · np is a
+multiple orthogonal polynomial with respect to the measures dµ1 , . . . , dµp if Rn is orthogonal to
+polynomials of degree < n1 with respect to dµ1 , of degree < n2 w.r.t. dµ2 , . . . , of degree < np
+w.r.t. to dµp . This goes back to Hermite and Padé, and even to Jacobi (Jacobi-Perron algorithm),
+see [14]. An interesting recurrence relation (12) with s = p occurs when3 nj = 1 + ⌊(n − j)/p⌋, j =
+1, . . . , p.
+    Let p = 2, dµ1 (x) = xα1 dx and dµ2 (x) = xα2 dx on (0, 1). The corresponding polynomials
+Rn are explicitly known [3]. As they are orthogonal to polynomials of degree < min(n1 , n2 )
+with respect to any linear combination with constant coefficients of dµ1 and dµ2 , let us take α1
+and α2 → 0, then the orthogonality holds with respect to the constant weight and the limit of
+
+     3The floor ⌊x⌋ = the largest integer 6 x.
+

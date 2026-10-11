@@ -1,0 +1,131 @@
+{
+  "scope": "primitive content of the natural third connection after exact Bol/constant reduction; no all-method no-go",
+  "input_certificate": "E:\\kimi-build\\zeta5\\research\\cdt_odd_level20_frobenius_20261006_verify.json",
+  "input_sha256": "78655a3a2a822280e90ae60c500501504be83a1919c5cd22e664bb19b3697327",
+  "checks_passed": 54,
+  "check_labels": [
+    "exact_rational_curvature_identity",
+    "curvature_first_coefficient_minus8",
+    "input_fixed_primes",
+    "p7_F_numerator_all_coefficients_divisible_p2",
+    "p7_F_numerator_not_divisible_p3",
+    "p7_curvature_first_nonzero_degree_p",
+    "p7_curvature_exact_leading_minus8",
+    "p7_curvature_full_modp_formula",
+    "p7_embedding-1_denominator_unit",
+    "p7_embedding-1_both_target_rows_content_p2",
+    "p7_embedding-1_target_content_exact_p2",
+    "p7_embedding-1_normalized_derivative_coefficient_8",
+    "p7_embedding-1_primitive_row_in_existing_first_order_module",
+    "p7_embedding-1_all_cleared_coefficients_degree_bound",
+    "p7_embedding1_denominator_unit",
+    "p7_embedding1_both_target_rows_content_p2",
+    "p7_embedding1_target_content_exact_p2",
+    "p7_embedding1_normalized_derivative_coefficient_8",
+    "p7_embedding1_primitive_row_in_existing_first_order_module",
+    "p7_embedding1_all_cleared_coefficients_degree_bound",
+    "p11_F_numerator_all_coefficients_divisible_p2",
+    "p11_F_numerator_not_divisible_p3",
+    "p11_curvature_first_nonzero_degree_p",
+    "p11_curvature_exact_leading_minus8",
+    "p11_curvature_full_modp_formula",
+    "p11_embedding-1_denominator_unit",
+    "p11_embedding-1_both_target_rows_content_p2",
+    "p11_embedding-1_target_content_exact_p2",
+    "p11_embedding-1_normalized_derivative_coefficient_8",
+    "p11_embedding-1_primitive_row_in_existing_first_order_module",
+    "p11_embedding-1_all_cleared_coefficients_degree_bound",
+    "p11_embedding1_denominator_unit",
+    "p11_embedding1_both_target_rows_content_p2",
+    "p11_embedding1_target_content_exact_p2",
+    "p11_embedding1_normalized_derivative_coefficient_8",
+    "p11_embedding1_primitive_row_in_existing_first_order_module",
+    "p11_embedding1_all_cleared_coefficients_degree_bound",
+    "p13_F_numerator_all_coefficients_divisible_p2",
+    "p13_F_numerator_not_divisible_p3",
+    "p13_curvature_first_nonzero_degree_p",
+    "p13_curvature_exact_leading_minus8",
+    "p13_curvature_full_modp_formula",
+    "p13_embedding-1_denominator_unit",
+    "p13_embedding-1_both_target_rows_content_p2",
+    "p13_embedding-1_target_content_exact_p2",
+    "p13_embedding-1_normalized_derivative_coefficient_8",
+    "p13_embedding-1_primitive_row_in_existing_first_order_module",
+    "p13_embedding-1_all_cleared_coefficients_degree_bound",
+    "p13_embedding1_denominator_unit",
+    "p13_embedding1_both_target_rows_content_p2",
+    "p13_embedding1_target_content_exact_p2",
+    "p13_embedding1_normalized_derivative_coefficient_8",
+    "p13_embedding1_primitive_row_in_existing_first_order_module",
+    "p13_embedding1_all_cleared_coefficients_degree_bound"
+  ],
+  "rational_curvature": "8*t*(18*t**4 - 36*t**3 + 28*t**2 - 10*t + 1)/((t - 1)*(16*t**4 - 32*t**3 + 28*t**2 - 12*t + 1))",
+  "samples": [
+    {
+      "prime": 7,
+      "G_degree_mod_p3": 18,
+      "safe_uniform_denominator_degree": 80,
+      "F_t_p_coefficient_mod_p3": 294,
+      "embedding_checks": [
+        {
+          "sign": -1,
+          "safe_denominator_degree": 71,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 1,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        },
+        {
+          "sign": 1,
+          "safe_denominator_degree": 71,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 1,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        }
+      ]
+    },
+    {
+      "prime": 11,
+      "G_degree_mod_p3": 30,
+      "safe_uniform_denominator_degree": 116,
+      "F_t_p_coefficient_mod_p3": 363,
+      "embedding_checks": [
+        {
+          "sign": -1,
+          "safe_denominator_degree": 107,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 8,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        },
+        {
+          "sign": 1,
+          "safe_denominator_degree": 107,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 8,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        }
+      ]
+    },
+    {
+      "prime": 13,
+      "G_degree_mod_p3": 36,
+      "safe_uniform_denominator_degree": 134,
+      "F_t_p_coefficient_mod_p3": 845,
+      "embedding_checks": [
+        {
+          "sign": -1,
+          "safe_denominator_degree": 125,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 8,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        },
+        {
+          "sign": 1,
+          "safe_denominator_degree": 125,
+          "target_row_content_valuation": 2,
+          "normalized_derivative_t_p_coefficient": 8,
+          "normalized_row_only_guaranteed_output_valuation": 1
+        }
+      ]
+    }
+  ]
+}

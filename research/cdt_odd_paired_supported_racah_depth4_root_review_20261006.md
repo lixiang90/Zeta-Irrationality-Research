@@ -1,0 +1,64 @@
+# 支撑费用、Racah 真截断与 p⁵ 四层门槛：root 综合审阅
+
+2026-10-06，NEW。487 旧数学输入及所有旧/同行数学程序只读；不执行/import/rerun它们。本次只执行root自有distinct NEW first-only value-Gram程序一次。下列结论仍是项目内数学证明及独立核查，非新数值无理性定理或Lean证明。
+
+## 1. 实际读取的四份主稿与证据范围
+
+完整读取quarter [selected-support稿](cdt_odd_paired_selected_jet_primitive_support_20261006.md) P1–P8/P1–P15，SHA35ed9d8e9b3f1f5ea70c4e742d1e26c262d6d529823987bdc0478128fdd35880；静态完整读PY1aec5fd218fdb9ba920eb579b5d1d09318c3828c0cb6d30ab9b632caafb79b2e；savedJSON07d7dd36f8b0c094676532ba8b86d36e7c7a882b2b11b37b1e18897c4d1f57bc全部metadata、6cases字段、30profiles每字段/每selected-row标签、12counterexamples及全部36affinefaces/gain实际完整读。标签以显式v=value、d=scaled_derivative压缩显示，无遗漏或截断。
+
+完整读取toric [supported-dual稿](cdt_odd_paired_supported_weighted_dual_transfer_20261006.md) 最终3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334，T1–T9/T1–T18；静态完整读PY92b737b19375e973c97b67830477b10313b365f617df6dc5e0f193e74bd0aa94；savedJSONa37ce3e552a6ded9efaa48f07ca268ec207000d4a165cc4e072ba52dc31f1694全部metadata及98mergedrows每字段实际完整读。213arrangementcells仅是内部检查计数，JSON未保存213逐cell记录，root不冒称逐cell读。另用纯只读文件比对，确认其literal113行的lo/hi/combined slope/intercept与冻结487的saved JSON逐项相同，未重新算旧数学模型。
+
+完整读取arithmetic [Racah边框稿](cdt_odd_paired_fixed_middle_racah_border_20261006.md) SHA2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24，11sections/R1–R30；静态完整读PYf36a0ca4740926620306db99be3c4e07bc04c97d52ef4b67b498de410518395d；savedJSONc99024507adc6419cde98bef171c63c44aa4090e30075bbe4c13edb3b03f5a62全部metadata和3cases每字段完整读；guard25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c全文读。guard保存最初STARTED_FIRST1状态，完成状态在独立结果JSON中为PASS_FIRST1，不抹写guard。
+
+root [value-Gram稿](cdt_odd_paired_value_gram_depth4_nonzero_20261006.md) V1–V8/V1–V14内容全文自读，最终仅将V7标题从“计划”改为“有限验证”，数学和来源正文不变；最终SHA57f9aa8cb6335556399cb624316401f419b3174d8137ea3138e5ae2a51877ec7。自有PYbc3a54157f1d36c892ecbbf1f4209737244ecdfe5533bec49da95e52b4e24785首次执行前全文静态读，savedJSONf50b9b63458365a81381d0ed4b6ef12c3a627a9e7782da815820a2764d348908全部字段全文读。其66037checks由作者程序承担，不称人工逐条重算。已完整读[quarter独审](cdt_odd_paired_value_gram_depth4_nonzero_independent_review_20261006.md)43ad1118f51a1ddb8545103d4c19b245030368d055e33278dc3e463185d8271b，独审准确pin最终57f9。
+
+## 2. supported coefficient 源与实际费用
+
+P4/P6/P7的关键是先限制真实big coefficient source，再作selected observation。固定raggedtop后底Q层在a个unit-head sites上满射，所以仅完全支撑在B内的primitive rows独立；derivative-only是否恢复constant不影响此upperrank，且不能把其observation kernel的另一个改进与f_B重复扣除。unit/nonunit强迫高carry unit侧为零，方向正确；mirror loops a even，pair计数整数。
+
+非零nodeblock minor的左右counts逐node相同，故左右f_B相同；两次Cauchy–Binet给P10/T6，whole-X所有系数合法，actualS/lift不变。P11的unitpacket反射闭合；两big镜像对付4、bigloop付2，严格得44n−72p。487已付max的交点19/27，真新增面积1/216；12个真实任意global-f失效例子明示不能免费全扣f，但不承担全尺度证明。
+
+T7按headgraph删除最多as条约束；T9的unitprefixminimum准确，λ≥3时notbig gap至少2a。联合pricedgap与supported f_B，使27个dual bounds都可合法加2f。它没有声称新support model仍有36vertex精确dual，也没在λ≤2免费加同样信用。root另手核a1时λ2η2的gap2接口，T18只列未计入本轮积分的后续条件。
+
+## 3. 连续积分的审查修补与安全费用
+
+root独审发现早期稿把邻段uniform1116过宽延伸至floor跳点：如x1/4准确a8/h24/Q12而右侧a7/h23/Q11。作者已在未冻数学MD修成T6：uniform误差只在fixedfloor开cells；有限rational切点对应prime使用准确整数T11或旧fallback，额外费用O(nlogn)=o(n²)。全部prime保留。闭affine端点证书证明积分延拓的支配，不能当作每个jumpprime准确integerfloor。这一更正不改已成功PY/JSON，也不改积分。
+
+新共同max只更新[1/4,2]，其他places保留487，故安全signed same-S费用准确为
+
+\[
+\Delta=589881521281691/20345444272717200,
+\qquad A=800671681093752110193539327219/19860629178118281482813083200
+=40.314517426059346\ldots.
+\]
+
+P14的1/216已包含，不能外加。signed rational Q_n使D_A/Q_n∈Z[X]并保留正content；这是安全上界，非raw最小integerdenominator或actualcost下界。现有同对象解析率>12.00357285412558仍不足建立strictmargin，也不构成方法no-go。
+
+## 4. Racah极限与完整正常性
+
+root实际完整读新Koekoek–Swarttouw作者原件PDF1、28–31、54–57共9页；28–30准确为Racah定义/正交/norm/差分，54–57是后续limit relations，不能误列正交页。没有root新下载，其他两新PDF仅作者/toric实际读域，root不冒认。
+
+取保持termination的参数有理延拓，再令γ+δ+1趋0：k0权重1、k>0权重2，原点半权重正确；有限有理恒等式的可去极限允许转Fp。R9的norm与leading coefficient代入印刷Eq1.2.2准确；n≤a所有factorial/Pochhammer因子绝对值<p且非零，得到全部full Hankel profiles units，不假定positivity或actualmiddle单位。R13谱核及R14 Christoffel–Darboux方向和对角极限符合monic递推。
+
+actualH=D+VEVᵗ中D已由fullnorm证明unit，V满col rank、E unit，所以middle更新rank恰r，H的corank≤r。R18两次只除已知D和−E⁻¹，得实际M5与2r矩阵N的det比例及corank相等；核重建符号正确。整个过程中未除actualH、G或未经证明profile。
+
+R24详细平衡包括k0的B0=−a³，Green右flux符号正确；R25 rank恰2因为两个边界evaluation独立。simple spectrum与相邻两个零经difference equation递推到R_n(0)=1，排除谱不变核；一般混合核仍保留。R28逐entry Pearson恒等式及R30两个rank1 jump都合法；full firstpole仍须实际lastnodeflux，未抹掉真实cutoffs。
+
+## 5. 与higher-p层接口的真正连接
+
+root V5按unit-W每residue的h≥Q+1个实际tail节点迫localΦ恒0；包含Q0，故weak值在unithead/tail都被p整除。nonunitW≥p²使两側除D_p后的valueGram仍整，N_X的精度是p⁵。最大Smith指数≤4条件遂保证whole-X归一化常数非零；knownunit Schur residual ladder精确给指数重数与终止条件，未把eigenvalue当Smith或有限valueGram满秩当anchor正常。
+
+冻结bordered identity与本轮R20合接，actualauxiliary leading radical满足
+
+\[
+k_1=\operatorname{corank}M_5
+=\operatorname{corank}N_{2r}\le2r.
+\]
+
+这给四个higher residual tests一个真实维数上界，但没有证明它们终止。新Racah门槛只剩两个实际第五幂种子；不能generic挑种子、忽略middle或由fullnormality免费排除混合相消。
+
+## 6. 执行史和结论
+
+四个作者各一份distinct NEW first-only：root66037、quarter17059、toric12141、arithmetic937机制checks，均首次1PASS，失败0、重跑0、旧同行execute/import0、外部Lean0。root/quarter/arithmetic旧r1/2/4或原S支撑例子是指定机制验证，不扩辅助单位素数表。source和结果成功后只读；arithmetic额外guard永久保留。
+
+本轮paper proofs及上述scope通过root自核/独核。新数学结论是supported whole-X信用、精确安全上界改善、full Racah profiles/actual2r gate、p⁵/depth4条件接口；没有无限原目标准常、没有strictmargin、没有新增ζ/L/Catalan无理性或线性无关性定理。后续优先actual2r混合boundary核的防相消，或真正leadingradical的higher residuals；所有实际对象、cutoffs及费用必须保持。

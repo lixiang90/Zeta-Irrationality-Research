@@ -1,0 +1,136 @@
+{
+  "schema": "cdt-one-way-final-paper-receipt-v1",
+  "date": "2026-10-07",
+  "author": "/root/masked_racah_finalize",
+  "status": "FINAL",
+  "authority": {
+    "progress_read": "research/cdt_odd_background_progress_20261006.md §§166–170 only; mutable progress file not pinned",
+    "baseline_audit": "research/cdt_odd_delivery_hasse_bridge_20261007.json",
+    "baseline_sha256": "94eec763f855689bda6ecfb6fd3e4c0af2fef50fcff2e357fc032c720d04d2d3",
+    "frozen_records": 564,
+    "mathematical_records": 559,
+    "guard_records": 5,
+    "baseline_read_scope": "Whole JSON syntaxparse, property names and header/authority/count fields; not an actual manual FULL read of every record or this agent's complete 564-pin audit",
+    "old_records_policy": "All old records read-only; parent owns the separate full baseline audit"
+  },
+  "final_read_receipts": {
+    "own_main": "Actual FULL all 7 sections/J1–J18, first author read and final complete author reread after incoming review",
+    "incoming_review": "Actual FULL all R1–R8; PASS with no own main change",
+    "peer_main": "Actual FULL all 10 sections/S1–S27; independent paper check PASS",
+    "outgoing_review": "Actual FULL all V1–V7 after final V3 clarification; supersedes the pre-final 3a7bc9 review candidate",
+    "review_clarification": "Root noted that the former V3 shorthand log(1-u²) alone did not establish the exact cubic coefficient. Final V3 explicitly uses 2log((1-r)/(1+r))≤-4r≤-2δ_i/n and Σ_(i<j)δ_i≥a(a-1)(2a-1)/12. Peer main S19 and all main results remain unchanged.",
+    "global_saved_json": "Whole syntaxparse and top-level field names; actual complete fields of the last 20 of 113 closed_certificate_rows only. No claim of FULL manual reading all 113 rows or recalculating winners/integrals.",
+    "frozen_md_inputs": "Actual FULL B1–B22, O1–O20, T1–T18, L1–L18, H1–H17, I1–I25, local G1–G15, A1–A27, C1–C23, E1–E26, primitive G1–G13",
+    "gamma_scope": "Frozen primitive G11 rate used as a paper input; no new gamma producer run, import or rerun"
+  },
+  "new_paper_results": {
+    "same_object": "Original B6/kappa3/s5, degree<3n, saturated integer-valued paired lattice of rank m=2n; J_(n,k)(X)=[t^k]det(B_n(X)+tV_n)",
+    "coefficientwise_prime": "For 5n<p≤6n, v_p^Gauss J_(n,k)≥2p-18n+5k-2, proved by actual node source occupancy, ordinary confluent wedges and the complete (r,h) coefficient table",
+    "all_places": "ell_(n,k,p)=max(old whole-X signed b_(n,p), -5(m-k)floor(log_p(8n)), new coefficientwise bound when 5n<p≤6n); p>6n has ell=0; J_(n,k)/product p^ell is in Z[X]",
+    "safe_fee": "A_jet(kappa)=800671681093752110193539327219/19860629178118281482813083200 -5*kappa²/4 for 0≤kappa≤1/2; uniform adaptive lower log Q≥-A_jet(k/n)n²-o(n²)",
+    "endpoint": "At kappa=1/2 the paid gain is 5/16 and safe fee upper is <40.002017427; kappa=0 retains the old fee. No positive normalized nonzero-jet order is assumed.",
+    "fixed_denominators": "For fixed rational alpha,beta,c with D clearing the sources and c=a/M, (DM)^(m-k) J_(n,k)(c)/Q_(n,k) is an integer; no k! denominator",
+    "nonzero_scope": "Frozen H6 supplies infinitely many n=4r with some actual k≤n/2 nonzero for the same fixed source/input; the allowed adaptive k may be zero",
+    "limits": "Safe arithmetic upper is not actual cost equality, lower or no-go. New analytic upper remains insufficient for a strict contradiction. No new zeta/L/Catalan irrationality, linear independence or Lean theorem."
+  },
+  "execution_and_primary_scope": {
+    "mathematical_producer_created": 0,
+    "mathematical_producer_executed": 0,
+    "mathematical_producer_imported": 0,
+    "mathematical_producer_rerun": 0,
+    "auxiliary_prime_table_extensions": 0,
+    "new_primary_pdf_pages_actually_read": 0,
+    "new_pdf_html_external_code_downloads": 0,
+    "Lean_runs": 0,
+    "allowed_operations": "Paper/JSON reads, SHA256 and byte metadata, document edits and final receipt JSONparse/physical-pin verification only; no inherited execution/page counts",
+    "document_operation_corrections": "One failed atomic apply_patch for a missing added-line marker and one metadata PowerShell pipeline parse error were corrected; neither executed mathematical code or changed any old file"
+  },
+  "one_way_pin_policy": "17 existing physical artifacts only. No self-hash, future parent audit/receipt, peer FINAL receipt or reciprocal receipt pin.",
+  "pins": [
+    {
+      "path": "research/cdt_odd_paired_hasse_jet_arithmetic_profile_20261007.md",
+      "sha256": "8676d10ee4dc082fb86ee2ba1abc7497e50c534f936854b96b0947f154b9ecb2",
+      "bytes": 11529
+    },
+    {
+      "path": "research/cdt_odd_paired_hasse_jet_arithmetic_profile_independent_review_20261007.md",
+      "sha256": "5f1df858e2800b8e929d649745f95b274ae2eae6b1b88643004e094b94e17cc3",
+      "bytes": 6598
+    },
+    {
+      "path": "research/cdt_odd_paired_mixed_node_entropy_20261007.md",
+      "sha256": "f0216126342b46e507e172f422f8e3adee3832f95691cb040dbfed94fd1c4bf8",
+      "bytes": 12459
+    },
+    {
+      "path": "research/cdt_odd_paired_mixed_node_entropy_independent_review_20261007.md",
+      "sha256": "6a9be3a734c0956c7e65929484b07d23545584dedfafcbda3b50cad001112bac",
+      "bytes": 6607
+    },
+    {
+      "path": "research/cdt_odd_paired_hasse_jet_mixed_gram_20261007.md",
+      "sha256": "c178bf8540ff8a0697260ff3d5d137039d92b6288affc29f432934b100704112",
+      "bytes": 9941
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_20261006.md",
+      "sha256": "55278a0ed68b645fc5cb2f3089563e49c30e608ace9de511cc80d37609b712dc",
+      "bytes": 15651
+    },
+    {
+      "path": "research/cdt_odd_paired_weighted_jet_global_optimization_20261006.md",
+      "sha256": "1b7923801d7ff734d278163350d661516abf78fde0687976c4db1d6ef4c6f34f",
+      "bytes": 16946
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006.md",
+      "sha256": "3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334",
+      "bytes": 12458
+    },
+    {
+      "path": "research/cdt_odd_paired_low_price_support_domination_20261007.md",
+      "sha256": "00d578e335cfee1326eb3369f8dfeea34455f075f61ee30663ca55988a5b4296",
+      "bytes": 11799
+    },
+    {
+      "path": "research/cdt_odd_paired_weighted_jet_global_optimization_20261006_verify.json",
+      "sha256": "5bb704e25707379253bb7733d86c44a354c917bc4c12b96fcd34dfda70bf2863",
+      "bytes": 87680
+    },
+    {
+      "path": "research/cdt_odd_delivery_hasse_bridge_20261007.json",
+      "sha256": "94eec763f855689bda6ecfb6fd3e4c0af2fef50fcff2e357fc032c720d04d2d3",
+      "bytes": 177521
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "bytes": 12946
+    },
+    {
+      "path": "research/cdt_odd_paired_actual_local_gram_layers_20261006.md",
+      "sha256": "2856a47ab3aa407f1eb7477a57e1e44bd010a7dd95b8cb055a603b68ea091094",
+      "bytes": 11647
+    },
+    {
+      "path": "research/cdt_odd_paired_compound_mixed_jet_analytic_20261007.md",
+      "sha256": "9123629b3115383dc148dd76bfd638ea786df1899d66577af4dce6ca9937104f",
+      "bytes": 12246
+    },
+    {
+      "path": "research/cdt_odd_paired_coupled_gram_decay_20261007.md",
+      "sha256": "03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965",
+      "bytes": 16381
+    },
+    {
+      "path": "research/cdt_odd_paired_plucker_energy_rate_20261006.md",
+      "sha256": "01c87202a292f9d977f58098bd609e99f9b6aa1b6701e9fff7c036bda7e2515a",
+      "bytes": 13148
+    },
+    {
+      "path": "research/cdt_odd_paired_primitive_gcd_rate_20261006.md",
+      "sha256": "77079715fb996f6d2ef9eee370abbbecc1169acb8c14bebfb4515c3b3bf268e2",
+      "bytes": 9428
+    }
+  ]
+}

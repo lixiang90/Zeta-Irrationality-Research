@@ -1,0 +1,439 @@
+{
+  "status": "exact-dual-carry-rate-certificate-pass",
+  "scope": "Finite actual dual/probe comparisons and exact tent/cap integrals. Paper supplies complementary-minor identity, graph rank, all-scale Smith layers and PNT. Not actual content equality, infinite unit or irrationality.",
+  "execution_count": 1,
+  "prior_failed_own_new_execution_count": 1,
+  "prior_failed_source": "cdt_odd_paired_dual_plucker_carry_rate_20261006_verify.py",
+  "prior_failure": "Incorrect guessed decimal window after exact formula/tent assertions; preserved source, no JSON, never rerun",
+  "old_or_peer_execution_import_rerun_count": 0,
+  "producer_sha256": "75dda9e61e2a6446e66d1b09502b860294e32e7532e0918f2d346c002e6fa1cf",
+  "input_json_path": "cdt_odd_paired_dual_plucker_layers_20261006_probe.json",
+  "input_json_sha256": "53b243b65a9a3c7a1a07279b52debabd33bb2c5188ebcf943f3ff82bf60e72d3",
+  "finite_formula_checks": 42,
+  "formula_comparisons": [
+    {
+      "n": 6,
+      "p": 11,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 7,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 7,
+      "p": 11,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 1,
+      "proved_formula_defect": 1
+    },
+    {
+      "n": 7,
+      "p": 13,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 9,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 8,
+      "p": 11,
+      "h": 4,
+      "e": 5,
+      "H": 4,
+      "tau": 6,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 8,
+      "p": 13,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 3,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 9,
+      "p": 11,
+      "h": 5,
+      "e": 0,
+      "H": 6,
+      "tau": 11,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 9,
+      "p": 13,
+      "h": 4,
+      "e": 3,
+      "H": 4,
+      "tau": 10,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 9,
+      "p": 17,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 13,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 10,
+      "p": 11,
+      "h": 5,
+      "e": 6,
+      "H": 8,
+      "tau": 5,
+      "proved_formula_defect": 4
+    },
+    {
+      "n": 10,
+      "p": 13,
+      "h": 4,
+      "e": 9,
+      "H": 6,
+      "tau": 4,
+      "proved_formula_defect": 3
+    },
+    {
+      "n": 10,
+      "p": 17,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 7,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 10,
+      "p": 19,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 15,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 11,
+      "p": 13,
+      "h": 5,
+      "e": 2,
+      "H": 8,
+      "tau": 11,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 11,
+      "p": 17,
+      "h": 3,
+      "e": 16,
+      "H": 4,
+      "tau": 1,
+      "proved_formula_defect": 1
+    },
+    {
+      "n": 11,
+      "p": 19,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 9,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 12,
+      "p": 13,
+      "h": 5,
+      "e": 8,
+      "H": 10,
+      "tau": 5,
+      "proved_formula_defect": 5
+    },
+    {
+      "n": 12,
+      "p": 17,
+      "h": 4,
+      "e": 5,
+      "H": 6,
+      "tau": 12,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 12,
+      "p": 19,
+      "h": 3,
+      "e": 16,
+      "H": 4,
+      "tau": 3,
+      "proved_formula_defect": 2
+    },
+    {
+      "n": 12,
+      "p": 23,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 19,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 13,
+      "p": 17,
+      "h": 4,
+      "e": 11,
+      "H": 8,
+      "tau": 6,
+      "proved_formula_defect": 3
+    },
+    {
+      "n": 13,
+      "p": 19,
+      "h": 4,
+      "e": 3,
+      "H": 6,
+      "tau": 16,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 13,
+      "p": 23,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 13,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 14,
+      "p": 17,
+      "h": 5,
+      "e": 0,
+      "H": 10,
+      "tau": 17,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 14,
+      "p": 19,
+      "h": 4,
+      "e": 9,
+      "H": 8,
+      "tau": 10,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 14,
+      "p": 23,
+      "h": 3,
+      "e": 16,
+      "H": 4,
+      "tau": 7,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 15,
+      "p": 17,
+      "h": 5,
+      "e": 6,
+      "H": 12,
+      "tau": 11,
+      "proved_formula_defect": 2
+    },
+    {
+      "n": 15,
+      "p": 19,
+      "h": 4,
+      "e": 15,
+      "H": 10,
+      "tau": 4,
+      "proved_formula_defect": 4
+    },
+    {
+      "n": 15,
+      "p": 23,
+      "h": 3,
+      "e": 22,
+      "H": 6,
+      "tau": 1,
+      "proved_formula_defect": 1
+    },
+    {
+      "n": 15,
+      "p": 29,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 25,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 16,
+      "p": 17,
+      "h": 5,
+      "e": 12,
+      "H": 14,
+      "tau": 5,
+      "proved_formula_defect": 5
+    },
+    {
+      "n": 16,
+      "p": 19,
+      "h": 5,
+      "e": 2,
+      "H": 12,
+      "tau": 17,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 16,
+      "p": 23,
+      "h": 4,
+      "e": 5,
+      "H": 8,
+      "tau": 18,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 16,
+      "p": 29,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 19,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 16,
+      "p": 31,
+      "h": 3,
+      "e": 4,
+      "H": 0,
+      "tau": 27,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 17,
+      "p": 19,
+      "h": 5,
+      "e": 8,
+      "H": 14,
+      "tau": 11,
+      "proved_formula_defect": 4
+    },
+    {
+      "n": 17,
+      "p": 23,
+      "h": 4,
+      "e": 11,
+      "H": 10,
+      "tau": 12,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 17,
+      "p": 29,
+      "h": 3,
+      "e": 16,
+      "H": 4,
+      "tau": 13,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 17,
+      "p": 31,
+      "h": 3,
+      "e": 10,
+      "H": 2,
+      "tau": 21,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 18,
+      "p": 19,
+      "h": 5,
+      "e": 14,
+      "H": 16,
+      "tau": 5,
+      "proved_formula_defect": 5
+    },
+    {
+      "n": 18,
+      "p": 23,
+      "h": 4,
+      "e": 17,
+      "H": 12,
+      "tau": 6,
+      "proved_formula_defect": 6
+    },
+    {
+      "n": 18,
+      "p": 29,
+      "h": 3,
+      "e": 22,
+      "H": 6,
+      "tau": 7,
+      "proved_formula_defect": 0
+    },
+    {
+      "n": 18,
+      "p": 31,
+      "h": 3,
+      "e": 16,
+      "H": 4,
+      "tau": 15,
+      "proved_formula_defect": 0
+    }
+  ],
+  "tent_intervals": [
+    {
+      "h": 5,
+      "lo": "1",
+      "peak": "14/13",
+      "hi": "8/7",
+      "height": "6/13",
+      "integral_d": "3/91",
+      "paid_gain": "6/91",
+      "scope": "paid actual gain; old raw4x-12 exceeds cap"
+    },
+    {
+      "h": 4,
+      "lo": "6/5",
+      "peak": "14/11",
+      "hi": "4/3",
+      "height": "4/11",
+      "integral_d": "4/165",
+      "paid_gain": "8/165",
+      "scope": "paid actual gain above old raw=-10 cap"
+    },
+    {
+      "h": 3,
+      "lo": "3/2",
+      "peak": "14/9",
+      "hi": "8/5",
+      "height": "2/9",
+      "integral_d": "1/90",
+      "paid_gain": "0",
+      "scope": "fully hidden by entry cap; raw+2d<=-3x-6<-10"
+    }
+  ],
+  "base_safe_A": "1085983123/24190320",
+  "strict_safe_gain": "1718/15015",
+  "new_safe_A": "14081798807/314474160",
+  "new_safe_A_window": [
+    "44.778",
+    "44.779"
+  ],
+  "unpaid_third_tent": true,
+  "not_proved": [
+    "Infinite auxiliary-prime nonzero",
+    "Strict arithmetic-analytic margin",
+    "New numerical irrationality",
+    "Lean"
+  ]
+}

@@ -1,0 +1,187 @@
+962                                            FRANCIS BROWN
+
+
+     Later on, we shall work not only with the actual coefficients cw ∈ Q,
+whose properties are described in the following section, but also with formal
+versions Cw of these coefficients (later to be specialized to cw ) purely to simplify
+calculations.
+       Lemma 3.8. For all n ≥ 1, the coefficient c12n is equal to 2(−1)n . We
+have                                           n
+                        ζ1m (2{n} ) = 2              (−1)i ζ m (2i + 1)ζ m (2{n−i} ).
+                                               X
+
+                                               i=1
+
+    Proof. Granting the motivic stuffle product formula [7], [8] for our version
+of motivic multiple zeta values in which ζ m (2) is nonzero, we have
+                                     n−1                                     n−2
+        ζ m (3)ζ m (2{n−1} ) =             ζ m (2{i} 32{n−1−i} ) +                 ζ m (2{i} 52{n−2−i} ),
+                                     X                                       X
+
+                                     i=0                                     i=0
+                                     n−2                                     n−3
+        ζ m (5)ζ m (2{n−2} ) =             ζ m (2{i} 52{n−2−i} ) +                 ζ m (2{i} 72{n−3−i} ),
+                                     X                                       X
+
+                                     i=0                                     i=0
+               ..               ..                                      ..
+                .                .                                       .
+        ζ m (2n − 1)ζ m (2) = ζ m (2n − 1, 2) + ζ m (2, 2n − 1) + ζ m (2n + 1).
+Taking the alternating sum of each row gives the equation
+            n−1                                           n
+                    ζ m (2{i} 32{n−1−i} ) = −2                  (−1)i ζ m (2i + 1)ζ m (2{n−i} ).
+            X                                             X
+
+            i=0                                           i=1
+This implies the lemma by (3.8). Alternatively, we can use the general method
+for lifting relations from real multiple zeta values to their motivic versions
+given in [2]. For this, it only suffices to consider the above relations modulo
+products and modulo ζ m (2) to obtain the coefficients of ζ m (2n+1), which leads
+to the same result.                                                            
+
+                         4. Arithmetic of the coefficients cw
+    The key arithmetic input is an evaluation of certain multiple zeta values
+which is due to Don Zagier. Using the operators D<N we shall lift this result
+to motivic multiple zetas. First, let us define for any a, b, r ∈ N,
+                            Ç              å                                        Ç    å
+                               2r                                  Ä               ä  2r
+                                                                             −2r
+                Ara,b   =                      and       r
+                                                        Ba,b    = 1−2                           .
+                             2a + 2                                                   2b + 1
+                               r ) only depends on r, a (resp. r, b).
+Note that Ara,b (respectively Ba,b
+       Theorem 4.1 (Don Zagier [9]). Let a, b ≥ 0. Then
+                                a+b+1
+        ζ(2{a} 32{b} ) = 2                                     ) ζ(2r + 1) ζ(2{a+b+1−r} ).
+                                 X
+                                                           r
+                                           (−1)r (Ara,b − Ba,b
+                                     r=1
+                               MIXED TATE MOTIVES OVER Z                                        963
+
+
+     4.1. Motivic version. To prove that the arithmetic formula lifts to the
+level of motivic multiple zeta values requires showing that it is compatible
+with the coaction (2.17). This is equivalent to the following compatibility
+condition between the coefficients.
+     Lemma 4.2. For any a, b ≥ 0, and 1 ≤ r ≤ a + b + 1, we have
+                  X               X
+                        Arα,β −         Arβ,α + I(b ≥ r) − I(a ≥ r) = Ara,b ,
+                  α≤a             α≤a
+                  β≤b             β<b
+                                                 X                X
+                                                          r              r      r
+                                                         Bα,β −         Bβ,α = Ba,b ,
+                                                 α≤a              α≤a
+                                                 β≤b              β<b
+
+where all sums are over sets of indices α, β ≥ 0 satisfying α + β + 1 = r.
+     Proof. Exercise, using Aα+β+1
+                             α,β   = Aα+β+1        α+β+1
+                                      β−1,α+1 and Bα,β
+                                                            α+β+1
+                                                         = Bβ,α   .                                
+
+     We now show that Zagier’s theorem lifts to motivic multiple zetas.
+     Theorem 4.3. Let a, b ≥ 0. Then
+                               a+b+1
+(4.1) ζ m (2{a} 32{b} ) = 2                                   ) ζ m (2r + 1) ζ m (2{a+b+1−r} ) .
+                                X
+                                                          r
+                                          (−1)r (Ara,b − Ba,b
+                                  r=1
+
+In particular, if w =     2{a} 32{b} ,     then the coefficient cw is given by
+                                                     Ä                      ä
+(4.2)                    cw = 2 (−1)a+b+1 Aa+b+1
+                                           a,b
+                                                    a+b+1
+                                                 − Ba,b   .
+     Proof. The proof is by induction on the weight. Suppose that (4.1) holds
+for all a + b < N and let a, b ≥ 0 such that a + b = N . Then by Lemma 3.5,
+                   D2r+1 ζ m (2{a} 32{b} ) = π(ξa,b
+                                                r
+                                                    ) ⊗ ζ m (2{a+b+1−r} )
+for 1 ≤ r ≤ N . The second formula in Lemma 3.5 and (3.12) implies that
+            X                 X                                                    
+   r
+π(ξa,b )=          c2α 32β −         c2β 32α + c12r I(b ≥ r) − c12r I(a ≥ r) π(ζ m (2r + 1)),
+            α≤a                α≤a
+            β≤b                β<b
+
+where 1 ≤ r ≤ N , and the sum is over α, β ≥ 0 satisfying α + β + 1 = r. By
+induction hypothesis, and the fact that c12r = 2(−1)r , the term in brackets is
+            hX                               X                                          i
+   2(−1)r                    r
+                    Arα,β − Bα,β −                            r
+                                                     Arβ,α − Bβ,α + I(b ≥ r) − I(a ≥ r) ,
+             α≤a                               α≤a
+             β≤b                               β<b
+
+where all α + β + 1 = r. By Lemma 4.2, this collapses to
+                                                 Ä                ä
+                                                      r
+                                      2(−1)r Ara,b − Ba,b .
+Putting the previous expressions together, we have shown that
+                                           Ä               ä
+ D2r+1 ζ m (2{a} 32{b} ) = 2(−1)r Ara,b − Ba,b
+                                           r
+                                               π(ζ m (2r + 1)) ⊗ ζ m (2{a+b+1−r} ).
+964                                    FRANCIS BROWN
+
+
+It follows by (3.3) and (3.9) that the difference
+                              a+b+1
+  Θ = ζ m (2{a} 32{b} ) − 2                                ) ζ m (2r + 1) ζ m (2{a+b+1−r} )
+                               X
+                                                       r
+                                       (−1)r (Ara,b − Ba,b
+                                r=1
+
+satisfies D2r+1 Θ = 0 for all r ≤ a + b. By Theorem 3.3, there is an α ∈ Q such
+that
+                              Θ = α ζ m (2a + 2b + 3).
+Taking the period map implies an analogous relation for the ordinary multiple
+zeta values. By Theorem 4.1, the constant α is 2(−1)a+b+1 (Aa+b+1
+                                                             a,b
+                                                                      a+b+1
+                                                                  − Ba,b    ),
+which completes the induction step, and hence the proof of the theorem. 
+     4.2. 2-adic properties of cw . The coefficients cw satisfy some arithmetic
+properties which are crucial for the sequel, and follow immediately from The-
+orem 4.3.
+     Let p be a prime number. Recall that for any rational number x ∈ Q× ,
+its p-adic valuation vp (x) is the integer n such that x = pn ab , where a, b are
+relatively prime to p. We set vp (0) = ∞. For any word w ∈ {2, 3}× , let w     ‹
+denote the same word but written in reverse order.
+    Corollary 4.4. Let w be any word of the form 2a 32b of weight 2a + 2b +
+3 = 2n + 1. It is obvious from formula (4.2) that cw ∈ Z[ 21 ]. Furthermore, the
+cw satisfy
+      (1) cw − cwe ∈ 2 Z,
+      (2) v2 (c32a+b ) ≤ v2 (cw ) ≤ 0.
+                                                      a+b+1    a+b+1
+       Proof. Property (1) follows from the symmetry Ba,b   = Bb,a   . Indeed,
+
+                    c2a 32b − c2b 32a = ±2(Aa+b+1
+                                            a,b   − Aa+b+1
+                                                     b,a   ) ∈ 2 Z.
+                                                                                     2n 
+Let n = a + b + 1 be fixed. Clearly, v2 (c2a 32b ) = v2 (2 × 2−2n ×                 2b+1 ),   and so
+                                                             Ä         ä
+                                                                  2n
+                           v2 (c2a 32b ) = 1 − 2n + v2           2b+1    .
+         2n     2n 2n−1
+Writing 2b+1  = 2b+1 2b , we obtain
+                                                                   Ä            ä
+                                                                        2n−1
+                       v2 (c2a 32b ) = 2 − 2n + v2 (n) + v2              2b
+                                             Ä           ä
+                                                 2n−1
+which is ≤ 0, and furthermore, v2                 2b         is minimal when b = 0. This
+proves (2).                                                                           
+
+                   5. The level filtration and ∂N,` operators
+       Definition 5.1. Let H2,3 ⊂ H denote the Q-subspace spanned by
+(5.1)                       ζ m (w),      where     w ∈ {2, 3}× .
+

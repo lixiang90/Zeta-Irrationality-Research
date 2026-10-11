@@ -1,0 +1,157 @@
+{
+  "status": "Exact algebraic checks plus explicitly labelled numerical / finite-data checks.",
+  "old_table_agreement": [
+    {
+      "alpha": "1/40",
+      "inner": true,
+      "outer": true
+    },
+    {
+      "alpha": "3/100",
+      "inner": true,
+      "outer": true
+    },
+    {
+      "alpha": "1/25",
+      "inner": true,
+      "outer": true
+    },
+    {
+      "alpha": "1/20",
+      "inner": true,
+      "outer": true
+    }
+  ],
+  "cached_identities": [
+    {
+      "K": 40,
+      "N": 1,
+      "leading_identity": true,
+      "normalization_prime_checks": 17
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "leading_identity": true,
+      "normalization_prime_checks": 17
+    },
+    {
+      "K": 80,
+      "N": 2,
+      "leading_identity": true,
+      "normalization_prime_checks": 31
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "leading_identity": true,
+      "normalization_prime_checks": 29
+    }
+  ],
+  "window_checks": [
+    {
+      "alpha": "7/60",
+      "gain": "287/72000",
+      "remaining_ceiling": "7783/72000",
+      "gap_even_with_perfect_window": [
+        "319244671209/500000000000",
+        "638489342419/1000000000000"
+      ]
+    },
+    {
+      "alpha": "3/25",
+      "gain": "187/28125",
+      "remaining_ceiling": "537/3125",
+      "gap_even_with_perfect_window": [
+        "584314594891/1000000000000",
+        "146078648723/250000000000"
+      ]
+    },
+    {
+      "alpha": "1/8",
+      "gain": "127/11520",
+      "remaining_ceiling": "1021/3840",
+      "gap_even_with_perfect_window": [
+        "101078586883/200000000000",
+        "31587058401/62500000000"
+      ]
+    }
+  ],
+  "tail_quadrature": [
+    {
+      "alpha": "1/40",
+      "tail_numeric": "-0.0889046240096639915445534303023916988721183181",
+      "status": "Numerical cross-check only; enclosure is the rational-series certificate."
+    },
+    {
+      "alpha": "1/8",
+      "tail_numeric": "-0.0499972409184501136868472849945541526189662033",
+      "status": "Numerical cross-check only; enclosure is the rational-series certificate."
+    }
+  ],
+  "scanned_parameters": 18,
+  "all_scanned_gaps_positive": true,
+  "capacity_by_q": {
+    "1/40": {
+      "0": "7/3200",
+      "1": "7681/6400",
+      "2": "2159/2400",
+      "3": "7189/12800",
+      "4": "67123/192000",
+      "5": "20491/88000",
+      "6": "10161173/61152000",
+      "7": "795667/6397440",
+      "8": "64658207/669772800",
+      "9": "3322139/43092000",
+      "10": "117780031/1870176000",
+      "11": "210020663/4007520000",
+      "12": "2586541/58406400",
+      "13": "1966193863/51872184000",
+      "14": "1109238323/33831168000",
+      "15": "127494109/4452096000",
+      "16": "1293313657/51270912000",
+      "17": "5501553217/245750803200",
+      "18": "6001077167/300051648000",
+      "19": "4648236499/258603072000"
+    },
+    "1/8": {
+      "0": "7/128",
+      "1": "1163/768",
+      "2": "7847/7680",
+      "3": "84353/161280"
+    }
+  },
+  "earlier_finite_saturation": {
+    "2": {
+      "cases": 79,
+      "equality": 0,
+      "max_slack": 47,
+      "exceptions": []
+    },
+    "1": {
+      "cases": 197,
+      "equality": 195,
+      "max_slack": 1,
+      "exceptions": [
+        {
+          "K": 24,
+          "N": 2,
+          "p": 13,
+          "slack": 1
+        },
+        {
+          "K": 32,
+          "N": 3,
+          "p": 17,
+          "slack": 1
+        }
+      ]
+    },
+    "0": {
+      "cases": 307,
+      "equality": 307,
+      "max_slack": 0,
+      "exceptions": []
+    }
+  }
+}

@@ -1,0 +1,6203 @@
+{
+  "summary": {
+    "cases": 482,
+    "crude_certified": 474,
+    "new_certified": 0,
+    "failed": 8,
+    "seconds": 158.6459195613861
+  },
+  "special": [
+    {
+      "K": 24,
+      "N": 1,
+      "p": 23,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 22,
+        "1": 1
+      },
+      "constant_valuation": -1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 22,
+          "1": 1
+        }
+      },
+      "exact_gauss": -2,
+      "specialization_excess": 1
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 19,
+      "tropical": -22,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 20,
+        "1": 1
+      },
+      "constant_valuation": -21,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 20,
+          "1": 1
+        }
+      },
+      "exact_gauss": -22,
+      "specialization_excess": 1
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 34,
+        "2": 1
+      },
+      "constant_valuation": 2,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -2,
+        "smith_counts": {
+          "0": 34,
+          "2": 1
+        }
+      },
+      "exact_gauss": 0,
+      "specialization_excess": 2
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 47,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 44,
+        "1": 1
+      },
+      "constant_valuation": -1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 44,
+          "1": 1
+        }
+      },
+      "exact_gauss": -2,
+      "specialization_excess": 1
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 31,
+      "tropical": -106,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 41,
+        "1": 1
+      },
+      "constant_valuation": -105,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 41,
+          "1": 1
+        }
+      },
+      "exact_gauss": -106,
+      "specialization_excess": 1
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 41,
+        "1": 1
+      },
+      "constant_valuation": 1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 41,
+          "1": 1
+        }
+      },
+      "exact_gauss": 0,
+      "specialization_excess": 1
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 61,
+      "tropical": -124,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 73,
+        "1": 1
+      },
+      "constant_valuation": -123,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 73,
+          "1": 1
+        }
+      },
+      "exact_gauss": -124,
+      "specialization_excess": 1
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 71,
+      "tropical": -10,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 69,
+        "1": 1
+      },
+      "constant_valuation": -9,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 69,
+          "1": 1
+        }
+      },
+      "exact_gauss": -10,
+      "specialization_excess": 1
+    }
+  ],
+  "rows": [
+    {
+      "K": 24,
+      "N": 1,
+      "p": 7,
+      "tropical": -109,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 21,
+        "1": 1,
+        "2": 1
+      },
+      "constant_valuation": -106,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 11,
+      "tropical": -88,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": -88,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 13,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 17,
+      "tropical": -56,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": -56,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 19,
+      "tropical": -38,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": -38,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 23,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 22,
+        "1": 1
+      },
+      "constant_valuation": -1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 22,
+          "1": 1
+        }
+      },
+      "exact_gauss": -2,
+      "specialization_excess": 1
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 29,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 31,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 37,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 1,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 23
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 7,
+      "tropical": -3,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": -3,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 11,
+      "tropical": -60,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": -60,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 13,
+      "tropical": -71,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 16,
+        "1": 5
+      },
+      "constant_valuation": -66,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 17,
+      "tropical": -40,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": -40,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 19,
+      "tropical": -22,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 20,
+        "1": 1
+      },
+      "constant_valuation": -21,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 20,
+          "1": 1
+        }
+      },
+      "exact_gauss": -22,
+      "specialization_excess": 1
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 23,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 29,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 31,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 37,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 24,
+      "N": 3,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 21
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 11,
+      "tropical": -164,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 28,
+        "1": 3
+      },
+      "constant_valuation": -161,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 13,
+      "tropical": -155,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 20,
+        "1": 11
+      },
+      "constant_valuation": -144,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 17,
+      "tropical": -128,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": -128,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 19,
+      "tropical": -110,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": -110,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 23,
+      "tropical": -74,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": -74,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 29,
+      "tropical": -20,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": -20,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 31,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 37,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 1,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 31
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 11,
+      "tropical": -134,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -134,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 13,
+      "tropical": -132,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 25,
+        "1": 5
+      },
+      "constant_valuation": -127,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 17,
+      "tropical": -112,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -112,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 19,
+      "tropical": -102,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -102,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 23,
+      "tropical": -66,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -66,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 29,
+      "tropical": -12,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -12,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 31,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 37,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 2,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 30
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 11,
+      "tropical": -60,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 22,
+        "1": 4,
+        "3": 2
+      },
+      "constant_valuation": -50,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 13,
+      "tropical": -86,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 25,
+        "2": 3
+      },
+      "constant_valuation": -80,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 17,
+      "tropical": -92,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 24,
+        "1": 4
+      },
+      "constant_valuation": -88,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 19,
+      "tropical": -100,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 16,
+        "1": 12
+      },
+      "constant_valuation": -88,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 23,
+      "tropical": -50,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": -50,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 29,
+      "tropical": -4,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 31,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 37,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 32,
+      "N": 4,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 28
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 11,
+      "tropical": -221,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 38,
+        "2": 1
+      },
+      "constant_valuation": -219,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 13,
+      "tropical": -209,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 35,
+        "1": 4
+      },
+      "constant_valuation": -205,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 17,
+      "tropical": -176,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -176,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 19,
+      "tropical": -159,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -159,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 23,
+      "tropical": -146,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -146,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 29,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 31,
+      "tropical": -74,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -74,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 37,
+      "tropical": -20,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": -20,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 1,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 39
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 11,
+      "tropical": -123,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 35,
+        "1": 2
+      },
+      "constant_valuation": -121,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 13,
+      "tropical": -145,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 36,
+        "1": 1
+      },
+      "constant_valuation": -144,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 17,
+      "tropical": -145,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 30,
+        "1": 7
+      },
+      "constant_valuation": -138,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 19,
+      "tropical": -140,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 20,
+        "1": 17
+      },
+      "constant_valuation": -123,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 23,
+      "tropical": -130,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": -130,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 29,
+      "tropical": -76,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": -76,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 31,
+      "tropical": -58,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": -58,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 37,
+      "tropical": -4,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 3,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 37
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 11,
+      "tropical": -3,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": -3,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 13,
+      "tropical": -69,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 26,
+        "1": 4,
+        "2": 2,
+        "3": 3
+      },
+      "constant_valuation": -52,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 17,
+      "tropical": -97,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": -97,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 19,
+      "tropical": -108,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 30,
+        "1": 5
+      },
+      "constant_valuation": -103,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 23,
+      "tropical": -131,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 22,
+        "1": 13
+      },
+      "constant_valuation": -118,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 29,
+      "tropical": -60,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": -60,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 31,
+      "tropical": -42,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": -42,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 37,
+      "tropical": -4,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 41,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 43,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 34,
+        "2": 1
+      },
+      "constant_valuation": 2,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -2,
+        "smith_counts": {
+          "0": 34,
+          "2": 1
+        }
+      },
+      "exact_gauss": 0,
+      "specialization_excess": 2
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 47,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 40,
+      "N": 5,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 35
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 11,
+      "tropical": -258,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 46,
+        "2": 1
+      },
+      "constant_valuation": -256,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 13,
+      "tropical": -277,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 46,
+        "2": 1
+      },
+      "constant_valuation": -275,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 17,
+      "tropical": -265,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 36,
+        "1": 11
+      },
+      "constant_valuation": -254,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 19,
+      "tropical": -231,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -231,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 23,
+      "tropical": -196,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -196,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 29,
+      "tropical": -164,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -164,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 31,
+      "tropical": -146,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -146,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 37,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 41,
+      "tropical": -56,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -56,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 43,
+      "tropical": -38,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -38,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 47,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 1,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 47
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 11,
+      "tropical": -144,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 40,
+        "1": 1,
+        "2": 4
+      },
+      "constant_valuation": -135,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 13,
+      "tropical": -180,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 42,
+        "1": 3
+      },
+      "constant_valuation": -177,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 17,
+      "tropical": -212,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 44,
+        "2": 1
+      },
+      "constant_valuation": -210,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 19,
+      "tropical": -205,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 35,
+        "1": 10
+      },
+      "constant_valuation": -195,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 23,
+      "tropical": -157,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -157,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 29,
+      "tropical": -148,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -148,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 31,
+      "tropical": -130,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -130,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 37,
+      "tropical": -76,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -76,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 41,
+      "tropical": -40,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -40,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 43,
+      "tropical": -22,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": -22,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 47,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 44,
+        "1": 1
+      },
+      "constant_valuation": -1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 44,
+          "1": 1
+        }
+      },
+      "exact_gauss": -2,
+      "specialization_excess": 1
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 3,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 45
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 13,
+      "tropical": -3,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -3,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 17,
+      "tropical": -106,
+      "B_min": 4,
+      "smith_counts": {
+        "0": 36,
+        "1": 4,
+        "2": 2
+      },
+      "constant_valuation": -98,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 19,
+      "tropical": -136,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 37,
+        "2": 5
+      },
+      "constant_valuation": -126,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 23,
+      "tropical": -132,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 37,
+        "1": 5
+      },
+      "constant_valuation": -127,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 29,
+      "tropical": -124,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -124,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 31,
+      "tropical": -106,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 41,
+        "1": 1
+      },
+      "constant_valuation": -105,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 41,
+          "1": 1
+        }
+      },
+      "exact_gauss": -106,
+      "specialization_excess": 1
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 37,
+      "tropical": -52,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -52,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 41,
+      "tropical": -16,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -16,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 43,
+      "tropical": -6,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -6,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 47,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 53,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 59,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 61,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 41,
+        "1": 1
+      },
+      "constant_valuation": 1,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 41,
+          "1": 1
+        }
+      },
+      "exact_gauss": 0,
+      "specialization_excess": 1
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 48,
+      "N": 6,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 42
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 13,
+      "tropical": -361,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 60,
+        "1": 1,
+        "2": 2
+      },
+      "constant_valuation": -356,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 17,
+      "tropical": -389,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 51,
+        "1": 11,
+        "2": 1
+      },
+      "constant_valuation": -376,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 19,
+      "tropical": -377,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 59,
+        "1": 4
+      },
+      "constant_valuation": -373,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 23,
+      "tropical": -363,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 44,
+        "1": 19
+      },
+      "constant_valuation": -344,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 29,
+      "tropical": -286,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -286,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 31,
+      "tropical": -268,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -268,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 37,
+      "tropical": -236,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -236,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 41,
+      "tropical": -200,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -200,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 43,
+      "tropical": -182,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -182,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 47,
+      "tropical": -146,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -146,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 53,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 59,
+      "tropical": -38,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -38,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 61,
+      "tropical": -20,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": -20,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 1,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 63
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 13,
+      "tropical": -166,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 50,
+        "1": 10
+      },
+      "constant_valuation": -156,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 17,
+      "tropical": -241,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 56,
+        "1": 4
+      },
+      "constant_valuation": -237,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 19,
+      "tropical": -260,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 58,
+        "2": 2
+      },
+      "constant_valuation": -256,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 23,
+      "tropical": -294,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 59,
+        "1": 1
+      },
+      "constant_valuation": -293,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 29,
+      "tropical": -246,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 35,
+        "1": 25
+      },
+      "constant_valuation": -221,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 31,
+      "tropical": -213,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -213,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 37,
+      "tropical": -212,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -212,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 41,
+      "tropical": -176,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -176,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 43,
+      "tropical": -158,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -158,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 47,
+      "tropical": -122,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -122,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 53,
+      "tropical": -68,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -68,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 59,
+      "tropical": -14,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -14,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 61,
+      "tropical": -4,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 4,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 60
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 17,
+      "tropical": -3,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -3,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 19,
+      "tropical": -93,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 41,
+        "1": 1,
+        "2": 8,
+        "3": 1,
+        "4": 3,
+        "5": 2
+      },
+      "constant_valuation": -51,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 23,
+      "tropical": -152,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 50,
+        "1": 4,
+        "3": 2
+      },
+      "constant_valuation": -142,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 29,
+      "tropical": -168,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 55,
+        "1": 1
+      },
+      "constant_valuation": -167,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 31,
+      "tropical": -180,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 47,
+        "1": 9
+      },
+      "constant_valuation": -171,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 37,
+      "tropical": -208,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 32,
+        "1": 24
+      },
+      "constant_valuation": -184,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 41,
+      "tropical": -144,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -144,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 43,
+      "tropical": -126,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -126,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 47,
+      "tropical": -90,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -90,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 53,
+      "tropical": -36,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -36,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 59,
+      "tropical": -6,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -6,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 61,
+      "tropical": -4,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 67,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 71,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 73,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 79,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 64,
+      "N": 8,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 56
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 13,
+      "tropical": -445,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 75,
+        "1": 1,
+        "2": 3
+      },
+      "constant_valuation": -438,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 17,
+      "tropical": -481,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -481,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 19,
+      "tropical": -485,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 70,
+        "1": 6,
+        "2": 3
+      },
+      "constant_valuation": -473,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 23,
+      "tropical": -489,
+      "B_min": 4,
+      "smith_counts": {
+        "0": 75,
+        "1": 4
+      },
+      "constant_valuation": -485,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 29,
+      "tropical": -459,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 52,
+        "1": 27
+      },
+      "constant_valuation": -432,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 31,
+      "tropical": -412,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -412,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 37,
+      "tropical": -358,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -358,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 41,
+      "tropical": -344,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -344,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 43,
+      "tropical": -326,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -326,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 47,
+      "tropical": -290,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -290,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 53,
+      "tropical": -236,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -236,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 59,
+      "tropical": -182,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -182,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 61,
+      "tropical": -164,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -164,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 67,
+      "tropical": -110,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -110,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 71,
+      "tropical": -74,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -74,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 73,
+      "tropical": -56,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -56,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 79,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 1,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 79
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 13,
+      "tropical": -6,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 72,
+        "1": 2
+      },
+      "constant_valuation": -4,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 17,
+      "tropical": -166,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 64,
+        "1": 8,
+        "3": 2
+      },
+      "constant_valuation": -152,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 19,
+      "tropical": -209,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 64,
+        "1": 5,
+        "2": 5
+      },
+      "constant_valuation": -194,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 23,
+      "tropical": -286,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 66,
+        "2": 8
+      },
+      "constant_valuation": -270,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 29,
+      "tropical": -344,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -344,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 31,
+      "tropical": -328,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 69,
+        "1": 5
+      },
+      "constant_valuation": -323,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 37,
+      "tropical": -280,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 45,
+        "1": 29
+      },
+      "constant_valuation": -251,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 41,
+      "tropical": -264,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -264,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 43,
+      "tropical": -278,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -278,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 47,
+      "tropical": -250,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -250,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 53,
+      "tropical": -196,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -196,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 59,
+      "tropical": -142,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -142,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 61,
+      "tropical": -124,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 73,
+        "1": 1
+      },
+      "constant_valuation": -123,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 73,
+          "1": 1
+        }
+      },
+      "exact_gauss": -124,
+      "specialization_excess": 1
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 67,
+      "tropical": -70,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -70,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 71,
+      "tropical": -34,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -34,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 73,
+      "tropical": -16,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -16,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 79,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 6,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 74
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 23,
+      "tropical": -114,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 50,
+        "2": 12,
+        "4": 6,
+        "5": 2
+      },
+      "constant_valuation": -56,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 29,
+      "tropical": -198,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 64,
+        "1": 4,
+        "3": 2
+      },
+      "constant_valuation": -188,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 31,
+      "tropical": -236,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 61,
+        "2": 9
+      },
+      "constant_valuation": -218,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 37,
+      "tropical": -216,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 65,
+        "1": 5
+      },
+      "constant_valuation": -211,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 41,
+      "tropical": -239,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 51,
+        "1": 19
+      },
+      "constant_valuation": -220,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 43,
+      "tropical": -251,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 47,
+        "1": 23
+      },
+      "constant_valuation": -228,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 47,
+      "tropical": -254,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 36,
+        "1": 34
+      },
+      "constant_valuation": -220,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 53,
+      "tropical": -164,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -164,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 59,
+      "tropical": -110,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -110,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 61,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 67,
+      "tropical": -38,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -38,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 71,
+      "tropical": -10,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 69,
+        "1": 1
+      },
+      "constant_valuation": -9,
+      "crude_certificate": false,
+      "solve_certificate": {
+        "certified": false,
+        "strict": false,
+        "row_margin": -1,
+        "smith_counts": {
+          "0": 69,
+          "1": 1
+        }
+      },
+      "exact_gauss": -10,
+      "specialization_excess": 1
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 73,
+      "tropical": -8,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -8,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 79,
+      "tropical": -2,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": -2,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 83,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 89,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 97,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 101,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 103,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 107,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 109,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 113,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 80,
+      "N": 10,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 70
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 17,
+      "tropical": -705,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 115,
+        "1": 1,
+        "3": 3
+      },
+      "constant_valuation": -695,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 19,
+      "tropical": -725,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 115,
+        "1": 1,
+        "2": 3
+      },
+      "constant_valuation": -718,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 23,
+      "tropical": -745,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 115,
+        "1": 1,
+        "2": 3
+      },
+      "constant_valuation": -738,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 29,
+      "tropical": -765,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 115,
+        "1": 1,
+        "2": 3
+      },
+      "constant_valuation": -758,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 31,
+      "tropical": -781,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 117,
+        "1": 1,
+        "2": 1
+      },
+      "constant_valuation": -778,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 37,
+      "tropical": -737,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 99,
+        "1": 20
+      },
+      "constant_valuation": -717,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 41,
+      "tropical": -723,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 84,
+        "1": 35
+      },
+      "constant_valuation": -688,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 43,
+      "tropical": -664,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 86,
+        "1": 33
+      },
+      "constant_valuation": -631,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 47,
+      "tropical": -628,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -628,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 53,
+      "tropical": -574,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -574,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 59,
+      "tropical": -520,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -520,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 61,
+      "tropical": -524,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -524,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 67,
+      "tropical": -470,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -470,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 71,
+      "tropical": -434,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -434,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 73,
+      "tropical": -416,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -416,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 79,
+      "tropical": -362,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -362,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 83,
+      "tropical": -326,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -326,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 89,
+      "tropical": -272,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -272,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 97,
+      "tropical": -200,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -200,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 101,
+      "tropical": -164,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -164,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 103,
+      "tropical": -146,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -146,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 107,
+      "tropical": -110,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -110,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 109,
+      "tropical": -92,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -92,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 113,
+      "tropical": -56,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": -56,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 163,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 167,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 173,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 179,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 181,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 191,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 193,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 197,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 199,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 211,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 223,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 227,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 229,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 233,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 1,
+      "p": 239,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 119
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 19,
+      "tropical": -6,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -6,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 23,
+      "tropical": -199,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 90,
+        "1": 10,
+        "2": 6,
+        "3": 4,
+        "4": 1
+      },
+      "constant_valuation": -161,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 29,
+      "tropical": -335,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 97,
+        "1": 10,
+        "2": 3,
+        "3": 1
+      },
+      "constant_valuation": -316,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 31,
+      "tropical": -375,
+      "B_min": 6,
+      "smith_counts": {
+        "0": 102,
+        "1": 9
+      },
+      "constant_valuation": -366,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 37,
+      "tropical": -437,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 110,
+        "3": 1
+      },
+      "constant_valuation": -434,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 41,
+      "tropical": -493,
+      "B_min": 4,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -493,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 43,
+      "tropical": -517,
+      "B_min": 3,
+      "smith_counts": {
+        "0": 87,
+        "1": 24
+      },
+      "constant_valuation": -493,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 47,
+      "tropical": -491,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 100,
+        "1": 11
+      },
+      "constant_valuation": -480,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 53,
+      "tropical": -443,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 76,
+        "1": 35
+      },
+      "constant_valuation": -408,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 59,
+      "tropical": -385,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -385,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 61,
+      "tropical": -396,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -396,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 67,
+      "tropical": -406,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -406,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 71,
+      "tropical": -370,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -370,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 73,
+      "tropical": -352,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -352,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 79,
+      "tropical": -298,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -298,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 83,
+      "tropical": -262,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -262,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 89,
+      "tropical": -208,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -208,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 97,
+      "tropical": -136,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -136,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 101,
+      "tropical": -100,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -100,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 103,
+      "tropical": -82,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -82,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 107,
+      "tropical": -46,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -46,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 109,
+      "tropical": -28,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -28,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 113,
+      "tropical": -8,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": -8,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 163,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 167,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 173,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 179,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 181,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 191,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 193,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 197,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 199,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 211,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 223,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 227,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 229,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 233,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 9,
+      "p": 239,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 111
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 31,
+      "tropical": -3,
+      "B_min": 7,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -3,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 37,
+      "tropical": -209,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 80,
+        "1": 6,
+        "2": 10,
+        "3": 6,
+        "4": 3
+      },
+      "constant_valuation": -153,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 41,
+      "tropical": -268,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 87,
+        "1": 13,
+        "2": 2,
+        "3": 3
+      },
+      "constant_valuation": -242,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 43,
+      "tropical": -298,
+      "B_min": 5,
+      "smith_counts": {
+        "0": 89,
+        "1": 10,
+        "2": 3,
+        "4": 3
+      },
+      "constant_valuation": -270,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 47,
+      "tropical": -353,
+      "B_min": 2,
+      "smith_counts": {
+        "0": 95,
+        "2": 10
+      },
+      "constant_valuation": -333,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 53,
+      "tropical": -312,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -312,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 59,
+      "tropical": -348,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 82,
+        "1": 23
+      },
+      "constant_valuation": -325,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 61,
+      "tropical": -359,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 76,
+        "1": 29
+      },
+      "constant_valuation": -330,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 67,
+      "tropical": -395,
+      "B_min": 1,
+      "smith_counts": {
+        "0": 64,
+        "1": 41
+      },
+      "constant_valuation": -354,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 71,
+      "tropical": -322,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -322,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 73,
+      "tropical": -304,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -304,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 79,
+      "tropical": -250,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -250,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 83,
+      "tropical": -214,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -214,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 89,
+      "tropical": -160,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -160,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 97,
+      "tropical": -88,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -88,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 101,
+      "tropical": -52,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -52,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 103,
+      "tropical": -34,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -34,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 107,
+      "tropical": -14,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -14,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 109,
+      "tropical": -12,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -12,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 113,
+      "tropical": -8,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": -8,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 127,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 131,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 137,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 139,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 149,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 151,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 157,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 163,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 167,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 173,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 179,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 181,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 191,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 193,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 197,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 199,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 211,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 223,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 227,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 229,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 233,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    },
+    {
+      "K": 120,
+      "N": 15,
+      "p": 239,
+      "tropical": 0,
+      "B_min": 0,
+      "smith_counts": {
+        "0": 105
+      },
+      "constant_valuation": 0,
+      "crude_certificate": true
+    }
+  ]
+}

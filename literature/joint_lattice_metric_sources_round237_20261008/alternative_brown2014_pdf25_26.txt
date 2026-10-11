@@ -1,0 +1,109 @@
+   IRRATIONALITY PROOFS FOR ZETA VALUES, MODULI SPACES AND DINNER PARTIES 25
+
+
+8.1. Moduli space motives. The integrals (1.1) are periods of the motives considered
+in [22]. For |S| ≥ 4 let A, B ⊂ M0,S be a pair of boundary divisors such that A and
+B have no common irreducible components. Let ℓ = |S| − 3 and define
+                          m(A, B) = H ℓ (M0,S \A, B\(B ∩ A))
+in the category MT (Z) of mixed Tate motives over Z. In particular, it has a de Rham
+realisation m(A, B)dR which is a finite dimensional graded vector space over Q, and a
+Betti realisation m(A, B)B which is a finite dimensional vector space over Q, equipped
+with an increasing weight filtration W . There is a comparison isomorphism
+                                                      ∼
+                   compB,dR : m(A, B)dR ⊗Q C −→ m(A, B)B ⊗Q C
+which is compatible with weight filtrations, where the weight filtration on m(A, B)dR
+is the filtration associated to its grading. A convergent period integral of the form
+                            Z
+                       I=      ω       where ω ∈ Ωℓ (M0,S \A; Q)
+                            Sδ
+
+can be interpreted as follows. Let A = ∪D∈Sing(ω) D and B = ∪D∈δf D. By (2.7), A
+and B have no common irreducible components. The integrand ω defines a relative
+cohomology class [ω] ∈ m(A, B)dR via the surjective map of global forms
+                    Ωℓ (M0,S \A, B\(A ∩ B); Q) −→ Ωℓ (M0,S \A; Q)
+It is surjective because the irreducible components of B have dimension ℓ − 1 and
+so the restriction of ω to B necessarily vanishes. On the other hand, the domain
+Sδ defines a relative homology cycle in singular (Betti) homology of the underlying
+complex manifolds with Q coefficients:
+                                                                       ∨
+                                                ℓ
+            [Sδ ] ∈ HℓB (M0,S \A, B\(B ∩ A)) = HB (M0,S \A, B\(B ∩ A))
+Thus we have [ω] ∈ mdR (A, B) and [Sδ ] ∈ m(A, B)∨ B , and the period integral can be
+interpreted via the Betti-de Rham comparison map
+                           Z
+                              ω = hcompB,dR [ω], [Sδ ]i ∈ C
+                              Sδ
+
+The pair of divisors A, B - which are described by combinatorial data - determine the
+numbers which can occur in the previous integral, as we shall presently explain.
+
+8.2. Motivic periods and vanishing. We refer to [8], §2 for background on motivic
+periods. The ring of motivic periods of MT (Z) is defined to be
+                            P m = O(IsomMT (Z) (ωdR , ωB )) .
+It is a graded ring, equipped with a period homomorphism
+                                      per : P m −→ C
+by evaluating on compdR,B . We apply this construction to integrals on moduli spaces.
+Let ω, Sδ , be as above and define the motivic period integral to be
+                      I m (ω, Sδ ) = [m(A, B), [ω], [Sδ ]]m   ∈   Pm ,
+which is the function φ 7→ hφ(ω), Sδ i : IsomMT (Z) (ωdR , ωB ) → A1 . Its period is
+                                                  Z
+                               per I m (ω, Sδ ) =     ω.
+                                                      Sδ
+26                                      FRANCIS BROWN
+
+
+Theorem 8.1. The motivic period I m (ω, Sδ ) is a Q-linear combination of motivic
+multiple zeta values of weights ≤ ℓ. Furthermore, if
+                                       grW
+                                         2m m(A, B) = 0
+then the coefficients of motivic multiple zeta values of weight m in I m (ω, Sδ ) vanish.
+Proof. The motivic period I m (ω, Sδ ) is in fact a real, effective motivic period because
+Sδ is invariant under real Frobenius, and m(A, B) has weights in [0, ℓ] (see [8], §2).
+The first part follows from [8], proposition 7.1 (i), which is a corollary of [9]. 6
+                (m)
+   Now let {[ωi ]} be a basis for grW  2m m(A, B)dR for 0 ≤ m ≤ ℓ. Then there exist
+                    (m)
+rational numbers ai ∈ Q such that
+                                         X (m) (m)
+                                  [ω] =      ai [ωi ]
+                                            i,m
+
+and hence, by bilinearity of motivic periods,
+                                   X (m)            (m)
+                    I m (ω, Sδ ) =   ai [m(A, B), [ωi ], [Sδ ]]m ,
+                                      i,m
+                    (m)
+where                        ∈ P m are motivic periods of weight m, since the weight-
+        [m(A, B), [ωi ], [Sδ ]]m
+grading is determined from the de Rham grading [8] (2.13). The second part is imme-
+diate.                                                                             
+     Applying the period homomorphism immediately gives the
+Corollary 8.2. The integral I is a Q-linear combination of multiple zeta values of
+weights ≤ ℓ. If grW
+                  2m m(A, B)dR vanishes, then this linear combination does not involve
+multiple zeta values of weight m.
+   Thus a simple-minded method to achieve vanishing is to find boundary divisors
+A, B, such that certain graded pieces of the de Rham cohomology m(A, B)dR vanish.
+This is possible for Apéry’s approximations to ζ(2) and ζ(3) (Appendix 3).
+Remark 8.3. A more promising approach to force vanishing of coefficients, which I
+have not explored, is via representation theory. Suppose that there is a finite group
+G which acts upon m(A, B)dR (for instance, via birational transformations of M0,S ).
+Then each graded piece (m(A, B)dR )n is a finite-dimensional Q[G]-module. Let V
+be an irreducible representation of G over Q and πV the corresponding projector.
+Consider the motivic periods πV I m (ω, Sδ ) = I m (πV ω, Sδ ) . If the representation V
+does not occur in a component grW  2m m(A, B)dR , then πV I (ω, X) cannot contain a
+                                                              m
+
+motivic multiple zeta value of weight m.
+8.3. Remarks on the Galois coaction. The ring of motivic periods carries an action
+of the de Rham motivic Galois group GdR = Isom(ωdR , ωdR ). This is equivalent to a
+coaction by O(U dR ), where U dR is the unipotent radical of GdR . General nonsense
+provides an abstract formula for this coaction (see for example [8], equation (2.12).)
+Problem 8.1. Find a combinatorial formula for the motivic coaction on the I m (ω, Sδ ).
+   The analogous problem for motivic multiple zeta values is known, due to Goncharov,
+Ihara, and [9]. The reason this problem is relevant for irrationality questions is the
+fact that a motivic period which is primitive for this coaction is necessarily a linear
+combination of single motivic zeta values only ([9]). Thus a solution to this problem
+   6This proof uses the main theorem of [9] and is not effective. It would be interesting to have a
+version along the lines of proof of [7] which actually enables one to control denominators.
+

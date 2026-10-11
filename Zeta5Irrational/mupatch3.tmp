@@ -1,0 +1,38 @@
+  -- 第二步：扩充为基并按取值表线性扩张（Set 版本，避免 equiv 计算）
+  set s0 : Set (RatFunc ℚ) := Set.range muCandidate with hs0
+  have hs : LinearIndepOn ℚ id s0 := hli.linearIndepOn_id
+  let b := Module.Basis.extend hs (Set.subset_univ _)
+  let g : ↥(hs.extend (Set.subset_univ _)) → ℚ[X] := fun x =>
+    if h : ∃ i : ℕ ⊕ ℕ, muCandidate i = (x : RatFunc ℚ) then
+      (match Classical.choose h with
+        | Sum.inl e => muMonomial e
+        | Sum.inr j => muPole j)
+    else 0
+  let μ := b.constr ℚ g
+  refine ⟨μ, μ.map_zero, fun f₁ f₂ => μ.map_add f₁ f₂, fun q f => ?_, ?_, ?_⟩
+  · have h := μ.map_smul q f
+    rw [Algebra.smul_def, Algebra.smul_def,
+      IsScalarTower.algebraMap_apply ℚ ℚ[X] (RatFunc ℚ)] at h
+    simp at h
+    rw [RatFunc.ratCast_eq_C] at h
+    exact h
+  · intro e
+    have hb : b ⟨muCandidate (Sum.inl e), Module.Basis.subset_extend hs (Set.mem_range_self _)⟩
+        = RatFunc.X ^ e := extend_apply_mem hs (Set.mem_range_self _)
+    rw [← hb, b.constr_basis ℚ g]
+    rw [dif_pos ⟨Sum.inl e, rfl⟩]
+    have hc : Classical.choose (∃ i, muCandidate i
+        = ↑(⟨muCandidate (Sum.inl e), Module.Basis.subset_extend hs (Set.mem_range_self _)⟩ :
+          hs.extend (Set.subset_univ _))) = Sum.inl e :=
+      hli.injective (Classical.choose_spec _)
+    rw [hc]
+  · intro j hj
+    have hb : b ⟨muCandidate (Sum.inr j), Module.Basis.subset_extend hs (Set.mem_range_self _)⟩
+        = (RatFunc.X + RatFunc.C ((j : ℚ) ^ 2))⁻¹ := extend_apply_mem hs (Set.mem_range_self _)
+    rw [← hb, b.constr_basis ℚ g]
+    rw [dif_pos ⟨Sum.inr j, rfl⟩]
+    have hc : Classical.choose (∃ i, muCandidate i
+        = ↑(⟨muCandidate (Sum.inr j), Module.Basis.subset_extend hs (Set.mem_range_self _)⟩ :
+          hs.extend (Set.subset_univ _))) = Sum.inr j :=
+      hli.injective (Classical.choose_spec _)
+    rw [hc]

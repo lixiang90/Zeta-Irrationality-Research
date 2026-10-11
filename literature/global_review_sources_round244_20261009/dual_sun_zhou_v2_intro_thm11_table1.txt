@@ -1,0 +1,125 @@
+1. Introduction
+The four known classical rational Ramanujan-type series (see [32, Chapter 14]) involving cubes of central binomial coefficients \binom{2k}{k}\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{(2k)!}{(k!)^{2}}
+are
+(1.1)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\frac{4k+1}{(-64)^{k}}
+\displaystyle=\frac{2}{\pi},
+(1.2)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\frac{6k+1}{256^{k}}
+\displaystyle=\frac{4}{\pi},
+(1.3)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\frac{6k+1}{(-512)^{k}}
+\displaystyle=\frac{2\sqrt{2}}{\pi},
+(1.4)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\frac{42k+5}{4096^{k}}
+\displaystyle=\frac{16}{\pi}.
+Note that (1.1) was first obtained by Bauer [13], and (1.2)–(1.4) were discovered by Ramanujan [52]. Usually,
+one proves such identities using the theory of modular forms (see, for example, [43, 51, 59]).
+The identities (1.1)–(1.4) have the following variants involving second-order harmonic numbers \mathsf{H}^{(2)}_{k}\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\sum_{0<n\leq k}\frac{1}{n^{2}} :
+(1.5)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{1}{2}\mathsf{H}_{k}^{(2)}\right]\frac{4k+1}{(-64)^{k}}
+\displaystyle=-\frac{\pi}{12},
+(1.6)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{5}{16}\mathsf{H}_{k}^{(2)}\right]\frac{6k+1}{256^{k}}
+\displaystyle=\frac{\pi}{12},
+(1.7)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{5}{16}\mathsf{H}_{k}^{(2)}\right]\frac{6k+1}{(-512)^{k}}
+\displaystyle=-\frac{\sqrt{2}\pi}{48},
+(1.8)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{25}{92}\mathsf{H}_{k}^{(2)}\right]\frac{42k+5}{4096^{k}}
+\displaystyle=\frac{2\pi}{69}.
+Here is a brief history of the last four displayed formulae:
+Wei and Ruan [64] established (1.5);
+Guo and Lian
+[42] had conjectured (1.6) and (1.7) before both formulae were confirmed by Wei [62]; Sun [55, (107)] had proposed (1.8) before it was verified by Wei [60].
+Motivated by the identities (1.5)–(1.8), the first-named author has
+recently
+conjectured the following four identities (cf. [56]):
+(1.9)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{1}{2}\mathsf{H}_{k}^{(2)}+2L_{-8}(2)-\frac{5\pi^{2}}{24}\right]\frac{1}{(-64)^{k}}
+\displaystyle=0,
+(1.10)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{5}{16}\mathsf{H}_{k}^{(2)}+\frac{135L_{-3}(2)-11\pi^{2}}{96}\right]\frac{1}{256^{k}}
+\displaystyle=0,
+(1.11)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{5}{16}\mathsf{H}_{k}^{(2)}+\frac{120L_{-4}(2)-11\pi^{2}}{96}\right]\frac{1}{(-512)^{k}}
+\displaystyle=0,
+(1.12)
+\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{25}{92}\mathsf{H}_{k}^{(2)}+\frac{735L_{-7}(2)-86\pi^{2}}{1104}\right]\frac{1}{4096^{k}}
+\displaystyle=0.
+Here, the Dirichlet L -function
+(1.13)
+\displaystyle L_{d}(s)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\sum_{n=1}^{\infty}\left(\frac{d}{n}\right)\frac{1}{n^{s}},\quad\RE s>1
+is defined via the Kronecker symbol \big(\frac{d}{\cdot}\big) .
+The Riemann zeta function
+(1.14)
+\displaystyle\zeta(s)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\sum_{n=1}^{\infty}\frac{1}{n^{s}},\quad\RE s>1
+is the same as L_{1}(s) .
+To attack (1.9)–(1.12) and to revisit (1.5)–(1.8) in §2, we give modular parametrizations for our series of interest. We will need the Dedekind eta function \eta(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}e^{\pi iz/12}\prod_{n=1}^{\infty}(1-e^{2\pi inz}) for z\in\mathfrak H\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\{w\in\mathbb C|\I w>0\} , from which we may define the modular lambda function
+(1.15)
+\displaystyle\lambda(2z)\equiv\alpha_{4}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{2^{4}[\eta(z)]^{8}[\eta(4z)]^{16}}{[\eta(2z)]^{24}}=1-\alpha_{4}\left(-\frac{1}{4z}\right)=1-\lambda\left(-\frac{1}{2z}\right)
+and the weight-4 holomorphic Eisenstein series
+(1.16)
+\displaystyle E_{4}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}
+\displaystyle\frac{[\eta(z)]^{40}\{1-\lambda(z)+[\lambda(z)]^{2}\}}{[\eta(2z)\eta(z/2)]^{16}}=\frac{1}{2\zeta(4)}\sum_{\begin{subarray}{c}m,n\in\mathbb Z\\
+m^{2}+n^{2}\neq 0\end{subarray}}\frac{1}{(mz+n)^{4}}=1+240\mathop{\raisebox{-10.00012pt}{\scalebox{1.0}{$\displaystyle\sum$}}}\limits_{n=1}^{\infty}\dfrac{n^{3}e^{2\pi inz}}{1-e^{2\pi inz}}
+for z\in\mathfrak H .
+In addition, we will avail ourselves of the Eichler integral
+(1.17)
+\displaystyle E_{4}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\int_{z}^{i\infty}[1-E_{4}(w)](w-z)^{2}\D w,
+the real-analytic Eisenstein series (also known as the Epstein zeta function)
+(1.18)
+\displaystyle E(z,s)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{1}{2\zeta(2s)}\sum_{\begin{subarray}{c}m,n\in\mathbb Z\\
+m^{2}+n^{2}\neq 0\end{subarray}}\frac{(\I z)^{s}}{|mz+n|^{2s}}=E(z+1,s)=E\left(-\frac{1}{z},s\right),
+the weight-2 non-holomorphic Eisenstein series
+(1.19)
+\displaystyle E_{2}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{12}{\pi i\eta(z)}\frac{\partial\eta(z)}{\partial z}-\frac{3}{\pi\I z}=1-{\frac{3}{\pi\I z}-24\sum_{n=1}^{\infty}\frac{ne^{2\pi inz}}{1-e^{2\pi inz}}},
+and the Legendre–Ramanujan function (cf. [71, (2.2.21)])
+(1.20)
+\displaystyle R_{-1/2}(1-2\alpha_{4}(z))={}
+\displaystyle-\frac{2^{4}[E_{2}(4z)]^{2}-2^{4}E_{4}(4z)-[E_{2}(z)]^{2}+E_{4}(z)}{2[4E_{2}(4z)-E_{2}(z)]^{2}}.
+Whenever a point z in the upper-half plane \mathfrak H is a quadratic irrational number (namely, the minimal polynomial of z has degree 2 ), both \alpha_{4}(z) and R_{-1/2}(1-2\alpha_{4}(z)) are explicitly computable algebraic numbers [69, §6].
+Theorem 1.1.
+(a)
+If we have either 2z/i\geq 1 , or \RE z=\frac{1}{2} and \I z\geq\frac{1}{\sqrt{2}} , then
+(1.21)
+\displaystyle\begin{split}Q_{1}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}&\frac{\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{1}{4}\mathsf{H}_{k}^{(2)}\right]\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}}{\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}}\\
+={}&\frac{7\zeta(3)}{4\pi\I z}-\frac{\pi^{2}\left[4E\big(z+\frac{1}{2},2\big)-E(2z,2)\right]}{90}-\frac{\pi^{2}i\left[8E_{4}\big(z+\frac{1}{2}\big)-E_{4}(2z)\right]}{120\I z}\end{split}
+and
+(1.22)
+\displaystyle\begin{split}Q_{2}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}&\frac{\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\mathsf{H}_{k}^{(2)}\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}}{\displaystyle\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}}\\
+={}&-\frac{2\pi^{2}}{3}(\I z)^{2}-\frac{2\zeta(3)}{\pi\I z}-\frac{2\pi^{2}\left[E\big(z+\frac{1}{2},2\big)-4E(2z,2)\right]}{45}\\
+&{}-\frac{\pi^{2}i\left[E_{4}\big(z+\frac{1}{2}\big)-2E_{4}(2z)\right]}{15\I z}.\end{split}
+(b)
+If we have either 2z/i\geq 1 , or \RE z=\frac{1}{2} and \I z\geq\frac{1}{\sqrt{2}} , then
+(1.23)
+\displaystyle\begin{split}&R_{1}(z)\\
+\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}&\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\left[\mathsf{H}_{2k}^{(2)}-\frac{1}{4}\mathsf{H}_{k}^{(2)}\right]\frac{2[1-2\alpha_{4}(z)]k+R_{-1/2}(1-2\alpha_{4}(z))}{\I z}\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}\\
+={}&\frac{Q_{1}(z)}{\pi(\I z)^{2}}-\frac{\pi i\left[2E_{4}^{\prime\prime}\big(z+\frac{1}{2}\big)-E_{4}^{\prime\prime}(2z)\right]}{30\I z}\end{split}
+and
+(1.24)
+\displaystyle\begin{split}&R_{2}(z)\\
+\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}&\sum_{k=0}^{\infty}\binom{2k}{k}^{3}\mathsf{H}_{k}^{(2)}\frac{2[1-2\alpha_{4}(z)]k+R_{-1/2}(1-2\alpha_{4}(z))}{\I z}\left\{\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}\right\}^{k}\\
+={}&\frac{Q_{2}(z)}{\pi(\I z)^{2}}-\frac{\pi i\left[E_{4}^{\prime\prime}\big(z+\frac{1}{2}\big)-8E_{4}^{\prime\prime}(2z)\right]}{15\I z},\end{split}
+where
+(1.25)
+\displaystyle E^{\prime\prime}_{4}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}\frac{\partial^{2}E_{4}(z)}{\partial z^{2}}=2\int_{z}^{i\infty}[1-E_{4}(w)]\D w.
+For many quadratic irrational numbers z , Glasser and Zucker [37] have produced closed-form evaluations of E(z,s) in terms of Dirichlet L -functions L_{d}(s) , with suitably chosen d . All the special values of Epstein zeta functions in Table 1 can be read off from [37, Table VI].
+\square
+When z is a quadratic irrational number listed in the first column of Table 1, there is a corresponding rational number r=r(z)\in\mathbb Q , such that the sum
+(1.26)
+\displaystyle\begin{split}S_{r}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}{}&\frac{7\zeta(3)}{4\pi\I z}-\frac{\pi^{2}i\left[8E_{4}\big(z+\frac{1}{2}\big)-E_{4}(2z)\right]}{120\I z}\\
+{}&+r\left\{\frac{2\pi^{2}}{3}(\I z)^{2}+\frac{2\zeta(3)}{\pi\I z}+\frac{\pi^{2}i\left[E_{4}\big(z+\frac{1}{2}\big)-2E_{4}(2z)\right]}{15\I z}\right\}\end{split}
+becomes a rational multiple of \pi^{2} , and that
+(1.27)
+\displaystyle T_{r}(z)\mathrel{\mathchoice{\vbox{\hbox{$\displaystyle:$}}}{\vbox{\hbox{$\textstyle:$}}}{\vbox{\hbox{$\scriptstyle:$}}}{\vbox{\hbox{$\scriptscriptstyle:$}}}{=}}R_{1}(z)-rR_{2}(z)
+becomes a rational multiple of \pi . (See §2.3 for the explicit computations.)
+The aforementioned property of S_{r(z)}(z) , together with the reductions of Epstein zeta functions to Dirichlet L -values, allow us to prove (1.9)–(1.12) (cf. the penultimate column of Table 1), which have been recently conjectured by the first-named author in Question 507709 of MathOverflow [56]. Note that Eric Naslund has posted an answer to [56] that contained a complete proof of (1.9), but the more challenging identities (1.10)–(1.12) did not succumb to his method.
+The corresponding property of T_{r(z)}(z) (cf. the last column of Table 1) constitutes an alternative way to interpret (1.5)–(1.8). \square
+Table 1. Selected arithmetic data for special cases of Theorem 1.1
+\displaystyle\begin{array}[]{c|l@{\,\,}l@{\,}l|l@{\;\,}l|l@{\;\,}l@{\;\,}l}\hline\cr\hline\cr\vphantom{\frac{\int}{\int}}z&\frac{\alpha_{4}(z)[1-\alpha_{4}(z)]}{2^{4}}&\frac{1-2\alpha_{4}(z)}{\I z}&\frac{R_{-1/2}(1-2\alpha_{4}(z))}{2[1-2\alpha_{4}(z)]}&E\big(z+\frac{1}{2},2\big)&E(2z,2)&r(z)&Q_{1}(z)-r(z)Q_{2}(z)&T_{r(z)}(z)\\
+\hline\cr\vphantom{\frac{\int}{\int}}\frac{\sqrt{3}i}{2}&\frac{1}{2^{8}}&1&\frac{1}{6}&\frac{135L_{-3}(2)}{4\pi^{2}}&\frac{405L_{-3}(2)}{8\pi^{2}}&\frac{1}{16}&\frac{11\pi^{2}}{96}-\frac{45L_{-3}(2)}{32}&\frac{\pi}{36}\\
+\vphantom{\frac{\int}{\int}}\frac{\sqrt{7}i}{2}&\frac{1}{2^{12}}&\frac{3}{4}&\frac{5}{42}&\frac{105L_{-7}(2)}{4\pi^{2}}&\frac{525L_{-7}(2)}{8\pi^{2}}&\frac{1}{46}&\frac{43\pi^{2}}{552}-\frac{245L_{-7}(2)}{368}&\frac{\pi}{966}\\
+\hline\cr\vphantom{\frac{\int}{\int}}\frac{1}{2}+\frac{i}{\sqrt{2}}&-\frac{1}{2^{6}}&2&\frac{1}{4}&\frac{30L_{-8}(2)}{\pi^{2}}&\frac{30L_{-8}(2)}{\pi^{2}}&\frac{1}{4}&\frac{5\pi^{2}}{24}-2L_{-8}(2)&-\frac{\pi}{12}\\
+\vphantom{\frac{\int}{\int}}\frac{1}{2}+i&-\frac{1}{2^{9}}&\frac{3}{2\sqrt{2}}&\frac{1}{6}&\frac{30L_{-4}(2)}{\pi^{2}}&\frac{105L_{-4}(2)}{2\pi^{2}}&\frac{1}{16}&\frac{11\pi^{2}}{96}-\frac{5L_{-4}(2)}{4}&-\frac{\pi}{96}\\
+\hline\cr\hline\cr\end{array}

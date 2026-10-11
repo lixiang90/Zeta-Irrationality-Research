@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "first_only": true,
+  "successful_runs": 1,
+  "failed_runs": 0,
+  "checks": 4694,
+  "cases": [
+    {
+      "r": 1,
+      "n": 4,
+      "p": 19,
+      "dimension": 8,
+      "shared_nodes": [
+        5
+      ],
+      "strong_dimension": 5,
+      "weak_dimension": 3,
+      "source_a_normalized_response_matches": true,
+      "source_b_leading_matches": true,
+      "pencil_mass_identity": true,
+      "actual_anchor_higher_Smith_computed": false,
+      "exact_char0_pairing_of_representatives_asserted": false,
+      "scope": "literal actual mod-p^2 halfjet jets suffice; paper proves independence of exact higher lift corrections"
+    },
+    {
+      "r": 2,
+      "n": 8,
+      "p": 37,
+      "dimension": 16,
+      "shared_nodes": [
+        9,
+        10,
+        11
+      ],
+      "strong_dimension": 10,
+      "weak_dimension": 6,
+      "source_a_normalized_response_matches": true,
+      "source_b_leading_matches": true,
+      "pencil_mass_identity": true,
+      "actual_anchor_higher_Smith_computed": false,
+      "exact_char0_pairing_of_representatives_asserted": false,
+      "scope": "literal actual mod-p^2 halfjet jets suffice; paper proves independence of exact higher lift corrections"
+    },
+    {
+      "r": 4,
+      "n": 16,
+      "p": 73,
+      "dimension": 32,
+      "shared_nodes": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "strong_dimension": 20,
+      "weak_dimension": 12,
+      "source_a_normalized_response_matches": true,
+      "source_b_leading_matches": true,
+      "pencil_mass_identity": true,
+      "actual_anchor_higher_Smith_computed": false,
+      "exact_char0_pairing_of_representatives_asserted": false,
+      "scope": "literal actual mod-p^2 halfjet jets suffice; paper proves independence of exact higher lift corrections"
+    }
+  ],
+  "residual_toys": [
+    {
+      "p": 19,
+      "k": 1,
+      "bad_source_residues": [
+        7
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 19,
+      "k": 2,
+      "bad_source_residues": [
+        7,
+        14
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 19,
+      "k": 3,
+      "bad_source_residues": [
+        2,
+        7,
+        14
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 37,
+      "k": 1,
+      "bad_source_residues": [
+        23
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 37,
+      "k": 2,
+      "bad_source_residues": [
+        9,
+        23
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 37,
+      "k": 3,
+      "bad_source_residues": [
+        9,
+        23,
+        32
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 73,
+      "k": 1,
+      "bad_source_residues": [
+        9
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 73,
+      "k": 2,
+      "bad_source_residues": [
+        9,
+        18
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    },
+    {
+      "p": 73,
+      "k": 3,
+      "bad_source_residues": [
+        9,
+        18,
+        27
+      ],
+      "scope": "general diagonal residual toy, not actual original anchor"
+    }
+  ],
+  "old_or_peer_execute_import_rerun": 0,
+  "external_Lean_execution": 0,
+  "auxiliary_unit_prime_table_extended": false,
+  "infinite_actual_radical_mass_unit_proved": false,
+  "fixed_rational_source_infinite_success_proved": false,
+  "actual_higher_Smith_or_new_M5_unit_asserted": false
+}

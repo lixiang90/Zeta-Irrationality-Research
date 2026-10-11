@@ -1,0 +1,225 @@
+                       THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                                  67
+
+
+                                6. The fine holonomy bound
+   In this section, we arrive at our first main holonomy bound (Theorem 6.0.2),
+which we prove by revisiting the method in [CDT21, § 2.5] and enhancing it by the
+(standard) results of § 3 and § 4. This elementary treatment of our bound suffices
+for the proof of Theorems A and C and for all our other applications in this paper.
+Later, in § 7 and § 8, we will prove other holonomy bounds, some of which involve
+a Bost–Charles double integral that is theoretically smaller than the rearrangement
+integral in (6.0.15); however, we will find in Remark 8.1.17 and § 8.3 the difference
+to be negligibly small in practice. For our default treatment we have opted to
+highlight the increasing rearrangement feature which occurs, under a probabilistic
+interpretation, simultaneously in the top and bottom quantities in the holonomy
+quotient (6.0.10).
+   In order to state our holonomy bound, we first define (following Lemma 5.0.5) a
+function to measure up the additional contributions to the coefficient denominators
+in our multivariable evaluation module under including the integrals of our original
+set of functions, as discussed in § 5. (In the statement of Theorem 6.0.2, these will
+be the functions fi of the form (6.0.9) with ei > 0.)
+Definition 6.0.1. For 0 ≤ max{u, 1} ≤ v and w ≤ v, set
+                                                                           
+               Z 1                          Z v       ⌊(t−1)/Xmax(1,w)⌋    
+    Iuv (w) :=           max{t − w, 0} dt +                              1/h dt
+                min{u,1}                     max{u,1}        h=1
+                                                                            
+              Z v                                                      
+                                               t
+            +           max                                      − w, 0 dt.
+               max{u,1}       ⌊(t + max(0, w − 1))/ max(1, w)⌋
+  We now have:
+Theorem 6.0.2. Consider two positive integers m, r ∈ N>0 , a nonnegative integer
+vector e := (e1 , . . . , em ) ∈ Nm , and an m × r rectangular array of nonnegative real
+numbers
+                                            
+                                   b := bi,j 1≤i≤m, 1≤j≤r ,
+all of whose columns have the form
+    0 = b1,j = · · · = buj ,j < buj +1,j = · · · = bm,j =: bj ,                  ∀j = 1, . . . , r,   (6.0.3)
+for some uj ∈ {0, 1, . . . , m} depending on the column. Let
+                             σi := bi,1 + . . . + bi,r ,            i = 1, . . . , m
+be the i-th row sum, and define
+                              m                         r
+                          1 X                       1 X 2
+          τ ♭ (b) :=             (2i − 1)σi = σ m −       u bj ∈ [0, σm ].                            (6.0.4)
+                          m2 i=1                    m2 j=1 j
+
+and, with Iξm (ξ) as in Definition 6.0.1,
+                                      (                m                                 )
+                                                       X
+                   ♯                2
+               τ (e) := (2/m ) min                 ξ         ei +       max ei       Iξm (ξ)   .      (6.0.5)
+                                         ξ∈[0,m]                        1≤i≤m
+                                                       i=1
+
+Define, finally,
+                                        τ (b; e) := τ ♭ (b) + τ ♯ (e).                                (6.0.6)
+68                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Consider a sequence of holomorphic mappings φ0 , . . . , φl : (D, 0) → (C, 0) with
+derivatives ( conformal sizes) satisfying
+     |φ′0 (0)| < |φ′1 (0)| < · · · < |φ′l (0)|   and    |φ′l (0)| > emax(σm ,τ (b;e)) .   (6.0.7)
+Accordingly, partition the segment [0, m] by introducing the division point parame-
+ters
+                            0 = γ0 < · · · < γl < γl+1 = m,
+and use these choices to define an L1 function by piecewise patching the functions
+log |φk | on the circle T according to the linear scaling of [0, 1) to [γk /m, γk+1 /m):
+           gφ,γ : [0, 1) → R ∪ {−∞},
+                                                                                          (6.0.8)
+                                mt−γk
+                                       
+                             2πi
+         gφ,γ (t) := log φk e γk+1 −γk             on    t ∈ [γk /m, γk+1 /m) .
+
+If there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent formal
+functions with denominator types of the form
+                    ∞
+                   X                             xn
+   fi (x) = ai,0 +     ai,n ei                                                 , ai,n ∈ Z, (6.0.9)
+                   n=1
+                           n [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+such that fi (φk (z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for
+all pairs i = 1, . . . , m and k = 0, . . . , l, then
+                               Z 1                                l
+                                           ∗                1 X 2             |φ′ (0)|
+                                    2t · gφ,γ   (t) dt +             γk log ′ k
+                                 0                         m                |φk−1 (0)|
+                                                               k=1
+                           m≤
+                                                log |φ′l (0)| − τ (b; e)
+                                                                                         (6.0.10)
+          Z 1Z 1                                                l
+                                                           1 X 2             |φ′k (0)|
+                   max (gφ,γ (s), gφ,γ (t)) ds dt +                 γk log ′
+           0   0                                           m               |φk−1 (0)|
+                                                              k=1
+      =                                  ′                                             .
+                                  log |φl (0)| − τ (b; e)
+If moreover all functions fi are a priori assumed to be holonomic, the assumption
+|φ′l (0)| > emax(σm ,τ (b;e)) on φl in equation (6.0.7) can be relaxed to |φ′l (0)| > eτ (b;e) .
+   Here, in g ∗ , we use the notation from (2.4.1) of the increasing rearrangement
+                                                                   R1
+function
+RR        of g. This is why we will often refer to quantities like 0 2t · g ∗ (t) dt =
+  [0,1]2
+         max (|g(s)|, |g(t)|) ds dt as to rearrangement integrals.
+Remark 6.0.11 (Musical Notation). In the notation of Theorem 2.5.1, we have
+τ (b) = τ ♭ (b) = τ (b; 0). Our reason for the musical notation is to think of τ =
+τ ♭ (b) as the main reduction (flattening) of cruder values such as the value τ = σm
+from [CDT24] when we remove the powers ne from (7.0.1), and of τ ♯ (e) as the extra
+term from adding those integrations to the original list of functions.             △
+Remark 6.0.12. In Theorem 6.0.2 (and all the other similar theorems that we
+prove), we may formally relax the denominator type (6.0.9) to allow for the looser
+form:
+                   nei [1, . . . , bi,1 · n + ci,1 ] · · · [1, . . . , bi,r · n + ci,r ], (6.0.13)
+for any fixed set of integers ci,j . This follows upon applying the original statement
+of our theorem where all the nonzero bi,j are changed to bi,j +ε, for some sufficiently
+small positive number ε > 0. This subsumes the denominator type (6.0.13) for all
+but finitely many n, and any finite initial string of coefficients can be made to have
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                       69
+
+
+any given denominator type by scaling. Then one takes the limit ε → 0, after
+noting that the bounds always depend continuously on the bi,j .           △
+   As the special case l = 0 of a single analytic map φ, we record the extension of
+the bound (2.5.5):
+Corollary 6.0.14. Assume the same conditions and notation as in Theorem 6.0.2,
+but consider more simply a single holomorphic mapping φ : (D, 0) → (C, 0) satis-
+fying |φ′ (0)| > eτ (b;e) and such that the pullbacks φ∗ fi are meromorphic functions
+on the open unit disc, that is, φ∗ fi ∈ M(D). If either |φ′ (0)| > eσm , or if all
+functions fi are holonomic, then
+      ZZ                                                     Z 1
+             log (max(|φ(z)|, |φ(w)|) µHaar (z)µHaar (w)         2t · (log |φ(e2πit )|)∗ dt
+          T2                                                  0
+ m≤                                                       =                                 .
+                       log |φ′ (0)| − τ (b; e)                  log |φ′ (0)| − τ (b; e)
+                                                                                   (6.0.15)
+Remark 6.0.16. We will see from the proofs, and indeed it already follows by
+André’s holonomicity criterion (Corollary 2.6.1), that the condition |φ′ (0)| > eσm
+yields the holonomicity of the functions fi . Subsequently the proof only uses the
+Chudnovsky–Osgood theorem 3.2.13 that stems from the holonomicity, and the
+condition |φ′ (0)| > eτ (b;e) .
+     On the other hand, the condition |φ′ (0)| > eτ (b;e) alone does not imply the
+holonomicity required for the argument. For simplicity, and in keeping up with
+the conventions of [BC22], let us limit this remark to the case where φ ∈ RJzK
+has real (as opposed to complex) coefficients. A converse statement is then the
+following. Consider an arbitrary datum (b; φ) with φ ∈ RJzK as in the statement
+of Corollary 6.0.14 (the case of a single map φ in Theorem 6.0.2), except now with
+assuming the opposite inequality |φ′ (0)| ≤ eσm . Then, if there is at least one m-
+tuple of Q(x)-linearly independent formal functions {fi } obeying the arithmetic
+and analytic conditions of the datum (b; φ), there are in fact continuum-many such
+m-tuples; this in particular implies non-holonomic such functions.
+     To see the claim, upon keeping fixed f1 , . . . , fm−1 , it suffices to show that fm ∈
+QJxK has continuum-many valid coefficient options am,•         P ∈ Z in the form (6.0.9)
+with em = 0, under which the pulled back power series cn z n := fm (φ(z)) ∈ CJzK
+has sub-exponentially small coefficients |cn | = exp(o(n)). (Compare with [BC22,
+§ 6.4.2], [Pól1923, § 6], or [Rob68, § 5].) We show that each successive coeffi-
+cient am,n ∈ Z has at least two valid options after all the preceding coefficients am,0 ,
+. . ., am,n−1 have already been selected. This follows upon recursively expressing
+cn = µn am,n − Pn (am,0 , . . . , am,n−1 ) with coefficient
+                                             h
+                                            Y
+                            µn := φ′ (0)n        [1, . . . , bm,i · n]
+                                            i=1
+of sub-exponential growth by the prime number theorem, and Pn ∈ R[x0 , . . . , xn−1 ]
+polynomials that depend on the map φ. This gives the two distinct valid options
+am,n ∈ {⌊Pn (am,<n )/µn ⌋, ⌊Pn (am,<n )/µn ⌋ + 1}, and altogether a construction of
+a set of fm ∈ QJxK with cardinality 2#N = #R.                                     △
+  An essential technical feature in this section, and ultimately in the proofs of both
+Theorems A and C, is the term τ ♯ accommodating added integrals to the principal
+denominators shape of Theorem 2.5.1. We describe this feature on a few examples.
+70                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Basic Remark 6.0.17. To revisit the simplest example from Basic Remark 2.6.3,
+let us compute the quantity τ (b; e) with
+                                  b = (0, 0)t ,    e = (0, 1).
+          ♭
+Clearly τ (b) = 0, and we easily compute that
+                                           3 + (ξ − 1)2
+                                                       
+                       ♯       1                           3
+                      τ (e) =     min                     = ,
+                               2 ξ∈[0,2]        2          4
+attained at the midpoint ξ = 1. Hence we find the same value τ (b, e) = τ ♭ (b) +
+τ ♯ (e) = 3/4 as when we use the cruder scheme
+              b = (0, 1)t ,        e = (0, 0),     τ ♭ (b) = 3/4,    τ ♯ (e) = 0,
+and no improvement is made over § 2.5 in this example.
+    In a moment, we will revisit and refine the Diophantine approximation frame-
+work of [CDT21, § 2.1]. In that framework on our running example, we have aux-
+iliary functions (replicated to many variables) of the form P (x) + Q(x) log(1 − x),
+where P, Q ∈ Z[x] are polynomials of degrees less than D. By the discussion
+in § 3.3.7, the lowest order monomial βxn of any such function is necessarily in de-
+gree n ≤ 2D − 1, where the equality is attained uniquely by the Hermite–Padé ap-
+proximants which are essentially given by Legendre polynomials. Our proof scheme
+combines an analytic upper bound on the coefficient β ∈ Q× with the arithmetic
+lower bound |β| ≥ 1/den(β) by the reciprocal of the denominator of the nonzero
+rational number β.PWe can directly see why in this case the finer denominators
+                           ∞
+of log(1 − x) = − k=1 xk /k do not give any extra help in the arithmetic lower
+bound |β| ≥ 1/den(β). The denominator of the xn coefficient β ∈ Q is estimated
+by the lowest common multiple of all integers from the interval [n−D, n] ⊃ [n/2, n].
+As [n/2, . . . , n] = [1, . . . , n] (for every integer k ∈ [1, n] has a unique 2-power mul-
+tiple fitting into (n/2, n]), this in the situation is equal to the lowest common
+multiple [1, . . . , n] of the full initial string of integers: the estimate that we get
+from using [1, . . . , k] instead of k as the coefficients denominators in the function
+f (x) = log(1 − x). We also see that the finer denominators are expected to make
+a difference once we have at least m ≥ 3 functions, as already [2n/3, . . . , n] is
+substantially smaller than [1, . . . , n]. (See also Basic Remark 5.0.3.)                 △
+Remark 6.0.18. Using a refined pair b ∈ Mm×r (N) with an e ∈ Nm instead
+of a crude concatenation with e ⇝ 0 may not always give an improvement in the
+estimate of Theorem 6.0.2. Consider the case m = 3 with the situation with the
+proof of Theorem 2.7.2, but with the finer types
+                               b = (0, 0, 1)t ,    e = (0, 1, 0),
+giving a template of three functions with denominator types
+                                    xn            xn
+                            xn ,       ,                    .                       (6.0.19)
+                                     n       [1, . . . , n]
+This choice for the array (b; e) has τ ♭ (b) = τ ♯ (e) = 5/9, with the latter reaching
+the minimum over the whole interval ξ ∈ [3/2, 2]. But the type (6.0.19) is also
+covered by the cruder choice
+                              b0 := (0, 1, 1)t ,   e0 = (0, 0, 0),
+that we made for the proof of Theorem 2.7.2, and this basic choice gives in this case
+the better value τ (b0 ; e0 ) = τ (b0 ) = 8/9 than τ (b; e) = 10/9. The reason for this is
+

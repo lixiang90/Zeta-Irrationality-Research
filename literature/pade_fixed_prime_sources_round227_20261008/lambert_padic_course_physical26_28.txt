@@ -1,0 +1,137 @@
+26                 P -ADIC ANALYSIS, P -ADIC ARITHMETIC
+
+     We have f (y) = limn fn (y). On the other hand, we have
+                                                        n
+                                                        X          y i − yni
+           |fn (y)| = |fn (y) − fn (yn )| = |y − yn |         ai             .
+                                                        i=1
+                                                                   y − yn
+
+Now, (y i − yni )/(y − yn ) = (y i−1 + y i−2 yn + · · · + yni−1 ) has norm ≤ 1,
+by the ultrametric inequality. Using that |ai | ≤ 1 for each i gives
+that |fn (y)| ≤ |y − yn |, which tends to 0 as n tends to infinity. Thus
+f (y) = 0. This concludes the proof.                                         
+Lemma 6.2. Suppose that f (α) = 0, and that
+       g(X) = (1 − X/α)−1 f (X) = (1 + X/α + (X/α)2 + . . . )f (X).
+Then g(X) converges on D(|α|).
+Proof. Let fn (X) = 1 + ni=1 ai X i , as above. We have
+                       P
+
+                  bi = 1/αi + a1 /αi−1 + · · · + ai−1 /α + ai ,
+hence bi αi = fi (α). But |fi (α)| → 0 as i → ∞, and thus g(α) converges.
+                                                                       
+
+Weierstrass factorization.
+Lemma 6.3. There exists a power series g(X) ∈ 1 + XΩ[[X]] such
+that f (X)g(X) = 1. Suppose that the slopes of the Newton polygon of
+f are strictly greater than λ. Then the same is true of g. In particular,
+f and g both converge in the closed disk D(pλ ) and are non-zero there.
+Proof. We write g(X) = 1+ ∞             i
+                              P
+                                i=0 bi X . In order to have f (X)g(X) = 1
+as formal power series, we must have for each i
+                     bi = −(bi−1 a1 + · · · + b1 ai−1 + ai ).
+This allows us to solve for the bi inductively, so we find that g(X) exists
+as a formal power series.
+   For the second part of the lemma, we may suppose after scaling that
+λ = 0. The hypotheses of the theorem imply that for each i, ordp ai > 0,
+and ordp ai → ∞ as i → ∞. We must show that the same is true of
+the bi . The fact that ordp bi > 0 for each i follows by induction from
+the above relation.
+   We now show that ordp bi → ∞ as i → ∞. Fix M > 0, and choose m
+such that for all i > m, ordp ai > M . Let  = min(ordp a1 , . . . , ordp am ).
+I claim that for all i > nm, we have ordp bi > min(M, n). In particular,
+when i > mM/, ordp bi > M . Thus the claim implies the lemma.
+                  p-ADIC ANALYSIS, p-ADIC ARITHMETIC                      27
+
+  We prove the claim by induction on n, the case n = 0 being trivial.
+Suppose we’ve proven the claim for n − 1. We write
+        bi = −(bi−1 a1 + · · · + bi−m am + bi−m−1 am+1 + · · · + ai ).
+               |           {z          } |          {z            }
+                  ordp >min(M,(n−1))+             ordp >M
+
+The result follows.                                                       
+Theorem 6.4. Let f (X) = 1 + ∞                 i
+                                    P
+                                       i=0 ai X , and suppose that f con-
+                              λ
+verges on the closed disk D(p ). Let N be the total length of all segments
+of N (f ) of slope ≤ λ. (We suppose in particular that N is finite).
+   Then there exists a unique polynomial h(X) ∈ 1 + XΩ[X] of degree
+N and g(X) ∈ 1 + XΩ[[X]] convergent and non-zero in D(pλ ) such
+that h(X) = f (X)g(X).
+   Moreover, N (h) is equal to the part of N (f ) between 0 and (N, ordp aN ).
+Proof. We induct on N . The case N = 0 is the lemma above. Suppose
+that the theorem has been proven in the case N − 1, and let λ1 ≤
+λ be the first slope of f . By lemma 6.1, there exists α ∈ Ω with
+ordp 1/α = λ1 and f (α) = 0. Let f1 (X) = (1 − X/α)−1 f (X). Thus
+f1 (X) converges on the disk D(|α|) = D(pλ1 ).
+   Write c = 1/α, so that f (X) = (1 − cX)f1 (X). Let f10 (X) have first
+slope λ01 . If λ01 < λ1 , then f1 (X) has a root of slope λ01 , and hence so
+does f . But the previous lemma shows that f (X) has no zeroes in the
+disk D(λ−                                     0
+           1 ), so this is impossible. Thus λ1 ≥ λ1 .
+   We can now apply the lemma from last time, relating N (f ) and
+N (f1 ). This says that N (f ) is obtained from N (f1 ) by translating by
+(1, λ1 ) and joining the points (0, 0) and (1, λ1 ). By induction, there
+exists a polynomial h1 (X) of degree N − 1 and a power series g(X),
+convergent and non-vanishing in D(pλ ), such that
+                           h1 (X) = f1 (X)g(X).
+Setting h(X) = (1 − cX)h1 (X), we have
+                            h(X) = f (X)g(X).
+This h satisfies the hypothesis of the theorem.                           
+Corollary 6.5.     (1) Suppose that the slope λ of f has finite length
+      N . Then there are exactly N values of x such that f (x) = 0
+      and ordp 1/x = λ (counting multiplicities).
+  (2) Suppose that f (X) has infinite radius of convergence (i.e. f (x)
+      converges for any x ∈ Ω. In this case we sometimes say that f
+      is entire). Then for any C, there exist only finitely many values
+28                 P -ADIC ANALYSIS, P -ADIC ARITHMETIC
+
+         of x with |x| ≤ C and f (x) = 0. Moreover, ordering the zeroes
+         xn of f to have increasing norm, we have
+                                   ∞         
+                                  Y       X
+                         f (X) =      1−        .
+                                  i=1
+                                          x n
+
+Remark 2. Compare the above corollary with the Weierstrass factor-
+ization theorem, valid over C.
+Paper topics. The aim is to give a 5-10 page exposition and a 30-45
+minute lecture on one of the following topics.
+     (1) The connections with global arithmetic. Let F be a finite ex-
+         tension of Q (a number field ). Then F has a canonical ‘ring of
+         integers’ OF ⊂ F , which plays an analogous role in the study
+         of F to that of Z in the study of Q. In particular, prime ideals
+         of OF give rise to norms on F , and completing with respect to
+         one of these gives extensions of Qp (the so-called local fields as-
+         sociated to the ‘global field’ F ). There is a connection between
+         the local and global Galois groups.
+     (2) The Hasse principle. Consider a quadratic form f (x1 , . . . , xr ) =
+         a1 x21 + · · · + ar x2r , with coefficients in the field Q. Does there
+         exist a rational solution to the equation f (x1 , . . . , xr ) = 0? If
+         this is true then there will certainly exist solutions in Qp for
+         every prime p (and in R). The Hasse principle states that the
+         converse holds: if f = 0 has a solution in every ‘local’ field,
+         then it has a solution ‘globally’ (i.e. in Q).
+     (3) The p-adic interpolation of the Riemann zeta function. The
+         Riemann zeta function
+                                             ∞
+                                            X    1
+                                    ζ(s) =
+                                            n=1
+                                                 ns
+
+         is an analytic function of a complex variable, defined a priori
+         only where the above series converges (namely, when the real
+         part of s is > 1). However, it admits an analytic continuation
+         to the whole of C, and the properties of this continuation are
+         intimately tied up with the distribution of the primes.
+            It is a remarkable fact that the values of ζ at negative in-
+         tegers enjoy p-adic continuity properties, and in fact can be
+         interpolated to give a p-adic analytic avatar of the Riemann
+         zeta function.
+     (4) The ramification filtration. Let L/K be a Galois extension of
+         finite extensions of Qp . Then there is a canonical filtration of
+

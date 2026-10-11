@@ -1,0 +1,443 @@
+82                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+   Therefore (6.5.14) and (6.5.19) imply the following upper estimate:
+                                                  
+                              d
+                        1 X              ∗          α              α
+ sup {log |F (Φ(z))|} ≤         2(j/d) · gφ,γ (j/d)   + O(ϵα) + O      + o(α).
+   d
+z∈Tγ,ϵ                  d j=1                        m                d
+                                                                             (6.5.20)
+At this point, Koksma’s inequality applies yet again to prove the following estimate,
+                                           d
+uniformly on the well-distributed part Tγ,ϵ    ⊂ Td :
+                               Z 1
+                           α             ∗
+                                                                α
+   sup {log |F (Φ(z))|} ≤    ·     2t · gφ,γ (t) dt + O(ϵα) + O     + o(α). (6.5.21)
+     d
+ z∈Tγ,ϵ                   m 0                                    d
+
+6.5.22. Noise canceling. To handle the complementary (badly distributed) part of
+the integration torus Td , we select the “sufficiently big” exponent M of the damping
+Vandermondian:                                         
+                                        supT log |Φ| α
+                               M :=                       ,                    (6.5.23)
+                                           c′ (ϵ)    d2
+where c(ϵ) is the function from (6.5.9), and we recall that we have assumed the
+condition d ≥ d0 (ϵ) in that lemma. On the poorly distributed part Td ∖ Tγ,ϵ     d
+                                                                                    we
+get:
+                      sup {log |W (z)F (Φ(z))|} = O(ϵα) + o(α).
+                  z∈Td ∖T d
+                                                                               (6.5.24)
+                          γ,ϵ
+
+Putting together (6.5.21), (6.5.24), and Lemma 6.5.3, we derive the uniform esti-
+mate
+                                  Z 1                               
+                             α              ∗                 log d
+ sup {log |W (z)F (Φ(z))|} ≤    ·     2t · gφ,γ (t) dt + Oϵ         α + O(ϵα) + o(α).
+ z∈T                         m 0                                d
+                                                                              (6.5.25)
+6.5.26. The Cauchy bound. Our upper bound on the leading xn coefficient β now
+follows as the combination of (6.5.13) and (6.5.25)
+                 Z 1                                         l
+              α            ∗                              α X 2
+     log |β| ≤ ·     2t · gφ,γ (t) dt − α log |φ′l (0)| + 2     γk log |φ′k (0)|
+              m 0                                        m
+                                
+                                                            k=1                  (6.5.27)
+                          log d
+                 + Oϵ           α + O(ϵα) + o(α).
+                            d
+   This asymptotic inequality, upon taking the limits in the order α → ∞, d → ∞,
+and ϵ → 0, already proves the special case b = 0, e = 0 of the theorem, whereby
+β ∈ Z ∖ {0} is a nonzero rational integer and therefore at least one in magnitude.
+To complete the general case, it remains to estimate the denominator of the leading
+order coefficient β ∈ Q× in F (x).
+6.6. Denominator arithmetic. This is a new aspect which we did not encounter
+in [CDT21]. We consider all the possible combinations (6.2.8) with ci,k ∈ Z, and in
+those, we estimate prime-by-prime the worst possible denominator that may arise in
+a leading order monomial coefficient β, under the premises of Lemma 6.2.6 and the
+denominator types (6.0.9). We prove exp ατ ♭ (b) + o(α) as the best-possible (ex-
+act) formula in the e = 0 case. For the general case with added integrals, the exact
+denominator worst-case analysis seems subtle — especially if in the actual m = 14
+case in § 13 of our main application one tries to consider the finer denominators
+we indicate by Remark 10.2.3; — but we provide a handy upper estimate which
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     83
+
+                                                           
+turns out to be the quantity exp ατ ♭ (b) + ατ ♯ (e) + o(α) = exp (ατ (b; e) + o(α))
+of the statement of Theorem 6.0.2. We suspect our estimate to be pretty sharp in
+the case that we use for the proof of Theorem A.
+
+6.6.1. A preview on τ ♯ . It is plain from the way these growth rates τ ♭ (b) and τ ♯ (e)
+are added up that we are separately estimating the extra denominators that the fac-
+tors nei introduce from (6.0.9). The parameter ξ ∈ [0, m] of the definition (6.0.6) of
+τ # (e) is used for the cutoff in Lemma 5.0.5 to decide for which primes p to estimate
+the added power of p in den(β) based on the lemma, and for which primes to esti-
+mate it based, instead, directly on the remark that every product fi1 (x1 ) · · · fid (xd )
+has only a limited P  number of factors involving “extra n denominators” in (6.0.9):
+                        m
+namely, precisely ( i=1 ei ) d/m of the d factors contribute, if we count with mul-
+              ei
+tiplicities n . For the primes p ≤ ξD, we use the latter trivial estimate; for the
+range p > ξD, we estimate by Lemma 5.0.5 using that the leading ≺-order exponent
+vector n is, upon relabeling the variables, close to (mD/d, 2mD/d, . . . , dmD/d).
+   This means P   looking respectively into the left-hand  side and the right-hand side
+of the identity i,k ci,k xk fi1 (x1 ) · · · fim (xm ) = m βm xm . In our d → ∞ asymp-
+                                                       P
+
+totic, our ≺-leading exponent vector n ≈ (mD/d, 2mD/d, . . . , dmD/d) realizes once
+again the cross-variables dimension, with an integration variable t := jm/d ∈ [0, m]
+that leads up to the function max(ei ) · Iξm (ξ) of Definition 6.0.1. More precisely,
+recalling that we will take ϵ → 0 in the end, which will automatically force δ → 0,
+                             R m+δ
+the latter emerges as the 0         Riemann integral of the
+               maxi (ei )                [max(1, tD − D), tD]
+                          log                                             dt
+                 D            gcd {[1, . . . , ξD], [max(1, tD − D), tD]}
+estimates from Lemma 5.0.5. As this latter estimate goes “across the variables,”
+it only “sees” the nei exponents through their common capping maxi (ei ), based
+on the remark that, separately in every variable xj , all the terms [xnj ] fi (xj ) have
+added denominators multiplying at most by nmaxi (ei ) ; this has to be taken uniformly
+in i ∈ {1, . . . , m} (hence the maximum over i), as each given function species fi
+will occur from some product of (6.2.8) at every single coordinate xj . To leverage
+that many of the fi could have smaller added denominators nei than the common
+nmaxi (ei ) capping of this cross-variable denominator estimation, we use a balancing
+parameter
+ Pm           ξ and directly estimate the primes p ≤ ξD from the multiplicity density
+( i=1 ei ) d/m of affected factors in each product fi1 (x1 ) · · · fim (xd ), in which an
+extra pei denominator could possibly be hiding (this is a conservative estimate!).
+   We now execute both points τ ♭ (b) and τ # (e) of this den(β) majorization pro-
+gram. In these denominator estimates, the essential point is that our ≺-minimal
+exponent n ∈ (m + δ)D · Pϵd in F (x) has uniformly distributed components, but
+the corresponding information on k ∈ D · Pϵd is now ignored. (It is conceivable that
+the latter could be also exploited to give a more precise bound; however, we were
+unable to do that in our applications at hand.)
+   This is the exact opposite to the archimedean growth estimate in § 6.5.
+
+6.6.2. The τ ♭ (b) piece. Consider any of the lowest order exponent vectors
+                          n = (n1 , . . . , nd ) ∈ (m + δ)D · Pϵd ,
+as given by Lemma 6.2.6. Recall that in § 6.4 we relabeled the coordinates to
+assume — simply for a notational convenience — that our n has nondecreasing
+84                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+components: n1 ≤ · · · ≤ nd . Then, by Corollary 6.2.11, we have
+                          nj ≤ (1 + ϵ)mD(j/d) + 2mϵD
+                                                                                                        (6.6.3)
+                             ≤ mD(j/d) + 3mϵD,                    j = 1, . . . , d.
+We need to compute the lowest common denominator of all the nonzero rational
+numbers β ∈ Q× that may arise as the xn coefficient in any product
+                          xk11 · · · xkdd · gπ(1) (x1 ) · · · gπ(d) (xd ) ∈ QJxK                        (6.6.4)
+with some arbitrary k ∈ D · Pϵd , some arbitrary permutation π of {1, . . . , d}, and
+for each i ∈ {1, . . . , m}, some arbitrary formal functions
+                                            ∞
+                                            M                         xn
+     g1+(i−1)d/m (x), . . . , gid/m (x) ∈                                                         Z.    (6.6.5)
+                                            n=0
+                                                [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+This means nothing more nor less than the lowest common multiple of all products
+                    m d/m
+                    Y YY  r
+                                                            
+                             1, . . . , bi,h · nπ((i−1)d/m+s) ,                π ∈ Sd ,                 (6.6.6)
+                    i=1 s=1 h=1
+
+as π ranges over all permutations of {1, . . . , d}.
+   We handle (6.6.6) with a prime-by-prime determination of the maximizing val-
+uation. The following simple lemma is where the special condition (6.0.3) on the
+denominators shape matrix b is used, in all our theorems in §§ 6, 7.
+Lemma 6.6.7. For every prime p, every vector (c1 , . . . , cm ) ∈ Nm of the form
+                         0 = c1 = · · · = cu < cu+1 = · · · = cm =: c,                                  (6.6.8)
+and every nondecreasing sequence n(1) ≤ · · · ≤ n(km) consisting of km positive
+integers, the following equality holds:
+                            (m k                                            )
+                               YY
+                 max valp             [1, . . . , ci · n (π ((i − 1)k + s))]
+                  π∈Skm
+                                     i=1 s=1
+                                   (m k                                               )                 (6.6.9)
+                                    YY
+                          = valp               [1, . . . , ci · n ((i − 1)k + s)] .
+                                     i=1 s=1
+
+In other words, as π ∈ Skm ranges through all permutations of {1, . . . , km}, the
+identity permutation π = id maximizes the p-adic valuation in (6.6.9).
+Proof. The condition (6.6.8) simplifies the requisite product (6.6.9) to
+                            m
+                            Y k
+                              Y
+                                       [1, . . . , c · n (π ((i − 1)k + s))] .                         (6.6.10)
+                           i=u+1 s=1
+
+The lowest common multiple  [1, . . . , N ] of the first N positive integers has p-adic
+                   log N
+                         
+valuation equal to log p , and so the quantity in (6.6.9) under maximization is
+exactly equal to
+                          m X  k j
+                         X         log c log n (π ((i − 1)k + s)) k
+                                         +                          .                                  (6.6.11)
+                        i=u+1 s=1
+                                   log p           log p
+
+From the km positive integers {n(1), . . . , n(km)}, we have to pick k(m − u) with
+pairwise distinct indices to maximize the sum (6.6.11). Clearly this is maximized
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  85
+
+
+by picking the k(m − u) largest available numbers n(•), so in particular our mono-
+tonicity assumption on n(•) gives that (6.6.11) is maximized by the identity per-
+mutation π = id, with maximum
+                                    km j
+                                    X    log c log n(j) k
+                                               +         .                          □
+                                         log p   log p
+                                   j=ku+1
+
+   Applying (6.6.3) on the nondecreasing sequence n, together with our condi-
+tion (6.0.3) on the m × r array, we find by Lemma 6.6.7 that as soon D ≫ϵ 1, all
+the lowest common multiple products (6.6.6) divide
+           m d/m
+           Y YY  r
+                                                          
+                    1, . . . , bi,h · (i − 1)D + smD/d + ϵBD ,                (6.6.12)
+           i=1 s=1 h=1
+
+where the constant B := m · maxi,h {bi,h }.
+   By the prime number theorem, the lowest common multiple cap (6.6.12) evalu-
+ates in the D → ∞ asymptotic to
+                                                           
+               Xm d/m
+                  XX   r
+                                                         
+          exp            bi,h · (i − 1)D + smD/d + O(ϵD) 
+                i=1 s=1 h=1
+                                                                
+                         m d/m
+                         X X                            
+          = exp mD                 σi · (i − 1)/m + s/d + O(ϵdD)
+                         i=1 s=1
+                                                                              (6.6.13)
+                    m
+                                                                !
+                    X          Z   i/m
+          = exp α         σi             2t dt + O(ϵα) + od→∞ (α)
+                    i=1        (i−1)/m
+                                              
+          = exp ατ ♭ (b) + O(ϵα) + od→∞,ϵ→0 (α) ,
+
+recalling our definition (6.2.10) of the vanishing order parameter α = mdD/2.
+Remark 6.6.14. The statement of Lemma 6.6.7 ceases to be true if the con-
+dition (6.6.8) is relaxed
+                  Pm      to an arbitrary monotonic 0 ≤ c1 ≤ · · · ≤ cm . Thus,
+with τ ♭ (b) = m12 i=1 (2i − 1)σi as the definition in (6.0.4), the proof of the theo-
+rem would no longer hold if we relaxed the crude capping (6.0.3) of our denominator
+types to an arbitrary matrix b having columns with nondecreasing components. △
+Remark 6.6.15. Unlike for the archimedean growth estimate in § 6.5.15, our
+computation here ignored the uniform distribution constraint k ∈ D · Pϵd inside the
+trivial estimate k ∈ [0, D]d . This was how the growth rate τ ♭ was defined, not to
+take account of the distribution of the exponents k of the auxiliary polynomials;
+for this definition, it is an exact computation. In contrast, it was crucial for the
+horizontal integration idea to exploit the uniformly distributed components of the
+≺-leading x = 0 exponent n ∈ (m + δ)D · Pϵd .
+   In principle (or in practice), upon calculating a denominator rate still more
+involved than the term DenN (b, ϵ, d, ε) in Theorem 8.0.1, one could formulate a
+version of Theorem 6.0.2 in which τ (b; e) is formally refined to a complicated limit-
+ing formula that does also takes account of the uniform components restriction on
+the exponent vectors k ∈ [0, D]d in the make-up of the auxiliary function (6.2.8);
+and where denominator shapes still finer than our template form (7.0.1) could be
+86                              F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+considered. The denominators in Remark 10.2.3, and similar forms involving prod-
+ucts of binomial coefficients or products of primes from restricted intervals, are the
+typical example to have in mind for prospective applications; for deeper studies and
+more complicated examples, cf. [Vio04, RV96, Sor16, Zud14, DZ14]. In the situa-
+tion of our application to our main Theorem A, we did not succeed in making any
+(non-negligible) use of the uniformly distributed k for handling the more restricted
+denominator types of Remark 10.2.3.                                                 △
+6.6.16. The τ # (e) piece. To estimate the denominator surplus from the extra in-
+tegration denominators ne , we will separately (as an upper bound) multiply the
+principal denominators cap (6.6.12) by the lowest common denominator of all the
+possible xn coefficients β ∈ Q× of all possible products
+                              xk11 · · · xkdd · gπ(1) (x1 ) · · · gπ(d) (xd ) ∈ QJxK,
+
+across all possible k ∈ D · Pϵd , some arbitrary permutation π ∈ Sd , and, for each
+i ∈ {1, . . . , m}, arbitrary formal functions
+                                                                          ∞
+                                                                         M   xn
+                              g1+(i−1)d/m (x), . . . , gid/m (x) ∈                Z.                  (6.6.17)
+                                                                         n=0
+                                                                             n ei
+
+This multiplies separate local estimations of the highest possible power of a denom-
+inator at every prime p. Consider ξ ∈ [0, m] the parameter of the definition (6.0.5).
+We estimate differently the cases p ≤ ξD and p > ξD. Firstly we collect two basic
+standard facts, the first of which is a version of the prime number theorem, and the
+second, an immediate consequence:
+      (a) The product of the primes p ≤ n is asymptotic to exp(n + o(n)).
+      (b) The product
+                 √    of the proper prime powers pa ≤ n, a ≥ 2, is bounded by
+          exp (O( n) = exp(o(n)).
+             Together, they imply:
+      (c) The lowest common multiple [1, . . . , n] = exp(n + o(n)).
+
+     These properties prove that for the xn coefficient denominator of the “generic”
+                         Pm
+     [1, . . . , ξD] (
+                    ⌊d          ei )/m⌋
+                          i=1
+                                          · xk11 · · · xkdd · gπ(1) (x1 ) · · · gπ(d) (xd ) ∈ QJxK,   (6.6.18)
+we have:
+       (i) the totality of the primes p ≤ ξD add only a negligible exp(o(ξD)) =
+           exp(o(α)) factor to the denominators of (6.6.18);
+      (ii) the clearing factor
+                                                        m
+                                                           !         !
+                             ⌊d( m      )
+                                P                       X
+                                     ei   /m⌋
+             [1, . . . , ξD]     i=1
+                                              = exp ξdD   e /m + o(α)            i
+                                                                        i=1
+                                                                  m
+                                                                             !                  !
+                                                                  X
+                                                                                      2
+                                                  = exp ξ               ei       · 2α/m + o(α) .
+                                                                  i=1
+
+It is clear then that, up to an exp(od→∞,ϵ→0 (α)) factor, the lowest common denom-
+inator of all the xn coefficients of all the formal expressions (6.6.18), as the hj (x)
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                           87
+
+
+range over (6.6.17), n ranges over (m + δ)D · Pϵd , and k ranges over D · Pϵd , is a
+divisor of the lowest common denominator of all formal expressions
+                                    ∞
+                [1, . . . , ξD]
+                                                  ,      n ∈ (m + δ)D · Pϵd ,   k ∈ D · Pϵd ;
+              max
+    (n1 − k1 ) i (ei ) · · · (nd − kd )maxi (ei )
+
+and that, again up to an exp(od→∞,ϵ→0 (α)) factor, this is a divisor24 of
+                                  d
+                                  Y                Y
+                                                                pmaxi (ei ) .            (6.6.19)
+                                  j=1       primes p>ξD:
+                                            p divides some
+                                          positive integer in
+                                        [mD(j/d)−D,mD(j/d)]
+
+
+By Lemma 5.0.5, if m(j/d) > 1, the inner product in (6.6.19) is asymptotic to the
+exponential of
+                                            
+                 ⌊(m(j/d)−1)/ max(1,ξ)⌋
+                            X
+       max ei D                          1/h
+          i
+                                    h=1
+                                                                         
+                                         m(j/d)
+   + max ei D max                                                   − ξ, 0 + o(D).
+          i                   ⌊(m(j/d) + max(0, ξ − 1))/ max(1, ξ)⌋
+
+In the case m(j/d) ≤ 1, the inner product in (6.6.19) is asymptotic to the expo-
+nential of
+                          
+                     max ei D max{0, m(j/d) − ξ} + o(D).
+                              i
+
+Hence, recollecting our Definition 6.0.1 of the integrated LCM cost function Iuv (w),
+we find that as d → ∞, so that the discrete variable t := m(j/d) converges to
+the continuous Lebesgue measure of the segment [0, m], the horizontal integration
+computes the asymptotic full denominator product (6.6.19) to the following, up to
+an exp(od→∞,ϵ→0 (α)) factor:
+                                                               
+                  exp (dD/m) max ei · Iξm (ξ) + od→∞,ϵ→0 (dD)
+                                   i
+                                                                        (6.6.20)
+                              2
+                = exp (2α/m ) max ei · Iξm (ξ) + od→∞,ϵ→0 (α) .
+                                               i
+
+All in all, we obtain for any ξ ∈ [0, m] the upper estimate
+                          m                        !                  !
+                         X
+     exp (2α/m2 ) · ξ        ei + max ei · Iξm (ξ) + o(α) + od→∞,ϵ→0 (α)
+                                             1≤i≤m
+                            i=1
+                                                                           (6.6.21)
+on the addition to the denominator from the ne factors in (6.0.9) in any leading
+order coefficient of our auxiliary function F (x) in Lemma 6.2.6.
+   Our definition of the rate exp α · τ ♯ (e) + o(α) is as the minimum of the total
+added denominators estimate (6.6.21) over the parameter ξ ∈ [0, m].
+
+
+  24Even upon including all k ∈ [0, D]d , that is once again ignoring the k ∈ D · P d constraint.
+                                                                                   ϵ
+88                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+6.7. Proof of Theorem 6.0.2. We combine the upper bound (6.5.27) on the
+leading xn coefficient β ∈ Q× with the added up upper estimates that we computed
+in § 6.6.2 and § 6.6.16 on the denominator den(β) ∈ N>0 of that coefficient. The
+latter give:                                      
+                   log |β| ≥ −α · τ ♭ (b) + τ ♯ (e) + od→∞,ϵ→0 (α).        (6.7.1)
+The former simplifies to:
+                              Z    1
+                         α                   ∗
+                log |β| ≤ ·            2t · gφ,γ (t) dt − α log |φ′l (0)|
+                         m     0
+                                  l                                                         (6.7.2)
+                                α X 2      |φ′ (0)|
+                              + 2   γk log ′ k       + od→∞,ϵ→0 (α).
+                               m          |φk−1 (0)|
+                                          k=1
+
+   The combination of (6.7.1) and (6.7.2) sifts out in the α → ∞, d → ∞, ϵ → 0
+limit to               R1        ∗              1
+                                                  Pl       2       |φ′k (0)|
+                         0
+                           2t · gφ,γ (t) dt + m       k=1 γk log |φ′k−1 (0)|
+                  m≤                                                         , (6.7.3)
+                                 log |φ′l (0)| − τ ♭ (b) − τ ♯ (e)
+which is precisely our claimed holonomy bound.                                      □
+
+  At this point, a reader primarily interested in the proof of Theorems A and C
+can skip directly ahead to § 9 on a first reading.
+6.8. Completion of the proof of Theorem 2.8.4. In § 2.11, by a direct ap-
+plication of Theorem 2.5.1, we already proved the property (∗) in Theorem 2.8.4
+towards the arithmetic characterization of the log2 (1 − x) function. This was the
+case — the one of relevance to the sample application to Q-linear independence
+proofs that we gave in § 2.11.12 — that the minimal order differential operator L
+has an essential singularity at the “fourth puncture” x = δ from the statement of
+the theorem. With the feature of the multiple maps φ in Theorem 6.0.2, we can
+now complete the proof of the full Theorem 2.8.4 by handling the case that x = δ
+is at most an apparent singularity of L.
+Proof of Theorem 2.8.4. From the discussion in § 2.11, as the setup of the theorem-
+under-proof implies that our type [1, . . . , n][1, . . . , n/2] formal function f (x) ∈ QJxK
+                                                             3
+has a meromorphic pullback under φ(z) := 8(z+z                 )                  ′
+                                                     (1+z)4 , where already |φ (0)| = 8 >
+τ = 3/2, we certainly get the existence of a minimal-order nonzero linear differential
+operator L over Q(x) satisfying L(f ) = 0. It remained to cover the case that the
+linear ODE L(F ) = 0 has a full set of meromorphic solutions in a neighborhood
+of x = δ. Upon multiplying by a nonzero polynomial Q ∈ C[x] ∖ {0} to clear up the
+possible meromorphic poles, this is equivalent to the assumption that the holomor-
+phic function germ Q(x)f (x) ∈ CJxK is analytically continuable as a holomorphic
+function along all paths in P1 ∖ {0, 1, ∞}. By Proposition 2.9.3, this condition in
+turn furnishes a meromorphic pullback φ∗ f = (φ∗ (Qf )) /φ∗ Q ∈ M(D) under all
+holomorphic mappings φ : D → C ∖ {1} subject to φ−1 (0) = {0}.
+   The reason that the previous argument breaks down in this case is that, in
+the absence of the fourth singularity δ ∈     / {0, 1, 2, ∞}, there is no longer a reason
+for the Q(x)-linear independence of f (x/(x − 1)) from the four other functions
+in (2.11.10), and we only have m = 4 with the functions
+ f1 (x) := 1,    f2 (x) := log(1 − x),          f3 (x) := log2 (1 − x),     f4 (x) := f (x), (6.8.1)
+

@@ -1,0 +1,69 @@
+{
+  "status": "FINAL",
+  "date": "2026-10-07",
+  "author_agent": "/root/masked_racah_finalize",
+  "scope": "One new pure-paper arithmetic manuscript on actual annihilator constraints and source content, one reciprocal formal analytic review, and this one-way final receipt.",
+  "authority": {
+    "main_read": "Sections 176-180 of research/cdt_odd_background_progress_20261006.md actually fully read; mutable main not pinned.",
+    "audit": "research/cdt_odd_delivery_phase_kernel_content_20261007.json",
+    "sha256": "959e24af83f2124da40079aa70fade144425f6d15e5e990e455f1ec5a088264d",
+    "frozen_records": 580,
+    "mathematical_records": 575,
+    "guards": 5,
+    "actual_read_domain": "Whole JSON syntax parse, top-level schema fields, header 45 lines, exact 580/575/5 counts and physical SHA. No manual full read or independent full physical audit of all 580 records is claimed; root owns the global baseline audit."
+  },
+  "new_arithmetic_result": {
+    "object": "Original degree<3n rank-2n saturated paired lattice, original B_n(c), actual complete primitive kernel K, original W_j and independent original-node source variables.",
+    "hypotheses": "n=4r>=4, 5n<p<=6n prime, alpha,beta,c in Z_p and beta a p-unit; fixed rational beta nonzero excludes only finitely many fixed source/input primes.",
+    "leading_gram": "u=6n-p+1<=n; p^5 B_n(c) mod p = -36 beta E_u^t diag(W_{p+rho}) E_u. Original high-column u-by-u negative evaluation determinant is +/-1, so this reduction has rank u and radical ker(E_u).",
+    "actual_annihilator": "BK=0 forces all unit-W head and tail evaluation rows of K into p Z_p^nu.",
+    "exact_content": "v_p(g_K)=2nu. Each monomial pays at least 2nu; two primitive layers and unimodular first-3n negative evaluation give a p-unit nu-minor avoiding the cheap rows and using only W-valuation-2 heads, which attains the lower.",
+    "saturation_calibration": "The same original free primitive high sublattice has exact source content exponent 2(nu-u)^+ for 0<=nu<=n. It does not satisfy BK=0 and is used only to separate primitive saturation from the actual annihilator constraint.",
+    "actual_discrete_lower": "For Pi_n the product of good primes in (5n,6n], Pi_n^(2nu) divides the actual positive integer a_V=det(K^t V K). PNT gives log a_V>=2(nu/n)n^2-o(n^2), uniformly for 0<=nu<=2n; fixed prime exceptions and nu=0 are included.",
+    "limitations": "The 2nu content payment is exact in this particular original source polynomial/window, so a cheaper weighted-minor selection cannot reduce it. The whole q fee is not proved optimal or lowered further. The discrete a_V lower is neither a continuous P_K lower nor a relative R_K upper. Higher coefficient/Smith layers, other windows and phase/direction estimates remain open; no special-value irrationality, linear independence or Lean conclusion is claimed."
+  },
+  "review_and_final_read": {
+    "own_main": "Final bf341f2e A1-A24 including A21a, all 8 sections, actually full author read after the root-requested NEW corollary and again after the final incoming review.",
+    "incoming_review": "Final 5d496d0a V1-V8 actually fully read, PASS, no correction request.",
+    "peer_main": "Stable d9580963 D1-D29, all 9 sections, actually independently fully read and paper-checked, including real reflection, selfadjoint involution, two equal-norm phase channels, phase/source graph Schur identity, all conditional direction gates and same-object jet arithmetic.",
+    "outgoing_review": "Final df163484 V1-V7 actually fully selfread after writing, PASS, no correction request.",
+    "external_closure": "This FINAL receipt closes review-pending wording in unchanged NEW manuscripts/reviews. No frozen old paper, producer, result, guard or prior receipt was edited.",
+    "pin_direction": "No peer receipt, future root receipt/audit, mutable main, or self hash is pinned."
+  },
+  "current_round_execution": {
+    "mathematical_producer_creation": 0,
+    "mathematical_producer_execution": 0,
+    "mathematical_producer_import": 0,
+    "mathematical_producer_rerun": 0,
+    "mathematical_producer_failure": 0,
+    "prime_experiments": 0,
+    "auxiliary_prime_table_extensions": 0,
+    "lean_runs": 0,
+    "new_downloads": 0,
+    "new_primary_pdf_pages_read": 0,
+    "new_primary_html_read": 0,
+    "allowed_operations": "Document reads/writes, physical byte/SHA checks and receipt JSON parsing/pin verification only."
+  },
+  "read_domain": {
+    "frozen_markdown": "All nine pinned frozen Markdown papers below actually fully read this round. A later combined duplicate output was truncated in coupled's middle; coupled and entropy were then independently fully reread with sufficient total display budget. Truncated portions are not counted as full reads.",
+    "numerical_sources": "No old producer source, saved numerical result, guard or auxiliary-prime table full-read/execution claim; no saved 113-row global JSON read this round.",
+    "primary_sources": "No original PDF/HTML page read this round; earlier authors' source page counts and archived whole-PDF page counts are not inherited.",
+    "unfrozen_candidates": "e05c was superseded before receipt by the root-requested A21a addition; final main pin is bf341f. No unfrozen candidate hash is used as final evidence."
+  },
+  "pins": [
+    {"path":"research/cdt_odd_paired_annihilator_content_constraints_20261007.md","bytes":15827,"sha256":"bf341f2e7f1205c92f41403f822621099dbc7079ac5fbe85afda71a8ae967beb","read":"Final FULL A1-A24 including A21a and final post-review author FULL reread"},
+    {"path":"research/cdt_odd_paired_annihilator_content_constraints_independent_review_20261007.md","bytes":7057,"sha256":"5d496d0ab1675fa9bc40cb1de2bdf6adef3f883b332c23ec5caf85f226cf5926","read":"Final incoming FULL V1-V8"},
+    {"path":"research/cdt_odd_paired_kernel_annihilator_direction_20261007.md","bytes":17344,"sha256":"d958096383ae2745cd5102655690bbdfba855c5da80afd0aff70fbd4d2328086","read":"Independent FULL D1-D29, all 9 sections"},
+    {"path":"research/cdt_odd_paired_kernel_annihilator_direction_independent_review_20261007.md","bytes":7988,"sha256":"df1634846c995853087fbc615c233ff19d4de0c779441f51e7c9e911e11b06e7","read":"Final outgoing FULL V1-V7 and final reviewer selfread"},
+    {"path":"research/cdt_odd_delivery_phase_kernel_content_20261007.json","bytes":189562,"sha256":"959e24af83f2124da40079aa70fade144425f6d15e5e990e455f1ec5a088264d","read":"Whole syntax parse, schema/header/counts/hash; no full 580-record manual read claim"},
+    {"path":"research/cdt_odd_paired_kernel_jet_content_transfer_20261007.md","bytes":14040,"sha256":"92a9620a52e0fcc062c2592969edee15924f7fcb9d89bcc2d3232587bc65c4df","read":"FULL Q1-Q22/all8"},
+    {"path":"research/cdt_odd_paired_primitive_kernel_quotient_20261007.md","bytes":12120,"sha256":"996e261e7fd780f5247b0736380c0bb581e637fedb624de52982793ee8bb6f5b","read":"FULL K1-K18/all8"},
+    {"path":"research/cdt_odd_paired_head_free_integral_lattice_20261006.md","bytes":12946,"sha256":"5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b","read":"FULL I1-I25"},
+    {"path":"research/cdt_odd_paired_actual_local_gram_layers_20261006.md","bytes":11647,"sha256":"2856a47ab3aa407f1eb7477a57e1e44bd010a7dd95b8cb055a603b68ea091094","read":"FULL G1-G15"},
+    {"path":"research/cdt_odd_paired_hasse_jet_arithmetic_profile_20261007.md","bytes":11529,"sha256":"8676d10ee4dc082fb86ee2ba1abc7497e50c534f936854b96b0947f154b9ecb2","read":"FULL J1-J18/all7"},
+    {"path":"research/cdt_odd_paired_kernel_relative_spectrum_20261007.md","bytes":16511,"sha256":"41b3092dad0a2fa164e0f794c70ae443a898a3a2bc6031a884621d573ab90696","read":"FULL R1-R29/all9"},
+    {"path":"research/cdt_odd_paired_exact_phase_geometry_20261007.md","bytes":11526,"sha256":"735150b725bfc590f471a9ed0fca97bc8226b6860118b7a88dcbbaea09ffb1c4","read":"FULL F1-F18/all7"},
+    {"path":"research/cdt_odd_paired_coupled_gram_decay_20261007.md","bytes":16381,"sha256":"03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965","read":"FULL C1-C23 after complete independent reread"},
+    {"path":"research/cdt_odd_paired_mixed_node_entropy_20261007.md","bytes":12459,"sha256":"f0216126342b46e507e172f422f8e3adee3832f95691cb040dbfed94fd1c4bf8","read":"FULL S1-S27/all10 after complete independent reread"}
+  ]
+}

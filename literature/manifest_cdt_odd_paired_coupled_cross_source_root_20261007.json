@@ -1,0 +1,318 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "author": "root",
+  "baseline": {
+    "records": 504,
+    "mathematical_files": 503,
+    "guards": 1,
+    "prior_delivery_sha256": "8963ba9b895508a2fed9438d3011175b556bf6fc4d1b3dacf3b75a314b58b603",
+    "scope": "All prior mathematical files remain read-only, previous delivery JSON retained unchanged. Current main and new metadata audit are mutable and deliberately not pinned here."
+  },
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007.md",
+      "sha256": "10897f75c7a2cb932988a751a25a85dafd79640b715090b7715fc96aeaa37a7a"
+    },
+    {
+      "file": "research/cdt_odd_paired_cross_racah_injectivity_20261007.md",
+      "sha256": "d5401071966ba85d67a53794e29f6a253ecd3da1b6e6ae7cd923883ab7a9d63d"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007.md",
+      "sha256": "03a4d165d6cc80027a81fb362aab559779fc22ea5122dc1a1ece1af27830c965"
+    },
+    {
+      "file": "research/cdt_odd_paired_low_price_support_domination_20261007.md",
+      "sha256": "00d578e335cfee1326eb3369f8dfeea34455f075f61ee30663ca55988a5b4296"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_independent_review_20261007.md",
+      "sha256": "0dcb769a083cb62817c9388d2380feffddf49f1096c10ec59fc67f37316e7e5d"
+    },
+    {
+      "file": "research/cdt_odd_paired_cross_racah_injectivity_independent_review_20261007.md",
+      "sha256": "79dd9d5b34a9290100f28295aeaf15f6e6b64a9059c99cf3c386ccab986a1054"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_independent_review_20261007.md",
+      "sha256": "86c82d8e400ea188c2e4f4cbec54f7aaf027d8158334a3ebe4465e9e2ea7c338"
+    },
+    {
+      "file": "research/cdt_odd_paired_low_price_support_domination_independent_review_20261007.md",
+      "sha256": "c6889f36b8d0768d4b7b59f84e5ec59f265721bb341f5f64f4b55b78fc09a0bc"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.py",
+      "sha256": "dd457d93d1ce5bc4c80265381d877daf11cabf427b6f4e2100097b6a8e1f06ed"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.json",
+      "sha256": "064c740175b4122156c8bc7de242f4ea789ff757606b2ed4c27a96cbf51cdb19"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007_verify.guard.json",
+      "sha256": "50d52715865eeb9cd6929a6b3ae4223c35d44b8294ec6513753860d9ae4656c8"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.py",
+      "sha256": "5853bf82e5078ca085a4cd83dc32dfbbddd9f9483f582234ab003a8b1151fc9a"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.json",
+      "sha256": "a1426af9a604e8669a2d3f972265fcd327e49c88686046403946ae38af66614f"
+    },
+    {
+      "file": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "sha256": "7fed78788586ef456383eb136ae545405c4e6752858f280d8c196257679c7508"
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_paired_low_price_support_domination_20261007.json",
+      "sha256": "f81104bb6b4e49dbd19abf30cc5a98bc68a60789921d189b1e47f1a73fb2dedb",
+      "actual_root_read": "FULL final JSON text, all fields; not candidate snapshot"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_cross_racah_injectivity_20261007.json",
+      "sha256": "32cea4129ef1f59d89020df53a4e77d71a6d45cd702eea794ced89f688990195",
+      "actual_root_read": "FULL final JSON text, all fields; not candidate snapshot"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_coupled_gram_decay_20261007.json",
+      "sha256": "2a8e746af7f6eaa57b24bb31cb27e9c2408c1a0e576f86d3fe8009094438a31b",
+      "actual_root_read": "FULL final JSON text, all fields; not candidate snapshot"
+    }
+  ],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_paired_cross_racah_sources_20261007/manas2021_pearson_III_arxiv2107_02918v2.pdf",
+      "sha256": "a6556f2d7b80841b8d0a26eac9a86f6274cf4a9a81af4996205f21ad36251763",
+      "bytes": 569955,
+      "pages": 18,
+      "title": "Pearson Equations for Discrete Orthogonal Polynomials: III. Christoffel and Geronimus Transformations",
+      "source_url": "https://arxiv.org/pdf/2107.02918v2",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "author": "/root/conifold_arithmetic_hypothesis"
+    },
+    {
+      "file": "literature/cdt_paired_cross_racah_sources_20261007/oste_vanderjeugt2016_doubling_hahn_racah_arxiv1507_01821v3.pdf",
+      "sha256": "2ff7ada189c8e63cd06011f8ab631db37cb36d26b2c6b6e1fd7056f6aa67b158",
+      "bytes": 508493,
+      "pages": 27,
+      "title": "Doubling (Dual) Hahn Polynomials: Classification and Applications",
+      "source_url": "https://arxiv.org/pdf/1507.01821v3",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        16,
+        17,
+        18,
+        23,
+        24,
+        25
+      ],
+      "author": "/root/conifold_arithmetic_hypothesis"
+    },
+    {
+      "file": "literature/cdt_paired_complex_gram_sources_20261007/borodin1998_biorthogonal_ensembles_math9804027v1.pdf",
+      "sha256": "c89a7cc9334e434531769f6a9202edd0ae58c2f4fa7da3490fc5f89ea88c75f0",
+      "bytes": 234234,
+      "pages": 26,
+      "title": "Biorthogonal ensembles",
+      "source_url": "https://arxiv.org/pdf/math/9804027v1",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "author": "/root/toric_chow_completion"
+    },
+    {
+      "file": "literature/cdt_paired_complex_gram_sources_20261007/bertola_gekhtman_szmigielski2009_cauchy_biorthogonal_0904_2602v1.pdf",
+      "sha256": "50f854c05fd5d6b51df6cb2ea1a7ff36790634ceb69bfc2e8fd03f792c32ca29",
+      "bytes": 424495,
+      "pages": 38,
+      "title": "Cauchy Biorthogonal Polynomials",
+      "source_url": "https://arxiv.org/pdf/0904.2602v1",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14
+      ],
+      "author": "/root/toric_chow_completion"
+    },
+    {
+      "file": "literature/cdt_paired_complex_gram_sources_20261007/bertola2008_moment_determinants_tau_0805_0446v1.pdf",
+      "sha256": "de19a57e18c9da35b1e575238142cc1db7777b43c2223a9145bbad33bdfb20c9",
+      "bytes": 313033,
+      "pages": 24,
+      "title": "Moment determinants as isomonodromic tau functions",
+      "source_url": "https://arxiv.org/pdf/0805.0446v1",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        9,
+        10,
+        11
+      ],
+      "author": "/root/toric_chow_completion"
+    },
+    {
+      "file": "literature/cdt_paired_complex_gram_sources_20261007/kuijlaars_silva2013_s_curves_1311_7026v1.pdf",
+      "sha256": "ec7d6f10e423c26745292b032e6ff9665dc3cf85e453d7043f223c795a33147e",
+      "bytes": 683926,
+      "pages": 33,
+      "title": "S-curves in Polynomial External Fields",
+      "source_url": "https://arxiv.org/pdf/1311.7026v1",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author_actual_full_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "author": "/root/toric_chow_completion"
+    },
+    {
+      "file": "literature/cdt_source_radical_pencil_20261007/de_teran_dopico2008_first_order_singular_matrix_polynomials_author.pdf",
+      "sha256": "c4637952f45e75c0fe34584502861e2b525a8c4c98f40697893e0fcf42f625f9",
+      "bytes": 234097,
+      "pages": 18,
+      "title": "First order spectral perturbation theory of square singular matrix polynomials",
+      "source_url": "https://gauss.uc3m.es/fdopico/papers/LAA2009-polsing1storder.pdf",
+      "tls_verified": true,
+      "tls_bypass": false,
+      "author": "root",
+      "author_actual_full_text_pages": [
+        1,
+        4,
+        7,
+        14,
+        15
+      ]
+    }
+  ],
+  "new_successful_certificates": [
+    {
+      "kind": "source_radical",
+      "report": "research/cdt_odd_paired_source_radical_response_20261007.md",
+      "source": "research/cdt_odd_paired_source_radical_response_20261007_verify.py",
+      "result": "research/cdt_odd_paired_source_radical_response_20261007_verify.json",
+      "guard": "research/cdt_odd_paired_source_radical_response_20261007_verify.guard.json",
+      "scope": "4694 finite mechanism checks, three old actual harmonic/weight and modp2 halfjet representative cases and nine general residual toys; no actual anchor higherSmith or new M5 units; S12-14 are paper-only"
+    },
+    {
+      "kind": "coupled_gram",
+      "report": "research/cdt_odd_paired_coupled_gram_decay_20261007.md",
+      "source": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.py",
+      "result": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify.json",
+      "guard": "research/cdt_odd_paired_coupled_gram_decay_20261007_certify_guard.json",
+      "scope": "Eight strict elementary real comparisons only; program asserts1/20, saved intervals plus later all-axis paper proof give7/50; not a determinant/nonzero/prime certificate"
+    }
+  ],
+  "actual_reading_scope": {
+    "root_new_mathematical_papers": "FULL all four final principals, all four final formal reviews. Root source FULL final10897, static own source before only run, complete saved result all fields and guard. Toric FULL static source, saved JSON all six values/eight comparisons/metadata and guard. Arithmetic final d540 reread alone after initial combined truncation. All peer final receipts FULL all fields before creation of this receipt.",
+    "root_frozen_antecedents": "Actual FULL unit-sector U1-U21 and FULL mirror M1-M23 this round; selected complete energy E17-E22 passage after a combined output truncated. KS norm original three complete PDF pages independently checked. Other frozen prior mathematical conclusions retained, not blanket claims to re-read every old proof/program/result this round.",
+    "root_primary": "New pencil PDF1,4,7,14,15 five complete text pages; existing KS28,29,30 three complete text pages. Root total8, new5. The six peer new PDFs were hash/page-metadata checked, not read in full by root.",
+    "quarter_primary": "New root pencil1,4,7,14,15 five complete text/rendered pages plus existing KS29 one complete text/rendered page. Total6, new5; no downloads.",
+    "arithmetic_primary": "New Manas11 and Oste7 distinct selected pages as author final receipt, total18 new; existing KS28-30 math and PDF1 title-only metadata. Total22, existing4 distinct of which3 math.",
+    "toric_primary": "Own new Borodin8/Cauchy12/tau7/S-curves7=34; arithmetic peer Manas2,3,7,8 and Oste23-25=7 additional new-source pages, existing KS28-30=3. Total44, new41. No duplicate downloads.",
+    "team_new_primary_source_page_union": 57,
+    "team_new_primary_archive_pages": 184,
+    "team_reused_KS_math_page_union": [
+      28,
+      29,
+      30
+    ],
+    "team_reused_KS_metadata_title_page_union": [
+      1
+    ],
+    "counting_policy": "Distinct source/page union:5 pencil+18 arithmetic+34 analytic=57; review reads lie in this union. Not sum of persons, not all184 archive pages read; title-only metadata is separately labelled."
+  },
+  "mathematical_execution_history": {
+    "distinct_new_first_runs": 2,
+    "root_first_run_successes": 1,
+    "toric_first_run_successes": 1,
+    "quarter_runs": 0,
+    "arithmetic_runs": 0,
+    "successes": 2,
+    "failures": 0,
+    "reruns": 0,
+    "old_or_peer_mathematical_producer_execute_import": 0,
+    "external_Lean_runs": 0,
+    "auxiliary_unit_prime_table_extended": false,
+    "scope": "Root4694 mechanism checks and toric8 elementary real comparisons. Metadata auditors, hash/JSON/PDF read utilities are not mathematical producers. All successes and guards immutable; no failed source was omitted."
+  },
+  "current_progress": {
+    "original_object": "Original B6/k3/s5, degree<3n, rank2n saturated integer-valued paired S, same whole-X D_A(X)",
+    "actual_even_source_first_layer_response": "partial_alpha N/p modp=8 A4; N modp=6 beta A5; residual Ralpha=R0+8 alpha GK",
+    "actual_complete_inverse_S_Racah_all_profiles_unit": true,
+    "actual_cross_full_row_rank_and_explicit_paid_right_inverse": true,
+    "actual_mass_map_injective_on_leading_radical": true,
+    "actual_restricted_mass_Gram_unit_proved": false,
+    "actual_H_restricted_to_ker_C_unit_proved": false,
+    "canonical_mixed_boundary_gate_proved": true,
+    "conditional_r_gate": "Only if actual H|kerC unit; unknown fifthpower seeds retain fixed actual values",
+    "low_price_continuous_coarse_envelope_new_paid_gain": "0; exact finite-n domination by old DND; stronger allocation-correlated models not excluded",
+    "actual_partial_threshold_improvement": "Forced-factor cap66->65 in the stated n33p19 support, not actual rank equality or additional paid fee",
+    "new_analytic_gain": "7/50+log(2)-2+pi/2>2/5",
+    "previous_analytic_rate_strict_lower": "12.00357285412558",
+    "new_analytic_rate_strict_lower": "12.40357285412558",
+    "safe_signed_rational_normalization_fee_exact": "800671681093752110193539327219/19860629178118281482813083200",
+    "safe_fee_approx": "40.314517426059346",
+    "safe_fee_scope": "Upper fee for log|Q_n^-1|, D_A/Q_n integral; not actual minimum integer denominator or actual cost lower bound",
+    "fixed_rational_source_infinite_success_proved": false,
+    "infinite_actual_target_nonzero_proved": false,
+    "strict_margin_proved": false,
+    "new_numerical_irrationality_or_LI_theorem": false,
+    "new_Lean_formalization": false,
+    "goal_status": "active"
+  },
+  "next_mathematical_interfaces": [
+    "Optimize the actual coupled C9 q numerator and all head denominator values jointly, possibly retain exact positive Schur/complex-phase compression.",
+    "Prove actual H|kerC normality or actual R0+8alpha GK nonzero with fixed rational alpha and infinitely many primes; source injectivity alone is insufficient."
+  ],
+  "freeze_policy": "After complete root self-read and physical-pin validation this receipt and all14 listed records are immutable. Candidate pending-review labels in mathematical manuscripts are externally superseded by formal reviews and final receipts without modifying successful bytes. No reverse peer receipt, future main or auditor-output pin."
+}

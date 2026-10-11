@@ -1,0 +1,567 @@
+                                             THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )
+
+
+                                                   FRANK CALEGARI, VESSELIN DIMITROV, AND YUNQING TANG
+arXiv:2408.15403v2 [math.NT] 16 Sep 2024
+
+
+
+
+                                                 Abstract. We prove the irrationality of the classical Dirichlet L-value
+                                                                            1    1     1    1     1     1
+                                                              L(2, χ−3 ) = 2 − 2 + 2 − 2 + 2 − 2 + . . . .
+                                                                            1   2     4     5    7     8
+                                                 The argument applies a new kind of arithmetic holonomy bound to a well-
+                                                 known construction of Zagier [Zag09]. In fact our work also establishes the
+                                                 Q-linear independence of 1, ζ(2) and L(2, χ−3 ). We also give a number of
+                                                 other applications of our method to other problems in irrationality.
+
+
+
+
+                                                                                 Contents
+
+                                           1. Introduction                                                                       3
+                                           1.1. Dirichlet L-values                                                               3
+                                           1.2. Comparisons to the work of Apéry                                                5
+                                           1.3. The paths to Theorems A and C, and an outline of the paper                       9
+                                           2. The main arithmetic holonomy bound                                                11
+                                           2.1. The algebraic case                                                              11
+                                           2.2. Denominators                                                                    12
+                                           2.3. A preview of the various holonomy bounds                                        14
+                                           2.4. Variants of the Nevanlinna growth characteristic                                15
+                                           2.5. Arithmetic holonomy bounds, basic form                                          16
+                                           2.6. Siegel’s G-functions                                                            17
+                                           2.7. Univalent holonomy bounds and an arithmetic characterization of the logarithm   19
+                                           2.8. Arithmetic characterizations beyond the logarithm                               23
+                                           2.9. Overconvergence and univalent leaves                                            25
+                                           2.10. First irrationality proofs                                                     27
+                                           2.11. The multivalent case: first new linear independence results                    29
+                                           2.12. How we prove holonomy bounds                                                   34
+                                           2.13. Refined methods                                                                36
+                                           3. Filtered evaluation modules and Functional Transcendence                          46
+                                           3.1. The evaluation module for Cartesian products                                    46
+                                           3.2. Functional bad approximability                                                  50
+                                           3.3. Some explicit constructions of Hermite–Padé approximants                       54
+                                           4. Concentration of measure                                                          59
+                                           4.1. The Erdös–Turán bound                                                         60
+                                           4.2. The large deviations bound                                                      60
+                                           5. The cost of an integration                                                        62
+                                           6. The fine holonomy bound                                                           66
+                                           6.1. Horizontal integration                                                          70
+                                           6.2. The auxiliary construction                                                      72
+                                           6.3. The box principle step: proof of Lemma 6.2.6                                    75
+                                           6.4. Seeding                                                                         76
+                                           6.5. Equidistribution                                                                77
+                                           6.6. Denominator arithmetic                                                          81
+                                           6.7. Proof of Theorem 6.0.2                                                          87
+                                           6.8. Completion of the proof of Theorem 2.8.4                                        87
+                                           7. Convexity in Bost’s slopes method                                                 89
+                                                                                     1
+2                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+    7.1. Improvements from convexity                                            91
+    7.2. A brief review of Bost’s slopes method                                 94
+    7.3. The Bost–Charles bound                                                 97
+    7.4. The convexity enhancement of the Bost–Charles bound                   105
+    7.5. Binomial metrics: proof of Theorem 7.1.13                             109
+    7.6. A further improvement                                                 113
+    7.7. On bypassing the Kolchin–Shidlovsky type theorems from § 3.2          117
+    8. The finer holonomy bound with the Bost–Charles integral                 122
+    8.1. Comparison of the Bost–Charles and the Rearrangement integrals        124
+    8.2. Proof of Theorem 8.0.1                                                129
+    8.3. The slopes method in Theorem 6.0.2                                    144
+    9. The relationship between Y (2) and Y0 (2)                               146
+    10. Pure functions on P1 ∖ {0, 1, ∞} and on P1 ∖ {0, 4, ∞}                 153
+    10.1. Five functions of type [1, . . . , n]2 on P1 ∖ {0, 1, ∞}             153
+    10.2. Added integrations                                                   156
+    10.3. The multiple polylogarithm ring                                      156
+    11. Zagier’s sequences A and C                                             159
+    11.1. Definitions and basic properties                                     159
+    11.2. The symmetrization of H(x)                                           164
+    12. Functional Linear Independence                                         164
+    12.1. Linear Independence of pure functions and Zagier functions           167
+    13. Proof of the linear independence of 1, ζ(2), and L(2, χ−3 )            171
+    14. Products of two logarithms                                             174
+    14.1. Hadamard products and Apéry limits                                  176
+    14.2. The differential equation L(GA ) = 0                                 179
+    14.3. Linear Independence of pure functions and functions arising from G   184
+    14.4. Location of the singularities                                        186
+    14.5. The proof of Theorem C                                               187
+    15. Complements and further questions                                      189
+    15.1. Comparison to the Siegel–Bombieri–Chudnovsky theory                  189
+    15.2. Integral holonomic modules                                           193
+    15.3. Quantitative aspects of linear independence                          196
+    15.4. The structure ring                                                   196
+    15.5. Algorithmic Questions                                                197
+    15.6. The Gelfond–Schnirelman topic                                        198
+    15.7. A historical note and acknowledgments                                199
+    Appendix A. Choosing a contour                                             199
+    A.1. Preliminaries on Lunes                                                200
+    A.2. Gobbles                                                               201
+    A.3. Slits                                                                 202
+    A.4. Combining multiple slits and lunes                                    203
+    A.5. A contour for the L(2, χ−3 ) problem                                  205
+    A.6. A contour for the logarithm problem                                   205
+    Appendix B. A dynamic box principle                                        206
+    B.1. Evaluation module                                                     207
+    B.2. Box principle                                                         208
+    B.3. Diophantine analysis of the lowest order coefficient                  209
+    References                                                                 210
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      3
+
+
+                                  1. Introduction
+1.1. Dirichlet L-values. The values of the Riemann zeta function ζ(k) for positive
+integers k, and more generally the Dirichlet L-values
+                                           ∞
+                                          X   χ(n)
+                                L(k, χ) =
+                                          n=1
+                                               nk
+for quadratic characters χ, have long been a source of interest to mathematicians.
+Suppose that χ is a primitive quadratic character of conductor D, where we use
+the convention that the sign of D is the sign of χ(−1). Starting with work of
+Euler [Eul1735] and Dirichlet [Dir1837] (or even far before that in the special case
+of D = −4 and k = 1 [Roy90]), we know that, for positive integers k:
+               
+                  k
+                     √      ×
+               π · √D · Q ,             k even and χ(−1) = 1,
+               
+               
+                  k           ×
+     L(k, χ) ∈ π · −D    ·Q ,       k odd and χ(−1) = −1,                  (1.1.1)
+                √
+                D log |Q× | ∖ {1} , k = 1, χ(−1) = 1, and D ̸= 1.
+               
+               
+
+Combined with Lindemann’s theorem [Lin1882] that π is transcendental and Weier-
+strass’s extension [Wei1885] to the transcendence of the natural logarithms of alge-
+braic numbers other than 0 or 1, one knows all of these values to be transcendental.
+The remaining L-values are far less well understood. Indeed, in the (approxi-
+mately) last 140 years since [Wei1885] only a single further explicit number L(k, χ)
+has been shown to be irrational, namely Apéry’s unexpected 1978 proof that ζ(3)
+is irrational [Ape79, vdP79, Coh78]. In this paper, we establish the irrationality
+of a new L-value L(k, χ); in some sense the “simplest” open case corresponding
+to k = 2 and the character χ = χ−3 of smallest possible conductor:
+Theorem A. The period
+                  ∞                        
+                 X        1           1
+    L(2, χ−3 ) =                −             = 0.7813024128964862968 . . .
+                 n=0
+                      (3n + 1)2   (3n + 2)2
+                   ZZ                           Z 1
+                                  dxdy               log(x)dx
+                 =                      2
+                                            = −              2
+                     1≥y≥x≥0 y(1 + x + x )       0 1+x+x
+is irrational. More generally, the three periods 1, π 2 , L(2, χ−3 ) are linearly indepen-
+dent over Q.
+  The formula above exhibits L(2, χ−3 ) as a period in the sense of Kontsevich–
+Zagier [KZ01]. There are a panoply of other more complicated expressions for
+L(2, χ−3 ) as an integral, or an infinite sum, for example, the following sum of
+hypergeometric type ([HPHP11, §3]):
+                                           ∞
+                                        1 X (4 − 15n)(−27)n
+                        L(2, χ−3 ) =               2   ,
+                                       27 n=1      2n   3n
+                                              n 3
+                                                    n    n
+or, more serendipitously, in terms of the sum of the inverse squares of the entries
+greater than one in Pascal’s triangle [Sta23]:
+                                        1      X     1
+                         L(2, χ−3 ) = − +           .
+                                        3 n>m>0 n 2
+                                                        m
+4                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                √
+The constant 3 3 L(2, χ−3 )/4 = Im(Li2 (eπi/3 )) = 23 ·Im(Li2 (e2πi/3 )) = 1.014941 . . .
+is the volume of the regular ideal hyperbolic tetrahedron (the one of the maximal
+volume), and is also the volume of the non-compact hyperbolic manifold with min-
+imal volume [Ada87] (the Gieseking manifold, whose orientable double cover is the
+complement of the figure 8 knot [Thu97]). It is an open problem to show that
+the volumes of hyperbolic 3-manifolds are not all rationally related (see [Thu82,
+Problem 23], and [Mil82, Mil83]). While our result does not have any direct impli-
+cations for this question, it is the first unconditional result to make contact with the
+arithmetic nature of these volumes. Another appearance of L(2, χ−3 ) is in Smyth’s
+formula [BZ20, Prop. 3.4]
+      √                                     Z 1Z 1
+     3 3
+          L(2, χ−3 ) = m(1 + x + y) :=             log |1 + e2πis + e2πit | ds dt (1.1.2)
+      4π                                     0  0
+linking L(2, χ−3 ) to the Mahler measure of the simplest essentially bivariate poly-
+nomial 1 + x + y, or equivalently in the language of Diophantine and Arakelov
+geometry [Phi91, BGS94], to the canonical height of the subvariety 1 + x + y = 0
+of the linear algebraic torus G2m . Unfortunately, while the nonvanishing Mahler
+measures of the integer univariate polynomials are all known to be transcendental
+by the Hermite–Lindemann–Weierstrass theorem [Her1874, Lin1882, Wei1885], our
+result has no direct bearing on the conjectured irrationality of any such canonical
+heights! (We do, incidentally, also prove the irrationality of the Mahler measure of
+the rational coefficients bivariate polynomial (1+x+y)4 /3, which is not a canonical
+height. This is in Theorem 2.11.17.)
+   An immediate consequence of Theorem A is the irrationality of the following
+                                              ∞
+                                             X       1
+values of the “trigamma” function ψ1 (z) =                 = ζ(2, z):
+                                             n=0
+                                                 (z +  n)2
+
+Corollary B. The following numbers are irrational:
+                    1     1   1     1              L(2, χ−3 ) 2π 2
+                     2
+                       + 2+ 2     +      + ... =              +      ,
+                   1      4  7     102                 2         27
+                    1     1   1     1              L(2, χ−3 ) 2π 2
+                       + 2+ 2     + 2    + ... = −            +       ,
+                   22     5  8     11                   2        27
+                  1      1   1      1              5L(2, χ−3 ) π 2
+                   2
+                      + 2+ 2      + 2    + ... =               +     ,
+                 1      7   13     19                   8         18
+                1       1    1      1              5L(2, χ−3 ) π 2
+                    + 2+ 2        + 2    + ... = −             +      .
+                52     11   17     23                   8         18
+   Note that since ψ1 (x + 1) − ψ1 (x) + 1/x2 = 0, it also follows from Theorem A
+(together with the fact that ψ1 (1) = π 2 /6 and ψ1 (1/2) = π 2 /2) that ψ1 (n/6) is
+irrational for any n ∈ N>0 . These are the first new irrationality results for ψ1 since
+Legendre’s proof in 1794 [Leg1794] that π 2 is irrational!
+   As another application of what turns out to be exactly the same argument, we
+also prove the following irrationality result for certain products of two logarithms
+(see Theorem 14.0.1 in § 14).
+                                                        m       1
+Theorem C. Let m, n ∈ Z ∖ {−1, 0} be integers such that   − 1 < 6 . Then
+                                                        n      10
+                                              
+                                 1             1
+                        log 1 +      log 1 +
+                                 m             n
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                                 5
+
+
+is irrational. Moreover, for m ̸= n, the following are linearly independent over Q:
+                                                                  
+                       1                 1                1            1
+          1, log 1 +        , log 1 +        , log 1 +        log 1 +      .
+                       m                 n                m            n
+1.2. Comparisons to the work of Apéry. Apéry’s proof [vdP79] consisted of
+finding an explicit sequence of rational approximations which converged “sufficiently
+quickly” to ζ(3) to prove that ζ(3) is irrational. Ever since Apéry’s result, consid-
+erable effort has been expended in searching for analogous sequences which demon-
+strate the irrationality of other L-values L(k, χ) beyond those of the form (1.1.1).
+Unfortunately, despite enormous efforts, no such sequences have ever been found.1
+In particular, in this paper, we do not find (directly) any new convergent sequences
+to L(2, χ−3 ). Instead, we show how one can exploit the arithmetic nature of known
+approximations (found by Apéry and others) in a more subtle way using both
+methods from transcendental number theory and complex analysis.
+   In order to introduce our main idea, we begin with an exposition and then a
+reformulation of some of the key features of Apéry’s proof. The first remark to
+make is that Apéry’s proof uses very little number theory; indeed the only number
+theoretic input is a (weak form) of the prime number theorem and the following
+elementary lemma:
+Lemma 1.2.1. If there is a δ > 0 and a sequence of rational numbers pn /qn ̸= β
+with qn → ∞ such that
+                                      pn    1
+                                 β−      < 1+δ          n = 1, 2, . . . ,
+                                      qn  qn
+then β is irrational.
+  This lemma is true even with the weaker hypothesis that |β − pn /qn | = o(1/qn ).
+Apéry writes down a pair of power series A(x), B(x) ∈ QJxK and the linear combi-
+nation
+                                            X∞
+                 P (x) = B(x) − ζ(3)A(x) =      xn (bn − ζ(3)an ) .
+                                                        n=0
+The coefficients an and bn are rational numbers, and more precisely:
+                              an ∈ Z,         [1, 2, 3, . . . , n]3 bn ∈ Z.
+Here and throughout our paper, we follow the conventional notation [1, 2, . . . , n]
+for the lowest common multiple of the first n integers. The prime number theorem
+determines the growth rate of these denominators:
+                                  log[1, 2, 3, . . . , n] = n + o(n).
+At the √same time, Apéry proves that A(x) (and B(x)) have radius√ of conver-
+gence ( 2 − 1)4 whereas P (x) has radius of convergence exactly ( 2 + 1)4 . Now
+one exploits the inequality
+                                     √
+                               4 log( 2 + 1) > 3                         (1.2.2)
+
+    1One significant step which is not directly related to the irrationality of specific L-values is the
+theorem of Ball and Rivoal [Riv00, BR01] that infinitely many odd zeta values are irrational. One
+refinement by Zudilin [Zud01] proves that at least one of the values ζ(5), ζ(7), ζ(9) and ζ(11) is
+irrational.
+6                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+to deduce, by Lemma 1.2.1 with pn /qn = bn /an and
+                                      √
+                                4 log( 2 + 1) − 3
+                            δ=        √           ,
+                                4 log( 2 + 1) + 3
+that ζ(3) ∈ / Q.
+   There are a number of other situations where one can construct functions A(x),
+B(x) of a similar flavour so that a particular linear combination P (x) = B(x) −
+ηA(x) has extra convergence properties, and where η = L(k, χ) turns out to be
+the unique complex number characterized in this way. But the analogous inequal-
+ity (1.2.2) always seems to fail,2 and one can draw no consequences about the
+arithmetic of the corresponding L-value. (For one particularly interesting study of
+sequences of the form considered by Apéry, see [Zag09]. In our proof of Theorem A,
+we will make a central use of some of the sequences (re-)discovered by Zagier in his
+search.)
+   The starting point of our investigation is that, even when the analogue of (1.2.2)
+fails as it usually does, the functions P (x) arising in these constructions have more
+structure which has not previously been exploited. Apéry’s functions A(x) and B(x)
+turn out to satisfy a linear ordinary differential equation (ODE) with  √ coefficients
+in Z[x] which only has (regular) singular points at x = 0, ∞, and ( 2 ± 1)4 . The
+function P (x) arises as the unique (up to scalar) linear combination of the two
+dimensional space of solutions to this ODE which√ are holomorphic at 0 with the
+additional property that it is also holomorphic at ( 2−1)4 . This√ implies that P (x),
+for example, is not merely holomorphic on√the disc of radius ( 2 + 1)4 , but extends
+to a holomorphic function on all of C ∖ [( 2 + 1)4 , ∞), or (more relevantly for our
+ultimate purposes, but less important for the introduction) to a function on the
+universal cover of
+                                     √           √
+                           P1 ∖ {0, ( 2 − 1)4 , ( 2 + 1)4 , ∞}
+                                                                                  √
+which is holomorphic at x = 0 and overconverges beyond the first singularity
+                                                                           √     ( 2−
+1)4 . All Apéry uses is that P (x) is holomorphic on the disc of radius ( 2 + 1)4 .
+   Now imagine an analogous situation where A(x) and B(x) are holomorphic
+(at x = 0) solutions to an ODE3 with regular singular points at 0, ∞ and a pair
+of real numbers 0 < α < β, and P (x) = A(x) − ηB(x) is a linear combination
+which is also holomorphic at α, but whose analytic continuation has a singularity
+at β and does not analytically continue to a meromorphic function at x = β. But
+now suppose — taking into account the denominators of an and bn — that the
+constant β is not large enough to imply that the corresponding convergents pn /qn
+satisfy Lemma 1.2.1. Is there a way to exploit the fact that not only is P (x) a
+holomorphic function on the disc of radius β, but also extends to a holomorphic
+function on C ∖ [β, ∞) and on the universal cover of P1 ∖ {0, α, β, ∞}?
+   To make things simpler (too simple, in fact — we will return to the issue of
+the necessity of denominators), let us momentarily suppose that the an and bn are
+actually integers. To run Apéry’s proof scheme via Lemma 1.2.1, it then would
+have sufficed that β > 1. Lemma 1.2.1 in this case has the following alternate
+formulation:
+
+
+    2except in one notable example found by Apéry himself with η = ζ(2).
+    3By this we mean: a linear ODE over Q(x), as always in this paper.
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     7
+
+
+Lemma 1.2.3 (Simple Lemma). An integer power series in ZJxK that defines a
+holomorphic function on the disc |x| < R of a radius R > 1 is a polynomial.
+   In our running example, if β < 1, we can deduce nothing from Lemma 1.2.3,
+but we can still derive that P (x) is holomorphic on C ∖ [β, ∞). There is an entire
+subject devoted to more subtle extensions of Lemma 1.2.3, beginning with the
+Theorem of Borel–Pólya [Ami75, Chapter 5], which allows one to make conclusions
+about P (x) ∈ ZJxK from weaker analytic hypotheses than simply converging on
+a disc of sufficiently large radius. We recall (a special case of) this theorem now.
+If Ω ⊂ C is a simply connected open region containing 0, then, from the Riemann
+mapping theorem, there exists a biholomorphic map φ : D → Ω with φ(0) = 0.
+The map φ is unique up to biholomorphisms of the unit disc fixing 0, which are all
+given by rotations. In particular, the invariant |φ′ (0)| does not depend on the choice
+of φ, and (by definition) is equal to the conformal radius ρ(Ω, 0) of Ω at 0. The
+conformal radius of the disc DR = D(0, R) is equal to R (via the map φ(z) = Rz),
+but the conformal radius of any other Ω is strictly larger than the radius of the
+largest disc contained in Ω and centered at z = 0. We have:
+Theorem 1.2.4 (Borel–Pólya, [Pól1923]). A power series P (x) ∈ ZJxK that con-
+tinues analytically to a simply connected open region 0 ∈ Ω ⊂ C of conformal
+radius ρ(Ω, 0) = |φ′ (0)| > 1 is necessarily a rational function: P (x) ∈ Q(x).
+  For example, the biholomorphic map
+                                                          4βz
+                        φ : D → C ∖ [β, ∞),      z 7→
+                                                        (1 + z)2
+shows that C ∖ [β, ∞) has conformal radius |φ′ (0)| = 4β. It follows from Theo-
+rem 1.2.4 in our imagined example above that P (x) is a rational function as soon
+as 4β > 1, contradicting the assumption that P (x) was not meromorphic at β,
+and implying that η is irrational. This is already clearly an improvement on the
+condition that β > 1. (The basic idea for this special case of Pólya’s theorem is
+sketched in Remark 1.2.5 at the end of this introduction.)
+   Even beyond Theorem 1.2.4 (as we shall discuss in Section 2 below), there are
+algebraicity theorems of André and others with even weaker hypotheses that allow
+one to deduce that P (x) is algebraic over Q(x) (see [And04, And89] and [CDT21]),
+which can often be ruled out directly in practice for any particular P (x).
+   The main thrust of our paper is in adapting and honing up the methods of Borel,
+Pólya, and André to fit into the Apéry irrationality proofs context. The algebraicity
+criteria as such do not apply, because the power series A(x) and B(x) of relevance
+to Apéry style proofs never (both) have integral coefficients. And indeed, when
+one introduces denominators (even of some controlled flavour), it turns out that
+algebraicity is no longer the right property to consider. To begin with, a theorem
+of Eisenstein [BG06, §11.4] states that the power series expansion of any algebraic
+function in Q(x) ∩ QJxK has Z[1/S] coefficients for some S ∈ N>0 . But from
+the point of view of the various proofs of Borel’s theorem (and its variations),
+if P (x) ∈ ZJxK, then so too are all of its powers; but if P (x) has denominators,
+then the powers of P (x) typically have worse denominators. An example to keep
+in mind is
+                                                   ∞
+                                                  X   xn
+                                 − log(1 − x) =          .
+                                                  n=1
+                                                       n
+8                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+This function has the property that multiplication by [1, 2, 3, . . . , n] (of order en )
+simultaneously clears the denominators of the first n coefficients. But in order to
+clear the denominators of the first n coefficients of logm (1 − x), one has to multiply
+by a denominator of order
+                                                                                       
+                                                                     1          1
+[1, 2, . . . , n]×[1, . . . , n/2]×· · ·×[1, . . . , n/m] = exp n 1 + + . . . +     + o(n) .
+                                                                     2          m
+Here and throughout the paper by [1, 2, 3, . . . , bn] for b ∈ R>0 we mean by abuse
+of notation [1, 2, 3, . . . , ⌊bn⌋]. On the other hand, differentiation does preserve the
+property of controlled denominator growth. Hence, instead of an algebraicity the-
+orem, one should expect an arithmetic holonomy bound, where one bounds the
+dimension of a Q(x)-vector space generated by functions with certain denominator
+growth and analytic properties, and which is closed under differentiation. This in
+particular implies that, in the appropriate generalization of the Borel–Pólya con-
+ditions, the solutions — a precise formulation is given by Corollary 2.6.1, to be
+discussed in detail in the next section — are G-functions in the sense of Siegel
+(see [Zan14] and [DGS94, §VIII.1], see also Definition 15.1.1). Moreover, one can
+hope to give a — good enough — explicit bound on the order of the G-function
+(that is, the rank of the Q(x)-module generated by G and its derivatives), which
+— in a given situation — contradicts the structure of some explicit approximation
+function P (x) = B(x) − ηA(x). When this is achieved, the ultimate contradiction
+is in the supposition that P (x) ∈ QJxK, that is that η ∈ Q.
+    These arithmetic holonomy bounds are ultimately the main concern of this paper,
+and we take up a detailed introduction to them in our next section § 2.
+Remark 1.2.5. In a very special case, a hint in this direction has been previ-
+ously proposed (although without any application to a new irrationality proof) by
+Zudilin [Zud17], who isolated a condition on the linear forms cn = P     bn − ηan which
+                                                                           ∞
+implies an analytic continuation of the generating function P (x) = n=0 cn xn to a
+slit plane C∖[β, ∞). Whereas Apéry’s use of the convergence radius focused on the
+decay rate β −n+o(n) of the coefficients cn , Zudilin highlights the improved decay rate
+        2    2
+(4β)−n +o(n ) of the sequence of Hankel determinants det(ci+j )ni,j=0 ; this is indeed
+a well-known consequence [Pól28, Pom69] of the analyticity of P (x) on C ∖ [β, ∞).
+The latter is in fact closely linked to the proof of Theorem 1.2.4 in this particular
+case of Ω = C ∖ [β, ∞) with β > 1/4: if all cn ∈ Z, the Hankel determinants are
+also rational integers, therefore they vanish from some point onward if they decay
+at an exponential rate smaller than one, and finally this means P (x) ∈ Q(x) by
+the rationality criterion of Kronecker. Quantifying the denominator of the Hankel
+determinant in the case cn ∈ Q leads as well to Zudilin’s determinantal criterion
+for η ∈/ Q. See § 2.7.7 for a precise formulation and a generalization.               △
+Remark 1.2.6 (A remark on exposition). We take the point of view that the
+readership of this paper might include mathematicians not familiar with either the
+details of our previous paper [CDT21] or the methods of Diophantine analysis more
+broadly. At the risk of interrupting the flow of the exposition, we have included
+a number of expositional asides denoted by “basic remarks” throughout the paper
+which are intended to help orient the reader less familiar with this material; the
+expert should feel free to skip over these.
+Remark 1.2.7 (A remark on notation). We shall use N = {0, 1, 2, . . .} to denote
+the natural numbers with zero, and N>0 to denote the positive integers. Depending
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  9
+
+
+on the context, P1 will signify either a scheme isomorphic to Proj Z[T0 , T1 ] (the
+projective line over Z), or the complex manifold P1 (C) of its C-valued points
+(the Riemann sphere with coordinate z := T0 /T1 , elsewhere commonly denoted C     b
+or CP1 ). A similar ambiguity is adopted for the modular stacks Y0 (2) and Y (2).
+The complex disc D(0, R) of radius R ∈ (0, ∞] in the relevant coordinate (always
+clear by the context, but most frequently denoted z) will be denoted by DR , and
+we shall write D := D1 for the unit radius disc and D for its closure in C. The
+unit circle ∂D = {e2πiθ : θ ∈ [0, 1]} is denoted T and its uniform measure dθ is
+denoted µHaar . For a connected complex manifold M , we shall denote by O(M ) and
+M(M ), respectively, the ring of holomorphic functions the field of meromorphic
+functions on M . The notation O(D) and M(D) is used for the corresponding
+functions on some unspecified open neighborhood of the closed unit disc D ⊂ C.
+Throughout our paper, we will usually write q := eπiτ for τ belonging to the upper
+half plane H, although we will occasionally write q = e2πiτ . (As noted in [CDT21],
+this is forced upon us by historical convention, but we always use the first choice
+unless explicitly stated otherwise.) By a mild and harmless notational abuse, the
+modular lambda function
+                           !4
+                     n2 /4
+             X
+                   q
+                                     ∞             8
+           n∈1+2Z
+                                    Y     1 + q 2n
+λ(q) :=                  !4   = 16q                    : H → C ∖ {0, 1}, {q = 0} 7→ 0
+             X 2                    n=1
+                                         1 + q 2n−1
+                 q n /4
+           n∈2Z
+                                                                         (1.2.8)
+will be written in the cusp-filling coordinate q ∈ D := {|q| < 1} rather than
+τ = log(q)/(πi). The letter e is generally reserved for the Euler constant e ≈
+2.718281. Finally, we admit a minor notational abuse by adopting the convention
+of writing X ∖ {A, B} := X ∖ (A ∪ B) for any subsets A and B of a set X.
+
+1.3. The paths to Theorems A and C, and an outline of the paper. The
+following leitfaden (Figure 1.3.0) gives in summary the logical structure of our
+paper. Here the pair of dotted lines indicates that there are two alternate paths
+to Theorems A and C, either through § 6 (by multivariable methods, based on
+measure concentration) or § 7 (by single variable methods, based on some Arakelov
+theory and Bost’s inequality on evaluation heights). We also omit § B, which is
+most closely related (though there is no dependency in either direction) to § 7.
+There could be some (modest) economy if we restricted ourselves to the shortest
+possible proof of Theorem A. However, with a view to both future developments
+and applications, we felt it was better to include all these new ideas. In many
+ways this reflects our experience with our previous paper [CDT21] which included
+three proofs of the main holonomicity theorem [CDT21, Theorem 2.0.1]. One of the
+referees of that paper recommended removing one particular proof of this theorem
+whose ideas subsequently proved essential for the advances in this paper.
+
+
+   We now very briefly outline the paper. Section § 2 is mainly introductory, al-
+though §§ 2.5–2.11 present a basic form of our main results (which will not be
+proved until § 6) together with some applications, and §§ 2.12–2.13 outlines our
+approach to proving holonomy bounds, which is followed up in precise detail in § 3,
+10                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+        §§ 2.9, 2.12, 2.13           §3          §4          §5
+
+
+
+                                     §6          §7          §8              § 10       §9
+
+
+
+     Theorem 2.5.1        Theorem 7.0.1     Theorem 6.0.2   Theorem 7.1.6    § 12       § 11
+
+
+
+§§ 2.7, 2.8, 2.10, 2.11      § A.5        § 13, Theorem A, § 14, Theorem C          § A.6
+
+
+
+                                                        §A
+
+               Figure 1.3.0. Leitfaden: paths to Theorems A and C
+
+
+with elements of functional transcendence theory. In § 3, we also include some
+further exposition of related material in its proper historical context, intended to
+help place our ideas into a broader context. In § 4, we collect some basic facts
+concerning large deviations and the concentration of measure phenomenon in high
+dimensions. In § 5, we introduce the idea (possibly counterintuitive in light of
+the discussions in § 2) that it can sometimes be useful to integrate our putative
+functions despite introducing new denominators. Also included are some technical
+computations related to extra denominators arising from integrations, which follow
+from the prime number theorem. In § 6, we prove our first main holonomy bound
+Theorem 6.0.2. In § 7, based on the work of Bost and Charles [BC22], we prove our
+second main holonomy bound (or more precisely, several closely related bounds)
+using Bost’s slopes method framework. In particular, Theorem 7.0.1 is essentially
+the bound of Bost–Charles in [BC22] incorporated with our treatment of denomi-
+nators in § 6; Theorem 7.1.6 is a further improvement of Theorem 7.0.1 using the
+convexity property of a growth characteristic function which is closely related to
+the Bost–Charles bound and behaves similarly to a Nevanlinna characteristic func-
+tion. In § 8, we unify our methods from §§ 6–7 and obtain, with an eye to future
+applications, the sharpest holonomy bound in our paper. In sections §§ 9–12 we
+return to a discussion of specific templates (situations in which the denominator
+types and singularities are fixed) in order to prepare for the application of our ho-
+lonomy bounds to our main irrationality results. In § 9, we use the map of modular
+curves Y (2) → Y0 (2) to relate two templates over P1 ∖{0, 1, ∞} and P1 ∖{0, 4, ∞},
+respectively. In § 10, we discuss some G-functions on P1 ∖ {0, 1, ∞} with simple
+denominator types (most of them well-known, but also one which was surprising
+to us), and in § 11 we introduce certain local systems arising in [Zag09] which,
+contingent on a hypothetical linear dependence of 1, π 2 , and L(2, χ−3 ), give rise
+to more G-functions. § 12 is concerned with proving the linear independence of all
+these functions over C(x). In §§ 13 and 14 we give the proofs of Theorems A and C
+respectively, using some explicit computations which are explained in detail in § A.
+(For a proof of Theorem C only, a number of subsections, including all of § 11, can
+

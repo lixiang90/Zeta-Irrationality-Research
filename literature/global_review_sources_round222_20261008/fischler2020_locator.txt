@@ -1,0 +1,1380 @@
+                                                Irrationality of values of L-functions of Dirichlet
+                                                                     characters
+arXiv:1904.02402v1 [math.NT] 4 Apr 2019
+
+
+
+
+                                                                               Stéphane Fischler
+                                                                                  April 5, 2019
+
+
+                                                                                      Abstract
+                                                   In a recent paper with Sprang and Zudilin, the following result was proved: if a
+                                                                                                           log a
+                                               is large enough in terms of ε > 0, then at least 2(1−ε) log log a values of the Riemann
+                                               zeta function at odd integers between 3 and a are irrational. This improves on the
+                                                                                           1−ε
+                                               Ball-Rivoal theorem, that provides only 1+log   2 log a such irrational values – but with
+                                               a stronger property: they are linearly independent over the rationals.
+                                                   In the present paper we generalize this recent result to both L-functions of Dirich-
+                                               let characters and Hurwitz zeta function. The strategy is different and less elemen-
+                                               tary: the construction is related to a Padé approximation problem, and a generaliza-
+                                               tion of Shidlovsky’s lemma is used to apply Siegel’s linear independence criterion.
+                                                   We also improve the analogue of the Ball-Rivoal theorem in this setting: we
+                                                         1−ε
+                                               obtain 1+log  2 log a linearly independent values L(f, s) with s ≤ a of a fixed parity,
+                                               when f is a Dirichlet character. The new point here is that the constant 1 + log 2
+                                               does not depend on f .
+
+                                          MSC 2010: 11J72 (Primary); 11M06, 11M35, 33C20 (Secondary).
+
+                                              The purpose of this paper is to prove results of irrationality, or linear independence, of
+                                          values of the Hurwitz ζ function or L-functions of Dirichlet characters. Both are general-
+                                          izations of the Riemann ζ function, so we begin with a quick survey of the main results in
+                                          this setting.
+                                              When s ≥ 2 is even, ζ(s)π −s is a non-zero rational number so that ζ(s) is transcendental.
+                                          Apéry has proved [1] that ζ(3) is irrational, but there is no odd s ≥ 5 for which ζ(s) is
+                                          known to be irrational. The next breakthrough is due to Ball-Rivoal [2, 20]:
+
+                                                                                                 1 + o(1)
+                                                    dimQ SpanQ (1, ζ(3), ζ(5), . . . , ζ(a)) ≥             log a as a → ∞, a odd.
+                                                                                                 1 + log 2
+
+                                          Here and throughout this introduction, o(1) denotes any sequence that tends to 0 as
+                                          a → ∞. In this paper we mention only asymptotic results (namely, as a → ∞) eventhough
+
+
+
+                                                                                           1
+most results can be made explicit, and often refined, for small values of a. At last we
+mention the following recent result [11]:
+                         log a
+      at least 2(1−o(1)) log log a numbers among ζ(3), ζ(5), . . . , ζ(a) are irrational,   (0.1)
+for a odd, a → ∞.
+
+   The natural setting to generalize these results to values of the Hurwitz ζ function or
+L-functions of Dirichlet characters is the following. Let T ≥ 1, and f : Z → C be such
+that f (n + T ) = f (n) for any n. We assume that f is not identically zero. Let ε > 0, and
+a be sufficiently large (in terms of T and ε). For p ∈ {0, 1} consider the complex numbers
+                                 ∞
+                                 X f (n)
+                    L(f, s) =                 with 2 ≤ s ≤ a and s ≡ p mod 2.               (0.2)
+                                   n=1
+                                         ns
+
+If f is a Dirichlet character mod T then these are exactly the values of the associated
+L-function.
+
+    The restriction on the parity of s in (0.2) is needed in some cases to get rid of powers
+of π. Indeed, if f is a Dirichlet character then f is either even (i.e., f (−n) = f (n)) or
+odd (i.e., f (−n) = −f (n)), according to whether f (−1) is equal to 1 or −1. If s ≥ 2 has
+the same parity as f then L(f, s)π −s is a non-zero algebraic number (see for instance [18,
+Chapter VII, §2]) so that the numbers L(f, s) for s with this parity are linearly independent
+over Q. Moreover, for any periodic map f : Z → Q which is either even or odd (and not
+                                                 ∗
+identically zero), we also have L(f, s)π −s ∈ Q when s and f have the same parity (see
+[12]). In these situations, we prove new results on the numbers (0.2) only when p and f
+have opposite parities.
+
+   An interesting case where (in general) f is neither odd nor even is the following. Given
+u ∈ {1, . . . , T − 1} we define f by f (n) = 1 if n ≡ u mod T , and f (n) = 0 otherwise. Then
+                             ∞
+                             X                    ∞
+                                       1        1 X       1         1     u
+                L(f, s) =                   s
+                                              = s               s
+                                                                  = s ζ(s, )
+                             k=0
+                                   (kT + u)    T k=0 (k + u/T )    T      T
+
+where ζ(s, α) is the Hurwitz ζ function. Therefore the general setting (0.2) encompasses
+both values of the Hurwitz ζ function and values of L-functions of Dirichlet characters.
+
+    As far as we know, Apéry’s theorem has never been generalized in this direction; the
+first natural conjecture in this respect is probably that Catalan’s constant L(χ, 2) is irra-
+tional, where χ is the non-principal character mod 4. The Ball-Rivoal theorem has been
+generalized to the L-function of this character by Rivoal and Zudilin [21]: they have proved
+(0.3) below with 2 + log 2 instead of T + log 2, eventhough T = 4. In the general setting of
+(0.2), Nishimoto has generalized the Ball-Rivoal theorem as follows [19]:
+                 n                                  o    1 + o(1)
+      dimQ SpanQ L(f, s), 2 ≤ s ≤ a, s ≡ p mod 2 ≥                 log a as a → ∞.      (0.3)
+                                                         T + log 2
+
+                                                   2
+                           P
+In the special case where Tn=1 f (n) 6= 0 (which includes the Hurwitz ζ function but not
+L-functions of non-principal Dirichlet characters), this lower bound appears already in
+Nash’ thesis [17]. The constant T + log 2 in Eq. (0.3) has been refined to T /2 + log 2 in [8],
+provided f is a Dirichlet character and T is a multiple of 4. When f is the non-principal
+character mod 4, this gives as a special case the lower bound of Rivoal and Zudilin [21].
+    Our first result is that one may replace the constant T +log 2 in Eq. (0.3) with 1+log 2,
+so that the lower bound is uniform in T and is the same as for the Riemann ζ function.
+Theorem 1. Let T ≥ 1, and f : Z → C be such that f (n + T ) = f (n) for any n. Assume
+that f is not identically zero. Let p ∈ {0, 1}, ε > 0, and a be sufficiently large (in terms of
+T and ε). Then
+                          n                                  o      1−ε
+             dimQ SpanQ L(f, s), 2 ≤ s ≤ a, s ≡ p mod 2 ≥                    log a.
+                                                                  1 + log 2
+   Of course the same result holds without the restriction s ≡ p mod 2, but it is weaker
+and even trivial in some cases where f is even or odd (as noticed above).
+   In another direction, we generalize the recent result (0.1) to this setting.
+Theorem 2. Let T ≥ 1, and f : Z → C be such that f (n + T ) = f (n) for any n. Assume
+that f is not identically zero. Let E be a finite-dimensional Q-vector space contained in C,
+p ∈ {0, 1}, ε > 0, and a be sufficiently large (in terms of dim E, T , and ε). Then among
+the numbers L(f, s) with 2 ≤ s ≤ a and s ≡ p mod 2, at least
+                                                    log a
+                                         2(1−ε) log log a
+do not belong to E.
+                                                    log a
+   Taking E = Q we obtain at least 2(1−ε) log log a irrational values among the numbers
+L(f, s). The dependence in a is much better than in the lower bound of Theorem 1;
+however we obtain only numbers outside E, and not Q-linearly independent numbers.
+    Before explaining the strategy used in the proofs of Theorems 1 and 2, we would like
+to state the two main special cases of Theorem 2 explicitly.
+Corollary 1. Let χ be a Dirichlet character; put p = 0 is χ is odd, and p = 1 if χ is
+even. Let E be a finite-dimensional Q-vector space contained in C. Let ε > 0, and a be
+sufficiently large (in terms of χ, dim E, and ε). Then among the numbers L(χ, s) with
+                                             log a
+2 ≤ s ≤ a and s ≡ p mod 2, at least 2(1−ε) log log a do not belong to E.
+Corollary 2. Let r be a positive rational number, and p ∈ {0, 1}. Let E be a finite-
+dimensional Q-vector space contained in C. Let ε > 0, and a be sufficiently large (in terms
+of r, dim E, and ε). Then among the numbers
+                                                ∞
+                                                X        1
+                                    ζ(s, r) =
+                                                n=0
+                                                      (n + r)s
+                                                       log a
+with 2 ≤ s ≤ a and s ≡ p mod 2, at least 2(1−ε) log log a do not belong to E.
+
+                                                3
+    Corollary 2 is new even for r = 1, i.e. for the Riemann ζ function: it is a refinement of
+(0.1). We would like to emphasize the fact that the proof of [11] does not give this result
+for E 6= Q: a different approach is used here, proving linear independence and not only
+irrationality.
+
+    The proof of Theorems 1 and 2 is based on the strategy of [8]: we apply Siegel’s linear
+independence criterion using a general version of Shidlovsky’s lemma (namely Theorem 3,
+stated in §1.3 and proved in [8] following the approach of Bertrand-Beukers [4] and Bertrand
+[3]). This makes it necessary to relate the construction to a Padé approximation problem
+with essentially as many equations as the number of unknowns. In the present paper we
+adapt this strategy so as to include Sprang’s arithmetic lemma [23, Lemma 1.4] and the
+elimination trick of [24, 23, 11]. The proofs of Theorems 1 and 2 are essentially the same,
+except for the choice of parameters. It is also possible to prove other results of the same
+flavour (see Theorem 4 at the end of §3.2, which implies both Theorem 2 and – up to a
+multiplicative constant – Theorem 1).
+    Our construction contains as a special case the one used in [11] to prove (0.1). We prove
+this in §3.3; as a byproduct, we relate the construction of [11] to a Padé approximation
+problem with essentially as many equations as the number of unknowns.
+
+   The structure of this paper is as follows. We gather in Proposition 1 the output of the
+Diophantine construction (see §1.1), and prove it in §1. Then we deduce Theorems 1 and 2
+from Proposition 1 in §3 using Siegel’s linear independence criterion (stated in §2).
+
+
+1      Diophantine construction
+In this section we gather the Diophantine part of the proof, namely the construction of
+linearly independent linear forms. We prove Proposition 1 stated in §1.1, from which we
+shall deduce in §3 the results stated in the introduction. The linear forms are constructed
+in §1.2 using series of hypergeometric type. We relate them in §1.4 to a Padé approximation
+problem, and then apply a general version of Shidlovsky’s lemma (stated in §1.3). At last,
+arithmetic and asymptotic properties are dealt with in §1.5.
+
+1.1      Statement of the result
+                                                     a
+Let a, r, N be positive integers such that 1 ≤ r < 3N  . Let N ≥ 1, and f : Z → C be such
+that f (m + N) = f (m) for any m. Assume that f is not identically zero. Let p ∈ {0, 1};
+put
+                                  X∞
+                                       f (m)
+                        L(f, j) =         j
+                                             for any j ∈ {2, . . . , a}.
+                                  m=1
+                                        m
+Let also
+
+      α = (4e)(a+1)/N (2N)2r+2 r −(a+1)/N +4(r+1) and β = (2e)(a+1)/N (r + 1)2r+2 N 2r+2 .   (1.1)
+
+                                                 4
+Proposition 1. There exists a constant c1 , which depends only on a and N, with the
+following property. For any integer multiple n of N there exist integers sk,i , with 1 ≤ k ≤ c1
+and 2 ≤ i ≤ a + N, such that:
+  (i) For any n sufficiently large, the subspace F of Ra+N −1 spanned by the vectors
+      t
+        (sk,2, . . . , sk,a+N ), 1 ≤ k ≤ c1 , is non-zero and does not depend on n.
+ (ii) For any k and any i we have |sk,i | ≤ β n+o(n) as n → ∞.
+(iii) For any k we have, as n → ∞:
+                                    a
+                                    X                          N
+                                                               X −1
+                              p
+                      2(−1)                   sk,i L(f, i) +          sk,a+1+i f (i) ≤ αn+o(n) .          (1.2)
+                                     i=2                       i=0
+                                  i≡p mod 2
+
+
+   From now on, the symbols o(·) will be intended as n → ∞. Since k ≤ c1 , these symbols
+can be made uniform with respect to k.
+
+    The integers sk,i depend also implicitly on n, a, r, N, f and p. Their values for
+i 6≡ p mod 2 do not appear in the linear combinations of part (iii), but they could be of
+interest in other settings. Another feature of this construction is that for i ≤ a, the integers
+sk,i depend only on n, a, r, N but not on f or p. Probably this could lead to variants of
+our results in the style of [14] or [7].
+
+Remark 1. In [8] a similar construction is made, where the matrix [sk,i ]i,k has rank a +
+N − 1 for n sufficiently large so that the subspace F of part (i) is equal to Ra+N −1 . In the
+present setting we make a different construction to incorporate Sprang’s arithmetic lemma
+(see §1.2 below), and the matrix [sk,i ] we obtain has rank less than a + N − 1 for some
+values of the parameters (see Remark 3 in §1.4): the subspace F in Proposition 1 is not
+always equal to Ra+N −1 .
+
+1.2    Construction of the linear forms
+In this section we define the numbers sk,i of Proposition 1 (see Eq. (1.17)) and express the
+linear form of Eq. (1.2) in a more convenient way (see Lemma 1). We postpone until §1.5
+the proof that sk,i ∈ Z.
+                                                                                          a
+   As in §1.1 we let a, r, N be positive integers such that 1 ≤ r <                      3N
+                                                                                            .   For any integer
+multiple n of N we let
+                                                    (t − rn)(2r+1)n+1
+                        F (t) = (n/N)!(a+1)−(2r+1)N Qn/N
+                                                                   a+1
+                                                      h=0 (t + Nh)
+
+where (α)p = α(α + 1) . . . (α + p − 1) is the Pochhammer symbol. Note that each factor
+t + Nh of the denominator appears also in the numerator, so that the poles t = −Nh of
+
+                                                       5
+this rational function only have order a. This rational function F (t) is similar to that of
+[8], but central factors have been inserted in the numerator to apply Sprang’s arithmetic
+lemma (see Remark 2 below).
+
+   In this section we follow the proof of [8], except for Eq. (1.19) which is specific to the
+function F we consider here. We let
+                               ∞
+                               X                                                     ∞
+                                                                                     X
+                                                 t
+                S0 (z) =             F (−t)z             and             S∞ (z) =          F (t)z −t   (1.3)
+                           t=n+1                                                     t=1
+
+for z ∈ C with |z| = 1; then both series are convergent since the degree −d0 of F satisfies
+                                                        n
+                   d0 := − deg F = (a + 1)(               + 1) − (2r + 1)n − 1 ≥ 2.                    (1.4)
+                                                        N
+We let ω = e2iπ/N and for any ℓ ∈ {1, . . . , N} we consider the (inverse) discrete Fourier
+transform of f , defined by
+                                              N
+                                b       1 X
+                               f (ℓ) =          f (λ)ω −ℓλ.                           (1.5)
+                                        N λ=1
+We also let
+                  δn = (Ndn/N )a+1 N (a+1)n/N , where dj = lcm(1, 2, . . . , j).
+The linear forms of Proposition 1 are given by the following lemma. The rational numbers
+sk,i will be constructed explicitly in the proof (see Eq. (1.17)), and we shall prove in §1.5
+that they are integers.
+Lemma 1. For any 1 ≤ k ≤ d0 − 1 there exist rational numbers sk,2 , . . . , sk,a+N such that
+                         N
+                         X          h                                                       i
+                                               (k−1)
+                    δn         fb(ℓ) ω ℓ(k−1) S0                              (k−1)
+                                                     (ω ℓ ) + (−1)p ω ℓ(1−k) S∞     (ω −ℓ )
+                         ℓ=1
+                                       a
+                                       X                          N
+                                                                  X −1
+                                 p
+                    = 2(−1)                      sk,i L(f, i) +          sk,a+1+i f (i)                (1.6)
+                                        i=2                       i=0
+                                     i≡p mod 2
+
+where S (k−1) is the (k − 1)-th derivative of a function S.
+
+   Let us prove Lemma 1. The partial fraction expansion of F reads
+                                                     n/N a
+                                                     X  X          pj,h
+                                         F (t) =
+                                                     h=0 j=1
+                                                               (t + Nh)j
+
+with rational coefficients pj,h ; we consider
+                                 n/N
+                                 X
+                    Pj (z) =           pj,h z N h ∈ Q[z]≤n for any j ∈ {1, . . . , a}.
+                                 h=0
+
+
+                                                          6
+Let P1,j = Pj for any j ∈ {1, . . . , a}, and define inductively Pk,j ∈ Q(z) by
+
+                     ′          1
+         Pk,j (z) = Pk−1,j (z) − Pk−1,j+1(z) for any k ≥ 2 and any j ∈ {1, . . . , a},                             (1.7)
+                                z
+where Pk−1,a+1 = 0 for any k. We let also1
+                                            n
+                                            X                  X ⌋
+                                                          a ⌊(t−1)/N
+                                                          X
+                                                      t                         pj,h
+                           U1 (z) = −             z                                     ∈ Q[z]≤n                   (1.8)
+                                            t=1           j=1       h=0
+                                                                              (Nh − t)j
+
+                                            n−1            a            n/N
+                                            X              X            X           pj,h
+                       and V1 (z) = −               zt                                      ∈ Q[z]≤n ,             (1.9)
+                                              t=0          j=1 h=⌈(t+1)/N ⌉
+                                                                                  (Nh − t)j
+
+and define Uk , Vk for any k ≥ 2 by the recurrence relations
+
+                                                ′                          1
+                                      Uk (z) = Uk−1 (z) −                     Pk−1,1 (z),                         (1.10)
+                                                                          1−z
+                                               ′                         1
+                                    Vk (z) = Vk−1 (z) +                       Pk−1,1(z).                          (1.11)
+                                                                     z(1 − z)
+Then for any k ≥ 1 we have (as in [2, 10])
+                                                                    a
+                                                                    X
+                                (k−1)
+                               S0     (z)      = Uk (z) +                 Pk,j (z)(−1)j Lij (z)                   (1.12)
+                                                                    j=1
+
+                                                                          a
+                                                                          X
+                                       (k−1)
+                               and    S∞     (z)          = Vk (z) +             Pk,j (z)Lij (1/z).               (1.13)
+                                                                           j=1
+
+   Since Pj (z) ∈ Q[z N ] for any j ∈ {1, . . . , a}, Eq. (1.7) yields Pk,j ∈ z 1−k Q[z N ]. This
+property is very important to us since we shall evaluate Pk,j at N-th roots of unity. To
+evaluate in the same way the rational functions Uk , Vk ∈ Q[z, z −1 ] for k ≤ d0 − 1, we write
+                                        N
+                                        X −1                                                N
+                                                                                            X −1
+                     z k−1 Uk (z) =            z λ Uk,λ (z) and z k−1 Vk (z) =                     z λ Vk,λ(z)    (1.14)
+                                        λ=0                                                  λ=0
+
+with Uk,λ , Vk,λ ∈ Q[z N , z −N ]. Then Eqns. (1.12) and (1.13) yield
+                                            N
+                                            X −1                          a
+                                                                          X
+                            (k−1)
+                    z k−1 S0        (z) =           z λ Uk,λ (z) +               z k−1 Pk,j (z)(−1)j Lij (z)      (1.15)
+                                            λ=0                            j=1
+
+                                                    N
+                                                    X −1                         a
+                                                                                 X
+                            k−1    (k−1)                        λ
+                    and z         S∞     (z)   =            z Vk,λ(z) +                z k−1 Pk,j (z)Lij (1/z).   (1.16)
+                                                    λ=0                          j=1
+
+  1
+      There is a misprint in the formula that gives U (z) in [8].
+
+                                                                    7
+      We may now define the coefficients sk,i for any k ≥ 1 by:
+              
+                sk,i = δn Pk,i (1) for 2 ≤ i ≤ a,
+                                                                                                             (1.17)
+                sk,a+1+λ = δn (Uk,λ (1) + (−1)p Vk,N −λ(1)) for 0 ≤ λ ≤ N − 1,
+
+where Vk,N = Vk,0 ; recall that δn = (Ndn/N )a+1 N (a+1)n/N with dj = lcm(1, 2, . . . , j). Since
+Pk,j (z), Uk,λ(z) and Vk,N −λ (z) are polynomials with rational coefficients, the numbers sk,2 ,
+. . . , sk,a+N are rational. We shall prove in Lemma 3 that they are integers, thanks to the
+factor δn . We also point out that sk,i is not defined for i = 1; actually Pk,1 (1) = 0 for the
+values of k we are interested in (see (1.18) below).
+
+    To conclude the proof of Lemma 1, we shall evaluate Eqns. (1.15) and (1.16) at roots
+of unity. At the point 1 this is possible since, as in [8, §4.3],
+      for any k ≤ d0 − 1,           Pk,1(1) = 0 and Uk , Vk do not have a pole at z = 1.                     (1.18)
+Now let k ≤ d0 − 1, and z ∈ C be such that |z| = 1. Then Eqns. (1.12) to (1.16) hold,
+upon agreeing that the sums start at j = 2 if z = 1; this remark will be used below when
+z is a N-th root of unity.
+    Let Λk be the right hand side of Eq. (1.6). Using (1.18) the definition (1.17) of sk,i
+yields
+                                X                               N
+                                                                X −1
+         Λk = 2δn (−1)p                 Pk,j (1)L(f, j) + δn          (Uk,λ (1) + (−1)p Vk,N −λ (1))f (λ).
+                             1≤j≤a                              λ=0
+                            j≡p mod 2
+
+
+Now Eq. (1.5) yields
+N
+X                                                         N
+                                                          X                           X∞
+                                                                                          f (m)
+      fb(ℓ)ω mℓ = f (m) for any m ∈ Z, so that                  fb(ℓ)Lij (ω ℓ ) =               = L(f, j) for any j ≤ a.
+ℓ=1                                                       ℓ=1                         m=1
+                                                                                           mj
+
+Therefore we have, since Vk,N = Vk,0:
+                          a
+                          X                                   N
+                                                              X
+           Λk =      δn                          j
+                                Pk,j (1)((−1) + (−1) )    p
+                                                                    fb(ℓ)Lij (ω ℓ )
+                          j=1                                 ℓ=1
+                            N
+                            X −1 h X
+                                    N                                   X
+                                                                          N                   i
+                     +δn                      fb(ℓ)ω ℓλ Uk,λ (1) + (−1)p    fb(ℓ)ω −ℓλ Vk,λ (1) .
+                            λ=0         ℓ=1                                    ℓ=1
+
+Then Eqns. (1.15) and (1.16) yield, since Uk,λ(z), Vk,λ(z), and z k−1 Pk,j (z) depend only on
+z N and ω is a N-th root of unity:
+                            N
+                            X          h                                                      i
+                                                  (k−1)
+                  Λk = δn         fb(ℓ) ω ℓ(k−1) S0                              (k−1)
+                                                        (ω ℓ ) + (−1)p ω ℓ(1−k) S∞     (ω −ℓ ) .
+                            ℓ=1
+
+This concludes the proof of Lemma 1.
+
+
+                                                          8
+Remark 2. The only difference here with the construction of [8] is that the rational func-
+tion F has been modified to incorporate Sprang’s arithmetic lemma [23, Lemma 1.4]. In
+our setting this choice of F leads to the following additional property, that will be used in
+§1.4:
+                                  U1 (z) + V1 (z) ∈ Q[z N ].                           (1.19)
+To prove this property we notice that
+                                                    n
+                                                    X             a
+                                                                  X X
+                                                              t                  pj,h
+                          U1 (z) + V1 (z) = −             z                              ;
+                                                    t=1           j=1 h6=t/N
+                                                                               (Nh − t)j
+
+for any t which is not a multiple of N, the coefficient of z t is −F (−t) = 0.
+
+1.3     A general version of Shidlosvky’s lemma
+Let q be a positive integer, and A ∈ Mq (C(z)). We fix2 P1 , . . . , Pq ∈ C[z] and n ∈ N =
+{0, 1, 2, . . .} such that deg Pi ≤ n for any i. Then with any solution Y = t (y1, . . . , yq ) of
+the differential system Y ′ = AY is associated a remainder R(Y ) defined by
+                                                      q
+                                                      X
+                                     R(Y )(z) =                   Pi (z)yi (z).
+                                                      i=1
+
+Let Σ be a finite subset of C ∪ {∞}, which may contain singularities of the differential
+system Y ′ = AY . For each σ ∈ Σ, let (Yj )j∈Jσ be a family of solutions of Y ′ = AY such
+that the functions R(Yj ), j ∈ Jσ , are C-linearly independent and belong to the Nilsson class
+at σ (i.e., have a local expression at σ as linear combination of holomorphic functions, with
+coefficients involving complex powers of z − σ and integer powers of log(z − σ)). We agree
+that Jσ = ∅ if σ 6∈ Σ, and define rational functions Pk,i ∈ C(z) for k ≥ 1 and 1 ≤ i ≤ q by
+                                                             
+                                Pk,1                k−1 P1
+                             ..            d             .. 
+                             . =              + tA       . .                       (1.20)
+                                            dz
+                                Pk,q                         Pq
+
+These rational functions Pk,i play an important role because they are used to differentiate
+the remainders (see [22, Chapter 3, §4]):
+                                                          q
+                                                          X
+                                          (k−1)
+                                  R(Y )           (z) =            Pk,i (z)yi (z).                (1.21)
+                                                          i=1
+
+The following result is proved in [8, Theorem 1.2].
+   2
+    We shall check in §1.4 that the notation introduced in the present section is consistent with the one
+used earlier in this paper.
+
+
+
+                                                          9
+Theorem 3. There exists a positive constant c2 , which depends only on A and Σ, with the
+following property. Assume that, for some α ∈ C:
+  (i) The differential system Y ′ = AY has a basis of local solutions at α with coordinates
+      in C[log(z − α)][[(z − α)e ]] for some positive real number e.
+
+ (ii) We have              XX
+                                      ordσ (R(Yj )) ≥ (n + 1)q − n#J∞ − τ
+                           σ∈Σ j∈Jσ
+
+      for some τ with 0 ≤ τ ≤ n − c2 .
+
+(iii) All rational functions Pk,i , with 1 ≤ i ≤ q and 1 ≤ k < τ + c2 , are holomorphic at
+      z = α.
+Then the matrix [Pk,i (α)]1≤i≤q,1≤k<τ +c2 ∈ Mq,τ +c2−1 (C) has rank at least q − #Jα .
+    In the special case where Σ = {0}, #J0 = 1, Yj is analytic at 0, and α 6= 0 is not a
+singularity of the differential system Y ′ = AY , this result was used by Shidlovsky to prove
+the Siegel-Shidlovsky theorem on values of E-functions (see [22, Chapter 3, Lemma 10]).
+The functional part of Shidlovsky’s lemma has been generalized by Bertand-Beukers [4] to
+the case where Σ ⊂ C, #Jσ = 1 for any σ, and all functions Yj are obtained by analytic
+continuation from a single one, analytic at all σ ∈ Σ. Then Bertrand has allowed [3,
+Théorème 2] an arbitrary number of solutions at each σ, assuming that ∞ 6∈ Σ and the
+functions Yj , j ∈ Jσ , are analytic at σ. The proof [8] of Theorem 3 follows the approach
+of Bertand-Beukers and Bertrand, based on differential Galois theory.
+    An important feature of Theorem 3 is that α may be a singularity of the differential
+system Y ′ = AY , and/or an element of Σ. Both happen in the present paper, where α = 1
+(see §1.4 where Theorem 3 is applied to prove Lemma 2). If α 6∈ Σ then Jα = ∅ so that
+Theorem 3 yields a matrix of maximal rank q. On the other hand, if α ∈ Σ then the #Jα
+linearly independent linear combinations of the rows of the matrix [Pk,i (z)]i,k corresponding
+to R(Yj ), j ∈ Jα , may vanish at α: the lower bound q − #Jα is best possible. In the setting
+of §1.4 we have α = 1 and J1 = {1} so that Theorem 3 yields rk[Pk,i (1)] ≥ q − 1. Now
+(1.18) in the proof of Lemma 1 shows that Pk,1 (1) = 0 for any k < τ + c2 (since τ + c2 ≤ d0
+because τ and c2 are independent from n whereas d0 tends to ∞ with n). Therefore the
+matrix [Pk,i (1)]1≤i≤q,1≤k<τ +c2 has rank equal to q − 1. Removing the first row, which is
+identically zero, yields a matrix of rank q − 1 equal to the number of rows.
+
+1.4    Padé approximation and application of Shidlovsky’s lemma
+In this section we prove part (i) of Proposition 1 for the numbers sk,i constructed in §1.2.
+Lemma 2. Let sk,i be defined by Eq. (1.17). Then there exists a positive constant c1 (which
+depends only on a and N) such that for any n sufficiently large, the subspace F of Ra+N −1
+spanned by the vectors t (sk,2 , . . . , sk,a+N ), 1 ≤ k ≤ c1 , is non-zero and does not depend on
+n.
+
+                                               10
+     The proof of Lemma 2 falls into 3 steps. To begin with, we construct a Padé approx-
+imation problem related to our construction, with essentially as many equations as the
+number of unknowns; notice that this problem is not the same as in [8], since the function
+F used in the construction is different. Then we apply a general version of Shidlovsky’s
+lemma, namely Theorem 3 stated in §1.3. This provides a matrix P with linearly indepen-
+dent rows. At last, we relate the numbers sk,i to P by constructing a matrix M such that
+[sk,i ]i,k = MP . The point is that M does not depend on n (whereas P and [sk,i ] do). The
+subspace spanned by the columns of [sk,i ]i,k is the same as the one spanned by the columns
+of M: it does not depend on n.
+
+Step 1: Construction of the Padé approximation problem.
+
+   We recall from §1.2 that
+                                                       (t − rn)(2r+1)n+1
+                           F (t) = (n/N)!(a+1)−(2r+1)N Qn/N               ,
+                                                                      a+1
+                                                         h=0 (t + Nh)
+                               ∞
+                               X                                   a
+                                                                   X
+                                                  t
+                    S0 (z) =            F (−t)z = U1 (z) +               Pj (z)(−1)j Lij (z),
+                               t=n+1                               j=1
+                                        ∞
+                                        X                                a
+                                                                         X
+                     and S∞ (z) =              F (t)z −t = V1 (z) +            Pj (z)Lij (1/z).
+                                         t=1                             j=1
+
+Since Pj (z) ∈ C[z N ] for any j ∈ {1, . . . , a}, we have Pj (ω ℓ z) = Pj (z) for any ℓ ∈ Z.
+Therefore letting
+
+  R0,ℓ (z) = S0 (ω ℓ z),    R∞,ℓ (z) = S∞ (ω ℓ z),             P 0,ℓ (z) = U1 (ω ℓ z),     P ∞,ℓ (z) = V1 (ω ℓ z)
+                                                                                                            (1.22)
+for any ℓ ∈ {1, . . . , N}, we have
+                                  a
+                                  X
+         R0,ℓ (z) = P 0,ℓ (z) +         Pj (z)(−1)j Lij (ω ℓ z) = O(z (r+1)n+1 ),          z → 0,          (1.23)
+                                  j=1
+
+                                           a
+                                           X                    1
+         and R∞,ℓ (z) = P ∞,ℓ (z) +              Pj (z)Lij (        ) = O(z −rn−1 ),      z → ∞.           (1.24)
+                                           j=1
+                                                               ω ℓz
+Moreover, recall that d0 = − deg F = (a + 1)( Nn + 1) − (2r + 1)n − 1; Lemma 3 of [10]
+shows that         a
+                  X                 (log z)j−1
+                      Pj (z)(−1)j−1            = O((z − 1)d0 −1 ), z → 1.
+                  j=1
+                                     (j − 1)!
+
+Using again the fact that Pj (ω −ℓ z) = Pj (z), we obtain for any ℓ ∈ {1, . . . , N}:
+                   a
+                   X                      (log(ω −ℓ z))j−1
+      Rωℓ (z) :=         Pj (z)(−1)j−1                     = O((z − ω ℓ )d0 −1 ),           z → ω ℓ.       (1.25)
+                   j=1
+                                              (j − 1)!
+
+                                                        11
+   The new point here, with respect to [8], is that Eq. (1.19) in Remark 2 shows that
+P = P 0,ℓ + P ∞,ℓ does not depend on ℓ. Therefore Eq. (1.23) can be written as
+                                       a
+                                       X
+    R0,ℓ (z) = P (z) − P ∞,ℓ (z) +            Pj (z)(−1)j Lij (ω ℓ z) = O(z (r+1)n+1 ),     z → 0.        (1.26)
+                                        j=1
+
+
+
+    We have obtained a Padé approximation problem with (a + N + 1)(n + 1) unknowns,
+namely the coefficients of P (z), Pj (z) for 1 ≤ j ≤ a, and P ∞,ℓ for 1 ≤ ℓ ≤ N. Eqns. (1.24),
+(1.25) and (1.26) amount to
+
+         N((r + 1)n + 1) + N(d0 − 1) + N((r + 1)n + 1) = (a + N + 1)(n + 1) − τ
+
+linear equations, where τ = a + 1 − aN is the difference between the number of unknowns
+and the number of equations. If N = 1 then τ = 1: this is exactly the Padé approximation
+problem of [10, Theorem 1], which has a unique solution up to proportionality. However if
+N ≥ 2 then τ < 0: we have solved a linear system with (slightly) more equations than the
+number of unknowns.
+
+Step 2: Application of Shidlovsky’s lemma.
+
+    Let us introduce some notation to fit into the context of §1.3, and check the assumptions
+of Theorem 3. Let q = a+ N + 1, and A ∈ Mq (C(z)) be the matrix of which the coefficients
+Ai,j are given by:
+                                    −1
+                       Ai,i−1 (z) = z for any i ∈ {2, . . . , a}
+                        A1,a+1 (z) = 1z
+                       A                  1
+                         1,a+1+ℓ (z) = z(1−ω ℓ z) for any ℓ ∈ {1, . . . , N}
+
+
+and all other coefficients are zero. We consider the following solutions of the differential
+system Y ′ = AY , with 1 ≤ ℓ ≤ N:
+                                                                                                          
+      Y0,ℓ (z) = t − Li1 (ω ℓ z), Li2 (ω ℓ z), . . . , (−1)a Lia (ω ℓ z), 1, 0, . . . , 0, −1, 0, . . . , 0 ,
+                            1          1                   1                                   
+                          t
+            Y∞,ℓ (z) = Li1 ( ℓ ), Li2 ( ℓ ), . . . , Lia ( ℓ ), 0, 0, . . . , 0, 1, 0, . . . , 0 ,
+                            ωz         ωz                  ωz
+                                       −ℓ
+                                (log(ω z))    2                             −ℓ     a−1                    
+               t           −ℓ                                  a−1 (log(ω z))
+      Yωℓ (z) = 1, − log(ω z),                  , . . . , (−1)                          , 0, 0, . . . , 0
+                                       2!                              (a − 1)!
+where the coefficient −1 in Y0,ℓ (z) (resp. 1 in Y∞,ℓ(z)) is in position a + 1 + ℓ.
+    We let J0 = {(0, 1), (0, 2), . . . , (0, N)}, J∞ = {(∞, 1), (∞, 2), . . . , (∞, N)}, Jωℓ = {ω ℓ }
+for 1 ≤ ℓ ≤ N, and Σ = {0, ∞} ∪ {ω ℓ , 1 ≤ ℓ ≤ N}, so that we have a solution Yj for each
+j ∈ Jσ , σ ∈ Σ.
+    We also let Pa+1 (z) = P (z) (which is equal to P 0,ℓ (z) + P ∞,ℓ (z) = (U1 + V1 )(ω ℓ z)
+for any ℓ), and Pa+1+ℓ (z) = P ∞,ℓ (z) = V1 (ω ℓ z) for any ℓ ∈ {1, . . . , N}. Then we have
+
+                                                       12
+polynomials P1 (z), . . . , Pq (z) of degree at most n, and with the notation of §1.3 the
+remainders associated with the local solutions Yj , j ∈ Jσ , σ ∈ Σ, are exactly the functions
+that appear in the Padé approximation problem of Step 1: R(Y0,ℓ ) = R0,ℓ (z), R(Y∞,ℓ ) =
+R∞,ℓ (z), and R(Yωℓ ) = Rωℓ (z) for any ℓ ∈ {1, . . . , N}.
+       Since Pa is not the zero polynomial, we have Rωℓ (z) 6= 0 for any ℓ; the functions R0,1 (z),
+. . . , R0,N (z) (resp. R∞,1(z), . . . , R∞,N (z)) are C-linearly independent (see [8, Lemma 2]).
+       Eqns. (1.24), (1.25) and (1.26) yield ord∞ (R∞,ℓ (z)) ≥ rn + 1, ordωℓ (Rωℓ (z)) ≥ d0 − 1
+and ord0 (R0,ℓ (z)) ≥ (r + 1)n + 1 for any ℓ ∈ {1, . . . , N}, so that
+ XX
+            ordσ Rj (z) ≥ (2r + 1)Nn + N(d0 + 1) = (n + 1)q − nN − τ with τ = a + 1 − aN;
+σ∈Σ j∈Jσ
+
+
+here q = a + N + 1, and we recall that d0 = − deg F = (a + 1)( Nn + 1) − (2r + 1)n − 1.
+As above, τ is exactly the difference between the number of unknowns and the number of
+equations in the Padé approximation problem of Step 1.
+    The definition (1.20) of Pk,i is consistent with the one given (for i ≤ a) by Eq. (1.7) in
+§1.2. We have τ = a + 1 − aN, so that for n sufficiently large τ + c2 ≤ d0 where c2 is the
+constant given by Theorem 3. Therefore (1.18) shows that Uk and Vk are holomorphic at
+z = 1 for any k < τ + c2 . Eqns. (1.7), (1.10) and (1.11) imply that they are holomorphic
+at all other roots of unity. Now Eqns. (1.20), (1.10) and (1.11) yield
+
+      Pk,a+1 (z) = ω ℓ(k−1) (Uk (ω ℓ z) + Vk (ω ℓ z)) and Pk,a+1+ℓ (z) = ω ℓ(k−1) Vk (ω ℓ z)   (1.27)
+
+for any ℓ ∈ {1, . . . , N}, by induction on k ≥ 1. Therefore all Pk,i , with k < τ + c2 and
+1 ≤ i ≤ q, are holomorphic at 1.
+
+    We have checked all assumptions of Theorem 3 for n sufficiently large: the matrix
+[Pk,i (1)]1≤i≤q,1≤k<τ +c2 has rank at least q − #J1 = q − 1. Now (1.18) implies Pk,1(1) = 0 for
+any k < τ + c2 , so that we may remove the first row: the matrix P = [Pk,i (1)]2≤i≤q,1≤k<τ +c2
+has rank q − 1, equal to its number of rows.
+
+Step 3: Expression of sk,i in terms of P and conclusion.
+
+   We shall now compute a matrix M independent from n such that [sk,i ]i,k = MP ; recall
+that the coefficients sk,i and the matrix P depend on n.
+   To begin with, Eq. (1.14) with z = ω ℓ yields
+                                                N
+                                                X −1
+                         ω (k−1)ℓ Uk (ω ℓ ) =          ω λℓ Uk,λ(1) for any ℓ ∈ Z,
+                                                λ=0
+
+since Uk,λ (z) ∈ Q[z N , z −N ]. Therefore we have
+                               N
+                            1 X (k−1−λ)ℓ
+                  Uk,λ(1) =       ω      Uk (ω ℓ ) for any 0 ≤ λ ≤ N − 1,                      (1.28)
+                            N ℓ=1
+
+                                                        13
+and the same relation holds with Vk,λ and Vk . Using Eq. (1.27) we deduce that
+                                  N
+                               1 X −λℓ
+                     Vk,λ(1) =       ω Pk,a+1+ℓ (1) for 0 ≤ λ ≤ N − 1,
+                               N ℓ=1
+
+and also for λ = N since Vk,N = Vk,0, and
+                                     P
+                                  − N1 N ℓ=1 ω
+                                               −λℓ
+                                                   P       (1) if 1 ≤ λ ≤ N − 1,
+                 Uk,λ (1) =                     1
+                                                  Pk,a+1+ℓ
+                                                     N
+                                  Pk,a+1(1) − N ℓ=1 Pk,a+1+ℓ (1) if λ = 0.
+
+Therefore the definition (1.17) of sk,i can be translated as
+                                                 q
+                                                 X
+                                        sk,i =         mi,j Pk,j (1)                        (1.29)
+                                                 j=2
+
+
+for any 2 ≤ i ≤ a + N and any 1 ≤ k ≤ d0 − 1, where the coefficients mi,j are defined for
+2 ≤ i ≤ a + N and 2 ≤ j ≤ q = a + N + 1 by
+     
+     
+      mi,i = δn for 2 ≤ i ≤ a + 1
+     
+       ma+1,a+1+ℓ = δNn ((−1)p − 1) for 1 ≤ ℓ ≤ N
+                                                                                   (1.30)
+      ma+1+λ,a+1+ℓ = δNn ((−1)p ω λℓ − ω −λℓ ) for 1 ≤ ℓ ≤ N and 1 ≤ λ ≤ N − 1
+     
+     
+       mi,j = 0 for all other pairs (i, j).
+
+Let us choose now the constant c1 of Lemma 2; the same constant appears in Proposition
+1. We take c1 = τ + c2 − 1; this constant depends only on a and N. We consider the
+matrices M = [mi,j ]2≤i≤a+N,2≤j≤q and P = [Pk,j (1)]2≤j≤q,1≤k≤c1 . Then Eq. (1.29) means
+that
+                               [sk,i ]2≤i≤a+N,1≤k≤c1 = MP.                         (1.31)
+Both M and P have coefficients in Q(ω); recall that the coefficients sk,i of MP are rational
+numbers, and we shall prove in §1.5 that they are integers. Let F denote the subspace
+of Ra+N −1 spanned by the q − 1 columns t (m2,j , . . . , ma+N,j ) of M. Now assume that n
+is sufficiently large; then we have proved in Step 2 that the q − 1 rows of P are linearly
+independent. Therefore Eq. (1.31) shows that F is equal to the subspace spanned by
+columns t (sk,2 , . . . , sk,a+N ) of the matrix [sk,i ]i,k . Since M does not depend on n, neither
+does F : this concludes the proof of Lemma 2.
+
+
+Remark 3. Let us prove that in Lemma 2, the subspace F is not always equal to Ra+N −1
+(i.e., that the matrix [sk,i ] may have rank less than its number of rows, namely a + N − 1).
+Consider the case where p and N are even (so that ω N/2 = −1). Then the definition (1.30)
+of the matrix M in Step 3 above yields ma+1+N/2,j = 0 for any j, so that Eq. (1.29) implies
+sk,a+1+N/2 = 0 for any k: the matrix [sk,i ]i,k has a zero row. This phenomenon does not
+occur in [8]; it comes from the new property (1.19) obtained in Remark 2. Indeed a direct
+
+                                                   14
+proof that sk,a+1+N/2 = 0 can be obtained as follows, using Eqns. (1.17), (1.28), and (1.27)
+but not the matrix M:
+                                               
+        sk,a+1+N/2 = δn Uk,N/2 (1) + Vk,N/2(1)
+                                   N                                          N
+                                δn X (k−1−N/2)ℓ                   δn          X
+                           =         ω          (Uk + Vk )(ω ℓ ) = Pk,a+1 (1)   (−1)ℓ = 0.
+                                N                                 N
+                                    ℓ=1                                                             ℓ=1
+
+
+1.5    Arithmetic and Asymptotic Properties
+In this section we conclude the proof of Proposition 1 stated in §1.1, by proving parts (ii)
+and (iii) and the fact that the sk,i are integers. Recall that
+
+      α = (4e)(a+1)/N (2N)2r+2 r −(a+1)/N +4(r+1) and β = (2e)(a+1)/N (r + 1)2r+2 N 2r+2 .
+
+Lemma 3. We have sk,i ∈ Z for any i ∈ {2, . . . , a + N} and any k ≤ d0 − 1, and as
+n → ∞:
+                 a
+                 X                          N
+                                            X −1
+           p
+   2(−1)                   sk,i L(f, i) +           sk,a+1+i f (i) ≤ αn+o(n) and           max |sk,i | ≤ β n(1+o(1)) .
+                                                                                          2≤i≤a+N
+                  i=2                         i=0
+               i≡p mod 2
+
+
+    In this lemma and throughout this section, we denote by o(1) any sequence that tends
+to 0 as n → ∞; it usually depends also on a, r, N, and k (but the dependence in k is not
+significant since k is bounded by d0 − 1, which depends only on n, a, r, N). We also recall
+that dn is the least common multiple of 1, 2, . . . , n.
+
+   We shall prove two lemmas now; the deduction of Lemma 3 from these lemmas (using
+Lemma 1 proved in §1.2) is exactly the same as the proof of Proposition 1 in [8, §4.5].
+Recall from §1.2 that
+                                                                                   n/N         a
+                                                         (t − rn)(2r+1)n+1    XX          pj,h
+                                    (a+1)−(2r+1)N
+                F (t) = (n/N)!                           Qn/N               =                  j
+                                                                                                 .
+                                                               (t + Nh) a+1           (t + Nh)
+                                                           h=0                h=0 j=1
+
+
+Lemma 4. For any j ∈ {1, . . . , a} and any h ∈ {0, . . . , n/N} we have
+
+                                          (Ndn/N )a+1−j N (a+1)n/N pj,h ∈ Z                                      (1.32)
+                                                                                              n(1+o(1))
+                                               (a+1)/N       2(r+1)−(a+1)/N             2r+2
+                       and |pj,h | ≤ 2                   N                    (r + 1)                            (1.33)
+
+where o(1) is a sequence that tends to 0 as n → ∞ and may depend also on N, a, and r.
+
+
+
+
+                                                                15
+Proof of Lemma 4: We follow the approach of [5] by letting
+                                   n/N                         
+               (n/N )!
+                                   X   (−1)h N −n/N      n/N
+                                                          h
+F0 (t)   =   Qn/N              =                                   ,
+              h=0 (t+N h)
+                                   h=0
+                                              t + Nh
+                                   n/N                                                    
+             (t−in/N )n/N
+                                   X (−1)h+n/N N −n/N              n/N
+                                                                    h
+                                                                               Nh + in/N
+                                                                                 n/N
+Gi (t)   =   Qn/N              =                                                               for 1 ≤ i ≤ rN,
+               h=0 (t+N h)                             t + Nh
+                                   h=0
+                                   n/N                       −Nh + (i + 1)n/N 
+           (t+1+in/N )n/N
+                                   X   (−1)h N     −n/N n/N
+                                                           h                   n/N
+Hi (t) =     Qn/N              =                                                               for 0 ≤ i ≤ (r + 1)N − 1.
+              h=0 (t+N h)
+                                   h=0
+                                                        t + Nh
+
+Then the partial fraction expansion of
+
+                 F (t) = F0 (t)a+1−(2r+1)N tG1 (t) . . . GrN (t)H0 (t) . . . H(r+1)N −1 (t)
+
+can be obtained by multiplying those of F0 , Gi and Hi using repeatedly the formulas
+  t          Nh
+t+N h
+      = 1 − t+N h
+                  and
+
+                                            X                          ℓ
+          1                     1                            1
+                 ′  ℓ
+                      =  ℓ  ′    ℓ
+                                          −      ℓ+1−i
+                                                                                                                      (1.34)
+  (t + Nh)(t + Nh )     N (h − h) (t + Nh) i=1 N         ′
+                                                       (h − h)ℓ+1−i (t + Nh′ )i
+
+with h 6= h′ . The denominator of pj,h comes both from this formula (and this contribution
+divides (Ndn/N )a+1−j ) and from the denominators of the coefficients in the partial fraction
+expansions of F0 , Gi , Hi (which belong to N −n/N Z, so that N (a+1)n/N accounts for this
+contribution). This concludes the proof of (1.32).
+
+    On the other hand, bounding from above the coefficients of the partial fraction expan-
+sions of F0 , Gi , Hi yields
+                                             rN                                                (r+1)N −1
+                                             Y          (n + in/N)!                              Y          ((i + 1)n/N)!
+             O(1)       −(a+1)n/N (a+1)n/N
+  |pj,h| ≤ n        N            2
+                                             i=1
+                                                   (n/N)!(n + (i − 1)n/N)!                       i=0
+                                                                                                           (n/N)!(in/N)!
+
+where O(1) is a constant depending only on a, r, N which can be made explicit (see
+                                                                  m!
+[5] for details). Simplifying the products and using the bound m1 !...mc!
+                                                                          ≤ cm valid when
+m1 + . . . + mc = m, one obtains
+                                           ((r + 1)n)!2
+    |pj,h| ≤ nO(1) (2/N)(a+1)n/N                         ≤ nO(1) (2/N)(a+1)n/N ((r + 1)N)2(r+1)n .
+                                         n!(n/N)!(2r+1)N
+This concludes the proof of Lemma 4.
+
+   The proof of the following lemma is inspired by that of [23, Lemma 1.4]. Recall that
+U1 and V1 are defined in Eqns. (1.8) and (1.9), and that
+
+                                         δn = (Ndn/N )a+1 N (a+1)n/N .
+
+                                                         16
+Lemma 5. The polynomials δn U1 (z) and δn V1 (z) have integer coefficients.
+
+Proof of Lemma 5: Recall from Eq. (1.8) that
+
+                                             n
+                                             X                   X ⌋
+                                                            a ⌊(t−1)/N
+                                                            X
+                                                        t                    pj,h
+                              U1 (z) = −            z                                .
+                                              t=1           j=1
+                                                                           (Nh − t)j
+                                                                   h=0
+
+
+Assume that δn U1 (z) does not have integer coefficients. Then there exists t ∈ {1, . . . , n}
+such that
+                          X     X ⌋ (Ndn/N )a+1 N (a+1)n/N pj,h
+                           a ⌊(t−1)/N
+                     σ :=                                       6∈ Z.
+                          j=1   h=0
+                                             (Nh − t)j
+
+Let p′j,h = (Ndn/N )a+1−j N (a+1)n/N pj,h , which is an integer thanks to Lemma 4. Then we
+have
+                                      X      X ⌋ djn/N p′j,h
+                                        a ⌊(t−1)/N
+                                 σ=                           j
+                                                                .
+                                      j=1    h=0
+                                                    (h − t/N)
+
+If N divides t then Nt − h is a positive integer less than or equal to n/N, so that it divides
+dn/N : this contradicts the assumption σ 6∈ Z. Therefore N does not divide t, so that
+F (−t) = 0.
+    Since σ 6∈ Z there exists h0 such that
+                                           a
+                                           X djn/N p′j,h0
+                                                                        6∈ Z.
+                                           j=1
+                                                  (h0 − t/N)j
+
+Now F (−t) = 0 so that
+
+                         a X
+                         X n/N
+                                        djn/N p′j,h               a
+                                                                  X djn/N p′j,h0
+                                                            =−                         6∈ Z.
+                         j=1 h=0
+                                     (h − t/N)j                   j=1
+                                                                        (h0 − t/N)j
+                             h6=h0
+
+
+This rational number has negative p-adic valuation for some prime number p. Therefore
+there exist h1 6= h0 and j0 , j1 such that
+                               djn/N
+                                   1                                      djn/N
+                                                                               0       
+                    vp                            < 0 and vp                               < 0.
+                             (h1 − t/N)j1                               (h0 − t/N)j0
+
+This implies
+                         min(vp (h1 − t/N), vp (h0 − t/N)) > vp (dn/N )
+so that vp (h0 − h1 ) > vp (dn/N ). This is a contradiction since 1 ≤ |h0 − h1 | ≤ n/N. This
+concludes the proof that δn U1 (z) ∈ Z[z]; the same proof works for δn V1 (z).
+
+
+
+                                                             17
+2     Siegel’s linear independence criterion
+The following criterion is based on Siegel’s ideas (see for instance [6, p. 81–82 and 215–216],
+[16, §3] or [15, Proposition 4.1]).
+Proposition 2. Let θ1 , . . . , θq be complex numbers, not all zero. Let τ > 0, and (Qn ) be
+a sequence of real numbers with limit +∞. Let N be an infinite subset of N, K ≥ 1, and
+                             (n)
+for any n ∈ N let L(n) = [ℓk,i ]1≤i≤q,1≤k≤K be a matrix with integer coefficients such that as
+n → ∞ with n ∈ N :
+                                             (n)
+                                       max |ℓk,i | ≤ Qn1+o(1)
+                                                i,k
+                                                (n)             (n)
+                         and max |ℓk,1 θ1 + . . . + ℓk,q θq | ≤ Qn−τ +o(1) .
+                                 1≤k≤K
+                                                                                  (n)   (n)
+Assume also that the subspace F of Rq spanned by the columns t (ℓk,1 , . . . , ℓk,q ) of L(n) is
+non-zero and independent from n ∈ N (provided n is large enough). Then we have
+
+                                  dimQ SpanQ (θ1 , . . . , θq ) ≥ τ + 1.
+
+    The usual version of this criterion (see for instance [9, Theorem 4]) is the same state-
+ment, but the assumption on F is replaced by the assumption that L(n) is invertible. The
+latter is stronger, since it is equivalent to asking F = Rq for any n. Indeed if F = Rq then
+L(n) has rank q: for each n we may extract q linearly independent columns of L(n) , and
+obtain an invertible matrix to which [9, Theorem 4] applies. The point is that we shall
+apply Proposition 2 to the matrices [sk,i ] constructed in Proposition 1, and the subspace
+F is not always equal to Rq (see Remark 3 in §1.4).
+
+    Let us prove Proposition 2 now. Denote by F the image of L(n) , assumed to be inde-
+pendent from n ∈ N (provided n is large enough). Let p = dim F . Permuting θ1 , . . . , θq
+if necessary, we may assume that a system of linear equations of F is given by
+                              p
+                              X
+                      xt =            µt,i xi for p + 1 ≤ t ≤ q, with µt,i ∈ Q.               (2.1)
+                               i=1
+
+We point out that the coefficients µt,i are rational numbers because the matrices L(n) have
+                                  (n)          (n)
+integer coefficients. Since t (ℓk,1 , . . . , ℓk,q ) ∈ F for any 1 ≤ k ≤ K and any n ∈ N
+sufficiently large, Eq. (2.1) yields
+                      p
+                      X                   p
+                                          X                 q
+                                                             X         Xp
+                             (n)                 (n)                        (n)
+                            ℓk,i θi   =         ℓk,i    θi +   µt,i θt =   ℓk,i θi′           (2.2)
+                      i=1                 i=1               t=p+1         i=1
+                          P
+upon letting θi′ = θi + qt=p+1 µt,i θt for 1 ≤ i ≤ p. Moreover for any n ∈ N sufficiently
+large, we have rkL(n) = dim F = p and Eq. (2.1) shows that the last q − p rows of L(n) are
+linear combinations of the first p rows. Therefore the first p rows are linearly independent:
+             (n)
+the matrix [ℓk,i ]1≤i≤p,1≤k≤K has rank p. Accordingly for each n there exist pairwise distinct
+
+                                                          18
+                                                                           (n)
+integers k1 , . . . , kp between 1 and K such that the matrix M (n) = [ℓkj ,i ]1≤i,j≤p is invertible.
+Using Eq. (2.2) we may apply the usual version of Siegel’s criterion (namely [9, Theorem 4])
+to this matrix and deduce that
+                                dimQ SpanQ (θ1′ , . . . , θp′ ) ≥ τ + 1.
+Since θi′ ∈ SpanQ (θ1 , . . . , θq ) for any 1 ≤ i ≤ p, this concludes the proof of Proposition 2.
+
+Remark 4. The idea of applying the usual version of Siegel’s criterion to numbers θi′
+defined as linear combinations of θ1 , . . . , θq appears also in [9] (see Proposition 2 in §6
+and Eq. (9.1)). However the situation is different in that paper: the rows of the matrix P
+(see Step 2 in §1.4 above) are linearly dependent, which is not the case here.
+
+
+3     Deduction of Theorems 1 and 2 from Proposition 1
+In this section we prove Theorems 1 and 2 stated in the introduction, and also a result
+that nearly contains both of them (namely Theorem 4 stated at the end of §3.2). At last,
+we show in §3.3 that the linear forms constructed in [11] are a special case of those studied
+here.
+
+3.1     Proof of Theorem 1
+Let f , T , p, ε, and a be as in the statement of Theorem 1; put N = T . We consider the
+complex numbers θ1 , . . . , θa+N −1 given by:
+                   
+                    θi−1 = 2(−1)p L(f, i) for 2 ≤ i ≤ a with i ≡ p mod 2,
+                      θi−1 = 0 for 2 ≤ i ≤ a with i 6≡ p mod 2,
+                   
+                      θa+i = f (i) for 0 ≤ i ≤ N − 1.
+                                                                           (n)
+We apply Proposition 1 to each integer multiple n of N, and let ℓk,i = sk,i+1 for 1 ≤ i ≤
+a + N − 1 and 1 ≤ k ≤ c1 . Then we apply Siegel’s linear independence criterion (namely
+Proposition 2 stated and proved in §2) with q = a+N −1, Qn = β n and τ = − log     α
+                                                                               log β
+                                                                                     (so that
+  −τ    n
+Qn = α ), where α and β are defined in §1.1; we take for N the set of integer multiples
+of N. Therefore we obtain
+                                                                                    log α
+ dimQ SpanQ {L(f, i), 2 ≤ i ≤ a and i ≡ p mod 2} ∪ {f (0), . . . , f (N − 1)} ≥ 1 −         .
+                                                                                      log β
+                                                                                        (3.1)
+                                                              a
+Taking a very large and r equal to the integer part of (log(a))2 concludes the proof of
+Theorem 1 since
+                       log α          1 + εa
+                   1−        −N =              log a where lim εa = 0;
+                       log β         1 + log 2             a→+∞
+
+here the shift of N in the lower bound comes from f (0), . . . , f (N − 1) that appear in
+Eq. (3.1).
+
+                                                  19
+3.2    Proof of Theorem 2
+Let f , T , E, and p be as in the statement of Theorem 2. Let 0 < ε < 1/4 and a be
+sufficiently large with respect to ε, T , and dim E. We denote by D the product of all
+primes less than or equal to (1 − 3ε) log a (such a product has asymptotically the largest
+possible number of divisors with respect to its size, see [13, Chapter XVIII, §1]). Then we
+have                                  X
+                          log D =             log p ≤ (1 − 2ε) log a
+                                    p≤(1−3ε) log a
+
+by the prime number theorem, i.e., D ≤ a1−2ε . We take for r the integer part of aε . At
+last, we let N = DT .
+
+    For any divisor d of D = N/T and any m ∈ Z, let gd (m) = f (m/d) if d divides m, and
+gd (m) = 0 otherwise. Since f is T -periodic we have gd (m + N) = gd (m) for any m.
+    We shall choose below an integer wd for each divisor d of D; let
+                                          X
+                                      g=      wd gD/d .
+                                              d|D
+
+   We shall apply Proposition 1 to the N-periodic function g and obtain linear forms in
+the numbers
+                           X∞
+                               1 X                X     X f (m′ )di
+                 L(g, i) =         w d f (md/D) =   w d
+                           m=1
+                               mi                       ′
+                                                           m′i D i
+                                      d|D                        d|D    m ≥1
+                                     D|md
+
+by letting m′ = md/D. Therefore we have
+                                                 X             
+                                L(g, i) = D −i             wd di L(f, i).                 (3.2)
+                                                     d|D
+
+
+
+   Notice that D has δ = 2π((1−3ε) log a) divisors, with
+                                                                              log a
+                  log δ = π((1 − 3ε) log a) log 2 ≥ (1 − 4ε)(log 2)                   .   (3.3)
+                                                                            log log a
+Assume that the number of values (0.2) which do not belong to E is less than δ. Let
+2 ≤ i1 < i2 < . . . < iδ−1 ≤ a be integers such that if L(f, i) 6∈ E and i ≡ p mod 2,
+2 ≤ i ≤ a, then i = ij for some j.
+   The homogeneous linear system
+                          X
+                              wd dij = 0 for any j ∈ {1, . . . , δ − 1}         (3.4)
+                          d|D
+
+has δ unknowns wd , where d ranges through the set D of divisors of D, and δ − 1 equations.
+Therefore it has a non-zero integer solution (wd ) ∈ ZD .
+
+                                                 20
+                                                                     P
+    At this point, the integers wd are chosen in [11] such that d|D wd d 6= 0, using an
+elementary zero estimate (namely, a generalized Vandermonde determinant is non-zero).
+Here we do not need to make any such assumption: we just assume that wd 6= 0 for at
+least one d. Indeed a (much more complicated) zero estimate is used in the present proof,
+namely Theorem 3.                                          P
+    Proposition 1 applies to the N-periodic function g = d|D wd gD/d defined above. Using
+also Siegel’s linear independence criterion as in §3.1 we obtain
+                                                                                 log α
+  dimQ SpanQ {g(0), . . . , g(N − 1)} ∪ {L(g, i), 2 ≤ i ≤ a and i ≡ p mod 2} ≥ 1 −
+                                                                                   log β
+                                                                                     (3.5)
+with
+                                log α     log r          ε
+                             1−       ∼            ∼           log a
+                                log β   1 + log 2    1 + log 2
+as a → ∞ (recall that r is the integer part of aε ).
+    On the other hand, the numbers that appear in the left hand side of (3.5) have the
+following properties:
+   • g(0), . . . , g(N − 1) belong to {0, f (0), f (1), . . . , f (T − 1)}.
+
+   • For 2 ≤ i ≤ a with i ≡ p mod 2, L(g, i) is zero if i ∈ {i1 , . . . , iδ−1 }, and belongs to E
+     otherwise, as Eqns. (3.2) and (3.4) show.
+Therefore we have
+                                                                          
+ dimQ SpanQ {g(0), . . . , g(N − 1)} ∪ {L(g, i), 2 ≤ i ≤ a and i ≡ p mod 2} ≤ T + dim E.
+                                                                                    (3.6)
+Combining Eqns. (3.5) and (3.6) yields a contradiction provided a is large enough. This
+concludes the proof of Theorem 2.
+
+   Since 4(1 + log 2) > 7, the same proof (with ε replaced with ε/4 to take Eq. (3.3) into
+account) provides the following refinement of Theorem 2.
+Theorem 4. Let T ≥ 1, and f : Z → C be such that f (n + T ) = f (n) for any n. Assume
+that f is not identically zero. Let p ∈ {0, 1}, 0 < ε < 1, and a be sufficiently large (in
+terms of T and ε). Let E be a finite-dimensional Q-vector space contained in C with
+dim E < 7ε log a. Then among the numbers L(f, s) with 2 ≤ s ≤ a and s ≡ p mod 2, at
+least                                           log a
+                                       2(1−ε) log log a
+do not belong to E.
+    Choosing ε = 7/8, this refinement implies that the numbers L(f, s) with 2 ≤ s ≤ a
+and s ≡ p mod 2 are not all contained in such a subspace E: they span a Q-vector space
+                                                                                       1−o(1)
+of dimension at least 18 log a. Except for the multiplicative constant ( 81 instead of 1+log 2
+                                                                                               ),
+Theorem 1 follows as a corollary of Theorem 4.
+
+                                                  21
+3.3    Connection to the proof of [11]
+In this section we show that the linear forms used in [11] to prove (0.1) are a special case
+of those studied in the present paper (namely in the proof of Theorem 2 with f (m) = 1,
+T = r = k = 1, and p ≡ a mod 2). Accordingly they are related to the Padé approximation
+problem stated in §1.4, in which the number of equations is essentially equal to the number
+of unknowns.
+
+    We keep the notation of the proof of Theorem 2 in §3.2, with T = 1 and f (m) = m
+for any m ∈ Z. In particular N = D is the product of all primes less than or equal to
+(1 − 3ε) log a. For any divisor
+                              Pd of D we have gd (m) = 1 if d divides m, and gd (m) = 0
+otherwise. The function g = d|D wd gD/d satisfies
+                                         X
+                                g(m) =          wd for any m ∈ Z.                                     (3.7)
+                                          d|D
+                                         D|md
+
+
+Now let n be an integer multiple of 2N = 2D, and let p ∈ {0, 1} be such that p ≡ a mod 2.
+Then the rational function F satisfies the symmetry property of well-poised hypergeometric
+series:
+                                                   n
+                 F (−n − t) = (−1)(2r+1)n+1+(a+1)( N +1) F (t) = (−1)p F (t).        (3.8)
+This is the key ingredient (since the Ball-Rivoal theorem) to get rid of even zeta values,
+when p = 1. In our approach where Nesterenko’s linear independence criterion is replaced
+with Siegel’s combined with Shidlovsky’s lemma, this property cannot be used in the same
+way because it is destroyed when considering S (k−1) (z) for k ≥ 2. Using both S0 and S∞
+in constructing the linear forms (see §1.2) makes it possible to overcome this difficulty (as
+in [8]). With k = 1 this trick does not modify the linear forms we are interested in, since
+for any ℓ ∈ Z we have using Eqns. (1.3) and (3.8) and the fact that N divides n:
+                                                ∞
+                                                X                                   ∞
+                                                                                    X
+                  ℓ         p      −ℓ                               ℓt          p
+             S0 (ω ) + (−1) S∞ (ω ) =                   F (−t)ω + (−1)                    F (t)ω ℓt
+                                                t=n+1                               t=1
+                                                X∞                                 
+                                         =            ω ℓt F (−n − t) + (−1)p F (t)
+                                                t=1
+                                                            ∞
+                                                            X
+                                                        p
+                                         = 2(−1)                  F (t)ω ℓt .                         (3.9)
+                                                            t=1
+
+
+
+    We are now in position to express differently the linear forms constructed in part (iii)
+of Proposition 1 from the map g given by Eq. (3.7), in the special case where N = D, n
+is a multiple of 2N, p ≡ a mod 2, r = 1, and k = 1. Denote by Λn this linear form. Then
+
+
+
+
+                                                 22
+we have using Lemma 1 and Eqns. (3.9) and (3.7):
+                                           D
+                                           X                                       
+                      δn−1 Λn      =             g (ℓ) S0 (ω ℓ ) + (−1)p S∞ (ω −ℓ )
+                                                 b
+                                           ℓ=1
+                                                       ∞
+                                                       X               D
+                                                                       X
+                                   = 2(−1)p                  F (t)            g (ℓ)ω ℓt
+                                                                              b
+                                                       t=1             ℓ=1
+                                                       ∞
+                                                       X
+                                   = 2(−1)p                  F (t)g(t)
+                                                       t=1
+                                                       X          X
+                                   = 2(−1)p                  wd           F (t)
+                                                       d|D        t≥1
+                                                                  D|dt
+                                                       X          X∞
+                                   = 2(−1)p                  wd           F (Dt′ /d)
+                                                       d|D        t′ =1
+
+                                                       X            ∞
+                                                                  d X
+                                                                  X
+                                                   p                                             D
+                                   = 2(−1)                   wd                 F (mD + j          ).
+                                                                  j=1 m=1
+                                                                                                 d
+                                                       d|D
+
+
+In the last expression the sum on m ≥ 1 should have begun at m = 0, but this makes no
+difference since F (jD/d) = 0 for any 1 ≤ j ≤ d. Now let R(t) = F (Dt); then we have
+
+                                            X XX                  d     ∞
+                                 (−1)p                       j
+                                       Λn =  wd         R(m + ).                                              (3.10)
+                                  2δn           j=1 m=1
+                                                             d
+                                                   d|D
+
+                                            p
+Up to the normalizing factor (−1)
+                                2δn
+                                    these are exactly the linear forms rbn used in [11] to
+prove (0.1). Indeed the following notation is used in [11] for 1 ≤ j ≤ D and d|D:
+                                           Q3Dn                                                        j
+                                                           j                                 ∞
+                                                                                             X
+                      3Dn    s+1−3D         j=0 (t − n + D )
+         Rn (t) = D         n!              Qn           a+1
+                                                             ,                      rn,j =       Rn m +   ,
+                                             j=0 (t + j)                                     m=1
+                                                                                                        D
+
+                                           d
+                                           X                                  X
+                                 rbn,d =         rn,j D ,             ren =         wd rbn,d .
+                                                       d
+                                           j=1                                d|D
+
+Now, up to the normalizing factor Rn (t) is equal to the rational function R(t) = F (Dt) so
+that Λn is equal to ren using Eq. (3.10).
+
+
+References
+ [1] R. Apéry – “Irrationalité de ζ(2) et ζ(3)”, in Journées Arithmétiques (Luminy,
+     1978), Astérisque, no. 61, 1979, p. 11–13.
+
+                                                             23
+ [2] K. Ball & T. Rivoal – “Irrationalité d’une infinité de valeurs de la fonction zêta
+     aux entiers impairs”, Invent. Math. 146 (2001), no. 1, p. 193–207.
+
+ [3] D. Bertrand – “Le théorème de Siegel-Shidlovsky revisité”, in Number theory, Anal-
+     ysis and Geometry: in memory of Serge Lang (D. Goldfeld et al., eds.), Springer,
+     2012, p. 51–67.
+
+ [4] D. Bertrand & F. Beukers – “Équations différentielles linéaires et majorations
+     de multiplicités”, Ann. Sci. École Norm. Sup. (4) 18 (1985), no. 1, p. 181–192.
+
+ [5] P. Colmez – “Arithmétique de la fonction zêta”, in Journées mathématiques X-UPS
+     2002, éditions de l’école Polytechnique, 2003, p. 37–164.
+
+ [6] N. Fel’dman & Y. Nesterenko – Number theory IV, transcendental numbers,
+     Encyclopaedia of Mathematical Sciences, no. 44, Springer, 1998, A.N. Parshin and
+     I.R. Shafarevich, eds.
+
+ [7] S. Fischler – “Distribution of irrational zeta values”, Bull. Soc. Math. France 145
+     (2017), no. 3, p. 381–409.
+
+ [8] — , “Shidlovsky’s multiplicity estimate and irrationality of zeta values”, J. Austral.
+     Math. Soc. 105 (2018), no. 2, p. 145–172.
+
+ [9] S. Fischler & T. Rivoal – “Linear independence of values of G-functions, II.
+     Outside the disk of convergence”, preprint arXiv 1811.08758 [math.NT], soumis.
+
+[10] — , “Approximants de Padé et séries hypergéométriques équilibrées”, J. Math. Pures
+     Appl. 82 (2003), no. 10, p. 1369–1394.
+
+[11] S. Fischler, J. Sprang & W. Zudilin – “Many odd zeta values are irrational”,
+     preprint arXiv 1803.08905 [math.NT], Compositio Math., to appear, 2018.
+
+[12] S. Gun, M. R. Murty & P. Rath – “On a conjecture of Chowla and Milnor”,
+     Canad. J. Math. 63 (2011), no. 6, p. 1328–1344.
+
+[13] G. Hardy & E. Wright – An introduction to the theory of numbers, fifth éd.,
+     Oxford Science Publications, 1979.
+
+[14] T. Hessami Pilehrood & K. Hessami Pilehrood – “Irrationality of sums of zeta
+     values”, Mat. Zametki [Math. Notes] 79 (2006), no. 4, p. 607–618 [561–571].
+
+[15] R. Marcovecchio – “Linear independence of linear forms in polylogarithms”, An-
+     nali Scuola Norm. Sup. Pisa V (2006), no. 1, p. 1–11.
+
+[16] T. Matala-aho – “On Diophantine approximations of the solutions of q-functional
+     equations”, Proc. Roy. Soc. Edinburgh Sect. A 132 (2002), p. 639–659.
+
+
+
+                                             24
+[17] M. H. Nash – “Special values of Hurwitz zeta functions and Dirichlet L-functions”,
+     Ph.D. thesis, Univ. of Georgia, Athens, U.S.A., 2004.
+
+[18] J. Neukirch – Algebraic number theory, Springer, 1999.
+
+[19] M. Nishimoto – “On the linear independence of the special values of a Dirichlet
+     series with periodic coefficients”, preprint arXiv 1102.3247 [math.NT], 2011.
+
+[20] T. Rivoal – “La fonction zêta de Riemann prend une infinité de valeurs irrationnelles
+     aux entiers impairs”, C. R. Acad. Sci. Paris, Ser. I 331 (2000), no. 4, p. 267–270.
+
+[21] T. Rivoal & W. Zudilin – “Diophantine properties of numbers related to Catalan’s
+     constant”, Math. Annalen 326 (2003), no. 4, p. 705–721.
+
+[22] A. B. Shidlovsky – Transcendental numbers, de Gruyter Studies in Math., no. 12,
+     de Gruyter, Berlin, 1989.
+
+[23] J. Sprang – “Infinitely many odd zeta values are irrational. By elementary means”,
+     preprint arXiv:1802.09410 [math.NT], 2018.
+
+[24] W. Zudilin – “One of the odd zeta values from ζ(5) to ζ(25) is irrational. By ele-
+     mentary means”, SIGMA 14 (2018), no. 028, 8 pages.
+
+
+
+
+                                            25
+

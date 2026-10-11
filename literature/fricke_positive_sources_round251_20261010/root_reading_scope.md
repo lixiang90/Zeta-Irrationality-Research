@@ -1,0 +1,32 @@
+# Root251 实际读域、独立核定与范围
+
+2026-10-10。本文件登记实际读取，不把同伴消息或作者自读认作原始文献全文认证。
+
+## 本轮实际FULL数学读域
+
+|文件|Bytes / SHA256|实际用途|
+|---|---|---|
+|research/chi7_fricke_all_elliptic_periods_round250_20261010.md|10515 / 94a9350f6da2408bdcae27ca7502292fe916b09156b81c3d3e9f646efdd88483|全文A1–A13，全部返回、strict Abel、Bernoulli周期、χ(d)与Q±对应、exact odd gauge和全运输覆盖。|
+|research/fricke_multivalent_budget_gate_round250_20261010.md|10497 / f8ca50e7f185b00b2e40e215364c700dc34b60a8167f9859a8826f06ff61623f|全文，同一rank3安全模型与负处输入、positive λ>4/δ>8的严格必要关。|
+|research/fricke_parity_all_leaf_cap_round250_20261010.md|9100 / f6951eddc72e3baae4192d9c123a13e882d7e1b47b3ae5fb4a6919e0798ecedb|全文，负处all-leaf/elliptic与整数背景，禁止移植正处免费rank2。|
+|research/chi7_positive_filling_stabilizer_round251_20261010.md|10339 / eaa1c4db0b39b8d6ed1edf6005c04c14e6c98b5666275218717405dfd1bb824c|冻结全文P1–P12，整数c与双符号、parity全链、actual G和无限填族；Root独立逐式核定。|
+|research/fricke_positive_transport_obstruction_round251_20261010.md|11596 / f375872209630c32338ee45fc8a21bf3fc36d11e3f121b0c28728d12cf23d160|冻结全文六节P1–P12、floor/sign/equal-weight/χ链、全Q+到达叶与actual conic lift；Root独立逐式核定。|
+|research/fricke_positive_energy_gate_round251_20261010.md|10626 / c9660eebd1199bfd9958ee4ba7372f86a5dc48697a661cf506491836f4cf0a86|冻结全文E1–E13，同对象all-M Jensen、全F三项factor、全n dyadic唯一最深项；Root独立纸核。|
+
+251三份同伴scope分别actual FULL读取：alternative1993 B/074b9906c7ee95dedd8461ec80011470764d3c1fa7d7c94ef8ce8eb14c562d83；packet4325 B/26ead737e206effb1a52b4681f09e3605c2e61eab59c2205af723562ed3f1f52；dual4712 B/aa255408b69b478d92a37b910a7fcf296e7fd398038eeb75be7f572ed63093d3。scope的FULL是读到记录本身，不领其中上游的Root原文读史。
+
+## 作者自读与文档输入
+
+Root NEW数学稿research/fricke_positive_parity_energy_round251_20261010.md最终9053 B/SHA256 fd09ab922cf8ca9a18fa72615f54f2cfc6b429ac45d588ba1287458f890a19bc；NEW进展报告research/research_fricke_positive_progress_round251_20261010.md最终4964 B/3c4b7041615d8b42b163c44df613c47fb5c61c29c067976b2ac765cce5287b89。两份最终保存后实际FULL作者复读，无截断；不是独审。唯一独立review由B另做，归档只接受其覆盖以上最终bytes/hash。
+
+实际FULL读250manifest7492 B/29de1bac2979ba1a2c2371e949f1310a30abd9169e487e52589bfa35b4f08430与旧archive源码9268 B/4ab85233f5ab95cca4fa84cae23daa7302d8ed456522bc0cac055247f9eed10c，后者仅作归档格式参考，没有复跑。旧main711027 B/c8c31bd083901187d113a754cda7e4cd6bc903dd6ffdb26603eb7cf77042b771与policy17830 B/13cfc88007ce410415440713fd21bda2befceb3bbb0b00a67085138aa7c0ffcf由归档验证完整bytes/hash和prefix；Root本轮只actual读policy末段，未声称重新FULL main或policy。
+
+## primary与结论边界
+
+本轮Root未新browse或下载primary，也未重新FULL作者CDT PDF。原CDT整数型接口和模性/Fricke/actual covering采用250冻结证明与已付选读输入；新parity与Jensen/代数/估值均自含纸证。
+
+B实际FULL已存current CDT物理123–130页选段的读史归B；Root读取B稿和scope，没有冒称Root重读该32379 B TXT。Nazarov只作为B指出的方向限制，不用它证明Root all-map lower。C一次二query search仅metadata/snippets、无原文GET且未采用数学结果；不能据此称网络0、原著全文覆盖或全球新颖。
+
+数学运行/CAS/interval/Lean/prime/map/word/参数扫描0，新原文下载0，外仓库Git修改0，旧producer复跑0。一轮只运行一个NEW文档归档，最终read-only pin/prefix检查区分于数学执行。不动冻结250数学稿或manifest，main/policy只追加一次。
+
+全Q+nonfill、实际圆锥提升、无限真实填叶族和all-M δ<6已付；完整稳定子/任意actual F能量/成功共同图仍未付，正背景不免费。没有新数值定理。251非formal、248后第三轮；252正式复盘按原规则结束本源default局部投入，不自动延长或reset。

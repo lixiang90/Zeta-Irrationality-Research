@@ -1,0 +1,53 @@
+                              COUNTING ETA-QUOTIENTS OF PRIME LEVEL             835
+
+
+Finally, we will need the transformation
+                                       f (T z) = e2πiδ/24 f (z).
+Notice that this function is “almost” a modular form. With this in mind, we consider
+certain products of these functions with the goal of eliminating the “almost”. This
+brings us to eta-quotients, which we defined in (1-2). We are interested in when
+these eta-quotients are modular forms. We have the following theorem which
+partially answers this question.
+Theorem 2.4 [Ono 2004, Theorem 1.64]. Define the eta-quotient
+                                    Y
+                            f (z) =   ηrδ (δz),
+                                                  δ|N
+and set
+                                              1X
+                                         k=      rδ ∈ Z.
+                                              2
+                                                δ|N
+
+Suppose our exponents r1 , . . . , r N satisfy
+             X                                           XN
+                δrδ ≡ 0 (mod 24) and                        rδ ≡ 0 (mod 24).
+                                                          δ
+                 δ|N                                     δ|N
+Then,
+                                       f |k γ (z) = χ (d) f (z)
+for all γ =     a b
+                cd      ∈ 00 (N ), where
+                                                      (−1)k s
+                                                               
+                                        χ (n) =
+                                                        n
+                     δ rδ .
+           Q
+with s =       δ|N
+   This theorem provides conditions on when an eta-quotient is a weakly holo-
+morphic modular form. However, to answer the question of when an eta-quotient
+is a modular form we need the following theorem, which provides information
+concerning the order of vanishing at the cusps of 00 (N ).
+Theorem 2.5 [Ono 2004, Theorem 1.65]. Let f (z) be an eta-quotient satisfying
+the conditions of Theorem 2.4. Let c, d ∈ N with d | N and (c, d) = 1. Then, the
+order of vanishing of f (z) at the cusp c/d is
+                                    N X (d, δ)2rδ
+                             vd =                     .
+                                    24    (d, N /d)dδ
+                                              δ|N
+
+                                       3. Proofs of results
+
+We will provide the proofs for the results given in Section 1. We will assume that
+the eta-quotients being discussed always have N = p > 3, which is a prime, unless
+

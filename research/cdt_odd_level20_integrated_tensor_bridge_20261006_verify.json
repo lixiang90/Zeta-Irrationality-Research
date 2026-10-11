@@ -1,0 +1,336 @@
+{
+  "status": "fixed_integrated_tensor_cutoff_exact_audit_passed",
+  "scope": "Fixed rank8 unit array; full cutoff rational verification. Three legacy family lower constants reused read-only; no legacy producer run.",
+  "check_count": 57,
+  "checks": [
+    "actual_nested_unit_flat",
+    "sequence_factors",
+    "prefix_valuations",
+    "three_background_thresholds",
+    "floor_sum",
+    "matching_total_baseline",
+    "matching_flat_sharp_baseline",
+    "gamma_continuous_1_3",
+    "gamma_continuous_2_3",
+    "gamma_saturation",
+    "m8_C_direct",
+    "cutoff_piece_0_1/3_lower",
+    "cutoff_piece_1/3_2/3_lower",
+    "cutoff_piece_2/3_1_lower",
+    "cutoff_piece_1_8/7_lower",
+    "cutoff_piece_8/7_7/6_lower",
+    "cutoff_piece_7/6_4/3_lower",
+    "cutoff_piece_4/3_7/5_lower",
+    "cutoff_piece_7/5_8/5_lower",
+    "cutoff_piece_8/5_7/4_lower",
+    "cutoff_piece_7/4_2_lower",
+    "cutoff_piece_2_7/3_lower",
+    "cutoff_piece_7/3_8/3_lower",
+    "cutoff_piece_8/3_7/2_lower",
+    "cutoff_piece_7/2_4_lower",
+    "cutoff_piece_4_7_lower",
+    "cutoff_piece_7_8_lower",
+    "continuity_at_1/3",
+    "continuity_at_2/3",
+    "continuity_at_1",
+    "continuity_at_8/7",
+    "continuity_at_7/6",
+    "continuity_at_4/3",
+    "continuity_at_7/5",
+    "continuity_at_8/5",
+    "continuity_at_7/4",
+    "continuity_at_2",
+    "continuity_at_7/3",
+    "continuity_at_8/3",
+    "continuity_at_7/2",
+    "continuity_at_4",
+    "continuity_at_7",
+    "unified_minimum_P_minus_gamma",
+    "complete_constant_minimizer_interval",
+    "exact_integrated_kappa",
+    "rank8_necessary_scale",
+    "rank8_scale_above_14_5",
+    "family_13_optimistic_gain",
+    "family_13_floor",
+    "family_14_optimistic_gain",
+    "family_14_floor",
+    "family_15_optimistic_gain",
+    "family_15_floor",
+    "family13_gap",
+    "family14_gap",
+    "positive_Taylor_log16_bound",
+    "height_gain_to_final_cost"
+  ],
+  "cutoff_pieces": [
+    {
+      "lo": "0",
+      "hi": "1/3",
+      "I": [
+        "1117/56",
+        "-8",
+        "1/2"
+      ],
+      "P_minus_gamma": [
+        "1117/56",
+        "-10",
+        "7/2"
+      ],
+      "minimum": "8569/504"
+    },
+    {
+      "lo": "1/3",
+      "hi": "2/3",
+      "I": [
+        "1117/56",
+        "-8",
+        "1/2"
+      ],
+      "P_minus_gamma": [
+        "3323/168",
+        "-9",
+        "2"
+      ],
+      "minimum": "7393/504"
+    },
+    {
+      "lo": "2/3",
+      "hi": "1",
+      "I": [
+        "1117/56",
+        "-8",
+        "1/2"
+      ],
+      "P_minus_gamma": [
+        "3211/168",
+        "-7",
+        "1/2"
+      ],
+      "minimum": "2119/168"
+    },
+    {
+      "lo": "1",
+      "hi": "8/7",
+      "I": [
+        "1285/56",
+        "-14",
+        "7/2"
+      ],
+      "P_minus_gamma": [
+        "3715/168",
+        "-13",
+        "7/2"
+      ],
+      "minimum": "1987/168"
+    },
+    {
+      "lo": "8/7",
+      "hi": "7/6",
+      "I": [
+        "147/8",
+        "-6",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "421/24",
+        "-5",
+        "0"
+      ],
+      "minimum": "281/24"
+    },
+    {
+      "lo": "7/6",
+      "hi": "4/3",
+      "I": [
+        "539/24",
+        "-13",
+        "3"
+      ],
+      "P_minus_gamma": [
+        "173/8",
+        "-12",
+        "3"
+      ],
+      "minimum": "263/24"
+    },
+    {
+      "lo": "4/3",
+      "hi": "7/5",
+      "I": [
+        "137/8",
+        "-5",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "391/24",
+        "-4",
+        "0"
+      ],
+      "minimum": "1283/120"
+    },
+    {
+      "lo": "7/5",
+      "hi": "8/5",
+      "I": [
+        "881/40",
+        "-12",
+        "5/2"
+      ],
+      "P_minus_gamma": [
+        "2543/120",
+        "-11",
+        "5/2"
+      ],
+      "minimum": "1199/120"
+    },
+    {
+      "lo": "8/5",
+      "hi": "7/4",
+      "I": [
+        "125/8",
+        "-4",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "355/24",
+        "-3",
+        "0"
+      ],
+      "minimum": "229/24"
+    },
+    {
+      "lo": "7/4",
+      "hi": "2",
+      "I": [
+        "87/4",
+        "-11",
+        "2"
+      ],
+      "P_minus_gamma": [
+        "251/12",
+        "-10",
+        "2"
+      ],
+      "minimum": "107/12"
+    },
+    {
+      "lo": "2",
+      "hi": "7/3",
+      "I": [
+        "55/4",
+        "-3",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "155/12",
+        "-2",
+        "0"
+      ],
+      "minimum": "33/4"
+    },
+    {
+      "lo": "7/3",
+      "hi": "8/3",
+      "I": [
+        "263/12",
+        "-10",
+        "3/2"
+      ],
+      "P_minus_gamma": [
+        "253/12",
+        "-9",
+        "3/2"
+      ],
+      "minimum": "31/4"
+    },
+    {
+      "lo": "8/3",
+      "hi": "7/2",
+      "I": [
+        "45/4",
+        "-2",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "125/12",
+        "-1",
+        "0"
+      ],
+      "minimum": "83/12"
+    },
+    {
+      "lo": "7/2",
+      "hi": "4",
+      "I": [
+        "47/2",
+        "-9",
+        "1"
+      ],
+      "P_minus_gamma": [
+        "68/3",
+        "-8",
+        "1"
+      ],
+      "minimum": "20/3"
+    },
+    {
+      "lo": "4",
+      "hi": "7",
+      "I": [
+        "15/2",
+        "-1",
+        "0"
+      ],
+      "P_minus_gamma": [
+        "20/3",
+        "0",
+        "0"
+      ],
+      "minimum": "20/3"
+    },
+    {
+      "lo": "7",
+      "hi": "8",
+      "I": [
+        "32",
+        "-8",
+        "1/2"
+      ],
+      "P_minus_gamma": [
+        "187/6",
+        "-7",
+        "1/2"
+      ],
+      "minimum": "20/3"
+    }
+  ],
+  "constant_minimizer_intervals": [
+    [
+      "4",
+      "7"
+    ]
+  ],
+  "kappa": "263/96",
+  "rank8_necessary_rho": "263/84",
+  "optimistic_families": [
+    {
+      "rank": 13,
+      "old_relaxed_necessary_scale": "1345/468",
+      "max_known_S1_S2_credit": "5/468",
+      "new_optimistic_lower_bound": "335/117"
+    },
+    {
+      "rank": 14,
+      "old_relaxed_necessary_scale": "2577/910",
+      "max_known_S1_S2_credit": "5/546",
+      "new_optimistic_lower_bound": "3853/1365"
+    },
+    {
+      "rank": 15,
+      "old_relaxed_necessary_scale": "1769/630",
+      "max_known_S1_S2_credit": "1/126",
+      "new_optimistic_lower_bound": "14/5"
+    }
+  ],
+  "exp_14_5_11_term_lower": "325146068153/19775390625",
+  "script_sha256": "bdd943e711a83e468a2ad002ca7132556e199f6fe598a1b0f85859ec5152a64f"
+}

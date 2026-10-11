@@ -1,0 +1,274 @@
+2                                            FIDALGO AND LÓPEZ
+
+
+[12], [29], and [32]. When m = 0 both definitions coincide with that of the well-known Padé
+approximation in its linear presentation.
+   Apart from Hermite’s result, type I, type II, and a combination of the two (called mixed type),
+have been employed in the proof of the irrationality of other numbers. For example, in [7] F. Beukers
+shows that Apery’s proof (see [1]) of the irrationality of ζ(3) can be placed in the context of mixed
+type Hermite-Padé approximation. See [47] for a brief introduction and survey on the subject.
+More recently, mixed type approximation has appeared in random matrix and non-intersecting
+brownian motions theories (see, for example, [6] and [13]).
+   In applications in the areas of number theory, convergence of simultaneous rational approxima-
+tion, and asymptotic properties of type I and type II polynomials, a central question is that of
+uniqueness, to within a constant factor.
+Definition 1.1. A multi-index n is said to be normal for the system f for type I approximation
+(respectively, for type II,) if deg an,j = nj − 1, j = 0, . . . , m (respectively, deg Qn = |n|). A system
+of functions f is said to be perfect if all multi-indices are normal.
+   It is easy to see that under normality (an,0 , . . . , an,m ) and Qn are uniquely determined to within
+a constant factor.
+   Considering the construction at the origin (instead of z = ∞ which we chose for convenience),
+the system of exponentials considered by Hermite, (ew0 z , . . . , ewm z ), wi 6= wj , i 6= j, i, j = 0, . . . , m,
+is known to be perfect for type I and type II. A second example of a perfect system for both types is
+that given by the binomial functions (1 − z)w0 , . . . , (1 − z)wm , wi − wj 6∈ Z. All multi-indices n such
+that n0 ≥ · · · ≥ nm are known to be type I and type II normal for (logm (1 − x), . . . , log(1 − x), 1).
+When normality occurs for multi-indices with decreasing components the system is said to be
+weakly perfect. Except for systems formed by Cauchy transforms of measures, basically these
+are the only examples known of perfect or weakly perfect systems.
+1.2. Markov systems and orthogonality. Let s be a finite Borel measure with constant sign
+whose compact support consists of infinitely many points and is contained in the real line. In the
+sequel, we only consider such measures. By ∆ we denote the smallest interval which contains the
+support, supp s, of s. We denote this class of measures by M(∆). Let
+                                                 Z
+                                                   ds(x)
+                                         sb(z) =
+                                                   z−x
+denote the Cauchy transform of s. Obviously, sb ∈ H(C \ ∆); that is, it is analytic in C \ ∆. If we
+apply the construction above to the system formed by sb (m = 0), it is easy to verify that Qn turns
+out to be orthogonal to all polynomials of degree less than n ∈ Z+ . Consequently, deg Qn = n, all
+its zeros are simple and lie in the open convex hull Co(supp s) of supp s. Therefore, such systems
+are perfect. Let us see two other examples much more illustrating.
+1.2.1. Angelesco systems. In [2], A. Angelesco considered the following systems of functions. Let
+∆j , j = 0, . . . , m, be pairwise disjoint bounded intervals contained in the real line and sj , j =
+0, . . . , m, a system of measures such that Co(supp sj ) = ∆j .
+    Fix n ∈ Zm+1    +         and consider the type II approximant of the so called Angelesco system of
+functions (b   s0 , . . . , sbm ) relative to n. It turns out that
+                              Z
+                                 xν Qn (x)dsj (x) = 0, ν = 0, . . . , nj − 1, j = 0, . . . , m.
+
+Therefore, Qn has nj simple zeros in the interior (with respect to the euclidean topology of R)
+of ∆j . In consequence, since the intervals ∆j are pairwise disjoint, deg Qn = |n| and Angelesco
+systems are type II perfect. Type I perfectness for Angelesco systems has not been studied.
+   Unfortunately, Angelesco’s paper received little attention and such systems reappear many years
+later in [34] where E.M. Nikishin deduces some of their formal properties.
+   Though type II normality for Angelesco systems is so easy to deduce, the multiple orthogonal
+polynomials and the rational approximations associated with them do not have good asymptotic
+behavior. In [25] and [3], their logarithmic and strong asymptotic formulas, respectively, are given.
+In this respect, a different system of Markov functions turns out to be much more interesting and
+foundational from the geometric and analytic points of view.
+                                      NIKISHIN SYSTEMS ARE PERFECT                                         3
+
+
+1.2.2. Nikishin systems. In an attempt to construct general classes of functions for which normality
+takes place, in [35] E.M. Nikishin introduced the concept of MT-system. Let ∆α , ∆β be two non
+intersecting bounded intervals contained in the real line and σα ∈ M(∆α ), σβ ∈ M(∆β ). With
+these two measures we define a third one as follows (using the differential notation)
+                                         dhσα , σβ i(x) = σ
+                                                          bβ (x)dσα (x);
+that is, one multiplies the first measure by a weight formed by the Cauchy transform of the second
+measure. Certainly, this product of measures is non commutative.
+   Above, σ bβ denotes the Cauchy transform of the measure σβ . The reader may argue, and we
+agree, that the appropriate notation is σ cβ . However, throughout the paper, we will need Cauchy
+transforms of measures with several sub-indices and supra-indices; for example sd   2
+                                                                                    1,j (and much
+more extended). The correct notation causes space consumption and aesthetic inconveniences. So,
+be cautious, sb21,j is not the Cauchy transform of s sub-indexed with 1, j and then squared, but
+precisely the Cauchy transform of a measure denoted s21,j . The good news is that powers rarely
+appear in the paper and they are clear from the context (for example, (−1)j or z 2 ).
+Definition 1.2. Take a collection ∆j , j = 0, . . . , m, of intervals such that
+                                    ∆j ∩ ∆j+1 = ∅,             j = 0, . . . , m − 1.
+Let (σ0 , . . . , σm ) be a system of measures such that Co(supp σj ) = ∆j , σj ∈ M(∆j ), j = 0, . . . , m.
+We say that (s0 , . . . , sm ) = N (σ0 , . . . , σm ), where
+                        s0 = σ0 ,     s1 = hσ0 , σ1 i, . . .    , sm = hσ0 , hσ1 , . . . , σm ii
+is the Nikishin system of measures generated by (σ0 , . . . , σm ).
+   Fix n ∈ Zm+1       +    and consider the type II approximant of the Nikishin system of functions
+ s0 , . . . , sbm ) relative to n. It is easy to prove that
+(b
+                           Z
+                              xν Qn (x)dsj (x) = 0, ν = 0, . . . , nj − 1, j = 0, . . . , m.
+
+All the measures sj have the same support; therefore, it is not immediate to conclude that deg Qn =
+|n|. Nevertheless, if we denote
+                       sj,k = hσj , σj+1 , . . . , σk i,        j < k,      sj,j = hσj i = σj ,
+the previous orthogonality relations may be rewritten as follows
+                          Z           m
+                                      X
+                            (p0 (x) +          s1,k (x))Qn (x)dσ0 (x) = 0,
+                                         pj (x)b                                                         (1)
+                                             k=1
+where p0 , . . . , pm are arbitrary polynomials such that deg pk ≤ nk − 1, k = 0, . . . , m.
+Definition 1.3. A system of real continuous functions u0 , . . . , um defined on an interval ∆ is
+called an AT-system on ∆ for the multi-index n ∈ Zm+1        +    if for any choice of real polynomials (that
+is, with real coefficients) p0 , . . . , pm , deg pk ≤ nk − 1, the function
+                                                   m
+                                                   X
+                                                         pk (x)uk (x)
+                                                   k=0
+
+has at most |n| − 1 zeros on ∆. If this is true for all n ∈ Zm+1
+                                                             +   we have an AT system on ∆.
+   In other words, u0 , . . . , um forms an AT-system for n on ∆ when the system of functions
+                                    (u0 , . . . , xn0 −1 u0 , u1 , . . . , xnm −1 um )
+is a Tchebyshev system on ∆ of order |n| − 1. From the properties of Tchebyshev systems (see [30,
+Theorem 1.1]), it follows that given x1 , . . . , xN , N < |n|, points in the interior
+                                                                              Pm       of ∆ one can find
+polynomials h0 , . . . , hm , conveniently, with deg hk ≤ nk − 1, such that k=0 hk (x)uk (x) changes
+sign at x1 , . . . , xN , and has no other points where it changes sign on ∆.
+   In [35], Nikishin stated without proof that the system of functions (1, sb1,1 , . . . , sb1,m ) forms
+an AT-system for all multi-indices n such that n0 ≥ · · · ≥ nm (he proved it when additionally
+n0 − nm ≤ 1). Due to (1) this implies that Nikishin systems are type II weakly perfect.
+4                                                    FIDALGO AND LÓPEZ
+
+
+   The proof of Nikishin’s assertion is a consequence of [15, Theorem 4.1]. Actually, Driver and
+Stahl proved normality for the wider class of multi-indices
+                           Zm+1
+                            +   (⊛) = {n ∈ Zm+1
+                                            +   : 0 ≤ j < k ≤ m ⇒ nk ≤ nj + 1}
+(see also [26]). In [15, Theorem 4.2], for the same class of multi-indices, the authors also proved
+type I weak perfectness for Nikishin systems. In the same paper (see remark on page 171), it is
+shown that when m = 1 Nikishin systems are type II perfect. Improvements are also contained in
+[9, Theorem 1] (see also [22, Theorem 2]) where normality is proved for all multi-indices in
+                  Zm+1
+                   +   (∗) = {n ∈ Zm+1
+                                   +   :6 ∃ 0 ≤ i < j < k ≤ m such that ni < nj < nk }
+and [19, Theorem 1] containing the proof that for m = 2 Nikishin systems are type II perfect.
+   Ever since the appearance of [35], a subject of major interest for those involved in simultaneous
+approximation was to determine whether or not Nikishin systems are perfect. The main result of
+this paper gives a positive answer to this question. Moreover, we will prove perfectness for mixed
+type Nikishin systems, containing type I and type II as particular cases. The proof is based on
+the reduction of the problem to the case of multi-indices with decreasing components (that is, to
+weak perfectness). In the sequel,
+                                      Zm+1
+                                       +   (•) = {n ∈ Zm+1
+                                                       +   : n0 ≥ · · · ≥ nm }.
+Notice that
+                                     Zm+1
+                                      +   (•) ⊂ Zm+1
+                                                 +   (⊛) ⊂ Zm+1
+                                                            +   (∗) ⊂ Zm+1
+                                                                       +   .
+When m = 0 these sets are equal. For m = 1 the last two coincide. If m ≥ 2 they are all distinct.
+   The proof of the main result relies on interesting reduction formulas concerning products and
+ratios of Cauchy transforms of measures. We will see numerous consequences of the perfectness of
+Nikishin systems in: convergence of simultaneous Padé approximation, convergence of simultaneous
+quadrature rules, and asymptotic properties of multiple orthogonal polynomials.
+
+1.2.3. Mixed type Nikishin systems. In [42], Sorokin introduced the following construction. Let
+                                                            F = (fj.k ),
+be an (m2 + 1) × (m1 + 1) dimensional matrix of analytic functions in some domain D of the
+extended complex plane containing ∞. Fix a multi-index n = (n1 ; n2 ) ∈ Zm                +
+                                                                                            1 +1
+                                                                                                 × Zm
+                                                                                                    +
+                                                                                                      2 +1
+                                                                                                           , such
+that |n1 | = |n2 | + 1. We denote ni = (ni,0 , . . . , ni,mi ), i = 1, 2. There exists a vector polynomial
+An = (an,0 , . . . , an,m1 ), such that
+     a) An 6≡ 0, deg an,k ≤ n1,k − 1, k = 0, . . . , m1 ,
+     b) (FAtn − Dtn )(z) = (O(1/z n2,0 +1 ), . . . , O(1/z n2,m2 +1 )t =: O(1/z n2 +1 ), z → ∞.
+for some m2 + 1 dimensional vector polynomial Dn (the super-index t means taking transpose and
+0 denotes the zero vector). Finding An reduces to solving a linear homogeneous system of |n2 |
+equations determined by the conditions b) on |n1 | unknowns (the total number of coefficients of
+the polynomials an,k , k = 0, . . . , m1 ). Since |n2 | + 1 = |n1 | a non trivial solution exists.
+Definition 1.4. A non zero vector An satisfying a)-b) is called mixed type vector polynomial
+relative to F and n ∈ Zm   +
+                             1 +1
+                                   × Zm
+                                      +
+                                        2 +1
+                                             , |n1 | = |n2 | + 1. If deg an,k = n1,k − 1, k = 0, . . . , m1 ,
+the multi-index n is called mixed type normal. F is mixed type perfect when all multi-indices in
+Zm+
+    1 +1
+         × Zm
+            +
+              2 +1
+                   such that |n1 | = |n2 | + 1 are normal.
+    This construction has as particular cases type I (m2 = 0) and type II (m1 = 0) polynomials.
+   Let S 1 = (s10,0 , . . . , s10,m1 ) = N (σ01 , . . . , σm
+                                                           1
+                                                             1
+                                                               ), S 2 = (s20,0 , . . . , s20,m2 ) = N (σ02 , . . . , σm
+                                                                                                                      2
+                                                                                                                        2
+                                                                                                                          ), σ01 =
+σ02 ,
+    be two given Nikishin systems generated by m1 + 1 and m2 + 1 measures, respectively. We
+underline the fact that both Nikishin systems stem from the same basis measure σ01 = σ02 , but
+there is no other restriction on them. Let us introduce the row vectors
+                              U = (1, sb21,1 , . . . , sb21,m2 ),    V = (1, sb11,1 , . . . , sb11,m1 )
+and the (m2 + 1) × (m1 + 1) dimensional matrix function
+                                                            W = Ut V.
+                                       NIKISHIN SYSTEMS ARE PERFECT                                                5
+
+
+Define the matrix Markov type function
+                                                      Z
+                                             b            W(x)dσ02 (x)
+                                             S(z) =
+                                                            z−x
+understanding that integration is carried out entry by entry on the matrix W. We say that b            S is a
+mixed type Nikishin system of functions.
+  In the rest of the paper, we will study mixed type Nikishin systems and their mixed type
+polynomials. Occasionally, we reduce the study to type II (m1 = 0). In such cases, for simplicity,
+we reduce the notation. Namely, n = (n0 , . . . , nm ), the vector function will be f = (b  s0 , . . . , sbm ),
+where m = m2 , and (s0 , . . . , sm ) = N (σ0 , . . . , σm ). The mixed type polynomials An will then be
+denoted Qn .
+1.3. Statement of the main results. Mixed type Nikishin systems and their associated mixed
+type polynomials satisfy many interesting properties. Let us begin with
+Theorem 1.1. Let (s1,1 , . . . , s1,m ) = N (σ1 , . . . , σm ) be given. Then, the system (1, sb1,1 , . . . , sb1,m )
+forms an AT-system on any interval ∆ disjoint from ∆1 = Co(supp σ1 ). Moreover, for each
+n ∈ Zm+1
+       +  , and arbitrary polynomials with real coefficients pk , deg pk ≤ nk − 1, k = 0, . . . , m, the
+                 Pm
+linear form p0 + k=1 pk sb1,k , has at most |n| − 1 zeros in C \ ∆1 .
+   From here, we can prove
+Theorem 1.2. The matrix b   S is mixed type perfect. For each n ∈ Zm
+                                                                   +
+                                                                     1 +1
+                                                                          × Zm
+                                                                             +
+                                                                               2 +1
+                                                                                    , |n1 | = |n2 | + 1,
+the vector polynomial An is uniquely determined up to a constant factor.
+   In particular, this means that Nikishin systems are type I and type II perfect.
+   An easy consequence of Theorem 1.2 (more precisely, of Lemma 2.3 below) is that the linear
+form
+                                                  m1
+                                                  X
+                                    An := an,0 +     an,k sb11,k ,
+                                                           k=1
+has at least |n2 | sign changes in the interior (with respect to the euclidean topology of R) of the
+interval ∆0 . In particular, for any n ∈ Zm+1 +  , the type II polynomial Qn (= an,0 ) has all its zeros
+located inside Co(supp σ0 ). This has a striking consequence in terms of the convergence of type II
+rational approximation of Nikishin systems.
+   In [35], it was proved that for (s0 , s1 ) = N (σ0 , σ1 )
+                                            Pn,k
+                                     lim         = sbk ,     k = 0, 1,
+                                    n→∞ Qn
+
+uniformly on compact subsets of C \ Co(supp σ0 ), where the limit is taken along the sequence
+n = (n, n), n ∈ Z+ . When m2 = 0 the corresponding result is Markov’s classical theorem on the
+convergence of Padé approximants, see [33]. The extension to diagonal sequences for arbitrary
+m and n ∈ Λ ⊂ Zm+1  +   (•) such that |n| → ∞ and max{n0 − nm : n ∈ Λ} < ∞ is contained in
+[11, Corollary 1] (which also includes the case when the measures have unbounded support and a
+Carleman type condition is satisfied). Combining Theorem 1.2 and [21, Theorem 1] we obtain
+Corollary 1.1. Let (s0,0 , . . . , s0,m ) = N (σ0 , . . . , σm ) and Λ ⊂ Zm+1
+                                                                          +   be given. Assume that
+there exist constants c > 0, κ < 1, such that
+                                           |n|
+                                   nj ≥        − c|n|κ ,         j = 0, . . . , m.
+                                          m+1
+Then,
+                          Pn,k
+                      lim      = sb0,k        K ⊂ C \ Co(supp σ0 ),           k = 0, . . . , m.
+                      n∈Λ Qn
+Moreover,
+                                      Pn,k 1/2|n|
+                                  s0,k −
+                         lim sup kb       k       ≤ δK < 1,                k = 0, . . . , m,
+                         n∈Λ          Qn K
+where k · kK   denotes the uniform norm on K,
+                            δK = max{|ϕt (z)| : z ∈ K, t ∈ Co(supp σ1 ) ∪ {∞}},
+

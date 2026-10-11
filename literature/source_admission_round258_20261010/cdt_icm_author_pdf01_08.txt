@@ -1,0 +1,593 @@
+           Arithmetic holonomy bounds and effective Diophantine approximation∗
+
+                            Frank Calegari†, Vesselin Dimitrov‡, and Yunqing Tang§
+
+
+     Abstract. In this paper, we explore several threads arising from our recent joint work on arithmetic holonomy
+bounds, which were originally devised to prove new irrationality results based on the method of Apéry limits. We
+propose a new method to address effective Diophantine approximation on the projective line and the multiplicative
+group. This method, and all our other results in the paper, emerged from quantifying our holonomy bounds in a
+way that directly yields effective measures of irrationality and linear independence. Applying these to a dihedral
+algebraic construction, we derive good effective irrationality measures for high order roots of an algebraic number,
+in an approach that might be considered a multivalent continuation of the classical hypergeometric method of
+Thue, Siegel, and Baker. A well-known Dirichlet approximation argument of Bombieri allows one to derive from
+this the classical effective Diophantine theorems, hitherto only approachable by Baker’s linear forms in logarithms
+or by Bombieri’s equivariant Thue–Siegel method. These include the algorithmic resolution of the two-variable
+S-unit equation, the Thue–Mahler equation, and the hyperelliptic and superelliptic equations, as well as the
+Baker–Feldman effective power sharpening of Liouville’s theorem. We also give some other applications, including
+irrationality measures for the classical L(2, χ−3 ) and the 2-adic ζ(5), and a new proof of the transcendence of π.
+Due to space limitations, a full development of these ideas will be deferred to future work.
+
+     1 Effective Diophantine approximation on Gm . Denote by h : Gm (Q) → [0, ∞) the canonical
+logarithmic absolute Weil height on the multiplicative group of the field of algebraic numbers, and by H := exp(h)
+its exponentiated (“multiplicative”) version. We refer to Bombieri and Gubler’s book [23, § 1.5.7] for the definitions
+and basic properties of these notions, and in particular [23, § 1.4.3] for the normalization | · |v we will be using of
+the absolute value in the place v ∈ MK of a number field K. These are the normalizations    (see also subsection 1.1)
+such that, with log+ (t) := max (0, log |t|) and α ∈ Q is arbitrary, we have h(α) = v∈MK log+ |α|v independently
+                                                                                    P
+of a choice of number field K containing α.
+     A landmark theorem in Diophantine analysis takes on the following minimalistic but structurally robust form.
+    Theorem 1.1. Consider the following data:
+   • a number field K;
+   • a place v of K;
+   • a finitely generated subgroup Γ < K × of the multiplicative group Gm (K) = K × ;
+   • a positive number ε > 0.
+From these data, one can extract an effectively computable function C(K, v, Γ, ε) ∈ R, for which the following
+Diophantine boundedness property takes place: For every A ∈ K × , all solutions γ ∈ Γ of the Diophantine inequality
+
+
+(1.1)                                               |1 − Aγ|v ≤ H(γ)−ε
+satisfy the effective height bound
+(1.2)                                        h(γ) ≤ C(K, v, Γ, ε) (1 + h(A)) .
+
+  ∗ 2020Mathematics Subject Classification. 11J68, 11J72
+  † The University of Chicago, 5734 S University Ave, Chicago, IL 60637, USA. Supported in part by NSF Grants DMS-2001097 and
+DMS-2450123. (fcale@math.uchicago.edu)
+  ‡ Department of Mathematics, California Institute of Technology, Pasadena, CA 91125, USA. (dimitrov@caltech.edu)
+  § Department of Mathematics, University of California, Berkeley, Evans Hall, Berkeley, CA 94720, USA. Supported in part by NSF
+
+Grant DMS-2231958 and a Sloan Research Fellowship. (yunqing.tang@berkeley.edu).
+
+
+
+                                                                                                      Copyright © 2026 by SIAM
+                                                                              Unauthorized reproduction of this article is prohibited
+    One goal of this paper is to outline a new proof of Theorem 1.1. We begin, however, with an abridged history.
+Theorem 1.1 was first proved by Alan Baker [7] in the Archimedean case (enhancing his original method for
+lower bounds on linear forms in logarithms in many variables through ideas of Stark and Feldman), and Kunrui
+Yu [65] in the nonarchimedean case. The effectivity clause is the important one—it is the feature allowing for an
+algorithmic output of all solutions to many Diophantine equations and inequalities (in the spirit of Hilbert’s Tenth
+Problem). In contrast, the mere existence of some C(K, v, Γ, ε) ∈ R follows easily from Roth’s (or indeed from
+Siegel’s) ineffective Diophantine exponent of an arbitrary algebraic number, as Gelfond observed based on Siegel’s
+argument with collecting coset representatives under a high degree isogeny [r] : Gm → Gm . (See, for example,
+[62, Theorem 1.9] for how the A = 1 case follows ineffectively from Roth’s theorem. The general argument
+for A ∈ K × is similar and implicit in this reduction scheme, see also section 4 below.)
+    By a standard and easy argument (see [23, § 5.4.3]), the special case A = 1 of Theorem 1.1 (formulated as
+Theorem 5.4.1 in [23]) provides an effective height bound on the general S-unit equation x+y = 1 in two variables,
+                                              ×
+to be solved in the group of S-units x, y ∈ OK,S   in a number field K, with S ⊂ MK signifying an arbitrary finite
+set of places that contains all Archimedean places, namely:
+                                                                                
+                                                                         ×     1
+(1.3)                         h(x) + h(y) ≤ log 16 + 2 max C K, v, OK,S ,            .
+                                                        v∈S                  2|S|
+
+In turn, by the classical arguments of Siegel and Mahler (see [23, § 5.3] or [42, § 9.6]), an effective height bound (1.3)
+                                                                                                    ×
+leads in theory to an algorithmic resolution of the general Thue–Mahler F (x, y) ∈ OK,S                  and superelliptic
+  m
+y = f (x) equations in S-integers x, y ∈ OK,S , and more broadly to compute the set of integral points on
+various other (although far from all) affine algebraic curves. Here, F (x, y) ∈ K[x, y] is an arbitrary homogeneous
+form and f (x) ∈ K[x] is an arbitrary polynomial. Furthermore, the linear dependence in Equation (1.2) on the
+parameter h(A), which in the Archimedean case is formulated and proved as Baker’s Theorem 1.10 in [30, §§ 1,
+4, 11, E], also allows one (via the Thue equation, see [30, §§ 4.3, 4.4]) to derive a form of the Baker–Feldman
+theorem [43] on the effective improvement µeff (α) ≤ deg α−ϵ (Q(α)) of Liouville’s Diophantine exponent d = deg α
+for an arbitrary algebraic number of a degree d ≥ 3.
+     The best (known) dependence
+                                                                     t
+                                                                     Y
+(1.4)                                   C(K, v, Γ, ε) ≪[K:Q],v,ε,t       (1 + h(ξi ))
+                                                                     i=1
+
+on the heights of a set of generators ξ1 , . . . , ξt of Γ (apart from an absolute numerical coefficient involved, which
+however is frequently quite important in practical applications) comes from Baker’s theory of linear forms in
+logarithms in many variables, cf. [9] or [61, 62] in the Archimedean case, and [66, 67, 68] in the nonarchimedean
+case. Note that the ultimate Baker–Wüstholz dependency in the form (1.4) eliminates the special role of the
+coset AΓ, and A = 1 is no longer any loss of generality in this formulation. The form (1.4) has no reason to have
+any finality; the most optimistic folklore conjecture closely related to abc speculates that the product in (1.4)
+should get replaced by a sum. For simplicity of the exposition, we shall hence stick to the minimalistic essential
+form of Theorem 1.1, including the distinguished coset parameter A in the shape of Baker’s Sharpening II [7], and
+we abstain from pursuing here the refinement to the form (1.4). A number of different and easier proofs [16, 29],
+[30, § 4.1], [62, Corollary 10.18] of Theorem 1.1 were obtained using Bombieri’s geometry of numbers argument.
+The most rudimentary form of Bombieri’s idea [30, Lemma 4.2] goes back to an observation of Stark [58, page 262]
+which we will use ourselves in section 4. This argument only requires relatively simpler-to-prove bounds [51, 52, 31]
+for two logarithms, and in particular it does not require the optimal (logarithmic) dependence on the variables
+of the linear form (or the exponents, as one frequently says). What they do require, however, is that they come
+with Waldschmidt’s optimal range of uniformity in the arguments (inputs) of the logarithms. (This feature was
+first introduced in [61, parameter M on page 179 ], see also [62, Theorem 9.1 (ii) with the modified parameter B].)
+     Once the reduction to softer bounds on linear forms in two logarithms (given Waldschmidt’s uniformity
+feature) had been made, it opened up a second and more algebraic path to Theorem 1.1 independent from the
+analytic theory of linear forms in logarithms. This was carried out by Bombieri in the 1990s, grounded in a
+Galois equivariant form of the Thue–Siegel principle found by Bombieri, van der Poorten, and Vaaler [18, 24]. A
+general and completely explicit bound (1.2), which for large enough h(A) is also of the Baker–Wüstholz form (1.4)
+(although with an inferior dependence on the implicit parameters [K : Q], v, ε, and t = rank (Γ)), can be found in
+
+
+                                                                                                     Copyright © 2026 by SIAM
+                                                                             Unauthorized reproduction of this article is prohibited
+Bombieri [17] in the Archimedean case, and Bombieri–Cohen [21] and [22] in the nonarchimedean case. Bombieri’s
+original work [17] was founded upon Viola’s geometric form [60] of Dyson’s nonvanishing lemma, whereupon the
+introduction of an extrapolation parameter thereafter in [21, 22] denoted “M ” led in [21] (worked out in detail
+only in the nonarchimedean case) to a logarithmically improved implicit coefficient in the final estimate of the
+form (1.4). Finally in [22] the appeal to Viola’s theorem was bypassed and replaced by an elementary Wronskian
+argument, and the final implicit coefficient in the form (1.4) (once again for h(A) ≫[K:Q],v,ε,t 1, and worked out
+there in the nonarchimedean case) was improved some further.
+    Ultimately, both the Baker–Waldschmidt and the Thue–Siegel (Bombieri) paths to Theorem 1.1 (the only
+known proofs) remain fairly complicated, and there is no easy path known to such a theorem, even in the
+special case A = 1. This is despite the central role of Theorem 1.1 in modern Diophantine analysis, and after
+several decades of intensive research (see [30, 8, 10, 54] for a panorama of this subject, and to [19, 20, 39] for
+an introduction to the paradigm’s history and some speculation about its future in the light of the famous and
+elusive abc conjecture). In this paper, we give a new—and perhaps simpler—proof of Theorem 1.1 by applying
+our quantitative arithmetic holonomy bounds that we develop below. Explicit bounds will be given in a future
+paper as we continue to explore the potential of the method we outline here. Two longstanding unsolved problems
+in the area are to give an effective height bound on the multivariable S-unit
+                                                                            p equation, and to effectivize Thue’s
+theorem for general algebraic numbers besides those of the binomial form r a/b.
+
+   1.1 Notation. As we already said in the introduction, all our conventions and notations for heights
+and absolute values are the ones found in Bombieri and Gubler’s book [23]. We spell out, in particular, that
+                                          [Kv :Qp ]                          [Kv :R]
+
+| · |v is normalized so that |p|v = p− [K:Q] if v | p, and |x|v = |x|∞[K:Q] for v | ∞ and | · |∞ the Euclidean
+norm on Kv ⊂ C. We let Dv (R) and Dv (R) denote the open and closed unit discs of radius R in Cv ,
+and Tv (R) = ∂Dv (R) := {|x|v = R}; we sometimes omit the subscript when v = ∞, and we also abridge
+Dv := Dv (1), Dv := Dv (1), Tv := Tv (1). More generally, we follow the notation of [34]. We will use c0 , c1 , . . .
+to denote a sequence of effective constants readily computable in a constructive function of a datum indicated
+within (possibly empty) brackets. Similarly, the Vinogradov symbols ≪, ≍, and ≫ used without subscripts will
+imply absolute effective constants, and in general implicit constants that are effectively and straightforwardly
+computable in terms of the data listed in the subscript. The semantical meaning of every occurrence of those
+symbols is that effective implicit conditions can be written down for which the given statement holds.
+
+    2   Arithmetic holonomy bounds: a quantitative theory.
+
+      2.1 Holonomy bounds and irrationality. Let us recall the framework in [34, § 1.2, § 2] for proving the
+irrationality of certain periods η. We start (typically) with A(x) ∈ ZJxK and B(x) ∈ QJxK such that B(x) − ηA(x)
+has larger convergence radius than both A(x) and B(x) as power series in RJxK. By analogy with [59, 15], we call η
+an Apéry limit. We pick a holomorphic mapping φ : (D, 0) → (C, 0) such that φ∗ (B(x) − ηA(x)) is meromorphic
+on D ⊂ D. We then bound the largest number of Q(x)-linearly independent power series f1 , . . . , fm ∈ QJxK such
+that the denominators of their coefficients have the same shape (or better) as those of B(x), and additionally that
+φ∗ fi is meromorphic on D for all i. If we assume for contradiction that η ∈ Q, then we can take some of these
+fi ’s to be B(x) − ηA(x) and its derivatives, but there may exist (unconditionally) additional such functions. Our
+holonomy bound (see Theorem 2.1 below) provides an upper bound of m in terms of φ and denominator types
+when |φ′ (0)| is sufficiently large comparing to the denominators. We deduce that η ∈   / Q precisely when we find
+more functions fi (including B(x) − ηA(x) and its derivatives) than the upper bound provided by the following
+theorem proved in [34, Theorem 2.5.1].
+
+       Theorem 2.1. Consider two positive integers m, r ∈ N>0 and an m × r rectangular array of nonnegative real
+numbers b := bi,j 1≤i≤m, 1≤j≤r , all of whose columns have the form 0 = b1,j = · · · = buj ,j < buj +1,j = · · · =
+bm,j =: bj , ∀j = 1, . . . , r, for some uj ∈ {0, 1, . . . , m} depending on the column. Let σi := bi,1 + . . . + bi,r , i =
+                                                               m                       r
+                                                           1 X                      1 X 2
+1, . . . , m be the i-th row sum, and define τ (b) := 2          (2i − 1)σi = σm − 2     u bj ∈ [0, σm ].
+                                                          m i=1                    m j=1 j
+    Consider a holomorphic mapping φ : (D, 0) → (C, 0) as above with derivative (conformal size) satisfying the
+condition log |φ′ (0)| > τ (b). Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+
+
+                                                                                                   Copyright © 2026 by SIAM
+                                                                           Unauthorized reproduction of this article is prohibited
+formal functions with denominator types of the form
+                                        ∞
+                                        X                                  xn
+(2.1)                        fi (x) =         ai,n                                                     ,      ai,n ∈ Z,
+                                        n=0
+                                                     [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for all i = 1, . . . , m; assume that all
+fi are holonomic. Then
+                                       RR
+                                           2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+(2.2)                              m≤ T                                           .
+                                                    log |φ′ (0)| − τ (b)
+
+    Let ⃗b := (b1 , . . . , br ) and V(φ, ⃗b) denote the Q(x)-span of power series f where φ∗ f is meromorphic on D and
+
+                                            ∞
+                                            X                              xn
+(2.3)                             f (x) =         an                                                 ,      an ∈ Z.
+                                            n=0
+                                                       [1, . . . , b1 · n] · · · [1, . . . , br · n]
+                      Pr
+When log |φ′ (0)| >    j=1 bj ,   Theorem 2.1 provides an upper bound of dimQ(x) V(φ, ⃗b).
+    Remark 2.2. In [34, §§ 6–8], we allow more general denominators of fi , and we have various improvements
+and alternative bounds. For the rest of this section, we will discuss upper bounds on the irrationality measure of
+η and use the bound (2.2) as a showcase. We hope it will be clear to the reader how the proof idea of Theorem 2.6
+can be used to refine all our qualitative holonomy bounds in [34, §§ 6–8] to include an irrationality measure. By
+the same token, simpler proofs of the bounds needed for the application to Theorem 1.1 can be more directly
+obtained with the Perelli–Zannier dynamic box principle technique that we explain in [34, Appendix B].
+    2.2   Irrationality measures. We recall the definition of irrationality measure.
+     Definition 2.3. Let v be a place of Q. The irrationality exponent/measure of η ∈ Qv ∖ Q, denoted by µ(η),
+                                                               p          1
+is the supremum of the set of numbers κ such that 0 < η −          <              is satisfied by infinitely many
+                                                               q v   max(|p|, q)κ
+(p, q) ∈ Z × Z>0 .
+In other words, for κ > µ(η), the above inequality only has finitely many solutions (p, q) as above; thus there
+                                                                                       p           C
+exists a constant C = C(η, κ) ∈ R>0 such that for all (p, q) ∈ Z × Z>0 , we have η −       >               . When η
+                                                                                       q v    max(|p|, q)κ
+is algebraic of degree d ≥ 2, Liouville’s theorem [54, ch. 1 § 1.6] gives κ = d with an effective constant C, and
+in this case there is a distinction to be made between Definition 2.3 (which, by Roth’s theorem, reads µ(η) = 2
+whenever 2 ≤ [Q(η) : Q] < ∞), and exponents κ for which an explicit C(η, κ) can be provided. The infimum of
+the latter κ, though this not a mathematical definition, is commonly denoted µeff (η), and it is the notion featured
+in all our theorems in this paper (see Remark 2.7). We denote by µeff,K,v (η) the straightforward generalization
+over a number field K and place v ∈ MK for v-adic K-rational approximations to an η ∈ Kv ∖ K.
+     Theorem 2.1 extends to a quantitative refinement that includes an explicit upper bound on the irrationality
+measure µ(η) for an Apéry limit η ∈ R ∖ Q as considered in subsection 2.1; for concreteness we formulate our
+next proposition for the case of the Archimedean place of Q. Let V(φ, ⃗b, η) denote the R(x)-span of power series
+g ∈ RJxK of form g(x) = B(x) − ηA(x) such that φ∗ g is meromorphic on D and A(x), B(x) satisfy (2.3).
+                                                                                           Pr
+     Proposition 2.4. Fix φ : (D, 0) → (C, 0) and a denominator type ⃗b with |φ′ (0)| > e j=1 bj . Let
+
+                           m = dimR(x) V(φ, ⃗b, η) ≥ dimQ(x) V(φ, ⃗b) = γ · m,                             γ ∈ Q ∩ (0, 1].
+
+Take ρ ∈ (0, 1] so that there exists a basis {gi = Bi − ηAi } of V(φ, ⃗b, η) where φ∗ Ai and φ∗ Bi both individually
+converge on |z| < ρ. Consider b as in Theorem 2.1 such that Ai , Bi satisfy (2.1). Assume that all gi are
+holonomic. Then
+                                         RR
+                                           T2
+                                               log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+(2.4)                    m≤                                                                   ,
+                              log |φ (0)| − τ (b) − (1 − γ) (2µ(η)−1 − (1 − γ)µ(η)−2 ) log ρ1
+                                    ′
+
+
+conditionally on the positive denominator.
+
+
+                                                                                                                         Copyright © 2026 by SIAM
+                                                                                                 Unauthorized reproduction of this article is prohibited
+If we set µ(η) → ∞ in (2.4), we recover (2.2). In particular, every qualitative irrationality proof by the holonomy
+bounds method of Theorem 2.1 automatically refines via (2.4) to an explicit measure of irrationality. It must be
+said, however, that in this form of the result, the extra coefficient 2 of µ(η)−1 in (2.4) means that, when the usual
+Apéry limit works, Proposition 2.4 does not recover the most basic standard bound on the irrationality measure.
+It remains an open problem to give an ε-improvement over the usual irrationality measure in every single case.
+    Remark 2.5. Consider the general denominator type as in [34, Thm 6.0.2 and 7.0.1], i.e., Ai , Bi are of the
+form
+                               ∞
+                              X                             xn
+                       ai,0 +     ai,n ei                                                 , ai,n ∈ Z,
+                              n=1
+                                      n [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+where e = (e1 , . . . , em ) ∈ Nm . Define τ ♯ (e) as in [34, §6]. Then we have the following bound on µ(η):
+                                                RR
+                                                  T2
+                                                     log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+(2.5)                    m≤                                                                               .
+                               log |φ′ (0)| − τ (b) − τ ♯ (e) − (1 − γ) (2µ(η)−1 − (1 − γ)µ(η)−2 ) log ρ1
+
+     Proposition 2.4 is a special case, with K = Q and S = {v} a singleton, of Theorem 2.6 below. For our
+more general setup, we consider a number field K together with a finite subset S ⊂ MK of its places, whereby
+K-rational approximations (sometimes restricted to be from a subfield of K) are to be made simultaneously in all
+places from S. We organize the targets of the approximation into a “soft” collection η = (ηu )u∈S of local elements
+ηu ∈ Ku , which in theory do not have to be related, but in practice always have some sort of structural connection,
+although not always by a rule as simple as to take the u-embedding of an underlying element η ∈ K. One central
+example of this, which in a Kummer equivariant form occurs within the proofs of Propositions 3.3 and 3.4, is
+similar to the equivariant setup [18, page 75] of Bombieri, van der Poorten, and Vaaler: the approximants β are
+to be drawn from a subfield F ⊂ K, with K/F being Galois and the set S ⊂ MK being Gal(K/F )-stable, and
+the assignment u ⇝ ηu transforms according to a given projective representation π : Gal(K/F ) → PGL2 (F ).
+     Following the framework of André [2, § VIII] but now combined with axiomatics of Apéry limits, we consider
+a collection (φv )v∈MK of analytic functions on an unspecified open neighborhood of Dv , with φv (z) = z for all
+but finitely many v; and a collection (ρu )u∈S of radii ρu ∈ (0, 1]. These data are to be used for imposing and
+controlling convergence properties of the formal functions in the Apéry limits method. Though one may consider
+more general linear independence settings, the focus here on single Apéry limits, but used in a power system
+{1, H, . . . , H k }, compels us to consider only the powers η j := (ηuj )u∈S of the original Apéry limit, along with the
+                                                                        ⃗                         1
+implied K-rational approximations β j . We define V({φP      v }, {ρu }, b, η, ν) to be the formal K(η, x)-linear span of
+                                                                ν
+all formal power series g ∈ K(η)JxK of the form g(x) = j=0 η j Aj (x) such that:
+
+   1. For all u ∈ S, φ∗u g ∈ M(Du ) is meromorphic on Du , and every individual φ∗u Aj is convergent on |z|u < ρu .
+
+   2. For all v ∈ MK ∖ S, every individual φ∗v Aj is meromorphic on Dv .
+                                                                                 P∞             xn OK,S ′
+   3. There exists a finite subset S ′ ⊂ MK for which A0 , . . . , Aν ∈             n=0 [1,...,b1 ·n]···[1,...,br ·n] .
+
+    Theorem 2.6. Given (φv )v∈MK , η = (ηu )u∈S , (ρu )u∈S ∈ (0, 1]S as above, consider r, µ ∈ N and, for
+ν = 0, 1, . . . , µ, a vector ⃗bν ∈ [0, ∞)r , and a list of holonomic (over K(x)) elements
+
+                          gν,1 , . . . , gν,mν ∈ V({φv }, {ρu }, ⃗bν , η, ν) ∖ V({φv }, {ρu }, ⃗bν , η, ν − 1)
+
+satisfying conditions (1)–(3) above. Assume the totality {gν,i }0≤ν≤µ,1≤i≤mν of these m = m0 +. . .+mµ holonomic
+functions to be K(η, x)-linearly independent, and order them in some arbitrary way. Consider for the chosen
+ordering a denominators capping m × r-matrix b obeying the constraint spelled out in Theorem 2.1, and having
+its k-th row vector dominate entrywise the ⃗b-vector ⃗bν of the k-th function gν,i .
+
+
+  1 This
+                                                                                                            Pν    j
+          we take to mean to consider in every realization u ∈ S the Ku (x)-linear span of the power series  j=0 ηu Aj (x) ∈ Ku JxK.
+A K(η, x)-linear dependence is defined to be a K(η, x)-linear form which evaluates to a Ku (x)-linear dependence simultaneously in
+all places u ∈ S.
+
+
+
+                                                                                                           Copyright © 2026 by SIAM
+                                                                                   Unauthorized reproduction of this article is prohibited
+    Consider a vector of exponents κ = (κu )u∈S ∈ RS>0 subjected to the inequalities:
+                    P           RR                                    P
+                      v∈MK ,v|∞    T2v
+                                       log |φv (z) − φv (w)| µHaar + v∈MK ,v∤∞ supz∈Tv log |φv (z)|v
+              m>                                                                                 2   ,
+                                                                          ( u∈S κu − µν=0 νmν /m)
+                                                                           P        P
+                        P               ′ (0)| − τ (b) −
+                                                         P           −1
+                          v∈MK  log |φ        v            u∈S log ρ u  +      P       κ2u
+(2.6)                                                                            u∈S log ρ−1
+                                                                                          u
+                                           2
+                           −1
+                              P           κv
+                      log ρu    v∈S         −1
+              κu ≤ P           Pµ log ρv         , ∀u ∈ S.
+                      v∈S κv −    ν=0 νmν /m
+
+Then there exists a constant C ∈ R>0 such that the following Diophantine property is in place:
+(2.7)       For all β ∈ K with height h(β) > C, there exists a place v ∈ S where |ηv − β|v ≥ H(β)−κv .
+     Remark 2.7. By Northcott’s theorem [23, Theorem 1.6.8], (2.7) is another way to say that all but finitely
+many β ∈ K have some v = v(β) where |ηv − β|v ≥ H(β)−κv . As in Theorem 1.1, the point of writing it this way
+is that C in our proof can readily be made explicit in terms of meromorphic presentations φ∗u gν,i = Rν,i             u    u
+                                                                                                                        /Vν,i and
+  ∗           v       v              v             v
+                                                                                                                             u
+φv Aν,i,j = Sν,i,j /Wν,i,j with Vν,i (0) = Wν,i,j (0) = 1 along with the data |ηu |u , κu , ρu u∈S , b, supTv log |Rν,i         |,
+             u                       u                               u
+supTv log |Vν,i |, supTv (ρv ) log |Sν,i,j |, and supTv (ρv ) log |Wν,i,j | for all u ∈ S and v ∈ MK (extending ρv := 1 to
+v ∈ MK ∖ S), in a linear dependence on those four suprema uniformly in terms of the Chudnovsky–Osgood
+functional bad approximability constant for the system {Aν,i,j }, as discussed in [34, § 3.2] and bounded explicitly
+by Chudnovsky’s [34, Theorem 3.2.10] in the case of a differentially closed system.
+                                                                                                                      P
+     Remark 2.8. Comparing to (2.2), the extra term subtracted off in the denominator of (2.6) is u∈S αu −
+ P               2 P            2
+                                                              −1
+                                                                                         Pµ                   Pµ
+    u∈S κu − E      /    u∈S κu /αu , where αu       P:= log ρu , γν := mν /m with         ν=0 γν = 1, E :=      ν=0 νγν ∈ [0, µ].
+The positivity of this term for the case               u∈S κ u  >   E  follows    by the Cauchy–Schwarz      inequality.   In the
+proportionality regime κu := αu T , the          second  condition    in  (2.6)  is automatically fulfilled, and  the  subtracted
+term reduces to 2/(ET ) − (E/T )2 / ( u αu ). This with T → ∞ is how Theorem 2.6 subsumes Theorem 2.1.
+                                              P
+
+     2.3 Proof of Theorem 2.6. We use the framework of Bost’s slopes method [25, §§4.1, 4.2]. Without loss
+of generality upon permuting the columns of b, the indices ui in the condition spelled out in Theorem 2.1 satisfy
+u1 ≤ u2 ≤ . . . ≤ ur . In our ordering, let us denote by gi the i-th function {gν,j }, and by ν(i) the index for which
+gi ∈ V({φv }, {ρu }, ⃗b, η, ν(i)) ∖ V({φv }, {ρu }, ⃗b, η, ν(i) − 1).
+     We present the argument in its qualitative form: assume for contradiction that the constant C does not
+exist. This means there is some ε > 0 and an infinite sequence of β ∈ K with H(β) → ∞ along which
+|ηu − β|u < H(β)−κu +ε , simultaneously for all u ∈ S. (We shall let ε → 0 at the end of the proof.) Consider the
+following OK -module of rank m(D + 1):
+                                r uh+1
+                                M M                                  1
+                        ED :=                                                                     yi · OK [1/x]≤D ,
+                                              [1, . . . , u    b
+                                                            h+1 h+1 D] · · · [1, . . . , ur br D]
+                                h=0 i=uh   +1
+
+where the orthogonal direct sum is in the category of Hermitian vector bundles over Spec OK : for v ∤ ∞, the
+vectors yi , yi x−1 , . . . , yi x−D are equipped with the norm ∥yi xk ∥v := max(|β|v , 1)ν(i) (maxTv log |φv |v )k . For v | ∞,
+the Hermitian metric is defined (as in [34, §§ 7.3.1, 7.3.3]) for s ∈ OK [1/x]≤D by ∥yi s∥v := max(|β|v , 1)ν(i) ∥s∥BC ,
+where ∥ · ∥BC signifies the Bost–Charles metric [26, §§ 8.2-8.3]. We use E D to denote ED with this Hermitian
+metric. Approximately speaking, we will choose an optimizing D in linear proportion with h(β) = log H(β).
+This allows us to focus on D → ∞ asymptotic estimates as we will let h(β) → ∞ running along our sequence of
+counterexamples β ∈ K. It will be apparent from the local estimates that the argument is actually effective.
+    By the arithmetic Hilbert–Samuel theorem and a theorem of Bost and Charles [26, Theorem 5.4.1 and
+Proposition 5.4.2], we have
+                                                                                                              
+                                      X ZZ                                                             r
+                                  m                                            X                      X
+               d ED =  
+               deg                               log |φv (z) − φv (w)| µHaar +     sup log |φv |v  +     u2h bh  D2
+                                  2          T 2                                    T v
+                                      v|∞      v                               v∤∞                    h=1
+                                    µ
+                                           !
+                                    X
+                               −       νγν h(β) mD + o(D2 + Dh(β)).
+                              ν=0
+
+
+
+                                                                                                             Copyright © 2026 by SIAM
+                                                                                     Unauthorized reproduction of this article is prohibited
+                  Pµ                                        Pµ
+    Write gi (x) = j=0 η j Ai,j (x). We evaluate ED on yi := j=0 β j Ai,j (x), and thus for h(β) ≫ 1 we obtain
+an injective homomorphism ψD : ED ,→ x−D KJxK. We filter x−D KJxK as x−D KJxK ⊇ x1−D KJxK ⊇ . . . ⊇
+xn−D KJxK ⊇ . . ., and we metricize the graded quotients xn−D KJxK/xn+1−D KJxK by ∥xn−D ∥v = 1 for all
+                      (n)        −1
+                                              
+v ∈ MK . We define ED := ψD          xn−D KJxK . For each n ∈ N, the evaluation map ψD induces  an injective
+                        (n)   (n)     (n+1)                                                                   (n)    (n+1)
+homomorphism ψD : ED /ED      ,→ xn−D KJxK/xn+1−D KJxK. Therefore, rank ED /ED       ∈ {0, 1}. Let
+     n                           o
+                    (n) (n+1)
+VD := n ∈ N : rank ED /ED       = 1 . We have #VD = rank ED = m(D + 1). By the Chudnovsky–Osgood
+functional bad approximability theorem [34, Theorem 3.2.13], we have VD ⊂ {0, 1, . . . , (m + δ)D} once δ > 0 and
+D ≫δ 1.
+                                                  d ED ≤ P       P           (n)
+    Bost’s slopes inequality in our setting gives deg      n∈VD    v∈MK hv (ψD ). We provide an upper bound
+                                              (n)
+on each local evaluation height hv (ψD ) as follows. For the ease of notation, we will adopt the convention that
+   02
+                                                                                              Pµ
+                                                        / S. Write hi (x) := fi (x) − gi (x) = j=0 (β j − η j )Ai,j (x).
+log 1−1 = 0 and set ρv := 1, κv := 0, and ηv := β for v ∈
+Let L denote the line bundle O([0]) on P1OK .
+
+    Lemma 2.9. For v | ∞, we have (here we can replace ε by 0 if v ∈
+                                                                   / S) the local evaluation height upper bound:
+
+                                              ZZ
+          (n)
+    hv (ψD ) ≤ −n log |φ′v (0)|v + D                     log |φv (z) − φv (w)| µHaar + (−(κv − ε)h(β) + n log(1/ρv ))+ + o(n).
+                                                   T2v
+
+
+
+     Proof. For simplicity of notation, we drop v from the subscript and set |β|+ := max(|β|, 1). An easy reduction,
+see [34, Lemma 7.4.1], lets us to assume that all φ∗ gi ∈ O(D), as well as all φ∗ Ai,j ∈ O(Dρ ), are holomorphic on
+their respective closed discs, rather than merely meromorphic         Pmon the open discs.
+     Given {Pi }m  i=1 ⊂ K[1/x]≤D with ∥yi Pi ∥ ≤ 1, set s :=            i=1 Pi fi = cn x
+                                                                                          n−D
+                                                                                        Pm + . . ., which is aPsection  of the
+                 ⊗D                                               1                                               m
+line bundle L         on the formal neighborhood of 0 in PK ; we write s1 := i=1 Pi gi and s2 := i=1 Pi hi . Let
+(hi (φ(z))≤n denote the O(z n+1 ) truncation of the z-power series hi (φ(z)). Note P          that xD · s is a formal function
+                                                                                                m
+on P1K and φ∗ (xD · s) = cn φ′ (0)n z n + . . .. The function F (z) := φ∗ (xD · s1 ) + i=1 φ∗ (xD Pi ) · (hi (φ(z))≤n is
+holomorphic on D and has the same lowest order term as φ∗ (xD · s). Therefore log |z −n F (z)| is subharmonic, and
+                              Z
+ log |cn | + n log |φ′ (0)| ≤    log |F (z)|µHaar
+                               T
+    Z
+ ≤      log sup {|φ∗ (xD Pi ) · φ∗ gi |, |φ∗ (xD Pi ) · (hi (φ(z))≤n |}µHaar + O(1)
+      T     1≤i≤m
+    Z
+                                      ν(i)
+ ≤      log sup {|φ∗ (xD Pi )| · |β|+ }µHaar + (−κh(β) + n log(1/ρ))+ + O(1)
+      T     1≤i≤m
+                                   Z                                   Z
+                                              ∗ −D                                                     ν(i)
+ = (−κh(β) + n log(1/ρ)) −     +
+                                       log ∥φ x ∥φ∗ L⊗D µHaar +           log sup ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar + O(1)
+                                    T                                   T     1≤i≤m
+                                      ZZ                                     Z
+                                                                                                             ν(i)
+ = (−κh(β) + n log(1/ρ))+ + D               log |φv (z) − φv (w)| µHaar +        log sup ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar + O(1).
+                                           T2                                        T      1≤i≤m
+
+
+
+For the third inequality, note that on T,
+
+                −ν(i)                                        −ν(i)
+  |φ∗ gi | · |β|+                                                                                        |bi,j,l | = O(H(β)−κ+ε ρ−n ),
+                                                                                                                  
+                        = O(1),     |(hi (φ(z))≤n | · |β|+           = O |β − η|          max
+                                                                                   0≤l≤n,1≤i≤m,0≤j≤µ
+
+
+
+where bi,j,l is the z l -coefficient of φ∗ Ai,j . At the fourth and the fifth lines, by a mild abuse of notation upon
+embedding by the given v : K ,→ C, we use L to denote the line bundle LC equipped with the Bost–Charles
+Hermitian metric as in [34, § 7.3.1] (i.e., we ignore all other places, only focus on v : K ,→ C). The final equality
+is a computation due to Bost and Charles performed in [34, (7.3.5), (7.4.3)].
+
+
+                                                                                                                 Copyright © 2026 by SIAM
+                                                                                         Unauthorized reproduction of this article is prohibited
+                            Z
+                                                                    ν(i)
+    It remains to bound              log sup ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar under the condition log sup1≤i≤m ∥yi Pi ∥ ≤ 0:
+                               T        1≤i≤m
+                Z                                                           Z
+                                                         ν(i)                                                    ν(i)
+                      log sup ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar ≤ log                    sup ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar
+                  T     1≤i≤m                                               T 1≤i≤m
+                        Z Xm                                                m Z
+                                                         ν(i)                                                ν(i)
+                                                                            X
+                ≤ log              ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar = log                   ∥φ∗ Pi ∥φ∗ L⊗D · |β|+ µHaar
+                         T i=1                                              i=1    T
+
+                ≤ log sup ∥yi Pi ∥ + log m + o(n) ≤ o(n).
+                        1≤i≤m
+
+
+The estimate for v ∤ ∞ is similar, with the subharmonicity of log |z −n F (z)| being replaced by the maximum
+principle for z −n F (z). Summing the local estimates we derive for the n-th global evaluation height:
+                                        r
+                               (n)
+                 X                      X                              X                                 X
+                        hv (ψD ) =            bh max{n, uh D} − n                log |φ′v (0)|v + D            sup log |φv |v
+                  fin                                                                                          Tv
+               v∈MK                     h=1                             fin
+                                                                     v∈MK                                fin
+                                                                                                      v∈MK
+                                            X                                        +
+                                        +         (n log(1/ρu ) − (κu − ε)h(β)) + o(n).
+                                            u∈S
+
+                         d E D and hv (ψ (n) ) into the slopes inequality deg
+We plug our estimates of deg                                              d ED ≤ P       P            (n)
+                                           D                                        n∈VD    v∈MK hv (ψD ). The
+optimal choice of D for a given h(β) is found by minimizing
+                       µ
+                              !
+                      X                      XZ m
+(2.8)                     νγν mh(β)/D +               max{0, t log ρ−1
+                                                                    u − (κu − ε)h(β)/D} dt.
+                         ν=0                            u∈S     0
+
+
+                           u −ε)q
+Set q := h(β)/D, χu := (κlog ρ−1
+                                   for ρu < 1, and χu := 0 otherwise. Later we will pick q so that χu ≤ m for all
+                              u
+u ∈ S. Under this condition χu ≤ m, a direct computation transforms (2.8) into
+                      µ
+                              !
+                     X                  X  m2 − χ2                                   
+                         νγν mq +                    u
+                                                       log ρ−1
+                                                             u −  (κu −  ε)(m − χu )q
+                     ν=0
+                                                 2
+                                        u∈S
+                                                                µ
+                                      !                                 !                      !
+                     X (κu − ε)2 q 2           X               X                 X               m2
+                                                                                            −1
+                 =                          −      (κu −  ε) −     νγ ν   mq +        log ρ u       ,
+                           log ρ−1
+                         u∈S     u       2
+                                                        u∈S    ν=0
+                                                                                                 2
+                                                                                                   u∈S
+
+                                                                     P                  Pµ           . P     (κv −ε)2
+                                                                                                                        
+This is a quadratic form in q, with minimum taken at q := m            u∈S (κ u −  ε) −     ν=0 νγν                 −1
+                                                                                                           u∈S log ρu     .
+Note that the condition χu < m does indeed follow from (2.6) for ε sufficiently small.
+    Now we let h(β) → ∞ and take D := ⌊qh(β)⌋. The leading (order D2 ) terms in the slopes inequality give
+                                                                                                     2 
+                                                                      P                   Pµ
+                 m2  X                                X                    (κ u −  ε) −         νγ ν
+                              log |φ′v (0)|v − τ (b) −     log ρ−1
+                                                                u +
+                                                                        u∈S                  ν=0
+                                                                                      (κu −ε)2
+                                                                                                         
+                  2
+                                                                             P
+                        v∈MK                           u∈S                       u∈S log ρ−1
+                                                                                           u
+                                                                                  
+                          Z Z
+                 m X                                            X
+               ≤                log |φv (z) − φv (w)| µHaar +      sup log |φv |v  ,
+                  2          T2v                                   z∈Tv
+                         v|∞                                               v∤∞
+
+which with ε → 0 converges to the thesis of the theorem.
+    3 A dihedral method. We begin by recalling the classical hypergeometric method [54, ch. 1, § 3], by
+which Thue originally proved his ineffective finiteness theorem on the integer solutions (X, Y ) ∈ Z2 of the equation
+aX r − bY r = c for r ≥ 3 and a, b, c ∈ Z ∖ {0}. The hypergeometric equation with three parameters α, β, γ is the
+second-order linear ODE
+                                          d2 F                      dF
+                               x(x − 1) 2 + ((α + β + 1)x − γ)           + αβF = 0,
+                                          dx                        dx
+
+                                                                                                                 Copyright © 2026 by SIAM
+                                                                                         Unauthorized reproduction of this article is prohibited
+

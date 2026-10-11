@@ -1,0 +1,57 @@
+{
+  "checks_passed": 29,
+  "checks": [
+    "B2 chi8",
+    "B4 chi8",
+    "B3 chi-3",
+    "B3 chi-24",
+    "odd chi-24 units",
+    "gamma determinant one",
+    "gamma character minus",
+    "actual M matrix",
+    "M square central",
+    "translated Fricke map",
+    "period generator fixed",
+    "Sym2 plus eigenspace dimension one",
+    "generator normalized at endpoint",
+    "e chi endpoint 1",
+    "e chi endpoint rho",
+    "e chi endpoint inverse rho",
+    "critical L3 chi-3 over pi3",
+    "critical L3 chi-24 over pi3",
+    "critical L4 chi8 over pi4",
+    "trivial finite real coefficient",
+    "trivial finite imaginary coefficient",
+    "E chi finite imaginary coefficient",
+    "F chi finite real coefficient",
+    "F chi finite imaginary coefficient",
+    "whole true endpoint",
+    "whole radial pole residue cancels",
+    "endpoint average is psi",
+    "complete trace retains linear Tate term",
+    "period not T periodic"
+  ],
+  "scope": "One fixed exact Bernoulli/endpoint/trace/matrix check; analytic limits and Bol proof remain in the review MD.",
+  "endpoint_coefficients": {
+    "Zeta3": "-1155/2",
+    "sqrt2_L3chi8": "-504",
+    "i_pi3": "115/4"
+  },
+  "endpoint_parts_i_pi3": [
+    "110/9",
+    "28/9",
+    "161/12"
+  ],
+  "M": [
+    [
+      8,
+      -3
+    ],
+    [
+      24,
+      -8
+    ]
+  ],
+  "Sym2_matrix": "Matrix([[8, 3, 9/8], [-48, -17, -6], [72, 24, 8]])",
+  "period_generator": "72*tau**2 - 48*tau + 9"
+}

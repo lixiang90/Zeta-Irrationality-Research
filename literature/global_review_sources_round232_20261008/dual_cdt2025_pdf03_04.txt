@@ -1,0 +1,131 @@
+Bombieri [17] in the Archimedean case, and Bombieri–Cohen [21] and [22] in the nonarchimedean case. Bombieri’s
+original work [17] was founded upon Viola’s geometric form [60] of Dyson’s nonvanishing lemma, whereupon the
+introduction of an extrapolation parameter thereafter in [21, 22] denoted “M ” led in [21] (worked out in detail
+only in the nonarchimedean case) to a logarithmically improved implicit coefficient in the final estimate of the
+form (1.4). Finally in [22] the appeal to Viola’s theorem was bypassed and replaced by an elementary Wronskian
+argument, and the final implicit coefficient in the form (1.4) (once again for h(A) ≫[K:Q],v,ε,t 1, and worked out
+there in the nonarchimedean case) was improved some further.
+    Ultimately, both the Baker–Waldschmidt and the Thue–Siegel (Bombieri) paths to Theorem 1.1 (the only
+known proofs) remain fairly complicated, and there is no easy path known to such a theorem, even in the
+special case A = 1. This is despite the central role of Theorem 1.1 in modern Diophantine analysis, and after
+several decades of intensive research (see [30, 8, 10, 54] for a panorama of this subject, and to [19, 20, 39] for
+an introduction to the paradigm’s history and some speculation about its future in the light of the famous and
+elusive abc conjecture). In this paper, we give a new—and perhaps simpler—proof of Theorem 1.1 by applying
+our quantitative arithmetic holonomy bounds that we develop below. Explicit bounds will be given in a future
+paper as we continue to explore the potential of the method we outline here. Two longstanding unsolved problems
+in the area are to give an effective height bound on the multivariable S-unit
+                                                                            p equation, and to effectivize Thue’s
+theorem for general algebraic numbers besides those of the binomial form r a/b.
+
+   1.1 Notation. As we already said in the introduction, all our conventions and notations for heights
+and absolute values are the ones found in Bombieri and Gubler’s book [23]. We spell out, in particular, that
+                                          [Kv :Qp ]                          [Kv :R]
+
+| · |v is normalized so that |p|v = p− [K:Q] if v | p, and |x|v = |x|∞[K:Q] for v | ∞ and | · |∞ the Euclidean
+norm on Kv ⊂ C. We let Dv (R) and Dv (R) denote the open and closed unit discs of radius R in Cv ,
+and Tv (R) = ∂Dv (R) := {|x|v = R}; we sometimes omit the subscript when v = ∞, and we also abridge
+Dv := Dv (1), Dv := Dv (1), Tv := Tv (1). More generally, we follow the notation of [34]. We will use c0 , c1 , . . .
+to denote a sequence of effective constants readily computable in a constructive function of a datum indicated
+within (possibly empty) brackets. Similarly, the Vinogradov symbols ≪, ≍, and ≫ used without subscripts will
+imply absolute effective constants, and in general implicit constants that are effectively and straightforwardly
+computable in terms of the data listed in the subscript. The semantical meaning of every occurrence of those
+symbols is that effective implicit conditions can be written down for which the given statement holds.
+
+    2   Arithmetic holonomy bounds: a quantitative theory.
+
+      2.1 Holonomy bounds and irrationality. Let us recall the framework in [34, § 1.2, § 2] for proving the
+irrationality of certain periods η. We start (typically) with A(x) ∈ ZJxK and B(x) ∈ QJxK such that B(x) − ηA(x)
+has larger convergence radius than both A(x) and B(x) as power series in RJxK. By analogy with [59, 15], we call η
+an Apéry limit. We pick a holomorphic mapping φ : (D, 0) → (C, 0) such that φ∗ (B(x) − ηA(x)) is meromorphic
+on D ⊂ D. We then bound the largest number of Q(x)-linearly independent power series f1 , . . . , fm ∈ QJxK such
+that the denominators of their coefficients have the same shape (or better) as those of B(x), and additionally that
+φ∗ fi is meromorphic on D for all i. If we assume for contradiction that η ∈ Q, then we can take some of these
+fi ’s to be B(x) − ηA(x) and its derivatives, but there may exist (unconditionally) additional such functions. Our
+holonomy bound (see Theorem 2.1 below) provides an upper bound of m in terms of φ and denominator types
+when |φ′ (0)| is sufficiently large comparing to the denominators. We deduce that η ∈   / Q precisely when we find
+more functions fi (including B(x) − ηA(x) and its derivatives) than the upper bound provided by the following
+theorem proved in [34, Theorem 2.5.1].
+
+       Theorem 2.1. Consider two positive integers m, r ∈ N>0 and an m × r rectangular array of nonnegative real
+numbers b := bi,j 1≤i≤m, 1≤j≤r , all of whose columns have the form 0 = b1,j = · · · = buj ,j < buj +1,j = · · · =
+bm,j =: bj , ∀j = 1, . . . , r, for some uj ∈ {0, 1, . . . , m} depending on the column. Let σi := bi,1 + . . . + bi,r , i =
+                                                               m                       r
+                                                           1 X                      1 X 2
+1, . . . , m be the i-th row sum, and define τ (b) := 2          (2i − 1)σi = σm − 2     u bj ∈ [0, σm ].
+                                                          m i=1                    m j=1 j
+    Consider a holomorphic mapping φ : (D, 0) → (C, 0) as above with derivative (conformal size) satisfying the
+condition log |φ′ (0)| > τ (b). Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+
+
+                                                                                                   Copyright © 2026 by SIAM
+                                                                           Unauthorized reproduction of this article is prohibited
+formal functions with denominator types of the form
+                                        ∞
+                                        X                                  xn
+(2.1)                        fi (x) =         ai,n                                                     ,      ai,n ∈ Z,
+                                        n=0
+                                                     [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for all i = 1, . . . , m; assume that all
+fi are holonomic. Then
+                                       RR
+                                           2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+(2.2)                              m≤ T                                           .
+                                                    log |φ′ (0)| − τ (b)
+
+    Let ⃗b := (b1 , . . . , br ) and V(φ, ⃗b) denote the Q(x)-span of power series f where φ∗ f is meromorphic on D and
+
+                                            ∞
+                                            X                              xn
+(2.3)                             f (x) =         an                                                 ,      an ∈ Z.
+                                            n=0
+                                                       [1, . . . , b1 · n] · · · [1, . . . , br · n]
+                      Pr
+When log |φ′ (0)| >    j=1 bj ,   Theorem 2.1 provides an upper bound of dimQ(x) V(φ, ⃗b).
+    Remark 2.2. In [34, §§ 6–8], we allow more general denominators of fi , and we have various improvements
+and alternative bounds. For the rest of this section, we will discuss upper bounds on the irrationality measure of
+η and use the bound (2.2) as a showcase. We hope it will be clear to the reader how the proof idea of Theorem 2.6
+can be used to refine all our qualitative holonomy bounds in [34, §§ 6–8] to include an irrationality measure. By
+the same token, simpler proofs of the bounds needed for the application to Theorem 1.1 can be more directly
+obtained with the Perelli–Zannier dynamic box principle technique that we explain in [34, Appendix B].
+    2.2   Irrationality measures. We recall the definition of irrationality measure.
+    Definition 2.3. Let v be a place of Q. The irrationality exponent/measure of η ∈ Qv ∖Q, denoted by µ(η), is
+                                                        p        1
+the supremum of the set of numbers κ such that 0 < η −       < κ is satisfied by infinitely many (p, q) ∈ Z × Z>0 .
+                                                        q v     q
+In other words, for κ > µ(η), the above inequality only has finitely many solutions (p, q) as above; thus there
+                                                                                            p        C
+exists a constant C = C(η, κ) ∈ R>0 such that for all (p, q) ∈ Z × Z>0 , we have η −              > κ . When η is
+                                                                                            q v      q
+algebraic of degree d ≥ 2, Liouville’s theorem [54, ch. 1 § 1.6] gives κ = d with an effective constant C, and in
+this case there is a distinction to be made between Definition 2.3 (which, by Roth’s theorem, reads µ(η) = 2
+whenever 2 ≤ [Q(η) : Q] < ∞), and exponents κ for which an explicit C(η, κ) can be provided. The infimum of
+the latter κ, though this not a mathematical definition, is commonly denoted µeff (η), and it is the notion featured
+in all our theorems in this paper (see Theorem 2.7). We denote by µeff,K,v (η) the straightforward generalization
+over a number field K and place v ∈ MK for v-adic K-rational approximations to an η ∈ Kv ∖ K.
+    Theorem 2.1 extends to a quantitative refinement that includes an explicit upper bound on the irrationality
+measure µ(η) for an Apéry limit η ∈ R ∖ Q as considered in subsection 2.1; for concreteness we formulate our
+next proposition for the case of the Archimedean place of Q. Let V(φ, ⃗b, η) denote the R(x)-span of power series
+g ∈ RJxK of form g(x) = B(x) − ηA(x) such that φ∗ g is meromorphic on D and A(x), B(x) satisfy (2.3).
+                                                                                           Pr
+    Proposition 2.4. Fix φ : (D, 0) → (C, 0) and a denominator type ⃗b with |φ′ (0)| > e j=1 bj . Let
+
+                           m = dimR(x) V(φ, ⃗b, η) ≥ dimQ(x) V(φ, ⃗b) = γ · m,                             γ ∈ Q ∩ (0, 1].
+
+Take ρ ∈ (0, 1] so that there exists a basis {gi = Bi − ηAi } of V(φ, ⃗b, η) where φ∗ Ai and φ∗ Bi both individually
+converge on |z| < ρ. Consider b as in Theorem 2.1 such that Ai , Bi satisfy (2.1). Assume that all gi are
+holonomic. Then
+                                         RR
+                                           T2
+                                               log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+(2.4)                    m≤                                                                   ,
+                              log |φ (0)| − τ (b) − (1 − γ) (2µ(η)−1 − (1 − γ)µ(η)−2 ) log ρ1
+                                    ′
+
+
+conditionally on the positive denominator.
+
+
+                                                                                                                         Copyright © 2026 by SIAM
+                                                                                                 Unauthorized reproduction of this article is prohibited
+

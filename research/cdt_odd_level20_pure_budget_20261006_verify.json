@@ -1,0 +1,4784 @@
+{
+  "status": "exact_specified_pure_helper_type_audit_passed",
+  "scope": "Exact lower audit for the explicitly listed safe type families; no global type optimum.",
+  "arithmetic_integral_source_sha256": "2efc9c97fdc605017c4a68a3c7e31e0c8fbc6d5b1852756d522ff0437eefe3f9",
+  "baseline_complete_unit_tables": [
+    {
+      "rank": 12,
+      "flat": "331/144",
+      "sharp": "2783/6720",
+      "sharp_minimizer": "3/2",
+      "safe_total": "54689/20160",
+      "necessary_rho": "54689/18480"
+    },
+    {
+      "rank": 13,
+      "flat": "387/169",
+      "sharp": "3805/9464",
+      "sharp_minimizer": "13/9",
+      "safe_total": "25477/9464",
+      "necessary_rho": "25477/8736"
+    }
+  ],
+  "families": [
+    {
+      "log_degree": 3,
+      "actual_rank_conditional_on_companion_proof": 13,
+      "target_rows": 3,
+      "specified_type_count": 768,
+      "row_names": [
+        "L",
+        "T2",
+        "Li2",
+        "Li3",
+        "T3",
+        "L*Li2",
+        "Li1,2",
+        "I_K"
+      ],
+      "options_sigma_e": [
+        [
+          [
+            "1",
+            0
+          ],
+          [
+            "0",
+            1
+          ]
+        ],
+        [
+          [
+            "3/2",
+            0
+          ],
+          [
+            "1",
+            1
+          ]
+        ],
+        [
+          [
+            "2",
+            0
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "0",
+            2
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "1",
+            2
+          ],
+          [
+            "0",
+            3
+          ]
+        ],
+        [
+          [
+            "11/6",
+            0
+          ],
+          [
+            "3/2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ]
+      ],
+      "minimum_total_lower": "1345/507",
+      "minimum_row_lower": "1345/507",
+      "sharp_at_minimum": "0",
+      "sharp_minimizer_at_minimum": "0",
+      "best_choices": [
+        [
+          "1",
+          0
+        ],
+        [
+          "3/2",
+          0
+        ],
+        [
+          "2",
+          0
+        ],
+        [
+          "3",
+          0
+        ],
+        [
+          "11/6",
+          0
+        ],
+        [
+          "5/2",
+          0
+        ],
+        [
+          "5/2",
+          0
+        ],
+        [
+          "3",
+          0
+        ]
+      ],
+      "necessary_rho_lower": "1345/468",
+      "all_sum_max_e_buckets": [
+        {
+          "sum_e": 0,
+          "max_e": 0,
+          "type_count": 1,
+          "minimum_row_lower": "1345/507",
+          "sharp_exact": "0",
+          "sharp_minimizer": "0",
+          "minimum_total_lower": "1345/507",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 1,
+          "max_e": 1,
+          "type_count": 8,
+          "minimum_row_lower": "100/39",
+          "sharp_exact": "25/169",
+          "sharp_minimizer": "13/2",
+          "minimum_total_lower": "1375/507",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 1,
+          "type_count": 28,
+          "minimum_row_lower": "1249/507",
+          "sharp_exact": "75/338",
+          "sharp_minimizer": "13/3",
+          "minimum_total_lower": "2723/1014",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 2,
+          "type_count": 2,
+          "minimum_row_lower": "427/169",
+          "sharp_exact": "50/169",
+          "sharp_minimizer": "13/2",
+          "minimum_total_lower": "477/169",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 1,
+          "type_count": 56,
+          "minimum_row_lower": "2447/1014",
+          "sharp_exact": "275/1014",
+          "sharp_minimizer": "13/4",
+          "minimum_total_lower": "1361/507",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 2,
+          "type_count": 14,
+          "minimum_row_lower": "410/169",
+          "sharp_exact": "251/676",
+          "sharp_minimizer": "25/4",
+          "minimum_total_lower": "1891/676",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "424/169",
+          "sharp_exact": "75/169",
+          "sharp_minimizer": "13/2",
+          "minimum_total_lower": "499/169",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 1,
+          "type_count": 70,
+          "minimum_row_lower": "1195/507",
+          "sharp_exact": "625/2028",
+          "sharp_minimizer": "13/5",
+          "minimum_total_lower": "5405/2028",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 2,
+          "type_count": 43,
+          "minimum_row_lower": "803/338",
+          "sharp_exact": "75/169",
+          "sharp_minimizer": "13/3",
+          "minimum_total_lower": "953/338",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 3,
+          "type_count": 7,
+          "minimum_row_lower": "407/169",
+          "sharp_exact": "527/1014",
+          "sharp_minimizer": "19/3",
+          "minimum_total_lower": "2969/1014",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 1,
+          "type_count": 56,
+          "minimum_row_lower": "392/169",
+          "sharp_exact": "685/2028",
+          "sharp_minimizer": "13/6",
+          "minimum_total_lower": "5389/2028",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 2,
+          "type_count": 76,
+          "minimum_row_lower": "392/169",
+          "sharp_exact": "167/338",
+          "sharp_minimizer": "25/6",
+          "minimum_total_lower": "951/338",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 3,
+          "type_count": 22,
+          "minimum_row_lower": "797/338",
+          "sharp_exact": "301/507",
+          "sharp_minimizer": "37/6",
+          "minimum_total_lower": "2993/1014",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 1,
+          "type_count": 28,
+          "minimum_row_lower": "777/338",
+          "sharp_exact": "245/676",
+          "sharp_minimizer": "13/7",
+          "minimum_total_lower": "1799/676",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 2,
+          "type_count": 85,
+          "minimum_row_lower": "1151/507",
+          "sharp_exact": "275/507",
+          "sharp_minimizer": "13/4",
+          "minimum_total_lower": "1426/507",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 3,
+          "type_count": 41,
+          "minimum_row_lower": "389/169",
+          "sharp_exact": "225/338",
+          "sharp_minimizer": "13/3",
+          "minimum_total_lower": "1003/338",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 1,
+          "type_count": 8,
+          "minimum_row_lower": "771/338",
+          "sharp_exact": "1815/4732",
+          "sharp_minimizer": "13/8",
+          "minimum_total_lower": "12609/4732",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 2,
+          "type_count": 62,
+          "minimum_row_lower": "175/78",
+          "sharp_exact": "181/312",
+          "sharp_minimizer": "25/8",
+          "minimum_total_lower": "881/312",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 3,
+          "type_count": 50,
+          "minimum_row_lower": "1142/507",
+          "sharp_exact": "2179/3042",
+          "sharp_minimizer": "38/9",
+          "minimum_total_lower": "9031/3042",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 1,
+          "type_count": 1,
+          "minimum_row_lower": "765/338",
+          "sharp_exact": "3805/9464",
+          "sharp_minimizer": "13/9",
+          "minimum_total_lower": "25225/9464",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 2,
+          "type_count": 29,
+          "minimum_row_lower": "751/338",
+          "sharp_exact": "625/1014",
+          "sharp_minimizer": "13/5",
+          "minimum_total_lower": "1439/507",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 3,
+          "type_count": 41,
+          "minimum_row_lower": "1127/507",
+          "sharp_exact": "2329/3042",
+          "sharp_minimizer": "37/9",
+          "minimum_total_lower": "9091/3042",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 2,
+          "type_count": 8,
+          "minimum_row_lower": "2227/1014",
+          "sharp_exact": "1639/2535",
+          "sharp_minimizer": "5/2",
+          "minimum_total_lower": "14413/5070",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 3,
+          "type_count": 22,
+          "minimum_row_lower": "1106/507",
+          "sharp_exact": "275/338",
+          "sharp_minimizer": "13/4",
+          "minimum_total_lower": "3037/1014",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 2,
+          "type_count": 1,
+          "minimum_row_lower": "735/338",
+          "sharp_exact": "685/1014",
+          "sharp_minimizer": "13/6",
+          "minimum_total_lower": "1445/507",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 3,
+          "type_count": 7,
+          "minimum_row_lower": "2185/1014",
+          "sharp_exact": "1727/2028",
+          "sharp_minimizer": "19/6",
+          "minimum_total_lower": "469/156",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 11,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "721/338",
+          "sharp_exact": "901/1014",
+          "sharp_minimizer": "37/12",
+          "minimum_total_lower": "1532/507",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "log_degree": 4,
+      "actual_rank_conditional_on_companion_proof": 14,
+      "target_rows": 3,
+      "specified_type_count": 1536,
+      "row_names": [
+        "L",
+        "T2",
+        "Li2",
+        "Li3",
+        "T3",
+        "L*Li2",
+        "Li1,2",
+        "I_K",
+        "T4"
+      ],
+      "options_sigma_e": [
+        [
+          [
+            "1",
+            0
+          ],
+          [
+            "0",
+            1
+          ]
+        ],
+        [
+          [
+            "3/2",
+            0
+          ],
+          [
+            "1",
+            1
+          ]
+        ],
+        [
+          [
+            "2",
+            0
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "0",
+            2
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "1",
+            2
+          ],
+          [
+            "0",
+            3
+          ]
+        ],
+        [
+          [
+            "11/6",
+            0
+          ],
+          [
+            "3/2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "25/12",
+            0
+          ],
+          [
+            "11/6",
+            1
+          ]
+        ]
+      ],
+      "minimum_total_lower": "2577/980",
+      "minimum_row_lower": "1815/784",
+      "sharp_at_minimum": "1233/3920",
+      "sharp_minimizer_at_minimum": "7/3",
+      "best_choices": [
+        [
+          "1",
+          0
+        ],
+        [
+          "3/2",
+          0
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "2",
+          1
+        ],
+        [
+          "11/6",
+          0
+        ],
+        [
+          "2",
+          1
+        ],
+        [
+          "2",
+          1
+        ],
+        [
+          "2",
+          1
+        ],
+        [
+          "25/12",
+          0
+        ]
+      ],
+      "necessary_rho_lower": "2577/910",
+      "all_sum_max_e_buckets": [
+        {
+          "sum_e": 0,
+          "max_e": 0,
+          "type_count": 1,
+          "minimum_row_lower": "6185/2352",
+          "sharp_exact": "0",
+          "sharp_minimizer": "0",
+          "minimum_total_lower": "6185/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 1,
+          "max_e": 1,
+          "type_count": 9,
+          "minimum_row_lower": "5983/2352",
+          "sharp_exact": "27/196",
+          "sharp_minimizer": "7",
+          "minimum_total_lower": "901/336",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 1,
+          "type_count": 36,
+          "minimum_row_lower": "1919/784",
+          "sharp_exact": "81/392",
+          "sharp_minimizer": "14/3",
+          "minimum_total_lower": "2081/784",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 2,
+          "type_count": 2,
+          "minimum_row_lower": "1969/784",
+          "sharp_exact": "27/98",
+          "sharp_minimizer": "7",
+          "minimum_total_lower": "2185/784",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 1,
+          "type_count": 84,
+          "minimum_row_lower": "5645/2352",
+          "sharp_exact": "99/392",
+          "sharp_minimizer": "7/2",
+          "minimum_total_lower": "6239/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 2,
+          "type_count": 16,
+          "minimum_row_lower": "5681/2352",
+          "sharp_exact": "271/784",
+          "sharp_minimizer": "27/4",
+          "minimum_total_lower": "3247/1176",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "1957/784",
+          "sharp_exact": "81/196",
+          "sharp_minimizer": "7",
+          "minimum_total_lower": "2281/784",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 1,
+          "type_count": 126,
+          "minimum_row_lower": "5521/2352",
+          "sharp_exact": "225/784",
+          "sharp_minimizer": "14/5",
+          "minimum_total_lower": "1549/588",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 2,
+          "type_count": 57,
+          "minimum_row_lower": "5569/2352",
+          "sharp_exact": "81/196",
+          "sharp_minimizer": "14/3",
+          "minimum_total_lower": "6541/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 3,
+          "type_count": 8,
+          "minimum_row_lower": "5645/2352",
+          "sharp_exact": "569/1176",
+          "sharp_minimizer": "41/6",
+          "minimum_total_lower": "323/112",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 1,
+          "type_count": 126,
+          "minimum_row_lower": "1815/784",
+          "sharp_exact": "1233/3920",
+          "sharp_minimizer": "7/3",
+          "minimum_total_lower": "2577/980",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 2,
+          "type_count": 119,
+          "minimum_row_lower": "1815/784",
+          "sharp_exact": "541/1176",
+          "sharp_minimizer": "9/2",
+          "minimum_total_lower": "6527/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 3,
+          "type_count": 29,
+          "minimum_row_lower": "5533/2352",
+          "sharp_exact": "325/588",
+          "sharp_minimizer": "20/3",
+          "minimum_total_lower": "6833/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 1,
+          "type_count": 84,
+          "minimum_row_lower": "2701/1176",
+          "sharp_exact": "27/80",
+          "sharp_minimizer": "2",
+          "minimum_total_lower": "30979/11760",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 2,
+          "type_count": 161,
+          "minimum_row_lower": "5345/2352",
+          "sharp_exact": "99/196",
+          "sharp_minimizer": "7/2",
+          "minimum_total_lower": "6533/2352",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 3,
+          "type_count": 63,
+          "minimum_row_lower": "1803/784",
+          "sharp_exact": "243/392",
+          "sharp_minimizer": "14/3",
+          "minimum_total_lower": "327/112",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 1,
+          "type_count": 36,
+          "minimum_row_lower": "335/147",
+          "sharp_exact": "9801/27440",
+          "sharp_minimizer": "7/4",
+          "minimum_total_lower": "217003/82320",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 2,
+          "type_count": 147,
+          "minimum_row_lower": "5291/2352",
+          "sharp_exact": "121/224",
+          "sharp_minimizer": "27/8",
+          "minimum_total_lower": "13123/4704",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 3,
+          "type_count": 91,
+          "minimum_row_lower": "5309/2352",
+          "sharp_exact": "2353/3528",
+          "sharp_minimizer": "41/9",
+          "minimum_total_lower": "20633/7056",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 1,
+          "type_count": 9,
+          "minimum_row_lower": "1331/588",
+          "sharp_exact": "20547/54880",
+          "sharp_minimizer": "14/9",
+          "minimum_total_lower": "434321/164640",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 2,
+          "type_count": 91,
+          "minimum_row_lower": "437/196",
+          "sharp_exact": "225/392",
+          "sharp_minimizer": "14/5",
+          "minimum_total_lower": "157/56",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 3,
+          "type_count": 91,
+          "minimum_row_lower": "5249/2352",
+          "sharp_exact": "2515/3528",
+          "sharp_minimizer": "40/9",
+          "minimum_total_lower": "20777/7056",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 1,
+          "type_count": 1,
+          "minimum_row_lower": "661/294",
+          "sharp_exact": "21387/54880",
+          "sharp_minimizer": "7/5",
+          "minimum_total_lower": "434321/164640",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 2,
+          "type_count": 37,
+          "minimum_row_lower": "5195/2352",
+          "sharp_exact": "59/98",
+          "sharp_minimizer": "27/10",
+          "minimum_total_lower": "6611/2352",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 3,
+          "type_count": 63,
+          "minimum_row_lower": "5165/2352",
+          "sharp_exact": "297/392",
+          "sharp_minimizer": "7/2",
+          "minimum_total_lower": "6947/2352",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 2,
+          "type_count": 9,
+          "minimum_row_lower": "429/196",
+          "sharp_exact": "1233/1960",
+          "sharp_minimizer": "7/3",
+          "minimum_total_lower": "789/280",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 3,
+          "type_count": 29,
+          "minimum_row_lower": "5111/2352",
+          "sharp_exact": "1865/2352",
+          "sharp_minimizer": "41/12",
+          "minimum_total_lower": "436/147",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 11,
+          "max_e": 2,
+          "type_count": 1,
+          "minimum_row_lower": "319/147",
+          "sharp_exact": "7673/11760",
+          "sharp_minimizer": "9/4",
+          "minimum_total_lower": "33193/11760",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 11,
+          "max_e": 3,
+          "type_count": 8,
+          "minimum_row_lower": "211/98",
+          "sharp_exact": "139/168",
+          "sharp_minimizer": "10/3",
+          "minimum_total_lower": "3505/1176",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 12,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "1255/588",
+          "sharp_exact": "675/784",
+          "sharp_minimizer": "14/5",
+          "minimum_total_lower": "7045/2352",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "log_degree": 5,
+      "actual_rank_conditional_on_companion_proof": 15,
+      "target_rows": 3,
+      "specified_type_count": 3072,
+      "row_names": [
+        "L",
+        "T2",
+        "Li2",
+        "Li3",
+        "T3",
+        "L*Li2",
+        "Li1,2",
+        "I_K",
+        "T4",
+        "T5"
+      ],
+      "options_sigma_e": [
+        [
+          [
+            "1",
+            0
+          ],
+          [
+            "0",
+            1
+          ]
+        ],
+        [
+          [
+            "3/2",
+            0
+          ],
+          [
+            "1",
+            1
+          ]
+        ],
+        [
+          [
+            "2",
+            0
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "0",
+            2
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "1",
+            2
+          ],
+          [
+            "0",
+            3
+          ]
+        ],
+        [
+          [
+            "11/6",
+            0
+          ],
+          [
+            "3/2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "5/2",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "3",
+            0
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        [
+          [
+            "25/12",
+            0
+          ],
+          [
+            "11/6",
+            1
+          ]
+        ],
+        [
+          [
+            "137/60",
+            0
+          ],
+          [
+            "25/12",
+            1
+          ]
+        ]
+      ],
+      "minimum_total_lower": "1769/675",
+      "minimum_row_lower": "1769/675",
+      "sharp_at_minimum": "0",
+      "sharp_minimizer_at_minimum": "0",
+      "best_choices": [
+        [
+          "1",
+          0
+        ],
+        [
+          "3/2",
+          0
+        ],
+        [
+          "2",
+          0
+        ],
+        [
+          "3",
+          0
+        ],
+        [
+          "11/6",
+          0
+        ],
+        [
+          "5/2",
+          0
+        ],
+        [
+          "5/2",
+          0
+        ],
+        [
+          "3",
+          0
+        ],
+        [
+          "25/12",
+          0
+        ],
+        [
+          "137/60",
+          0
+        ]
+      ],
+      "necessary_rho_lower": "1769/630",
+      "all_sum_max_e_buckets": [
+        {
+          "sum_e": 0,
+          "max_e": 0,
+          "type_count": 1,
+          "minimum_row_lower": "1769/675",
+          "sharp_exact": "0",
+          "sharp_minimizer": "0",
+          "minimum_total_lower": "1769/675",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 1,
+          "max_e": 1,
+          "type_count": 10,
+          "minimum_row_lower": "2857/1125",
+          "sharp_exact": "29/225",
+          "sharp_minimizer": "15/2",
+          "minimum_total_lower": "3002/1125",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 1,
+          "type_count": 45,
+          "minimum_row_lower": "8267/3375",
+          "sharp_exact": "29/150",
+          "sharp_minimizer": "5",
+          "minimum_total_lower": "17839/6750",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 2,
+          "max_e": 2,
+          "type_count": 2,
+          "minimum_row_lower": "8476/3375",
+          "sharp_exact": "58/225",
+          "sharp_minimizer": "15/2",
+          "minimum_total_lower": "9346/3375",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 1,
+          "type_count": 120,
+          "minimum_row_lower": "16241/6750",
+          "sharp_exact": "319/1350",
+          "sharp_minimizer": "15/4",
+          "minimum_total_lower": "8918/3375",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 2,
+          "type_count": 18,
+          "minimum_row_lower": "908/375",
+          "sharp_exact": "97/300",
+          "sharp_minimizer": "29/4",
+          "minimum_total_lower": "4117/1500",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 3,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "8431/3375",
+          "sharp_exact": "29/75",
+          "sharp_minimizer": "15/2",
+          "minimum_total_lower": "9736/3375",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "3",
+              0
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 1,
+          "type_count": 210,
+          "minimum_row_lower": "2653/1125",
+          "sharp_exact": "29/108",
+          "sharp_minimizer": "3",
+          "minimum_total_lower": "35461/13500",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 2,
+          "type_count": 73,
+          "minimum_row_lower": "16051/6750",
+          "sharp_exact": "29/75",
+          "sharp_minimizer": "5",
+          "minimum_total_lower": "18661/6750",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 4,
+          "max_e": 3,
+          "type_count": 9,
+          "minimum_row_lower": "301/125",
+          "sharp_exact": "611/1350",
+          "sharp_minimizer": "22/3",
+          "minimum_total_lower": "19309/6750",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 1,
+          "type_count": 252,
+          "minimum_row_lower": "7864/3375",
+          "sharp_exact": "3973/13500",
+          "sharp_minimizer": "5/2",
+          "minimum_total_lower": "35429/13500",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 2,
+          "type_count": 176,
+          "minimum_row_lower": "7864/3375",
+          "sharp_exact": "581/1350",
+          "sharp_minimizer": "29/6",
+          "minimum_total_lower": "6211/2250",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 5,
+          "max_e": 3,
+          "type_count": 37,
+          "minimum_row_lower": "15961/6750",
+          "sharp_exact": "349/675",
+          "sharp_minimizer": "43/6",
+          "minimum_total_lower": "19451/6750",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "5/2",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 1,
+          "type_count": 210,
+          "minimum_row_lower": "1559/675",
+          "sharp_exact": "1421/4500",
+          "sharp_minimizer": "15/7",
+          "minimum_total_lower": "35443/13500",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 2,
+          "type_count": 280,
+          "minimum_row_lower": "7739/3375",
+          "sharp_exact": "319/675",
+          "sharp_minimizer": "15/4",
+          "minimum_total_lower": "9334/3375",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 6,
+          "max_e": 3,
+          "type_count": 92,
+          "minimum_row_lower": "7819/3375",
+          "sharp_exact": "29/50",
+          "sharp_minimizer": "5",
+          "minimum_total_lower": "19553/6750",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "2",
+              0
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 1,
+          "type_count": 120,
+          "minimum_row_lower": "6193/2700",
+          "sharp_exact": "3509/10500",
+          "sharp_minimizer": "15/8",
+          "minimum_total_lower": "62084/23625",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 2,
+          "type_count": 308,
+          "minimum_row_lower": "1534/675",
+          "sharp_exact": "2729/5400",
+          "sharp_minimizer": "29/8",
+          "minimum_total_lower": "15001/5400",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 7,
+          "max_e": 3,
+          "type_count": 154,
+          "minimum_row_lower": "7694/3375",
+          "sharp_exact": "2527/4050",
+          "sharp_minimizer": "44/9",
+          "minimum_total_lower": "58799/20250",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 1,
+          "type_count": 45,
+          "minimum_row_lower": "6151/2700",
+          "sharp_exact": "22069/63000",
+          "sharp_minimizer": "5/3",
+          "minimum_total_lower": "496777/189000",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 2,
+          "type_count": 238,
+          "minimum_row_lower": "3041/1350",
+          "sharp_exact": "29/54",
+          "sharp_minimizer": "3",
+          "minimum_total_lower": "1883/675",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 8,
+          "max_e": 3,
+          "type_count": 182,
+          "minimum_row_lower": "7619/3375",
+          "sharp_exact": "2701/4050",
+          "sharp_minimizer": "43/9",
+          "minimum_total_lower": "59219/20250",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 1,
+          "type_count": 10,
+          "minimum_row_lower": "1223/540",
+          "sharp_exact": "206741/567000",
+          "sharp_minimizer": "3/2",
+          "minimum_total_lower": "1490891/567000",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 2,
+          "type_count": 128,
+          "minimum_row_lower": "1207/540",
+          "sharp_exact": "1901/3375",
+          "sharp_minimizer": "29/10",
+          "minimum_total_lower": "12593/4500",
+          "representative_choices": [
+            [
+              "1",
+              0
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 9,
+          "max_e": 3,
+          "type_count": 154,
+          "minimum_row_lower": "7514/3375",
+          "sharp_exact": "319/450",
+          "sharp_minimizer": "15/4",
+          "minimum_total_lower": "19813/6750",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "137/60",
+              0
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 1,
+          "type_count": 1,
+          "minimum_row_lower": "6079/2700",
+          "sharp_exact": "214049/567000",
+          "sharp_minimizer": "15/11",
+          "minimum_total_lower": "1490639/567000",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 2,
+          "type_count": 46,
+          "minimum_row_lower": "2993/1350",
+          "sharp_exact": "3973/6750",
+          "sharp_minimizer": "5/2",
+          "minimum_total_lower": "9469/3375",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 10,
+          "max_e": 3,
+          "type_count": 92,
+          "minimum_row_lower": "1489/675",
+          "sharp_exact": "2003/2700",
+          "sharp_minimizer": "11/3",
+          "minimum_total_lower": "2653/900",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "3/2",
+              0
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 11,
+          "max_e": 2,
+          "type_count": 10,
+          "minimum_row_lower": "5939/2700",
+          "sharp_exact": "2747/4500",
+          "sharp_minimizer": "29/12",
+          "minimum_total_lower": "9484/3375",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 11,
+          "max_e": 3,
+          "type_count": 37,
+          "minimum_row_lower": "2951/1350",
+          "sharp_exact": "209/270",
+          "sharp_minimizer": "43/12",
+          "minimum_total_lower": "74/25",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "25/12",
+              0
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 12,
+          "max_e": 2,
+          "type_count": 1,
+          "minimum_row_lower": "131/60",
+          "sharp_exact": "1421/2250",
+          "sharp_minimizer": "15/7",
+          "minimum_total_lower": "12667/4500",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "1",
+              2
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 12,
+          "max_e": 3,
+          "type_count": 9,
+          "minimum_row_lower": "1171/540",
+          "sharp_exact": "29/36",
+          "sharp_minimizer": "3",
+          "minimum_total_lower": "803/270",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "11/6",
+              0
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        },
+        {
+          "sum_e": 13,
+          "max_e": 3,
+          "type_count": 1,
+          "minimum_row_lower": "1937/900",
+          "sharp_exact": "11231/13500",
+          "sharp_minimizer": "44/15",
+          "minimum_total_lower": "20143/6750",
+          "representative_choices": [
+            [
+              "0",
+              1
+            ],
+            [
+              "1",
+              1
+            ],
+            [
+              "0",
+              2
+            ],
+            [
+              "0",
+              3
+            ],
+            [
+              "3/2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "2",
+              1
+            ],
+            [
+              "11/6",
+              1
+            ],
+            [
+              "25/12",
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "all_specified_family_necessary_thresholds_strictly_above_14_over_5": true,
+  "exp_14_over_5_positive_series_lower_exceeds_16": true,
+  "not_claimed": [
+    "row lower bounds equal tau-double",
+    "all possible denominators, rational gauges, or adaptive lattices are excluded",
+    "a new numerical irrationality theorem"
+  ]
+}

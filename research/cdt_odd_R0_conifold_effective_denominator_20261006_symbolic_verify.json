@@ -1,0 +1,124 @@
+{
+  "status": "exact_identity_verification_and_finite_support_for_paper_proof",
+  "executions": 1,
+  "old_or_peer_math_producers_executed_or_imported": 0,
+  "checks": [
+    "exact jet-to-nilpotent-gauge identity including source",
+    "exact fourth-order operator source identity",
+    "printed five-dimensional rescaled matrix exact",
+    "all regular coefficients visibly integral at 2",
+    "residue squares to zero",
+    "residue is entrywise divisible by 2",
+    "exact finite inverse formula",
+    "g0 finite 180-degree coefficients obey new proved dyadic bound",
+    "g1 finite 180-degree coefficients obey new proved dyadic bound",
+    "g2 finite 180-degree coefficients obey new proved dyadic bound",
+    "h finite 180-degree coefficients obey new proved dyadic bound",
+    "finite arithmetic identity for the inductive prefix fee",
+    "finite pairs obey beta(a)+beta(b)<=beta(a+b)+1"
+  ],
+  "check_count": 13,
+  "author_new_data_sha256": "b275f2481c3f02b571ccadd447d5a776d58842eaa2614bde5c67ecb0bb801ebf",
+  "script_sha256": "7ac54b6094f4346673c1a931ced683fbf7143fe162af6b5caa200f01e48c1c01",
+  "matrix": [
+    [
+      "0",
+      "2*z",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "2*z",
+      "-2",
+      "0"
+    ],
+    [
+      "-z/(64*z**3 - 48*z**2 + 12*z - 1)",
+      "(-160*z**2 + 32*z)/(64*z**3 - 48*z**2 + 12*z - 1)",
+      "(-232*z**2 + 30*z)/(16*z**2 - 8*z + 1)",
+      "(136*z - 6)/(16*z**2 - 8*z + 1)",
+      "z"
+    ],
+    [
+      "-z**2/(64*z**3 - 48*z**2 + 12*z - 1)",
+      "(-160*z**3 + 32*z**2)/(64*z**3 - 48*z**2 + 12*z - 1)",
+      "(-232*z**3 + 30*z**2)/(16*z**2 - 8*z + 1)",
+      "(136*z**2 - 6*z)/(16*z**2 - 8*z + 1)",
+      "z**2"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-14*z/(4*z - 1)"
+    ]
+  ],
+  "residue": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-6",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "prefix_summaries": {
+    "g0": {
+      "degree": 180,
+      "maximum_binary_denominator_exponent": 529,
+      "new_bound_at_prefix_degree": 622
+    },
+    "g1": {
+      "degree": 180,
+      "maximum_binary_denominator_exponent": 527,
+      "new_bound_at_prefix_degree": 622
+    },
+    "g2": {
+      "degree": 180,
+      "maximum_binary_denominator_exponent": 442,
+      "new_bound_at_prefix_degree": 622
+    },
+    "h": {
+      "degree": 180,
+      "maximum_binary_denominator_exponent": 529,
+      "new_bound_at_prefix_degree": 622
+    }
+  },
+  "limitations": [
+    "All-n dyadic bound rests on the written nilpotent-recursion proof.",
+    "No claim that odd-prime generic radius hypotheses have been verified.",
+    "No Betti integral comparison or irrationality conclusion follows from these checks."
+  ]
+}

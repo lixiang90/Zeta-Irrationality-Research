@@ -1,0 +1,426 @@
+{
+  "scope": "Only p=13; full weight-four Sturm identities on both actual six-dimensional Fricke spaces, plus explicit level10 cusp verification. No prime scan, no Hecke-kernel density or Smith claim.",
+  "prime": 13,
+  "series_precision": 156,
+  "sturm_degree": 12,
+  "checks_passed": 30,
+  "check_labels": [
+    "Independent eta recursion matches fixed coordinate normalization",
+    "Six basis leading coefficient units sign=-1",
+    "Six basis leading coefficient units sign=1",
+    "Complete weight-four Sturm equality sign=-1 basis=0",
+    "Complete weight-four Sturm equality sign=-1 basis=1",
+    "Complete weight-four Sturm equality sign=-1 basis=2",
+    "Complete weight-four Sturm equality sign=-1 basis=3",
+    "Complete weight-four Sturm equality sign=-1 basis=4",
+    "Complete weight-four Sturm equality sign=-1 basis=5",
+    "Complete weight-four Sturm equality sign=1 basis=0",
+    "Complete weight-four Sturm equality sign=1 basis=1",
+    "Complete weight-four Sturm equality sign=1 basis=2",
+    "Complete weight-four Sturm equality sign=1 basis=3",
+    "Complete weight-four Sturm equality sign=1 basis=4",
+    "Complete weight-four Sturm equality sign=1 basis=5",
+    "Character at the single selected prime is minus one",
+    "sqrt5 is inert at13",
+    "The two complete Hecke matrices are conjugate",
+    "Explicit cusp products have exact normalization divisibility",
+    "Explicit level10 v normalization is integral",
+    "Explicit level10 cusp T13 Sturm equality basis=0",
+    "Explicit level10 cusp T13 Sturm equality basis=1",
+    "Level10 T13 has the exact nonsplit T3 shape",
+    "Both exact determinants are integers in Z[sqrt5]",
+    "Both mod13 matrices have full rank6",
+    "T13 squared scalar on frozen Eisenstein component",
+    "T13 squared scalar on frozen old_cusp component",
+    "T13 squared scalar on frozen new_cusp component",
+    "Eisenstein eigenvalue squared matches one-minus-p-cubed",
+    "Old cusp squared scalar matches explicit level10 matrix"
+  ],
+  "matrix_convention": "column j is coordinates of T13 B_j(source sign), target sign=source sign*chi5(13); r^2=5; both bases scaled by5, which cancels from the matrix",
+  "matrices": {
+    "-1": [
+      [
+        [
+          "-2196",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "10880",
+          "1632"
+        ],
+        [
+          "-116",
+          "48"
+        ],
+        [
+          "-142",
+          "26"
+        ],
+        [
+          "-158",
+          "12"
+        ],
+        [
+          "-160",
+          "4"
+        ],
+        [
+          "40",
+          "32"
+        ]
+      ],
+      [
+        [
+          "-17920",
+          "-3296"
+        ],
+        [
+          "1120",
+          "656"
+        ],
+        [
+          "1258",
+          "726"
+        ],
+        [
+          "1336",
+          "770"
+        ],
+        [
+          "1350",
+          "782"
+        ],
+        [
+          "-900",
+          "130"
+        ]
+      ],
+      [
+        [
+          "14080",
+          "3328"
+        ],
+        [
+          "320",
+          "128"
+        ],
+        [
+          "96",
+          "32"
+        ],
+        [
+          "-22",
+          "-22"
+        ],
+        [
+          "-40",
+          "-24"
+        ],
+        [
+          "6970",
+          "2262"
+        ]
+      ],
+      [
+        [
+          "-7040",
+          "-1664"
+        ],
+        [
+          "-3520",
+          "-832"
+        ],
+        [
+          "-3408",
+          "-784"
+        ],
+        [
+          "-3352",
+          "-760"
+        ],
+        [
+          "-3346",
+          "-762"
+        ],
+        [
+          "-11600",
+          "-3522"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "3294",
+          "1098"
+        ]
+      ]
+    ],
+    "1": [
+      [
+        [
+          "-2196",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "10880",
+          "-1632"
+        ],
+        [
+          "-116",
+          "-48"
+        ],
+        [
+          "-142",
+          "-26"
+        ],
+        [
+          "-158",
+          "-12"
+        ],
+        [
+          "-160",
+          "-4"
+        ],
+        [
+          "40",
+          "-32"
+        ]
+      ],
+      [
+        [
+          "-17920",
+          "3296"
+        ],
+        [
+          "1120",
+          "-656"
+        ],
+        [
+          "1258",
+          "-726"
+        ],
+        [
+          "1336",
+          "-770"
+        ],
+        [
+          "1350",
+          "-782"
+        ],
+        [
+          "-900",
+          "-130"
+        ]
+      ],
+      [
+        [
+          "14080",
+          "-3328"
+        ],
+        [
+          "320",
+          "-128"
+        ],
+        [
+          "96",
+          "-32"
+        ],
+        [
+          "-22",
+          "22"
+        ],
+        [
+          "-40",
+          "24"
+        ],
+        [
+          "6970",
+          "-2262"
+        ]
+      ],
+      [
+        [
+          "-7040",
+          "1664"
+        ],
+        [
+          "-3520",
+          "832"
+        ],
+        [
+          "-3408",
+          "784"
+        ],
+        [
+          "-3352",
+          "760"
+        ],
+        [
+          "-3346",
+          "762"
+        ],
+        [
+          "-11600",
+          "3522"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "3294",
+          "-1098"
+        ]
+      ]
+    ]
+  },
+  "exact_determinants": {
+    "-1": [
+      "567286487912448",
+      "256193897766912"
+    ],
+    "1": [
+      "567286487912448",
+      "-256193897766912"
+    ]
+  },
+  "mod13_determinants": {
+    "-1": [
+      5,
+      1
+    ],
+    "1": [
+      5,
+      12
+    ]
+  },
+  "mod13_ranks": {
+    "-1": 6,
+    "1": 6
+  },
+  "mod13_pivot_columns": {
+    "-1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "level10_T13_matrix": [
+    [
+      0,
+      -6
+    ],
+    [
+      24,
+      0
+    ]
+  ],
+  "level10_nonsplit_scalar": 6,
+  "T13_squared_spectral_values": {
+    "Eisenstein": [
+      "4822416",
+      "0"
+    ],
+    "old_cusp": [
+      "-144",
+      "0"
+    ],
+    "new_cusp": [
+      "-2736",
+      "0"
+    ]
+  },
+  "frozen_T3_data_sha256": "aa3e6b393c4d64c15f3e77b21f3260bed4445175cf0076c347a134b51685ed1a"
+}

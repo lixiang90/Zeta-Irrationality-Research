@@ -1,0 +1,112 @@
+                    ZEROS OF MOPRL: LOCATION AND INTERLACING                         15
+
+5.2. Zero interlacing for Type I multiple orthogonal polynomials.
+
+
+Theorem 5.5. Assume that n, n − e1 , and n − eℓ are normal for µ =
+(µ1 , µ2 , . . . , µr ). Then
+             (1)     (1)
+  Z[W (An , An−eℓ )]
+     
+   = z0 ∈ C : n − 2e1 is not normal for ((x − z0 )2 µ1 , µ2 , . . . , µr ) . (5.5)
+       (1)                          (1)     (1)
+   If An is real-rooted, then An ∼ An−eℓ if and only if n − 2e1 is normal
+for the system ((x − z0 )2 µ1 , µ2 , . . . , µr ) for every z0 ∈ R.
+                                             (j)
+   Analogous statements hold for An for j = 2, . . . , r, if we instead trans-
+form the j-th measure.
+Remark 5.6. Assuming additionally the µ-normality of n − ek and n −
+                         (1)        (1)
+ek − el , then An−eℓ ∼ An−ek if and only if n − 2e1 is normal for ((x −
+z0 )2 µ1 , µ2 , . . . , µr ) for every z0 ∈ R.
+
+Proof. Fix any z0 ∈ C and denote µ   p
+                                     p to be ((x−z0 )2 µ1 , µ2 , . . . , µr ). Note that
+      (1)  (1)                             (1)          (1)
+W (An , An−eℓ ; z0 ) = 0 if and only if aAn (x) + bAn−eℓ (x) = (x − z0 )2 B(x)
+for some (a, b) 6= (0, 0) and some polynomial B with deg B ≤ n1 − 3. Note
+that An and An−eℓ are linearly independent, since
+     X r Z                                r Z
+                                          X
+              (j)    |n|−2                       (j)
+            An (x)x        dµj (x) = 0 6=       An−eℓ (x)x|n|−2 dµj (x).           (5.6)
+     j=1                                    j=1
+                            (2)       (2)           (r)       (r)
+Then the vector (B, aAn + bAn−eℓ , . . . , aAn + bAn−eℓ ) is non-zero and
+satisfies all the degree and orthogonality conditions for the index n − 2e1
+with respect to µ  p
+                   p . Since we also have
+                X r Z
+                            (j)        (j)
+                        (aAn (x) + bAn−eℓ (x))x|n|−3 dµj (x) = 0,      (5.7)
+                    j=1
+
+we see that n − 2e1 is not normal for µ       p
+                                              p by Remark 3.1.
+   Conversely, if n − 2e1 is not normal for µ         p
+                                                      p , then there is some vector
+        (1)      (2)        (r)                  (1)
+B = (B , B , . . . , B ) 6= 0 with deg B ≤ n1 − 3 and deg B (j) ≤ nj − 1
+for j = 2, . . . , r, such that
+                X  r Z
+                                     p
+                        B (j) (x)xp dµ
+                                     pj (x) = 0,     p = 0, . . . , |n| − 3.  (5.8)
+                   j=1
+
+Pick a such that ((x − z0 )2 B (1) (x), B (2) (x) . . . , B (r) (x)) − aAn−eℓ (x) satis-
+fies the same degree and orthogonality conditions as An (with the correct
+choice of a we get the one missing orthogonality condition). This shows
+         (1)       (1)
+that aAn (x) + bAn−eℓ (x) = (x − z0 )2 B (1) (x) for some (a, b) 6= (0, 0) and
+completes the proof of (5.5).
+16                     ROSTYSLAV KOZHAN AND MARCUS VAKTNÄS
+
+   The statement on interlacing then follows from Lemma 2.2 since normality
+                        (1)                                         (1)
+of n − e1 gives us deg An = n1 − 1 (use [22, Cor 23.1.1]), and deg An−eℓ ≤
+                    (1)
+n1 − 1 ≤ deg An + 1.                                                                        
+                                                                       (i)         (i)
+Corollary 5.7. Let µ be an Angelesco system. Then An ∼ An+ej and
+  (i)         (i)
+An+ej ∼ An+ek , assuming ni ≥ 1 and j 6= k.
+
+Proof. ((x − z0 )2 µ1 , µ2 , . . . , µr ) is Angelesco for any z0 , so Theorem 5.5 ap-
+plies.                                                                              
+  For AT systems real-rootedness of type I polynomials does not have to
+hold, so one cannot expect interlacing, of course. For Nikishin systems,
+Theorem 5.5 can be used, however.
+Theorem 5.8. Let (µ1 , µ2 ) = N (σ1 , σ2 ) be a Nikishin system. Then
+        (1)     (1)             (1)
+  (i) An , An−e1 , and An−e2 are pairwise interlacing if n1 + 1 ≤ n2 .
+        (2)     (2)             (2)
+ (ii) An , An−e1 , and An−e2 are pairwise interlacing if n1 + 1 ≥ n2 .
+                                                                             (1)
+Remark 5.9. In particular, this shows that the polynomials An with n1 =
+          (2)
+n2 and An with n1 + 2 = n2 are real-rooted, which improves the statement
+from Theorem 4.13, see Remark 4.14. Interlacing also shows that all except
+potentially one of the real roots of each of these polynomials belong to Γ̊2 .
+Proof. Similarly to the proof of Theorem 4.13 (ii), we get
+                      (µ1 , (x − z0 )2 µ2 ) = (µ1 , mσe (x)µ1 + Q(x)µ1 ),                (5.9)
+with supp σ e ⊆ supp σ and deg Q ≤ 1. Lemma 4.12 then gives us normality
+of this system for the indices with n2 ≤ n1 − 1. Index n − 2e2 is then normal
+if n2 − 2 ≤ n1 − 1 which together with Theorem 5.5 proves (ii).
+   To prove (i), one can follow the same arguments as in the proof of Theorem
+4.13 (i).                                                                   
+
+                          6. Wronskians of higher order
+   It should come as no surprise now that normality of Christoffel transforms
+of higher degree are connected to the zeros of the Wronskians of higher
+order. Christoffel transforms of multiple orthogonal polynomials were the
+topic of [4, 9, 29, 30, 35].
+   Let us fix an “increasing path” of multi-indices, that is a sequence {ns }ℓs=1
+with l ∈ {1, 2, . . .}, ns ∈ Nr , so that
+                                      ns+1 = ns + ejs
+for every s = 1, 1, . . . , l − 1, and for some js ∈ {1, . . . , r}.
+Theorem 6.1. Suppose each multi-index in {ns }ℓs=1 is µ-normal. Then
+                                ¶                                          ©
+  Z[W (Pn1 , . . . , Pnℓ ; x)] = z0 ∈ C : n1 is not normal for (x − z0 )ℓ µ .
+                                                                            (6.1)
+

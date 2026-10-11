@@ -1,0 +1,58 @@
+{
+  "scope": "A single exact n=1..5 Taylor minor for T3,L*Li2,Li(1,2),Li3,I_K. No prime scan; does not prove direct sum with Xi, S2 success, or height gain.",
+  "checks_passed": 8,
+  "check_labels": [
+    "Definitions give exact row n=1",
+    "Definitions give exact row n=2",
+    "Definitions give exact row n=3",
+    "Definitions give exact row n=4",
+    "Definitions give exact row n=5",
+    "K coefficients from t(1-t)K'=tK/2+L",
+    "Fixed five-column minor",
+    "Only 2,3,5 occur in the minor denominator"
+  ],
+  "matrix": [
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "1/2",
+      "1/8",
+      "1/2"
+    ],
+    [
+      "1/6",
+      "3/4",
+      "5/12",
+      "1/27",
+      "17/54"
+    ],
+    [
+      "1/4",
+      "41/72",
+      "49/144",
+      "1/64",
+      "2/9"
+    ],
+    [
+      "7/24",
+      "65/144",
+      "41/144",
+      "1/125",
+      "21/125"
+    ]
+  ],
+  "determinant": "-1/3110400",
+  "denominator_prime_factors": {
+    "2": 9,
+    "3": 5,
+    "5": 2
+  },
+  "conditional_all_prime_consequence": "For p>=7 and a slow prefix including coefficients 1..5, this five-column minor is a unit."
+}

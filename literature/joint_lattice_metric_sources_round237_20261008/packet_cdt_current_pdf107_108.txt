@@ -1,0 +1,147 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    107
+
+
+this subharmonic function log |z −n hr φ∗r (s(x) · xD )|. This gets us the upper bound
+                                       Z
+                             ′
+        log |cn | ≤ −n log |φr (0)| +     log |hr φ∗r (s(x) · xD )| µHaar
+                                        T
+                                       Z                                         (7.4.2)
+                  = −n log |φ′r (0)| +    log |φ∗r (s(x) · xD )| µHaar + O(1).
+                                      T
+Now we claim the identity
+                                      Z
+                     D(L · Lr ) = −        log ∥φ∗r x−D ∥φ∗ L⊗D µHaar .           (7.4.3)
+                                                          r
+                                       T
+  To prove it, we start from the Poincaré–Lelong formula that gives:
+                      i                                      ⊗D
+                                                                    
+                        ∂∂ log ∥φ∗r (x−D )∥φ∗ L⊗D = −c1 φ∗r L         ,
+                     π                        r
+
+                                    i
+                                      ∂∂ log+ |z|−1 = −δ0 + µHaar .
+                                   π
+Therefore, by the Green–Stokes formula, we find
+          Z
+       −      log ∥φ∗r x−D ∥φ∗ L⊗D µHaar
+                              r
+           T
+          Z
+                                          i
+       =       − log ∥φ∗r x−D ∥φ∗ L⊗D ∂∂ log+ |z|−1 − log ∥φ∗r x−D ∥φ∗ L⊗D |z=0
+                                  r      π                              r
+          ZD
+                 i                                                  ⊗D
+                                                                          
+       =       − ∂∂ log ∥φ∗r x−D ∥φ∗ L⊗D log+ |z|−1 + deg d φ∗ L |z=0
+                                                                r
+                 π                      r
+          ZD
+                                    ⊗D
+                                            d L⊗D |x=0
+                                                        
+       =       log+ |z|−1 c1 (φ∗r L ) + deg
+            D
+       = D · (ι, φr )∗ L · ([0], log+ |z|−1 )
+                                               
+
+       = D · L · (ι, φr )∗ ([0], log+ |z|−1 )
+                                               
+                        
+       = D · L · Lr .
+proving (7.4.3).
+   At this point, by (7.4.2) and the pointwise decomposition
+         log |φ∗r (s(x) · xD )| = log ∥φ∗r s∥φ∗ L⊗D − log ∥φ∗r x−D ∥φ∗ L⊗D        (7.4.4)
+                                             r                        r
+
+inside the T integrands, the lemma follows if we prove an o(D) bound on the T
+integral of the first term on the right-hand side of (7.4.4) under the assumption
+∥s∥ ≤ 1.
+   If in place of the integration measure µHaar we had a continuous measure µ on D,
+we would have had a constant C such that Cφ∗ ν ≥ µ, and then we would have had
+                                                              Z
+                                                 1
+              0 ≥ log ∥s∥ ≥ max log ∥Qi ∥ =          max log         ∥Qi ∥2L ν
+                             1≤i≤m               2 1≤i≤m       X (C)
+                              Z                         Z
+                         1
+                ≥ C ′ + log       ∥φ∗ s∥2φ∗ L µ ≥ C ′ +    log ∥φ∗ s∥φ∗ L µ,
+                         2      D                        T
+where C ′ is a constant depending only on m, fi , C, and is independent of D. We
+obtain the desired bound with µHaar in place of µ upon approximating log+ |z|
+                                                                            1
+                                                                              (the
+Green function of µHaar ) by smooth Green functions. See § 8.2.11 for details. □
+                                                                          
+  Next, we explicitly calculate the arithmetic intersection number L · Lr :
+108                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma 7.4.5. For 0 < r ≤ 1, we have
+                      ZZ
+                  
+            L · Lr =       log |φ(z) − φ(rw)| µHaar (z)µHaar (w).
+                                T2
+
+Proof. Recall from the discussion above that we have, straight from the definition,
+                            Z
+                                log+ |z|−1 c1 (φ∗r L) + deg
+                        
+                  L · Lr =                              d (L|x=0 ).
+                                 D
+
+From the definition of L and the functorial behavior of the Chern form under
+pushforward [BC22, Proposition 3.4.5(2)], we have
+                                        Z
+        ∗       ∗
+                                           log+ |z|−1 φ∗r φ∗ µHaar + deg
+                                   
+   c1 (φr L) = φr φ∗ µHaar , L · Lr =                                d (L|x=0 ).
+                                                 D
+                                                             Q
+   Recall again from the discussion above, and from ∥1(x)∥L = z∈D,φ(z)=x |z| and
+using the Poisson–Jensen formula, that
+                                                                   
+                                                            Y
+     d (L|x=0 ) = − log ∥x−1 ∥                (φ(z))−1
+     deg                        L x=0 = − log                    |z|
+                                                                                x=0
+                                                                  z∈D, φ(z)=x
+                                          X
+                 = log |φ′ (0)| +                     log |z|−1
+                                     0̸=z∈D, φ(z)=0
+                     Z
+                 =        log |φ(z)|µHaar (z),
+                     T
+
+where both the product and sum count with multiplicities.
+   We follow the same computation as in [BC22, §5.4 and Example 5.3.2.1]. Note
+that on C2 (with coordinates x, y), we have
+                              i
+                                ∂∂ log |x − y|−1 = −δ∆(C) ,
+                              π
+where ∆(C) denotes the diagonal divisor on C2 .
+   For every z ∈ T ⊂ D, we have (here we also view φ(z) as the constant function
+that maps all points on D to φ(z))
+          φ∗r φ∗ δz = φ∗r δφ(z) = (φr , φ(z))∗ δ∆(C)
+                                   i                 i
+                    = (φr , φ(z))∗ ∂∂ log |x − y| = ∂∂ log |φr (w) − φ(z)|.
+                                   π                 π
+   Therefore for a fixed z, by using the Green–Stokes formula (it is alright here
+even though the Green functions are not smooth like in [BC22]), we have
+        Z                         Z
+                                                 i
+           log+ |w|−1 φ∗r φ∗ δz =    log+ |w|−1 ∂∂ log |φr (w) − φ(z)|
+         D                                       π
+                                  ZD                  
+                                        i
+                                =         ∂∂ log+ |w|−1 · log |φr (w) − φ(z)|
+                                       π
+                                  ZD
+                                =    (µHaar (w) − δw=0 ) · log |φr (w) − φ(z)|
+                                  ZD
+                                =    log |φr (w) − φ(z)|µHaar (w) − log |φ(z)|.
+                                      T
+

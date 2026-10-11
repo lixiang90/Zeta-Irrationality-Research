@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-06",
+  "scope": "Independent actual compact rank-four projector, raw/Tate cup pairing, exact Yukawa kappa, and conditional scalar regulator-to-W interface. No old or peer mathematical producer executed or imported.",
+  "documents": [
+    {
+      "title": "A Course in Hodge Theory, With Emphasis on Multiple Integrals",
+      "author": "Hossein Movasati",
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\movasati2021_course_hodge_theory_author_20261006.pdf",
+      "source_url": "https://w3.impa.br/~hossein/myarticles/hodgetheory.pdf",
+      "version": "Author-hosted book manuscript dated April 27, 2021 on its actual title page",
+      "pdf_pages": 380,
+      "bytes": 3425043,
+      "sha256": "69830ec409ccd1172f1ec348dad2f6bed59fe4f18342c1a4fab37b0659c85182",
+      "actual_read_pdf_pages": [1, 54, 57, 58, 82, 93, 94, 95, 131, 132, 133],
+      "actual_read_scope": "Title; selected elementary homology pages; printed62 intersection form; printed73-75 local quadratic thimble and anticlockwise Picard-Lefschetz Theorem6.3; printed111-113 Hodge pairing with (2*pi*i)^(-m) normalization and filtration orthogonality. PDF95 rendered and actually viewed.",
+      "limitations": "Only these 11 complete PDF pages read locally. No claim to have read the full 380-page book. Theorem6.3 uses n as total complex dimension and H_(n-1) cycles; in our case n=4."
+    }
+  ],
+  "reused_primary_sources": [
+    {
+      "title": "D-brane masses at special fibres of hypergeometric families of Calabi-Yau threefolds, modular forms, and periods",
+      "authors": ["Kilian Bonisch", "Albrecht Klemm", "Emanuel Scheidegger", "Don Zagier"],
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\bonisch_klemm_scheidegger_zagier_alternate_author_url_20261006.pdf",
+      "source_url_from_existing_receipt": "https://people.mpim-bonn.mpg.de/zagier/files/preprints/DbranesCYandMFs.pdf",
+      "version": "Previously pinned author-hosted BONN-TH-2022-07 snapshot",
+      "pdf_pages": 79,
+      "bytes": 758740,
+      "sha256": "f124aab462ae953eff9a2c9df28cff63e1b63adad792a572a1c608226fdfac83",
+      "actual_read_pdf_pages": [6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 19],
+      "actual_read_scope": "Compact hypergeometric PF input Eq2.1/Table1; period/pairing conventions and Eq2.14; explicit four-quadrics quotient and smooth compact mirror with h21=1; Eq2.40 canonical residue form.",
+      "limitations": "Native compact PF is a primary geometric input, not inferred from one scalar torus period. Integral basis normalization and signs in Eq2.6/2.8/2.11/2.14 are not blindly transferred to our raw residue; kappa is independently determined by a true node and PL intersection."
+    },
+    {
+      "title": "Algebraic K-theory of toric hypersurfaces",
+      "authors": ["Charles F. Doran", "Matt Kerr"],
+      "local_path": "E:\\kimi-build\\zeta5\\literature\\doran_kerr2011_algebraic_K_toric_published_20261006.pdf",
+      "source_url_from_existing_receipt": "https://intlpress.com/site/pub/files/_fulltext/journals/cntp/2011/0005/0002/CNTP-2011-0005-0002-a003.pdf",
+      "version": "Published CNTP5(2011),397-600",
+      "pdf_pages": 204,
+      "bytes": 2496681,
+      "sha256": "1911f2f4a805e1a3d218ca247665209f3fe9505aa9bc0ae949b1163d7271ede4",
+      "actual_read_pdf_pages": [66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 79, 80, 81, 82, 83],
+      "actual_read_scope": "True regulator/current hypotheses and ambiguity; Definition4.1/Corollary4.5 use the monic PF; Remark4.4 needs extra kappa normalization; Lemma4.1 stated only ell2,3; actual open-cycle/membrane comparison lemmas.",
+      "limitations": "No automatic application to the nonregular ell4 family. Compact regulator derivative is still explicitly conditional in this proof."
+    }
+  ],
+  "visual_artifacts": [
+    {
+      "path": "E:\\kimi-build\\zeta5\\research\\artifacts\\cdt_odd_R0_Yukawa_scalar_interface_20261006\\movasati_pdf95.png",
+      "sha256": "e4222206bf4238ae5089bbd97f2d792bace50f74dd1f82972db459cc8bbe0efc",
+      "actually_viewed": true
+    }
+  ],
+  "new_pdf_count": 1,
+  "new_pdf_pages": 380,
+  "new_primary_actual_local_pages": 11,
+  "proof": {
+    "path": "E:\\kimi-build\\zeta5\\research\\cdt_odd_R0_Yukawa_scalar_interface_20261006.md",
+    "sha256": "172a0830a547fd3d018953ca996ca6c5d2d67ace172a9943acee6c1cc9044b15",
+    "results": [
+      "Actual horizontal rational compact rank-four orthogonal projector from degree-one graph correspondences; no full-open-rank4 assumption.",
+      "Fixed-left-residue cup normalization gives kappa_raw=-(2*pi*i)^3/16 and kappa_dR=-1/16.",
+      "True node sphere period and actual Gamma period give Gamma dot delta=-8; scalar concomitant independently fixes kappa.",
+      "Exact self-adjoint P and conditional scalarization P nu = kappa*c*sqrt(x), including leading factor and dual sign.",
+      "If actual compact regulator derivative has c=+16, its normalized scalar satisfies the same inhomogeneous P4 equation as W, up to a still-undetermined homogeneous period."
+    ],
+    "not_claimed": [
+      "Actual ell4 compact regulator derivative or equality to the positive-cut current.",
+      "Integral projector, trace matrix, lattice saturation or free Tate normalization.",
+      "Actual vanishing of the homogeneous period discrepancy.",
+      "A new numerical irrationality/linear-independence theorem, numerical PSLQ or Lean formalization."
+    ]
+  },
+  "execution": {
+    "mathematical_verifier_created_or_executed": false,
+    "old_or_peer_mathematical_producer_executed_or_imported": false,
+    "download": "Windows curl.exe --fail --location, normal system TLS validation; successful exit0; no insecure flag or certificate bypass.",
+    "local_pdf_reads": "Python fitz used only to read/render primary PDFs and hash source metadata."
+  }
+}

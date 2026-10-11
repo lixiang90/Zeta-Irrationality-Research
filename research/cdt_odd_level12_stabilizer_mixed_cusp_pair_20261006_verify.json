@@ -1,0 +1,259 @@
+{
+  "description": "All-integer mixed cusp-pair symbolic identities; no parameter or word scan",
+  "run_history": "First single execution, all fixed checks passed without corrections",
+  "parameters": "n is formal; gamma entries are formal; +/- signs are only congruence-group residue choices",
+  "x4": [
+    [
+      11,
+      3
+    ],
+    [
+      -48,
+      -13
+    ]
+  ],
+  "x5": [
+    [
+      25,
+      16
+    ],
+    [
+      -36,
+      -23
+    ]
+  ],
+  "A4": [
+    [
+      -1,
+      0
+    ],
+    [
+      4,
+      -1
+    ]
+  ],
+  "A5": [
+    [
+      -2,
+      -1
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "M": [
+    [
+      24,
+      -7
+    ],
+    [
+      84,
+      -24
+    ]
+  ],
+  "pureL_period4": [
+    -2266160,
+    -16555200,
+    -30256320
+  ],
+  "pureL_period5": [
+    -1329040,
+    -4311360,
+    -3531840
+  ],
+  "power_period4": [
+    "-80*n*(11028*n**2 + 12972*n + 4327)",
+    "-960*n*(7352*n**2 + 7729*n + 2164)",
+    "-960*n*(14704*n**2 + 13620*n + 3193)"
+  ],
+  "power_period5": [
+    "-80*n*(58816*n**2 - 55800*n + 13597)",
+    "-960*n*(14704*n**2 - 13031*n + 2818)",
+    "-960*n*(11028*n**2 - 9084*n + 1735)"
+  ],
+  "common_discriminant": "-307200*n**2*(844561*n**2 - 232577)",
+  "beta4": -294080,
+  "beta5": -220560,
+  "height_product_minimum": "611984/844561",
+  "input_pins": {
+    "cdt_odd_level12_generator_cocycle_20261006.md": "a3f00c593a9fcc3f9b1791b854faa0ad7b721b6c76d67cc52598cd5f919f67ca",
+    "cdt_odd_level12_stabilizer_structure_20261006.md": "7d2d33557945c880857e080cd1ffbfcb22902b4d7f3d7af0fd02e204cbc8cd22"
+  },
+  "checks": [
+    {
+      "name": "A4-det1",
+      "passed": true
+    },
+    {
+      "name": "A5-det1",
+      "passed": true
+    },
+    {
+      "name": "M-det12",
+      "passed": true
+    },
+    {
+      "name": "X4-cusp-scale-minus3",
+      "passed": true
+    },
+    {
+      "name": "X5-cusp-scale-plus4",
+      "passed": true
+    },
+    {
+      "name": "Sym2-unipotent-nilpotent-4",
+      "passed": true
+    },
+    {
+      "name": "power-period-at-zero-4",
+      "passed": true
+    },
+    {
+      "name": "power-period-at-one-4",
+      "passed": true
+    },
+    {
+      "name": "power-period-all-integer-recurrence-4",
+      "passed": true
+    },
+    {
+      "name": "power-period-discriminant-4",
+      "passed": true
+    },
+    {
+      "name": "primitive-period-discriminant-4",
+      "passed": true
+    },
+    {
+      "name": "scaled-highest-coefficient-4",
+      "passed": true
+    },
+    {
+      "name": "Sym2-unipotent-nilpotent-5",
+      "passed": true
+    },
+    {
+      "name": "power-period-at-zero-5",
+      "passed": true
+    },
+    {
+      "name": "power-period-at-one-5",
+      "passed": true
+    },
+    {
+      "name": "power-period-all-integer-recurrence-5",
+      "passed": true
+    },
+    {
+      "name": "power-period-discriminant-5",
+      "passed": true
+    },
+    {
+      "name": "primitive-period-discriminant-5",
+      "passed": true
+    },
+    {
+      "name": "scaled-highest-coefficient-5",
+      "passed": true
+    },
+    {
+      "name": "beta4-literal",
+      "passed": true
+    },
+    {
+      "name": "beta5-literal",
+      "passed": true
+    },
+    {
+      "name": "common-beta-width-norm",
+      "passed": true
+    },
+    {
+      "name": "height-product-cancellation",
+      "passed": true
+    },
+    {
+      "name": "height-product-identity",
+      "passed": true
+    },
+    {
+      "name": "height-product-lower-bound",
+      "passed": true
+    },
+    {
+      "name": "even-coset-bound-stronger",
+      "passed": true
+    },
+    {
+      "name": "discriminant-monotone-for-positive-integer-powers",
+      "passed": true
+    },
+    {
+      "name": "generic-Tw-discriminant-identity",
+      "passed": true
+    },
+    {
+      "name": "even-cross-lowerleft-formula",
+      "passed": true
+    },
+    {
+      "name": "even-cross-residue-identity",
+      "passed": true
+    },
+    {
+      "name": "odd-cross-lowerleft-formula",
+      "passed": true
+    },
+    {
+      "name": "odd-cross-divisibility-identity",
+      "passed": true
+    },
+    {
+      "name": "primitive-column-before-odd-action",
+      "passed": true
+    },
+    {
+      "name": "even-cross-minimum-residue-1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-forces-common-sign-1-1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-forces-common-sign-1--1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-mod3-impossible-1",
+      "passed": true
+    },
+    {
+      "name": "even-cross-minimum-residue--1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-forces-common-sign--1-1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-forces-common-sign--1--1",
+      "passed": true
+    },
+    {
+      "name": "odd-zero-column-mod3-impossible--1",
+      "passed": true
+    },
+    {
+      "name": "frozen-input-pin-cdt_odd_level12_generator_cocycle_20261006.md",
+      "passed": true
+    },
+    {
+      "name": "frozen-input-pin-cdt_odd_level12_stabilizer_structure_20261006.md",
+      "passed": true
+    }
+  ],
+  "check_count": 43,
+  "all_passed": true
+}

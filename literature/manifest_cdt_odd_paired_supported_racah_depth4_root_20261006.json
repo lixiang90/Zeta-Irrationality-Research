@@ -1,0 +1,307 @@
+{
+  "schema": "frozen_actual_read_delivery_receipt_v1",
+  "date": "2026-10-06",
+  "completed_date": "2026-10-07",
+  "author": "root",
+  "status": "FINAL_READ_ONLY_AFTER_ALL_FINAL_PEER_RECEIPTS_AND_FORMAL_REVIEWS",
+  "baseline": {
+    "frozen_records": 487,
+    "all_preserved": true,
+    "historical_main_actual_read_snapshot": "ee3475aa18e73d8477d0cdece0a5e7504cfb99e3d5a52d6a66cfa1f2e7536837",
+    "historical_audit_read_snapshot": "8a74a9ed32e524467ffa9d5fd866f71d652ce056cc794410d540574880f72faf",
+    "snapshot_scope": "Historical read versions only; neither mutable main nor audit is a required current-byte pin."
+  },
+  "new_frozen_records": {
+    "mathematical_files": 16,
+    "additional_first_execution_guard": 1,
+    "total": 17,
+    "cumulative_records": 504,
+    "current_20261006_records": 424,
+    "earlier_records": 80
+  },
+  "physical_pins": [
+    {
+      "path": "research/cdt_odd_paired_selected_jet_primitive_support_20261006.md",
+      "sha256": "35ed9d8e9b3f1f5ea70c4e742d1e26c262d6d529823987bdc0478128fdd35880",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_selected_jet_primitive_support_20261006_verify.py",
+      "sha256": "1aec5fd218fdb9ba920eb579b5d1d09318c3828c0cb6d30ab9b632caafb79b2e",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_selected_jet_primitive_support_20261006_verify.json",
+      "sha256": "07d7dd36f8b0c094676532ba8b86d36e7c7a882b2b11b37b1e18897c4d1f57bc",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006.md",
+      "sha256": "3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.py",
+      "sha256": "92b737b19375e973c97b67830477b10313b365f617df6dc5e0f193e74bd0aa94",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.json",
+      "sha256": "a37ce3e552a6ded9efaa48f07ca268ec207000d4a165cc4e072ba52dc31f1694",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_value_gram_depth4_nonzero_20261006.md",
+      "sha256": "57f9aa8cb6335556399cb624316401f419b3174d8137ea3138e5ae2a51877ec7",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_value_gram_depth4_nonzero_20261006_verify.py",
+      "sha256": "bc3a54157f1d36c892ecbbf1f4209737244ecdfe5533bec49da95e52b4e24785",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_value_gram_depth4_nonzero_20261006_verify.json",
+      "sha256": "f50b9b63458365a81381d0ed4b6ef12c3a627a9e7782da815820a2764d348908",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006.md",
+      "sha256": "2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.py",
+      "sha256": "f36a0ca4740926620306db99be3c4e07bc04c97d52ef4b67b498de410518395d",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.json",
+      "sha256": "c99024507adc6419cde98bef171c63c44aa4090e30075bbe4c13edb3b03f5a62",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006_verify.guard.json",
+      "sha256": "25c3d5c6a77213f8a7f8dbf835feb32bee75b474af4b126d77f8832f6dd9194c",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_value_gram_depth4_nonzero_independent_review_20261006.md",
+      "sha256": "43ad1118f51a1ddb8545103d4c19b245030368d055e33278dc3e463185d8271b",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_fixed_middle_racah_border_independent_review_20261006.md",
+      "sha256": "763e586e86ec1d967f9540e0d142743db43ca55c7eabfab8bc875df2a9c92e89",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_jet_transfer_independent_review_20261006.md",
+      "sha256": "5e2201638eedae6fdb47600f6cd2cf8defcf60cf34061c01c100e0778e43af5d",
+      "file_hash_checked": true
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_racah_depth4_root_review_20261006.md",
+      "sha256": "b720e79b859ddb3b5f16b908fedd794e7ca378c9c2c598bbeaf5dd6fc8c13828",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/manifest_cdt_odd_paired_selected_jet_primitive_support_20261006.json",
+      "sha256": "893e384530589795701cf8506650547a118042c5632d18486e910b6d7113eedc",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/manifest_cdt_odd_paired_supported_weighted_dual_transfer_20261006.json",
+      "sha256": "a286feded461742efb471990c277f22a3c111401d6f321b31c6399e4a0f2f25c",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/manifest_cdt_odd_paired_fixed_middle_racah_border_20261006.json",
+      "sha256": "a5ac5eb90cfbc43057f69a5f0d21b000af1dd672d0a7299015c085e89a62f1fa",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/manas_fernandez_gonzalez2021_pearson_I_arxiv2107_01747v3.pdf",
+      "sha256": "43393a73930abe79405729233b4374dafca777dc26dd7279184083dfa48aa769",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e",
+      "file_hash_checked": true
+    },
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "file_hash_checked": true
+    }
+  ],
+  "root_actual_complete_principal_reads": [
+    {
+      "component": "quarter supported jets",
+      "scope": "Final35ed P1-P8/P1-P15; complete static PY; all saved JSON metadata,6 cases/30 profiles everyfield and selected label,12 counterexamples,36 affine faces/gain; no truncation after bounded supplementary reads."
+    },
+    {
+      "component": "toric weighted transfer",
+      "scope": "Final3a4 T1-T9/T1-T18; complete static PY; all saved metadata and98mergedrecords everyfield.213arrangementcells are internal count only and not individually saved. Frozen487JSON all113 lo/hi/slope/intercept fields compared literally, no mathematics reexecution."
+    },
+    {
+      "component": "root value Gram",
+      "scope": "Complete mathematical body V1-V8/V1-V14 and final V7 metadata header; own source fullstatic before first1; own saved JSON allfields. Final review57f9 principal independently read in full by quarter."
+    },
+    {
+      "component": "arithmetic Racah",
+      "scope": "Final2e04 complete eleven sections R1-R30; fullstatic PY; all saved threecase fields and executionguard. All-scale claims checked by paper, not extrapolated from finite tests."
+    }
+  ],
+  "root_final_formal_review_reads": {
+    "quarter43ad": "Complete final independent depth4 review.",
+    "toric763": "Complete final independent Racah review.",
+    "arithmetic5e220": "Complete final V1-V7 independent support/transfer review.",
+    "rootb720": "Complete selfread of final six-section composite review; one-way dependencies only."
+  },
+  "root_final_peer_receipt_reads": {
+    "quarter893": "Complete final actual read/JSONparse;13 physical pins verified by author and receipt hash checked by root.",
+    "torica286": "Complete final actual read/JSONparse, no truncation;13 physical pins author verified and receipt hash checked by root.",
+    "arithmetica5ac": "Complete final actual read/JSONparse, no truncation;10 physical pins author verified and receipt hash checked by root."
+  },
+  "execution_history": {
+    "new_distinct_mathematical_producers": 4,
+    "first_runs": 4,
+    "successful_runs": 4,
+    "failed_runs": 0,
+    "reruns": 0,
+    "root_own_runs": 1,
+    "peer_authors_own_runs": 3,
+    "old_or_peer_execute_import_rerun": 0,
+    "external_Lean_execution": 0,
+    "checks_by_component": {
+      "quarter": 17059,
+      "toric": 12141,
+      "root": 66037,
+      "arithmetic": 937
+    },
+    "scope": "Finite mechanism checks, no actual infinite unit/nonzero proof; no auxiliary unit-prime-table extension. Guard state STARTED_FIRST1 is separate from Racah result state PASS_FIRST1. Pure metadata parsing/hash auditor is not a mathematical producer."
+  },
+  "primary_sources": [
+    {
+      "title": "Pearson Equations for Discrete Orthogonal Polynomials: I",
+      "url": "https://arxiv.org/pdf/2107.01747v3",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/manas_fernandez_gonzalez2021_pearson_I_arxiv2107_01747v3.pdf",
+      "sha256": "43393a73930abe79405729233b4374dafca777dc26dd7279184083dfa48aa769",
+      "pages": 25,
+      "root_actual_complete_text_pages": [],
+      "arithmetic_actual_complete_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "toric_actual_complete_text_pages": [
+        1,
+        2,
+        3,
+        8,
+        9
+      ]
+    },
+    {
+      "title": "A Whipple 7F6 Formula Revisited",
+      "url": "https://arxiv.org/pdf/2103.08858v2",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e",
+      "pages": 38,
+      "root_actual_complete_text_pages": [],
+      "arithmetic_actual_complete_text_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "toric_actual_complete_text_pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "title": "The Askey-scheme of hypergeometric orthogonal polynomials and its q-analogue",
+      "url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "pages": 170,
+      "root_actual_complete_text_pages": [
+        1,
+        28,
+        29,
+        30,
+        31,
+        54,
+        55,
+        56,
+        57
+      ],
+      "arithmetic_actual_complete_text_pages": [
+        7,
+        28,
+        29,
+        30
+      ],
+      "toric_actual_complete_text_pages": [
+        28,
+        29,
+        30
+      ],
+      "scope_note": "Racah norms/difference pages28-30; pages54-57 are limit relations, not the norm pages."
+    }
+  ],
+  "primary_archive_and_reads": {
+    "new_files": 3,
+    "archive_pages": 233,
+    "root_actual_pages": 9,
+    "arithmetic_actual_pages": 22,
+    "toric_actual_pages": 10,
+    "quarter_actual_pages": 0,
+    "distinct_team_source_page_union": 28,
+    "scope": "Distinct persons are not added to root reading; archive233 pages is not full-source proof revalidation. Normal verified TLS; no new external HTML or repository source."
+  },
+  "proved_progress": {
+    "same_actual_object": "B6/k3/s5, degree<3n, same saturated integer-valued paired lattice S and whole-X D_A(X)",
+    "supported_constraint_weighted_transfer": true,
+    "paid_gain_exact": "589881521281691/20345444272717200",
+    "safe_signed_scale_A_exact": "800671681093752110193539327219/19860629178118281482813083200",
+    "safe_signed_scale_A_approx": "40.314517426059346",
+    "normalization_scope": "D_A(X)/Q_n integral; log|Q_n^(-1)| upper bound, not actual minimum integer denominator or actual-cost lower bound. Hand1/216 is included, never added again.",
+    "endpoint_scope": "Fixed-floor open cells use uniform1116; finitely many rational jumps use actual integer formula or old fallback, costing O(nlogn)=o(n^2).",
+    "actual_normalized_value_Gram_precision": 5,
+    "conditional_maximum_Smith_exponent": 4,
+    "all_complete_Racah_profiles_unit": true,
+    "actual_leading_gate_order": "2r, compressed from4r with exact same corank; original paired lattice rank unchanged",
+    "actual_H_spectral_commutator_rank": 2,
+    "actual_nonzero_spectral_invariant_kernel_excluded": true
+  },
+  "not_proved": {
+    "actual_2r_mixed_kernel_excluded": false,
+    "infinite_actual_anchor_maximum_Smith_exponent_at_most4": false,
+    "infinite_actual_target_nonzero": false,
+    "strict_same_object_arithmetic_analytic_margin": false,
+    "new_special_value_irrationality_or_linear_independence_theorem": false,
+    "new_Lean_formalization": false
+  },
+  "next_interfaces": [
+    "Actual2r mixed-boundary anti-cancellation for original fixedlambda2.",
+    "Higher p-adic residual ranks on actual leading radical, whose dimension is at most2r.",
+    "Further weighted fees only as genuinely new common-max gains; T18 lambda2 extension is not paid in this certificate."
+  ],
+  "goal_status": "active",
+  "immutability": "All seventeen new mathematical/execution records and all peer final receipts are now frozen. This receipt is created after final reads and never pins mutable main/audit or a future/reverse receipt. No further mathematics produced during delivery."
+}

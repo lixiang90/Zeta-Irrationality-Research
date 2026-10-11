@@ -1,0 +1,57 @@
+34                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+straightforwardly evaluate the requisite holonomic coefficient
+    Z 1/4
+          log(1 − t)     1
+                     √        dt = V (1/4) − V (0) = L(1, χ−3 ) log 3 − L(2, χ−3 ).
+      0     1 − t      1 − 4t
+The lemma follows from these integral evaluations. The special value (2.11.15),
+which we used in the preceding derivation, is none√other than the Dirichlet class
+number formula for the complex quadratic field Q( −3).                         □
+
+   From part (∗) that we already proved in Theorem 2.8.4 (assuming Theorem 2.5.1,
+whose treatment is in § 7), we can thus readily derive a Q-linear independence
+result out of the circumstance that the x = 1/4 local monodromy operator T
+simultaneously transforms HA , HB , HC , and HD by a scalar multiple of the common
+function HA . The linear independence thus sifting through is for the holonomic
+coefficients in these monodromies:
+Theorem 2.11.17. The three periods
+                        π                      π
+                   1, √ ,        3L(2, χ−3 ) − √ log 3
+                          3                     3
+are Q-linearly independent.
+   In particular, the Mahler measure
+                        Z 1Z 1
+          (1 + x + y)4                (1 + e2πis + e2πit )4
+        
+      m                 =         log                       ds dt ∈
+                                                                  /Q          (2.11.18)
+                3           0  0               3
+is irrational.
+Proof. By Lemma 2.11.13, a C-linear combination
+                        f (x) = aHA (x) + bHB (x) + cHD (x)                   (2.11.19)
+overconverges at the singularity x = 1/4 if and only if
+                                                        
+                          π          π
+                   a+b √ +c          √ log 3 − L(2, χ−3 ) = 0.
+                        3 3         3 3
+If this relation held with some nonzero integer vector (a, b, c) ∈ Z3 ∖ {(0, 0, 0)}, the
+combination (2.11.19) would have had all the requirements of Theorem 2.8.4 with
+δ := 1/4. Yet, clearly, f (x) does not vary holonomically on P1 ∖ {0, 1, ∞}, only on
+P1 ∖ {0, δ, 1, ∞} = P1 ∖ {0, 1/4, 1, ∞}.
+    The irrationality of the Mahler measure (2.11.18) follows immediately by Smyth’s
+formula (1.1.2), which we can rewrite as
+             (1 + x + y)4
+                          
+         m                   = 4m(1 + x + y) − log 3
+                   3
+                                √
+                               3 3                       3L(2, χ−3 ) − √π3 log 3
+                             =      L(2, χ−3 ) − log 3 =          √             .
+                                π                                π 3
+This concludes the proof assuming Theorem 2.5.1, which we already proved to
+imply the requisite part (∗) of Theorem 2.8.4.
+  Theorem 2.5.1 will be proved in § 7, and the full Theorem 2.8.4 (which we did
+not need in the preceding argument) will be completed in § 6.8.              □
+

@@ -1,0 +1,470 @@
+PHYSICAL PDF PAGE 159
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)              159
+
+10.3.5. Perspective on Theorems A and C. This is why we shall henceforth stick
+with the type n[1, . . . , 2n]2 functions fi(y) (such as the above Bi(y)), holonomic
+with singularities at y = ∞, at y = 4 with a Z/2 local monodromy, and with all
+other singularities being overconvergent for the fi(y), and close enough to 0. In the
+application to Theorems A and C, these latter “overconvergent” singularities turn
+out to be {0, −1/72}, as we find out in the next section. Armed with Theorem 6.0.2,
+we will find in § 13 that these singularities {0, −1/72} are indeed close enough to 0,
+and that a holonomy bound smaller than 14 can fortuitously be reached: prov-
+ing that such 14 independent functions cannot simultaneously exist.  Ultimately,
+this contradicts the supposed Q-linear dependency among 1, ζ(2), and L(2, χ−3),
+where as many as 7 of the 14 functions arise from any such linear relationship via
+Lemma 12.1.1.
+
+
+                        11. Zagier’s sequences A and C
+
+11.1. Definitions and basic properties. In this section, we construct a number
+of holonomic functions converging on the unit disc and extending to holomorphic
+functions on the universal cover of P1 ∖{0, 1/9, −1/8, 1, ∞}, and also on the uni-
+versal cover of (the orbifold/stack) P1 ∖{0, −1/72, 4, ∞} where y = 4 is an elliptic
+point of order 2. Under the hypothesis that there is a Q-linear relation between 1,
+ζ(2), and L(2, χ−3), these functions would have rational coefficients and bounded
+denominator growth. These constructions all come — in a form very close to what
+is presented here — from a paper of Zagier [Zag09], but the sequences themselves
+were certainly considered before then in similar contexts, including in particular
+in [SB85], and the arguments required to prove the required identities were first
+observed by Beukers [Beu87]. They arise more or less as solutions to Picard–Fuchs
+equations associated to modular curves with precisely four cusps. The observa-
+tion that certain                   linear                      combinations of                                           solutions
+interesting           periods                   are overconvergent                                      (that                                                              is, extend                                                      in QJxKanalyticallywhose coefficientsacross the sin-are
+gular point of the ODE closest to x = 0) was exploited by Beukers [Beu87] to
+give a reinterpretation of Ap´ery’s original proof that ζ(2) and ζ(3) are irrational.
+As Zagier notes, however, the particular functions we consider (associated to the
+sequences A and C in the notation of [Zag09]) — while giving sequences which
+converge to both ζ(2) and L(2, χ−3) — “do not converge quickly enough to yield
+the irrationality of the limit” ([Zag09, p. 360]). To be precise, these simultaneous
+approximations un/qn →L(2, χ−3), vn/qn →ζ(2) converge at the rate q−cn  where
+c = log 9  2 + log 9 = 0.52349 . . ., whereas, in the usual scheme for irrationality
+proofs (see Lemma 1.2.1), an exponent c = 1 + δ > 1 would be required. And yet,
+these functions are precisely the required input in our method to prove the desired
+irrationality results, by exploiting not simply the convergence properties of these
+functions on the unit disc |x| < 1, but also their analytic continuations beyond the
+boundary point x = 1.
+  The following is standard, and can also be read offfrom [Zag09, Table 3, p. 357]:
+
+Lemma 11.1.1. The function
+
+          ∞
+                     (1 −qn)4(1 −q6n)8
+        x = q Y            = q −4q2 + 10q3 + . . .           (11.1.2)
+                    (1 −q2n)8(1 −q3n)4
+              n=1
+
+PHYSICAL PDF PAGE 160
+160                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+with q = e2πiτ defines a uniformization map
+
+               x  : Y0(6) = H/Γ0(6) →P1 ∖{0, 1/9, 1, ∞}
+
+taking the Γ0(6) cusps τ = i∞, 0, 1/3, 1/2 to the respective cusps x = 0, 1/9, 1, ∞.
+
+  Note that one can formally invert this power series and write
+
+                        q = x + 4x2 + 22x3 + . . . ∈ZJxK.                  (11.1.3)
+
+It follows          that             any                 power                             series
+in       and            any               power                            series                                 in                                  in ZJqK cancan bebe writtenwritten formallyformally asas aa powerpower seriesseries
+in ZJxK,                     QJqK
+  QJxK.Let
+
+                               −3
+                            χ−3(n) =
+                                 n
+
+be the unique primitive character of conductor 3. Consider the theta function of
+the Eisenstein lattice Z[ζ3]:
+
+                         θ−3(τ) := X qm2+mn+n2.
+                                m,n∈Z
+
+This is a weight one modular form of level Γ0(3), and incidentally also an Eisenstein
+series
+
+                ∞      
+             θ−3(τ) = 1 + 6 X X χ−3(d)qn ∈M1(Γ0(3), χ−3).
+                         n=1   d|n
+
+On Γ0(6), we get the weight one Eisenstein series
+
+
+                      ∞         ∞
+           θ−3(τ) + θ−3(2τ)           χ−3(n)qn        χ−3(n)q2n    A :=           = 1 + 3 X      + 3 X
+                  2                    1 −qn          1 −q2n
+                                 n=1             n=1
+                 = 1 + 3q + 3q2 + 3q3 + . . . ∈M1(Γ0(6), χ−3).
+
+Further we have these weight three Eisenstein series in M3(Γ0(6), χ−3):
+
+              ∞            
+       X X(−1)d−1χ−3(n/d)d2 qn
+                     n=1   d|n
+
+
+and
+
+         ∞          ∞       
+     X X χ−3(d)d2 qn − X X χ−3(d)d2 q2n.
+              n=1   d|n               n=1   d|n
+
+PHYSICAL PDF PAGE 161
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)              161
+
+Let us write them respectively as θ2B and θ2C, where θ = (2πi)−1d/dτ = qd/dq,
+and the Eichler integrals B and C compute to the following:
+
+     ∞                ∞          ∞
+                                           χ−3(n)qn         χ−3(n)q2n                        = X                                   −2 X  B = X X(−1)d−1χ−3(n/d)d2 qnn2                                            n2(1 −qn)                                                             n2(1 −q2n)
+       n=1   d|n                         n=1              n=1
+     ∞             qn                           44q5   = X χ−3(n)n−2    = q −5q2 + q3 −11q4 +   + . . . ,
+                    1 + qn        4         16     25
+       n=1
+     ∞            ∞       
+  C = X     χ−3(d)d2   −1    X      qnn2   4 X X χ−3(d)d2 q2nn2
+       n=1   d|n                 n=1   d|n
+
+      ∞
+       1                                             q3   = X χ−3(n) 4Li2(qn) −Li2(q2n) = q −q2 +  + q4 −24q5 + . . .
+       4                                        9         25
+        n=1
+These formulas make it plain38 that limq→1 B = 2L(2,1    χ−3) and limq→1 C = 14ζ(2).
+Moreover, by canceling modularity factors in the opposite weights 1 and −1 (the
+latter coming from basic properties [Wei77] of Eichler integrals), the forms A(B −
+12L(2, χ−3)) and A(C −14ζ(2)) have a weight zero symmetry around the Γ0(6) cusp
+τ = 0. Expressing these two products in the Hauptmodul coordinate x leads to
+holonomic functions on Y0(6) ∼= P1 ∖{0, 1/9, 1, ∞} (see, for example, [KZ01, § 2.3])
+which are overconvergent at x = 1/9, and such that the coefficients of the factors
+AB and
+when     compared     AC in QJxKto thegivecoefficientsrise to simultaneousof A (also consideredAp´ery limitsas a12L(2,functionχ−3)ofandx). 14ζ(2)This
+is Beukers’s framework [Beu87] for irrationality proofs. Our next lemma collects
+these remarks with indications on how to read them off from [Zag09].
+
+Lemma 11.1.4. Define power series HA(x), HB(x), and HC(x) in terms of the
+following formulas:
+
+                         HB(x)           HC(x)
+          HA(x) = A(q),       = B(q),       = C(q),
+                          HA(x)           HA(x)
+
+where x = x(q) is as in Equation 11.1.2, so
+
+          HA(x) = 1 + 3x + 15x2 + 93x3 + . . . =: X anxn,
+                        23x2   145x3   3993x4
+          HB(x) = x +   +    +     + . . . =: X bnxn,
+                         4      4       16
+                             343x3   788x4
+          HC(x) = x + 6x2 +    +    + . . . =: X cnxn.
+                               9       3
+Then:
+
+    (1) The functions HA(x), HB(x), HC(x) are multivalued holonomic functions
+      on P1 ∖{0, 1/9, 1, ∞}; that is, they extend to holomorphic functions on the
+        universal cover.
+    (2) We have an ∈Z and [1, 2, . . . , n]2bn, [1, 2, . . . , n]2cn ∈Z.
+
+  38We have Li2(1) = ζ(2), and the Ces`aro regularization P∞n=1 χ−3(n) := 1/3 out of the
+average of the partial sums 1, 0, 0, 1, 0, 0, 1, 0, 0, . . . is the relevant interpretation in this context.
+This calculation and heuristic are readily made rigorous after an Abel summation.
+
+PHYSICAL PDF PAGE 162
+162                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+    (3) The radius of convergence of HA(x), HB(x), and HC(x) is R = 1/9. How-
+        ever, any linear combination of the following two functions:
+            HB(x) −L(2, χ−3) HA(x),    HC(x) −ζ(2) HA(x)
+                         2                        4
+       has radius of convergence R = 1, where
+                ∞            ∞
+                            χ−3(n)                1    π2
+               L(2, χ−3) = X             ,     ζ(2) = X  =      .
+                               n2                 n2    6
+                         n=1                  n=1
+Proof. This result follows from [Zag09, Table 3] and [Zag09, Table 5] (using an
+argument previously used by Beukers [Beu87]). To orient the reader, note that the
+sequence an is none other than Zagier’s sequence C from [Zag09]. Namely, there is
+an equality
+                                 n       2
+                              n    2k
+                          an = X                   ,
+                                   k    k
+                                k=0
+and an satisfies the recurrence
+                (n + 1)2an+1 −An(n + 1)an + Bn2an−1 = λan           (11.1.5)
+with (A, B, λ) := (10, 9, 3), for all n ∈N ([Zag09, Equation (3)]). Moreover, bn
+satisfies the same recurrence (11.1.5) for all n ∈N>0. In particular, the facts above
+concerning HA(x) and HB(x) are explained in §6 of [Zag09].
+  On the other hand, cn satisfies the recurrence
+              (n + 1)2cn+1 −An(n + 1)cn + Bn2cn−1 = 1 + λcn         (11.1.6)
+for all n ∈N>0, still with (A, B, λ) = (10, 9, 3). While this sequence is not explicitly
+in [Zag09], it is a disguised form of Zagier’s sequence A. More precisely, if one defines
+the functions
+                 1         x
+      GA(x) =           · HA      = 1 + 2x + 10x2 + 56x3 + . . .
+               1 + x      x + 1
+                 1         x          15x2
+      GB(x) =           · HB      = x +   + 22x3 + . . .             (11.1.7)
+               1 + x      x + 1          4
+                 1         x                208x3
+      GC(x) =           · HC      = x + 4x2 +    + . . .
+               1 + x      x + 1                9
+the coefficients of GA(x) are exactly Zagier’s sequence A, that  is, they satisfy
+another recurrence of the form (11.1.5), except now for the values (A, B, λ) =
+(7, −8, 2), and the coefficients of GC(x) satisfy the same recurrence for n ∈N>0.
+This can be easily proved by showing that both functions satisfy the same ODE
+and then checking that the first few coefficients are in agreement.        □
+
+  Using this, we deduce the following:
+
+Proposition 11.1.8. Suppose there exists a Q-linear relationship between 1, ζ(2),
+and L(2, χ−3), namely, suppose that
+                    a + b · L(2, χ−3)/2 + c · ζ(2)/4 = 0
+
+for rational numbers a, b, and c. Let
+   H(x) := aHA(x) + bHB(x) + cHC(x)
+     = b  HB(x) −L(2, χ−3) HA(x) + c  HC(x) −ζ(2) HA(x)   .    (11.1.9)
+                         2                          4
+
+PHYSICAL PDF PAGE 163
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)              163
+
+Then     H(x) ∈QJxK with denominators of shape [1, 2, . . . , n]2, and H(x) satisfiesthe  ODE
+                                                                    c
+   x(1 −x)(1 −9x)y′′ + (1 −20x + 27x2)y′ + 3(−1 + 3x)y = b +         (11.1.10)
+                                                         1 −x
+
+Proof. The rationality claims were established above. Either from equation (11.1.5
+and (11.1.6) or more directly using the definitions in terms of Eichler integrals
+following [Beu87], one verifies that y = H(x) satisfies the given differential equation.
+                                             □
+
+Remark 11.1.11. In [Beu79], Beukers gave alternate proofs of the irrationality
+of ζ(2) and ζ(3) in terms of multiple integrals. For example, Ap´ery’s approximations
+to ζ(2) were seen to be coming directly from the integral
+
+                 ZZ     tn(1 −t)nsn(1 −s)n
+                                                      dsdt,                (11.1.12)
+                                       [0,1]2     (1 −st)n+1
+
+when evaluated as an −bnζ(2). We note that the approximations to L(2, χ−3)
+and ζ(2) considered here (and in [Zag09]) can also be viewed in the same way.
+In particular, one can easily verify (either by hand using a little effort or by us-
+ing [AZ90] without any effort) the identities:
+
+                   ∞
+                             ZZ     9nsntn(1 −s3)n(1 −t3)n
+    L(2, χ−3)HA(x) −2HB(x) = X xn                                  dsdt,
+                                                  (1 + st + s2t2)2n+1                             n=0         [0,1]2
+                                                                            (11.1.13)
+and
+
+               ∞
+                            ZZ     (1 −s2)n(1 −t2)n
+   ζ(2)GA(x) −4GC(x) = X xn(−1)n                           dsdt.   (11.1.14)
+                                                  (1 −st)n+1                       n=0                 [0,1]2
+
+One easily finds that
+
+           9st(1 −s3)(1 −t3)                (1 −s2)(1 −t2)
+    max            = 1,    max          = 1,      (11.1.15)
+        [0,1]2   (1 + st + s2t2)2                  [0,1]2      1 −st
+
+the maxima being obtained at s = t = 1/2 in the first case and s = t = 0 in the
+second. It follows that the integrals are all bounded by 1 which gives a transparent
+proof that the functions H(x) considered in Proposition 11.1.8 overconverge beyond
+the singularity at x = 1/9 to the entire unit disc.
+  We can also evaluate the geometric series to express the integral formula (11.1.13)
+as
+                      ZZ                1 + st + s2t2
+ L(2, χ−3)HA(x) −2HB(x) =                                                dsdt.
+                                               [0,1]2 (1 + st + s2t2)2 −9st(1 −t3)(1 −s3)x
+                                                                            (11.1.16)
+By (11.1.15), this formula represents the function L(2, χ−3)HA(x) −2HB(x) as
+a continuous integral of a family of (rational, as it happens) functions fs,t(x) ∈
+O (C ∖[1, ∞)) holomorphic on C ∖[1, ∞). The property of being a holomorphic
+function over a complex domain is inherited by any continuous integration over a
+parameter (s, t) ∈[0, 1]2, and so the integral representation makes equally trans-
+parent the analyticity of (11.1.16) on C ∖[1, ∞). This is Zudilin’s point of view
+in [Zud17].                                  △
+
+PHYSICAL PDF PAGE 164
+164                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+Remark 11.1.17. These integral representations, and especially (11.1.16), may
+also be compared to Zudilin’s [Zud03, Riv06, Nes16]
+                   ZZ                       ds dt
+ L(2, χ−4)U(x) −V (x) :=
+                                           [0,1]2 p (s −s2)(t −t2) · 1 −st −(s −s2)(t −t2)x
+
+                ∞
+                         ZZ     (s −s2)n−1/2(t −t2)n−1/2
+             = − X xn                                 dsdt
+                                                  (1 −st)n+1                         n=0         [0,1]2
+giving rational approximants to Catalan’s constant G = L(2, χ−4). In this instance,
+the integrand peak rate is
+                           √ !−5                            (s −s2)(t −t2)     1 +  5
+               max          =                       ,
+                               [0,1]2     1 −st            2
+
+                                       √   5
+and indeed the singularities of the linear ODE are at 0,  1±2 5    , and ∞: precisely
+the same as for Ap´ery’s approximants to ζ(2).  Unfortunately, due to the half-
+integral exponents in this integral representation, the denominators in these rational
+approximations are as big as 16n[1, . . . , 2n]2.
+  A different holonomic sequence of rational approximants to G was given by case E
+in [Zag09], where the ODE singularities are {0, 1/8; 1/4, ∞} (the first two of which
+are overconvergent), and the denominator types are [1, . . . , n]2.
+                         √   5
+   Since e2 > 16 · (1/4) and e4 >  1+2 5   (by a wide margin!), this definitely pre-
+cludes an approach to the irrationality of the Catalan constant by our method using
+either of these particular families of rational approximants, unless some completely
+new idea is discovered.                            △
+
+11.2. The symmetrization of H(x). Let a, b, and c be complex numbers such
+that
+                    a + b · L(2, χ−3)/2 + c · ζ(2)/4 = 0.
+Then    we      may              define                H(x)
+that 1,       π2,         and               L(2,                  ∈CJxKare linearlyas independentequation (11.1.9).over Q, Ifthenwe additionallywe can chooseassumea, b,                 χ−3)
+and c to be rational, although the arguments of this section will not require this
+hypothesis.
+  We now let G(y) be the symmetrization of H(x):
+
+Definition 11.2.1. Let G(y) = Sym+H(x) as defined in equation (9.0.9), so
+
+                                   x
+                   G(y) = H(x) + H                                 x −1  ∈CJyK,
+and let GA(x) = Sym+HA(x), so
+                                    x
+                 GA(y) = HA(x) + HA                                   x −1  ∈ZJyK.
+  Note that GA(y) = 2−27y +1014y2 −49536y3 +. . .; the function GA(y) satisfies
+an order 4 ODE
+                                    3
+         X ci(y)G(i)A (y) = 0
+                                i=0
+which we give explicitly later in equation (12.1.5). The span of GA(y) and its
+derivatives generates, over Q(x), the space spanned by HA(x) and HA(x/(x −1))
+
+PHYSICAL PDF PAGE 165
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)              165
+
+and their derivatives (which are both vector spaces of dimension 4). By Lemma 9.0.3
+(2), we immediately have the following:
+Lemma 11.2.2. If a, b, c ∈Q, then G(y) has denominator type [1, 2, . . . , 2n]2.
+
+                    12. Functional Linear Independence
+
+  Let      Ai(x)
+for   some          finite∈QJxKset S. (Inbe aourcollectionsituation,of theyholomorphicwill all befunctionsSiegel G-functions.)functions onSupposeP1 ∖S
+we wish to prove that the Ai(x) are linearly independent over Q(x) or C(x). One
+strategy is as follows.  Let γ be a path in C; for example, take a path starting
+at x = 0, avoiding other points in S, and then returning to 0. The functions Ai(x)
+can be analytically continued along γ, and as we return to x = 0 we obtain a
+sequence of functions bAi(x) which may now have singularities at x = 0. Certainly
+any polynomial relationship between the Ai(x) extends to (the same) polynomial
+relationship between the bAi(x), and hence also to a polynomial relationship between
+the bAi(x)−Ai(x), which can sometimes be useful. But we can alternatively consider
+any identity between the bAi(x) modulo functions which are holomorphic at 0. What
+may (and often does) happen in principle is that this reduces a linear relationship
+between a large number of functions to a smaller number of functions, and one can
+hope to employ some form of inductive strategy to establish full linear independence.
+A typical example is as follows: Suppose that the path γ starts at 0 ∈S and
+is a simple loop around a single point 1 ∈S.  Then,  if a proper subset of the
+functions Ai(x) are actually holomorphic at x = 1, the corresponding bAi(x) vanish
+modulo holomorphic functions, and we obtain a corresponding linear relationship
+between the bAi(x) with fewer terms. A basic example of this is as follows. Suppose
+that
+             A1(x) = 1,  A2(x) = log(1 −x),  A3(x) = Li2(x).
+After a suitably oriented loop around zero, we have
+      bA1(x) = 1,   bA2(x) = log(1 −x) + 2πi,   bA3(x) = Li2(x) + 2πi log(x).
+Now, modulo holomorphic functions at zero, we obtain a linear relationship between
+the three functions 0, 0, and 2πi log(x). Clearly this forces the coefficient of bA3(x)
+to be zero, and reduces us to showing that A1(x) and A2(x) are linearly independent
+because log(1 −x) is not a rational function. We will use this strategy a number
+of times below. Note that another argument in this case would be to consider the
+functions bAi(x)−Ai(x) which reduces the problem to the C(x)-linear independence
+of 1 and log x.
+
+Lemma 12.0.1. The seven functions Bi(y) for i = 1, . . . , 7 defined in Section 10
+in equations (10.1.2), (10.1.3), and (10.2.1) respectively are linearly independent
+over C(y).
+
+Proof.     We first of all                    note                          that                                          are                                                         all elements                                                                of                              the Bi(y)
+linear     dependency                  over                   C(y)                          upgrades                                      to one                                            over                                             Q(y), and                                                            soQJyK.it sufficesThereforeto proveany
+the result over Q(y).
+  We begin by proving the linear independence of the Bi(y) for i = 1, . . . , 5. By
+Lemma 9.0.3,  it suffices to prove the linear independence of the 5-functions 1,
+log(1 −x), log2(1 −x), Li2(x), and and J(x) of equation (10.1.5) over Q(x). Cer-
+tainly 1, log(1 −x), and log2(1 −x) are independent since log(1 −x) is transcen-
+dental over Q(x). These three functions are also defined on P1 ∖{1, ∞} which
+
+PHYSICAL PDF PAGE 166
+166                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+distinguishes then from Li2(x) — take a path γ from 0 which winds around x = 1,
+then winds around x = 0, then winds (in the opposite way) around x = 1, and
+returns to zero (as in Figure 12.0.7). The first three functions will be invariant,
+but Li2(x) has non-trivial monodromy on this path.  So Li2(x) is independent
+of these previous functions. Now suppose that J(x) was a Q(x)-linear combi-
+nation of 1, log(1 −x), log2(1 −x), Li2(x).   If the coefficient of Li2(x) was non-
+trivial, then, after scaling, we may assume that it is 1. But now by differenti-
+ation, and using the ODE 10.1.6 for J(x), we obtain a new relation over Q(x)
+with 1, log(1 −x), log2(1 −x), and J(x) only (with a non-trivial coefficient of J(x)
+because of the ODE). But J(x) also has non-trivial monodromy over the path γ, so
+we conclude as for Li2(x) above. Now let us return to the P1 ∖{0, 4, ∞} domain
+and consider the functions B6(y) and B7(y). Recall that:
+                      Z B3(y)            Z B4(y)
+                B6(y) =          dy,  B7(y) =          dy.
+                             y                    y
+
+Using the derivation formula
+
+         d      Z               Z
+             A(y)   F(y) dy = A′(y)   F(y) dy + A(y)F(y),           (12.0.2)
+         dy
+
+we can firstly assume that the coefficients of our linear relation in Q(y) are poly-
+nomials, and then by differentiation reduce to an equality of the form
+
+                                                         5
+               Z B3(y)       Z B4(y)
+                a0         dy + a1         dy = X bi(y)Bi(y),         (12.0.3)
+                      y              y
+                                                    i=1
+where now a0 and a1 are constants which are not both zero and bi(y) ∈Q(y). We
+note the
+              d
+       y(4 −y)   B2(y) = (2 −y)B2(y) + y2,
+              dy
+              d
+       y(4 −y)   B3(y) = −B2(y) + 2y,
+              dy
+                                                                              (12.0.4)
+              d
+       y(4 −y)   B4(y) = (2 −y)B4(y) + (4 −y)B2(y) −2y(4 −y),
+              dy
+              d
+      2y(4 −y)   B5(y) = (4 −y)B5(y) −2B2(y) + 4y),
+              dy
+
+But now let us differentiate (12.0.3) to get
+
+                                            5
+                B3(y)     B4(y)
+               a0    + a1    = X bi(y)B′i(y) + b′i(y)Bi(y).         (12.0.5)
+                   y         y
+                                        i=1
+We see from equation (12.0.4) and equating the coefficients of B4(y) and B3(y)
+respectively (and using the linear independence of Bi(y) for i = 1, . . . , 5 that
+                          a0
+                 = b′3(y),
+                         y
+                                                                              (12.0.6)
+                          a1            (2 −y)
+                 = b′4(y) +                         y           y(4 −y)b4(y).
+
+From the former equation we get (up to constant)
+
+                                 b3(y) = a0 log(y),

@@ -1,0 +1,2362 @@
+Journal of Computational and Applied Mathematics 32 (1990) 321-368                                                     321
+North-Holland
+
+
+
+
+A holonomic systems approach                                                               to special
+functions identities *
+Doron     ZEILBERGER
+Department   of Mathematics,   Temple University, Philadelphia,   PA 19122, USA
+
+Received 14 November 1989
+
+
+Abstract: We observe that many special functions are solutions of so-called holonomic systems. Bernstein’s deep theory
+of holonomic systems is then invoked to show that any identity involving sums and integrals of products of these
+special functions can be verified in a finite number of steps. This is partially substantiated by an algorithm that proves
+terminating hypergeometric series identities, and that is given both in English and in MAPLE.
+
+
+
+Keywords: Elimination, Weyl algebra, partial difference operators, computer algebra, hypergeometric series.
+
+                                              Certain functions appear so
+                                              often that it is convenient to
+                                              give them names. These
+                                              functions are collectively
+                                              caNed special functions.
+                                               There are many examples and no
+                                              single way of looking at them
+                                              can illuminate aN examples or
+                                              even all the important properties
+                                              of a single example of a
+                                              special function.
+
+                                              Richard Askey (1984)
+
+
+
+1. Introduction
+
+   We are nowadays witnessing a spectacular comeback of the theory of special functions. This is
+expressed both by the various approaches [6,18,20,41] that are successfully used to explain and
+give insight to large families of previously unrelated results, and by the dramatic applications of
+special function identities to the solution of longstanding open problems in pure mathematics
+[7,16,55].
+   This paper initiates yet another approach to special functions that is based on Bernstein’s
+theory of holonomic systems. Unlike the other approaches, the present approach does not give
+insight on any one particular identity. Instead it gives a kind of universal insight on many
+
+* Supported in part by NSF grant DMS 8800663.
+
+
+0377-0427/90/$03.50     0 1990 - Elsevier Science Publishers B.V. (North-Holland)
+322                         D. Zeilberger / Holonomic systems for special functions
+
+
+identities at once. It implies that a large class of special function identities, that includes all
+terminating hypergeometric (alias binomial coefficients) identities, is verifiable in a finite
+number of steps.
+   One of the most salient features of the classical sequences of orthogonal polynomials { p,(x)}
+is that they satisfy both a second-order linear differential equation and a second-order linear
+recurrence  equation, both with coefficients that are polynomials in n and x. For example, the
+Legendre polynomials {P,(x)}     satisfy [45, Chapter lo]:
+           (1 -x2)Pi’(x)    - 2xP,l(x)    + n(n + l)&(x)         = 0,                              (l.la)
+           (n + Z)P,+,(x)    - (2n + 3)xP,+,(x)       + (n + l)&(x)        = 0.                    (l.lb)
+Viewing the sequence P,,(x) as one function on N x R : F( n, x) := P,(x)              and introducing the
+differentiation and shift operators
+
+          Df(n,    x) := &f(n,     x),       Ef(n,    x) :=f(n    + 1, x),
+
+(1.1) can be rewritten as
+           [(l - x2)D2 - 2xD + n(n + l)] F(n,          x) = 0,                                     (1.2a)
+           [(n + 2)E2 - (2n + 3)xE + (?r + l)] F(n,          x) = 0.                               (1.2b)
+ A system like (1.2) is called “a maximally overdetermined system of linear differential-recurrence
+ equations with polynomial coefficients on N x R”, or a holonomic system on N x R, for short.
+ Since (1.2a) and (1.2b) are independent (in a certain technical sense to be made precise later),
+ they uniquely determine F(n, x), given a finite number of initial conditions. (In this example
+ these are: F(0, 0) = 1, F’(0, 0) = 0, F(1, 0) = 0, F’(1, 0) = 1.) A function like P’(n, x) that is a
+ solution of a holonomic system is called a holonomic function on N x R.
+    If we allow linear equations of any order, and generalize from one discrete and one continuous
+ variable to several variables of each kind, we are led to consider the class of holonomic functions
+f(x 1,‘“, xnI, m,,...,mJ       on R ‘I X N”‘. These are functions that satisfy “as many (homoge-
+ neous) linear (differential-recurrence) equations as possible (with polynomial coefficients)“. They
+ are uniquely determined as solutions of a system of such equations subject to a finite number of
+initial conditions. The notion of “satisfying as many equations as possible” is made precise in
+ Bernstein’s theory of holonomic systems described in Section 2.
+    The following two crucial facts make holonomic functions an ideal framework for special
+ function identities.
+    (i) Every holonomic function can be described by a finite amount of information, and has a
+ “canonical holonomic representation”.
+    (ii) The product, addition, sum, and integral of holonomic functions is again holonomic.
+ Furthermore, if one has canonical holonomic representations of f and g, then it is possible to
+ find canonical holonomic representations for f + g, f - g, fg, jf dx, and C,, f, where xi and ml
+ are any continuous and discrete variable, respectively.
+    It follows that an expression like
+
+          K,(x)&,(x)&,(x)
+is holonomic in (n,, n2, n3, x), and that its (definite) integral is holonomic in (n,, n2, ns). Since
+all the special functions that appear in the famous “tableau d’Askey” [8,37] are given by
+                                  D. Zeilberger    / Holonomic systems for special functions             323
+
+
+hypergeometric    summation, whose summands are obviously holonomic in all their variables and
+parameters, it follows that they are all holonomic, both in their variable and their parameters, as
+are all expressions obtained from them by adding, multiplying,       summing and integrating.   For
+example, the Jacobi polynomials P,(a,B) are not only holonomic in (n, x) for fixed ((Y, p), but are
+in fact holonomic in (n, x, (Y, p). It follows that an expression like
+
+
+           J
+            ( e-a~L~)(x)P,(“~P)(x)                 da,
+                     n
+
+
+where L?‘(x)       are the generalized Laguerre polynomials,      is holonomic in x and /3.
+    The above two properties of holonomic functions enable us, at least in principle, to prove, or
+refute, any identity involving sums and integrals of products of holonomic functions. All one has
+to do is to bring everything to the left side and leave only 0 on the right side. Then a canonical
+holonomic representation        of the expression on the left is evaluated step by step, and then it is
+determined whether such a representation          is equivalent to 0 (see Section 4). Note that canonical
+holonomic      representations    are not unique, but it is always possible to know when such a
+representation     is equivalent to 0, and thus it is possible to know when two different canonical
+representations     represent the same function. This is analogous to the fact that among the rational
+numbers a/b, with a and b integers, 0 has an infinite number of representations:              O/b, and we
+know that whenever the numerator           is 0, the fraction represents 0. Because of this we can tell
+when two fractions a/b and c/d represent the same rational number: ad - bc = 0, since ad - bc
+is the numerator        of u/b - c/d. Since the sum and product of rational numbers are again
+rational, and we know how to find “canonical representations”            for sums and products, it follows
+that any identity involving sums and products of (specific) rational numbers is provable. The
+same holds for polynomials and algebraic numbers.
+    Let us see how to prove an identity like
+
+               E P,(x)t”     -   (1 - 2xt +       ty2      = 0.
+           n=O
+
+P,(x) is holonomic      in n and x, t” is holonomic       in t and n, thus the summand          P,(x) t” is
+holonomic in (x, t, n). Summation with respect to n gets rid of the dependence             on n, and the
+sum is holonomic in the surviving variables (x, t). Now (1 - 2xt + t2)-‘j2 is clearly holonomic
+in x, t, as you can easily see by logarithmic differentiation     with respect to x and t. Thus the left
+side of ( *) is holonomic in (x, t), and it is possible to find a canonical holonomic representation
+for it, and determine whether it is indeed equivalent to 0.
+   An important special case of special functions identities is that of terminating hypergeometric
+summation. Thanks to the preaching of Askey and his disciples [48], it is nowadays well known
+that the theory of combinatorial   sums, traditionally pursued by combinatorialists,      is just a special
+case of hypergeometric     summation, and that many apparently         distinct combinatorial     identities
+are really equivalent qua hypergeometric      sums.
+   I hope that more professional     programmers      and algorithmic designers will soon expand the
+rudimentary     ideas in this paper and develop a symbolic software package to prove general
+special function identities. As a modest first step, I present, in Sections 5 and 6, an explicit
+algorithm to verify any identity of the form
+           CF(n,         k) = a(n),
+            k
+324                            D. Zeilberger / Holonomic systems for special functions
+
+
+where F( n, k) is a quotient of products of factorial expressions of the form (an + bk + c)!,
+where a and b are integers and c is a complex number or parameter. Since both (an + bk + c)!
+and its reciprocal are obviously holonomic in n and k, it follows that F( 12, k) is holonomic, and
+thus that its sum is holonomic in n. But being holonomic in n means that it satisfies a certain
+(homogeneous) linear recurrence equation with polynomial coefficients. The algorithm of Section
+6 finds such a recurrence and then checks whether the right side a(n) also satisfies the same
+recurrence, and whether the initial conditions match.
+   A MAPLE program implementing this algorithm is given in the Appendix. This program can
+be used by all those who have MAPLE, and who are willing to type it in, or who have e-mail, so
+that I can send it to them. In order to use it all you have to do is read the simple instructions in
+the Appendix. Readers who are only interested in binomial coefficients identities should go
+directly to Section 5. i
+   I should warn the reader that my program requires a lot of memory, and it still remains to be
+seen whether it can prove all known identities with the memory available on a big computer.
+However, even on my AT&T 3Bl PC, the program was able to prove many nontrivial identities,
+some of which are given in Section A.2 of the Appendix.
+   The most time- and space-consuming part of the algorithms for proving special function
+identities is elimination. This elimination takes place in the noncommutative Weyl algebra of
+linear differential-recurrence operators with polynomial coefficients. The algorithm that I de-
+scribe is an adaptation of Sylvester’s classical dialytic elimination [56] to the noncommutative
+context of the Weyl algebra. Sylvester’s method, while elegant and simple theoretically, is known
+to be computationally inefficient, especially when more than one variable is being eliminated. We
+are nowadays witnessing an ongoing revolution in computational commutative algebra that is
+centered around Buchberger’s concept 1141 of Grobner bases. It turns out that, using Grobner
+bases, it is possible to perform elimination much faster.
+   Galligo [21] showed how to adapt the method of Grobner bases to the non commutative Weyl
+algebra. This should result in a considerable improvement in the verification algorithms.
+   The connection between special functions and holonomic systems has been recently used by
+Takayama [52,53], who also realized the importance of Grobner bases. Gelfand and his Moscow
+school [25-281 are currently developing a general theory of hypergeometric functions in several
+variables, and they showed that they are holonomic functions.
+
+
+
+
+   In [60] I attempted to develop a theory of special function identities by generalizing Sister
+Celine Fasenmayer’s [19] method. While her method is absolutely correct, my attempt to base a
+general theory on it was wrong. In addition, the definitions of “multi-P-finite”, “multi-P-recur-
+sive” and “special” given there are inaccurate. I wish to thank Lipshitz, Stanley and Knuth for
+pointing out the shortcomings of [60]. I am hereby retracting [60] from my list of publications
+and beg that it be only considered as a historical document.
+
+
+
+’ Note added in proof. See [61,62] for a much faster algorithm for this case. However, the present algorithm is   much
+  more general, F(n, k) can be any holonomic function.
+                                D. Zeilberger / Holonomic systems for special junctions                    325
+
+
+Limitations    of the present approach
+
+
+   Besides the practical limitations of the verification algorithms, there is also a theoretical
+barrier. The present approach only shows that an identity with a fixed number of variables is
+verifiable in a finite number of steps. For example, the binomial theorem
+
+              (X+yy=      5 (;)xy
+                          k=Q
+
+is trivially finitely verifiable. On the other hand, the multinomial theorem
+
+              (x,+ ... +xJ        =   k,+   ..2,,=,   k,!   .nix:l -. .x2-
+                                                               k,!
+
+
+
+that has an indefinite number of variables, is beyond the scope of the present theory, and is not
+finitely verifiable, even not in principle. Of course, for every specific m, say m = 1000, the
+identity is finitely verifiable, but not for an arbitrary number of variables m.
+   Other examples are Macdonald’s root-system conjectures [40]. For every fixed root-system,
+the conjecture is verifiable in a finite number of steps, for example for all the exceptional root
+systems. But for the infinite families, not even zillion years will suffice.
+   Milne’s deep theory of hypergeometric SU(N) identities [42] is also not covered by the
+verification algorithms, since it involves an indefinite number of variables.
+   The theory and algorithms of this paper are easily extendible to the q-analogs of hypergeomet-
+ric series and special functions. On the other hand, it is not extendible to bibasic and multibasic
+identities that are presently vigorously studied by Gasper and Rahman (see [22-241).
+   Yet another example of the limitation of the present approach is furnished by the multivariate
+generalizations of the finite form of the Rogers-Ramanujan        identities found by Andrews and
+Bressoud (see [4, p.301). The finite form of the Rogers-Ramanujan         identity is provable by my
+algorithm, but its multivariate generalization is not. Going in the other direction, toward the less
+general, the present method is incapable of proving the Rogers-Ramanujan            identities directly,
+and we need a Schur or an Andrews to come up with a conjectured finite form that tends to the
+identities as n -+ 00. It would be interesting if one could develop heuristics, in the spirit of [4,
+Chapter lo], of conjecturing a finite form of a given q-series identity, that could then be proved
+by the present method.
+
+
+
+2. A short course on holonomic systems
+
+2.1. C-finite functions   and sequences
+
+2. I.I. C-finite functions
+    We all know that solutions of (homogeneous)                  linear ordinary differential   equations with
+constant coefficients
+
+              P(D)f=O,      P apolynomialin           D,                                                 t2.0
+326                           D. Zeilberger / Holonomic systems for special functions
+
+
+can be expressed as a finite linear combination of exponential polynomial solutions. Indeed, any
+solution of (2.1) can be expressed as
+                     R
+
+                                                                                                            (2.2)
+                    r=l
+
+where {A,} are the roots of the characteristic equation P(z) = 0, and the degree of p,.(x), Y =
+1 ,*.., R, is one less than the multiplicity of the root A,.
+    Let us call C-finite functions such solutions of constant-coefficients linear ordinary differential
+equations. It is easily seen that conversely, any function that can be written in the form (2.2) is a
+C-finite function: P(D) f = 0, where
+
+           P(D) =     fJ(D - XJdegCpr)+l.                                                                   (2-3)
+   In order to specify a C-finite function, one only needs a finite number of parameters. One way
+of coding such functions is by (2.2): specifying the complex numbers A, and the polynomials
+p,(x). Another way is directly in terms of (2.1); specify the operator P(D), of order N, say, and
+the N initial conditions f (0), f ‘(0), . . . , f ‘N-1’(0).
+   In the foregoing we took P(D) to be with arbitrary complex coefficients, and we made the
+tacit assumption that it is always possible to “write down” an arbitrary complex number. This is
+of course wrong, since real and complex numbers are merely fictitious entities, and infinite
+storage space is needed to specify an arbitrary real or complex number. In order to be rigorous
+we must restrict the coefficients of P(D) to be integer, rational, or at least to belong to some
+finite algebraic extension field of the rationals. Then the {X,.} are algebraic numbers, and
+algebraic numbers are specifiable by a finite number of bits.
+   We will no longer dwell on this subtlety. All the results will be true for an arbitrary field of
+characteristic zero. However, whenever we talk about something being “finite” we will tacitly
+assume that the members of the field are finitely specifiable.
+   The class of C-finite functions is an algebra: the sum and product of two expressions of the
+form (2.2) are again of the same form. This can also be proved directly from (2.1). It is easily
+seen that f is C-finite if and only if the vector space spanned by { Dif; i > 0} is a finite-dimen-
+sional vector space. The vector spaces spanned by { D’( f + g); i >, 0} and { D’( fg); i > 0} are
+subspaces of the direct sum and (the homomorphic image of the) tensor product, respectively, of
+the finite-dimensional vector spaces { Dif; i >, 0} and { Dig; i 2 0). Thus if f and g are C-finite
+so are f + g and fg.
+   Let us summarize the three definitions of C-finite functions.
+
+Definition 0. f is C-finite   if there exists a polynomial P such that P( D)f = 0.
+
+Definition 1. f is C-finite   if the vector space C[D] f = span{ Dif;           i >, 0} is finite dimensional.
+
+Definition 2. f is C-finite   if it can be expressed              as a linear combination        of exponential
+polynomial functions, as in (2.2).
+
+  In order to motivate holonomic systems, we will introduce some notions that will seem like
+“abstract nonsense” in the present context.
+                                  D. Zeilberger    / Holonomic systems for special functions                          327
+
+
+   C[D] is the.ring of polynomials in D, (that is the ring of constant-coefficients                      ordinary linear
+differential operators). Consider the following left ideal in C[D]:
+             Ir= {PEC[D];           P(D)f=O}.                                                                       (2.4)
+Of course since C[D] is a principal ideal ring, we can write Ir= PO(D)C[ II], where PO(D) is the
+minimal order operator that satisfies PO(D)f = 0. Both C[ D]f and CcD]/I, have obvious
++-ucture as “C[ D] modules”: Q( D)( P( D)f) = (Q( D)P( D))f and Q( D)P( D) = QP( D), where
+P is the image of P under the natural mapping C[D] + C[ III/If. It is readily seen that these
+two C[D] modules are in fact isomorphic, since Pl( D)f= P2( D)f if and only if PI - P2 E Ir.
+  We thus have the following definition.
+
+Definition 1’. f is C-finite if C[D]/I,              is finite dimensional.
+
+    For every function f, let us introduce the “variety associated with the ideal If”:
+              vf:= {zE@;        P(z)=OforeveryPE$}.                                                                 (2.5)
+   Let us consider an arbitrary function f on the real line. Most likely it is not a solution of any
+constant-coefficients linear differential equation, in which case the ideal Ir is the trivial ideal
+consisting of 0 alone, and C[ D]/If is equal to C[D], and Vr is the whole of C, and therefore it is
+a “one-dimensional variety”. The other extreme is f = 0, in which case If= C[ D] and C[ D]/I, is
+the zero module, and Vr is empty, i.e., it is a “- cc-dimensional variety”.
+   Between these two extremes are the C-finite functions for which V, is a finite set of points, i.e.,
+a “zero-dimensional variety”. Thus we have the next definition.
+
+Definition 3. f is C-finite if J$ is a zero-dimensional variety (i.e., it is a finite set of points).
+
+   Since the class of C-finite functions is an algebra, and every C-finite function is finitely
+specifiable, it follows that every identity involving sums and products of C-finite functions is
+routinely verifiable.
+
+Trivial example. Prove that sin( x + a) = sin( x)cos( a) + cost x)sin( a). Set f(x)                     := sin( x + a) -
+sin( x)cos( a) - cos( x)sin( a), we have to show that f(x) = 0.
+
+First solution.
+             f (x> = ci(x+O)2e-i(x+n)             _ eix 2i cix eia :“-ia     _ eix ; eix eia zi eia
+
+                   = . . . = 0.
+
+Second solution. f(x)         satisfies ( D2 + 1) f = 0, and f (0) = 0, f ‘(0) = 0, so f(x)           = 0.
+
+
+2.1.2.   C-finite sequences
+  Analogous considerations apply to the class of sequences that are solutions of some (homoge-
+neous) ordinary linear recurrence equation with constant coefficients:
+             P(E)a=O,           P a polynomial,                                                                    (2.6)
+328                            D. Zeilberger / Holonomic systems for special functions
+
+
+where E is the shift operator: Ea, := a,,,. For example, the Fibonacci numbers { F, } constitute
+such a sequence since ( E* - E - 1) F = 0.
+   Let us call such sequences C-finite sequences. It is well known that a sequence is C-finite if and
+only if it can be written in the form
+
+           a, =   c PA+:,
+                  r=l
+                                                                                                            (2.7)
+where the z, are the roots of P(z) = 0 and deg p, = mult( zr) - i.
+  Everything we said before has its discrete analog. In particular, we can define the ideal in
+C[E]:
+           I,:=   {PW[E];         P(E)a=O},
+and the notion of C-finite         sequences can be defined by either one of the following four
+equivalent definitions.
+
+Definition 0. A sequence a is C-finite if there exists a polynomial P such that P( E)a = 0.
+
+Definition 1. A sequence a is C-finite           if the vector space C[ E]a = span{ E’a; i 2 0} is finite
+dimensional.
+
+Definition 1’. A sequence a is C-finite           if the C[E]      module C[E]/I,        is a finite-dimensional
+vector space.
+
+Definition 2. A sequence a is C-finite if it is of the form (2.7).
+
+Definition 3. A sequence a is C-finite if
+           l/n:= {zEQ=;      P(z)=OforeveryP             in 1=}
+is a finite set of points (i.e., a “zero-dimensional        variety”).
+
+   It follows similarly that the class of C-finite sequences is an algebra and that every identity
+involving sums and products of C-finite sequences is routinely verifiable.
+
+Trivial example. Prove Cassini’s identity
+           Fn+,F,_,     - F,2 = (-l)“,
+where F, are the Fibonacci numbers defined by F, = 0, Fl = 1 and F,, 2 = Fn+ 1 + F,. Set
+a(n) := F,+,F,_, - F,’ - (-l)“, we have to prove that a(n) = 0.
+
+First solution. Express F,, in the form (2.7), in terms of the “golden ratio”, and do the trivial, but
+tedious algebra.
+
+Second solution. It can be easily seen that both F: and F,, ,F,_ 1 satisfy the same third-order
+recurrence equation and therefore a(n) satisfies a certain fourth-order linear recurrence equation
+with constant coefficients, whose exact form is irrelevant. It follows that it is enough to check the
+four initial conditions a(0) = 0, a(l) = 0, a(2) = 0, a(3) = 0, whi‘ch is easily done by inspection.
+                                   D. Zeilberger / Holonomicsystemsfor specialfunctions           329
+
+2.2. Multi-C-finite    functions     and sequences
+
+2.2.1. Multi-C-finite functions
+   What is the several-variable analog of C-finite functions? The straightforward analog of
+Definition 0 is “a solution of a linear partial differential equation with constant coefficients”.
+However, it is soon realized that all the other definitions do not go through. Furthermore, the
+“finiteness property” is not preserved. In order to specify, say, a solution of (0: + 0,‘) f = 0, one
+needs to state the “Dirichlet boundary conditions” on the boundary of a closed region, i.e., one
+has to furnish an infinite amount of information to specify such a function.
+   The fact that every solution of an ordinary linear differential equation with constant coeffi-
+cients is a linear combination of exponential polynomial solutions has a celebrated analog in
+several variables. It is called the Ehrenpreis-Palamadou     [17,43] theorem. This theorem implies
+that with an appropriate definition of convergence, every solution of a constant-coefficients
+linear partial differential equation can be expressed as an (infinite) “linear combination” of
+exponential polynomial solutions. This theorem generalizes to so-called ouerdetermined systems
+
+            P,(I), ,...,   D,)f=O,            i=l,...,            L,                            (2.8)
+where P;(D,,...,  0,) are polynomials in D,, . . . , 0,. The Ehrenpreis-Palamadov theorem implies
+that every solution of (2.8) can be expressed as a (usually infinite) “linear combination” of
+exponential polynomial solutions.
+   An exponential polynomial solution f(x) = px( x)e’” = ph( x)eX1”l+ ..’ +‘A is a solution of
+(2.8) only if
+
+            P,@ I ,...,    A,) =O,         i=l,...,          L.
+
+Thus the Ehrenpreis-Palamadov       theorem asserts that every solution of the system (2.8) is a
+(usually infinite) “linear combination” of exponential polynomial functions pi(x) ehx, where A
+ranges over the algebraic uariety
+
+            V:= {XEC”;            P,(A)=O,            i=l,...,         L}.
+
+   Guided by Definition 2 of C-finite functions, we want the “usually infinite linear combina-
+tion” to be a good old-fashioned finite linear combination, and thus make our entities “specifia-
+ble by a finite amount of information”. This prompts us to define multi-C-finiteness as follows.
+
+
+Definition 2. f is multi-C-finite          if it can be written as
+
+
+           f(x)    = c    p,(x)      eh”‘x.                                                    (2.9)
+                      i-=1
+
+   In this case the variety V consist of a finite set of points { A(‘), . . . , A(“)}, and so is a
+“zero-dimensional variety”. Thus we have a natural analog of Definition 3: f is C-finite if it is a
+solution of a system (2.8) whose associated variety Vr is zero-dimensional. More precisely, let us
+define, as before,
+
+           I,:=   {PEC[Q           )...)   II,];      Pf=O},                                  (2.10)
+330                            D. Zeilberger / Holonomic systems for special functions
+
+
+and
+           y::= {AEC”;        P(X)=OforeveryPE1f};                                                            (2.11)
+
+then we have the next definition.
+
+Definition 3. f: R” +     C is   multi-C-finite     if the algebraic variety V, is zero-dimensional,        i.e., is a
+finite set of points.
+
+   Note that for an arbitrary f, I, is usually the 0 ideal and then I$ is the whole of Q=“,i.e., it is
+an “n-dimensional variety”. In general, the dimension of I$ is between 0 and n, and being
+multi-C-finite means that the function satisfies as many independent constant-coefficients linear
+partial differential equations as possible. Thus being multi-C-finite is the same as being a
+solution of a “maximally overdetermined system”. Of course, we have again excluded the trivial
+case of f = 0, in which case Ir = C[ D] and Vr is the empty set.
+   What about the analog of Definition O? It is easily seen that now there are n differential
+operators Pi,. . . , P,,, each of which is “ordinary” in D,, . . . , D,, respectively, such that
+           P,(D,)f=O,         i=l,...,      n.                                                                (2.12)
+They are given by
+
+           pi( Di) :=   fJ(D; -       X(:))deg(pr)+l,                                                         (2.13)
+
+where
+           A(“‘= (A($...,A$)).
+Let Pi( Di)     be of order (Y,. It follows from (2.12) that DFlf can be expressed as a linear
+combination      of f, Dif, . . . , OF-‘f, and, by iterating, D!f can be thus expressed for any j > (Y~.
+Similarly, it   is readily seen that every 0;’ - . . DAnfcan be expressed as a linear combination of
+such entities    for which i, < aI,. . . , i, < a,,. We thus have the following definitions.
+
+Definition 1.   f is multi-C-finite      if C[D,, . . . , D,]   f is finite-dimensional.
+
+Definition 1’. f is multi-C-finite       if the C[D,, . . . , D,] module C[ D,, . . . , D,,]/If   is a finite-dimen-
+sional vector space.
+
+  When we talked before about the “dimension of the variety”, we meant the usual, analytical
+dimension, as a complex manifold. However, there are several other, algebraic, notions of
+dimension, for example the Krull dimension. The notion of dimension that was used by
+Bernstein, and which is the one that we will need, is that of the Hilbert dimension of a graded
+C[z 1,. . . , zn] module, which we shall now introduce.
+  The ring of polynomials C[ zi, . . . , zn] with coefficients in Q=has a natural “filtration”:
+
+           C[Zi,...,    %I = UK                                                                               (2.14)
+
+where F, is the vector space of all polynomials of (total) degree =$v. Since a basis for this vector
+space is { zla, . . . z?; a, 2 0, a1 + * . . + a, < v}, its dimension is the number of solutions in
+                               D. ZeiIberger / Holonomicsystemsfor specialfunctions                                     331
+
+nonnegative integers of q + . - * + a, < v, which is well known, and easily seen, to be (n +
+v)!/n!v!. This is a polynomial in v of degree n with leading coefficient l/n!.
+   A graded C[zl,...,  zn] module is a C[z,, . . . , z,,] module S which has the decomposition
+
+           s=    @S(v),
+where S(v) are Gsubspaces of S and x/j(v) c S( v + 1) for 1 <j 6 n and all v. A famous
+theorem of Hilbert (e.g., [12, p.71) states that for v B- 0, CiG,,dim,( S(j)) is always a polynomial
+in v with rational coefficients (called the Hilbert polynomial). The degree of this polynomial is
+called the Hilbert dimension of S and is a measure of “how big” S is. Of course C[z,, . . . , zn]
+itself is a graded C[z,, . . . , zn] module with
+           S(j)=span{z,“‘...z,“‘;         a,+      ..*    +an=j}.
+We saw that
+
+            c    dim(S(j))    = dim(&)     = (‘z         “),
+           j<v
+
+a polynomial of degree n in v. So the Hilbert dimension of C[ zl,. . . , zn] coincides with its
+natural dimension n.
+   More generally, for any ideal I in C[z,, . . . , z,], C[ zl,. . . , z,]/I has a natural structure as a
+graded C[Z~,..., zn] module, inherited from (2.14) by modding out by I. If the ideal I is the
+O-ideal, then the Hilbert dimension is n. Excluding this trivial case, the dimension is between 0
+and n - 1. The Hilbert dimension of C[ zl, . . . , z,]/I   is zero if and only if it is a finite-dimen-
+sional C-vector space, because then Ci s ,dim,( S( j)) is eventually constant. We thus have the
+next definition.
+
+Definition 1”. f is multi-C-finite if the graded               C[z,, . . ., zn] module C[z,,   . . . , z,]/I,   has Hilbert
+dimension 0, which is the smallest possible.
+
+     Of course we have excluded f = 0 for which the Hilbert polynomial is identically 0, which is a
+ “polynomial of degree - co”.
+     It can be seen in a variety of ways that the class of multi-C-finite functions is an algebra. The
+ easiest way is by using Definition 2. However, it is also possible to use Definition 1, like we did
+ with ordinary C-finite functions. C[D,, . . . , D,]( f + g) is a subset of C[D,, . . . , D,,]f @
+ CID,, . . . , Qlg and Wb..        . , Ql(fg) is a subspace of a homomorphic image of C[ D,, . . . , D,] f
+  69 C[D,,...,   D,]g and so are finite-dimensional vector spaces.
+     Another obvious property, which we will generalize later on, is that the diagonal &i) of a
+ multi-C-finite f: f(F) :=f(x,...,       X) is an ordinary C-finite function in the single variable X. This
+ is immediate from Definition 2 but is also not hard to deduce using any of the other definitions.
+ For example, from Definition 1 it follows that the --vector sp&ce span{ 0; - - . D,‘f; r 2 0) is
+ finite-dimensional and hence -there is an operator P(D) in D := D, . - . D,, that annihilates
+f(x 1,..., xn), and thus P(D,)f(:)         = 0.
+
+
+2.2.2. Multi-C-finite sequences
+   Everything in the previous section has an obvious discrete analog. Now we have multise-
+quences that are nothing but functions from Z” to C, or N” to C, or for that matter one can
+332                               D. Zeilberger / Holonomic systems for special functions
+
+
+consider functions from any subset of Z” to Q=. Given a function                            a : Z n -+ Q=, we define the
+fundamental shift operators
+           E,a(m,    )...,    m, ,...)   m,):=a(m,     )...)    mi+l   )...)    m,).                             (2.15)
+
+   A linear partial recurrence operator with constant coefficients is a polynomial P( E,, . . . , E,,) in
+the fundamental shift operators. For example, the operator a(m,, m2) + a(m,, mz) + 3a(m, +
+1, m2 + 2) is written I + 3E,E;. The ring of linear partial recurrence operators with constant
+coefficients is in fact C[ E,, . . . , E,], the commutative polynomial algebra in the n indeterminates
+El,..., E,, over the field C. We leave it to the readers to do the obvious discrete analog of the
+previous subsection, and give the definitions of the notion “multi-C-finite” as applied to discrete
+functions. For example,. the next definition.
+
+Definition 1. a : Z” + C is multi-C-finite           if C[ E,, . . . , E,]a     is a finite-dimensional   vector space.
+
+2.2.3. Mixed continuous and discrete functions
+   Consider functions f : IF!!“’x Zn2 + C. Then C[ D,, . . . , D,,, E,, . . . , EJ acts in a natural                way
+on these functions, and everything goes through (except the definition of the diagonal).
+
+2.3. P-finite functions      and sequences
+
+   If, in Definition 0 of C-finite functions, we replace “a solution of a constant-coefficients linear
+ordinary differential equation” by “a solution of a polynomial-coefficients           linear ordinary
+differential equation” we get the class of P-finite functions. Similarly, a P-finite sequence is a
+sequence that is a solution of a (homogeneous) linear ordinary recurrence equation with
+polynomial coefficients. For example, the Apery numbers
+
+
+
+
+of l(3) fame [55] is a P-finite sequence since it satisfies
+
+           n3u, - (34n3 - 51n2 + 27n - 5)a,_,                  + (n - l)3a,_2     = 0.
+
+   P-finite functions and sequences were introduced and studied by Stanley [50]. Please note that
+our P-finite functions are called by him “D-finite functions”, and our P-finite sequences are
+called by him “P-recursive sequences”. In the interest of thawing the cold war between the
+discrete and the continuous, I have decided to combine these two names into one.
+   So far we have introduced P-finite functions through the analog of Definition 0. Do the other
+definitions go through? Unfortunately, Definition 2 does not go through, but all the other
+definitions do. For example, the following definition.
+
+Definition 1. f is P-finite       if C[ D] f is a finite-dimensional           vector space over the field of rational
+functions C(x).
+
+  The analogs of Definitions l’, 1” and 3 will be discussed in the next subsection, in the more
+general context of holonomic functions.
+                            D. Zeilberger / Holonomic systems for special functions                     333
+
+
+   Both P-finite functions and P-finite sequences are closed under addition and multiplication
+[50]. This is easily seen from Definition 1, since the C(x) vector space C[D]( f+ g) is a subspace
+of C[D]f@c(,,C[D]g        and the C(x) vector space C[D]( fg) is a subspace of a homomorphic
+image of C[D]f@ c(,,C[D]g,      and thus are finite-dimensional over C(x).
+   Once again, the discrete analog of this is immediate.
+
+
+2.4. Holonomic   systems and holonomic functions
+
+
+   After this somewhat lengthy introduction we are finally ready to introduce holonomic systems,
+that form the foundation of our approach to special function identities.
+   Holonomic systems were introduced and studied by Bernstein [lO,ll] and were used by him to
+give an elementary proof of a famous conjecture of Gelfand concerning the existence of a
+meromorphic extension of the distribution valued complex function A + P”, where P is a
+polynomial of several variables in R”. This theory is very deep and stands at the forefront of
+current research in analysis. Fortunately, we will only need the most basic notions from this
+imposing theory, and everything we need will be stated and explained. An excellent introduction
+to the theory of holonomic systems can be found in the introduction and Chapters 1 and 7 of
+Bjbrk’s monograph [12]. Much of the following follows closely Bjork’s readable account on [12,
+pp. ix and x].
+   Holonomic systems are obtained when the linear partial differential operators with constant
+coefficients that feature in the definition of multi-C-finite functions are replaced by linear
+partial differential operators with polynomial coefficients. Thus instead of the commutative
+algebra C[D,, . . . , D,,] we will have to consider the so-called Weyl algebra A,(C) =
+C(D 1,. . . , D,, ~1,. . . , xn) which is the (noncommutative)         algebra generated by the inde-
+terminates D,, . . . , D,,, x1,. . . , x,. Here xi denotes the operator of multiplication by xi : f + xi f.
+These generators satisfy the following commutation relations: [xi, xj] = 0, [ Dj, D,] = 0, and
+from the product rule of differentiation [ Di, xi] = &, j, where 6;, j is Kronecker’s delta function
+that equals 1, when i =j, and equals 0, otherwise; (recall that “1” means the identity operator:
+f+f)*
+   The noncommutative structure is already so strong that the ring A,(C) has no two-sided
+ideals, except the zero-ideal and the whole ring A,(C). But of course there are one-sided ideals,
+left or right, and more generally left and right A,(C)-modules.
+   A remarkable result, due to Stafford [49], [12, (1.7)], asserts that every left ideal in A,(C) can
+be generated by 2 elements.
+    In particular A,(C) is a left and right noetherian ring. The main idea is to use filtrations on
+the ring A,(C) and its modules.
+   The ring A,(C) is equipped with the F-filtration = { F,}, where F, is the finite-dimensional
+vector space generated by the (x, D)-monomials x*D” whose total weight 1a 1+ I/3 1 < Y.
+   Thus F, c J’i c F2 c . . - is an increasing sequence of subspaces of A,(C). Of course UF, =
+A,(C) and the inclusion FvFk c Fv+k for all pairs of nonnegative integers v and k, follows from
+the definition of the ring product of A,(C).
+   Let us now consider a left ideal L in the ring A,(C). If v >, 0, we can consider the dimensions
+of the complex vector spaces F/( FJIL),          which form the induced filtration on the left
+A,,(C)-module A,(C)/L.      Let H(v) be the dimension of F,/FjTL.         Then H(v) = dim&F,) -
+334                           D. Zeilberger / Holonomic system for special functions
+
+
+dim,(F,nL).     It turns out [12, (1.3)] that H(Y) is a polynomial function advd + . . . +a, when
+v Z+ 0. Here a,, . . . , ad are rational numbers and ( d !) ud is a positive integer that is denoted by e.
+    The degree d of the Hilbert polynomial udvd + . - . a,, which computes H(v) when v Z+ 0, is
+called the F-dimension of the left A,( C)-module A,( C)/L and is denoted by dF( AJL).
+    The celebrated Bernstein inequality asserts that for every left ideal L, dF( A,/L)         >, n, unless,
+of course L is the whole ring A,.
+    The above notion of dimension can be extended to general finitely-generated left A,( C)-mod-
+ules of which modules of the form A,(C)/L          are special cases. One considers a certain class of
+“good filtrations”, and shows that the notion of dimension makes sense for each such good
+filtration. Then it is shown that the dimension is independent of the particular filtration, and
+thus one is able to talk about the dimension of the A,,(C)-module M, d(M), without reference to
+any particular filtration. Bernstein [lo], [12, (1.4)] proved the more general statement that
+d(M) >, n for every nonzero and finitely-generated left A,( C)-module. An extremely short and
+elegant proof of this important inequality was given by Antony Joseph, and can be found in [13],
+and in [21, p.4171.
+    Let f be either a C” function, or a distribution, or a formal power series, or what have you
+(anything on which it is possible to differentiate and multiply by xi), in n variables. Then one
+can consider all the elements of A,(C) that annihilate f:
+           I,:=   {PEA,(C);       Pf=O}.                                                             (2.16)
+   Obviously 1, is a left ideal. By Bernstein’s inequality the dimension of the A,(C)-module        is
+ > n, unless f is identically zero. We will call functions f for which the dimension of A,, (C)/l_ is
+the smallest possible, namely n, holonomic functions (or distributions, formal power series, etc.).
+It can be easily seen that multi-C-finite functions are ipso facto holonomic functions. This makes
+sense since in the passage from C[D,, . . . , Dn]/If         to A,( C)/$  we have acquired n “extra
+dimensions”, corresponding to the generators xi,. . . , x,, and the “gap” between numerator and
+denominator is still n.
+   Because of the analogy to multi-C-finite functions and P-finite functions it would make sense
+to call holonomic functions “multi-P-finite functions”. Bjijrk [12] calls holonomic functions
+“members of the Bernstein class”.
+   The Weyl algebra A,(C) acts just as well on discrete functions f : Z” -+ C, via xi + E,:’ and
+Di + (n, + 1) Ei, as can be easily seen by examining the action of xi and D, on a generic formal
+power series, and see how the coefficients get transformed. Of course this extends to mixed
+continuous-discrete functions f ( x1,. . . , x,, ml,. . . , m,() on which the Weyl algebra A,+,/(C)
+acts naturally.
+   So let us state the formal definition of holonomic functions (or distribution, formal power series,
+etc.).
+
+Definition 1”. Let f be a nonzero member of a family on which the Weyl algebra acts naturally.
+Let the ideal 1, be defined by (2.16) above. Then f is holonomic if the left A,(C)-module
+A,( C)/lr has its smallest possible dimension, namely n.
+
+   It is readily seen that this definition is the natural extension of Definition 1” of multi-C-finite
+functions, in Section 2.2.1. Since A,(C)/l_       is naturally isomorphic, as A,(C) modules, to the
+A,( C)-module A,(C) f. We can also state the next definition.
+                                       D. Zeilberger / Holonomic systems for special functions                     335
+
+
+Definition 1’. f is holonomic                if the A.(C)-module        A,(C)f   has the smallest possible dimension,
+namely n.
+
+   Definition 3 can also be extended to the present context. But we first need some notation. A
+typical element of the Weyl algebra A,(C) may be written
+
+           P=         c   aa(X)
+                    lal<N
+where (Y= (q, . . . , an), D” := OF - . . Dzn and a,(x) = a,( xi,. . . , xn) are polynomials. Its sym-
+bol is obtained by replacing Di by the complex variables S;., and replacing xi by the complex
+variables zi, obtaining a polynomial in the 2n complex variables zi, . . . , z,, 5;, . . . , ln. The
+principal symbol a(P) is obtained by only retaining the leading terms for which 1 a 1 = N:
+
+           (J(p)      =        c    %b>S”.
+                            lal=N
+
+   For any left ideal L in A,(C)                 let us consider the following variety in Q=”x C” = CZn:
+           V,=       {(z,     {)EC”XC”;              u(Q)(z,   {)=O,foreveryQ          in L}
+
+                   =+(Q)-‘(O);                QEL].
+   It is a deep result (see [12, p. x and Chapter 21) that the (complex analytic) dimension of the
+variety V, coincides with the previously defined dimension of the A,(C)-module A,(C)/L,        for
+any left ideal L in A,(C). In particular we can define the following.
+
+Definition 3. Let f be a nonzero member of a family on which the Weyl algebra acts naturally.
+Then f is holonomic if the variety
+           I$:= {(z, {)EC”XC”;                       a(Q)(z,   5) =0,    foreverye     such that Q(f)   =0}
+
+                =n{       u(Q)-‘(0);          Q(f)    = 0)
+has dimension n.
+
+2.5. Examples       of holonomic functions
+
+     In the next section we will show that the class of holonomic functions is an algebra: The sum
+ and product of holonomic functions are also holonomic. We will also prove that it is closed
+ under integration (or summation) with respect to a variable: If f (x1,. . . , x,) is a holonomic
+ function of n variables, then /T’,f dx, is holonomic in the surviving n - 1 variables xi,. . . , x,_~,
+ if it is defined. Similarly if f = f (m,, . . . , m,) : Z n +- C is holonomic, then C_ f is holonomic in
+ the surviving variables m,, . . . , m n_ 1.
+    All polynomials and exponential-polynomial functions, being multi-C-finite, are automatically
+ holonomic. The simplest discrete function of a single variable that is P-finite but not C-finite is
+f(n) := n !, that satisfies (E - n - 1) f = 0. Similarly f(n) := l/n ! is P-finite since it satisfies
+((n + l)E - l)f= 0.
+    The function f := m,! is a holonomic function of m,, . . . , m,. One way of seeing this is noting
+ that 1, contains the operators I - Ei, 2 G i G n, as well as E1 - m, - 1. When translating, this
+336                           D. Zeilberger / Holonomic systems for special functions
+
+
+becomes 1 - zi, 2 G i G m, and zi - ziD, - 1, whose principal symbols are -zi and -zJi.          The
+variety l$ is a subset of the set of common zeros of { - zi, 2 < i < n } and zJi, which is a union
+of the two n-dimensional varieties in C2n: { zi = . . . = z, = 0} and { S1 = 0, z2 = . . . = z, = 0},
+and thus its dimension must be G n, and, by Bernstein’s inequality, it should be equal to n, and
+thus is holonomic.
+   In a similar way we can prove that l/m,! is holonomic and of course this is true for all m,!
+and l/m,!.    Similarly (ml + . - . +m,)!      is holonomic and thus the multinomial coefficient
+(ml + .** +m,)!/m,!     * * . m ,, !. This would also follow from the following general result, upon
+taking P = 1 - x1 - . * . - x,, and looking at the coefficients of l/P, viewed as a formal power
+series.
+
+Proposition 2.1. Let P = P( x1,. . . , x,,)         be a polynomial   in n variables;   then 1/P   is holonomic,
+whenever it is defined.
+
+First proof. Let us try and find as many linear differential operators with polynomial coefficients
+that annihilate f := l/P    as possible. Among the many such operators are PD, + P(l) and
+P(‘)D, - P”‘D. for 2 < i < n. ( Pci) is the partial derivative of P with respect to xi: aP/ax,.) The
+principal symbols of these are Pt, and P(j)[, - Pcl)cj. The variety 5 is a subset of the set of
+common zeros of these n polynomials in x1,. . . , x,, El,. . . , (,, which is easily seen to comprise
+an n-dimensional variety. Thus the dimension of the variety V, is G n, and by Bernstein’s
+inequality it must be equal to n. It follows that l/P is holonomic.       q
+
+Second proof. A,(C)(l/P) is a submodule of C[x,, . . . , x,, P-l], and this last A,(C)-module                  is
+shown to be a holonomic A,(C)-module in [12, Theorem 1.5.5, p.131. q
+
+   Since every polynomial Q is obviously holonomic it follows (from the closure under product
+to be proved in Section 3) that all rational functions Q/P are holonomic. If P has a nonzero
+constant term, then Q/P makes sense as a formal power series, and its multisequence of
+coefficients f, defined by
+           Q/P=Cf(ml,...,m,)xyl               .*.    xzn,
+
+is a holonomic discrete function from Nn to Q=.
+
+
+3. Operations that preserve holonomicity
+
+3. I. Continuous functions and distributions
+
+   We will now show that the sum and product of holonomic functions are themselves holo-
+nomic, and that if f ( x1,. . . , x,) is holonomic on R”, then f ( x1,. . . , x,_~, c) (c a constant) and
+lf (x1,. . . , xn) dx, are holonomic functions of (xi,. . . , x,_~).
+
+Proposition3.1.   Letf:R”-+Q=,       g:R”     + Q: be holonomic;       then f + g is also holonomic.
+
+Proof. Let A,(C) = U~~oFvbe the natural filtration of A,(C), described above. Then the natural
+filtrations for A,(C)f, A,(C)g and A,(C)( f + g) are U~~&f, U~=&g and U~=&( f + g).
+                                D. Zeilberger / Holonomic systems for special functions                      331
+
+
+Now for every v we have FV(f + g) c F":,f@     Fvg.Thus dimF”( f + g) < dim( FVf) + dim( F,g) are
+polynomials in v of degree n, and the same is true for their sum. We do know a priori that for
+v x=-0, dimFV( f + g) is a polynomial, and so it follows that its degree must be < n, and
+therefore, by Bernstein’s inequality it is equal to n, and f + g is holonomic. 0
+
+Proposition 3.2. If f and g are holonomic,            so is their product    (if it is defined).
+
+Proof. Let Ml and M2 be A,(C)-modules.            Bernstein [ll, p-2771 defines the A,(C)-module
+Mi x M2 as follows: as an C[x,, . . . , x,] module A4i IX M2 = Ml @)c[X1M2and the operators a/ax;
+acts as follows:
+
+
+
+
+Bernstein proved ([ll, p.278, Theorem 3.2, Part 3) that if M1 and. M2 are holonomic A,(C)
+modules, so is A4i [XIM2.
+  Now, by Leibnitz’s rule
+
+           4lMfg)          =   bLw)f >@kLW)d.
+It follows that A,( C)( fg) is a holonomic A,(C)-module,                    since it is a nonzero submodule of a
+holonomic A,( C)-module.      EI
+
+   Proposition 3.2 has some far-reaching consequences. It is obvious that the Dirac delta measure
+S,, concentrated at x = a (i.e., S,(f) = f (a), for every test function) is a holonomic distribution
+in a single variable, since it satisfies the equations (of order zero) (x - a)&, = 0. When 8, is
+embedded in R” as the Lebesgue measure that is supported at the hyperplane x, = a, it is still
+holonomic, but now in R”. Multiplication by 8, from the right is nothing but the evaluation
+x, = a:
+          f(xl,...,x,-l,        x,)%=f(xl,...,x,-l,            a>,
+when x, = a, and 0 otherwise.
+   It follows from Proposition 3.2 that if f is holonomic and fS, is defined (which is the case, for
+example, when f is continuous), then it is holonomic. In other words, if f(x,, . . . , x,_~, xn) is
+holonomic in US”,then f(xl,. . . , x,__~, a) is holonomic in R”-‘.
+   It turns out [12, (7.4.1)] that it is always possible to define the evaluation x, = a on any
+holonomic distribution. This is certainly not possible for an arbitrary distribution, so the class of
+holonomic distributions is indeed privileged.
+   The differentiation operators (l/i)(a/axj)     and the “multiplication by xj” operators xi are
+dual to each other under the Fourier transform, so it is easily seen [12, p.2931 that the Fourier
+transform of a holonomic entity on R”, if it exists (and it does if it is a tempered distribution), is
+also holonomic, and vice versa. The Fourier transform sends the act of multiplication into the act
+of convolution: ( fi) = f** fi, so we have as an immediate consequence of Proposition 3.2, the
+next proposition.
+
+Proposition 3.2 * . If f and g are holonomic,          so is their convolution,     if it is defined.
+
+  This proposition can be also easily proved directly, by mimicking the proof of Proposition 3.2.
+338                                          D. Zeilberger / Holonomic systems for special functions
+
+
+   Let 6(“-‘) be the Lebesgue measure of the “line” xi = . . . = x,-i                                            = 0 in R”, i.e., for any test
+functioi f#~:
+                     S(n-l)(+(~l,
+                      n                  . . ., x,))      = /$(O,.. .,O, x,,) dx,.
+It is holonomic because it satisfies the system:
+                     x&“-i)
+                      1n
+                                 = 09       i=l       >**., n - 1,              D #“-l)
+                                                                                 nn
+                                                                                                = 0.
+
+Now
+
+                     J(x 1,. .., x,-l)       :=        f(x,,..       ., x,-l,   x,)      dx,                                                  (3.1)
+                                                  J
+
+is nothing but the convolution f *6,(“-l), and so it follows from Proposition                                                   3.2*   that if f is
+holonomic in R”, then f, as given in (3.1) is holonomic in R”-‘.
+   Summarizing we have:
+
+Proposition             3.3. Let f = f (x1,. . . , x,)                 be holonomic            in IR”, and let a be any constant;              then
+f(Xl,.**,X,-1,               a) is holonomic in R”-‘.
+
+
+Proposition 3.4. Let f(x,,                    . . . , x,)        be holonomic         in R”;      then If (x1,. . . , xn) dx,     is holonomic    in
+R”-I,            if it is defined.
+
+
+   It is obvious that the class of holonomic functions (or distributions) is closed under differenti-
+ation and indefinite integration. Furthermore, the closure under indefinite integration and
+evaluation implies closure under definite integration, so we have the following proposition.
+
+Proposition 3.5. If f ( x1,. . . , x,,) is holonomic,                           then, for any constants a and b,
+
+
+                     Ja
+                       “f (x1 ,...,x,-1,          x,J       dx,
+
+is also holonomic,              if it is defined.
+
+
+3.2. Discrete functions
+
+  Everything that we said about the continuous realm goes over smoothly to the discrete realm.
+Given a discrete function f : Z ” + C, we can talk about its Fourier transform
+                                 t,) =       C         f(m)        eiml’l+ ... +im,f,,
+                     &W..,
+                                           rnC2”
+that lives on the torus T” = (-7,                                IT)~. Alternatively,          by taking e”) + zj, j = 1,. . . , n, we get the
+“z-transform”
+
+
+
+Equation (3.2) always makes sense as a “formal Laurent series”, which may be viewed as
+“distributions” with respect to the Laurent polynomials as “test functions”. If f(m)      is of
+polynomial growth, then fA is a distribution on T”; if f(m) is of exponential growth, then f* is
+                                      D. Zeilberger / Holonomic systems for special functions                              339
+
+
+analytic in some multi-annulus that contains T”, and if f(m) is supported in N”, then f^is a nice
+and honest formal power series.
+  Let us apply the operators z(d/dz) and z on a single-variable formal Laurent series
+
+           f-(z) = f             f(m)z?
+                        --oo
+
+We get
+
+           z&-(z)= g mf(m)zM
+                                  -CO
+and
+
+           zf(z) =        c      f(m)zm+l           = c      f(m   - l)zm,
+                          --oo                        --oo
+
+so the z-transform sends the operator z(d/dz) to the operator “multiplication                               by m”, and it
+sends the operator “z” into the “backward shift” E-l (E-‘f( m) = f( m - 1)).
+   In several variables we have
+           zj -   E,-I,             zjDj @ mj,
+where, as always, mj is shorthand for the operator “multiplication                              by mj”. A linear partial
+recurrence operator with polynomial coefficients is written
+           P(m,,.       .., m,,      El’,..    ., E;‘),
+and this corresponds to the differential operator
+           P(z$+,...,             z,D,,   zl,...,    zn).
+   Conversely any linear differential operator with polynomial coefficients                         can be written as
+             -a1 . . . z,V(zlD1,. . . , z,D,, zl,. . .., z,),
+          Zl
+
+
+ for some nonnegative integers al,. . . , a,. So it is obvious that f(m) is holonomic if and only if
+fiz) is holonomic. In fact this last sentence is a tautology since we have basically defined f(m)
+ to be holonomic when flz) is holonomic.
+    The same reasoning as in the continuous case yields.
+
+Proposition 3.1’. The sum of two holonomic discrete functions from                       (a subset of) H” to C is also
+holonomic.
+
+Proposition 3.2’. The product of two holonomic discrete functions from (a subset of) h” to C is also
+holonomic.
+
+Proposition 3.2 * ‘. If f and g are holonomic discrete functions,                so is their convolution,   if it is defined.
+
+   The characteristic function of the discrete hyperplane m, = a is clearly holonomic, so we have
+the following proposition.
+
+ Proposition 3.3’. Let f = f( m,, . . . , m,) be holonomic                   in Z”,   and let a be any constant;        then
+f(m 1,. . . , m,-,, a) is holonomic in B”-‘.
+340                                  D. Zeilberger / Holonomic systems for special functions
+
+
+   The characteristic function of the discrete line m, = . . . = m,_ 1 = 0 is obviously holonomic,
+so we have the next proposition.
+
+Proposition 3.4’. Let f (m,, . . . , m,)              be holonomic        in Z”;     then
+
+             Cf(m,,...,m,-,,                  m,)
+             m”
+is holonomic     in En-l,       if it is defined.
+
+
+   Since the property             of being holonomic                is preserved under addition         we have the next
+proposition.
+
+Proposition 3.5’. If f( m,, . . . , m,)             is holonomic        in h”,   then, for any constants a and b,
+
+
+               i    f(m,    , . . . , m,-,,     m,>
+             t?l,=Ll
+
+is holonomic     in Z”-’        (in the surviving variables m,, . . . , m, _ 1).
+
+
+3.2.1. The diagonal of a holonomic formal power series is D-finite
+   If
+
+            &,..       ., zn) =      C f(m,           ,...,   m,)z,“’     e-0 z,“n
+                                    mEWI”
+is a formal power series, we define the diagonal as
+            fo(w)      = Cf(m,...,m)wm.
+                            m
+In other words, we restrict f (m,, . . . , m,) to the diagonal and replace zi . - - z, by a new variable
+W.
+
+   The   z-transform of the characteristic set of the diagonal {(m, . . . , m), m > 0} is the rational
+formal power series l/(1 - (zi . . . z,)), which, by Proposition 2.1 (Section 2.5) is holonomic
+(this can be also checked directly). If f is a holonomic formal power series, then f itself must be
+a holonomic discrete function and it follows by Proposition 3.2’ that the product of f with the
+characteristic function of the diagonal {(m, . . . , m), m > 0} is holonomic. But this product is the
+restriction f ( m, . . . , m) of f to the diagonal, and so f (m, . . . , m) is a single variable holonomic
+discrete function (what Stanley [50] calls P-recursive), and its z-transform &w)                      must be a
+holonomic formal power series in one variable, what Stanley [50] calls D-finite.
+   By Proposition 2.1, a rational formal power series Q(z,, . . . , z,)/P(zl,.      . . , z,,) (P(0,. . . ,O) f 0)
+is holonomic, so it follows that the diagonal of a rational formal power series is D-finite. This
+fact was conjectured by Stanley [50], and incompletely proved in [60] and [29]. An elementary
+proof was given by Lipshitz [38].
+
+3.2.2.   Mixed     continuous and discrete functions
+   Our discussion extends immediately to mixed continuous-discrete functions f : R”’ X Z”’ - C
+(in fact the continuous component may be a distribution, i.e., f ( -, m) may be a distribution on
+lF8”’ for every m in a@).
+                                 D. Zeilberger / Holonomic systems for special functions                      341
+
+
+    Holonomic      entities on lR”1 X Z “2 are closed under addition, and if well-defined,      also under
+multiplication     and convolution.
+    The same argument              as above shows that if f : U&‘“lx Z”* + C is holonomic,             then
+f(x,, . . . , x,,_~,     b, m,, . . . , HZ,,) and    If dx,,    are holonomic     in tRnl-’ x Z”*       and
+f(x 1,‘“, xn,, ml,...,      m,2-l,   a) and Em,, f are holonomic   as functions on Iw”1x h”z-l.
+
+3.3. Applications    to combinatorics
+
+    The general problem in enumerative combinatorics       is that of counting the number of elements
+a(n) in a family A(n) of combinatorial       objects, parametrized      by the (single or multi) discrete
+variable n. For example, the number of subsets of an n-element set is 2”. Of course it is nice to
+get a simple explicit expression for a(n), but this is very rarely possible. But what is an explicit
+answer [57]? One narrow definition is that a( n + l)/a( n) be a rational function in n. In other
+words, we know the answer explicitly if u(n) satisfies a first-order              recurrence  equation with
+polynomial coefficients. One way of broadening our definition of “explicit” is not to insist on the
+recurrence being first order. In other words, given a combinatorial        sequence a(n), to which there
+is no simple explicit form, it is of interest to know whether it is P-finite, i.e., is a solution of a
+linear recurrence equation with polynomial coefficients (see [50]).
+    We saw in Section 2.5 that the factorial and multinomial         coefficients    are holonomic in their
+variables. Many times in combinatorics,      there is an explicit expression for a(n) in terms of a
+huge sum of summands that are obviously holonomic. The general scenario is that the summand
+depends on, say, k parameters,      and the sum contains k - 1 sigmas. It follows then from an
+iteration of Propositions 3.4’ and/or 3.5’ that a(n) is holonomic in the surviving variable n. But
+being holonomic in a single variable is nothing but being P-finite! We have thus a powerful way
+of proving that sequences of combinatorial      interest are P-finite.
+    One example is t,(n), the number of standard Young tableaux with n cells and height < k.
+For every fixed k, this is a sum of fA over the set
+           {Cm,,..., m,); m,+ a.* +m,=n,                   m,>,m,>           ...   >,m,>O}.
+fx is the number of standard Young tableaux               of shape X = (ml,. . . , mk), and is given explicitly
+by the famous Young-Frobenius   formula:
+
+
+                                                    1
+                                                          (        . . - +m,)!
+           fh=          n      (mi--mj+j-i)
+                    l<i<j<k                           (m, ylkT       l)!   - * * (m,)!   .
+
+   Since fx is obviously holonomic in its variables, it follows that for every fixed k, t,(n) is
+P-finite. (Explicit expressions for tk( n) for small values of k were given by Regev [46] (k = 3)
+and Gouyou-Beauchamps         [35] (k = 4,5), and Goulden [34] developed an interesting symmetric
+functions method for handling these and related sums.)
+   Many other combinatorial       applications  were found by Gessel [30,31]. Lipshitz [38,39] gave
+elegant elementary proofs of many of the results in this section for D-finite formal power series.
+
+
+4. How to “write down” holonomic functions               and how to verify identities
+
+4.1. Continuous holonomic functions
+
+  In order to actually        work with holonomic functions we should have some way to “write              them
+down”. A holonomic             function is completely determined  by a left ideal J of A,(C)                 that
+342                             D. Zeitberger / Holonomic systems for special functions
+
+
+annihilates it, and by “initial conditions”. We will now show that every holonomic function in n
+variables has n “ordinary” operators Pj( Di, xi,. . . , xn), i = 1,. . . , n, that annihilate it. This
+would follow from the following lemma, whose proof was kindly shown to me by Joseph
+Bernstein.
+
+Lemma 4.1. Let L be a left ideal in A,,(C) such that A,,( C)/L is a holonomic A,( C)-module. For
+every n + 1 generators out of the 2n generators (x,, . . . , x,, D,, . . . , D,,) of A,,(C) there is a
+nonzero member of L that only depends on these n + 1 generators.
+
+Proof. For the sake of definiteness let us take the n + 1 generators to be xi,. . . , x,,    D,. The
+proof in general is similar. Consider the mapping
+          +: C(+...,x,>          Di> -%(C)/J,
+given by (p(f) = f (mod J). Let UF,“) and UFv/J be the natural filtrations of C( xi,. . . , x,, DI)
+and A,(C)/J,     respectively. (Recall that F, is the vector space of all members of A,,(C) of degree
+ < Y.) Since A,( C)/J is holonomic, we have that dim( F/J)        is a polynomial in Y of degree n for
+Y > 0. Obviously dim( F,“‘) is a polynomial of degree n + 1, so it follows that there is a Y such
+that dim( F,“‘) > dim( F,/J). The restriction of the linear map $ to the finite-dimensional vector
+space F,“) is therefore a linear transformation from a higher-dimensional vector space to a
+lower-dimensional vector space, and its kernel must therefore be nonzero. But this kernel is
+precisely JnC(x,,    . . . , x,, Dl). 0
+
+   The.above lemma shows that it is always possible to eliminate any n - 1 of the generators. The
+above proof is an existence proof. In Section 5, I will present an algorithm that actually
+constructs the eliminated operators.
+   In order to write down a holonomic function f in “holonomic notation”, we can give any set
+of generators of its corresponding ideal, with the appropriate initial conditions. However, in
+general it is not clear how many initial conditions are required to uniquely specify the function f.
+It is therefore necessary to introduce what I call “canonical holonomic representation” as
+follows. We find the n “ordinary” operators guaranteed by the above lemma
+          P,(D,,   x1 ,...,   xn),    i=l,...,    n,                                           (4.la)
+of order (Y~(in Di), say, that annihilate f, and give the “initial conditions”
+          &I . . . D:f(x,),    O,<i, <aI ,..., O,<i, <an,                                      (4.lb)
+where x0 is any point that is not on the “characteristic            set” of the system (4.la) (the
+characteristic set of a system is the set of common zeros of the leading coefficients of the
+operators Pi). The discussion below assumes, for the sake of simplicity, that the characteristic set
+of (4.la) is finite. If it is not, we have to take some other operators out of the annihilation ideal
+Ir, until the characteristic set is finite, and then give the appropriate initial conditions for the
+enlarged set of equations. A good “canonical holonomic representation” that always works, is in
+terms of Grobner bases.
+   In the last section we proved that if f and g are holonomic, then so are their sum and product.
+In order to manipulate concrete holonomic functions we should know how to find the “canonical
+holonomic representation” (4.1) of f + g and fg given the canonical representations of f and g.
+   Suppose P(D,, x1,. . . , x,)f = 0, Q(D,, x1,. . . , x,)g = 0, where P has order (Y and Q has
+order /3 (in Dl). We can find an operator R = R( D,, x1,. . . , x,) of order (Y+ j3 that annihilates
+                            D. Zeilberger / Holonomic systems for special functions                       343
+
+
+f + g as follows. The equation Pf = 0 can be used to express DFf as a linear combination,             with
+coefficients that are rational functions in xi,. . . , x,, of f, D, f, Dzf, . . . , Dr-‘f. By successively
+applying D,, using the product rule of differentiation, and replacing Drf by the above-men-
+tioned linear combination, we can express 0: f, for 0 < i < (Y+ p in terms of Di f for 0 < i -c a.
+Similarly we can express Dig for 0 < i d a + p in terms of Dig for 0 < i < /I. It follows that we
+can express each of the (Y+ p + 1 quantities Di( f + g), 0 < i 6 a + p, as linear combinations of
+the (Y+ /3quantities Di f, 0 6 i < a, and Dig, 0 <j < p. It follows that Di( f + g), 0 G i G a + /S,
+are linearly dependent (over the rational functions in xi,. . . , x,,). The linear relation between
+them, after clearing denominators, is exactly a differential equation in D,, satisfied by f + g.
+Now we repeat the process for Di and get a system of the form (4.1) satisfied by f + g. To get the
+initial conditions we just use the information about f and g. To get the higher-order initial
+conditions for f and g, out of those that are given, we iteratively use the differential equations
+and plug in the point where the initial conditions are taken.
+
+Trivial example. The holonomic functions (in the single variable x) f = eWx and g = eeXZ have
+the following canonical holonomic representations:
+          f=[D+l;       f(O)=l],          g= [D+2x;         g(O)=l].
+Now
+           (f+g)    =f+g,          D(f + g> = -f - 2xg,             D2(f+g)=f+(4x2-2)g.
+Eliminating f and g yields the following differential equations for (f + g):
+           (-2x+l)(f+g)“+(-4X2+3)(f+g)‘+(-4X2+2x+2)(f+g)=0.
+Since (f + g) satisfies a second-order differential equation, we need to know (f + g)(O) and
+(f + g)‘(O). Of course (f + g)(O) = f(0) + g(0) = 2, but we do not know (f + g)‘(O) right away,
+since f ‘(0) and g’(O) are not part of the canonical representation of f and g, respectively.
+However, we can find f ‘(0) and g’(0) from their respective differential equations: f ‘(0) = -f(O)
+ = - 1 and g’(0) = -2(O)g(O) = 0, so (f+g)‘(O)=       -l+O=     -1. It follows that thecanonical
+holonomic representation of h := (f + g) is
+          h=[(-2x+1)D2+(-4x2+3)0+(-4x2+2x+2);                                  h(O)=2,    h’(O)=   -11.
+
+   A similar process applies to fg. If P has order (Yand Q has order p, then it is possible to find
+a differential equation of order CX/~  satisfied by fg. Now we use Leibnitz’s rule to express the
+~$3+ 1 quantities Di( fg), 0 6 i < ap, in terms of the C@ quantities (Di f )( D(g), for 0 < i 6 a
+and 0 <j c p.
+   The canonical representation (4.1), with its accompanying initial conditions is not unique.
+Given such a representation, we can left-multiply by any operator in Di, get higher-order
+equations, and add the appropriate number of initial conditions. It is therefore necessary to
+know when two holonomic functions, given in terms of their canonical representation (4.1), are
+in fact the same. If f and g are holonomic functions suspected to be the same, which are given in
+terms of canonical representations, we can use the above method to find a canonical representa-
+tion of f - g. Then we find the appropriate initial values of f - g and check that they are all 0.
+Unfortunately, we actually have to find a concrete canonical representation, because otherwise
+we would not know the orders of the Pi, and the characteristic set of the system, both of which
+are needed to find how many initial conditions are required.
+344                                    D. Zeilberger / Holonomicsystemsfor specialfunctions
+
+4.2. Discrete   holonomic systems
+
+
+   Analogous considerations apply in the discrete realm. Every holonomic function f of the n
+discrete variables m,, . . . , m, can be specified by giving n “ordinary” recurrence equations:
+           P,(E,,       m, ,...,      mn)f=O,            i=l,...,     n,                                          (4.2)
+with appropriate initial conditions. If we write
+
+           Pi = 5 #‘E;,
+                j=o
+where (Y, is the order of Pi as a recurrence operator in E,, then the initial conditions needed are
+           f(q+b,           ,...,    a,+b,),           O<bi<ai,        i=l,...,   n,
+where (a,,...,   a,) is any point in Z”. In addition we need the values of f in the characteristic set
+of all common zeroes, on E”, of the leading coefficients { p,,( m,, . . . , m,)}.  If this set is not
+finite, then we must add to the “ordinary” equations in (4.2) some more “partial” equations out
+of its annihilation ideal I,, with the appropriate initial conditions.
+
+4.3. Continuous-discrete            functions
+
+
+  Everything applies equally well to mixed continuous-discrete                         functions on RN x Z”,   with the
+obvious analogy.
+
+4.4. How to compute indefinite integrals and sums
+
+  We know from Propositions 3.5 and 3.5’ that if f is holonomic in RN x EM, then
+
+           FI:=         f   dx,       and       Fz:=    cf
+                    J
+                                                        m!+f
+are holonomic in RN-’ x ZM and RN x Z”-‘,         respectively. However, in order to compute with
+holonomic functions we would need a way to find canonical holonomic representations of FI
+and F2 out of a canonical holonomic representation of f.
+   It can be seen that the ideal IF, in AN_-l,M (C) that annihilates FI is nothing but the ideal
+obtained by setting D, = 0 in the “elimination ideal” I/X(x,,        . . . , x~_~, D,, . . .). Similarly IF,
+is obtained by setting E,,, = 1 in the elimination ideal 1,flC(. . . , . . . , . . . , m,, . . . , m,,,_l).
+   In the next section we will see how to adapt Sylvester’s classical dialytic elimination method
+[56, Volume II] to the Weyl algebra. Galligo [21] showed how to adapt Buchberger’s powerful
+method of Grobner bases to the Weyl algebra which implies, in particular, efficient algorithms
+for elimination.
+
+4.5. How to uerify holonomic functions                   identities
+
+   We are now capable, at least in principle, of verifying any identity that involves a fixed number
+of sums, differences, products, integrals and sigmas of holonomic functions in a fixed set of
+uuriubles. Simply bring it to the form in which the right side is zero, and compute a canonical
+                                    D. Zeilberger / Holonomic systems for special functions                          345
+
+
+holonomic    representation   of the right.           Finally,   compute      the necessary   initial   conditions   and
+verify that they are all zero.
+
+4.6. Special functions        identities
+
+    Many special functions, in particular all those in the famous “tableau d’Askey” [8,37], are
+holonomic in all their variables and parameters.       For example, the Legendre polynomial            Pn(x),
+when viewed as a function of n and x, is holonomic, and the Jacobi polynomial              P,‘a,p)(x), when
+viewed as a function of n, x, a: and fl is a holonomic             function of N x R3. In general, any
+function that is given by hypergeometric         summation,    whose entries and arguments are linear
+combinations     of the variables and parameters,      is holonomic.      This follows from the fact the
+summand (with respect to k, say) is clearly holonomic in all its variables and parameters, and it
+follows from Proposition      3.5’ that the sum itself is a holonomic function.
+    It follows from the above comments that, at least in principle, we can verify any identity
+involving a finite number of sums, products, sigmas and integrals of these special functions.
+However, at present I am only able to implement             successfully the verification    of single sum
+terminating    hypergeometric     identities, which is carried out in Sections 5 and 6 and in the
+Appendix. I am afraid that it is a long way before the Askey-Gasper             identity [7, (2.30)] can be
+machine-proved.     On the other hand, Apery’s recurrence can be verified using the program. Of
+course, we still need the human to conjecture the identities, but once conjectured,            the machine
+can save us the chore of proving them. 2
+
+
+5. Sylvester’s dialytic elimination in the Weyl algebra
+
+5.0.
+
+   In the previous section we saw that if P(n, k, E,, Ek) and Q(n, k, E,, Ek) are independent
+in the sense that they generate a holonomic system, then we can find an operator R( n, E,,, Ek),
+independent of k, in the ideal I generated by P and Q. The proof given there, however, was an
+existence proof (using the pigeonhole principle). In this section we will present an algorithm that
+inputs P(n, k, E,,, Ek) and Q(n, k, E,,, Ek) and outputs an operator R( n, E,,, Ek), with k
+missing, and two operators     A and B such that R = AP + BQ. We will then show how this
+implies an effective algorithm for verifying any binomial coefficients      identity (= terminating
+hypergeometric    sum).
+   Given F( n, k) that is holonomic, Proposition   3.4’ guarantees that
+                a(n)   := xF(n,      k)
+                          k
+
+is holonomic in         the single variable n, wherever a(n) is defined (i.e., the sum converges). But
+being holonomic          in the single variable n means that a(n) satisfies a linear recurrence equation
+with polynomial         coefficients. Once we found an operator R( n, E,,, Ek) that annihilates F( n, k),
+i.e., RF = 0, we       can find an equation satisfied by a(n) as follows.
+
+’ Note added in proof. The method of WZ pairs [58,59] is capable of discovering (and at the same time proving) new
+  identities.
+346                                      D. Zeilberger / Holonomic systems for special functions
+
+
+   Write
+
+             R(n,       E,,, E,) = (I -J%)~&,                    E,,    E,),
+where (Y is maximal, i.e., r?( n, E,, I) f 0. We get
+
+             (1 -E,)“{            R(n,     E,,    E,)F(n,       k)}    = 0.
+But this means that
+             G(n,       k):=k(n,            E,, E,)F(n,         k)
+is a polynomial in k for every fixed n. If G( n, k) were a nonzero polynomial in k, then
+C,G( n, k) would have diverged, a contradiction, since the convergence of C,F’( n, k) implies the
+convergence of C,G(n, k). So G(n, k) = 0 and we have
+             a(,,       E,,, E,)F(n,             k) =O.
+   Now write
+
+             &,         En, 4) = S(n, En)+ (l-E,c)~‘b, En, Ed,
+where S( n, E,) := I?( n, E,, I) (# 0).
+  We have
+
+             O=     c&,            E,,, &)J’h             k)
+
+               =    &(n,
+                    k
+                      E,)J’(n, k) + z(I-Ex.)[i’(n,
+                                                            k
+                                                                                     En, E,c)F(n, k)].
+
+The second term vanishes by telescoping, so this is equal to
+
+             s(n,       E,)&‘+,             k) = s(n,       &,)a@).
+                              k
+
+   We have just proved the next theorem.
+
+Theorem 5.1. Let f : H2 -+ C be such that C,F( n, k) converges for every n (this happens, in
+particular, if F( n, . ) has finite support, like in all terminating hypergeometric series). If F( n, k) is
+a solution of a linear partial recurrence equation with polynomial coefficients of the form
+             R(n,       E,,   E,)F(n,            k) ~0,
+with k missing from R, then a(n) := Ck F( n, k) satisfies the following                            ordinary linear recurrence
+equation with polynomial coefficients:
+             s(n,       E,)a(n)          = 0,
+where S( n, E,) = I?( n, E,,, I) and I? is obtained from R by dividing by the highest possible power
+of (I-Ek).
+
+5.1. Sylvester’s dialytic elimination                in commutative        algebra
+
+   We will now review Sylvester’s classic dialytic elimination method [51] (see also [56]). In the
+next section we will describe how to modify it to the context of the (noncommutative) algebra of
+linear partial recurrence operators with polynomial coefficients. Sylvester’s method basically
+                                               D. Zeilberger / Holonomic systems for special functions                                 341
+
+
+consists of reducing algebraic elimination                                          to linear elimination,   so we will start with linear
+elimination.
+
+5.1. I. Linear (Gaussian) elimination
+   Let R be any commutative ring, and let x be an indeterminate that does not necessarily
+commute with the elements of R. Consider the two linear affine forms P = ax + b and
+Q = cx + d. In order to eliminate x, we multiply P by c, Q by a, and subtract: cP - aQ = cb - ad.
+So the ring element cb - ad is in the “ideal generated by P and Q “. All we needed was that a
+and c commute with each other. The procedure is still valid if b and d do not commute between
+themselves or with a and c.
+   More generally, consider the n affine-linear forms in the indeterminates xi,. . . , x,_~:
+
+          Pj=            c       ai,jxj+bj,                j=l,...,            n,
+                     j=l
+
+and consider the matrix of coefficients
+                     I
+                         a,,1            + * *       al,,-1           bl ’
+          A=                 :                                         .        .
+
+
+                     \a      n,l         **.         a n,n-1          b,   ,
+
+
+  Let Ai be the cofactor of bi in the above matrix A. Then obviously
+          A,P, + . . . +A,P,                         = det(A),
+and det(A), independent of the xi, is in the                                    “ideal generated by {PI,. . . , P,,}“. It is important for
+the sequel to note that all we need is that                                      the ai,j be pairwise commutative, but the bi neither
+have to commute with the a,, j, nor among                                       themselves. Of course, in that case we must be careful
+and evaluate the determinant with respect                                       to the last column.
+
+5.1.2. Sylvester’s dialytic elimination
+   Following Sylvester [51], we will first do an example. Let
+          P = ax2 + bx + c,                                 Q=a’x2+b’x+c.
+Form XP and xQ, and consider P, Q, xP, xQ as affine-linear forms in x, x2, x3:
+           /P’                     ‘0            a     b        c\‘x’\
+             XP                                  b              0      x2
+                             =      g          a’     ;f        cI         x        .                                                (5.1)
+                Q
+               xQ/                  a’         b’      c’       0,         1,
+Let A be the matrix on the right side of (5.1) and let A,, A,,                                        A, and A, be the cofactors of the
+entries of the last column in the above matrix; then
+          (A,+A,x)P+(A,+A,x)Q=det(A).
+   It follows that det(A) belongs to the ideal in R[x] generated by the two polynomials P(x)
+and Q(x), and is independent of x, i.e., an element of the ring of coefficients R. This is called
+the resultant of P and Q. If det( A) is equal to zero, then it means that P and Q have a common
+factor [56, Volume I, p.831. So if P and Q are “independent” in the sense that they do not have a
+common factor (or, equivalently, a common zero), then the resultant must be nonzero.
+348                                D. Zeilberger / Holonomic systems for special functions
+
+
+      More generally, to eliminate x out of
+             P=a,xm+a,_,x”-‘+                   -0. +a,     and      Q=b,xn+b,_ix”-‘+          ...   +b,,
+we form P, xP,. . . , xn-lP            and QjxQ,.     . . , x m-‘Q   and get m + n linear forms in the inde-
+terminates 1, x, . . . , x~+~-I:
+
+             (P ,...,   xn-‘P,     Q ,...,   x~-~Q)==A(x~+~-~          ,...,   l)=,          64
+where A is the appropriate matrix. Let Ai, i = 1,. . . , n, and A), j = 1,. . . , m, be the m + n
+cofactors of the entries of the last column of A; then we have
+
+             (A,   + A,x + . . . +A.x”-l)P+(A’,+A;x+                     ...   +Al,xmP1)Q=det(A).
+det( A) is called the resultant since it is an expression in the coefficients of P and Q that
+determines whether they have a common factor: det(A) is zero if and only if P and Q have a
+common factor [56, Volume I, Section 27, p.831. det( A) belongs to “the ideal generated by P and
+Q “9 and is independent of x.
+5.2. Dialytic elimination        in the Weyl algebra: two simple examples
+
+   Given two partial linear recurrence operators with polynomial coefficients P( N, K, n, k) and
+Q( N, K, n, k) we would like to “eliminate k”, i.e., find two operators A and B such that
+R := AP + BQ is independent of k, and, of course, nonzero. Trying to emulate Sylvester’s
+dialytic method, the first thought that comes to mind is to multiply P and Q by powers of k.
+However, we cannot take the determinant, since the “ring of coefficients” is C( N, K, n), which
+is not commutative, so we do not get rid of k. Our twist on Sylvester’s method is to multiply P
+and Q by various monomials n’kj, get many more “affine-linear forms” in the “indeterminates”
+n”kP, /3 > 0, with coefficients in the commutative ring C[N, K], with the constant part, i.e., the
+coefficient of “l”, belonging to C( N, K, n). Only now can we take the determinant of the
+resulting system, and get the eliminated operator R. I will first present two examples.
+   Let us define the shift operators N and K by Nf( n, k) :=f(n + 1, k), Kf(n, k) :=f(n, k +
+1). A partial recurrence operator with polynomial coefficients is any polynomial in the four
+indeterminates n, k, N, K. They satisfy the commutation relations: Nn = (n + 1) N, Kk = (k +
+l)K, NK=KN,       Nk=kN,      nK=Kn,    nk=kn.
+   By using the commutation relations it is easy to see that every operator can be written in the
+form
+             CP~,~,,,(N, K)n’k”.                                                                            (1)
+             r,s
+Trivial example. F(n,        k) := n!/(k!(n      - k)!), find R( n, N, K) such that RF = 0.
+
+Solution. NF/F=(n+l)/(n-k+l),           KF/F=(n-k)/(k+l),          so P=(n-k+l)N-(n+
+l), Q = (k + 1) K - (n - k). Converting to the format of (1) we have:
+             P = -N(k)       + (Nn - n - l)(l),              Q = (K+       l)(k)      -n(l).
+In this case the only indeterminates are “k” and “I “, and we already have as many equations as
+unknowns, so we do not have to multiply by any monomials n’k”. The matrix of coefficients is
+                -N
+               K+l
+                                     D. Zeilberger / Holonomic systems for special functions                                     349
+
+
+whose determinant    is R(n, N, K):=(-N)(-n)-(K+l)(Nn-n-l)=(n+l)(-NK+K+
+1). Thus if n # - 1, F( n, k) = (II) satisfies
+
+          (-NK+K+~)(:)=~,
+
+and we have rediscovered               Pascal’s triangle.       In particular,     R( n, N, I) = (n + l)( -N             + 21), and
+it follows that if
+          u(n)       := CF(n,          k),
+                          k
+
+then(n+l)(-N+21)a=Owhichineverydaylanguagemeans(n+1)(-a(n+1)+2a(n))=0,
+whose solution is C2”, for some constant C, which is easily seen to be 1 by plugging in n = 0. We
+have just proved the deep binomial coefficients identity
+
+
+
+
+A simple but not quite so trivial example. Let
+
+
+
+
+Here NF/F = (n + k + l)/( n - k + l), NKF/F                           = (n + k + l)( n + k + 2)/( k + l)*. The relevant
+operators, in standard form are
+          P= (NK-             l)(k*)         - 2(nk)   - 3(k)    - (n + l)(n       + 2),
+          Q=     -(N+l)(k)+(N-l)n-1.
+Now we have four indeterminates:       k*, k, nk and 1, where the indeterminate    “1” is allowed to
+have coefficients in C( n, N, K). However, we only have two equations. Is it possible to get
+more equations without introducing       more indeterminates?   Usually not, because creating more
+equations usually brings in more indeterminates       and all you can do is reduce the excess “#
+indeterminates     - #equations”,   until you get 0. However, whenever one of the operators is
+linear in k and n, like Q is in this example, then we can get away without increasing the number
+of indeterminates.
+   Now multiply Q by n and k, respectively, convert to the format (l), and you get
+          kQ=        -(N+l)k*+(N-l)nk-k,
+          nQ=        -(N+l)nk+Nk+N(n2-n)-(n2+n).
+SO
+                 \                                                                                      \ I k*\
+          IP                  NK-1                -2             -3          -(n       + l)(n   + 2)
+            Q         =         0                  0        -N-l                 (N-     1)n - 1                nk
+           kQ                 -N-l              N-l              -1                  0                          k    *
+          ,nQ    /
+                                 0             -N-l               N        N(n2-n)-n2-n
+                                                                                                        I   \
+                                                                                                                1,
+   Now take the determinant     of this, and get R( n, N, K).                            Plugging      in K = I gives a linear
+recurrence operator that annihilates
+350                              D. Zeilberger / Holonomic systems for special functions
+
+
+It turns out to be
+            n2N4 + ( - 5n2 - 10n - 3) N3 + (2 - 5n*) N* + (n* + 2n + 1) N.
+This operator is not the minimal operator annihilating    a(n), so this method only produces an
+operator annihilating    C&n,    k). However, a minimal operator can be found empirically and
+then one can use the Euclidean algorithm (adapted to linear ordinary recurrence operators with
+polynomial coefficients)   to show that the conjectured operator is a right factor of the operator
+that the method outputed.
+
+5.3. Sylvester dialytic elimination       in the Weyl algebra: the general method
+
+   Consider two operators P( N, K, n, k) and Q( N, K, n, k) of degrees b, and b,, respectively,
+in k, and maximal degree c in n, and let us write them in the standard form, and with the k-free
+part set apart at the end:
+
+            P=      ;   ~P~,~(N,       K)k’nj+R,(n,             N, K)
+                   i=l j-0
+and
+
+            Q = i$l _$qI..(w.          K)k’n’+       R&,        NT K).
+
+We consider all operators as polynomials in the variables n and k with coefficients that belong
+to the commutative     ring C[ N, K]. The coefficients mutually commute and the only noncom-
+mutativity that arises is from the interaction between the coefficients and the variables. As in the
+commutative   case, let us form
+            P, kP,...,      kb2-‘P,     and       Q, kQ ,...,    kbl-‘Q.
+We must bring them to the standard form as above, using kiN*KP = N”K”(k                    - p)i.
+  We now consider these as linear forms in the “indeterminates”
+            kanP,      l<a<b,+b,-1,                O<p<c.
+Alas, now we have far too few linear forms, or equivalently,          far too many indeterminates.
+Namely, we have b, + b, linear forms and (b, + b2 - l)( c + 1) indeterminates,     and the parameter
+“#linear   forms - #indeterminate?       is 1 - c( b, + b, - 1). We need this parameter to be 1.
+   To set the balance right, we will multiply by successive powers of n. At the r th stage, when we
+multiply the b, + b, linear forms
+
+            { P, kP ,...,    kb2-lP,    Q ,...,   kbl-‘Q}                                                (5.3)
+by the power       nr, we gain b, + b, new linear forms, but are only burdened with b, + b, - 1 new
+indeterminates:       kanr+c, for (Y= 1,. . . , b, + b, - 1. It follows that the budgetary deficit “#inde-
+terminates -      #linear forms” gets reduced by one for every power of n by which we multiply. So
+if we multiply      (5.3) by n’ for r = 1,. . . , c( b, + b, - l), we will finally have one more linear form
+than we have       indeterminates.
+    Let A,( i,    j) be the “k-free” part of k’njP, i = 0,. . . , b, - 1, j = 0,. . . , c(b, + b, - l), and
+B,(i, j) be       the “k-free”     part of k’njQ, i = 0,. . . , b, - 1, j = 0,. . . , c(b, + b, - 1). Also let
+                                        D. Zeilberger / Holonomic systems for special functions          351
+
+
+A(i, j) = k’njP - A,(i, j) and B(i, j) = k’njQ - Bf(i, j). By linear algebra, A(i, j) UB(i,               j)
+are linearly dependent, so there exist ai, j( N, K) and bi,J N, K), not all zero, such that
+
+           Cai,j(N>            K)A(i,        j> + Cbi,j(N,               K)B(i,      j> =O.            (5 -4
+If follows that
+
+           R:=    (&qj(N,                K)k’n’)P+            (xbi,j(iV,          K)k’nj)Q
+
+              =   Cai,j(N>          K)A,(i, j> +              Cbi,j(N,            K)&(i, j)
+is independent of k, i.e., R = R(n, N, K). Obviously R is an operator that belongs to the left
+ideal generated by P and Q and so if F( n, k) is a solution of the two linear partial recurrence
+equations P( n, k, N, K)F= 0 and Q( n, k, N, K)F= 0, then P automatically satisfies
+R( n, N, K)F = 0. In other words, we have succeeded in eliminating k from P and Q.
+   We have to make sure that R is not the zero operator. Of course; if P and Q are dependent,
+for example if they are both left multiples of the same operator: P = P’A, Q = Q’A, then R will
+be zero. The technical condition of “independence” is exactly that { P, Q} generate a holonomic
+system, i.e., that the ideal I generated by P and Q is such that A,(C)/1         is a holonomic
+A2( C)-module.
+   Suppose that R was the zero operator. This means that we can find two operators
+A(k, n, K, N) of degree <b, in k and B(k, n, K, N) of degree < b, in k such that
+AP = BQ. Now taking the “principal symbols” as operators in A,(C) will show that the images
+of P and Q in the commutative graded ring are dependent, which is impossible if P and Q
+generate a holonomic system.
+   To find the ai,j and bi,j of (5.4) we can take the cofactors of the last column in the
+determinant formed by the matrix of coefficients of the k’njP, k’njQ expressed as linear
+combinations of the monomials naka, for j3 > 0 and the “monomial” k”. If all these cofactors are
+zero, then we would have to take the cofactors of an appropriate nonsingular subdeterminant.
+
+5.4. Implementation
+
+   In the preceding discussion we worked in terms of the k-degrees in k, b, and b,, of P and Q,
+respectively, and the highest n-degree, c. Thus it applies to operators whose “supports”
+
+           {Ci, j);          Pi,j+O},            {(i,   j);     4i,jzo}
+are included in the rectangles
+           {(i,   j);O<i<b,,O<j<c}                              and        {(i,    j);O<i<b,,O<j<c}.
+It turns out that most operators that occur “in nature” have their “support” in the shape of a
+triangle:
+           {(i,   j);    O<i,O<j,             i+j<d},
+so it is a waste to consider the smallest rectangle containing their support, since half of it will be
+zeros. In short, it is more natural to consider the total degree in k and n. This reduces the size of
+the determinant considerably. In Section 6 I will give an explicit algorithm that uses the total
+degree.
+352                                D. Zeilberger / Holonomic systems for special functions
+
+
+5.5. Elimination    in general
+
+  A similar method works for the continuous case. Just bring all operators to the form
+
+           P=       ;  i     p,,j(DX,    Dy)yixj+R,(n,          N, K),
+                   i=lj=CJ
+
+
+
+
+multiply from the left by monomials y”xP, and convert back to that form using
+           xD:Di     = DiD/x - iDi_’ Di            and     yD:Di    = DiD,‘y -jOiD/‘.
+
+   The q-analog is just as straightforward. For the discrete q-analog you replace n by q”, k by
+qk, and the commutation rules nN = N( n - l), kK = K( k - 1) by q”N = Nq”/q, qkK = Kqk/q_
+For the continuous q-analog, featuring the q-dilation operators Q,f( x, y) =f( qx, y) and
+QJ(x> Y> =f(x> 4~1, we have the commutation rules xQX = Q,x/q and yQ, = Q,y/q.
+   Everything extends to the elimination of several variables from a general annihilation ideal, as
+in the classical case [56], but in this case Buchberger’s method of Grobner bases, as adapted by
+Galligo [21], is far superior.
+
+
+
+6. An algorithm for proving binomial coefficients              identities
+
+                                        When someone finds a new identity,
+                                        there are not many people who get
+                                        excited about it any more, except
+                                        the discoverer.
+
+                                        Donald E. Knuth [ 36, p.531
+
+6.1. The algorithm
+
+   We saw that, in principle, it is possible to verify any (holonomic) special function identity
+involving sums, integrals and products. However, as Askey said so aptly [5]: “Many things that
+can be done in theory cannot be done in practice”. In this section I will show that at least some
+things can be done in practice, by giving an explicit algorithm for proving, or refuting, binomial
+coefficients identities (= terminating hypergeometric identities) of the form
+           xF(n,       k) = rhs(n).                                                           (6-I)
+            k
+
+  A MAPLE implementation of this algorithm is given in the Appendix.
+  In (6.1) it is assumed that F(n, k) has the form
+                             A
+
+                         n(a,n+a,‘k+ai’)!
+           F(n,     k) = i’gl
+                                                          k
+                                                                                             (6.2a)
+                             n     (bin + b,!k + b,!‘)! ’ ’
+                             i=l
+
+where the ai, al, bi, b’ have to be constant, specific, (positive or negative) integers, but z, a:’
+and b:’ can be any complex numbers or parameters, and x! means I’(x + 1).
+                                              D. Zeilberger/ Holonomicsystemsfor specialfunctions                    353
+
+
+     The right side of (6.1), rhs( n), may be given explicitly, in the form
+                                     A
+
+                                     n       (a;n    +    al:)!
+
+            rhs( n) = C “g*                                                                                      (6.2b)
+                                     zG (b,n + b’)! ?“,
+
+where ai and bi are specific (positive or negative) integers, and a(, b,!, C and X, are complex
+numbers or parameters. Another possibility is that the right side is given implicitly in terms of a
+minimal (ordinary) linear recurrence operator with polynomial coefficients, conj(,, N), that
+annihilates rhs( n), together with the appropriate initial conditions.
+  The algorithm consists of 10 steps.
+
+Step   I: (a) Find operators p(k, n, N, K) and q(k, n, N, K) that annihilate F( 12, k). [In a
+more general situation p and q may be given from the outset, in which case you go to Step 2
+directly.]
+   You do this by computing the rational functions F( n + 1, k)/F( n, k) and       F( n, k +
+l)/F(n,    k):
+             P(n+l,             k)            P(n,       k)             J’(n,      k+       1) = J”(n,    k)
+                 J’(n,     k)            =    Qh          k) ’              J’b,       k)           Q’h   k) ’
+                                                                                                                  (6.3)
+where P, Q, P’, Q’ are polynomials in n and k and, of course, gcd( P, Q) = 1 and gcd( P’, Q’)
+= 1. The operators p and q are given by
+            p(k,     n,    N, K) := NQ(n                          - 1, k) - P(n,            k),
+
+            q(k,     n, N,           K)       :=KQ’(n,             k-   1) - P’(n,            k).
+
+[p  and q both annihilate F( n, k).]
+   (b) If the right side of (6.1) is given explicitly, find the (minimal) linear recurrence operator
+with polynomial coefficients that annihilates rhs(n). You do this by computing rhs(n +
+l)/rhs( n) = F(n)/&     n), say, and set
+            conj(n,        N) := Ne(n                    - 1) -F(n).
+
+Step   II: Find the degree, in k, of p(k, n, N, K) and q(k, n, N, K), say (Y and /3, respectively.
+[It is readily seen that because the form (6.2a) of F( n, k) the (generic) degree of p in n equals to
+the degree in k, which equals to the total degree in (n, k), and similarly for q. We will view all
+operators as polynomials in n and k with coefficients that belong to C[N, K].]
+
+Step   III: Let I1 and 12 be the following sets of pairs of integers (i, j):
+            II:=    {(i,    j);          0 <iGp-1,                  j>O,         i+j<a(/3-1)},
+            12:= {(i,       j);          0 GiGa-1,                  j>O,         i+j<(a-l)P}.
+For each pair (i, j) in 11, form the operator k’njp, convert it to standard form, and expand in
+terms of the monomials k“d’. Similarly, for q and 12. So let
+            k’dp      = xA$!$)(K,                    N)k”nj’,              (i,    j)   E    11,                  (6.4a)
+
+            k’njq = xB(f;!)(K,                       N)k”nj’,              (i,   j) E 12.                        (6.4b)
+354                                  D. Zeilberger / Holonomic systems for special functions
+
+
+[A simple subroutine left-multiplies any operator by a monomial and converts it to standard
+form, using kinjK”Nb = K”Nb( k - a)‘( n - b)‘.]
+
+
+Step IV: [We now consider (6.4) as affine-linear forms in the “indeterminates” k”nj’. It is
+readily seen that the monomials that feature in (6.4) are those belonging to the following set
+
+           13 := {(i’,     j’);      1 <i’<a+p--1,                 j’a0,    i’+j’<crp},
+
+with coefficients that are in C[ N, K]. The “affine part” (i.e., “the coefficient of k”‘)               is in
+C( N, K, n). Note that I11 ( + ( 12 1 = I13 I + 1 = :(2c$3 - cx- /3+ 2)( (Y+ /3- 1) + 1.1
+   Let
+
+           SIZE := ;(2ab            - (Y- /I + 2)( cx+ ,!3- 1) + 1.
+
+Form the SIZE x SIZE matrix M as follows. First convert the sets 11, 12, 13, into lists:
+           ll:=ll[r],             r=l,...,       Ill],
+           12:=12[r],             r=l,...,       1121,
+           13:=13[r],             r=l,...,       1131.
+Now,forl<r<             ]ll],andl<s,<SIZE-1,set
+
+           M[r,    s] :=A$;@( N, K)                      (of (6.4a)),
+
+where (i, j) := ll[r] and (i’, j’) := 13[s].
+  For ]ll]+l~r~SIZE,andl~s~SIZE-1,set
+
+           M[r,    s] := B$“(            N, K)           (of (6.4b)),
+
+where (i, j) := 12[r - Ill I] and (i’, j’) := 13[s].
+  Finally, for 1 < r < ] II],
+
+           M[r,    SIZE] := zAg,y’!(N,                    K)    (of (6.4a)),
+                             .,
+                                     J
+
+where (i, j) := ll[r].     In other words M[r, SIZE] is the coefficient of k” in k’njp.        Similarly, for
+I 111 < r < SIZE,
+
+           M[r,    SIZE] := cB&“(                N, K)           (of (6.4b)),
+                             .,
+                                     J
+
+where (i, j) := 12[ r - I 11 I]. In other words M[ r, SIZE] is the coefficient of k” in k’njq.
+
+
+Step V: Let
+           R (n, N, K ) := determinant(M).
+
+If R is identically zero (a very rare event), then take an appropriate subdeterminant, making sure
+that the last column gets chosen. [More precisely, find the rank of the matrix A without the last
+column, pick that many linearly independent rows and one less column and adjoin the (relevant
+part of the) last column.] [ R( n, N, K) annihilates F( n, k).]
+                                   D. Zeilberger / Holonomic systems for special functions                                  355
+
+
+Step VI: Find E( n, N, K) such that
+
+               R(n,    N, K) = (1 -@R(n,                N, K),
+
+where    g is as big as possible.            [In Section    5 we showed          that   E( n, N, K)      also annihilates
+F(n,    kI.1
+
+Step VII: Let S( n, N) be the ordinary linear recurrence                   operator      with polynomial         coefficients
+(in n) obtained by substituting K= 1 in R(n, N, K):
+
+               s(n,   N) :=R(n,      N, 1).
+
+[S(n,   N) annihilates       a(n) := C,F(n,      k).]
+
+
+Step VIII: Use the Euclidean algorithm (adapted to the algebra                          of ordinary     linear    recurrence
+operators) to find operators T( n, N) and rem( n, N) such that
+
+               s(n,   N) = T(n,     N)conj(n,     N) + rem(n,       N),
+
+where the degree of rem( n, N) in N (i.e., its order as a recurrence                    operator)     is smaller than that
+of conj(,, N).
+
+
+Step IX: If rem(n, N) # 0, then the identity is false, i.e., the left side is not annihilated      by
+conj( n, N), while the left side is (by definition). This follows from the fact that conj( n, N) was
+taken to be the lowest-order    (nonzero) operator that annihilates the right side. If the left side
+would have been equal to the right side, then rem( n, N) would also annihilate the right side,
+contradicting  the minimality of conj( n, N).
+   If rem( n, N) = 0, then the identity is true provided it is true at some initial points, which are
+determined as follows. We have
+
+               T(n,   N)[conj(n,     N)a(n)]      ~0.
+
+Let the order (alias degree in N) of T(n, N) be t, and let the leading coefficient,         of N’, be
+mekadem( n). Then it is obvious that conj( n, N)a( n) = 0 provided it is 0 at n = 0,. . . , t - 1, and
+at the (the usually empty) set of positive integer zeros of mekadem( n).
+
+
+Step X: Now we know that
+
+           u(n)       := CF(n,     k),
+                         k
+
+and rhs( n) are both solutions           of the linear recurrence     equation
+
+           conj(n,       N)s(n)    = 0.
+
+In order to infer that a(n) and rhs( n) are identically equal we have to check that they match at
+the first r values n = 0,. . . , r - 1, where r is the order of rhs( n, N), and at the “characteristic
+set” of positive integer zeros of the leading coefficient of rhs(n, N).
+356                                 D. Zeilberger   / Holonomic   systems for special functions
+
+
+6.2. Discussion
+
+
+   The above algorithm is capable of proving any identity of the form (6.1), with the summand of
+the form (6.2a). This includes all terminating hypergeometric identities in [9], as well as those of
+Gosper’s list [33], and almost all those of Gessel and Stanton [32]. A MAPLE program
+implementing the algorithm is given in the Appendix. This program requires a lot of memory.
+For example, on my AT&T 3Bl PC, I was only able to do those identities for which SIZE, the
+size of the matrix whose determinant we take, is smaller than 13. In other words, my computer
+can handle the following values for (cw,/?): {(a, 1); (Y< 5}, { (1, p); /?< 5) and (2,2). A sam-
+pling of the identities proved by my computer, using the program, is given in the Appendix. For
+example, my computer can prove the Saalschutz identity, for which (Y= 2, /3= 2, but it ran out
+of memory for Dixon’s identity, for which (Y= 2, /3= 3, and hence SIZE = 19. Among the
+identities in [32], my program proved (1.1) (originally due to Andrews [3]), (1.Q (5.24) and
+(5.25). I am sure that with a bigger computer, and even more importantly, with a better
+programmer, the algorithm would be able to handle much deeper identities. Incidentally, one
+may use the parameter SIZE as a measure of the depth of an identity. 3
+   In any case, the main virtue of the above algorithm is theoretical, because it tells you that you
+are guaranteed to find an operator R( n, N, K) annihilating F( n, k), and from its expression as
+a determinant, it is very easy to derive a priori bounds for the degrees in K, N and n. Now that
+we know that there is such an operator, we can easily try out a generic form:
+
+            R(n,    N, K) := Cai,j,,niNiKc,
+
+require that R( n, N, K)F( n, k) = 0, plug in specific values of (n, k) and solve for the
+coefficients ai ,i ,I . Having conjectured such an operator we can easily verify that indeed
+R( n, N, K) annihilates F( n, k) and obtain S( n, N) as before. Alternatively, we can use the
+method of creative telescoping.
+
+
+6.3, The method of creative telescoping
+
+
+   The term creative telescoping was coined by van der Poorten in his charming account [55] of
+Apery’s proof of the irrationality of l(3). The method consists in “creating” a certain multiple of
+F(n, k) by a rational function P(n, k)/Q(n,      k):
+
+                             P(n, k)
+             Gh k):=         e(n, kf(n,              k),                                                           (6.5)
+
+with the property that
+
+             G(n,    k+l)-G(           n, k)        (= (K-    l)G(n,      k)) = conj(n,       N)P(n,   k),         (6.6)
+
+which immediately implies that a(n) := C,F( n, k) satisfies conj( n, N) a( n) = 0.
+  Perlstadt [44] used creative telescoping and MACSYMA         to find recurrences                           for sums of
+powers (up to the 6th) of binomial coefficients.
+
+3 Note added in proof.   The improved algorithm [61,62] can do all of [32,33].
+                              D. Zeilberger / Holonomicsystemsfor specialfunctions                    357
+
+   In order to implement creative telescoping we write P(n, k) and Q(n, k) in generic form
+(guessing their degrees), plug into (6.6), divide by F( n, k), clear denominators, and compare
+coefficients, getting equations that can be solved.
+   Can you always use creative telescoping? The algorithm of Section 6.1 guarantees that we
+have an operator R(n, N, K) that annihilates F(n, k), and S(n, N) := z( n, N, 1) is nonzero.
+Then we have
+
+          R(n,    N, K) -s(      n, N) = (1 -K)L(n,         N, K).
+
+It follows that
+
+          S(n,    N)F(n,      k) = (1-   K)[L(n,       N, K)F(n,     k)].
+
+We saw above that if the identity is true, then S(n,          N) must be a left multiple of conj(,,   N).
+Taking
+           G(n,   k) :=L(n,      N, K)F(n,       k),
+we see that (6.6) is always true, but sometimes with conj( n, N) replaced by some left multiple of
+it. So we now have an explanation why creative telescoping works. First try to find G( n, k) in
+(6.6) with the conjectured operator conj(,, N); if you fail, try to do it over with some left
+multiple of it.
+
+Note added at the revised version
+  The ideas in this section were extended to a much faster algorithm [61,62]. This leads to the
+notions of “WZ pair” and “rational function certification” [58,59], see also [15].
+
+4.4. Continuous and discrete-continuous      analoges
+
+   The algorithm of (6.1) can be easily adapted to the continuous case of eliminating y out of
+p(x, y, D,, 0,) and 4(x, y, D,, D,), and proving identities of the form
+
+
+
+
+where F( x, y) has the form
+
+
+
+
+for some polynomials A, B, C, D in x and y, and a(x) is either given explicitly, or in terms of
+a linear differential equation with polynomial coefficients that it satisfies.
+   We can also easily adapt the algorithm to handle discrete-continuous identities like
+
+            E P,(x)t”      = (1 - 2xt + P-l’*.
+           n=O
+
+
+Note added at the revised version
+  The ideas in this section were extended to a much faster algorithm in [2].
+358                           D. Zeilberger / Holonomic system for special functions
+
+
+6.5. The q-analog
+
+   The algorithm of Section 6.1 can be easily adapted to the proof of any q-binomial identity of
+the form
+           CF(n,    k) = a(n),
+            k
+
+where F( n, k) has the form
+
+                        fi    (4”‘;   q)a,n+a:k
+                        i=l
+           F(n, k)=                               Zk,
+
+                        zfj   (qb’;   q)b,n+b:k
+
+
+where the ai, al!, bi, b,! have to be constant, specific (positive or negative) integers, but z, al’,
+and b,” can be any complex numbers or parameters.
+
+Note added at the revised version
+  A much faster algorithm is given in [63].
+
+   More generally, the whole theory of holonomic systems can be q-analogized, where instead
+of C(E,, . . . , E,,, m,, . . . , m,) we have C(E,, . . . , E,, qml,. . . , q”n), and the commutation
+rule is E,(q”T) = q(q”cEi).             Also, instead of C(D,, . . . , D,, x1, . . . , xn), we have
+C(Q 1,“‘, Q,, x~,.-.,-G),          where  Qi are the q-dilation operators: Q,f(x,, . . . , xi,. . . , x,) =
+                 xn)*
+f(x l,“‘, qxi7*.*>
+
+
+Acknowledgements
+
+   I have already mentioned my indebtedness to Leonard Lipshitz, Richard Stanley and Donald
+Knuth for pointing out the inadequacy of [60]. I also wish to thank Richard Askey for his
+penetrating critique [5] of the philosophical side of [60] and for many helpful discussions.
+   It was Bemd Sturmfels who told me about Grobner bases and thus gave me hope that my
+clumsy algorithms may be improved considerably.
+   Special thanks are due to Joseph Bernstein who spent two hours of his precious time
+explaining his beautiful theory to me, in a language that I understood and that enabled me to
+transmit the holonomic fire to my fellow mortals in the provinces of special functions and
+combinatorics.
+   I would also like to thank the four developers of MAPLE: Bruce Char, Keith Geddes, Gaston
+Gonnet and Stephen Watt, for developing such a beautiful system, and Kurt Horton, the local
+UNIX guru, for informing me that MAPLE is available on the AT&T 3Bl.
+   Many thanks are due to Gert Almkvist for his interest, encouragement and many valuable
+suggestions. Readers who can read Swedish will enjoy Almkvist’s delightful account of the
+present ideas [l].
+   Finally, I also benefited from numerous conversations with Leon Ehrenpreis, Dominique
+Foata, Ira Gessel, Yakar Kannai, Steve Milne, Ron Perline, Marci Perlstadt, Joel Spencer,
+Dennis Stanton, Jet Wimp and Herbert Wilf.
+                              D. Zeilberger / Holonomic systems for special functions                         359
+
+
+Appendix: a l’+PLE         implementation      of the algorithm       in Section        6.1 that proves binomial
+coefficients identities
+
+                          In a world in which the price of calculation
+                          continues to decrease rapidly, but the price of
+                          theorem proving continues to hold steady or increase,
+                          elementary economics indicates that we ought to spend
+                          a larger and larger fraction of our time on
+                          calculation.
+
+                          John W. Tukey [ 54, p.741
+
+A. 1. The program
+
+   The following is a MAPLE program that implements the algorithm in Section 6.1. In order to
+use it, either type it into a file or get it from me via electronic mail. Call the program file verifier
+(or any name of your choice). Then in the UNIX operating system, which has MAPLE, you type
+the following on your terminal:
+           maple < verifier
+   The input given in the program below is for proving the following deep binomial coefficients
+identity
+
+                    l
+           ck kl(n-k)!       =n!’2”
+
+In order to use this program for other identities
+
+           CF(n,     k) = a(n),
+            k
+
+you   must first bring it to the form (6.2), i.e., make sure that the left has no terms depending on n
+only, and express everything in terms of factorials. Then you replace the l/( k!( n - k)!) in the
+INPUT below by F( n, k) and the 2”/n! by a(n). A sampling of inputs for which this program
+ran successfully (i.e., did not run out of memory) on my AT&T 3Bl PC (that has 2 Meg of
+RAM, 67 Meg of hard disk, and 60% of free disk space), is given in Section A.2.
+   If the right side a(n) is given implicitly, in terms of a recurrence, then you should change
+“expfi := 1” to “expli := O”, erase the line with rhs, and replace it by “conj := . . . “, where the
+right side is the conjectured operator conj( n, N). See examples (l), (3), (6)-(lo), in Section A.2.
+
+#THE IDENTITY VERIFIER
+#This program proves binomial coefficients identities (alias
+#terminating hypergeometric summation) of the
+#form described in Section 6.1. The input consists of
+#F(n, k), the summand of the lhs, and the conjectured rhs,
+#both of which should be quotients of products of factorials
+#of the form (an + bk + c)! for some integers a and b, where b is not 0.
+#The output consists of a human readable proof or refutation of the
+#identity
+#THIS IS THE INPUT
+360                     D. Zeilberger / Holonomic systems for special functions
+
+
+expli := 1:
+surnmand := l/(k!*(n - k)!):
+rhs := 2 n/n!:
+ #END OF INPUT
+if expli = 1 then
+rat := subs(n = n + l,rhs)/rhs:
+rat := expand(rat):
+conj := denom(rat) * N - numer(rat):
+fi:
+rat := subs(n = n + l,summand)/summand:
+rat := expand(rat):
+pl := subs(n = n - l,denom(rat)) *N - numer(rat):
+rat := subs(k = k + l,summand)/summand:
+rat := expand(rat):
+ql := subs(k = k - l,denom(rat)) * K - numer(rat):
+dpl := degree(pl,k):
+dql := degree(ql,k):
+pl := expand(p1):
+ql := expand(q1):
+#to generate the lists of exponents mapa, maq
+#by which pl and ql should be multiplied respectively, and khezka
+#of exponents that feature, given the degree of pl,
+# dpl, and the degree of ql, dql
+kamap := 0:
+for i from 0 to dql - 1 do
+for j from 0 to (dql - l)*dp 1 - i do
+  kamap := kamap + 1:
+mapa[kamap,l] := i; mapa[kamap,2] := j:
+od:
+od:
+kamaq := 0:
+for i from 0 to dpl - 1 do
+for j from 0 to (dpl - 1) *dql - i do
+  kamaq := kamaq + 1:
+maq[kamaq,l] := i: maq[kamaq,2] := j:
+od:
+od:
+kamakh := 0:
+for i from 1 to dpl + dql - 1 do
+for j from 0 to dpl*dql - i do
+  kamakh := kamakh + 1:
+khezka[kamakh,l] := i; khezka[kamakh,2] := j;
+od:
+od;
+with( Iinalg) :
+                        D. Zeilberger / Holonomic systems for special functions   361
+
+
+#The following function converts an operator p(n,x) from
+#N^j*n^i form to nAi*NAj form
+convert1 := proc(p)
+  local i,pl,pa,r,term:
+      pl := expand(p):
+        pa := 0:
+        r := degree(p,N):
+          for i from 0 to r do
+          term := coeff(pl,N,i):
+             term := expand( term) :
+             term := subs(n = n + i,term):
+             term := expand( term):
+             pa := pa + term* N^i:
+          od:
+        RETURN(expand(pa)):
+        end:
+timesn := proc(p) :
+  RETURN(expand(n*           p - N *diff(p,N))):
+end:
+timesk := proc(p) :
+RETURN(expand(k*            p - K*diff(p,K))):
+end:
+time&n := proc(p,exk,exn)
+  local pa,i
+      pa := p:
+  for i from 1 to exk do
+      pa := timesk(pa):
+      pa := expand(pa):
+  od:
+   for i from 1 to exn do
+      pa := timesn(pa):
+      pa := expand(pa):
+   od:
+   RETURN           :
+end:
+pl := expand(p1):
+ql := expand( ql) :
+kama := kamap + kamaq:
+ma := array(l..kama,l..kama):
+   for i from 1 to kamap do
+      pll := timeskn(pl,mapa[i,l],mapa[i,2]):
+      pll:expand(pll):
+      for j from 1 to kama - 1 do
+        tern := coeff(pll,k,khezkalj,l]):
+        tern := expand( tern) :
+362                            D. Zeilberger / Holonomic systems for special functions
+
+
+         tern := coeff( tem,n,khezka~,2]) :
+         ma[i,j] := expand(tem):
+       od:
+         pll := expand(pl1):
+       tern := coeff(pll,k,O):
+       ma[i,kama] := expand(tem):
+         od:
+ for i from kamap + 1 to kamap + kamaq do
+   pll:timeskn(ql,maq[i         - kamap,l],maq[i    - kamap,2]):
+   pll := expand(pl1):
+       for j from 1 to kama - 1 do
+         tern := coeff(pll,k,khezkalj,l]):
+         tern := expand( tern):
+         tern := coeff( tem,n,khezka~,2]) :
+         ma[i,j] := expand( tern) :
+       od:
+       tern := coeff(pll,k,O):
+       ma[i,kama] := expand( tern) :
+  od:
+equ := det(ma):
+if equ = 0 then
+  print(‘ the determinant        vanishes, take an appropriate   subdeterminant’):
+fi:
+equ := subs(K = K + 1,equ):
+equ := expand(equ):
+equl := coeff(equ,K,O):
+  while equl = 0 do
+    equ := expand( equ/K) :
+equl := coeff(equ,K,O):
+od:
+equ := convertl(equ):
+equ := subs(K = K - 1,equ):
+print(‘F(n,k)      is annihilated by the following, k-free, operator(check!)‘):
+print(‘(Waming:         it should be in the standard form in which n is in)‘):
+print(‘front     of N, if it is not, it is still meant that way’):
+print(equ):
+equl := convertl(equ1):
+equl := expand(equ1):
+print(‘Therefore,       putting K = 1, we get an operator A(N,n) annihilating            the rhs’):
+print(equ1):
+timesx := proc(p,nup)
+local gu:
+  gu := expand(subs(n         = n + nup,p)) * N-nup:
+  RETURN              :
+        end:
+                           D. Zeilberger / Holonomic systems for special functions       363
+
+
+  aa := 1:
+  sa := 0:
+  ra := equl:
+  qaq := conj :
+  degq := degree(qaq,N):
+  while degree(ra,N) > = degq do
+     degr := degree(ra,N) :
+     nu := degr - degq:
+     qaqa := expand( timesx(qaq,nu)) :
+     leadr := coeff(expand(ra),N,degr):
+     leadqa := coeff(qaqa,N,degr):
+     gcd(leadr,leadqa,‘leadr’,‘leadqa’):
+     aa := aa * leadqa:
+     sa := sa * leadqa:
+     sa := sa + leadr * N^nu:
+     sa := expand( sa) :
+     ra := leadqa * ra - leadr *qaqa:
+     ra := expand( ra) :
+od:
+print(‘the conjectured rhs is annihilated by the following operator B(N,n)‘):
+print( conj) :
+if(ra = 0) then
+  print(‘Now A(N,n) = S(N,n) *B(N,n)(check!),           where S(N,n) is’):
+  print( sa) :
+  gu := degree(sa,N):
+  print(‘Since S has order’,gu,‘in N, THE IDENTITY IS TRUE provided’):
+  print(‘it is true for n = OJ, .. . , ’ ,gu - 1,‘and at the positive integer’):
+  print(‘roots of the leading term of S, which is’):
+  sac := coeff( sa,N,gu) :
+  print(factor(sac)):
+  else
+print(‘since A(N,n) is not a left multiple of B(N,n), THE IDENTITY’):
+print( ‘ IS FALSE’) :
+     fi:
+quit
+
+
+A.2. Ten sample inputs to the program
+
+
+   The above program ran successfully (on my PC) with the following ten inputs. To test them
+yourself just replace the part between “#THIS IS THE INPUT” and “#END OF INPUT” in
+the program by the ones given below.
+   (1) An identity of [3], see also [32, (l.l)]):
+#THIS IS THE INPUT
+expli := 0:
+364                           D. Zeilberger / Holonomic systems for special functions
+
+
+summand := (-l)-k*(n        + 3*a + k - l)!*(a + k - l)!*?^k/
+ ((n - k)!*(3*a/2_+ k - 1)!*(3*a/2         + k - 1/2)!*k!*4     k):
+conj:=(n+3)*N         3-(3*a+n):
+#END OF INPUT
+   (2) An identity of Gessel and Stanton [32, (5.24)]:
+#THIS IS THE INPUT
+expli := 1:
+summand:=(-l)Ak*(n+k)!*8Ak/((2*n-k)!*(1/3+k)!*k!*9Ak):
+rhs:=(-l)An*(n-1/2)!*(1/6)!*n!/((-1/2)!*(1/6+n)!*(2*n)!*(1/3)!*3”n):
+#END OF INPUT
+   (3) With this input the program will prove that [55, p.2021
+
+
+           4+=c(;)(n;k)
+               k
+
+satisfies the recurrence
+
+           (n + 2)a(n      + 2) - (6n + 9)a(n     + 1) + (n + l)a(n)       = 0.
+
+#THIS IS THE INPUT
+expli := 0:
+summand := (n + k)!/(k!A2*(n - k)!):
+conj:=(n+2)*N        2-(6*n+9)*N+(n+l):
+#END OF INPUT
+   (4) Saalschutz’s identity (e.g., [36, 1.2.6, Ex. 311):
+#THIS IS THE INPUT
+expli := 1:
+summand := (b + k)!/(k!*(a - b + c - k)!*(n - k)!*(b - c + k)!*(b + k - a - n)!):
+rhs := b!*c!*(a + n)!/(a!*(b - a)!*n!*(c - n)!*(a - b + c)!*(n + b - c)!):
+#END OF INPUT
+   (5) The Vandermonde-Chu identity ( = , terminating case of Gauss’s ,F,(l)):
+#THIS IS THE INPUT
+expli := 1:
+summand := l/(k!*(n - k)!*(c - k)!*(b - c + k)!):
+rhs := (n + b)!/(n!*b!*c!*(n    + b - c)!):
+#END OF INPUT
+   (6) It follows from [47, Section 8.2, formula (21), p.2011 that the so-called “reduced straight
+Menage numbers” V, satisfy the recurrence
+
+           Vn+3 - (n + 2)K+*       - (n + 2)I$+,     - v, = 0.                                 (*)
+The explicit expression for V, is given by (take t = 0, k + n - k in [47, Section 8.2, formula (6),
+P.1971)
+
+           v,=c   k
+                                                                                              t* *>
+
+
+The program, with the following input, proves that indeed (* *) implies ( *).
+                          D. Zeilberger / Holonomic systems for special functions              365
+
+
+ #THIS IS THE INPUT
+ expli := 0:
+ summand_:=(-l)^(n-        k)*(n+ k)!*k!/((2*k)!*(n      - k)!):
+ conj:=N     3-(n+2)*NA2-(n+2)*N--1:
+ #END OF INPUT
+    (7) With the following input the program proves a recurrence obtained by Fasenmayer [45,
+pp.234-235, (2) and (ll)].
+ #THIS IS THE INPUT
+ expli := 0:
+ summand := (-x)“k*(n       + k)!/(k!*2*(k    - 1/2)!*(n - k)!):
+conj:=(n+3)*NA3-(3*n+7-4*x)*NA2+(3*n+4*x+5)*N-(n+1):
+ #END OF INPUT
+    (8) With the following input the program proves another recurrence of Fasenmayer [45, p.236,
+(14) and (22)]. Note that “al” stands for a and “be” stands for p.
+ #THIS IS THE INPUT
+expli := 0:
+summand := (Tx)“k*(be        f k)!/(k!^2*(al+    k)!*(n -k)!):
+conj := (n + 3) 2*(al+ n -t 3)*NA3 - (3*(n + 3)“2 - 3*(n + 3) + 1 + al*(2*n + 5) - (be + n +
+3)*x)*NA2+(al+3*n+6-x)*N-1:
+ #END OF INPUT
+    (9) With the following input the program proves that the Jacobi polynomials satisfy their
+recurrence [45, p.255, (4) and p-263, (1) (Section 137)]. Once again “al” stands for a and “be”
+stands for ,C?_
+ #THIS IS THE INPUT
+ # Recurrence or Jacobi
+expli := 0:
+summand := (al + be + n + k)!*((x - 1)/2)Ak/(k!*(n - k)!*(al+ k)!):
+conj:=(2*n+4)*(al+beA+2*n?2)*(al+n+l)*(al+n+2)*N                             2-
+   (al+be+2*n+3)*((al          2-be    2)+x*(al+be+2*n+4)*(al+be+2*n+2))*(al+n+
+   l)*N+2*(al+n+l)*(be+n+l)*(al+be+2*n+4)*(al+be+n+l):
+#END OF INPUT
+    (10) With the following input the program proves that the Hahn polynomials indeed satisfy
+their three-term recurrence [37]. Here “a” stands for a, “b” stands for /3,and “Nl” stands for N.
+(We cannot ‘use “N” since it has a special meaning, namely the shift operator in the n-direction.)
+#THIS IS THE INPUT
+#Recurrence for Hahn
+expli := 0:
+summand:=(-I)*k*(n+           a+ b + k)!*(Nl - k)!/((n-        k)!*(x- k)!*(a+ k)!*k!):
+conj:=(n+a+2)*(Nl-n-l)*(n+2)*(2*n+a+b+2)*NA2-
+   ((n+a+b+2)*(n+a+2)*(Nl-n-l)*(2*n+a+b+2)+(n+l)*(n+b+l)*(n+a
+    +b+N1+2)*(2*n+a+b+4)-(2*n+a+b+2)*(2*n+a+b-t3)*(2*n+a+b+
+   4)*x)*N+(n+b+l)*(n+a+b+N1+2)*(n+a+b+1)*(2*n+a+b+4):
+#END OF INPUT
+366                             D. Zeilberger / Holonomic systems for special functions
+
+
+A.3. A sample output
+
+  (1) When the program was run with the original (trivial) input, the output was as follows: (I
+have deleted the comments and the MAPLE logo)
+  F(n,k) is annihilated by the following, k-free, operator(check!)
+  (Warning: it should be in the standard form in which n is in)
+  front of N, if it is not, it is still meant that way
+   -K-l+nN(K-l)+(K-l)N+nN+N
+  Therefore, putting K = 1, we get an operator A(N,n) annihilating the rhs
+  nN+N-2
+  the conjectured rhs is-annihilated by the following operator B(N,n)
+  (n + l)N - 2
+  Now A(N,n) = S(N,n)*B(N,n)(check!),           where S(N,n) is 1
+  Since S has order, 0, in N, THE IDENTITY IS TRUE provided
+  it is true for n = 0 , 1 ,**., - 1, and at the positive integer
+  roots of the leading term of S, which is 1
+  words used = 57169, allot = 36864, time = 8.82
+
+
+
+References
+
+  [l] G. Ahnkvist, Zeilbergers bevismaskin, Elementa, to appear (in Swedish).
+  [2] G. Almkvist and D. Zeilberger, The method of differentiation under the integral sign, J. Symbolic Comput., to
+      appear.
+  [3] G.E. Andrews, Connection coefficient problems and partitions, in: D. Ray-Chaudhuri, Ed., AMS Proc. Symposia
+      in Pure Mathematics 34 (Amer. Mathematical Sot., Providence, RI, 1979) l-24.
+  [4] G.E. Andrews, q-Series: Their Development And Applications in Analysis, Number Theory, Combinatorics, Physics,
+      and Computer Algebra, CBMS Ser. 66 (Amer. Mathematical Sot., Providence, RI, 1986).
+  [5] R.A. Askey, Review of [60], Math. Rev. 83E33001 (1983).
+  [6] R.A. Askey, Preface, in: R.A. Askey, T.H. Koomwinder and W. Schempp, Eds., Special Functions: Group
+      Theoretical Aspects and Applications (Reidel, Dordrecht, 1984).
+  [7] R.A. Askey and G. Gasper, Inequalities for polynomials, in: A. Baemstein et al., Eds., The Bieberbach Conjecture
+      (Amer. Mathematical Sot., Providence, RI, 1986).
+  [8] R.A. Askey and J.A. Wilson, Some Basic Hypergeometric Orthogonal Polynomials that Generalize Jacobi Polynomi-
+      als, Mem. Amer. Math. Sot. 318 (Amer. Mathematical Sot., Providence, RI, 1985).
+  [9] W.N. Bailey, Generalized Hypergeometric Series, Cambridge Math. Tracts 32 (Cambridge Univ. Press, London,
+      1935); (reprinted: Hafner, New York, 1964).
+[lo] I.N. Bernstein, Modules over a ring of differential operators, study of the fundamental solutions of equations with
+      constant coefficients, Functional Anal. Appl. 5 (2) (1971) 1-16 (in Russian); 89-101 (English translation).
+[ll] I.N. Bernstein, The analytic continuation of generalized functions with respect to a parameter, Functional Anal.
+      Appl. 6 (4) (1972) 26-40 (in Russian); 273-285 (English translation).
+[12] J.-E. BjSrk, Rings of Differential Operators (North-Holland, Amsterdam, 1979).
+[13] J.-E. Bjork, Differential systems on algebraic manifolds, preprint, Univ. Stockholm, 1984.
+[14] B. Buchberger, Grobner bases-an       algorithmic method in polynomial ideal theory, in: N.K. Bose, Ed., Muhidi-
+      mensionaf System Theory (Reidel, Dordrecht, 1985) Chapter 6.
+[15] B. Cipra, How the grinch stole mathematics, Science 245 (1989) 595.
+[16] L. de Brange, A proof of the Bieberbach conjecture, Acta Math. 154 (1985) 137-152.
+[17] L. Ehrenpreis, Fourier Analysis in Several Variables (Wiley, New York, 1970).
+[18] L. Ehrenpreis, Hypergeometric functions, preprint, Temple Univ., PA.
+                                D. Zeilberger / Holonomic systems for special functions                            361
+
+ [19] M.C. Fasenmayer, Some generalized hypergeometric polynomials, Bull. Amer. Math. Sot. 53 (1947) 806-812.
+ [20] D. Foata, Combinatoire des identites sur les polynomes orthogonaux, in: Proc. Znternat. Congress of Math.,
+       Warsaw, 1983 (Varsovie, 1983) 1541-1553.
+ [21] A. Galligo, Some algorithmic questions on ideals of differential operators, in: B.F. Cavines, Ed., EUROCAL ‘8.5,
+        Vol. 2, Lecture Notes in Comput. Sci. 204 (Springer, Berlin, 1985).
+ [22] G. Gasper, Summation, transformation, and expansion formulas for bibasic series, Tram Amer. Math. Sot. 312
+       (1989) 257-277.
+ [23] G. Gasper and M. Rahman, An indefinite bibasic summation formula and some quadratic, cubic, and quartic
+       summation and transformation formulas, Canad. J. Math., to appear.
+ [24] G. Gasper and M. Rahman, Basic Hypergeometric Series (Cambridge Univ. Press, Cambridge, 1990).
+ [25] I.M. Gel’fand, General theory of hypergeometric functions, Dokl. Akad. Nauk USSR 2% (1) (1986) 14-18;
+       translated in: Soviet Math. Dokl. 33 (3) (1986) 573-577.
+ [26] I.M. Gel’fand and S.I. Gel’fand, Generalized hypergeometric equations, Dokl. Akad. Nauk USSR 288 (2) (1986)
+       279-282; translated in: Soviet Math. Dokl. 33 (3) (1986) 643-646.
+ [27] I.M. Gel’fand and M.I. Graev, A duality theorem for general hypergeometric functions, Dokl. Akad. Nauk USSR
+       289 (1) (1986) 25-31; translated in: Soviet Math. Dokl. 34 (1) (1987) 9-13.
+ [28] I.M. Gel’fand and A.V. Zelevinskii, Algebraic and combinatorial aspects of the general theory of hypergeometric
+       functions, Functional Anal. Appl. 20 (3) (1986) 17-34 (in Russian); 183-197 (English translation).
+ [29] I. Gessel, Two theorems on rational power series, Utilitas Math. 19 (1981) 247-254.
+ [30] I. Gessel, Counting Latin rectangles, Bull. Amer. Math. Sot. (N.S.) 16 (1987) 79-82.
+ [31] I. Gessel, Symmetric functions and P-recursiveness, preprint, Brandeis Univ.
+ [32] I. Gessel and D. Stanton, Strange evaluations of hypergeometric series, SZAMJ. Math. Anal. 13 (1982) 295-308.
+ [33] B. Gosper, Letters to R. Askey and D. Stanton, private communication.
+ [34] I.P. Goulden, Exact values for degree sums over strips of Young diagrams, preprint, Univ. Waterloo.
+ [35] D. Gouyou-Beauchamps, Standard Young tableaux of height 4 and 5, preprint.
+ [36] D.E. Knuth, Fundamental Algorithms, The Art of Computer Programming, Vol. 1 (Addison-Wesley, Reading, MA,
+       2nd ed., 1973).
+ [37] J. Labelle, Tableau d’Askey, in: C. Brezinski et al., Eds., PotjnSmes Orthogonaux et Applications, Bar-le-Due,
+       1984, Lecture Notes in Math. 1171 (Springer, Berlin, 1985) p. vii.
+ [38] L. Lipshitz, The diagonal of a D-finite power series is D-finite, J. Algebra 113 (1988) 373-378.
+ [39] L. Lipshitz, D-finite power series, J. Algebra, to appear.
+ [40] I.G. Macdonald, Some conjectures for root systems, SIAM J. Math. Anal. 13 (1982) 91-143.
+ [41] W. Miller, Symmetry and Separation of Variables, Encyclopedia Math. Appl. 4 (Addison-Wesley, London, 1977).
+[42] S.C. Milne, Hypergeometric series well poised in SU(n) and a generalization of Biedenharn’s G function, Adv. in
+      Math. 36 (1980) 169-211.
+[43] V.P. Palamadov, Linear Differential Operators with Constant Coefficients, Grundlehren Math. Wiss. 168 (Springer,
+       Berlin, 1970).
+[44] M. Perlstadt, Recurrences for sums of powers of binomial coefficients, J. Number Theory 27 (1987) 304-309.
+[45] E.D. Rainville, Special Functions (Macmillan, New York, 1960); (reprinted: Chelsea, New York, 1971).
+[46] A. Regev, Asymptotic values for degrees associated with strips of Young diagrams, Adv. in Math. 41 (1981)
+       115-136.
+[47] J. Riordan, An Introduction to Combinatorial Analysis (Princeton Univ. Press, Princeton, NJ, 1980); (originally
+      published by (Wiley, New York, 1958)).
+1481 R. Roy, Binomial identities and hypergeometric series, Amer. Math. Monthly 94 (1987) 37-46.
+[49] J.T. Stafford, Module structure of Weyl algebras, J. London Math. Sot. (2) 18 (1978) 429-442.
+[50] R. Stanley, Differentiably finite power series, European J. Combin. 1 (1980) 175-188.
+[51] J.J. Sylvester, A method of determining by mere inspection the derivatives from two equations of any degree,
+      Philos. Magazine 16 (1840) 132-135; (Collected Works I, 54-57).
+[52] N. Takayama, Holonomic solutions of Weisner’s operator, preprint, Tokushima Univ.
+[53] N. Takayama, Grobner basis and the problem of contiguous relations, Japan J. AppI. Math. 6 (1989) 147-160.
+[54] J.W. Tukey, Amer. Statist. 40 (1986) 74.
+[55] A. van der Poorten, A proof that Euler missed.. . Apery’s proof of the irrationality of l(3), Math. Zntelhgencer 1
+      (1979) 195-203.
+368                               D. Zeilberger / Holonomic systems for special functions
+
+[56]   B.L. van der Waerden, Modern Algebra, Volumes I and II (Frederick Ungar, New York, 1940).
+[57]   H.S. Wilf, What is an answer ?, Amer. Math. Monthly 89 (1982) 289-292.
+[58]   H.S. Wilf and D. Zeilberger, Towards computerized proofs of identities, Bull. Amer. Math. Sot., to appear.
+[59]   H.S. Wilf and D. Zeilberger, Rational functions certify combinatorial identities, J. Amer. Math. Sot., to appear.
+[60]   D. Zeilberger, Sister Celine’s technique and its generalizations, J. Math. Anal. Appl. 85 (1982) 114-145.
+[61]   D. Zeilberger, A fast algorithm for proving terminating hypergeometric identities, preprint.
+[62]   D. Zeilberger, The method of creative telescoping, preprint.
+[63]   D. Zeilberger, The method of creative telescoping for q-series, in preparation.
+

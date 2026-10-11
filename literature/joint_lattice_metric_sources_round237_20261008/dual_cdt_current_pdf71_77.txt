@@ -1,0 +1,391 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                              71
+
+
+in how the denominators in the leading order coefficients of the auxiliary functions
+end up getting estimated in the proof of Theorem 6.0.2; the rate τ ♭ (b) + τ ♯ (e)
+serves as an upper bound, and that upper bound estimation turns out to be strict
+and lossful in the example at hand. We do not know whether or not the upper
+bound is an equality in the m = 14 case that we ultimately devise for the proof
+of Theorem A, but we expect it to be a fairly sharp denominator estimate, and
+possibly an equality.                                                             △
+Example 6.0.20. We give one final example, which we will use in § 6.8 to complete
+the proof of Theorem 2.8.4. For the case
+                                   
+                              0 0
+                             0 2 
+                       b=   0 2 ,
+                                         e = (0, 0, 1, 0)
+                              1 2
+relevant to a set of four functions with denominator types
+                       xn                 xn                           xn
+      xn ,                       ,                    ,                                 ,   (6.0.21)
+                 [1, . . . , 2n]     n[1, . . . , 2n]     [1, . . . , n][1, . . . , 2n]
+we have
+                       37              7                 21
+                 τ ♭ (b) =, τ ♯ (e) =    ,   τ (b; e) =      = 2.625,
+                       16             16                  8
+with the 7/16 value being attained on the identical interval minimizer ξ ∈ [2, 3].
+   But even the intermediate crude choice
+                                    
+                               0 0
+                            0 2 
+                            1 2 ,
+                      b0 =                e0 = (0, 0, 0, 0),
+                               1 2
+that minimally covers the types (6.0.21) within the framework of Theorem 2.5.1
+highlighted for the introduction, already gives
+                                 1                                   21
+          τ (b0 ; e0 ) = τ (b0 ) = (1 · 0 + 3 · 2 + 5 · 3 + 7 · 3) =    = 2.625.
+                                16                                    8
+In this case the value is the same, similarly to the situation in Basic Remark 6.0.17.
+                                                                                    △
+   In contrast to the examples above, exploiting a refined pair (b; e) does often
+lead to strictly better results than are possible by capping up to some cruder e = 0
+scheme. This is in particular true for the proof Theorem A laid out in § 13. There
+we have a local system of rank m = 14 with added integrals, meaning ei = 1
+for six of the indices, and ei = 0 for the remaining eight indices. Such a vector
+has τ # (e) = 27/80 after a simple computation (13.0.5). Overall the fine τ (b; e) used
+computes to 191/49 + 27/80 = 16603/3920 = 4.235459 . . .. But with e = 0 types
+in this example we do not get a better estimate than the rather poor 865/196 =
+4.413265 . . . of Remark 13.0.7.
+
+6.1. Horizontal integration. Our proof scheme follows precisely the d → ∞
+asymptotic method that we originally devised for our first solution [CDT21, route
+§ 2.5] of the unbounded denominators conjecture. This was the idea that we dubbed
+a cross-variables integration, where the given single-variable functions fi (x) were
+72                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+replicated in d → ∞ splitting variables to form, using the Dirichlet box principle,
+a nonzero auxiliary function
+                        X
+F (x1 , . . . , xd ) :=      ci,k xk11 · · · xkdd fi1 (x1 ) · · · fid (xd ) ∈ QJx1 , . . . , xd K∖{0},
+                     i∈{1,...,m}d
+                     k∈[0,D]d ∩Zd
+                                                                                             (6.1.1)
+with integer coefficients ci,k ∈ Z of sub-exponential asymptotic size
+                                    |ci,k | = exp (od→∞ (dD)) ,
+but yet with F (x1 , . . . , xd ) vanishing to almost the highest conceivable order α
+at x =R 0. Curiously enough, in this scheme the Nevanlinna characteristic growth
+term T log+ |φ| µHaar arose not as a circle integral per se (although the latter is
+also possible, by either [CDT21, § 2.3 or § 2.4], or by our discussion based [BC22]
+and [CDT24] in § 7 below); but rather — by the standard Large Deviations bound
+mandating20 that the low discrepancy set D(z) < ϵ on the high-dimensional torus
+                                          4
+Td has measure at least 1 − Ce−cϵ d once d ≥ d0 (ϵ) — from the preponderant
+growth rate of the pulled-back monomials φ(z1 )k1 · · · φ(zd )kd . This is why we would
+describe such an approach as doing an integration in a cross-variables way, or “hori-
+zontally” if one pictures the dimension versus degree versus T (the complex analysis
+in any one fixed variable) aspects in the Diophantine approximation construction.
+   One of the main findings of the present paper is a certain combination of § 3
+and § 4 which allows to actually improve the meaning here of the “highest conceiv-
+able vanishing order” α in (6.1.1). In the more rudimentary treatment in [CDT21,
+§ 2], we had only α = mdD/e−od→∞ (dD) in the parameter count for the number of
+linear equations to be solved in the unknown variables ci,k ; this owes to the ed : 1
+asymptotic volumes ratio for a standard high-dimensional simplex to its largest
+embedded subcube. We now explain how Corollary 3.1.11, on the commutativity
+with Cartesian products of the formation of the vanishing filtration jumps sets, and
+the measure concentration material § 4 work together to improve this vanishing
+order to α = mdD/2 − od→∞ (dD). For simplicity, since we will anyway need this
+later on for the general form of Theorem 6.0.2, we assume the strongest form of the
+Cartesian power structure (based on the holonomicity of the fi ): Lemma 3.2.14,
+stemming from the Chudnovsky–Osgood theorem coupled to Corollary 3.1.11.
+
+6.1.2. The Thue–Shidlovsky idea. This Lemma 3.2.14 ensures that the nonzero
+power series (6.1.1) has to posses a nonzero monomial β xn = β xn1 1 · · · xnd d with
+n = (n1 , . . . , nd ) ∈ [0, (m + δ)D]d , for any δ > 0 and d, once D ≫δ,d 1. There-
+fore, in the linear system to solve for the total vanishing order in the Thue–Siegel
+lemma, we need not be concerned with the broad simplex region |n| < α, but
+instead we can simply vanish the coefficients of xn for all n ranging over the hy-
+percube [0, (m − δ)D]d (clearly, this is the hypercube of the maximal conceivable
+size in the parameter count), as well as for all n outside of the low discrepancy
+part of the slightly bigger hypercube [0, (m + δ)D]d (allowing us to also use the
+measure concentration for the component set of the vector n). It is essential here
+for the application of Theorem 4.2.1 to take δ > 0 sufficiently small in terms of
+
+   20This is just a restatement of Theorem 4.2.1 which we treated in detail in § 4. Indeed, the
+exponential function establishes an isomorphism of the measure spaces ([0, 1]d , µLebesgue ) and
+(Td , µHaar ), under which the box discrepancy functions correspond.
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        73
+
+
+the discrepancy parameter ϵ; then the parameter count goes through. (This step is
+contained in Lemma 6.2.6.) The upshot is that in this construction, as ϵ → 0 (even-
+tually: after D → ∞, d → ∞, δ → 0), all the lowest order monomials β · xn1 1 · · · xnd d
+in F (x1 , . . . , xd ) have their exponent vectors (n1 , . . . , nd ) asymptotically close to
+some ordering of the set {jmD/d : 0 ≤ j < d}. In particular, the total vanishing
+order is indeed close to mdD/2.
+   It is this improvement over the mdD/e of [CDT21, Lemma 2.1.2] that recov-
+ers the e ⇝ 2 coefficient refinement under the elementary asymptotic framework
+of [CDT21, § 2]. At this point, the Thue–Shidlovsky argument further supplies
+two similar, and equally crucial, improvements on both the top and bottom of the
+fraction (2.2.3).
+   We next introduce these two improvements in turn, showcasing to the case of
+Corollary 6.0.14 for simplicity, following which we start on the proof of the general
+Theorem 6.0.2.
+
+6.1.3. The archimedean sharpening.       R Firstly, this asymptotic scheme allows by ele-
+mentary methods to improve the T log+ |φ| µHaar integral to the strictly smaller
+            R1
+quantity 0 t · (log |φ(e2πit )|)∗ dt. We have remarked already in [CDT21, § 2.3.3]
+that some improvement in the holonomy bound can be made by exploiting that, by
+Theorem 4.2.1 again, the monomials exponents k in (6.1.1) can be constricted to
+the low discrepancy part of the hypercube [0, D]d . In concrete heuristic terms, this
+means that as d → ∞, the exponents vectors (k1 , . . . , kd ) in (6.1.1) can be consid-
+ered as being close to some ordering of the set {jD/d : 0 ≤ j < d}. In this way,
+upon noting that the largest value of φ(z1 )k1 · · · φ(zd )kd over all these orderings
+occurs when (k1 , . . . , kd ) is arranged in the same way as (|φ(z1 )|, . . . , |φ(zd )|), we
+find the rearrangement integral
+   Z 1                          ZZ
+                  ∗           1
+       t (log |φ|) (t) dt =           log (max(|φ(z)|, |φ(w)|)) µHaar (z)µHaar (w) (6.1.4)
+    0                         2    T2
+precisely in the refined preponderant growth rate based on the uniform distribution
+of not only the torus points z ∈ Td , but also of the monomials exponent vector k.
+An illustration of the saving thus made is in the explicit example of Figure 8.1.15.
+
+6.1.5. The arithmetic sharpening. To the uniform distribution of the leading order
+jet exponents n of F (x1 , . . . , xd ), we can add yet another elementary application of
+the Law of Large Numbers: without changing (broadly speaking) the asymptotic
+size of the parameter count, we can insist that the m function species occur with
+equal frequency 1/m in all the split-variable products fi1 (x1 ) · · · fid (xd ) in the make
+up of (6.1.1). In other words, we can assume that d ≡ 0 mod m and that the
+summation multi-index i in (6.1.1) is constricted to have each index i0 ∈ {1, . . . , m}
+arise d/m times as a component of i. This permits us to integrate over the m
+different denominator types of our m function species, under our condition on the
+denominators cap array b, and we find precisely (2.5.6) as the counterpart of (2.4.2).
+
+6.2. The auxiliary construction. We start here the proof of Theorem 6.0.2.
+In the case that all fi are a priori holonomic functions, we have the following
+improvement on [CDT21, Lemma 2.1.2].
+   For d ∈ N>0 and ϵ ∈ (0, 1], we denote by
+                     Pϵd := t ∈ [0, 1]d : D(t) < ϵ ⊂ [0, 1]d
+                            
+                                                                         (6.2.1)
+74                               F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+the ϵ-low discrepancy part of the d-dimensional hypercube, with D : [0, 1]d → [0, 1]
+being the normalized discrepancy function of Definition 4.1.1. This is a bounded
+semialgebraic set. Its image under the analytic isomorphism exp : [0, 1)d → Td , t 7→
+e2πit will be denoted by Tϵd ⊂ Td . In these notations, a cruder form of Theo-
+rem 4.2.1 can be restated as the double limits
+                   lim lim µLebesgue (Pεd ) = 1,                   lim lim µHaar (Tεd ) = 1.   (6.2.2)
+                   ε→0 d→∞                                         ε→0 d→∞
+
+In the following, we fix an m ∈ N>0 and restrict the asymptotic parameter d ∈ N>0
+to the integers ≡ 0 mod m. For the plan outlined in § 6.1.5, we restrict the multi-
+index i in (6.1.1) to the equidistributed set
+     Vmd := {i : ∀i ∈ {1, . . . , m}, #{h ∈ {1, . . . , d} : ih = i} = d/m} ⊂ {1, . . . , m}d .
+                                                                                          (6.2.3)
+      This set still has the asymptotically full size md−o(d) :
+Lemma 6.2.4. Under our standing assumption d ≡ 0 mod m, we have
+                                           . d + m − 1 
+                              d
+               #Vmd = d             d   > md
+                                                           .                                   (6.2.5)
+                         m, . . . , m             m−1
+Proof. The m-fold expansion
+                                                               X              d
+                                                                                          
+                                  d                      d
+                                m = (1 + . . . + 1) =
+                                                                        j1 , . . . , jm
+                                                              j∈Nm
+                                                              |j|=m
+
+has d+m−1
+              
+       m−1      terms, the maximal of which is the central multinomial coefficient with
+j1 = · · · = jm = d/m.                                                               □
+
+   Our Thue–Siegel construction (step (ii) of the general outline from § 2.12) is the
+following.
+Lemma 6.2.6. Suppose we have m holonomic power series f1 , . . . , fm ∈ QJxK,
+linearly independent over Q(x). Assume that each fi (x) has denominators of the
+crude type
+                  ∞
+                  X                   xn
+       fi (x) =         ai,n                         ,        for some A ∈ N>0 , B, σ ∈ N      (6.2.7)
+                  n=0
+                               An+1 [1, . . . , Bn]σ
+
+and converges on a complex disc |x| < ρ, for some ρ ∈ (0, 1).
+  There exists a function
+                                        d0 : N3 × (0, 1) × (0, 1) → N
+such that the following holds.
+   For each ϵ ∈ (0, 1), there is a δ = δ(ϵ) ∈ (0, ϵ), such that for all d ≥ d0 (A, B, σ, ρ; ϵ)
+with d ≡ 0 mod m, there exists asymptotically for D → ∞ a nonzero d-variate for-
+mal function F (x) of the (6.1.1) form
+                                        X                    d
+                                                             Y
+                        F (x) =                  ci,k xk           fis (xs ) ∈ QJxK ∖ {0},     (6.2.8)
+                                         d
+                                      i∈Vm                   s=1
+                                   k/D∈Pϵd ∩Zd
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                       75
+
+
+                                       absolute value by |ci,k | < eϵdD , and such that
+with ci,k ∈ Z integers, all bounded in P
+the power series expansion F (x) =       βn xn of (6.2.8) obeys the following main
+requirement:
+               All the minimal order monomials βn xn in (6.2.8)
+  (⋆)                                                                           (6.2.9)
+               have an exponent vector n satisfying n/ ((m + δ)D) ∈ Pϵd .
+   Note that (⋆) implies in particular that βn ̸= 0 for at least one such n in the set
+((m + δ)D) Pϵd ∩ Zd .
+   Before we proceed with the proof, we collect some consequences of our condi-
+tion (⋆). In the following, we will consider ϵ ∈ (0, 1/4] which in the end will be let
+to approach zero. Throughout this § 6, we will write
+                                      α := mdD/2.                                   (6.2.10)
+This notation reflects a related use of α as a vanishing parameter in [CDT21, § 2], see
+for example [CDT21, Lemma 2.1.2(1)]. In that previous paper, we (asymptotically)
+took α to be (of order) mdD/e ∼ m(d!)1/d D, which here we improve to mdD/2.
+Corollary 6.2.11. In Lemma 6.2.6, we have
+                         ordx=0 F (x) ∈ [(1 − 2ϵ)α, (1 + 2ϵ)2 α].                   (6.2.12)
+                                                                       2α
+Every multi-index k = (k1 , . . . , kd ) in (6.2.8) has maxdj=1 kj ≤ md   and admits a
+permutation ψ = ψk of {1, . . . , d} such that kψ(1) ≤ · · · ≤ kψ(d) and
+ 2αj                                   2αj
+    2
+      − 2ϵα/(md) ≤ kψ(j) ≤ (1 + ϵ)            + 4ϵα/(md),      ∀j ∈ {1, . . . , d}. (6.2.13)
+ md                                    md2
+Further, every exponent n = (n1 , . . . , nd ) of minimal total order
+                                 n := |n| = ordx=0 F (x)
+in the Taylor series of F (x) ∈ QJxK has a permutation π of {1, . . . , d} such that
+nπ(1) ≤ · · · ≤ nπ(d) and
+  2αj/d2 − 2ϵα/d ≤ nπ(j) ≤ (1 + ϵ)2αj/d2 + 4ϵα/d,               ∀j ∈ {1, . . . , d}, (6.2.14)
+and for all u, v ∈ [0, 1] with u ≤ v it satisfies
+                                   X
+        (1 − 2ϵ)(v 2 − u2 )α ≤           nπ(j) ≤ (1 + 2ϵ)2 (v 2 − u2 )α.            (6.2.15)
+                                 ud≤j<vd
+
+Proof. The partial degrees bound (6.2.13) is tautologically a rewriting of our defini-
+tion (6.2.10), but it is used to organize the analysis around the leading asymptotic
+parameter α. The estimate (6.2.12) follows from (6.2.9) upon noting that the ex-
+                              R1
+pected value E [t ∈ [0, 1]] = 0 t dt = 1/2, which by the Koksma–Hlawka inequality
+or an elementary bit of computation shows the implication
+                                       d
+                                       X
+                     t ∈ Pϵd   =⇒            tj ∈ [d/2 − ϵd, d/2 + ϵd] .            (6.2.16)
+                                       j=1
+
+In detail, the upper bound in (6.2.12) is by the chain of trivial estimates |n| ≤ (m +
+δ)D(d/2+ϵd) ≤ (1+ϵ)mD(d/2+ϵd) < (1+2ϵ)mD(d/2+ϵd) = (1+2ϵ)(2α/d)(d/2+
+ϵd) = (1 + 2ϵ)2 α implied by (6.2.16) for all the nonzero monomials βn xn (which
+form a nonempty set!) in (⋆). The lower bound is similar with using |n| ≥ (m +
+δ)D(d/2 − ϵd) > mD(d/2 − ϵd) = (2α/d)(d/2 − ϵd) = (1 − 2ϵ)α from (6.2.16) for
+all nonzero monomials βn xn in (⋆), and the proof of (6.2.15) is the same.
+76                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+   For an arbitrary n from the leading order |n| = ordx=0 F (x) jet (⋆), take a
+permutation π with nπ(1) ≤ nπ(2) ≤ · · · ≤ nπ(d) . For the lower bound in (6.2.14),
+remark that the interval [0, nπ(j) ] contains at least the j elements nπ(1) , . . . , nπ(j)
+of the component set {nj }. As n ∈ ((m + δ)D) Pϵd, the definition of discrepancy
+                                                                            
+mandates that the interval [0, nπ(j) ] = ((m + δ)D) · 0, nπ(j) /((m + δ)D) contains
+at most
+         nπ(j) d/((m + δ)D) + ϵd < nπ(j) d/(mD) + ϵd = nπ(j) d2 /(2α) + ϵd
+of the components of n. Hence
+                                 j ≤ nπ(j) d2 /(2α) + ϵd,
+giving the claimed lower bound on nπ(j) .
+   For the upper bound in (6.2.14), the interval
+                                                                   
+              nπ(j) , ((m + δ)D) = ((m + δ)D) · nπ(j) / ((m + δ)D) , 1
+contains at least the d − j + 1 elements nπ(j) , . . . , nπ(d) of the component set {nj }
+of our n ∈ ((m + δ)D) Pϵd . Thus, as before,
+                                                                          
+                               d − j + 1 ≤ d · 1 − nπ(j) / ((m + δ)D) + ϵd
+         ≤ d − nπ(j) d/ ((1 + ϵ)mD) + ϵd = d − nπ(j) (1 + ϵ)−1 d2 /(2α) + ϵd
+completing the proof of (6.2.14). Finally, the bounds (6.2.13) follow by the same
+proof.                                                                          □
+
+6.3. The box principle step: proof of Lemma 6.2.6. Our proof combines the
+classical Thue–Siegel lemma [BG06, Lemma 2.9.1] and Lemma 3.2.14 on the func-
+tional bad approximability combined with the product structure of the vanishing
+filtration jumps, following the plan we laid out in § 6.1.2.
+
+Proof of Lemma 6.2.6. The first parameter to consider is the ϵ that we use to mea-
+sure the discrepancy from µLebesgue,[0,1) or µHaar ; this will be the last parameter
+which we let approach 0 in the proof. Then, in terms of the exponential decay rate
+function κ(ϵ) := ϵ4 /600 > 0 in Theorem 4.2.1, we take any δ ∈ (0, ϵ) small enough
+to have
+                            m−δ                   4
+                                   > e−κ(ϵ) = e−ϵ /600 .                      (6.3.1)
+                            m+δ
+The ϵ-low discrepancy set Ω := Pϵd ⊂ [0, 1)d is a bounded semialgebraic set, so
+Davenport’s lemma [Dav51, Dav64] applies to give (in particular) the lattice point
+count asymptotic # D · Ω ∩ Zd ∼ vol(Ω)Dd as D → ∞ for the fixed ϵ and d.
+   As D → ∞ and then d → ∞ (in this order), we set up a linear system of M linear
+equations in the N unknown coefficients ci,k in the function template form (6.2.8),
+by requiring that in the Taylor series expansion
+                              X                    d
+                                                   Y                   X
+                 F (x) =                 ci,k xk         fis (xs ) =          βn x n ,   (6.3.2)
+                                 d
+                              i∈Vm                 s=1                 n∈Nd
+                           k/D∈Pϵd ∩Zd
+
+                                                                    / (m+δ)D·Pϵd .
+all coefficients βn vanish whenever either maxdj=1 nj ≤ (m−δ)D or n ∈
+Once the dimension d ≫ϵ,δ 1 is sufficiently big, Theorem 4.2.1 and Lemma 6.2.4,
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     77
+
+
+together with Davenport’s lemma, show that for all D ≫d,ϵ 1, the number N of
+free parameters ci,k in our linear system will exceed the quantity
+                                       d               d
+                    N > (m − δ/2)D > 2 (m − δ)D ≥ M.                  (6.3.3)
+In the Siegel lemma, this gives a Dirichlet exponent
+                       M                  1
+                             <               d    = od→∞ (1).                   (6.3.4)
+                    N −M
+                                     
+                                 1     m−δ/2
+                                 2 ·    m−δ     −1
+For the height of our linear system, a simple estimate based on the prime number
+theorem shows that the system can be expressed into the form A · y = 0, to be
+solved nontrivially for an integer vector y ∈ ZN of a small height, with some
+M × N integer matrix A ∈ MM ×N (Z) whose entries are bounded in absolute
+value by C0 (A, B, σ, ρ)α . Here, C0 (A, B, σ, ρ) is a simple computable function,
+immaterial to us, in the parameters A, B, σ, ρ that we assume for the form (6.2.7)
+of the functions fi (x) (archimedeanly convergent on |x| < ρ). At this point (6.3.4)
+and [BG06, Lemma 2.9.1] prove that, once d ≫ϵ,δ 1 and then D ≫d 1, there exists
+a nonzero formal function F (x) ∈ QJxK ∖ {0} of the form (6.3.2), in which all
+coefficients ci,j ∈ Z on the left-hand side are rational integers smaller than eϵdD in
+absolute value, and having on the right-hand side the vanishing of all βn = 0 with
+                                                          d
+n∈ / (m + δ)D · Pϵd , as well as for all n ∈
+                                           / [0, (m − δ)D] .
+   The desired property (⋆) (see Equation 6.2.9) now follows by Lemma 3.2.14,
+applied with ε := δ/2, after noting our assumption that f1 , . . . , fm are holonomic
+functions.                                                                          □
+   The condition in Lemma 6.2.6 that all fi are holonomic functions is met by
+the hypotheses in Theorem 6.0.2 currently under proof. Indeed, an a priori holo-
+nomicity is either directly an assumption, or else the stronger positivity condi-
+tion (6.0.7) is imposed. By André’s holonomicity criterion (Corollary 2.6.1, also
+outlined in § 2.12, and completely proved      in the self-contained § B), upon applying
+                                           d ei
+to fi (x) the differential operator x dx          to remove the extra nei terms from the
+denominators of (6.0.9) (and observing that, thanks to the chain rule, the d/dx
+derivation preserves the meromorphicity condition φ∗l fi ∈ M(D)), the condition
+log |φ′l (0)| > σm ≥ bi,1 + . . . + bi,r by itself forces fi to be a holonomic function.
+   This places us into a position to apply Lemma 6.2.6. In the following, we will
+fix an “auxiliary function” F (x) ∈ QJxK ∖ {0} supplied by that lemma, and write
+δ := δ(ϵ) for the δ ∈ (0, ϵ) under the thesis of the lemma. At the end of the proof
+we will let, in this order, D → ∞, d → ∞, and ϵ → 0, remembering that the latter
+also in particular makes δ → 0.
+6.4. Seeding. Consider now a nonzero minimal order monomial β xn in F (x).
+Thus β := βn ∈ Q× is a nonzero rational number of a certain denominator cap
+inherited from (6.0.9), that we will study in § 6.6 below, and the exponent n =
+(n1 , . . . , nd ) ∈ ((m + δ)D) Pϵd with δ < ϵ has n := |n| = n1 + . . . + nd ∈ [(1 −
+2ϵ)α, (1 + 2ϵ)2 α] by Corollary 6.2.11. Until the end of the proof, we fix this minimal
+order exponent n, and then upon relabeling the variables x1 , . . . , xd , we may and
+will assume that n1 ≤ n2 ≤ · · · ≤ nd .
+   We turn now to the piece of the argument — which we omitted from the intro-
+ductory sketch § 6.1 (but we briefly described in § 2.13.10 of our general introduc-
+tion), — needed to get the stronger bound (6.0.8) in place of the more basic special
+

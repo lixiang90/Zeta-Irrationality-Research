@@ -1,0 +1,253 @@
+334                           D. Zeilberger / Holonomic system for special functions
+
+
+dim,(F,nL).     It turns out [12, (1.3)] that H(Y) is a polynomial function advd + . . . +a, when
+v Z+ 0. Here a,, . . . , ad are rational numbers and ( d !) ud is a positive integer that is denoted by e.
+    The degree d of the Hilbert polynomial udvd + . - . a,, which computes H(v) when v Z+ 0, is
+called the F-dimension of the left A,( C)-module A,( C)/L and is denoted by dF( AJL).
+    The celebrated Bernstein inequality asserts that for every left ideal L, dF( A,/L)         >, n, unless,
+of course L is the whole ring A,.
+    The above notion of dimension can be extended to general finitely-generated left A,( C)-mod-
+ules of which modules of the form A,(C)/L          are special cases. One considers a certain class of
+“good filtrations”, and shows that the notion of dimension makes sense for each such good
+filtration. Then it is shown that the dimension is independent of the particular filtration, and
+thus one is able to talk about the dimension of the A,,(C)-module M, d(M), without reference to
+any particular filtration. Bernstein [lo], [12, (1.4)] proved the more general statement that
+d(M) >, n for every nonzero and finitely-generated left A,( C)-module. An extremely short and
+elegant proof of this important inequality was given by Antony Joseph, and can be found in [13],
+and in [21, p.4171.
+    Let f be either a C” function, or a distribution, or a formal power series, or what have you
+(anything on which it is possible to differentiate and multiply by xi), in n variables. Then one
+can consider all the elements of A,(C) that annihilate f:
+           I,:=   {PEA,(C);       Pf=O}.                                                             (2.16)
+   Obviously 1, is a left ideal. By Bernstein’s inequality the dimension of the A,(C)-module        is
+ > n, unless f is identically zero. We will call functions f for which the dimension of A,, (C)/l_ is
+the smallest possible, namely n, holonomic functions (or distributions, formal power series, etc.).
+It can be easily seen that multi-C-finite functions are ipso facto holonomic functions. This makes
+sense since in the passage from C[D,, . . . , Dn]/If         to A,( C)/$  we have acquired n “extra
+dimensions”, corresponding to the generators xi,. . . , x,, and the “gap” between numerator and
+denominator is still n.
+   Because of the analogy to multi-C-finite functions and P-finite functions it would make sense
+to call holonomic functions “multi-P-finite functions”. Bjijrk [12] calls holonomic functions
+“members of the Bernstein class”.
+   The Weyl algebra A,(C) acts just as well on discrete functions f : Z” -+ C, via xi + E,:’ and
+Di + (n, + 1) Ei, as can be easily seen by examining the action of xi and D, on a generic formal
+power series, and see how the coefficients get transformed. Of course this extends to mixed
+continuous-discrete functions f ( x1,. . . , x,, ml,. . . , m,() on which the Weyl algebra A,+,/(C)
+acts naturally.
+   So let us state the formal definition of holonomic functions (or distribution, formal power series,
+etc.).
+
+Definition 1”. Let f be a nonzero member of a family on which the Weyl algebra acts naturally.
+Let the ideal 1, be defined by (2.16) above. Then f is holonomic if the left A,(C)-module
+A,( C)/lr has its smallest possible dimension, namely n.
+
+   It is readily seen that this definition is the natural extension of Definition 1” of multi-C-finite
+functions, in Section 2.2.1. Since A,(C)/l_       is naturally isomorphic, as A,(C) modules, to the
+A,( C)-module A,(C) f. We can also state the next definition.
+                                       D. Zeilberger / Holonomic systems for special functions                     335
+
+
+Definition 1’. f is holonomic                if the A.(C)-module        A,(C)f   has the smallest possible dimension,
+namely n.
+
+   Definition 3 can also be extended to the present context. But we first need some notation. A
+typical element of the Weyl algebra A,(C) may be written
+
+           P=         c   aa(X)
+                    lal<N
+where (Y= (q, . . . , an), D” := OF - . . Dzn and a,(x) = a,( xi,. . . , xn) are polynomials. Its sym-
+bol is obtained by replacing Di by the complex variables S;., and replacing xi by the complex
+variables zi, obtaining a polynomial in the 2n complex variables zi, . . . , z,, 5;, . . . , ln. The
+principal symbol a(P) is obtained by only retaining the leading terms for which 1 a 1 = N:
+
+           (J(p)      =        c    %b>S”.
+                            lal=N
+
+   For any left ideal L in A,(C)                 let us consider the following variety in Q=”x C” = CZn:
+           V,=       {(z,     {)EC”XC”;              u(Q)(z,   {)=O,foreveryQ          in L}
+
+                   =+(Q)-‘(O);                QEL].
+   It is a deep result (see [12, p. x and Chapter 21) that the (complex analytic) dimension of the
+variety V, coincides with the previously defined dimension of the A,(C)-module A,(C)/L,        for
+any left ideal L in A,(C). In particular we can define the following.
+
+Definition 3. Let f be a nonzero member of a family on which the Weyl algebra acts naturally.
+Then f is holonomic if the variety
+           I$:= {(z, {)EC”XC”;                       a(Q)(z,   5) =0,    foreverye     such that Q(f)   =0}
+
+                =n{       u(Q)-‘(0);          Q(f)    = 0)
+has dimension n.
+
+2.5. Examples       of holonomic functions
+
+     In the next section we will show that the class of holonomic functions is an algebra: The sum
+ and product of holonomic functions are also holonomic. We will also prove that it is closed
+ under integration (or summation) with respect to a variable: If f (x1,. . . , x,) is a holonomic
+ function of n variables, then /T’,f dx, is holonomic in the surviving n - 1 variables xi,. . . , x,_~,
+ if it is defined. Similarly if f = f (m,, . . . , m,) : Z n +- C is holonomic, then C_ f is holonomic in
+ the surviving variables m,, . . . , m n_ 1.
+    All polynomials and exponential-polynomial functions, being multi-C-finite, are automatically
+ holonomic. The simplest discrete function of a single variable that is P-finite but not C-finite is
+f(n) := n !, that satisfies (E - n - 1) f = 0. Similarly f(n) := l/n ! is P-finite since it satisfies
+((n + l)E - l)f= 0.
+    The function f := m,! is a holonomic function of m,, . . . , m,. One way of seeing this is noting
+ that 1, contains the operators I - Ei, 2 G i G n, as well as E1 - m, - 1. When translating, this
+336                           D. Zeilberger / Holonomic systems for special functions
+
+
+becomes 1 - zi, 2 G i G m, and zi - ziD, - 1, whose principal symbols are -zi and -zJi.          The
+variety l$ is a subset of the set of common zeros of { - zi, 2 < i < n } and zJi, which is a union
+of the two n-dimensional varieties in C2n: { zi = . . . = z, = 0} and { S1 = 0, z2 = . . . = z, = 0},
+and thus its dimension must be G n, and, by Bernstein’s inequality, it should be equal to n, and
+thus is holonomic.
+   In a similar way we can prove that l/m,! is holonomic and of course this is true for all m,!
+and l/m,!.    Similarly (ml + . - . +m,)!      is holonomic and thus the multinomial coefficient
+(ml + .** +m,)!/m,!     * * . m ,, !. This would also follow from the following general result, upon
+taking P = 1 - x1 - . * . - x,, and looking at the coefficients of l/P, viewed as a formal power
+series.
+
+Proposition 2.1. Let P = P( x1,. . . , x,,)         be a polynomial   in n variables;   then 1/P   is holonomic,
+whenever it is defined.
+
+First proof. Let us try and find as many linear differential operators with polynomial coefficients
+that annihilate f := l/P    as possible. Among the many such operators are PD, + P(l) and
+P(‘)D, - P”‘D. for 2 < i < n. ( Pci) is the partial derivative of P with respect to xi: aP/ax,.) The
+principal symbols of these are Pt, and P(j)[, - Pcl)cj. The variety 5 is a subset of the set of
+common zeros of these n polynomials in x1,. . . , x,, El,. . . , (,, which is easily seen to comprise
+an n-dimensional variety. Thus the dimension of the variety V, is G n, and by Bernstein’s
+inequality it must be equal to n. It follows that l/P is holonomic.       q
+
+Second proof. A,(C)(l/P) is a submodule of C[x,, . . . , x,, P-l], and this last A,(C)-module                  is
+shown to be a holonomic A,(C)-module in [12, Theorem 1.5.5, p.131. q
+
+   Since every polynomial Q is obviously holonomic it follows (from the closure under product
+to be proved in Section 3) that all rational functions Q/P are holonomic. If P has a nonzero
+constant term, then Q/P makes sense as a formal power series, and its multisequence of
+coefficients f, defined by
+           Q/P=Cf(ml,...,m,)xyl               .*.    xzn,
+
+is a holonomic discrete function from Nn to Q=.
+
+
+3. Operations that preserve holonomicity
+
+3. I. Continuous functions and distributions
+
+   We will now show that the sum and product of holonomic functions are themselves holo-
+nomic, and that if f ( x1,. . . , x,) is holonomic on R”, then f ( x1,. . . , x,_~, c) (c a constant) and
+lf (x1,. . . , xn) dx, are holonomic functions of (xi,. . . , x,_~).
+
+Proposition3.1.   Letf:R”-+Q=,       g:R”     + Q: be holonomic;       then f + g is also holonomic.
+
+Proof. Let A,(C) = U~~oFvbe the natural filtration of A,(C), described above. Then the natural
+filtrations for A,(C)f, A,(C)g and A,(C)( f + g) are U~~&f, U~=&g and U~=&( f + g).
+                                D. Zeilberger / Holonomic systems for special functions                      331
+
+
+Now for every v we have FV(f + g) c F":,f@     Fvg.Thus dimF”( f + g) < dim( FVf) + dim( F,g) are
+polynomials in v of degree n, and the same is true for their sum. We do know a priori that for
+v x=-0, dimFV( f + g) is a polynomial, and so it follows that its degree must be < n, and
+therefore, by Bernstein’s inequality it is equal to n, and f + g is holonomic. 0
+
+Proposition 3.2. If f and g are holonomic,            so is their product    (if it is defined).
+
+Proof. Let Ml and M2 be A,(C)-modules.            Bernstein [ll, p-2771 defines the A,(C)-module
+Mi x M2 as follows: as an C[x,, . . . , x,] module A4i IX M2 = Ml @)c[X1M2and the operators a/ax;
+acts as follows:
+
+
+
+
+Bernstein proved ([ll, p.278, Theorem 3.2, Part 3) that if M1 and. M2 are holonomic A,(C)
+modules, so is A4i [XIM2.
+  Now, by Leibnitz’s rule
+
+           4lMfg)          =   bLw)f >@kLW)d.
+It follows that A,( C)( fg) is a holonomic A,(C)-module,                    since it is a nonzero submodule of a
+holonomic A,( C)-module.      EI
+
+   Proposition 3.2 has some far-reaching consequences. It is obvious that the Dirac delta measure
+S,, concentrated at x = a (i.e., S,(f) = f (a), for every test function) is a holonomic distribution
+in a single variable, since it satisfies the equations (of order zero) (x - a)&, = 0. When 8, is
+embedded in R” as the Lebesgue measure that is supported at the hyperplane x, = a, it is still
+holonomic, but now in R”. Multiplication by 8, from the right is nothing but the evaluation
+x, = a:
+          f(xl,...,x,-l,        x,)%=f(xl,...,x,-l,            a>,
+when x, = a, and 0 otherwise.
+   It follows from Proposition 3.2 that if f is holonomic and fS, is defined (which is the case, for
+example, when f is continuous), then it is holonomic. In other words, if f(x,, . . . , x,_~, xn) is
+holonomic in US”,then f(xl,. . . , x,__~, a) is holonomic in R”-‘.
+   It turns out [12, (7.4.1)] that it is always possible to define the evaluation x, = a on any
+holonomic distribution. This is certainly not possible for an arbitrary distribution, so the class of
+holonomic distributions is indeed privileged.
+   The differentiation operators (l/i)(a/axj)     and the “multiplication by xj” operators xi are
+dual to each other under the Fourier transform, so it is easily seen [12, p.2931 that the Fourier
+transform of a holonomic entity on R”, if it exists (and it does if it is a tempered distribution), is
+also holonomic, and vice versa. The Fourier transform sends the act of multiplication into the act
+of convolution: ( fi) = f** fi, so we have as an immediate consequence of Proposition 3.2, the
+next proposition.
+
+Proposition 3.2 * . If f and g are holonomic,          so is their convolution,     if it is defined.
+
+  This proposition can be also easily proved directly, by mimicking the proof of Proposition 3.2.
+338                                          D. Zeilberger / Holonomic systems for special functions
+
+
+   Let 6(“-‘) be the Lebesgue measure of the “line” xi = . . . = x,-i                                            = 0 in R”, i.e., for any test
+functioi f#~:
+                     S(n-l)(+(~l,
+                      n                  . . ., x,))      = /$(O,.. .,O, x,,) dx,.
+It is holonomic because it satisfies the system:
+                     x&“-i)
+                      1n
+                                 = 09       i=l       >**., n - 1,              D #“-l)
+                                                                                 nn
+                                                                                                = 0.
+
+Now
+
+                     J(x 1,. .., x,-l)       :=        f(x,,..       ., x,-l,   x,)      dx,                                                  (3.1)
+                                                  J
+
+is nothing but the convolution f *6,(“-l), and so it follows from Proposition                                                   3.2*   that if f is
+holonomic in R”, then f, as given in (3.1) is holonomic in R”-‘.
+   Summarizing we have:
+
+Proposition             3.3. Let f = f (x1,. . . , x,)                 be holonomic            in IR”, and let a be any constant;              then
+f(Xl,.**,X,-1,               a) is holonomic in R”-‘.
+
+
+Proposition 3.4. Let f(x,,                    . . . , x,)        be holonomic         in R”;      then If (x1,. . . , xn) dx,     is holonomic    in
+R”-I,            if it is defined.
+
+
+   It is obvious that the class of holonomic functions (or distributions) is closed under differenti-
+ation and indefinite integration. Furthermore, the closure under indefinite integration and
+evaluation implies closure under definite integration, so we have the following proposition.
+
+Proposition 3.5. If f ( x1,. . . , x,,) is holonomic,                           then, for any constants a and b,
+
+
+                     Ja
+                       “f (x1 ,...,x,-1,          x,J       dx,
+
+is also holonomic,              if it is defined.
+
+
+3.2. Discrete functions
+
+  Everything that we said about the continuous realm goes over smoothly to the discrete realm.
+Given a discrete function f : Z ” + C, we can talk about its Fourier transform
+                                 t,) =       C         f(m)        eiml’l+ ... +im,f,,
+                     &W..,
+                                           rnC2”
+that lives on the torus T” = (-7,                                IT)~. Alternatively,          by taking e”) + zj, j = 1,. . . , n, we get the
+“z-transform”
+
+
+
+Equation (3.2) always makes sense as a “formal Laurent series”, which may be viewed as
+“distributions” with respect to the Laurent polynomials as “test functions”. If f(m)      is of
+polynomial growth, then fA is a distribution on T”; if f(m) is of exponential growth, then f* is
+

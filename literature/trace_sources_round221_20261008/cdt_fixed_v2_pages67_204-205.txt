@@ -1,0 +1,151 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                           67
+
+
+Consider a sequence of holomorphic mappings φ0 , . . . , φl : (D, 0) → (C, 0) with
+derivatives ( conformal sizes) satisfying
+     |φ′0 (0)| < |φ′1 (0)| < · · · < |φ′l (0)|   and    |φ′l (0)| > emax(σm ,τ (b;e)) .   (6.0.7)
+Accordingly, partition the segment [0, m] by introducing the division point parame-
+ters
+                            0 = γ0 < · · · < γl < γl+1 = m,
+and use these choices to define an L1 function by piecewise patching the functions
+log |φk | on the circle T according to the linear scaling of [0, 1) to [γk /m, γk+1 /m):
+           gφ,γ : [0, 1) → R ∪ {−∞},
+                                                                                          (6.0.8)
+                                mt−γk
+                                       
+                             2πi
+         gφ,γ (t) := log φk e γk+1 −γk             on    t ∈ [γk /m, γk+1 /m) .
+
+If there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent formal
+functions with denominator types of the form
+                    ∞
+                   X                             xn
+   fi (x) = ai,0 +     ai,n ei                                                 , ai,n ∈ Z, (6.0.9)
+                   n=1
+                           n [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+such that fi (φk (z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1 for
+all pairs i = 1, . . . , m and k = 0, . . . , l, then
+                               Z 1                                l
+                                           ∗                1 X 2             |φ′ (0)|
+                                    2t · gφ,γ   (t) dt +             γk log ′ k
+                                 0                         m                |φk−1 (0)|
+                                                               k=1
+                           m≤
+                                                log |φ′l (0)| − τ (b; e)
+                                                                                         (6.0.10)
+          Z 1Z 1                                                l
+                                                           1 X 2             |φ′k (0)|
+                   max (gφ,γ (s), gφ,γ (t)) ds dt +                 γk log ′
+           0   0                                           m               |φk−1 (0)|
+                                                              k=1
+      =                                  ′                                             .
+                                  log |φl (0)| − τ (b; e)
+If moreover all functions fi are a priori assumed to be holonomic, the assumption
+|φ′l (0)| > emax(σm ,τ (b;e)) on φl in equation (6.0.7) can be relaxed to |φ′l (0)| > eτ (b;e) .
+   Here, in g ∗ , we use the notation from (2.4.1) of the increasing rearrangement
+                                                                   R1
+function
+RR        of g. This is why we will often refer to quantities like 0 2t · g ∗ (t) dt =
+  [0,1]2
+         max (|g(s)|, |g(t)|) ds dt as to rearrangement integrals.
+Remark 6.0.11 (Musical Notation). In the notation of Theorem 2.5.1, we have
+τ (b) = τ ♭ (b) = τ (b; 0). Our reason for the musical notation is to think of τ =
+τ ♭ (b) as the main reduction (flattening) of cruder values such as the value τ = σm
+from [CDT24] when we remove the powers ne from (7.0.1), and of τ ♯ (e) as the extra
+term from adding those integrations to the original list of functions.             △
+Remark 6.0.12. In Theorem 6.0.2 (and all the other similar theorems that we
+prove), we may formally relax the denominator type (6.0.9) to allow for the looser
+form:
+                   nei [1, . . . , bi,1 · n + ci,1 ] · · · [1, . . . , bi,r · n + ci,r ], (6.0.13)
+for any fixed set of integers ci,j . This follows upon applying the original statement
+of our theorem where all the nonzero bi,j are changed to bi,j +ε, for some sufficiently
+small positive number ε > 0. This subsumes the denominator type (6.0.13) for all
+but finitely many n, and any finite initial string of coefficients can be made to have
+204                   F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma A.4.4. The map φ := h ◦ ψ : D → C has a unique preimage of −1/72.
+Proof. There is a preimage with x = 0.0000541829 . . .. But one can determine (to
+any precision) the other preimages by passing back to H and then the preimages
+are obtained by the action of Γ0 (2). The preimages in the region (approximating a
+horoball) near z = ±i have absolute value at least
+                                                  77
+                             0.782767 . . . > R =     .
+                                                  100
+The closest other preimages lie near the horoball at z = −1; but the precise choice
+of the parameters ri and θi ensure that they lie outside image of ψ as can be
+confirmed by a simple numerical computation.                                     □
+   The contour ψ(T) is drawn in Figure A.4.5. The asymmetry is due to our using
+four successive compositions of single slit maps, rather than having all four slits
+taken out at once.
+
+
+
+
+        Figure A.4.5. The image of |z| = 1 under ψ(z) together with
+        preimages of −1/72 under h : D → C, together with level sets
+        for log |h| at values in an arithmetic progression; the color scheme
+        transitions between yellow for large positive values of log |h(z)| and
+        blue for large negative values.
+
+
+Remark A.4.6. Our choice of constants reflects merely the principle of finding
+an example “which works” rather than is the most aesthetically pleasing. There
+is no doubt some scope for improvement but since it is not necessary we have not
+tried to optimize these choices — we expect improvements in either respect would
+anyway be quite modest.                                                       △
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                       205
+
+
+A.5. A contour for the L(2, χ−3 ) problem. With our specific choice of ψ(z) as
+in Definition A.4.2, we now define
+                                      φ(z) = h(ψ(z)),
+which is uniformly continuous on D, and which is explicit enough as to be amenable
+to rigorous numerical estimates. We then finally obtain the estimate
+               ZZ
+                     log |φ(z) − φ(w)| µHaar (z)µHaar (w) = 11.844 . . .
+                     T2
+
+and thus (A.0.2) is bounded above by
+                        11.845
+                                                 = 13.9938 . . . . < 14.
+          5448339453535586608000000000     27 191
+log 256 ·                               −     +
+          8658833407565631122430056127     80   49
+                                                                     (A.5.1)
+Remark A.5.2 (Bounds without integrations). Even with all our improvements,
+the best bound we could achieve before integrations, for either Theorems A or C,
+was also above 9; we give some of the numerics now. Consider the following basic
+application of Theorem 2.5.1. We consider the functions Ai (x) for i = 1, . . . , 9
+in the P1 ∖ {0, 1, ∞} domain. (Here the first five functions are given explicitly
+in § 10, and the four functions A6 (x), . . . , A9 (x) correspond to B6 (z), . . . , B9 (z) via
+the transformations of that section. Note that these last four functions only exist
+if there is a Q-linear relation between our three periods.) Consider Theorem 2.5.1
+for                                                             t
+                               0 1 1 1 1 1 1 1 1
+                      b :=                                          ,
+                               0 0 1 1 1 1 1 1 1
+hence
+                           σ1 = 0, σ2 = 1;     σ3 = · · · = σ9 = 2,
+and
+                 1 · 0 + 3 · 1 + (5 + 7 + 9 + 11 + 13 + 15 + 17) · 2   157
+           τ (b) =                                                   =     .
+                                          81                            81
+As explained in Remark 9.0.20, if we use the same contour as given in Defini-
+tion A.4.2 except pulled back to the X(2) domain, both the integral and the con-
+formal radius terms are doubled. Equivalently, they remain the same and the τ
+term is halved. Hence the corresponding bound we obtain in this case is:
+                                11.844 . . .
+                                                   = 9.833 . . . < 10.                (A.5.3)
+                          5.081 . . . − 2 · 157/81
+which comes close but is not a contradiction because this term is not less than 9.
+While this can be refined slightly (using the Bost–Charles integral and modifying
+the contour), it seems unlikely that one may reach a direct contradiction by our
+methods without involving added integrations; see Examples 7.4.9 and 7.5.9.     △
+A.6. A contour for the logarithm problem. We could literally use the same
+contour as above to complete the proof of Theorem C, except with a somewhat
+worse constant. Following the arguments of Section 14.4, it would suffice to find
+the ε such that the image of φ above excludes the regions where z is not too small
+and h(z) lies in D(0, ε2 /16) and also where h(z) lies outside D(0, ε−1 ). This leads
+to a choice of ε somewhere between 107 and 108 . However, a compromise between
+

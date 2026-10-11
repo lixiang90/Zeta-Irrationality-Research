@@ -1,0 +1,341 @@
+    Astérisque
+
+F. B EUKERS
+Irrationality proofs using modular forms
+Astérisque, tome 147-148 (1987), p. 271-283
+<http://www.numdam.org/item?id=AST_1987__147-148__271_0>
+
+
+
+
+    © Société mathématique de France, 1987, tous droits réservés.
+    L’accès aux archives de la collection « Astérisque » (http://smf4.emath.fr/
+    Publications/Asterisque/) implique l’accord avec les conditions générales d’uti-
+    lisation (http://www.numdam.org/conditions). Toute utilisation commerciale ou
+    impression systématique est constitutive d’une infraction pénale. Toute copie
+    ou impression de ce fichier doit contenir la présente mention de copyright.
+
+
+
+
+                      Article numérisé dans le cadre du programme
+                    Numérisation de documents anciens mathématiques
+                                 http://www.numdam.org/
+Société Mathématique de France
+Astérisque 147-148 (1987), p.271-283.
+
+
+
+
+             IRRATIONALITY PROOFS USING MODULAR FORMS
+
+                           by F.Beukers
+
+
+0. INTRODUCTION
+
+In the years following Apery's discovery of his irrationality proofs
+for c(2), s(3) (see [P]), i t has become clear that these proofs do not
+only have significance as irrationality proofs, but the numbers that
+occur in them serve as interesting examples for several phenomena in
+algebraic geometry and modular form theory. See [Ge][Bel,2][SB] for
+congruences of the Apery numbers and [Be2,3][BP] for geometrical and
+modular interpretations. Furthermore, i t turns out that Apery's proofs
+themselves are in fact simple consequences of elementary complex ana­
+lysis on spaces of certain modular forms. In the present paper we des­
+cribe this analysis together with some generalisations in Theorems 1
+to 5. For example, we prove that 8c(3)-5/5L(3)/Q(/5), where L(3)=
+  ^1 ^5^n ~'* Altnougn tne use of modular forms in irrationality proofs
+looks promising at first sight, the yield of new irrationality results
+thus far is disappointingly low. However, in methods such as this i t
+is easy to overlook some simple tricks that may give new interesting
+results.
+      The first section of this paper describes the general framework
+of the proofs. This section may seem vague at first sight, but in com­
+bination with the proof of Theorem 1 we hope that things will be clear.
+We have given the proof of Theorem 1 as extensively as possible in order
+to set i t as an example for the other proofs, where we omit some mi­
+nor details now and then.
+
+1. PRELIMINARIES
+
+In this section we shall describe the general principles which are
+used in the arguments of the following sections.
+
+                                  271
+                                     F. BEUKERS
+
+
+          Let t(q) = LO^g ^e a powerseries convergent for all |q|<l. Let
+w(q) be another analytic function on |q|<l. We like to study w as
+function of t . In general i t will be a multivalued function over which
+we have no control. However, we shall introduce some assumptions.
+First, tQ=0, t . ^ 0 . Let now q(t) be the local inverse of t(q) with
+q ( 0 ) = 0 . Choose w(q(t)) for the value of w around t = 0 . In order to de­
+termine the radius of convergence of the powerseries w(q(t))=£o wntn
+we introduce branching values of t . We say that t branches above tg,
+if either t^ is not in the image of t , or if t'(qQ)=0 for some q^
+with t(qQ)=tQ.In other words, t branches above t^, if the map t:
+{|q|<l}-> (C is not a local covering above tg. We call such a t^ a
+branching value of t . Now assume, that t has a discrete set of bran­
+ching values t 1 , t 2 , . . . where we have excluded zero as a possible value
+and suppose | t 1 | < | t ^ | < . . . . It is clear now that the radius of con­
+vergence is in general | t 1 | . We shall be interested in cases where
+the radius of convergence is larger than | t 1 | . Let y be a closed con­
+tour in the complex t-plane beginning and ending at the origin, not
+passing through any t^ and which encircles the point t^ exactly once.
+Suppose that analytic continuation of w(q(t)) along y again yields
+the same branch of w(q(t)). Then w(q(t)) can be continued analytical­
+ly to the disc | t | < | t 2 | with exception of the possible isolated sin­
+gularity t^. If w(q(t)) remains bounded around                we can conclude
+that the radius of convergence is at least | t 2 | . Our irrationality
+proofs consist exactly of the construction of such instances. The
+point of having a radius of convergence as large as possible consists
+of the following Proposition.
+
+PROPOSITION 1 . 1 . Let fQ(t),f1(t),...,fR(t) be powerseries in t . Sup­
+pose that for any ne E, i = 0 , 1 , . . . , k the n-th coefficient in the Tay-
+lorseries of            is rational and has denominator dividing d n [ l , . . . , n ] r
+where r,d are certain fixed positive integers and [ 1 , . . , n ] is the
+lowest common multiple of 1 , . . . , n . Suppose there exist real numbers
+6^^, 92 , . . . , 0k such that f()(t)+e1f 1(t)+62f2 (t) + . . .+0kfk(t) has radius
+of convergence p and infinitely many nonzero Taylor coefficients. If
+p>der, then at least one of e^,..,9^ is irrational.
+REMARK. Note that if k=l we have an honest irrationality proof.
+
+PROOF. Choose £>0 such that p-£>de v      . Let f (t) = ) a. t . Since
+the radius of convergence of fn(t)+6,f (t) + . . . + 6,f,(t) is p, we have
+
+                                          272
+                IRRATIONALITY PROOFS AND MODULAR FORMS
+
+
+
+for sufficiently large n, Ian +a e, + ...+a, e, |<(p — E) n. Suppose e ,
+                                       UN __l n J.       KR K                   1
+. . . ,6,K are all rational and have common denominator D. Then An =
+=Dd [ l , . . . , n ] | aon+ain9 i+ • * * +aknek I """s an inte9er smaller than
+Ddn[1,...,n]r(P-E) n. By the prime number theorem we have
+[1, . . . ,n] < e ^ + ^ n for sufficiently large n, hence | | <
+<D(de(1 + E)R/(P-E) )n. Since der (1 + £ ) ( P-E ) "'t<l this implies that Ar=0 for
+sufficiently large n, in contradiction with our assumption A ^0 f°r
+infinitely many n. Thus our Proposition follows.                         QE D
+The construction of the functions t(q) and w(q) will proceed using
+modular forms and functions. The values for which we obtain i r r a t i o ­
+nality results are in fact values at integral points of Dirichlet se­
+ries associated to modular forms.
+PROPOSITION 1.2. Let F(T) = £°°anqn , q=e27rlTbe a Fourier series con­
+vergent for |q|<1, such that for some k,Ne I ,
+
+                       F (-1/Nx) = e(-ix/N)KF(x) ,
+where E=+l. Let f(x) be the Fourier series
+                          f(T) =     ct
+                                       n n
+Let                                 k=T
+                                   oo A q
+                          L(F,s) = L s
+                                   l n
+AND FINALLY.
+                    h(x) = f(x) -              L(F,k-r-l)/n       r
+                                    0<r<^(k-2;    _       (2 T
+                                                             I IT )
+Then
+                        h(T) - D = (-l)k 1E(-iT/N)k 2h(-l/NT)
+where D=0 if k is odd and D = L(F,^k) (27rix)^k 1/(^k-l) ! if k is even.
+Moreover, L(F,^k)=0 if E=-l.
+
+PROOF. We apply a lemma of Hecke, see [W section 5] with
+G(x) = eF(x)/(i/N)k to obtain
+                                                 k-2 L(F,k-r-l) .     ,r
+             f(x) - E(-l)k ^-ix/N)3^ 2f(-l/Nx)
+                                                         -n     (2TTIT)
+                                                 r=0
+Split the summation on the right hand side into summations over
+r<^k-l, r>^k-l and, possibly, r=^k-l. For the region r>^k-l we apply
+the functional equation
+           L(F,k-r-l) = E ,(-1)     . /...k-2/ (- lNk-r-2/n
+                             .,k, (-l/N)          -)         . xk-2r-2 L(F,r+l)
+                                                          (2TTI)
+               r!                                                      (k-r-2) :
+                                     273
+                               F. BE UKER S
+
+
+and substitute r by k-2-r.
+                                                         Q.E.D.
+2. THE GROUP ri(6)
+
+This group is exactly the subgroup of SL(2,ffi) of all matrices (a ^)
+with aEdEl(mod 6), CE0(mod 6). Its fundamental domain can be pictured
+as below. A complete set of inequivalent cusps is given by 0 ,1 /2 ,1/3 , .
+                                   They are regular and have widths 6,
+                                   3,2,1 respectively. Consider the
+                                   following function.
+                                           Y(T) = n ( 6 T ) ^ n ( T ) 4
+                                                   n(2T)n(3T)4
+                                   where
+                                            n (T) = q1/24 ffd-q11)
+                                                 q=e2 TI i T Imi>
+                                                              T 0. r.
+  -¡i -Vi      o       '/¿ v.
+That it is a modular function on 1^(6) can be checked using the trans-
+formation formula for r\ (x) in [Ra,Ch9]. Since y(x) has only one simple
+zero in the fundamental domain it generates the field of modular
+functions on r1(6). Moreover, y(0)=l/9, y(l/3)=l, y(l/2)=«>, y(«>)=0.
+The function y(-l/6x) is again invariant on 1^(6) and one easily
+checks that           Y(-1/6T) = V(T)-1/9
+           (1)                     y(T)-1
+Hence the function
+                      t(T) = y(x) l-9y (T)
+                                   1-Y(T)
+is invariant under the involution T->-1/6T . Moreover,
+                        A(6T)A (T)                ) ( 1 - 6n+5,-l2
+                                       oo,. 6n+lN12,..
+                                    : qn(1-q              q )
+               t(T) =
+                       ,A(3T)A(2T)     0
+which is checked by noticing that (A(6T)A(T)/A(3T)A(2T)) 2 is modular
+with respect to 1^(6), invariant under T-*-1/6T and its zeros and
+poles coincide with those of t(*r).
+PROPOSITION 2.1. The function t(x) maps the shaded open area in the
+picture below univalently onto the upper half plane and satisfies
+       t(i») = 0, t(i//6) = (/2-1)4, t(2/5+i/5/6) = (/2+1)4, t(^) = ».
+
+
+
+
+                                   274
+                   IRRATIONALITY PROOFS AND MODULAR FORMS
+
+
+
+
+         sc
+
+                                   X + i(r)
+
+
+                                  ssc
+                                                 ww    xss Y (i//6)
+    -¡i -Vi o '/¿ v. dd d
+PROOF. That t(i-«>)=0, t (%)=«> can be seen from the values y(i<»)=0, yih) =
+«>. From (1) i t follows that for x=i//6 and YQ=Y (i//6) , we have
+YQ = (YQ-1/9)/(YQ~1), hence YQ = 1+2/2/3 and correspondinglY, t(i//6)=
+(/2+1)^. The same principle can be applied to obtain t(2/5+i/5/6) =
+(/2+1)4. To decide which sign should be taken, one estimates t ( i / / 6 )
+and t(2/5+i/5/6) numericallY and obtain the values of our Proposition.
+Furthermore, t(x) assumes every value at most once in the union of I
+and I I . Finally, t(x) is real on the boundary of I. Our Proposition
+now follows.
+                                                        Q.E.D.
+In the theorems and proofs that follow we let M^.(r1(6)) be the space
+of modular forms of weight k with respect to 1^(6) , and let
+      E4(T) = 1 + 240 )>3(n)qn  , E2(T) = 1-24 [o(n)qn
+                     1                        1
+be the standard Eisenstein series.
+
+THEOREM 1. c(3) is irrational.
+
+PROOF. Let
+             40F(T) = E4(t)-36E4(36T)-7(4E4(2T)-9E4(3T))
+             24E(T) = -5(E2(t)-6E2(6T))+2E2(2T)-3E2(3T) .
+Notice that F ( T )eM4 (r1 (6 ) ) and F (-1/6 T ) =-36 T 4F ( T ) , F(i«0=0 and
+E(T)eM2(r1(6)), E(-1/6T)=-6T2E(T). The Dirichlet series corresponding
+to F(T) reads
+            L(F,s) = 0L0 6a~s(n) - 36 6a.(n) - 28 6a.(n) + 63 6a3(n)
+                        l n              (6n)fa        (2n)S         (3n)S
+
+
+                                        275
+                                F. BEUKERS
+
+
+
+                =6(l-62 S-7-22"S+7-32 S)c(s)c(s-3) .
+Define f (T) by (^)3f(R) = (2Tri)3F(X) , f (i~)=0. From Proposition 1.2
+and the fact that F(-1/6X)=-36X4F(T) follows
+                  6X2(f(-1/6T)-L(F,3))= -(f(T)-L(F,S))
+and since L(F,3)=6•(-1/3)c(3)c(0)=c(3), we have
+                 6X2(f (-l/6X)-c(3)) = -(f(T)-C(3)) .
+                                 2
+Multiplication with E(-l/6X)=-6X E(X) yields
+     (2)         E(-l/6X)(f(-l/6X)-c(3)) = E(X)(f(X)-c(3)) .
+The function E(X)(f(X)-^(3)) can be considered as a multivalued
+function of t=t(X). We choose i t at t=0 as follows.From the expansion
+t=qn°°(l-q6n+1)12(l-q6n+5)"12 = q-l2q2+66q3-220q4+495q5-... one infers
+      1
+the inverse   expansion q=t+12t 2+222t 3+ . . . . Then, from E(X)=l+5q+13q2+
+. . . one finds E(t)=l+5t+73t2+l445t3+... and similarly, E(t)f(t) =
+= 6t+(351/4)t2+... .
+       By construction one notes that E(t)eFFIUTUANDE (t) f (t) =Y°°a tn ,
+                        3                                          1n
+where an4E ffi/[l,...,n] . Since the inverse function t->X branches at
+t=(/2-l) one expects the radius of convergence of E(T)(f(t)-c(3))
+              4
+to be (/2-1) . However, by the property (2), the function t->
+E(t)(f(t)-c(3)) has no branch point at t=(/2-l)4, and i t s radius of
+convergence equals at least the next branching value, which is (/2+1)4.
+Furthermore, i t cannot be a polynomial in t, since then f(X)~c(3)
+would be a modular form of weight -2, which is impossible. We now
+apply Proposition 1.1 with-e1=c(3) to conclude c(3)/Q.
+                                                             Q.E.D.
+REMARK. Note that 1,5,73,14 4 5 , . . . are exactly Apery's numbers for C(3).
+THEOREM 2. Let F(T)=TI(T) 2n(2x) 2n(3x) 2n(6X) 2 and L(F,s) the correspon-
+ding Dirichlet series. Then at least one of the numbers IT L(F,2) and
+L(F,3) + (47L(F,2) c (3)/48TT2) is irrational.
+
+PROOF. The function F(T) is in M ^ r ^ ) ) , i t is a cusp form, and
+F(-l/6x)=36x4F(X). Let f(X) be the Fourier series such that (-J-)3f(T)=
+        3
+= (2iri) F(X), f(i«)=0. Then i t follows from Proposition 1.2 that
+
+
+
+                                   276
+                     IRRATIONALITY PROOFS AND MODULAR FORMS
+
+
+
+            (3)      6T2(f ( - 1 / 6 T ) - L ( F , 3 ) ) = f (x)-L(F,3)-L(F,2)2TTiT.
+Consider also
+
+        240G(T) = 13(E4(T)+36E4(6T))-37(4E4(2T)+9E4(3T)) .
+                                            4
+It has the properties G(i°°)=0, G(-1/6T)=36T G(T). The corresponding
+Dirichlet series reads,
+              L(G,s) = (13 + 13-62""S-37-22_S-37 -32"S)C(S)C(S-3)
+Letting (^-)3g(^) = (2iTi)3G(T), g(i«>)=0, we have
+              6T2 (g(-l/6T)-L(G,3) ) = g(T)-L(G,3)-L(G,2)27riT ,
+hence,
+            (4)    6T2(g(-l/6T)~c(3) ) = G(T)~c(3)+48c(2)2TriT .
+Elimination of 2TT1T from (3) and ( 4 ) gives that the function h(x) =
+4 8 c ( 2 ) (f (T)-L(F,3))+L(F,2) ( g ( T ) ~ c ( 3 ) ) behaves like 6T2h (-1/6T )=h ( T ) .
+Now consider
+                  E(T)   = E2(T)-2E2(2T)+6E2(6T)-3E2(3T).
+It is in M2(r1(6)) and we have E(-1/6T)=6T E(T). Consequently,
+E(-1/6T)h(-1/6T)=E(T)h(T) and by an argument similar to the one in
+Theorem 1 we find that
+             4 8 c ( 2 ) f (t)E(t)+L(F,2)g(t)E(t)-(48c (2)L(F,3)+L(F,2)^-c (3) )E(t)
+is a power series in t with radius of convergence (/2+I)4. Again the
+denominator of the n-th coefficient in the powerseries of E ( t ) f ( t ) ,
+E(t)g(t),E(t) divides [ 1 , . . . , n ] . We can now apply Proposition 1.1
+to obtain our Theorem.
+                                                              Q.E.D.
+THEOREM 3 . Let
+                                             COz _ nN 3 . _ 3nN 3 d + q 3 n ) 9 / 2
+               n /n9IT)n9 (6T)           = q n (1-q ) (1-q )
+       n=l a q   V(2T)TI3(3T)               n=l                   (l+qn)3/2
+
+     ^ n7/n2 is irrational.
+Then y°°a
+
+PROOF.Consider the product
+
+                          E(T) =
+                                   n7(2T)n7(3T)
+                                   n ^(T) n^(6T)
+
+
+
+                                           277
+

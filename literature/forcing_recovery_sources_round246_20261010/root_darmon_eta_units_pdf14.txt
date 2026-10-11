@@ -1,0 +1,65 @@
+14 HENRI DARMON, MICHAEL DAUB, SAM LICHTENSTEIN AND VICTOR ROTGER
+m = [Γ(1) : Γ0(N)]. This gives an upper bound on the number of matrices needed, although
+in practice considerably fewer are necessary. Using these it is simple linear algebra to produce
+the desired symplectic basis ωg,1,...,ω g,2k for each isotypic component H1
+dR(X/Q)[g].
+Remark 4.2.3. FIXME: Add a remark about the alternative method which avoids computing
+Hecke actions on diﬀerentials explicitly. (M-symbols, periods, blah blah) Note from Mike: I
+have been unable to implement this method without ending up with complex matrices, rather
+than ones with rational entries. Sage cannot compute eigenspaces of complex matrices, so I’m
+not sure if this method can produce explicit bases of isotypic components. The computation
+can be done without explicitly ﬁnding isotypic bases, but it is far less eﬃcient.
+4.3. Modular units and η-products. The preceding discussion raises the question of how
+to compute the q-expansion about ∞ of a rational function u used to write down an initial
+choice of basisB for H1
+dR(X/Q).
+Recall that a modular unit (for Γ0(N)) is a modular function u∈ Q(X)× whose associated
+divisor is supported on the cusps of X = X0(N). Denote by U the multiplicative group of
+modular units.
+Deﬁnition 4.3.1. The eta group Uη is the subgroup of Q(X)× of rational functions of the
+form
+u(q) =λ
+∏
+0<d|N
+η(qd)rd,
+whereλ∈ Q×,η(q) =q1/24 ∏
+n>0(1−qn) is the classical eta function and{rd}d|N is a collection
+of integers satisfying the following conditions.
+i. ∑
+d|Nrd = 0,
+ii. ∏
+d|Ndrd∈ Q× is a square,
+iii. (nd) := AN· (rd) is a vector (indexed by divisors d of N) of integers divisible by 24,
+where AN is the σ(N)×σ(N)-matrix whose entry indexed by (d,d′) is N·(d,d′)2
+dd′(d′,N/d′).
+Work of Newman and Ligozat shows that such functions are indeed modular units on X;
+that is, Uη⊂U. In fact more is true:
+Proposition 4.3.2. Q⊗ZUη = Q⊗ZU.
+Proof. It easy to see that the set {a
+d : d| N,a ∈ (Z/(d,N/d )Z)×}⊂ P1(Q) is a complete
+set of representatives of the cusps of X. The subspace Q⊗Uη ⊂ Q⊗U coincides with
+Q⊗U′, where U′⊂ U consists of modular units that have the same valuation at any two
+cusps a/d, a′/d with the same denominator; cf. [G, Prop. 2]. This implies the proposition in
+light of the next lemma, since an element u∈U⊂ Q(X) has the same valuation at any two
+Galois-conjugate cusps. □
+Lemma 4.3.3. Let d|N. Then the cusp 1/d is rational if and only if (d,N/d ) = 1 . More
+generally, the Galois orbit of the cusp 1/d is Gal (¯Q/Q)· 1
+d ={a
+d : a∈ (Z/(d,N/d )Z)×}.
+Proof of the lemma. We prove the ﬁrst statement using the results of [Stv,§1.3]. Namely, it is
+known that the cusps ofX are rational overQ(ζN), and the Galois action of Gal (Q(ζN))/Q)≃
+(Z/NZ)× can be described explicitly as follows [Stv, Thm. 1.3.1]: givenb∈ (Z/NZ)×, letτb be
+the automorphism of Q(ζN) that sends ζN↦→ζb
+N. If a∈ Z is chosen so that ab≡ 1 (mod N)
+thenτb sends the cusp 1
+d to 1
+ad = a
+d. Hence the Galois orbit of 1
+d is{a
+d,a∈ (Z/NZ)×}, and it can
+be shown by an elementary argument that this set of cusps is equal to{a
+d,a∈ (Z/(d,N/d )Z)×}
+in Γ0(N)\P1(Q). □
+By the Riemann-Roch theorem, there exist nonconstant rational functions on X that are
+regular away from∞. The proposition implies that an integer power of such a function belongs
+to the subgroup Uη⊂U, which yields the following.

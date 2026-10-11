@@ -1,0 +1,868 @@
+
+===== PHYSICAL PAGE 175 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+175
+lies in ZJxK if a is odd and in ZJx/2K otherwise, and satisfies the first order ODE
+(1 −2ax + x2)y′ + (x −a)y = 0.
+(14.0.7)
+There is a unique solution to the non-homogenous ODE
+(1 −2ax + x2)y′ + (x −a)y = 1
+with coefficients in Q that is holomorphic and vanishes at 0; it is given by
+H(a, x) :=
+1
+√
+1 −2ax + x2
+Z x
+0
+dt
+√
+1 −2at + t2
+=
+1
+√
+1 −2ax + x2
+
+log
+
+a −x −
+p
+1 −2ax + x2
+
+−log(a −1)
+
+= x + ax2
+2
++ (3a2 −1)x3
+6
++ . . . =
+∞
+X
+n=0
+vn(a)xn ∈QJxK,
+(14.0.8)
+and moreover the coefficients vn(a) satisfy [1, 2, . . . , n]vn(a) ∈Z if a is odd and
+satisfy [1, 2, . . . , n]2nvn(a) ∈Z otherwise. By (14.0.8), we have the formula
+H(a, x) −1
+2 log
+a + 1
+a −1
+
+A(a, x) =
+1
+√
+1 −2ax + x2
+Z x
+a−
+√
+a2−1
+dt
+√
+1 −2at + t2 ,
+whose right-hand side overconverges at the singularity x = a −
+√
+a2 −1 due to
+multiplying (−1) monodromies of both factors after an analytic continuation along
+a simple loop enclosing that singularity. This is the same mechanism for overcon-
+vergence as in § 2.11.12, as well as in § 11.1 with the canceling automorphy weights
+in the Eisenstein series A and the Eichler integral B −1
+2L(2, χ−3). The case at
+hand is readily seen to be equivalent, upon notational changes, to the respective
+ODEs (3.3.12) and formulas (3.3.8) arising from the diagonal Hermite–Pad´e table
+for the logarithm function, which we recounted in § 3.3.7 and § 3.3.13.
+It follows that
+lim
+n→∞
+vn(a)
+un(a) →1
+2 log
+a + 1
+a −1
+
+(14.0.9)
+sufficiently quickly to prove the irrationality of this quantity for any odd a ≥3 or
+any even a ≥4 in light of the inequalities
+5.828 . . . = 3 + 2
+√
+2 > e = 2.718 . . . ,
+7.872 . . . = 4 +
+√
+15 > 2 · e = 5.43656 . . .
+If we let a = 1 + 2m, then
+log
+a + 1
+a −1
+
+= log
+
+1 + 1
+m
+
+,
+giving the irrationality of (14.0.5), as promised (with a pretty decent irrationality
+measure, improved further by Chudnovsky [Chu79, Chu83b] by a closer study of
+this argument).
+Now let us consider the arithmetic of the quantities
+log
+a + 1
+a −1
+
+log
+b + 1
+b −1
+
+(14.0.10)
+for pairs of integers a ̸= b. From (14.0.9), it is obvious that
+lim
+n→∞
+vn(a)
+un(a) · vn(b)
+un(b) →1
+4 log
+a + 1
+a −1
+
+log
+b + 1
+b −1
+
+.
+(14.0.11)
+
+===== PHYSICAL PAGE 176 =====
+176
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+However, this certainly does not converge fast enough to prove irrationality of
+the right-hand side through any elementary analysis.
+We shall nevertheless see
+that as long as a/b is sufficiently close to 1, this quantity is approachable via our
+new methods based on the function-theoretic properties of the generating series
+themselves, and basic properties of the Hadamard product operation which allows
+to construct new G-functions with the desired Ap´ery limit.
+For each pair of integers a, b ∈Z ∖{−1, 0, 1}, let us write
+ηa := 1
+2 log
+a + 1
+a −1
+
+,
+ηb := 1
+2 log
+b + 1
+b −1
+
+,
+ηa,b := ηaηb := 1
+4 log
+a + 1
+a −1
+
+log
+b + 1
+b −1
+
+.
+We shall assume that a ̸= ±b, as the irrationality and, indeed, the transcendence
+of ηa,a = −ηa,−a = η2
+a is already known. Our approach to the arithmetic properties
+of the product of the Ap´ery limits ηa,b = ηaηb is via the Hadamard product of the
+underlying G-functions.
+14.1. Hadamard products and Ap´ery limits. Let ⋆denote the Hadamard
+product operation on power series: (P anxn) ⋆(P bnxn) := P anbnxn. The func-
+tion
+PA(x) := A(a, x) ⋆A(b, x) =
+X
+un(a)un(b)xn
+(14.1.1)
+satisfies the following ODE M(PA(x)) = 0:
+(−1 + x)x(1 + x)(1 −4abx −2x2 + 4a2x2 + 4b2x2 −4abx3 + x4)y′′
++ (−1 + 8abx + 5x2 −12a2x2 −12b2x2 + 16abx3 −7x4 + 4a2x4 + 4b2x4 −8abx5 + 3x6)y′
++ (ab −(−1 + 3a2 + 3b2)x + 8abx2 −(2 + a2 + b2)x3 −abx4 + x5)y = 0.
+(14.1.2)
+The points x = 1 and x = −1 are only apparent singularities, as long as (a−b) ̸= 0
+and (a + b) ̸= 0 respectively. This follows both by general properties [Had1899] of
+the Hadamard product but can also be verified directly by computing the indicial
+equation (which is R(R −2) = 0), and then verifying that there are two linearly
+independent power series solutions. For example, for a putative solution P cn(x +
+1)n, the coefficients cn satisfy a recurrence of the form
+(a + b)2n(n −2)cn = 12(a + b)2cn−1 −4(a + b)2(n −2)cn−1(7n −9)(n −2)
++ 6(a + b)2cn−2 + (n −2)cn−2(. . .) + . . . ,
+which implies that there is at least one solution of the form x2 + . . ., but there is
+another of the form:
+1 + (x + 1)
+2
+−(x + 1)3
+4
++ . . . ∈QJa, b, x + 1K,
+and the case of x = 1 is similar. The four roots of the quartic are exactly the
+products of the singularities of the order one ODEs, namely
+(a ±
+p
+a2 −1) × (b ±
+p
+b2 −1).
+Basic Remark 14.1.3. If a and b are large and a/b is very close to one, then the
+four nonzero finite singularities of (14.1.2) are grouped as follows:
+(1) One singularity α very close to 0.
+(2) Two singularities very close to 1.
+
+===== PHYSICAL PAGE 177 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+177
+(3) One very large singularity (“close to ∞”).
+In addition to these, 0 and ∞themselves are also (essential) singularities. We shall
+construct (assuming a linear relationship over Q between the quantities (14.0.3))
+a function H ∈QJxK with denominator type τ = [1, 2, 3, . . . , n]2, satisfying a non-
+homogenous version of (14.1.2), and overconvergent beyond α. When considering
+functions on P1 ∖{0, 1, ∞} with τ = [1, 2, . . . , n]2, we are required by § 2.9.5 to
+choose an auxiliary function φ : D →C ∖{1} with φ(0) = 0 and φ−1(0) = 0.
+If we restrict φ to the disc D(0, 1 −ε) for any ϵ ∈(0, 1/2], then the image of φ
+will avoid a small open ball containing 1 and an open ball containing ∞, and
+satisfy #φ−1(α) = 1. This is the type of setting where our holonomy bounds can be
+applied, for we can include not only the (presumably non-existent!) functions H(x)
+and their derivatives, but also the pure functions on P1 ∖{0, 1, ∞} the we devised
+in § 10.
+As a practical matter, our maps φ are of the form λ ◦ψ or, in the
+equivalent P1 ∖{0, 4, ∞} setting, h ◦ψ for some map ψ : D →D, which we take
+as the Riemann map of a suitably chosen domain in D.
+But even though the
+function λ for example avoids 1 on D, to avoid the values within ε of 1 requires
+taking ψ to have significantly smaller conformal radius unless ε is extremely small.
+For example, if the image of ψ(D) inside D included the point 3/4, then φ = λ ◦ψ
+on D would already include the value
+λ(3/4) = 0.9999999999999798332 . . .
+This numerology is ultimately what forces the hypothesis that |m/n −1| is very
+small.
+△
+14.1.4. The overconvergent space. We now consider solutions to a non-homogenous
+version of the product ODE (14.1.2). Denoting the corresponding differential op-
+erator of (14.1.2) by M, then we also have the following identities:
+M(H(a, x) ⋆A(b, x)) = −b + 3ax −3bx2 + ax3,
+M(A(a, x) ⋆H(b, x)) = −a + 3bx −3ax2 + bx3,
+M(H(a, x) ⋆H(b, x)) = −1 + 2x2 −x4.
+We further claim that the functions:
+Pa := (H(a, x) −ηaA(a, x)) ⋆A(b, x) =
+X
+(vn(a) −ηaun(a))un(b)xn,
+Pb := A(a, x) ⋆(H(b, x) −ηbA(b, x)) =
+X
+un(a)(vn(b) −ηban(b))xn,
+Pab := H(a, x) ⋆H(b, x) −ηa,bA(a, x) ⋆A(b, x)
+=
+X
+(vn(a)vn(b) −ηa,bun(a)un(b)) xn
+=
+X 
+ηaun(a) (vn(b) −ηbun(b)) + ηb (vn(a) −ηaun(a)) un(b)
+	
+xn
++
+X
+(vn(a) −ηaun(a)) (vn(b) −ηbun(b))xn
+(14.1.5)
+are overconvergent beyond the smallest cusp (a −
+√
+a2 −1)(b −
+√
+b2 −1).
+This
+follows from the bounds
+|vn(a) −ηaun(a)| = O((a −
+p
+a2 −1)n(1−ϵ)),
+|vn(b) −ηbun(b)| = O((b −
+p
+b2 −1)n(1−ϵ)),
+
+===== PHYSICAL PAGE 178 =====
+178
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+together with
+|vn(a)|, |un(a)| = O((a +
+p
+a2 −1)n(1+ϵ)),
+|vn(b)|, |un(b)| = O((b +
+p
+b2 −1)n(1+ϵ)).
+Another way to express the power series decomposition of Pab in the last two lines
+of (14.1.5) is as follows:
+Pab = ηaA(a, x) ⋆(H(b, x) −ηbA(b, x)) + ηb (H(a, x) −ηaA(a, x)) ∗A(b, x)
++ (H(a, x) −ηaA(a, x)) ⋆(H(b, x) −ηbA(b, x))
+The general fact [Had1899] that we exploited here is the overconvergence of the
+Hadamard product of any set of holonomic power series, at least one among which
+is an overconvergent branch in the sense of § 2.9. This was essentially combined
+with the Jacobson identity 1 −xy = (1 −x) + (1 −y) −(1 −x)(1 −y), familiar for
+example from the proof of the nilpotence of the augmentation ideal of the Fp-group
+ring of a finite p-group.
+14.1.6. Construction of the unlikely G-function. Assume now and until the end of
+the proof of Theorem 14.0.1 that there exist integers r0, ra, rb, and rab not all zero
+such that
+raηa + rbηb + rabηa,b = r0.
+(14.1.7)
+Then the linear combination
+P := raPa + rbPb + rabPab
+= raH(a, x) ⋆A(b, x) + rbA(a, x) ⋆H(b, x)
++ rabH(a, x) ⋆H(b, x) + r0A(a, x) ⋆A(b, x)
+=
+X
+cn(a, b)xn ∈QJxK
+(14.1.8)
+is also from the overconvergent space § 14.1.4, but now it has rational coeffi-
+cients. This is the G-function, contingent upon our absurd hypothesis of a lin-
+ear dependency (14.1.7), that will ultimately be rejected by our holonomy bounds.
+The analytic properties of this unlikely function follow from the overconvergence
+in § 14.1.4; we now collect the arithmetic properties. If both a and b are odd,
+then un(a), un(b) ∈Z and moreover both [1, 2, . . . , n]vn(a) and [1, 2, . . . , n]vn(b) lie
+in Z. Therefore, in the Hadamard products construction,
+[1, 2, . . . , n]2cn(a, b) ∈Z.
+Moreover, with a = 1 + 2m and b = 1 + 2n, the non-existence of a linear relation-
+ship (14.1.7) is exactly the thesis of Theorem C. (The conditions a, b ∈Z∖{−1, 0, 1}
+become m, n ∈Z ∖{−1, 0}.) Thus to prove Theorem C it suffices to assume the
+existence of a relationship (14.1.7) and a function P(x) as in (14.1.8), and establish
+a contradiction.
+Definition 14.1.9. With ra, rb, and rab satisfying (14.1.7), let P(x) be defined as
+in equation (14.1.8), and let
+G(y) := P(x) + P
+
+x
+x −1
+
+∈QJyK.
+With PA(x) = A(a, x) ⋆A(b, x) as in (14.1.1), let
+GA(y) := PA(x) + PA
+
+x
+x −1
+
+,
+
+===== PHYSICAL PAGE 179 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+179
+hence GA(y) ∈ZJyK if a, b are odd, and GA(y) ∈Z[1/2]JyK otherwise.
+△
+As in the proof of Theorem A, we will work with the Y0(2) picture in the dictio-
+nary of § 9, and refute the existence of a G-function G ∈QJyK (contingent upon the
+existence of a relation (14.1.7)), of the denominators type [1, . . . , 2n]2 and “close to”
+the P1 ∖{0, 4, ∞} type that we studied in § 10. We record the following properties
+of G in Proposition 14.1.11 below, after the following definitions:
+Definition 14.1.10. Let ya±,b± denote the y := π(x) = x +
+x
+x −1 images of
+x =
+
+a ±
+p
+a2 −1
+ 
+b ±
+p
+b2 −1
+
+,
+where all four pairs of signs are being considered. Let L denote the pushforward
+of M under π, so that L(GA(y)) = 0.
+△
+Recall that our present discussion is conditional on supposing a Z-linear rela-
+tion (14.1.7).
+At this point, we make the additional assumption that the inte-
+gers a, b ∈Z ∖{±1} are odd.
+Proposition 14.1.11. With a, b ∈Z ∖{±1} odd, the functions G(y) ∈QJyK
+and GA(y) ∈QJyK of § 14.1.9 have denominator types [1, . . . , 2n]2 and 1, respec-
+tively.
+Moreover, L(GA(y)) = 0 and L(G(y)) ∈Q[y] for some non-zero linear
+differential operator L over Q(y) satisfying:
+(1) L has no singularities besides y ∈
+
+0, 4, ya±,b±, ∞
+	
+.
+(2) L has Z/2 local monodromy around the singularity y = 4.
+We shall write down L explicitly in § 14.2 below; the exact form of the polyno-
+mial L(G(y)) ∈Q[a, b, y] can be computed but will not be important.
+14.2. The differential equation L(GA) = 0. Before giving the statement and
+proof of Lemma 14.3.1 (the analog of of Lemma 12.1.1), we shall examine the
+ODE L(GA) = 0 in more detail. Because of the length of this computation, it
+makes more sense to present it separately rather than interweave it with the proof of
+Lemma 14.3.1, compared to the corresponding facts concerning the Zagier functions
+which are proved during the proof of Lemma 12.1.1. However, the reader may well
+want to look ahead to the statement of Lemma 14.3.1 to see where we are going.
+One can compute from (14.1.2) the following explicit form of L:
+L(GA) =
+4
+X
+i=0
+ci(y)G(i)
+A (y) = 0,
+where ci(y) are certain polynomials with
+c0(y) = R12(y)
+c1(y) = R16,A(y)
+c2(y) = yR16,B(y)
+c3(y) = y2(y −4)R15(y)
+c4(y) = (y −4)2y3R4(y)R10(y).
+(14.2.1)
+
+===== PHYSICAL PAGE 180 =====
+180
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+Here Rd(y) denotes an irreducible polynomial of degree d (with respect to y)
+in Q(a, b, y), and the subscripts A and B denote that R16,A and R16,B are dis-
+tinct. The polynomial
+(1 −x)4R4
+
+x +
+x
+x −1
+
+has (a±
+√
+a2 −1)(b±
+√
+b2 −1) as 4 of its 8 roots, together with the images of these
+roots under the involution w(x) = x/(x −1). In particular, the roots of R4(y) are
+the singularities ya±,b± of L. The polynomial R4(y) is given explicitly by
+R4(y) = 1 + 4y −8a2y −4aby −8b2y + 16a2b2y + 4y2 −12a2y2 + 16a4y2
++ 20aby2 −16a3by2 −12b2y2 −16ab3y2 + 16b4y2 −8a2y3 + 16aby3
+−16a3by3 −8b2y3 + 32a2b2y3 −16ab3y3 + 4a2y4 −8aby4 + 4b2y4,
+Unlike with R4(y) or the other accompanying powers of y and (y −4) appearing
+in c4(y) of (14.2.1), the roots of R10(y) are not genuine singularities of L. More
+precisely, this is true if the roots of R10(y) are distinct from those of R4(y)y(y −4),
+and this will hold under our assumptions by Lemma 14.2.6 and Lemma 14.2.4
+
+===== PHYSICAL PAGE 181 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+181
+proved below. The polynomial R10(y) is given explicitly by
+4a2b2 + 9y −27a2y −102aby + 144a3by −27b2y + 207a2b2y −128a4b2y
++ 144ab3y −160a3b3y −128a2b4y + 64y2 −93a2y2 + 228a4y2 −284aby2 + 740a3by2
+−992a5by2 −93b2y2 −818a2b2y2 −16a4b2y2 + 740ab3y2 + 1208a3b3y2 + 228b4y2 −16a2b4y2
++ 64a4b4y2 −992ab5y2 + 164y3 −132a2y3 −804a4y3 + 432a6y3 −100aby3 + 1218a3by3
++ 2360a5by3 −1536a7by3 −132b2y3 −1108a2b2y3 −856a4b2y3 + 1856a6b2y3 + 1218ab3y3
+−3120a3b3y3 −448a5b3y3 −804b4y3 −856a2b4y3 −16a4b4y3 + 2360ab5y3 −448a3b5y3 + 432b6y3
++ 1856a2b6y3 −1536ab7y3 + 168y4 −18a2y4 −1476a4y4 + 432a6y4 −108aby4 −840a3by4
++ 688a5by4 + 384a7by4 −18b2y4 + 4384a2b2y4 −8864a4b2y4 + 4384a6b2y4 −840ab3y4
++ 15744a3b3y4 −11744a5b3y4 −1476b4y4 −8864a2b4y4 + 13920a4b4y4 + 688ab5y4 −11744a3b5y4
++ 432b6y4 + 4384a2b6y4 + 384ab7y4 + 32y5 + 180a2y5 + 2467a4y5 + 792a6y5 −720a8y5
+−424aby5 −4228a3by5 + 440a5by5 + 1824a7by5 + 180b2y5 + 3554a2b2y5
+−15928a4b2y5 + 5104a6b2y5 −4228ab3y5 + 29392a3b3y5 −25088a5b3y5 + 2467b4y5
+−15928a2b4y5 + 37760a4b4y5 + 440ab5y5 −25088a3b5y5 + 792b6y5 + 5104a2b6y5 + 1824ab7y5
+−720b8y5 −32y6 −336a2y6 + 258a4y6 −3840a6y6 + 480a8y6 + 736aby6 + 1064a3by6
++ 6680a5by6 −4320a7by6 −336b2y6 −2676a2b2y6 + 6976a4b2y6 + 10688a6b2y6 + 1064ab3y6
+−19632a3b3y6 −12256a5b3y6 + 258b4y6 + 6976a2b4y6 + 10816a4b4y6 + 6680ab5y6 −12256a3b5y6
+−3840b6y6 + 10688a2b6y6 −4320ab7y6 + 480b8y6 −576a2y7 −1392a4y7 + 4368a6y7 + 1152aby7
++ 5312a3by7 −12848a5by7 + 576a7by7 −576b2y7 −7840a2b2y7 + 12912a4b2y7 −1104a6b2y7
++ 5312ab3y7 −8864a3b3y7 −768a5b3y7 −1392b4y7 + 12912a2b4y7 + 2592a4b4y7 −12848ab5y7
+−768a3b5y7 + 4368b6y7 −1104a2b6y7 + 576ab7y7 + 192a2y8 + 168a4y8 −960a6y8
+−384aby8 −864a3by8 + 1568a5by8 + 192b2y8 + 1392a2b2y8 + 2368a4b2y8 −288a6b2y8
+−864ab3y8 −5952a3b3y8 + 1152a5b3y8 + 168b4y8 + 2368a2b4y8 −1728a4b4y8 + 1568ab5y8
++ 1152a3b5y8 −960b6y8 −288a2b6y8 + 160a4y9 −640a3by9 + 448a5by9 + 960a2b2y9
+−1792a4b2y9 −640ab3y9 + 2688a3b3y9 + 160b4y9 −1792a2b4y9 + 448ab5y9 −32a4y10
++ 128a3by10 −192a2b2y10 + 128ab3y10 −32b4y10.
+We also find that
+c3(y)
+c4(y) = d
+dy log
+(y −4)3y5R4(y)3
+R10(y)
+
+.
+We compute that the discriminant of R10(y) has the form (up to an element of Q×):
+∆y(R10(y)) = (a −b)12(a + b)6(1 + 4a2 −4ab)(1 + 4b2 −2ab)
+× (−3 + 4a2 −4ab + 4b2)Φ14(a, b)Φ79(a, b),
+(14.2.2)
+where Φd(a, b) ∈Q(a, b) is irreducible, satisfies Φd(a, b) = Φd(b, a), and is of de-
+gree d when considered as a univariate polynomial in either a or b. We also compute
+the resultant Resy(R4(y), R10(y)) to be, up to a non-zero rational scalar; equal to
+(a −b)8(a + b)6(1 + 4a2 −4ab)(1 + 4b2 −2ab)
+× (−3 + 4a2 −4ab + 4b2)2(9 + 16a2 −40ab + 16b2)Φ26(a, b).
+(14.2.3)
+
+===== PHYSICAL PAGE 182 =====
+182
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+It is easy to verify (reduce modulo 2) that none of the quadratic factors vanish for
+integer a, b ∈Z and any of the Φ above. One strongly suspects that there are no
+other integral solutions to Φd(a, b) = 0 for the other d except for certain degenerate
+solutions for some of these polynomials when a = b or a = −b. The general Siegel
+theorem [Zan14, § II.I], see also [BG06, Thm. 7.3.9], certainly guarantees that every
+irreducible nonrational affine algebraic curve has at most a finite number of integral
+points; and here, as each of the polynomials Φ14, Φ26, and Φ79 turns out to have
+its highest degree homogeneous piece divisible by ab(a −b) (the degrees of these
+polynomials are, respectively, 18, 34, and 92), and hence is not proportional to a
+power of an irreducible polynomial over Q, Runge’s method [BG06, § 9.6.5] (see
+also [Mas16, § 4] for a gentle and practical introduction) provides in principle an
+exhaustive algorithm to enumerate all the integer solutions of these equations. For
+our purposes here, since we are studying the pairs (a, b) with |a| ≍|b|, we shall
+exploit this hypothesis in the sequel as it spares us the routine but grueling task of
+carrying out these computations.
+Lemma 14.2.4. Assume that a, b ∈Z ∖{1, 0, −1} with a ̸= ±b satisfy one of the
+following inequalities:
+a
+b −1
+ < 1
+2,
+a
+b + 1
+ < 1
+2.
+Then:
+(1) R4(y) is irreducible.
+(2) R10(y) is co-prime to R4(y). In particular, the resultant (14.2.3) is non-
+vanishing.
+Proof. The roots of R4
+
+x +
+x
+x −1
+
+include (a −
+√
+a2 −1)(b −
+√
+b2 −1) as a root.
+Hence, if we show that Q(
+√
+a2 −1) and Q(
+√
+b2 −1) are distinct non-trivial real
+quadratic fields, then R4(y) is absolutely irreducible since it has at least one root of
+degree 4. The assumptions on a and b certainly imply that a2 −1 and b2 −1 are not
+squares, so Q(
+√
+a2 −1) and Q(
+√
+b2 −1) are quadratic fields. If they define the same
+field, then there exist integers D, X, Y ∈Z with D squarefree such that (a2 −1) =
+X2D and (b2 −1) = Y 2D, and so (a, X) and (b, Y ) are solutions to the Pell
+equation u2 −Dv2 = 1. Let us consider the case when a > b > 0, the proof applies
+in the other cases mutatis mutandis. After checking the small cases explicitly, we
+may assume that b ≥8 (note that bounding b also bounds a). We deduce that, for
+positive algebraic integer unit ε > 1 in Q(
+√
+D), there is an equality
+(a + X
+√
+D) = ε(b + Y
+√
+D).
+The left hand side lies in the interval [2a −1, 2a]. The right hand side lies in the
+interval ε[2b −1, 2b]. Hence
+1 < ε <
+2a
+2b −1 =
+a/b
+1 −1
+2b
+≤
+3/2
+1 −1/16 = 16
+10.
+(14.2.5)
+On the other hand, any unit ε > 1 of a real quadratic field satisfies
+ε ≥
+√
+5 + 1
+2
+> 16
+10,
+contradicting equation (14.2.5). The first claim follows. Now if R10(y) has a com-
+mon factor with R4(y), it must be divisible by R4(y).
+However, we may now
+
+===== PHYSICAL PAGE 183 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+183
+synthetically divide one polynomial by the other and the four coefficients of the re-
+maining polynomial of degree ≤3 must all be zero. But there are no such solutions
+in a and b to these four equations — already taking the resultant of any two of
+them gives an explicit polynomial in a with no integers roots in Z ∖{−1, 0, 1}.
+□
+We also have the following slightly unpleasant calculus exercise:
+Lemma 14.2.6. Assume that a, b ∈Z ∖{1, 0, −1} satisfy:
+0 <
+a
+b −1
+ <
+1
+103 .
+Then R10(y) is separable. Moreover, Resy(R10(y), y(4 −y)) which equals
+48a2b2(9 + 16a2 −40ab + 16b2)(−45 + 80a2 −128ab + 80b2)Φ4(a, b)
+is non-vanishing.
+Proof. Let ε = 1/1000. First let us consider ∆y(R10(y)) as a polynomial where the
+coefficient a varies while b ∈Z is fixed. From (14.2.2), the only factors which could
+possibly vanish for a ∈Z are Φ14(a, b) and Φ79(a, b). We examine each of these
+cases in turn. Consider the case of Φ14(a, b), and with a and b of the same sign.
+Let b = a(1 + x), so |x| ≤ε. Then
+Φ14(a, a(1 + x))
+Φ14(a, a)x2a4
+= Q4(x) + a−2Q2(x) + a−2Q0(x)(ax)−2
++
+Ψ−1,12(a)
+a3(ax)Φ14(a, a) +
+12
+X
+i=0
+xi
+Ψi,12(a)
+a4Φ14(a, a)),
+(14.2.7)
+where Ψi,12 for i = −1, . . . , 12 are explicit polynomials in a of degree at most 12,
+and Qi(x) is an explicit polynomial in x with Qi(0) ̸= 0. Moreover, Q4(0) = 2 and
+is bounded below on the interval x ∈[−1/1000, 1/1000] by something only very
+slightly less than 2. Now we exploit the fact that b ∈Z is an integer to deduce
+that ax ∈Z, and so |ax| ≥1. But assuming |ax| ≥1 and |x| ≤1/1000, all the other
+terms in (14.2.7) are clearly of order O(a−2) with explicitly computable constants,
+and so with the na¨ıve triangle inequality bound, the left-hand side does not vanish
+as soon as a is large enough. To be completely explicit, we find that, for |a| ≥1000,
+|Q4(x)| ≥1.984,
+|Q0(x)|, |Q2(x)| ≤10−5,
+
+Ψ−1,12(a)
+a3Φ14(a, a)
+ ≤10−10,
+
+Ψi,12(a)
+a4Φ14(a, a)
+ ≤10−10, i = 0, . . . , 12
+from which the non-vanishing of Φ14(a, b) comfortably follows from equation (14.2.7).
+For |a| < 1000, note that there are no integers b satisfying the assumed inequalities
+on a and b. Alternatively, for any integer |a| ≤1000, one can check that Φ(a, b) =
+0 has no integer roots except for (a, b) = (1, 1) and (−1, −1).
+The argument
+
+===== PHYSICAL PAGE 184 =====
+184
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+for Φ79(a, b) is entirely similar. The analogue of (14.2.7) in this case is
+Φ79(a, a(1 + x))
+a24x12Φ79(a, a) = Q24(x)
++
+5
+X
+i=0
+a−2−2iQ22−4i(x)(ax)−2i + a−2−2iQ20−4i(x)(ax)−2i−2
++
+11
+X
+i=1
+Ψ−i,68(a)
+a24−iΦ79(a, a)(ax)i +
+67
+X
+i=0
+Ψi,68(a)
+a24Φ79(a, a)xi
+(14.2.8)
+Where Ψi,68(a) has degree at most 68, and Φ79(a, a) has degree 70. Precisely the
+same argument as above holds (for |a| ≥1000), again with a (very) comfortable
+margin, namely,
+|Q24(x)| ≥173210,
+a−2|Qk(x)| ≤30, 1 ≤k ≤12,
+
+aΨ−i,68(a)
+a24−iΦ79(a, a)
+ ≤10−20, i = 1, . . . , 11
+
+Ψi,68(a)
+a24Φ14(a, a)
+ ≤10−20, i = 0, . . . , 67.
+□
+14.3. Linear Independence of pure functions and functions arising from G.
+Now, in a manner similar to § 12.1 (and with corresponding notation!), we have
+the following analogue of Lemma 12.1.1. (Remark 12.1.2 concerning Lemma 12.1.1
+is equally relevant in this case.)
+Lemma 14.3.1 (17 functions, logarithmic version). Assume that a and b satisfy
+the assumptions of Lemma 14.2.6. Then the ten functions
+Z
+yG(y) dy,
+Z
+G(y) dy,
+Z G(y) −G(0)
+y
+dy,
+Z G(y) −G(0) −G′(0)y
+y2
+dy,
+Z G(y) −G(0) −G′(0)y −G′′(0) y2
+2
+y3
+dy,
+Z G(y) −G(0) −G′(0)y −G′′(0) y2
+2 −G′′′(0) y3
+6
+y4
+dy,
+G(y), G′(y), G′′(y), G′′′(y),
+together with the seven functions Bi(y) for i = 1, . . . , 7, are linearly independent
+over C(y).
+Proof. We proceed exactly as in the proof of Lemma 12.1.1.
+Namely, using a
+monodromy argument we replace G(y) by bG(y) and then with ∆= bG(y) −G(y)
+we reduce to having to show that a certain combination of derivatives and integrals
+of ∆only are linearly independent. However, ∆will now be a homogenous solution
+to the ODE L = 0, and so it suffices to consider the case ∆(y) = GA(y). As in the
+proof of Lemma 12.1.1, we are reduced to an equation of the form
+1
+X
+i=−4
+ai
+Z
+GA(y)yi dy =
+3
+X
+i=0
+bi(y)G(i)
+A (y).
+(14.3.2)
+which we analyze by considering the local expansions at the singular points of L
+described in Proposition 14.1.11.
+
+===== PHYSICAL PAGE 185 =====
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+185
+Here the roots of R4(y) are genuine singularities of the ODE, whereas the roots
+of R10(y) are not. Now, writing
+b3(y) =
+∞
+X
+i=N
+ri(y −α)i,
+with N = Nα and ri = ri,α, just as in the proof of Lemma 12.1.1, we have:
+b′
+3(y) + b2(y) −c3(y)
+c4(y)b3(y) = 0,
+b′
+2(y) + b1(y) −c2(y)
+c4(y)b3(y) = 0,
+b′
+1(y) + b0(y) −c1(y)
+c4(y)b3(y) = 0,
+b′
+0(y) −c0(y)
+c4(y)b3(y) =
+1
+X
+i=−4
+aiyi,
+(14.3.3)
+and inductively solving for bi(y) the last equality in equation (14.3.3) around vari-
+ous α is as follows:
+(1) If α = 0, the last equality becomes:
+1
+X
+i=−4
+aiyi = −1
+4 (3 −N)2(5 −2N)2rNyN−4 + . . .
+(2) If α = 4, it becomes:
+1
+X
+i=−4
+aiyi = −1
+4 (3 −N)(2 −N)(5 −2N)(3 −2N)rN(y −4)N−4 + . . .
+(3) If α is a root β of R4(y), the last equality becomes:
+1
+X
+i=−4
+aiyi = −(3 −N)2(2 −N)(1 −N)rN(zy −α)N−4 + . . .
+(4) If α is a root γ of R10(y),
+1
+X
+i=−4
+aiyi = (3 −N)(2 −N)(1 −N)(1 + N)rN(y −α)N−4 + . . .
+(5) At α →∞, with b3(y) = yN
+∞
+X
+i=N
+riy−i, we have
+1
+X
+i=−4
+aiyi = −(5 −N)(4 −N)2(3 −N)rNzN−4rNyN−4 + . . .
+From these we deduce that:
+N0 ≥0
+N4 ≥2
+Nβ ≥1
+Nγ ≥−1
+N∞≤5.
+(14.3.4)
+
+===== PHYSICAL PAGE 186 =====
+186
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+This allows us to write:
+b3(y) = (y −4)2R4(y)
+R10(y)
+Q(y),
+(14.3.5)
+Hence we may write
+Q(y) = q0 + q1y + q2y2 + . . . q9y9.
+We find that, as a ratio of polynomials in y, we have
+1
+X
+i=−4
+aiyi =
+S42(y)
+y4R4
+10(y)
+(14.3.6)
+for a polynomial S42(y) ∈Q(a, b, y) of degree 42. Note for degree reasons, this
+already implies that a1 = a0 = a−1 = 0), Now solving for q0, . . . , q9 in order to
+account for a single factor of R10(y), we obtain a system of 10 linear equations in 10
+unknowns. If we take the corresponding determinant of the matrix, we obtain a
+(symmetric) polynomial in a and b of the form:
+(a −b)98a4b4(a + b)12(1 + 4a2 −4ab)2(1 + 4b2 −4ab)(−3 + 4a2 −4ab + 4b2)2
+(9 + 16a2 −40ab + 16b2)2(−45 + 80a2 −128ab + 80b2)2
+Φ4(a, b)Φ6(a, b)Φ14(a, b)Φ26(a, b)Φ79(a, b).
+But each of these irreducibles factor is also a factor of
+∆yR10(y)Resy(R10(y)R4(y))Resy(R10(y), y(y −4)),
+which under our assumptions do not vanish by Lemmas 14.2.4 and 14.2.6 respec-
+tively. Hence the determinant is non-zero, which means that the qi = 0, but then
+all the ai are zero, and there are no linear relationships, as claimed.
+□
+14.4. Location of the singularities. As noted in Proposition 14.1.11, the singu-
+larities of L in the Y0(2) domain away from 0, 4, ∞are located at the points ya±,b±
+of Definition 14.1.10, given by the y := x2/(x −1) = x + x/(x −1) images of
+x =
+
+a ±
+p
+a2 −1
+ 
+b ±
+p
+b2 −1
+
+.
+Let us assume that ε < 10−6, and that
+m
+n −1
+ < ε.
+If m and n are distinct integers, then 1 ≤|m −n| < |n|ε, so |m|, |n| ≥ε−1.
+Let a = 2m + 1 and b = 2n + 1. An elementary computation shows that, if η =
+(a +
+√
+a2 −1)(b −
+√
+b2 −1), that
+η +
+η
+η −1
+ > 1
+ε.
+On the other hand, if ξ = (a −
+√
+a2 −1)(b −
+√
+b2 −1), and if a ≥b, then ξ < ε2/4,
+and
+ξ +
+ξ
+ξ −1
+ ≤ε4
+16.
+Moreover, ξ−1 > 4/ε2, and
+ξ−1 +
+ξ−1
+ξ−1 −1
+ > 16
+ε2 > 1
+ε.

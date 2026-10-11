@@ -1,0 +1,482 @@
+[PHYSICAL PDF PAGE 208]
+Chapter 6
+Modular functions
+This chapter is a brief introduction to modular functions.
+We recall that themodular groupconsists of the set of all Möbius
+transformations of the from
+τ′ = aτ +b
+cτ +d
+wherea, b, c, dare integers such that (WLOG)ad−bc = 1. This group
+is denoted byΓ. Such a Möbius transformation can be represented in
+a matrix form: 
+a b
+c d
+(
+(, ad −bc = 1.
+Deﬁnition 6.0.1.An analytic functionλ which satisﬁes
+λ
+(az +b
+cz +d
+)
+=λ(z),
+where the Möbius transformation belongs to the modular group is
+called anautomorphic function.
+Recall that for a given Weierstrass elliptic function℘(z), we have
+e1 =℘(ω1/2), e 2 =℘(ω2/2), e 3 =℘(ω3/2),
+where ω1 +ω2 +ω3 = 0.
+204
+
+[PHYSICAL PDF PAGE 209]
+CHAPTER 6. MODULAR FUNCTIONS 205
+6.1 The function λ(τ )
+We observe that scaling of the periodsωk (k = 1, 2, 3) by tωk results
+in
+℘
+(
+tωk
+2
+)
+= 1
+t2℘
+(ωk
+2
+)
+= 1
+t2ek, k = 1, 2, 3.
+Thus the function
+λ(τ) = e3−e2
+e1−e2
+, (6.1)
+is a function ofτ := ω2/ω1. Since the ej ̸= ek whenever j̸= k, so
+the λ(τ) is an analytic function in the upper half-planeℑ(τ) > 0.
+Moreover,
+λ(τ)̸= 0, 1
+since e2̸=e3 and e1̸=e3 respectively.
+Applying knowledge from theta function, one can actually write
+λ(τ) = e3−e2
+e1−e2
+= 16q
+∞
+k=1
+( 1 +q2k
+1 +q2k−1
+)8
+,
+where q =eiπτ.
+Congruent subgroup of mod2
+Suppose our initialω1, ω2 is replaced by
+ω′
+2 =aω2 +bω1,
+ω′
+1 =cω2 +dω1. (6.2)
+But since the℘(z) is invariant with respect to any modular transfor-
+mation, so it follows from the diﬀerential equation
+℘′(z)2 = 4℘3(z)−g2℘(z)−g3
+= (℘(z)−e1)(℘(z)−e2)(℘(z)−e3).
+the correspondingek (k = 1, 2, 3) are permuted (and so changing the
+value ofλ) under a unimodular transformation.
+
+[PHYSICAL PDF PAGE 210]
+CHAPTER 6. MODULAR FUNCTIONS 206
+The identity map for theek (k = 1, 2, 3) from the following uni-
+modular transformation. If we choose thea, b, c, dsuch thata≡ 1≡
+d mod 2 and b≡ 0≡c mod 2, then this imply
+ω′
+1
+2 ≡ ω1
+2 , ω′
+2
+2 ≡ ω2
+2 . mod M
+So theek (k = 1, 2, 3) remain ﬁxed. We may rephrase the above by
+writing
+λ
+(aτ +b
+cτ +d
+)
+=λ(τ), when
+
+a b
+c d
+(
+(≡
+
+1 0
+0 1
+(
+( mod 2. (6.3)
+The collection of unimodular transformations can easily be seen
+to form a group, called thecongruence subgroup mod 2 of the
+modular group. In general a function f that satisﬁes the equation
+f(Mτ ) = f(τ) is called automorphic. An automorphic function with
+respect to a subgroup of the full modular group is called a(elliptic)
+modular function.
+Incongruent subgroup of mod2
+It is suﬃcient to consider
+
+a b
+c d
+(
+(≡
+
+1 1
+0 1
+(
+( or
+
+0 1
+1 0
+(
+( mod 2 (6.4)
+since the other ones can be composed from these two. The equation
+(6.3) would therefore be violated. Indeed, in the ﬁrst case above
+ω′
+2
+2 ≡ ω1 +ω2
+2 , ω′
+1
+2 ≡ ω1
+2 , mod M
+we have, so thate2↔e3 (they are interchanged),e1 remains ﬁxed. We
+have theλ(τ) becomes
+λ(τ) = e3−e2
+e1−e2
+↦−→ λ(τ)
+λ(τ)− 1 = e2−e3
+e1−e3
+.
+
+[PHYSICAL PDF PAGE 211]
+CHAPTER 6. MODULAR FUNCTIONS 207
+But the corresponding unimodular transformation isτ→τ +1. Hence
+λ(τ + 1) = λ(τ)
+λ(τ)− 1.
+This is called Jacobi’s imaginary transformation. The second
+transformation corresponds to
+ω′
+2
+2 ≡ ω1
+2 , ω′
+1
+2 ≡ ω2
+2 , mod M (6.5)
+so thate1↔e2 and e3 remains unchanged. We see that
+λ(τ) = e3−e2
+e1−e2
+↦−→1−λ(τ) = e3−e1
+e2−e1
+the corresponding unimodular transformation isτ→− 1/τ. Hence
+λ
+(
+− 1
+τ
+)
+= 1−λ(τ).1
+Remark. We note that the choice of the matrices representations (6.4)
+are far from unique. For example, if we rewrite (6.5) with
+ω′
+2
+2 ≡ ω1
+2 , ω′
+1
+2 ≡− ω2
+2 , mod M (6.6)
+then we would have matrix representation
+
+0 −1
+1 0
+(
+( mod 2
+instead of 
+0 1
+1 0
+(
+( mod 2.
+1This formula is called Jacobi’s imaginary transformation formula (1828).
+
+[PHYSICAL PDF PAGE 212]
+CHAPTER 6. MODULAR FUNCTIONS 208
+6.2 Growth properties of λ(τ )
+We normalise the choiceω1 = 1 andω2 =τ for ease of later discussion.
+We observe that
+Theorem 6.2.1.The elliptic modular function(6.1)λ(τ) is real when
+τ is purely imaginary.
+Proof. This essentially follows from the deﬁnition of theek, namely
+e3−e2 =
+∞∑
+m,n =−∞
+( 1
+(m− 1
+2 + (n− 1
+2)τ)2− 1
+(m + (n− 1
+2)τ)2
+)
+,
+and
+e1−e2 =
+∞∑
+m,n =−∞
+( 1
+(m− 1
+2 +nτ)2− 1
+(m + (n− 1
+2)τ)2
+)
+,
+where the double series are absolutely convergent. Ifτ = it (t >0),
+then clearly, the above sums remain unchanged withτ is replaced by
+−τ = ¯τ. This establishes the theorem.
+Theorem 6.2.2.The elliptic modular function(6.1) λ(τ) satisﬁes
+1. λ(τ)→ 0 asℑ(τ)→ +∞ uniformly with respect to theℜ(τ),
+2. more precisely,
+λ(τ)/eiπτ→ 16, ℑ(τ)→ +∞, (6.7)
+3. λ(τ)→ 1 as τ→ 0 along the imaginary axis.
+Proof. Let us quote the elementary Mittag-Leﬄer expansion formula:
+π2
+sin2πz =
+∞∑
+m=−∞
+1
+(z−m)2.
+
+[PHYSICAL PDF PAGE 213]
+CHAPTER 6. MODULAR FUNCTIONS 209
+Applying this expansion in the deﬁnition ofek summing ﬁrst overm
+yields
+e3−e2 =π2 ∞∑
+n=−∞
+( 1
+cos2π(n− 1
+2)τ− 1
+sin2π(n− 1
+2)τ
+)
+and
+e1−e2 =π2 ∞∑
+n=−∞
+( 1
+cos2πnτ− 1
+sin2π(n− 1
+2)τ
+)
+.
+Noticethattheterms | sinnπτ|and| cosnπτ|arecomparableto e|n|πℑ(τ)
+so that the above sums are uniformly convergent asn→±∞ when
+ℑ(τ)≥ δ >0 (for someδ >0). This also means that we could take
+limit on individual terms of the above sum asℑ(τ)→ +∞. This yields
+e3−e2→ 0, e 1−e2→π2, ℑ(τ)→ +∞,
+and hence λ(τ)→ 0 asℑ(τ)→ +∞ as asserted. If we let τ → 0
+along the imaginary axis, then we easily deduce from the equation
+λ(−1/τ) = 1−λ(τ) that λ(τ)→ 1.
+We note that the leading terms (i.e.,n = 0, 1) of the above sum
+for e3−e2 are given by
+2π2
+( 4eπiτ
+(1 +eπiτ )2 + 4eπiτ
+(1−eπiτ )2
+)
+.
+This concludes the part (2).
+6.3 Covering property of λ(τ )
+Let
+Ω :=
+{
+z : 0 <ℜ(z)< 1,ℑ(z)> 0
+}
+\
+{
+z : |z− 1|≥ 1/2
+}
+(6.8)
+We are ready to deal with
+
+[PHYSICAL PDF PAGE 214]
+CHAPTER 6. MODULAR FUNCTIONS 210
+Theorem 6.3.1.The modular function
+λ(τ) = e3−e2
+e1−e2
+is a one-one conformal mappingλ : Ω→H. Moreover, the mapping
+extends continuously to the boundary ofΩ so that
+1. the image of∂Ω is real-valued; and
+2. the boundary pointsτ = 0, 1,∞ correspond toλ = 1,∞, 0;
+3. the λ(τ) is monotone on∂Ω so thatλ(∂Ω) = (−∞,∞) in such
+a way that
+• λ :−∞↑ 0 over [1, 1 +i∞);
+• λ : 0↑ 1 =λ(0) over (i∞, 0];
+• λ : 1↑ +∞ over 1
+2 + 1
+2eiθ whereθ :−π↑π.
+Proof. We ﬁrst investigate the behaviour ofλ(τ) on the boundary ofΩ.
+We recall from Theorem 6.2.2 thatλ(z) is real on imaginary axis. So
+the transformationτ + 1 maps the imaginary axis onto theℜ(τ) = 1.
+So
+λ(it + 1) = λ(it)
+1−λ(it)
+is thereforereal for allt> 0. Moreover, the map1/τ maps theℜ(τ) =
+1, i.e.,τ = 1 +it (t> 0) onto the circle|τ− 1
+2| = 1
+2
+2 Let τ′ = 1
+2 + 1
+2eiθ.
+Let
+τ = 1
+1−τ′, τ ′ = 1− 1
+τ,
+and
+τ = 1 +i sinθ
+1 + cosθ, ℜ(τ) = 1.
+2 ⏐⏐1− 1
+τ− 1
+2
+⏐⏐2
+=
+⏐⏐1− 1
+1+it− 1
+2
+⏐⏐2
+= ( 1
+2)2.
+
+[PHYSICAL PDF PAGE 215]
+CHAPTER 6. MODULAR FUNCTIONS 211
+Then the image ofλ on|τ− 1
+2| = 1
+2 can “pull-back” by the transfor-
+mation:
+λ(τ′) =λ
+(
+1− 1
+τ
+)
+= λ(−1/τ)
+1−λ(−1/τ) = 1−λ(τ)
+1− (1−λ(τ))
+= 1
+λ(τ)− 1,
+hence showing thatλ (where τ lies on theℜ(τ) = 1) is again real on
+|τ− 1
+2| = 1
+2 by the ﬁrst case. Hence we have established thatλ(τ) is
+real-valued on the whole boundary ofΩ.
+Since our aim is to proveλ : Ω→H is a one-one conformal map,
+so we choose an arbitrary pointw0 in H. Then Theorem 6.2.2 (1)
+guarantees that there exists a numbert0> 0 so that
+w0̸=λ(τ) =λ(s +it)
+for t≥t0.
+Let us consider the images of the horizontal line segment
+L0 :={s +it0 : 0 ≤s≤ 1}
+under the modular transformationsλ:
+1.−1/τ: L0 is mapped onto a circleC0 tangent to the pointτ = 0
+in the upper half-plane. Clearly, the “smaller” the circle is when
+the larger thet0> 0 is chosen;
+2. 1−1/τ: L0 is mapped onto a circleC1 tangent to the pointτ = 1
+in the upper half-plane. Clearly, the “smaller” the circle is when
+the larger thet0> 0 is chosen again.
+We recall that the region ofΩ is a “triangle” with all three angles
+zero (one at∞). Let us “cut oﬀ the three angles” by removing the
+portions
+• ℑ(τ)>t 0;
+
+[PHYSICAL PDF PAGE 216]
+CHAPTER 6. MODULAR FUNCTIONS 212
+• the whole disc ﬁlled fromC0 tangent atτ = 0 constructed above;
+• the whole disc ﬁlled fromC1 tangent atτ = 1 constructed above.
+We write Ω0 to denote the remaining region ofΩ. Since λ(τ)→ 1
+as τ → 0 (Theorem 6.2.2 (1)), soλ(−1/τ)≈ 1 uniformly on C0 as
+t0→ +∞.
+Figure 6.1: Non-Euclidean triangle with three angles 0
+On the other hand, Theorem 6.2.2 (2) asserts that whenτ′ is close
+to C1 when τ′≈ 1,
+λ(τ′) =λ(1− 1/τ) = 1− 1/λ(τ)
+≈ 1− 1
+16e−iπ(s+it0)
+= 1 + 1
+16eπt0+iπ(1−s),
+for 0≤s≤ 1, so that this is approximately a semi-circle in the upper
+half-plane. This together with earlier analysis shows that in the limit
+
+[PHYSICAL PDF PAGE 217]
+CHAPTER 6. MODULAR FUNCTIONS 213
+as Ω0→ Ω as t0→ +∞ that
+n
+(
+λ(∂Ω); w0
+)
+= 1
+2πi
+
+λ(∂Ω)
+dλ
+λ−w0
+= 1
+2πi
+
+∂Ω
+λ′(T)
+λ(T )−w0
+dT
+= 1.
+Hence eachw0 inH has been “taken” once and once only byλ(τ) inside
+Ω, and none of those points withℑ(w0)< 0 are taken byλ in Ω. It is
+clear thatλ(0) = 1, λ(1) =∞ and λ(∞) = 0.
+The above analysis shows thatλ : Ω→H is a one-one conformal
+map also implies thatλ(τ) is monotone on∂Ω. For suppose not, then
+there would be a boundary pointa on ∂Ω at whichλ′(a) = 0 . But
+then, in a neighbourhood ofa in Ω, we have
+λ(z) =λ(a) +λ(k)(a)
+k! (z−a)k[1 +O(z−a)],
+where k≥ 2, so it is evident that the image of such neighbourhood
+could not lie entirely withinH. A contradiction.
+Corollary6.3.1.1. Let Ω′ denote the region that is the mirror image of
+Ω reﬂected along the imaginary axis inH. Then the modular function
+maps the Ω′ onto the lower half-plane, andλ(¯Ω∪ Ω′) =C\{0, 1}.
+Remark. Wecallthemodularfunction λauniversal coverofC\{0, 1}.
+Exercise 6.3.1.Show that ifτ′ = 1
+2 + 1
+2eiθ, τ′ = 1− 1
+τ, then
+τ = 1 +i sinθ
+1− cosθ.
+
+[PHYSICAL PDF PAGE 218]
+CHAPTER 6. MODULAR FUNCTIONS 214
+Figure 6.2: D is the “Right-half” of FR, D′ its mirror-image. The
+ﬁgure shows regions that are reﬂections ofD and D′
+It is routine to check that the six shaded regions in the above
+ﬁgure are images of the Fundamental RegionD under the following
+transformations:
+τ, −1
+τ, τ − 1, 1
+1−τ, τ− 1
+τ , τ
+1−τ. (6.9)
+which we denote byS1, S2,··· ,S 6. They form a complete set of incon-
+gruent unimodular transformations (i.e., members of modular group)
+mod 2 , in the sense that each unimodular transformation is congruent
+mod 2 to one of theSk. Let we denoteS−1
+k (k = 1,··· , 6) to denote
+the corresponding inverses. Then it can be checked that they map the
+region D′ (the “left-half” of the FD) onto the unshaded regions of the
+above ﬁgure. One see immediately that the union of 12 images of¯D
+and ¯D′ covers ¯Ω∪ ¯Ω′ (here the closure refers to theH only).
+Let Ω′ be the mirror image ofΩ reﬂected along the imaginary axis.
+
+[PHYSICAL PDF PAGE 219]
+CHAPTER 6. MODULAR FUNCTIONS 215
+Theorem 6.3.2.Every pointτ in the upper half-planeH is equivalent
+under the congruence subgroup mod 2 to exactly one point in¯Ω∪ Ω′.
+Proof. Let τ be an arbitrary point inH. Then according to Theorem
+5.3.2 that there is a unimodular transformationS such thatSτ in D,
+say. But there is aS−1
+k such thatS≡S−1
+k mod 2, i.e.,T =SkS≡I
+mod 2. But thenTτ =Sk(Sτ ) belongs to one of 12 regions and hence
+in ¯Ω∪¯Ω′. Asimilarreasoningalsoappliesif Sτ∈D′. HenceTτ ∈ ¯Ω∪¯Ω′
+in either cases. HenceTτ ∈ ¯Ω∪ Ω′.
+The uniqueness follows from the fact that theS1,··· ,S 6 as well as
+S−1
+1 ,··· ,S−1
+6 are incongruent mod 2.
+Figure 6.3: Taken from page 426 of E. T. Copson

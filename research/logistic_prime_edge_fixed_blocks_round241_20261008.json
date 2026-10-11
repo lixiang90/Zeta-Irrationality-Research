@@ -1,0 +1,113 @@
+{
+  "round": 241,
+  "kind": "single bounded exact constant check",
+  "variable_prime_sampling": false,
+  "blocks": [
+    {
+      "type": "zero",
+      "size": 4,
+      "moments": [
+        "907/15552",
+        "-25/3888",
+        "48299/1944",
+        "-483743/1944",
+        "3144869/1944",
+        "-16932335/1944",
+        "82292573/1944"
+      ],
+      "determinant": "541936393813/62208",
+      "numerator_factors": [
+        [
+          59,
+          1
+        ],
+        [
+          2953,
+          1
+        ],
+        [
+          3110519,
+          1
+        ]
+      ],
+      "denominator_factors": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "type": "low",
+      "size": 3,
+      "moments": [
+        "48299/1944",
+        "-483743/1944",
+        "3144869/1944",
+        "-16932335/1944",
+        "82292573/1944"
+      ],
+      "determinant": "-100344353231/3888",
+      "numerator_factors": [
+        [
+          19,
+          1
+        ],
+        [
+          7477,
+          1
+        ],
+        [
+          706337,
+          1
+        ]
+      ],
+      "denominator_factors": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "type": "high",
+      "size": 2,
+      "moments": [
+        "-3587/24",
+        "4979/8",
+        "-17913/8"
+      ],
+      "determinant": "-210779/4",
+      "numerator_factors": [
+        [
+          131,
+          1
+        ],
+        [
+          1609,
+          1
+        ]
+      ],
+      "denominator_factors": [
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  ],
+  "does_not_prove": [
+    "full distribution",
+    "full varying-prime determinant",
+    "irrationality",
+    "all-prime primitive cost"
+  ]
+}

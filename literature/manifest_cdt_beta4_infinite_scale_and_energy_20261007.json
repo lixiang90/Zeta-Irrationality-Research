@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-07T11:27:16.660797+08:00",
+  "classification": "progress",
+  "previous_goal_turn_classification": "progress: source repository synchronization and section 207 archive closure",
+  "goal_status": "active",
+  "new_numerical_irrationality_or_linear_independence_theorem": false,
+  "new_mathematical_manuscripts": [
+    {
+      "file": "research/cdt_beta4_fixed23_carry_transfer_20261007.md",
+      "bytes": 16385,
+      "sha256": "379280f0a8f60b212fc9375b22969697e82d57537aec2b7ec783c69c40262775"
+    },
+    {
+      "file": "research/cdt_beta4_real_determinant_energy_20261007.md",
+      "bytes": 12610,
+      "sha256": "3271cee9e1888a930f35126e4f54d95ce05fad1573fceb5d1855219dbbead5ec"
+    },
+    {
+      "file": "research/cdt_beta4_prime_newton_polygon_20261007.md",
+      "bytes": 8143,
+      "sha256": "ec4f1fed373bcead6042997d448c5762b535dbb38d7b350adcf953c36eb69c2b"
+    },
+    {
+      "file": "research/cdt_catalan_higher_jet_holonomy_bridge_20261007.md",
+      "bytes": 19508,
+      "sha256": "fcd231cafab9f77703c3d9f32fb8c4bd003917605707aa5c440d16f7b35f2e54"
+    }
+  ],
+  "current_main_progress": {
+    "file": "research/cdt_odd_background_progress_20261006.md",
+    "bytes": 414940,
+    "sha256": "7dd1f4c8f6ca56684fff350d57351e6640e9e1d3faaf6bea0f5d5c9cf749c847",
+    "section": 208,
+    "section_heading_line_1_based": 3468
+  },
+  "previous_manifest": {
+    "file": "literature/manifest_cdt_beta4_exact_arithmetic_prime_gate_20261007.json",
+    "bytes": 24347,
+    "sha256": "6af7f96436b248df39619939c824ce2ac80878a0350cdac0e84dc0ccfed69764",
+    "embedded_main_pin_is_historical": true,
+    "modified": false
+  },
+  "same_object_full_finite_place_input": {
+    "file": "research/cdt_beta4_projection_exact_arithmetic_20261007.md",
+    "bytes": 18981,
+    "sha256": "53b425c356f83c23d9be021f70873b84c441eb8debbdac485c1cf4582228f277"
+  },
+  "proved_results": {
+    "infinite_scale_nonvanishing": {
+      "n": "23^j, j>=1",
+      "target": "any fixed T in Q_23",
+      "condition": "4j+v_23(T)>=3 (v(0)=+infinity)",
+      "determinant_valuation": "-4j*23^j+ceil(23^j/4)+floor(23^(j-1)/4)",
+      "smith_layers_of_23_to_4j_times_matrix": [
+        0,
+        1,
+        2
+      ],
+      "actual_beta4_application": "Under the hypothesis beta(4) is rational, the actual projected determinant is nonzero for every sufficiently large j, including all fixed 23-denominator exceptions."
+    },
+    "unconditional_same_object_real_decay": {
+      "gamma_exact": "-1/2-(3/2)log(3)+2log(2)-log(M/(4*pi)), M=max_{s>0}log(1+s^2)/s",
+      "gamma_display_only": 1.98663329925155,
+      "bound": "log|det E_n|<=-gamma*n^2+O(n log n), with log(0)=-infinity",
+      "proof": "sec contour, paid row derivatives, exact common-factor cancellation, Cayley Vandermonde bound",
+      "optimality_claim": false
+    },
+    "finite_newton_gate": {
+      "successful_prime_scale_slopes": [
+        3,
+        4
+      ],
+      "p23_low_characteristic_polynomial_mod23": "lambda^6+16lambda^4+13lambda^2+2, no F_23 roots",
+      "necessary_Q23_root_conditions": "v_23(T)=-4 and 23^4*T=+1 or -1 mod23",
+      "n2_rational_root_test": "Exact discriminant is not a rational square; no rational root at this finite scale."
+    },
+    "higher_outer_log_jet_interface": {
+      "period_generator_upper_count": "7*ell+7",
+      "full_input_denominator_growth": "exp(O_ell(H)) for all primes and powers",
+      "actual_carrier": "M^(2)(1,1)=4(beta(4)-G/3)",
+      "nuisance_rank_obstruction": "An actual G coefficient outer Hankel kernel is positive Gram of rank n; fixed seed types do not imply bounded bad rank.",
+      "flat_projector_scope": "No nontrivial horizontal direct summand of this regular unipotent jet local system; quotients and growing nonhorizontal projections remain allowed.",
+      "single_target_full_pool_success": false
+    }
+  },
+  "independent_full_paper_reviews": [
+    {
+      "main": "cdt_beta4_fixed23_carry_transfer_20261007.md",
+      "reviewers": [
+        "root",
+        "real_determinant_energy"
+      ],
+      "result": "PASS; second reviewer independently recomputed all fixed 5x5/6x6 certificates"
+    },
+    {
+      "main": "cdt_beta4_real_determinant_energy_20261007.md",
+      "reviewers": [
+        "root"
+      ],
+      "result": "PASS"
+    },
+    {
+      "main": "cdt_beta4_prime_newton_polygon_20261007.md",
+      "reviewers": [
+        "holonomy_higher_jet_bridge"
+      ],
+      "result": "PASS; independent exact Fraction and finite-field certificates agree"
+    },
+    {
+      "main": "cdt_catalan_higher_jet_holonomy_bridge_20261007.md",
+      "reviewers": [
+        "root"
+      ],
+      "result": "PASS"
+    }
+  ],
+  "author_full_reread_after_review": true,
+  "remaining_gaps": [
+    "Same-object global finite-place cost upper rate 771/40=19.275 has not been reduced below gamma; current estimates do not give a strict contradiction.",
+    "The higher outer-log allowed-pool target image rank, primitive integer-kernel cost, and actual relation-dependent meromorphic germ are not proved."
+  ],
+  "next_priority": "Global determinant content and graded ranks for primes comparable to n; in parallel test the actual higher-jet full-pool target rank for beta(4) or beta(4)-G/3. Fixed23 infinite nonvanishing is no longer a missing interface.",
+  "source_pdf_reading": {
+    "pdf": {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "bytes": 4517169,
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771"
+    },
+    "holonomy_full_text_pages_1_based": [
+      3,
+      60,
+      61,
+      89,
+      90,
+      92,
+      93,
+      99
+    ],
+    "root_pages": 0,
+    "carry_pages": 0,
+    "energy_pages": 0,
+    "personal_sum": 8,
+    "distinct_content_pages": 8,
+    "new_pdf_downloads": 0,
+    "old_round_counts_not_inherited": true
+  },
+  "official_foundations_source": {
+    "file": "E:/codex-build/math/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/foundations.tex",
+    "bytes": 17469,
+    "sha256": "21633dce32e242555dde97f82f1124f3524641bb69a2f16b7485177b667cb738",
+    "holonomy_actual_full_read_lines": [
+      1,
+      434
+    ]
+  },
+  "execution_scope": {
+    "new_inline_exact_computations": true,
+    "new_high_precision_exploration": true,
+    "floating_point_data_are_not_proof_or_nonvanishing_certificates": true,
+    "old_producers_guards_or_prime_tables_executed": false,
+    "random_prime_expansion": false,
+    "lean_runs": 0,
+    "proof_formally_verified": false,
+    "source_repo_modified": false
+  },
+  "legacy_preservation": {
+    "old_620_frozen_records_modified": false,
+    "old_audits_replayed": false,
+    "old_manifest_counts_rewritten": false,
+    "previous_manifests_modified": false
+  },
+  "pin_policy": {
+    "no_self_hash_embedded": true,
+    "historical_main_snapshots_not_required_to_equal_current_report": true
+  },
+  "local_markdown_links": {
+    "scope": "four final new manuscripts and section 208 only",
+    "checked": 16,
+    "missing": []
+  }
+}

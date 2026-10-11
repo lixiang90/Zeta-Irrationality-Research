@@ -1,0 +1,74 @@
+{
+  "created": "2026-10-06",
+  "purpose": "NEW primary-source receipt: arbitrary-n KLM current identity, rational real-admissible moving, prescribed smooth-fibre pullback. No old or peer mathematical producer executed/imported.",
+  "transport": "curl.exe --fail --location --retry 2 with normal certificate verification; no TLS bypass",
+  "source_note": "research/cdt_odd_R0_klm_current_interface_20261006.md",
+  "new_sources": [
+    {
+      "title": "The Abel–Jacobi map for higher Chow groups",
+      "authors": ["Matt Kerr", "James D. Lewis", "Stefan Müller-Stach"],
+      "publication": "Compositio Mathematica 142 (2006), 374–396",
+      "version": "published PDF",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/96E7B429B8B0E96C08890BE3BAC41724/S0010437X05001867a.pdf/abeljacobi_map_for_higher_chow_groups.pdf",
+      "local_path": "literature/kerr_lewis_muller_stach2006_abel_jacobi_published_20261006.pdf",
+      "sha256": "8e612fd409fc0f9ca392434a8c40c39b658e10ea27b69d84afdfdc03704114d9",
+      "bytes": 397166,
+      "pdf_pages": 23,
+      "actually_read_pdf_pages": ["1–14", "16–21"],
+      "visually_checked_pdf_pages": [11, 12, 13, 17],
+      "premises": [
+        {"pdf_page": 9, "printed_page": 382, "locator": "5.1", "claim": "principal log, current d sign and branch-cut normalization"},
+        {"pdf_pages": [10, 11], "printed_pages": [383, 384], "locator": "5.2–5.4, (5.5)", "claim": "precise Bloch boundary and arbitrary-n current identity"},
+        {"pdf_page": 12, "printed_page": 385, "locator": "5.5", "claim": "normalization (-2pi i)^(p-n); Omega_Z=0 for p<n"},
+        {"pdf_page": 13, "printed_page": 386, "locator": "5.6", "claim": "Poincare duality removes ambient Tate factor; even-n membrane correction"},
+        {"pdf_page": 17, "printed_page": 390, "locator": "5.9", "claim": "quasiprojective compactification and logarithmic-current formulation"}
+      ]
+    },
+    {
+      "title": "Integral Regulators for Higher Chow Complexes",
+      "authors": ["Muxi Li"],
+      "publication": "SIGMA 14 (2018), 118",
+      "version": "published PDF",
+      "url": "https://sigma-journal.com/2018/118/sigma18-118.pdf",
+      "local_path": "literature/li2018_integral_regulators_higher_chow_published_20261006.pdf",
+      "sha256": "5054852c48995a797d8fcae1e10f57905c9c8a3a4d48a7e3f7890dbb663dde90",
+      "bytes": 426958,
+      "pdf_pages": 12,
+      "actually_read_pdf_pages": ["1–12"],
+      "visually_checked_pdf_pages": [2],
+      "premises": [
+        {"pdf_page": 2, "locator": "Introduction", "claim": "older KLM inclusion known rationally; integral assumption unjustified"},
+        {"pdf_page": 4, "locator": "Theorem 2.4", "claim": "rational real-admissible quasi-isomorphism for smooth quasiprojective variety"},
+        {"pdf_page": 7, "locator": "5.2", "claim": "arbitrary-n ordered currents and cohomological normalization"},
+        {"pdf_pages": [8, 11], "locator": "Proposition 5.1; Section 7", "claim": "perturbed normalized constructions; background only, no integral refinement claimed for present family"}
+      ]
+    },
+    {
+      "title": "The Abel-Jacobi Map for Higher Chow Groups, II",
+      "authors": ["Matt Kerr", "James D. Lewis"],
+      "publication": "Inventiones Mathematicae 170 (2007), 355–420",
+      "version": "fixed arXiv math/0611333v1, 2006-11-11; not published PDF",
+      "url": "https://arxiv.org/pdf/math/0611333v1",
+      "local_path": "literature/kerr_lewis2007_abel_jacobi_II_arxiv_v1_20261006.pdf",
+      "sha256": "cae5b98762f903000d731d730e3004dd20832c88dc1b27aa9efd83bbca07187d",
+      "bytes": 845217,
+      "pdf_pages": 68,
+      "actually_read_pdf_pages": ["1–6", "50–57", "59–61"],
+      "visually_checked_pdf_pages": [54, 59],
+      "premises": [
+        {"pdf_page": 4, "locator": "1.1", "claim": "cycle groups tensor Q"},
+        {"pdf_pages": [50, 51], "locator": "Definitions 8.2–8.5; Lemma 8.7", "claim": "normal intersection currents, pullback, filtered quasi-isomorphism"},
+        {"pdf_page": 53, "locator": "Definition 8.12", "claim": "good real position with prescribed smooth subvariety"},
+        {"pdf_page": 54, "locator": "Lemma 8.14; Corollary 8.15; Lemma 8.16", "claim": "rational prescribed-subvariety moving and open localization; fibre-boundary disjointness suffices"},
+        {"pdf_pages": [55, 56, 57], "locator": "Appendix proof of Moving Lemma I", "claim": "actual proof uses K-theory, Kleiman transversality, realification and rational norms"},
+        {"pdf_page": 59, "locator": "8.3", "claim": "KLM triple commutes with prescribed pullback"}
+      ]
+    }
+  ],
+  "own_new_pdf_count": 3,
+  "own_new_pdf_pages_total": 103,
+  "mathematical_scope": {
+    "checked": ["arbitrary-n current identity", "p=n=4 Tate normalization", "Omega_M=0 for p4,n5", "rational prescribed-fibre moving/pullback", "exact boundary-change membrane cancellation"],
+    "not_claimed": ["integral moving for this family", "relative-chain regulator marking", "conifold special value R0-M0", "compact P4 integral projector", "numerical irrationality or linear independence", "Lean validation"]
+  }
+}

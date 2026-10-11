@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-06",
+  "status": "FROZEN_NEW_actual_primary_reading_and_paper_proof_receipt",
+  "proof_path": "research/cdt_odd_R0_all_odd_generic_radius_arithmetic_interface_20261006.md",
+  "proof_sha256": "439a21b2bdf35eeffcbf46e016b35e6ad3b11b635baa8e4148d6533741f6dc5a",
+  "independent_review_status": "quarter_actual_rank and toric_chow_completion actually full-read final proof, including expanded relative comparison and literal epsilon species conversion; both passed 2026-10-06",
+  "sources": [
+    {
+      "path": "literature/morrow_higher_direct_images_crystalline_author_20261006.pdf",
+      "title": "A note on higher direct images in crystalline cohomology",
+      "author": "Matthew Morrow",
+      "version": "Undated author-hosted 12-page note, appendix to A Variational Tate Conjecture in crystalline cohomology",
+      "primary_url": "https://www.imo.universite-paris-saclay.fr/~matthew.morrow/Morrow%2C%20M.%2C%20Higher%20direct%20images%20in%20crystalline%20cohomology.pdf",
+      "bytes": 338397,
+      "pages": 12,
+      "sha256": "9d7bb24587a99edbdfa707c62c2590d0e469e931c937cb99fbe3f14af2f0c009",
+      "actual_read_pdf_pages": [1,2,3,4,5,6,7,8,9,10,11,12],
+      "actual_visual_pdf_pages": [11],
+      "actual_full_paper_read": true,
+      "used_for": ["Proposition 2.1 rational higher direct image isocrystal", "Proposition 3.2 base change and Frobenius after inverting p", "Proposition 6.1 realization on enlargements", "Corollary 6.2 convergent F-isocrystal comparison"],
+      "download_history": [
+        {"method": "curl.exe default TLS", "outcome": "Failed CRYPT_E_REVOCATION_OFFLINE; no certificate bypass or disabling revocation"},
+        {"method": "Python urllib.request default certificate-verifying TLS context", "outcome": "HTTP 200 successful; exact complete PDF saved"}
+      ]
+    },
+    {
+      "path": "literature/bhatt_dejong2011_crystalline_derham_author_20261006.pdf",
+      "title": "Crystalline cohomology and de Rham cohomology",
+      "authors": ["Bhargav Bhatt", "Aise Johan de Jong"],
+      "version": "Author-hosted 10-page preprint associated to arXiv:1110.5001",
+      "primary_url": "https://www.math.columbia.edu/~dejong/papers/crystalline-comparison.pdf",
+      "bytes": 251479,
+      "pages": 10,
+      "sha256": "6c66ed20334f5ce8d96c9af9c0523d69c9f50f776b8b5169300b461f0558e669",
+      "actual_read_pdf_pages": [1,2,3,4,5,6,7,8,9],
+      "actual_visual_pdf_pages": [9],
+      "actual_full_paper_read": false,
+      "used_for": ["Lemmas 2.4 and 2.13-2.17 PD/Cech-Alexander proof", "Theorem 2.12 and Theorem 3.6 comparison", "Corollary 3.8 proper smooth lift and formal functions", "Relative A version is explicitly proved in NEW proof rather than attributed verbatim to the printed Sigma=Zp theorem"],
+      "download_history": [{"method": "Python urllib.request default certificate-verifying TLS context", "outcome": "HTTP 200 successful"}]
+    },
+    {
+      "path": "literature/fischler_rivoal2017_G_function_denominators_published_20261006.pdf",
+      "title": "Denominators of the coefficients of G-functions",
+      "version": "Published primary",
+      "pages": 12,
+      "sha256": "c36b46c110aa378caba371897b7ab45959941d10f8d61311496868bcd004dc68",
+      "actual_read_pdf_pages": [6,7,8],
+      "used_for": ["Theorem 3 four hypotheses", "Explicit mu4/mu5 small-prime exponent", "Generic solvability invariance under exact rational derivative/shearing bases"],
+      "new_download_this_receipt": false
+    },
+    {
+      "path": "literature/katz1972_travaux_de_dwork_author_20261006.pdf",
+      "title": "Travaux de Dwork",
+      "primary_url": "https://web.math.princeton.edu/~nmk/old/travdwork.pdf",
+      "pages": 35,
+      "sha256": "b885d13a652d87763c5864eb22238f0695613a3dab774507e2ba570a487eca1a",
+      "actual_read_pdf_pages": [3,4,5,6,9,10,11,12,23,24],
+      "used_for": ["F-crystal definitions", "Proposition 3.1.2 generic disk convergence", "Section 7 proper smooth/deRham-locally-free hypotheses and distinction from Mazur p>i"],
+      "new_download_this_receipt": false
+    }
+  ],
+  "local_mathematical_inputs": [
+    {"path": "research/cdt_odd_R0_toric_odd_prime_smooth_model_20261006.md", "sha256": "bde766ee2c7825c9b7a3de7bb77ee4a2b42983a51ab2fc8f6bd28c9cb16e323d", "actual_scope": "Full paper read, S2-S8 independently checked"},
+    {"path": "research/cdt_odd_R0_Yukawa_scalar_interface_20261006.md", "sha256": "172a0830a547fd3d018953ca996ca6c5d2d67ace172a9943acee6c1cc9044b15", "actual_scope": "Y7a-Y10, Y11-Y31 and Y27 reread in this cycle; full paper independently read in earlier cycle"},
+    {"path": "research/cdt_odd_R0_conifold_effective_denominator_20261006.md", "sha256": "fea01700aa99716201ad0e36b161557f98f8e783755d7bfe144f434d1d59d3f8", "actual_scope": "Exact G4/G5, initial vectors, dyadic conclusion, D12-D14 conditions read; D1-D11 full proof independently reviewed by quarter, no duplicate full-review claim"},
+    {"path": "research/cdt_odd_R0_endpoint_sensitive_exterior_packet_20261006.md", "sha256": "b02f39ae453143b72572bef7e91e53697bed90388108e79b267e27168dae96ef", "actual_scope": "Author of full frozen proof; paired contraction identity and actual rank reused"},
+    {"path": "research/cdt_odd_R0_endpoint_flag_holonomy_interface_20261006.md", "sha256": "af728ecbebe3ac4827f7388706d4c5892896437e625e1bf4a0671b949bff28b5", "actual_scope": "Full frozen proof; tau/species/all-embedding conditions and common-domain no-go"}
+  ],
+  "new_primary_pdf_count": 2,
+  "new_primary_pdf_pages": 22,
+  "tls_exceptions_or_certificate_bypasses": 0,
+  "old_or_peer_mathematical_producer_execution_import_rerun": 0,
+  "new_mathematical_producer_runs": 0,
+  "read_only_source_processing": ["fitz text extraction", "source SHA256 and metadata", "two primary theorem-page PNG renderings"],
+  "scratch_visual_directory": "tmp/pdfs/cdt_allodd_interface_20261006",
+  "conclusions_scope": "All-n homogeneous and source coefficient integrality bounds; explicit C16 plus p3 polynomial factors for actual nine-row packet; quantitative holonomy inequality. No special-value irrationality or Lean result."
+}

@@ -1,0 +1,305 @@
+                                             APÉRY EXTENSIONS                                                  27
+
+while the monodromy operators T0 , T± , T∞ have Jordan forms J(3), (−1) ⊕ 12 , (−1)2 ⊕ 1 and
+LMHS types
+
+                                                                              − T∞
+                                                                                 ss
+
+
+                            N0                          − T±ss
+                                                                                      − T∞
+                                                                                         ss
+
+                       σ=0                       σ = σ±                        σ=∞
+
+                                                                                       1
+where the Tσ -invariant classes are circled. The Apéry constant is α = 10                ζ(2) [Go09].
+                                      2
+   To construct the cycle Z ∈ CH (X \ X̃∞ , 1) we shall make use of the rational curves {Ci }.
+On Xt , a higher Chow cycle is given by (C1 , g1 := x2x−1  2
+                                                              ) + (C2 , g2 := x1x−1  1
+                                                                                         ) + (C3 , g3 := x1x−1
+                                                                                                            1
+                                                                                                               ),
+since the sums of divisors cancel on Xt . To lift this to a cycle Zt on X̃t (say, for t ∈                / Σ),
+one adds two more terms (D1 , f1 ) + (D2 , f2 ) supported on the exceptional divisors over the
+nodes of Xt at C1 ∩ C3 and C2 ∩ C3 . These {Zt } are the restrictions of an obvious precycle Z
+on X , whose boundary fails to vanish only on X̃∞ .25
+   The next step is to find a family of closed 2-currents Rt on X̃t representing the class
+νZ (t) ∈ J(H 2 (X̃t )(1)), or more precisely a lift to H 2 (X̃t , C) which is single-valued on D|σ− | .
+Writing µ := {(x1 , x2 ) ∈ R2 | 0 ≤ x2 ≤ 1, 1 − x2 ≤ x1 ≤ 1}, for |t| ≪ 1 let Γt denote
+the branch of {(x1 , x2 , x3 ) ∈ X̃t | (x1 , x2 ) ∈ µ} with x3 small. Then we have26 Rt =
+                  P                      P
+(2πi)2 δΓt + 2πi 3i=1 log(gi )δCi + 2πi 2i=1 log(fi )δDi , which yields the THNF
+                                 ˆ          ˆ ˆ
+                                                      dlog(x)
+                                                                  X ˆ                                  X
+                               2                                       k       k
+V (t) = h[Rt ], [ωt ]i = (2πi)           1
+                                   ωt = 2πi            1−tφ
+                                                              =      t      [φ   ] x 0
+                                                                                       dx1
+                                                                                     3 x1
+                                                                                           ∧  dx2
+                                                                                              x2
+                                                                                                   =:      vk tk .
+                                   Γt             µ    |x3 |=ǫ          k≥0     µ                      k≥0
+
+
+(Here [−]x03 takes terms of the Laurent polynomial constant in x3 .) By Theorem 5.1, it
+suffices to compute
+              ˆ 1ˆ 1                ˆ 1
+                       dx1 dx2                       dx2
+         v0 =             ∧      =−     log(1 − x2 )     = Li2 (1) = ζ(2) and
+               0  1−x2 x1    x2       0               x2
+              ˆ 1ˆ 1                                    
+                             x−1   −2
+                              1 (4x2 − 6 + 2x2 )+          dx1 dx2
+         v1 =                −1                 −1              ∧     = −10 + 6ζ(2)
+               0  1−x2 (−6x2 + 6 − x2 ) + x1 (2x2 − 1)     x1      x2
+
+to conclude that LV = −10t. Normalization therefore yields
+                                            1
+(5.3)                            V̂ (t) =   10
+                                               ζ(2)   + (−1 + 53 ζ(2))t + · · · ,
+
+as desired.
+
+25The  successive blowups along the components of the base locus occurring in the construction of X generate
+additional exceptional curves on X̃∞ which disconnect the 5-gon D1 ∪ D2 ∪ C1 ∪ C2 ∪ C3 , and it is on these
+that ∂Z is supported.
+26In the context of regulator currents, log(−) means the single-valued branch with discontinuity along R .
+                                                                                                         −
+28                                    V. GOLYSHEV, M. KERR, AND T. SASAKI
+
+5.4. K3 of a K3: the V12 HNF. The LG mirror of the rational Fano V12 = OG(5, 10) ∩
+P1 · · · ∩ P7 is given by
+                                (1 − x1 )(1 − x2 )(1 − x3 )(1 − x1 − x2 + x1 x2 − x1 x2 x3 )
+(5.4)                 φ(x) =                                                                 .
+                                                         −x1 x2 x3
+
+                                           This time the Picard-rank √  19 K3s X̃t , smooth for t ∈/ Σ =
+                                                                            4
+                                           {0, σ+ , σ− , ∞} (σ± = (−1± 2) ), resolve 7 A1 singularities on
+                                           Xt . The family X is birational to that of [BP84] and underlies
+                                           the proof of irrationality of ζ(3) [Ke17]; indeed, α = 16 ζ(3)
+                                           [Go09]. Its PF operator
+                                                    L = δt3 − t(2δt + 1)(17δt2 + 17δt + 5) + t2 (δt + 1)3
+and (Apéry) period sequence
+                 Xk  2       2
+                      k     k+ℓ
+           ak :=                   = 1, 5, 73, . . .                                                                 N∞
+                      ℓ      ℓ
+                          ℓ=0
+reflect a VHS with monodromies of the same types as in §5.3
+except at t = ∞ (where we get maximal unipotent monodromy).                         σ=∞
+   Since φ is tempered, the symbol {x} liftsto ξ ∈ CH3 (X \ X̃0 , 3). The birational map
+                x3      −(1−x1 )(1−x2 )
+I : (x, t) 7→ 1−x   ,                         , x1 , 1 from X to itself, viewed as a correspondence,
+                   3 1−x1 −x2 +x1 x2 −x1 x2 x3 1−x1 t
+
+allows us to define Z := I ∗ ξ ∈ CH3 (X \ X̃∞ , 3). The resulting THNF
+                                                 ˆ          h             i ˆ h        i
+                         I        −1   −1                       1 dlog(x)       R3 (x)   dlog(x)
+  V (t) = hν̃Z (t), ωt i = hν̃φ (t ), t ωt−1 i =    R3 (x)∧d (2πi)3 t−φ(x) = d (2πi) 3 ∧ φ(x)−t
+                                                                  Xt−1
+            ˆ                        X          ˆ                     X         ˆ        Q3
+                                                                                                                         X
+                      dlog(x)               k          dlog(x)              k                 Xik (1−Xi )k dXi
+        =             t−φ(x)
+                                =−         t          (φ(x))k+1
+                                                                  =         t               i=1
+                                                                                          (1−X3 (1−X1 X2 ))k+1
+                                                                                                                     =:         vk tk
+                R3−                  k≥0        R3−                   k≥0        [0,1]3                                   k≥0
+
+has v0 = 2ζ(3) and v1 = −12 + 10ζ(3), which (again by Theorem 5.1) is enough to conclude
+that LV = −12t. But then normalization gives
+(5.5)                                 V̂ (t) = 61 ζ(3) + (−1 + 56 ζ(3))t + · · · ,
+and in particular V̂ (0) = α.
+
+5.5. HNFs for V14 , V16 , V18 . Again, the LG models are families of Picard-rank 19 K3s. The
+irrational case V14 = G(2, 6) ∩ P1 ∩ · · · ∩ P5 is similar to V10 , with Laurent polynomial
+                           (1 − x1 − x2 − x3 ){(1−x2 −x3 )(1−x3 )2 − x2 (1−x1 −x2 −x3 )}
+            φ(x) =                                                                       ,
+                                                     −x1 x2 x3
+                            1
+discriminant locus Σ = {0, 27 , −1, ∞}, and PF operator
+                L = δt3 − t(1 + 2δt )(13δt2 + 13δt + 4) − 3t2 (δt + 1)(3δt + 4)(3δt + 2).
+The monodromy types are the same as for V10 , except for T∞ , which acts on (ψ∞ Hv2 )2,0 resp.
+                  2πi       2πi
+(ψ∞ Hv2 )0,2 by e− 3 resp. e 3 .
+                                               APÉRY EXTENSIONS                                                            29
+
+   The toric boundary divisor x1 = 0 intersects Xt in C1 = {x2 = 1 − x3 } and C2 = {x2 =
+(1 − x3 )2 }, and a cycle Z ∈ CH2 (X \X̃∞ , 1) is given by (C1 , 1−x
+                                                                   x3
+                                                                      3
+                                                                         ) + (C2 , 1−x
+                                                                                    x3
+                                                                                       3
+                                                                                         ). Arguing as
+before, this yields
+                                  X          X ˆ
+                                        k
+                          V (t) =   vk t =       tk [φk ]x01 dx
+                                                              x2
+                                                                2
+                                                                  ∧ dx
+                                                                    x3
+                                                                       3
+                                                                          ,
+                                         k≥0            k≥0        µ
+
+where µ := {(x1 , x2 ) ∈ R2 | 0 ≤ x3 ≤ 1, (1 − x3 )2 ≤ x2 ≤ 1 − x3 }. We compute v0 = ζ(2)
+and           ˆ 1 ˆ 1−x3                               
+                             2x2 x−1                 −1
+                                  3 + (−x3 + 4 − 3x3 )    dx2 dx3
+         v1 =                        −1 −1         3          ∧      = −7 + 4ζ(2) ,
+               0    (1−x3 )2      +x2 x3 (x3 − 1)         x2    x3
+hence that LV = −7t. Renormalizing this gives
+                                  V̂ (t) = 17 ζ(2) + (−1 + 47 ζ(2))t + · · · ,
+and V̂ (0) = 71 ζ(2) indeed matches the α from [Go09].
+  Turning to V16 = LG(3, 6) ∩ P1 ∩ P2 ∩ P3 and V18 = (G2 /P2 ) ∩ P1 ∩ P2 , we use
+              (1−x1 −x2 −x3 )(1−x1 )(1−x2 )(1−x3 )             (x1 +x2 +x3 )(x1 +x2 +x3 −x1 x2 −x2 x3 −x1 x3 +x1 x2 x3 )
+     φ(x) =               −x1 x2 x3
+                                                     resp.                           −x1 x2 x3
+                                                  √                     √
+from [dS19] for our LG models, with Σ = {0, 12 ± 8 2, ∞} resp. {0, 9 ± 6 3, ∞} and
+
+  L = δt3 − 4t(1 + 2δt )(3δt2 + 3δt + 1) + 16t2 (δt + 1)3
+                                                 resp. δt3 − 3t(1 + 2δt )(3δt2 + 3δt + 1) − 27t2 (δt + 1)3 .
+The monodromy/LMHS types are the same as for V12 ; we write N = 6, 8, or 9 for V2N ,
+and put I(t) := M1N t with MN = 1, 16 1 −1
+                                       , 27 respectively. In each case there is an isomorphism
+  2 ∼ ∗ 2
+Hv = I Hv of Q-VHS. For N = 8, 9 this is not an integral isomorphism so is induced by
+                        27
+
+correspondences I, I −1 ∈ Z 2 (X × I ∗ X )Q (with I ∗ ◦ (I −1 )∗ = idH2v ) rather than a birational
+map; nevertheless, we may still define Z := I ∗ ξ ∈ CH3 (X \X̃∞ , 3). Here we normalize I to
+pull back an integral generator ζs of (H2v )T∞ back to γt ∈ (H2v )T0 , where s = I(t).
+                      ´    dlog(x)
+  Since the integrals R3 (φ(x)) k+1 are quite difficult for N = 8, 9, we use a different strategy
+                         −
+than in §5.4. As a section of H2,0 ∼= OP1 (1), ωt has divisor [∞], and so (I −1 )∗ ωI(t) = CN tωt
+                                       v,e
+for some CN ∈ C∗ . Write ζs∨ ∈ (H2v )T∞ for the element dual to ζs , so that lims→∞ sωs =
+  −1
+(2πi)2
+       ResX̃∞ ( dlog(x)
+                 φ(x)
+                                 ∨
+                        ) = rN ζ ∞                            −1
+                                   in H2 (X̃∞ ) where rN := (2πi)     3 dlog(x)       1
+                                                                 3 Resp ( φ(x) ) = 1, 2 , resp.
+                                                                                                √1 (for
+                                                                                                 −3
+some triple-normal-crossing point p ∈ X̃∞ ). This yields
+    CN = lim 1t hγt , (I −1 )∗ ωI(t) i = lim MN sh(I −1 )∗ γI(s) , ωs i = lim MN hζs , sωs i = MN rN .
+            t→0                           s→∞                                         s→∞
+                                                                 −1
+Write Λ for L with t replaced by s, we have L =                      Λ1.
+                                                                 MN s s
+                                                                              Applying this to
+                                                                                      MN s
+(5.6)              V (t) = hν̃Z (t), ωt i =     1
+                                               CN t
+                                                    hI ∗ ν̃φ (s), (I −1 )∗ ωs i   =   CN
+                                                                                           hν̃φ (s), ωs i
+
+27This is easiest to see from the differential equation, but also follows from the fact that (for all five cases)
+the LG model of V2N realizes the canonical weight-2 rank-3 VHS over X0 (N )+N , which for N composite has
+an additional Fricke involution.
+30                                   V. GOLYSHEV, M. KERR, AND T. SASAKI
+
+yields LV = C−1
+             Ns
+                Λhν̃φ (s), ωs i = −D N
+                                  CN s
+                                       = − DrNN t, where DN = 12, 16, resp. 9 is the constant
+                                               ∨
+from Remark 4.13. Moreover, thinking of ζ∞        as a “membrane stretched once around X∞ ”,
+taking lims→∞ of (5.6) gives
+                            ˆ                                     ˆ
+                          1                 1             dlog(x)
+(5.7)        V (0) = − rN        R3 (x) ∧ (2πi)2 ResX∞ φ(x) =         R3 (x)|X∞
+                                      X∞                                                    ∨
+                                                                                           ζ∞
+     ∨
+for ζ∞ in suitably general position;28 and V̂ (0) = DrNN V (0).
+   We now use (5.7) to verify that V̂ (0) recovers the Apéry    constants in [Go09]. For N = 6,
+                                         ∨
+                                                          ´
+the computation in [Ke17, §5.3] (with ζ∞ = −ψ) gives ζ ∨ R3 (x) = 2ζ(3), recovering V̂ (0) =
+                                                                                ∞
+ζ(3)                         ∨
+ 6
+     .For N = 8, putting ζ∞     in general position is tricky so we use the first expression in
+                           dx2
+(5.7). As R3 (x) = log(x1 ) x2 ∧ dxx3
+                                     3
+                                       + 2πi log(x2 ) dx    3
+                                                              δ + (2πi)2 log(x3 )δTx1 ∩Tx2 is nontrivial
+                                                         x3 Tx1
+only on the component {x1 = 1 − x2 − x3 } ⊂ X∞ , with only its third term surviving against
+the (2, 0) residue form, this yields
+               ˆ                                                 ˆ ∞          ˆ 0                    
+                                           dx2 ∧dx3                  log(x3 )             dx2
+  V (0) = −2               log(x3 ) (1−x2 )(1−x3 )(x2 +x3 ) = −2      1−x3           (1−x2 )(x2 +x3 )
+                                                                                                        dx3
+                 T1−x2 −x3 ∩Tx2                                                   1               1−x3
+                                                                  1      2
+                                                                      log (u)
+                                                            ˆ
+                                                    =−1 4                     du = 4(Li3 (1) − Li3 (−1)) = 7ζ(3),
+                                                  u=x3        0        1 − u2
+                 7
+hence V̂ (0) = 32  ζ(3).
+  Finally, for N = 9 we first replace {x} (hence ξ, and Z) by the equivalent symbol {z},
+where z1 = x−x   3
+              1 +x2
+                                                 x2
+                    , z2 = − xx12 , and z3 = xx11+x 2
+                                                      . In these coordinates,
+            φ(x(z)) = z1−1 z3−1 (1 − z1 ){(1 − z3 ) − z1 (1 − (1 − z2 )z3 )(1 − (1 − z2−1 )z3 )}
+             ′    ′′                                                                                1−z3
+and so X∞ = X∞ ∪ X∞  = {z1 = 1} ∪ {z1 = ϕ(z2 , z3 ) :=                                   (1−(1−z2 )z3 )(1−(1−z2−1 )z3 )
+                                                                                                                        },   with
+               ′        ′′                                              1−z2 −z2−1
+C∞ := X∞          ∩ X∞       described by z3 = z(z2 ) :=                       . Clearly R3 (x)|X∞
+                                                                      (1−z2 )(1−z2−1 )
+                                                                                                     ′    = 0. For
+ ∨         ′′
+ζ∞ ∩ X∞ , which must bound on C∞ , we may take the 2-chain parametrized by (z2 , z3 ) =
+{(eiθ , ρz(eiθ )) | θ ∈ [− π3 , π3 ], ρ ∈ [0, 1]}. This yields
+                                                                                                             
+                                            dz2 dz3                      Li2 (z(z2 )) − Li2 ((1 − z2 )z(z2 )) dz2
+               ˆ                                        ˆ
+  V (0) =                  log(ϕ(z2 , z3 ))    ∧     =
+                  ∨ ∩X ′′
+                 ζ∞   ∞
+                                            z2    z3         ∨ ∩X ′′ )
+                                                          ∂(ζ∞   ∞
+                                                                               −Li2 ((1 − z2−1 )z(z2 ))         z2
+   ˆ e3  πi
+                                                  du                                            3
+                                                                                                       e πi3    3
+ =            (4 log(1 − u) + log(u)) log(u)                                                1
+                                                     = 4Li3 (u) − 4Li2 (u) log(u) + 3 log (u) e− πi3 = 4π27 i ,
+       − πi
+     e 3                                          u
+                         V (0)         3
+                                      4π√
+whereupon V̂ (0) =       √
+                        9 −3
+                                 =   35 3
+                                            = 13 L(χ3 , 3).
+
+                                     6. Apéry and normal functions
+   In this brief final section, we introduce a framework for studying the normal functions
+arising in connection with the Arithmetic Mirror Symmetry Problem (including the examples
+in §5), and propose some terminology.
+28Compare   [Ke17, Thm. 4.2(b) + Cor. 4.3], which this generalizes.
+

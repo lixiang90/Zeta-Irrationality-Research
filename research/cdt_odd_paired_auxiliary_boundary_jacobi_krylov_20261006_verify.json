@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "execution_count": 1,
+  "scope": "Boundary-preserving scalar/matrix operator, degree-leading units, actual Krylov determinant scaling, continuants and endpoint norms only; three already examined scales.",
+  "old_or_peer_execute_import_rerun": 0,
+  "source_sha256": "ef2dd914c860485b76a29ce8566a2385c4e4bc12d285da72c6ad4a29ef1ab8fa",
+  "cases": [
+    {
+      "r": 1,
+      "p": 19,
+      "checks": 60,
+      "critical_T_length": 1,
+      "critical_Q_length": 3,
+      "T_basis_determinant": 1,
+      "Q_basis_determinant": 1,
+      "blocks": [
+        {
+          "length": 1,
+          "characteristic_polynomial": [
+            0,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        },
+        {
+          "length": 5,
+          "characteristic_polynomial": [
+            6,
+            7,
+            1,
+            15,
+            2,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        }
+      ],
+      "actual_target_nonzero_not_asserted": true
+    },
+    {
+      "r": 2,
+      "p": 37,
+      "checks": 106,
+      "critical_T_length": 2,
+      "critical_Q_length": 6,
+      "T_basis_determinant": 1,
+      "Q_basis_determinant": 8,
+      "blocks": [
+        {
+          "length": 2,
+          "characteristic_polynomial": [
+            11,
+            33,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        },
+        {
+          "length": 9,
+          "characteristic_polynomial": [
+            1,
+            32,
+            35,
+            17,
+            4,
+            12,
+            23,
+            26,
+            17,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        }
+      ],
+      "actual_target_nonzero_not_asserted": true
+    },
+    {
+      "r": 4,
+      "p": 73,
+      "checks": 198,
+      "critical_T_length": 4,
+      "critical_Q_length": 12,
+      "T_basis_determinant": 1,
+      "Q_basis_determinant": 48,
+      "blocks": [
+        {
+          "length": 4,
+          "characteristic_polynomial": [
+            12,
+            62,
+            64,
+            61,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        },
+        {
+          "length": 17,
+          "characteristic_polynomial": [
+            46,
+            26,
+            33,
+            58,
+            46,
+            26,
+            16,
+            19,
+            23,
+            14,
+            2,
+            28,
+            36,
+            28,
+            3,
+            25,
+            50,
+            1
+          ],
+          "all_endpoint_hankel_norms_units": true,
+          "characteristic_may_have_multiple_roots": true
+        }
+      ],
+      "actual_target_nonzero_not_asserted": true
+    }
+  ],
+  "total_checks": 364,
+  "not_proved_by_program": [
+    "all-scale operator lemmas",
+    "all-r or infinite simultaneous target units",
+    "new arithmetic cost",
+    "new special-value theorem"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "as_of": "2026-10-04",
+  "exact_arithmetic": "SymPy algebraic numbers and rational matrices",
+  "checks": {
+    "endpoint_curve_and_branch": {
+      "passed": true,
+      "evidence": {
+        "s0": "-sqrt(2)/2 + sqrt(6)/2",
+        "square": "2 - sqrt(3)",
+        "Q_s0": "0"
+      }
+    },
+    "number_field_degree_8": {
+      "passed": true,
+      "evidence": {
+        "primitive_element": "sqrt(2)+sqrt(3)+i",
+        "minimal_polynomial": "x**8 - 16*x**6 + 88*x**4 + 192*x**2 + 144",
+        "degree": 8,
+        "complex_pairs": 4,
+        "reason_for_no_real_embedding": "contains i"
+      }
+    },
+    "conjugate_(1, 1)": {
+      "passed": true,
+      "evidence": {
+        "a_sign": 1,
+        "b_sign": 1,
+        "s_image": "-sqrt(2)/2 + sqrt(6)/2",
+        "V4_image": "-sqrt(2)/2 + sqrt(6)/2"
+      }
+    },
+    "conjugate_(-1, 1)": {
+      "passed": true,
+      "evidence": {
+        "a_sign": -1,
+        "b_sign": 1,
+        "s_image": "-sqrt(6)/2 + sqrt(2)/2",
+        "V4_image": "-sqrt(6)/2 + sqrt(2)/2"
+      }
+    },
+    "conjugate_(1, -1)": {
+      "passed": true,
+      "evidence": {
+        "a_sign": 1,
+        "b_sign": -1,
+        "s_image": "-sqrt(6)/2 - sqrt(2)/2",
+        "V4_image": "2/(-sqrt(6) + sqrt(2))"
+      }
+    },
+    "conjugate_(-1, -1)": {
+      "passed": true,
+      "evidence": {
+        "a_sign": -1,
+        "b_sign": -1,
+        "s_image": "sqrt(2)/2 + sqrt(6)/2",
+        "V4_image": "sqrt(2)/2 + sqrt(6)/2"
+      }
+    },
+    "elliptic_endpoints": {
+      "passed": true,
+      "evidence": {
+        "x_plus": "sqrt(6)",
+        "x_minus": "-sqrt(2)"
+      }
+    },
+    "unit_endpoint_values": {
+      "passed": true,
+      "evidence": {
+        "u_plus_B": "sqrt(3) + 2",
+        "u_minus_B": "I",
+        "F_plus_B": "1 via local order 2/1 argument",
+        "F_minus_B": "-1"
+      }
+    },
+    "plus_regularized_F_limit": {
+      "passed": true,
+      "evidence": {
+        "q_plus_derivative": "16*sqrt(6)",
+        "r_plus_derivative": "-6*sqrt(2)*I",
+        "orders_at_y0": {
+          "y": 1,
+          "x_minus_sqrt6": 2,
+          "r_plus": 2
+        },
+        "regular_F_plus_value": "1"
+      }
+    },
+    "minus_F_unit_limit": {
+      "passed": true,
+      "evidence": {
+        "r_minus_B": "-8",
+        "regular_F_minus_value": "-1"
+      }
+    },
+    "full_regulator_fixed_space_is_diagonal": {
+      "passed": true,
+      "evidence": {
+        "constraint_rank": 3,
+        "fixed_dimension": 1,
+        "basis": [
+          [
+            "1",
+            "1",
+            "1",
+            "1"
+          ]
+        ],
+        "qualification": "abstract embedding-coordinate calculation, no numeric regulator test"
+      }
+    },
+    "i_is_root_of_unity": {
+      "passed": true,
+      "evidence": {
+        "identity": "i^4=1; bilinearity gives delta(4[i])=0 in antisymmetric tensor"
+      }
+    }
+  },
+  "conjugates": [
+    {
+      "a_sign": 1,
+      "b_sign": 1,
+      "i_image": "i",
+      "s_image": "-sqrt(2)/2 + sqrt(6)/2"
+    },
+    {
+      "a_sign": -1,
+      "b_sign": 1,
+      "i_image": "i",
+      "s_image": "-sqrt(6)/2 + sqrt(2)/2"
+    },
+    {
+      "a_sign": 1,
+      "b_sign": -1,
+      "i_image": "i",
+      "s_image": "-sqrt(6)/2 - sqrt(2)/2"
+    },
+    {
+      "a_sign": -1,
+      "b_sign": -1,
+      "i_image": "i",
+      "s_image": "sqrt(2)/2 + sqrt(6)/2"
+    }
+  ],
+  "written_proof": "research/odd_zeta_bloch_boundary_20261004.md",
+  "written_proof_sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+  "not_verified_by_finite_computation": [
+    "Steinberg exactness; actual existence of a finite Bloch chain",
+    "General ordinary-value/leading-unit boundary lemma",
+    "Borel–Suslin injectivity of the full number-field regulator",
+    "Irrationality of Catalan or any zeta value",
+    "Lean formalization"
+  ]
+}

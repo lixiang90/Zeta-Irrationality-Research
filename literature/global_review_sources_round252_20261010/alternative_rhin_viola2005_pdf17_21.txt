@@ -1,0 +1,251 @@
+              T HE PERMUTATION GROUP METHOD FOR THE DILOGARITHM                      405
+
+
+Finally, we require the following lemma relating the values of α, β and δ in (2.9).
+Lemma 2.8. If β = k + l − h, then δ = α.
+   If β = 0 and α = j + k, then δ = h + j − l.
+   If β = 0 and α = k + l, then δ = h.
+   If β = 0 and α = l + m, then δ = m + h − k.
+Proof. If β = k +l −h we have k +l −h ≥ 0, whence h ≤ k +l, m +h −k ≤ l +m
+and h + j − l ≤ j + k. Therefore
+
+                             δ = max{ j + k, k + l, l + m} = α.
+
+If β = 0 we have k + l − h ≤ 0, whence k + l ≤ h, l + m ≤ m + h − k and
+j + k ≤ h + j − l. Therefore
+
+                             δ = max{h, m + h − k, h + j − l}.
+
+If α = j + k then k + l ≤ j + k, l ≤ j, h ≤ h + j − l, and l + m ≤ j + k,
+m + h − k ≤ h + j − l, whence δ = h + j − l. If α = k + l then j + k ≤ k + l,
+j ≤ l, h + j − l ≤ h, and l + m ≤ k + l, m ≤ k, m + h − k ≤ h, whence δ = h.
+If α = l + m then k + l ≤ l + m, k ≤ m, h ≤ m + h − k, and j + k ≤ l + m,
+h + j − l ≤ m + h − k, whence δ = m + h − k.
+
+Proof of Theorem 2.1. If min{l + m − j, j + k − m} < 0 we apply Lemma 2.2.
+Thus we may assume l + m − j ≥ 0 and j + k − m ≥ 0. If km > 0, we use the
+                                       (ν)
+linear decomposition of the integrals Iz (h, j, k, l, m) (ν = 0, 1, 2) given by the
+identity y = 1 − (1 − y). We have
+
+    Iz(0) (h, j, k, l, m)
+                      11
+               −l−m              x j (1 − x)h y k−1 (1 − y)l   
+         = z                                                     1 − (1 − y) dx dy
+                             (x(1 − y) + yz)   j+(k−1)−(m−1)+1
+                   0 0
+              −1 (0)
+         =   z Iz (h,        j, k − 1, l, m − 1) − Iz(0) (h, j, k − 1, l + 1, m − 1),
+
+                      (1)                      (2)
+and similarly for Iz (h, j, k, l, m) and Iz (h, j, k, l, m). Hence the same decom-
+position holds also for Iz (h, j, k, l, m):
+
+Iz (h, j, k, l, m) = z −1 Iz (h, j, k −1, l, m −1)− Iz (h, j, k −1, l + 1, m −1). (2.29)
+
+For brevity, denote the tuples on the right side of (2.29) by
+
+                  (h 1 , j1 , k1 , l1 , m 1 ) = (h, j, k − 1, l, m − 1),
+                                                                                  (2.30)
+                  (h 2 , j2 , k2 , l2 , m 2 ) = (h, j, k − 1, l + 1, m − 1).
+406                            G EORGES R HIN AND C ARLO V IOLA
+
+
+
+If we denote by Hq , K q , αq , βq , δq the integers (2.9) associated with the tuple
+(h q , jq , kq , lq , m q ) (q = 1, 2), we easily get
+
+ H1 ≤ H,       K1 ≤ K ,       α1 = α − 1,        β − 1 ≤ β1 ≤ β,       δ − 1 ≤ δ1 ≤ δ,
+                                                                                            (2.31)
+ H2 ≤ H,       K2 ≤ K ,       α − 1 ≤ α2 ≤ α,          β2 = β,    δ − 1 ≤ δ2 ≤ δ.
+
+Since Hq ≤ H and K q ≤ K , the quotients d H /d Hq and d K /d K q are integers. Hence
+if Theorem 2.1 holds for each of the tuples (2.30) we have, for q = 1, 2,
+
+
+  d d z αq (z −1)βq Iz (h q , jq , kq , lq , m q ) = Pq (z) − Q q (z) Li2 (1/z)
+ H K
+                          (1)
+   d H d K z αq (z −1)βq Iz (h q , jq , kq , lq , m q ) = Rq (z) − Q q (z) Li1 (1/z) (2.32)
+
+
+d d z αq (z −1)βq I (h , j , k , l , m ) = Q (z)
+                          (2)
+   H K                   z     q    q    q   q     q       q
+
+with
+
+Pq (z), Q q (z), Rq (z) ∈ Z[z], max{deg Pq (z), deg Q q (z), deg Rq (z)} ≤ δq . (2.33)
+
+From (2.29), (2.30), (2.31) and (2.32) we obtain
+
+d H d K z α (z − 1)β Iz (h, j, k, l, m)
+                          
+ = d H d K z α (z − 1)β z −1 Iz (h, j, k −1, l, m −1) − Iz (h, j, k −1, l +1, m −1)
+ = d H d K z α1 +1 (z − 1)β1 (z − 1)β−β1 z −1 Iz (h 1 , j1 , k1 , l1 , m 1 )
+                               − d H d K z α−α2 z α2 (z − 1)β2 Iz (h 2 , j2 , k2 , l2 , m 2 )
+                                                           
+ = (z − 1)β−β1 P1 (z) − Q 1 (z) Li2 (1/z) − z α−α2 P2 (z) − Q 2 (z) Li2 (1/z)
+ = P(z) − Q(z) Li2 (1/z),
+
+where
+
+                        P(z) = (z − 1)β−β1 P1 (z) − z α−α2 P2 (z)
+and
+
+                       Q(z) = (z − 1)β−β1 Q 1 (z) − z α−α2 Q 2 (z).                         (2.34)
+
+Similarly
+
+            d H d K z α (z − 1)β Iz(1) (h, j, k, l, m) = R(z) − Q(z) Li1 (1/z),
+            d H d K z α (z − 1)β Iz(2) (h, j, k, l, m) = Q(z),
+
+with
+
+                        R(z) = (z − 1)β−β1 R1 (z) − z α−α2 R2 (z)
+
+and with Q(z) given by (2.34).
+             T HE PERMUTATION GROUP METHOD FOR THE DILOGARITHM                407
+
+
+       By (2.31) we have β − β1 ≥ 0 and α − α2 ≥ 0. Hence, by (2.33),
+
+                             P(z), Q(z), R(z) ∈ Z[z],
+
+with
+
+ max{deg P(z), deg Q(z), deg R(z)} ≤ max{β − β1 + δ1 , α − α2 + δ2 }. (2.35)
+
+We claim that
+
+                       max{β − β1 + δ1 , α − α2 + δ2 } ≤ δ.                 (2.36)
+
+By (2.31) we know that β1 is either β or β − 1. If β1 = β we get
+
+                              β − β1 + δ1 = δ1 ≤ δ.                         (2.37)
+
+If β1 = β − 1, since β = max{0, k + l − h} and, by (2.30), β1 = max{0, k − 1 +
+l − h}, we get β = k + l − h > 0, β1 = k + l − h − 1, whence, by Lemma 2.8 and
+by (2.31), δ1 = α1 = α − 1 = δ − 1. Therefore
+
+                          β − β1 + δ1 = 1 + δ − 1 = δ.                      (2.38)
+
+Similarly, again by (2.31), α2 is either α or α − 1. If α2 = α then
+
+                              α − α2 + δ2 = δ2 ≤ δ.                         (2.39)
+
+If α2 = α − 1, since
+
+                          α = max{ j + k, k + l, l + m}
+
+and, by (2.30),
+
+                       α2 = max{ j + k − 1, k + l, l + m},
+
+we have α = j + k, α2 = j + k − 1. If β = β2 = 0, by Lemma 2.8 we get
+δ = h + j − l, δ2 = h + j − l − 1 = δ − 1. If β = β2 = k + l − h, again by
+Lemma 2.8 we get δ2 = α2 = α − 1 = δ − 1. In either case
+
+                          α − α2 + δ2 = 1 + δ − 1 = δ.                      (2.40)
+
+From (2.37), (2.38), (2.39) and (2.40) we deduce (2.36). From (2.35) and (2.36) we
+have
+
+                     max{deg P(z), deg Q(z), deg R(z)} ≤ δ,
+
+and we conclude that if Theorem 2.1 holds for (h, j, k − 1, l, m − 1) and
+(h, j, k − 1, l + 1, m − 1), it holds also for (h, j, k, l, m).
+408                         G EORGES R HIN AND C ARLO V IOLA
+
+
+
+     If km = 0 but jl > 0, we use the invariance of (2.2), (2.3), (2.4) and of
+the integers (2.9) under the action of the permutation λ , and then apply the linear
+decomposition (2.29). Therefore, if Theorem 2.1 holds for (h, j − 1, k, l − 1, m)
+and (h, j − 1, k + 1, l − 1, m), it holds also for (h, j, k, l, m).
+                                                                 (ν)
+     If hl > 0, we may use the linear decomposition of Iz (h, j, k, l, m) (ν =
+0, 1, 2), and hence of Iz (h, j, k, l, m), given by the identity
+
+            (1 − x)(1 − y) = z − (z − 1)(1 − y) − (x(1 − y) + yz).
+
+Thus we obtain
+
+  Iz (h, j, k, l, m) = Iz (h − 1, j, k, l − 1, m)
+        − (z − 1)Iz (h − 1, j, k, l, m) − Iz (h − 1, j, k, l − 1, m + 1),        (2.41)
+                   (ν)
+and similarly for Iz (h, j, k, l, m).
+     We denote the tuples on the right side of (2.41) by
+
+               (h 3 , j3 , k3 , l3 , m 3 ) = (h − 1, j, k, l − 1, m),
+               (h 4 , j4 , k4 , l4 , m 4 ) = (h − 1, j, k, l, m),                (2.42)
+               (h 5 , j5 , k5 , l5 , m 5 ) = (h − 1, j, k, l − 1, m + 1),
+
+and again by Hq , K q , αq , βq , δq the integers (2.9) associated with the tuple
+(h q , jq , kq , lq , m q ) (q = 3, 4, 5). We easily see that
+
+  H3 ≤ H,      K3 ≤ K ,     α − 1 ≤ α3 ≤ α,       β3 = β,      δ − 1 ≤ δ3 ≤ δ,
+  H4 ≤ H,      K4 ≤ K ,     α4 = α,     β ≤ β4 ≤ β + 1,        δ − 1 ≤ δ4 ≤ δ,   (2.43)
+  H5 ≤ H,      K5 ≤ K ,     α − 1 ≤ α5 ≤ α,       β5 = β,      δ − 1 ≤ δ5 ≤ δ.
+
+Thus if Theorem 2.1 holds for each of the three tuples (2.42), we have (2.32) and
+(2.33) for q = 3, 4, 5. Similarly to the previous case, by (2.41), (2.42) and (2.43)
+we get
+
+          d H d K z α (z − 1)β Iz (h, j, k, l, m) = P(z) − Q(z) Li2 (1/z),
+          d H d K z α (z − 1)β Iz(1) (h, j, k, l, m) = R(z) − Q(z) Li1 (1/z),
+          d H d K z α (z − 1)β Iz(2) (h, j, k, l, m) = Q(z),
+
+with
+
+           P(z) = z α−α3 P3 (z) − (z − 1)β+1−β4 P4 (z) − z α−α5 P5 (z),
+           Q(z) = z α−α3 Q 3 (z) − (z − 1)β+1−β4 Q 4 (z) − z α−α5 Q 5 (z),
+           R(z) = z α−α3 R3 (z) − (z − 1)β+1−β4 R4 (z) − z α−α5 R5 (z).
+             T HE PERMUTATION GROUP METHOD FOR THE DILOGARITHM                              409
+
+
+By (2.43) we have α − α3 ≥ 0, β + 1 − β4 ≥ 0 and α − α5 ≥ 0. Thus by (2.33)
+for q = 3, 4, 5 we get
+
+                                P(z), Q(z), R(z) ∈ Z[z]
+
+with
+
+   max{deg P(z), deg Q(z), deg R(z)}
+                      ≤ max{α − α3 + δ3 , β + 1 − β4 + δ4 , α − α5 + δ5 }. (2.44)
+
+A discussion analogous with the one given in the previous case, again based on
+Lemma 2.8 and on (2.43) for αq , βq , δq (q = 3, 4, 5), easily yields
+
+              max{α − α3 + δ3 , β + 1 − β4 + δ4 , α − α5 + δ5 } ≤ δ,                   (2.45)
+
+similarly to (2.36). From (2.44) and (2.45) we have
+
+                       max{deg P(z), deg Q(z), deg R(z)} ≤ δ,
+
+so that if Theorem 2.1 holds for (h − 1, j, k, l − 1, m), (h − 1, j, k, l, m) and
+(h − 1, j, k, l − 1, m + 1), it holds also for (h, j, k, l, m).
+      If hl = 0 but hk > 0, we apply first the permutation λ and then the linear
+decomposition (2.41). Hence if Theorem 2.1 holds for (h − 1, j, k − 1, l, m),
+(h − 1, j, k, l, m) and (h − 1, j + 1, k − 1, l, m), it holds also for (h, j, k, l, m).
+      With the notation (2.30) and (2.42), if for at least one q (1 ≤ q ≤ 5) the tuple
+(h q , jq , kq , lq , m q ) satisfies at least one of the inequalities kq m q > 0, jq lq > 0,
+h q lq > 0, h q kq > 0, we iterate the linear decompositions (2.29) or (2.41), up to
+applying the permutation λ .
+      We remark that such an iteration process must terminate in finitely many steps,
+because
+
+       h + j + k + l + m > h q + jq + kq + lq + m q ≥ 0               (q = 1, . . . , 5).
+
+Hence if we iterate the decompositions (2.29) and (2.41) sufficiently many times,
+we end up with finitely many tuples for each of which either min{l + m − j, j +
+k − m} < 0, in which case we apply Lemma 2.2, or km = jl = hl = hk =
+0. Thus Theorem 2.1 will be proved in general, if we show that it holds for any
+(h, j, k, l, m) satisfying km = jl = hl = hk = 0, l + m − j ≥ 0, j + k − m ≥ 0.
+We distinguish some cases.
+First case: j > 0. From jl = 0 we get l = 0. Since l + m − j ≥ 0 we have
+m ≥ j > 0, and from km = 0 we get k = 0. Since j + k − m ≥ 0 we have j ≥ m.
+Therefore m = j. Thus we have the tuple (h, j, 0, 0, j), and we apply Lemma 2.7.
+Second case: j = 0, k > 0. From km = hk = 0 we get h = m = 0. Thus we
+have (0, 0, k, l, 0), and we apply Lemma 2.6.
+

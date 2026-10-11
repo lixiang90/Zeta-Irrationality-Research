@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "N": 3,
+      "K": 40,
+      "h": 37,
+      "q": 17,
+      "baseline_log": 1274.3725919894173,
+      "baseline_J": 0.7964828699933858,
+      "cosets": [
+        {
+          "label": "principal_part_step_one",
+          "step": "1",
+          "log_head_primitive": 1223.0941003083092,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 1415.3701330705974,
+          "log_uniform_upper_over_K2": 0.8846063331691233,
+          "log_actual_primitive": 1414.7976463744712,
+          "log_actual_primitive_over_K2": 0.8842485289840445,
+          "actual_minus_baseline": 140.42505438505395
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "step": "6333336354468423149730426810046766949031835709997056000000000000000",
+          "log_head_primitive": 1223.0941003083092,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 1268.6184487932626,
+          "log_uniform_upper_over_K2": 0.792886530495789,
+          "log_actual_primitive": 1260.9792755193678,
+          "log_actual_primitive_over_K2": 0.7881120471996048,
+          "actual_minus_baseline": -13.393316470049509
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "K": 55,
+      "h": 51,
+      "q": 23,
+      "baseline_log": 2559.155898835167,
+      "baseline_J": 0.8460019500281545,
+      "cosets": [
+        {
+          "label": "principal_part_step_one",
+          "step": "1",
+          "log_head_primitive": 2506.7055323533386,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 2792.2600625711852,
+          "log_uniform_upper_over_K2": 0.9230611777094827,
+          "log_actual_primitive": 2791.7849491985503,
+          "log_actual_primitive_over_K2": 0.9229041154375373,
+          "actual_minus_baseline": 232.62905036338302
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "step": "9019013436262835771215099186561682958511683284150386966064180775837036746768467094195404800000000000000000000000",
+          "log_head_primitive": 2506.7055323533386,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 2554.1658118957066,
+          "log_uniform_upper_over_K2": 0.8443523345109774,
+          "log_actual_primitive": 2548.623830495665,
+          "log_actual_primitive_over_K2": 0.8425202745440215,
+          "actual_minus_baseline": -10.532068339502338
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "K": 70,
+      "h": 65,
+      "q": 29,
+      "baseline_log": 4163.3451542242565,
+      "baseline_J": 0.8496622763722973,
+      "cosets": [
+        {
+          "label": "principal_part_step_one",
+          "step": "1",
+          "log_head_primitive": 4094.6816238992024,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 4509.833352737728,
+          "log_uniform_upper_over_K2": 0.9203741536199445,
+          "log_actual_primitive": 4505.24043804009,
+          "log_actual_primitive_over_K2": 0.9194368240898144,
+          "actual_minus_baseline": 341.89528381583364
+        },
+        {
+          "label": "baseline_content_protected_step",
+          "step": "17233456914273574682443442368358863049554944955614244401191140648390989277545374456464428399284611054083303178607474540323799040000000000000000000000000000000000",
+          "log_head_primitive": 4094.6816238992024,
+          "positive_interval_wider_than_step": true,
+          "log_uniform_upper": 4155.077507752865,
+          "log_uniform_upper_over_K2": 0.8479750015822174,
+          "log_actual_primitive": 4151.828621248297,
+          "log_actual_primitive_over_K2": 0.8473119635200608,
+          "actual_minus_baseline": -11.516532975959178
+        }
+      ]
+    }
+  ],
+  "scope": "Finite three-scale exact endpoint study, no extrapolated asymptotic exponent."
+}

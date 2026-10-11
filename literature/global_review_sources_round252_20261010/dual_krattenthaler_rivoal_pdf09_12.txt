@@ -1,0 +1,345 @@
+=== PHYSICAL PDF PAGE 9 ===
+9
+2.4. La conjecture des d´ enominateurs. Toutes ces donn´ ees ont naturellement con-
+duit ` a formuler une conjecture g´ en´ erale sur les d´ enominateurs des combinaisons lin´ eaires
+rationnelles construites sur les s´ eries d´ eriv´ ees suivantes :
+Sn,A,B,C,r (z) = n!A−2Br
+∞∑
+k=1
+1
+C!
+∂C
+∂k C
+((
+k + n
+2
+)(k − rn)B
+rn(k + n + 1)B
+rn
+(k)A
+n+1
+)
+z−k, (2.10)
+o` u |z| ≥ 1 et A, B, C, r sont des entiers positifs v´ eriﬁant9 0 ≤ 2Br < A . Il existe alors des
+polynˆ omesp0,C,n (X) et pl,n (X) pour l ∈ { 1, . . . , A }, d´ ependant deA, B et r mais pas de
+C, tels que
+dA+C
+n p0,C,n (X) ∈ Z[X], dA−l
+n pl,n (X) ∈ Z[X] (2.11)
+et
+Sn,A,B,C,r (z) = p0,C,n (z) + (− 1)C
+A∑
+l=1
+(C + l − 1
+l − 1
+)
+pl,n (z) LiC+l(1/z ). (2.12)
+Posons pour simpliﬁer
+Rn,A,B,r (k) = n!A−2Br
+(
+k + n
+2
+)(k − rn)B
+rn(k + n + 1)B
+rn
+(k)A
+n+1
+.
+En suivant la d´ emarche classique (voir [8]), on a pour tout l ∈ { 1, . . . , A } :
+pl,n (X) =
+n∑
+j=0
+1
+(A − l)!
+∂A−l
+∂k A−l
+(
+Rn,A,B,r (k)(k + j)A)⏐
+⏐
+⏐
+⏐
+k=−j
+X j (2.13)
+et
+p0,C,n (X) = −
+n∑
+j=0
+A∑
+e=1
+(− 1)C
+(C + e − 1
+e − 1
+)
+·
+( 1
+(A − e)!
+∂A−e
+∂k A−e
+(
+Rn,A,B,r (k)(k + j)A)⏐
+⏐
+⏐
+k=−j
+) j∑
+i=1
+1
+ie+C X j−i. (2.14)
+Nous aurons besoin de l’expression plus explicite suivante :
+∂h
+∂k h
+(
+Rn,A,B,r (k)(k + j)A)⏐
+⏐
+⏐
+k=−j
+= (− 1)Aj+Brn (rn)!2B
+n!2rB
+∂h
+∂εh
+(n
+2 − j + ε
+)( n!
+(1 − ε)j (1 + ε)n−j
+)A
+·
+(rn + j − ε
+rn
+)B((r + 1)n − j + ε
+rn
+)B
+⏐
+⏐
+⏐
+⏐
+⏐
+ε=0
+. (2.15)
+9Cette condition, qui sert uniquement ` a faire converger la s´ erie e n z = ± 1, sera assouplie aux para-
+graphes 3, 8 ` a 10, et 12 ` a 14.
+
+=== PHYSICAL PDF PAGE 10 ===
+10
+Quand on sp´ ecialise (2.12) en z = (− 1)A, on obtient
+Sn,A,B,C,r
+(
+(− 1)A)
+= p0,C,n
+(
+(− 1)A)
++ (− 1)C
+A∑
+l=1
+(C + l − 1
+l − 1
+)
+pl,n
+(
+(− 1)A)
+LiC+l
+(
+(− 1)A)
+. (2.16)
+De nouveau, la relation de r´ eciprocit´ e (2.7) vaut avec pl,n (z) ` a la place de ¯pl,n (z), et,
+de mˆ eme, la note 6 de bas de page (avec Sn,A,B,C,r (z) ` a la place de ¯Sn,A,r (z)) s’applique
+dans la situation plus g´ en´ erale que l’on consid` ere ici. Par cons´ equent, si A est pair, la s´ erie
+Sn,A,B,C,r
+(
+(− 1)A)
+est une combinaison lin´ eaire en 1,ζ(C+3), ζ (C+5), . . . , ζ (C+A− 1), alors
+que si A impair, c’est une combinaison lin´ eaire en 1, ˜ζ(C + 2), ˜ζ(C + 4), . . . , ˜ζ(C + A − 1).
+Dans les deux cas, chacun des coeﬃcients est un rationnel dont un d´ enominateur est
+donn´ e par (2.11). En particulier, si on multiplie Sn,A,B,C,r
+(
+(− 1)A)
+par d A+C
+n , on obtient
+une combinaison lin´ eaire ` a coeﬃcients entiers en les valeurs de zˆ et a (respectivement de
+zˆ eta« altern´ ee» ˜ζ) aux entiers impairs, respectivement aux entiers pairs. Cependan t,
+num´ eriquement, il appara ˆ ıt que l’on peut esp´ erer mieux.
+Conjecture 1. Dans les conditions ci-dessus, pour tout A ≥ 2 et pour tout l ∈ { 1, . . . , A },
+les nombres dA+C−1
+n p0,C,n
+(
+(− 1)A)
+et dA−l−1
+n pl,n
+(
+(− 1)A)
+sont entiers.
+Remarque. Nous rappelons que l’int´ erˆ et de cette conjecture est qu’elle permettrait d’appli-
+quer plus ﬁnement le crit` ere de Nesterenko (voir le Th´ eor` eme 7 a u paragraphe 4). Pour A
+pair, la conjecture est formul´ ee dans [40, p. 51], et pourA impair, dans [16, Remarque 2.14].
+Zudilin [55, paragraphe 2] a consid´ er´ e plus en d´ etail la s´ erie d´ eriv´ ee
+Sn, 4, 2, 1, 1(1) =
+∞∑
+k=1
+∂
+∂k
+((
+k + n
+2
+)(k − n)2
+n(k + n + 1)2
+n
+(k)4
+n+1
+)
+= unζ(4) − vn,
+o` u dnun et d 5
+nvn sont entiers. En utilisant l’algorithme de Gosper–Zeilberger [13], [35], [5 1],
+[52], il a constat´ e que les suites ( un)n≥0 et ( vn)n≥0 v´ eriﬁent la r´ ecurrence lin´ eaire d’ordre
+deux suivante10 :
+(n + 1) 5Yn+1 = 3(2 n + 1)(3n2 + 3 n + 1)(15n2 + 15 n + 4) Yn + 3 n2(3n − 1)(3n + 1) Yn−1.
+En s’aidant de cette r´ ecurrence (pour calculer un grand nombre d e valeurs de un et vn),
+Zudilin a aﬃn´ e la Conjecture 1 dans ce cas. Posons avec lui (voir la ﬁn du paragraphe 2
+dans [55])
+Φn =
+∏
+p premier
+{n/p }∈[2/ 3, 1[
+p , (2.17)
+o` u {n/p } est la partie fractionnaire de n/p .
+Conjecture 2. Pour tout entier n ≥ 0, les nombres Φ−1
+n un et Φ−1
+n d4
+nvn sont entiers.
+10Cette r´ ecurrence a aussi ´ et´ e obtenue par Cohen et Rhin [12] par la m´ ethode d’Ap´ ery en 1981 et par
+Sorokin [46] en 2001 ; il est remarquable que les trois m´ ethodes soie nt a priori totalement ind´ ependantes.
+
+=== PHYSICAL PDF PAGE 11 ===
+11
+2.5. Les int´ egrales de Vasilyev. Une des nombreuses d´ emonstrations de l’irrationalit´ e
+de ζ(2) et ζ(3) utilise les c´ el` ebres int´ egrales de Beukers [9] :
+∫ 1
+0
+∫ 1
+0
+xn(1 − x)nyn(1 − y)n
+(1 − (1 − x)y)n+1 dx dy = α nζ(2) − βn
+et ∫ 1
+0
+∫ 1
+0
+∫ 1
+0
+xn(1 − x)nyn(1 − y)nzn(1 − z)n
+(1 − (1 − (1 − x)y)z)n+1 dx dy dz = 2anζ(3) − bn.
+`A la suite de Vasilenko [47], Vasilyev [48], [49] a consid´ er´ e des int´ egrales qui g´ en´ eralisent
+naturellement celles de Beukers :
+JE,n =
+∫
+[0, 1]E
+∏E
+j=1 xn
+j (1 − xj)n
+QE(x1, x 2, . . . , x E)n+1 dx1 dx2 · · ·dxE,
+o` u QE(x1, x 2, . . . , x E) = 1 − (· · ·(1 − (1 − xE)xE−1) · · ·)x1. Il a alors formul´ e la conjecture
+suivante, qu’il a prouv´ ee pour E = 4 et 5, et qui est aussi vraie pour E = 2 et 3 depuis
+Beukers.
+Conjecture 3.
+i) Pour tous entiers E ≥ 2 et n ≥ 0, il existe des rationnels pl,E,n tels que
+JE,n = p0,E,n +
+∑
+l=2,...,E
+l≡E (mod 2)
+pl,E,n ζ(l). (2.18)
+ii) De plus, dE
+n pl,E,n est un entier pour tout l ∈ { 0, 1, . . . , E }.
+La partie i) de cette conjecture a ´ et´ e d´ emontr´ ee par Zudilin [55, paragraphe 8] au moyen
+d’une identit´ e inattendue entre des int´ egrales g´ en´ eralisant celles de Vasilyev et certaines
+s´ eries hyperg´ eom´ etriques tr` es bien ´ equilibr´ ees11. Mais le d´ enominateur alors obtenu est
+dE+1
+n et il reste donc une puissance de d n ` a ´ eliminer. En eﬀet, l’identit´ e de [55, Theorem 5],
+se lit dans ce cas :
+JE,n = n!2E+1(3n + 2)!
+(2n + 1)!E+2 E+4FE+3
+[
+3n + 2, 3
+2n + 2, n + 1, . . . , n + 1
+3
+2n + 1, 2n + 2, . . . , 2n + 2 ; (− 1)E+1
+]
+,
+c’est-` a-dire JE,n = Sn,E +1, 1, 0, 1((− 1)E+1) avec la notation employ´ ee au paragraphe pr´ ec´ e-
+dent. Par cons´ equence, la Conjecture 3, partie ii) d´ ecoule de la Conjecture 1.
+3. Les r ´
+esultats principaux
+Dans ce paragraphe, nous pr´ esentons les th´ eor` emes centraux de cet article. Les Th´ eo-
+r` emes 1 ` a 3 prouvent les Conjectures 1 ` a 3, ` a un facteur 2 pr` es, et les Th´ eor` emes 4 ` a 6
+les aﬃnent dans des cas sp´ eciaux. Notons que la restriction « analytique » 0 ≤ 2Br < A
+n’intervient pas dans ces th´ eor` emes : les ´ enonc´ es sont valables sans aucune hypoth` ese de
+ce type, ni sur r ≥ 0 qui est quelconque. Les preuves des th´ eor` emes sont donn´ e es aux11Voir aussi [27] pour une nouvelle d´ emonstration de cette identit´ e, bas´ ee sur celle d’Andrews [3] : nous
+la rappelons au Th´ eor` eme 8 parce qu’elle est aussi centrale dans le pr´ esent article.
+
+=== PHYSICAL PDF PAGE 12 ===
+12
+paragraphes 12 ` a 15 ; elles sont bas´ ees sur un certain nombre de corollaires, que nous
+´ enoncerons aux paragraphes 9 et 10, des Th´ eor` emes 8 et 9 au paragraphe 6.
+Th´ eor` eme 1.
+i) La Conjecture 1 est vraie quels que soient A ≥ 2, B ≥ 1, C ≥ 0 et r ≥ 0 pour tous
+les coeﬃcients pl,n
+(
+(− 1)A)
+, l ∈ { 1, . . . , A }, c’est-` a-dire que dA−l−1
+n pl,n
+(
+(− 1)A)
+est un
+nombre entier.
+ii) De plus, dans les mˆ emes conditions, les coeﬃcients 2dA+C−1
+n p0,C,n
+(
+(− 1)A)
+sont des
+nombres entiers.
+Th´ eor` eme 2.
+i) La Conjecture 3, ii) est vraie pour tous les coeﬃcients pl,E,n , l ∈ { 1, . . . , E }, c’est-` a-dire
+que dE−l
+n pl,E,n est un nombre entier.
+ii) De plus, les coeﬃcients 2dE
+n p0,E,n sont des nombres entiers.
+Comme not´ e ` a la ﬁn du paragraphe 2.5, la Conjecture 3 est un cas p articulier de la
+Conjecture 1 : le Th´ eor` eme 2 est donc une cons´ equence directe du Th´ eor` eme 1.
+Th´ eor` eme 3.
+i) La Conjecture 2 est vraie pour le coeﬃcient un, c’est-` a-dire que Φ−1
+n un est un nombre
+entier, o` u Φn est le nombre d´ eﬁni dans (2.17).
+ii) De plus, 2Φ−1
+n d4
+nvn est un nombre entier, c’est-` a-dire, qu’au facteur 2 pr` es, la Conjec-
+ture 2 est aussi vraie pour le coeﬃcient vn.
+Ce th´ eor` eme est ´ evidemment une am´ elioration du Th´ eor` eme 1dans le cas o` u r = 1,
+A = 4, B = 2 et C = 1. Il est alors naturel d’attendre des am´ eliorations similaires pou r
+les coeﬃcients les plus g´ en´ eraux. Par exemple, le r´ esultat suivant est une am´ elioration du
+cas r = 1 du Th´ eor` eme 1 pour le coeﬃcient dominant pA−1,n
+(
+(− 1)A)
+. Il contient en mˆ eme
+temps la partie i) du Th´ eor` eme 3.
+Th´ eor` eme 4.Pour r = 1, A ≥ 2 et B ≥ 1, le nombre Φ−B+1
+n pA−1,n
+(
+(− 1)A)
+est entier,
+Pour les autres coeﬃcients (toujours dans le cas o` u r = 1), nous pouvons d´ emontrer un
+r´ esultat un peu plus faible. Au lieu de Φ n, consid´ erons la quantit´ e inf´ erieure
+˜Φn =
+∏
+p premier, p<n
+{n/p }∈[2/ 3, 1[
+p .
+Nous avons alors le th´ eor` eme suivant.
+Th´ eor` eme 5.Pour r = 1, A ≥ 2, B ≥ 1, C ≥ 0, et pour tout l ∈ { 1, . . . , A }, les nombres
+˜Φ−B+1
+n dA−l−1
+n pl,n
+(
+(− 1)A)
+et 2 ˜Φ−B+1
+n dA+C−1
+n p0,C,n
+(
+(− 1)A)
+sont entiers.
+Le cas r = 1, A = 6, B = 3, C = 2 de ce th´ eor` eme r´ epond ` a la question sur la s´ erie˜Fn
+` a la ﬁn du paragraphe 7 dans [55], ` a un facteur 2 pr` es.

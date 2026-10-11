@@ -1,0 +1,27 @@
+# 第247轮B合并A/C独审实际scope
+
+2026-10-10。对应NEW research/research_round247_dyadic_source_review_20261010.md。实际FULL审A最终9308/ed85200e7b75f24d0f7e7ffa523ba16a3196fd199012657567e15f8d90d04017、C最终12786/2cc22522b952f4b9c6587c9ebdf0e25d4a2a078afcf6221ff8dbf6f9b8c6079c全部正文，不把作者scope当作自己的primary阅读证明。两作者scope及A primary-selection载体也FULL读，身份已列review。
+
+## 本人亲自读的完整primary载体
+
+既有246目录：Yang物理PDF5–11 TXT26752/db9c1a8ba3800cb53bfb3f12cde5fb1b92df1351b4b4c5c2ee3f49666fab23f7；15–16 TXT6857/ea3870413f89313bdd648d51df5e3d321008cab6e25141cb528547aaafa495e4；Stein Equation(4)、Theorems5.8–5.9完整选段1314/a7c002b4d7a07b628b6ce3102d559bc8ec3d3bf3871eb6402c07762b5c7063ef。这三载体在B247单源任务已实际FULL读，现用于字符/变化常数/oldform模性校准，不新增claim整原著或Miyake证明。
+
+本轮dyadic目录新增文献由C下载，本人只复用以下完整选段：
+
+|亲自FULL选段|bytes|SHA256|
+|---|---:|---|
+|dual_loeffler_pdf3_5.txt|12535|8964eadcba4ab05034f5f6aa747cffb3579b0b9cf5129e615403993fedd33e46|
+|dual_loeffler_pdf8_10.txt|13352|18b7e7b0b16db28c798b16ccc622304950cb167c01aa64985fc21e1ba7bd2806|
+|dual_stein_degeneracy_selected.html|1656|cbdea42e991593a91ef5cae2e759e9087a68a1261376f281a48195ecfd620a9b|
+
+Loeffler官方Warwick作者讲义的六页完整text包含cusp/elliptic坐标、degree/ramification、曲线/函数域对应和Q模型条件。接受其明示标准statement，不重证GAGA等上游；degree3 subgroup和Q下降另纸核。没有FULL21页PDF，也没有视觉阅读。Stein完整degeneracy定义说cusp forms；C稿的Eisenstein变换/holomorphic cusp条件由矩阵另核，未将该定义偷扩适用范围。没有FULL整个HTML。
+
+另实际完整读既有literature/truncated_gate_sources_round234_20261008/packet_cdt_fixed_v2_pdf16_20_reused.txt，18249 bytes，SHA256 ade72b61da52b4e7297e13d594af11b58025285a780aab796490497c9c6a07ae。它是218页作者版本的物理16–20：完整Thm2.5.1及紧邻定理/条件，核holonomic阈值与m5/τ32/25的条件调用。未读取或冒称最新220页全文；也未从它领取C稿未付图。
+
+## 冻结研究输入与审阅边界
+
+research/dirichlet_chi7_eisenstein_source_round246_20261010.md，10448/544f1df14fc0bbac19756891f000a54961024fe2588b899b731c583ede531679，本人在247实际FULL重新读；采用其中明示u度数/divisor与已纸核不可约性。它的eta上游判据页未由本人此轮新FULL读。246报告与独审收据在B单源任务亦实际FULL读，其身份已记本人canonical scope。
+
+仅rg定位旧CDT intro carrier，未FULL读该文件；A247全部CDT/novelty检索、C247的218–220阅读不转记为本人。未重新全球检索Y或混合目标的status。主数学核验：A D1–D16全部保存证明，C D2–D14模型/degree/rank/fulljump与bad叶；历史去重陈述只核范围一致，不宣称每份旧proof重新审过。
+
+结果PASS，完整共同图/返回叶/strict预算与新数值定理未付。全部paper；数学程序、参数/素数/map扫描、Lean0。本人新GET/下载0，旧producer/外Git mutation0，仅新review与此scope；作者稿、B冻结稿、旧main/policy/manifest未改。两新文件保存后实际FULL自读，最终bytes/SHA另报。

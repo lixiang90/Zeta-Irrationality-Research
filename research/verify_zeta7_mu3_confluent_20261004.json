@@ -1,0 +1,57 @@
+{
+  "status": "independent_inverse_recurrence_and_arb_checks_passed",
+  "source_sha256": "532044b57cab8077397b083d4bb1398e33399d765d21f1c5c38f748b7fc9c8e7",
+  "records": [
+    {
+      "K": 2,
+      "h": 1,
+      "moments": 1,
+      "low_zeta_equalities": 4,
+      "polynomial_identity_points": 2,
+      "positive_target_pivots": 1
+    },
+    {
+      "K": 3,
+      "h": 1,
+      "moments": 1,
+      "low_zeta_equalities": 4,
+      "polynomial_identity_points": 2,
+      "positive_target_pivots": 1
+    },
+    {
+      "K": 4,
+      "h": 2,
+      "moments": 3,
+      "low_zeta_equalities": 12,
+      "polynomial_identity_points": 3,
+      "positive_target_pivots": 2
+    },
+    {
+      "K": 6,
+      "h": 3,
+      "moments": 5,
+      "low_zeta_equalities": 20,
+      "polynomial_identity_points": 4,
+      "positive_target_pivots": 3
+    },
+    {
+      "K": 8,
+      "h": 4,
+      "moments": 7,
+      "low_zeta_equalities": 28,
+      "polynomial_identity_points": 5,
+      "positive_target_pivots": 4
+    },
+    {
+      "K": 12,
+      "h": 6,
+      "moments": 11,
+      "low_zeta_equalities": 44,
+      "polynomial_identity_points": 7,
+      "positive_target_pivots": 6
+    }
+  ],
+  "total_nuisance_equalities": 112,
+  "total_exact_determinants": 23,
+  "scope": "Six finite definite candidates; no infinite-scale assertion. Failed K16 case not audited here."
+}

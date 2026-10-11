@@ -1,0 +1,173 @@
+{
+  "scope": "Fixed exact numbers only; no old producer imports or prime/parameter search.",
+  "checks": [
+    {
+      "name": "prime-source constant",
+      "passed": true,
+      "actual": "294960",
+      "expected": "294960"
+    },
+    {
+      "name": "prime-source ordinary p3 coefficient",
+      "passed": true,
+      "actual": "292080",
+      "expected": "292080"
+    },
+    {
+      "name": "character source coefficient",
+      "passed": true,
+      "actual": "69120",
+      "expected": "69120"
+    },
+    {
+      "name": "unscaled norm",
+      "passed": true,
+      "actual": "1261609",
+      "expected": "1261609"
+    },
+    {
+      "name": "source norm",
+      "passed": true,
+      "actual": "72668678400",
+      "expected": "72668678400"
+    },
+    {
+      "name": "source norm factorization",
+      "passed": true,
+      "actual": "72668678400",
+      "expected": "72668678400"
+    },
+    {
+      "name": "bare4 full cost",
+      "passed": true,
+      "actual": "45/16",
+      "expected": "45/16"
+    },
+    {
+      "name": "bare4 Jensen threshold",
+      "passed": true,
+      "actual": "15/4",
+      "expected": "15/4"
+    },
+    {
+      "name": "L5 full cost",
+      "passed": true,
+      "actual": "66/25",
+      "expected": "66/25"
+    },
+    {
+      "name": "L5 Jensen threshold",
+      "passed": true,
+      "actual": "33/10",
+      "expected": "33/10"
+    },
+    {
+      "name": "LK6 full cost",
+      "passed": true,
+      "actual": "47/18",
+      "expected": "47/18"
+    },
+    {
+      "name": "LK6 Jensen threshold",
+      "passed": true,
+      "actual": "47/15",
+      "expected": "47/15"
+    },
+    {
+      "name": "LTK7 full cost",
+      "passed": true,
+      "actual": "18/7",
+      "expected": "18/7"
+    },
+    {
+      "name": "LTK7 Jensen threshold",
+      "passed": true,
+      "actual": "3",
+      "expected": "3"
+    },
+    {
+      "name": "LTKI8 full cost",
+      "passed": true,
+      "actual": "177/64",
+      "expected": "177/64"
+    },
+    {
+      "name": "LTKI8 Jensen threshold",
+      "passed": true,
+      "actual": "177/56",
+      "expected": "177/56"
+    },
+    {
+      "name": "m8 exact sharp normalization",
+      "passed": true,
+      "actual": "15/64",
+      "expected": "15/64"
+    },
+    {
+      "name": "m4 benchmark gamma5/6 cost",
+      "passed": true,
+      "actual": "65/24",
+      "expected": "65/24"
+    },
+    {
+      "name": "m4 benchmark gamma5/6 Jensen",
+      "passed": true,
+      "actual": "65/18",
+      "expected": "65/18"
+    },
+    {
+      "name": "degree2p/4p saturation",
+      "passed": true,
+      "actual": "5/8",
+      "expected": "5/8"
+    },
+    {
+      "name": "conditional gamma5/8 cost",
+      "passed": true,
+      "actual": "175/64",
+      "expected": "175/64"
+    },
+    {
+      "name": "conditional gamma5/8 Jensen",
+      "passed": true,
+      "actual": "175/48",
+      "expected": "175/48"
+    },
+    {
+      "name": "kernel group PSL index",
+      "passed": true,
+      "actual": "48",
+      "expected": "48"
+    },
+    {
+      "name": "quotient weight2 valence",
+      "passed": true,
+      "actual": "4",
+      "expected": "4"
+    },
+    {
+      "name": "exp14/5 positive prefix exceeds16",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "all five necessary costs exceed14/5",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    },
+    {
+      "name": "bare tau exceeds14/5",
+      "passed": true,
+      "actual": "True",
+      "expected": "True"
+    }
+  ],
+  "passed_count": 27,
+  "all_passed": true,
+  "display_only": {
+    "gamma_needed_if_avg_cap_log16": 5.864467666561314,
+    "maxcap_window_needed": 0.6516075185068126
+  }
+}

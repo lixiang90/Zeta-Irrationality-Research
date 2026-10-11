@@ -1,0 +1,171 @@
+6                                             RICCARDO TOSI
+
+for distinct i, j, h, k ∈ {1, . . . , n}. Since the action of PSL2 on P1 is triply transitive, we
+may recover the above simplicial coordinates by putting z1 = 1, z2 = ∞ and z3 = 0,
+while setting t1 = z4 , . . . , tl = zn .
+The action of the symmetric group Symn on n letters over (P1 )n∗ by permuting coordinates
+transfers to M0,n . This group acts transitively on the connected components of M0,n (R)
+with stabilizer given by the dihedral groups D2n of symmetries of an n-gon.
+These automorphisms extend to the compactification M0,n and induce an action of Symn
+on the set of irreducible boundary divisors of M0,n . To describe this action, let us
+identify {0, . . . , l + 1} with the set {z1 , . . . , zn } \ {z2 } via i 7→ zi+3 if i ̸= l + 1 and
+l + 1 7→ z1 , in accordance with the above convention. An irreducible boundary divisor
+of M0,n corresponds to a proper subset λ ⊊ {0, . . . , l + 1} with #λ ≥ 2. This uniquely
+determines a partition of {z1 , . . . , zn } into two disjoint subsets S1 , S2 with #S1 , #S2 ≥ 2:
+to recover the original subset of {0, . . . , l + 1} it suffices to consider the set between S1
+and S2 that does not contain z2 . The group Symn acts naturally on these partitions,
+hence on the boundary divisors of M0,n , by permuting the zi ’s.
+Fix δ ∈ Sym({0, . . . , l + 1}). We may identify the set {z1 , . . . , zn } with the edges of an
+n-gon by choosing an edge for z2 , followed by zδ−1 (3)+3 and so on. The boundary divisors
+at finite distance from X n,δ are given by proper segments of {0, . . . , l + 1} with respect
+to <δ , which correspond therefore to the diagonals of the n-gon. The dihedral group
+D2n ⊆ Symn acts on these diagonals via the symmetries of the n-gon; in particular, it
+permutes the divisors at finite distance from X n,δ .
+Remark 3. The moduli description of M0,n makes the action of the whole group Symn
+visible, while the interpretation via hyperplane arrangements gives access to fewer auto-
+morphisms, namely Symn−1 . We will distinguish these two descriptions and rely only on
+the latter when possible, as this allows for generalizations to other hyperplane arrange-
+ments.
+Consider the following algebraic differential n-form on (P1 )n∗ :
+                                     n
+                                    Y       1
+                             en =
+                             ω                     dz1 . . . dzn ,
+                                    i=1
+                                        zi − z i+2
+
+where the indices in the product are considered modulo n. This form is invariant under
+the actions of both PGL2 and the dihedral group D2n .
+Let ν be a non-zero algebraic invariant 3-form on PSL2 , which is unique up to a rational
+multiple. Since the quotient map (P1 )n∗ → M0,n is a trivial PSL2 -torsor, we have (P1 )n∗ ∼                  =
+M0,n ×PSL2 . The PGL2 -invariance of ω           en implies that there is a unique algebraic l-form ωl
+on M0,n such that ωl ∧ ν = ω        en . The dihedral invariance of ω    en ensures that ωl is invariant
+under the action of D2n on M0,n .
+Explicitly, we may take
+                                                     dz1 dz2 dz3
+                                     ν=                                   ,
+                                           (z1 − z2 )(z2 − z3 )(z3 − z1 )
+which in turn yields, in simplicial and cubical coordinates,
+                          dt1 . . . dtl                                        dx1 . . . dxl
+ ωl =                                                        =                                                .
+       t2 (t3 − t1 )(t4 − t2 ) . . . (tl − tl−2 )(1 − tl−1 )    (1 − x1 x2 )(1 − x2 x3 ) . . . (1 − xl−1 xl )
+This rightmost expression for ωl makes it apparent that ωl has neither zeros nor poles
+along the boundary divisors M0,n corresponding to Yλ1 , . . . , Yλl ∈ Fl with λi = {0, . . . , i}.
+The dihedral group acts transitively on the set of divisors at finite distance from X n,δ0
+for δ0 the identity of Sym({0, . . . , l + 1}). Since ωl is dihedrally invariant, we conclude
+that ωl has neither zeros nor poles at finite distance from X n,δ0 . In particular, ωl is the
+                AN EXPLICIT STUDY OF A FAMILY OF CELLULAR INTEGRALS                             7
+
+unique volume form of M0,n with this property, up to rational multiples.
+In other words, ωl is the unique non-vanishing volume form, up to scaling, of the open
+subscheme of M0,n obtained by removing all boundary divisors that are not at finite
+distance from X n,δ0 . This variety, denoted by Mδ0,n 0
+                                                        , was intensively studied in [Bro09]
+for the relation of its periods with irrationality proofs for zeta values.
+Strictly speaking, the integral ξl is a cellular integral in the sense of [Bro16] only for l
+even, for it corresponds to the configuration i 7→ i + 2 ∈ Symn . The question of the
+explicit computation of ξl for all l first appeared in [Bro09, Remark 8.7].
+1.2. Some vanishing phenomena. The goal of this section is to prove the following
+Proposition 4. The integral                      Z
+                                          ξl =            ωl
+                                                 X n,δ0
+is a Q-linear combination of multiple zeta values of weight
+    (1) exactly l, if l is even;
+    (2) at most l − 1, if l is odd.
+Remark 5. By [Bro16, Theorem 8.1], the integrals ξl are Q-linear combinations of mul-
+tiple zeta values of weight at most l.
+Although this result will not be strictly necessary for the proof of Theorem 1, it is still
+of independent interest to determine the weights appearing in cellular integrals a priori.
+We start with a corollary of the study of the polar structure of ωl carried out in [Bro09].
+Lemma 6. If l is even, ωl has at most simple poles along the boundary divisors of M0,n .
+This also holds if l is odd with the only exception of the divisor associated with Yλ for
+                                  λ = {2, 4, . . . , l − 1, l + 1},
+along which ωl has a double pole.
+Proof. Let D be the boundary divisor of M0,n associated with the partition S1 ⊔ S2 =
+{z1 , . . . , zn }. By [Bro09, Proposition 7.5], we have
+                                                      n
+                                           l−1 1X
+                                ordD ωl =        −       ID (i, i + 2),
+                                             2     2 i=1
+with indices taken modulo n, where
+                                (
+                                 1 if {zi , zj } ⊆ S1 or {zi , zj } ⊆ S2 ;
+                    ID (i, j) =
+                                 0 otherwise.
+Since ID (i, i + 2) ≤ 1 for all i = 1, . . . , n, we have
+                                                  l−1 n
+                                  ordD ωl ≥            − = −2.
+                                                   2      2
+Suppose that ordD ωl = −2, which implies that ID (i, i + 2) = 1 for all i = 1, . . . , n. In
+particular, if i ≡ j (mod 2) for i, j ∈ {1, . . . , n}, then zi and zj belong to the same set
+between S1 and S2 . Moreover, also zn and z2 belong to the same set, say S1 .
+If l is even, so n is odd, this implies that S1 = {z1 , . . . , zn } and S2 = ∅, against the fact
+that #S2 ≥ 2. It follows that ordD ωl ≥ −1 for l even. On the other hand, for odd l,
+hence even n, we must have S1 = {z2 , z4 , . . . , zn }, while S2 = {z3 , z5 , . . . , zn−1 }. □
+The information about the poles of ωl provided by Lemma 6 is enough to prove Propo-
+sition 4 in the case of even l.
+8                                             RICCARDO TOSI
+
+Lemma 7. If l is even, then ξl is a Q-linear combination of multiple zeta values of weight
+exactly l.
+Proof. We follow the strategy of [Dup18, Proposition 3.12]. Since ωl is closed, by Lemma 6
+both ωl and dωl = 0 have at most simple poles along the boundary divisors of M0,n . This
+means that ωl has logarithmic singularities along the boundary divisors.
+Write for brevity Y = M0,n , let D be the polar divisor of ωl in Y and let Z be the
+union of the boundary divisors at finite distance from X n,δ0 . Note that D ∪ Z has simple
+normal crossings. The integral ξl is a period of the mixed Tate Hodge structure of the
+                     l
+cohomology group HdR   (Y \D, Z \(D ∩Z)). Since the highest term in the Hodge filtration
+reads
+          l
+     F l HdR                                                l
+             (Y \ D, Z \ (D ∩ Z)) = Im(H 0 (ΩlY (log D)) → HdR (Y \ D, Z \ (D ∩ Z))),
+the cohomology classes of pure weight 2l are precisely those with logarithmic singularities
+along D, hence ωl is one of these. This implies that ξl is a Q-linear combination of multiple
+zeta values of weight exactly l.                                                           □
+Remark 8. The differential form ωl for l even is a cell-form on M0,n . A study of the
+Q-algebra generated by these forms has been conducted in [BCS10].
+The drop of the weight in the case of odd l is due to the existence of an algebraic
+primitive for ωl . This is not a consequence of Lemma 6, but the latter can help in finding
+a primitive, as we will explain in more detail in the next section.
+For brevity, let us set
+                          f = (1 − x1 x2 )(1 − x2 x3 ) . . . (1 − xl−1 xl ).
+The following lemma completes the proof of Proposition 4
+Lemma 9. Consider the following (l − 1)-form on M0,n :
+                                    l
+                                    X xi
+                             αl =             dx1 . . . dxi−1 dxi+1 . . . dxl .
+                                    i=1
+                                          f
+Then we have
+   (1) dαl = ωl if l is odd;
+   (2) dαl = 0 if l is even.
+In particular, if l is odd, then ξl is a Q-linear combination of multiple zeta values of
+weight at most l − 1.
+Proof. The differential of αl is
+          l                !                              l                    !
+         X            ∂     x i
+                                                         X              1  x i ∂f
+ dαl =       (−1)i+1                 dx1 . . . dxl =          (−1)i+1     − 2        dx1 . . . dxl
+         i=1
+                     ∂x i    f                            i=1
+                                                                        f  f ∂xi
+          l                     l
+                                          !
+         X    (−1)i+1      1 X ∂f
+     =                + 2         xi          dx1 . . . dxl .
+         i=1
+                 f        f   i=1
+                                     ∂x i
+
+The first sum equals f −1 if l is odd, while it vanishes otherwise. For the second summand,
+note that for i ̸= 1, l, we have
+                                                                  
+                           ∂f              xi−1           xi+1
+                              = −                  −                 f,
+                          ∂xi        (1 − xi−1 xi ) (1 − xi xi+1 )
+while the derivatives with respect to x1 and xl read
+                         ∂f          x2            ∂f           xl
+                             =−              f,        =−               f.
+                         ∂xi      1 − x 1 x2       ∂xl      1 − xl−1 xl
+

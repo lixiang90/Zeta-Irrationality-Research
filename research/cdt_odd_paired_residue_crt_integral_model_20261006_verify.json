@@ -1,0 +1,5213 @@
+{
+  "status": "finite-exact-residue-CRT-mechanism-pass",
+  "scope": "n1..12, every prime p<=2n. Exact local GL basis, actual weighted matrix identity and independent original/orbit DVR invariants, including small-prime high factorial layers. Capacity formula checked only when p2>8n. Finite mechanism, not an all-scale or infinite-unit proof.",
+  "execution_count": 1,
+  "old_or_peer_execution_import_rerun_count": 0,
+  "producer_sha256": "aa4086403985b8b9eab6bec640e538a91f73a819f651a50adaae6bd000ad3f98",
+  "case_count": 63,
+  "capacity_case_count": 25,
+  "exact_matrix_identity_entry_checks": 9378,
+  "cases": [
+    {
+      "n": 1,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        3
+      ],
+      "delta_actual": 4,
+      "baseline_delta": 1,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            3
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            4
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            3
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "delta_actual": 8,
+      "baseline_delta": 2,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 1,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            4
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            6
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            5
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            4
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "delta_actual": 13,
+      "baseline_delta": 5,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "cheapest_column_baseline": 5,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "delta_actual": 3,
+      "baseline_delta": 2,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            6
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            5
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        5
+      ],
+      "delta_actual": 16,
+      "baseline_delta": 8,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 6,
+          "rows": 6,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            5
+          ],
+          "cheapest_column_baseline": 8,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        3
+      ],
+      "delta_actual": 6,
+      "baseline_delta": 3,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            1,
+            3
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "delta_actual": 4,
+      "baseline_delta": 1,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            6
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            8
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            7
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            6
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "delta_actual": 17,
+      "baseline_delta": 12,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 7,
+          "rows": 7,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "cheapest_column_baseline": 12,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        3,
+        4
+      ],
+      "delta_actual": 9,
+      "baseline_delta": 5,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            3,
+            4
+          ],
+          "cheapest_column_baseline": 4,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 2,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            3
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 1,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            8
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            7
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            8
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            7
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        7,
+        8
+      ],
+      "delta_actual": 35,
+      "baseline_delta": 16,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 8,
+          "rows": 8,
+          "Smith_valuations": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            7,
+            7,
+            8
+          ],
+          "cheapest_column_baseline": 16,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        4,
+        4
+      ],
+      "delta_actual": 12,
+      "baseline_delta": 7,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 6,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            4
+          ],
+          "cheapest_column_baseline": 3,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            2,
+            4
+          ],
+          "cheapest_column_baseline": 4,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "delta_actual": 8,
+      "baseline_delta": 3,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            4
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            3
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "delta_actual": 6,
+      "baseline_delta": 1,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            8
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            8
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        1,
+        3,
+        3,
+        4,
+        5,
+        7
+      ],
+      "delta_actual": 24,
+      "baseline_delta": 23,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 9,
+          "rows": 9,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            1,
+            3,
+            3,
+            4,
+            5,
+            7
+          ],
+          "cheapest_column_baseline": 23,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "delta_actual": 17,
+      "baseline_delta": 9,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 6,
+          "rows": 6,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            4
+          ],
+          "cheapest_column_baseline": 6,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 6,
+          "rows": 3,
+          "Smith_valuations": [
+            1,
+            1,
+            3
+          ],
+          "cheapest_column_baseline": 3,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "delta_actual": 7,
+      "baseline_delta": 4,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            4
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "delta_actual": 4,
+      "baseline_delta": 2,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            3
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "p": 17,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            9
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        3,
+        4,
+        7,
+        7,
+        8,
+        9,
+        10
+      ],
+      "delta_actual": 49,
+      "baseline_delta": 30,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 10,
+          "rows": 10,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            3,
+            4,
+            7,
+            7,
+            8,
+            9,
+            10
+          ],
+          "cheapest_column_baseline": 30,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4,
+        6
+      ],
+      "delta_actual": 23,
+      "baseline_delta": 13,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 7,
+          "rows": 7,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            4,
+            6
+          ],
+          "cheapest_column_baseline": 10,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 6,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            2,
+            3
+          ],
+          "cheapest_column_baseline": 3,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "delta_actual": 7,
+      "baseline_delta": 5,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 5,
+      "baseline_delta": 3,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            5
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            4
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            3
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 4,
+      "baseline_delta": 0,
+      "capacity_extra": 4,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            8
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            7
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            2,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            3,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            4
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 3,
+      "baseline_delta": 0,
+      "capacity_extra": 3,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 17,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "p": 19,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            18
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            17
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            10
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        10,
+        12
+      ],
+      "delta_actual": 58,
+      "baseline_delta": 38,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 11,
+          "rows": 11,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            10,
+            12
+          ],
+          "cheapest_column_baseline": 38,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        4,
+        4,
+        5
+      ],
+      "delta_actual": 20,
+      "baseline_delta": 17,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 8,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "cheapest_column_baseline": 7,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 7,
+          "rows": 7,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            4,
+            5
+          ],
+          "cheapest_column_baseline": 10,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "delta_actual": 9,
+      "baseline_delta": 7,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 4,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 6,
+      "baseline_delta": 4,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            6
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            5
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            4
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 1,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            10
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            9
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            8
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            7
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            8
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            7
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 17,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "delta_actual": 1,
+      "baseline_delta": 0,
+      "capacity_extra": 1,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "p": 19,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            18
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            17
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            11
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 2,
+      "actual_Smith_valuations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        7,
+        9,
+        9,
+        11,
+        12
+      ],
+      "delta_actual": 67,
+      "baseline_delta": 46,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 12,
+          "rows": 12,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            4,
+            5,
+            7,
+            9,
+            9,
+            11,
+            12
+          ],
+          "cheapest_column_baseline": 46,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 3,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        4,
+        5,
+        5,
+        6
+      ],
+      "delta_actual": 27,
+      "baseline_delta": 21,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 8,
+          "rows": 8,
+          "Smith_valuations": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "cheapest_column_baseline": 14,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 8,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "cheapest_column_baseline": 7,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 5,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "delta_actual": 20,
+      "baseline_delta": 9,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            3
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ],
+          "cheapest_column_baseline": 4,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            2
+          ],
+          "length": 5,
+          "rows": 5,
+          "Smith_valuations": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ],
+          "cheapest_column_baseline": 4,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            1,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 7,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "delta_actual": 12,
+      "baseline_delta": 5,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            2
+          ],
+          "length": 4,
+          "rows": 4,
+          "Smith_valuations": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 2,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1
+          ],
+          "length": 4,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            6
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            5
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            1,
+            2
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 11,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 3,
+      "baseline_delta": 1,
+      "capacity_extra": 2,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            1
+          ],
+          "length": 3,
+          "rows": 3,
+          "Smith_valuations": [
+            0,
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 1,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            10
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            3,
+            9
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            4,
+            8
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            7
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 13,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "delta_actual": 5,
+      "baseline_delta": 0,
+      "capacity_extra": 5,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            10
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            9
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            2,
+            8
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            3,
+            7
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            4,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            5
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            11,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 17,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            6
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            5
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            11,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 19,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "delta_actual": 2,
+      "baseline_delta": 0,
+      "capacity_extra": 2,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0,
+            4
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            1,
+            3
+          ],
+          "length": 2,
+          "rows": 2,
+          "Smith_valuations": [
+            0,
+            1
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 1
+        },
+        {
+          "residues": [
+            2
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            18
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            17
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            11,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "p": 23,
+      "actual_Smith_valuations": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "delta_actual": 0,
+      "baseline_delta": 0,
+      "capacity_extra": 0,
+      "basis_p_integral_and_GL": true,
+      "orbit_Smith_union_exact": true,
+      "orbits": [
+        {
+          "residues": [
+            0
+          ],
+          "length": 2,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            1,
+            22
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            2,
+            21
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            3,
+            20
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            4,
+            19
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": true,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            5,
+            18
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            6,
+            17
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            7,
+            16
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            8,
+            15
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            9,
+            14
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            10,
+            13
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        },
+        {
+          "residues": [
+            11,
+            12
+          ],
+          "length": 1,
+          "rows": 1,
+          "Smith_valuations": [
+            0
+          ],
+          "cheapest_column_baseline": 0,
+          "mixed_carry": false,
+          "proved_capacity_credit": 0
+        }
+      ]
+    }
+  ],
+  "not_proved_by_code": [
+    "All-n CRT proof",
+    "Every prime-window closed Smith formula",
+    "Paid all-prime n2 gain",
+    "Infinite target units or nonzero",
+    "Strict margin",
+    "Numerical irrationality",
+    "Lean"
+  ]
+}

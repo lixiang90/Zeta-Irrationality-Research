@@ -1,0 +1,190 @@
+{
+  "status": "delivery_checks_passed",
+  "as_of": "2026-10-04",
+  "checked_at_utc": "2026-10-04T13:15:51.037583+00:00",
+  "main_report": "odd_zeta_explicit_relative_progress_20261004.md",
+  "main_report_sha256": "2020a602b2f30671f6a13e66d0f56638db1ea8b2fb172715ec5b23d091775883",
+  "new_irrationality_theorem": false,
+  "new_lean_formalization": false,
+  "parameter_scans": false,
+  "reports": [
+    {
+      "report": "odd_zeta_explicit_steinberg_20261004.md",
+      "report_sha256": "07a4224bdcaef15776bd8552258acd0aea6204819f12097e8706ae2938220736",
+      "script": "odd_zeta_explicit_steinberg_20261004_verify.py",
+      "script_sha256": "adae64acc065389b718a069be023aef47a81f74071e70499d05ab47d629f8158",
+      "certificate": "odd_zeta_explicit_steinberg_20261004_verify.json",
+      "certificate_sha256": "58c2c5c6a940c9f4917759533b084df04961f08961d2a3e0b8d1191bfd4be3ab",
+      "certificate_status": "fixed_exact_certificates_passed"
+    },
+    {
+      "report": "odd_zeta_cyclotomic_mellin_20261004.md",
+      "report_sha256": "9a2c843c9de0ff30c5790aff827869abd27b3e0681dc4ec1ccdd5fab1db6638e",
+      "script": "odd_zeta_cyclotomic_mellin_20261004_verify.py",
+      "script_sha256": "344e7b96ab0bd0b0d3eff5dc5d02e8ee4c6e64aa15fc8a7a6f6a76e70472c34b",
+      "certificate": "odd_zeta_cyclotomic_mellin_20261004_verify.json",
+      "certificate_sha256": "c337596791be85adf5150fd9545f4776f85e27dc0f35701f505de2ae0e124be1",
+      "certificate_status": "all fixed exact certificates passed"
+    },
+    {
+      "report": "odd_zeta_relative_family_audit_20261004.md",
+      "report_sha256": "a732cc05e14fbe3a98bf591f48658410c0fff1ac7c1fb3d5e53097a837a46e19",
+      "script": "odd_zeta_relative_family_audit_20261004_verify.py",
+      "script_sha256": "532bd6d970917a1e8987c70776228b42fa410fe49d0b6b566fa9cf711b78e529",
+      "certificate": "odd_zeta_relative_family_audit_20261004_verify.json",
+      "certificate_sha256": "13699df3867eec49711b2b475f189b0fa4116edacae83bb6e66c4a03d606181c",
+      "certificate_status": "fixed_exact_identities_passed_no_parameter_scan"
+    },
+    {
+      "report": "odd_zeta_log_moment_candidate_20261004.md",
+      "report_sha256": "f00c2b6f95844c8949350eb51968abda08b6904efce8687dcd4ab33845322f15",
+      "script": "odd_zeta_log_moment_candidate_20261004_verify.py",
+      "script_sha256": "19d38f06179811f78ca27e18a1ffff780750271b73fe7143a9894b715f24d423",
+      "certificate": "odd_zeta_log_moment_candidate_20261004_verify.json",
+      "certificate_sha256": "167ccb0a28cff4e577a2404faf797c3203290e603cf87e2290d56bbd26a482bd",
+      "certificate_status": "exact_candidate_inputs_passed"
+    }
+  ],
+  "independent_reviews": {
+    "explicit_steinberg": "root; algebra, Steinberg, endpoints, all complex branches",
+    "cyclotomic_mellin": "root; paper_mechanism sections 4-6; distribution sections 4-8",
+    "relative_family": "root sections 3-7; paper_mechanism sections 3-4",
+    "log_moment_candidate": "paper_mechanism and zeta7_distribution_new",
+    "main_report": "root and zeta7_distribution_new"
+  },
+  "written_review": "odd_zeta_explicit_relative_review_20261004.md",
+  "written_review_sha256": "25e940bd94924128a39043f6f55087367f9be4684fcf1e083d89955f42e88724",
+  "frozen_previous_reports": [
+    {
+      "file": "odd_zeta_bb_fine_budget_20261004.md",
+      "sha256": "aa96752f7a071063453d41c268ec53e4511a572675db109d6bf6d2ceb79c5761",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bb_fixed_gauge_packet_20261004.md",
+      "sha256": "107a39664a4b65452c86501a992404224e3b150f2ae2b23ad7554511fc2ca5d0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004.md",
+      "sha256": "e19d3a7e8985529afa0e53b96b520339115d83995c5f3499ad21c61ab6940c73",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bloch_boundary_20261004_review.md",
+      "sha256": "df39b915c089c168cc9b0051142853b8f751212e477094bab13b70f8a92bc000",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_20261004.md",
+      "sha256": "c06d052d8074305e45c18b9cc7554f50d2aae7fe999a2b2b85a9c8b86d66c42d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_bridge_catalan_system_20261004.md",
+      "sha256": "57992089334e68060999e136520433f206699c932d42e04d7bf471a65f94dae0",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_content_geometry_20261004.md",
+      "sha256": "a0ee768828741328702d4c9187414868c97140ca7304e31422c8b76c5cd10172",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_budget_20261004.md",
+      "sha256": "0af1c3bd03a1c76e076f450af83f3d0f133ffec21d0c69a3d6f7dec0ff191371",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_catalan_20261004.md",
+      "sha256": "91f7ebd3192e5b8cee8ddb2668ca4fbbedd19e981670ee01d7cdcb30dbaab52b",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_cover_elliptic_quotients_20261004.md",
+      "sha256": "07fddab0722eacbad68033a88dc5f78287922b6bf0b4ae1b24ee7a2d96419244",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_descent_20261004.md",
+      "sha256": "054e4855775e67fdbe13198d7b705c1d8615bbffa27b5cb5fcb490e3228de774",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_gap_progress_20261004.md",
+      "sha256": "fe3bac7691cce1594c27f0ed609c51cdf3d9dcbbaae6dd030a4ffbde5372ba92",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_regulator_20261004.md",
+      "sha256": "911820ae48252c6757944003b4aa8b34b44627df99e888bf46a49bb23d66a9fb",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_k2_vertical_20261004.md",
+      "sha256": "98c374714227f52e982419829d47c8ae4a6e94964840c57bc9ee538333ce2e59",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_new_period_systems_20261004.md",
+      "sha256": "9f6708f0d1cb38086b371c6b66f7d94462ca9cea1ee288ca7cbed0703fcf4c7a",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_next_routes_progress_20261004.md",
+      "sha256": "6a6aa83b4355eb3dbda69e4666eebfdcd6fdf2939f1cd967979b942ec5c9927d",
+      "unchanged": true
+    },
+    {
+      "file": "odd_zeta_staircase_catalan_20261004.md",
+      "sha256": "8b72ea0e81211d2eb79c3e5a80674ec491d6e82f4c32c49b0c99a28cd9fa3e72",
+      "unchanged": true
+    }
+  ],
+  "earlier_original_pdf_hash_checks": 48,
+  "new_original_source_pdfs": [
+    {
+      "file": "fischler_rivoal2013_mzv_pade_vasilyev_v1.pdf",
+      "pages": 20,
+      "sha256": "8121d1e154c12de2169333555d858124d43ad7749709d5a73443661468ae22f1",
+      "fixed_version": "arXiv:1309.2534v1, 2013-09-10 (only arXiv version)",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "fischler_rivoal2003_pade_balanced_hypergeometry.pdf",
+      "pages": 29,
+      "sha256": "81ba2e5850a10e86110f0bb5ddb89e2866fc5ae068ab22e539c88fce5a1d0ad9",
+      "fixed_version": "J. Math. Pures Appl.82(2003),1369–1394; author open PDF",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "zudilin2004_approximations_di_tri_log_v1.pdf",
+      "pages": 11,
+      "sha256": "f50f4f91bed75d34c7cb9bfbe3fa470b5b5aac2e4dd08adf88e5f1bb44b66ab4",
+      "fixed_version": "arXiv:math/0409023v1, 2004-09-02",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "krattenthaler_rivoal2008_catalan_linear_form_v1.pdf",
+      "pages": 12,
+      "sha256": "3499b0508c106236a98d5d7be94f04baab82c113655bc1c3c5d2339a5a60e1bc",
+      "fixed_version": "arXiv:0810.1927v1, 2008-10-10; South East Asian J.Math.Math.Sci.6(No.2)(2008),3–15",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    },
+    {
+      "file": "prevost_sorokin_hermite_pade_apery_author.pdf",
+      "pages": 8,
+      "sha256": "d6b60f2c9b9ae2e4e0d5aa18dc7e6f38d6e2a9f80e05b65d69d9151a1f8cf4c6",
+      "fixed_version": "Undated open author/institutional manuscript lmpa326, archived 2026-10-04",
+      "original_bytes_preserved": true,
+      "first_page_identity_visually_checked": true
+    }
+  ],
+  "scope": "Integral Milnor T=0 and the rational four-term Bloch identity are fixed identities, not an irrationality proof. Prime-window/full-gcd no-go results apply only to the specified unbalanced binomial families. Ordinary Rodrigues has proved nonzero and decay exponent but no actual primitive-content theorem. The explicit higher-log candidate has proved moments and uniqueness; endpoint nonzero, actual decay and minimal denominator budget remain open. All-scale claims rely on written proofs; finite certificates, visual identity checks and hashes verify their stated inputs.",
+  "local_links_checked": 93,
+  "missing_links": []
+}

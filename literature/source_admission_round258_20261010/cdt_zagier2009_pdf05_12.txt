@@ -1,0 +1,512 @@
+rescaling A → DA, λ → Dλ, un →QD n un for some positive integer D in order to achieve integrality.
+(The smallest choice of D is M 2 p|M p, where M is the denominator of d.) The corresponding
+generating function is given by the same formula as in (5), except that the variable t must be
+replaced by Dt and the function Pd (X) is now the Legendre function of order d, which is no longer
+a polynomial when d is not an integer. The index d for the above-listed cases # 11, 14, 16, 17, 20,
+22, 27, 34, 35 and 36 are −1/2, −1/3, 1/3, 1/2, −1/4, 1/4, 2/3, 3/2, 3/4 and 4/3, respectvely. (One
+has a choice here between d and −1 − d as parameters, and we have chosen d ≥ −1/2.)
+Legendrian solutions. Next, we see that (apart from the polynomial solutions considered above)
+there are three triples in the table for which A 2 = 4B, namely, those with labels 19, 25 and 26. Here
+there is no evident pattern for the numbers u n , but after a bit of thought we realize that these are
+(up to a normalization t 7→ Dt, un 7→ D n un with suitable D ∈ N) given by the same formula as in
+(6), but where now d is allowed to be a rational number rather than an integer and P d (X) is again
+the Legendre function of index d, which for non-integral d is not a polynomial in X. (The coefficient
+Hd (n) of tn in Fd (t) is also no longer a polynomial in n for fixed d, though it is a polynomial in d for
+fixed n.) This time the smallest choice
+                                      Q     of D for given d ∈ Q making the coefficients u n = D n Hd (n)
+                                    2        ∗                                             ∗
+integral for all n is given by M        p|M p , where M is the denominator of d and p = 4 if p = 2,
+  ∗
+p = p if p is odd.
+Sporadic solutions. Finally, the table contains six solutions which do not fall into any of the
+four infinite families above, and these are the only really interesting ones. (They are also the only
+ones Beukers considered, since he assumed that the polynomial P had non-vanishing quadratic term,
+constant term, and discriminant.) For convenience we list these 6 solutions again, with labels A–F.
+We also add #2 to this list, with label G, since although it is hypergeometric it does not belong to
+the 1-parameter family of hypergeometric solutions discussed above.
+           new label   index     A     B     λ    u0   u1   u2    u3      u4     u5         u6
+               A         #5       7   −8     2    1    2    10    56      346   2252    15184
+               B         #7       9    27    3    1    3      9   21       9    −297    −2421
+               C         #8      10    9     3    1    3    15    93      639   4653    35169
+               D         #9      11   −1     3    1    3    19    147    1251   11253   104959
+               E         #10     12    32    4    1    4    20    112     676   4304    28496
+               F         #13     17    72    6    1    6    42    312    2394   18756   149136
+               G         #2       0   −16    0    1    0      4    0      36      0        400
+
+
+Since all of these are contained in the domain 0 < A ≤ 17, 0 < u 1 ≤ 6, 0 < u2 ≤ 42, which comprises
+less than 0,005% of the domain of our search, one could hazard a rather optimistic
+Conjecture. Up to normalizations, the only cases with B/A 2 6= 0, 1/4 where the recursion (3) has
+an integral solution are the hypergeometric family
+
+                   HGd :        (A, B, λ) = (−1, 0, d2 + d)            (d ∈ Q, d ≥ −1/2)
+
+(which for d ∈ Z≥0 is terminating), the Legendre family
+
+                Legd :         (A, B, λ) = (2, 1, d2 + d + 1)           (d ∈ Q, d ≥ −1/2)
+
+(which for d ∈ Z≥0 is polynomial), and the seven sporadic solutions A–G.
+                                                5
+   4. Binomial coefficient sums. The sequence “D” in the table just given is immediately
+recognized to be the Apéry numbers, which are given by a well-known expression as a sum of products
+of binomial coefficients, so it is reasonable to look for similar expressions for the other solutions. Apart
+from relatively uninteresting expressions of this form for certain hypergeometric solutions such as
+          2n           3
+(3n)! X           n−k 2n
+       =     (−1)             , and the evident binomial coefficient sum expression for H d (n) obtained
+  n!3                   k
+         k=0
+by equating the coefficients of tn on both sides of (6), we have the following binomial coefficient
+representations, covering all but one of the sporadic solutions (G is trivial):
+
+                                       n  3
+                                       X                    n  2  
+                                                            X
+                                          n                    n    2k
+                Sequence A:     un =                    =                                ,
+                                                k                     k             n
+                                       k=0                  k=0
+                                       [n/3]
+                                       X                                                   
+                                                    k   n−3k          n         3k           2k
+                Sequence B:     un =           (−1) 3                                             ,
+                                                                      3k         k           k
+                                       k=0
+                                       n  2  
+                                       X  n    2k
+                Sequence C:     un =                             ,
+                                                k       k
+                                       k=0
+                                       Xn        2       Xn               2
+                                                n      n+k           n−k n   n+k
+                Sequence D:     un =                        =   (−1)                ,
+                                                k       k                k    k
+                                       k=0                                 k=0
+                                       [n/2]
+                                       X                                2
+                                                            n         2k
+                Sequence E:     un =           4n−2k                            .
+                                                            2k         k
+                                       k=0
+
+                                                                                                                      P
+The formulas for the sequences B and E say that the corresponding generating functions                                    un tn
+have hypergeometric representations:
+
+                      1      1 2     −3t 3                                              1      1 1      4t 2 
+         FB (t) =          F , ; 1;           ,                      FE (t) =                  F , ; 1;           .
+                    1 − 3t   3 3    1 − 3t                                              1 − 4t   2 2    1 − 4t
+
+  We have listed here only expressions for the u n as simple sums of products of binomial coefficients.
+One can always expressions as multiple sums, e.g. by the method described at the end of §7, a simple
+                                                           P                       3
+example (courtesy of the referee) being the formula u n = 0≤j≤i≤n (−1)i 8n−i ni ji in case F.
+
+   5. Modular properties. Thanks to Beukers [3], one knows that the Apéry sequence has a
+                     P i.e., nthat for this sequence there is a modular function t(z) such that the
+modular interpretation,
+function F (t(z)) =     un t(z) is a modular form of weight 1. We can therefore ask whether a similar
+property holds for the other solutions in our list. The case when {u n } terminates or is a polynomial
+in n is uninteresting since then F (t(z)) is a rational function of t(z) and hence is a modular function
+for any choice of t(z). However, all the other examples (hypergeometric, Legendrian or sporadic)
+are interesting, since it is not a priori evident when they can be parametrized by modular forms. It
+turns out that there is an algorithm to investigate this question. We explain this below. Applying
+it to each of the 20 non-trivial sequences in the table, we find that all of the sporadic solutions
+are modular, and that there are also four hypergeometric and two Legendrian sequences which give
+modular forms. (The specific parametrizations are given below.) This suggests the following
+Conjecture. Any integral solution of the differential equation (1), where P (t) is a non-degenerate
+quadratic polynomial, has a modular parametrization.
+                                                6
+Whether or not this is true, the natural question arises whether it is possible to give a complete
+classification of the modular solutions of the differential equation (1). This probably can be done,
+since the restricted nature of the singularities of the differential equation should put such strong
+restrictions on the modular side of the picture (e.g., the corresponding modular curve should have
+genus 0 and a small number of cusps and elliptic fixed points) as to make a complete listing possible.
+The most optimistic guess would be that the 12 modular solutions already found are a complete list.
+(This is supported by the case that they are contained in the domain 0 ≤ A ≤ 54, 0 ≤ u 1 ≤ 21,
+0 < u2 ≤ 500, which is less than 0,5% of the domain of our search.) If this and the above conjecture
+are true, then our list of 6 sporadic solutions is indeed complete.
+How to recognize modularity. A general fact about modular forms is the following: if f (z) is
+an arbitrary modular form of positive weight k and t(z) a modular function (i.e., a meromorphic
+modular form of weight 0), then the power series F (t) obtained by expressing f (z) locally as a power
+series in t(z) always satisfies a linear differential equation of order k + 1 with algebraic (or, if t(z)
+is a Hauptmodul, even polynomial) coefficients. A discussion of this phenomenon in the general
+case, and an algorithm to find the corresponding modular parametrization, if one exists, of a given
+linear differential equation, is explained in §5 of [11]. Here we are interested only in k = 1, since
+the differential equation (1) has second order (the case k = 0 is uninteresting, corresponding to the
+“terminating” and “polynomial” cases above when (1) is not the differential equation of lowest order
+satisfied by f ), and the easiest is simply to write down the differential equation. Suppose that t(z) is
+a modular function and f (z) a modular form of weight 1. Then the function t 0 := (2πi)−1 dt/dz is a
+                                                                      2
+(meromorphic) modular form of weight 2 and the function 2f 0 − f f 00 is a modular form of weight 6,
+so we can write
+                          t0 (z)                  2f 0 (z)2 − f (z)f 00 (z)
+                                 =   α(t(z)) ,                              = β(t(z))                 (7)
+                          f (z)2                         t0 (z)f (z)4
+where α(t) and β(t) are algebraic (or even, if t(z) is a Hauptmodul, rational) functions of t. From
+the calculation
+                                                                         2
+             1 d α(t(z)) dF (t(z))                          1 1 0 0 2f 0 − f f 00
+                                      + β(t(z)) F (t(z)) = 0     f +                f = 0
+          t0 (z) dz   t0 (z) dz                             t f2            t0 f 4
+
+we then see that F (t) is a solution of the linear second order differential equation with algebraic
+coefficients (αF 0 )0 + βF = 0. Comparing this with (1), we find that in our case the function α(t),
+                                                                                          2
+                                                                                 R At + Bt ). We
+up to a constant factor which we can normalize to be 1, is equal to tP (t) = t(1 −               can
+                               0                2                  2
+then integrate the equation t (z) = α(t(z))f (z) = α(t(z))F (t(z)) to get z = dt/α(t)F (t)2 or, in
+terms of the standard expansion parameter q = e 2πiz of modular functions and forms at infinity,
+                       Z t                                            Z t                              
+                                     1         1                                      F (s)−2            ds
+           q = t exp                       2
+                                             −         ds       = t exp                         −1                .   (8)
+                         0      α(s) F (s)     s                            0      1 − As + Bs2           s
+
+This is a power series with leading term t (recall that F (t) = u 0 + u1 t + · · · has leading coefficient 1
+by our choice of normalization) and hence can be inverted to compute t = t(z) as a power series
+in q, after which the function f (z) = F (t(z)) can also be computed. We then only have to look
+at these power series to see whether they are in fact the q-expansions of a modular function and a
+weight 1 modular form, respectively. This can often be done by inspection (in many of the cases
+below, t(z) is a simple product of eta-functions and f (z) an Eisenstein series of weight 1, which
+are easily recognized from their q-expansions); when this fails, one can test numerically whether the
+function t(z) is related algebraically on the classical j-invariant j(z). Once one has found a relation by
+looking at the first few Fourier coefficients of the candidate modular forms, the validity of the asserted
+                                                      7
+differential equation can be checked algorithmically, since any equality between modular forms can
+be verified by verifying the equality of a specific number of terms of their q-expansions. In this way,
+the modular parametrizations given below were found. That the other solutions (excluding the trivial
+ones where the sequence {un } is either polynomial or terminating and F (t) is a rational function) are
+not modular is harder to verify algorithmically, but in each case the numerical calculation indicates
+that their q-expansions have very large denominators involving infinitely many prime numbers, and
+this is not a possible behavior for modular forms.
+Description of all known modular solutions of (1). As already mentioned, we found altogether
+12 cases in our table which had modular parametrizations—the six sporadic ones, four hypergeometric
+ones, and two Legendrian ones. We now discuss each of these individually.
+Sporadic cases. In four of the six sporadic cases, those with labels A, C, E and F, the quadratic
+polynomial x2 − Ax + B splits over Z as (x − α)(x − β). In each of these cases, the modular
+functions t(z), 1 − αt(z) and 1 − βt(z) and the modular form f (z) have representations as products of
+Dedekind eta-functions, and the modular form f (z) can also be represented as an Eisenstein series of
+weight 1. These representations are given in the following table, in which a notation like 1 3 2−3 3−9 69
+is a shorthand for the eta-product η(z) 3 η(2z)−3 η(3z)−9 η(6z)9 and the functions θ3 and θ4 are the
+Eisenstein or theta series
+                                       X∞ X                 X
+                                                −3  n                2      2
+                        θ3 (z) = 1 + 6                q =          q m +mn+n ,
+                                       n=1 d|n
+                                                 d
+                                                             m,n∈Z
+                                        ∞  
+                                       X X −4               X       2  2
+                        θ4 (z) = 1 + 4                qn =         q m +n ,
+                                       n=1
+                                                 d
+                                                       d|n                    m,n∈Z
+
+i.e., the modular forms of weight 1√whose Mellin transforms are the Dedekind zeta-functions of the
+two imaginary quadratic fields Q( −3) and Q(i) possessing non-trivial units.
+     Case      α     β         t(z)         1 − αt(z)           1 − βt(z)      f (z)                     f (z)
+                               13 69           25 61               18 64        21 36             1
+       A      −1     8         23 39           11 35               24 38        12 63             3 θ3 (z)   + 23 θ3 (2z)
+                               14 68           11 35               19 63        26 31             1
+       C       1     9         28 34           25 61               29 33        13 62             2 θ3 (z)   + 12 θ3 (2z)
+                             14 42 84          14 414              18 44         210
+       E       4     8          210            214 84               212         14 44
+                                                                                                         θ4 (z)
+                          15 31 45 62 121    18 48 620            19 49 66    215 32 122
+       F       8     9          214          220 38 128          218 33 123    16 46 65    θ3 (z) + 2θ3 (2z) − 2θ3 (4z)
+
+
+Case B is fairly similar: here the polynomial x 2 − Ax + B = x2 − 9x + 27 does not split over Z, but
+we still have the eta-product representations
+                           13 43 189                  2   19 49 636 93 363                                      29 31 121
+           Case B:       t =         ,   1 − 9t + 27t   =                  ,                           f =
+                           29 93 363                      227 312 1212 189                                       13 43 63
+and the Eisenstein series representation
+                                   1         3
+                                     θ3 (z) − θ3 (3z) − θ3 (4z) + 3 θ3 (12z) .
+                               f (z) =
+                                   2         2
+Finally, in the last case D (corresponding to the Apéry numbers), the function t still has a product
+representation, but no longer as a product of eta-functions, and similarly for 1 − At + Bt 2 and f :
+                                 ∞
+                                 Y               5( n5 )                                  16                         55
+           Case D:       t = q          1 − qn              ,      1 − 11t − t2 = t ·         ,       f 2 = t−1 ·        .
+                                 n=1
+                                                                                           56                         11
+                                                                  8
+The Eisenstein series representation of f in this case is also more complicated:
+
+                                        X∞ X                     
+                                              3−i        3+i
+                            f (z) = 1 +           χ(d) +     χ̄(d) q n ,
+                                        n=1
+                                               2          2
+                                                   d|n
+
+                                                                            
+where χ is the Dirichlet character of conductor 5 with χ(2) = i, χ 2 = 5· .
+Hypergeometric cases. Here two cases, the exceptional case #2 when A = λ = 0 and the sequence
+#11 with (A, B, λ) = (16, 0, 4), behave like the first four sporadic cases:
+
+                    Case      α     β     t(z)       1 − αt(z)       1 − βt(z)      f (z)    f (z)
+                                          24 88          214 84        14 22 84      410
+                     #2       −4    4      412           14 414          410        24 84    θ4 (2z)
+                                          18 416                        116 48       210
+                    #11        0    16     224
+                                                          —              224        14 44
+                                                                                             θ4 (z)
+
+(Note that, amusingly enough, f (z) for case #11 is the same as for the sporadic case E = #10,
+although of course the parameter t(z) and hence also the power series F (t) are different.) Another
+case, corresponding to sequence #14 with (A, B, λ) = (27, 0, 6), is more similar to the sporadic case
+D, since we do not have product expansions for t, 1 − At and f separately, but only for certain
+multiplicative combinations, while f has an ordinary (indeed, a particularly simple) Eisenstein series
+representation:
+
+                                      t      312                             39
+                 Case #14:                 = 12 ,                 f3 · t =      ,       f (z) = θ3 (z) .
+                                   1 − 27t   1                               13
+
+Finally, for the sequence #20 with (A, B, λ) = (64, 0, 12), we again find eta-product representations
+only for certain multiplicative combinations of t, 1 − At and f , but this time f is not a modular form
+at all, but only the square-root of a modular form:
+
+                          t       224                216
+        Case #20:              = 24 ,       f4 · t = 8 ,     f (z)2 = −E2 (z) + 2 E2 (2z) ,
+                       1 − 64t    1                  1
+                      P
+where E2 (z) = 1 − 24 σ1 (n) q n is the usual not-quite-modular Eisenstein series of weight 2 on the
+full modular group.
+Legendrian cases. The last two cases which turned out to be modular are again slightly different,
+since now f is no longer a holomorphic modular form, or even the square-root of one, but rather is
+a meromorphic modular form of weight one:
+
+                        18 416                       116 48                   222                      −θ4 (z) + 2θ4 (2z)
+   Case #19:     t =           ,     1 − 16t =              ,        f =            ,       f (z) =                       .
+                         224                          224                    112 48                       1 − 16t(z)
+
+                         112 412 636                                 227 33 123                   −θ3 (z) + 2θ3 (4z)
+  Case #25:       t =                 ,      (1 − 27t)2 f 3 =                   ,       f (z) =                      .
+                         236 312 1212                                 19 49 69                       1 − 27t(z)
+Discussion. We make a few remarks about the modular parametrizations just given. We consider
+only the non-degenerate case when B 6= 0 and A 2 6= 4B, so that x2 − Ax + B = (x − α)(x − β) with
+α and β distinct and non-zero. We further assume that t is a Hauptmodul, i.e., that t and f are
+modular forms on some group Γ ⊂ SL(2, R) of genus 0 and that z 7→ t(z) gives an isomorphism of
+H/Γ ∪ {cusps} to P1 (C). From equation (7) we see that the modular forms f (z), t(z) and t 0 (z) are
+related by f 2 = t0 /t(1 − αt)(1 − βt), so that the Γ-invariant differential form f (z) 2 dz is (or pushes
+                                                    9
+forward to) the differential form dt/t(1 − αt)(1 − βt) on P 1 . This form has three simple poles, at
+t = 0, t = 1/α and t = 1/β, and one simple zero at t = ∞. In terms of the “modular” variable z,
+the point t = 0 corresponds to the cusp at infinity (since we have constructed t in such a way that
+it has an expansion q + · · · ). None of the functions t(z), 1 − αt(z) or 1 − βt(z) had a pole or zero
+in the upper half-plane, since then the function f 2 would have a (simple) pole at that point, which
+is impossible. This explains why these three modular functions always had product expansions in
+the cases looked at above. (This actually remains formally true even in the two sporadic cases B
+and D when α and β are not in Z, but must be interpreted as the statement that the logarithmic
+derivatives of 1 − αt and 1 − βt are weight 2 Eisenstein series.) Also, the fact that the genus is zero
+means that there are no cusp forms of weight 1 or 2, so that f (and, for that matter, also f 2 ) must
+be an Eisenstein series, as indeed we found in all the examples. It seems plausible that by continuing
+this analysis one could get enough information about the necessary forms of f and t to classify at
+least all those cases when t is a Hauptmodul and f a true modular form of weight 1, but I have not
+tried to do this.
+
+   6. The periods associated to the six sporadic solutions. The most famous property of the
+original Apéry recursion (n + 1)2 un+1 − (11n2 + 11n + 3)un − n2 un−1 = 0 is, of course, that if we
+start with the two linearly independent solutions {u n } = {1, 3, 19, . . . } and {vn } = {0, 1, 25
+                                                                                                  4 , . . . },
+                                               1
+then the ratio vn /un tends to the limit L = 5 ζ(2) and this convergence is rapid enough to prove the
+irrationality of L. In this section we look at the corresponding questions for each of the six sporadic
+sequences A–F. We will see that the limit exists and can be computed in five of the six cases, but
+that the convergence, though always exponential, is only rapid enough to imply the irrationality of
+the limit in the case of the Apéry equation.
+   We denote by {un }, as up to now, the solution of equation (3) with u 0 = 1 (and hence u1 = λ,
+un ∈ Z for all n by the fundamental property of our sequences), and by {v n } the sequence defined
+by the initial values v0 = 0, v1 = 1 and the requirement that (3) holds for all n ≥ 1. We want to
+determine whether the sequence vn /un tends to a limit L and, if so, to evaluate this limit and specify
+the speed of the convergence.
+   Let α and √  β as in §5 denote the roots of x 2 − Ax + B = 0, chosen (except in case B where
+α, β = (9 ± 3i 3)/2) so that |β| > |α|. Then the sequence {u n } has the asymptotic behavior
+
+                                     βn    c1    1 
+                           un = C       1−    +O 2                     (n → ∞) ,                          (9)
+                                     n     n    n
+
+             λ−α
+where c1 =         , while every other element of the 2-dimensional vector space of real-valued solutions
+             β−α
+of the recursion (3) (for n ≥ n0 ≥ 1) has asymptotics given either by the same formula (with a possibly
+                                           αn       c2       1                 λ−β
+different value of C) or else by (const.)       1−     + O( 2 , where c2 =            , with the space of
+                                           n        n       n                    α−β
+solutions of the latter type being 1-dimensional. (To obtain these asymptotic formulas, consider a
+general solution {un } of (3) and make the Ansatz
+                                                       n = (const.)
+                                                     u−2           nε xn (1 − cn−1 + O(n−2 )); then the
+                                       −1     ε
+ratio ρn := un+1 /un equals x 1 + εn + 2 + c n + . . . , and rewriting equation (3) in the form
+(1+n−1 )2 ρn −A(1+n−1 )−λn−2 +Bρ−1     n−1 = 0 we find x ∈ {α, β}, ε = −1 and c = (λ−A+x)/(2x−A).)
+                                                                                  n                
+It follows that there are real constants C 0 and L such that vn − Lun = C 0 αn (1 − cn2 + O( n12 and
+that the quotient vn /un tends to L exponentially quickly:
+
+                    vn            α n    c1 − c 2    1 
+                       = L + C 00      1+          +O 2                       (n → ∞) .                  (10)
+                    un            β          n       n
+                                               10
+The values of the constants β, α, C, c 1 , c2 and L occurring in equations (9) and (10) are given for
+                    √ A, C, D, E and F in the table below, in which φ in the third row denotes the
+each of the five cases
+golden ratio (1 + 5)/2 and the numbers ζ(2), L−3 (2) and L−4 (2) are the values at s = 2 of the
+Riemann zeta   function and of    Dirichlet L-series L(s, χ) associated to the quadratic
+                                 the                                                          characters
+χ(n) = −3  n
+                and  χ(n)  =   −4
+                               n
+                                   , each of which is a famous  number:   ζ(2) equals π 2
+                                                                                          /6,  L−4 (2) is
+“Catalan’s constant,” which occurs in the evaluation of many classical definite integrals, and L −3 (2)
+is, up to a factor 33/2/4, the maximum volume of a tetrahedron in hyperbolic 3-space. The constant
+C in (9) can be evaluated using either the explicit binomial coefficient expressions given (except for
+case F) in §4 or else from the modular form expressions of §5. The evaluation of the limiting ratio L
+will be discussed at the end of this section.
+                 Case     β        α           C    c1      c2                  L
+                                            2       1        2     1
+                    A     8       −1        √
+                                          π√ 3      3        3     4
+                                                                     ζ(2)   = 0.4112335 · · ·
+                                          3 3       1        3    1
+                    C     9        1       4π       4        4    2 L−3 (2) = 0.3906512 · · ·
+                                           φ5/2     1       φ       1
+                    D     φ5    −φ−5         √
+                                          2π 4 5
+                                                    √
+                                                   φ 5
+                                                            √
+                                                              5     5
+                                                                      ζ(2) = 0.3289868 · · ·
+                                            2                     1
+                    E     8        4        π
+                                                        0   1       L (2) = 0.4579827 · · ·
+                                                                  2 −4
+                                            √
+                                          3 3                     5
+                    F     9        8        π       −2      3     8 L−3 (2) = 0.4883140 · · ·
+
+
+
+   In each of these five cases, formula (10) gives an interesting series of rational approximations for
+one of the numbers ζ(2), L−3 (2) or L−4 (2), but, as already mentioned, except in case D these do
+not converge quickly enough to yield the irrationality of the limit. Indeed, from the table we see
+that in cases E and F the quantity vn − Lun blows up exponentially like 4n /n or 8n /n, respectively,
+and even in cases A and C, where |α| = 1 and hence v n − Lun tends to zero like O(1/n), this is not
+enough to give the irrationality of L because v n itself has a denominator which blows up like e 2n .
+The speed of convergence is best in these two cases, with v n /un − L being of the order of (1/8)n
+and (1/9)n , respectively, while the convergence in cases E (Catalan’s constant) and F is only like
+(1/2)n and (8/9)n , respectively. The approximations lead in each of the five cases to a simple infinite
+continued fraction expansion of the number L, the formulas in cases C and E being
+
+                                    2                                              1/2
+        L−3 (2) =                          4
+                                                        ,   L−4 (2) =
+                                      9·1                                             2 · 14
+                    P (0) −                                             Q(0) −
+                                          9 · 24                                           2 · 24
+                              P (1) −                                          Q(1) −
+                                               9 · 34                                           2 · 34
+                                      P (2) −                                         Q(2) −
+                                                 ..                                               ..
+                                                    .                                                .
+
+with P (n) = 10n2 + 10n + 3, Q(n) = 3n2 + 3n + 1. Continued fraction expansions of a similar type,
+though with more complicated rational functions, have been given recently by Zudilin [12].
+   To find the value of L listed in the above table, we follow the method devised by Beukers [3] in
+1987 to obtain modular interpretations of Apéry’s irrationality proofs for ζ(2) and ζ(3), using the
+modular descriptions of the differential equations associated to the recursion (3) which were given
+                                               P the integer
+in §5. Consider for instance case C. We saw that                solution {u n } of (3) in this case is given
+by the generating function expansion f (z) =      un t(z)n , where t(z) = η(z)4 η(6z)8 /η(2z)8 η(3z)4 is
+the “Hauptmodul” for Γ0 (6) and f (z) is the Ptheta series (or Eisenstein series) of weight 1 for Γ 0 (6)
+given in §5. The generating function h(z) =     vn t(z)n for the second solution of the recurrence (3)
+has a more complicated modular interpretation as f (z)e                                          11 4
+                                                         g (z), where ge(z) = q − 45 q 2 + q 3 − 16 q +···
+                                                 11
+                                       P
+(q = e2πiz ) is the “Eichler integral”
+P                                         b(n)q n /n2 associated
+                                                        P                  2 3 Eisenstein series g(z) =
+                                                                 to the weight
+                                                                       −3
+         n           2     3      4
+   b(n)q = q − 5q + 9q − 11q + · · · with b(n) = d|n (−1)d−1 n/d           d . (To prove this, one simply
+verifies that the differential equation satisfied by f ge as a function of t(z) coincides with the one
+corresponding to the recursion defining the v n .) The group Γ0 (6) has four cusps, at z = 0, 12 , 31
+and ∞, the corresponding values of the modular function t(z) being 19 , ∞, 1 and 0, respectively. In
+particular, the asymptotics of the u n and the vn are determined by the singularities of the functions
+f (z) and h(z) as z → 0 (this explains once again why both of these sequences grow roughly like 9 n ),
+and hence the limiting
+                   P                                                        Pthe ratio
+                          value L of vn /un is the limiting value as z → 0 of         P h(z)/f (z) = ge(z).
+(Note that, since                n                                                n
+                       vn −Lun )t has a larger radius of convergence than vn t or un tn separately,
+the value of L is automatically equal to the limit of the ratio of the two latter series as t approaches
+                                                                      X ( −3 ) q m
+                                                                            m
+the smallest singularity.) Writing the formula defining ge(z) as                       , one sees that its
+                                                                           m2 1 + q m
+                                                                     m≥1
+                                     1
+limit for z → 0 or q → 1 equals        L (2),
+                                     2 −3
+                                             as claimed. The proof in all the other cases is similar,
+                                                                       X ( −4 ) q m
+                                                                           m
+the function ge(z) in case E, for instance, being the Eichler integral                 of a weight 3
+                                                                           m2 1 + q m
+                                                                           m≥1
+Eisenstein series on Γ0 (8).
+            √ say a few words about case B, which has been omitted up to now. Here the two roots
+   Finally, we
+α = (9 + 3 −3)/2 and β = ᾱ of x2 − Ax + B = 0 have the same absolute value, so all solutions
+of (3) have the same growth O(27n/2/n), and the numbers vn /un do not tend to a limit as n → ∞.
+Instead, the asymptotic expansions of {u n } and {vn } as n → ∞ are given by
+
+                               U n    γ1        Ū n     γ̄1      
+                         un =    α 1−    + ··· +   ᾱ 1 −     + ··· ,
+                               n      n          n         n
+                               V n    γ1        V̄ n     γ̄1      
+                          vn =   α 1−    + ··· +   ᾱ 1 −     + ··· ,
+                               n      n          n         n
+             √
+            9 3          α      V     1             4i
+where U =        , γ1 = and        = L−3 (2)− √ ζ(2). (The ratio V /U , which is the analogue of the
+            2πα          9      U     2            9 3
+limit L in the previous examples, is obtained just as before: the numbers 1/α and 1/ᾱ are the values
+of the HauptmodulPt(z) given   in   §5 at the cusps z = ±1/6 and the function ge(z) = h(z)/f (z) has
+                       ∞
+the form ge(z) = − n=1 −3   n   n −2
+                                     (−q) n
+                                            /(1 − (−q)n ), which for z = 1/6, −q = e−2πi/3 has the value
+                  √
+given.) Since α/ 27 = eπi/6 , the quotients vn /un do tend to a limit 12 L−3 (2) + 9√  4
+                                                                                         3
+                                                                                           ζ(2) tan π(j−1)
+                                                                                                       6
+as n tends to infinity in any fixed residue class n ≡ j 6≡ 4 (mod 6), but the convergence is very slow,
+with error term of the order of 1/n instead of exponentially small as before, so that from the point
+of view of rational approximation this case is of less interest than the other five.
+
+
+    7. The modular cases as Picard-Fuchs differential equations. The fact that the non-
+degenerate solutions of our problem have parametrizations by modular forms means that they have
+an algebraic-geometric interpretation as the Picard-Fuchs differential equations of certain families of
+elliptic curves. In fact, we can be much more precise. In 1982, Beauville [2] classified completely the
+stable families of elliptic curves over P 1 having exactly four singular fibres (a stable family of elliptic
+curves over P1 is a family in which the singular fibres have only double points; the minimal number
+of singular fibres is then 4) and found that there were exactly 6. For each family he gave a defining
+equation, a description of the singular fibres, and the subgroup of SL 2 (Z) describing the family. We
+reproduce the table from [2] here.
+                                                     12
+

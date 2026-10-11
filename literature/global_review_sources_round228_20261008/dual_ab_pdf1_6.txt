@@ -1,0 +1,292 @@
+     DIAGONALIZATION AND RATIONALIZATION OF
+           ALGEBRAIC LAURENT SERIES
+
+                                                by
+
+                         Boris Adamczewski & Jason P. Bell
+
+
+
+
+       Abstract. — We prove a quantitative version of a result of Furstenberg [21]
+       and Deligne [14] stating that the diagonal of a multivariate algebraic power
+       series with coefficients in a field of positive characteristic is algebraic. As a
+       consequence, we obtain that for every prime p the reduction modulo p of the
+       diagonal of a multivariate algebraic power series f with integer coefficients is
+       an algebraic power series of degree at most pA and height at most ApA , where
+       A is an effective constant that only depends on the number of variables, the
+       degree of f and the height of f . This answers a question raised by Deligne
+       [14].
+       Résumé. — Nous démontrons une version quantitative d’un résultat de
+       Furstenberg [21] et Deligne [14] : la diagonale d’une série formelle algébrique
+       de plusieurs variables à coefficients dans un corps de caractéristique non nulle
+       est une série formelle algébrique d’une variable. Comme conséquence, nous
+       obtenons que, pour tout nombre premier p, la réduction modulo p de la di-
+       agonale d’une série formelle algébrique de plusieurs variables f à coefficients
+       entiers est une série formelle algébrique de degré au plus pA et de hauteur au
+       plus ApA , où A est une constante effective ne dépendant que du nombre de
+       variables, du degré de f et de la hauteur de f . Cela répond à une question
+       soulevée par Deligne [14].
+
+
+
+
+2000 Mathematics Subject Classification. — 13F25,11B85,11J85,11T99,34M99,05A15,
+33E99.
+Key words and phrases. — Diagonals of algebraic functions, formal power series, multi-
+variate Laurent series, G-functions, reduction modulo p. Mots clefs en français : diagonales
+de fonctions algébriques, séries formelles, séries de Laurent à plusieurs variables, G-fonctions,
+réduction modulo p.
+
+The First author was supported by the project Hamot, ANR 2010 BLAN-0115-01. The
+second author was supported by NSERC grant 31-611456.
+2                               BORIS ADAMCZEWSKI & JASON P. BELL
+
+
+
+                                                        Contents
+      1. Introduction. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         2
+      2. Strategy of proof . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .               8
+      3. Comments on Furstenberg’s formula. . . . . . . . . . . . . . . . . . . . . .                                     11
+      4. Fields of multivariate Laurent series. . . . . . . . . . . . . . . . . . . . . . .                               14
+      5. Cartier operators and diagonals. . . . . . . . . . . . . . . . . . . . . . . . . . .                             20
+      6. Rationalization of algebraic Laurent series . . . . . . . . . . . . . . . .                                      24
+      7. Proof of Theorems 1.3 and 1.4. . . . . . . . . . . . . . . . . . . . . . . . . . . .                             34
+      8. Diagonals of rational functions with high degree modulo p                                                        35
+      9. Connection with enumerative combinatorics, automata
+          theory and decidability. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                    43
+      10. Algebraic independence for G-functions with the Lucas
+          property. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     46
+      References. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   47
+
+
+
+                                                 1. Introduction
+  A very rich interplay between arithmetic, geometry, transcendence and com-
+binatorics arises in the study of homogeneous linear differential equations and
+especially of those that “come from geometry” and the related study of Siegel
+G-functions (see for instance [4, 17, 24, 32, 33, 35] for discussions that em-
+phasize these different aspects). As an illustration, let us recall a few of the
+many classical results attached to the differential equation
+                                                        1
+                    t(t − 1)y ′′ (t) + (2t − 1)y ′ (t) + y(t) = 0 .
+                                                        4
+    • This differential equation has (up to multiplication by a scalar) a unique
+      solution that is holomorphic at the origin. This solution is a classical
+      hypergeometric function
+                                              ∞     
+                                              X  1 2n 2 n
+            f1 (t) := 2 F1 (1/2, 1/2; 1; t) =            t ∈ Q[[t]] .
+                                                24n n
+                                                                     n=0
+
+    • It has also the following integral form:
+                                      Z
+                                   2 π/2        dθ
+                          f1 (t) =        p               ·
+                                   π 0       1 − t sin2 θ
+      In particular,
+                                   Z +∞
+                                                dx
+                        πf1 (t) =       p
+                                    1      x(x − 1)(x − t)
+                          DIAGONALIZATION AND RATIONALIZATION                                                         3
+
+
+
+      is an elliptic integral and a period in the sense of Kontsevich and Zagier
+      [24].
+   • For nonzero algebraic numbers t in the open unit disc, f1 (t) and πf1 (t) are
+     both known to be transcendental (see for instance the complete survey
+     [36]). In particular, the function f1 is a transcendental function over the
+     field Q(t).
+   • This differential equation comes from geometry: it is the Picard–Fuchs
+     equation of the Legendre family of elliptic curves Et defined by the equa-
+     tion y 2 = x(x − 1)(x − t).
+   • The Taylor expansion of f1 has almost integer coefficients. In particular,
+                                 ∞      
+                                 X    2n 2 n
+                      f1 (16t) =           t ∈ Z[[t]]
+                                       n
+                                                   n=0
+
+      corresponds to a classical generating function in enumerative combina-
+      torics (associated for instance with the square lattice walks that start
+      and end at origin).
+
+   A remarkable result is that, by adding variables, we can see f1 as arising
+in a natural way from a much more elementary function, namely a rational
+function. Indeed, let us consider the rational function
+                                                          2           2
+                      R(x1 , x2 , x3 , x4 ) :=                  ·            .
+                                                     2 − x1 − x2 2 − x3 − x4
+Then R can be expanded as
+               X
+     R =             a(i1 , i2 , i3 , i4 ) xi11 xi22 xi33 xi44
+                (i1 ,i2 ,i3 ,i4 )∈N4
+
+                       X                                                               
+                                                                 i1 + i2        i3 + i4
+            =                          2−(i1 +i2 +i3 +i4 )                                    xi11 xi22 xi33 xi44 .
+                                                                    i1             i3
+                (i1 ,i2 ,i3 ,i4 )∈N4
+
+Collecting all the diagonals terms, we easily get that
+                                              ∞
+                                              X
+                              ∆(R) :=               a(n, n, n, n)tn = f1 (t) .
+                                              n=0
+
+More formally, given a field K and a multivariate power series
+                                     X
+             f (x1 , . . . , xn ) :=     a(i1 , . . . , in )xi11 · · · xinn
+                                               (i1 ,...,in )∈Nn
+4                     BORIS ADAMCZEWSKI & JASON P. BELL
+
+
+
+with coefficients in K, we define the diagonal ∆(f ) of f as the one variable
+power series
+                                 ∞
+                                 X
+                     ∆(f )(t) :=   a(n, . . . , n)tn ∈ K[[t]] .
+                                   n=0
+
+Another classical example which emphasizes the richness of diagonals is the
+following. The power series
+                              n  2 
+                            ∞ X            
+                            X    n     n+k 2 n
+                  f2 (t) :=                   t ∈ Z[[t]] ,
+                                 k      k
+                             n=0 k=0
+
+is a well-known transcendental G-function that appears in Apéry’s proof of
+the irrationality of ζ(3) (see [19]). It is also known to satisfies the Picard–
+Fuchs equation associated with a one-parameter family of K3 surfaces [6].
+Furthermore, a simple computation shows that f2 is the diagonal of the five-
+variable rational function
+       1                         1
+          ·                                                ∈ Z[[x1 , . . . , x5 ]] .
+    1 − x1 (1 − x2 )(1 − x3 )(1 − x4 )(1 − x5 ) − x1 x2 x3
+
+   These two examples actually reflect a general phenomenon. In the case
+where K = C, diagonalization may be nicely visualized thanks to Deligne’s
+formula [14] via contour integration over a vanishing cycle. Formalizing this
+in terms of the Gauss–Manin connection and De Rham cohomology groups,
+and using a deep result of Grothendieck, one can prove that the diagonal of
+any algebraic power series with algebraic coefficients is a Siegel G-function
+that comes from geometry, that is, one which satisfies the Picard–Fuchs type
+equation associated with some one-parameter family of algebraic varieties [4,
+10]. As claimed by the Bombieri–Dwork conjecture, this is a picture expected
+for all G-functions. Diagonals of algebraic power series with coefficients in Q
+thus appear to be a distinguished class of G-functions. Originally introduced
+in the study of Hadamard products [7], diagonals have since been studied by
+many authors and for many different reasons [8, 9, 10, 14, 15, 21, 25, 26,
+32, 33].
+
+Remark 1.1. — The same power series may well arise as the diagonal of
+different rational functions, but it is expected that the underlying families of
+algebraic varieties should be connected in some way, such as via the existence
+of some isogenies (see the discussion in [10]). For instance, f1 (t) is also the
+diagonal of the three-variable rational function
+                                        4
+                                                      ,
+                              4 − (x1 + x2 )(1 + x3 )
+                     DIAGONALIZATION AND RATIONALIZATION                                  5
+
+
+
+while f2 (t) is also the diagonal of the six-variables rational function
+                                        1
+                                                                          ·
+           (1 − x1 x2 )(1 − x3 − x4 − x1 x3 x4 )(1 − x5 − x6 − x2 x5 x6 )
+
+   When K is a field of positive characteristic, the situation is completely
+different as shown the following nice result.
+Definition 1.1. — A power series f (x1 , . . . , xn ) ∈ K[[x1 , . . . , xn ]] is said to
+be algebraic if it is algebraic over the field of rational functions K(x1 , . . . , xn ),
+      Pif there exist polynomials A0 , . . i. , Am ∈ K[x1 , . . . , xn ], not all zero, such
+that is,
+that m   i=0 Ai (x1 , . . . , xn )f (x1 , . . . , xn ) = 0. The degree of f is the minimum
+of the positive integers m for which such a relation holds. The (naive) height
+of f is defined as the minimum of the heights of the nonzero polynomials
+P (Y ) ∈ K[x1 , . . . , xn ][Y ] that vanish at f , or equivalently, as the height of the
+minimal polynomial of f . The height of a polynomial P (Y ) ∈ K[x1 , . . . , xn ][Y ]
+is the maximum of the total degrees of its coefficients.
+Theorem 1.1 (Furstenberg–Deligne). — Let K be a field of positive char-
+acteristic. Then the diagonal of an algebraic power series in K[[x1 , . . . , xn ]] is
+algebraic.
+   Furstenberg [21] first proved the case where f is a rational power series
+and Deligne [14] extended this result to algebraic power series by using tools
+from arithmetic geometry. Some elementary proofs have then been worked out
+independently by Denef and Lipshitz [15], Harase [22], Sharif and Woodcock
+[29] (see also Salon [27]). The present work is mainly motivated by the follow-
+ing consequence
+         P∞       of Theorem 1.1. Given a prime number p and a power series
+f (x) := n=0 a(n)xn ∈ Z[[x]], we denote by f|p the reduction of f modulo p,
+that is
+                                ∞
+                                X
+                     f|p (x) :=   (a(n) mod p)xn ∈ Fp [[x]] .
+                                  n=0
+Theorem 1.1 implies that if f (x1 , . . . , xn ) ∈ Z[[x1 , . . . , xn ]] is algebraic over
+Q(x1 , . . . , xn ), then ∆(f )|p is algebraic over Fp (x) for every prime p. In par-
+ticular, both the transcendental functions f1 and f2 previously mentioned have
+the remarkable property to have algebraic reductions modulo p for every prime
+p.
+  It now becomes very natural to ask how the complexity of the algebraic
+function ∆(f )|p may increase when p run along the primes. A common way to
+measure the complexity of an algebraic power series is to estimate its degree
+and its height. Deligne [14] obtained a first result in this direction by proving
+that if f (x, y) ∈ Z[[x, y]] is algebraic, then, for all but finitely many primes p,
+∆(f )|p is an algebraic power series of degree at most ApB , where A and B do
+6                     BORIS ADAMCZEWSKI & JASON P. BELL
+
+
+
+not depend on p but only on geometric quantities associated with f . He also
+suggested that a similar bound should hold for the diagonal of algebraic power
+series in Z[[x1 , . . . , xn ]]. Our main aim is to provide the following answer to
+the question raised by Deligne.
+
+Theorem 1.2. — Let f (x1 , . . . , xn ) ∈ Z[[x1 , . . . , xn ]] be an algebraic power
+series with degree at most d and height at most h. Then there exists an effective
+constant A := A(n, d, h) depending only on n, d and h, such that ∆(f )|p has
+degree at most pA and height at most ApA , for every prime number p.
+
+  Theorem 1.2 is derived from the following quantitative version of the
+Furstenberg–Deligne theorem.
+
+Theorem 1.3. — Let K be a field of characteristc p > 0 and let f be an
+algebraic power series in K[[x1 , . . . , xn ]] of degree at most d and height at
+most h. Then there exists an effective constant A := A(n, d, h) depending only
+on n, d and h, such that ∆(f ) has degree at most pA and height at most ApA .
+
+   Note that, given a power series f ∈ Z[[x]], the degree and the height of
+f|p are always at most equal to those of f . Furthermore, diagonalization
+and reduction modulo p commute, that is ∆(f )|p = ∆(f|p ). This shows that
+Theorem 1.3 implies Theorem 1.2.
+
+Remark 1.2. — Note that if f (x) ∈ Z[[x]] satisfies a nontrivial polynomial
+relation of the form P (f ) ≡ 0 mod p, then we also have the following nontrivial
+polynomial relation P m (f ) ≡ 0 mod Z/pm Z. Thus if a power series is algebraic
+modulo p with degree at most d and height at most h, it is also algebraic
+modulo pm for every positive integer m with degree at most md and height
+at most mh. Under the assumption of Theorem 1.2, we thus have that f|pm
+is an algebraic power series of degree at most mpA and height at most mApA
+for every prime p and every positive integer m.
+
+   Theorem 1.3 actually implies a more general statement given in Theorem 1.4
+below. We recall that a ring R is a Jacobson ring if every prime P ∈ Spec(R)
+is the intersection of the maximal ideals above it. The general form of the
+Nullstellensatz states that if S is a Jacobson ring and R is a finitely generated
+S algebra, then R is a Jacobson ring and each maximal ideal M in R has the
+property that M′ := S ∩ M is a maximal ideal of S and, moreover, R/M is a
+finite extension of S/M′ (see
+                            P[18, Theorem    4.19]). Let R be a finitely generated
+                                         n
+Z-algebra and let f (x) := n∈N a(n)x ∈ R[[x]]. Since Z is a Jacobson ring,
+we have that R is also a Jacobson ring and every maximal ideal M of R has
+the property that R/M is a finite field. In particular, if M is a maximal ideal
+

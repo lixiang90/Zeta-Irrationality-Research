@@ -1,0 +1,639 @@
+{
+  "status": "all_fixed_exact_checks_passed",
+  "scope": "Fixed exact identity and coefficient checks; full-scale proofs are in the report. No numerical irrationality conclusion or parameter scan.",
+  "report_sha256": "30cc956648dfd1eeb37d534ae2d85a9069607528fe331d1a8c31728e1a085d1d",
+  "verifier_sha256": "f1370a10aee38ac5eb79f050dba95254d6a3224094067abccb5950cf995e98b8",
+  "checks": [
+    {
+      "name": "parameter_gauss_identity",
+      "residual": "0",
+      "initial_value": "1 by t->1"
+    },
+    {
+      "name": "hypergeometric_pullback_rational_identities",
+      "residual": "0"
+    },
+    {
+      "name": "all_fixed_first_order_recurrences",
+      "m_values": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "through": 128
+    },
+    {
+      "name": "independent_finite_binomial_formula",
+      "weights": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "through": 64
+    },
+    {
+      "name": "complete_safe_types_fixed_prefixes",
+      "rows": [
+        {
+          "weight": 2,
+          "through": 128,
+          "safe_scale_sum": "2"
+        },
+        {
+          "weight": 4,
+          "through": 128,
+          "safe_scale_sum": "3"
+        },
+        {
+          "weight": 6,
+          "through": 128,
+          "safe_scale_sum": "7/2"
+        },
+        {
+          "weight": 8,
+          "through": 128,
+          "safe_scale_sum": "23/6"
+        }
+      ]
+    },
+    {
+      "name": "fixed_block_packets",
+      "rows": [
+        {
+          "p": 13,
+          "m": 2,
+          "j": 1,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 7,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 2,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 4,
+          "j": 1,
+          "C": 10,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 5,
+              "valuation": -1
+            },
+            {
+              "offset": 2,
+              "residue": 4,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 4,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 7,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 7,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 4,
+          "j": 3,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 4,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 3,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 6,
+          "j": 1,
+          "C": 10,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 5,
+              "valuation": -1
+            },
+            {
+              "offset": 4,
+              "residue": 2,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 6,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 0,
+              "valuation": -1
+            },
+            {
+              "offset": 3,
+              "residue": 4,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 6,
+          "j": 3,
+          "C": 6,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 3,
+              "valuation": -3
+            },
+            {
+              "offset": 2,
+              "residue": 5,
+              "valuation": -3
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 6,
+          "j": 4,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 6,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 6,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 13,
+          "m": 6,
+          "j": 5,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 10,
+              "valuation": -6
+            },
+            {
+              "offset": 2,
+              "residue": 1,
+              "valuation": -6
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 2,
+          "j": 1,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 9,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 11,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 4,
+          "j": 1,
+          "C": 2,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 1,
+              "valuation": -1
+            },
+            {
+              "offset": 2,
+              "residue": 1,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 4,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 9,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 9,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 4,
+          "j": 3,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 9,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 11,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 6,
+          "j": 1,
+          "C": 16,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 8,
+              "valuation": -1
+            },
+            {
+              "offset": 4,
+              "residue": 12,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 6,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 0,
+              "valuation": -1
+            },
+            {
+              "offset": 3,
+              "residue": 9,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 6,
+          "j": 3,
+          "C": 6,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 3,
+              "valuation": -3
+            },
+            {
+              "offset": 2,
+              "residue": 3,
+              "valuation": -3
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 6,
+          "j": 4,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 5,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 5,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 17,
+          "m": 6,
+          "j": 5,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 12,
+              "valuation": -6
+            },
+            {
+              "offset": 2,
+              "residue": 9,
+              "valuation": -6
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 2,
+          "j": 1,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 12,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 9,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 4,
+          "j": 1,
+          "C": 11,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 17,
+              "valuation": -1
+            },
+            {
+              "offset": 2,
+              "residue": 13,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 4,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 12,
+              "valuation": -2
+            },
+            {
+              "offset": 2,
+              "residue": 12,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 4,
+          "j": 3,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 16,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 12,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 6,
+          "j": 1,
+          "C": 4,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 2,
+              "valuation": -1
+            },
+            {
+              "offset": 4,
+              "residue": 15,
+              "valuation": -1
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 6,
+          "j": 2,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 0,
+              "valuation": -1
+            },
+            {
+              "offset": 3,
+              "residue": 16,
+              "valuation": -2
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 6,
+          "j": 3,
+          "C": 21,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 22,
+              "valuation": -3
+            },
+            {
+              "offset": 2,
+              "residue": 6,
+              "valuation": -3
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 6,
+          "j": 4,
+          "C": 0,
+          "offsets": [
+            {
+              "offset": 1,
+              "residue": 1,
+              "valuation": -4
+            },
+            {
+              "offset": 2,
+              "residue": 1,
+              "valuation": -4
+            }
+          ]
+        },
+        {
+          "p": 23,
+          "m": 6,
+          "j": 5,
+          "top_packet": [
+            {
+              "offset": 1,
+              "residue": 6,
+              "valuation": -6
+            },
+            {
+              "offset": 2,
+              "residue": 16,
+              "valuation": -6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "two_offset_unit_determinant",
+      "value": "1/8"
+    },
+    {
+      "name": "necessary_vs_safe_cost_table",
+      "rows": [
+        {
+          "m": 2,
+          "necessary_scale_sum": "2",
+          "safe_scale_sum": "2"
+        },
+        {
+          "m": 4,
+          "necessary_scale_sum": "13/6",
+          "safe_scale_sum": "3"
+        },
+        {
+          "m": 6,
+          "necessary_scale_sum": "149/60",
+          "safe_scale_sum": "7/2"
+        },
+        {
+          "m": 8,
+          "necessary_scale_sum": "383/140",
+          "safe_scale_sum": "23/6"
+        }
+      ]
+    }
+  ],
+  "first_even_coefficients": {
+    "2": [
+      "0",
+      "1",
+      "1",
+      "17/18",
+      "8/9",
+      "21/25",
+      "359/450",
+      "33569/44100",
+      "536/735",
+      "13913/19845",
+      "67079/99225",
+      "747319/1143450"
+    ],
+    "4": [
+      "0",
+      "0",
+      "0",
+      "1/18",
+      "1/9",
+      "19/120",
+      "71/360",
+      "11/48",
+      "23/90",
+      "45319/163296",
+      "241651/816480",
+      "9327347/29937600"
+    ],
+    "6": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/600",
+      "1/200",
+      "121/12600",
+      "19/1260",
+      "22987/1088640",
+      "149587/5443200",
+      "1357739/39916800"
+    ],
+    "8": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/35280",
+      "1/8820",
+      "209/762048",
+      "397/762048",
+      "34193/39916800"
+    ]
+  },
+  "not_proved": [
+    "optimal higher-weight integrated denominator types",
+    "a common admissible multivalent map and strict CDT rank contradiction",
+    "new irrationality or independence of odd zeta or L values"
+  ]
+}

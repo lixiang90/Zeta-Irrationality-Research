@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "source_sha256": "84e3c06bb135ec57235880fa1490afe4a9c17e07fef62541219ce99e329e1cb3",
+  "first_only": true,
+  "runs": 1,
+  "exact_checks": 142,
+  "cases": [
+    {
+      "r": 1,
+      "n": 4,
+      "p": 19,
+      "actual_pair_rank": 8,
+      "ambient_negative_nodes": 6,
+      "G0_corank": 0,
+      "whole_normalized_corank": 0,
+      "M5_corank": 0,
+      "whole_normalized_det_without_source_unit": 6,
+      "actual_M5_det": 15,
+      "explicit_unit_factor": 8,
+      "bordered_det": 15,
+      "U_det": 7
+    },
+    {
+      "r": 2,
+      "n": 8,
+      "p": 37,
+      "actual_pair_rank": 16,
+      "ambient_negative_nodes": 12,
+      "G0_corank": 0,
+      "whole_normalized_corank": 0,
+      "M5_corank": 0,
+      "whole_normalized_det_without_source_unit": 10,
+      "actual_M5_det": 16,
+      "explicit_unit_factor": 33,
+      "bordered_det": 16,
+      "U_det": 12
+    },
+    {
+      "r": 4,
+      "n": 16,
+      "p": 73,
+      "actual_pair_rank": 32,
+      "ambient_negative_nodes": 24,
+      "G0_corank": 0,
+      "whole_normalized_corank": 0,
+      "M5_corank": 0,
+      "whole_normalized_det_without_source_unit": 18,
+      "actual_M5_det": 38,
+      "explicit_unit_factor": 12,
+      "bordered_det": 50,
+      "U_det": 59
+    }
+  ],
+  "toy_singular_G": {
+    "p": 19,
+    "G_det": 0,
+    "restricted_N_det": 18,
+    "bordered_target_det": 18,
+    "scope": "General algebraic example, not original fixed-lambda2 target"
+  },
+  "depth2_affine_perturbation": [
+    {
+      "x": 0,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 1,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 2,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 3,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 4,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 5,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 6,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 7,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 8,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 9,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 10,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 11,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 12,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 13,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 14,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 15,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 16,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 17,
+      "normalized_det_mod_p": 1
+    },
+    {
+      "x": 18,
+      "normalized_det_mod_p": 1
+    }
+  ],
+  "depth3_counterexample": {
+    "anchor_max_Smith": 3,
+    "perturbation_depth": 3,
+    "singular_x": 1
+  },
+  "scope": "Actual leading constraint/border identities on old r1,2,4 only; no auxiliary-prime extension or actual higher-layer computation.",
+  "old_peer_read_execute_import_rerun": 0,
+  "not_proved": [
+    "Infinite M5 units",
+    "Actual higher-layer maximum Smith <=2",
+    "Strict arithmetic-analytic margin",
+    "New special-value irrationality"
+  ]
+}

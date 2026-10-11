@@ -1,0 +1,58 @@
+{
+  "schema": "independent-source-receipt-v1",
+  "date": "2026-10-06",
+  "agent": "/root/quarter_actual_rank",
+  "status": "FROZEN",
+  "proof": {
+    "path": "research/cdt_odd_mixed_double_pole_primitive_lattice_review_20261006.md",
+    "sha256": "93c9e1705cc63160ce7c212501df79b23b10b249d42acd26a715a538315b8ac8",
+    "actual_final_author_full_reread": true,
+    "scope": "P1-P9, P1-P20: actual single-target polynomial, exact auxiliary-prime Smith and minor ideals, primitive constant reduction and infinite nonzero evaluations, normalization invariance, original s5 rank-2n head correction, rational dimension-2n paired isotropic subspace, general restored-zero layouts with the factorial fee retained.",
+    "unfrozen_revision_history": "Candidate 985004e92c4483640db71494712da13373ad3a1bfe0cf38adefbb3595e631c75 was fully read by root and peers. Before freezing, P16 wording was corrected to raw integer constraint rows, with actual gcd and saturation still to be calculated. No mathematical identity was changed. Final full author reread followed."
+  },
+  "primary_sources": [
+    {
+      "title": "The linear independence of 1, zeta(3), and zeta(4)",
+      "author": "Li Lai",
+      "identifier": "arXiv:2610.06838v1",
+      "primary_url": "https://arxiv.org/pdf/2610.06838v1",
+      "path": "literature/lai2026_linear_independence_1_zeta3_zeta4_arxiv2610_06838v1_20261006.pdf",
+      "sha256": "838c0331efb1ea249b60308e00e1fbc2ae8771c55da4eaf22e7beb0243250a58",
+      "pages": 25,
+      "proof_actual_pdf_pages": [7,8,9,10,11,12,13,14,17,18,19],
+      "proof_actual_page_count": 11,
+      "additional_independent_review_actual_pdf_pages": [20,21,22],
+      "this_round_distinct_actual_pdf_page_count": 14,
+      "actual_scope": "PDF7-14: binomial basis, residue minors, factorial normalization and prime summation. PDF17-19: Proposition5.5 and right-contour/triple-zero hypotheses. PDF20-22, read after the lattice proof froze: global tangent, Heine/reference normalization and stated analytic bound, for independent review of new peer and root papers.",
+      "download_this_round": false,
+      "tls_note": "Existing immutable PDF bytes read only. Prior default verified-TLS acquisition is pinned by literature/manifest_cdt_odd_lai2026_mixed_zeta_20261006.json, SHA9763dff18ed5b23001220a6081e158570aeff766075177082acd35f2f7a50609. No network download or TLS exception this round."
+    }
+  ],
+  "frozen_project_inputs": [
+    {
+      "path": "research/cdt_odd_mixed_zeta_character_hankel_reduction_20261006.md",
+      "sha256": "e6e174a7306d4a9458ff9873d76e5bc40866b258d5d6f760bbf68a28c99ae463",
+      "actual_read": "Full H1-H9, scope and normalization, no truncation."
+    },
+    {
+      "path": "research/cdt_odd_mixed_zeta_character_hankel_independent_review_20261006.md",
+      "sha256": "dfa064d0ddf9361ae48da4fd95e7b8c7816f3d459b4ccb861a679ac53291fe79",
+      "actual_read": "Full J1-J7, no truncation."
+    }
+  ],
+  "execution_audit": {
+    "own_new_mathematical_producer_count": 0,
+    "own_new_mathematical_producer_runs": 0,
+    "old_or_peer_mathematical_producer_execute_import_rerun": 0,
+    "external_lean_runs": 0,
+    "new_pdf_downloads": 0,
+    "source_processing": "Read-only PyMuPDF source text extraction and SHA256 verification. Peer PY files and selected JSON metadata/endpoint records are read only for separate independent reviews; their producers are not executed or imported.",
+    "frozen_old_or_peer_files_modified": []
+  },
+  "limitations": [
+    "Exact auxiliary-prime costs are O(n log n), not a full-prime n-squared lower bound.",
+    "The residue-minor model is a safe valuation lower bound and arithmetic cost upper bound, not a proof of optimal actual denominator cost.",
+    "Paired constraint rows have not been primitively reduced or saturated, and their full lattice/energy/nonzero budget is not established.",
+    "No matched positive arithmetic-versus-analytic margin or new zeta/L/Catalan number theorem is claimed."
+  ]
+}

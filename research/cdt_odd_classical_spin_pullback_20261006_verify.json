@@ -1,0 +1,103 @@
+{
+  "scope": "Actual fifth homogeneous differential module is an exact exterior-minor image of an explicit rational fourth-order CY2/MUM module. Not a geometric realization, numerical special-value theorem, or free rank reduction of the inhomogeneous zeta7 target.",
+  "run_history": "First execution; retained only on success.",
+  "b_fifth": [
+    "(8*x - 3)/(8*x**4*(x - 1)**2)",
+    "(124*x**2 - 87*x + 4)/(4*x**4*(x - 1)**2)",
+    "3*(60*x**2 - 61*x + 10)/(2*x**3*(x - 1)**2)",
+    "(65*x**2 - 87*x + 25)/(x**2*(x - 1)**2)",
+    "5*(3*x - 2)/(x*(x - 1))",
+    "1"
+  ],
+  "a_fourth": [
+    "1/(16*x**3*(x - 1))",
+    "(5*x - 1)/(x**3*(x - 1))",
+    "(29*x - 14)/(2*x**2*(x - 1))",
+    "2*(4*x - 3)/(x*(x - 1))",
+    "1"
+  ],
+  "fourth_theta_common_multiplier": "x^4*(1-x)^4",
+  "fourth_theta_coefficients": [
+    "x*(x - 1)**3/16",
+    "x*(x - 1)**3/2",
+    "3*x*(x - 1)**3/2",
+    "2*x*(x - 1)**3",
+    "(x - 1)**4"
+  ],
+  "indicial_fourth_zero": "r**4",
+  "indicial_fourth_one": "r*(r - 2)*(r - 1)**2",
+  "indicial_fifth_zero": "r**5",
+  "indicial_fifth_one": "r**2*(r - 2)**2*(r - 1)",
+  "input_pins": {
+    "cdt_odd_classical_derivative_projection_20261006.md": "c24a4d7807bed750f63746b4506f2a238a7d9b9122e2e39ac4871653b39d5c1e",
+    "cdt_odd_classical_derivative_projection_20261006_verify.json": "66885c07c41e8cff3e0d0dbfeb51f931bc4f8ec3aebc2af77773061f24e6fc92"
+  },
+  "checks": [
+    {
+      "name": "fifth-normalized-leading",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-0",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-1",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-2",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-3",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-4",
+      "passed": true
+    },
+    {
+      "name": "full-exterior-fifth-coefficient-5",
+      "passed": true
+    },
+    {
+      "name": "CY2-full-relation",
+      "passed": true
+    },
+    {
+      "name": "fourth-theta-conversion-complete",
+      "passed": true
+    },
+    {
+      "name": "all-fourth-coefficients-polynomial",
+      "passed": true
+    },
+    {
+      "name": "all-six-minors-obey-original-fifth-operator",
+      "passed": true
+    },
+    {
+      "name": "exterior-output-rank-exact-five",
+      "passed": true
+    },
+    {
+      "name": "fourth-MUM-zero",
+      "passed": true
+    },
+    {
+      "name": "fifth-MUM-zero",
+      "passed": true
+    },
+    {
+      "name": "fifth-one-exponents",
+      "passed": true
+    },
+    {
+      "name": "frozen-projection-MD-pin",
+      "passed": true
+    }
+  ],
+  "check_count": 16,
+  "all_passed": true
+}

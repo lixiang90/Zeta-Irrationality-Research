@@ -1,0 +1,287 @@
+50                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+for the monomials of this specialization are exactly the γ · (x(1) )k such that γ ·
+                                                                           I1
+(x(1) )k (x(2) )n2 are monomials from F (x(1) , x(2) ). In this way, n1 ∈ VD,Ω1
+                                                                                . Sim-
+                   I2                                    I1 ×I2        I1      I2
+ilarly, n2 ∈ VD,Ω2 , and the requisite inclusion VD,Ω1 ×Ω2 ⊆ VD,Ω1 × VD,Ω2 is
+proved.                                                                             □
+
+     We record the main corollary we will use.
+
+Corollary 3.1.11. Consider a positive integer D ∈ N>0 and an m-tuple f1 , . . . , fm
+in CJxK of C(x)-linearly independent formal power series. For these data, there
+exists a sequence
+                                   0 ≤ u(1) < · · · < u(mD)
+of mD non-negative integers such that the following holds for every d = 1, 2, 3, . . .:
+   In every nonzero formal power series of the shape
+                    X
+         F (x) :=          Qi (x)fi1 (x1 ) · · · fid (xd ) ∈ CJx1 , . . . , xd K ∖ {0},
+                    i∈{1,...,m}d
+
+where Qi (x1 , . . . , xd ) ∈ C[x1 , . . . , xd ] are polynomials having all their partial degrees
+degxj Qi < D, all monomials βxn with minimal total degree |n| = n1 + . . . + nd
+have
+                                                                  d
+                            n ∈ 0 ≤ u(1) < · · · < u(mD) ⊂ Nd .
+                                
+
+                                                   {1,...,m}
+Proof. Take the evaluation module ψD : ED,[0,1)           ,→ QJxK defined by the Q(x)-
+                                                                                
+                                                                       {1,...,m}
+linearly independent power series f1 , . . . , f∈ QJxK. Clearly, rank ED,[0,1)     = mD.
+We define
+                                                        {1,...,m}
+                     0 ≤ u(1) < · · · < u(mD) = VD,[0,1) ⊂ N
+to be the vanishing filtration jumps for this single-variable evaluation module. By
+                    follows dfor each
+Lemma 3.1.9, it then                 d = 1, 2, 3, . . . that the Cartesian d-th power
+                       {1,...,m}
+evaluation module ED,[0,1)d , ψD defined by the Q(x1 , . . . , xd )-linearly indepen-
+dent formal power series fi (ξ) := fi1 (x1 ) · · · fid (xd ) has vanishing filtration jumps
+at exactly the d-th Cartesian power set
+                   {1,...,m}d                                     d
+                  VD,[0,1)d = 0 ≤ u(1) < · · · < u(mD) ⊂ Nd .
+                               
+
+The result now follows by Lemma 3.1.6.                                                         □
+
+3.2. Functional bad approximability. When the functions f1 , . . . , fm ∈ QJxK
+are holonomic, it turns out possible to almost completely determine the mD vanish-
+                                                                           {1,...,m}
+ing filtration jumps of the ensuing univariate evaluation module ED := ED,[0,1) .
+This is the content of the Chudnovsky–Osgood theorem 3.2.13, which can be seen
+as a functional analog for holonomic functions of the Roth–Schmidt bad approx-
+imability theorem. The roots of all of this are in Hermite’s memoir (discussion
+in § 3.3 below) on the exponential function and the transcendence of the number e.
+
+Basic Remark 3.2.1. For the system {f1 , . . . , fm } = {eα1 x , . . . , eαm x } of pairwise
+distinct exponential functions, Hermite [Her1893], in a letter published in 1893
+(after having published similar formulas already in [Her1874]), found the explicit
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     51
+
+
+C[x]-linear combination of the maximal x = 0 vanishing order for an arbitrary
+degree vector (D1 , . . . , Dm ) ∈ Nm :
+                                                     m
+                              exz dz
+       Z
+    1                                               X
+                                                 =:     Pi (x)eαi x ,   R > max |αi |,
+   2πi |z|=R (z − α1 )D1 +1 · · · (z − αm )Dm +1    i=1
+                                                                              i
+
+                                     1               P m
+                                                                        Pm
+                                                                                   
+                   =                            x−1+ i=1 (Di +1) + O x i=1 (Di +1) ,
+                        (D1 + . . . + Dm + m)!
+                                                                                 (3.2.2)
+This follows upon unfolding the residue calculus of the complex contour integral
+and finding the thus-explicitable polynomials P1 , . . . , Pm to have the exact degrees
+deg Pi = Di . The right-hand side of (3.2.2) follows by Di partial integrations
+upon computing the integrand residues at the poles z = α1 , . . . , αm in the bounded
+component of C ∖ {|z| = R}; on the other hand, the x = 0 exact vanishing order
+development (3.2.2) follows by computing the residue at the unique pole z = ∞
+in the complementary component. Having for these particular polynomials — the
+so-called type I Hermite–Padé approximants — the exact degrees deg Pi = Di
+(which can furthermore be taken completely arbitrary), and this exact vanishing
+order (3.2.2), proves by an argument similar to the proof of Lemma 3.1.6 that for
+arbitrary polynomials Q1 , . . . , Qm ∈ C[x], the strongest possible form of (rational)
+functional bad approximability is in place:
+                                                  X m
+                ordx=0 (Q1 f1 + . . . + Qm fm ) ≤      (deg Qi + 1) − 1.         (3.2.3)
+                                                         i=1
+Mahler [Mah68] termed such systems perfect, and found a few other examples (inci-
+dentally obtainable from Hermite’s formula by a substitution and a limit [Chu83b,
+page 331]), including the binomial system
+                 {(1 − x)α1 , . . . , (1 − x)αm },      when all αi − αj ∈
+                                                                         / Z,        (3.2.4)
+                                             14
+and, under the additional constraint              D1 ≤ D2 ≤ · · · ≤ Dm , the logarithm sys-
+tem [Mah19b, Jag64]
+                      {1, log(1 − x), log2 (1 − x), . . . , logm−1 (1 − x)}.         (3.2.5)
+In [Mah53], Mahler used the explicit linear forms for the system (3.2.5) to prove
+the explicit inequality |π − p/q| > q −42 for all positive integers p, q ≥ 2. Gregory
+Chudnovsky [Chu79, Chu83b, Chu83a] has used (like Thue, Siegel, and Baker be-
+fore him, cf. § 3.3.3) the systems (3.2.4) p       and (3.2.5) to derive excellent effective
+                                                   n
+irrationality exponents for suitable roots           b/a from rational numbers, as well as
+for logarithms of rational numbers. A fairly general class of perfect systems are
+the Angelesco–Nikishin systems [Ang1919, Nik80, Sor96, NS91] in the theory of
+the Cauchy transform and orthogonal polynomials; their perfection was proven
+in full generality by Fidalgo Prieto and López-Lagomasino [FPLL11a, FPLL11b].
+The fact that the Padé approximants to the polylogarithm system {f1 , . . . , fm } =
+{1, Li1 , Li2 , . . . , Lim−1 } turn out to be Angelesco–Nikishin systems was at the root15
+of Ball and Rivoal’s work [Riv00, BR01] on the arithmetic of zeta values.
+   In the particular case D1 = · · · = Dm = D − 1, we can equivalently express
+the functional bad approximability property (3.2.3) into the framework of § 3.1: it
+   14Sometimes termed weak perfection.
+   15As a starting or inspiration point, even though they ultimately devised a different (but
+related) function system, see [FR03, Théorème 1] or [Fis04, § 2.4].
+52                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+precisely means that the evaluation module ED has the vanishing filtration jumps
+set
+                           {1,...,m}
+                         VD,[0,1) = {0, 1, . . . , mD − 1}.               (3.2.6)
+                                                                                          △
+   In differential algebra, as we briefly indicated in § 2.13.3, Kolchin [Kol59] proved
+an analog of Liouville’s Diophantine inequality, and asked16 for an analog of the
+fundamental theorem on algebraic numbers that Roth had proved four years prior:
+Problem 3.2.7 (Kolchin’s Problem). Given a non-rational formal power series
+solution f ∈ CJxK ∖ C(x) of some linear ODE L(f ) = 0 over C(x), to prove that
+(2 + ε) max(deg P, deg Q) + Oε,f (1) is the highest x = 0 vanishing order possible for
+the error f (x) − P (x)/Q(x) in any rational function approximation.
+   In fact, Kolchin’s setup was more general and not limited to linear ODEs; he
+worked in an arbitrary nontrivial valued differential field, and his Liouville inequal-
+ity [Kol59, § 5] thus also applied to arbitrary (nonlinear) ODEs over C(x). The first
+such result, weaker than Kolchin’s, appears to be Maillet’s [Mai1906, page 266].
+   In terms of our evaluation modules in § 3.1, Kolchin’s Liouville-type result for the
+case of a formal power series solution to an rth order linear ODE L(f ) = 0 can be
+expressed by saying that the 2D vanishing filtration jumps in the module defined by
+{f1 , f2 } = {1, f } are contained by {0, 1, . . . , rD + OL (1)}. His (implicit) Roth-type
+conjecture is that they should in fact be contained by {0, 1, . . . , (2 + ε)D + Oε,L (1)}
+for every ε > 0.
+   Independently in the same year, Shidlovsky [Shi59] (see also [Shi89, § 3.5, Lemma 8],
+[Lan66, § VII.3], or [Mah76, § 4]) discovered a more accurate form of the functional
+Liouville inequality in the case of linear ODEs over C(x), and used it to complete
+the main results of Siegel’s algebraic independence theory [Zan14, Sie49] for special
+values of E-functions. We reformulate Shidlovsky’s lemma into our language of the
+vanishing filtration jumps.
+Theorem 3.2.8 (Shidlovsky). For the case of a system {f1 , . . . , fm } whose Q(x)-
+linear span is m-dimensional and closed under the derivation d/dx, there exists a
+constant C = C(f1 , . . . , fm ) such that, for every D ∈ N>0 , the vanishing filtration
+                                      {1,...,m}
+jumps of the evaluation module ED,[0,1) satisfy
+                 {1,...,m}                                  {1,...,m}
+               VD,[0,1)      ⊆ {0, 1, . . . , mD + C},   #VD,[0,1)      = mD.        (3.2.9)
+
+   Although Shidlovsky’s original work did not supply an effective procedure to
+compute the constant C out of the rank-m first-order linear differential system
+y′ = Ay that has y = (f1 , . . . , fm )t as a solution, such theorems were eventually
+obtained, firstly by Chudnovsky [Chu80, Corollary 11.3.10] in the Fuchsian case
+(which is certainly the case we are concerned with, see Remark 3.2.12 below), and
+then eventually in the general case by Bertrand, Beukers, Chirskii, and Yebbou,
+see [BB85] as complemented by [BCY04, § 3]. A far-reaching generalization of
+Shidlovsky’s lemma is in Bertrand [Ber12, Théorème 2].
+
+   16From [Kol59]: “It remains to make the obvious remark, in view of the deep Thue–Siegel–
+Roth improvement of Liouville’s theorem (see K. F. Roth, Mathematika vol. 2 (1955) pp. 1–20),
+that it would be desirable to obtain a similar improvement in the present theorem.”
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                   53
+
+
+   We state only a crude version of Chudnovsky’s result on the Fuchsian case. A
+brief treatment of this explicit zero estimate is also sketched in André’s book [And04,
+§ III, Appendix].
+Theorem 3.2.10 (Chudnovsky). Suppose the system f := {f1 , . . . , fm } ∈ QJxKm ∖
+         m
+(xQJxK) of Q(x)-linearly independent formal power series arises as the full com-
+ponent vector of some solution y = f t to a Fuchsian first-order linear differential
+system y′ = Ay, where A ∈ Mm×m (Q(x)). Let                1
+                                                 PS ⊂ P be the set of poles in the
+matrix of rational functions A, and define h := s∈S εs , where εs is the negative of
+the smallest real part of any exponent that occurs in the asymptotic development of
+any one of the functions fi (x) — under any analytic continuation — at the regular
+singular point x = s of the Fuchsian ODE.
+   Then, for all D ∈ N>0 , the mD vanishing filtration jumps of the evaluation
+            {1,...,m}
+module ED,[0,1) are contained by the set
+                                                       
+      {1,...,m}                                 m               {1,...,m}
+     VD,[0,1) ⊆ 0, 1, 2, . . . , mD + (#S − 2)      + mh ; #VD,[0,1) = mD.
+                                                2
+                                                                            (3.2.11)
+Remark 3.2.12. Thanks to the work on the global nilpotence property by David
+and Gregory Chudnovsky [CC85a], [DGS94, § VIII], [And89, § VI], [DV01] and
+the theorem of Honda and Katz [DGS94, § III.6], [And89, § IV.5.3], the holonomic
+power series in all our (abstract) theorems in this paper are automatically of the
+Fuchsian class: they have only regular singular points (with rational exponents).
+Hence Theorem 3.2.10 applies to them as an explicit Shidlovsky bound. For the
+proofs of Theorem 2.5.1 and all its generalizations, this theorem is already sufficient
+under the supplemental assumption — which is satisfied in all the applications
+we could conceive of — that the Q(x)-linear span of f1 , . . . , fm is closed under
+the derivation d/dx. This remark could also have a significance for the project
+of refining our qualitative linear independence results to quantitative measures of
+linear independence.
+   At the same time, the proof of the Chudnovskys’s theorem (namely: of Galočkin’s
+canceling factorials property and the global nilpotence of an integrable connec-
+tion that admits at least one G-series formal solution with C(x)-linearly indepen-
+dent components) itself relies on a suitable qualitative Shidlovsky lemma [DGS94,
+Prop. VIII.2.3], [CC85a, Theorem 3.1, Lemma 8.3], [And89, § VI.2] in the dual form
+for simultaneous — that is now type II Hermite–Padé — functional rational ap-
+proximants fi ≈ Pi /Q, 1 ≤ i ≤ m, selected to have integer coefficients of controlled
+size as provided by the Thue–Siegel lemma.                                           △
+   All these theorems also embed as very special cases into the broader subject
+of zero multiplicity estimates for functions satisfying a possibly nonlinear alge-
+braic differential system. This path was opened up by the groundbreaking works of
+Nesterenko [Nes88] and Brownawell–Masser [BM80]. We refer to Binyamini [Bin16]
+for a survey, a modern treatment, and refinements of a large portion of the liter-
+ature on this rather vast topic; and to [Nes96, NP01] for applications to algebraic
+independence. In the special context of linear ODEs, the separate streams opened
+up by Kolchin and Shidlovsky converged in the early 1980s with the resolution of
+Problem 3.2.7, independently by David and Gregory Chudnovsky [CC83, CC84]
+and Osgood [Osg85].
+54                              F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Theorem 3.2.13 (Chudnovsky, Osgood). Consider an arbitrary set {f1 , . . . , fm }
+of holonomic functions in QJxK. That is, our only assumption now is that each
+of the formal power series fi (x) separately satisfies some nonzero linear ODE
+Li (fi ) = 0. For an arbitrary ε > 0, there exists a constant C(ε) = C(ε; L1 , . . . , Lm ),
+effectively computable from the arguments in [CC83, § 2] or [CC84, § 3], such
+that for all D ∈ N>0 , the vanishing filtration jumps of the evaluation module
+          {1,...,m}
+ED = ED,[0,1) satisfy
+
+               {1,...,m}                                                        {1,...,m}
+             VD,[0,1)      ⊆ 0, 1, 2, . . . , (m + ε)D + C(ε) ,             #VD,[0,1)        = mD.
+
+   In conjunction with Corollary 3.1.11, these theorems can be summarized into
+the following proposition.
+
+Lemma 3.2.14. Let f1 , . . . , fm ∈ CJxK be C(x)-linearly independent holonomic
+power series: there exist nonzero linear differential operators Li over Q(x) with
+Li (fi ) = 0. Then, for every ε > 0, there exists a constant C(ε) ∈ R, in principle
+effectively computable from the datum (ε; L1 , . . . , Lm ) alone, such that the following
+is true.
+   We consider an arbitrary positive integer d ∈ N>0 , and write
+                                                d
+                                                Y
+     x := (x1 , . . . , xd ),     fi (x) :=         fis (xs )   for i := (i1 , . . . , id ) ∈ {1, . . . , m}d .
+                                              s=1
+
+Consider further an arbitrary positive integer D ∈ N>0 and, over i ∈ {1, . . . , m}d ,
+an arbitrary set of polynomials
+
+Qi (x) ∈ C[x1 , . . . , xd ] with degxj Qi < D for all j ∈ {1, . . . , d} and i ∈ {1, . . . , m}d .
+
+Then, in the nonzero formal power series
+                         X
+              F (x) :=          Qi (x)fi (x) ∈ CJx1 , . . . , xd K ∖ {0},
+                                 i∈{1,...,m}d
+
+
+every lowest-order nonzero monomial term β xn in F (x) has necessarily an expo-
+nent vector n = (n1 , . . . , nd ), all of whose components satisfy
+
+                                        nj ≤ (m + ε)D + C(ε).
+
+If moreover the Q(x)-linear span of f1 , . . . , fm is closed under the derivation d/dx,
+then ε = 0 could be taken.
+
+Remark 3.2.15. David and Gregory Chudnovsky conjecture, see [CC83, page 5161]
+and [CC84, page 43], that ε = 0 could be taken in Theorem 3.2.13, and therefore
+— as a consequence — also in Lemma 3.2.14. However, this conjecture remains
+unproved even for the case [Wan04] of algebraic functions.                   △
+
+
+   At this point, for the logic of the proofs, the reader may skip directly ahead
+to § 4. The remainder of § 3 collects some examples, placed in their historical
+context, behind the theorems that we borrowed without proof in § 3.2.
+

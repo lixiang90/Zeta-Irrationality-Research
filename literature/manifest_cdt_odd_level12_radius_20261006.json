@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06",
+  "scope": "New radius research manifest; older manifests and frozen research remain unchanged. No downloaded code is executed.",
+  "sources": [
+    {
+      "file": "soares2020_hecke_triangle_transfer_v1.pdf",
+      "title": "Hecke triangle groups, transfer operators and Hausdorff dimension",
+      "author": "Louis Soares",
+      "url": "https://arxiv.org/pdf/2005.11808v1",
+      "sha256": "a275dcb803a48b2df01bccdfcea8861680f14fe46076d21275ba8befdae43197",
+      "status": "Reuse of previously saved and read primary source",
+      "used_sections": ["pp1-2 fundamental domain and one-cusp/one-funnel/order2 topology"],
+      "used_as_radius_theorem": false
+    },
+    {
+      "file": "dyatlov2017_spectral_surface_lecture24_20261006.pdf",
+      "title": "MIT 18.156 Lecture 24",
+      "host_attribution": "Semyon Dyatlov MIT course site; the scanned PDF author metadata is blank",
+      "url": "https://math.mit.edu/~dyatlov/18.156/lecture24.pdf",
+      "pages": 10,
+      "pdf_creation_date": "2017-05-16",
+      "sha256": "c6a5021885b7ebceb84dc865e98b4dfab5718ff7f5b966d9d0d8313052f87b79",
+      "status": "Downloaded scanned background lecture; text extraction empty, no full visual audit claimed",
+      "used_in_proof": false
+    }
+  ]
+}

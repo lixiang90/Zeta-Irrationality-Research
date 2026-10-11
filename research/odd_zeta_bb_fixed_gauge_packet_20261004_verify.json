@@ -1,0 +1,32 @@
+{
+  "scope": "Two prescribed fixed rational gauge examples; all-prime proof remains in the report.",
+  "parameter": "c=0 for the exact f coefficient examples; the proof covers every fixed rational c.",
+  "expected_first_packet": "-15 modulo p",
+  "expected_second_packet": "-15/4 modulo p",
+  "second_gauge": "U+V+10z*L4; p+1 packet cancelled, p+2 packet survives",
+  "cases": [
+    {
+      "p": 11,
+      "theta_minus_one_pow7_f_index": 13,
+      "theta_minus_one_pow7_f_valuation": -7,
+      "theta_minus_one_pow7_f_p7_residue": 7,
+      "theta_minus_one_pow7_f_p_plus_one_residue": 0,
+      "U_plus_V_plus_10zL4_index": 13,
+      "U_plus_V_plus_10zL4_valuation": -4,
+      "U_plus_V_plus_10zL4_p4_residue": 10,
+      "U_plus_V_plus_10zL4_p_plus_one_residue": 0
+    },
+    {
+      "p": 13,
+      "theta_minus_one_pow7_f_index": 15,
+      "theta_minus_one_pow7_f_valuation": -7,
+      "theta_minus_one_pow7_f_p7_residue": 11,
+      "theta_minus_one_pow7_f_p_plus_one_residue": 0,
+      "U_plus_V_plus_10zL4_index": 15,
+      "U_plus_V_plus_10zL4_valuation": -4,
+      "U_plus_V_plus_10zL4_p4_residue": 6,
+      "U_plus_V_plus_10zL4_p_plus_one_residue": 0
+    }
+  ],
+  "all_exact_checks_passed": true
+}

@@ -1,0 +1,11 @@
+/-- `LinearIndepOn.extend` 在原子集元素上的取值（由 `coe_extend` 给出）。 -/
+private theorem extend_apply_mem {K V : Type*} [DivisionRing K] [AddCommGroup V] [Module K V]
+    {s : Set V} (hs : LinearIndepOn K id s) {v : V} (hv : v ∈ s) :
+    Module.Basis.extend hs ⟨v, Module.Basis.subset_extend hs hv⟩ = v :=
+  congrFun (Module.Basis.coe_extend hs) _
+
+/-- Rat.cast 与 `RatFunc.C` 一致（两种 ℚ-代数结构间的桥）。 -/
+private theorem RatFunc.ratCast_eq_C (q : ℚ) : (q : RatFunc ℚ) = RatFunc.C q := by
+  show ⇑(algebraMap ℚ (RatFunc ℚ)) q = RatFunc.C q
+  rw [← RatFunc.algebraMap_C, IsScalarTower.algebraMap_apply ℚ ℚ[X] (RatFunc ℚ)]
+  simp

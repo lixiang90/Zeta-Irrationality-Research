@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-07T10:26:18.938483+08:00",
+  "classification": "progress",
+  "scope": "New structural paper proofs and independent reviews; metadata pins are not mathematical verification.",
+  "goal_status": "active",
+  "new_numerical_irrationality_or_linear_independence_theorem": false,
+  "new_final_artifacts": [
+    {
+      "file": "research/cdt_beta_single_period_confluent_integral_model_20261007.md",
+      "bytes": 11668,
+      "sha256": "a008a54d3307f151911ad0fc1dfa3587e05fd54eb89bd0172be364d162d64f2c"
+    },
+    {
+      "file": "research/cdt_beta_single_period_confluent_integral_model_independent_review_20261007.md",
+      "bytes": 6290,
+      "sha256": "56f66a0ee71e0c71785e87ade18a94451e55cc152d6f4ee1c3dedadf7399bb34"
+    },
+    {
+      "file": "research/catalan_higher_even_beta_period_projection_20261007.md",
+      "bytes": 14515,
+      "sha256": "2a05a15737d8bedee8a99de83cef55b9a2e60f6ac5942173e5a6b7611f6113dc"
+    },
+    {
+      "file": "research/catalan_higher_even_beta_period_projection_independent_review_20261007.md",
+      "bytes": 7458,
+      "sha256": "600f70c35142314553916f8a3fe445698f270b1920bc9d78c3676a5762846645"
+    },
+    {
+      "file": "research/cdt_level7_explicit_third_kind_split_20261007.md",
+      "bytes": 19710,
+      "sha256": "6bd6138e66e0fb5a8d68635d5c332d972b879acf19abb40428f7c9e851abc342"
+    },
+    {
+      "file": "research/cdt_level7_explicit_third_kind_split_independent_review_20261007.md",
+      "bytes": 4835,
+      "sha256": "fe94f1129402c3a9a9eb7a12612e6107cd3c069ab51ba4a5bf413875811aee56"
+    },
+    {
+      "file": "research/catalan_higher_even_beta_analytic_transfer_20261007.md",
+      "bytes": 23944,
+      "sha256": "3e3d8df6181cdca82e65103687c9bfe7c5d93772245bb5cf7b4e24a85f7b5e8a"
+    },
+    {
+      "file": "research/catalan_higher_even_beta_analytic_transfer_independent_review_20261007.md",
+      "bytes": 8977,
+      "sha256": "afb2ac0e013dc161610fac17defa551b038978c4c092e093a535397c45f30b4f"
+    }
+  ],
+  "current_main_progress": {
+    "file": "research/cdt_odd_background_progress_20261006.md",
+    "bytes": 402824,
+    "sha256": "431af7fee823961730c737a63974a832114af17461b24810dcae2106f1308c0a",
+    "new_section": 206
+  },
+  "authoritative_legacy_baseline": {
+    "file": "research/cdt_odd_delivery_real_gates_kummer_cauchy_extensions_20261007.json",
+    "bytes": 216163,
+    "sha256": "7a7b7fe3621168e0399c5abf769d12cccec76b25eaabde0ce5f5c5b603155b5a"
+  },
+  "legacy_preservation": {
+    "previous_frozen_records": 620,
+    "previous_math_notes": 615,
+    "previous_guards": 5,
+    "sha_checks_observed_earlier_this_round": 620,
+    "sha_failures_observed": 0,
+    "legacy_counts_rewritten": false,
+    "interrupted_old_draft_round_finalized": false
+  },
+  "paper_review_closure": [
+    {
+      "author": "root",
+      "reviewer": "masked",
+      "topic": "Single beta confluent integral model",
+      "final_full_author_and_reviewer_reads": true,
+      "result": "PASS with nonvanishing and sharp arithmetic cost still open"
+    },
+    {
+      "author": "masked",
+      "reviewer": "scaled",
+      "topic": "Higher even beta period projection",
+      "final_full_author_and_reviewer_reads": true,
+      "result": "PASS after explicit j < L restriction"
+    },
+    {
+      "author": "source",
+      "reviewer": "root",
+      "topic": "Level 7 third-kind decomposition",
+      "final_full_author_and_reviewer_reads": true,
+      "result": "PASS; remaining CM period identification open"
+    },
+    {
+      "author": "scaled",
+      "reviewer": "source",
+      "topic": "Analytic transfer",
+      "final_full_author_and_reviewer_reads": true,
+      "result": "PASS after total degree at most n correction"
+    }
+  ],
+  "proved_structural_results": [
+    "For s >= 2, exact rational projection E_n = q_n + beta(s) I_n eliminates all lower beta periods.",
+    "For r = s - 1 >= 2, actual row coefficients satisfy d_H^(3r-2) p in Z; crude beta(4) n^2 cost is 69.",
+    "A fixed symmetric logarithmic t-density gives the true initial period 4 beta(2m) and retains the original Hardy/Cauchy analytic bound.",
+    "Original inner logarithmic weighting instead gives C_s, with 0 < C_s < 4 beta(s) for s > 2 and explicit mixed periods.",
+    "Level 7 explicit decomposition C_3 = I(-f t) + 1/6 - kappa/3 closes the representative, second-kind coefficient, and cusp boundary gaps."
+  ],
+  "remaining_gaps": [
+    "Infinite-scale nonvanishing of the actual projected single-beta determinant.",
+    "Sharp complete finite-place cost and strict analytic/arithmetic gap for that same determinant.",
+    "Complete period projection and arithmetic model for the logarithmic t-density carrier.",
+    "Arithmetic identity or usable strict CDT margin for the remaining level 7 third-kind CM period."
+  ],
+  "fresh_primary_pdfs": [
+    {
+      "file": "literature/yang2007_apery_limits_v1_20261006.pdf",
+      "bytes": 264199,
+      "sha256": "691258e04fb3f9f9fa6a4cc144c8be99d587d0af47f96cbf138ac797a1025109",
+      "fresh_pdf_pages_1_based": [
+        5,
+        6,
+        15,
+        16
+      ],
+      "readers": "source"
+    },
+    {
+      "file": "literature/cdt_gamma_level7_punctured_sources_20261007/brown_fonseca2025_single_valued_meromorphic_arxiv2508_04844v2.pdf",
+      "bytes": 1034906,
+      "sha256": "17f8556f14261236af621695799387065cd70dae4295b52f3ee6e82d28593a66",
+      "fresh_pdf_pages_1_based": [
+        34,
+        36,
+        37,
+        41,
+        42,
+        43,
+        49,
+        50
+      ],
+      "readers": "source"
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/golyshev_zagier_interpolated_apery_motivic_gamma_author.pdf",
+      "bytes": 398788,
+      "sha256": "529a92d1ba0744e00c3d26ea97400ae3da25b0615dea5dacbaa0b3f25697d669",
+      "fresh_pdf_pages_1_based": [
+        9,
+        10
+      ],
+      "readers": "source"
+    },
+    {
+      "file": "literature/lai2021_at_least_two.pdf",
+      "bytes": 219002,
+      "sha256": "33c0d91dd1209fbf767be9c94c09c305124be3a1d6773a1341f1a01d22ad0369",
+      "fresh_pdf_pages_1_based": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "readers": "masked and scaled independently"
+    }
+  ],
+  "fresh_full_read_official_tex_sections_by_agents": [
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\foundations.tex",
+      "bytes": 17469,
+      "sha256": "21633dce32e242555dde97f82f1124f3524641bb69a2f16b7485177b667cb738"
+    },
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\real-place.tex",
+      "bytes": 17837,
+      "sha256": "4cd88cafd703b409e581df177cb891f53beb7626b547ec9f6003920861f9a74c"
+    },
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\energy.tex",
+      "bytes": 12218,
+      "sha256": "d6c2488e86915f0b7f0af80705796eb8f2e13e03c2e3c59974b702723e5818e9"
+    },
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\certificate.tex",
+      "bytes": 19585,
+      "sha256": "75dbdb4a57b54327391a9f883c903d9e8a3c1eef622c93fd569c9a07e94b968c"
+    },
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\nonvanishing.tex",
+      "bytes": 17218,
+      "sha256": "4f8ddcf4a8c8eec1c1225d38a48e63a26a996ca399fea5cce88d3d0d4ef3f93f"
+    },
+    {
+      "file": "E:\\codex-build\\math\\preprints\\Catalans-constant-is-irrational-September-24-2026\\build\\sections\\conclusion.tex",
+      "bytes": 2580,
+      "sha256": "de12e400d16e588d873439158e495a3da00d2a4907866f4ebc9aa94d9813f1a9"
+    }
+  ],
+  "fresh_pdf_reading": {
+    "root": 0,
+    "source": 14,
+    "masked": 4,
+    "scaled": 4,
+    "personal_sum": 22,
+    "distinct_content_pages": 18,
+    "tex_lines_not_counted_as_pdf_pages": true
+  },
+  "execution_scope": {
+    "mathematical_producers_created": 0,
+    "mathematical_producers_run_or_imported": 0,
+    "prime_tables_extended": 0,
+    "guard_runs": 0,
+    "lean_runs": 0,
+    "original_numeric_certificate_recomputed": false,
+    "new_pdf_downloads": 0,
+    "metadata_hash_and_link_checks_only": true
+  },
+  "official_source_repository": {
+    "path": "E:\\codex-build\\math",
+    "remote": "https://github.com/openai/math",
+    "branch": "main",
+    "head_and_fetched_origin_main": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "fresh_fetch_this_turn": true
+  },
+  "next_priority": "beta(4): exact determinant identity, infinite-scale nonvanishing and lower arithmetic cost; parallel full period contact projection for the symmetric t-log carrier.",
+  "local_markdown_link_check": {
+    "scope": "All eight new notes and main section 206 only",
+    "checked": 13,
+    "missing": []
+  }
+}

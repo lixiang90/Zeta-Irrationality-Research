@@ -1,0 +1,206 @@
+§2.3. Squares of isogenies                                                           II. Modular towers and squares of isogenies
+
+
+
+δ is simply the order of the pole at infinity.
+
+Remark. To approach this system of equations we will make intensive use of the software lp_solve [Lps].
+
+    Once that the parameters have been chosen we will focus on the maps πd (forgetful maps) and ω` (Atkin
+Lehner involutions). The idea is to describe them in terms of the parameters. For the forgetful maps, this
+is done by comparing the q-expansions of the parameters on the two curves. The Atkin-Lehner involutions,
+instead, are usually deduced from their compatibility relations (Lemma2.44). For curves of genus greater
+than or equal to 1, their equations come from the algebraic relations between their two parameters (again
+these relations will be found comparing q-expansions).
+
+Remark. The q-expansion of an η-quotient is relatively easy to compute.
+
+Remark. In order to find algebraic relations between different series we will make use of the magma-function
+AlgebraicRelations contained in the Echidna Package [Ech].
+
+
+2.3      Squares of isogenies
+In this section we will describe a commutative square of isogenies of the form
+
+                                                              `
+                                                      E0           E1
+                                                      q                q
+                                                      F0           F1
+                                                              `
+
+We will focus on the case of isogenies of prime degrees ` 6= q. In particular, we are interested in the following
+problem: given the triple (E0 , E1 , F0 ) together with the degrees ` and q, find the bottom right vertex of the
+square, namely F1 .
+   We will then try to generalize the process to the case
+
+                                          `               `        `             `
+                                    E0           E1           E2           ···       En
+                                   q                                                   q
+                                    F0           F1           F2           ···       Fn
+                                          `               `        `             `
+
+where we are given an `-isogeny chain at the top (E0 → . . . → En ) together with a q-isogeny E0 → F0 and
+we want to find Fn (or the `-isogeny chain at the bottom).
+   In this section we will take a modular approach based on the moduli interpretation of curves X0 (N). In
+section 1.2.5, we observed that isomorphism classes of elliptic curves are parametrized by points on Y (1).
+Further, the construction of modular polynomials, and the fact that they provide models for X0 (N) (see
+Section 2.2.2), permits one to infer that points on Y0 (N) represent elliptic curves together with an N-isogeny.
+We formalize the previous observations in the following Theorem.
+
+Theorem 2.55. The points of Y0 (N) are in bijection with the set of isomorphism classes of couples (E, CN )
+of an elliptic curve E together with a cyclic subgroup CN of order N. Since subgroups of Elliptic curves are
+in bijection with isogenies, this is equivalent to saying that points Y0 (N) represent isomorphism classes of
+couples (E, φN ) of an elliptic curve E together with an isogeny of degree N.
+
+Proof. See [DS, Th. 1.5.1].
+
+
+2.3.1     The modular curve X0 (`1 `2 )
+Suppose we are given two primes `1 6= `2 . We observe that a square of isogenies is nothing but a data on
+the modular curve X0 (`1 `2 ). Therefore our object is a point on a modular curve and therefore it will be given
+by its coordinates (observe that by Lemma 2.52 there are only two cases for which X0 (`1 `2 ) has genus 0,
+i.e., 2 · 3 and 2 · 5). We obtain the following diagram (already described in Section 2.2.5)
+
+                                                              63
+II. Modular towers and squares of isogenies                                                                                        §2.3. Squares of isogenies
+
+
+
+                                                                                X0 (`1 `2 )
+                                                                     π1                         π1
+                                     `2 + 1                                                                             `1 + 1
+                                                                           π`2            π`1
+                                                             X0 (`1 )                           X0 (`2 )
+                                                                           π`1            π`2
+                                     `1 + 1                                                                             `2 + 1
+                                                                      π1                        π1
+                                                                                  X(1)
+
+
+      This has the following moduli interpretation
+
+        X0 (`1 `2 )                         X0 (`1 )                      X(1)                    X0 (`1 `2 )                          X0 (`2 )              X( 1)
+
+                                                                π1                                                                                     π1
+E0                    E1               E0                                  E0             E0                    E1                E0                          E0
+                               π1                       E1      π`1        E1                                            π1                       F0   π`1    F0
+
+                               π`2                              π1                                                       π`2                           π1
+                                                        F1                 F1                                                                     F1          F1
+ F0                   F1               F0                       π`1        F0              F0                   F1                E1                   π`1    E1
+
+
+Remark. Note that once the maps X0 (`1 ) → X(1) and X0 (`2 ) → X(1) are chosen, the other maps
+X0 (`1 `2 ) → X(`1 ) and X0 (`1 `2 ) → X(`2 ) are uniquely determined; in fact, it is just a fiber product.
+
+Remark. The Atkin Lehner involution acts on the square (E0 , E1 , F0 , F1 ) by flipping the direction of the
+arrows
+
+Example. Let us look at the case X0 (14).
+   Both X0 (2) and X0 (7) have genus 0. In the Appendix A we see that X0 (2) has parameter t2 =
+(η(τ )/η2 (τ ))24 and the maps have description
+
+                                       (t2 + 256)3                                      (t2 + 16)3                                4096
+                           π1∗ (j) =                                      π2∗ (j) =                                 ω2∗ (t2 ) =
+                                            t22                                             t2                                     t2
+
+Concerning X0 (7) we find that the best choice for a parameter is t7 = (η(τ )/η7 (τ ))7 and
+
+                                                             (t72 + 245t7 + 2401)3 (t72 + 13t7 + 49)
+                                            π1∗ (j) =
+                                                                               t77
+
+                                                                (t72 + 5t7 + 1)3 (t72 + 13t7 + 49)
+                                                π7∗ (j) =
+                                                                                t7
+                                                                                          49
+                                                                           ω7∗ (t7 ) =
+                                                                                          t7
+Now, X0 (14) has genus 1 and we find two η quotients
+
+                                                       η2 (τ )η7 (τ )7                            η2 (τ )8 η7 (τ )4
+                                            x14 =                                         y14 =
+                                                       η1 (τ )η14 (τ )7                           η1 (τ )4 η14 (τ )8
+
+giving the model for X0 (14)
+                                                       y 2 − 5xy − 2y = x 3 − 3x 2 + 3x − 1
+By looking at the algebraic relations between all these parameters, we find
+
+                                (y − 7x + 7)2 (x 2 + 40x + 8 − 8y )                                                 x 3 (x 2 − 2x + 1 − y )
+                 π1∗ (t2 ) =                                                                          π7∗ (t2 ) =
+                                                y3                                                                              y
+
+                                                       y − 7x + 7                                     x 2 − 2x + 1 − y
+                                     π1∗ (t7 ) =                                        π2∗ (t7 ) =
+                                                           x                                                  x
+
+
+
+
+                                                                                   64
+§2.3. Squares of isogenies                                                   II. Modular towers and squares of isogenies
+
+
+
+    Suppose we are given the following square of isogenies over the finite field F71 .
+
+                                                  48            66
+
+
+
+
+                                                  40            ??
+
+
+There are several ways of completing it by finding the suitable bottom right corner:
+
+(i) The easiest way consists in computing the gcd of the two modular polynomials Φ2 (40, x) and Φ7 (66, x)
+     corresponding respectively to the bottom and the right isogenies. We find
+            (                      (
+              Φ2 (40, x) = 0         x 3 + 6x 2 + 35x = 0
+              Φ7 (66, x) = 0         x 8 + 61x 7 + 45x 6 + 23x 5 + 11x 4 + 20x 3 + 43x 2 + 44x + 15
+
+      whose solution is 17. We can easily check that this is the only possible j-invariant completing the
+      square.
+      If we have to carry out this sort of computation only few times with similar parameters there is no
+      doubt that this method is the most direct one. The drawback, as we have already mentioned at the
+      end of section 2.2.2, is represented by the size of the modular polynomials. One way to get around
+      this (as we will better describe in section 5.4.3) is to compute modular polynomials on modular curves
+      other than X(1) by comparing the parameter t(q) and t(q p ).
+
+(ii) First of all we find that t2 (q) and t2 (q 7 ) satisfy a degree 8 symmetric polynomial Ψ7 (x, y ). This is still
+      big in size but we already see some improvements: Φ7 has 63 monomials while Ψ7 has 51. The size
+      of the coefficients also reduces by a factor of 3.
+      On the other hand, t7 (q) and t7 (q 2 ) satisfy the relation
+
+                                  Ψ2 (x, y ) = x 3 − x 2 y 2 − 8x 2 y − 8xy 2 − 49xy + y 3
+
+      which is already much smaller than the one found in section 2.2.2. Note that Ψ7 is a model for the
+      image of X0 (14) in the product X0 (2) × X0 (2) given by (x, y ) 7→ (π1 (x, y ), π7 (x, y )). Besides, Ψ2
+      represents the image of the map X0 (14) → X0 (7) × X0 (7).
+      The upper side of the square is represented by the 2 isogeny corresponding to the point on X0 (2) with
+      coordinate t2 obtained by           (
+                                            π1∗ (j) = 48
+                                                                 t2 = 11
+                                            π2∗ (j) = 66
+      In the same way the left side of the isogeny square is a 7-isogeny corresponding to the point on X0 (7)
+      where the parameter t7 has value            (
+                                                    π1∗ (j) = 41
+                                                       π2∗ (j) = 48
+      since there are two 7-isogenies between 48 and 40 we get two possible values for t7 . At this stage
+      we are not interested in distinguishing the two and we pick a random one t7 = 61 + 9ζ3 where
+      F712 = F71 [ζ3 ].
+      We can now apply a 7-isogeny to t2 and quotient out all the resulting isogenies not starting from 40:
+                                     (
+                                        Ψ7 (t2 , x) = 0
+                                                                 t20 = 37
+                                        π1∗ (j) = 40
+
+      and the same for t7 to which a 2-isogeny must coincide with the left side of the square
+                                   (
+                                     Ψ2 (t7 , x) = 0
+                                                             t70 = 58 + 55ζ3
+                                     π1∗ (j) = 66
+
+                                                         65
+

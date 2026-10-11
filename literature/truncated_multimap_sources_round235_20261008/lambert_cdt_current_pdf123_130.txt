@@ -1,0 +1,499 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        123
+
+                                     (mD)         Pr
+boils down to securing that h(ψD            )≤D      j=1   uj bj , which is equivalent to
+                                                     Pr
+                                     T (r, λ, µ) −     j=1   uj bj
+                     m≥                                                   .
+                           log |φ′ (0)| − σm − (max1≤i≤m ei )Jξ (m)
+In other words, we have either proved (7.7.3) and hence (7.1.14) holds, or else
+(7.7.11) holds.
+
+    8. The finer holonomy bound with the Bost–Charles integral
+   This section combines the measure concentration input of § 6 with the Bost–
+Charles refinements of § 7 to give the most accurate general holonomy bound of
+all the theorems worked out in our paper. The added strengthening turns out to
+be zero for the particular applications to Theorems A and C, and the theorem
+becomes somewhat complicated to state, nevertheless we hope that the principle
+of the abstract refinement could be useful in future applications of our holonomy
+bounds.
+   The theoretical improvement from adding high-dimensional methods to the Bost–
+Charles calculus is, as far as we were able to tell in the framework of § 2, reflected
+only in the denominator term τ (b; e). It is inevitable to ask which of the growth in-
+tegrals in § 6 versus § 7 is the smaller. In § 8.1, we present a proof by Fedor Nazarov
+that the Bost–Charles integral is strictly better than the rearrangement integral.
+This, in particular, implies that Theorem 7.6.4 is more precise than Theorem 6.0.2,
+granting our heuristic Remark 7.6.7, and at least as far as the stated denominator
+is concerned in the latter theorem. (Remark 6.6.15 indicates that the multidimen-
+sional proof in § 6 can go further than § 7 in the general denominator aspect, and
+at least as far as our choice of treatment in the present section § 8.) Remark 8.1.17
+further down in this section suggests that the difference in the archimedean growth
+terms is usually very small, implying that little is to be lost from working with
+the rearrangement integrals. For purposes of sampling and testing the holonomy
+bounds with different maps φ, the latter integrals have the practical advantage to
+allow for faster and more reliable numerical computations.
+   We now proceed to formulating our unifying theorem. The following sums up
+the sharpest32 of all the holonomy bounds we prove in this paper.
+Theorem 8.0.1. We relax all assumptions on the denominators in Theorem 6.0.2,
+and allow for an arbitrary denominators matrix b ∈ Mm×r (R≥0 ) with nonnegative
+coefficients. Define
+                                                                       
+               ♭♭                          1
+              τ (b) := lim sup lim sup        lim sup DenN (b, ϵ, d, ε) ,
+                         ϵ→0,ε→0 d→∞       d N →∞
+                          2 X                                                       (8.0.2)
+    DenN (b, ϵ, d, ε) :=                max           #{(j, h) : k ≤ bij ,h · nj },
+                         N       n∈Pεd (N ),i∈Vmd (ϵ)
+                             k∈N>0
+
+where (j, h) runs through {1, . . . , d} × {1, . . . , r}, the set Vmd (ϵ) ⊂ {1, . . . , m}d is
+defined as
+            Vmd (ϵ) := i ∈ {1, . . . , m}d : ∀i0 ∈ {1, . . . , m},
+                      
+
+                         d/m − ϵd < #{1 ≤ j ≤ d | ij = i0 } < d/m + ϵd ,
+
+   32Possibly up to considering other φ in addition to φ , as in Theorems 6.0.2 or 7.1.13. Such
+                                                          r
+variations are straightforward to incorporate as well, but we refrain from doing this here.
+124                          F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+and Pεd (N ) ⊂ [0, N ]d ∩ Zd denotes the subset of those n for which the normalized
+([0, 1), µLebesgue ) discrepancy of {ni /N }di=1
+                                               ( isr ≤ ε.                     )
+                                                 X
+                                 ′                                ♭♭      ♯
+   Assume either that log |φ (0)| > max               max bi,h , τ (b) + τ (e) , or that
+                                                            1≤i≤m
+                                                      h=1
+      ′              ♭♭      ♯
+log φ (0) >, τ (b) + τ (e) and all fi are holonomic.
+   Then we have
+                        RR
+                            2 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                   m≤ T                                            .                        (8.0.3)
+                               log |φ′ (0)| − (τ ♭♭ (b) + τ ♯ (e))
+  Further, for any subradii sequences 1 = rl > rl−1 > · · · > r0 > 0 as in Theo-
+rem 7.1.6 and using the Bost–Charles characteristic Tb of Definition 7.1.2, we have
+        RR                                               1
+                                                            Pl     (Tb(rk ,φ)−Tb(rk−1 ,φ))2
+          T2
+             log |φ(z) − φ(w)| µHaar (z)µHaar (w) − m          k=1     log rk −log rk−1
+   m≤                                                                                       .
+                              log |φ′ (0)| − (τ ♭♭ (b) + τ ♯ (e))
+                                                                                        (8.0.4)
+  Moreover, if the s∗h for the given {rk } are defined as in Theorem 7.6.4 then we
+have
+                                                       Pl−1
+            log |φ(z) − φ(w)| µHaar (z)µHaar (w) − h=0 s∗h · (Tb(1, φ) − Tb(rh , φ))
+       RR
+         T2
+  m≤                                                                                          .
+                              log |φ′ (0)| − (τ ♭♭ (b) + τ ♯ (e))
+                                                                                        (8.0.5)
+Remark 8.0.6. We observe that       τ ♭♭ (b) ∈ [0, ∞) by definition. More precisely, we
+                                   r
+have the trivial bound τ ♭♭ (b) ≤ h=1 maxm
+                                  P
+                                               i=1 {bi,h }.
+   For the denominator matrices b of the form considered throughout §§ 6–7, we
+have τ ♭♭ (b) = τ ♭ (b). Indeed, writing t for the continuous limit of the discrete
+variable k/N , we have in the setup of Theorem 6.0.2 τ ♭♭ (b) bounded above by
+                                                                                            
+Xr                   1          2 X                                                         
+    lim sup lim sup      lim sup                     max          #{(j, h) : k ≤ bij ,h · nj }
+      ϵ,ε→0   d→∞  d N →∞  N                              d (ϵ)
+                                              n∈Pεd (N ),i∈Vm                                 
+h=1                                        k∈N>0
+      r Z       bh                                    r 
+                                                                  bh u2h
+      X                                               X                    
+≤2                   min{1 − uh /m, 1 − t/bh } dt =          bh −              = τ ♭ (b),
+            0                                                      m2
+      h=1                                             h=1
+
+where the inequality stems from the observation that the restriction to the balanced i
+(meaning: each i0 ∈ {1, . . . , m} occurs with the same asymptotic frequency 1/m)
+supplies the upper bound constraint 1 − uh /m in the integrand on the second
+line, while the restriction to the balanced n (meaning: the components set {nj }
+takes asymptotically the uniform distribution on [0, N ]) supplies the upper bound
+constraint 1 − t/bh in that integrand. Moreover, equalities are reached in the case
+where both n and i are arranged in non-decreasing order: n1 ≤ · · · ≤ nd and
+i1 ≤ · · · ≤ id . This proves that τ ♭♭ (b) = τ ♭ (b) under the standing assumptions
+throughout § 6 and § 7. (See also Lemma 6.6.7 and Remark 6.6.14.)                   △
+Example 8.0.7. Here is a simple example to illustrate that, for a given b, if
+one lets b′ range over all arrays which dominate b′ ≥ b coefficient-wise and which
+additionally meet the constraints of Theorem 6.0.2, the inequality in τ ♭♭ (b) ≤ τ ♭ (b′ )
+can be strict.
+   Consider b = [0, 1, 2]t . In order to use τ ♭ , the optimal choice of b′ is to take
+ ′
+b = [0, 2, 2]t and we have τ ♭ (b′ ) = 16                              ♭♭       5
+                                       9 . On the other hand, we have τ (b) = 3 = 9 .
+                                                                                      15
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     125
+
+
+Indeed, writing t := k/N , we have:
+              Z 2/3        Z 1               Z 4/3        Z 2        !
+   ♭♭               2                 1              1               t
+  τ (b) = 2           dt +       1−t+     dt +         dt +       1−    dt .
+               0    3       2/3       3         1    3       4/3     2
+This is to be compared with
+                                           Z   2         
+                                                         
+                                               2       t
+                           τ ♭ (b′ ) = 2         ,1 −
+                                                   min     dt.
+                                      0        3       2
+To explain the difference between two formulas, we notice that in the range t ∈
+[2/3, 4/3], for every n to be considered in the definition of τ ♭♭ (b), there are at most
+(max{0, 1 − t} + o(1))d among the nj with ij = 2 (corresponding to b2,1 = 1) to
+contribute to {(j, 1) | k ≤ n}, and there are at most (1/3 + o(1))d among the nj
+with ij = 3 (corresponding to b3,1 = 2) to contribute to {(j, 1) | k ≤ 2n} and both
+bounds can be reached with suitable choice of n.                                       △
+8.1. Comparison of the Bost–Charles and the Rearrangement integrals.
+This section, due entirely to Fedor Nazarov, treats the clean comparison of the two
+integrals — beneath the empirical observation that they are practically the same in
+the situations we encounter in § A, as well as in practice for most of the multivalent
+cases. This theorem strictly speaking is not used for any of our proofs in the paper,
+and hence it can be omitted on a first (and on a second) reading.
+Basic Remark 8.1.1. As the considerations that follow rely on the potential
+theory in the plane, consider first the easier situation on the simplest of all the Lie
+                                                                    1
+groups: the circle T. The integrable function G(z) := log |1−z|        , G : T → R ∪ {∞}
+has the nonnegative Fourier coefficients
+                                                                      
+         Z                           Z
+                                                    1                  0,       if n = 0;
+G(n)
+ b    :=     G(z)z −n µHaar (z) =       z −n log         µHaar (z) =       1
+          T                           T          |1 − z|                       , if n ̸= 0.
+                                                                          2|n|
+                                                                      
+                                                                                     (8.1.2)
+By the general Bochner theorem, the positivity of the Fourier transform implies
+that G(z)RRis a positive-definite function on the locally compact abelian group T:
+that is, T2 G(zw−1 ) ν(z)ν(w) ≥ 0 for all reasonable signed measures ν on T.
+                                                    +     −
+Reasonable here
+  ±
+               R may±be taken to mean ν = ν − ν with finite positive measures
+ν satisfying T G ν < ∞. For any such signed measure ν, this computation
+shows more precisely that
+                ZZ
+                                1
+        I(ν) :=         log          ν(z)ν(w)
+                    T 2      |z − w|
+                ZZ
+                                  1                      X |b   ν (n)|2              (8.1.3)
+              =        log          −1
+                                        ν(z)ν(w) =                       ≥ 0,
+                   T2       |1 − zw |                            2|n|
+                                                             n∈Z∖{0}
+
+where manifestly the equality holds if and only if the Fourier transform νb is a scalar
+multiple of the Dirac mass at 0 ∈ T b = Z, and that in turn is the case if and only if
+ν is a scalar multiple of the Haar measure µHaar . This reflects the basic potential
+theory on the circle.
+   On the circle |z| = R of arbitrary radius, the left-hand side of (8.1.3) scales by the
+                              R 2
+additive summand (log R) ν , and so whereas for R > 1 the inequality (8.1.3)
+is false for arbitrary measures ν supported by that circle,    R it continues to be in
+place for the measures that are balanced in the sense that ν = ν(C) = 0. As the
+126                           F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+logarithmic kernel is also invariant under additive translations, the latter remark
+continues to hold for balanced measures carried by any circle in C.              △
+
+   As we review next, the positivity of the energy integral is a completely general
+fact about balanced measures on C.
+
+
+8.1.4. The energy principle. In the Newtonian gravitational field created by a point
+mass at the origin 0 ∈ Rn , the potential energy function U : Rn ∖ {0} → R is
+determined by the distributional Laplace equation
+                                                    n
+                                                    X ∂2U
+                                         ∆U :=                    = −δ0 ,
+                                                     i=1
+                                                           ∂x2i
+
+namely as the fundamental solution U := Un2 of that equation, where more generally
+it is useful to consider the Riesz potential [Rie38] defined by
+
+                               Γ n−α
+                                      
+                                    2         1
+                                                   ,    for n > α > 0,
+                           
+                           
+                            α α n             n−α
+                             2  Γ      π 2 ∥x∥
+                Unα (x) :=         2                                       (8.1.5)
+                                   1              1
+                                             log     ,  for n = α.
+                           
+                           
+                            n−1 n
+                                  π 2 Γ n2
+                                           
+                             2                   ∥x∥
+                pPn                                                     n
+Here, ∥x∥ :=              2
+                     i=1 xi is the Euclidean distance function in R . The gravi-
+                            2
+tational potential U = Un is rotationally invariant and defines a kernel function
+k(x, y) := Un2 (x − y), which by definition is furthermore translationally invariant.
+For n > 2 this kernel is also positive-definite, by the fundamental formula of Frost-
+man
+  RR and Marcel   Riesz [Rie38, § I.3], which generalizes the Dirichlet energy integral
+1
+2    ∥∇F ∥2 dvol, and is tantamount to the computation [Den50, Sch66, Lan72,
+NS91] of the distributional Fourier transform of Un2 :
+             ZZ                              ZZ
+     I(ν) :=            k(x, y) ν(x)ν(y) =             Un2 (x − y) ν(x)ν(y)
+                  Rn ×Rn                                      Rn ×Rn
+                      n       Z                                                 (8.1.6)
+                 4π   2                       2
+         =        n−2
+                                  Un1   ∗ν        µLebesgue .
+             Γ     2          Rn
+
+This is the spatial analogue of the energy formula (8.1.3) for the circle. To be
+more precise, this formula gives the strict positivity I(ν) > 0 of the energy of
+any nonzero compactly supported signed measure ν = ν + − ν − on Rn expressible
+as the difference of two finite positive Borel measures ν + , ν − of finite energies
+I(ν + ), I(ν − ) < ∞. For the logarithmic kernel (the case n = 2, whose proper
+physical interpretation is rather in electrostatics on a plate), Riesz observed [Rie38,
+§ I.4] that the analogy becomes almost perfect upon additionally requiring the
+signed measure ν to be balanced : ν(R2 ) = 0. The energy principle states that
+for balanced signed measures subject to the above regularity conditions (with the
+balancing condition being only required in the case n = 2), the energy I(ν) ≥ 0 is
+nonnegative, and equality holds if and only if ν = 0. This refines the uniqueness
+theorem for the equilibrium probability measure of a compact. The n = 2 case,
+which is the one of relevance to us, is treated in detail in [Hil62, Theorem 16.4.2]
+and [Lan72, Thereom 1.16].
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                          127
+
+
+8.1.7. Fuglede’s inequality. For completeness, we summarize the more general sit-
+uation due to Fuglede [Fug60] for non-balanced measures. This is a different gen-
+eralization of the n = 2 case, this time to the logarithmic kernel
+                                                       2π n/2        1
+                  k(x, y) := Unn (x − y) = (2π)−n             log
+                                                       Γ(n/2)     ∥x − y∥
+on Rn . For this kernel, the analog of the energy formula (8.1.6) for the case of the
+balanced measures is also due to Riesz [Rie38, § I.4]:
+     Z                                     n Z             2
+                                  n−1 n
+         ν = 0 =⇒ I(ν) = 2           π Γ2            Unn/2 ∗ ν µLebesgue ≥ 0,
+      Rn                                    2 Rn
+and more generally, Fuglede [Fug60, § 4] proves the sharp energy lower bound
+                                      a  Z        2
+                                        n
+                          I(ν) ≥ log        ·      ν                      (8.1.8)
+                                       R        Rn
+for all signed measures ν on Rn expressible as ν = ν + − ν − with ν ± finite positive
+measures of convergent energy integrals I(ν ± ) < ∞ and having supp(ν) ⊆ {∥x∥ ≤
+R}, and with the optimal constant an being precisely
+                                               
+                         1          1        1
+                  exp     + ... +      +         ,           for n even;
+                 
+                 
+                       2          n−4 n−2
+           an :=                                        
+                         1          1        1
+                  exp     + ... +      +        − log 2 , for n odd.
+                 
+                 
+                         1         n−4 n−2
+The cases a1 = 1/2 and a2 = 0 (for the case n = 2 of relevance to us) are already in
+de la Vallee-Poussin [dlVP49, § 47]. In any case, (8.1.8) certainly implies the requi-
+site positivity I(ν) ≥ 0 for all (reasonable) balanced measures, and more generally,
+for all measures supported by a sufficiently small ball.
+8.1.9. Michelli’s criterion for positive-definite kernels. A different generalization,
+for which we refer to [Mat97] and the references there, admits an arbitrarykernel of
+                                                                             d n
+the form k(x, y) = U (∥x − y∥), where U (t) ∈ C ∞ (R>0 ) obeys (−1)n dt          U (t) ≥
+0 for all n ≥ n0 , and now the additional (“balancing”) constraints on Rthe compactly
+supported signed measure ν = ν + −ν − with I(ν ± ) < ∞ on Rd being Rd xm ν(x) =
+0 for all m ∈ Nd with |m| < n0 . The condition on
+                                                 R ∞U (t) is equivalent to the existence
+                                    d n0
+of an integral representation for dt     U (t) = 0 e−tu dα(t) as a Laplace–Stieltjes
+transform of a positive Borel measure dα on R>0 .
+8.1.10. Intersection pairing and signature. Another way of informally summarizing
+this discussion33 is to say that the infinite-dimensional quadratic form
+                                   ZZ
+                         ⟨µ, ν⟩ :=            k(x, y) µ(x)ν(y)
+                                          Rn ×Rn
+has one ‘−’ sign on the space of reasonable (non-balanced) signed measures on Rn .
+For the case n = 2 of relevance to the rest of § 8.1, it could be interesting to know if
+a more precise connection could be drawn to the arithmetic Hodge index formula in
+Arakelov theory and the computations in [BC22, § 5] that led to the Bost–Charles
+double integral. Is there a proof of Nazarov’s inequality (Proposition 8.1.13 below)
+that works directly into the arithmetic intersection theory framework of [BC22]?
+   33This is taking n := 1 in § 8.1.9 if we are to include the more general kernels k(x, y) there.
+                     0
+For arithmetic geometry, the case of relevance is n = 2 and the kernel k(z, w) = − log |z − w|.
+128                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+A basic remark in the algebraic model is that for any two line bundles L, M on
+a polarized normal projective algebraic surface, if (L.L) = (M.M ) and deg L =
+deg M , then (L.L) ≤ (L.M ) following from the Hodge index theorem for the line
+bundle L ⊗ M −1 .
+8.1.11. Nazarov’s inequality. Consider now the case n = 2 as the complex plane
+R2 ∼ = C. Then the rotation group is realized by the unitary transformations ta :
+z 7→ az, indexed by the circle points a ∈ T, and our rotationally-invariant, positive-
+                                          1       1
+definite kernel is given by k(z, w) = 2π    log |z−w| on the C-linear space of balanced
+signed measures on C with the regularity conditions we described. We consider
+a non-constant continuous function φ : T → C, and for any a ∈ T we apply the
+energy principle I(ν) ≥ 0 to the balanced signed measure ν = νa := φ∗ (µHaar ) −
+t∗a φ∗ (µHaar ). As the kernel k(z, w) is symmetric and rotationally invariant, the
+resulting inequality rewrites as
+ZZ                                              ZZ
+        log |φ(z) − φ(w)| µHaar (z)µHaar (w) ≤        log |aφ(z) − φ(w)| µHaar (z)µHaar (w),
+      T2                                            T2
+                                                                         (8.1.12)
+for any a ∈ T, and with equality holding if and only if νa = 0. Integrating over
+a ∈ T we get:
+Proposition 8.1.13 (Nazarov). For any continuous function φ : T → C,
+ZZ                                         ZZ
+    log |φ(z) − φ(w)| µHaar (z)µHaar (w) ≤    log max (|φ(z)|, |φ(w)|) µHaar (z)µHaar (w)
+      T2                                             T2
+                                                Z   1
+                                            =        2t · (log |φ(e2πit )|)∗ dt,
+                                                0
+where g ∗ denotes the increasing rearrangement (2.4.1) of a continuous function
+(0, 1) → R. Furthermore, equality holds if and only if φ(z) = cz m for some c ∈ C
+and m ∈ Z.
+Proof. Using the Poisson formula
+                     Z
+                        log |ax − y| µHaar (a) = log max (|x|, |y|)
+                      T
+                             R
+in the termwise integration T I(νa ) µHaar (a) ≥ 0 of (8.1.12). The equality requires
+νa = 0 for almost all a ∈ T, hence that φ∗ (µHaar ) is rotationally-invariant, and
+hence that the supporting loop φ(T) ⊂ C is rotationally-invariant and therefore a
+centered circle, and that φ∗ (µHaar ) is a scalar multiple of the Haar measure of that
+circle.                                                                             □
+   In particular, we get a clean proof that the Bost–Charles integral is always
+strictly majorized by the doubled Nevanlinna characteristic that we have in [CDT24]
+(and not merely by the slightly larger doubled Ahlfors–Shimizu characteristic
+                               Z     p
+                                  log 1 + |φ|2 µHaar
+                                 T
+noted in [BC22, Prop. 5.4.5], which is a more basic estimate following simply by
+the trivial pointwise inequality |x − y|2 ≤ (1 + |x|2 )(1 + |y|2 )):
+Corollary 8.1.14. Every continuous function φ : T → C satisfies
+         ZZ                                            Z
+              log |φ(z) − φ(w)| µHaar (z)µHaar (w) ≤ 2   log+ |φ| µHaar .
+              T2                                                T
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      129
+
+
+
+
+         Figure 8.1.15. The plots of the Rearrangement (in solid) and the
+         Bost–Charles integrals (dashed) for the bivalentRfunction φr (z) =
+         (rz) − (rz)2 . Above them (dotted), the plot of 2 T log+ |φr | µHaar .
+
+
+Example 8.1.16. Consider the function φr (z) := rz − (rz)2 with the varying
+radius r. For r ≥ 1, the Bost–Charles integral amounts to
+  ZZ                                                            Z
+                                                                               r
+         log |φr (z) − φr (w)| µHaar (z)µHaar (w) = 2 log r +        log+            µHaar (z)
+     T 2                                                          T         1 −  rz
+                                                                 1         1
+                                                    = 2 log r +       +          + ....
+                                                                πr 72πr2
+In comparison, a computation reveals the rearrangement integral as the explicit
+function
+         Z 1
+                                                     1
+             2t · (log |φr (e2πit )|)∗ dt = 2 log r+ 2 8 Li3 (1/r) − Li3 1/r2
+                                                                                    
+          0                                         2π
+                                                                  4         4
+                                                    = 2 log r + 2 +               + ....
+                                                                π r 27πr2
+The comparison is pretty tight for most values of r, as illustrated by Figure 8.1.15.
+In contrast, the Nevanlinna characteristic upper bound by
+                      Z                         Z
+                    2    log+ |φr | µHaar = 2        log+ |z − z 2 | µHaar (z)
+                     T                        |z|=r
+                                                              √
+                                                                  5+1
+                                        = 4 log r when r ≥
+                                                                   2
+is quite crude.                                                                            △
+Remark 8.1.17. The asymptotic equivalence of the two growth characteristic
+integrals at a “big” radius |z| = r (as observed in Example 8.1.16 and Figure 8.1.15)
+seems to be a fairly general feature that reflects the near-rotational invariance of
+the φ∗ pushforward of the uniform measure µHaar of the expanding circle |z| = r,
+considering the proof of Proposition 8.1.13 via the slice-by-slice inequality (8.1.12).
+An example “in action” is in our proof of Theorem C in § 14.5. In this situation, the
+130                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Bost–Charles integral (A.6.1) compares with the rearrangement integral (A.6.3) as
+follows:
+          ZZ                                    Z 1
+  9.963 ∼      log |φ(z) − φ(w)| µHaar (z, w) ≤     2t · (log |φ(e2πit )|)∗ dt ∼ 9.972,
+              T2                                     0
+
+an improvement on the order of merely a tenth   R of a percent. (In contrast, the
+Nevanlinna characteristic quantity 2T (φ) = 2 T log+ |φ| µHaar from (B.0.1) is in
+this case as big as ∼ 14.08.)
+    Another example of this kind can be seen by comparing the upper bounds occur-
+ring in the two proofs of Theorem A coming from Theorem 6.0.2 and Theorem 7.6.4
+respectively. The proof via Theorem 6.0.2 (with two division points, see § 13)
+gives a bound in terms of rearrangement integrals of the form m < 13.731. On
+the other hand, Theorem 7.6.4 gives a bound in terms of arithmetic intersection
+numbers which are expressible as integrals which are slight generalizations of the
+Bost–Charles integrals (see Lemma 7.4.5). With an analogous choice of division
+points, this leads to the bound m < 13.679 (see Example 7.6.8, in particular Equa-
+tion 7.6.9), an improvement of less than half a percent. This comparison is not
+literally an example of Proposition 8.1.13 because of the slightly modified forms of
+both the integrals and the bounds arising from the convexity argument. However, it
+accurately reflects the amount of improvement between the rearrangement integrals
+and Bost–Charles integrals that we observed numerically without convexity.        △
+
+8.2. Proof of Theorem 8.0.1. We firstly prove (8.0.4), which contains (8.0.3) as
+a special case. We will discuss at the end how to modify the proof to get (8.0.5).
+   For the following, we fix an ϵ > 0 and the number of variables d. Only at the
+end of the proof we will let, firstly, d → ∞, followed by ϵ → 0. To compare to
+§ 6 and (6.0.10), we remark that the bounds in Theorem 8.0.1 only have τ ♭♭ (b) in
+the denominator using a high dimensional equidistribution feature, while the other
+terms are the same as those in the one dimensional bounds in § 7. Therefore, to
+prove Theorem 8.0.1, we only need to incorporate the feature of a balanced index
+                         Qd
+i = (i1 , . . . , id ) in j=1 fij (xj ), while we do not need an equidistributed degree k
+in xk as in § 6.2. This motivates the following choice for the Euclidean lattice to
+underlie our auxiliary evaluation module.
+
+8.2.1. The Euclidean lattice. Consider the free Z-module
+                              M
+                    ED :=          fi (x) Z[1/x1 , . . . , 1/xd ]≤D ,            (8.2.2)
+                                  d (ϵ)
+                               i∈Vm
+
+
+where we recall that Vmd (ϵ) ⊂ {1, . . . , m}d is defined (depending on the fixed small
+positive constant ϵ) as
+
+            Vmd (ϵ) = i ∈ {1, . . . , m}d : ∀i0 ∈ {1, . . . , m},
+                     
+
+                        d/m − ϵd < #{1 ≤ j ≤ d | ij = i0 } < d/m + ϵd ;
+                        Qd
+and, as usual, fi (x) := j=1 fij (xj ). Here, Z[1/x1 , . . . , 1/xd ]≤D denotes the free
+Z-module consisting of integer polynomials in 1/x1 , . . . , 1/xd , all of whose partial
+degrees — with respect to each 1/xj — are at most D.
+

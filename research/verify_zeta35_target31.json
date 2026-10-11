@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "moment_threshold_primes": [
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101
+  ],
+  "high_part_ranks": [
+    {
+      "p": 17,
+      "predicted": 37,
+      "observed": 37
+    },
+    {
+      "p": 19,
+      "predicted": 35,
+      "observed": 35
+    },
+    {
+      "p": 23,
+      "predicted": 31,
+      "observed": 31
+    },
+    {
+      "p": 29,
+      "predicted": 25,
+      "observed": 25
+    },
+    {
+      "p": 31,
+      "predicted": 23,
+      "observed": 23
+    },
+    {
+      "p": 37,
+      "predicted": 17,
+      "observed": 17
+    },
+    {
+      "p": 41,
+      "predicted": 13,
+      "observed": 13
+    },
+    {
+      "p": 43,
+      "predicted": 11,
+      "observed": 11
+    },
+    {
+      "p": 47,
+      "predicted": 7,
+      "observed": 7
+    },
+    {
+      "p": 53,
+      "predicted": 1,
+      "observed": 1
+    }
+  ],
+  "generic_entries_match_original_mixed": true,
+  "scope": "finite checks supporting separately written elementary proofs; not a Lean formalization"
+}

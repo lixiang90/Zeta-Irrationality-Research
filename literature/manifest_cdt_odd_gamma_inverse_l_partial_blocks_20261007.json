@@ -1,0 +1,225 @@
+{
+  "status": "FINAL",
+  "date": "2026-10-07",
+  "agent": "/root/source_pencil_finalize",
+  "created_at_utc": "2026-10-06T22:38:18.508641+00:00",
+  "scope": "Pure-paper all-index inverse-L arithmetic and independent FULL review of the final rational-forcing split / quadratic-pullback gate paper.",
+  "previous_frozen_baseline": {
+    "path": "research/cdt_odd_delivery_relative_lift_tensor_reference_20261007.json",
+    "sha256": "61dc2465b76159ce315f083848266b6e8415543a63903b004cf944440e75c5cd",
+    "record_count": 596,
+    "mathematical_records": 591,
+    "guards": 5,
+    "immutable": true
+  },
+  "authority_reading": {
+    "main_header_and_sections": "actual current header and §§186-190 read; mutable main deliberately not pinned",
+    "audit": "JSON parsed/current_progress and literal SHA checked; no claim of manual FULL rereading all historical proofs"
+  },
+  "completed_text_reading": {
+    "own_main": "actual FULL seven sections B1-B23; final author reread after actual FULL incoming review",
+    "incoming_review": "actual FULL root report853f",
+    "peer_main": "actual FULL final611485, all ten sections U1-U34; earlier c433/e354 candidates read, superseded",
+    "outgoing_review": "actual FULL final33fed, V1-V7; old005c superseded",
+    "frozen_inputs_full": [
+      "Gamma G1-G19",
+      "dual D1-D30 all seven sections",
+      "reference H1-H20 all seven sections"
+    ],
+    "frozen_input_partial": [
+      "tensor T28 surrounding Apéry calibration only"
+    ]
+  },
+  "paper_results": [
+    "Unconditional N*Gamma_n*b_n integral at every finite place for all n, Gamma_n product retaining actual factorial carries.",
+    "Exact Gamma_n growth rate 245/12-10log2-5log5 approximately5.4380; this is an explicit upper-model rate, not actual minimal denominator rate.",
+    "Exact lcm(Gamma_1,...,Gamma_n)=D_n^9 for this explicit model.",
+    "For5n<p^2 exact unit, full reciprocal block and partial-block residue identities.",
+    "IfS_p=0, actual surviving boundary N*b_(lp-1)=-A^l/128 modp is nonzero.",
+    "Under the UNPROVED condition that S_p=0 for every sufficiently large prime, paid all-n cap M*D_n^8*D_sqrt(5n)^3 and fixed array M_epsilon*D_n^8*D_epsilon_n^2 give flat-cost limit8.",
+    "Final peer611485 passed independent FULL paper review: ordinary-jump/Galois rational split, rational projection, nonsplit quadratic forcing and its rank2 same-map / multimap reference gate."
+  ],
+  "not_proved": [
+    "No unconditional theorem S_p=0 for sufficiently large primes.",
+    "No exact actual D_n^8 cap or higher-prime-power reciprocal supercongruence.",
+    "No transplant of Gamma_n pointwise rate into a CDT prefix array.",
+    "No new numerical irrationality, linear independence or Lean result.",
+    "Original xi=alpha*zeta(4)+beta*zeta(5) has not been replaced or solved.",
+    "Quadratic C_X evaluation and second-conifold comparison remain unknown; current rank2/cap9 strict CDT margin is excluded, not achieved."
+  ],
+  "actual_primary_reading": [
+    {
+      "path": "literature/cdt2024_l2_chi_minus3.pdf",
+      "pdf_pages": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "distinct_pages": 4,
+      "mode": "actual FULL extracted text this round",
+      "source_url": null,
+      "download_this_round": false,
+      "archive_provenance": "existing fixed v2; no guessed current URL"
+    },
+    {
+      "path": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "pdf_pages": [
+        3,
+        4,
+        17
+      ],
+      "distinct_pages": 3,
+      "mode": "actual FULL extracted text plus existing PDF17 image view",
+      "source_url": "https://arxiv.org/pdf/1908.05123v1",
+      "download_this_round": false,
+      "archive_provenance": "existing frozen normal-TLS archive reused"
+    },
+    {
+      "path": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "distinct_pages": 3,
+      "mode": "actual FULL extracted text this round for independent review",
+      "source_url": "https://arxiv.org/pdf/0902.2003v1",
+      "download_this_round": false,
+      "archive_provenance": "existing frozen normal-TLS archive reused"
+    }
+  ],
+  "primary_distinct_read_pages": 10,
+  "reading_stage_counts": {
+    "own_main_primary_distinct": 7,
+    "review_additional_primary_distinct": 3,
+    "current_personal_union": 10,
+    "inherited_previous_or_peer_pages": 0
+  },
+  "renders_actually_viewed": [
+    {
+      "path": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_table5_page17.png",
+      "pdf_page": 17,
+      "new_render_this_round": false,
+      "already_in_primary_distinct_count": true
+    }
+  ],
+  "new_downloads_by_this_agent": {
+    "pdf": 0,
+    "html": 0,
+    "code": 0,
+    "certificate_validation_disabled": false
+  },
+  "mathematical_execution_history": {
+    "producer_created": 0,
+    "producer_executed": 0,
+    "producer_imported": 0,
+    "producer_rerun": 0,
+    "guard_executed": 0,
+    "prime_table_expansion": 0,
+    "lean_execution": 0,
+    "mathematical_failures": 0,
+    "mode": "paper proofs only; inline Python used exclusively for documentary PDF extraction and receipt/hash/JSON metadata"
+  },
+  "documentary_retries": [
+    "One initial PDF stdout GBK encoding failure was rerun with UTF-8 before counted reading.",
+    "One initial review-write JavaScript syntax failure created no file and was corrected; no mathematics was executed."
+  ],
+  "pin_policy": "One-way FINAL receipt: pins only final main/reviews and prior immutable inputs/primaries. No mutable main, future audit, this receipt itself, or peer receipts. Final611485 and33fed replace earlier candidates; no cycle.",
+  "physical_pins": [
+    {
+      "path": "research/cdt_odd_delivery_relative_lift_tensor_reference_20261007.json",
+      "bytes": 198984,
+      "sha256": "61dc2465b76159ce315f083848266b6e8415543a63903b004cf944440e75c5cd",
+      "role": "previous immutable authority",
+      "actual_current_reading": "JSON/current header and progress; no claim of manual FULL reading all 596 proofs"
+    },
+    {
+      "path": "research/cdt_odd_gamma_inverse_l_partial_blocks_20261007.md",
+      "bytes": 15582,
+      "sha256": "ac4ac0bf9886ebe1d7f48c0c0dff91c5e643c8fb7be7e69d0ca98f3e477ee204",
+      "role": "own final main",
+      "actual_current_reading": "actual FULL seven sections B1-B23; final author reread after incoming review"
+    },
+    {
+      "path": "research/cdt_odd_gamma_inverse_l_partial_blocks_independent_review_20261007.md",
+      "bytes": 5835,
+      "sha256": "853f915534ede3496477738d5b815a1c20d3655bccde6ba62e19b13ebb7b5793",
+      "role": "incoming root formal review",
+      "actual_current_reading": "actual FULL seven sections read by this author"
+    },
+    {
+      "path": "research/cdt_odd_gamma_unramified_forcing_split_20261007.md",
+      "bytes": 22304,
+      "sha256": "611485070e8364a2b2905ea60654eac12770b8bb76d3b8d2c6f929b356de37ac",
+      "role": "peer final main reviewed by this agent",
+      "actual_current_reading": "actual FULL ten sections U1-U34; earlier candidates read but not pinned"
+    },
+    {
+      "path": "research/cdt_odd_gamma_unramified_forcing_split_independent_review_20261007.md",
+      "bytes": 10088,
+      "sha256": "33fed534b5a7138ad7466047754f50f5b769862aecca0b1612f3e7bc55528fd2",
+      "role": "own final outgoing independent review",
+      "actual_current_reading": "actual FULL final reviewer selfread V1-V7 including U34 checks"
+    },
+    {
+      "path": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "bytes": 18371,
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "role": "frozen actual coefficient input",
+      "actual_current_reading": "actual FULL reread this round, seven sections D1-D30"
+    },
+    {
+      "path": "research/cdt_odd_gamma_lift_holonomy_reference_gate_20261007.md",
+      "bytes": 13537,
+      "sha256": "78eb5777b649336c7906174878f1b5504e34dd012409fdcbb96e13d1390710c7",
+      "role": "frozen actual rank and first-layer input",
+      "actual_current_reading": "actual FULL reread this round, seven sections H1-H20"
+    },
+    {
+      "path": "research/cdt_odd_gamma_connection_projection_20261007.md",
+      "bytes": 18401,
+      "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+      "role": "frozen actual Gamma system input",
+      "actual_current_reading": "actual FULL reread this round, G1-G19"
+    },
+    {
+      "path": "research/cdt_odd_gamma_tensor_taylor_projection_20261007.md",
+      "bytes": 18617,
+      "sha256": "0a9eb062f5ca02f3337a9532457a01b6b8904e064b2ff1ebf187b302388adc9e",
+      "role": "frozen Apéry calibration input",
+      "actual_current_reading": "current partial reading only: T28 and surrounding calibration paragraphs; not current FULL"
+    },
+    {
+      "path": "literature/cdt2024_l2_chi_minus3.pdf",
+      "bytes": 4517169,
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "role": "fixed primary CDT v2",
+      "actual_current_reading": "current actual FULL text PDF66-69"
+    },
+    {
+      "path": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_bilateral_ramanujan_arxiv1908_05123v1.pdf",
+      "bytes": 208949,
+      "sha256": "4ab728305b71e6b6d5d551c9f25653cd0465eecb5ad3de11944a49d7b45982c7",
+      "role": "existing primary conjecture-status source",
+      "actual_current_reading": "current actual FULL text PDF3-4,17"
+    },
+    {
+      "path": "literature/cdt_gamma_lift_arithmetic_sources_20261007/guillera2019_table5_page17.png",
+      "bytes": 223600,
+      "sha256": "97598cdc647d4cc0b080f676985cd197dadafcc3c7dbbbb1fe6c4e700d83a262",
+      "role": "existing render actually viewed",
+      "actual_current_reading": "current actual view of PDF17 Table5; no new render"
+    },
+    {
+      "path": "literature/cdt_gamma_connection_sources_20261007/golyshev_mellit2009_gamma_structures_arxiv0902_2003v1.pdf",
+      "bytes": 171695,
+      "sha256": "239c64b8bab41b12bc2a41d8eb3630d2935e04365bf6a3b9919193793551fc20",
+      "role": "existing primary irreducibility source",
+      "actual_current_reading": "current actual FULL text PDF1-3"
+    }
+  ],
+  "physical_pin_count": 13,
+  "provenance_checks_passed": true,
+  "unfrozen_documentary_correction": "Peer R(0)=0 domain clarification accepted before final; later U34 same-map reference gate included and FULL reviewed before receipt. Own ac4/ incoming853f unchanged."
+}

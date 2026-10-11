@@ -1,0 +1,346 @@
+106                   F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+7.4. The convexity enhancement of the Bost–Charles bound. We follow the
+same outline as in § 7.3, working with the same evaluation module E D and using
+the same non-archimedean evaluation heights estimate. The improvement is from
+the optimal use of the dilated maps φr (z) := φ(rz) at the step of the archimedean
+evaluation height estimate.
+                          (n)
+                                                    Pm jumps n ∈ VD
+   In order to estimate ψD at the vanishing filtration
+          −1            1
+                                                                        , we consider
+                                                                      n−D
+Qi ∈ Z[x ]≤D = Γ(PZ , O(D)) such that s :=               f Q
+                                                     i=1 i i   = c n x      + . . . has
+exact vanishing order n at x = 0 (as a section of O(D)). Here we view s as a
+formal section of O(D), and then s(x) · xD is canonically a formal function. Recall
+that we have endowed ED with a Euclidean norm induced by the Hermitian line
+bundle L = O(1), on which the Hermitian metric is induced by φ∗ log+ |z|−1 . By
+extension, we define Lr to be the line bundle O(1) equipped with the Hermitian
+metric induced from (φr )∗ log+ |z|−1 . Explicitly:
+                                                 
+                                  X            1           Y
+          ∥1(y)∥Lr := exp −             log+     =                 |z/r|.
+                                   −1
+                                              |z|
+                                 z∈φr (y)                 z∈D(0,r), φ(z)=y
+
+   As a generalization of (7.3.9), we have the following archimedean evaluation
+height estimate in which we can take the optimal radius parameter r = r(n):
+Lemma 7.4.1. For any 0 < r ≤ 1, we have
+                         (n)
+                  h∞ (ψD ) ≤ −n log |φ′r (0)| + D(L · Lr ) + o(D).
+Proof. We assumed the functions φ∗ fi (z) = fi (φ(z)) to be meromorphic on |z| < 1.
+Let us firstly remark that we can reduce the proof to the stronger assumption that
+φ∗ fi ∈ M(D), namely that fi (φ(z)) is meromorphic on an open neighborhood of
+|z| ≤ 1, for all 1 ≤ i ≤ m. Indeed, in the following proof, for r < 1, we only
+use the assumption that the φ∗ fi are meromorphic on an open neighborhood of
+|z| ≤ r; therefore we only need to discuss the reduction step for r = 1. Of course
+this particular r = 1 case is indeed the estimate by Bost and Charles recalled in
+(7.3.9). Nevertheless, we spell out a limit argument for deducing the r = 1 case
+from the r < 1 case, for the same reduction can be applied in the proofs in §§ 7–8
+to allow us to assume φ∗ fi ∈ M(D). Note that
+                lim log |φ′r (0)| = log |φ′ (0)|,   lim L · Lr = L · L.
+                r→1                                 r→1
+                                                            (n)
+Therefore, the r → 1− limit of the inequality on h∞ (ψD ) gives
+                       (n)
+                 h∞ (ψD ) ≤ −n log |φ′ (0)| + D(L · L) + o(n + D).
+This gives the desired inequality with r = 1 since o(n + D) = o(D) by Theo-
+rem 3.2.13 and Lemma 7.3.17.
+   And so we start from the meromorphy φ∗ fi ∈ M(D) of all pullbacks. Choose and
+fix a holomorphic function h ∈ O(D) such that h(0) = 1 and all h · φ∗ fi ∈ O(D) are
+holomorphic.PWe follow the notation hr (z) := h(rz) for r ∈ (0, 1] and z ∈ D. Then,
+                 m
+for any s = i=1 fi Qi = cn xn−D + . . . as above, z −n hr (z) · φ∗r s(x) · xD ∈ O(D)
+is a holomorphic function whose z = 0 value equals cn φ′r (0)n ̸= 0. Therefore
+log z −n hr (z) · φ∗r s(x) · xD is a subharmonic function on D.
+   We modify the computation in [Bos20, §10.5.5]. Instead of using φ as in loc.
+cit., we apply the Poisson–Jensen formula — or the subharmonic property — to
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    107
+
+
+this subharmonic function log |z −n hr φ∗r (s(x) · xD )|. This gets us the upper bound
+                                       Z
+                             ′
+        log |cn | ≤ −n log |φr (0)| +     log |hr φ∗r (s(x) · xD )| µHaar
+                                        T
+                                       Z                                         (7.4.2)
+                  = −n log |φ′r (0)| +    log |φ∗r (s(x) · xD )| µHaar + O(1).
+                                      T
+Now we claim the identity
+                                      Z
+                     D(L · Lr ) = −        log ∥φ∗r x−D ∥φ∗ L⊗D µHaar .           (7.4.3)
+                                                          r
+                                       T
+  To prove it, we start from the Poincaré–Lelong formula that gives:
+                      i                                      ⊗D
+                                                                    
+                        ∂∂ log ∥φ∗r (x−D )∥φ∗ L⊗D = −c1 φ∗r L         ,
+                     π                        r
+
+                                    i
+                                      ∂∂ log+ |z|−1 = −δ0 + µHaar .
+                                   π
+Therefore, by the Green–Stokes formula, we find
+          Z
+       −      log ∥φ∗r x−D ∥φ∗ L⊗D µHaar
+                              r
+           T
+          Z
+                                          i
+       =       − log ∥φ∗r x−D ∥φ∗ L⊗D ∂∂ log+ |z|−1 − log ∥φ∗r x−D ∥φ∗ L⊗D |z=0
+                                  r      π                              r
+          ZD
+                 i                                                  ⊗D
+                                                                          
+       =       − ∂∂ log ∥φ∗r x−D ∥φ∗ L⊗D log+ |z|−1 + deg d φ∗ L |z=0
+                                                                r
+                 π                      r
+          ZD
+                                    ⊗D
+                                            d L⊗D |x=0
+                                                        
+       =       log+ |z|−1 c1 (φ∗r L ) + deg
+            D
+       = D · (ι, φr )∗ L · ([0], log+ |z|−1 )
+                                               
+
+       = D · L · (ι, φr )∗ ([0], log+ |z|−1 )
+                                               
+                        
+       = D · L · Lr .
+proving (7.4.3).
+   At this point, by (7.4.2) and the pointwise decomposition
+         log |φ∗r (s(x) · xD )| = log ∥φ∗r s∥φ∗ L⊗D − log ∥φ∗r x−D ∥φ∗ L⊗D        (7.4.4)
+                                             r                        r
+
+inside the T integrands, the lemma follows if we prove an o(D) bound on the T
+integral of the first term on the right-hand side of (7.4.4) under the assumption
+∥s∥ ≤ 1.
+   If in place of the integration measure µHaar we had a continuous measure µ on D,
+we would have had a constant C such that Cφ∗ ν ≥ µ, and then we would have had
+                                                              Z
+                                                 1
+              0 ≥ log ∥s∥ ≥ max log ∥Qi ∥ =          max log         ∥Qi ∥2L ν
+                             1≤i≤m               2 1≤i≤m       X (C)
+                              Z                         Z
+                         1
+                ≥ C ′ + log       ∥φ∗ s∥2φ∗ L µ ≥ C ′ +    log ∥φ∗ s∥φ∗ L µ,
+                         2      D                        T
+where C ′ is a constant depending only on m, fi , C, and is independent of D. We
+obtain the desired bound with µHaar in place of µ upon approximating log+ |z|
+                                                                            1
+                                                                              (the
+Green function of µHaar ) by smooth Green functions. See § 8.2.11 for details. □
+                                                                          
+  Next, we explicitly calculate the arithmetic intersection number L · Lr :
+108                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma 7.4.5. For 0 < r ≤ 1, we have
+                      ZZ
+                  
+            L · Lr =       log |φ(z) − φ(rw)| µHaar (z)µHaar (w).
+                                T2
+
+Proof. Recall from the discussion above that we have, straight from the definition,
+                            Z
+                                log+ |z|−1 c1 (φ∗r L) + deg
+                        
+                  L · Lr =                              d (L|x=0 ).
+                                 D
+
+From the definition of L and the functorial behavior of the Chern form under
+pushforward [BC22, Proposition 3.4.5(2)], we have
+                                        Z
+        ∗       ∗
+                                           log+ |z|−1 φ∗r φ∗ µHaar + deg
+                                   
+   c1 (φr L) = φr φ∗ µHaar , L · Lr =                                d (L|x=0 ).
+                                                 D
+                                                             Q
+   Recall again from the discussion above, and from ∥1(x)∥L = z∈D,φ(z)=x |z| and
+using the Poisson–Jensen formula, that
+                                                                   
+                                                            Y
+     d (L|x=0 ) = − log ∥x−1 ∥                (φ(z))−1
+     deg                        L x=0 = − log                    |z|
+                                                                                x=0
+                                                                  z∈D, φ(z)=x
+                                          X
+                 = log |φ′ (0)| +                     log |z|−1
+                                     0̸=z∈D, φ(z)=0
+                     Z
+                 =        log |φ(z)|µHaar (z),
+                     T
+
+where both the product and sum count with multiplicities.
+   We follow the same computation as in [BC22, §5.4 and Example 5.3.2.1]. Note
+that on C2 (with coordinates x, y), we have
+                              i
+                                ∂∂ log |x − y|−1 = −δ∆(C) ,
+                              π
+where ∆(C) denotes the diagonal divisor on C2 .
+   For every z ∈ T ⊂ D, we have (here we also view φ(z) as the constant function
+that maps all points on D to φ(z))
+          φ∗r φ∗ δz = φ∗r δφ(z) = (φr , φ(z))∗ δ∆(C)
+                                   i                 i
+                    = (φr , φ(z))∗ ∂∂ log |x − y| = ∂∂ log |φr (w) − φ(z)|.
+                                   π                 π
+   Therefore for a fixed z, by using the Green–Stokes formula (it is alright here
+even though the Green functions are not smooth like in [BC22]), we have
+        Z                         Z
+                                                 i
+           log+ |w|−1 φ∗r φ∗ δz =    log+ |w|−1 ∂∂ log |φr (w) − φ(z)|
+         D                                       π
+                                  ZD                  
+                                        i
+                                =         ∂∂ log+ |w|−1 · log |φr (w) − φ(z)|
+                                       π
+                                  ZD
+                                =    (µHaar (w) − δw=0 ) · log |φr (w) − φ(z)|
+                                  ZD
+                                =    log |φr (w) − φ(z)|µHaar (w) − log |φ(z)|.
+                                      T
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )              109
+
+
+    We now integrate over z on T and then we have
+        Z                         ZZ
+              +   −1 ∗
+           log |w| φr φ∗ µHaar =         log |φr (w) − φ(z)|µHaar (z)µHaar (w)
+         D                             2
+                                    ZT
+                                  −      log |φ(z)|µHaar (z).
+                                           T
+
+    We arrive at the claimed formula
+                         Z                             Z
+                             log+ |z|−1 φ∗r φ∗ µHaar +
+                    
+              L · Lr =                                    log |φ(z)|µHaar (z)
+                         ZDZ                            T
+
+                      =        log |φr (w) − φ(z)|µHaar (z)µHaar (w).
+                             T2
+
+                                                                                  □
+
+Proof of Theorems 7.1.6 and 7.1.10. By Lemma 7.1.4, we have that Tb(r, φ) as a
+function in log r is nondecreasing and convex. Therefore it suffices to prove Theo-
+rem 7.1.6. By Lemmas 7.4.1 and 7.4.5, using the slopes notation (7.1.7), we have
+                                                         (n)
+that for n/D ∈ [αk , αk+1 ], the optimal bound for h∞ (ψD ) is obtained by using
+rk among 0 ≤ k ≤ l; here we set α0 = 0, αl+1 = m. Note, once again, that by
+Corollary 2.6.1 and Theorem 3.2.13 we have (for any ε > 0 and D ≫ε 1) the con-
+tainment VD ⊂ [0, (m + ε)(D + 1) + C(ε)]. For n ∈ [mD, (m + ε)(D + 1) + C(ε)],
+                             (n)
+we use the bound for h∞ (ψD ) obtain with the full radius rl = 1. Letting ε → 0,
+by a similar argument to the proof of Theorem 7.0.1 (see the proof of (7.3.15)), we
+deduce from Lemmas 7.4.1 and 7.4.5 and a straightforward computation that
+             (n)
+ X
+      hfin (ψD )
+n∈VD
+                          l
+                                                                         !
+        m2       ′
+                         X                            1 2
+≤     −    log |φ (0)| +                                           2
+                             (αk+1 − αk )T (rk , φ) − (αk+1 − αk ) log rk D2 + o(D2 )
+                                          b
+        2                                             2
+                         k=0
+                                         l
+                                                                   !
+        m2       ′                   1X 2
+=     −    log |φ (0)| + mT (1, φ) −
+                            b               αk (log rk − log rk−1 ) D2 + o(D2 ).
+        2                            2
+                                          k=1
+
+    Then the desired bound follows this estimate combined with (7.3.15) and (7.3.7).
+                                                                                  □
+
+Example
+         7.4.6. In the proof of Theorem A, we use φ as in § A.5, where we have
+ L · L = 11.844 . . . and m = 14.
+  We first apply Theorem 7.1.6 with l = 1 and r0 = e−1/2 , r1 = 1. We compute
+                                       
+                             Le−1/2 · L = 10.5739 . . . ,
+and the slope
+                                             
+                           L · L − Le−1/2 · L
+                    α1 =                        = 2.5410 . . . .
+                              log r1 − log r0
+Therefore, the convexity saving is
+                           1 2
+                           m α1 (log r1 − log r0 )
+                                                     = 0.27243 . . . .
+                           log |φ′ (0)| − τ (b; e)
+110                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+In other words, we obtain the proof by contradiction with
+          1 2
+    L·L − m      α1 (log r1 − log r0 )
+                                       = 13.99303 . . . − 0.27243 . . . = 13.7206 . . . < 14.
+        log |φ′ (0)| − τ (b; e)
+                                                                                         (7.4.7)
+   We refine this further by taking more radii:
+                    r0 = e−1 ,          r1 = e−1/2 ,         r2 = e−1/4 ,          r3 = 1.
+At these radii, we compute the corresponding Bost–Charles characteristic integrals:
+                                        
+                       Tb(r3 , φ) = L, L = 11.844 . . . ,
+                                               
+                       Tb(r2 , φ) = Le−1/4 · L = 11.049 . . . ,
+                                               
+                       Tb(r1 , φ) = Le−1/2 · L = 10.573 . . . ,
+                                             
+                       Tb(r0 , φ) = Le−1 · L = 9.8766 . . . ;
+and the corresponding slopes:
+                   α1 = 1.3943 . . . , α2 = 1.9018 . . . , α3 = 3.1802 . . . .
+We thus derive the following convexity saving in the holonomy bound:
+                   1
+                     P3       2
+                   m    k=1 αk (log rk − log rk−1 )
+                                                    = 0.37171 . . . ;
+                        log |φ′ (0)| − τ (b; e)
+In other words, the refined holonomy bound is
+                           13.99303 . . . − 0.37171 . . . = 13.621 . . .                                 (7.4.8)
+Example 7.4.9. In order to prove Theorem A, as discussed in Remark A.5.2, we
+could try to only use the 9 functions (without integrations). Then Theorem 7.1.6
+with l = 3 in the above example gives
+                             P3
+            11.844 . . . − 19 k=1 αk2 (log rk − log rk−1 )
+                                                            = 9.4203 . . . < 10,
+       log 256 · 5448339453535586608000000000
+                                               
+                  8658833407565631122430056127 − 2 · 157/81
+
+which comes nearer to the 9 threshold but it remains insufficient to draw a contra-
+diction with 9 functions. This is why we need the integrations idea.
+7.5. Binomial metrics: proof of Theorem 7.1.13. We recall our assumption
+on the denominator types of {fi }. Set u0 := 0 and ur+1 := m. For 0 ≤ h ≤ r, if
+uh < i ≤ uh+1 , then
+                          ∞
+                          X                                  xn
+        fi (x) = ai,0 +         ai,n                                                     ,   ai,n ∈ Z.
+                          n=1
+                                       nei [1, . . . , b1 · n] · · · [1, . . . , bh · n]
+
+We take our evaluation module to be the following free Z-module of rank mD:
+                  r uh+1
+                  M M                            [1, . . . , ξD]ei
+          ED =                                                                      fi Z[x]<D .
+                                [1, . . . , uh+1 bh+1 D] · · · [1, . . . , ur br D]
+                  h=0 i=uh   +1
+
+We endow ED with the Euclidean norm that has {fi xk }1≤i≤m,0≤k<D as an orthog-
+                                            r
+onal basis with vector lengths ∥xk ∥ = eD(λt +µt) , where t = k/D. Recall from our
+assumption that λ > 0 and r > 1. We use E D to denote this Euclidean lattice.
+

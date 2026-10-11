@@ -1,0 +1,10 @@
+
+===== α = 0.03, λ = 0.97 =====
+init0: f = -1.985165 (M0=-6.4725)  |  有理化 f = -1.985165
+init1: f = -1.999576 (M0=-6.4462)  |  有理化 f = -1.999576
+init2: f = -1.969846 (M0=-6.4094)  |  有理化 f = -1.969846
+Traceback (most recent call last):
+  File "E:\kimi-build\zeta5\research\gen_measure8.py", line 99, in <module>
+    a, b, c = np.round(x*D)/D
+    ^^^^^^^
+ValueError: too many values to unpack (expected 3)

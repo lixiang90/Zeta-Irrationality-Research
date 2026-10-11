@@ -1,0 +1,36 @@
+# C245最终进展独审：实际读域
+
+2026-10-10。对应NEW research/research_round245_cm_report_review_20261010.md。数学程序0、CAS0、扫描0、Lean0、外Git mutation0；本次无新primary下载。文件读写及hash仅为文档作业。
+
+## 本次实际FULL读取
+
+|内部文件|B|SHA256|
+|---|---:|---|
+|research/research_cm_admission_progress_round245_20261010.md|8560|a62dfb8713aeb253cbbd66bd0c1f1d22d11d6339526f175782a8e6534622529f|
+|research/cm_modular_lift_review_round245_20261010.md|9372|b2c3e63a48a8ae05612ce51be7bacfeefb24fd21fcb4c35e8ca039e71c28e164|
+|research/cm_actual_rank_round245_20261010.md|7188|fd02e917049de96221007fe6a6edb62615a55b785785b201979cf14338d18cec|
+|research/research_round245_cm_actual_rank_review_20261010.md|2564|2102208d0aa8c213288a86d4c0cee2c73b46bd46e0bfd63978d92ed3d8640b81|
+|research/research_round245_cm_modular_lift_review_20261010.md|3206|2ed9b154f0e663afb0f7affa2762684f976759659028f1dbf369a57096ab2da3|
+|research/research_global_review_policy.md|9621|14ed72aa8212641c945d46b1bd439348b49a00d89d6492f0ac34428ac89f7c14|
+|literature/cm_admission_sources_round245_20261010/alternative_reading_scope.md|1681|bbfaaebf7cbe6402282ede320ed208719a58fa1904e2f462c19a5e0732caf487|
+|literature/cm_admission_sources_round245_20261010/alternative_modular_lift_review_scope.md|3058|e327bace4e44a6c9507df580deccca1ea7099a0649d6676cd2a52862b52c8e97|
+|literature/cm_admission_sources_round245_20261010/packet_modular_review_scope.md|2994|8986a9b184aa173e79499c361c14c51c9e30667b06e2e4061cf469df4e3c1a10|
+
+报告六节最终保存字节再次全文读，提升六节M1–M11与秩七节R1–R8全文显示并纸核。B两份独审回执与上述三份scope亦全文读；scope中的他人primary实际阅读声明没有继承为本人阅读。政策全文读，检查245追加方向、246前置关、248计数；未执行其旧prefix比对或producer。
+
+## 本轮此前已亲读的冻结输入
+
+下列读域发生在本轮已有独立任务；本次没有把他人FULL声明替代直接读文，也未改冻结对象：
+
+- cm_complete_denominator_types_round245_20261010.md：最终6406 B / bb935f5caedd0a34d58221638d263a5d92c308a51f8137b6e3be1a1e3efef459，实际FULL最终复读并纸核D1–D10。C已有最终类型回执2508 B / 61bfb8fc2a96bbccf36bab385d3b015a7b05c41d150950368774e44dcbb11998。
+- cm_transported_leaves_round245_20261010.md：7964 B / 8fce04cca365c540990f7256139932e1366de6899e0360b63178fe33283927ed，实际FULL六节T1–T12及B原scope2913/3f4e3201…；C叶回执2643 B / cd1afca459c745d62c8ac6d6eff229779086f429ffeb0a6e1e8bbd9cdfe6c211，独审scope2392 B / d6394300ee9f9384464aa2aa02f1464e06aec8df14be6249154ec3fd050ded31。
+- 本人作者稿cm_primary_evaluation_audit_round245_20261010.md：8843 B / 5cb986b9652ffe1ef071dd94acd8de8ac6bbbd5f99ca8f8f18d86b68393d2233。该作者保存FULL读和证明不标为自己的独立审阅。
+
+上述任务的实际primary范围已分别写入dual_reading_scope.md与dual_leaf_review_scope.md：Sun–Zhou所需§2.1–§2.3完整提取TXT及必要raw显示式；CDT已有PDF3–5完整选段、定义2.2/相关HTML公式点读；DLMF16.12.2、15.8.8、15.6.1完整公式及所需条件。未FULL读Sun–Zhou全篇、全部CDT、DLMF整章或上游CM参考著作。
+
+## 本次没有领用的阅读或执行
+
+本人未亲读Chiang本轮224页全文或208–219的选段、BH原著选段及A/B本轮全部新NIST公式载体。提升接受的是已亲读且独立纸核的自含修补证明，并全文核其最终B独审回执，不借这些人的primary FULL范围。
+
+不认证manifest/主日志追加/归档脚本；不核Lean。没有旧producer重跑。只创建本唯一NEW回执和scope，写入前确认路径不存在；保存后两份均实际FULL自读并报最终bytes/SHA。
+

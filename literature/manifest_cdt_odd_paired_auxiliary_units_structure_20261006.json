@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-06",
+  "kind": "NEW independent primary-source and execution receipt",
+  "proof_snapshot": {
+    "path": "research/cdt_odd_paired_auxiliary_units_structure_20261006.md",
+    "sha256": "dcc6d4d670dbcc3960936d3ee1b21a877f73c03e2ba65c479c9d550e0624a8a5",
+    "state": "FROZEN final reviewed: author actual full saved-file reread; root and toric actual full mathematical review; saved PY and complete JSON independently read statically without rerun. No mathematics changed after dcc6 snapshot; historical frozen inputs unchanged."
+  },
+  "frozen_input_actually_read_this_round": {
+    "path": "research/cdt_odd_paired_head_free_auxiliary_prime_20261006.md",
+    "sha256": "4d907340bf9752b3fee94173ecaaddfd81b11cfb5760e8c9954ae4528ce6581b",
+    "scope": "Actual full A1-A13 including A30/A31 middle correction and actual half jet",
+    "mutated": false
+  },
+  "sources": [
+    {
+      "title": "The Fp-Selberg integral",
+      "authors": ["Richard Rimanyi", "Alexander Varchenko"],
+      "version": "arXiv:2011.14248v2, 16 December 2020",
+      "url": "https://arxiv.org/pdf/2011.14248v2",
+      "path": "literature/cdt_paired_auxiliary_units_sources_20261006/rimanyi_varchenko2020_Fp_selberg_arxiv2011_14248v2.pdf",
+      "sha256": "e412b1b111dee5cd7eee3d471adaf436dc4e86084935038a30b7d876f47ef48f",
+      "pdf_pages": 19,
+      "actual_pdf_pages_read": [1,2,3,4,5,6,7,8],
+      "read_scope": "Full page text of PDF1-8, including finite-field integral definition, Wilson factorial lemma, Theorem4.1 assumptions and auxiliary lemmas; not its PDF9 proof or later sections.",
+      "application_scope": "Literature comparison only: no established conversion of the actual middle-corrected reciprocal S^5 measure into its beta/Vandermonde master polynomial.",
+      "download": "NEW separate original downloaded by Invoke-WebRequest with normal verified TLS; no certificate bypass"
+    },
+    {
+      "title": "Hankel determinants, Hahn polynomials, and a formula of Krattenthaler",
+      "authors": ["Diego Dominici"],
+      "version": "Seminaire Lotharingien de Combinatoire 81 (2020), Article B81i",
+      "url": "https://www.mat.univie.ac.at/~slc/wpapers/s81dominici.pdf",
+      "path": "literature/cdt_paired_auxiliary_units_sources_20261006/dominici2020_hankel_hahn_B81i.pdf",
+      "sha256": "52854a7a282f70a414ddbc6fd764a5413d31eeac5108b054031af8b5b394e503",
+      "pdf_pages": 14,
+      "actual_pdf_pages_read": [1,2,3,4,5,6,7,8],
+      "read_scope": "Full page text of PDF1-8, including nonzero norms in the OP/Heilermann setup, finite-weight Vandermonde expansion, and Hahn determinant formula; not later limiting-case pages.",
+      "application_scope": "General formal determinant structures and careful comparison to explicit Hahn weights; its quasi-definiteness and special Hahn product are not assumed for our actual finite-field measure.",
+      "download": "NEW separate original downloaded by Invoke-WebRequest with normal verified TLS; no certificate bypass"
+    },
+    {
+      "title": "Determinantal elliptic Selberg integrals",
+      "authors": ["Hjalmar Rosengren"],
+      "version": "arXiv:1803.05186v2, 27 November 2018",
+      "url": "https://arxiv.org/pdf/1803.05186v2",
+      "path": "literature/cdt_paired_auxiliary_units_sources_20261006/rosengren2018_determinantal_elliptic_selberg_arxiv1803_05186v2.pdf",
+      "sha256": "f98673a3e94e864faba6b1f117eb0606d01ecf86584017b4311152586a70ad74",
+      "pdf_pages": 10,
+      "actual_pdf_pages_read": [1,2,3,4,5,6,7,8,9,10],
+      "read_scope": "Actual full PDF1-10 in two untruncated groups, including Heine identity and the balanced discrete elliptic Selberg formula.",
+      "application_scope": "Formal Heine and parameter-scope comparison only; no claimed balancing transformation of the actual middle-corrected measure.",
+      "download": "NEW separate original downloaded by Invoke-WebRequest with normal verified TLS; no certificate bypass"
+    }
+  ],
+  "new_pdf_count": 3,
+  "new_pdf_pages_total": 43,
+  "distinct_source_pages_actually_read_total": 26,
+  "source_read_processing": {
+    "methods": "PyMuPDF inline source extraction and filesystem metadata/hash; no mathematical producer involved",
+    "encoding_retry": "A later first-page bibliographic metadata extraction hit GBK UnicodeEncodeError before printing mathematics; retried with stdout UTF-8 and all three first pages printed successfully. This did not execute or import any mathematical producer."
+  },
+  "own_new_mathematical_producer": {
+    "path": "research/cdt_odd_paired_auxiliary_units_structure_20261006_verify.py",
+    "sha256": "b445ebd6b1d52eb1a73fbc4aa003542aa7fb11f9f6ab2551e06fa2ed9a5910c5",
+    "output_path": "research/cdt_odd_paired_auxiliary_units_structure_20261006_verify.json",
+    "output_sha256": "cc3417ecff851db9aa7a0b37cf38d7e13f114cb8db8e2dab67de643cbdd0e884",
+    "command": "python research/cdt_odd_paired_auxiliary_units_structure_20261006_verify.py",
+    "execution_count": 1,
+    "exit_code": 0,
+    "imports": "Only standard-library json, math, pathlib",
+    "scope": "Exact folded G0/H0/C5, Wilson node checks, modular rank/determinant for all p=18r+1 prime with 1<=r<=90; 40 cases, largest p1621, largest joint dimension360. All G0 and M5 determinants nonzero in these finite cases.",
+    "not_claimed": ["Infinite unit subsequence", "All-r normality", "CRT/Pearson/residue proof verification by this code", "All-prime arithmetic cost improvement", "New irrationality"],
+    "saved_code_and_json_actual_read": "Both saved files actually read completely, statically; no rerun"
+  },
+  "old_or_peer_mathematical_execution_import_rerun_count": 0,
+  "document_editing": "NEW prose and JSON receipt only. A formatting-only inline text edit repaired math delimiters and one matrix row break; it did not evaluate mathematics or run any producer.",
+  "proof_status": {
+    "paper_proved": ["Exact folded weights retaining middle and half jet", "Fermat factorization P*S and CRT projector", "Actual Stieltjes numerator and ambient inverse", "Exact scalar/matrix high-remainder determinants and Padé failure profiles", "Middle rank r", "Full finite-field residual and H0 coefficient identities", "Pointwise Pearson minimum class5 full and class7 actual for r>=2"],
+    "unresolved": ["Infinite auxiliary-prime normality", "Arithmetic-analytic strict margin", "New numerical irrationality"]
+  }
+}

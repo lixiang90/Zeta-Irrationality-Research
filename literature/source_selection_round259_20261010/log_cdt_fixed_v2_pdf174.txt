@@ -1,0 +1,102 @@
+
+===== PHYSICAL PAGE 174 =====
+174
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+Note that although this b′ is not of the particular form in Theorem 6.0.2, we could
+apply the more general denominator formula (8.0.2) in Theorem 8.0.1. However, for
+the sake of simplicity, we give a good enough estimate of τ ♭♭(b′) which is sufficient
+to illustrate the necessity of working with nonzero e.
+On one hand, the upper
+bound argument in Remark 8.0.6 applies to those b′ such that every column in b′
+has two values including one of which is 0. Therefore we have τ ♭♭(b′) ≤(2 + 2 +
+1) −
+1
+142 (12 · 2 + 32 · 2 + 82 · 1) = 32
+7 = 4.571 . . ..
+On the other hand, by the definition of (8.0.2), we have an easy lower bound
+by only considering n satisfying that nj1 > nj2 implies ij1 ≥ij2 and then we
+have τ ♭♭(b′) is at least
+1 · 0 + 3 · 2 + 5 · (2 + 1) + (7 + 9 + . . . + 17) · (2 + 2) + (19 + 21 + 23 + 25 + 27) · (2 + 2 + 1)
+142
+= 884
+196 = 4.510 . . . ,
+a significantly worse value than (13.0.6).
+△
+14. Products of two logarithms
+In this section, we apply our methods to certain products of logarithms. Baker’s
+theorem [Bak22] gives a definitive result for linear forms in logarithms, even over Q,
+but we still do not know how to show that log 2·log 3 or π ·log 2 is irrational. While
+our methods cannot (as yet!) handle those cases either, we do prove Theorem C,
+which we recall again here:
+Theorem 14.0.1. Let m, n ∈Z ∖{−1, 0} be integers such that
+m
+n −1
+ <
+1
+106 .
+Then
+log
+
+1 + 1
+m
+
+log
+
+1 + 1
+n
+
+(14.0.2)
+is irrational. Moreover, for m ̸= n, the following are linearly independent over Q:
+1,
+log
+
+1 + 1
+m
+
+,
+log
+
+1 + 1
+n
+
+,
+log
+
+1 + 1
+m
+
+log
+
+1 + 1
+n
+
+.
+(14.0.3)
+Remark 14.0.4. We could certainly improve the constant 10−6 by our meth-
+ods, but some computation suggests that it is unlikely one could do better than
+(say) 10−4, and most likely not even that far; we make this choice of constant for
+its relative simplicity.
+△
+The degenerate case of m = n is a trivial consequence of the transcendence
+of log r for r > 0 in Q ∖{1}, and so we shall assume that m ̸= n. We begin by
+recalling a proof of the irrationality of
+log
+
+1 + 1
+m
+
+(14.0.5)
+for m ≥1 from [AR79, AR80, Chu79, vdP79, vdP80]), based on the method of
+Ap´ery limits. It is closely related to the construction we recounted in Basic Re-
+mark 2.10.1, and also to the Hermite–Pad´e construction in § 3.3.7 for the logarithm
+function.
+Let a > 1 be an integer. The function
+A(a, x) :=
+1
+√
+1 −2ax + x2 =
+∞
+X
+n=0
+un(a)xn
+(14.0.6)

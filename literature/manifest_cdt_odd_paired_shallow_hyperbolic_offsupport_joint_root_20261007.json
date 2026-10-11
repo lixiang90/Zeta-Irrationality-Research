@@ -1,0 +1,176 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "author": "/root",
+  "scope": "Four new pure-paper all-scale research components, actual independent final reads, one new primary archive; no mathematical execution.",
+  "prior_audit": {
+    "file": "research/cdt_odd_delivery_reference_20261007.json",
+    "sha256": "7141ac2383dee7e1f2bf0828c993a17de4c0738b4f8a90dd6a627f9d97a43be3"
+  },
+  "baseline_records_physically_checked_unchanged": 540,
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_paired_source_shallow_rank_20261007.md",
+      "sha256": "aef4dcaa49cebcfba446eeffe6ac5f64464ca5f372d7ad80ca7eb4e086879766"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_shallow_rank_independent_review_20261007.md",
+      "sha256": "c43726d0f4e04f7190296e9bae4fe35e692676f35256241d7d2c505881273b27"
+    },
+    {
+      "file": "research/cdt_odd_paired_invisible_subform_arithmetic_20261007.md",
+      "sha256": "6e87aa88477c6e4c7a87ae33d7c88eb4e69e48b26b64a2d448d8560664174502"
+    },
+    {
+      "file": "research/cdt_odd_paired_invisible_subform_arithmetic_independent_review_20261007.md",
+      "sha256": "1eae8667e1b7d506481b4536cb10c3e350ec011ed0f72d9a2bc15a4e98247a32"
+    },
+    {
+      "file": "research/cdt_odd_paired_offsupport_racah_gate_20261007.md",
+      "sha256": "a3b89d1a210fa2a07fe55ab712e735447806d813821dcecf33810737f50c9e85"
+    },
+    {
+      "file": "research/cdt_odd_paired_offsupport_racah_gate_independent_review_20261007.md",
+      "sha256": "1bb72bbf93bf2c508c553fbc75f8dcaf0dc5a5a75add04804656ed53a1536d22"
+    },
+    {
+      "file": "research/cdt_odd_paired_joint_root_equilibrium_20261007.md",
+      "sha256": "67cd79c9804a7e6e696ae65714545a094f282a5b7a7e90601ea2d53293c1a29b"
+    },
+    {
+      "file": "research/cdt_odd_paired_joint_root_equilibrium_independent_review_20261007.md",
+      "sha256": "6cb724bbfd4a4bc271ea805196f4e3930f726674f50a5ff96f5af7e94f8ab506"
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_paired_invisible_subform_arithmetic_20261007.json",
+      "sha256": "2abfe493927618773b0468d85f92c607d8c6e6fb860b57f6fa3ffbbe0060a9e1"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_offsupport_racah_gate_20261007.json",
+      "sha256": "45b8493ba7e064ecd96fb127cfe71ccaab54b4381f2e2dd52b592b71634c2f85"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_joint_root_equilibrium_20261007.json",
+      "sha256": "7a65c08a61c0e7fb601cc0e667f2f0c2e933bd332248e5de09bae4a1bc9f0f7b"
+    }
+  ],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_paired_joint_root_sources_20261007/sion1958_general_minimax_pjm8_171_176.pdf",
+      "sha256": "e21e748347986009d1d5cce9526e8aad5ff37de0c0cd911fb45df9ae75a4020c",
+      "pages": 9,
+      "bytes": 740453,
+      "url": "https://msp.org/pjm/1958/8-1/pjm-v8-n1-p14-p.pdf",
+      "title": "Maurice Sion, On general minimax theorems, Pacific J.Math.8(1958),171-176"
+    }
+  ],
+  "reused_primary_pdfs": [
+    {
+      "file": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "pages": 170,
+      "bytes": 737178
+    }
+  ],
+  "root_actual_full_read_frozen_inputs": [
+    {
+      "file": "research/cdt_odd_paired_source_radical_response_20261007.md",
+      "sha256": "10897f75c7a2cb932988a751a25a85dafd79640b715090b7715fc96aeaa37a7a"
+    },
+    {
+      "file": "research/cdt_odd_paired_restricted_H_normality_20261007.md",
+      "sha256": "074f55c5d83547b6b9a301cd515d1b676a5c3a2723a40e9101cb45e48b7f703f"
+    }
+  ],
+  "new_successful_certificates": [],
+  "actual_reading_scope": {
+    "root_final_main_reads": "All four final main manuscripts actually FULL read; root aef4 and source6e87, masked a3b89 and scaled67cd. Earlier scaled4109 actual full read is not substituted for final67cd.",
+    "root_final_review_reads": "All four current formal independent reviews actually FULL read: c437,1eae,1bb72,6cb724. Root own main and review finally FULL self-read.",
+    "peer_final_receipts": "All three current FINAL receipts actually FULL text read by root, complete JSONparse and all contained physical pins verified.",
+    "root_actual_primary_pdf_pages": {
+      "Sion1958": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Koekoek_Swarttouw1998": [
+        28,
+        29,
+        30
+      ]
+    },
+    "root_actual_distinct_primary_pages": 9,
+    "team_union_actual_primary_pdf_pages": {
+      "Sion1958": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Koekoek_Swarttouw1998": [
+        28,
+        29,
+        30
+      ]
+    },
+    "team_union_actual_distinct_primary_pages": 10,
+    "team_new_primary_actual_distinct_pages": 7,
+    "individual_actual_distinct_primary_pages": {
+      "root": 9,
+      "source_pencil_finalize": 0,
+      "masked_racah_finalize": 7,
+      "scaled_root_finalize": 10
+    },
+    "renders": "Scaled author additionally visually read Sion PDF5-6; root and masked do not inherit those renders.",
+    "archive_totals_are_not_reading_claims": true,
+    "frozen_candidate_scope_labels": "Paper/review scope PDF0 and pending-stage statements describe their creation/read stage; later root integration read9 primary pages. Current final review/receipt state supersedes them externally without changing frozen bytes.",
+    "old_audit_reading_scope": "Prior snapshot complete JSONparse and physical hash verification; no assertion that every prior field or all540 papers were manually FULL reread this round."
+  },
+  "mathematical_execution_history": {
+    "new_producers": 0,
+    "new_mathematical_executions": 0,
+    "failures": 0,
+    "reruns": 0,
+    "old_or_peer_execute_import_rerun": 0,
+    "auxiliary_unit_prime_extension": 0,
+    "new_prime_data": 0,
+    "lean": 0,
+    "metadata_only_operations": "File reads, SHA256, JSONparse, saved record/hash and PDF page-count/local-link audit; no mathematical producer executed or imported.",
+    "reading_tool_encoding_failure": "Peer PDF text extraction initially met Windows GBK Unicode output failure, completed after UTF-8 stdout; reading only, no mathematical failure.",
+    "tls_bypass": 0
+  },
+  "current_progress": {
+    "round_classification": "progress",
+    "previous_round_classification": "progress",
+    "actual_hyperbolic_injection": "M=(Theta;P):K into F_p^(2r) injective; corank G_K<=min(k,2r-k); conditional maximal-k2r branch has unit slope and regular source pencil.",
+    "actual_shallow_smith": "For each actual p=18r+1 outside at most rankG_K source residue exceptions, all X in Z_p have at least7r of8r normalizedN Smith exponents<=1; v_p I_7r(N)=(k-r)^+.",
+    "actual_defect_tradeoff": "k+corank Phi^[2r]<=2r by exact kernel/middle evaluation correspondence; no transfer to D_high.",
+    "actual_offsupport_rank": "For every actual auxiliary prime with r>=2, consecutive fourth-Racah gate rank>=ceil(r/2); complete Phi^[2r] corank<=floor(r/2). General odd minimum-rank mechanism exactly classified and excluded by actual regular difference boundary.",
+    "analytic_joint_improvement": "Exact paid J=M+maxPhi all-scale transfer; every finite atomic root configuration admits -alpha*t*log(1/t)+C*t strict improvement after paying mirror movement; 4/7 start alpha>=1/4 and rational implementation.",
+    "analytic_compact_duality": "For any positive compact root interval J is weakly continuous convex with attained minimum and exact interval-averaged-kernel dual value; no unrestricted optimum or solved density claimed.",
+    "conservative_frozen_numeric_rate": ">12.62342839512558",
+    "new_absolute_numeric_rate": null,
+    "safe_arithmetic_upper": 40.314517426059346,
+    "safe_upper_is_not_a_minimal_cost_or_lower_bound_or_no_go": true,
+    "remaining": [
+      "General actual source pencil/high compression nondegeneracy",
+      "Fixed rational source infinitely successful",
+      "Whole-X determinant infinitely nonzero",
+      "Complete finite-place model and own analytic estimate if using7r minors",
+      "Enough same-object strict analytic-arithmetic margin"
+    ],
+    "new_special_value_irrationality_or_linear_independence": false,
+    "new_lean_formalization": false,
+    "goal_status": "active"
+  },
+  "receipt_topology": "One-way pins of8 new proof/review files,3 final peer receipts,1 new PDF,1 reused PDF,2 actual root-read frozen inputs and1 old audit. No mutable main/new audit/future receipt or self hash is pinned.",
+  "final_self_read_and_all_physical_pin_check_required_before_delivery": true
+}

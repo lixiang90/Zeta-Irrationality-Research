@@ -1,0 +1,18 @@
+{
+  "status": "fixed_exact_rational_control_passed",
+  "report_sha256": "5b47a5dc7e610c62b153a07d696f3a4cbf05cef430ea7d530a531bcd0352a35c",
+  "script_sha256": "007ffbfa9a30fcf6f72ad9977852c23676de2bf6a411d089aacff7db5e9d560b",
+  "measure": "(1+u) du on [0,1]",
+  "target": "1",
+  "moment_formula": "1/(m+1)+1/(m+2)",
+  "fixed_s": 1,
+  "P": "u-5/9",
+  "Q": "9u-5",
+  "B": -14,
+  "S": "27/2",
+  "normalized_error": "1/28",
+  "reduced_approximant": "27/28",
+  "primitive_value": 1,
+  "all_scale_input": "The regular Markov error exponent is proved in the report. Positive rational-target primitive values are positive integers; finite input only verifies the first-scale arithmetic.",
+  "no_irrationality_claim": true
+}

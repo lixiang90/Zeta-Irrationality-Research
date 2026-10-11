@@ -1,0 +1,127 @@
+{
+  "state": "FINAL_PAPER_RECEIPT",
+  "date_local": "2026-10-07",
+  "author": "/root/masked_racah_finalize",
+  "scope": "Actual high compression: fourth single-mask cubic Racah normality, twice-mask Christoffel gate, exact short Whipple moments, restricted ordinary-Racah obstruction, and reciprocal fifth-power complementary determinant",
+  "baseline_frozen_records": 529,
+  "baseline_preservation": "All baseline records kept read-only. The final root delivery auditor is responsible for whole-baseline physical verification; this receipt does not replace that audit.",
+  "execution": {
+    "new_own_mathematical_runs": 0,
+    "old_or_peer_execute_import_rerun": 0,
+    "auxiliary_unit_table_extensions": 0,
+    "new_prime_data": 0,
+    "lean": false,
+    "metadata_only_operations": "Source/PDF bytes, text reading, JSON parsing, saved-result index/endpoint/minimum consistency and SHA256 verification only; no mathematical producer executed or imported"
+  },
+  "actual_completed_reading": {
+    "author_main": "Actual FULL final author reread of unchanged bd107 main, all nine sections and M1-M24; includes final Li Eq26 counterexample and corrected maximum-index versus r+1 term-count distinction",
+    "independent_review_received": "Actual FULL read of final 56f427 independent arithmetic review by scaled-root author, V1-V5, after its pin was updated to final bd107",
+    "independent_review_authored": "Actual FULL final self-read of unchanged 9135e6 mirror/root independent review, V1-V6",
+    "frozen_actual_arithmetic_input": "Actual FULL this-round reread of restricted-H main 074f55, H1-H27; earlier frozen input reads are not counted as new FULL reads this round",
+    "peer_main_and_static_source": "Actual FULL independent read of mirror/root main 94bf11, C1-C22 and all eight sections, entire preserved source f873b6, and entire guard a8a55e; no execute/import/rerun",
+    "peer_saved_result": "Whole d16792 JSON parse; actual FULL text reading of all metadata and limitations, plus complete cells 0,1,733,734,735,4094,4095. Metadata-only consistency checks covered all 4096 indices/endpoints and saved minimum lower_num. This does not claim manual FULL reading of all 4096 cells or recalculation of c/P/log values.",
+    "frozen_actual_analytic_input": "Actual FULL this-round reread of cc3821 mirror main, M1-M23/all nine sections. The coupled manuscript was FULL read in the previous round, not claimed as a new full read here.",
+    "root_independent_review": "Root messages confirm actual FULL reading of final bd107 main and final 56f427 review, plus Chu PDF1,10-12, KS28-29, Krattenthaler1-4 and Li18-19; all M1-M24 checks passed, with no mathematical execution by root"
+  },
+  "primary_sources": [
+    {
+      "title": "Partial-fraction expansions and well-poised bilateral series",
+      "authors": "Chu Wenchang",
+      "publication": "Acta Scientiarum Mathematicarum (Szeged) 64 (1998), 495-513",
+      "source_url": "https://www.acta.hu/download.phtml?id=2471",
+      "path": "literature/cdt_paired_masked_high_sources_20261007/chu1998_partial_fraction_well_poised_acta64_495_513.pdf",
+      "sha256": "0a7e92173e94fab43ba04ee351cbc04eafeb0009948cc63404b3c20b8fe76dd5",
+      "bytes": 168085,
+      "archive_pages": 19,
+      "actual_full_text_pages_this_round": [1, 10, 11, 12],
+      "actual_distinct_pages_this_round": 4,
+      "reading_purpose": "Eq4.12 complete terminating Whipple transformation, fourth upper parameter and Eq4.13 additional Dougall balance; surrounding theorem hypotheses",
+      "new_download": true,
+      "normal_tls": true,
+      "tls_bypass": false,
+      "full_pdf_read": false
+    },
+    {
+      "title": "The Askey-scheme of hypergeometric orthogonal polynomials and its q-analogue",
+      "authors": "Roelof Koekoek and René F. Swarttouw",
+      "source_url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "bytes": 737178,
+      "archive_pages": 170,
+      "actual_full_text_pages_this_round": [28, 29],
+      "actual_distinct_pages_this_round": 2,
+      "reading_purpose": "Eq1.2.1 Racah definition and Eq1.2.2 weights, M branch and every norm factor for the fourth single-mask cubic specialization",
+      "new_download": false,
+      "tls_bypass": false,
+      "full_pdf_read": false
+    },
+    {
+      "title": "A Whipple 7F6 Formula Revisited",
+      "authors": "Wen-Ching Winnie Li, Ling Long, Fang-Ting Tu",
+      "source_url": "https://arxiv.org/pdf/2103.08858v2",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e",
+      "bytes": 774289,
+      "archive_pages": 38,
+      "actual_full_text_pages_this_round": [1, 2, 3, 4, 5, 18, 19],
+      "actual_distinct_pages_this_round": 7,
+      "reading_purpose": "Framework and printed Eq26 audit: its printed fourth upper a is incorrect at stated generality outside the later c+d=1 specialization. The new proof uses Chu's complete formula; the clean terminating counterexample is a hand calculation, not auxiliary-prime data.",
+      "new_download": false,
+      "tls_bypass": false,
+      "full_pdf_read": false
+    },
+    {
+      "title": "Hankel determinants of linear combinations of moments of orthogonal polynomials, II",
+      "authors": "Christian Krattenthaler",
+      "source_url": "https://arxiv.org/pdf/2101.04225v1",
+      "path": "literature/cdt_paired_modified_target_sources_20261006/krattenthaler2021_modified_hankel_christoffel_arxiv2101_04225v1.pdf",
+      "sha256": "6ee728bafe1ac1467050df139da6e86c9395f7fb7f7c77b769d0bb5388120fff",
+      "bytes": 249123,
+      "archive_pages": 24,
+      "actual_full_text_pages_this_round": [1, 2, 3, 4],
+      "actual_distinct_pages_this_round": 4,
+      "reading_purpose": "Theorem1 Christoffel determinant identity, characteristic-zero/formal and nonpositive scope; current finite-window identity reduces through already proven unit denominators",
+      "new_download": false,
+      "tls_bypass": false,
+      "full_pdf_read": false
+    }
+  ],
+  "primary_reading_totals": {
+    "new_archived_documents": 1,
+    "new_archived_pages": 19,
+    "actual_distinct_pages_this_round": 17,
+    "actual_new_source_pages_this_round": 4,
+    "actual_reused_source_pages_this_round": 13,
+    "duplicate_downloads": 0,
+    "reading_scope": "FULL text of listed individual PDF pages only; archive page totals are not full-reading claims. No new Dragnev-Saff reading is inherited from the peer review."
+  },
+  "frozen_artifact_pins": [
+    {"path": "research/cdt_odd_paired_masked_high_compression_20261007.md", "sha256": "bd107ba87fe707be5d8dc969b29949b05a4afd91e32baef4e41e5f9d4775bb1f", "role": "Own final paper; historical pending-status sentence is externally superseded by this completed final receipt"},
+    {"path": "research/cdt_odd_paired_masked_high_compression_independent_review_20261007.md", "sha256": "56f427256ab24688eb11061a60bcec30763142f2a17fc3998a9e244781eaf03c", "role": "Final independent FULL arithmetic review by scaled-root author, pinned to final bd107"},
+    {"path": "research/cdt_odd_paired_mirror_root_correlation_independent_review_20261007.md", "sha256": "9135e661b511590d60501c7c254281b974f32b3b72d9570f237bf6d4a26cdbcd", "role": "Own final independent analytic review, actual scope described above"},
+    {"path": "research/cdt_odd_paired_restricted_H_normality_20261007.md", "sha256": "074f55c5d83547b6b9a301cd515d1b676a5c3a2723a40e9101cb45e48b7f703f", "role": "Frozen actual arithmetic input, FULL this-round reread"},
+    {"path": "research/cdt_odd_paired_mirror_choice_energy_20261006.md", "sha256": "cc3821c935474ea1b87011383230b91ac04dcb147c2b09d6ce65e5f899438dd7", "role": "Frozen actual analytic input, FULL this-round reread"},
+    {"path": "research/cdt_odd_paired_mirror_root_correlation_20261007.md", "sha256": "94bf11b559fba1035f05d6f8b19e0318a2fb51b3552ef5d51f7279bd5aca5d6d", "role": "Peer final main, actual FULL independent reading"},
+    {"path": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.py", "sha256": "f873b6ea944f0dbb7fe4aafbf8f56d33bf9083a50ef21defc256c75a70bcee42", "role": "Peer preserved source, actual FULL static reading only"},
+    {"path": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify.json", "sha256": "d16792233e987d3777e75cc90b23d2509ee67d4ed2ba03732734422e715b8486", "role": "Peer preserved result; whole JSON parse and exact reading scope above; no re-execution"},
+    {"path": "research/cdt_odd_paired_mirror_root_correlation_20261007_certify_guard.json", "sha256": "a8a55e407cea1a95cf34f4c08625237205260fbbed908544cfe9b5d64fe6fd77", "role": "Peer preserved guard, FULL static reading only; recorded first run belongs to authorized peer, not this author"}
+  ],
+  "proved": [
+    "The fourth functional L=D(m·) is an exact complete cubic Racah family; every leading profile through 4r+1 is a unit at every actual auxiliary prime",
+    "The distinct actual functional Phi=D(m²·) has a leading-Gram Christoffel formula with r off-support evaluations and all prefactors known units",
+    "For r>=4, the actual twice-mask weight cannot be a normal nonzero ordinary KS Racah weight on the same quadratic grid: its reduced adjacent ratio is 7/7, while the ordinary ratio is at most 5/5 and all 4r edges force a degree<=12 polynomial identity",
+    "Every Phi Newton moment has an exact terminating balanced Whipple 4F3 expression with maximum index min(r,4r-l), at most r+1 terms and known-unit prefactors; Dougall balance fails by 13r-l",
+    "The fourth and third Racah families have an explicit known-unit triangular connection, giving every actual D_high entry in the same Phi short-moment model",
+    "The actual D_high determinant equals a known unit times a particular 3r+1-dimensional outer fifth-power spectral-complement determinant via full reciprocal metrics and Jacobi; no unknown principal block is divided"
+  ],
+  "unproved": [
+    "The off-support Christoffel determinant is a unit",
+    "The actual D_high determinant or restricted-H determinant is a unit",
+    "The fixed original fifth-power M5 seed is a unit on an infinite actual auxiliary subsequence",
+    "Actual higher Smith replacement or fixed rational source infinite success",
+    "Same-object arithmetic-decay strict margin",
+    "Any new zeta/L/Catalan irrationality or linear independence theorem, or Lean verification"
+  ],
+  "receipt_topology": "One-way final receipt. No future peer/root receipt is pinned, no mutable current delivery-audit pin, no circular final-receipt dependency. The complete frozen baseline is audited independently by root."
+}

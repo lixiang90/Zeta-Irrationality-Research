@@ -1,0 +1,66 @@
+{
+  "purpose": "Primary normalization inputs for Cartier extraction, integral Hecke q-expansion, general Mk Fricke intertwining, and fixed-divisor ratio descent. No new numerical irrationality result.",
+  "retrieved_date": "2026-10-06",
+  "new_pdf_count": 3,
+  "new_pdf_pages": 303,
+  "entries": [
+    {
+      "title": "Lecture Notes: An Invitation to Modular Forms",
+      "author": "Jared Weinstein",
+      "author_attribution_note": "Official Boston University teaching URL under jsweinst; first page gives title and date.",
+      "source_url": "https://math.bu.edu/people/jsweinst/Teaching/MA843/ModFormsIntro.pdf",
+      "source_date": "2011-10-03",
+      "file": "literature/weinstein_modular_forms_intro_bu.pdf",
+      "pages": 15,
+      "sha256": "97fecc734a2004336df71d1a3e7761d9f043b8cfdc1ff75662d54c37e792ec2e",
+      "pdf_signature_checked": true,
+      "identity_text_checked": true,
+      "relevant_location": "PDF/printed p15 section4.4: nontrivial-character newform Fricke eigenvalues change by chi(p)^(-1).",
+      "scope": "Normalization cross-check on newforms; not by itself a theorem for every holomorphic Mk. General Mk matrix proof is in the independent input report."
+    },
+    {
+      "title": "Explicitly Computing Modular Forms",
+      "author": "William A. Stein, with an appendix by Paul E. Gunnells",
+      "source_url": "https://wstein.org/msri06/refs/stein-book-on-modular-forms.pdf",
+      "source_date": null,
+      "version_note": "Author's msri06 PDF snapshot, metadata creationDate D:20060730090547; metadata is not assigned as a publication date. Actual title differs from later Modular Forms, A Computational Approach snapshots.",
+      "file": "literature/stein_modular_forms_computational_author.pdf",
+      "pages": 278,
+      "sha256": "883586b6de92e853ecfb12c0ae6341985f975aeb820995231460ffee147a0198",
+      "pdf_signature_checked": true,
+      "identity_text_checked": true,
+      "relevant_location": "PDF171-172 / printed157-158 section9.1 character decomposition; PDF175 / printed161 Proposition9.10 proof character Hecke coefficient formula.",
+      "scope": "Character and integral normalization corroboration; all-Mk preservation and formula also checked in Mocanu primary double-coset notes."
+    },
+    {
+      "title": "Atkin-Lehner Theory of Gamma1(N)-Modular Forms",
+      "author": "Andreea Mocanu",
+      "source_url": "https://andreeamocanu.github.io/atkin-lehner-theory.pdf",
+      "source_date": null,
+      "source_date_note": "No publication date assigned without an identified record; fixed downloaded author snapshot.",
+      "file": "literature/mocanu_atkin_lehner_theory_author.pdf",
+      "pages": 10,
+      "sha256": "113013a545c2b9ef5d46a603faef23f7988c3a8fd25cd6149f9f674880e4cae2",
+      "pdf_signature_checked": true,
+      "identity_text_checked": true,
+      "relevant_location": "PDF/printed p2 generalized slash; p5 Definition4.2 Tp; p6 Proposition4.1 holomorphic Mk preservation; p7 Proposition4.2 proof an(Tpf)=a_np+chi(p)p^(k-1)a_(n/p), citing Diamond-Shurman Proposition5.2.2(ii).",
+      "scope": "Primary author's lecture-note derivation on all Mk. It uses det^(k-1) slash, so normalize explicitly before comparing with det^(k/2) Fricke."
+    },
+    {
+      "title": "p-adic Properties of Modular Schemes and Modular Forms",
+      "author": "Nicholas M. Katz",
+      "file": "literature/katz1973_padic_modular_forms.pdf",
+      "reuse_existing": true,
+      "pages": 122,
+      "relevant_location": "PDF47 / printed115 (Ka-47), Lemma3.6.1 proof: relative Cartier coefficient extraction with target Omega^(p).",
+      "scope": "Do not silently identify relative Cartier with absolute p^(-1)-semilinear Cartier over a residue field larger than Fp. Original file and old manifests unchanged."
+    }
+  ],
+  "derived_input_report": "research/cdt_odd_level20_cartier_primary_input_20261006.md",
+  "unproved_by_this_manifest": [
+    "Actual AS weight4 chi5 identity and cusp holomorphy",
+    "Actual fixed pole-clearing polynomial and its integral finite q-jet determinant",
+    "New mixed Cartier primitive row and any additional Smith threshold",
+    "Any numerical irrationality theorem"
+  ]
+}

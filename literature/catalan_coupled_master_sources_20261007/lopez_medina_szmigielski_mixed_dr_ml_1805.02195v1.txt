@@ -1,0 +1,1409 @@
+arXiv:1805.02195v1  [math.CV]  6 May 2018
+Mixed type Hermite-Pad´e approximation inspired by the
+Degasperis-Procesi equation
+G. L´opez Lagomasino∗, S. Medina Peralta†, and J. Szmigielski‡
+May 8, 2018
+.
+Abstract
+In this work we present new results on the convergence of diagonal sequences of certain
+mixed type Hermite-Pad´e approximants of a Nikishin system. The study is motivated by
+a mixed Hermite-Pad´e approximation scheme used in the construction of solutions of a
+Degasperis-Procesi peakon problem and germane to the analysis of the inverse spectral
+problem for the discrete cubic string.
+Keywords: Nikishin systems, Hermite-Pad´e approximation, biorthogonal polynomials, Degasperis-
+Procesi equation.
+AMS classiﬁcation: Primary 30E10, 42C05; Secondary 41A20.
+1
+Introduction
+This article deals with the convergence of sequences of a mixed type Hermite-Pad´e approximation.
+Hermite-Pad´e approximation was introduced by Ch. Hermite [18] for proving the trascendence
+of the number e and subsequently it has been used in other number theory related problems (for
+a survey of such applications see [30]). In recent years, they have received increasing attention
+because of their applicability in other areas such as non-intersecting brownian motions theory[9],
+the study of multiple orthogonal polynomials ensembles [21], random matrix theory [5, 22], and
+in the solution of the Degasperis-Procesi (DP) diﬀerential equation (see, for example, [1, 2, 25]).
+This paper is motivated in an approximation problem relevant to the solution of the DP equation.
+∗Departamento de Matem´aticas, Universidad Carlos III de Madrid, Avda. Universidad 30, 28911 Legan´es,
+Madrid, Spain. email: lago@math.uc3m.es. This author was supported by research grant MTM2015-65888-C4-2-
+P of Ministerio de Econom´ıa, Industria y Competitividad.
+†Instituto de Matem´atica y F´ıisica. Universidad de Talca. Camino Lircay S/N, Campus Norte, Talca, Chile.
+This author received support from research grant Conicyt Fondecyt/Postdoctorado/ Proyecto 3170112
+‡Department of Mathematics and Statistics, University of Saskatchewan, Saskatoon, Canada. Partially sup-
+ported by NSERC.
+1
+
+1.1
+The Degasperis-Procesi equation and an approximation problem.
+In [25], the authors study the following partial diﬀerential equation
+ut −uxxt + (b + 1)uux = buxuxx + uuxxx,
+(x, t) ∈R2.
+(1.1)
+It is known that this equation is completely integrable if and only if b = 2 or b = 3. The case
+b = 2 is the well-known Camassa-Holm (CH) shallow water equation [7]. The case b = 3 is
+the Degasperis-Procesi (DP) equation, found by Degasperis and Procesi [12], and subsequently
+shown by Degasperis, Holm, and Hone [10, 11] to be integrable. All equations in the family (1.1)
+admit (in a weak sense) a type of non smooth solutions called multipeakons (peakon = peaked
+soliton). These take the form of a train of peak-shaped interacting waves,
+u(x, t) =
+n
+X
+i=1
+mi(t)e−|x−xi(t)|.
+(1.2)
+This Ansatz is then substituted into (1.1), resulting in a system of ordinary diﬀerential equations
+on unknown smooth functions xi(t) and mi(t).
+To solve this system the authors of [25] consider a certain boundary value problem, called the
+discrete cubic string. This problem is the main tool to obtain the explicit formulas, but it is also
+an interesting problem in its own right from the point of view of operator theory. By the forward
+cubic string problem we mean the following third-order spectral problem: for a given positive
+measure g(y), determine the eigenvalues z for which nontrivial continuous eigenfunctions φ(y)
+satisfy
+φyyy(y) = zg(y)φ(y),
+for y ∈(−1, 1),
+φ(−1) = φy(−1) = 0,
+φ(1) = 0,
+(1.3)
+in a distributional sense. If the singular support of g(y) contains the endpoints then the values
+of φ and its derivatives at −1, 1 are replaced with the left hand, right hand limits respectively.
+This spectral problem is proved in [25] to be equivalent under a change of variables to the
+one appearing in the DP Lax pair. It can be viewed as a non-self-adjoint generalization of the
+well-known (self-adjoint) string equation
+φyy = zg(y)φ(y)
+for y ∈(−1, 1),
+φ(−1) = 0,
+φ(1) = 0,
+(1.4)
+studied by M.G. Krein in the 50’s [19].
+The discrete case arises when g(y) is a discrete measure; in other words g = PN
+i=1 giδyi. Since
+the point masses gi are placed at positions yi and there are no masses between the points the
+eigenfunctions are piecewise linear in y for the ordinary string, and piecewise quadratic for the
+cubic string.
+The discrete (ordinary) string plays a crucial role in ﬁnding the general n-peakon solution for
+the CH equation [1, 2]. The inverse spectral problem consists in determining the positions yi and
+masses gi given the eigenfrequencies and suitable additional information about the eigenfunctions
+(encoded in the spectral measure of the string or, equivalently, in its Cauchy transform). The
+solution presented in [1] relies on the work of T. Stieltjes [29], as well as its interpretation by
+M.G. Krein [19] as a special case of the inverse string problem; it involves Stieltjes continued
+fractions, the classical moment problem, Pad´e approximation, and orthogonal polynomials.
+2
+
+The remarkable fact is that in both cases (CH and DP) the associated spectral problems
+have a ﬁnite positive spectrum; this is not so surprising in the case of the ordinary string which
+is a self-adjoint problem, but it is quite unexpected for the cubic string, since the problem is
+non-self-adjoint and there is no a priori reason for the spectrum to even be real, much less
+positive.
+Though the inverse cubic string problem is not the main concern of this paper, in Appendix A
+we will show how its solution is connected with an approximation problem which we will present
+shortly using a terminology and notation more convenient for our purpose.
+Given two measures σ1, σ2 whose supports are contained on the real line and have at most
+one point in common, suppose that the following functions are well deﬁned in the complement
+of the support of σ1
+bs1,1(z) =
+Z dσ1(x)
+z −x ,
+bs1,2(z) =
+Z dσ1(x)
+z −x
+Z dσ2(x)
+x −y
+The pair (bs1,1, bs1,2) constitutes what is known as a Nikishin system of functions (of order 2).
+Interchanging the roles of σ1, σ2 we can deﬁne in the same manner the Nikishin system (bs2,2, bs2,1).
+Hermite-Pad´e approximation problem 1. Consider the systems (bs1,1, bs1,2) and (bs2,2, bs2,1).
+Then for each n ∈N, we seek polynomials (an,0, an,1, an,2), not all identically equal to zero, with
+deg an,0 ≤n −1, deg an,1 ≤n −1, and deg an,2 ≤n, that satisfy:
+(an,0 −an,1bs1,1 + an,2bs1,2) (z) = O(1/zn+1),
+(1.5)
+(an,1 −an,2bs2,2) (z) = O(1/z).
+(1.6)
+In the inverse cubic string problem, the measures σ1, σ2 are connected with the Weyl functions
+of the spectral problem (1.3). In the situation considered in [1, 2] the measures are discrete. With
+the degree of generalization presented here this problem was proposed in [4].
+In the present paper, in Theorem 1.4 we study the existence and uniqueness of the solution
+of an analogous approximation problem as well as the location of the zeros of the Nikishin
+polynomials for systems of order m ≥2, biorthogonality properties satisﬁed by the polynomials
+an,m are given in Theorem 1.5, and the limit behavior of the Nikishin polynomials is described
+in Theorem 1.6.
+1.2
+Nikishin systems.
+In Hermite-Pad´e approximation the object of approximation is a system of analytic functions.
+We restrict our attention to so called Nikishin systems which contain, in particular, the functions
+appearing in equations (1.5) and (1.6). Nikishin systems were ﬁrst introduced in [27]. We will
+use a more general deﬁnition given in [15] which is more appropriate for our purpose.
+In the sequel ∆denotes an interval contained in the real axis. By M(∆) we denote the class
+of all Borel measures s with constant sign whose support consists on inﬁnitely many points and
+is contained in ∆such that xν ∈L1(s) for all ν ∈Z+. We denote the Cauchy transform of s by
+bs(z) =
+Z ds(x)
+z −x.
+3
+
+We have
+bs(z) ∼
+∞
+X
+j=0
+cj
+zj+1 ,
+cj =
+Z
+xjds(x).
+(1.7)
+If the support of s, supp(s), is bounded the series is convergent in a neighborhood of ∞; otherwise,
+the expansion is asymptotic at ∞. That is, for each k ≥0
+lim
+z→∞zk+1
+
+bs(z) −
+k−1
+X
+j=0
+cj
+zj+1
+
+= ck,
+where the limit is taken along any curve which is non tangential to supp(s) at ∞.
+Now, let ∆α, ∆β be two intervals contained in the real line with at most one common point.
+Take σα ∈M(∆α) and σβ ∈M(∆β) such that bσβ ∈L1(σα).
+Then, using the diﬀerential
+notation, we deﬁne a third measure ⟨σα, σβ⟩as follows
+d⟨σα, σβ⟩(x) := bσβ(x)dσα(x).
+In consecutive products of measures such as ⟨σγ, σα, σβ⟩:= ⟨σγ, ⟨σα, σβ⟩⟩, we assume not only
+that bσβ ∈L1(σα) but also ⟨σα, σβb⟩∈L1(σγ), where ⟨σα, σβb⟩denotes the Cauchy transform of
+⟨σα, σβ⟩.
+Consider a collection ∆j, j = 1, . . . , m, of intervals such that
+∆j ∩∆j+1 = ∅,
+or
+∆j ∩∆j+1 = {xj,j+1},
+j = 1, . . . , m −1,
+where xj,j+1 is a single point. Let (σ1, . . . , σm) be a system of measures such that Co(supp(σj)) =
+∆j, σj ∈M(∆j), j = 1, . . . , m, where Co(E) denotes the convex hull of the set E. Denote
+⟨σj, . . . , σk⟩:= ⟨σj, ⟨σj+1, . . . , σk⟩⟩∈M(∆j),
+1 ≤j < k ≤m.
+If ∆j ∩∆j+1 = {xj,j+1} we also assume that xj,j+1 is not a mass point of either σj or σj+1.
+Deﬁnition 1.1. With the notation above, we say that s = (s1,1, . . . , s1,m) = N(σ1, . . . , σm),
+where
+s1,1 = σ1,
+s1,2 = ⟨σ1, σ2⟩, . . .
+,
+s1,m = ⟨σ1, σ2, . . . , σm⟩.
+(1.8)
+is the Nikishin system of measures generated by (σ1, . . . , σm). The corresponding Nikishin system
+of functions will be denoted by bs = (bs1,1, . . . , bs1,m), where bs1,j is the Cauchy transform of s1,j.
+This deﬁnition extends the one given in [27] by allowing the generating measures to have
+unbounded support and/or have consecutive ∆j with a common endpoint. That the generating
+measures have inﬁnite support is not required for the deﬁnition of Nikishin systems; however,
+this condition is frequently used in the proof of the main results.
+If a measure has discrete
+support its Cauchy transform reduces to a rational function and the arguments used in the proof
+of some results must be modiﬁed. Sometimes the statement of the results themselves become
+obvious. For example, if that is the case in equations (1.5) and (1.6), the left hand sides of those
+relations become identically equal to zero, for all n larger than the number of mass points, and
+the question about convergence of the approximants is trivial.
+In what follows, for 1 ≤j ≤k ≤m, we denote
+sj,k := ⟨σj, σj+1, . . . , σk⟩,
+sk,j := ⟨σk, σk−1, . . . , σj⟩.
+(1.9)
+In particular, with the collection of measures (σ1, . . . , σm), we can also deﬁne the reversed Nik-
+ishin system (sm,m, . . . , sm,1) = N(σm, . . . , σ1).
+4
+
+1.3
+Statement of main results.
+Equations (1.5) and (1.6) suggests the following extensions to the case of Nikishin systems with
+m ≥2 measures.
+Deﬁnition 1.2. [Direct/reversed Hermite-Pad´e approximation]
+Consider the Nikishin systems N(σ1, σ2, . . . , σm) and N(σm, σm−1, . . . , σ1).
+Then, for each
+n ∈N, there exist polynomials an,0, an,1, . . . , an,m, with deg an,j ≤n −1, j = 0, 1 . . ., m −1,
+and deg an,m ≤n, not all identically equal to zero, called direct/reversed (DR) Hermite-Pad´e
+polynomials that satisfy:
+(an,0 −an,1bs1,1 + an,2bs1,2 · · · + (−1)man,mbs1,m) (z) = O(1/zn+1)
+(1.10)
+(−1) (an,1 −an,mbsm,2) (z) = O(1/z)
+(1.11)
+..........................................................
+(−1)m−2 (an,m−2 −an,mbsm,m−1) (z) = O(1/z)
+(1.12)
+(−1)m−1 (an,m−1 −an,mbsm,m) (z) = O(1/z).
+(1.13)
+Alternatively, we could extend the approximation problem as follows.
+Deﬁnition 1.3. [Multi-level Hermite-Pad´e approximation]
+Consider the Nikishin system N(σ1, σ2, . . . , σm). Then, for each n ∈N, there exist polynomials
+an,0, an,1, . . . , an,m with deg an,j ≤n−1, j = 0, 1 . . . , m−1, and deg an,m ≤n, not all identically
+equal to zero, called multi-level (ML) Hermite-Pad´e polynomials that verify:
+An,0(z) := (an,0 −an,1bs1,1 + an,2bs1,2 · · · + (−1)man,mbs1,m) (z) = O(1/zn+1)
+(1.14)
+An,1(z) := (−an,1 + an,2bs2,2 −an,3bs2,3 · · · + (−1)man,mbs2,m) (z) = O(1/z)
+(1.15)
+........................................................................................
+An,m−1(z) :=
+ (−1)m−1an,m−1 + (−1)man,mbsm,m
+
+(z) = O(1/z).
+(1.16)
+Notice that in this formulation the reversed Nikishin system N(σm, σm−1, . . . , σ1) does not
+appear explicitly. On the other hand, the interpolation conditions involve all Nikishin systems at
+the “inner” levels; that is, N(σ1, σ2, . . . , σm), N(σ2, σ3, . . . , σm), . . ., (sm,m) = N(σm). However,
+in Section 3 we prove
+Theorem 1.4. For each ﬁxed n, the DR Hermite-Pad´e polynomials and the ML Hermite-Pad´e
+polynomials coincide and the vector polynomial (an,0, an,1, . . . , an,m) is uniquely determined ex-
+cept for constant multiples. Additionally, deg an,j = n −1, j = 0, . . . , m −1, and deg an,m = n.
+Moreover, the zeros of an,m−1 and an,m are all simple and lie in
+◦
+∆m (the interior of ∆m with
+the Euclidean topology of R).
+In both cases, ﬁnding the polynomials (an,0, an,1, . . . , an,m) reduces to solving a homogeneous
+linear system of n(m + 1) equations (the interpolations conditions) on n(m + 1) + 1 unknowns
+(the coeﬃcients of the polynomials); therefore, the corresponding system of equations has a
+non-trivial solution.
+For a ﬁxed n ∈N, consider the vector (bn,0, . . . , bn,m) of ML Hermite-Pad´e polynomials
+5
+
+associated with the reversed Nikishin system N(σm, . . . , σ1). That is, the vector is non null and
+(bn,0 −bn,1bsm,m + bn,2bsm,m−1 · · · + (−1)mbn,mbsm,1) (z) = O(1/zn+1)
+(1.17)
+(−bn,1 + bn,2bsm−1,m−1 · · · + (−1)mbn,mbsm−1,1) (z) = O(1/z)
+(1.18)
+........................................................................................
+ (−1)m−1bn,m−1 + (−1)mbn,mbs1,1
+
+(z) = O(1/z).
+(1.19)
+Let
+K(x1, x2) =
+1
+x1 −x2
+denote the usual Cauchy kernel. For m > 2 we deﬁne the Cauchy convolution kernel in the
+following manner
+K(x1, xm) =
+Z
+∆2
+Z
+∆3
+· · ·
+Z
+∆m−1
+dσm−1(xm−1) · · · dσ3(x3)dσ2(x2)
+(xm−1 −xm)(xm−2 −xm−1) · · · (x2 −x3)(x1 −x2).
+Theorem 1.5. The sequences of polynomials (an,m(z))n∈N and (bk,m(z))k∈N are biorthogonal
+with respect to the Cauchy convolution kernel and the measures (σ1, σ2, . . . , σm); that is,
+Z
+∆1
+Z
+∆m
+bk,m(x1)K(x1, xm)an,m(xm)dσm(xm)dσ1(x1) = hnδn,k,
+hn ̸= 0.
+(1.20)
+where δk,n = 0, k ̸= n, and δn,n = 1.
+This type of biorthogonality has been discussed previously, among others, in [3, 4].
+We are mainly concerned with the convergence properties of the sequence of vector rational
+functions
+ an,0
+an,m
+, . . . , an,m−1
+an,m
+
+,
+n ∈N.
+Taking into consideration the interpolation conditions and the relation
+0 ≡bsm,1 +
+m−1
+X
+j=1
+(−1)jbsm,j+1bs1,j + (−1)mbs1,m,
+z ∈C \ (∆1 ∪∆m),
+(1.21)
+whose proof may be found in [15, Lemma 2.9] (and is not diﬃcult to verify), one can expect that
+under appropriate assumptions the limit should be the system of functions (bsm,1, . . . , bsm,m).
+This prediction is consistent with the convergence properties of type II and type I Hermite-
+Pad´e approximants studied in [6, Theorem 1] (see also [13], [17], [28]) and [24, Theorem 1.4],
+respectively. For the deﬁnition of type I and type II Hermite-Pad´e approximation see Subsection
+2.1.
+Let ∆⊂R and σ ∈M(∆). We say that σ satisﬁes Carleman’s condition [8] if
+X
+ν≥0
+|cν|−1/2ν = ∞,
+(1.22)
+where cν =
+R
+xνdσ(x) denotes the ν-th moment of σ.
+For a measure σ supported on an interval of the form [a, +∞) or (−∞, a], a ∈R, Carleman’s
+condition guarantees that the corresponding moment problem is determinate. Stieltjes’ theorem
+6
+
+[29] states that if the moment problem for σ is determinate then the diagonal sequence of Pad´e
+approximants of bσ converges. If supp(σ) is bounded the moment problem is determinate and
+Markov’s theorem follows (see [26]).
+Theorem 1.6. For each n ∈N, let an,0, an,1, . . . , an,m be the collection of ML (or DR) Hermite-
+Pad´e polynomials associated with the Nikishin system N(σ1, σ2, . . . , σm). Suppose that either
+the sequence of moments of σm satisﬁes Carleman’s condition or ∆m−1 is a bounded interval
+contained in C \ ∆m. Then, for j = 0, . . . m −1
+lim
+n→∞
+an,j
+an,m
+= bsm,j+1,
+(1.23)
+uniformly on each compact subset K ⊂C \ ∆m. Moreover
+lim
+n→∞(−1)j an,j(z)
+an,m(z) +
+m−1
+X
+k=j+1
+(−1)k an,k(z)
+an,m(z)bsj+1,k(z) + (−1)mbsj+1,m(z) = 0
+(1.24)
+uniformly on each compact subset K ⊂C \ (∆j+1 ∪∆m).
+The limit of the sequence (an,0/an,m, . . . , an,m−1/an,m), n ∈N, is the same as for type I
+Hermite-Pad´e approximation of N(σ1, σ2, . . . , σm) and type II Hermite-Pad´e approximation of
+N(σm, σm−1, . . . , σ1). For details, see [24, Theorem 1.4] and [6, Theorem 1].
+In [25], the authors study the case where the solutions (1.2) are formed by a ﬁnite linear
+combination of single peakon terms mie−|x−xi|.
+In that case, the Cauchy transform of the
+spectral measures (s1,1, s1,2, s2,2, s2,1) are rational fractions and for n suﬃciently large we have
+exact equalities in (1.5) and (1.6). If we are interested in the case of peakon solutions (1.2)
+formed by an inﬁnite number of peakons, or if we study the cubic string problem for which the
+weight g(y) is not a discrete measure we need to deal with the convergence of the corresponding
+mixed type Hermite-Pad´e approximants. Thus Theorem 1.6 opens a new direction of research
+aimed at the construction of general solutions to the DP equation using peakon approximations.
+2
+Proof of the main results.
+2.1
+Type I and type II Hermite-Pad´e polynomials.
+We are considering a combination of type I and type II Hermite-Pad´e polynomials which have
+received considerable attention for its many applications. Our construction falls in the category
+of mixed type Hermite-Pad´e approximation.
+Consider a Nikishin system (s1,1, . . . , s1,m) = N(σ1, . . . , σm). Fix n = (n1, . . . , nm) ∈Zm
++ \
+{0}, Z+ = {0, 1, 2, . . .}. Their exist polynomials Qn, Pn,1, . . . Pn,m, called type II Hermite-Pad´e
+polynomials of bs = (bs1,1, . . . , bs1,m) with respect to n that satisfy:
+i) deg Qn ≤n1 + · · · + nm, Qn ̸≡0,
+ii) (Qnbs1,j −Pn,j)(z) = O(1/znj+1),
+j = 1, . . . , m.
+On the other hand, the collection of polynomials an,0, . . . , an,m is called a type I Hermite-Pad´e
+polynomial of bs with respect to n if:
+7
+
+iii) deg an,j ≤nj −1, j = 1, . . . , m, not all identically equal to zero,
+iv) (an,0 + Pm
+j=1(−1)jan,jbs1,j)(z) = O(1/zn1+···+nm).
+When m = 1 both deﬁnitions coincide with classical diagonal Pad´e approximation. In contrast
+with Pad´e approximation, when m ≥2 the uniqueness (up to constant multiples) of these
+polynomials is not a trivial matter and was solved positively in [14, 15] for Nikishin systems.
+However, for arbitrary systems of functions uniqueness is not true in general.
+Notice that the ML or DR Hermite Pad´e polynomials combine interpolation conditions of the
+form (ii) and (iv) and are therefore called of mixed type.
+2.2
+Some auxiliary results and concepts.
+The following lemma will be used in the proof of Theorems 1.4 and 1.6. Let us deﬁne the linear
+forms with polynomial coeﬃcients
+Lj := ℓj +
+m
+X
+k=j+1
+ℓkbsj+1,k,
+j = 0, . . . , m −1,
+Lm = ℓm,
+(2.1)
+where the ℓj are arbitrary polynomials.
+Lemma 2.1. Let (s1,1, . . . , s1,m) = N(σ1, . . . , σm) be given. Then, for each j = 0, . . . , m −2
+and r = j + 1, . . . , m −1
+Lj +
+r
+X
+k=j+1
+(−1)k−jbsk,j+1Lk = ℓj + (−1)r−j
+m
+X
+k=r+1
+ℓk⟨sr+1,k, sr,j+1b⟩.
+(2.2)
+Proof. Fix j, 0 ≤j ≤m −2, and let r = j + 1. Then the left hand side of (2.2) equals
+Lj −bsj+1,j+1Lj+1 = ℓj +
+m
+X
+k=j+2
+ℓk (bsj+1,k −bsj+1,j+1bsj+2,k) .
+Formula (1.21) applied to the Nikishin system of two measures N(sj+1,j+1, sj+2,k) gives
+⟨sj+1,j+1, sj+2,kb⟩−bsj+1,j+1bsj+2,k + ⟨sj+2,k, sj+1,j+1b⟩≡0.
+However, sj+1,k = ⟨sj+1,j+1, sj+2,k⟩, hence
+Lj −bsj+1,j+1Lj+1 = ℓj −
+m
+X
+k=j+2
+ℓk⟨sj+2,k, sj+1,j+1b⟩
+as needed. For j = m −2 the proof is complete.
+Now, ﬁx j < m −2 and suppose that (2.2) is true for some r, j + 1 ≤r ≤m −2, and let us
+prove that it also holds for r + 1. Using the induction hypothesis, we obtain
+Lj +
+r+1
+X
+k=j+1
+(−1)k−jbsk,j+1Lk = Lj +
+r
+X
+k=j+1
+(−1)k−jbsk,j+1Lk + (−1)r+1−jbsr+1,j+1Lr+1 =
+8
+
+ℓj + (−1)r−j
+m
+X
+k=r+1
+ℓk⟨sr+1,k, sr,j+1b⟩+ (−1)r+1−jbsr+1,j+1Lr+1 =
+ℓj + (−1)r−jℓr+1bsr+1,j+1 + (−1)r−j
+m
+X
+k=r+2
+ℓk⟨sr+1,k, sr,j+1b⟩+ (−1)r+1−jbsr+1,j+1Lr+1 =
+ℓj + (−1)r−j
+m
+X
+k=r+2
+ℓk
+
+⟨sr+1,j+1, sr+2,kb⟩−bsr+1,j+1bsr+2,k
+
+=
+ℓj + (−1)r+1−j
+m
+X
+k=r+2
+ℓk⟨sr+2,j+1, sr+1,j+1b⟩,
+as claimed. In the second last step, we use the identity
+⟨sr+1,k, sr,j+1⟩= ⟨⟨sr+1,r+1, sr+2,k⟩, sr,j+1⟩= ⟨⟨sr+1,r+1, sr,j+1⟩, sr+2,k⟩= ⟨sr+1,j+1, sr+2,k⟩,
+while in the last one we use
+⟨sr+1,j+1, sr+2,j+1b⟩−bsr+1,j+1bsr+2,k + ⟨sr+2,j+1, sr+1,j+1b⟩≡0,
+which is formula (1.21) applied to the Nikishin system of two measures N(sr+1,j+1, sr+2,k).
+We will make frequent use of [24, Theorem 1.3]. For convenience of the reader, we state it
+here as a lemma.
+Lemma 2.2. Let (s1,1, . . . , s1,m) = N(σ1, . . . , σm) be given. Assume that there exist polynomials
+with real coeﬃcients ℓ0, . . . , ℓm and a polynomial w with real coeﬃcients whose zeros lie in C\∆1
+such that
+L0(z)
+w(z) ∈H(C \ ∆1)
+and
+L0(z)
+w(z) = O
+ 1
+zN
+
+,
+z →∞,
+where L0 := ℓ0 + Pm
+k=1 ℓkbs1,k and N ≥1. Let L1 := ℓ1 + Pm
+k=2 ℓkbs2,k. Then
+L0(z)
+w(z) =
+Z
+L1(x)
+(z −x)
+dσ1(x)
+w(x) .
+(2.3)
+If N ≥2, we also have
+Z
+xνL1(x)dσ1(x)
+w(x)
+= 0,
+ν = 0, . . . , N −2.
+(2.4)
+In particular, L1 has at least N −1 sign changes in
+◦
+∆1.
+Let us advance the following partial result.
+Lemma 2.3. For each ﬁxed n ∈N, the ML Hermite-Pad´e polynomial an,m has degree n or it is
+identically equal to zero.
+Proof. Fix n ∈N and let (an,0, . . . , an,m) be the corresponding ML Hermite-Pad´e polynomials.
+Everywhere below An,j, j = 0, . . . , m −1 are the forms in Deﬁnition 1.3 and An,m = an,m. Let
+9
+
+us show that for each j = 0, . . . , m−1, there exists a polynomial wn,j with real coeﬃcients whose
+zeros lie in C \ ∆j+1 such that
+An,j(z)
+wn,j(z) = O(1/zn+1),
+An,j(z)
+wn,j(z) ∈H(C \ ∆j+1).
+(2.5)
+Due to (1.14), if j = 0 one can take wn,0 ≡1. Let us assume that the statement is true for
+some j ∈{0, . . ., m −2} and let us show that it also holds for j + 1.
+Using (2.4) in Lemma 2.2 (on N(σj+1, . . . , σm)) and (2.5), we obtain that
+0 =
+Z
+xνAn,j+1(x)dσj+1(x)
+wn,j(x) ,
+ν = 0, . . . , n −1.
+These orthogonality relations imply that An,j+1 has at least n sign changes on the interval ∆j+1.
+Let wn,j+1 be a polynomial of degree n with simple zeros at points of ∆j+1 where An,j+1 changes
+sign; therefore, its zeros belong to C \ ∆j+2. By the way in which wn,j+1 was deﬁned, we have
+An,j+1(z)
+wn,j+1(z) ∈H(C \ ∆j+2).
+Taking into account that deg wn,j+1 = n and since An,j+1(z) = O(1/z) according to Deﬁnition
+1.3, we also have An,j+1(z)/wn,j+1(z) = O(1/zn+1) as claimed.
+For j = m −1 equation (2.5) takes the form
+(an,m−1 −an,mbsm,m) (z)
+wn,m−1(z)
+= O(1/zn+1) ∈H(C \ ∆m).
+(2.6)
+Using (2.4), we obtain
+Z
+xνan,m(x) dsm,m(x)
+wn,m−1(x) = 0,
+ν = 0, . . . , n −1.
+(2.7)
+If deg an,m < n, (2.7) implies that an,m ≡0 since it would be orthogonal to itself (and the
+measure has constant sign); otherwise, (2.7) implies that an,m has at least n sign changes on ∆m
+and since deg an,m ≤n it must have exactly n simple zeros inside ∆m. With this we conclude
+the proof of the lemma.
+This lemma shows that an,m is uniquely determined except for a constant factor (or it is iden-
+tically equal to zero) because otherwise by linearity we could construct an an,m, not identically
+equal to zero, of degree smaller than n.
+We need some formulas veriﬁed by the Cauchy transforms of products of measures in a
+Nikishin system. It is known that for each σ ∈M(∆), where ∆is an inﬁnite subinterval of the
+real line diﬀerent from R, there exists a measure τ ∈M(∆) and ℓ(z) = az + b, a = 1/|σ|, b ∈R,
+such that
+1/bσ(z) = ℓ(z) + bτ(z),
+(2.8)
+where |σ| is the total variation of the measure σ. See [20, Appendix] for bounded ∆, and [15,
+Lemma 2.3] when ∆is unbounded. In particular,
+1/bs1,1(z) = ℓ1,1(z) + bτ1,1(z).
+10
+
+Sometimes we write ⟨σα, σβb⟩in place of bsα,β. In [15, Lemma 2.10], several formulas involving
+ratios of Cauchy transforms were proved. The most useful ones in this paper establish that
+bs1,k
+bs1,1
+= |s1,k|
+|s1,1| −⟨τ1,1, ⟨s2,k, s1,1⟩b⟩,
+1 = j < k ≤m.
+(2.9)
+Another important ingredient in the proof of Theorem 1.6 is the notion of convergence in
+Hausdorﬀcontent. Let B be a subset of the complex plane C. By U(B) we denote the class of
+all coverings of B by at most a numerable set of disks. Set
+h(B) = inf
+( ∞
+X
+i=1
+|Ui| : {Ui} ∈U(B)
+)
+,
+where |Ui| stands for the radius of the disk Ui. The quantity h(B) is called the 1-dimensional
+Hausdorﬀcontent of the set B.
+Let (ϕn)n∈N be a sequence of complex functions deﬁned on a domain D ⊂C and ϕ another
+function deﬁned on D (the value ∞is permitted). We say that (ϕn)n∈N converges in Hausdorﬀ
+content to the function ϕ inside D if for each compact subset K of D and for each ε > 0, we have
+lim
+n→∞h{z ∈K : |ϕn(z) −ϕ(z)| > ε} = 0
+(2.10)
+(by convention ∞± ∞= ∞). We denote this writing h-limn→∞ϕn = ϕ inside D.
+If the functions ϕn are holomorphic in D and (2.10) takes place, then the convergence is
+uniform on each compact subset of D. This result is proved in [16, Lemma 1]. Therefore, in
+order to prove (1.23)-(1.24) it is suﬃcient to show that the convergence takes place in Hausdorﬀ
+content in the corresponding region. This is what we will do.
+2.3
+Proof of Theorem 1.4.
+Proof. Fix n ∈N. Notice that relations (1.10) and (1.13) are the same as relations (1.14) and
+(1.16), respectively. First, let us show that Deﬁnition 1.3 implies Deﬁnition 1.2. Using (2.2) with
+Lj = An,j, j ∈{0, 1, . . ., m −2}, and r = m −1, we obtain
+An,j +
+m−1
+X
+k=j+1
+(−1)k−jbsk,j+1An,k = (−1)j (an,j −an,mbsm,j+1) .
+However, (1.14)-(1.16) imply that the left hand side of this equation is O(1/z) and, therefore,
+so is the right hand side which is exactly the expression that appears in Deﬁnition 1.2. We also
+obtain the additional relation
+(an,0 −an,mbsm.1)(z) = O(1/z).
+(2.11)
+which is redundant with respect to the equations in Deﬁnition 1.2, but (2.11) will be needed
+below.
+To prove the converse, we observe that according to formula (1.21) applied to the Nikishin
+system N(σj+1, σj+2, . . . , σm), for j = 0, . . . , m −2, we have
+0 ≡(−1)jbsm,j+1 +
+m−1
+X
+k=j+1
+(−1)kbsm,k+1bsj+1,k + (−1)mbsj+1,m,
+z ∈C \ (∆j+1 ∪∆m).
+(2.12)
+11
+
+From Deﬁnition 1.2 let us consider the following equations
+(−1)j (an,j −an,mbsm,j+1) (z) = O(1/z),
+(2.13)
+..........................................................
+(−1)m−2 (an,m−2 −an,mbsm,m−1) (z) = O(1/z),
+(2.14)
+(−1)m−1 (an,m−1 −an,mbsm,m) (z) = O(1/z).
+(2.15)
+Let us multiply equation (2.15) by bsj+1,m−1, (2.14) by bsj+1,m−2, and so on until we arrive to
+(2.13) multiplied by 1. Adding up all the relations so obtained, we arrive at
+(−1)jan,j + (−1)j+1an,j+1bsj+1,j+1 + . . . + (−1)m−1an,m−1bsj+1,m−1
+−an,m
+
+(−1)jbsm,j+1 +
+m−1
+X
+k=j+1
+(−1)kbsm,k+1bsj+1,k
+
+= O(1/z).
+(2.16)
+Using relation (2.12) to replace what is inside the big parenthesis, the j-th equation in Deﬁ-
+nition 1.3 follows immediately; that is An,j = O(1/z). Therefore, DR and ML Hermite-Pad´e
+polynomials coincide.
+Observe that (2.11) and (1.11)-(1.13) imply that once an,m is found then an,j, j = 0, . . . , m−1,
+is uniquely determined as the polynomial part of the asymptotic expansion at ∞of an,mbsm,j+1.
+In particular, this means that if an−1
+n,j , is the coeﬃcient corresponding to the power zn−1 of an,j
+and an
+n,m the coeﬃcient corresponding to the power zn of an,m then
+an−1
+n,j = an
+n,m|sm,j+1|,
+j = 1, . . . , m −1.
+From Lemma 2.3 we know that deg an,m = n, therefore, deg an,j = n −1, j = 0, . . . , m −1 and
+the polynomials an,j, j = 0, . . . , m −1 are uniquely deﬁned up to a constant factor (the same
+constant as for an,m). Moreover, (2.6) implies that an,m−1
+an,m
+is an n-th diagonal multipoint Pad´e
+approximation of bsm,m with n + 1 interpolation conditions at ∞and another n located at the
+zeros of wn,m−1 and an,m−1 is the n-th polynomial of the second lind with respect to the measure
+dσm/wn,m−1 whose n −1 zeros are known to interlace the n simple zeros of an,m. With this we
+conclude the proof.
+The property of the degrees of the polynomials an,j, j = 0, . . . , m, indicates that the multi-
+indices (n, . . . , n, n + 1) ∈Zm
++ \ {0} are normal (for the deﬁnition of normality see, for example,
+the introduction in [14]). This is emphasized in the next result.
+Corollary 2.4. For each ﬁxed n ∈N we have
+(a) An,0 has no zero in C \ ∆1. The coeﬃcient accompanying 1/zn+1 in the asymptotic expan-
+sion (1.14) is diﬀerent from zero.
+(b) An,j, j = 1, . . . , m has exactly n zeros in C \ ∆j+1 (∆m+1 = ∅), they are all simple and
+lie in
+◦
+∆j. The coeﬃcient accompanying 1/z in the asymptotic expansions (1.15)-(1.16) is
+diﬀerent from zero.
+Proof. The forms An,j are symmetric with respect to the real line (that is An,j(z) = An,j(z));
+therefore, its non real zeros come in conjugate pairs. For j = m, An,m = an,m and the property
+12
+
+stated in (b) about the zeros was proved in Theorem 1.4. Suppose that for some ∈{0, . . . , m−1}
+any one of the properties stated in (a) or (b) fails. From the proof of Lemma 2.3, we know that
+An,, = 1, . . . , m −1, has at least n sign changes on ∆, so it can have more but not less than
+n zeros in C \ ∆. Thus, there exists a polynomial wn,of degree ≥n or 0 if = 0, with real
+coeﬃcients, such that
+An,/wn,= O(1/zn+2) ∈H(C \ ∆).
+(2.17)
+Arguing as in the proof of Lemma 2.3 it readily follows that for j = , . . . , m −1 one also has
+(2.17). This entails that for some polynomial wn,m−1, with real coeﬃcients,
+Z
+xνan,m(x) dsm,m(x)
+wn,m−1(x) = 0,
+ν = 0, . . . , n.
+This implies that an,m ≡0. This is impossible because according to Theorem 1.4 we would also
+have an,j ≡0, j = 0, . . . , m −1. Thus, all properties stated in this corollary must hold.
+2.4
+Proof of Theorem 1.5.
+Proof. For k = 0, . . . , m −1, set
+Bk,j(z) = (−1)jbk,j + (−1)j+1bk,j+1bsm−j,m−j · · · (−1)mbk,mbsm−j,1
+First, let us analyze the case n < k. From equation (1.17) and (2.4) it follows that for ν =
+0, 1, . . . k −1
+0 =
+Z
+∆m
+xν
+m Bk,1(xm)dσm(xm).
+(2.18)
+Using consecutively (1.18)-(1.19) and (2.3), we have
+Bk,1(xm) =
+Z
+∆m−1
+Bk,2(xm−1)dσm−1(xm−1)
+(xm −xm−1) = · · · =
+(2.19)
+Z
+∆m−1
+. . .
+Z
+∆2
+Bk,m−1(x2) dσ2(x2)
+(x3 −x2) · · · dσm−1(xm−1)
+(xm −xm−1) =
+Z
+∆m−1
+· · ·
+Z
+∆1
+(−1)mbk,m(x1) dσ1(x1)
+(x2 −x1) · · · dσm−1(xm−1)
+(xm −xm−1) = −
+Z
+∆1
+bk,m(x1)K(x1, xm)dσ1(x1).
+In the last equality, we use Fubini’s theorem and the deﬁnition of the kernel K(x1, xm). Com-
+bining (2.18), (2.19) and using the fact that n < k, we get
+Z
+∆m
+Z
+∆1
+an,m(xm)K(x1, xm)bk,m(x1)dσ1(x1)dσm(xm) = 0,
+n < k.
+For k < n, the proof is the same as above applied to the forms An,j instead of the forms Bk,j.
+Now, suppose that
+Z
+∆m
+Z
+∆1
+an,m(xm)K(x1, xm)bn,m(x1)dσ1(x1)dσm(xm) = 0.
+(2.20)
+Obviously, deg bk,m = k, k ≥0. This, together with the orthogonality relations and (2.20) give
+Z
+∆1
+xn
+1
+Z
+∆m
+an,m(xm)K(x1, xm)dσm(xm)dσ1(x1) = 0.
+(2.21)
+13
+
+On the other hand, just as in the proof of (2.19) we have
+An,1(x1) =
+Z
+∆m
+an,m(xm)K(x1, xm)dσm(xm).
+(2.22)
+Now, from (2.21) and (2.22) we obtain
+Z
+∆1
+xn
+1 An,1(x1)dσ1(x1) =
+Z
+∆1
+xn
+1
+Z
+∆m
+an,m(xm)K(x1, xm)dσm(xm) = 0.
+We also know that
+Z
+∆1
+xν
+1An,1(x1)dσ1(x1) = 0,
+ν = 0, . . . , n −1.
+However, these orthogonality relations imply that the form An,1 has at least n + 1 sign changes
+on ∆1 but this is impossible since in Corollary 2.4 we showed that it has exactly n zeros in C\∆2.
+Therefore,
+Z
+∆m
+Z
+∆1
+an,m(xm)K(x1, xm)bn,m(x1)dσ1(x1)dσm(xm) ̸= 0
+and we conclude the proof.
+2.5
+Proof of Theorem 1.6.
+Proof. In the proof of Theorem 1.4 it was indicated that an,m−1/an,m is an n-th diagonal mul-
+tipoint Pad´e approximation of bsm,m.
+Since either the sequence of moments of σm satisﬁes
+Carleman’s condition or ∆m−1 is a ﬁnite interval contained in C \ ∆m, using [23, Theorem 1] we
+have
+lim
+n→∞
+an,m−1
+an,m
+= bsm,m,
+(2.23)
+uniformly on each compact subset K ⊂C \ ∆m.
+Now, consider the case j ∈{0, . . ., m −2}. Having in mind (1.23), we need to reduce An,j
+so as to eliminate all an,k, k = j + 1, . . . , m −1. We start out eliminating an,j+1. Consider the
+ratio An,j/bsj+1,j+1. Using (2.8) and (2.9) we obtain that
+An,j
+bsj+1,j+1
+=
+
+(−1)jpj+1,j+1an,j +
+m
+X
+k=j+1
+(−1)k|sj+1,k|
+|sj+1,j+1|
+an,k
+
++ (−1)jan,jbτj+1,j+1−
+m
+X
+k=j+2
+(−1)kan,k⟨τj+1,j+1, ⟨sj+2,k, sj+1,j+1⟩b⟩,
+has the form of L0 in Lemma 2.2 (with respect to N(τj+1,j+1, sj+2,j+1, σj+3, . . . , σm), when
+j + 3 ≤m, or N(τj+1,j+1, sj+2,j+1) if j = m −2). Notice that An,j/(bσj+1wn,j) ∈H(C \ ∆j+1),
+and
+An,j
+bsj+1,j+1wn,j
+∈O
+ 1
+zn
+
+,
+z →∞.
+From (2.4) of Lemma 2.2, we obtain that for ν = 0, . . . , n −2
+0 =
+Z
+xν
+
+(−1)jan,j(x) −
+m
+X
+k=j+2
+(−1)kan,k⟨sj+2,k, sj+1,j+1b⟩(x)
+
+dτj+1,j+1(x)
+wn,j(x)
+14
+
+which implies that the function in parenthesis under the integral sign has at least n −1 sign
+changes in
+◦
+∆j+1. In turn, it follows that there exists a polynomial ewn,j, deg ewn,j = n −1, whose
+zeros are simple and lie in
+◦
+∆j+1 such that
+(−1)jan,j −Pm
+k=j+2(−1)kan,k⟨sj+2,k, sj+1,j+1b⟩
+ewn,j
+∈H(C \ ∆j+2).
+(2.24)
+On the other hand, using (2.2) with r = j + 1 and Deﬁnition 1.3, we obtain
+(An,j −bsj+1,j+1An,j+1)(z) = O
+1
+z
+
+=
+
+(−1)jan,j −
+m
+X
+k=j+2
+(−1)kan,k⟨sj+2,k, sj+1,j+1b⟩
+
+(z).
+Consequently,
+(−1)jan,j −Pm
+k=j+2(−1)kan,k⟨sj+2,k, sj+1,j+1b⟩
+ewn,j
+= O
+ 1
+zn
+
+,
+z →∞.
+(2.25)
+Notice that ⟨sj+2,k, sj+1,j+1⟩= sj+2,j+1 when k = j+2 and ⟨sj+2,k, sj+1,j+1⟩= ⟨sj+2,j+1, sj+3,k⟩
+when j + 3 ≤k ≤m (if any).
+Suppose that j = m −2. In this case, (2.24)-(2.25) reduce to
+an,m−2 −an,mbsm,m−1
+ewn,m−2
+= O
+ 1
+zn
+
+∈H(C \ ∆m).
+In comparison with the case when j = m −1 we lose one interpolation condition at inﬁnity and
+we say that an,m−2/an,m is an incomplete diagonal Pad´e approximation of sm,m−1. However,
+using [6, Lemma 2] we can assert that
+h −lim
+n→∞
+an,m−2
+an,m
+= bsm,m−1
+inside C\∆m. Since the poles of an,m−2/an,m lie in ∆m, from [16, Lemma 1] uniform convergence
+on compact subsets of C \ ∆m readily follows.
+Incidentally, if m = 2 and j = 0, on the right hand side of (2.25) we have O(1/zn+1) because
+An,0−bs1,1An,1 = O(1/z2). So, in this case an,0/an,2 is a complete multipoint Pad´e approximation
+of bs2,1. Then an,2 is (also) an n-th orthogonal polynomial with respect to the varying measure
+ds2,1/ ewn,0 and an,0 is the associated polynomial of second kind which implies that an,0 has n−1
+simple zeros which lie in
+◦
+∆m (and interlace the zeros of an,2). For other values of m, we discuss
+later the degree and location of the zeros of an,j, j = 0, . . . , m −2.
+Let us assume that m ≥3 and 0 ≤j ≤m−3. Then, ⟨sj+2,k, sj+1,j+1⟩= ⟨sj+2,j+1, sj+3,k⟩, k =
+j + 3, . . . , m, and we use this equality to modify the corresponding terms in the numerators of
+the left hand sides of (2.24) and (2.25) which becomes
+(−1)jan,j −(−1)j+2an,j+2bsj+2,j+1 −
+m
+X
+k=j+3
+(−1)kan,k⟨sj+2,j+1, sj+3,kb⟩.
+15
+
+Now, we must do away with an,j+2. Using (2.8) and (2.9), we obtain
+(−1)jan,j −(−1)j+2an,j+2bsj+2,j+1 −Pm
+k=j+3(−1)kan,k⟨sj+2,j+1, sj+3,kb⟩
+bsj+2,j+1
+=
+
+(−1)jpj+2,j+1an,j −(−1)j+2an,j+2 −
+m
+X
+k=j+3
+(−1)k|⟨sj+2,j+1, sj+3,k⟩|
+|sj+2,j+1|
+an,k
+
+
++(−1)jan,jbτj+2,j+1 + (−1)2
+m
+X
+k=j+3
+(−1)kan,k⟨τj+2,j+1, ⟨sj+3,k, sj+2,j+1⟩b⟩.
+This expression has the form of L0 in Lemma 2.2. Additionally,
+(−1)jan,j −(−1)j+2an,j+2bsj+2,j+1 −Pm
+k=j+3(−1)kan,k⟨sj+2,j+1, sj+3,kb⟩
+bsj+2,j+1 ewn,j
+∈H(C \ ∆j+2)
+and because of (2.25), as z →∞,
+(−1)jan,j −(−1)j+2an,j+2bsj+2,j+1 −Pm
+k=j+3(−1)kan,k⟨sj+2,j+1, sj+3,kb⟩
+bsj+2,j+1 ewn,j
+= O
+
+1
+zn−1
+
+.
+From (2.4) in Lemma 2.2, we obtain that for ν = 0, . . . , n −3
+0 =
+Z
+xν
+
+(−1)jan,j + (−1)2
+m
+X
+k=j+3
+(−1)kan,k(x)⟨sj+3,k, sj+2,j+1b⟩(x)
+
+dτj+2,j+1(x)
+ewn,j(x)
+which implies that the function in parenthesis under the integral sign has at least n −2 sign
+changes in
+◦
+∆j+2. In turn, it follows that there exists a polynomial ewn,j+1, deg ewn,j+1 = n −2,
+whose zeros are simple and lie in
+◦
+∆j+1 such that
+(−1)jan,j + (−1)2 Pm
+k=j+3(−1)kan,k⟨sj+3,k, sj+2,j+1⟩b⟩
+ewn,j+1
+∈H(C \ ∆j+3)
+On the other hand, according to Deﬁnition 1.3 and Lemma 2.1 with r = j + 2
+(An,j −bsj+1,j+1An,j+1 + bsj+2,j+1An,j+2)(z) = O
+1
+z
+
+=
+
+(−1)jan,j + (−1)2
+m
+X
+k=j+3
+(−1)kan,k⟨sj+3,k, sj+2,j+1b⟩
+
+(z)
+Consequently,
+(−1)jan,j + (−1)2 Pm
+k=j+3(−1)kan,k⟨sj+3,k, sj+2,j+1⟩b⟩
+ewn,j+1
+= O
+
+1
+zn−1
+
+16
+
+Notice that an,j+2 has been eliminated. If j = m −3 combining [6, Lemma 2] and [16, Lemma
+1] we obtain that
+lim
+n→∞
+an,m−3
+an,m
+= bsm,m−2
+uniformly on each compact subset of C \ ∆m. Otherwise, we have
+(−1)jan,j + (−1)2an,j+3bsj+3,j+1 + (−1)2 Pm
+k=j+4(−1)kan,k⟨sj+3,j+1, sj+1,k⟩b⟩
+ewn,j+1
+= O
+
+1
+zn−1
+
+,
+and we are ready to eliminate an,j+3 dividing by bsj+3,j+1.
+In general, for ﬁxed j, after m −j −1 reductions obtained applying Lemmas 2.2 and 2.1, we
+ﬁnd that there exists a polynomial denoted w∗
+n,j, deg w∗
+n,j = n −m + j, whose zeros are simple
+and lie in
+◦
+∆m−1 such that
+an,j −an,mbsm,j+1
+w∗
+n,j
+= O
+
+1
+zn−m+j+2
+
+∈H(C \ ∆m),
+z →∞.
+(2.26)
+Then, [6, Lemma 2] and [16, Lemma 1], imply (1.23). Now, (1.24) is an immediate consequence
+of (2.12) and (1.23).
+Assuming that j ∈{0, . . . , m −1}, (2.26) implies that
+an,j −an,mbsm,j+1
+bsm,j+1w∗
+n,j
+= O
+
+1
+zn−m+j+1
+
+∈H(C \ ∆m),
+z →∞.
+Since
+an,j −an,mbsm,j+1
+bsm,j+1
+= an,jbτm,j+1 −(an,m −ℓm,j+1an,j) ,
+and using (2.4)
+Z
+xνan,j(x)dτm,j+1(x)
+w∗
+n,j(x)
+= 0,
+ν = 0, . . . , n −m + j −1.
+Consequently, an,j has at least n −m + j sign changes in
+◦
+∆m; therefore, deg an,j ≥n −m + j.
+For j ∈{0, . . . , m −2} it could occur that m −j −1 zeros of an,j lie in C \ ∆m.
+Although, there may be a certain amount (independent of n) of zeros of the polynomials
+an,0, . . . , an,m−2 that abandon ∆m, the next corollary shows that in that case they approach ∆m
+as n →∞.
+Corollary 2.5. Under the assumptions of Theorem 1.6 we have that the accumulation points of
+the zeros of an,j, j = 0, 1, · · · , m −2 are in ∆m.
+Proof. Let Γ be an arbitrary simple closed Jordan curve contained in C \ ∆m. Since bsm,j+1 is
+never equals zero on this domain, the argument principle implies that
+lim
+n→∞
+1
+2πi
+Z
+Γ
+(an,j(z)/an,m(z))′
+(an,j(z)/an,m(z)) dz =
+1
+2πi
+Z
+Γ
+bs′
+m,j+1(z)
+bsm,j+1(z) = 0.
+But the poles of an,j/an,m all lie in ∆m; consequently, for all suﬃciently large n the zeros of
+these rational function must lie in the unbounded connected component of the complement of Γ.
+This means that as n →∞the zeros of an,j that may lie in C\∆m must accumulate on ∆m.
+17
+
+A
+The inverse cubic string and Hermite-Pad´e approxima-
+tion problems.
+The goal of this Appendix is to show the connection between the inverse cubic string problem
+(1.3) and the Hermite-Pad´e approximation problem 1. Let us consider two solutions φ1(y), φ2(y)
+to the initial value problem associated to the boundary value problem (1.3) for the values of the
+spectral parameter z and w, respectively. Then, by elementary integration by parts,
+Z 1
+−1
+(φ1,yyyφ2 + φ1φ2,yyy)(y)dy = B(φ1, φ2)(y)
+1
+−1,
+where B(h1, h2)(y) = (h1,yyh2 −h1,yh2,y + h1h2,yy) (y) is the bilinear concomitant associated to
+the formally skew-adjoint operator
+d3
+dy3 . For the cubic string, and the speciﬁed initial conditions
+at y = −1, this identity simpliﬁes further to
+(z + w)
+Z 1
+−1
+(φ1φ2g)(y)dy = B(φ1, φ2)(y)
+1
+−1,
+(A.1)
+implying that the bilinear concomitant vanishes for w = −z. Denoting φ(y; z) = φ1(y; z) and
+φ(y; −z) = φ2(y; −z) we are led to an important identity
+φyy(1; z)φ(1; −z) −φy(1; z)φy(1; −z) + φ(1; z)φyy(1; −z) = 0.
+(A.2)
+Let us interpret this identity with the help of the Weyl (sometimes also called the Weyl-
+Titchmarsh) functions
+W(z) = φy(1; z)
+φ(1; z) ,
+Z(z) = φyy(1; z)
+φ(1; z) ,
+which are matrix elements of the resolvent of the operator deﬁned by (1.3). In terms of W(z)
+and Z(z), (A.2) can be written as
+Z(z) −W(z)W(−z) + Z(−z) = 0,
+(A.3)
+indicating a relation between these two Weyl functions. In [25] it was proven that W(z), Z(z)
+admit the following spectral representations
+W(z)
+z
+=
+Z dµ(x)
+z −x ,
+Z(z)
+z
+=
+Z dν(x)
+z −x ,
+(A.4)
+where dν(x) = (x
+R dµ(y)
+x+y ) dµ(x). The proof in [25] is carried out when g(y) is a ﬁnite, discrete
+measure, and in this special case dµ(x) = PN
+j=0 bjδzj, bj > 0 where z0 = 0, and zj > 0 are the
+eigenvalues of the cubic string boundary value problem (1.3).
+The approximation problem used in [25] to solve the inverse problem for the cubic string
+consists in ﬁnding, for each n ∈N = {1, 2, . . .}, polynomials ( bPn, Pn, Qn) with deg bPn ≤n,
+deg Pn ≤n, and deg Qn ≤n, not all identically equal to zero and normalized by the conditions
+bPn(0) = 0, Pn(0) = 1, which satisfy:
+bPn(z) −Pn(z)W(−z) + Qn(z)Z(−z) = O(1/zn+1),
+(A.5)
+Pn(z) −Qn(z)W(z) = O(1),
+(A.6)
+bPn(z) −Qn(z)Z(z) = O(1).
+(A.7)
+18
+
+Due to (A.3), equation (A.7) is redundant and it suﬃces to consider equations (A.5) and
+(A.6).
+From (A.4) it is clear that there are two natural measures in the problem, dα(x) = dµ(x) and
+dβ(x) = xdµ(x). However, it is also convenient to observe that in addition there are two reﬂected
+with respect to the origin measures dα∗, dβ∗. For example dα∗= PN
+j=0 bjδ−zj. The advantage
+of using reﬂected measures is that the ﬁnal formulas have only one type of kernel, namely the
+Cauchy kernel
+1
+x−y, rather than both the Cauchy and Stieltjes
+1
+x+y kernels. In addition, having
+in mind a connection to Nikishin systems, we point out that the supports of dβ and dα∗are
+disjoint.
+The spectral representations of W and Z imply
+W(z)
+z
+=
+Z dα(x)
+z −x ,
+Z(z)
+z
+=
+Z dβ(x)
+z −x
+Z dα∗(y)
+x −y ,
+W(−z)
+z
+=
+Z dα∗(y)
+z −x ,
+−Z(−z)
+z
+=
+Z dβ∗(y)
+z −y
+Z dα(x)
+y −x ,
+which allows one to rewrite the approximation problem using a notation more convenient for our
+purpose.
+To this end we set
+dλ1(x) := dα∗(x),
+dλ2(x) := dβ(x)
+and
+bλ1,1(z) :=
+Z dλ1(x)
+z −x ,
+bλ1,2(z) :=
+Z dλ1(x)
+z −x
+Z dλ2(y)
+x −y ,
+bλ2,2(z) :=
+Z dλ2(x)
+z −x ,
+bλ2,1(z) :=
+Z dλ2(x)
+z −x
+Z dλ1(y)
+x −y .
+Therefore, we have the two Nikishin systems, namely, (λ1,1, λ1,2) = N(λ1, λ2) and its reverse
+(λ2,2, λ2,1) = N(λ2, λ1).
+Now, W(z) =
+R zdα(x)
+z−x
+and from equation (A.6) P n
+n = Qn
+n|α|, where P n
+n (respectively Qn
+n) is
+the coeﬃcient in Pn at the power zn and |α| is the zeroth moment of dα. Then
+W(z) =
+Z
+dα(x) +
+Z xdα(x)
+z −x = |α| +
+Z dλ2(x)
+z −x = |α| + bλ2,2(z),
+implying that equation (A.6) takes now the form
+ePn(z) −Qn(z)bλ2,2(z) = O(1)
+(A.8)
+where ePn = Pn −|α|Qn. Notice that deg ePn ≤n −1.
+In the next step we will rephrase equation (A.5). First, after some elementary computations,
+we obtain
+W(−z) = zbλ1,1(z),
+Z(−z) = zbλ1,1(z)|α| + zbλ1,2(z).
+19
+
+Morever, since bPn(0) = 0, we can write bPn(z) = zP ∗
+n(z), where deg P ∗
+n ≤n −1, and (A.5) reads
+z
+
+P ∗
+n(z) −ePn(z)bλ1,1(z) + Qn(z)bλ1,2(z)
+
+= O(1/zn+1).
+(A.9)
+From (A.8) and (A.9) one sees that equations (A.5), (A.6) and (A.7) are equivalent to
+P ∗
+n(z) −ePn(z)bλ1,1(z) + Qn(z)bλ1,2(z) = O(1/zn+2),
+(A.10)
+ePn(z) −Qn(z)bλ2,2(z) = O(1),
+(A.11)
+P ∗
+n(z) −Qn(z)bλ2,1(z) = O(1/z),
+(A.12)
+where deg Qn ≤n, deg ePn ≤n −1, P ∗
+n ≤n −1. As well, with this new notation in place, (A.3)
+takes the form
+bλ2,1(z) −bλ2,2(z)bλ1,1(z) + bλ1,2(z) = 0.
+(A.13)
+As before, (A.12) follows from (A.13), (A.10), and (A.11).
+We note that (A.10) is a type I
+Hermite-Pad´e approximation to the direct Nikishin system N(λ1, λ2), while (A.11) and (A.12)
+is a type II Hermite-Pad´e approximation to the reverse Nikishin system N(λ2, λ1).
+In the present paper, we considered a slightly more symmetric version of the approximation
+problem (A.10), (A.11). After dividing equation (A.10) by bλ1,1 we get
+ 
+P ∗
+n
+bλ1,1
+−ePn + Qn
+bλ1,2
+bλ1,1
+!
+(z) = O(1/zn+1).
+(A.14)
+Using formulas (2.8) and (2.9), it follows that
+zP ∗
+n + Qn|λ1,2|
+|λ1,1|
++ bP ∗
+n −ePn + P ∗
+nbτ1,1 −⟨τ1,1, λ2,1b⟩Qn
+
+(z) = O(1/zn+1),
+(A.15)
+where b ∈R.
+Set σ1 := τ1,1 and σ2 := λ2,1. Take
+an,2 := −Qn,
+an,1 = −P ∗
+n,
+an,0 = zP ∗
+n + Qn|λ1,2|
+|λ1,1|
++ bP ∗
+n −ePn.
+From (A.12) and (A.13) it is easy to check that deg(zP ∗
+n + Qn|λ1,2|) ≤n −1; consequently
+deg an,0 ≤n −1. Finally, we can write (A.10) and (A.12) as
+(an,0 −an,1bs1,1 + an,2bs1,2) (z) = O(1/zn+1),
+(an,1 −an,2bs2,2) (z) = O(1/z),
+with deg an,0 ≤n −1, deg an,1 ≤n −1, and deg an,2 ≤n, which are the same interpolation
+conditions of the Hermite-Pad´e approximation problem (1.5)-(1.6).
+References
+[1] R. Beals, D.H. Sattinger, and J. Szmigielski. Multi-peakons and a theorem of Stieltjes.
+Inverse Problems 15 (1999), no. 1, L1-L4.
+20
+
+[2] R. Beals, D.H. Sattinger, and J. Szmigielski. Multi-peakons and the classical moment prob-
+lem. Advances in Math. 154 (2000), 229-257.
+[3] M. Bertola, T. Bothner. Universality conjecture and results for a model of several couple
+positive-deﬁnite matrices. Commun. Math. Phys 337 (2015), 1077-1141.
+[4] M. Bertola, M. Gekhtman, and J. Szmigielski. Cauchy biorthogonal polynomials. J. Approx.
+Theory 162 (2010), 832-867.
+[5] P.M. Bleher and A.B.J. Kuijlaars. Random matrices with external source and multiple
+orthogonal polynomials. Internat. Math. Research Notices 3 (2004), 109-129.
+[6] J. Bustamante and G. L´opez Lagomasino. Hermite–Pad´e approximation for Nikishin systems
+of analytic functions. Russian Acad. Sci. Sb. Math. 77 (1994), 367-384.
+[7] R. Camassa and D.D. Holm. An integrable shallow water equation with peaked solitons.
+Phys. Rev. Lett. 71 (1993), 1661-1664.
+[8] T. Carleman. Les fonctions quasi-analytiques. Gauthier Villars, Paris, 1926.
+[9] E. Daems and A.B.J. Kuijlaars. Multiple orthogonal polynomials of mixed type and non
+intersecting brownian motions. J. Approx. Theory 146 (2007), 91-114.
+[10] A. Degasperis, D.D. Holm, and A.N.W. Hone. A new integrable equation with peakon
+solutions. Theoret. and Math. Phys. 133 (2002), 1463-1474.
+[11] A. Degasperis, D.D. Holm, and A.N.W. Hone. Integrable and non-integrable equations with
+peakons. Nonlinear Physics: Theory and Experiment, II (Gallipoli, 2002) (M. J. Ablowitz,
+M. Boiti, F. Pempinelli, and B. Prinari, eds.), World Scientiﬁc Publishing, New Jersey,
+(2003), 37-43.
+[12] A. Degasperis and M. Procesi. Asymptotic integrability, Symmetry and Perturbation The-
+ory. (Rome, 1998) (A. Degasperis and G. Gaeta, Eds.), World Scientiﬁc Publishing, New
+Jersey, (1999), 23-37.
+[13] U. Fidalgo and G. L´opez Lagomasino. General results on the convergence of multipoint
+Hermite-Pad´e approximants of Nikishin systems. Constr. Approx. 25 (2007), 89-107.
+[14] U. Fidalgo and G. L´opez Lagomasino. Nikishin systems are perfect. Constructive Approx.
+34 (2011), 297-356.
+[15] U. Fidalgo and G. L´opez Lagomasino. Nikishin systems are perfect. Case of unbounded and
+touching supports. J. of Approx. Theory 163 (2011), 779-811.
+[16] A.A. Gonchar. On the convergence of generalized Pad´e approximants of meromorphic func-
+tions. Sb. Math. 27 (1975), 503-514.
+[17] A.A. Gonchar, E.A. Rakhmanov, and V.N. Sorokin. On Hermite-Pad´e approximants for
+systems of functions of Markov type. Sbornik: Mathematics 188 (1997), 671-696.
+[18] Ch. Hermite. Sur la fonction exponentielle. C. R. Acad. Sci. Paris 77 (1873), 18-24, 74-79,
+226-233, 285-293; reprinted in his Oeuvres, Tome III, Gauthier-Villars, Paris, 1912, 150-181.
+[19] M.G. Krein. On inverse problems for a nonhomogeneous cord. Doklady Akad. Nauk SSSR
+(N.S.), 82 (1952), 669-672.
+21
+
+[20] M.G. Krein and A.A. Nudel’man. The Markov Moment Problem and Extremal Problems.
+Transl. of Math. Monog. Vol. 50, Amer. Math. Soc., Providence, R.I., 1977.
+[21] A.B.J. Kuijlaars. Multiple orthogonal polynomial ensembles. Contemporary Mathematics,
+Vol. 507, Amer. Math. Soc., Providence, R.I. (2010), 155-176.
+[22] A.B.J. Kuijlaars. Multiple orthogonal polynomials in random matrix theory. Proc. Internat.
+Congress Math., Vol. III, 1417-1432. Hydebarad, India, 2010.
+[23] G. L´opez Lagomasino. Conditions for the convergence of multipoint Pad´e approximants for
+functions of Stieltjes type. Math. USSR Sb. 35 (1979), 363-376.
+[24] G. L´opez Lagomasino and S. Medina Peralta. On the convergence of type I Hermite-Pad´e
+approximants. Advances in Math. 273 (2015), 124-148.
+[25] H. Lundmark and J. Szmigielski. Degasperis-Procesi peakons and the discrete cubic string.
+IMRP International Mathematics Research Papers, 2005, No. 2.
+[26] A.A. Markov. Deux d´emonstrations de la convergence de certains fractions continues. Acta
+Math. 19 (1895), 93-104.
+[27] E.M. Nikishin. On simultaneous Pad´e approximants. Math. USSR Sb. 41 (1982), 409-425.
+[28] H. Stahl. Simultaneous rational approximants. Proceedings of Computaional Mathematics
+and Function Theory (CMFT’94), World Scientiﬁc Publishing Co. R.M Ali, St. Rusheweyh,
+and E.B. SaﬀEds., (1995), 325-349.
+[29] T.J. Stieltjes. Recherches sur les fractions continues. Ann. Fac. Sci. Univ. Toulouse 8 (1894)
+J1-J122, 9 (1895), A1-A47, reprinted in his Oeuvres Compl`etes, Tome 2, Noordhoﬀ, 1918,
+402-566.
+[30] W. Van Assche. Multiple orthogonal polynomials, irrationality and transcendence. Contem-
+porary Mathematics, Vol. 236, Amer. Math. Soc., Providence, R.I. (1999), 325-342.
+22
+

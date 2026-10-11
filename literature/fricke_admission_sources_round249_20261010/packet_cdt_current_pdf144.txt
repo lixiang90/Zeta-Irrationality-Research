@@ -1,0 +1,70 @@
+144                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+∞:                                                                          
+             X                  X              d
+                                                X                            
+                  ♯
+                 vp,n log p ≤        max          eij valp ([1, . . . , nj ]) log p
+                                   i∈Vmd (ϵ)                                
+            p≤ξD              p≤ξD            j=1
+                                                     
+                               X             Xd      
+                            ≤        max          eij log p + o(D)
+                                   i∈Vmd (ϵ)         
+                              p≤ξD            j=1
+                                   Pm                 
+                                      i=1 ei
+                            = dξD              + O(ϵ) + o(D).
+                                       m
+  Therefore, once we let D → ∞ followed by d → ∞ and then ϵ′′ → 0 (entailing
+ ′
+ϵ → 0), we derive
+               P        ♯             Pm
+                     d vp,n log p
+                  n∈VD              ξ( i=1 ei ) + O(ϵ) + (max1≤i≤m ei )Iξm (ξ)
+    lim lim                       ≤                                            .
+   d→∞ D→∞         dmd Dd+1                             m
+                                                                            (8.2.40)
+
+Conclusion of the proof of Theorem 8.0.1. We derive the desired bound from Bost’s
+slopes inequality (7.2.14), upon collecting Lemma 8.2.5 and the estimates (8.2.28),
+(8.2.34), and (8.2.40), and finally by letting ϵ → 0 in the end.
+   The proof of (8.0.5) differs only in the archimedean evaluation height estimate,
+                        ′   Ql      ⊗sh
+upon replacing L by L = h=0 Lrh and inputting the bound from § 7.6.              □
+
+Remark 8.2.41. In the case (such as we have in all our applications in this paper)
+that the m-dimensional Q(x)-vector space SpanQ(x) {f1 , . . . , fm } is closed under dif-
+ferentiation, we can apply the more elementary Shidlovsky lemma (Theorem 3.2.8,
+which is much easier to prove and effectivize than Theorem 3.2.13); in this situa-
+tion, the statement of Lemma 3.2.14 applies even with ϵ = 0. In this situation, the
+large deviations bound quoted from Theorem 4.2.1 in the proof can be replaced by
+the most rudimentary weak law of large numbers.                                       △
+Remark 8.2.42. The proof immediately gives the following formal generalization
+to a number field K. For each σ : K ,→ C, we consider a holomorphic mapping
+φσ : (D, 0) → (C, 0) with φ′σ (0) ̸= 0. Assume there exists an m-tuple f1 , . . . , fm ∈
+KJxK of K(x)-linearly independent formal functions with denominator types of the
+form
+                      ∞
+                     X                             xn
+     fi (x) = ai,0 +     ai,n ei                                                 , ai,n ∈ OK ,
+                     n=1
+                             n [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+where ei , bi,j are the same as in Theorem 6.0.2, and such that for all i ∈ {1, . . . , m}
+and σ : K ,→ C,we have fi (φσ (z)) ∈ CJzK convergent on |z| < 1. If
+                               1     X
+                                          log |φ′σ (0)| > σm ,
+                           [K : Q]
+                                      σ:K,→C
+
+then all fi are holonomic functions, and
+                  P         RR
+                     σ:K,→C   T2
+                                 log |φσ (z) − φσ (w)| µHaar (z)µHaar (w)
+             m≤                                                            .
+                     ( σ:K,→C log |φ′σ (0)|) − [K : Q](τ ♭♭ (b) + τ ♯ (e))
+                      P
+
+The convexity improvements also extend in the obvious way.                                 △

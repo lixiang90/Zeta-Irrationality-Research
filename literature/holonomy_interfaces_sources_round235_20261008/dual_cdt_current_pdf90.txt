@@ -1,0 +1,59 @@
+90                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+                                                    h             i
+   Finally, the integral refinement over Q x, x1 , 1−x          1
+                                                                     follows at this point from
+the Hermite–Lindemann–Weierstrass and Mahler theorems in transcendence,              h       ex-i
+                                                                                        1   1
+actly as in the proof of Theorem 2.7.2; and then the upgrade from Q x, x , 1−x
+     h       i
+          1
+to Q x, 1−x    follows from our strict [1, . . . , n][1, . . . , n/2] denominators requirement
+exactly as in point (ii) in the proof of Theorem 2.7.2.                                                          □
+
+Example 6.8.6. With m = 3 and the true functions
+                                     √             √ 2
+                    p                  y              y
+                1,   y(4 − y) arcsin     ,   arcsin
+                                      2              2
+now using the type
+                                  
+                      0          0
+                                                                                               7
+                  b= 0          2 ,               e = (0, 0, 0),            τ (b; e) =         ,
+                                                                                               3
+                      1          2
+a short numerical experimentation, which we have not attempted to make rigorous,
+suggests that for l = 2 (two division points) and maps of the form
+       φY0 (2) (z) := h (Gob(r, e, f )(δz)) ,             φk (z) := φY0 (2) (γk z) ,             k = 0, 1, 2,
+the minimizing holonomy bound on the three functions should probably be attained
+at (for example) about the choice
+                    (r, e, f ) ≈ (0.55, ∞, 5);                (γ1 , γ2 ) ≈ (0.19, 0.65),
+                                        −4.3      −0.76
+                                                          
+                     (r0 , r1 ) ≈ e            ,e             ,   δ ≈ 0.77,
+with holonomy quotient value (6.0.10) being at ≈ 3.239.                                                          △
+
+                      7. Convexity in Bost’s slopes method
+   We begin with the following clean refinement of Theorem 2.5.1, which finally we
+prove in this section by a single variable method based on [BC22, § 5]. This simple
+result by itself suffices for our application to Theorems A and C, although (in the
+case of the former) only by the narrowest of margins. The tenor of this section,
+whose main results are stated in § 7.1 after a short introduction, is what we are
+calling the convexity input that leads up to sharpened holonomy bounds. The im-
+provements are usually fairly small, but they are significant enough to comfortably
+pass the numerical margin in the requisite numeric in the proof of Theorem A, and
+thereby make fully convincing the Arakelov theory path to the irrationality proof
+of L(2, χ−3 ).
+Theorem 7.0.1. With the same standing assumptions of Theorem 6.0.2, consider a
+holomorphic mapping φ : (D, 0) → (C, 0) with derivative (conformal size) satisfying
+the condition
+                         log |φ′ (0)| > max{σm , τ (b; e)}.                 (7.0.2)
+Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+formal functions with denominator types of the form
+                        ∞
+                        X                                    xn
+      fi (x) = ai,0 +         ai,n                                                         ,         ai,n ∈ Z,
+                        n=1
+                                     nei [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+

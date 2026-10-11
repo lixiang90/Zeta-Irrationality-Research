@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-06",
+  "author": "quarter_actual_rank",
+  "status": "author-frozen after complete final self-read; mathematical paper and certificate unchanged; external review status recorded separately",
+  "proof": {
+    "path": "research/cdt_odd_paired_mirror_choice_energy_20261006.md",
+    "sha256": "cc3821c935474ea1b87011383230b91ac04dcb147c2b09d6ce65e5f899438dd7",
+    "actual_author_read": "Complete final M1-M9 untruncated, after correcting only a section locator in the earlier draft",
+    "same_object": "Original B=6, k=3, s=5 actual saturated integer-valued paired lattice, original rank 2n determinant and whole-X form; no restored k=4 or full rank-3n decay transfer",
+    "claims": [
+      "All-n mirror-choice penalty and Hardy Cauchy determinant bound with uniform O(n log(n+2)) error",
+      "Rigorous whole-interval enclosure 0.840144459 <= min(c(q)+P(q)) <= 0.845115370 for q in [0,1]",
+      "Same-basis analytic bound beta_mirror > 9.09188285412558, with actual squared primitive gcd credit kept separately",
+      "Combining the frozen actual gcd lower rate gives strict same-object analytic rate > 12.00357285412558",
+      "Exact variational limit of the positive Hardy choice sum under p(x)+p(2-x)=1, existence and uniqueness of its maximizer, and its KKT condition"
+    ],
+    "not_claimed": [
+      "Closed-form equilibrium profile or exact equilibrium value",
+      "Equality between the positive Hardy choice sum and the actual complex determinant or weighted low Gram",
+      "Infinite rational-target nonzero",
+      "Matched arithmetic-analytic margin",
+      "A new irrationality or linear independence theorem",
+      "External Lean verification"
+    ]
+  },
+  "own_new_verifier": {
+    "path": "research/cdt_odd_paired_mirror_choice_energy_20261006_verify.py",
+    "sha256": "03fac0d728b448d8168d8d02972e910d82e0194c840365f99c769d31554a3b6a",
+    "output_path": "research/cdt_odd_paired_mirror_choice_energy_20261006_verify.json",
+    "output_sha256": "eb71f6809d98d793f32abca6df7dff199a5d450de73853a5e5bcfcbe72422b9e",
+    "first_execution_count": 1,
+    "successful_execution_count": 1,
+    "failed_execution_count": 0,
+    "rerun_count": 0,
+    "status": "PASS",
+    "domain": "All q in [0,1], covered by 4096 closed rational cells; midpoint evaluations are upper-bound samples, not the lower-bound proof",
+    "method": "Standard-library Fraction arithmetic, 24-term atanh log expansion with rigorous remainder and reduction to [1,2], whole-cell monotonicity or Lipschitz bounds, outward rational endpoints",
+    "actual_read": "Complete static source. JSON syntax and summary, count 4096, first/last cells, selected lower-minimum cell 794 and its boundary fields read; no claim of manually recomputing all 4096 interval records",
+    "input_execution": "No old or peer source execute/import; no old or peer mathematical producer rerun",
+    "does_not_replace": "Paper derivation of the uniform all-n choice bound, variational compactness, logarithmic tail control, recovery or strict concavity"
+  },
+  "formal_independent_review": {
+    "path": "research/cdt_odd_paired_dual_jet_budget_independent_review_20261006.md",
+    "sha256": "7fa899348497a05b07eafa45fc75828f999550f0b6bc3d76e74b61c5b0db296a",
+    "status": "final frozen after complete Q1-Q9 self-read",
+    "actual_read": "Complete root final dual D1-D10 and D1-D21 after full initial draft read; complete toric J1-J23; complete static new peer sources and certificate scope specified below",
+    "claims": [
+      "Primitive complementary minors and actual dual Smith layer theorem passed",
+      "Exact n<p<=2n carry graph defect and genuinely paid 1718/15015 credit passed",
+      "Actual paired reduction kernel, exact paired lifts and whole-X jet polygon bound passed",
+      "Paid jet credit 2/3 passed without an exact Smith or unit claim",
+      "Same determinant and disjoint prime windows allow safe joint fee 4624049789/104824720 in (44.112,44.113)"
+    ],
+    "reviewer_math_execute_import_rerun_count": 0,
+    "not_claimed": "Manual recomputation of all peer matrices, exact determinant content, infinite nonzero, margin, method no-go or special-value theorem"
+  },
+  "peer_proofs_actual_read": [
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006.md",
+      "sha256": "0fb995f69cefcd4e6c92f7ffa42a8e595add4dda9a94951ed27a4693fb127047",
+      "scope": "Complete final D1-D10, formulas D1-D21, untruncated. Earlier 073251 draft also fully read. Final three clarity changes checked, no mathematical producer executed"
+    },
+    {
+      "path": "research/cdt_odd_paired_large_prime_jet_rank_20261006.md",
+      "sha256": "39a0b6f80c4020602aff6dccded6d8da71ce0288b06a4ad86890be3265deb0f5",
+      "scope": "Complete J1-J23 untruncated; author confirms this final mathematical fingerprint"
+    }
+  ],
+  "peer_sources_and_certificates_static_read": [
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_layers_20261006_probe.py",
+      "sha256": "4b020bc73c49a08a19f49f489bc719bc368d150ce830e3237cd032fd88c9aa1d",
+      "output_path": "research/cdt_odd_paired_dual_plucker_layers_20261006_probe.json",
+      "output_sha256": "53b243b65a9a3c7a1a07279b52debabd33bb2c5188ebcf943f3ff82bf60e72d3",
+      "actual_read": "Complete source; initial raw JSON display truncated, then compact display of all 105 cases and all Smith arrays completed untruncated",
+      "author_execution_history": "First-only successful execution 1; reviewer execution 0"
+    },
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006_verify.py",
+      "sha256": "ade489f98225ce61a9f58333464ce4d5e91ebfffe149358eb0e4df4b9321c3d5",
+      "actual_read": "Complete static source and read-only absence check for its JSON",
+      "author_execution_history": "First-only failed execution 1 after formula/integral assertions, at an incorrectly guessed decimal interval. No JSON, no PASS, source preserved, not rerun; reviewer execution 0"
+    },
+    {
+      "path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006_verify_v2.py",
+      "sha256": "75dda9e61e2a6446e66d1b09502b860294e32e7532e0918f2d346c002e6fa1cf",
+      "output_path": "research/cdt_odd_paired_dual_plucker_carry_rate_20261006_verify_v2.json",
+      "output_sha256": "964137827f95314fe269bce3de6a4ddd631f3036b7398ef8507accd04b7bc725",
+      "actual_read": "Complete static distinct source and complete JSON, 42 comparisons, three tents, cap and exact gain fields",
+      "author_execution_history": "Distinct v2 first-only successful execution 1; no import/execute of the failed v1; reviewer execution 0"
+    },
+    {
+      "path": "research/cdt_odd_paired_large_prime_jet_rank_20261006_verify.py",
+      "sha256": "5c1df7cf287e6865561d22871f8f8ff61a03f1f090a25b9d04b0ad1c1516a17e",
+      "output_path": "research/cdt_odd_paired_large_prime_jet_rank_20261006_verify.json",
+      "output_sha256": "190e0aea7a126438037709328576e779b8454c79c815067dc88d6c1b3ac5a99e",
+      "actual_read": "Complete static source and complete JSON, all 43 cases and 15383-check summary. Incorrect initial read-only filename corrected by rg; no execution occurred",
+      "author_execution_history": "First-only successful execution 1; source's a-coefficient correction occurred before that first run; reviewer execution 0",
+      "scope_warning": "Finite weak representatives satisfy mod-p paired constraints; exact characteristic-zero paired lifting is a paper proof, not an assertion supplied by this finite probe"
+    }
+  ],
+  "frozen_same_object_locators": [
+    {
+      "path": "research/cdt_odd_paired_plucker_energy_rate_20261006.md",
+      "sha256": "01c87202a292f9d977f58098bd609e99f9b6aa1b6701e9fff7c036bda7e2515a",
+      "purpose": "Same actual basis, normalization, beta0 certificate and Hardy determinant interface; read-only, no producer rerun"
+    },
+    {
+      "path": "research/cdt_odd_paired_primitive_gcd_rate_20261006.md",
+      "sha256": "77079715fb996f6d2ef9eee370abbbecc1169acb8c14bebfb4515c3b3bf268e2",
+      "purpose": "Actual beta_m=gcd(b_m,b_m') and gamma lower bound; same squared gcd credit, not an independent denominator discount"
+    },
+    {
+      "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+      "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+      "purpose": "Actual saturated integer-valued paired basis and mandatory high rows"
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_20261006.md",
+      "sha256": "55278a0ed68b645fc5cb2f3089563e49c30e608ace9de511cc80d37609b712dc",
+      "purpose": "Complete B1-B22 actually read this round for same-form whole-X cap and signed cost accounting"
+    },
+    {
+      "path": "research/cdt_odd_paired_all_prime_budget_verify_20261006.json",
+      "sha256": "7cb512f237d3d29370e164ff3fe69bd319d8685582ef7c6d46d7adf9f738e14b",
+      "purpose": "All 50 affine rows actually displayed and read, with no producer execution"
+    }
+  ],
+  "primary_sources_actual_read_this_round": [
+    {
+      "path": "literature/bhargava2009_p_orderings_integer_valued_ultrametric_20261006.pdf",
+      "sha256": "cf66a3058ad9612019dcd9eda8bc1f26f9951c876b3e699d16bdd6b199c93f2e",
+      "url": "https://www.ams.org/journals/jams/2009-22-04/S0894-0347-09-00638-9/S0894-0347-09-00638-9.pdf",
+      "archive_page_count": 31,
+      "actual_pdf_pages": [1, 2, 3, 4, 7, 8, 9, 10, 11],
+      "actual_page_count": 9,
+      "download_by_this_agent_count": 0,
+      "actual_scope": "Complete text of these nine pages. Theorem 7 local r-removed divided-difference regular basis and Theorem 10 global principal-factorial-ideal condition checked; framework does not replace the actual paired Smith proof",
+      "extraction_history": "Initial GBK terminal text display failed with UnicodeEncodeError; separate UTF-8 document extraction displayed all nine pages. These document-parser operations are not mathematical producer executions"
+    }
+  ],
+  "independent_mirror_review_received": {
+    "root_scope": "Root reports actual complete final M1-M9 and complete static source read, with hand checks of M13/M14, sorting, all-k errors, log tails, binary recovery, negative definiteness and KKT. JSON summary/count/first/last/min794 checked, not all 4096 entries manually recomputed",
+    "arithmetic_review_path": "research/cdt_odd_paired_mirror_choice_energy_independent_review_20261006.md",
+    "arithmetic_review_sha256": "759c9b5527b7f2e2998a57197a8adc023cc30c95805c591d3385e3f532a01b91",
+    "arithmetic_scope_status": "Final independent review received and actually read completely R1-R7 by this author, with its SHA verified. Peer reviewed complete cc382 paper and complete static source, parsed all JSON syntax and inspected selected literal records, without manually recomputing all 4096 cells or executing a producer"
+  },
+  "current_round_counts_for_this_agent": {
+    "own_new_math_producer_execution_count": 1,
+    "own_successful_execution_count": 1,
+    "own_failed_execution_count": 0,
+    "old_or_peer_math_execute_import_rerun_count": 0,
+    "own_rerun_count": 0,
+    "external_lean_execution_count": 0,
+    "new_pdf_download_count": 0,
+    "new_external_source_code_download_count": 0,
+    "new_html_download_count": 0,
+    "actual_pdf_pages_read": 9,
+    "peer_review_math_execution_count": 0
+  },
+  "historical_run_separation": "The previous round's own failed v1 and successful distinct v2 remain in the frozen manifest_cdt_odd_paired_plucker_energy_rate_20261006.json. They are not recounted in this round. Root's current three runs and toric's one run are author histories, not this reviewer's executions.",
+  "guard": "All old and peer mathematical MD/PY/JSON/manifests remain read-only. All own outputs are first-only; no rerun after output exists. Hashing, JSON syntax reads, text display and document extraction are metadata/source operations, not mathematical producer executions. No unread peer primary pages are promoted to this agent's actual reading scope."
+}

@@ -1,0 +1,36 @@
+
+Generalized Bernoulli Numbers ¶
+
+Suppose \eps is a Dirichlet character of modulus N over \C .
+Leopoldt [ Leo58 ] defined generalized Bernoulli
+numbers attached to \eps .
+
+
+
+Explicit Basis for the Eisenstein Subspace ¶
+
+Suppose \chi and \psi are primitive Dirichlet characters with
+conductors L and R , respectively.
+Let
+
+(4) E_{k,\chi,\psi}(q) = c_0 + \sum_{m \geq 1} \left(
+\sum_{n|m} \psi(n) \cdot \chi(m/n) \cdot n^{k-1}\right) q^{m}
+\in \Q(\chi, \psi)[[q]],
+where
+
+c_0 = \begin{cases} 0 & \text{ if } L>1, \\
+\ds- \frac{B_{k,\psi}}{2k} & \text{ if } L=1.
+\end{cases}
+Note that when \chi=\psi=1 and k\geq 4 , then E_{k,\chi,\psi} = E_k ,
+where E_k is from Chapter Modular Forms .
+
+Miyake proves statements that imply the following in
+[ Miy89 , Ch. 7].
+
+Theorem 5.8 Suppose t is a positive integer and \chi , \psi are as above
+and that k is a positive integer such that \chi(-1)\psi(-1) = (-1)^k .
+Except when k=2 and \chi=\psi=1 , the power series E_{k,\chi,\psi}(q^t) defines an element of M_k(RLt,\chi \psi) .
+If \chi=\psi=1 , k=2 , t>1 ,  and E_2(q) = E_{k,\chi,\psi}(q) , then E_2(q) - t E_2(q^t) is a modular form in M_2(\Gamma_0(t)) .
+
+Theorem 5.9 The Eisenstein series in M_k(N, \eps) coming from Theorem 5.8 with RLt \mid N and \chi \psi = \eps form a basis for the
+Eisenstein subspace E_k(N,\eps) .

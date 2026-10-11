@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-10-06",
+  "scope": "Four new original primary PDFs, exact snapshots pinned. Archived pages are not pages fully read. These papers establish background geometry/monodromy, not a new special-value irrationality theorem.",
+  "papers": [
+    {
+      "title": "Differential equations, mirror maps and zeta values",
+      "authors": ["Gert Almkvist", "Wadim Zudilin"],
+      "url": "https://arxiv.org/pdf/math/0402386v2",
+      "version": "arXiv:math/0402386v2, 16 December 2004",
+      "file": "literature/almkvist_zudilin2004_mirror_zeta_v2_20261006.pdf",
+      "sha256": "352d6278943a0da76f15cfc4e85b273a68e05995d6461c81359089834d5c99a4",
+      "bytes": 329270,
+      "pages": 38,
+      "actual_read_pdf_pages": [1, 2, 3, 7, 8, 9],
+      "actual_read_scope": "Abstract and introductory scope; fourth/fifth order exterior-square formulas and CY constraints. The project's complete companion derivation is independently certified rather than copied from a displayed identity.",
+      "not_claimed": "Full paper audit, new geometric theorem, or a numerical zeta irrationality result."
+    },
+    {
+      "title": "Calabi-Yau differential equations of degree 2 and 3 and Yifan Yang's pullback",
+      "authors": ["Gert Almkvist"],
+      "url": "https://arxiv.org/pdf/math/0612215v1",
+      "version": "arXiv:math/0612215v1, 8 December 2006",
+      "file": "literature/almkvist2006_yang_pullback_v1_20261006.pdf",
+      "sha256": "888eabb6e2bbd23bd8a5b22fb8f6c1c9ad503105a8ef64f849e31d979f875786",
+      "bytes": 170328,
+      "pages": 28,
+      "actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "actual_read_scope": "Fourth/fifth-order CY conditions, exterior-square and pullback formulas, introductory explicit examples. No full catalogue scan is claimed."
+    },
+    {
+      "title": "Monodromy for the hypergeometric function nF(n-1)",
+      "authors": ["Frits Beukers", "Gert Heckman"],
+      "url": "https://math.uchicago.edu/~drinfeld/Hypergeometric_motives/Beukers-Heckman.pdf",
+      "version": "Inventiones mathematicae 95 (1989), 325-354; original article PDF downloaded 2026-10-06",
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "bytes": 1398608,
+      "pages": 30,
+      "actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8],
+      "actual_read_scope": "Definitions and local monodromy; Propositions 2.10, 3.2, 3.3 and Theorem 3.5 (Levelt), companion matrices (3.9). Project Sp4 density is separately established by exact Lie algebra closure, not an unread classification theorem."
+    },
+    {
+      "title": "D-brane masses at special fibres of hypergeometric families of Calabi-Yau threefolds, modular forms, and periods",
+      "authors": ["Kilian Bönisch", "Albrecht Klemm", "Emanuel Scheidegger", "Don Zagier"],
+      "url": "https://people.mpim-bonn.mpg.de/zagier/files/preprints/ADEK.pdf",
+      "version": "Author-hosted BONN-TH-2022-07 snapshot downloaded 2026-10-06; exact PDF pinned without identifying it with another revision",
+      "file": "literature/bonisch_klemm_scheidegger_zagier_periods_author_20261006.pdf",
+      "sha256": "f124aab462ae953eff9a2c9df28cff63e1b63adad792a572a1c608226fdfac83",
+      "bytes": 758740,
+      "pages": 79,
+      "actual_read_pdf_pages": [1, 6, 7, 13, 14, 15, 16, 17, 18, 19, 20, 33],
+      "actual_visual_check": "PDF7 Table 1 rendered with Poppler and actually viewed; first row is half parameters, 1/mu=2^8=256, mirror four quadrics. Render is research/cdt_odd_spin_primary_table_20261006.png.",
+      "actual_read_scope": "Title/abstract; Section 2.1 and Table 1 half-parameter four-quadrics operator, Section 2.4.2 explicit quotient/resolution and coordinate z=1/(2psi)^8, and Section 4 introduction for conifold Kuga-Sato correspondence. Complete Section 4 and integral period comparison have not been audited."
+    }
+  ],
+  "archived_pdf_count": 4,
+  "archived_pdf_pages": 175,
+  "research_note": "research/cdt_odd_classical_spin_pullback_20261006.md",
+  "new_numeric_irrationality_theorem": false,
+  "new_lean_verification": false
+}

@@ -1,0 +1,814 @@
+
+=== PHYSICAL PAGE 113 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+113
+We plug (7.5.1), (7.5.7), and (7.5.8) into (7.2.14) and derive:
+m2
+2
+ 
+log |φ′(0)| −σm + 1
+m2
+ r
+X
+h=1
+u2
+hbh −2
+m2 (ξ
+m
+X
+i=1
+ei +
+
+max
+1≤i≤m ei
+
+Im
+ξ (ξ))
+!!
+≤m
+
+T(φ; r, λ, µ) +
+λ
+r + 1 + µ
+2
+
+−(T(φ; r, λ, µ) −Γ(log R; r, λ, µ))2
+2(log |φ′(0)| −log R)
+−χ0Γ(log R; r, λ, µ) + χ2
+0(log R −µ)
+1
+2 −
+1
+r(r + 1)
+
+,
+which rearranges into the claimed bound on m.
+□
+Example 7.5.9. In the proof of Theorem A, we use φ as in § A.5, and recall that
+m = 14,
+log |φ′(0)| = log
+
+256 · 5448339453535586608000000000
+8658833407565631122430056127
+
+,
+τ(b; e) = 27
+80 + 191
+49 ,
+and that all fi have convergence radii at least R := 4.
+Select the following for the binomial metric weight parameters:
+r = 4.7, λ = 10, µ = −4.5.
+A numerical computation gives
+T(φ; 4.7, 10, −4.5) = 6.5316 . . . ,
+Γ(log 4; 4.7, 10, −4.5) = 2.6429 . . . ,
+with
+χ1 = 1.0522 . . . ,
+χ0 = 0.57035 . . . ,
+meeting the special assumptions that we made in Theorem 7.1.13, and supplying
+the holonomy bound m ≤13.8527 . . . < 14. The contradiction supplies a proof
+of Theorem A (see § 13), with a better numeric than when we use Theorem 7.0.1
+alone like in § A.5, prior to the convexity enhancement by Theorem 7.1.10.
+If we only work with 9 functions as in Remark A.5.2, with the same parameters
+above replacing m = 9, τ(b′; 0) = 2 · 157
+81 , we have the bound in Theorem 7.1.13
+is 9.5234 . . . < 10, but not enough to draw a contradiction to deduce Theorem A.
+△
+7.6. A further improvement. The setup is similar to Theorem 7.1.6: fix a set
+of subradii 1 = rl > rl−1 > · · · > r0 > 0. The following is the counterpart — and
+ultimate sharpening — of the archimedean term in the refined bound from § 6. In
+place of using the Hermitian line bundle L = (ι, φ)∗([0], log+ |z|−1), we introduce
+weights s0, . . . , sl ∈[0, 1] with total mass Pl
+h=0 sh = 1, and use the s-weighted
+average of the Hermitian line bundles defined by the restricted maps φ(rkz):
+L
+′ :=
+lY
+h=0
+L
+⊗sh
+rh .
+
+=== PHYSICAL PAGE 114 ===
+114
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+Here, by a mild abuse of R-line bundle notation, this is the line bundle L = O(1)
+over X with Hermitian metric defined by
+∥· ∥L
+′ :=
+lY
+h=0
+∥· ∥sh
+Lrh.
+As in § 7.4, for 1 ≤k ≤l, set
+βk := L
+′ · Lrk −L
+′ · Lrk−1
+log rk −log rk−1
+=
+Pl
+h=0 sh(Lrh · Lrk −Lrh · Lrk−1)
+log rk −log rk−1
+.
+(7.6.1)
+We note that by the same argument30 as in Lemma 7.4.5 we have
+Lrh · Lrk =
+Z
+T2 log |φ(rhz) −φ(rkw)| µHaar(z)µHaar(w).
+Therefore, since all sh ≥0, Lemma 7.1.4 on convexity shows that
+0 ≤β1 ≤β2 ≤· · · ≤βl.
+As in Theorem 7.1.6, we assume βl ≤m. (If this condition fails, it usually serves
+as a stronger bound on m anyhow.) We extend the notation by setting β0 := 0 and
+βl+1 := m. For n/D ∈[βk, βk+1), we estimate the archimedean evaluation height
+in terms of φrk. Namely, the proof of Lemma 7.4.1 with L replaced by L
+′ gives
+h∞(ψ(n)
+D ) ≤−n log |φ′(0)| −n log rk + D(L
+′ · Lrk) + o(D).
+Similarly to the proof of Theorem 7.1.6, using Theorem 3.2.13, we have that VD ⊂
+[0, (m + ϵ)D] once D ≫ϵ 1, and for n ∈[mD, (m + ϵ)D], we continue to use the
+bound on h∞(ψ(n)
+D ) from taking the full radius rl = 1. As D →∞and then ϵ →0,
+we obtain
+lim sup
+D→∞
+(
+D−2 X
+n∈VD
+h∞(ψ(n)
+D )
+)
+≤−m2
+2 log |φ′(0)|
++
+l
+X
+k=0
+(βk+1 −βk)L
+′ · Lrk −1
+2(β2
+k+1 −β2
+k) log rk.
+We have the same estimate on hfin(ψ(n)
+D ) as in (7.3.15). Finally,
+d
+deg ED =
+ 
+m
+2 (L
+′.L
+′) +
+r
+X
+h=1
+uhyh −ξ
+ m
+X
+i=1
+ei
+!
+D2 + o(D2).
+30These are actually the same statement upon changing φ(z) to φ(rkz) and r to rh/rk, if
+h ≤k.
+
+=== PHYSICAL PAGE 115 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+115
+Hence, by the slopes inequality (7.2.14) as before, we get
+m2 (log |φ′(0)| −τ(b; e))
+≤−mL
+′ · L
+′ +
+l
+X
+k=0
+
+−(β2
+k+1 −β2
+k) log rk + 2(βk+1 −βk)L
+′ · Lrk
+
+= 2mL
+′ · L1 −mL
+′ · L
+′ −
+l
+X
+k=1
+
+−β2
+k(log rk −log rk−1) + 2βk(L
+′ · Lrk −L
+′ · Lrk−1)
+
+= 2mL
+′ · L1 −mL
+′ · L
+′ −
+l
+X
+k=1
+(L
+′ · Lrk −L
+′ · Lrk−1)2
+log rk −log rk−1
+= 2mL
+′ · L1 −mL
+′ · L
+′ −
+l
+X
+k=1
+βk(L
+′ · Lrk −L
+′ · Lrk−1)
+= mL
+′ · L1 −mL
+′ · L
+′ +
+l
+X
+k=0
+(βk+1 −βk)L
+′ · Lrk.
+(7.6.2)
+Note that (7.6.2) gives a bound on m for every choice of partition s = {sh}l
+h=0,
+and it recovers the convexity saving of Theorem 7.1.6 as the special case s =
+(0, 0, . . . , 0; 1).
+We propose the following choice of {sh}l
+h=0.
+Let us postulate the following
+system of l + 1 inhomogeneous linear equations in the l + 1 unknowns sh:
+sh = 1
+m(βh+1 −βh),
+0 ≤h ≤l,
+β0 = 0, βl+1 = m.
+(7.6.3)
+This choice is explained in Remark 7.6.7 below. We suppose the (l+1)×(l+1) coef-
+ficient matrix of this linear system to have a nonzero determinant, and furthermore
+that the unique solution {s∗
+h} has nonnegative components. This solution clearly
+has Pl
+h=0 s∗
+h = 1, and we can set our sh := s∗
+h in (7.6.2). The inequality (7.6.2)
+then reads:
+m2(log |φ′(0)| −τ(b; e)) ≤m
+l
+X
+h=0
+s∗
+hLrk · L1.
+In this situation we derive the following refined holonomy bound:
+m ≤
+Pl
+h=0 s∗
+h · Lrk · L1
+log |φ′(0)| −τ(b; e).
+We summarize our findings into a theorem:
+Theorem 7.6.4. Assume the same conditions and notation as in Theorem 7.0.1.
+Fix a sequence of subradii 1 = rl > rl−1 > · · · > r0 > 0. Assume that the following
+system of l + 1 linear inhomogeneous equations in the l + 1 unknowns {sh}l
+h=0
+m
+k−1
+X
+h=0
+sh =
+Pl
+h=0 sh(Lrh · Lrk −Lrh · Lrk−1)
+log rk −log rk−1
+,
+k = 1, . . . , l,
+l
+X
+h=0
+sh = 1
+(7.6.5)
+has a unique solution {s∗
+h} ∈[0, 1]l+1.
+
+=== PHYSICAL PAGE 116 ===
+116
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+Then,
+m ≤
+Pl
+h=0 s∗
+hLrk · L1
+log |φ′(0)| −τ(b; e) = L1 · L1 −Pl−1
+h=0 s∗
+h(L1 · L1 −Lrh · L1)
+log |φ′(0)| −τ(b; e)
+.
+(7.6.6)
+Remark 7.6.7. The special assumptions about the linear system (7.6.5) having a
+unique solution with nonnegative components appears to hold in practice. We do
+not know if it is a general feature. The heuristic behind this particular choice of
+sh = s∗
+h is to emulate the Euler–Lagrange stationary action principle on our upper
+bound (7.6.2). Namely, we compute the d/dsh derivatives of that upper bound,
+2mL
+′ · L1 −mL
+′ · L
+′ −
+l
+X
+k=1
+(L
+′ · Lrk −L
+′ · Lrk−1)2
+log rk −log rk−1
+and set these derivatives to 0.
+△
+Example 7.6.8. Let us revisit now the first case in Example 7.4.6: l = 1, r0 =
+e−1/2, and 14 putative functions for Theorem A. We have
+C := L1 · L1 = 11.844 . . .
+B := L1 · Le−1/2 = 10.573 . . .
+A := Le−1/2 · Le−1/2 = 8.3717 . . . .
+Now the point of the improvement over the previous bound is that
+2L1 · Le−1/2 > L1 · L1 + Le−1/2 · Le−1/2.
+We calculate
+β1 = s0(B −A) + s1(C −B)
+log r1 −log r0
+= 2(s0(B −A) + s1(C −B)) > 2(C −B) = α1,
+whence
+s∗
+0 = 1
+mβ1(s∗
+0, s∗
+1) > α1/m.
+The new convexity saving is by
+s∗
+0(C−B)
+log |φ′(0)|−τ(b;e) >
+α1(C−B)/m
+log |φ′(0)|−τ(b;e), where the latter
+was the previous convexity saving in Example 7.4.6. Explicitly, we find s∗
+0 and s∗
+1
+as the solution of the two linear equations
+s0 = 2
+m(s0(B −A) + s1(C −B)),
+s1 = 1 −2
+m(s0(B −A) + s1(C −B)).
+The solution is
+s∗
+0 =
+C −B
+m/2 + (A + C −2B) = 0.20936 . . .
+resulting in the following improvement convexity saving over Example 7.4.6 (com-
+pare with equation (7.4.7)):
+s∗
+0(C −B)
+log |φ′(0)| −τ(b; e) = 0.31426 . . . (> 0.27243 . . .).
+In other words, the refined holonomy bound on m is here
+13.99303 . . . −0.31426 . . . = 13.678 . . . ,
+(7.6.9)
+giving a still more comfortable numerical margin for the ultimate contradiction
+to m = 14. (A similar but more complicated computation with four radii instead
+of two would also yield a slight improvement on equation (7.4.8) in Example 7.4.6.)
+△
+
+=== PHYSICAL PAGE 117 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+117
+At this point, a reader primarily interested in the proof of Theorems A and C
+can skip directly ahead to § 9 on a first reading.
+7.7. On bypassing the Kolchin–Shidlovsky type theorems from § 3.2. At
+least for our specific and qualitative applications in the present paper, it is tech-
+nically possible to avoid all recourse to the — fairly technical — zero estimates
+we collected in § 3.2. As the general case of our abstract holonomy bounds seems
+somewhat awkward to approach in its full generality31 without using the func-
+tional bad approximability theorems, while on the other hand the Shidlovsky (or
+Chudnovsky–Osgood) type of input is a golden standard in the subject which —
+furthermore and more importantly — turns out indispensable for all quantitative
+refinements in our method to deriving actual Diophantine inequalities on the bad
+approximability of a period vector by an integer vector, we limit ourselves here to
+only a few brief indications on how one could technically avoid the appeal to § 3.2
+or the purpose of proving certain relaxed versions of our holonomy bounds, still
+sufficient for all our present applications in this paper.
+We recall that for all the proofs in this section, we have made the assumption
+that 0 = u0 ≤u1 ≤· · · ≤ur < ur+1 = m in the denominators form (6.0.3), as
+permutation on the columns of b does not change the assumption on fi.
+7.7.1. Discussion for Theorem 7.0.1. We sketch a proof of (7.0.3) that bypasses § 3.2
+under assuming the stronger positivity condition log |φ′(0)| > σm+max(ei) in place
+of (7.0.2). In our application to Theorem A, and to at least some weaker form (i.e.,
+with 10−6 replaced by a smaller explicit positive number) of Theorem C, this con-
+dition is satisfied since log |φ′(0)| = log
+ 256 · 5448339453535586608000000000
+8658833407565631122430056127
+
+> 5.08 >
+4 + 1 = σm + maxm
+i=1(ei) in § A.5.
+Let h∞(ψ(n)
+D ), hfin(ψ(n)
+D ) denote the main terms in the bounds on the archimedean,
+resp. finite evaluation heights h∞(ψ(n)
+D ), hfin(ψ(n)
+D ) that we proved in (7.3.9), resp. (7.3.11),
+(7.3.12), and (7.3.13); in hfin, we take the optimal parameters choices yh := bhuh
+that we used at the end of our proof. Thus the global evaluation height has an
+upper bound with main term h(ψ(n)
+D ) = h∞(ψ(n)
+D ) + hfin(ψ(n)
+D ) given by
+−n log |φ′(0)| + D
+
+O(1) · O(1)
+
++
+ r
+X
+h=1
+bh max{n, uhD}
+!
++ nχ[0,ξ](n/D)
+
+max
+1≤i≤m ei
+
+Jξ(n/D),
+(7.7.2)
+where ξ ∈[0, m] is our cutoff parameter from the definition of τ ♯in our estimates,
+and we set for s ≥1
+Jξ(s) :=
+
+1
+s
+⌊(s−1)/ max(1,ξ)⌋
+X
+j=1
+1/j
+
++
+
+1
+⌊(s + (ξ −1)+)/ max(1, ξ)⌋−ξ
+s
++
+;
+and for s < 1,
+Jξ(s) :=
+
+1 −ξ
+s
++
+.
+31We do not have such a proof.
+
+=== PHYSICAL PAGE 118 ===
+118
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+By our proof, we only need to show that
+X
+n∈VD
+h(ψ(n)
+D ) ≤
+mD−1
+X
+n=0
+h(ψ(n)
+D ) + o(D2).
+To this end, it is sufficient to show that for n ≥mD, we have
+h(ψ(n)
+D ) ≤
+min
+0≤n′<mD h(ψ(n′)
+D
+) + o(D).
+(7.7.3)
+We observe Jξ(s) is a continuous function in s which is piecewise smooth on
+the intervals of the form (kξ + 1, (k + 1)ξ), ((k + 1)ξ, (k + 1)ξ + 1), where k ∈N.
+Moreover
+J′
+ξ(s) = −1
+s2
+k
+X
+j=1
+1/j ≤0
+on s ∈(kξ + 1, (k + 1)ξ), and
+J′
+ξ(s) = −1
+s2
+
+−ξ +
+k
+X
+j=1
+1/j
+
+≤ξ/s2
+on s ∈((k + 1)ξ, (k + 1)ξ + 1).
+Moreover, Jξ(s) = 0 for s ∈(0, min{1, ξ}].
+Hence Jξ(s) + ξ/s is a decreasing function of s ∈R>0, and in particular, its [ξ, ∞)
+maximum is taken at s = ξ, with value 1. We analyze the function
+F(s) := −s
+ log |φ′(0)| −σm −(
+m
+max
+i=1 ei)Jξ(s)
+
+.
+It is continuous on s ∈R>0 and piecewise smooth on the intervals of the form
+(kξ + 1, (k + 1)ξ), ((k + 1)ξ, (k + 1)ξ + 1). For s ≥ξ, in each of those intervals,
+F ′(s) = −
+
+log |φ′(0)| −σm −
+
+max
+1≤i≤m ei
+
+Jξ(s)
+
++
+
+max
+1≤i≤m(ei)
+
+sJ′(s)
+≤−
+
+log |φ′(0)| −σm −
+
+max
+1≤i≤m ei
+
+Jξ(s)
+
++
+
+max
+1≤i≤m ei
+
+ξ/s
+≤−log |φ′(0)| + σm +
+
+max
+1≤i≤m ei
+
+< 0.
+Note that since uh < m and ξ ≤m, we have for n ≥mD:
+h(ψ(n)
+D ) = −n log |φ′(0)| + D
+
+O(1) · O(1)
+
++ σmn + n
+
+max
+1≤i≤m ei
+
+Jξ(n/D).
+Our discussion then shows that h(ψ(n)
+D ) is a decreasing function in n on the
+requisite range n ≥mD. In fact, the same argument applies to see that h(ψ(n)
+D )
+is a decreasing function on the whole n ∈N. More precisely, for n/D ≥ξ and
+n/D ∈[uh, uh+1], we have
+h(ψ(n)
+D ) = −n log |φ′(0)| + D
+ 
+O(1) · O(1) +
+r
+X
+k=h+1
+ukbk
+!
++
+ h
+X
+k=1
+bk
+!
+n
++ n
+
+max
+1≤i≤m ei
+
+Jξ(n/D).
+(7.7.4)
+
+=== PHYSICAL PAGE 119 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+119
+Since Ph
+k=1 bk ≤σm, the same argument as above shows that
+Fh(s) := −s
+ 
+ log |φ′(0)| −
+h
+X
+k=1
+bk −(
+m
+max
+i=1 ei)Jξ(s)
+
+!
+has negative derivative and hence h(ψ(n)
+D ) is a decreasing function in n. For n/D < ξ
+and n/D ∈[uh, uh+1], we have
+h(ψ(n)
+D ) = −n log |φ′(0)| + D
+ 
+O(1) · O(1) +
+r
+X
+k=h+1
+ukbk
+!
++
+ h
+X
+k=1
+bk
+!
+n.
+Since Ph
+k=1 bk ≤σm < log |φ′(0)|, we conclude that h(ψ(n)
+D ) is a decreasing function.
+Thus we obtain (7.7.3), giving a proof of Theorem 7.0.1 free of appeal to the
+Shidlovsky type theorems from § 3.2, but under the stronger assumption that
+log |φ′(0)| > σm + maxm
+i=1(ei). In particular, in a manner free of any of the refer-
+ences in § 3, these remarks already suffice for proving Theorem 2.5.1 except for the
+clause that |φ′(0)| > emax(σm,τ(b)) can be relaxed to |φ′(0)| > eσm when the fi are
+a priori supposed holonomic.
+7.7.5. Discussion for the e = 0 case of Theorem 7.1.6. As the behavior of the
+function Jξ is the main obstacle to devising a clean proof of our general holonomy
+bounds not relying on functional bad approximability theorems for holonomic func-
+tions, and since we do not logically need an alternative proof for any of our appli-
+cations, we are content (still in the context of explaining how to bypass § 3.2) for
+Theorem 7.1.6 with demonstrating how to handle the case e = 0 and under the
+seemingly mild extra condition that
+m ≥max
+0≤k≤l
+
+
+
+ L · L
+
+−
+ Lrk · L
+
++ αk
+
+log |φ′
+rk(0)| −Ph(k)
+j=1 bj
+
+−Pr
+j=h(k)+1 ujbj
+log |φ′(0)| −σm
+
+
+,
+(7.7.6)
+where, for a given k, we pick the h(k) with αk ∈[uh(k), uh(k)+1), and we recall
+the convention α0 = 0. In other words, we will show without appealing to § 3.2
+that when e = 0 and under the conditions of Theorem 7.1.6, at least one of the
+dimension bounds (7.1.8) or
+m ≤max
+0≤k≤l
+
+
+
+ L · L
+
+−
+ Lrk · L
+
++ αk
+
+log |φ′
+rk(0)| −Ph(k)
+j=1 bj
+
+−Pr
+j=h(k)+1 ujbj
+log |φ′(0)| −σm
+
+
+
+(7.7.7)
+is in place. In practice, we have always found that the inequality (7.7.7) is already
+implied by the contrapositive of the condition inequality (7.1.8), in which case the
+conclusion (7.1.8) certainly follows.
+For n/D ∈[αk, αk+1]∩[uh, uh+1] (here h does not need to be h(k) defined above),
+the proof of Theorem 7.1.6 shows that
+h(ψ(n)
+D ) = −n log |φ′(0)| −n log rk + D(L · Lr) + n
+h
+X
+j=1
+bj + D
+r
+X
+j=h+1
+ujbj,
+(7.7.8)
+which, if viewed as a piecewise linear function in s = n/D, is continuous on s ∈
+[0, ∞). The local minima can only occur at points of the form s = αk, or over a
+
+=== PHYSICAL PAGE 120 ===
+120
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+line segment of slope 0. But for n/D ≥m we use as archimedean height evaluation
+bound
+h(ψ(n)
+D ) = −n log |φ′(0)| + D(L · L) + nσm,
+which decreases monotonically in s = n/D. Now to show (7.7.3), which as in (7.7.1)
+suffices to bypass the appeal to § 3.2 in our analysis in § 7.4, it is enough to check
+that
+h(ψ(mD)
+D
+) ≤min
+0≤k≤l h(ψ(αkD)
+D
+);
+here as αkD might not be an integer, by a slight abuse of notation, h(ψ(αkD)
+D
+) means
+replacing n in (7.7.8) by αkD. This unfolds to the definition of the condition (7.7.6).
+7.7.9. Discussion for Theorem 7.1.13. Under the conditions
+ξ > u1 ≥1,
+b1 > log R ≥0,
+log |φ′(0)| > σm + max
+1≤i≤m ei,
+Γ(log R, r, λ, µ) ≥u1 log R,
+(7.7.10)
+we show independently of § 3.2 that at least one of the dimension bounds (7.1.14)
+or
+m ≤
+T(φ; r, λ, µ) −Pr
+j=1 ujbj
+log |φ′(0)| −σm −(max1≤i≤m ei)Jξ(m)
+(7.7.11)
+is in place.
+In the practical situations of many applications, usually (7.7.11) is
+expected to be a smaller bound than (7.1.14). This applies for example to our
+proof of Theorem A via Example 7.5.9, where the conditions (7.7.10) are met, and
+the right-hand side of (7.7.11) is negative, whereas the holonomy bound of (7.1.14)
+is at ∼13.8527.
+Let h∞(ψ(n)
+D ) and hfin(ψ(n)
+D ) denote the respective main terms of our bounds
+on h(ψ(n)
+D ), given in (7.5.5), (7.5.4), and (7.5.6) (for the archimedean estimates),
+and (7.3.13) and (7.3.11) (for the finite estimates), according to the various cases
+in dependence on n/D. In these notations we have h(ψ(n)
+D ) continuous in s := n/D,
+and hence again we only need to ensure (7.7.3).
+In the case at hand, our assumptions imply m ≥max{χ1, ξ, u1, . . . , ur}. For
+n ≥mD, we derive for the left-hand side of (7.7.3):
+h(ψ(n)
+D ) = −n
+
+log |φ′(0)| −σm −
+
+max
+1≤i≤m ei
+
+Jξ(n/D)
+
++ DT(r, λ, µ).
+By the same analysis as in § 7.7.1, we derive that h(ψ(n)
+D ) is a decreasing function
+of n in the range n ≥max{ξ, χ1}D; therefore for n ≥mD, we have
+h(ψ(n)
+D ) ≤
+min
+max{ξ,χ1}D≤n′<mD h(ψ(n)
+D ).
+It remains to consider the range n′ < max{ξ, χ1}D. If ξ > χ1, then for s′ :=
+n′/D ∈[χ1, ξ] ∩[uh, uh+1], we have
+h(ψ(n)
+D ) = −n′
+
+log |φ′(0)| −
+h
+X
+j=1
+bj
+
++ D
+
+T(r, λ, µ) +
+r
+X
+j=h+1
+ujbj
+
+,
+and therefore h(ψ(n)
+D ) is a decreasing function in s′ in the range [χ1, ξ]; continuity
+the gives
+h(ψ(n)
+D ) ≤
+min
+χ1D≤n′<mD h(ψ(n)
+D ).

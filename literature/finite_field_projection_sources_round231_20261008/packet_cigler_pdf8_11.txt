@@ -1,0 +1,274 @@
+Proof
+
+By (1.11) we know that M n1   bn (i, j ) i , j 0 with
+                                                        n
+
+
+                                           2
+                       n
+                                  2k 
+    bn (i, j ) x y   (2k  1)   pk ( x) pk ( y )
+              i   j
+
+i, j                  k 0       k 
+    n                             n
+                                                       k  k  k  i  k  j  i j
+  (2k  1) Pk ( x) Pk ( y )   (2k  1) (1)i  j                     x y .
+  k 0                          k 0      i, j         i  j  i  j 
+
+This implies that M n1 has integer coefficients.
+
+As in [3] we show that
+                                  n
+                                                k  k  k  i  k  j 
+                                                
+                              k  max( i , j )  i  j  i 
+                                                                 
+                                                                      j 
+                                                                           (2k  1)  S (n, i, j )                  (2.14)
+
+with
+
+                            n  i  1 n  j  1 i 
+                                                                   2
+                                                              j
+S (n, i, j )  (i  j  1)                                
+                            n  j  n  i  i               
+by induction in n. We can assume that i  j.
+
+For n  k  i both sides are equal.
+We now have
+
+                                               n  i  2   n  j  2  i                        n  i  1  n  j  1  i 
+                                                                                      2                                                    2
+                                                                                   j                                                 j
+S (n  1, i, j )  S (n, i, j )  (i  j  1)                                    (i  j  1)                               
+                                               n  1  j   n  1  i  i                        n  j  n  i  i              
+               n  i  1  n  j  1  i 
+                                                    2
+                                                 j  ni2 n j 2 
+ (i  j  1)                                                   1
+               n  j  n  i  i                 n 1 j n 1 i    
+               n  i  1  n  j  1  i 
+                                                    2
+                                                 j  (i  j  1)(2n  3)
+ (i  j  1)                                 
+               n  j  n  i  i                 (n  1  j )(n  1  i )
+
+
+                                              n  1 n  1 n  1  i  n  1  j 
+It remains to show that the last term equals                                    (2n  3),
+                                              i  j  i                    j 
+
+which is easy to verify.
+Remark 2.2
+Christian Krattenthaler has observed that (2.14) is a special case of the very well-poised
+hypergeometric summation formula (Lucy Joan Slater [12], Appendix (III.12))
+
+                 a                         
+             a,  1, b, c, d                 1  a  b   1  a  c   1  a  d   1  a  b  c  d 
+                  2
+ F                                      ;1                                                                     .
+     a , 1  a  b, 1  a  c, 1  a  d   1  a   1  a  b  c   1  a  b  d   1  a  c  d 
+5 4
+
+                                           
+    2                                      
+                                                               8
+Changing k  n  k in (2.14) gives
+
+                                                                                                                   1                          
+                   (1  2n)(1  n) (1  n) (1  n  i ) (1  n  j )
+                                       (i )               ( j)         (i )                ( j)        1  2n, 2  n, i  n, j  n, 1        
+S ( n, i , j )                                                                                    F                                       ;1 ,
+                                                    i !  j !
+                                                          2        2                              5 4
+                                                                                                        1  n,  i  n,  j  n,  i  2 n 
+                                                                                                                                              
+                                                                                                       2                                      
+
+where x ( j )  x( x  1) ( x  j  1) denotes a rising factorial. If we set
+(  n)         (n   )               m!
+         lim                (1) m  n    for m, n  , we get again (2.14).
+ (  m)  0 (  m   )               n!
+
+
+
+3. Hankel determinants of harmonic numbers
+
+                                 tkn
+Let H n (t )  H n (t ,1)         and consider the Hankel determinants D ( n, t ) : det  H i  j (t 
+                                                                                                          n
+                                                                                                                   .
+                                                                                                            , j 0
+                            k 1 k
+                                                                                                          i
+
+
+
+Since H 0 (t )  0 the above construction does not work. But by elementary operations we get
+
+                                                                                      t            t n 1                  
+                                                                         1                                         0 
+                                                                                     2               n                     
+                                                                         t           t2             tn                     
+                                                                         2                                       H1 (t ) 
+                                                                                     3             n 1                    
+                        det  H i  j (t ) 
+                                               n
+                                                           (t ) n det  t 2         t3            t n 1                  .       (3.1)
+                                               i , j 0
+                                                                         3                                       H 2 (t ) 
+                                                                                      4             n2
+                                                                                                                           
+                                                                                                                    
+                                                                         tn         t n 1             t 2 n 1            
+                                                                                                                 H n (t ) 
+                                                                         n 1       n2                  2n                
+
+
+Comparing with (1.1) we see that
+
+                                                                                            n n  j 
+                                                                                                    
+                                                                                            j   j  H (t ).
+                                                                               n
+                                 D(n, t )  (t ) n d (n  1, t ) (t ) n  j                                                       (3.2)
+                                                                                                2n 
+                                                                                                         j
+                                                                              j 0
+                                                                                                
+                                                                                               n
+
+
+Therefore the computation of the Hankel determinants can be reduced to the computation of
+the polynomials
+                                                                   n
+                                                                            n  n          j
+                                                r (n, t ) :  (t ) n  j                   H j (t ).                           (3.3)
+                                                             j 0           j  j            
+
+
+
+
+                                                                               9
+Theorem 3.1
+Let
+                                                     n
+                                                                  n  n  j 
+                                       r (n, t )   (t ) n  j            H j (t ).                                  (3.4)
+                                                   j 0           j  j 
+Then
+
+
+                                                                                           2
+                                                                                         t n r (n, t )
+                         D(n, t )  det  H i  j (t ) 
+                                                           n
+                                                                       (1)   n
+                                                                                                           2
+                                                                                                               .           (3.5)
+                                                           i , j 0
+                                                                                    2n  n 1     2 j
+                                                                                      (2 j  1)  
+                                                                                    n  j 1       j 
+
+
+Thus our problem has been reduced to the study of r (n, t ). The summation package Sigma by
+Carsten Schneider [11] gives a computer proof of
+Lemma 3.2
+The sequence  r ( n, t )  satisfies the recurrence
+
+                          nr (n, t )  (t  2)(2n  1)r (n  1, t )  t 2 (n  1)r (n  2, t )  0                         (3.6)
+
+
+with initial values r (0, t )  0 and r (1, t )  2t.
+
+Proof
+
+                                                 n  n  j 
+For the polynomials f (n, j, t )  (t ) n  j              H j (t ) Sigma provides another set of
+                                                 j  j 
+                                        n n  j               n  2 j 
+                                                                                                       j
+                                                                                                         t 
+                            (1) n  j   
+                                        j  j 
+                                                     (4 n  6) t           ( j  j 2  jn)t j   j 2
+                                                                                                      1  
+polynomials g (n, j , t )                                                                                
+                                             n 1 j                        (n  1)(n  2) (n  j  2) 
+                                                                                                           
+                                                                                                           
+such that
+
+w(n, j , t ) : (n  1)t 2 f (n, j , t )  (2n  3)(t  2) f (n  1, j , t )  (n  2) f (n  2, j , t )  g (n, j , t )  g (n, j  1, t )
+
+for 0  j  n and
+
+w(n, n, t ) : (n  1)t 2 f (n, n, t )  (2n  3)(t  2)  f (n  1, n, t )  f (n  1, n  1, t ) 
+(n  2)  f (n  2, n, t )  f (n  2, n  1, t )  f (n  2, n  2, t )   g (n, n, t )  g (n, 0, t ).
+
+By summing over all 0  j  n we get
+
+
+
+
+                                                                       10
+                                                                                     n
+(n  2)r (n  2, t )  (t  2)(2n  3)r (n  1, t )  t 2 (n  1)r (n, t )   w(n, j )
+                                                                                    j 0
+
+ g (n, 0, t )  g (n,1, t )  g (n,1, t )  g (n, 2, t )    g (n, n, t )  g (n, 0, t )  0.
+
+Although these results have automatically been found they can be verified by hand.
+
+
+4. The special cases t  1 and t  2.
+
+4.1 The Hankel determinants det  H i  j 
+                                                            n
+
+                                                            i , j 0
+
+
+                                   n
+                                                n n  j 
+By (3.6) the sequence r ( n,1)   ( 1) n  j           H j satisfies
+                                 j 0           j  j 
+nr (n,1)  (2n  1)r (n  1,1)  (n  1)r (n  2,1)  0
+
+with initial values r (0,1)  0 and r (1,1)  2.
+
+The sequence H n satisfies the same recurrence
+
+nH n  (2n  1) H n 1 (t )  (n  1) H n  2 (t )  0,
+
+because n  H n  H n 1   1  (n  1)  H n 1  H n  2  .
+
+The only difference are the initial values H 0  0 and H1  1.
+
+Therefore
+                                                          r (n,1)  2 H n .                                 (4.1)
+From (3.2) we deduce
+Theorem 4.1
+
+                           D(n,1)  det  H i  j 
+                                                      n                             2H n
+                                                                  (1) n                           2
+                                                                                                        .   (4.2)
+                                                      i , j 0
+                                                                             2n  n 1     2 j
+                                                                               (2 j  1)  
+                                                                             n  j 1       j 
+
+
+Remark 4.2
+Perhaps it is instructive to sketch the genesis of this result.
+After computing the first terms of the sequence of Hankel determinants
+
+
+
+
+                                                                       11
+

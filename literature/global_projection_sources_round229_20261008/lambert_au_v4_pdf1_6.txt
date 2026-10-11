@@ -1,0 +1,450 @@
+                                                 ITERATED INTEGRALS AND MULTIPLE POLYLOGARITHM AT ALGEBRAIC
+                                                                         ARGUMENTS
+
+
+                                                                                                      KAM CHEONG AU
+
+
+                                                    Abstract. By introducing a generalized notion of multiple zeta values associated with an arbitrary finite subset
+                                                    S ⊂ P1 (C) and studying their transformation properties under rational functions, we show that multiple poly-
+                                                    logarithms evaluated at roots of unity (cyclotomic multiple zeta values, CMZVs) can be equivalently expressed
+                                                    in terms of iterated integrals involving certain non-root-of-unity arguments.
+                                                           We apply this theory to elucidate previously unknown Q-linear relations among CMZVs: they come from
+                                                    non-trivial solutions of certain S-unit equations in the function field of P1 (C), thereby attaining the motivic
+arXiv:2201.01676v4 [math.NT] 18 Aug 2026
+
+
+
+
+                                                    dimension for low levels and weights. We introduce a datamine of CMZVs that appears to be the first rigorous
+                                                    compilation of this kind in the literature.
+                                                           In addition, we formulate several non-trivial Galois descent conjectures for multiple polylogarithms and
+                                                    present applications to certain Apéry-type infinite series.
+
+
+
+
+                                                                                                     1. Introduction
+
+                                              Various aspects of the multiple polylogarithm
+                                                                                                                                 an1 1 ⋯ank k
+                                                                                       Lis1 ,⋯,sk (a1 , ⋯, ak ) ∶=       ∑                sk ,
+                                                                                                                     n1 >⋯>nk ≥1 n1 ⋯nk
+                                                                                                                                   s1
+
+
+                                           are closely connected to deep arithmetic questions, including functional equations and their special values
+                                           [18,21,34,57]. In this article, we investigate a largely unexplored aspect of these special values in the case where
+                                           the parameters ai are roots of unity.
+                                              In this case, the multiple polylogarithm is known as a colored multiple zeta value or cyclotomic multiple
+                                           zeta value (CMZV). More precisely, when the ai are N -th roots of unity, the si are positive integers, and
+                                           (a1 , s1 ) ≠ (1, 1), the number Lis1 ,⋯,sk (a1 , ⋯, ak ) ∈ C is called a CMZV of weight n = s1 + ⋯ + sk and level N . The
+                                           special case N = 1 is the well-known multiple zeta value. Denote the Q-span of CMZVs of weight n and level N
+                                           by CMZVN
+                                                  n.
+                                              Like classical MZVs, CMZVs carry natural shuffle and stuffle algebra structures, a feature that has attracted
+                                           considerable attention in the literature [9, 11, 39, 46, 47, 58, 59]. In this work, we present a new perspective on
+                                           CMZVs: we show that one remains within the world of CMZVs even when certain parameters ai are no longer
+                                           roots of unity. To illustrate this phenomenon, recall that CMZVs admit an interpretation in terms of iterated
+                                           integrals over roots of unity:
+                                                                                                           dx1      dxn
+                                                                       n = SpanQ {∫
+                                                                   CMZVN                                          ⋯        ∣cN ∈ {0, 1}, c1 ≠ 1, cn ≠ 0} .
+                                                                                          1>x1 >⋯>xn >0   x1 − c 1 xn − c n i
+                                           When N = 5, we will see that the space CMZV5n can equivalently be described as follows (see Example 3.7;
+                                           µ = e2πi/5 ):
+                                                                                                            √            √
+                                                                              dx1     dxn                       5+3          5+1
+                                               SpanQ {∫                             ⋯        ∣ci ∈ {0, 1,           ,            , −µ − µ2 − µ3 , 1 + µ}, c1 ≠ 1, cn ≠ 0} .   (1.1)
+                                                             1>x1 >⋯>xn >0   x1 − c1 xn − cn                    2            2
+                                              Allowing non-roots of unity to appear in the iterated-integral description of CMZVs has several important
+                                           advantages. In particular, it enables us to
+
+                                              2020 Mathematics Subject Classification. Primary: 11M32, 11Y40. Secondary: 33B30, 33C20.
+                                              Key words and phrases. Datamine, Iterated integral, Linear relations, Multiple zeta values, Polylogarithm.
+                                                                                                                 1
+2                                                                 KAM CHEONG AU
+
+
+                                 n in terms of Lis1 ,⋯,sk (a1 , ⋯, ak ) with ∣ai ∣ < 1, thereby enabling rapid numer-
+     (1) express elements of CMZVN
+          ical evaluation, in contrast with the slow convergence of the original defining series;
+     (2) uncover certain mysterious Q-linear relations between them that are predicted to exist but do not follow
+          from evident relations;
+     (3) formulate conjectures reflecting deep Galois-descent phenomena for multiple polylogarithms;
+     (4) translate a wide range of classical problems into the well-developed framework of CMZVs—illustrated
+          in this article by certain infinite sums.
+    We shall return to points (2)–(4) after stating our main theorem and outlining the methodology. While
+we will not address point (1) in this article, it could have potential applications to the calculation of certain
+Feynman integrals [4, 14, 36–38].
+
+1.1. Methodology, main result and some consequences. The following is a corollary of our main result
+(Corollary 3.6). We first introduce the abbreviation
+                                          1                                            dx1      dxn
+                                  ∫           ω(c1 )⋯ω(cn ) ∶= ∫                              ⋯         .
+                                      0                               1>x1 >⋯>xn >0   x1 − c 1 xn − c n
+
+Corollary 1.1. Let S = {0, ∞, 1, e2πi/N , ⋯, e2πi(N −1)/N }, and let R(x) be a rational function such that R−1 (R(S)) =
+S and {0, 1, ∞} ⊂ R(S). Then the iterated integral
+                                                             1
+                                                     ∫           ω(c1 )⋯ω(cn ) ∈ CMZVN
+                                                                                     n,
+                                                         0
+
+provided that c1 ≠ 1, cn ≠ 0, ci ∈ R(S).
+
+    The earlier claim (1.1) follows from the above result by choosing a suitable R. As a further consequence,
+consider the generalized polylogarithm Lis1 ,⋯,sk (a1 ), defined as Lis1 ,⋯,sk (a1 , ⋯, ak ) when a2 = ⋯ = ak = 1. For
+many non-root-of-unity values z, these polylogarithms turn out to be CMZVs—often in highly non-obvious
+ways—as illustrated in Table 1.
+
+                  Level N                                                      z
+                      4       1±i
+                               2√
+                                   , 1±i
+                                         √           √
+                                                , 3−2 5 , 2−µ+µ5 −2µ
+                                                                   2     3
+                              1− 5
+                      5          2
+                                       , 5−12                         √                   √
+                      6       1 1
+                                ,
+                              4 3
+                                     ,  − 1
+                                          2
+                                            , − 1 8 1
+                                                  ,
+                                                3 9 9
+                                                     ,    , − 1 3+i 3
+                                                              8
+                                                                ,    6
+                                                                           ,  − √i , 1−i 3
+                                                                                  3      4
+                      7       1
+                              2 √
+                                 csc(   3π
+                                            )
+                                        14 √ 4
+                                              , 1
+                                                   csc  (
+                                                       2 3π
+                                                          14
+                                                             ) ,  sin  (
+                                                                      2 π
+                                                                         7 √
+                                                                             ) sec  (
+                                                                                   2 π
+                                                                                      14
+                                                                                         ) , sin( π7 ) sec( 3π )
+                                                        √                             √                  √ 14
+                      8       2− 2 2− 2
+                                 4
+                                       , 2 , 3 − 2 2, − √2 , 8 , 12 2 − 16, (1 − 2)i
+                                                                   1   4−3      2
+                                  √             √             √                √               √               √   √
+                     10       1
+                              5
+                                , 5 − 2, 5+1      4
+                                                      , 9 − 4 5, √25 , 5 5 + 11, 20 5 − 44, 5−516 5 , 9−45 5
+                                              √              √          √            √         √              √        √
+                     12       − √13 , 1 − 3, 21 − 12 3, 3−38 3 , 12−7              24
+                                                                                       3 9−5 3
+                                                                                         ,    18
+                                                                                                   , 27 − 15 3, 97 − 56 3
+                          Table 1. Some values of z for which Lis1 ,⋯,sk (z) is a level-N CMZV.
+
+
+    Our proof of Corollary 1.1 proceeds by introducing a new space MZVSn , where S is an arbitrary finite subset
+of P1 ∶= C ∪ {∞}. Roughly, it is the space spanned by iterated integrals of the form (see Section 3.1 for the full
+definition)
+                                                      dx1     dxn
+                                                            ⋯        ,                ci ∈ S,
+                                                     x1 − c1 xn − cn
+where the paths of integration range over all admissible paths in P1 whose endpoints lie in S.
+    Our main result, from which the above corollary follows, is Theorem 3.5.
+
+Theorem 1.2 (Main theorem). Let N ≥ 3 and S = {0, ∞, 1, µ, ⋯, µN −1 }, where µ = e2πi/N . Then CMZVN
+                                                                                                   n =
+MZVSn .
+               ITERATED INTEGRALS AND MULTIPLE POLYLOGARITHM AT ALGEBRAIC ARGUMENTS                                3
+
+
+   A key advantage of the space MZVSn is that it has useful transformation properties when the set S is replaced
+by its image R(S) under a rational function R (Proposition 3.2). These properties are completely invisible on
+the CMZVN
+        n side and constitute a central strength of our approach.
+   The theory underlying this result, developed throughout Section 2, is nevertheless non-trivial. The main
+difficulty lies in handling iterated integrals taken along various paths whose endpoints may coincide with sin-
+gularities of the integrand.
+   To address this issue, we draw on an established framework developed by Racinet [47] and later reformulated
+by Zhao [60]. We shall consider certain group-like elements in a formal power series ring formed from iterated
+integrals. The Hopf algebra structure of the ring provides a convenient language for the regularization setup.
+Our arguments also require the machinery of tangential base points at both finite and infinite points of P1 ; see
+Proposition 2.9.
+   While the development of the theory and the proof of the main results (Sections 2–4) are entirely theoretical,
+explicit examples and applications necessarily involve a substantial amount of computation. These aspects are
+explored in Sections 5, 6, and 7.
+
+1.2. Non-standard relations. A deep result of Deligne and Goncharov provides an upper bound for the
+motivic dimension of CMZVN
+                         n:
+
+
+Theorem 1.3 ([29, 30]). Let D(n, N ) be defined by
+                                                  ⎧
+                                                  ⎪
+                                                  ⎪
+                                                  ⎪
+                                                  ⎪(1 − t2 − t3 )−1         if N = 1
+                                    ∞             ⎪
+                                                  ⎪
+                                                  ⎪
+                               1 + ∑ D(n, N )tn = ⎨(1 − t − t2 )−1          if N = 2
+                                                  ⎪
+                                                  ⎪
+                                                  ⎪
+                                   n=1
+                                                  ⎪
+                                                  ⎪
+                                                  ⎪             2 −1
+                                                  ⎩(1 − at + bt )
+                                                  ⎪                         if N ≥ 3
+
+where a = φ(N )/2 + ν(N ), b = ν(N ) − 1. Here ν(N ) denotes the number of distinct prime factors of N and φ is
+                                                              n is bounded above by D(n, N ). Moreover, if
+the Euler totient function. Then the motivic dimension of CMZVN
+N ∈ {1, 2, 3, 4, 6, 8}, then the motivic dimension is exactly D(n, N ).
+
+   Assuming Grothendieck’s period conjecture [35], all Q-linear relations between elements of CMZVN
+                                                                                                  n should
+be motivic. While the dimension formula above does not provide an explicit description of such relations, it
+does specify how many independent relations must exist.
+   For N = 1 or 2, it is widely believed that all Q-relations should follow from stuffle and shuffle relations [10].
+For general N , the known mechanisms for producing Q-relations among CMZVs were summarized by Zhao
+[58–60]. These include:
+      ● shuffle relations, coming from the iterated-integral representation;
+      ● stuffle relations, coming from the series definition; and
+      ● distribution relations, reflecting symmetries among roots of unity.
+In this work, we focus on identifying additional relations that are not explained by these standard mechanisms.
+Following Zhao, we refer to them as non-standard relations.
+   For many composite levels N , numerical evidence indicates their existence. The smallest such example is
+N = 4, where Zhao exploited the octahedral symmetry of the configuration {0, ±1, ±i, ∞} ⊂ P1 to construct
+non-standard relations. For other values of N , however, they remain elusive.
+   In Section 5, we introduce a new class of relations, which we call S-unit relations, and show that they generate
+many new non-standard relations.
+
+Definition 1.4. Let S = {0, ∞, 1, µ, ⋯, µN −1 }, where µ = e2πi/N . A rational function R∶ P1 → P1 is called
+N -unital if
+                                                R−1 ({0, 1, ∞}) ⊂ S.
+4                                                           KAM CHEONG AU
+
+
+    Finding such an R is equivalent to solving an S-unit equation in the function field of P1 : the condition says
+that both R and 1 − R have divisors supported on S. By a classical finiteness result [44, 49], only finitely many
+N -unital functions exist.
+    We briefly describe the structure of an S-unit relation, postponing precise formulations to Section 5.2. Let
+R1 , R2 , ⋯, Rr be N -unital functions such that
+       ● R1 (0) ∈ {0, 1, ∞};
+       ● Ri (1) = Ri+1 (0) for i = 1, ⋯, r − 1; and
+       ● Rr (1) = R1 (0).
+Then the paths Ri ○ [0, 1] concatenate to form a loop in P1 based at a point of {0, 1, ∞}. The S-unit relation
+is of the form
+                                        1
+                                ∫           R1∗ w + ⋯ + Rr∗ w ≡ 0 (mod product of lower weights),
+                                    0
+
+where w is a word in the alphabet { dx , dx }. Note that the above integral is in CMZVN because the Ri are
+                                     x 1−x
+N -unital.
+    The author expects that the standard relations, together with S-unit relations, suffice to reach the motivic
+bound of Theorem 1.3 for N = 6 and N = 8. The case N = 6 is particularly noteworthy: although it has
+been studied by several authors, a complete set of relations does not seem to have been rigorously obtained
+before now. Ablinger [1,3] developed ad hoc methods to produce some, but not all, such relations. Independent
+numerical approaches motivated by applications in high-energy physics also revealed them [14, 37].
+    Our Corollary 1.1 also resolves questions concerning Q-relations among certain generalized MZVs studied by
+Borwein and Broadhurst [12–15]. Two representative examples (discussed in Section 5.4) are
+                                                                              1
+                           Multiple Deligne value ∶                 {∫            ω(c1 )⋯ω(cn )∣ci ∈ {0, 1, e2πi/6 }}
+                                                                          0
+
+                                                                                                     √    √
+                                                                    1                             1+ 5 3+ 5
+                      Multiple Landen value ∶              {∫           ω(c1 )⋯ω(cn )∣ci ∈ {0, 1,      ,    }}
+                                                                0                                   2    2
+
+1.3. Datamine of CMZVs. The S-unit relations, combined with standard relations, allow us to rigorously
+construct many previously unknown Q-linear relations, thereby reaching the motivic dimension for several levels
+and weights where this was previously inaccessible. Once the motivic dimension is attained, every CMZV can
+be expressed as a Q-linear combination of a conjecturally independent set of basis constants.
+    For N = 1, 2, a datamine already exists [10]. For higher levels, however, no comparable systematic resource
+appears to be available in the literature1. We therefore introduce a Mathematica package2 that provides explicit
+reductions for the following levels N and weights n:
+       ● n ≤ 5 for N = 3;
+       ● n ≤ 6 for N = 4;
+       ● n ≤ 4 for N = 5;
+       ● n ≤ 5 for N = 6;
+       ● n ≤ 4 for N = 8;
+       ● n ≤ 3 for N = 7, 10, 12.
+The package also makes the membership statement of Corollary 1.1 explicit; the underlying algorithm is briefly
+described in Section 4. The datamine inspires several conjectures concerning Galois descent, which we describe
+next, and has been applied to a number of classical problems since the manuscript first appeared as a preprint.
+
+    1Partial or empirical databases by other authors do exist; see the end of Section 5.3 for an overview.
+    2Available at https://www.researchgate.net/publication/357601353.
+                   ITERATED INTEGRALS AND MULTIPLE POLYLOGARITHM AT ALGEBRAIC ARGUMENTS                               5
+
+
+1.4. Relations between polylogarithms and Galois descent. Table 1 implies that Lin (α) is a CMZV
+of some level for many non-root-of-unity values α. Once all linear relations among CMZVs of that level are
+known—i.e., once the motivic dimension is reached—one can rigorously verify identities among such polyloga-
+rithmic values.
+   As an example, we give a conceptual (Section 6.3) and effectively computable proof of Coxeter’s famous
+ladder [28, 41]:
+                                                                      π2          √
+                       Li2 (ρ20 ) = 2Li2 (ρ10 ) + 15Li2 (ρ4 ) − 10Li2 (ρ2 ) +ρ = ( 5 − 1)/2,
+                                                                      5
+revealing its close connection with the geometry of the regular icosahedron. Many other ladder identities admit
+a similar reinterpretation via CMZVs (see Section 6). Our goal here is not to establish new identities, but rather
+to demonstrate how CMZVs provide an interesting perspective for understanding them.
+   Another direction suggested by Table 1 concerns Galois descent for multiple polylogarithms—a subtle and
+rather unexplored phenomenon. See [20, 23, 33, 54, 61] and [14, Conjecture 5] for examples and a discussion
+of Galois descent for CMZVs. Roughly speaking, it says that suitable Galois symmetrizations of CMZVs of a
+higher level appear to descend to a lower level.
+   As the simplest example, Table 1 implies that Lin ( 1±i
+                                                        2
+                                                           ) ∈ CMZV4n , and evidence in lower weights suggests
+that
+                                          1+i            1−i ?
+                                               ) + Lin (
+                                                   Lin (    ) ∈ CMZV2n .
+                                            2             2
+More generally, we make the following conjecture.
+
+Conjecture 1.5. For integers n ≥ 1 and k ≥ 1, we have the following.
+(a)
+                                                                 1+i                  1−i ?
+                                           ∑     (Lis1 ,⋯,sk (       ) + Lis1 ,⋯,sk (    )) ∈ CMZV2n ,
+                                 s1 ,⋯,sk ≥1                      2                    2
+                                s1 +⋯+sk =n
+                                                                                               ?
+                                                    ∑         (Lis1 ,⋯,sk (i) + Lis1 ,⋯,sk (−i)) ∈ CMZV2n ,
+                                                s1 ,⋯,sk ≥1
+                                               s1 +⋯+sk =n
+
+here the individual terms are in             CMZV4n .
+(b) We have
+                                                                                              ?
+                                           ∑      (Lis1 ,⋯,sk (eπi/3 ) + Lis1 ,⋯,sk (e−πi/3 )) ∈ CMZV1n ,
+                                 s1 ,⋯,sk ≥1
+                                s1 +⋯+sk =n
+
+here the individual terms are in CMZV6n (actually in CMZV3n , see Example 3.9).
+             √
+(c) Let ρ = ( 5 − 1)/2. Then
+                                                                               ?
+                                                      Lin (ρ3 ) − Lin (−ρ3 ) ∈ CMZV5n ,
+here the individual terms are in CMZV10
+                                     n .
+(d) We have the following Galois descent from level 6 to 2 (see equation (6.1) below):
+                                                         1   3n−1      1 ?
+                                                   Lin (− ) − n−2 Lin ( ) ∈ CMZV2n .
+                                                         8   2         4
+   Part (b) of the conjecture has recently been checked up to weight 8 by Sun and Zhou [52]. Another Galois
+descent conjecture at level 4 is the following.
+
+Conjecture 1.6. For non-negative integers a, b, c, we have3
+
+                                                                              ω(−1) ] ∈ CMZV
+                                       1
+                               ∫           ω(0)a [ω(i) + ω(−i)] [ω(1)b                 c           2
+                                                                                                   1+a+b+c ,
+                                   0
+
+equivalently, the value of the integral
+                                       1     x
+                               ∫                  loga x logb (1 − x) logc (1 + x)dx ∈ CMZV21+a+b+c .
+                                   0       1 + x2
+   3Here we use notation that will be introduced in Section 2; in particular,         denotes the shuffle product.
+6                                                            KAM CHEONG AU
+
+
+Note that the left-hand sides are a priori elements of CMZV4 .
+
+    Here, we emphasize the importance of having a CMZV datamine: it enables us to formulate the above
+conjectures and to verify them in low weights.
+
+1.5. Apéry-type series. The classical Apéry series,
+                                                         ∞
+                                                            (−1)n      2ζ(3)
+                                                        ∑           =−       ,
+                                                        n=1 n ( n )
+                                                               2n
+                                                             3           5
+which played a role in Apéry’s proof of the irrationality of ζ(3), has inspired a vast literature devoted to
+discovering and rigorously proving similar identities. In particular, Sun [50, 51] has conjectured numerous
+striking but highly non-trivial series identities, such as
+                      ∞    (−1)n−1 (10Hn − n3 )         π4
+                     ∑                              =
+                     n=1         n3 (2n
+                                      n
+                                        )               30
+                      ∞    −102Hn + 3H2n +     28
+                                                         55 2
+                     ∑                         n
+                                                    =−      π ζ(3)
+                     n=1         n4 (2n
+                                     n
+                                       )                 18
+                      ∞
+                         H2n − Hn         πG 33ζ(3) 1 2
+                     ∑                 =−    +     + π log(2),                       G = Catalan’s constant.
+                        (3n
+                     n=1 n ) (2 n n2 )     2   32   24
+    Many of these series, as well as numerous related examples, can be converted into CMZVs. When the
+corresponding weight and level are sufficiently small and a datamine is available (such as the one developed in
+this work), these identities can then be proved automatically. Although CMZV-based approaches to Apéry-
+type series are not new [1–3, 5, 6, 40, 62, 63], we illustrate how the theory developed in this article can unify this
+approach.
+    That said, the CMZV approach has inherent limitations. In particular, it cannot address more challenging
+cases in which the relevant weight or level is too large. For example, the following identities lie beyond the
+reach of current CMZV datamines:
+                                                                                        (2)      (−1)n
+         ∞     2n (−7Hn + 2H2n + n2 )      π2                                    ∞   6H⌊n/2⌋ −               13π 4
+         ∑                              = − log(2),                              ∑
+                                                                                                   n2
+                                                                                                         =         ,
+         n=1          n2 (2n
+                          n
+                            )              2                                  n=1     n2 (2n )               1620
+                                                                                           n
+         ∞     3n (−8Hn + 6H2n + n5 )       26ζ(3)                       ∞ (2n) (9H
+                                                                                     2n+1 + 2n+1 )
+                                                                                              32
+                                                                                                                       5πζ(3)
+         ∑                              =          ,                    ∑
+                                                                             n
+                                                                                                         = 40β(4) +           .
+         n=1          n2 (2n
+                          n
+                            )                 3                         n=1     16n (2n + 1)2                            12
+
+    Such identities become more tractable when CMZV techniques are combined with hypergeometric transfor-
+mation formulas arising from Wilf–Zeilberger pairs. Since this hybrid approach falls outside the scope of the
+present article, we refer the reader to [7, 8, 26, 27] for proofs and further discussion. Accordingly, the purpose of
+Section 7 is not to derive new results of this type, but rather to illustrate how far one can proceed using CMZV
+techniques alone.
+
+    This article is organized as follows. In Section 2, we establish notation and recall the necessary algebraic
+background on iterated integrals and tangential base points. Section 3 introduces the space MZVSn , states our
+main theorem, and discusses some of its immediate consequences; the proof of this theorem is given in Section 4.
+Section 5 applies the developed framework to S-unit relations and introduces the datamine for CMZVs. The
+final two sections are devoted to applications: Section 6 concerns identities involving polylogarithms, while
+Section 7 discusses Apéry-type series.
+
+                                                         2. Preliminaries
+
+2.1. Shuffle algebra. Let X = {x1 , ⋯, xk } be a finite set. Denote by Q⟨X⟩ the non-commutative polynomial
+ring over Q generated by X, and let Q⟪X⟫ be its completion (the ring of formal power series). Treating X as
+an alphabet, let X ∗ be the set of words (including the empty word) over X.
+

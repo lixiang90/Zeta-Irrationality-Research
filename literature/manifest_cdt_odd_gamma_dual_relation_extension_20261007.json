@@ -1,0 +1,314 @@
+{
+  "status": "FINAL",
+  "date": "2026-10-07",
+  "agent": "/root/source_pencil_finalize",
+  "created_at_utc": "2026-10-06T21:59:00.967262+00:00",
+  "scope": "One-way completed source receipt. Documentary metadata only; no mathematical producers created, executed, imported or rerun.",
+  "previous_frozen_baseline": {
+    "records": 588,
+    "mathematical_files": 583,
+    "guards": 5,
+    "prior_audit": "research/cdt_odd_delivery_balanced_gamma_direction_20261007.json",
+    "prior_audit_sha256": "b3a9c11266257168b103c14a13541b503dc53df1d7ad56c327c8ea83a5c43d50",
+    "audit_reading": "Full JSON parse, top-level schema/header/current_progress read; no claim of full manual rereading or direct all-588 physical checking by this agent."
+  },
+  "authority_reading": "Actual FULL current main sections181-185; mutable authority report is not pinned.",
+  "completed_text_reading": {
+    "own_main": "Actual FULL final author reread of f8e36 stable main after receiving repinned 4d02 final review; two archival-owner lines corrected, mathematics unchanged.",
+    "incoming_review": "Actual FULL final 4d02 V1-V7 read; PASS no mathematical correction.",
+    "assigned_peer_main": "Actual FULL final 0a9e candidate all10 sections T1-T28.",
+    "own_peer_review": "Actual FULL reviewer final selfread R1-R7.",
+    "frozen_inputs": "Actual FULL Gamma G1-G19, Gamma independent R1-R7, period E1-E24.",
+    "additional_companion": "Actual FULL root reference H1-H17 informally checked; not pinned as a review target or future closure dependency."
+  },
+  "paper_results": [
+    "Exact selfdual Green pairing and rank9 reflection column w_i=-5(-1)^i kappa_(8-i)/(8pi^8).",
+    "Polynomial forcing splits explicitly; nonpolynomial inverse coefficient functional C_R yields exact complete conifold jump.",
+    "Actual original U identity gives rational forcing R5 with C_R5=zeta5 and Q-Taylor relation-filled F_u=B5-u f0.",
+    "Exact ordinary forcing pole5 produces nonzero x4log branch, complete nine-component Green residue jump, selected rank2 and full-jet rank10.",
+    "All primes/all n,m ratio estimate yields fixed380928 D_n^9 lift cap and pair tau27/4.",
+    "Independent formal tensor review passes actual O(r) group hypotheses, scalar ranks, complete jumps and paid caps with restricted three-point field obstruction."
+  ],
+  "not_proved": [
+    "New numerical irrationality or linear independence for zeta/L/Catalan",
+    "New Lean formalization",
+    "CDT strict margin",
+    "Rational forcing identity C_R=kappa5 or kappa7",
+    "Integral Betti lattice or motivic/admissible normal function for the new inverse-L extension",
+    "Complete original alpha*zeta4+beta*zeta5 forcing lifting within this branch"
+  ],
+  "actual_primary_reading": [
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "snapshot_sha256": "d8f04d9d6477c2da86cc05516d8a865fbb582e44b1e280749b690f707cc43994",
+      "pdf_pages": 43,
+      "actual_full_read_pdf_pages": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26
+      ],
+      "distinct_read_pages": 9,
+      "source_url": "https://arxiv.org/pdf/1908.07501v2",
+      "archive_provenance": "existing_archive",
+      "downloaded_by_this_agent_this_round": false
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "snapshot_sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "pdf_pages": 25,
+      "actual_full_read_pdf_pages": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "distinct_read_pages": 4,
+      "source_url": "https://arxiv.org/pdf/2602.04128v1",
+      "archive_provenance": "existing_archive",
+      "downloaded_by_this_agent_this_round": false
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "snapshot_sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "pdf_pages": 30,
+      "actual_full_read_pdf_pages": [
+        1,
+        2,
+        19,
+        25,
+        26
+      ],
+      "distinct_read_pages": 5,
+      "source_url": "https://arxiv.org/pdf/2312.14051v4",
+      "archive_provenance": "existing_archive",
+      "downloaded_by_this_agent_this_round": false
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "snapshot_sha256": "98d13843bf09e0ae20e9df9c589dfdbb5973243578eb069749e4106754e06d0f",
+      "pdf_pages": 10,
+      "actual_full_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "distinct_read_pages": 9,
+      "source_url": "https://arxiv.org/pdf/1206.1787v2",
+      "archive_provenance": "masked_racah_finalize_shared_new_archive_normal_TLS",
+      "downloaded_by_this_agent_this_round": false,
+      "archive_owner": "/root/masked_racah_finalize"
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "snapshot_sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "pdf_pages": 218,
+      "actual_full_read_pdf_pages": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "distinct_read_pages": 4,
+      "source_url": null,
+      "archive_provenance": "existing_fixed_snapshot",
+      "downloaded_by_this_agent_this_round": false,
+      "citation_note": "Existing fixed v2 SHA snapshot; download URL is not newly asserted in this receipt."
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "snapshot_sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "pdf_pages": 30,
+      "actual_full_read_pdf_pages": [
+        2,
+        20,
+        21,
+        22,
+        23
+      ],
+      "distinct_read_pages": 5,
+      "source_url": "https://doi.org/10.1007/BF01404449",
+      "archive_provenance": "existing_archive",
+      "downloaded_by_this_agent_this_round": false
+    },
+    {
+      "file": "literature/apery1979_asterisque.pdf",
+      "snapshot_sha256": "12781716e9c7744bc632e9c2afdf985bf8a7ca776cccc34638e17e35a0c70384",
+      "pdf_pages": 4,
+      "actual_full_read_pdf_pages": [
+        4
+      ],
+      "distinct_read_pages": 1,
+      "source_url": "https://numdam.org/book-part/AST_1979__61__11_0/",
+      "archive_provenance": "existing_archive",
+      "downloaded_by_this_agent_this_round": false
+    }
+  ],
+  "primary_distinct_read_pages": 37,
+  "reading_stage_counts": {
+    "own_main": 25,
+    "peer_review_new_pages": 12,
+    "total_distinct": 37
+  },
+  "renders_actually_viewed": [
+    {
+      "file": "research/cdt_period_extension_reading_20261007/au_pdf26.png",
+      "source_pdf": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "source_pdf_page": 26,
+      "counts_as_additional_distinct_page": false
+    }
+  ],
+  "new_downloads_by_this_agent": {
+    "pdf": 0,
+    "html": 0,
+    "code": 0,
+    "notes": "Laporte shared archive downloaded by /root/masked_racah_finalize with normal TLS; existing PDF not duplicated. No TLS verification bypass."
+  },
+  "mathematical_execution_history": {
+    "new_mathematical_producers": 0,
+    "mathematical_execution": 0,
+    "old_or_peer_producer_imports": 0,
+    "old_or_peer_reruns": 0,
+    "guard_execution": 0,
+    "prime_extension": 0,
+    "mathematical_failures": 0,
+    "new_lean": 0,
+    "documentary_only": "PDF pypdf extraction, existing image view, UTF8 recovery, text/JSON read-write and hashes."
+  },
+  "pin_policy": "Only completed stable main/reviews, frozen inputs/audit, actual primary snapshots and actually viewed existing render. No mutable main, future audit, own hash or peer receipts.",
+  "physical_pins": [
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_20261007.md",
+      "kind": "own_main",
+      "bytes": 18371,
+      "sha256": "f8e36b1bf0b605d73574e556bc9cc382a944a07523b74dc5d12a5b64446208ab",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_gamma_dual_relation_extension_independent_review_20261007.md",
+      "kind": "incoming_formal_review",
+      "bytes": 7949,
+      "sha256": "4d02fb1a8c75c8c3d7dc30aad161281296e9fb4e4520146970d4a3fb619203d0",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_20261007.md",
+      "kind": "assigned_review_target",
+      "bytes": 18617,
+      "sha256": "0a9eb062f5ca02f3337a9532457a01b6b8904e064b2ff1ebf187b302388adc9e",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_gamma_tensor_taylor_projection_independent_review_20261007.md",
+      "kind": "own_outgoing_formal_review",
+      "bytes": 7704,
+      "sha256": "bac0eb168d7d731a21ab53d30ffd215447ac99cc05187b22e09da4934567f4ca",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_gamma_connection_projection_20261007.md",
+      "kind": "frozen_math_input",
+      "bytes": 18401,
+      "sha256": "0bb53d928dbc925dadce1e7dd2c4a1bdd148af0e7c81be4659070aeb893fff44",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_gamma_connection_projection_independent_review_20261007.md",
+      "kind": "frozen_review_input",
+      "bytes": 7266,
+      "sha256": "57ab8bf119ac7c84c440c0c1a9a8c3644501ca16fb206406817037fc612b8646",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_period_extension_relation_leaf_20261007.md",
+      "kind": "frozen_math_input",
+      "bytes": 16354,
+      "sha256": "30efdfedb6d4058dbf5cb0b70686f3d419a705704e1a6bb9ad70af73c850a962",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "research/cdt_odd_delivery_balanced_gamma_direction_20261007.json",
+      "kind": "frozen_prior_metadata_audit",
+      "bytes": 191975,
+      "sha256": "b3a9c11266257168b103c14a13541b503dc53df1d7ad56c327c8ea83a5c43d50",
+      "physical_sha_verified": true
+    },
+    {
+      "file": "literature/cdt_gamma_connection_sources_20261007/bloch_vlasenko2020_gamma_frobenius_arxiv1908_07501v2.pdf",
+      "kind": "primary_pdf",
+      "bytes": 508766,
+      "sha256": "d8f04d9d6477c2da86cc05516d8a865fbb582e44b1e280749b690f707cc43994",
+      "physical_sha_verified": true,
+      "pdf_pages": 43
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/kerr2026_three_vignettes_arxiv2602_04128v1.pdf",
+      "kind": "primary_pdf",
+      "bytes": 735709,
+      "sha256": "e619e19d73f196a64d1deb5cc6744e338fa150889c9b89a033a0552a02d2ec1e",
+      "physical_sha_verified": true,
+      "pdf_pages": 25
+    },
+    {
+      "file": "literature/cdt_period_extension_sources_20261007/au2024_wilf_zeilberger_seeds_arxiv2312_14051v4.pdf",
+      "kind": "primary_pdf",
+      "bytes": 938673,
+      "sha256": "e1312118c89628b095878a1b8c0e7166470a1b11b804905722e5faa743fbb78c",
+      "physical_sha_verified": true,
+      "pdf_pages": 30
+    },
+    {
+      "file": "literature/cdt_gamma_relative_chain_sources_20261007/laporte_walcher2012_inhomogeneous_picard_fuchs_arxiv1206_1787v2.pdf",
+      "kind": "primary_pdf",
+      "bytes": 309651,
+      "sha256": "98d13843bf09e0ae20e9df9c589dfdbb5973243578eb069749e4106754e06d0f",
+      "physical_sha_verified": true,
+      "pdf_pages": 10
+    },
+    {
+      "file": "literature/cdt2024_l2_chi_minus3.pdf",
+      "kind": "primary_pdf",
+      "bytes": 4517169,
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "physical_sha_verified": true,
+      "pdf_pages": 218
+    },
+    {
+      "file": "literature/beukers_heckman1989_hypergeometric_monodromy_20261006.pdf",
+      "kind": "primary_pdf",
+      "bytes": 1398608,
+      "sha256": "b967ed4369ada16ec9ff6d0d828f9984d8de7dbf1591c71562c7c44ce272ebda",
+      "physical_sha_verified": true,
+      "pdf_pages": 30
+    },
+    {
+      "file": "literature/apery1979_asterisque.pdf",
+      "kind": "primary_pdf",
+      "bytes": 217525,
+      "sha256": "12781716e9c7744bc632e9c2afdf985bf8a7ca776cccc34638e17e35a0c70384",
+      "physical_sha_verified": true,
+      "pdf_pages": 4
+    },
+    {
+      "file": "research/cdt_period_extension_reading_20261007/au_pdf26.png",
+      "kind": "existing_primary_render_actually_viewed_this_round",
+      "bytes": 200563,
+      "sha256": "7f556ea68b8d0c1d518a4c4dceabb6d428353de3377394bc8eb5126bfc237fa8",
+      "physical_sha_verified": true
+    }
+  ],
+  "physical_pin_count": 16,
+  "provenance_checks_passed": true,
+  "unfrozen_documentary_correction": "Before final publication/freeze, corrected shared Laporte download owner to /root/masked_racah_finalize, repinned final main and incoming review, and did not assert an unverified fixed-CDT download URL. Old588 immutable records were untouched."
+}

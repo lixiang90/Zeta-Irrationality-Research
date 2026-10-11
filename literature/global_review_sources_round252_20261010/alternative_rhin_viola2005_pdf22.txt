@@ -1,0 +1,51 @@
+410                        G EORGES R HIN AND C ARLO V IOLA
+
+
+
+Third case: j = k = 0, l > 0. From hl = 0 we get h = 0, and from j + k − m ≥ 0
+we get m = 0. Thus we have (0, 0, 0, l, 0), and we apply Lemma 2.5.
+Fourth case: j = k = l = 0, h > 0. Since j + k − m ≥ 0 we have m = 0. Thus
+we have (h, 0, 0, 0, 0), and again we apply Lemma 2.7.
+Fifth case: j = k = l = h = 0. Again by j + k − m ≥ 0 we get m = 0. Thus we
+have (0, 0, 0, 0, 0), and we apply Lemma 2.3.
+
+
+3. The permutation group
+
+In this section we show that the integrals (2.1), (2.2), (2.3) and (2.4) for z > 1 can
+be equipped with an algebraic structure, though not so rich as in the case z = 1
+treated in [4]. Our aim is to construct a permutation group acting on h, j, k, l, m
+together with the integers l +m − j, m +h −k, h + j −l, j +k −m occurring in (2.9),
+similarly to the construction in [4], and to derive the corresponding transformation
+formulae for the integrals (2.1), (2.2), (2.3) and (2.4).
+     Let
+       S = {h, j, k, l, m, l + m − j, m + h − k, h + j − l, j + k − m}.           (3.1)
+We recall from Section 2 that the permutation λ given by (2.8) acts on the set S as
+follows:
+         λ = ( j m)(k l)(l + m − j j + k − m)(m + h − k h + j − l).               (3.2)
+We now use the hypergeometric integral transformation, based on Euler’s inte-
+gral representation of the hypergeometric function. It is well known that for any
+a, b, c ∈ C satisfying Re c > max{Re a, Re b} and min{Re a, Re b} > 0, and
+for any t ∈ C \ [1, +∞), we have
+   1                                               1
+         x b−1 (1 − x)c−b−1      Γ (b)Γ (c − b)          x a−1 (1 − x)c−a−1
+                            dx =                                            dx,   (3.3)
+              (1 − xt)a          Γ (a)Γ (c − a)               (1 − xt)b
+   0                                                0
+where Γ denotes the Euler gamma-function (see [4], formula (3.2)). Hence, choos-
+ing a = j + k − m + 1, b = j + 1, c = h + j + 2, and t = (y − 1)/(yz) for
+0 < y ≤ 1 < z, we get
+  1
+            x j (1 − x)h
+                           dx
+             1 − y j+k−m+1
+   0     1+x
+                 yz
+                                               1
+                            h! j!                   x j+k−m (1 − x)m+h−k
+                =                                                        dx,      (3.4)
+                  (m + h − k)! ( j + k − m)!                 1 − y j+1
+                                               0       1+x
+                                                               yz
+provided m + h − k ≥ 0 and j + k − m ≥ 0.
+

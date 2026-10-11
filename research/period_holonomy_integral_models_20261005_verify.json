@@ -1,0 +1,137 @@
+{
+  "scope": "Exact symbolic diagnostics; all-scale statements have proofs in report.",
+  "checks": {
+    "mobius_derivative": true,
+    "log_derivative": true,
+    "integer_inverse": true,
+    "cyclic_determinant": true,
+    "infinity_omega1": true,
+    "infinity_omega2": true,
+    "monodromy_unimodular": true,
+    "compatible_product": true,
+    "first_blowup_chart": true,
+    "second_blowup_v_chart": true,
+    "second_blowup_b_chart": true
+  },
+  "connection": "Matrix([[0, 0, 0], [1/(3*s**2 + 3*s + 1), 0, 0], [0, 1/(s*(s + 1)), 0]])",
+  "cyclic_determinant": "-1/(s**2*(s + 1)**2*(3*s**2 + 3*s + 1))",
+  "boundary_discriminant": "-3",
+  "boundary_resultants_with_s_and_s_plus_1": [
+    "1",
+    "1"
+  ],
+  "monodromy_column_matrices": {
+    "origin": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "3",
+        "1"
+      ]
+    ],
+    "lower_cyclotomic_pole": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "upper_cyclotomic_pole": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "1"
+      ]
+    ],
+    "minus_one": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "2",
+        "-3",
+        "1"
+      ]
+    ]
+  },
+  "fixed_prefix_diagnostics": {
+    "1": {
+      "N": 12,
+      "denominator": 3080,
+      "inverse_recovered": true
+    },
+    "2": {
+      "N": 12,
+      "denominator": 9486400,
+      "inverse_recovered": true
+    }
+  },
+  "first_six_pulled_coefficients": {
+    "1": [
+      "1",
+      "-3/2",
+      "2",
+      "-9/4",
+      "9/5",
+      "0"
+    ],
+    "2": [
+      "1",
+      "-5/4",
+      "3/2",
+      "-27/16",
+      "171/100",
+      "-57/40"
+    ]
+  },
+  "m3_I_xi_piecewise": [
+    "x**2/2 - 3*x + 17/4",
+    "x**2 - 4*x + 19/4",
+    "5/2 - x",
+    "(3 - x)**2/2"
+  ],
+  "tau_sharp": {
+    "pure_0_1_2": "17/12",
+    "0_1_1": "5/6",
+    "0_1_0": "5/9"
+  },
+  "best_natural_type_tau": "25/18",
+  "report_sha256": "b8d4199f6a3b1b97d59481a87157be85652a431b00d444ba04600797b0a9ab1d",
+  "script_sha256": "2e0930fc6206de551086f2199de6bc3fd46a0c726a38560c4889d789b1fa6732"
+}

@@ -1,0 +1,351 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    165
+
+
+any polynomial relationship between the Ai (x) extends to (the same) polynomial
+relationship between the A  bi (x), and hence also to a polynomial relationship between
+the Ai (x)−Ai (x), which can sometimes be useful. But we can alternatively consider
+     b
+any identity between the A  bi (x) modulo functions which are holomorphic at 0. What
+may (and often does) happen in principle is that this reduces a linear relationship
+between a large number of functions to a smaller number of functions, and one can
+hope to employ some form of inductive strategy to establish full linear independence.
+A typical example is as follows: Suppose that the path γ starts at 0 ∈ S and
+is a simple loop around a single point 1 ∈ S. Then, if a proper subset of the
+functions Ai (x) are actually holomorphic at x = 1, the corresponding A     bi (x) vanish
+modulo holomorphic functions, and we obtain a corresponding linear relationship
+between the A bi (x) with fewer terms. A basic example of this is as follows. Suppose
+that
+                  A1 (x) = 1, A2 (x) = log(1 − x), A3 (x) = Li2 (x).
+After a suitably oriented loop around zero, we have
+      A
+      b1 (x) = 1,    b2 (x) = log(1 − x) + 2πi,
+                     A                             b3 (x) = Li2 (x) + 2πi log(x).
+                                                   A
+Now, modulo holomorphic functions at zero, we obtain a linear relationship between
+                                                                                 b3 (x)
+the three functions 0, 0, and 2πi log(x). Clearly this forces the coefficient of A
+to be zero, and reduces us to showing that A1 (x) and A2 (x) are linearly independent
+because log(1 − x) is not a rational function. We will use this strategy a number
+of times below. Note that another argument in this case would be to consider the
+functions Abi (x)−Ai (x) which reduces the problem to the C(x)-linear independence
+of 1 and log x.
+Lemma 12.0.1. The seven functions Bi (y) for i = 1, . . . , 7 defined in Section 10
+in equations (10.1.2), (10.1.3), and (10.2.1) respectively are linearly independent
+over C(y).
+Proof. We first of all note that the Bi (y) are all elements of QJyK. Therefore any
+linear dependency over C(y) upgrades to one over Q(y), and so it suffices to prove
+the result over Q(y).
+   We begin by proving the linear independence of the Bi (y) for i = 1, . . . , 5. By
+Lemma 9.0.3, it suffices to prove the linear independence of the 5-functions 1,
+log(1 − x), log2 (1 − x), Li2 (x), and and J(x) of equation (10.1.5) over Q(x). Cer-
+tainly 1, log(1 − x), and log2 (1 − x) are independent since log(1 − x) is transcen-
+dental over Q(x). These three functions are also defined on P1 ∖ {1, ∞} which
+distinguishes then from Li2 (x) — take a path γ from 0 which winds around x = 1,
+then winds around x = 0, then winds (in the opposite way) around x = 1, and
+returns to zero (as in Figure 12.0.7). The first three functions will be invariant,
+but Li2 (x) has non-trivial monodromy on this path. So Li2 (x) is independent
+of these previous functions. Now suppose that J(x) was a Q(x)-linear combi-
+nation of 1, log(1 − x), log2 (1 − x), Li2 (x). If the coefficient of Li2 (x) was non-
+trivial, then, after scaling, we may assume that it is 1. But now by differenti-
+ation, and using the ODE 10.1.6 for J(x), we obtain a new relation over Q(x)
+with 1, log(1 − x), log2 (1 − x), and J(x) only (with a non-trivial coefficient of J(x)
+because of the ODE). But J(x) also has non-trivial monodromy over the path γ, so
+we conclude as for Li2 (x) above. Now let us return to the P1 ∖ {0, 4, ∞} domain
+166                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+and consider the functions B6 (y) and B7 (y). Recall that:
+                            Z                      Z
+                               B3 (y)                  B4 (y)
+                   B6 (y) =           dy, B7 (y) =            dy.
+                                 y                       y
+Using the derivation formula
+                   Z               Z
+           d
+               A(y) F (y) dy = A′ (y) F (y) dy + A(y)F (y),                     (12.0.2)
+          dy
+we can firstly assume that the coefficients of our linear relation in Q(y) are poly-
+nomials, and then by differentiation reduce to an equality of the form
+                    Z                Z                5
+                      B3 (y)            B4 (y)       X
+                 a0          dy + a1           dy =      bi (y)Bi (y),      (12.0.3)
+                        y                 y          i=1
+
+where now a0 and a1 are constants which are not both zero and bi (y) ∈ Q(y). We
+note the
+                d
+       y(4 − y) B2 (y) = (2 − y)B2 (y) + y 2 ,
+               dy
+                d
+       y(4 − y) B3 (y) = − B2 (y) + 2y,
+               dy
+                                                                        (12.0.4)
+                d
+       y(4 − y) B4 (y) = (2 − y)B4 (y) + (4 − y)B2 (y) − 2y(4 − y),
+               dy
+                d
+      2y(4 − y) B5 (y) = (4 − y)B5 (y) − 2B2 (y) + 4y),
+               dy
+But now let us differentiate (12.0.3) to get
+                                              5
+                      B3 (y)      B4 (y) X
+                 a0          + a1       =     bi (y)Bi′ (y) + b′i (y)Bi (y).    (12.0.5)
+                        y           y     i=1
+
+We see from equation (12.0.4) and equating the coefficients of B4 (y) and B3 (y)
+respectively (and using the linear independence of Bi (y) for i = 1, . . . , 5 that
+                            a0
+                               = b′3 (y),
+                            y
+                                                                                 (12.0.6)
+                            a1              (2 − y)
+                               = b′4 (y) +          b4 (y).
+                            y              y(4 − y)
+From the former equation we get (up to constant)
+                                     b3 (y) = a0 log(y),
+which, since b3 (y) ∈ Q(y), can only happen if a0 = 0. We may also write the latter
+equation as
+                         p
+                       a1 y(4 − y)      d        p        
+                                     =      b3 (y) y(4 − y)
+                             y         dy
+But the integral of the left-hand side is not algebraic (if a1 ̸= 0) but the integral
+of the right-hand side is, so once more this can only happen when a1 = 0, and the
+linear independence is established.                                                □
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                   167
+
+
+
+
+                                      δ               β
+
+                                  0   α           1
+
+
+
+
+                    Figure 12.0.7. The path γ = α−1 β −1 δβα
+
+
+12.1. Linear Independence of pure functions and Zagier functions. Recall
+from Definition 11.2.1 that
+                                                 
+                                               x
+                            G(x) = H(x) + H         .
+                                              x−1
+We also let                                         
+                                                 x
+                      GA (x) = HA (x) + HA             ∈ ZJxK,
+                                               x−1
+which is a homogenous solution to a degree 4 ODE (given explicitly in equa-
+tion (12.1.5) below). Our final functional linear independence result is as follows:
+Lemma 12.1.1 (14 functions). The seven functions
+                       G(y) − G(0)             G(y) − G(0) − G′ (0)y
+        Z           Z                        Z
+           G(y) dy,                      dy,                         dy,
+                               y                       y2
+           G(y), G′ (y), G′′ (y), G′′′ (y),
+together with the seven functions Bi (y) for i = 1, . . . , 7, are linearly independent
+over C(y).
+Remark 12.1.2. It is easy enough to discover Lemma 12.1.1 experimentally. A
+collection of power series Ai (x) which satisfy a linear relation over C(y) also satisfy
+a linear relation with coefficients in C[y], and thus with coefficients which are
+polynomials of degree ≤ D for some D ∈ N>0 . But the question as to whether
+there exists such a relation for any given D is equivalent to the vanishing of the
+determinant of an explicitly computable matrix. Once one establishes that there
+are no such linear relations for D of moderate size (say D = 20), one is sufficiently
+convinced the result is true and then one writes down a proof. We admit that this
+is how we arrived at both Lemma 12.1.1 and Lemma 14.3.1, even though there is
+most likely a higher level proof which better explains the precise numerology. See
+also Remark 12.1.12.                                                                  △
+Proof. Since the Bi (y) are linearly independent by Lemma 12.0.1, any dependence
+must include at least one of the terms above with a non-zero coefficient. Let γ
+denote a path which first traverses 4, then −1/72, then 4 in the opposite direction,
+and then back to 0. The function G(y) is replaced by G(y),b     which is a solution
+to the same non-homogenous differential equation at G(y). On the other hand,
+168                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+the functions Bbn (y) = Bn (y) remain invariant Since G(y) ̸= G(y),     b    we obtain an
+equivalent relation between the functions
+
+                            G(y) − G(0)               G(y) − G(0) − G′ (0)y
+            Z            Z b                        Z b
+               G(y)
+               b    dy,                         dy,                         dy,
+                                     y                        y2
+               G(y),
+               b              b ′′ (y), G
+                     b ′ (y), G
+                     G                  b ′′′ (y)
+
+and the Bi (y) with the same coefficients. Hence, with ∆ = G(y)
+                                                              b     − G(y), we obtain
+a non-zero C(y)-linear relationship between the seven functions
+          Z           Z            Z
+                         ∆(y)         ∆(y)
+             ∆(y) dy,          dy,         dy, ∆(y), ∆′ (y), ∆′′ (y), ∆′′′ (y)
+                           y           y2
+But ∆(y) is now a homogenous solution to the corresponding degree 4 ODE which
+is irreducible, and so by replacing ∆(y) by its translates under elements of the
+monodromy group π1 (P1 ∖ {0, −1/72, 4, ∞}), we deduce that the corresponding
+linear relation must hold for any such ∆(y), including in particular the holomorphic
+solution ∆(y) = GA (y).
+   Assume such a linear relation exists. After scaling, we may assume that the
+coefficients lie in C(y) Using (12.0.2) again:
+                     Z                   Z
+             d                         ′
+                  A(y) F (y) dy = A (y) F (y) dy + A(y)F (y),                (12.1.3)
+            dy
+after repeated differentiation we may assume that the coefficients of the three in-
+tegral terms are all constants, and that at least one is non-zero. Hence there exists
+a relation
+     Z                  Z                  Z                 3
+                           GA (y)              GA (y)       X          (i)
+  a0 GA (y) dy + a−1              dy + a−2            dy  =     bi (y)GA (y). (12.1.4)
+                             y                   y2         i=0
+
+Note that we cannot insist that the bi (y) ∈ C[y], for two reasons. First is that the
+derivative terms from the integrals involve GA (y) divided by powers of y. But also
+                       (3)                (4)
+when differentiating GA (y) we obtain GA (y), and to write this in terms of lower
+                      (i)
+order derivatives in GA (y) we need to divide by the leading term in the differential
+equation. In fact, GA (x) satisfies the ODE
+                                 4
+                                              (i)
+                                 X
+                                       ci (y)GA (y) = 0,
+                                 i=0
+
+where ci (y) are defined as follows:
+
+c0 (y) = − 18(3 + 126y − 712y 2 + 360y 3 ),
+c1 (y) = 2(−2 − 2761y + 141632y 2 − 280328y 3 + 176412y 4 − 95616y 5 + 20736y 6 ),
+c2 (y) = 2y(−34 − 6353y + 690355y 2 − 1065613y 3 + 867876y 4 − 438336y 5 + 72576y 6 ),
+c3 (y) = 2(−4 + y)y 2 (10 + 204y − 118195y 2 + 146946y 3 − 142848y 4 + 41472y 5 ),
+c4 (y) = (−4 + y)2 y 3 (1 + 72y)(−1 + 118y − 122y 2 + 144y 3 ).
+                                                                                (12.1.5)
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                          169
+
+
+Thus we can assume that bi (y) ∈ C[y, c4 (y)−1 ]. Differentiating equation (12.1.4)
+one more time gives an identity
+                                                    3
+                     GA (y)       GA (y) X ′         (i)            (i+1)
+ a0 GA (y) + a−1            + a−2       =     bi (y)GA (y) + bi (y)GA (y). (12.1.6)
+                       y           y2     i=0
+
+We rewrite (12.1.6) as
+                 GA (y)    GA (y)
+     aGA (y) + b        +c
+                   y         y2
+        3                  3
+                  (i)                  (i)
+        X                 X
+      =   b′i (y)GA (y) +     bi−1 (y)GA (y) + b3 (y)G(4) (y),                            (12.1.7)
+          i=0                     i=1
+          3                       3                           3
+          X             (i)
+                                  X              (i)
+                                                             X   ci (y)
+      =         b′i (y)GA (y) +         bi−1 (y)GA (y) −                b3 (y)G(i) (y),
+          i=0                     i=1                        i=0
+                                                                 c4 (y)
+and thus we deduce the simultaneous equations
+                                          c3 (y)
+                      b′3 (y) + b2 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                          c2 (y)
+                      b′2 (y) + b1 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                                                                          (12.1.8)
+                                          c1 (y)
+                      b′1 (y) + b0 (y) −         b3 (y) =    0,
+                                          c4 (y)
+                                          c0 (y)                       a−1  a−2
+                                b′0 (y) −        b3 (y) =    a0 +          + 2 ,
+                                          c4 (y)                        y    y
+Recall that b3 (y) ∈ C[y, c4 (y)−1 ]. Moreover, given b3 (y), one can inductively solve
+for bi for i ∈ {2, 1, 0} from the equation
+                                           ci+1 (y)
+                               bi (y) =             b3 (y) − b′i+1 (y).
+                                            c4 (y)
+Our strategy is as follows. Since b3 (y) ∈ C(y), we can consider the power series
+expansion of b3 (y) around ∞ and around any point α ∈ C. Then, by considering
+the final equation, we obtain an explicit bound on the order of any pole of b3 (y)
+at α (note that b3 (y) will be holomorphic unless α = ∞ or is a root of c4 (y)). But
+that confines b3 (y) to be a rational function such that divisor (b3 (y)) + D ≥ 0 for
+an explicit divisor D supported at the roots of c4 (y). This is a finite dimensional
+(explicitly computable) vector space, and then we can solve for all possible b3 (y)
+using linear algebra. Another way to view this is to think of this system as a (non-
+homogenous) ODE in b3 (y), and we are computing the (possible) local expansions
+around any point using the Frobenius method. Explicitly, with α ̸= ∞, and
+                                                ∞
+                                                X
+                                    b3 (y) =           ri (y − α)i ,
+                                                i=N
+
+(with N = Nα and ri − = ri,α , and suppressing the subscript below) then:
+    (1) If α = 0, the last equality becomes:
+                        a−1  a−2  −1
+                 a0 +       + 2 =    (3 − N )2 (5 − 2N )2 rN y N −4 + . . .
+                         y    y    4
+170                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+      (2) If α = 4, the last equality becomes:
+             a−1  a−2  −1
+      a0 +       + 2 =    (3 − N )(2 − N )(5 − 2N )(3 − 2N )rN (y − 4)N −4 + . . .
+              y    y    4
+      (3) If α = −1/72, the last equality becomes:
+                a−1  a−2
+          a0 +      + 2 = (3 − N )2 (2 − N )(1 − N )rN (y + 1/72)N −4 + . . .
+                 y    y
+      (4) If α is a root β of 144y 3 − 122y 2 + 118y − 1 = 0, then
+              a−1     a−2
+        a0 +       + 2 = (3 − N )(2 − N )(1 − N )(1 + N )rN (y − β)N −4 + . . .
+               y       y
+      (5) At α → ∞, with
+                                                     ∞
+                                                     X
+                                      b3 (y) = y N         ri y −i ,
+                                                     i=N
+             we have
+                         a−1  a−2  −1
+                  a0 +       + 2 =    (3 − N )2 (5 − 2N )2 rN y N −4 + . . .
+                          y    y    4
+From this we deduce that:
+                                               N0 ≥ 2
+                                               N4 ≥ 2
+                                          N−1/72 ≥ 1                            (12.1.9)
+                                              Nβ ≥ − 1
+                                              N∞ ≤ 4.
+From this, it follows that
+                                        y 2 (y − 4)2 (y + 1/72)
+                          b3 (y) =                                Q(y),        (12.1.10)
+                                     (144y 3 − 122y 2 + 118y − 1)
+where Q(y) is a polynomial of degree at most 2. However, if we write
+                                     Q(y) = q0 + q1 y + q2 y 2 ,
+then we find that
+                     a−1  a−2        52542464y 12 q2 + . . .
+              a0 +       + 2 =                                                 (12.1.11)
+                      y    y      2
+                               36y (−1 + 118y − 122y 2 + 144y 3 )4
+where the numerator on the right-hand side is a degree 12 polynomial with coeffi-
+cients linear in Zq0 ⊕ Zq1 ⊕ Zq2 . But now by linear algebra one can directly check
+that there are no choices of the parameters qi to even make the numerator vanish
+to order (at least) one at a non-zero root of the denominator. Hence no such b3 (y)
+exists, and we are done.                                                         □
+
+Remark 12.1.12. Suppose instead we had tried to prove the (false!) linear inde-
+pendence of the seven functions Bi (y) together with
+                      G(y) − G(0)         G(y) − G(0) − G′ (0)y
+       Z           Z                   Z
+          G(y) dy,                 dy,                               dy,
+                           y                         y2
+          G(y) − G(0) − G′ (0)y − G′′ (0)y 2
+       Z
+                                             , dy, G(y), G′ (y), G′′ (y), G′′′ (y),
+                         y3
+

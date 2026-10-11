@@ -1,0 +1,152 @@
+Home   Search    Collections   Journals   About   Contact us    My IOPscience
+
+
+
+
+       Determinant representation of the domain-wall boundary condition partition function of a
+
+       Richardson–Gaudin model containing one arbitrary spin
+
+
+
+       This content has been downloaded from IOPscience. Please scroll down to see the full text.
+
+       2016 J. Phys. A: Math. Theor. 49 185202
+
+       (http://iopscience.iop.org/1751-8121/49/18/185202)
+
+       View the table of contents for this issue, or go to the journal homepage for more
+
+
+
+
+       Download details:
+
+
+       IP Address: 144.122.201.150
+       This content was downloaded on 10/05/2016 at 10:18
+
+
+
+       Please note that terms and conditions apply.
+                                                                 Journal of Physics A: Mathematical and Theoretical
+J. Phys. A: Math. Theor. 49 (2016) 185202 (15pp)                            doi:10.1088/1751-8113/49/18/185202
+
+
+
+
+Determinant representation of the domain-
+wall boundary condition partition function
+of a Richardson–Gaudin model containing
+one arbitrary spin
+                  Alexandre Faribault1, Hugo Tschirhart1,2 and
+                  Nicolas Muller1,3
+                  1
+                    Groupe de Physique Statistique, Institut Jean Lamour (CNRS UMR 7198), Université
+                  de Lorraine Nancy, B.P. 70239, F-54506 Vandoeuvre-lès-Nancy Cedex, France
+                  2
+                    Applied Mathematics Research Center, Coventry University, Coventry, UK
+                  3
+                    Université Joseph Fourier, Grenoble, France
+
+                  E-mail: alexandre.faribault@univ-lorraine.fr
+
+                  Received 12 November 2015, revised 22 February 2016
+                  Accepted for publication 10 March 2016
+                  Published 29 March 2016
+
+                  Abstract
+                  In this work we present a determinant expression for the domain-wall
+                  boundary condition partition function of rational (XXX) Richardson–Gaudin
+                                                             1
+                  models which, in addition to N - 1 spins 2 , contains one arbitrarily large spin
+                  S. The proposed determinant representation is written in terms of a set of
+                  variables which, from previous work, are known to deﬁne eigenstates of the
+                  quantum integrable models belonging to this class as solutions to quadratic
+                  Bethe equations. Such a determinant can be useful numerically since systems
+                  of quadratic equations are much simpler to solve than the usual highly non-
+                  linear Bethe equations. It can therefore offer signiﬁcant gains in stability and
+                  computation speed.
+
+                  Keywords: integrability, Bethe ansatz, Gaudin models
+
+
+1. Introduction
+                               ¼ nN }
+The N×N Cauchy matrix C{{n11¼  N } is deﬁned by matrix elements:
+
+                             1
+                  Cij =            ,                                                                           (1)
+                          ni -  j
+
+built out of two sets {n1 ¼ nN } and {1 ¼  N } of cardinality N for which every element of
+both sets are supposed distinct. In [1], it was shown through a recursive proof inspired by [2]
+1751-8113/16/185202+15$33.00 © 2016 IOP Publishing Ltd Printed in the UK                                         1
+J. Phys. A: Math. Theor. 49 (2016) 185202                                                  A Faribault et al
+
+
+that its permanent can be written as the determinant of an N×N matrix:
+                   Perm C{{n11¼¼nNN}} = Det J{{n11¼¼nNN}}
+deﬁned as
+                         ⎧ N
+                         ⎪ å k¹i i - k -             å k=1  - n
+                                    1                      N           1
+                                                                                 i = j,
+                   Jij = ⎨ 1                                      i        k
+                                                                                                        ( 2)
+                         ⎪ -                                                   i ¹ j.
+                         ⎩ i j
+Know that an alternative proof (De Nardis, private communication) involves using
+Borchardt’s identity [3]:
+                  Det C{{n11¼¼nNN}} Perm C{{n11¼¼nNN}} = Det M{{n11¼¼nNN}}                        (3)
+                    1
+with Mi, j =   (ni -  j )2
+                            .    The known inverse of the Cauchy matrix then allows one to ﬁnd the
+       ¼ nN }
+J{{n11¼                                                     -1
+          N } matrix through the direct calculation of J = C M .
+        The Cauchy permanent corresponds to the domain-wall boundary condition partition
+function of rational (XXX) Richardson–Gaudin quantum integrable models [4–9] as well as
+the scalar product between an arbitrary off-the-shell Bethe state and an arbitrary off-the-shell
+dual Bethe state in these systems. Therefore, the proposed determinant expression ﬁnds a
+direct application for these models and has been used to vastly improve the numerical
+approaches to their non-equilibirum dynamics [10, 11]. It has also recently allowed a similar
+construction for XXZ-Richardson–Gaudin models for which the partition function can be
+recast into the permanent of a Cauchy-matrix through the introduction of an arbitrary aux-
+iliary level [12].
+        Additionnally, a similar construction, which ﬁnds application for spin-boson realizationss
+of the generalized Gaudin-algebra, is based on the mathematical proof found in [13] that:
+                                                             {n ¼ n
+                     å          Perm C{{E11¼¼ENN}} = Det J˜{11¼  NN}+ M
+                                                                            }
+
+                   E Î S (N )
+
+with
+                         ⎧ N                               N +M
+                         ⎪ å k¹i i - k -             å k=1
+                                    1                                     1
+                                                                       i - nk
+                                                                                  i = j,
+                   Jij =
+                    ˜    ⎨                                                                              (4)
+                         ⎪  -1                                                  i ¹ j,
+                         ⎩ i j
+where the sum is over every subset of cardinality N one can build out of a set {n1 ¼ nN + M} of
+larger cardinality N+M. Here, C{{E11¼¼ENN}} is simply the N×N Cauchy matrix built out of the
+ﬁxed set {1 ¼  N } and one of the N-subsets of {n1 ¼ nN + M}.
+     Despite subtle issues in the construction of the dual representation of a given eigenstate
+[13], the equivalence between this sum of permanents and the much simpler determinant
+representation gives us again a determinant expression for the overlap of an arbitrary (off-the-
+shell) Bethe state and an arbitrary dual Bethe state. One should also point out that a com-
+pletely distinct approach using a pseudo-deformation of the algebra has also recently been
+used in [14] to demonstrate the results we previously published in [13] concerning spin-boson
+realizationss used to deﬁne Tavis–Cummings-like integrable hamiltonians.
+     In both cases, the main interest of these determinant expressions is that they are explicitly
+written in terms of variables which, in the application to their respective Bethe ansatz solvable
+models, obey quadratic Bethe equations. It therefore becomes numerically much more
+accessible [15, 16] than the Bethe roots (the rapidities ni ) which are used in the more
+traditional Slavnov–Izergin-like determinants [17–21]. As mentionned before, this ensemble
+
+                                                                      2
+

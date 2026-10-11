@@ -1,0 +1,37 @@
+# C232 实际读域与运行范围
+
+2026-10-08。数学程序0，新primary PDF0；文档选页提取2次，两个非空TXT均实际FULL读取。未重跑旧archive/probe/producer，未扫描、CAS、Git或Lean。
+
+## CDT原件与完整选段
+
+- 复用固定218页CDT长稿 `literature/cdt2024_l2_chi_minus3.pdf`，4517169 B，SHA256 `84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771`；固定arXiv v2出处 <https://arxiv.org/pdf/2408.15403v2>。本轮从原PDF新抽取并实际完整读physical/printed16–20五页：Theorem2.5.1完整陈述及解释、§2.6/Corollary2.6.1、Theorem2.7.1完整陈述及证明。页20的Theorem2.7.2陈述/证明开头亦读到，但没有采用其未读剩余证明。本轮不称FULL218页或重新独审全CDT证明。
+- 新选段 `dual_cdt_fixed_v2_pdf16_20.txt`：18249 B，SHA256 `ade72b61da52b4e7297e13d594af11b58025285a780aab796490497c9c6a07ae`。
+- 复用CDT短稿本地冻结文件 `literature/cdt2025_arithmetic_holonomy.pdf`，751610 B，SHA256 `5f403f337fed8bfd776348a04aaaec7d57ca6f90c31dd871ed793bf24239c8f1`。定向web核arXiv出处 <https://arxiv.org/abs/2510.04156> 及作者网页；版本身份以该实际本地hash为准，没有下载/比对最新稿或重新认证该hash对应哪个网页版本。
+- 新抽取并实际完整读physical3–4两页，包含§2.1、完整Theorem2.1、Remark2.2；notation、Definition2.3/Proposition2.4也读到，后两项未应用。`dual_cdt2025_pdf03_04.txt`：11615 B，SHA256 `0d400b4ce71822db5f872e8840b05cd4be59b76cec91e60355a5623d609d9fb9`。不称FULL20页。
+
+web仅一次两query定位CDT原始出处。搜索命中其它仓库/二手结果未采用，没有从README或摘要推导数值新颖性或Lean认证。旧225/226保存CDT选段也实际读取作为核对，但新稿数学依据是上述本轮原件抽取的完整所选页。
+
+## 本轮实际FULL文档输入
+
+以下均实际完整读取；这只是本轮纸核范围，不扩成各稿primary或历史独审范围。
+
+|文件（research/下）|bytes|SHA256|
+|---|---:|---|
+|uniform_log_weight_period_projection_round229_20261008.md|6259|0f5ea4274cc6b3703eaaa6dc221c88bfdabaca1688677e2c59cfac155c23e164|
+|q2_full_pool_denominators_round229_20261008.md|7638|fa2a8fa796693f9bf0b51b9562793d3773a431d3bbb68f5cbe7f9d8fa0d63c1e|
+|q2_projected_block_archimedean_bound_round229_20261008.md|3398|54d7d3638e077b4bf7c7064d3ec06e5a34a9d0d3a74403f87f33d1c35adb5f84|
+|catalan_q2_target_status_round229_20261008.md|5355|550e61d98e6e806e6a2a0de514be86e6f71800266b735d6f49eaf733beb30c31|
+|research_uniform_projection_progress_round229_20261008.md|5955|f551ab96ddc2565c606855dce87fcd938c68e991f1c0333ec0fec27161276020|
+|q2_residue_nonzero_gate_round230_20261008.md|3866|38ddebf4c572452af2679f04bd31e215d1d021fc063ace77d318bf5e9e56aa37|
+|integrated_character_gram_content_cap_round228_20261008.md|4120|aed41105f02199b916cbd42caed946d38dd48c1ac465c0f50af171a6677a6b50|
+|research_boundary_structure_progress_round231_20261008.md|6401|7f425fa613d028eaa04504ddfb5959a082c679faa34be5f4b858dec0c4c697ac|
+|q2_fixed_tail_pade_kronecker_gate_round232_20261008.md|7559|2a2cd3549e473e9a27d287d858be4c259270e6ff77521ec354f36cbfc92bbbdb|
+|cdt_relation_sensitive_meromorphy_gate_round232_20261008.md|6701|a8cde0e4e6fd77de603cddfaa43ff5d11ef334e7d0949b243a81ddace7237413|
+
+A232 scope也实际FULL读1480 B / `bcd4809056ae516813095be09d4ce9656bbaab9492582a4839e42793d7145c48`；未把其Bakan–Berg PDF4–5登记为本人读取。自身C230/C231和A231最终稿的实际FULL审读属已完成历史输入；未修改，也没有把该历史读域写成本轮新primary。
+
+Root截区稿实际FULL读取的是4403 B / `291c40636916ea40eada4f05a90343a3fe9c3439843c4fb805dd1ae8e04aac2e`；随后仅点核递推行的排版逗号修为 `\,`，最终4404 B / `9015f93f439118140348bc97c16daa758a17aa49c57be152e01484825a6326a4`。没有冒称排版后又重新逐字FULL读取。B232最终新稿未在本记录形成时读取；消息不是其FULL阅读。
+
+历史排重仅rg定位并完整读取mixed Catalan旧稿§3起首相关段，未重审旧全文：已有rational inverse gauge恢复完整meromorphic tuple的原则。因此232 ordinary-quotient应用不宣称这个一般原则首次发现。新稿(S2)–(S5)为本人自含纸核，没有移植旧μ7或停用包。
+
+仅NEW数学稿及此scope；保存后分别实际FULL作者复读并报bytes/hash。文档hash/下载来源定位/选页提取不计数学程序。未改旧稿、他人稿、main、manifest或归档脚本。

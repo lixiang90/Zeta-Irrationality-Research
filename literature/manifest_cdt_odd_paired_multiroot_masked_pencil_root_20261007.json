@@ -1,0 +1,221 @@
+{
+  "state": "FINAL_AFTER_ACTUAL_REVIEW_READS",
+  "date": "2026-10-07",
+  "author": "root",
+  "baseline": {
+    "records": 518,
+    "mathematical_files": 515,
+    "guards": 3,
+    "prior_delivery_file": "research/cdt_odd_delivery_20261007.json",
+    "prior_delivery_sha256": "9bd4942563a5ce123ea914f727b2de8bfcb336ab084a96a9cc932ac83ddc0e51",
+    "all_518_physical_hashes_checked_during_this_receipt_creation": true
+  },
+  "new_frozen_records": [
+    {
+      "file": "research/cdt_odd_paired_multiroot_potential_improvement_20261007.md",
+      "sha256": "b0092b32bc7efefa80945c5e494ce11ed68ddc38fa0075964aaea4b82415029c"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007.md",
+      "sha256": "c529ece382b5e9959d35210a8ef3675d4ef76fa08ffab60daa232a7f359552e2"
+    },
+    {
+      "file": "research/cdt_odd_paired_restricted_H_normality_20261007.md",
+      "sha256": "074f55c5d83547b6b9a301cd515d1b676a5c3a2723a40e9101cb45e48b7f703f"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_pencil_regular_20261007.md",
+      "sha256": "879d8889c956d63b7b3c840c94f958a3011541698c25c1b6938c80ef7e506f8a"
+    },
+    {
+      "file": "research/cdt_odd_paired_multiroot_potential_improvement_independent_review_20261007.md",
+      "sha256": "f70719d5584cef7a7be6bc9e4d2facf45362998e1b25ddb16409fdc9ada92959"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_independent_review_20261007.md",
+      "sha256": "47d03bef6663f2103c18833f9d0ecf73ca48953bc317e968f79735aa9bdb7d73"
+    },
+    {
+      "file": "research/cdt_odd_paired_restricted_H_normality_independent_review_20261007.md",
+      "sha256": "7f708deca50eb821d282014ae33d3e6175304bdccbfaf5854f85628b1181b289"
+    },
+    {
+      "file": "research/cdt_odd_paired_source_pencil_regular_independent_review_20261007.md",
+      "sha256": "b8065c5775a045cdf8af26430450d5706210ba2a39d6cc4134c6babcd601276e"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.py",
+      "sha256": "95e7ff89a97a6633de4441288a32c787d6ef59aa16efc93d7d50dec5f744e242"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.json",
+      "sha256": "321d0da51964c27e6fa710d844b2d251071e2736cf6bc5b6047b8d0b1b1855ff"
+    },
+    {
+      "file": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json",
+      "sha256": "e1e97654436d92dada737c0a9dee938008df3b976e85d67cc51a422647364189"
+    }
+  ],
+  "peer_final_receipts": [
+    {
+      "file": "literature/manifest_cdt_odd_paired_source_pencil_regular_20261007.json",
+      "sha256": "42d4d43ba03f1e90004e5a8b6e0114dbdced658bb4f8413de50089a09ba6fb93",
+      "actual_root_read": "FULL final JSON text and all fields before creating this root receipt"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_restricted_H_normality_20261007.json",
+      "sha256": "c809b88333b3c1ef90285cb54e143ad3adef0201d73c88b2264937c98d17bd5e",
+      "actual_root_read": "FULL final JSON text and all fields before creating this root receipt"
+    },
+    {
+      "file": "literature/manifest_cdt_odd_paired_scaled_root_optimum_20261007.json",
+      "sha256": "c47698382a58d3b9055cb5a784df44d3751a8276147dc1f22bf4bdcf6fb67414",
+      "actual_root_read": "FULL final JSON text and all fields before creating this root receipt"
+    }
+  ],
+  "new_successful_certificates": [
+    {
+      "kind": "scaled_root",
+      "source": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.py",
+      "result": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify.json",
+      "guard": "research/cdt_odd_paired_scaled_root_optimum_20261007_certify_guard.json",
+      "report": "research/cdt_odd_paired_scaled_root_optimum_20261007.md",
+      "state": "PASS_FIRST1",
+      "scope": "7 elementary interval assertions, 18 completed outer bisections; no determinant or prime execution"
+    }
+  ],
+  "new_primary_pdfs": [
+    {
+      "file": "literature/cdt_paired_scaled_root_sources_20261007/mhaskar_saff1992_weighted_capacity_author_125.pdf",
+      "sha256": "66d00d46fb0e2f4da7b4c23e98dcc39b5687587e179a77813b27caa859968aa5",
+      "pages": 20,
+      "bytes": 832318,
+      "source_url": "https://www.math.vanderbilt.edu/saffeb/texts/125.pdf",
+      "title": "Weighted Analogues of Capacity, Transfinite Diameter, and Chebyshev Constant",
+      "authors": "H. N. Mhaskar and E. B. Saff",
+      "full_pdf_read": false
+    }
+  ],
+  "reused_primary_pins": [
+    {
+      "file": "literature/saff2010_logarithmic_potential_arxiv1010_3760v1_20261006.pdf",
+      "sha256": "cfbeaad8cf695fc1b5528fd56295d7e3053056634c6841765a434ce9b074d862"
+    },
+    {
+      "file": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e"
+    }
+  ],
+  "prior_delivery_pin": {
+    "file": "research/cdt_odd_delivery_20261007.json",
+    "sha256": "9bd4942563a5ce123ea914f727b2de8bfcb336ab084a96a9cc932ac83ddc0e51"
+  },
+  "actual_reading_scope": {
+    "root_new_papers": "Actual FULL final read of all four main manuscripts; root multiroot actual FULL selfread; candidate and final hashes unchanged",
+    "root_formal_reviews": "Actual FULL final read of all four reviews, including FULL selfread of root source-pencil review",
+    "root_certificate": "Entire saved Python source statically read, entire saved result every field and entire guard read; no execute/import",
+    "root_peer_receipts": "Actual FULL read of all three final peer receipts before this last root receipt",
+    "root_primary_pdf_pages": {
+      "saff2010": [
+        1,
+        32,
+        33,
+        34
+      ],
+      "mhaskar_saff1992": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ]
+    },
+    "root_distinct_pdf_pages_this_round": 10,
+    "scaled_finalizer_primary_pages": {
+      "mhaskar_saff1992": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ]
+    },
+    "masked_finalizer_primary_pages": {
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ]
+    },
+    "source_finalizer_primary_pages": {},
+    "unique_team_read_pages_by_source": {
+      "saff2010": [
+        1,
+        32,
+        33,
+        34
+      ],
+      "mhaskar_saff1992": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11,
+        12
+      ],
+      "koekoek_swarttouw1998": [
+        28,
+        29
+      ]
+    },
+    "unique_team_primary_pages_this_round": 13,
+    "new_primary_archive_pages": 20,
+    "new_primary_unique_team_pages_read": 7,
+    "limitations": "Archive page counts, personal counts and source/page unions are separate; no PDF claimed fully read. This receipt records actual paper review, not Lean or a producer proof of all-scale mathematics."
+  },
+  "mathematical_execution_history": {
+    "logical_round_new_distinct_guarded_FIRST1_runs": 1,
+    "saved_successes": 1,
+    "saved_failures": 0,
+    "saved_assertions": 7,
+    "root_current_execution": 0,
+    "resumed_finalizers_execution": 0,
+    "mathematical_reruns": 0,
+    "old_or_peer_execute_import": 0,
+    "auxiliary_unit_prime_table_extensions": 0,
+    "lean": 0,
+    "scope": "The inherited sole NEW scaled-root first run is retained; finalizers and root only inspect it. Other three components pure-paper."
+  },
+  "literature_access_history": "Normal verified TLS attempt to author230 failed hostname mismatch without saved PDF or bypass; web fetches230 and125 timed out; existing Saff reused, and newly archived125 read without duplicate download by finalizers/root. These are source access failures, not mathematical producer failures.",
+  "current_progress": {
+    "original_object": "Original B6/kappa3/s5, degree<3n, original saturated S and whole-X D_A(X)",
+    "paid_analytic_rate_strict_lower": 12.60357285412558,
+    "single_scale_optimum_gain_interval": [
+      "0.620411691946",
+      "0.620412917931"
+    ],
+    "multiroot_theorems": "All-n paid transfer; every finite positive root distribution strictly improvable, including rational implementation; current conservative V credit less than123/34",
+    "arithmetic_theorems": "Third masked Racah all profiles unit; actual C full row rank already at Q degree<2r; degree-filtered kernel, middle exact sequence, known2r restricted-H boundary",
+    "source_theorems": "Complete recursive symmetric pencil regularity criterion; conditional source residue degree bound; actual first residual requires exact weak values modp3 and derivatives modp2",
+    "safe_arithmetic_upper_scale": 40.314517426059346,
+    "unproved": [
+      "Actual restricted-H boundary nonzero",
+      "Actual first residual pencil regular infinitely often",
+      "Fixed rational source successful infinitely often",
+      "Actual determinant nonzero infinitely often",
+      "Sufficient same-object strict margin",
+      "New numerical zeta/L/Catalan irrationality or linear independence theorem"
+    ],
+    "goal_status": "active"
+  },
+  "freeze_policy": "This last root receipt pins11 new records,3 final peer receipts,1 new PDF,2 reused PDFs and1 prior audit snapshot (18 physical pins). No mutable main, new audit output or future receipt is pinned. Pending labels in immutable manuscripts are superseded by actual formal reviews and final receipts. Self FULL read/JSONparse and physical-pin verification are performed after writing; successful mathematical files never rerun."
+}

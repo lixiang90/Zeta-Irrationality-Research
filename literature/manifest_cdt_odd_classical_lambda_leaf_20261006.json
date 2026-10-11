@@ -1,0 +1,35 @@
+{
+  "retrieved_date": "2026-10-06",
+  "scope": "Primary mathematical sources for the classical three-puncture lambda leaf and its local nome normalization; no numerical odd-zeta theorem adopted.",
+  "resources": [
+    {
+      "file": "literature/long_tu2021_hypergeometric_lectures_lambda_20261006.pdf",
+      "source_url": "https://alozano.clas.uconn.edu/wp-content/uploads/sites/490/2021/06/ClassicalHGF.pdf",
+      "title": "Ling Long and Fang-Ting Tu, Hypergeometric Functions, Character Sums and Applications",
+      "version": "Author lectures based on LSU Fall 2020 and UConn 2021 courses, downloaded 2026-10-06; the PDF does not display a later version identifier",
+      "pages": 25,
+      "sha256": "9dba04e8f92b10b5cbbc48f257a081c223052bceaee63497afd985e0ed749f93",
+      "actual_read": "Title page and PDF pages 15-17, especially Theorem 1.20 on pages 16-17 identifying P1 minus 0,1,infinity with Gamma(2) quotient H",
+      "use": "Official author course source for the covering identification. The cyclic filled-cusp leaf, factorization bound, Jensen ledger and arithmetic statements are proved separately in the new research note."
+    },
+    {
+      "file": "literature/nist_dlmf_23_17_lambda_20261006.html",
+      "source_url": "https://dlmf.nist.gov/23.17",
+      "title": "NIST DLMF 23.17 Elementary Properties",
+      "version": "Official live HTML downloaded 2026-10-06; footer reports DLMF 1.2.8, release 2026-09-15",
+      "sha256": "8c70e4fa2fe979a2045c3be9fdc4db89028eb08c7d466a5f943833b6079dadf6",
+      "actual_read": "23.17.4 and 23.17.7, the lambda q-series leading 16q and the infinite product",
+      "use": "Exact local derivative and integral-unit product normalization. No bound on actual target rank is inferred from a special-function identity."
+    },
+    {
+      "file": "literature/nist_dlmf_23_15_lambda_20261006.html",
+      "source_url": "https://dlmf.nist.gov/23.15",
+      "title": "NIST DLMF 23.15 Definitions",
+      "version": "Official live HTML downloaded 2026-10-06",
+      "sha256": "b218bc71804b38aecd5e9eea2eb8dd15367efa2a06d0d1bb70e71cd0f4b90e02",
+      "actual_read": "Nome convention q=exp(i*pi*tau) and 23.15.6 lambda=theta2^4/theta3^4",
+      "use": "Fixes the width-two cusp nome; not a statement that the spin rank4 periods are solutions of the rank2 Legendre equation."
+    }
+  ],
+  "execution": "Downloaded source files and read original pages only. No old or peer mathematical producer was executed or imported."
+}

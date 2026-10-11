@@ -1,0 +1,132 @@
+\subsection{A nonzero depth-one value}
+The compatible derivations are now available.  We evaluate their
+homogeneous components on the reassociation unit arrow and compare
+this operator-logarithm value with the holonomy of a real path.
+
+\begin{proposition}\label{prop:odd-depth-one}
+For every odd $n\geq3$ there exists $\psi_n\in V_n$ for which the
+coefficient of $x^{n-1}y$ is nonzero.  Equivalently, its ordinary
+$y$-depth-one part is a nonzero multiple of $\ad_x^{n-1}y$.
+\end{proposition}
+
+\begin{proof}
+Use the objects $a,b$ and unit arrow $\alpha$ from
+Section~\ref{sec:category}.  Let $\beta$ be the real order-preserving
+path of reassociation from $a$ to $b$, and put
+\[
+ \Phi=H_+(\beta),\qquad U=S(\alpha),\qquad
+ \theta=S|_{\operatorname{End}(a)}.
+\]
+We identify $\Phi,U$ with arrow coefficients.  Since an arrow with
+coefficient $h$ is $\alpha h_a$, one has exactly
+\begin{equation}\label{eq:holonomy-arrow-action}
+ S_{ab}(h)=U\theta(h).
+\end{equation}
+The path $\beta$ is real, so its conjugate is itself and
+$H_-(\beta)=\Phi(-t_{ij})$.  Hence
+\begin{equation}\label{eq:holonomy-exact-comparison}
+ U\theta(\Phi)=\Phi(-t_{ij}).
+\end{equation}
+Source $x$ and target $y$ are fixed by the arity-two insertion
+operations.  Applying $S$ to $\alpha y_a=y_b\alpha$ therefore yields
+\begin{equation}\label{eq:holonomy-source-action}
+ \theta(x)=x,\qquad \theta(y)=U^{-1}yU.
+\end{equation}
+The source total chord $T$ is fixed as well.
+
+The linear term of $\Phi$ is zero.  Along a real order-preserving
+path the sign of each difference is constant, so its integral is the
+logarithm of the ratio of endpoint absolute differences.  Normalizing
+by the frames subtracts the logarithms of their lowest-common-ancestor
+scales.  By \eqref{eq:holonomy-collar-difference}, each remaining
+ratio tends to $1$.  This proves the claim for every chord separately.
+As $\theta$ preserves filtration, equation
+\eqref{eq:holonomy-exact-comparison} implies that $U$ too has zero
+linear term.  Both series are group-like.  Their logarithms are
+primitive and have weight at least two, so
+\eqref{eq:category-three-split} places these logarithms in the
+completed free Lie algebra on $x,y$.  Every such Lie monomial uses
+both letters, since the free Lie algebra on one letter has only
+weight one.  Consequently $\Phi,U$ depend only on $x,y$ and
+\begin{equation}\label{eq:holonomy-exact-xy}
+ U\theta(\Phi)=\Phi(-x,-y),\qquad
+ \Phi-1,\ U-1\in J,
+\end{equation}
+where $J$ is the closed two-sided ideal of series having at least one
+$y$ in $\CC\langle\!\langle x,y\rangle\!\rangle$.
+
+Conjugation in \eqref{eq:holonomy-source-action} changes $y$ only by
+terms in $J^2$, because $U-1\in J$.  Substitution therefore gives
+\[
+ (\theta-\id)(J^r)\subseteq J^{r+1}\quad(r\geq1),
+ \qquad\theta\equiv\id\pmod{J^2}
+\]
+on the full series algebra (it fixes the pure-$x$ terms).
+Reducing \eqref{eq:holonomy-exact-xy} modulo $J^2$ gives
+\begin{equation}\label{eq:holonomy-unit-difference}
+ U-1=\Phi(-x,-y)-\Phi(x,y)\pmod{J^2}.
+\end{equation}
+This is a statement about the image of the unit arrow.  To pass to its
+infinitesimal value, put $N=S_{ab}-\id$ on this arrow space.  By
+\eqref{eq:holonomy-arrow-action}, for $h\in J$,
+\[
+ N(h)=(U-1)\theta(h)+(\theta(h)-h)\in J^2.
+\]
+More generally $N(J^r)\subseteq J^{r+1}$ for $r\geq1$.
+Since $N(1)=U-1\in J$, all $N^j(1)$ with $j\geq2$ belong to $J^2$.
+The operator logarithm consequently gives
+\begin{equation}\label{eq:holonomy-log-depth-one}
+ \delta(\alpha)=U-1
+ =\Phi(-x,-y)-\Phi(x,y)\pmod{J^2}.
+\end{equation}
+
+It remains to compute a single convergent coefficient of $\Phi$.
+Set the central $T$ to zero and use
+$s=(z_2-z_1)/(z_3-z_1)$.  Writing the three differences as a common
+factor times $s,s-1,1$ shows that the common logarithmic differential
+has coefficient $T$, while the remaining connection is
+\begin{equation}\label{eq:holonomy-interval-connection}
+ \lambda\left(x\frac{ds}{s}+y\frac{ds}{s-1}\right),
+ \qquad 0<s<1.
+\end{equation}
+The reassociation path runs from $s=0$ to $s=1$ with positive real
+tangents.  With the convention $dg=\Omega g$, the coefficient of
+$x^{n-1}y$ has $y$ at the earliest integration time.  Thus for $n\geq2$
+it is
+\begin{equation}\label{eq:holonomy-zeta-integral}
+\begin{split}
+ [x^{n-1}y]\Phi
+ &=\lambda^n
+ \int_{0<s_1<\cdots<s_n<1}
+ \frac{ds_1}{s_1-1}\frac{ds_2}{s_2}\cdots\frac{ds_n}{s_n}\\
+ &=-\frac{\lambda^n}{(n-1)!}
+ \int_0^1\frac{(-\log t)^{n-1}}{1-t}\,dt
+ =-\lambda^n\sum_{q\geq1}\frac1{q^n}.
+\end{split}
+\end{equation}
+Here $[w]$ denotes the coefficient of the associative word $w$.
+To justify convergence and the last equality, expand
+$(1-t)^{-1}=\sum_{q\geq0}t^q$ and apply monotone convergence to the
+nonnegative integrand; substitution $t=e^{-u}$ gives the individual
+integrals $(n-1)!/(q+1)^n$.  The series converges for $n\geq2$.
+Regularization does not change this coefficient.  Its frame factors
+are pure-$y$ series on the left and pure-$x$ series on the right; a
+nonconstant factor would make a word begin with $y$ or end with $x$,
+whereas $x^{n-1}y$ does neither.
+
+Negating both arguments multiplies a weight-$n$ word by $(-1)^n$.
+Equations~\eqref{eq:holonomy-log-depth-one} and
+\eqref{eq:holonomy-zeta-integral} therefore give, for odd $n\geq3$,
+\begin{equation}\label{eq:holonomy-nonzero-odd}
+ [x^{n-1}y]\delta_n(\alpha)
+ =2\lambda^n\sum_{q\geq1}\frac1{q^n}\ne0.
+\end{equation}
+This only uses positivity of the real series, with no arithmetic
+independence assertion.  The functional $[x^{n-1}y]$ is rational on
+the finite data of Lemma~\ref{lem:rational-descent}.  Its nonvanishing
+on $\delta_n\in\mathcal D_n(\CC)$ implies nonvanishing on some
+$\mathcal D_n(\Q)$, and evaluation gives the required $\psi_n\in V_n$.
+Finally, Lie elimination, or direct induction on bracketed words with
+one $y$, shows that the weight-$n$, depth-one free Lie space is the
+line spanned by $\ad_x^{n-1}y$; its $x^{n-1}y$ coefficient is $1$.
+\end{proof}

@@ -1,0 +1,30 @@
+{
+  "scope": "Fixed rational combinations in the old coordinate w only; no parameter or prime scan.",
+  "generic_two_by_two_determinant": "-A*Q**2 + B*P*Q - DP*Q + DQ*P + P**2",
+  "det_over_Q_squared_minus_Riccati": "0",
+  "recovery_row_minus_F_projection": [
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "quotient_theta_minus_k_difference": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "necessary_flat_cost": {
+    "2": "3",
+    "3": "32/9",
+    "4": "15/4"
+  },
+  "natural_safe_table_flat_cost": "67/16",
+  "all_symbolic_checks_passed": true,
+  "not_certified_here": [
+    "Riccati and inhomogeneous rational nonexistence (audited in the prior report)",
+    "all-prime early occurrence and rational-series integrality (proved in the companion report)"
+  ]
+}

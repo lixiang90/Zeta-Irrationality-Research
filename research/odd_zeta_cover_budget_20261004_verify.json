@@ -1,0 +1,60 @@
+{
+  "symbolic_cover_checks": {
+    "F_derivative_rational_forcing_zero": "0",
+    "K_chain_rule_difference": "0",
+    "P_chain_rule_difference": "0",
+    "Q_chain_rule_difference": "0",
+    "one_minus_four_rho_difference": "0"
+  },
+  "I_piecewise": [
+    {
+      "lo": "0",
+      "hi": "1",
+      "I": "xi**2/2 - 4*xi + 83/12"
+    },
+    {
+      "lo": "1",
+      "hi": "4/3",
+      "I": "3*xi**2/2 - 6*xi + 95/12"
+    },
+    {
+      "lo": "4/3",
+      "hi": "3/2",
+      "I": "21/4 - 2*xi"
+    },
+    {
+      "lo": "3/2",
+      "hi": "2",
+      "I": "xi**2 - 5*xi + 15/2"
+    },
+    {
+      "lo": "2",
+      "hi": "3",
+      "I": "7/2 - xi"
+    },
+    {
+      "lo": "3",
+      "hi": "4",
+      "I": "xi**2/2 - 4*xi + 8"
+    }
+  ],
+  "exact_min_xi_plus_I": "7/2",
+  "exact_min_2xi_plus_I": "21/4",
+  "one_log_sharp_cost": "7/16",
+  "two_logs_sharp_cost": "21/32",
+  "natural_safe_flat_cost": "35/64",
+  "natural_safe_total_cost": "77/64",
+  "necessary_natural_table_costs_by_logs_using_n": [
+    "15/16",
+    "19/16",
+    "35/32"
+  ],
+  "R4_Arb": "[2.0196741483651578455317736678891120828051084925692943771935 +/- 7.30e-59]",
+  "log_R4_Arb": "[0.7029361857103060294949760420634064749649129996941093207782 +/- 6.26e-59]",
+  "strict_radius_bracket_certified": true,
+  "strict_log_bracket_certified": true,
+  "best_natural_table_cost_exceeds_log_R4": true,
+  "Arb_precision_bits": 200,
+  "scope": "Natural 1,A,B,f_c(rho) table only; not arbitrary rational gauge or another cover.",
+  "all_checks_passed": true
+}

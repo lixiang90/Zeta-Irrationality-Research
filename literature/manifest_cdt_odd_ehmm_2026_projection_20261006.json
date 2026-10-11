@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06",
+  "scope": "Two newly archived primary papers, actual PDF reading and normalization conflict; no downloaded mathematical code executed.",
+  "sources": [
+    {
+      "title": "The Explicit Hypergeometric Modularity Method III",
+      "authors": ["Brian Grove", "Ling Long", "Esme Rosen", "Fang-Ting Tu"],
+      "version": "arXiv:2607.25173v1, 28 July 2026",
+      "url": "https://arxiv.org/pdf/2607.25173v1",
+      "file": "grove_long_rosen_tu2026_ehmm_iii_v1_20261006.pdf",
+      "pages": 35,
+      "sha256": "aa41e64e9006cb80ab6a7c05a0da720045304769e768e7de835c2ecc7e725c10",
+      "download_method": "curl.exe, verified system TLS, no certificate bypass",
+      "actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19, 20, 25, 26, 27, 28, 29, 30, 31],
+      "uses": ["residue/Clausen decomposition", "specified integral modular forms", "CFGL Theorem4.2 exact integral-variable hypotheses and prime-power recurrence", "Proposition4.3 truncated 4F3 mod-p scope", "new CM critical value and period-direction examples"],
+      "normalization_conflict": "PDF25 writes pi^2/16 times half4 4F3(1) as L(f8,1); independently reread Rogers-Wan-Zucker PDF13 equation30 identifies the same normalization with L(f8,2). Do not transfer the former index into this project. No global rejection of the remaining paper."
+    },
+    {
+      "title": "L-values of certain weight 3 modular forms and transformations of hypergeometric series",
+      "authors": ["Esme Rosen"],
+      "version": "Published journal version, 15 June 2026, Research in the Mathematical Sciences 13:57",
+      "doi": "10.1007/s40687-026-00639-6",
+      "url": "https://link.springer.com/content/pdf/10.1007/s40687-026-00639-6.pdf",
+      "file": "rosen2026_weight3_hypergeometric_transformations_published_20261006.pdf",
+      "pages": 33,
+      "sha256": "056f19b67bdf5cc630633f7c68781c2c371f5c262e35a12c1cfb0e92180c8d04",
+      "download_method": "curl.exe, verified system TLS, no certificate bypass",
+      "actual_read_pdf_pages": [6, 7, 20, 21, 22, 27, 28, 29, 30, 31],
+      "actual_read_primary_html_scope": "publisher introduction and Theorems1.1-1.5",
+      "uses": ["beta-normalized hypergeometric L1 integrals", "even-twist period relation scope", "conjugate datum and deRham geometric interpretation", "future geometric limits"],
+      "not_used_as_exact_proof": ["PDF22 numerical unit identification has not been independently certified", "unknown numerical period values are not automatically coefficient-conjugated"]
+    },
+    {
+      "title": "Moments of elliptic integrals and critical L-values",
+      "authors": ["Mathew Rogers", "James G. Wan", "I. J. Zucker"],
+      "version": "Existing library v2; reused without download/overwrite",
+      "file": "rogers_wan_zucker2013_moments_elliptic_critical_l_values_v2.pdf",
+      "pages": 15,
+      "sha256": "b5d3b4bbbb4fdc926ffe2002d7a50247926ec1336f97de3455d0b061bf0153b8",
+      "actual_read_pdf_pages": [13, 14],
+      "uses": ["equations30-31 actual f8 eta normalization", "critical-index conflict cross-check"]
+    }
+  ],
+  "web_formula_sources": [
+    {"title": "NIST DLMF Gamma special values", "url": "https://dlmf.nist.gov/5.4", "version": "1.2.8, 15 September 2026", "scope": "psi values at1 and1/2"},
+    {"title": "NIST DLMF Polygamma functions", "url": "https://dlmf.nist.gov/5.15", "version": "1.2.8, 15 September 2026", "scope": "equations5.15.1-3, trigamma at1 and1/2"}
+  ],
+  "new_numeric_irrationality_theorem": false
+}

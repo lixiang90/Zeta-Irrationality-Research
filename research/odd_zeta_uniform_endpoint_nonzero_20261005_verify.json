@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "scope": "six preselected exact cases; no numerical periods or scans",
+  "script_sha256": "06a1dda07fd35f8e9033dd1e44aafe3c8a8926f402caba89b609d5418bc33c67",
+  "zeta_cases": [
+    {
+      "q": 2,
+      "n": 3,
+      "k": 3,
+      "p": 5,
+      "vp_S": -3,
+      "vp_B": 0,
+      "vp_alpha": -3,
+      "p_k_alpha_mod_p": 4,
+      "primitive_pair_vp": [
+        3,
+        0
+      ]
+    },
+    {
+      "q": 3,
+      "n": 4,
+      "k": 5,
+      "p": 11,
+      "vp_S": -5,
+      "vp_B": 0,
+      "vp_alpha": -5,
+      "p_k_alpha_mod_p": 2,
+      "primitive_pair_vp": [
+        5,
+        0
+      ]
+    },
+    {
+      "q": 7,
+      "n": 6,
+      "k": 7,
+      "p": 41,
+      "vp_S": -7,
+      "vp_B": 0,
+      "vp_alpha": -7,
+      "p_k_alpha_mod_p": 35,
+      "primitive_pair_vp": [
+        7,
+        0
+      ]
+    }
+  ],
+  "catalan_cases": [
+    {
+      "q": 2,
+      "n": 2,
+      "p": 7,
+      "vp_S_G": -2,
+      "vp_B": 0,
+      "vp_alpha": -2,
+      "d_top_mod_p": 1,
+      "primitive_pair_vp": [
+        2,
+        0
+      ]
+    },
+    {
+      "q": 3,
+      "n": 2,
+      "p": 11,
+      "vp_S_G": -2,
+      "vp_B": 0,
+      "vp_alpha": -2,
+      "d_top_mod_p": 7,
+      "primitive_pair_vp": [
+        2,
+        0
+      ]
+    },
+    {
+      "q": 7,
+      "n": 3,
+      "p": 41,
+      "vp_S_G": -2,
+      "vp_B": 0,
+      "vp_alpha": -2,
+      "d_top_mod_p": 7,
+      "primitive_pair_vp": [
+        2,
+        0
+      ]
+    }
+  ],
+  "not_asserted": [
+    "all n nonzero",
+    "effective exceptional threshold",
+    "uniform threshold in q or k",
+    "negative primitive exponent",
+    "irrationality of any new constant"
+  ]
+}

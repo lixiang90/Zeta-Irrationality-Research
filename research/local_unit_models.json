@@ -1,0 +1,907 @@
+{
+  "determinants": {
+    "inner5": {
+      "value": "151890341388304751525994336383/5615859363936731136",
+      "numerator_factors": {
+        "11": 1,
+        "19": 1,
+        "43": 1,
+        "3673": 1,
+        "45491": 1,
+        "332819087": 1,
+        "303921049": 1
+      },
+      "denominator_factors": {
+        "2": 29,
+        "3": 21
+      }
+    },
+    "middle9": {
+      "value": "19542597351568344551166389/6593786494438050175804174761984",
+      "numerator_factors": {
+        "7": 2,
+        "17": 1,
+        "19": 1,
+        "43": 1,
+        "2393": 1,
+        "16603": 1,
+        "16901": 1,
+        "42763531": 1
+      },
+      "denominator_factors": {
+        "2": 58,
+        "3": 28
+      }
+    },
+    "outer6": {
+      "value": "-147301744324849/2958148142320582656",
+      "numerator_factors": {
+        "17": 2,
+        "43": 2,
+        "16603": 2,
+        "-1": 1
+      },
+      "denominator_factors": {
+        "2": 36,
+        "3": 16
+      }
+    }
+  },
+  "rows": [
+    {
+      "p": 11,
+      "N": 1,
+      "r": 1,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 2,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 3,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 4,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 5,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 17,
+      "N": 1,
+      "r": 1,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 2,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 3,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 4,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 5,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 6,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 7,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 8,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 19,
+      "N": 2,
+      "r": 3,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 3,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 8,
+          "predicted_rank": 8
+        },
+        {
+          "c": 4,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 5,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 6,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 7,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 8,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 9,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 29,
+      "N": 3,
+      "r": 4,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 3,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 4,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 5,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 6,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 7,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 8,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 9,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 10,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 11,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 12,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 13,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 14,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 31,
+      "N": 4,
+      "r": 15,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 3,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 4,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 5,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 6,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 7,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 8,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 9,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 10,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 11,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 12,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 13,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 14,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 15,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 37,
+      "N": 4,
+      "r": 10,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 3,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 4,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 5,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 6,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 7,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 8,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 9,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 10,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 11,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 12,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 13,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 14,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 15,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 16,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 17,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        },
+        {
+          "c": 18,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 6,
+          "predicted_rank": 6
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 43,
+      "N": 4,
+      "r": 5,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 3,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 4,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 5,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 8,
+          "predicted_rank": 8
+        },
+        {
+          "c": 6,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 7,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 8,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 9,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 10,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 11,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 12,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 13,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 14,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 15,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 16,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 17,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 18,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 19,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 20,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        },
+        {
+          "c": 21,
+          "kind": "outer6",
+          "matches": true,
+          "actual_rank": 4,
+          "predicted_rank": 4
+        }
+      ],
+      "all_match": true
+    },
+    {
+      "p": 47,
+      "N": 5,
+      "r": 23,
+      "checks": [
+        {
+          "c": 1,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 2,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 3,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 4,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 5,
+          "kind": "inner5",
+          "matches": true,
+          "actual_rank": 5,
+          "predicted_rank": 5
+        },
+        {
+          "c": 6,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 7,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 8,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 9,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 10,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 11,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 12,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 13,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 14,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 15,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 16,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 17,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 18,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 19,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 20,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 21,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 22,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        },
+        {
+          "c": 23,
+          "kind": "middle9",
+          "matches": true,
+          "actual_rank": 9,
+          "predicted_rank": 9
+        }
+      ],
+      "all_match": true
+    }
+  ]
+}

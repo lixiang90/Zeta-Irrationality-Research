@@ -1,0 +1,405 @@
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                          199
+
+
+and Chudnovsky’s opening estimates which they got from using the discriminant49
+polynomial in the multivariable method; see [Chu83a, page 94], and note that the
+Cauchy determinant from the proof of [Nai82, Theorem 1] is none other than the
+Hankel determinant of the function log(1 − x) as applied to our Remark 1.2.5. As
+the logic of the prime number theorem can be reversed in every single one of our
+arithmetic holonomy bounds, one cannot help but be curious about the denomina-
+tor arithmetic in “asymptotic near-misses” of our holonomy bounds.
+
+15.7. A historical note and acknowledgments. We originally conceived of our
+new approach to irrationality in 2020, starting with an easy proof of the irra-
+tionality of the 2-adic avatar of ζ(5) (which now we finally exposit in a companion
+paper [CDT24]), and even during that year we realized with the help of [Zag09]
+that the method could apply in principle to L(2, χ−3 ). However, at the time, the
+holonomy bounds that we could prove following [And89, § VIII] were totally in-
+sufficient, as explained in § 2. Our first serious improvements — such as (2.2.3)
+— over André’s holonomy bound (supT log |φ|) / (log |φ′ (0)| − τ ) were still insuffi-
+cient for this rather (as it seemed back then!) elusive application, but we found
+them nonetheless to carry a certain asymptotic precision which was the key to the
+proof [CDT21] of the unbounded denominators conjecture (the case τ = 0 of alge-
+braic functions). The paper [BC22] cites [CDT21] as a significant influence. In turn,
+[BC22], which implicitly already has the bound (2.2.5), has clearly been a crucial
+inspiration for our present paper, and (in part) it was by trying to synthesize our
+ideas with those of [BC22] that lead to the optimal holonomy bounds here.
+   The whole § 8.1 is due to Fedja Nazarov. We are grateful to him for explain-
+ing to us the precise analytic comparison between the Bost–Charles integral and
+the rearrangement integral. Remark 6.0.16 is based on a discussion with Samuel
+Goodman.
+   In addition, we would like to thank a number of people for conversations through-
+out the past four years on ideas related to this paper, including Yves André, Jean-
+Benoı̂t Bost, Alin Bostan, François Charles, David and Gregory Chudnovsky, Tom
+Hutchcroft, Javier Frésan, Lars Kühne, Peter Sarnak, Umberto Zannier, Wadim
+Zudilin.
+
+                          Appendix A. Choosing a contour
+   Recall (9.0.1) the function h defined as follows:
+                            ∞
+                λ          Y                        ∆(2τ )
+    h := λ +       = −256q    (1 + q n )24 = −256 ·        ,             q = e2πiτ .     (A.0.1)
+               λ−1         n=1
+                                                    ∆(τ )
+
+For any biholomorphic map ψ : D → Ω ⊂ D with ψ(0) = 0, let φ = h(ψ(x)). Our
+task is to choose a function ψ for which:
+    (1) The image of ψ inside D avoids all preimages of the point −1/72 under h
+        except for the one preimage 0.0000541 . . . ∈ R. (This is the only preimage
+        on the real line.)
+
+   49In Bombieri’s case, this inquiry led to the re-discovery of the Selberg integral and, bearing
+with this for the true mathematical fruit, the historic proof of the Dyson–Mehta conjecture along
+with cases of the Macdonald conjectures. This is the story recounted in [FW08, §§ 1.2, 1.3].
+200                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+      (2) The quantity (compare equation (7.0.3))
+                      ZZ
+                           log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                           T2
+                                                                                  (A.0.2)
+                                   log |256ψ ′ (0)| − τ (b; e)
+          is as small as possible, for a certain explicit constant
+                                        16603    27 191
+                                τ (b; e) =     =    +      .
+                                         3920    80     49
+Here log |ψ ′ (0)| is the conformal radius of Ω. The friction here is that we want the
+denominator of (A.0.2) to be large, and so Ω ⊂ D to be large; at the same time,
+the function h(z) has asymptotic growth
+                                                         1
+                                 log |h(z)| ∼
+                                                2π 2 q 2 (1   − |z|)
+as z varies in a straight line from 0 to the cusp e2πiα where α = p/q and q is odd.
+(All of this follows easily from the fact that h is a modular function of level Γ0 (2).)
+In order to choose Ω, it is instructive first to examine the topography of h. The
+shaded region in Figure A.0.3 indicates the |z| ≤ 1 for which |h(z)| ≥ e20 , the level
+sets |h(z)| ∈ {1, e4 , e8 , e12 , e16 }, and then finally level sets |h(z) + 1/72| = 1/200
+around the preimages of −1/72. (The two types of level sets can be distinguished by
+whether any connected component has a subsequence tending towards the boundary
+or not.) The basic idea for constructing a Ω is to choose a circle centered at the
+origin with radius avoiding the preimages of −1/72 in the vicinity of z = ±i, and
+then to (approximately) remove from Ω the following:
+     (1) The intersection of this circle with a horoball near z = 1.
+     (2) Slits from this circle to the remaining preimages of −1/72 along the (ap-
+         proximate) horoball in the vicinity of z = −1.
+The Riemann mapping theorem guarantees the existence of a ψ(x) for any such
+region Ω. However, we additionally want to choose ψ(x) in an explicit form as
+follows in order to be able to rigorously estimate (A.0.2). Thus in practice we
+choose simple explicit functions which approximate this region. The construction
+of Ω is very much bespoke, and it is completely unclear (to us!) how to actu-
+ally minimize (A.0.2) over all Ω, except to say from our experience that we be-
+lieve our construction is not a long way from being optimal. Our ultimate choice
+of Ω is displayed in Figure A.4.5 (which also has a more detailed topographic map
+of log |h(z)|).
+
+A.1. Preliminaries on Lunes. Let D(c, R) denote the disc of radius R centered
+at c. Fix c > 1, and consider the map
+                                             (c2 + 1) + (c2 − 1)z
+                           f (z, c) = z ·                         .
+                                             (c2 − 1) + (c2 + 1)z
+This map has the following property; it is a conformal map from the lune L(c)
+consisting of
+                                            2               
+                                               c +1     2c
+                      L(c) := D ∖ D ∩ D − 2           ,
+                                               c − 1 c2 − 1
+to the unit disc sending z = 0 to 0. That is, the unit disc minus the intersection of
+two discs which intersect at |z| = 1 at right angles. (This guarantees the existence
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                      201
+
+
+
+
+        Figure A.0.3. The shaded region consists of |z| ≤ 1 with |h(z)| ≥
+        e20 near the cusps z = e2πip/q with q odd. The other curves
+        are the level sets |h(z)| ∈ {1, e4 , e8 , e12 e16 }, as well as the level
+        sets |h(z) + 1/72| = 1/200 around the preimages of −1/72. The
+        connected components of the former level sets are distinguished
+        from the latter by containing subsequences converging to the
+        boundary.
+
+
+of an explicit and elementary conformal map). The “innermost” point of the right
+circle is the point
+                                c2 + 1      2c       c−1
+                              − 2      + 2       =−       .
+                                c −1 c −1            c+1
+In the limit c → ∞, this point tends to −1, and the region L(c) tends to the entire
+disc, and f (z) tends to z. The function f (z) has an explicit inverse map as follows:
+                                          p
+                    z(1 + c2 ) − 1 − c2 + (1 + c2 )2 (1 + z)2 − 16c2 z
+          h(z, c) =                                                    ,      (A.1.1)
+                                         2(c2 − 1)
+and hence the conformal radius of L(c) is
+                                        c2 − 1
+                                               .                                    (A.1.2)
+                                        c2 + 1
+A.2. Gobbles. We do not use the contours of this section in the proofs of Theo-
+rems A or C, having replaced them by a combination of lunes with the slits consid-
+ered in § A.3 below. However, they are used in the proof of Theorem 2.8.4 in § 6.8.
+Moreover, preliminary versions of our argument did employ them, and they do pro-
+vide convenient contours on which to provide benchmarks for other examples, and
+are also more flexible than our somewhat custom use of slits.
+202                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+   Suppose we wish to remove two symmetrically opposite discs, not necessarily
+of equal sizes. There is no easily expressible simple conformal map in this case.
+However, as a first approximation, we can first remove one disc, and then remove
+the other. We define
+                          Gob(z, e, f ) := h(−h(z, f ), e).
+Using equation (A.1.1), it has a somewhat messy but completely explicit form.
+Definition A.2.1. The gobble inside D with parameters r ∈ (0, 1], e ∈ (1, ∞], and
+f ∈ (1, ∞] is the image of D = D(0, 1) under the map
+                      Gob(r, e, f ) : D → C, z 7→ r · Gob(z, e, f ).
+   One key property is that, for a wide range of parameters, the gobble is visually
+indistinguishable from the complement in D(0, 1) of two discs, while at the same
+time being much more explicit and thus easier to compute with. From the explicit
+formula, we easily obtain:
+Lemma A.2.2. The conformal radius of Gob(r, e, f )(D) centered at z = 0 is equal
+to
+                             (e2 − 1)(f 2 − 1)
+                          r· 2                 .
+                             (e + 1)(f 2 + 1)
+A.3. Slits. For a real number r ∈ (0, 1), a conformal isomorphism
+                                        ≃
+                                       → (D ∖ (−1, −r], 0)
+                                (D, 0) −
+is given by the function Slit(z, r) defined by the following formula:
+                                                       p
+(r + 1)2 − 2(r − 1)2 z + (r + 1)2 z 2 + (1 + r)(−1 + z) (1 + r)2 − 2(1 − 6r + r2 )z + (1 + r)2 z 2
+                                                8rz
+      4r        8r(1 − r)2 2 4(1 − r)2 r(3 − 14r + 3r2 ) 3
+=           z+              z +                            z + ....
+   (1 + r)2      (1 + r)4                  (1 + r)6
+                                                                                     (A.3.1)
+In particular, the conformal radius of D ∖ (−1, −r] at the origin is equal to
+                                                        4r
+                                  |Slit′ (0, r)| =            .                      (A.3.2)
+                                                     (1 + r)2
+We include a sketch of the derivation of the map (A.3.1). The starting point is to
+remark that the rational transformation
+                                        z 7→ z/(1 + z)2 ,
+                 0 7→ 0;     −1 7→ ∞;              −r 7→ −r/(1 − r)2 ,
+                                            1 7→ 1/4;
+                                                    √
+                                            1 − 2z + 1 − 4z
+                                          7
+                           with inverse z →                 ,
+                                                   2z
+                 D ∖ (−1, −r]
+takes our slit disc            conformally isomorphically onto the z 7→ 1/z
+image of P1 ∖ −(1 − r)2 /r, 4 . Now a line segment [A, B] ⊂ R has transfinite
+diameter ([∞]-capacitance) equal to a quarter of its length. This already proves
+the formula (A.3.2) on the conformal size, for the complement in P1 = C ∪ {∞} of
+a contractible compact K ⊂ C is a topological disc whose Riemann mapping radius
+from ∞ is equal to the reciprocal of the transfinite diameter of K. For the actual
+Riemann map (A.3.1), we continue further by observing that the inverse Riemann
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        203
+
+
+map from ∞ for a segment complement P1 ∖ [A, B] in the Riemann sphere is given
+by a square root function:
+                           ≃          p
+             P1 ∖ [A, B] − → H, z 7→ i (z − A)/(z − B), ∞ 7→ i,
+                                              A + Bz 2
+                          with inverse z 7→            ,    i 7→ ∞.
+                                               1 + z2
+                                                                                 ≃
+                                                                       → D, whose
+Following this through by the Cayley transform z 7→ (z − i)/(z + i), H −
+inversion is z 7→ i (1 + z)/(1 − z), we arrive at the composed Riemann map (A.3.1).
+A.4. Combining multiple slits and lunes. Suppose we wish to remove four slits
+and, additionally, a lune. There is no easily expressible simple conformal map in this
+case. However, both the conformal maps in (A.1.1) and (A.3.1) have the property
+that they are well–approximated by the identity map z 7→ z for “most” points in
+the circle (namely, the points away from the lune and the slits, respectively). Thus
+one very primitive way to construct such maps is simply to compose these maps in
+succession. To this end, we consider the following function:
+                                                                                      
+G(z) := −R·h −e2πiθ1 · Slit e2πiθ2 · Slit e2πiθ3 Slit e2πiθ4 · Slit (z, r1 ) , r2 , r3 , r4 , c .
+
+ We fix the first parameter R = 77/100 to ensure that the initial circle only contains
+preimages of −1/72 in the horoball around −1, and indeed that there are only 4
+such preimages that we need to exclude. We also fix the lune parameter c = 75/10
+which measures the (approximate) horoball we remove near z = 1. The angle
+parameters θi allow us to “line up” the slits so that they include these preimages,
+and the length parameters ri allow us to minimize the lengths of these slits so they
+do not go beyond the preimages we wish to exclude. The final choice of parameters
+is as follows:
+                               77              75
+                        R=        ,        c=      ,
+                              100              10
+           91                  6188             55515                772
+    r1 =      ,         r2 =        ,     r3 =          ,     r4 =       ,       (A.4.1)
+          100                 10000            100000               1000
+            7977               11543             3525                  783
+    θ1 =           ,    θ2 =          ,   θ3 =          ,     θ4 = −        .
+          100000              100000           100000                 10000
+These parameters are chosen from an ad hoc computation making the ends of the
+slits as close to the four parameters as possible. Since it is not possible (numerically)
+to choose these parameters so that the bad preimages lie exactly on these slits, we
+finally define                                        
+                                              995
+                                  ψ(z) = G           ·z .                        (A.4.2)
+                                             1000
+By restricting to this open disc, we are removing not simply (curved) slits but open
+regions, which enables one to easily prove that the bad preimages are excluded.
+It is simple enough to compute that the conformal radius of ψ(z) (using (A.1.2)
+and (A.3.2)) and it is equal to
+                                      4
+                       995    c2 − 1 Y     4ri
+        |ψ ′ (0)| =        ·R· 2    ·
+                      1000    c + 1 i=1 (1 + ri )2
+                                                                          (A.4.3)
+                5448339453535586608000000000
+              =                                  = 0.6292232680 . . .
+                8658833407565631122430056127
+                                             Q∞
+Recall that h : D → C is given by −256q n=1 (1 + q n )24 with q ∈ D. The
+parameters ri and θi are chosen above to ensure that the following holds:
+204                   F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma A.4.4. The map φ := h ◦ ψ : D → C has a unique preimage of −1/72.
+Proof. There is a preimage with x = 0.0000541829 . . .. But one can determine (to
+any precision) the other preimages by passing back to H and then the preimages
+are obtained by the action of Γ0 (2). The preimages in the region (approximating a
+horoball) near z = ±i have absolute value at least
+                                                  77
+                             0.782767 . . . > R =     .
+                                                  100
+The closest other preimages lie near the horoball at z = −1; but the precise choice
+of the parameters ri and θi ensure that they lie outside image of ψ as can be
+confirmed by a simple numerical computation.                                     □
+   The contour ψ(T) is drawn in Figure A.4.5. The asymmetry is due to our using
+four successive compositions of single slit maps, rather than having all four slits
+taken out at once.
+
+
+
+
+        Figure A.4.5. The image of |z| = 1 under ψ(z) together with
+        preimages of −1/72 under h : D → C, together with level sets
+        for log |h| at values in an arithmetic progression; the color scheme
+        transitions between yellow for large positive values of log |h(z)| and
+        blue for large negative values.
+
+
+Remark A.4.6. Our choice of constants reflects merely the principle of finding
+an example “which works” rather than is the most aesthetically pleasing. There
+is no doubt some scope for improvement but since it is not necessary we have not
+tried to optimize these choices — we expect improvements in either respect would
+anyway be quite modest.                                                       △
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                       205
+
+
+A.5. A contour for the L(2, χ−3 ) problem. With our specific choice of ψ(z) as
+in Definition A.4.2, we now define
+                                      φ(z) = h(ψ(z)),
+which is uniformly continuous on D, and which is explicit enough as to be amenable
+to rigorous numerical estimates. We then finally obtain the estimate
+               ZZ
+                     log |φ(z) − φ(w)| µHaar (z)µHaar (w) = 11.844 . . .
+                     T2
+
+and thus (A.0.2) is bounded above by
+                        11.845
+                                                 = 13.9938 . . . . < 14.
+          5448339453535586608000000000     27 191
+log 256 ·                               −     +
+          8658833407565631122430056127     80   49
+                                                                     (A.5.1)
+Remark A.5.2 (Bounds without integrations). Even with all our improvements,
+the best bound we could achieve before integrations, for either Theorems A or C,
+was also above 9; we give some of the numerics now. Consider the following basic
+application of Theorem 2.5.1. We consider the functions Ai (x) for i = 1, . . . , 9
+in the P1 ∖ {0, 1, ∞} domain. (Here the first five functions are given explicitly
+in § 10, and the four functions A6 (x), . . . , A9 (x) correspond to B6 (z), . . . , B9 (z) via
+the transformations of that section. Note that these last four functions only exist
+if there is a Q-linear relation between our three periods.) Consider Theorem 2.5.1
+for                                                             t
+                               0 1 1 1 1 1 1 1 1
+                      b :=                                          ,
+                               0 0 1 1 1 1 1 1 1
+hence
+                           σ1 = 0, σ2 = 1;     σ3 = · · · = σ9 = 2,
+and
+                 1 · 0 + 3 · 1 + (5 + 7 + 9 + 11 + 13 + 15 + 17) · 2   157
+           τ (b) =                                                   =     .
+                                          81                            81
+As explained in Remark 9.0.20, if we use the same contour as given in Defini-
+tion A.4.2 except pulled back to the X(2) domain, both the integral and the con-
+formal radius terms are doubled. Equivalently, they remain the same and the τ
+term is halved. Hence the corresponding bound we obtain in this case is:
+                                11.844 . . .
+                                                   = 9.833 . . . < 10.                (A.5.3)
+                          5.081 . . . − 2 · 157/81
+which comes close but is not a contradiction because this term is not less than 9.
+While this can be refined slightly (using the Bost–Charles integral and modifying
+the contour), it seems unlikely that one may reach a direct contradiction by our
+methods without involving added integrations; see Examples 7.4.9 and 7.5.9.     △
+A.6. A contour for the logarithm problem. We could literally use the same
+contour as above to complete the proof of Theorem C, except with a somewhat
+worse constant. Following the arguments of Section 14.4, it would suffice to find
+the ε such that the image of φ above excludes the regions where z is not too small
+and h(z) lies in D(0, ε2 /16) and also where h(z) lies outside D(0, ε−1 ). This leads
+to a choice of ε somewhere between 107 and 108 . However, a compromise between
+206                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+optimizing over various conformal maps and using the same map as above is just
+to write down simple lunes: If we take
+                                               
+                                       3     23
+                               ψ(z) = − h z,
+                                       4     10
+of conformal radius 1287/2516, then the image of ψ(z) avoids all the required discs
+as well as the regions where |h(z)| ≥ 106 and |h(z)| ≤ 10−12 2−4 (except for the
+preimages near z = 0). In this case, we obtain the bound
+         ZZ
+               log |φ(z) − φ(w)| µHaar (z)µHaar (w) ∼ 9.963 . . . < 10,     (A.6.1)
+              T2
+
+and we have the very easy bound
+                                10
+                                             = 16.103 . . . < 17          (A.6.2)
+                              1287     1032659
+                    log 256 ·        −
+                              2516      242760
+which we use for the proof of Theorem C in § 14.5. In comparison, we may also
+estimate the rearrangement integral
+                      Z 1
+                          2t · (log |φ(e2πit )|)∗ dt ∼ 9.972 . . .    (A.6.3)
+                            0
+
+which also suffices to prove Theorem C, this time via Theorem 6.0.2 with only the
+trivial partition of [0, m].
+   A graph of the image of ψ(z) together with the regions where |h| ≥ 106 and |h| ≤
+10−12 2−4 is given in Figure A.6.4
+
+                      Appendix B. A dynamic box principle
+      In this appendix we give a short new proof of the basic holonomy bound
+                                                2T (φ)
+                                m≤                                  ,       (B.0.1)
+                                     log |φ′ (0)| − b1 − · · · − br
+under the condition of the positive denominator, for a Q(x)-linearly independent
+set of formal functions f1 , . . . , fm ∈ QJxK of the types (2.6.2) and such that
+φ; φ∗ f1 , . . . , φ∗ fm ∈ M(D) are simultaneously meromorphic on a neighborhood
+of the closed unit disc D. Here,
+                                   Z                   X     1
+                          T (φ) :=    log+ |φ| µHaar +   log               (B.0.2)
+                                    T                        ρ
+                                                            ρ∈D
+                                                          poles of φ
+
+is the Nevanlinna characteristic of the meromorphic mapping φ (the meromorphic
+poles being taken with their multiplicities).
+    This is based on the idea of Perelli and Zannier [PZ84] with a dynamic box prin-
+ciple such as they formulate with their Lemma 1 of loc.cit. It may be considered
+as a more elementary form of Bost’s technique in § 7, to which it is both an in-
+troduction and an alternative, and to our companion paper [CDT24], where these
+ideas are pursued further. We divide the proof into three steps according to the
+dissection in § 2.12.
+

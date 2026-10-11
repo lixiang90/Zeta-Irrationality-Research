@@ -1,0 +1,272 @@
+
+=== PHYSICAL PAGE 99 ===
+5.2. Generalized Bernoulli Numbers 85
+If χ is a nonprincipal primitive Dirichlet character of conduct or f such
+that χ (−1) = (−1)n, then (see, e.g., [ W an82])
+L(n,χ ) = (−1)n− 1τ (χ )
+2
+(2πi
+f
+) nBn,χ
+n! .
+Solving for the Bernoulli number yields
+Bn,χ = (−1)n− 1 2n!
+τ (χ )
+( f
+2πi
+) n
+L(n,χ ).
+This allows us to give decimal approximations for Bn,χ. It remains to com-
+pute Bn,χ exactly (i.e. as an algebraic integer). To simplify the abov e
+expression, we deﬁne
+Kn,χ = (−1)n− 1 2n!
+(f
+2i
+) n
+,
+and write
+(5.2.3) Bn,χ = Kn,χ
+π nτ (χ ) L(n,χ ).
+Note that we can compute Kn,χ exactly in the ﬁeld Q(i).
+The following result identiﬁes the denominator of Bn,χ.
+Theorem 5.7. Letn and χ be as above, and deﬁne an integer d as follows:
+d =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 if f is divisible by two distinct primes,
+2 if f = 4,
+1 if f = 2 µ, µ> 2,
+np if f =p, p> 2,
+(1−χ (1 +p)) if f =pµ, p> 2, µ> 1.
+Then dn− 1Bn,χ is integral.
+Proof. See [ Car59a] for the proof [ Car59b] for a discussion. □
+To compute the algebraic integer dn− 1Bn,χ we compute L(n,
+χ ) to very
+high precision using the Euler product (5.2.2) and the formu la (5.2.3). We
+carry out the same computation for each of the Gal( Q/ Q) conjugates of
+χ , which by (5.2.1) yields the conjugates of dn− 1Bn,χ. We can then write
+down the characteristic polynomial of dn− 1Bn,χ to very high precision, and
+recognize the coeﬃcients as rational integers. Finally, we determine which
+of the roots of the characteristic polynomial is dn− 1Bn,χ by approximating
+them all numerically to high precision and seeing which is cl osest to our
+numerical approximation to dn− 1Bn,χ. The details are similar to what is
+explained in Section 2.7.
+=== PHYSICAL PAGE 100 ===
+86 5. Eisenstein Series and Bernoulli Numbers
+5.3. Explicit Basis for the Eisenstein Subspace
+Suppose χ and ψ are primitive Dirichlet characters with conductors L and
+R, respectively. Let
+(5.3.1) Ek,χ,ψ(q) = c0 +
+∑
+m≥ 1
+
+ ∑
+n|m
+ψ (n)·χ (m/n )·nk− 1
+
+ qm∈Q(χ,ψ )[[q]],
+where
+c0 =
+
+
+
+0 if L> 1,
+−Bk,ψ
+2k if L = 1.
+Note that when χ =ψ = 1 and k≥4, then Ek,χ,ψ =Ek, where Ek is from
+Chapter 1.
+Miyake proves statements that imply the following theorems in [Miy89,
+Ch. 7]. We will not prove them in this book since developing th e theory
+needed to prove them would take us far aﬁeld from our goal, whi ch is to
+compute Mk(N,ε ).
+Theorem 5.8. Suppose t is a positive integer and χ , ψ are as above, and
+that k is a positive integer such that χ (−1)ψ (−1) = (−1)k. Except when
+k = 2 and χ = ψ = 1 , the power series Ek,χ,ψ(qt) deﬁnes an element of
+Mk(RLt,χ/ψ ). If χ = ψ = 1 , k = 2 , t > 1, and E2(q) = Ek,χ,ψ(q), then
+E2(q)−tE2(qt) is a modular form in M2(Γ0(t)).
+Theorem 5.9. The Eisenstein series in Mk(N,ε ) coming from Theorem 5.8
+withRLt|N andχ/ψ =ε form a basis for the Eisenstein subspace Ek(N,ε ).
+Theorem 5.10. The Eisenstein series Ek,χ,ψ(q)∈Mk(RL) deﬁned above
+are eigenforms (an eigenvector for all Hecke operators Tn). Also E2(q)−
+tE2(qt), for t> 1, is an eigenform.
+Since Ek,χ,ψ(q) is normalized so the coeﬃcient of q is 1, the eigenvalue
+of Tm is the coeﬃcient
+∑
+n|m
+ψ (n)·χ (m/n )·nk− 1
+of qm (see Proposition 9.10). Also for f = E2(q)−tE2(qt) with t > 1
+prime, the coeﬃcient of q is 1, and Tm(f ) = σ 1(m)·f for (m,t ) = 1, and
+Tt(f ) = ((t + 1)−t)f =f .
+Algorithm 5.11 (Enumerating Eisenstein Series) . Given a weight k and a
+Dirichlet character ε of modulus N , this algorithm computes a basis for the
+Eisenstein subspace Ek(N,ε ) of Mk(N,ε ) to precision O(qr).
+=== PHYSICAL PAGE 101 ===
+5.3. Explicit Basis for the Eisenstein Subspace 87
+(1) [Weight 2 Trivial Character?] If k = 2 and ε = 1, output the
+Eisenstein series E2(q)−tE2(qt), for each divisor t|N with t̸= 1,
+then terminate.
+(2) [Empty Space?] If ε (−1)̸= (−1)k output the empty list.
+(3) [Compute Dirichlet Group] Let G = D(N, Q(ζ n)) be the group of
+Dirichlet characters with values in Q(ζ n), where n is the exponent
+of ( Z/N Z)∗.
+(4) [Compute Conductors] Compute the conductor of every ele ment of
+G using Algorithm 4.18.
+(5) [List Characters χ ] Form a list V all Dirichlet characters χ ∈G
+such that cond(χ )· cond(χ/ε ) divides N .
+(6) [Compute Eisenstein Series] For each character χ inV , let ψ =χ/ε ,
+and compute Ek,χ,ψ(qt) (mod qr) for each divisor t ofN/ (cond(χ )·
+cond(ψ )). Here we compute Ek,χ,ψ(qt) (mod qr) using (5.3.1) and
+Algorithm 5.2.
+Remark 5.12. Algorithm 5.11 is what is currently used in SAGE . It might
+be better to ﬁrst reduce to the prime power case by writing all characters
+as product of local characters and combine Steps 4 and 5 into a single step
+that involves orders. However, this might make things more o bscure.
+Example 5.13. The following is a basis of Eisenstein series for E2(Γ1(13)).
+f1 = 1
+2 +q + 3q2 + 4q3 +···
+f2 =−7
+13ζ 2
+12−11
+13 +q +
+(
+2ζ 2
+12 + 1
+)
+q2 +
+(
+−3ζ 2
+12 + 1
+)
+q3 +···
+f3 =q +
+(
+ζ 2
+12 + 2
+)
+q2 +
+(
+−ζ 2
+12 + 3
+)
+q3 +···
+f4 =−ζ 2
+12 +q +
+(
+2ζ 2
+12−1
+)
+q2 +
+(
+3ζ 2
+12−2
+)
+q3 +···
+f5 =q +
+(
+ζ 2
+12 + 1
+)
+q2 +
+(
+ζ 2
+12 + 2
+)
+q3 +···
+f6 =−1 +q +−q2 + 4q3 +···
+f7 =q +q2 + 4q3 +···
+f8 =ζ 2
+12−1 +q +
+(
+−2ζ 2
+12 + 1
+)
+q2 +
+(
+−3ζ 2
+12 + 1
+)
+q3 +···
+f9 =q +
+(
+−ζ 2
+12 + 2
+)
+q2 +
+(
+−ζ 2
+12 + 3
+)
+q3 +···
+f10 = 7
+13ζ 2
+12−18
+13 +q +
+(
+−2ζ 2
+12 + 3
+)
+q2 +
+(
+3ζ 2
+12−2
+)
+q3 +···
+f11 =q +
+(
+−ζ 2
+12 + 3
+)
+q2 +
+(
+ζ 2
+12 + 2
+)
+q3 +···
+We computed it as follows:
+=== PHYSICAL PAGE 102 ===
+88 5. Eisenstein Series and Bernoulli Numbers
+sage: E = EisensteinForms(Gamma1(13),2)
+sage: e = E.eisenstein_series()
+We can also compute the parameters χ,ψ,t that deﬁne each series:
+sage: e = E.eisenstein_series()
+sage: for e in E.eisenstein_series():
+... print e.parameters()
+...
+([1], [1], 13)
+([1], [zeta6], 1)
+([zeta6], [1], 1)
+([1], [zeta6 - 1], 1)
+([zeta6 - 1], [1], 1)
+([1], [-1], 1)
+([-1], [1], 1)
+([1], [-zeta6], 1)
+([-zeta6], [1], 1)
+([1], [-zeta6 + 1], 1)
+([-zeta6 + 1], [1], 1)
+5.4. Exercises
+5.1 Suppose A and B are diagonalizable linear transformations of a
+ﬁnite-dimensional vector space V over an algebraically closed ﬁeld
+K and that AB = BA. Prove there is a basis for V so that the
+matrices of A and B with respect to that both are simultaneously
+diagonal.
+5.2 If ε is the trivial character of modulus 1 and Bk are as in Section 2.1,
+then Bk,ε = Bk, except when k = 1, in which case B1,ε =−B1 =
+1/ 2.
+5.3 Prove that for k≥if ε (−1)̸= (−1)k, then Bk,ε = 0.
+5.4 Show that the dimension of the Eisenstein subspace E3(Γ1(13)) is
+12 by ﬁnding a basis of series Ek,χ,ψ. You do not have to write
+down the q-expansions of the series, but you do have to ﬁgure out
+whichχ,ψ to use.

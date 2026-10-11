@@ -1,0 +1,96 @@
+{
+  "state": "FINAL_PAPER_RECEIPT",
+  "date_local": "2026-10-07",
+  "author": "/root/masked_racah_finalize",
+  "scope": "Even-window half-rank equality exclusion for the actual off-support fourth-Racah gate; independent review of unrestricted joint-root credit and global optimization",
+  "baseline_frozen_records": 548,
+  "baseline_preservation": "All prior records kept read-only by this author. Root reports whole-baseline physical SHA verification passed; this compact receipt does not replace that audit.",
+  "execution": {
+    "new_own_mathematical_runs": 0,
+    "old_or_peer_execute_import_rerun": 0,
+    "new_mathematical_producer_sources": 0,
+    "auxiliary_unit_table_extensions": 0,
+    "new_prime_data": 0,
+    "lean": false,
+    "metadata_only_operations": "Text/PDF extraction and reading, JSON parsing, bytes and SHA256 verification only",
+    "read_tool_timeout": "One read-only exec request was rejected because automatic approval did not finish before its deadline; its explicitly permitted single identical retry succeeded. No mathematical producer was started, no mathematical failure or rerun occurred, and no permission block remains."
+  },
+  "actual_completed_reading": {
+    "author_main": "Actual FULL final reread of unchanged 63bf66 main, all seven sections E1-E24, after receiving the final independent review",
+    "independent_review_received": "Actual FULL read of final c76ad2 arithmetic review by scaled-root author, all five sections; no correction requested",
+    "independent_review_authored": "Actual FULL final self-read of own unchanged d99c74 unrestricted-joint analytic review, V1-V7",
+    "peer_final_main": "Actual FULL independent read of final 8ee235 analytic main, all nine sections U1-U29; author confirmed stable final candidate and later confirmed actual final FULL reread after receiving d99c74",
+    "frozen_arithmetic_inputs": "Actual FULL this-round rereads of a3b89d off-support O1-O25, bd107b masked-high M1-M24 and 6e87aa invisible-subform I1-I14",
+    "frozen_analytic_inputs": "Actual FULL this-round rereads of 67cd79 joint-root J1-J27, cc3821 mirror-choice M1-M23, 01c872 energy E1-E26 and 770797 primitive-gcd G1-G13",
+    "authority_context": "Actual reading of current main relevant sections 156-160; immutable 222765 round-start audit fully JSONparsed and its header actually read. No claim of manually FULL reading every audit field or all 548 baseline files",
+    "root_review": "Root messages confirm actual FULL paper checking of 63bf66 E1-E24 and c76ad2 arithmetic review passed, and actual FULL reading of peer final 8ee235 U1-U29 passed. Root separately verified all 548 prior physical SHA pins unchanged."
+  },
+  "primary_sources": [
+    {
+      "title": "The Askey-scheme of hypergeometric orthogonal polynomials and its q-analogue",
+      "authors": "Roelof Koekoek and Rene F. Swarttouw",
+      "source_url": "https://tudelft.roelofkoekoek.nl/documents/as98.pdf",
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "bytes": 737178,
+      "archive_pages": 170,
+      "actual_full_text_pages_this_round": [28, 29, 30],
+      "actual_distinct_pages_this_round": 3,
+      "reading_purpose": "Racah definition, norms and monic recurrence; exact Eq1.2.5 difference identity and regular forward propagation on omitted indices k>=1",
+      "new_download_by_this_author": false,
+      "full_pdf_read": false,
+      "tls_bypass": false
+    },
+    {
+      "title": "On general minimax theorems",
+      "authors": "Maurice Sion",
+      "publication": "Pacific Journal of Mathematics 8 (1958), 171-176",
+      "source_url": "https://msp.org/pjm/1958/8-1/pjm-v8-n1-p14-p.pdf",
+      "path": "literature/cdt_paired_joint_root_sources_20261007/sion1958_general_minimax_pjm8_171_176.pdf",
+      "sha256": "e21e748347986009d1d5cce9526e8aad5ff37de0c0cd911fb45df9ae75a4020c",
+      "bytes": 740453,
+      "archive_pages": 9,
+      "actual_full_text_pages_this_round": [6],
+      "actual_distinct_pages_this_round": 1,
+      "reading_purpose": "4.1, 4.1-prime, 4.2 and 4.2-prime finite-cover/compactness hypotheses and references; normalized singular-root dual independently checked by the new manuscript's complete proof",
+      "new_download_by_this_author": false,
+      "full_pdf_read": false,
+      "tls_bypass": false
+    }
+  ],
+  "primary_reading_totals": {
+    "new_archived_documents_by_this_author": 0,
+    "new_archived_pages_by_this_author": 0,
+    "actual_distinct_pages_this_author_this_round": 4,
+    "duplicate_downloads": 0,
+    "reading_scope": "FULL text of KS28-30 and Sion6 only; no previous-round, peer/root page counts or render readings inherited. Archive totals are not full-PDF reading claims."
+  },
+  "frozen_artifact_pins": [
+    {"path": "research/cdt_odd_paired_offsupport_even_racah_strengthening_20261007.md", "sha256": "63bf66f49c2b37a905afd9ef93cbbe0dbca9c5fa8fe8b8cab9e33f706a4cc366", "role": "Own final main, actual final FULL author read; historical pending-status text superseded by this completed receipt"},
+    {"path": "research/cdt_odd_paired_offsupport_even_racah_strengthening_independent_review_20261007.md", "sha256": "c76ad24304c1eac36861ed08419529be9eb00e0c296781946c3aa5ed0d8c44c6", "role": "Final independent FULL arithmetic review, actually FULL read by this author"},
+    {"path": "research/cdt_odd_paired_unrestricted_joint_root_credit_independent_review_20261007.md", "sha256": "d99c74d61511c5a185a3637e2daf50ff63263b2403afe1defb6b237456cd083d", "role": "Own final independent FULL analytic review, actual final FULL self-read"},
+    {"path": "research/cdt_odd_paired_unrestricted_joint_root_credit_20261007.md", "sha256": "8ee235070d595e3a586df31191b0ba75491fe7aa2903d08e2a5e2b4cc6022a4a", "role": "Peer final pure-paper main, actual FULL independent read"},
+    {"path": "research/cdt_odd_paired_offsupport_racah_gate_20261007.md", "sha256": "a3b89d1a210fa2a07fe55ab712e735447806d813821dcecf33810737f50c9e85", "role": "Frozen associated/Laurent and Phi-kernel input, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_masked_high_compression_20261007.md", "sha256": "bd107ba87fe707be5d8dc969b29949b05a4afd91e32baef4e41e5f9d4775bb1f", "role": "Frozen complete fourth-normality input, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_invisible_subform_arithmetic_20261007.md", "sha256": "6e87aa88477c6e4c7a87ae33d7c88eb4e69e48b26b64a2d448d8560664174502", "role": "Frozen actual K0 and middle interface, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_joint_root_equilibrium_20261007.md", "sha256": "67cd79c9804a7e6e696ae65714545a094f282a5b7a7e90601ea2d53293c1a29b", "role": "Frozen joint target/transfer and positive-compact-root input, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_mirror_choice_energy_20261006.md", "sha256": "cc3821c935474ea1b87011383230b91ac04dcb147c2b09d6ce65e5f899438dd7", "role": "Frozen mirror constraints, continuity and strict concavity, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_plucker_energy_rate_20261006.md", "sha256": "01c87202a292f9d977f58098bd609e99f9b6aa1b6701e9fff7c036bda7e2515a", "role": "Frozen Q, curvature, constants and paid high envelope, actual FULL this-round read"},
+    {"path": "research/cdt_odd_paired_primitive_gcd_rate_20261006.md", "sha256": "77079715fb996f6d2ef9eee370abbbecc1169acb8c14bebfb4515c3b3bf268e2", "role": "Frozen actual Gamma full-scale limit, actual FULL this-round read; no producer execution"},
+    {"path": "research/cdt_odd_delivery_shallow_joint_20261007.json", "sha256": "222765c5ecbbba1ba9bf28e19bfe68b14811bd8fe9bc999623476ecbb94ff573", "role": "Immutable round-start 548-record audit, exact reading scope above"}
+  ],
+  "proved": [
+    "At R=2s>=4 and rank E=s, degree<=M evaluations leave at most one polynomial-kernel direction; one genuine relation still forces the associated Laurent pair strictly proper",
+    "The complete gcd branches imply two necessary minimum-rank mechanisms: an adjacent-central-polynomial combination vanishes on all nodes, or the lower central polynomial vanishes on at least R-1 nodes",
+    "The actual regular Racah difference equation excludes both mechanisms for even r>=4, giving rank E>=r/2+1 and complete Phi^[2r] corank<=r/2-1",
+    "Together with the frozen odd bound, r>=3 gives complete Phi^[2r] corank<=ceil(r/2)-1; r=2 is expressly not strengthened"
+  ],
+  "unproved": [
+    "Full off-support gate or complete Phi nondegeneracy; no proper condition has been proved for general larger intermediate rank",
+    "Transfer of the complete-form rank bound to the actual r-dimensional D_high compression or restricted-H normality",
+    "Actual K0 vanishing, fixed original M5 infinite unit subsequence, general deep Smith replacement or fixed rational source infinite success",
+    "Whole-X infinite nonzero subsequence and sufficient same-object arithmetic-decay strict margin",
+    "Any new zeta/L/Catalan irrationality or linear independence theorem, or Lean verification"
+  ],
+  "receipt_topology": "One-way FINAL receipt. No future peer/root receipt or mutable current main/audit is pinned. The immutable round-start audit is historical; root separately checks the complete baseline."
+}

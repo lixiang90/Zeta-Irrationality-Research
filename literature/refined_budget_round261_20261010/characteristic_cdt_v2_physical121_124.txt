@@ -1,0 +1,446 @@
+
+=== PHYSICAL PAGE 121 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+121
+Next we take up the range ξ ≤s′ < χ1. Here we have for s′ ∈[uh, uh+1],
+h(ψ(n′)
+D
+) =n′
+
+−log R +
+h
+X
+j=1
+bj +
+
+max
+1≤i≤m ei
+
+Jξ(n/D)
+
+
++ D
+
+Γ(log R, r, λ, µ) +
+r
+X
+j=h+1
+ujbj
+
+.
+Since u1 < ξ, we have h ≥1 for these n′ and then h(ψ(n′)
+D
+) is an increasing function
+of s′ due to our assumption log R < b1 (while, by definition, Jξ ≥0).
+We continue: for u1 ≤s′ < min{ξ, χ1} (if u1 > χ1, then this set is empty and
+move on to the next case below), we have (the h in the formula may vary depending
+on s′ as above)
+h(ψ(n′)
+D
+) = n′(−log R +
+h
+X
+j=1
+bj) + D
+
+Γ(log R, r, λ, µ) +
+r
+X
+j=h+1
+ujbj
+
+,
+also an increasing function of s′.
+For χ0 ≤s′ < min{u1, χ1},
+h(ψ(n′)
+D
+) = −n′ · log R + D
+
+Γ(log R, r, λ, µ) +
+r
+X
+j=1
+ujbj
+
+,
+is a decreasing function of s′ due to our assumption log R ≥0.
+Finally, for 0 ≤s′ < χ0, we have
+h(ψ(n′)
+D
+) = D
+
+−λ(s′)r −µs′ +
+r
+X
+j=1
+ujbj
+
+.
+Recall that λ > 0. If µ > 0, then h(ψ(n′)
+D
+) is a decreasing function. If µ ≤0, the
+critical point s0 satisfies that
+s0 =
+−µ
+rλ
+1/(r−1)
+≤
+log R −µ
+rλ
+1/(r−1)
+= χ0,
+under our assumed conditions; therefore h(ψ(n′)
+D
+) is an increasing function on [0, s0]
+and a decreasing function on [s0, χ0].
+The above discussion shows that
+min
+0≤n′≤mD h(ψ(n)
+D ) = min{h(ψ(0)
+D ), h(ψ(u1D)
+D
+), h(ψ(mD)
+D
+)}.
+Since
+h(ψ(0)
+D ) = D
+r
+X
+j=1
+ujbj, h(ψ(u1D)
+D
+) = −u1D log R + D
+
+Γ(log R, r, λ, µ) +
+r
+X
+j=1
+ujbj
+
+,
+we have h(ψ(0)
+D ) ≤h(ψ(u1D)
+D
+) due to the assumption Γ(log R, r, λ, µ) ≥u1 log R.
+In upshot, the requisite inequality
+h(ψ(mD)
+D
+) ≤
+min
+0≤n′<mD h(ψ(n′)
+D
+)
+
+=== PHYSICAL PAGE 122 ===
+122
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+boils down to securing that h(ψ(mD)
+D
+) ≤D Pr
+j=1 ujbj, which is equivalent to
+m ≥
+T(r, λ, µ) −Pr
+j=1 ujbj
+log |φ′(0)| −σm −(max1≤i≤m ei)Jξ(m).
+In other words, we have either proved (7.7.3) and hence (7.1.14) holds, or else
+(7.7.11) holds.
+8. The finer holonomy bound with the Bost–Charles integral
+This section combines the measure concentration input of § 6 with the Bost–
+Charles refinements of § 7 to give the most accurate general holonomy bound of
+all the theorems worked out in our paper. The added strengthening turns out to
+be zero for the particular applications to Theorems A and C, and the theorem
+becomes somewhat complicated to state, nevertheless we hope that the principle
+of the abstract refinement could be useful in future applications of our holonomy
+bounds.
+The theoretical improvement from adding high-dimensional methods to the Bost–
+Charles calculus is, as far as we were able to tell in the framework of § 2, reflected
+only in the denominator term τ(b; e). It is inevitable to ask which of the growth in-
+tegrals in § 6 versus § 7 is the smaller. In § 8.1, we present a proof by Fedor Nazarov
+that the Bost–Charles integral is strictly better than the rearrangement integral.
+This, in particular, implies that Theorem 7.6.4 is more precise than Theorem 6.0.2,
+granting our heuristic Remark 7.6.7, and at least as far as the stated denominator
+is concerned in the latter theorem. (Remark 6.6.15 indicates that the multidimen-
+sional proof in § 6 can go further than § 7 in the general denominator aspect, and
+at least as far as our choice of treatment in the present section § 8.) Remark 8.1.17
+further down in this section suggests that the difference in the archimedean growth
+terms is usually very small, implying that little is to be lost from working with
+the rearrangement integrals. For purposes of sampling and testing the holonomy
+bounds with different maps φ, the latter integrals have the practical advantage to
+allow for faster and more reliable numerical computations.
+We now proceed to formulating our unifying theorem. The following sums up
+the sharpest32 of all the holonomy bounds we prove in this paper.
+Theorem 8.0.1. We relax all assumptions on the denominators in Theorem 6.0.2,
+and allow for an arbitrary denominators matrix b ∈Mm×r (R≥0) with nonnegative
+coefficients. Define
+τ ♭♭(b) := lim sup
+ϵ→0,ε→0
+lim sup
+d→∞
+1
+d lim sup
+N→∞
+DenN(b, ϵ, d, ε)
+
+,
+DenN(b, ϵ, d, ε) := 2
+N
+X
+k∈N>0
+max
+n∈P d
+ε (N),i∈V d
+m(ϵ) #{(j, h) : k ≤bij,h · nj},
+(8.0.2)
+where (j, h) runs through {1, . . . , d} × {1, . . . , r}, the set V d
+m(ϵ) ⊂{1, . . . , m}d is
+defined as
+V d
+m(ϵ) :=
+
+i ∈{1, . . . , m}d : ∀i0 ∈{1, . . . , m},
+d/m −ϵd < #{1 ≤j ≤d | ij = i0} < d/m + ϵd
+	
+,
+32Possibly up to considering other φ in addition to φr, as in Theorems 6.0.2 or 7.1.13. Such
+variations are straightforward to incorporate as well, but we refrain from doing this here.
+
+=== PHYSICAL PAGE 123 ===
+THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)
+123
+and P d
+ε (N) ⊂[0, N]d ∩Zd denotes the subset of those n for which the normalized
+([0, 1), µLebesgue) discrepancy of {ni/N}d
+i=1 is ≤ε.
+Assume either that log |φ′(0)| > max
+( r
+X
+h=1
+max
+1≤i≤m bi,h, τ ♭♭(b) + τ ♯(e)
+)
+, or that
+log φ′(0) >, τ ♭♭(b) + τ ♯(e) and all fi are holonomic.
+Then we have
+m ≤
+RR
+T2 log |φ(z) −φ(w)| µHaar(z)µHaar(w)
+log |φ′(0)| −(τ ♭♭(b) + τ ♯(e))
+.
+(8.0.3)
+Further, for any subradii sequences 1 = rl > rl−1 > · · · > r0 > 0 as in Theo-
+rem 7.1.6 and using the Bost–Charles characteristic bT of Definition 7.1.2, we have
+m ≤
+RR
+T2 log |φ(z) −φ(w)| µHaar(z)µHaar(w) −1
+m
+Pl
+k=1
+( b
+T (rk,φ)−b
+T (rk−1,φ))2
+log rk−log rk−1
+log |φ′(0)| −(τ ♭♭(b) + τ ♯(e))
+.
+(8.0.4)
+Moreover, if the s∗
+h for the given {rk} are defined as in Theorem 7.6.4 then we
+have
+m ≤
+RR
+T2 log |φ(z) −φ(w)| µHaar(z)µHaar(w) −Pl−1
+h=0 s∗
+h · ( bT(1, φ) −bT(rh, φ))
+log |φ′(0)| −(τ ♭♭(b) + τ ♯(e))
+.
+(8.0.5)
+Remark 8.0.6. We observe that τ ♭♭(b) ∈[0, ∞) by definition. More precisely, we
+have the trivial bound τ ♭♭(b) ≤Pr
+h=1 maxm
+i=1{bi,h}.
+For the denominator matrices b of the form considered throughout §§ 6–7, we
+have τ ♭♭(b) = τ ♭(b).
+Indeed, writing t for the continuous limit of the discrete
+variable k/N, we have in the setup of Theorem 6.0.2 τ ♭♭(b) bounded above by
+r
+X
+h=1
+lim sup
+ϵ,ε→0
+lim sup
+d→∞
+
+
+
+1
+d lim sup
+N→∞
+
+
+
+2
+N
+X
+k∈N>0
+max
+n∈P d
+ε (N),i∈V d
+m(ϵ) #{(j, h) : k ≤bij,h · nj}
+
+
+
+
+
+
+≤2
+r
+X
+h=1
+Z bh
+0
+min{1 −uh/m, 1 −t/bh} dt =
+r
+X
+h=1
+
+bh −bhu2
+h
+m2
+
+= τ ♭(b),
+where the inequality stems from the observation that the restriction to the balanced i
+(meaning: each i0 ∈{1, . . . , m} occurs with the same asymptotic frequency 1/m)
+supplies the upper bound constraint 1 −uh/m in the integrand on the second
+line, while the restriction to the balanced n (meaning: the components set {nj}
+takes asymptotically the uniform distribution on [0, N]) supplies the upper bound
+constraint 1 −t/bh in that integrand. Moreover, equalities are reached in the case
+where both n and i are arranged in non-decreasing order: n1 ≤· · · ≤nd and
+i1 ≤· · · ≤id. This proves that τ ♭♭(b) = τ ♭(b) under the standing assumptions
+throughout § 6 and § 7. (See also Lemma 6.6.7 and Remark 6.6.14.)
+△
+Example 8.0.7. Here is a simple example to illustrate that, for a given b, if
+one lets b′ range over all arrays which dominate b′ ≥b coefficient-wise and which
+additionally meet the constraints of Theorem 6.0.2, the inequality in τ ♭♭(b) ≤τ ♭(b′)
+can be strict.
+Consider b = [0, 1, 2]t. In order to use τ ♭, the optimal choice of b′ is to take
+b′ = [0, 2, 2]t and we have τ ♭(b′) = 16
+9 . On the other hand, we have τ ♭♭(b) = 5
+3 = 15
+9 .
+
+=== PHYSICAL PAGE 124 ===
+124
+F. CALEGARI, V. DIMITROV, AND Y. TANG
+Indeed, writing t := k/N, we have:
+τ ♭♭(b) = 2
+ Z 2/3
+0
+2
+3 dt +
+Z 1
+2/3
+
+1 −t + 1
+3
+
+dt +
+Z 4/3
+1
+1
+3 dt +
+Z 2
+4/3
+
+1 −t
+2
+
+dt
+!
+.
+This is to be compared with
+τ ♭(b′) = 2
+Z 2
+0
+min
+2
+3, 1 −t
+2
+
+dt.
+To explain the difference between two formulas, we notice that in the range t ∈
+[2/3, 4/3], for every n to be considered in the definition of τ ♭♭(b), there are at most
+(max{0, 1 −t} + o(1))d among the nj with ij = 2 (corresponding to b2,1 = 1) to
+contribute to {(j, 1) | k ≤n}, and there are at most (1/3 + o(1))d among the nj
+with ij = 3 (corresponding to b3,1 = 2) to contribute to {(j, 1) | k ≤2n} and both
+bounds can be reached with suitable choice of n.
+△
+8.1. Comparison of the Bost–Charles and the Rearrangement integrals.
+This section, due entirely to Fedor Nazarov, treats the clean comparison of the two
+integrals — beneath the empirical observation that they are practically the same in
+the situations we encounter in § A, as well as in practice for most of the multivalent
+cases. This theorem strictly speaking is not used for any of our proofs in the paper,
+and hence it can be omitted on a first (and on a second) reading.
+Basic Remark 8.1.1. As the considerations that follow rely on the potential
+theory in the plane, consider first the easier situation on the simplest of all the Lie
+groups: the circle T. The integrable function G(z) := log
+1
+|1−z|, G : T →R ∪{∞}
+has the nonnegative Fourier coefficients
+bG(n) :=
+Z
+T
+G(z)z−n µHaar(z) =
+Z
+T
+z−n log
+1
+|1 −z| µHaar(z) =
+
+
+
+0,
+if n = 0;
+1
+2|n|,
+if n ̸= 0.
+(8.1.2)
+By the general Bochner theorem, the positivity of the Fourier transform implies
+that G(z) is a positive-definite function on the locally compact abelian group T:
+that is,
+RR
+T2 G(zw−1) ν(z)ν(w) ≥0 for all reasonable signed measures ν on T.
+Reasonable here may be taken to mean ν = ν+ −ν−with finite positive measures
+ν± satisfying
+R
+T G ν± < ∞.
+For any such signed measure ν, this computation
+shows more precisely that
+I(ν) :=
+ZZ
+T2 log
+1
+|z −w| ν(z)ν(w)
+=
+ZZ
+T2 log
+1
+|1 −zw−1| ν(z)ν(w) =
+X
+n∈Z∖{0}
+|bν(n)|2
+2|n|
+≥0,
+(8.1.3)
+where manifestly the equality holds if and only if the Fourier transform bν is a scalar
+multiple of the Dirac mass at 0 ∈bT = Z, and that in turn is the case if and only if
+ν is a scalar multiple of the Haar measure µHaar. This reflects the basic potential
+theory on the circle.
+On the circle |z| = R of arbitrary radius, the left-hand side of (8.1.3) scales by the
+additive summand (log R)
+ R
+ν
+2, and so whereas for R > 1 the inequality (8.1.3)
+is false for arbitrary measures ν supported by that circle, it continues to be in
+place for the measures that are balanced in the sense that
+R
+ν = ν(C) = 0. As the

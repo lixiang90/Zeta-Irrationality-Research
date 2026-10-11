@@ -1,0 +1,156 @@
+{
+  "scope": "Exact finite checks; no irrationality conclusion or asymptotic estimate.",
+  "telescoping": [
+    {
+      "s": 3,
+      "n": 1,
+      "convergent_dimension": 5,
+      "formal_output_rank": 3,
+      "formal_zero_kernel_dimension": 2
+    },
+    {
+      "s": 3,
+      "n": 2,
+      "convergent_dimension": 8,
+      "formal_output_rank": 3,
+      "formal_zero_kernel_dimension": 5
+    },
+    {
+      "s": 3,
+      "n": 4,
+      "convergent_dimension": 14,
+      "formal_output_rank": 3,
+      "formal_zero_kernel_dimension": 11
+    },
+    {
+      "s": 5,
+      "n": 1,
+      "convergent_dimension": 9,
+      "formal_output_rank": 5,
+      "formal_zero_kernel_dimension": 4
+    },
+    {
+      "s": 5,
+      "n": 2,
+      "convergent_dimension": 14,
+      "formal_output_rank": 5,
+      "formal_zero_kernel_dimension": 9
+    },
+    {
+      "s": 5,
+      "n": 4,
+      "convergent_dimension": 24,
+      "formal_output_rank": 5,
+      "formal_zero_kernel_dimension": 19
+    },
+    {
+      "s": 7,
+      "n": 1,
+      "convergent_dimension": 13,
+      "formal_output_rank": 7,
+      "formal_zero_kernel_dimension": 6
+    },
+    {
+      "s": 7,
+      "n": 2,
+      "convergent_dimension": 20,
+      "formal_output_rank": 7,
+      "formal_zero_kernel_dimension": 13
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "convergent_dimension": 34,
+      "formal_output_rank": 7,
+      "formal_zero_kernel_dimension": 27
+    }
+  ],
+  "decay_and_elimination": [
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 1,
+      "domain_dimension": 31,
+      "formal_odd_output_rank": 4,
+      "formal_zero_kernel_dimension": 27,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 8,
+      "domain_dimension": 24,
+      "formal_odd_output_rank": 4,
+      "formal_zero_kernel_dimension": 20,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 16,
+      "domain_dimension": 16,
+      "formal_odd_output_rank": 4,
+      "formal_zero_kernel_dimension": 12,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 24,
+      "domain_dimension": 8,
+      "formal_odd_output_rank": 4,
+      "formal_zero_kernel_dimension": 4,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 28,
+      "domain_dimension": 4,
+      "formal_odd_output_rank": 4,
+      "formal_zero_kernel_dimension": 0,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 29,
+      "domain_dimension": 3,
+      "formal_odd_output_rank": 3,
+      "formal_zero_kernel_dimension": 0,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 30,
+      "domain_dimension": 3,
+      "formal_odd_output_rank": 3,
+      "formal_zero_kernel_dimension": 0,
+      "zeta7_coefficient_survives_elimination": true
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 31,
+      "domain_dimension": 2,
+      "formal_odd_output_rank": 2,
+      "formal_zero_kernel_dimension": 0,
+      "zeta7_coefficient_survives_elimination": false
+    },
+    {
+      "s": 7,
+      "n": 4,
+      "decay_order": 32,
+      "domain_dimension": 2,
+      "formal_odd_output_rank": 2,
+      "formal_zero_kernel_dimension": 0,
+      "zeta7_coefficient_survives_elimination": false
+    }
+  ],
+  "normalization": {
+    "smith_coordinate_membership_cases": 384,
+    "integer_membership_checks": 23424,
+    "nonzero_rational_function_with_zero_sum": "-(t - 2)/(t*(t + 1)*(t + 2))"
+  }
+}

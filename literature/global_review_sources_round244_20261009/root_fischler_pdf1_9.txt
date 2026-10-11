@@ -1,0 +1,543 @@
+=== PDF PAGE 1 ===
+Linear independence of odd zeta values using Siegel’s
+lemma
+St´ ephane Fischler∗
+March 26, 2026
+Abstract
+We prove that among 1 and the odd zeta values ζ(3), ζ(5), . . . , ζ(s), at least
+0.21
+p
+s/ log s are linearly independent over the rationals, for any sufficiently large odd
+integer s. This is the first asymptotic improvement on the lower bound, logarithmic
+in s, obtained by Ball-Rivoal in 2001.
+The proof is based on Siegel’s lemma to construct non-explicit linear forms in val-
+ues at odd integers of the Riemann zeta function, instead of using explicit well-poised
+hypergeometric series. A new refinement of Siegel’s linear independence criterion is
+applied, together with a multiplicity estimate (namely a generalization of Shidlovsky’s
+lemma).
+The result is also adapted to deal with values of the first s polylogarithms at a
+fixed algebraic point in the unit disk, improving bounds of Rivoal and Marcovecchio.
+Math. Subject Classification: 11J72 (Primary), 11M06 (Secondary).
+1 Introduction
+It is well known that ζ(s) = P∞
+n=1 n−s is equal, when s ≥ 2 is an even integer, to csπs
+for some cs ∈ Q∗. Since π is transcendental, so is ζ(s) in this case. No such formula is
+known, or even conjectured to exist, when s ≥ 3 is odd. Eventhough π, ζ(3), ζ(5), . . . are
+conjectured to be algebraically independent over Q, very few results are known in this
+direction.
+The first one is due to Ap´ ery [2]:ζ(3) is irrational. Then the next breakthrough is the
+following result of Ball-Rivoal [3, 25]:
+dimQ SpanQ(1, ζ(3), ζ(5), . . . , ζ(s)) ≥ 1 − ε
+1 + log 2log s (1.1)
+∗Universit´ e Paris-Saclay, CNRS, Laboratoire de math´ ematiques d’Orsay, 91405 Orsay, France
+1
+
+=== PDF PAGE 2 ===
+for any ε > 0, provided that s is an odd integer large enough in terms of ε. This result has
+been made effective, and refined, by several authors – but only for small values of s, and
+there is still no odd s ≥ 5 for which ζ(s) is known to be irrational. For large values of s,
+the following result is the first improvement 1 on the lower bound (1.1).
+Theorem 1. For any sufficiently large odd integer s we have:
+dimQ SpanQ(1, ζ(3), ζ(5), . . . , ζ(s)) ≥ 0.21
+√s√log s .
+Here 0.21 is the rounded value of a real number that we did not try to compute exactly.
+As a corollary, there are at least 0 .21
+√s√log s irrational numbers among ζ(3), ζ(5), . . . ,
+ζ(s). This weaker result was proved recently by Lai and Yu [18] with a better numerical
+constant, namely 2 1.19 . . . instead of 0 .21, by following the approach of [31] and [30],
+developed in [15]. This strategy provides only a lower bound on the number of irrational
+odd zeta values, but nothing like (1.1) or Theorem 1 about linear independence. This
+makes an important difference: no linear independence criterion is needed, so that the
+proof is much more elementary.
+The proof of Theorem 1 extends to values of polylogarithms Li s(z) = P∞
+n=1
+zn
+ns ; recall
+that Li1(z) = − log(1 − z). From now on, we fix an embedding of Q in C. Given a positive
+integer s, and z ∈ Q
+∗
+such that |z| is small enough (in terms of s and the degree and
+height of z), the values 1, Li 1(z), . . . , Lis(z) are known to be Q(z)-linearly independent
+(see [24, 17] for the case z ∈ Q, and [9, 7, 1] for the general case). If z ∈ Q
+∗
+is fixed with
+|z| < 1, this is conjecturally true for any s but the only known result is the following one
+(due to Rivoal [26] for z ∈ R, to Marcovecchio [21] in the general case): for any non-zero
+z ∈ Q such that |z| < 1 we have
+dimQ(z) SpanQ(z)(1, Li1(z), . . . ,Lis(z)) ≥ 1 − ε
+(1 + log 2)[Q(z) : Q] log s
+provided s ∈ N = {0, 1, 2, . . .} is sufficiently large in terms of ε > 0. We refer also to [14]
+for algebraic points z outside the unit disk.
+In this paper we improve this lower bound as follows.
+Theorem 2. Let s be a sufficiently large integer. Then for any z ∈ Q such that |z| ≤ 1
+and z ̸∈ {0, 1} we have:
+dimQ(z) SpanQ(z)(1, Li1(z), Li2(z), . . . ,Lis(z)) ≥ 0.26
+[Q(z) : Q]
+√s√log s .
+1After this paper was written, Lai [19] refined the constant 1
+1+log 2 = 0.59 . . . in Eq. (1.1) to 0 .66 . . .
+2This constant 1.19 . . . has also be refined by Lai [20] to 1 .28 . . .
+2
+
+=== PDF PAGE 3 ===
+Of course this result holds trivially at z = 1 (after removing Li 1(z) from the family),
+since even powers of π are linearly independent over Q.
+Most proofs of irrationality (or linear independence) of odd zeta values start with a
+rational function
+Fn(X) =
+aX
+i=1
+nX
+j=0
+ci,j
+(X + j)i ∈ Q(X)
+where ci,j ∈ Z. For instance Ball-Rivoal’s proof of (1.1) is based on the following function
+(where n is even and s is odd), which is related to a well-poised hypergeometric series:
+Fn(X) = ds
+nn!s−2r (X − rn)rn(X + n + 1)rn
+(X)s
+n+1
+,
+where (x)α = x(x + 1) . . .(x + α − 1) is Pochhammer’s symbol, dn = lcm(1, 2, . . . , n), and
+r = ⌊ s
+(log s)2 ⌋. The point is to obtain a linear combination of 1 and odd zeta values, namely
+∞X
+t=1
+Fn(t) = ϱ0,n + ϱ3,nζ(3) + ϱ5,nζ(5) . . . + ϱs,nζ(s) (1.2)
+with ϱi,n ∈ Z, such that |ϱi,n| ≤ βn(1+o(1)) as n → ∞ and the absolute value of (1.2) is less
+than αn(1+o(1)). Applying a linear independence criterion yields a lower bound 1 − log α
+log β on
+the dimension of the Q-vector space spanned by 1, ζ(3), ζ(5), . . . ,ζ(s).
+In the literature, this strategy has always been applied to an explicit rational function
+Fn(X) with explicit integers ci,j. This has allowed Ball-Rivoal to bound from below the
+absolue value of (1.2), and apply Nesterenko’s linear independence criterion [23].
+On the contrary, to prove Theorem 1 we apply Siegel’s lemma and obtain in this way
+the existence of integers ci,j, not all zero, satisfying suitable assumptions. These integers
+are therefore not explicit. This allows us to get completely different asymptotic values of
+the parameters as s → ∞ . Whereas log α ∼ − s log s and log β ∼ (1 + log 2)s in Ball-
+Rivoal’s proof, we obtain log α ∼ −4.55√s log s and log β ∼ 20.93 logs. In particular the
+coefficients ci,j are much smaller than in explicit constructions.
+Using non-explicit integers ci,j makes it impossible to use Nesterenko’s linear indepen-
+dence criterion. We use Siegel’s criterion instead, by considering for each n a family of
+linear forms instead of just (1.2). This extrapolation procedure is performed using deriva-
+tion with respect to both t and z (see parameters p and k in §4.1). Then a multiplicity
+estimate (namely a generalization [12] of Shidlovsky’s lemma) is used. Since z = 1 is a
+singularity of the underlying differential system, we work at the point z = −1 by taking
+profit of the classical relation Li i(−1) = (2 1−i − 1)ζ(i) for i ≥ 2. In such a setting, for
+each n multiplicity estimates usually give p linearly independent linear forms in p numbers.
+However, in our situation it is not always possible to obtain this: the conclusion of our
+multiplicity estimate is weaker, but sufficient because we use a refinement of Siegel’s linear
+independence criterion.
+3
+
+=== PDF PAGE 4 ===
+The structure of this paper is as follows. Section 2 contains the tools we need: a version
+of Siegel’s lemma combining equalities and inequalities, a refined version of Siegel’s linear
+independence criterion, and a generalization of Shidlovsky’s lemma. In §3 we apply Siegel’s
+lemma to construct the integers ci,j, or in other words the rational function Fn(X), that
+will allow us to prove Theorems 1 and 2 in §4.
+Acknowledgements. I would like to thank very warmly Ludovic Mistiaen and the (last)
+referee of this paper for checking all proofs very carefully, and pointing out a serious mistake
+in a previous version. I am also grateful to Daniel Bertrand, Damien Roy and Michel
+Waldschmidt for interesting remarks, comments and support, and to Raffaele Marcovecchio
+for asking me a question that was the starting point of this work.
+2 Diophantine tools
+We gather in this section the auxiliary Diophantine tools we shall use in the proof of
+Theorems 1 and 2, namely Siegel’s lemma, a refined version of Siegel’s linear independence
+criterion, and a multiplicity estimate which generalizes Shidlovsky’s lemma.
+2.1 Siegel’s lemma
+We shall apply the following version of Siegel’s lemma. The difference with respect to
+usual statements (see for instance [27, Chapter 1, Lemmas 1, 4D or 9A]) is that linear
+inequalities (namely (2.2) below) appear: there are not only linear equations with integer
+coefficients.
+Lemma 1. Let N > M ≥ M0 ≥ 0 be integers, and λi,m ∈ Z for 1 ≤ i ≤ N and 1 ≤ m ≤
+M. For each 1 ≤ m ≤ M, let Hm ≥ 1 be a real number such that
+qPN
+i=1 λ2
+i,m ≤ Hm. For
+each m such that M0 < m ≤ M, let Gm ≥ 1 be a real number. Define
+X =
+√
+N
+
+H1 . . . HM0GM0+1 . . . GM
+ 1
+N −M0
+.
+Then there exists (x1, . . . , xN) ∈ ZN \ {(0, . . . ,0)} such that
+NX
+i=1
+λi,mxi = 0 for any m ∈ {1, . . . , M0}, (2.1)
+
+NX
+i=1
+λi,mxi
+ ≤ HmX
+Gm
+for any m ∈ {M0 + 1, . . . , M}, (2.2)
+and vuut
+NX
+i=1
+x2
+i ≤ X. (2.3)
+4
+
+=== PDF PAGE 5 ===
+Inequality (2.2) means that the upper bound deduced from (2.3) using Cauchy-Schwarz
+inequality is improved by a multiplicative factor 1 /Gm.
+In applying Lemma 1 we shall use the following consequence of (2.3):
+|xi| ≤ X for any i ∈ {1, . . . , N}.
+Proof of Lemma 1: Let F denote the set of allx = (x1, . . . , xN) ∈ RN such that (2.1) holds:
+this is a Euclidean space of dimension D ≥ N − M0, with norm given by ∥x∥ =
+qPN
+i=1 x2
+i .
+It is rational, i.e. given by linear equations (2.1) with integer coefficients λi,m; this is
+equivalent to the existence of a basis of F consisting in elements of QN. Then Λ = F ∩ ZN
+is a lattice in F , that is a discrete Z-module of rank D; we refer to [27, Chapter 1] for all
+notions of geometry of numbers used in this proof. We point out that geometry of numbers
+is considered, in [27] and in most references, in the Euclidean space RD. Since we need to
+work in F , which is Euclidean with the scalar product induced from the canonical one on
+RN, we fix a linear isometric isomorphism F → RD and use it to carry all definitions and
+properties.
+The determinant of Λ, denoted by det Λ, is the absolute value of the determinant of any
+Z-basis of Λ with respect to an orthonormal basis of F (because such an orthonormal basis
+is mapped to the canonical basis of RD by the above-mentioned isometric isomorphism).
+It is equal to the volume of the fundamental parallelepiped of Λ (see [27, Chapter 1, §2]).
+The height of F , denoted by H(F ), is by definition det Λ (see [27, Chapter 1, §4]
+or [28]). Now let F ⊥ denote the orthogonal complement of F in RN, and consider the
+vector um = ( λ1,m, . . . , λN,m) ∈ ZN for any m ∈ { 1, . . . , M0}. The definition (2.1) of F
+implies F ⊥ = Span( u1, . . . , uM0). Reindexing u1, . . . , uM0 if necessary, we may assume
+that u1, . . . ,uN −D are linearly independent, so that F ⊥ = Span(u1, . . . , uN −D). Denoting
+by U the square matrix of size N − D of which the columns are the coordinates of u1, . . . ,
+uN −D in an orthonormal basis of F ⊥, since F ⊥ ∩ ZN contains the Z-module spanned by
+u1, . . . ,uN −D we have
+H(F ⊥) = det(F ⊥ ∩ ZN) ≤ | det U | ≤
+N −DY
+m=1
+∥um∥ ≤
+N −DY
+m=1
+Hm
+using Hadamard’s inequality (as in [27, Chapter 1, §4, p. 11]). Since H(F ) = H(F ⊥)
+(see [27, Lemma 4C]) and Hm ≥ 1 for any m, we have
+det Λ = H(F ) ≤
+M0Y
+m=1
+Hm. (2.4)
+Now let us denote by C the set of all x = ( x1, . . . , xN) ∈ F such that Eqns. (2.2)
+and (2.3) hold. We claim that
+vol C ≥ (2X/
+√
+D)D
+QM
+m=M0+1 Gm
+(2.5)
+5
+
+=== PDF PAGE 6 ===
+where vol C is the volume of C inside the Euclidean space F . Admitting this lower bound
+for now, and comparing it with Eq. (2.4) and the definition of X, we obtain
+vol C ≥ 2D
+M0Y
+m=1
+Hm ≥ 2D det Λ
+since N −M0 ≤ D ≤ N and Hm, Gm ≥ 1 for any m. Now C is a symmetric compact convex
+body, so Minkowski’s first theorem asserts the existence of a non-zero x ∈ C ∩ Λ = C ∩ ZN.
+This concludes the proof of Lemma 1, except for the claim (2.5) that we shall prove now.
+To prove Eq. (2.5) we consider um = (λ1,m, . . . , λN,m) for any m ∈ { M0 + 1, . . . , M},
+and notice that C contains all x ∈ F such that
+∥x∥ ≤ X and |⟨um, x⟩| ≤ ∥um∥ X
+Gm
+for any m ∈ {M0 + 1, . . . , M}
+since ∥um∥ ≤ Hm. Now all indices m ∈ {M0 + 1, . . . , M} play symmetric roles so we may
+assume that GM0+1 ≥ . . . ≥ GM ≥ 1. There exists an orthonormal basis ( e1, . . . , eD) of
+F such that uM0+i ∈ Span(e1, . . . , ei) for any 1 ≤ i ≤ M − M0. We shall prove that C
+contains the set C′ of all points x = α1e1 + . . . + αDeD such that
+|αi| ≤ X
+GM0+i
+√
+D
+if 1 ≤ i ≤ M − M0, and |αi| ≤ X√
+D
+if M − M0 + 1 ≤ i ≤ D.
+Indeed any such x satisfies ∥x∥ ≤
+√
+D max1≤i≤D |αi| ≤ X. Moreover, for M0 + 1 ≤ m ≤ M
+we have, since um ∈ Span(e1, . . . , em−M0):
+|⟨um, x⟩| = |⟨um,
+m−M0X
+i=1
+αiei⟩| ≤ ∥ um∥ · ∥
+m−M0X
+i=1
+αiei∥ ≤ ∥ um∥
+p
+m − M0
+X
+Gm
+√
+D
+≤ ∥um∥ X
+Gm
+.
+Thus C′ ⊂ C , and Eq. (2.5) follows. This concludes the proof of Lemma 1.
+2.2 A refinement of Siegel’s linear independence criterion
+The proof of Theorems 1 and 2 relies on the following refinement of Siegel’s linear inde-
+pendence criterion (for usual versions, see for instance [11, p. 81–82 and 215–216], [22,
+§3], [21, Proposition 4.1], [12, Proposition 4.6] or [14, Theorem 4]).
+Let K be a number field embedded in C, and OK be its ring of integers. Let K∞ = R
+if K ⊂ R, and K∞ = C otherwise. The house of ξ ∈ K, denoted by ξ , is the maximum
+modulus of the conjugates of ξ.
+Proposition 1. Let θ0, . . . , θp be elements of K∞, with θ0 ̸= 0. Let τ > 0, and (Qn) be
+a sequence of real numbers with limit +∞. Let N be an infinite subset of N, and for any
+n ∈ N let [ℓ(n)
+i,j ]0≤i≤In,0≤j≤p be a matrix with coefficients in OK such that:
+6
+
+=== PDF PAGE 7 ===
+(i) As n → ∞ with n ∈ N ,
+max
+i,j
+ℓ(n)
+i,j ≤ Q1+o(1)
+n and max
+0≤i≤In
+|ℓ(n)
+i,0 θ0 + . . . + ℓ(n)
+i,p θp| ≤ Q−τ+o(1)
+n .
+(ii) For any n ∈ N sufficiently large, for any x0, . . . , xp ∈ K, if
+∀i ∈ {0, . . . , In} ℓ(n)
+i,0 x0 + . . . + ℓ(n)
+i,p xp = 0
+then x0 = 0.
+Then we have
+dimK SpanK(θ0, . . . , θp) ≥ [K∞ : R]
+[K : Q] · (τ + 1).
+Usually, in Siegel’s linear independence criterion the conclusion of assumption ( ii) is
+x0 = . . . = xp = 0. It turns out that x0 = 0 is sufficient (since we assume θ0 ̸= 0). In terms
+of the matrix [ ℓ(n)
+i,j ]0≤i≤In,0≤j≤p, we assume that the first column (corresponding to j = 0)
+is not a linear combination of other columns. This is weaker than the usual assumption,
+namely that the p + 1 columns are linearly independent. In particular, Proposition 1 may
+apply in settings where the number of linear forms, namely In + 1, is less than p + 1.
+Another way of stating this is that we assume that the In + 1 linear forms we have (for
+a given n) have no common zero x = (x0, . . . , xp) such that x0 ̸= 0. The usual assumption
+is that they have no common zero at all in Kp+1 \ {0}.
+In the proof of Theorem 1 we apply Proposition 1 with K = Q, Qn = βn, and τ = − log α
+log β
+(so that Q−τ
+n = αn), where α and β will be defined in §4.6. The setting is similar for
+Theorem 2, with K = Q(z) (see §4.7).
+Proof of Proposition 1. Let d = dim K SpanK(θ0, . . . , θp). There exists a matrix
+Λ = [λi,j]1≤i≤p+1−d,0≤j≤p ∈ Mp+1−d,p+1(OK) of rank p+1−d such that for any 1≤ i ≤ p+1−
+d, we havePp
+j=0 λi,jθj = 0. For any n ∈ N we let L(n) = [ℓ(n)
+i,j ]0≤i≤In,0≤j≤p ∈ MI+1,p+1(OK)
+and consider the matrix M (n) =
+ Λ
+L(n)
+
+∈ Mp+In+2−d,p+1(OK). Since rk M (n) takes only
+finitely many values, there exists r ≤ p+1 such that rkM (n) = r for infinitely many n ∈ N .
+Discarding other elements of N , we may assume that rk M (n) = r for any n ∈ N .
+For any n ∈ N there exists Cn ⊂ { 0, . . . , p} of cardinality r such that the columns
+of M (n) with index j ∈ C n are linearly independent; then all other columns of M (n) are
+K-linear combinations of these r columns. If 0 ̸∈ C n then there exist x(n)
+1 , . . . , x(n)
+p ∈ K
+such that for any 0 ≤ i ≤ In, ℓ(n)
+i,0 =Pp
+j=1 x(n)
+j ℓ(n)
+i,j . This contradicts hypothesis ( ii) if n is
+large enough, so that 0 ∈ C n (discarding finitely many integers n if necessary). Since Cn
+takes only finitely many values, as above we may assume that there existsC ⊂ { 0, . . . , p} of
+cardinality r, with 0 ∈ C , such that Cn = C for any n ∈ N . Since θ1, . . . , θp play symmetric
+roles, we assume for simplicity that C = {0, . . . , r− 1}.
+7
+
+=== PDF PAGE 8 ===
+We denote by C(n)
+0 , . . . , C(n)
+p the columns of M (n). Since Cn = {0, . . . , r − 1}, for any
+j ∈ {r, . . . , p} there exist κ(n)
+j,0 , . . . , κ(n)
+j,r−1 ∈ K such that C(n)
+j = κ(n)
+j,0 C(n)
+0 + . . . + κ(n)
+j,r−1C(n)
+r−1.
+This implies κ(n)
+j,0 ℓ(n)
+i,0 + . . .+ κ(n)
+j,r−1ℓ(n)
+i,r−1 − ℓ(n)
+i,j = 0 for any 0 ≤ i ≤ In, so that κ(n)
+j,0 = 0 using
+assumption (ii). We deduce that for any 0 ≤ i ≤ In:
+pX
+j=0
+ℓ(n)
+i,j θj =
+r−1X
+j=0
+ℓ(n)
+i,j θj +
+pX
+j=r
+ r−1X
+t=1
+κ(n)
+j,t ℓ(n)
+i,t
+
+θj =
+r−1X
+s=0
+Θ(n)
+s ℓ(n)
+i,s
+where
+Θ(n)
+s = θs +
+pX
+j=r
+κ(n)
+j,s θj for any 0 ≤ s ≤ r − 1,
+and in particular Θ (n)
+0 = θ0 since κ(n)
+j,0 = 0 for any j. In the same way, we have 0 =Pp
+j=0 λi,jθj =Pr−1
+s=0 Θ(n)
+s λi,s for any 1 ≤ i ≤ p + 1 − d. Therefore the linear combination
+of columns Pr−1
+s=0 Θ(n)
+s C(n)
+s consists in p + 1 − d coefficients equal to 0, and then In + 1
+coefficients bounded by Q−τ+o(1)
+n .
+Denote by M (n)
+1 =
+ Λ1
+L(n)
+1
+
+∈ Mp+In+2−d,r(OK) the matrix obtained by keeping only
+the first r columns of M (n) =
+ Λ
+L(n)
+
+, so that Λ 1 and L(n)
+1 are obtained in the same
+way from Λ and L(n) respectively. Then rk M (n)
+1 = r since Cn = {0, . . . , r − 1}, and
+rkΛ1 = rkΛ = p + 1 − d because the columns of Λ 1 span the same vector space as those of
+Λ; in particular, r ≥ p + 1 − d.
+Therefore M (n)
+1 =
+ Λ1
+L(n)
+1
+
+has rank r equal to its number of columns, and its first
+p + 1− d rows are linearly independent: we may choose r − (p + 1− d) rows among those of
+L(n)
+1 that make up, together with Λ 1, an invertible matrix. Up to renumbering the linear
+forms, we may assume that the first r − (p + 1 − d) rows have this property. Then we
+denote by L(n)
+2 = [ℓ(n)
+i,j ]0≤i≤r−p+d−2,0≤j≤r−1 ∈ Mr−p+d−1,r(OK) the matrix obtained from L(n)
+1
+by keeping only these rows, and we let M (n)
+2 =
+ Λ1
+L(n)
+2
+
+∈ Mr(OK) ∩ GLr(K).
+As in the usual proof of Siegel’s criterion, we may now consider the non-zero determinant
+∆(n) ∈ O K of M (n)
+2 . Recall that K is embedded in C, and that Pr−1
+s=0 Θ(n)
+s C(n)
+s consists
+in p + 1 − d coefficients equal to 0, and then In + 1 coefficients bounded by Q−τ+o(1)
+n ,
+where C(n)
+0 , . . . , C(n)
+r−1 are the columns of M (n)
+1 . Keeping only the first r coefficients of
+these columns, we obtain the corresponding columns of M (n)
+2 . Then ∆ (n) is equal to the
+determinant of the matrix obtained from M (n)
+2 by replacing the first column with this linear
+combination divided by Θ (n)
+0 = θ0 (which is non-zero by assumption, and independent of
+n). Since only the last r − p + d − 1 rows of M (n)
+2 depend on n, and these are the only rows
+where non-zero coefficients may appear in the new first column, we obtain by expanding
+8
+
+=== PDF PAGE 9 ===
+the determinant with respect to this column:
+|∆(n)| ≤ Q−τ+o(1)
+n
+
+Q1+o(1)
+n
+r−p−2+d
+= Q−τ+r−p−2+d+o(1)
+n ≤ Q−τ −1+d+o(1)
+n
+using assumption ( i) and the upper bound r ≤ p + 1.
+Let δ = [ K : Q] and denote by σ1 = Id, σ2, . . . , σδ the embeddings K → C. If
+K∞ = R, we bound |σk(∆(n))| = | det σk(M (n)
+2 )| trivially by Qr−p−1+d+o(1)
+n ≤ Qd+o(1)
+n for
+any 2 ≤ k ≤ δ, so that Qδ
+k=1 σk(∆(n)) ∈ Z \ {0} satisfies
+1 ≤
+
+δY
+k=1
+σk(∆(n))
+ ≤ Q−τ −1+d+d(δ−1)+o(1)
+n = Q−τ −1+dδ+o(1)
+n
+and therefore dδ ≥ τ + 1. If K∞ = C then we may assume σ2 to be complex conjugation
+so that |σ2(∆(n))| = |σ1(∆(n))|. We bound |σk(∆(n))| as above for 3 ≤ k ≤ δ, and deduce
+2(−τ − 1 + d) + (δ − 2)d ≥ 0, that is dδ ≥ 2(τ + 1).
+2.3 Multiplicity estimate
+Let us state now the generalisation of Shidlovsky’s lemma we shall use, namely [12, Theo-
+rem 3.1]. It is based on Fuchs’ global relation on exponents, following the approach initiated
+by Chudnovsky [8, 6] in the Fuchsian case and generalized by Bertrand-Beukers [5] and
+Bertand [4] using differential Galois theory.
+We consider a positive integer N and a matrix A ∈ MN(C(z)). We let S0, . . . , SN −1 ∈
+C[X] with deg Si ≤ m for any i. With each solution Y = t(y0, . . . , yN −1) of the differential
+system Y ′ = AY is associated a remainder R(Y ) defined by
+R(Y )(z) =
+N −1X
+i=0
+Si(z)yi(z).
+Let Σ be a finite subset of P1(C) = C ∪ {∞}, with ∞ ∈ Σ. For each σ ∈ Σ, let (Yj)j∈Jσ be
+a family of solutions of Y ′ = AY such that:
+• For any j ∈ Jσ, the function R(Yj) belongs to the Nilsson class at σ, i.e. can be
+written as a C-linear combination of functions of the form h(z)(z − σ)a(log(z − σ))b
+with a ∈ C, b ∈ N, and h holomorphic at σ; here z − σ should be understood as 1 /z
+if σ = ∞.
+• The functions R(Yj), for j ∈ Jσ, are linearly independent over C (as functions on a
+small open disk centered at σ).
+Theorem 3. Let µ denote the order of a non-zero differential operator L ∈ C(z)[ d
+dz] such
+that L(R(Yj)) = 0 for any σ ∈ Σ and any j ∈ Jσ. Then
+X
+σ∈Σ
+X
+j∈Jσ
+ordσ(R(Yj)) ≤ (m + 1)(µ − Card J∞) + c1
+where c1 is a constant that depends only on A and Σ.
+9

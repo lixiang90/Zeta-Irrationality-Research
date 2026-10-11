@@ -1,0 +1,365 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    29
+
+
+construction we have f (2x) holomorphic on the domain
+                                        "    √     !
+                                          2+ 3
+                           x ∈ Ω := C ∖         ,∞
+                                            2
+
+of Riemann mapping radius
+                                √
+              ρ(Ω, 0) = 2(2 +       3) = 7.4641 . . . > 4.481689 . . . = e3/2 .
+Theorem 2.7.10 (ii) proves that every such function f (2x) has to be a rational
+function. Obviously, the putative function from (2.10.2) (which would only have
+existed had log 3 been a rational number) is not rational, and so contrapositively
+this argument gives √a proof of the irrationality of log 3.
+   And yet, as 2 + 3 = 3.73205 . . . < 5.43656 . . . = 2e, the 2n [1, . . . , n] denomi-
+nators growth rate √in these approximations log 3 ≈ bn /an exceeds the reciprocal of
+the decay rate 2 − 3 of the error |log 3 − bn /an | of the approximations. In other
+words, case (ii) applies in the theorem, whereas case (i) does not. Thus we find
+an irrationality proof, by G-function methods, without actually constructing any
+rapidly convergent explicit (holonomic) rational approximants. (A more compli-
+cated construction [Sal07, Sor16] to pass the latter requirement is known in the
+case of log 3, but not for say log p where p is any sufficiently big prime.)
+   As we will see, the usefulness of Theorem 2.5.1 lies in the possibility of using
+— instead of domains Ω ⊂ C as on this example — multivalent mappings such
+as φ(z) := λ(z), a holomorphic function on D whose derivative |φ′ (0)| = 16 >
+e2 fortuitously exceeds the growth rate of the [1, . . . , n]2 layer of denominators
+common to several linear independence problems of interest here (including the
+case of Theorems A and C), and which applies to the holonomic functions on
+P1 ∖ {0, 1, ∞}.                                                                       △
+2.11. The multivalent case: first new linear independence results. In this
+section, we prove half of Theorem 2.8.4 — namely, part (∗) — using a multivalent
+map φ in Theorem 2.5.1, and derive as a consequence a first Q-linear independence
+proof which, unlike with Basic Remark 2.10.1 to which it is otherwise entirely sim-
+ilar, is actually a new result. The second half of Theorem 2.8.4, which is irrelevant
+to this application, will be proved in § 6.8.
+   A key point to observe is that we shall definitely need a multivalent choice for φ.
+Basic Remark 2.11.1. Koebe’s quarter theorem states that |φ′ (0)| ≤ 4 for all
+univalent holomorphic maps of pointed domains φ : (D, 0) → (C ∖ {1}, 0), and that
+equality holds if and only if φ(z) = G(cz) with |c| = 1, where
+                                                        2
+                                     4z            1−z
+                         G(z) :=           = 1 −
+                                  (1 + z)2         1+z
+is Koebe’s extremal function, the Riemann uniformization map at the origin of the
+slit complex plane C ∖ [1, ∞). In particular, if we restrict φ to univalent maps in
+Theorem 2.5.1 then we cannot hope to prove Theorem 2.8.4 since then
+                          |φ′ (0)| ≤ 4 < 4.481689 . . . = e3/2 .
+The Koebe map is 1 : 1 on the open unit disc but it extends to a 2 : 1 rational
+map C ∖ {±1} → C ∖ {1}. Pre-composing this quadratic rational map with the
+30                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+
+      p uniformization map D → C ∖ ((−∞, −1] ∪ [1, ∞)), which is simply the
+Riemann
+map G(z 2 ) = 2z/(1 + z 2 ), we end up with the bivalent map
+                                                   8(z + z 3 )              4
+                                       p
+                                               2
+                                                                        1−z
+     φ : D → C ∖ {1},       φ(z) := G      G(z ) =              =1−               .
+                                                      (1 + z)4          1+z
+                                                                              (2.11.2)
+In the present section, analogously to the role of Koebe’s univalent map for the proof
+of Theorem 2.7.2, we make a use of the basic properties of the bivalent map (2.11.2).
+                           ≃
+This map bijects (−1, 1) − → (−∞, 1) and is bivalent on D ∖ (−1, 1), taking either
+of the two connected halves conformally isomorphically onto C ∖ (−∞, 1]. This
+shows in particular that the case φ : (D, 0) → (C ∖ {1}, 0) in Proposition 2.9.3
+with Σ1 = {1, ∞} and an arbitrary Σ0 ⊂ (−∞, 1) can have a derivative as big as
+|φ′ (0)| = 8.                                                                       △
+   The continuation of this construction explains the central role of the modular
+lambda map in our paper:
+                                                                                  2
+Remarkp 2.11.3. We can repeat the process of getting from G(z) = 4z/(1 + z)
+to G     G(z 2 ) = 8(z + z 3 )/(1 + z)4 by pre-composing next with the Riemann
+map of the complement in C of the union of the four normal external rays out
+from the fourth roots of unity z = ±i (the points that give additional zeros of the
+map (2.11.2), that we want to avoid having for Σ0 = {0}) and z = ±1 (which give
+values 1 and ∞ for (2.11.2), which we want to avoid having for Σ1 = {1, ∞}).
+                                                                          p    But
+the Riemann map of this Z/4-rotationally symmetrically slit region is just G(z 4 ).
+                                                                           4
+
+
+The result is the quadrivalent map
+                                     r                !   √           √
+                                                                     2 2
+                                           p             8  2 1 + z      1 + z4
+  φ : D → C ∖ {1},       φ(z) := G      G    G(z 4 )     =  √      √        4 ,
+                                                             z 2 + 1 + z4
+                                          √                                  (2.11.4)
+which has the bigger derivative φ′ (0) = 8 2 while still serving in Proposition 2.9.3
+for the case Σ0 = {0} and Σ1 = {1, ∞}.
+   Continuing these iterations, we find that the nesting with n square roots
+                                        vu                               !
+                                                r                      
+                                          u            p
+    φn : D → C ∖ {1},       φn (z) := G tG        G      · · · G(z 2n )    (2.11.5)
+
+
+continues to serve in the Σ0 = {0}, Σ1 = {1, ∞} case of (2.9.3), while having the
+derivative
+                                     1   1        1        −n−1
+                       φ′n (0) = 41+ 2 + 4 +...+ 2n = 161−2     .         (2.11.6)
+This constructs a sequence of 2-solvable algebraic power series φ0 (q), φ1 (q), φ2 (q), . . .
+in CJqK starting with the Koebe map φ0 (q) = 4q/(1+q)2 and converging coefficients-
+wise, as well as locally uniformly on q ∈ D, to the modular lambda map (1.2.8).
+The latter fact was known in essence to Landen, Legendre, and Gauss [BB98,           § 1]
+                                                                     a+b
+                                                                           √ 
+in the form of the arithmetic-geometric mean iteration (a, b) ⇝ 2 , ab .                △
+
+     We base our proof of Theorem 2.8.4 on the bivalent example
+                               p        
+                     φ(z) := G    G(z 2 ) = 8(z + z 3 )/(1 + z)4
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                        31
+
+
+from Basic Remark 2.11.1. Crucially, the restriction to D of this rational map has
+                                                                                  ≃
+the fairly big derivative φ′ (0) = 8 all the while inducing a bijection (−1, 1) − →
+                                                           ≃
+(−∞, 1) and conformal isomorphisms D ∩ {im(z) > 0} −       → C ∖ (−∞, 1] and D ∩
+              ≃
+{im(z) < 0} − → C ∖ (−∞, 1].
+   The rationality of this basic function also allows for an explicit formula of the
+double integral occurring in the holonomy bound (2.5.4).
+Lemma 2.11.7. The Bost–Charles double integral of the map
+                                φ(z) := 8(z + z 3 )/(1 + z)4
+has the following explicit evaluation:
+           ZZ
+                                                                4G
+                 log |φ(z) − φ(w)| µHaar (z)µHaar (w) = log 8 +    ,                  (2.11.8)
+              T2                                                 π
+where G := L(2, χ−4 ) is the Catalan constant.
+Proof. This time, to compare with the proof of the univalent case of Theorem 2.7.1,
+we have the factorization
+      φ(z) − φ(w)       (1 − zw)(1 + ix − iy − xy)(1 − ix + iy − xy)
+                    =8                                               ,     (2.11.9)
+         z−w                          (1 + z)4 (1 + w)4
+which does have zeros on the unit polydisc D2 : the Bost–Charles overflow [BC22,
+§ 5] is positive, and it equals the Mahler measure
+    m 1 + x2 + y 2 − 4xy + x2 y 2 = m(1 + ix − iy − xy) + m(1 − ix + iy − xy)
+                                   
+
+                                      = 2m(1 + x + y − xy) = 4G/π,
+where the two integrals make the respective unimodular change of variables (x, y) ⇝
+(±ix, ∓iy), and the last evaluation is due to Smyth [Boy98].                      □
+   We will divide the proof of Theorem 2.8.4 into two parts: property (∗) in our
+statement of the theorem, regarding the meromorphic extendability through δ in all
+analytic continuations; and the derivation of the full form (2.8.5) granting (∗). We
+now prove the first part — property (∗) — and derive from it a showcase application
+in § 2.11.12 to Q-linear independence. The second part is subtler and will be proved
+in § 6.8 based on the refined holonomy bound Theorem 6.0.2.
+Proof of part (∗) in Theorem 2.8.4. Suppose to the contrary that there exists a
+δ ∈ (−∞, 1) ∖ {0} such that f (x) converges on |x| < 1 while having analytic
+continuations along all paths in P1 ∖ {0, δ, 1, ∞} and with eventually a nontrivial
+local monodromy around x = δ. Consider the Möbius involution x 7→ x/(x − 1)
+that fixes the origin of the expansions, preserves the [1, . . . , n][1, . . . , n/2] denom-
+inators type, exchanges the punctures 1 ↔ ∞, and maps δ ↔ δ/(δ − 1) to a
+different puncture (since δ ̸= 2), which is also in (−∞, 1). Then the formal power
+series f x/(x − 1) ∈ QJxK has similar properties tof (x), except now for having
+meromorphic continuations along all paths in P1 ∖ 0, δ/(δ − 1), 1, ∞ and with
+eventually a nontrivial local monodromy around x = δ/(δ − 1). As δ ̸= δ/(δ − 1),
+it follows at once that the following five functions, all of the [1, . . . , n][1, . . . , n/2]
+denominator type, are C(x)-linearly independent:
+                                                                
+                                  2                        x
+            1, log(1 − x), log (1 − x), f (x), f                    .               (2.11.10)
+                                                         x−1
+32                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+We use Theorem 2.5.1 with the 5 × 2 array
+                                                           t
+                                 0 1 1             1    1
+                         b :=                                    ,
+                                 0 0 12            1
+                                                   2
+                                                        1
+                                                        2
+
+corresponding to the denominator types in the ordered list (2.11.10). We calculate
+                 1 · 0 + 3 · 1 + (5 + 7 + 9) · (3/2)   69
+           τ (b) =                                   =    = 1.38.                 (2.11.11)
+                                  52                   50
+For the map φ, we select
+                          8(z + z 3 )
+                φ(z) :=               = 8z − 32z 2 + 88z 3 − 192z 4 + . . . ,
+                           (1 + z)4
+whose basic implications we discussed in Basic Remark 2.11.1. This map meets the
+criteria in Proposition 2.9.3 for Σ1 := {1, ∞} and Σ0 := {0, δ, δ/(δ − 1)} ⊂ (−∞, 1),
+and with f (x) replaced by Q(x)f (x) for a suitable non-zero polynomial Q ∈ C[x] ∖
+{0} such that Q(x)f (x) and Q(x)f (x/(x − 1)) are holomorphic (rather than merely
+meromorphic) under analytic continuation along the φ∗ -images of all paths in D ∖
+{0}. For the Q(x)-linear span H of the five functions (2.11.10), Proposition 2.9.3
+thus gives φ∗ H ⊂ M(D), supplying the analyticity hypotheses for Theorem 2.5.1.
+   By Lemma 2.11.7, the holonomy bound (2.5.4) becomes
+                                  log 8 + (4G/π)
+                       5=m≤                      = 4.640395 . . . ,
+                                   log 8 − 69/50
+a contradiction.                                                                          □
+
+2.11.12. Some mixed periods. We give an application to irrationality of the theorem
+we just proved.
+Lemma 2.11.13. Define
+                              1
+                HA (x) := √        ∈ ZJxK,
+                            1 − 4x
+                                   Z x
+                              1          1      1
+                HB (x) := √                  √        dt ∈ QJxK,
+                            1 − 4x 0 1 − t 1 − 4t
+                                   Z x
+                              1        log(1 − t)     1
+                HC (x) := √                       √        dt ∈ QJxK.
+                            1 − 4x 0     1 −  t     1 − 4t
+Then HA (x), HB (x), and HC (x) have |x| < 1/4 for the convergence disc of their
+Taylor series, and continue as holomorphic functions along all paths in P1 ∖
+{0, 1/4, 1, ∞}. They have the respective denominator types 1, for HA ; [1, 2, . . . , n],
+for HB and [1, 2, . . . , n][1, 2, . . . , n/2], for HC . A simple counterclockwise loop en-
+circling the singularity x = 1/4 induces the following unipotent local monodromy
+operator:
+            T (HA ) = − HA = HA − 2HA ,
+            T (HB ) = HB − 2L(1, χ−3 )HA ,                                        (2.11.14)
+            T (HC ) = HC − 2 (L(1, χ−3 ) log 3 − L(2, χ−3 )) HA .
+We also have
+                                                 π
+                                    L(1, χ−3 ) = √ .                              (2.11.15)
+                                                3 3
+               THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                33
+
+
+Proof. All are straightforward; we indicate the computation of the x = 1/4 local
+monodromy operator T . The first equation, T (HA ) = −HA , is evident as the ana-
+lytic continuation must be the unique algebraic conjugate. The equation for T (HB )
+                         √ the closed form integration evaluation (and integration
+follows from (2.11.15) and
+by parts using arctan(1/ 3) = π/6)
+                                                       q
+                                                          1−4x
+                                π            2  arctan      3
+                    HB (x) = √ HA (x) − √          √           ,          (2.11.16)
+                              3 3             3      1 − 4x
+where the second term is regular at x = 1/4. In general, just like in Basic Re-
+mark 2.10.1, for any meromorphic function f (x) around x = 1/4 we have the
+                   1
+                     R x f (t)
+meromorphy of √1−4x       √
+                      1/4 1−4t
+                                dt near x = 1/4 (with both factors switching
+signs under the monodromy operator T ). Consequently, the x = 1/4 monodromy
+operator T acts by
+                 T (HA ) = −HA = HA − 2HA ,
+                                    Z 1/4
+                                            1       1
+                 T (HB ) = HB − 2HA             √         dt,
+                                     0    1 − t   1 − 4t
+                                    Z 1/4
+                                          log(1 − t)      1
+                 T (HC ) = HC − 2HA                   √        dt.
+                                     0      1−t         1 − 4t
+A straightforward integrations reveals the holonomic coefficient
+                    Z 1/4
+                            1       1          π
+                                √        dt = √ = L(1, χ−3 ),
+                     0    1 − t   1 − 4t     3   3
+reaffirming (2.11.16). An only slightly more involved integration — or a computing
+package — leads to the evaluation of
+                                     log(1 − x)
+                                   Z
+                                                    1
+                          V (x) :=              √        dx
+                                        1−x       1 − 4x
+as
+                                                                       
+                    r                   r
+        2i            1 − 4x            1 − 4x              4(1 − x)
+      − √ arctan              arctan           − i log 
+                                                                         
+                          3                  3                         2 
+          3
+                                                                q
+                                                            1 + 1−4x3
+                q             
+                      4x−1
+        2i              3   −1
+      + √ Li2  q               ,
+          3           4x−1
+                            +1
+                       3
+
+whereupon the familiar formulas
+                                 1    π
+                        arctan √ = ,
+                                  3    6
+                                         π
+                          L(1, χ−3 ) = √ ,
+                                      3 3
+                                         π2
+                           Li2 (−1) = − ,
+                                         12    √
+                                       π2      3
+                       Li2 e2πi/3 = −       +i     L(2, χ−3 )
+                                         18     2
+34                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+straightforwardly evaluate the requisite holonomic coefficient
+    Z 1/4
+          log(1 − t)     1
+                     √        dt = V (1/4) − V (0) = L(1, χ−3 ) log 3 − L(2, χ−3 ).
+      0     1 − t      1 − 4t
+The lemma follows from these integral evaluations. The special value (2.11.15),
+which we used in the preceding derivation, is none√other than the Dirichlet class
+number formula for the complex quadratic field Q( −3).                         □
+
+   From part (∗) that we already proved in Theorem 2.8.4 (assuming Theorem 2.5.1,
+whose treatment is in § 7), we can thus readily derive a Q-linear independence
+result out of the circumstance that the x = 1/4 local monodromy operator T
+simultaneously transforms HA , HB , HC , and HD by a scalar multiple of the common
+function HA . The linear independence thus sifting through is for the holonomic
+coefficients in these monodromies:
+Theorem 2.11.17. The three periods
+                        π                      π
+                   1, √ ,        3L(2, χ−3 ) − √ log 3
+                          3                     3
+are Q-linearly independent.
+   In particular, the Mahler measure
+                        Z 1Z 1
+          (1 + x + y)4                (1 + e2πis + e2πit )4
+        
+      m                 =         log                       ds dt ∈
+                                                                  /Q          (2.11.18)
+                3           0  0               3
+is irrational.
+Proof. By Lemma 2.11.13, a C-linear combination
+                        f (x) = aHA (x) + bHB (x) + cHD (x)                   (2.11.19)
+overconverges at the singularity x = 1/4 if and only if
+                                                        
+                          π          π
+                   a+b √ +c          √ log 3 − L(2, χ−3 ) = 0.
+                        3 3         3 3
+If this relation held with some nonzero integer vector (a, b, c) ∈ Z3 ∖ {(0, 0, 0)}, the
+combination (2.11.19) would have had all the requirements of Theorem 2.8.4 with
+δ := 1/4. Yet, clearly, f (x) does not vary holonomically on P1 ∖ {0, 1, ∞}, only on
+P1 ∖ {0, δ, 1, ∞} = P1 ∖ {0, 1/4, 1, ∞}.
+    The irrationality of the Mahler measure (2.11.18) follows immediately by Smyth’s
+formula (1.1.2), which we can rewrite as
+             (1 + x + y)4
+                          
+         m                   = 4m(1 + x + y) − log 3
+                   3
+                                √
+                               3 3                       3L(2, χ−3 ) − √π3 log 3
+                             =      L(2, χ−3 ) − log 3 =          √             .
+                                π                                π 3
+This concludes the proof assuming Theorem 2.5.1, which we already proved to
+imply the requisite part (∗) of Theorem 2.8.4.
+  Theorem 2.5.1 will be proved in § 7, and the full Theorem 2.8.4 (which we did
+not need in the preceding argument) will be completed in § 6.8.              □
+

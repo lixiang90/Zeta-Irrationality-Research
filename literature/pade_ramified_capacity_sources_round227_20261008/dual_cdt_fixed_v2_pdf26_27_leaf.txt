@@ -1,0 +1,124 @@
+26                    F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+holomorphic function along all paths in DR ∖ Σ. Let us define the subset Σ+ f ⊂ Σ,
+to necessarily include 0 if 0 ∈ Σ, to consist of those β ∈ Σ for which the radial
+analytic continuation of f (x) ∈ CJxK from x = 0 towards x = β remains bounded.
+We say that the power series f (x) is overconvergent at Σ+
+                                                         f and extends to DR ∖Σ as
+a multivalued holomorphic function. Then the radius of convergence of the initial
+power series germ f (x) ∈ CJxK is equal to minβ∈({R}∪Σ)∖Σ+ |β|. The following
+                                                               f
+trivial lemma is crucial for our approach to Theorems A and C; we note that this
+type of statement on compatibility with integrations becomes completely false if we
+replace holomorphic by meromorphic everywhere in the previous paragraph.
+Lemma 2.9.1. There is an equality Σ+
+                                   Rx
+                                      f (t) dt
+                                               = Σ+
+                                                  f.
+                                        0
+
+   Given now a holomorphic mapping φ : D → DR with φ(0) = 0, we can apply
+the same notion to the pulled-back power series f (φ(z)) ∈ CJzK, which is a z = 0
+holomorphic function germ that extends to D ∖ φ−1 (Σ) as a multivalued holomor-
+phic function. In general, there is no relationship between the overconvergence sets
+                              +
+Σ+f ⊂ Σ ⊂ DR and φ
+                      −1
+                         (Σ) φ∗ f ⊂ φ−1 (Σ) ⊂ D for f and φ∗ f .
+   But suppose there is a contractible open neighborhood 0 ∈ Ω ∈ D on which
+         ≃
+φ|Ω : Ω −→ φ(Ω) is univalent and, therefore, a conformal isomorphism onto the
+image open neighborhood φ(U ) ∋ 0. Assume furthermore that φ−1 (0) = {0} and
+that each point in φ(Ω) ∩ Σ+ f has exactly one pre-image under the analytic map φ,
+that is:                                        
+                               φ−1 φ(Ω) ∩ Σ+   f   ⊂ Ω.
+Then, in particular, f (φ(z)) is holomorphic on at least Ω:
+                        +                                   
+          φ−1 (Σ) ∩ Ω φ∗ f = φ−1 Σ+   f  ∩ Ω = φ−1 Σ+   f ∩ φ(Ω) .           (2.9.2)
+This is the univalence input we alluded to. If now, in addition, φ(D) ∩ Σ =
+Σ+
+ f ∩ φ(Ω), it follows at once  that the multivalued holomorphic function f (φ(z)) on
+                                                         +
+      −1              −1     +
+D ∖ φ (Σ) = D ∖ φ           Σf ∩ φ(Ω) = D ∖ φ−1 (Σ) ∩ Ω φ∗ f is in fact a (single-
+valued) holomorphic function on the whole disc D, that is a convergent power series
+on that disc.
+   We summarize the basic property that we just proved:
+Proposition 2.9.3. Let f ∈ CJxK be a holomorphic function germ which extends
+as a multivalued holomorphic function on the Riemann surface P1 ∖ Σ, for some
+finite set of punctures Σ on the Riemann sphere. Consider a disjoint partition
+Σ = Σ0 ⊔ Σ1 , a holomorphic map φ : D → P1 ∖ Σ1 that takes φ(0) = 0, and
+a contractible open neighborhood 0 ∈ Ω ⊂ D on which φ restricts as a univalent
+                            ≃
+map (equivalently:          → φ(Ω) is a conformal isomorphism). We assume that
+                    φ|Ω : Ω −
+φ−1 Σ0 ⊂ Ω and that f ∈ O(φ(Ω)) is holomorphic on φ(Ω).
+         
+
+   Then, the pulled-back germ f (φ(z)) ∈ CJzK converges on the full disc D.
+Remark 2.9.4. The assumptions on the triple (φ, Ω, Σ) in Proposition 2.9.3 can
+alternatively, and slightly more succinctly, be summarized by having a holomor-
+phic mapping φ : (D, 0) → (C, 0) that restricts univalently on the contractible
+open neighborhood Ω ∋ 0, and such that φ−1 (Σ) ⊂ Ω for the finite puncture set Σ.
+We chose the formulation with Σ = Σ0 ⊔ Σ1 to highlight the practical presence of
+universal maps φ when the singularity type (Σ0 , Σ1 ) is given but the open neigh-
+borhood Ω ∋ 0 is kept unspecified.
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  27
+
+
+2.9.5. The modular lambda map. In this general context, the significance of the
+modular lambda map (1.2.8) is in the observation that φ(z) := λ(z) is the universal
+map in Proposition 2.9.3 for the case Σ0 = {0} and Σ1 = {1, ∞} (upon keeping fluid
+the choice of an unspecified open neighborhood Ω ∋ 0). Its derivative λ′ (0) = 16
+therefore maximizes the conformal size of any such map. This can be considered
+(see Remark 2.11.3 for a direct connection) as the multivalent analog of the role
+of the domain Ω = C ∖ [1, ∞) and the Koebe map φ(z) = 4z/(1 + z)2 in the
+proof of Theorem 2.7.2. Concretely, if f (x) ∈ CJxK continues analytically along
+all paths as a holomorphic function on P1 ∖ {0, 1, ∞} (an example is any balanced
+hypergeometric series), then f (λ(z)) ∈ CJzK converges on the open unit disc z ∈ D.
+A basic illustration is the classic Jacobi formula
+                          ∞      2       n      ∞
+                                                            !2
+                         X     2n      λ(q)        X
+                                                         n2
+                                               =       q       ,
+                         n=0
+                               n        16         n=0
+
+where the holonomicity in x = λ(q) is an expression of the Picard–Fuchs ODE for
+the de Rham cohomology of the Legendre elliptic curve over
+                        Y (2)C = Spec C [x, 1/x, 1/(1 − x)] .
+Our proof of Theorem A will involve a similar expression § 11.1 of the Picard–Fuchs
+ODE over the modular curve
+                 Y0 (6)C ∼
+                         = Spec C [x, 1/x, 1/(1 − x), 1/(1 − 9x)] ,
+in which ζ(2) and L(2, χ−3 ) emerge as the Eichler periods.
+
+2.10. First irrationality proofs. In Remark 2.8.2 on Conjecture 2.8.1, we ob-
+served that the prescribed Q[x, 1/(1 − x)]-module has direct irrationality implica-
+tions on special values at points of the form x = 1/n. However, the method of
+our present paper only addresses Q(x)-vector spaces in the framework of Theo-
+rem 2.5.1, but not their integral structures over finitely generated Q-algebras inter-
+mediate between Q[x] and Q(x). We now explain how even the cruder Q(x)-form
+of Conjecture 2.8.1 (as enhanced by Question 2.8.3) casts a method for establishing
+irrationality proofs. These are now in the form of Apéry limits, as opposed to the
+straight special values of the functions in the relevant holonomic module.
+   The following expands upon what we have already discussed in the introduction.
+The ideal situation is as follows. Given an interesting period η, one writes down a
+holonomic function f (x) with coefficients in Q(η). Assuming for the contradiction
+that η ∈ Q and hence f (x) ∈ QJxK, this function (together with its derivatives)
+provides a space of holonomic functions of some explicit denominator type and
+dimension over Q(x). In addition, depending on the circumstances, there will
+also exist other known functions in this space. Considerations of monodromy (or
+otherwise) typically allow one to show that this space of known functions is Q(x)
+(and even C(x))-linearly independent from the functions coming from f (x). If the
+lower bound coming from the span of such functions exceeds the upper bounds from
+our theorem, we obtain the desired irrationality of η.
+   Consider, for instance, our task to establish the Q-linear dependence 1, ζ(2), and
+L(2, χ−3 ). The ideal scenario would be to use a putative Q-linear dependence to
+write down such an f (x) with denominators of type τ = [1, 2, . . . , n]2 which ex-
+tends holomorphically along all paths in P1 ∖ {0, 1, ∞}, but such that f (x) is not
+in the Q(x)-vector space generated by the five functions in Conjecture 2.8.1. Then
+

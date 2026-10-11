@@ -1,0 +1,115 @@
+                  ON DECIDING TRANSCENDENCE OF POWER SERIES                            3
+
+
+   Given a linear differential operator L with coefficients in Q(z), one may ask
+several questions concerning the algebraic nature of its solutions:
+    (F) Decide if all solutions of L are algebraic (Fuchs’ problem).
+    (L) Decide if L admits at least one nontrivial algebraic solution (Liouville’s
+         problem).
+    (S) Decide if a given solution f of L is algebraic (Stanley’s problem).
+Note that if L is irreducible, then the three problems (F), (L) and (S) are equiv-
+alent. This is because an irreducible operator either admits a basis of algebraic
+solutions, or no nontrivial algebraic solution, see Proposition 2.5 in [86].
+   Above, the word “decide” may have several meanings. One may for instance ask
+for a criterion, that is for a mathematical characterization based on the inspection of
+the coefficients of L, or of some invariants of L (such as its singularities, exponents
+at singularities, etc.) The classical meaning in computer science —the one that
+we adopt in this article— is that one asks for an algorithmic decision procedure,
+which, on every specific instance of L, is able to answer the given problem using a
+finite number of field operations in Q.
+   In addition to such a decision procedure, one may also want to exhibit an anni-
+hilating polynomial (usually, the minimal polynomial) of the algebraic solution(s).
+Computing such a polynomial yields the most obvious “algebraicity witness”, on
+which the decision procedure itself may rely (see §4.2). However, these witnesses
+may have prohibitively large sizes; deciding algebraicity of solutions does not nec-
+essarily need them.
+   In this article, we add one more problem to the previous list:
+   (P) Compute the (monic) right-factor operator2 Lalg of L whose solution set is
+        spanned by the algebraic solutions of L.
+Again, if L is irreducible, then (P) is equivalent to the problems (F), (L) and (S).
+   Note that a solution to (P) implies solutions to each of the problems (F), (L)
+and (S). Indeed, solving (F), resp. (L), or (S), amounts to checking L = Lalg ,
+resp. Lalg ̸= 1, or Lalg (f ) = 0 (the last equality can be checked as explained in [16,
+Lemma 2.1]).
+1.4. Sufficient transcendence criteria. There exist several criteria that can be
+used to prove that a given power series f ∈ Q[[z]] is transcendental. They are
+simply built on properties of algebraic power series. We recall below two important
+ones, Eisenstein’s arithmetic criterion and Flajolet’s analytic criterion. Although
+very useful in practice, none of these sufficient criteria is also necessary, and there
+are concrete examples that escape them (see Example 5 for such an example). This
+observation brings additional motivation to Stanley’s problem (S).
+1.4.1. Eisenstein’s criterion.
+Definition 1. A power series f = n≥0 an z n in Q[[z]] is called globally bounded if
+                                   P
+it has a non-zero radius of convergence and there exists C ∈ N∗ such that an C n ∈ Z
+for n ≥ 1.
+   A famous criterion, stated (and sketchily proved) in 1852 by Gotthold Eisen-
+stein [30] and fully proved one year later by Eduard Heine [46], asserts that if a
+power series f ∈ Q[[z]] is algebraic, then only a finite number of prime numbers
+  2This is an operator with coefficients in Q(z), see Proposition 2.
+4                          A. BOSTAN, B. SALVY, AND M. F. SINGER
+
+
+can divide the denominators of the coefficients sequence (an )n≥0 . This is also a
+consequence of a theorem3 by Heine [47] stating that any algebraic power series
+f ∈ Q[[z]] is globally bounded. This P arithmetic criterion immediately implies that
+the power series log(1 − z) = − n≥1 z n /n (more generally, the polylogarithm
+Lis (z) = n≥1 z n /ns ), and exp(z) = n≥0 z n /n! are transcendental. However,
+           P                              P
+
+when f (z) is not given in closed form, but rather like in Stanley’s problem (S), by
+a linear differential equation with sufficiently many initial conditions, then Eisen-
+stein’s criterion is difficult to apply. The reason for this is a quite fundamental
+one: it is currently not known (and it is considered to be a difficult open problem)
+how to recognize that a P-recursive sequence (an )n given by a linear recurrence
+and initial conditions has integer terms (or, that it has almost integer coefficients,
+in the sense that an C n are integers for all n ≥ 1, for some constant C ∈ N∗ ). The
+same difficulty arises in a different context for the mere problem of representing
+E-functions, see [16].
+
+1.4.2. Flajolet’s criterion. In many situations, the given D-finite power series f (z)
+already has integer coefficients, therefore Eisenstein’s criterion is useless. This
+is systematically the case in combinatorics when f (z) is the generating function
+of a sequence whose n-th term counts the number of objects of size n is some
+combinatorial class. Much more useful is Flajolet’s criterion [33, Criterion D] (see
+also [34, VII.7.2]) based on the Newton-Puiseux theorem and on Darboux’s transfer
+results from the local behavior of f (z) around its singularities to the asymptotic
+behavior of its coefficient sequence (an )n≥0 .
+    One form of the criterion asserts that if an ∼ γ β n nr as n → ∞, with either
+r ̸∈ Q \ Z<0 , or β ∈/ Q, or γ · Γ(r + 1) ∈
+                                          / Q, then f (z) is transcendental.
+    For more general and more refined versions on the asymptotic behavior of the
+coefficients of algebraic power series, we refer to [34, p. 501], [74] and [80, Theo-
+rem 3.1].
+    This criterion is the most commonly used for transcendence questions in com-
+binatorics. It allows for instance to show that the hypergeometric power series
+         2n k n
+             z (mentioned at the end of problem (g) in [93, §4]) is algebraic if and
+P          
+   n≥0 n
+only if k = 1 (see §1.6 for a different proof), and also that the non-hypergeometric
+                      Pn       2     2 n
+power series n≥0 k=0 nk n+k
+               P
+                                    k   z (occurring in Apéry’s celebrated proof of
+the irrationality of ζ(3), see Example 4) is transcendental. A more general example
+that can be handled by Flajolet’s criterion is
+                    n  p0          p        p               p !
+                               n + k 1 n + 2k 2
+                                                         
+             X X        n                                  n + mk m
+                                                     ···                zn,
+                        k         k          k                k
+             n≥0    k=0
+
+that is discussed in Appendix A.
+   However, there are cases of D-finite power series f (z) for which both Eisenstein’s
+criterion and Flajolet’s criterion fail to detect the transcendence of f (z), see Ex-
+ample 5.
+
+    3Heine’s 1854 result is what is commonly called “Eisenstein’s criterion” in the literature. Hence,
+strictly speaking there are two distinct criteria, one due to Eisenstein and the other one due
+to Heine. It might well be that they coincide for D-finite functions; this is related to Siegel’s
+conjecture that the classes of “broad G-functions” and “strict G-functions” coincide, see e.g. [2,
+Conj. 2.3.1].
+

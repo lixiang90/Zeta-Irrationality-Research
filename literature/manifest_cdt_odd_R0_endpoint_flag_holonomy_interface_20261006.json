@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "status": "NEW_read_only_primary_receipt",
+  "scope": "Actual CDT theorem and core sections read; all new mathematics is paper proof, zero mathematical producer runs.",
+  "main_revalidated_sha256": "2e148742cc6e80381d5b46f434f3085954209887a934bcea19c3881ed285ccab",
+  "delivery_revalidated": {"frozen_inputs": 345, "proof_review_files": 93, "primary_pdfs": 74, "archived_pdf_pages": 4399, "local_links": 1124},
+  "sources": [
+    {
+      "path": "literature/cdt2025_arithmetic_holonomy.pdf",
+      "title": "Arithmetic holonomy bounds and effective Diophantine approximation",
+      "version": "arXiv:2510.04156v1, 5 Oct 2025",
+      "primary_url": "https://arxiv.org/abs/2510.04156v1",
+      "pages": 20,
+      "sha256": "5f403f337fed8bfd776348a04aaaec7d57ca6f90c31dd871ed793bf24239c8f1",
+      "actual_read_pdf_pages": [3,4,5,6,7,8,14,15,16,17],
+      "actual_visual_pdf_pages": [4],
+      "used_for": ["Theorem 2.1 meromorphic input", "Theorem 2.6 and section 2.3 number-field slopes/local estimates", "section 5 applications and actual overconvergence"],
+      "full_paper_read_claim": false
+    },
+    {
+      "path": "literature/cdt2024_l2_chi_minus3.pdf",
+      "title": "The linear independence of 1, zeta(2), and L(2, chi_-3)",
+      "version": "arXiv:2408.15403v2, 16 Sep 2024",
+      "primary_url": "https://arxiv.org/abs/2408.15403v2",
+      "pages": 218,
+      "sha256": "84c672bd39259ab7cf8e004241f0c132e530d66dff1128d1dc1e7eb653aaa771",
+      "actual_read_pdf_pages": [1,2,62,63,64,65,66,67,89,90,91,97,98,99,100,101,102,103,104,105,106,107,108,122,123,124],
+      "actual_visual_pdf_pages": [105,123],
+      "used_for": ["section 5 integration costs", "Theorems 6.0.2 and 7.0.1", "Lemma 7.4.1 meromorphic-pole multiplier and Poisson-Jensen", "slopes D^2 estimates 7.3.7,7.3.14,7.3.15", "Theorem 8.0.1 and Remark 8.0.6 nested species equality"],
+      "full_paper_read_claim": false,
+      "full_sections_6_to_8_read_claim": false
+    }
+  ],
+  "new_primary_pdf_downloads": 0,
+  "tls_exceptions": 0,
+  "old_or_peer_mathematical_producer_execution_import_rerun": 0,
+  "new_mathematical_producer_runs": 0,
+  "read_only_operations": ["PowerShell source and delivery reads", "Python fitz PDF text extraction and source-page rasterization", "source SHA256 checks"],
+  "scratch_visual_directory": "tmp/pdfs/cdt_endpoint_flag_20261006",
+  "output_proof": "research/cdt_odd_R0_endpoint_flag_holonomy_interface_20261006.md",
+  "output_proof_sha256": "af728ecbebe3ac4827f7388706d4c5892896437e625e1bf4a0671b949bff28b5",
+  "final_independent_review": "toric_chow_completion actually full-read final proof and final H7/H8 boundary regularity on 2026-10-06; parent independently read core no-go and quantitative species"
+}

@@ -1,0 +1,91 @@
+PHYSICAL PDF PAGE 64
+their Laurent series has the form:
+F (z) = z +
+∞∑
+n=1
+bn
+zn ·
+Since F is an open mapping near ∞ , the complement of its image is a
+compact set K(F ) ⊂ C.
+Example. If we set b2 = 1 we get F (z) = z + 1/z which satisﬁes K(F ) =
+[− 2, 2].
+Theorem 4.15 The area of K(F ) is given by A = π (1 − ∑n|bn|2).
+Proof. Integrate F dF over the unit circle and observe that, since |dz|2 =
+(− i/ 2)dz dz, the area A of K(F ) is given by:
+A = − i
+2
+∫
+S1
+F dF = − i
+2
+(
+1 −
+∑
+n|bn|2
+)∫
+S1
+dz
+z = π
+(
+1 −
+∑
+n|bn|2
+)
+.
+Corollary 4.16 We have ∑n|bn|2 ≤ 1. In particular, we have |bn| ≤
+1/ √ n.
+Corollary 4.17 The space Σ is compact.
+Proof. This follows from the fact that |bn| ≤ n− 1/ 2. So if we ﬁx R > 1,
+then for |z| ≥ R we have
+|F (z) − z| ≤
+∑
+n|bn|/R n+1 = C(R) < ∞ .
+This uniform bound implies every sequence has a subsequence converging
+uniformly on compact sets. As usual, univalence is also pres erved in the
+limit.
+Remark. Little is known about optimal bounds for |bn| over Σ. It is
+conjectured that |bn|= O(1/n 3/ 4); see [CJ].
+We can now use the statement |b1| ≤ 1 to prove the ﬁrst case of the
+Bieberbach conjecture. Note that the case of equality, we mu st have all other
+bn = 0, and hence up to a rotation, F (z) = z + 1/z and K(F ) = [ − 2, 2].
+Theorem 4.18 For all f ∈ S with have |a2| ≤ 2.
+63
+
+PHYSICAL PDF PAGE 65
+Proof. We ﬁrst note that F (z) = 1 /f (1/z ) + a2 is in Σ. Indeed, we ﬁnd:
+1/f (1/z ) = z
+1 + a2/z + a3/z 2 + · · ·
+= z
+(
+1 − (a2/z + a3/z 2 + · · ·) + (a2/z + a3/z 2 + · · ·)2 − · · ·
+)
+= z − a2 + a2
+2 − a3
+z + · · ·
+and thus F (z) has b1 = a2
+2 − a3. So we ﬁnd |a2
+2 − a3| ≤ 1, which is sort of
+interesting, but not what we are aiming for yet.
+Next we use a nice trick to make f (∆) more symmetrical: we consider,
+instead of f (z), the new map g(z) =
+√
+f (z2). This map is also in S and it
+is given by
+g(z) = z
+√
+1 + a2z2 + a3z2 + · · ·= z + (a2/ 2)z3 + · · ·
+Thus |a2/ 2| ≤ 1 and hence |a2| ≤ 2.
+Corollary 4.19 S is compact.
+Proof. Suppose fi ∈ S and let Fi(z) = 1 /f (1/z ) + a2(i) ∈ Σ. Pass to a
+subsequence so Fi(z) converges in Σ, and so a2(i) converges. Then Gi(z) =
+Fi(z) − a2(i) converges outside the disk, and hence fi(z) = 1 /G i(1/z ) con-
+verges on the unit disk.
+Here is a useful geometric consequence of the bound on a2.
+Theorem 4.20 (Koebe 1/4 theorem) For any f ∈ S we have B(0, 1/ 4) ⊂
+f (∆).
+Proof. Suppose p ̸∈ f (∆). Note that A(z) = z/ (1 − z/p ) has A(0) = 0 and
+A′(0) = 1. Thus
+g(z) = f (z)
+1 − f (z)/p = (z + a2z2 + · · ·)(1 + z/p + · · ·) = z + (a2 + 1/p )z2 + · · ·
+belongs to S. Thus 2 ≥ | a2 + 1/p | ≥ |1/p | − 2 and hence |p| ≥ 1/ 4.
+64

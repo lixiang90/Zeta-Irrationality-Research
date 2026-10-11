@@ -1,0 +1,79 @@
+{
+  "scope": "Fixed exact examples and rational endpoints; full-scale proof is in the report.",
+  "all_checks_passed": true,
+  "actual_coordinate": {
+    "tq_first": [
+      "0",
+      "1",
+      "-5",
+      "11"
+    ],
+    "qt_first": [
+      "0",
+      "1",
+      "5",
+      "39"
+    ],
+    "integer_inverse": true
+  },
+  "mixed_target_example": {
+    "p": 13,
+    "operator": "(theta-1)^7",
+    "background": "(1+t)*t^(-8)*T9-2*T2/(1-t)",
+    "A1": "-504",
+    "A2": "-19152",
+    "H_at_p1_valuation": -7,
+    "filtered_at_p1_valuation": 0,
+    "mixed_at_p2_valuation": -7,
+    "mixed_at_p2_scaled_residue": 1
+  },
+  "logarithmic_offset_cancellation": {
+    "p": 11,
+    "a": 7,
+    "row": "T8-t*T7",
+    "valuation_at_7p1": -6,
+    "valuation_at_7p2": -7,
+    "scaled_residue_at_7p2": 3
+  },
+  "all_r_flat_lower": "43/10",
+  "exact_concave_intervals": [
+    {
+      "lo": 10,
+      "hi": 20,
+      "harmonic_lower": "29/10",
+      "endpoint_values": [
+        "1504/5",
+        "279/5"
+      ]
+    },
+    {
+      "lo": 20,
+      "hi": 30,
+      "harmonic_lower": "359/100",
+      "endpoint_values": [
+        "1797/5",
+        "466/5"
+      ]
+    },
+    {
+      "lo": 30,
+      "hi": 45,
+      "harmonic_lower": "399/100",
+      "endpoint_values": [
+        "2386/5",
+        "1723/20"
+      ]
+    },
+    {
+      "lo": 45,
+      "hi": 70,
+      "harmonic_lower": "439/100",
+      "endpoint_values": [
+        "18643/20",
+        "3202/5"
+      ]
+    }
+  ],
+  "report_sha256": "9b23d73b94a9f53d30a901cc3acaba5dbf76910b88d0676061c0cf5f964aaf5e",
+  "script_sha256": "d95e653e4853d0ea0388a01ca36be0192464803fff336b7dbeafe08b72cefb3a"
+}

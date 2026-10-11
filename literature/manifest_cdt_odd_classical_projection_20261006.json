@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-06",
+  "scope": "Original primary papers; targeted actual reading only. Classical and 2-adic special values are explicitly distinguished.",
+  "papers": [
+    {
+      "title": "Arithmetic holonomy bounds and effective Diophantine approximation",
+      "authors": ["Frank Calegari", "Vesselin Dimitrov", "Yunqing Tang"],
+      "url": "https://math.berkeley.edu/~ytang/ICM.pdf",
+      "version": "Author-hosted ICM paper, downloaded 2026-10-06; this exact snapshot is pinned, and is not identified with a different arXiv version",
+      "file": "literature/cdt2026_effective_holonomy_author_20261006.pdf",
+      "sha256": "368cc0af5584049a76c7cef0fd78886524143ee3935f56cfc2e35fb9bee22796",
+      "bytes": 657333,
+      "pages": 20,
+      "actual_read_pdf_pages": [1, 3, 4, 15, 16, 17],
+      "actual_read_scope": "Abstract, holonomy framework and Section5.2 plus footnote17; not a full-paper audit",
+      "relevant_scope": "2-adic zeta(5), higher-period directions, and classic Catalan model with an extra Tate carrier; motivic injectivity is stated as conjectural"
+    },
+    {
+      "title": "A note on the irrationality of zeta_2(5)",
+      "authors": ["Li Lai", "Johannes Sprang", "Wadim Zudilin"],
+      "url": "https://arxiv.org/pdf/2505.05005v1",
+      "version": "arXiv:2505.05005v1, 8 May2025",
+      "file": "literature/lai_sprang_zudilin2025_zeta2_5_v1_20261006.pdf",
+      "sha256": "efc3a310f74fce709c97c0cf2fd2d9222672142a0c4ad95b38118a0e956b0c52",
+      "bytes": 440878,
+      "pages": 20,
+      "actual_read_pdf_pages": [1, 2, 5, 6, 7, 8, 9, 10, 11, 15, 16, 17, 18],
+      "actual_visual_check": "PDF8 rendered and actually viewed; original displayed (4.1) has 768n(2n+1)t^3 inside an additional outer factor16",
+      "relevant_scope": "The original result concerns the 2-adic value. Our separate fixed all-variable polynomial check repairs the displayed telescoper coefficient to48, without altering the downloaded original or claiming its main theorem is false. Classical higher even-derivative projection and prefix arguments are in the new research note.",
+      "not_claimed": "Full20-page audit, a classic zeta(5) or zeta(7) irrationality result, generalization of Lemma5.4 without a separate proof"
+    }
+  ],
+  "research_note": "research/cdt_odd_classical_derivative_projection_20261006.md",
+  "new_numeric_irrationality_theorem": false
+}

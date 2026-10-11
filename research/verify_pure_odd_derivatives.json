@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "forms": 296,
+  "counts": {
+    "pure_odd_derivative_probe": 90,
+    "pure_odd_flat_head": 75,
+    "pure_odd_tail_subtraction": 30,
+    "pure_odd_head_leakage": 20,
+    "pure_odd_cutoff_scan": 81
+  },
+  "sign_counts": {
+    "('pure_odd_derivative_probe', 'positive')": 90,
+    "('pure_odd_flat_head', 'positive')": 48,
+    "('pure_odd_flat_head', 'negative')": 27,
+    "('pure_odd_tail_subtraction', 'positive')": 27,
+    "('pure_odd_tail_subtraction', 'negative')": 3,
+    "('pure_odd_head_leakage', 'positive')": 20,
+    "('pure_odd_cutoff_scan', 'positive')": 56,
+    "('pure_odd_cutoff_scan', 'negative')": 25
+  },
+  "direct_head_Taylor_checks": 20,
+  "zeta_bound": "Exact rational Euler--Maclaurin, M=512, J=512; no Arb zeta call.",
+  "checked": "Independent local pole jets, pure output coefficients, primitive normalization, denominator bounds, nonzero finite intervals and first-node jets."
+}

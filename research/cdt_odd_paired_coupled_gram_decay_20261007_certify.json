@@ -1,0 +1,89 @@
+{
+  "state": "PASS_FIRST1",
+  "scope": "8 rational real inequalities only",
+  "old_peer_execution_import_rerun": 0,
+  "finite_determinant_prime_cases": 0,
+  "producer_sha256": "5853bf82e5078ca085a4cd83dc32dfbbddd9f9483f582234ab003a8b1151fc9a",
+  "series_terms": 72,
+  "sqrt2_bisections": 90,
+  "certified_gain": "1/20",
+  "values": {
+    "Qquarter": {
+      "lo_numerator": -9933355215737,
+      "hi_numerator": -9933355215736,
+      "denominator": 1000000000000
+    },
+    "Qhalf": {
+      "lo_numerator": -9841198709822,
+      "hi_numerator": -9841198709821,
+      "denominator": 1000000000000
+    },
+    "Qone": {
+      "lo_numerator": -10212829171867,
+      "hi_numerator": -10212829171866,
+      "denominator": 1000000000000
+    },
+    "Qsqrt2": {
+      "lo_numerator": -11009300699977,
+      "hi_numerator": -11009300699976,
+      "denominator": 1000000000000
+    },
+    "pi": {
+      "lo_numerator": 3141592653589,
+      "hi_numerator": 3141592653590,
+      "denominator": 1000000000000
+    },
+    "sqrt2": {
+      "lo_numerator": 1414213562373,
+      "hi_numerator": 1414213562374,
+      "denominator": 1000000000000
+    }
+  },
+  "strict_positive_comparisons": {
+    "Qhalf_minus_Qquarter_minus_1over20": {
+      "lo_numerator": 42156505914,
+      "hi_numerator": 42156505915,
+      "denominator": 1000000000000
+    },
+    "Qhalf_minus_Qone_minus_1over20": {
+      "lo_numerator": 321630462044,
+      "hi_numerator": 321630462045,
+      "denominator": 1000000000000
+    },
+    "Qhalf_minus_Qsqrt2_minus_log3_minus_1over20": {
+      "lo_numerator": 19489701486,
+      "hi_numerator": 19489701487,
+      "denominator": 1000000000000
+    },
+    "minus_log15over16_minus_1over20": {
+      "lo_numerator": 14538521137,
+      "hi_numerator": 14538521138,
+      "denominator": 1000000000000
+    },
+    "Qprime_quarter_positive": {
+      "lo_numerator": 762791031828,
+      "hi_numerator": 762791031829,
+      "denominator": 1000000000000
+    },
+    "minus_Qprime_one_positive": {
+      "lo_numerator": 1426026947117,
+      "hi_numerator": 1426026947118,
+      "denominator": 1000000000000
+    },
+    "minus_Qprime_two_minus_4over3_positive": {
+      "lo_numerator": 2103700157400,
+      "hi_numerator": 2103700157401,
+      "denominator": 1000000000000
+    },
+    "pi_minus_3_positive": {
+      "lo_numerator": 141592653589,
+      "hi_numerator": 141592653590,
+      "denominator": 1000000000000
+    }
+  },
+  "limitations": [
+    "No determinant lower bound or target nonzero claim.",
+    "No odd zeta/L irrationality theorem.",
+    "Global/all-n estimates are paper proofs, not this finite certificate."
+  ]
+}

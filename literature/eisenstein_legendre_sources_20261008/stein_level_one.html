@@ -1,0 +1,1370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Modular Forms of Level 1 &mdash; Modular Forms, A Computational Approach v0.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Modular Forms, A Computational Approach v0.1 documentation" href="index.html" />
+    <link rel="next" title="Modular Forms of Weight 2" href="weight_two.html" />
+    <link rel="prev" title="Modular Forms" href="modform.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="weight_two.html" title="Modular Forms of Weight 2"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modform.html" title="Modular Forms"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Modular Forms, A Computational Approach v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  
+  <div class="section" id="modular-forms-of-level-1">
+<span id="ch-level1"></span><h1>Modular Forms of Level 1<a class="headerlink" href="#modular-forms-of-level-1" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter we study in detail the structure of level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> modular
+forms, i.e., modular forms on <img class="math" src="_images/math/fb716d8d752f07d00e7fd60ae709108be91bdc5d.png" alt="\SL_2(\Z)=\Gamma_0(1)=\Gamma_1(1)." />
+We assume some complex analysis (e.g., the residue theorem),
+linear algebra, and that the reader has
+read Chapter <a class="reference external" href="modform.html#ch-modform"><em>Modular Forms</em></a>.</p>
+<div class="section" id="examples-of-modular-forms-of-level-1">
+<span id="sec-level-one-eisen"></span><h2>Examples of Modular Forms of Level 1<a class="headerlink" href="#examples-of-modular-forms-of-level-1" title="Permalink to this headline">¶</a></h2>
+<p>In this section we will finally see some examples of modular forms of
+level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />!  We first introduce the Eisenstein series and
+then define <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />, which is a cusp form of weight <img class="math" src="_images/math/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="12" />.  In
+Section <a class="reference internal" href="#sec-struct1"><em>Structure Theorem for Level 1 Modular Forms</em></a> we prove the structure theorem,
+which says that all modular forms of level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> are polynomials
+in Eisenstein series.</p>
+<p id="index-356">For an even integer <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" />, the
+<span class="target" id="index-357"></span><em>nonnormalized weight </em><img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /><em> Eisenstein series</em> is the
+function on the extended upper half plane
+<img class="math" src="_images/math/1d78f25f0eecdc8cc71a491049a59e8f9332714a.png" alt="\h^*=\h\cup\P^1(\Q)" /> given by</p>
+<div class="math" id="equation-eqn:gk">
+<span id="index-358"></span><p><span class="eqno">(1)</span><img src="_images/math/f81946aefb6ff3690501cae242aba11f26cb80fe.png" alt="G_k(z) = \sum_{m,n\in\Z}^{*} \frac{1}{(mz+n)^k}." />
+</div></p><p>The star on top of the sum symbol means that
+for each <img class="math" src="_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z" /> the sum is over all <img class="math" src="_images/math/dbaa9b79f9632380ce9c99f07238cf31d70857e9.png" alt="m,n\in\Z" /> such that
+<img class="math" src="_images/math/80a32af35bfd66c39cd226a79c3b094e6e26f185.png" alt="mz+n\neq 0" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Proposition 2.1</p>
+<p class="last">The function <img class="math" src="_images/math/901d028b8ec819e6d7a19204048c0b6908ebf5cc.png" alt="G_k(z)" /> is a modular form of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />, i.e.,
+<img class="math" src="_images/math/d9c4854062e20312d11dc4299a2c875028661719.png" alt="G_k \in M_k(\SL_2(\Z))" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>See [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section  VII.2.3] for a proof
+that <img class="math" src="_images/math/901d028b8ec819e6d7a19204048c0b6908ebf5cc.png" alt="G_k(z)" /> defines a holomorphic function on <img class="math" src="_images/math/3f6ad7e36b48f496d9884da76da28ef2ad491a89.png" alt="\h^*" />.
+To see that <img class="math" src="_images/math/fd296c0d32cbc903718590eef7c4b77ef1a75a8e.png" alt="G_k" /> is modular, observe that</p>
+<div class="math">
+<p><img src="_images/math/40b58085bc936e51b1f343a33a4c466673e2e4cd.png" alt="G_k(z+1) = \sum^* \frac{1}{(m(z+1)+n)^k} = \sum^* \frac{1}{(mz+(n+m))^k} =
+\sum^* \frac{1}{(mz+n)^k}," />
+</div></p><p>where for the last equality we use that the map
+<img class="math" src="_images/math/4cc3a9324bb847d574830a55e8a33f883b012230.png" alt="(m,n+m) \mapsto (m, n)" /> on <img class="math" src="_images/math/95d24a989b8ea7713dd7c639d7a068f3049ba225.png" alt="\Z\times \Z" /> is invertible.
+Also,</p>
+<div class="math">
+<p><img src="_images/math/985352f08e97a41cffbada5f3eed1c2e27def72a.png" alt="G_k(-1/z) &amp;= \sum^* \frac{1}{(-m/z+n)^k} \\
+&amp;= \sum^* \frac{z^k}{(-m+nz)^k}\\
+&amp;= z^k \sum^* \frac{1}{(mz+n)^k} = z^k G_k(z)," />
+</div></p><p class="last">where we use that <img class="math" src="_images/math/1bb63235fbbc7ae2611d4b250889602d97898a8a.png" alt="(n,-m) \mapsto (m,n)" /> is invertible.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proposition 2.2</p>
+<p class="last"><img class="math" src="_images/math/3dc8decf19b814b07d21e4795d52b988ff63d0ec.png" alt="G_k(\infty) = 2\zeta(k)" />, where <img class="math" src="_images/math/fda38f45a64bbd4451aedeeb4584e01d91239172.png" alt="\zeta" /> is the Riemann zeta
+function.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>As <img class="math" src="_images/math/87ae5ac342d515943e0b7be1ca45892ba1d549e0.png" alt="z\to \infty" /> (along the imaginary axis) in <a href="#equation-eqn:gk">(1)</a>,
+the terms that involve <img class="math" src="_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z" /> with <img class="math" src="_images/math/b0c7d9710367d9bb32d3fd8488f4e13c6eefc84c.png" alt="m\neq 0" />
+go to <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.
+Thus</p>
+<div class="math">
+<p><img src="_images/math/a4ed98ec7569976337a72a32bfd0c9a03934ef40.png" alt="G_k(\infty) = \sum^*_{n\in\Z} \frac{1}{n^k}." />
+</div></p><p class="last">This sum is twice <img class="math" src="_images/math/9c2db591a36be3a4af11fdf959b6720b75522465.png" alt="\zeta(k) = \sum_{n\geq 1} \frac{1}{n^k}" />,
+as claimed.</p>
+</div>
+<div class="section" id="the-cusp-form">
+<span id="index-359"></span><h3>The Cusp Form <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /><a class="headerlink" href="#the-cusp-form" title="Permalink to this headline">¶</a></h3>
+<p>Suppose <img class="math" src="_images/math/e8f4edf28ec8a2a35ff4329a2b2a516b1d9390d8.png" alt="E=\C/\Lambda" /> is an elliptic curve over <img class="math" src="_images/math/4bc70c1f8d69237ced724d62addf80df8c690c12.png" alt="\C" />, viewed as a
+quotient of <img class="math" src="_images/math/4bc70c1f8d69237ced724d62addf80df8c690c12.png" alt="\C" /> by a lattice <img class="math" src="_images/math/aa984388ac837c064c0cfe707515b8489b7dd925.png" alt="\Lambda=\Z\omega_1+\Z\omega_2" />, with
+<img class="math" src="_images/math/3fb8191157553c5767ae7d65eab30b4652c20a3f.png" alt="\omega_1/\omega_2\in\h" /> (see [<a class="reference external" href="bibliography.html#ds05"><strong>DS05</strong></a>, Section 1.4]).
+The <span class="target" id="index-360"></span><em>Weierstrass </em><img class="math" src="_images/math/bcf1dd80910fd624e03574ad36bd73d8f79f65ad.png" alt="\wp" /><em>-function</em> of
+the lattice <img class="math" src="_images/math/2d295c3b71504a216422e5fffdfbad742c7add64.png" alt="\Lambda" /> is</p>
+<div class="math">
+<p><img src="_images/math/bccfccb77a44c80d1edab57499fc1763a0d400a2.png" alt="\wp = \wp_{\Lambda}(u) = \frac{1}{u^2} + \sum_{k=4,6,8,\ldots} (k-1)
+G_k(\omega_1/\omega_2) u^{k-2}," />
+</div></p><p>where the sum is over even integers <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" />.
+It satisfies the differential equation</p>
+<div class="math">
+<p><img src="_images/math/44eff0f1f7c31fd2782db67a442acbf9daeaa9aa.png" alt="(\wp')^2 = 4\wp^3 - 60 G_4(\omega_1/\omega_2) \wp - 140 G_6(\omega_1/\omega_2)." />
+</div></p><p>If we set <img class="math" src="_images/math/71aef5e6edfbf4dd3775dca789e588c06c4c9ec4.png" alt="x=\wp" /> and <img class="math" src="_images/math/d3568f5b06f5f6be44bdea84d79527579eb0605d.png" alt="y=\wp'" />, the above is an (affine) equation of
+the form <img class="math" src="_images/math/6681be9ae72671f27d1302080b778354e29d37f7.png" alt="y^2 = ax^3 + bx + c" /> for an elliptic curve that is complex
+analytically isomorphic to <img class="math" src="_images/math/62fb663961a4245a1622192cd6481e8550d62385.png" alt="\C/\Lambda" /> (see [<a class="reference external" href="bibliography.html#ahl78"><strong>Ahl78</strong></a>, pg. 277]
+for why the cubic has distinct roots).</p>
+<p>The discriminant of the cubic</p>
+<div class="math">
+<p><img src="_images/math/00beb33277bdfa382b6bd7c63068e7b7a558ce4c.png" alt="4x^3 - 60G_4(\omega_1/\omega_2) x - 140 G_6(\omega_1/\omega_2)" />
+</div></p><p>is <img class="math" src="_images/math/16ac97d335744cc3770054ad20cdd12bea3f7972.png" alt="16D(\omega_1/\omega_2)" />, where</p>
+<div class="math">
+<p><img src="_images/math/fd40402949b7ae997cdf00ce467c7622ac081b79.png" alt="D(z) = (60 G_4(z))^3 - 27(140 G_6(z))^2." />
+</div></p><p>Since <img class="math" src="_images/math/232ad89d4f6c3e37461625b1788c64e107c43d41.png" alt="D(z)" /> is the difference of two modular forms of
+weight <img class="math" src="_images/math/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="12" /> it has weight <img class="math" src="_images/math/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="12" />. Morever,</p>
+<div class="math">
+<p><img src="_images/math/bbec7f06969acfdac9040353e5ffba15dfec2f3e.png" alt="D(\infty) &amp;= \left(60 G_4(\infty)\right)^3 - 27\left(140 G_6(\infty)\right)^2\\
+          &amp;= \left(\frac{60}{3^2\cdot 5} \pi^4\right)^3 - 27\left(\frac{140\cdot 2}{3^3\cdot 5\cdot 7} \pi^6\right)^2\\
+          &amp;= 0," />
+</div></p><p>so <img class="math" src="_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D" /> is a cusp form of weight <img class="math" src="_images/math/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="12" />.</p>
+<p id="index-361">Let</p>
+<div class="math">
+<p><img src="_images/math/c3166b0ddac246dcfd253fd164afa7bb22572165.png" alt="\Delta = \frac{D}{(2\pi)^{12}}." />
+</div></p><div class="admonition " id="lem:delnz">
+<p class="first admonition-title">Lemma 2.3</p>
+<p class="last">If <img class="math" src="_images/math/7d051a88270e4a626f70c887058be8af4579136e.png" alt="z\in\h" />, then <img class="math" src="_images/math/5262a10b6ef7bb48d89aeb9973eccad9fc611ce1.png" alt="\Delta(z)\neq 0" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">Let <img class="math" src="_images/math/18c0b91e9bdbb5096255103290376aed6cb287e0.png" alt="\omega_1=z" /> and <img class="math" src="_images/math/cc1f5fac7654cdd0048af6f85b4f7890b66fdc66.png" alt="\omega_2=1" />.
+Since <img class="math" src="_images/math/0f7e18f7897ecd9fc47160ef3e4db5d4f02687a2.png" alt="E=\C/(\Z\omega_1 + \Z\omega_2)" />
+is an elliptic curve,
+it has nonzero discriminant
+<img class="math" src="_images/math/b2415c5f4e99846b5537607b3f644b96053bb971.png" alt="\Delta(z) = \Delta(\omega_1/\omega_2)\neq 0" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proposition 2.4</p>
+<p class="last">We have <img class="math" src="_images/math/e754ec17fc2e88a0b09beb7363584551c817a224.png" alt="\Delta = q\cdot \prod_{n=1}^{\infty}(1-q^n)^{24}" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">See [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Thm. 6, pg. 95].</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 2.5</p>
+<p>Sage computes the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion of <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> efficiently
+to high precision using the command <tt class="xref docutils literal"><span class="pre">delta_qexp</span></tt>:</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">delta_qexp</span><span class="p">(</span><span class="mf">6</span><span class="p">)</span>
+<span class="go">q - 24*q^2 + 252*q^3 - 1472*q^4 + 4830*q^5 + O(q^6)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="fourier-expansions-of-eisenstein-series">
+<span id="sec-fourexpeis"></span><h3>Fourier Expansions of Eisenstein Series<a class="headerlink" href="#fourier-expansions-of-eisenstein-series" title="Permalink to this headline">¶</a></h3>
+<p id="index-362">Recall from <a href="#equation-eqn:qexp1">(?)</a> that elements <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> of <img class="math" src="_images/math/4a3d64bbe03ca8da6381c1110caafd97b440b5b7.png" alt="M_k(\SL_2(\Z))" /> can be
+expressed as formal power series in terms of <img class="math" src="_images/math/bf1e7b77e4a9c85e468b169e4a0df1178acf6315.png" alt="q(z)=e^{2\pi i z}" /> and
+that this expansion is called the Fourier expansion of <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />.
+The following proposition gives the Fourier expansion of the
+Eisenstein series <img class="math" src="_images/math/901d028b8ec819e6d7a19204048c0b6908ebf5cc.png" alt="G_k(z)" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Definition 2.6</p>
+<p>For any integer <img class="math" src="_images/math/9bdcc7f41fdee5d86ac4aa5b106b4bff79d63dcd.png" alt="t\geq 0" /> and any positive integer <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />,
+the <span class="target" id="index-363"></span><em>sigma function</em></p>
+<div class="math">
+<p><img src="_images/math/a55018807fabe05a6111bcf06716b5ad7b14c439.png" alt="G_k(z) = 2\zeta(k) + 2\cdot \frac{(2\pi i)^{k}}{(k-1)!}\cdot
+\sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n." />
+</div></p><p class="last">is the sum of the <img class="math" src="_images/math/bb2e5ae333b875bf00d1dcd6e5c33db80456ad70.png" alt="t^{th}" /> powers of the positive divisors of <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />.
+Also, let <img class="math" src="_images/math/4b2a2ac2045c1356c8b9b9330251b801b01a962e.png" alt="d(n) = \sigma_0(n)" />, which is the number
+of divisors of <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, and let <img class="math" src="_images/math/a01b8777ad04fa4cfac5eddb852208b0320f5066.png" alt="\sigma(n) = \sigma_1(n)" />.
+For example, if <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> is prime, then <img class="math" src="_images/math/b4d4ab28967080ce9a3c624cdcbc7e6da94e181b.png" alt="\sigma_t(p) = 1 + p^t" />.</p>
+</div>
+<div class="admonition " id="prop:qexpgk">
+<p class="first admonition-title">Proposition 2.7</p>
+<p>For every even integer <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" />, we have</p>
+<div class="last math">
+<p><img src="_images/math/a55018807fabe05a6111bcf06716b5ad7b14c439.png" alt="G_k(z) = 2\zeta(k) + 2\cdot \frac{(2\pi i)^{k}}{(k-1)!}\cdot
+\sum_{n=1}^{\infty} \sigma_{k-1}(n) q^n." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>See [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section VII.4], which uses clever
+manipulations of series, starting with the identity</p>
+<div class="last math">
+<p><img src="_images/math/a5fcfa11c858459a08ab13ced1fc6b794fe432b2.png" alt="\pi \cot(\pi z) = \frac{1}{z} + \sum_{m=1}^{\infty}
+\left( \frac{1}{z+m} + \frac{1}{z-m}\right)." />
+</div></p></div>
+<p>From a computational point of view, the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion of
+<a class="reference internal" href="#prop:qexpgk"><em>Proposition 2.7</em></a> is unsatisfactory because it involves
+transcendental numbers.  To understand these numbers, we introduce the
+<span class="target" id="index-364"></span><em>Bernoulli numbers</em> <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> for <img class="math" src="_images/math/0f0d43e758d9cef0fe802a89ff590f52ee8d766f.png" alt="n\geq 0" /> <em>defined</em> by the
+following equality of formal power series:</p>
+<div class="math" id="equation-eqn:def_bernoulli">
+<p><span class="eqno">(2)</span><img src="_images/math/eb3aca29ee1d49ba597429e3d7e04858ca0fd8cd.png" alt="\frac{x}{e^x - 1} = \sum_{n=0}^{\infty} B_n \frac{x^n}{n!}." />
+</div></p><p>Expanding the power series, we have</p>
+<div class="math">
+<p><img src="_images/math/1fcca881013afb3c1c821af01a86d19924417b84.png" alt="\frac{x}{e^x - 1} =
+1 - \frac{x}{2} + \frac{x^2}{12} - \frac{x^4}{720} + \frac{x^6}{30240}
+- \frac{x^8}{1209600} + \cdots." />
+</div></p><p>As this expansion suggests, the Bernoulli numbers <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> with <img class="math" src="_images/math/65262bf247c4a3c6114a8223d249dc9702619d3e.png" alt="n&gt;1" /> odd
+are <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> (see <a class="reference internal" href="#ex:odd_bernoulli"><em>Exercise 2.2</em></a>). Expanding the series further,
+we obtain the following table:</p>
+<div class="math" id="tbl-bern">
+<p><img src="_images/math/33d2cf152480f2eb2ee461a67dca1b1bdb4d617f.png" alt="\ds B_{0}=1,\quad B_{1}=-\frac{1}{2},\quad B_{2}=\frac{1}{6},\quad
+B_{4}=-\frac{1}{30},\quad B_{6}=\frac{1}{42},\quad
+B_{8}=-\frac{1}{30},\quad" />
+</div></p><div class="math">
+<p><img src="_images/math/c9dc843657f5122188d79caf552450da0483c335.png" alt="\ds
+B_{10}=\frac{5}{66},\quad
+B_{12}=-\frac{691}{2730},\quad
+B_{14}=\frac{7}{6},\quad
+B_{16}=-\frac{3617}{510},\quad
+B_{18}=\frac{43867}{798},\quad" />
+</div></p><div class="math">
+<p><img src="_images/math/c0054270a1b8715a96cdbfbe6523fe95dc806b92.png" alt="\ds{}\!\!B_{20}=-\frac{174611}{330},\quad
+B_{22}=\frac{854513}{138},\quad
+B_{24}=-\frac{236364091}{2730},\quad
+B_{26}=\frac{8553103}{6}." />
+</div></p><p>See Section <a class="reference internal" href="#sec-bercomp"><em>Fast Computation of Bernoulli Numbers</em></a> for a discussion of fast
+(analytic) methods for computing Bernoulli numbers.</p>
+<p id="index-365">We compute some Bernoulli numbers in Sage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">bernoulli</span><span class="p">(</span><span class="mf">12</span><span class="p">)</span>
+<span class="go">-691/2730</span>
+<span class="gp">sage: </span><span class="n">bernoulli</span><span class="p">(</span><span class="mf">50</span><span class="p">)</span>
+<span class="go">495057205241079648212477525/66</span>
+<span class="gp">sage: </span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">bernoulli</span><span class="p">(</span><span class="mf">10000</span><span class="p">)))</span>
+<span class="go">27706</span>
+</pre></div>
+</div>
+<p>A key fact is that Bernoulli numbers are
+rational numbers and they are connected to values of <img class="math" src="_images/math/fda38f45a64bbd4451aedeeb4584e01d91239172.png" alt="\zeta" /> at
+positive even integers.</p>
+<div class="admonition " id="prop:zeta_even">
+<p class="first admonition-title">Proposition 2.8</p>
+<p>If <img class="math" src="_images/math/58a0ef476cf5452cdb5a980c9697dc1068e0731b.png" alt="k\geq 2" /> is an even integer, then</p>
+<div class="last math">
+<p><img src="_images/math/b5f933ec2554d51be721001347406109ba1af091.png" alt="\zeta(k) = -\frac{(2\pi i)^{k}}{2\cdot k!}\cdot B_k." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">This is proved
+by manipulating a series expansion of <img class="math" src="_images/math/c351cd3160d36f2e1af73dcd753a6fb95c6fcecd.png" alt="z \cot(z)" />
+(see [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section VII.4]).</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Definition 2.9</p>
+<p>The <span class="target" id="index-366"></span><em>normalized Eisenstein series</em> of even weight <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" />
+is</p>
+<div class="last math">
+<p><img src="_images/math/bde16ff1133e369ea250c950d11d798639fe5ebd.png" alt="E_k = \frac{(k-1)!}{2\cdot (2\pi i)^k}\cdot G_k." />
+</div></p></div>
+<p>Combining <a class="reference internal" href="#prop:qexpgk"><em>Proposition 2.7</em></a> and
+<a class="reference internal" href="#prop:zeta_even"><em>Proposition 2.8</em></a>, we see that</p>
+<div class="math" id="equation-eqn:ekexp">
+<p><span class="eqno">(3)</span><img src="_images/math/424c9daa62c1929ed9963b35d67937830817c4ad.png" alt="E_k = -\frac{B_k}{2k} + q + \sum_{n=2}^{\infty} \sigma_{k-1}(n)
+q^n." />
+</div></p><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Our series <img class="math" src="_images/math/916a2c2a72c7a444e30aad3c3ca025517887bf00.png" alt="E_k" /> is normalized so that the coefficient of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />
+is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, but often in the literature <img class="math" src="_images/math/916a2c2a72c7a444e30aad3c3ca025517887bf00.png" alt="E_k" /> is normalized so that the
+constant coefficient is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.  We use the normalization with the
+coefficient of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" /> equal to <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, because then the eigenvalue of the
+<img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" /> Hecke operator (see Section <a class="reference internal" href="#sec-hecke-one"><em>Hecke Operators</em></a>) is the
+coefficient of <img class="math" src="_images/math/10c1452f6d94cfa7c46f53505c93fed0e95b6741.png" alt="q^n" />.  Our normalization is also convenient when
+considering congruences between cusp forms and Eisenstein series.</p>
+</div>
+</div>
+</div>
+<div class="section" id="structure-theorem-for-level-1-modular-forms">
+<span id="sec-struct1"></span><h2>Structure Theorem for Level 1 Modular Forms<a class="headerlink" href="#structure-theorem-for-level-1-modular-forms" title="Permalink to this headline">¶</a></h2>
+<p>In this section we describe a structure theorem for modular
+forms of level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.
+If <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is a nonzero meromorphic function on <img class="math" src="_images/math/077c14927538d8f1a0a52edb45aa52d108bd2359.png" alt="\h" /> and <img class="math" src="_images/math/6f7f73527424ddedc998840dd53e1d46d77e1053.png" alt="w\in\h" />, let
+<img class="math" src="_images/math/78e94b34bfb4eb23013a0a422b73d667a212bf03.png" alt="\ord_w(f)" /> be the largest integer <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> such that <img class="math" src="_images/math/7200dde6721a22f41200e0d53993ad943192437a.png" alt="f(z)/(w-z)^n" /> is
+holomorphic at <img class="math" src="_images/math/9ee4b825a2e36ae093ed7be5e4851ef453b34914.png" alt="w" />.  If <img class="math" src="_images/math/4fd4c8d44d5a4dad40ec1d09f1b4ab515e517f4f.png" alt="f = \sum_{n=m}^{\infty} a_n q^n" /> with
+<img class="math" src="_images/math/8056752fa22d8a36033ef5d907f5429e26164d61.png" alt="a_m\neq 0" />, we set <img class="math" src="_images/math/bbfa4a3d1d239202731b2661fa1e096a646b1186.png" alt="\ord_{\infty}(f)=m" />.  We will use the following
+theorem to give a presentation for the vector space of modular forms
+of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />; this presentation yields an algorithm
+to compute this space.</p>
+<p id="index-367">Let <img class="math" src="_images/math/12e4ebd019dd3addd55efce7764b590b7b049f28.png" alt="M_k=M_k(\SL_2(\Z))" /> denote the complex vector space of modular
+forms of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> for <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />.  The
+<span class="target" id="index-368"></span><em>standard fundamental domain</em> <span class="target" id="index-369"></span><em></em><img class="math" src="_images/math/1a1763cbb22920e4b0597081f3410ad8287223a3.png" alt="\cF" /><em></em> for <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />
+is the set of <img class="math" src="_images/math/5a10e6433a2ea92e8a5f1b155b89cfd6735451e4.png" alt="z\in \h" /> with <img class="math" src="_images/math/314d4904b96855922ec8719eb92b68bdbb65b4dc.png" alt="|z|\geq 1" /> and <img class="math" src="_images/math/5fd9594ae324f135a3a73e34201f043d2d597024.png" alt="|\Re(z)|\leq 1/2" />.  Let
+<img class="math" src="_images/math/78bd618ba44cbaf7ed652590319f2935844107d7.png" alt="\rho = e^{2\pi i /3}" />.</p>
+<div class="admonition " id="thm:valence">
+<span id="index-370"></span><p class="first admonition-title">Theorem 2.11</p>
+<p>Let <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> be any integer and
+suppose <img class="math" src="_images/math/9e0b7a9225889dae2a52cea21588cca454788d49.png" alt="f \in M_k(\SL_2(\Z))" /> is nonzero.  Then</p>
+<div class="math">
+<p><img src="_images/math/e63dd90b4365198d2289d3a358d6b488974e4f49.png" alt="\ord_{\infty}(f) + \frac{1}{2}\ord_i(f) + \frac{1}{3} \ord_{\rho}(f)
++ \sum_{w\in \cF}^* \ord_w(f) = \frac{k}{12}," />
+</div></p><p class="last">where <img class="math" src="_images/math/35f30634165e9339e55f4024aad8af2b9e36d8db.png" alt="\ds \sum^*_{w \in \cF}" /> is the sum over elements of <img class="math" src="_images/math/1a1763cbb22920e4b0597081f3410ad8287223a3.png" alt="\cF" />
+other than <img class="math" src="_images/math/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png" alt="i" /> and <img class="math" src="_images/math/0027034d8a10372a06deaf4f4084c01956587479.png" alt="\rho" />!.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">The proof in [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section VII.3] uses
+the residue theorem.</p>
+</div>
+<p>Let <img class="math" src="_images/math/f5c6c2d982471afec80b2a4c3c961f6219620456.png" alt="S_k=S_k(\SL_2(\Z))" />index{<img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" />}
+denote the subspace of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> cusp forms for <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />.  We have
+an exact sequence</p>
+<div class="math">
+<p><img src="_images/math/07aaca35fa0301ffc96d02374c5922955ce56dfb.png" alt="0 \to S_k \to M_k \xrightarrow{\iota_\infty} \C" />
+</div></p><p>that sends <img class="math" src="_images/math/e7dfdd0071168240e1dae9007f1ea10e21514f59.png" alt="f\in M_k" /> to <img class="math" src="_images/math/1aa2068fc522fc6e60b5b2322743fdde0c585738.png" alt="f(\infty)" />.  When <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" /> is even, the
+space <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> contains the Eisenstein series <img class="math" src="_images/math/fd296c0d32cbc903718590eef7c4b77ef1a75a8e.png" alt="G_k" />, and
+<img class="math" src="_images/math/eb7ea77cdb435c83ae74d2777ab2a749acd66633.png" alt="G_k(\infty)=2\zeta(k)\neq 0" />, so the map <img class="math" src="_images/math/e05659323a06ea21db55bbb5291e86586d50617b.png" alt="M_k\to \C" /> is surjective.
+This proves the following lemma.</p>
+<div class="admonition ">
+<p class="first admonition-title">Lemma 2.12</p>
+<p>If <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" /> is even, then <img class="math" src="_images/math/15bb33e7ae85286a8b229923d8fdbd9b2499484e.png" alt="M_k = S_k \oplus \C G_k" />
+and the following sequence is exact:</p>
+<div class="last math">
+<p><img src="_images/math/ad30fe196f102b2fb60b4efb24e93d68c044ba9a.png" alt="0 \to S_k \to M_k \xrightarrow{\iota_\infty} \C  \to 0." />
+</div></p></div>
+<div class="admonition " id="prop:mk_vanish">
+<p class="first admonition-title">Proposition 2.13</p>
+<p class="last">For <img class="math" src="_images/math/f0b043119262a2beb49176cb4beb5c50ec1915a2.png" alt="k&lt;0" /> and <img class="math" src="_images/math/4f681bd84648c174d45eed0037702cae77ed0686.png" alt="k=2" />, we have <img class="math" src="_images/math/dad5ae51a2d1c2cbb71212ed91fd6a70613a70aa.png" alt="M_k=0" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Suppose <img class="math" src="_images/math/e7dfdd0071168240e1dae9007f1ea10e21514f59.png" alt="f\in M_k" /> is nonzero yet <img class="math" src="_images/math/4f681bd84648c174d45eed0037702cae77ed0686.png" alt="k=2" /> or <img class="math" src="_images/math/f0b043119262a2beb49176cb4beb5c50ec1915a2.png" alt="k&lt;0" />.  By
+<a class="reference internal" href="#thm:valence"><em>Theorem 2.11</em></a>,</p>
+<div class="math">
+<p><img src="_images/math/8a47cd0e8141b3c90181061f07f50a86a95e8aa1.png" alt="\ord_{\infty}(f) + \frac{1}{2}\ord_i(f) + \frac{1}{3} \ord_{\rho}(f)
+ + \sum_{w\in D}^* \ord_w(f) = \frac{k}{12}\leq \frac{1}{6}." />
+</div></p><p class="last">This is not possible because each quantity on the left is nonnegative so
+whatever the sum is, it is too big (or <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />, in which case <img class="math" src="_images/math/badf0ecd1ef8289387d8462393438c6e2710ff28.png" alt="k=0" />).</p>
+</div>
+<div class="admonition " id="thm:delta_iso">
+<p class="first admonition-title">Theorem 2.14</p>
+<p class="last">Multiplication by <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> defines an isomorphism <img class="math" src="_images/math/07210f256e726e74d995b0e80d0c182500f56d24.png" alt="M_{k-12}\to S_k" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">By <a class="reference internal" href="#lem:delnz"><em>Lemma 2.3</em></a>, <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> is not identically <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />, so
+because <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> is holomorphic, multiplication
+by <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> defines an injective map <img class="math" src="_images/math/ff67e152d6c274a3deb56a78faa71c75c7c5d359.png" alt="M_{k-12}\hra S_k" />.
+To see that this map is surjective, we show that if <img class="math" src="_images/math/f351358116ea2df4129b3d5cb07f83c184911675.png" alt="f\in S_k" />, then
+<img class="math" src="_images/math/12499d172c789040b4a3e77794dd647706208b89.png" alt="f/\Delta \in M_{k-12}" />.
+Since <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> has weight <img class="math" src="_images/math/edf074831eb5bc9e61d6d6e09f525a86e3068f6a.png" alt="12" /> and <img class="math" src="_images/math/002c542d35ad634457cb20f48392aa103d4690c0.png" alt="\ord_\infty(\Delta)\geq 1" />,
+<a class="reference internal" href="#thm:valence"><em>Theorem 2.11</em></a> implies that <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> has a simple
+zero at <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" /> and does not vanish on <img class="math" src="_images/math/077c14927538d8f1a0a52edb45aa52d108bd2359.png" alt="\h" />.
+Thus if <img class="math" src="_images/math/f351358116ea2df4129b3d5cb07f83c184911675.png" alt="f\in S_k" /> and if we let <img class="math" src="_images/math/a50cb6ba795a421fd7e8d8359afec90ac8f8e6bb.png" alt="g=f/\Delta" />, then <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> is holomorphic
+and satisfies the appropriate transformation formula, so <img class="math" src="_images/math/964f740caf335a7ddf7ccce78ba662a39f02f76a.png" alt="g \in M_{k-12}" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Corollary 2.15</p>
+<p class="last">For <img class="math" src="_images/math/de09b96f80ae6142776281002b27d331a76b5332.png" alt="k=0,4,6,8,10,14" />, the space <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> has dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, with
+basis <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, <img class="math" src="_images/math/e9f8aa6f540b437f12c0a4fbc8db868064c9cc08.png" alt="G_4" />, <img class="math" src="_images/math/30a4f31e5bd7b8cfbb02639c1f99c2ff57b17833.png" alt="G_6" />, <img class="math" src="_images/math/613a1e8a8afc6740040cbcf857c9e6f3f1eddc68.png" alt="G_8" />, <img class="math" src="_images/math/8e74d4632a114ef03585459065e057d4574f800f.png" alt="G_{10}" />, and <img class="math" src="_images/math/65d1d8e22f28767ef18329cbe526351f3ff91f91.png" alt="G_{14}" />, respectively, and
+<img class="math" src="_images/math/778ef2a2d679962ccc7a7f6bffaeb170e283d6f6.png" alt="S_k=0" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">Combining <a class="reference internal" href="#prop:mk_vanish"><em>Proposition 2.13</em></a> with
+<a class="reference internal" href="#thm:delta_iso"><em>Theorem 2.14</em></a>, we see that the spaces <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> for
+<img class="math" src="_images/math/e6f44362059bc065105b30022357c59d09df5169.png" alt="k\leq 10" /> cannot have dimension greater than <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, since otherwise
+<img class="math" src="_images/math/eb9d2b4819e728afa2f5abe4fb7ee7fac6cfd62b.png" alt="M_{k'}\neq 0" /> for some <img class="math" src="_images/math/383a0e6de742a38cdcd2425bb15f1cd376bcc831.png" alt="k'&lt;0" />.  Also <img class="math" src="_images/math/2920cf6de26bb1a972b7df60cc3b2b0ac69e7025.png" alt="M_{14}" /> has dimension at most <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, since
+<img class="math" src="_images/math/64099324365e5a9d4a5701db74579c9bcc5de8e4.png" alt="M _2" /> has dimension <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.  Each of the indicated spaces of weight
+<img class="math" src="_images/math/10bc308a8aec2b762910b4f973b41715a250f0bf.png" alt="\geq 4" /> contains the indicated Eisenstein series and so has
+dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, as claimed.</p>
+</div>
+<div class="admonition " id="cor:dim1">
+<p class="first admonition-title">Corollary 2.16</p>
+<div class="math">
+<p><img src="_images/math/3e58698238d8edc4a57f8ba1aee24763d49e428d.png" alt="\dim M_k = \begin{cases}
+   0 &amp; \text{if }k\text{ is odd or negative}, \\
+   \lfloor{} k/12 \rfloor{} &amp; \text{if } k\con 2\pmod{12},\\
+   \lfloor{} k/12 \rfloor{}+1 &amp; \text{if } k\not\con 2\pmod{12}.
+\end{cases}" />
+</div></p><p class="last">Here <img class="math" src="_images/math/095f1cdfe5bb753ca60c1908b5df787baa83a100.png" alt="\lfloor{}x \rfloor{}" /> is the biggest integer <img class="math" src="_images/math/39f49893d0bad8e9f3b4c475afc226f065824ca1.png" alt="\leq x" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">As we have already seen above, the formula is true when <img class="math" src="_images/math/4e7ba1ce5bb8245cfd89f1f8dacc323ea1adaac7.png" alt="k\leq 12" />.
+By <a class="reference internal" href="#thm:delta_iso"><em>Theorem 2.14</em></a>, the dimension increases by <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />
+when <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> is replaced by <img class="math" src="_images/math/fddfac01b12b72c9643183784b25758a5936a85e.png" alt="k+12" />.</p>
+</div>
+<div class="admonition " id="thm:mk_one_basis">
+<p class="first admonition-title">Theorem 2.17</p>
+<p class="last">The space <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> has as basis the modular forms <img class="math" src="_images/math/f5fbd426b99b52bcf0e20d4773c021e4fe152481.png" alt="G_4^a G_6^b" />, where
+<img class="math" src="_images/math/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png" alt="a,b" /> run over all pairs of nonnegative integers such that
+<img class="math" src="_images/math/70370c43ddd2719ee4aeeda67fac35b7b6a14397.png" alt="4a+6b=k" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Fix an even integer <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.  We first prove by induction that the
+modular forms <img class="math" src="_images/math/f5fbd426b99b52bcf0e20d4773c021e4fe152481.png" alt="G_4^a G_6^b" /> generate <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />; the cases <img class="math" src="_images/math/e6f44362059bc065105b30022357c59d09df5169.png" alt="k\leq 10" /> and
+<img class="math" src="_images/math/68f31a3c10189310fded510e241b999f68fd37ac.png" alt="k=14" /> follow from the above arguments (e.g., when <img class="math" src="_images/math/badf0ecd1ef8289387d8462393438c6e2710ff28.png" alt="k=0" />, we have <img class="math" src="_images/math/1660d43b4960efd50409826b189fce815544ca22.png" alt="a=b=0" /> and
+basis <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />).  Choose some pair of nonnegative integers <img class="math" src="_images/math/e9bdf3e496517e8f8742f81dd774be1f93cf6e8c.png" alt="a,b" />
+such that <img class="math" src="_images/math/70370c43ddd2719ee4aeeda67fac35b7b6a14397.png" alt="4a+6b=k" />.   The form
+<img class="math" src="_images/math/952fae923081ede72e13892afc489e23b3c53672.png" alt="g=G_4^a G_6^b" /> is not a cusp form, since it is nonzero at <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" />.
+Now suppose <img class="math" src="_images/math/e7dfdd0071168240e1dae9007f1ea10e21514f59.png" alt="f\in M_k" /> is arbitrary.  Since <img class="math" src="_images/math/791c515cb97b7fbb1f87f6a25444249e41293269.png" alt="g(\infty)\neq 0" />, there
+exists <img class="math" src="_images/math/b282694cb07ea58fb9936bd0061d82876866d194.png" alt="\alpha\in\C" /> such that <img class="math" src="_images/math/d12e3ea9ad9e649a9a659223ebd71a7fc677df4d.png" alt="f - \alpha g \in S_k" />.  Then by
+<a class="reference internal" href="#thm:delta_iso"><em>Theorem 2.14</em></a>, there is <img class="math" src="_images/math/a7a85c0f996a2d50fe97927f2726c6c9a15457bc.png" alt="h \in M_{k-12}" /> such that <img class="math" src="_images/math/f4aad111f7978f9cf5f7e35323438f4e5a59c4f0.png" alt="f
+- \alpha g = \Delta \cdot h" />.  By induction, <img class="math" src="_images/math/8189a5b5a0917b8c93350827be4038af1839139d.png" alt="h" /> is a polynomial in
+<img class="math" src="_images/math/e9f8aa6f540b437f12c0a4fbc8db868064c9cc08.png" alt="G_4" /> and <img class="math" src="_images/math/30a4f31e5bd7b8cfbb02639c1f99c2ff57b17833.png" alt="G_6" /> of the required type, and so is <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />, so <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is
+as well.  Thus</p>
+<div class="math">
+<p><img src="_images/math/54f971251a7eabeb2c31ac860d7397bcd184d478.png" alt="\{G_4^aG_6^b\ |\ a\geq 0,\ b\geq 0,\ 4a+6b=k\}" />
+</div></p><p>spans <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />.</p>
+<p class="last">Suppose there is a nontrivial linear relation between the <img class="math" src="_images/math/9ab3ba581bd33fb9e6eee99807cd08cb8cc416b6.png" alt="G_4^a
+G_6^b" /> for a given <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.  By multiplying the linear relation by a
+suitable power of <img class="math" src="_images/math/e9f8aa6f540b437f12c0a4fbc8db868064c9cc08.png" alt="G_4" /> and <img class="math" src="_images/math/30a4f31e5bd7b8cfbb02639c1f99c2ff57b17833.png" alt="G_6" />, we may assume that we have
+such a nontrivial relation with <img class="math" src="_images/math/caff199009bed58c1a4704b2794cb87ffc014cae.png" alt="k\con 0\pmod{12}" />.  Now divide the
+linear relation by the weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> form <img class="math" src="_images/math/8f30226648f6e53416f4668585118cef53ce3db4.png" alt="G_6^{k/6}" /> to see that
+<img class="math" src="_images/math/866335dec4d5116b0b5f4218198177a64b82ad7a.png" alt="G_4^3/G_6^2" /> satisfies a polynomial with coefficients in <img class="math" src="_images/math/4bc70c1f8d69237ced724d62addf80df8c690c12.png" alt="\C" />
+(see <a class="reference internal" href="#ex:g4g6quo"><em>Exercise 2.4</em></a>).  Hence
+<img class="math" src="_images/math/866335dec4d5116b0b5f4218198177a64b82ad7a.png" alt="G_4^3/G_6^2" /> is a root of a polynomial, hence a constant, which is a
+contradiction since the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion of <img class="math" src="_images/math/866335dec4d5116b0b5f4218198177a64b82ad7a.png" alt="G_4^3/G_6^2" /> is not
+constant.</p>
+</div>
+<div class="admonition " id="alg:basis">
+<p class="first admonition-title">Algorithm 2.18</p>
+<p>Given integers <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> and <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />, this algorithm computes
+a basis of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions for the complex vector
+space <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> mod <img class="math" src="_images/math/10c1452f6d94cfa7c46f53505c93fed0e95b6741.png" alt="q^n" />.   The <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions output
+by this algorithm have coefficients in <img class="math" src="_images/math/fc17cbce85fcff0b74cbd0a059c43a9f170ab3b4.png" alt="\Q" />.</p>
+<ol class="last arabic simple">
+<li>[Simple Case] If <img class="math" src="_images/math/badf0ecd1ef8289387d8462393438c6e2710ff28.png" alt="k=0" />, output the basis with just <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> in it and
+terminate; otherwise if <img class="math" src="_images/math/4d582dadf15143469157eefc67e782229437c7ca.png" alt="k&lt;4" /> or <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> is odd, output the empty
+basis and terminate.</li>
+<li>[Power Series] Compute <img class="math" src="_images/math/1a97996c8e5e403ffb2c283c5963ffba0c0222f8.png" alt="E_4" /> and <img class="math" src="_images/math/a1a55a8cc8e79af192d02d08500f9fd08d3605c2.png" alt="E_6" /> mod <img class="math" src="_images/math/10c1452f6d94cfa7c46f53505c93fed0e95b6741.png" alt="q^n" /> using the
+formula from <a href="#equation-eqn:ekexp">(3)</a> and Section <a class="reference internal" href="#sec-bercomp"><em>Fast Computation of Bernoulli Numbers</em></a>.</li>
+<li>[Initialize] Set <img class="math" src="_images/math/771d5cd1fe5b9ba84d840fff1b34951a0eaad52a.png" alt="b\set 0" />.</li>
+<li>[Enumerate Basis] For each integer <img class="math" src="_images/math/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" alt="b" /> between <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> and
+<img class="math" src="_images/math/dcfae902f42a088850cf8704366bcba57314f3f3.png" alt="\lfloor k/6\rfloor" />, compute <img class="math" src="_images/math/8ad0956728b2bc02952d76d1b146cf39f13303b2.png" alt="a=(k-6b)/4" />.
+If <img class="math" src="_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a" /> is an integer, compute and output the basis
+element <img class="math" src="_images/math/9a040226f0148588a2d0214c6ed1613323736c26.png" alt="E_4^a E_6^b \mod{q^n}" />.  When computing
+<img class="math" src="_images/math/fb6a1f9a9d3b8796f650354ab316b09d90041d8b.png" alt="E_4^a" />, find
+<img class="math" src="_images/math/7eb26008cff40574c2977a5507a36e84262ef66d.png" alt="E_4^m\pmod{q^n}" /> for each <img class="math" src="_images/math/39bee60212a3be50976654e0e517eb280cf11374.png" alt="m\leq a" />, and save these
+intermediate powers, so they can be reused later, and
+likewise for powers of <img class="math" src="_images/math/a1a55a8cc8e79af192d02d08500f9fd08d3605c2.png" alt="E_6" />.</li>
+</ol>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">This is simply a translation of <a class="reference internal" href="#thm:mk_one_basis"><em>Theorem 2.17</em></a>
+into an algorithm, since <img class="math" src="_images/math/916a2c2a72c7a444e30aad3c3ca025517887bf00.png" alt="E_k" /> is a nonzero scalar multiple
+of <img class="math" src="_images/math/fd296c0d32cbc903718590eef7c4b77ef1a75a8e.png" alt="G_k" />.  That the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions have coefficients
+in <img class="math" src="_images/math/fc17cbce85fcff0b74cbd0a059c43a9f170ab3b4.png" alt="\Q" /> follows from <a href="#equation-eqn:ekexp">(3)</a>.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.19</p>
+<p>We compute a basis for <img class="math" src="_images/math/4dbcf43a8e19bcc59320ffdf7d7a3a34e3a54ac1.png" alt="M_{24}" />, which is the space with
+smallest weight whose dimension is greater than <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.
+It has as basis <img class="math" src="_images/math/d53894bacc130b98f5fd5f092a7549cdc256a10f.png" alt="E_4^6" />, <img class="math" src="_images/math/3919ac7d040c380837d454004bd941d53bd2f6cb.png" alt="E_4^3 E_6^2" />, and <img class="math" src="_images/math/a5a07f2dc9ab4994458c71f3f122a10075b2805f.png" alt="E_6^4" />, whose explicit
+expansions are</p>
+<div class="math">
+<p><img src="_images/math/34631a31df6b85e3699aaafa652e4e15fa8db6bf.png" alt="E_4^6 &amp;= \frac{1}{191102976000000} +
+    \frac{1}{132710400000}q + \frac{203}{44236800000}q^2 + \cdots,\\
+E_4^3 E_6^2 &amp;=
+     \frac{1}{3511517184000} - \frac{1}{12192768000}q - \frac{377}{4064256000}q^2
+     + \cdots, \\
+E_6^4 &amp;= \frac{1}{64524128256} - \frac{1}{32006016}q +
+         \frac{241}{10668672}q^2 +\cdots." />
+</div></p><p id="index-371">We compute this basis in Sage as follows:</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">E4</span> <span class="o">=</span> <span class="n">eisenstein_series_qexp</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span> <span class="mf">3</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">E6</span> <span class="o">=</span> <span class="n">eisenstein_series_qexp</span><span class="p">(</span><span class="mf">6</span><span class="p">,</span> <span class="mf">3</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">E4</span><span class="o">^</span><span class="mf">6</span>
+<span class="go">1/191102976000000 + 1/132710400000*q</span>
+<span class="go">                  + 203/44236800000*q^2 + O(q^3)</span>
+<span class="gp">sage: </span><span class="n">E4</span><span class="o">^</span><span class="mf">3</span><span class="o">*</span><span class="n">E6</span><span class="o">^</span><span class="mf">2</span>
+<span class="go">1/3511517184000 - 1/12192768000*q</span>
+<span class="go">                - 377/4064256000*q^2 + O(q^3)</span>
+<span class="gp">sage: </span><span class="n">E6</span><span class="o">^</span><span class="mf">4</span>
+<span class="go">1/64524128256 - 1/32006016*q + 241/10668672*q^2 + O(q^3)</span>
+</pre></div>
+</div>
+</div>
+<p>In Section <a class="reference internal" href="#sec-vmthesis"><em>The Miller Basis</em></a>, we will discuss the
+reduced echelon form basis for <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />.</p>
+</div>
+<div class="section" id="the-miller-basis">
+<span id="sec-vmthesis"></span><h2>The Miller Basis<a class="headerlink" href="#the-miller-basis" title="Permalink to this headline">¶</a></h2>
+<div class="admonition " id="lem:vm">
+<p class="first admonition-title">Lemma 2.20</p>
+<p class="last">The space <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" /> has a basis <img class="math" src="_images/math/ea855bf04dce3cb22f2f94e68e27b5f9d541c3d1.png" alt="f_1,\ldots, f_{d}" /> such
+that if <img class="math" src="_images/math/f7ffebddb42477480a54bb77a4a0937a7942778d.png" alt="a_i(f_j)" /> is the <img class="math" src="_images/math/ffbd55597272a9914166c5dd1e71a5d23d842ddd.png" alt="i^{th}" /> coefficient of <img class="math" src="_images/math/fde5b6a2fc1ab440c112a594ad384f0ec48865e9.png" alt="f_j" />, then
+<img class="math" src="_images/math/be01618032508cbe29a805b8d9b3e5b48430260b.png" alt="a_i(f_j) = \delta_{i,j}" /> for <img class="math" src="_images/math/f9d7ef62dfe059f544de7c1f9e1bc846e6377bf7.png" alt="i=1,\ldots, {d}" />.  Moreover
+the <img class="math" src="_images/math/fde5b6a2fc1ab440c112a594ad384f0ec48865e9.png" alt="f_j" /> all lie in <img class="math" src="_images/math/30d204f5b49a5587d441b79d89f4914df9d5461a.png" alt="\Z[[q]]" />.  We call this basis the
+<span class="target" id="index-372"></span><em>Miller basis</em> for <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" />.</p>
+</div>
+<p>This is a straightforward construction involving <img class="math" src="_images/math/1a97996c8e5e403ffb2c283c5963ffba0c0222f8.png" alt="E_4" />, <img class="math" src="_images/math/a1a55a8cc8e79af192d02d08500f9fd08d3605c2.png" alt="E_6" /> and
+<img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />.  The following proof very closely follows
+[<a class="reference external" href="bibliography.html#lan95"><strong>Lan95</strong></a>, Ch. X,Thm. 4.4], which in turn follows the
+first lemma of V. Miller&#8217;s thesis.</p>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Let <img class="math" src="_images/math/7af2afea1c242c7e16b0316ff0d74ef11ddd7c73.png" alt="d=\dim S_k" />.  Since <img class="math" src="_images/math/5c9b85c5caf7819b58bfb7217c8b2fccb0e548b6.png" alt="B_4 = -1/30" /> and <img class="math" src="_images/math/4bcdd4d2c9bce0297a02cc03e668f295f8cb58ff.png" alt="B_6=1/42" />, we note that</p>
+<div class="math">
+<p><img src="_images/math/0faaec6e238929c352234fd6cdc11941ea8f2ccd.png" alt="F_4 = -\frac{8}{B_4} \cdot E_4 = 1 + 240q + 2160q^2 + 6720q^3 + 17520q^4 + \cdots" />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/46bf2515f93cd6c89657ec297345984b70f47e6a.png" alt="F_6 = -\frac{12}{B_6}\cdot E_6 = 1 - 504q - 16632q^2 - 122976q^3 - 532728q^4
++\cdots" />
+</div></p><p>have <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansions in <img class="math" src="_images/math/30d204f5b49a5587d441b79d89f4914df9d5461a.png" alt="\Z[[q]]" /> with leading coefficient <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.
+Choose integers <img class="math" src="_images/math/7db0e2cd17a9f1b5c18d6446998ab97fb564d5d5.png" alt="a,b\geq 0" /> such that</p>
+<div class="math">
+<p><img src="_images/math/de1dbea7aef12e4151a9654c05a5c7411dd448bd.png" alt="4a+6b\leq 14 \qquad\text{and}\qquad 4a + 6b \con k \pmod{12}," />
+</div></p><p>with <img class="math" src="_images/math/1660d43b4960efd50409826b189fce815544ca22.png" alt="a=b=0" /> when <img class="math" src="_images/math/caff199009bed58c1a4704b2794cb87ffc014cae.png" alt="k\con 0\pmod{12}" />, and let</p>
+<div class="math">
+<p><img src="_images/math/a027128be0129f2bc979fe44f5834cc78031df92.png" alt="g_j = \Delta^j F_6^{2(d-j)+b} F_4^a
+   = \left(\frac{\Delta}{F_6^2}\right)^j F_6^{2d + b} F_4^a
+,\qquad\qquad \text{for } j=1,\ldots,d." />
+</div></p><p>Then it is elementary to check that <img class="math" src="_images/math/0971401d3d869889e07c290101675e8a68db37ed.png" alt="g_j" /> has weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /></p>
+<div class="math">
+<p><img src="_images/math/e4d330cdec6a6dcfb5e8d307eea2633276625ba7.png" alt="a_j(g_j) = 1 \qquad\text{and}\qquad a_i(g_j)=0\qquad\text{when}\qquad i&lt;j." />
+</div></p><p class="last">Hence the <img class="math" src="_images/math/0971401d3d869889e07c290101675e8a68db37ed.png" alt="g_j" /> are linearly independent over <img class="math" src="_images/math/4bc70c1f8d69237ced724d62addf80df8c690c12.png" alt="\C" />, so form
+a basis for <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" />.  Since <img class="math" src="_images/math/df3e3cc1ddb863252613cbeb07b1d4709aebe160.png" alt="F_4, F_6" />, and <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> are all in <img class="math" src="_images/math/30d204f5b49a5587d441b79d89f4914df9d5461a.png" alt="\Z[[q]]" />,
+so are the <img class="math" src="_images/math/0971401d3d869889e07c290101675e8a68db37ed.png" alt="g_j" />.  The <img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" /> may then be constructed from the <img class="math" src="_images/math/0971401d3d869889e07c290101675e8a68db37ed.png" alt="g_j" />
+by Gauss elimination.  The coefficients of the resulting power series lie in
+<img class="math" src="_images/math/325dee00b013782b6b1c920637728d687b12db43.png" alt="\Z" /> because each time we clear a column we use the power series
+<img class="math" src="_images/math/0971401d3d869889e07c290101675e8a68db37ed.png" alt="g_j" /> whose leading coefficient is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> (so no denominators are introduced).</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 2.21</p>
+<p class="last">The basis coming from Miller&#8217;s lemma is &#8220;canonical&#8221;&#8220;,
+since it is just the reduced row echelon form of any basis.
+Also the set of all <em>integral</em> linear combinations of
+the elements of the Miller basis are precisely
+the modular forms of level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> with integral <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion.</p>
+</div>
+<p>We extend the Miller basis to all <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> by taking
+a multiple of <img class="math" src="_images/math/fd296c0d32cbc903718590eef7c4b77ef1a75a8e.png" alt="G_k" /> with constant term <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and subtracting
+off the <img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" /> from the Miller basis so that the
+coefficients of <img class="math" src="_images/math/de1388426d8e317f11c302f15ce1ed703fada1b4.png" alt="q, q^2, \ldots q^d" /> of
+the resulting expansion are <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.  We call the extra basis
+element <img class="math" src="_images/math/dc996570a1dbe87c088b9d65db29e6f0f54bfc62.png" alt="f_0" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.22</p>
+<p>If <img class="math" src="_images/math/062a51b64b21baa5824cc7d7730feb5c412d3785.png" alt="k=24" />, then <img class="math" src="_images/math/588e07a0cfc1e617ac5d6552a759b3011aa96d6c.png" alt="d=2" />.  Choose <img class="math" src="_images/math/1660d43b4960efd50409826b189fce815544ca22.png" alt="a=b=0" />, since <img class="math" src="_images/math/caff199009bed58c1a4704b2794cb87ffc014cae.png" alt="k\con 0\pmod{12}" />.
+Then</p>
+<div class="math">
+<p><img src="_images/math/ade7e378cf4a45c4abd8024ee0847ebf7d5a394d.png" alt="g_1 = \Delta F_6^2 =
+q - 1032q^2 + 245196q^3 + 10965568q^4 + 60177390q^5 - \cdots" />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/9389b34efa7400901a415930be1e59699d6f0402.png" alt="g_2 = \Delta^2 = q^2 - 48q^3 + 1080q^4 - 15040q^5 + \cdots." />
+</div></p><p>We let <img class="math" src="_images/math/269ab896eeee25d7ef38a5b2db53abff7098f1b4.png" alt="f_2=g_2" /> and</p>
+<div class="last math">
+<p><img src="_images/math/f9b2af2b9ab7a8c21484722c5a84c5874f4324c6.png" alt="f_1 = g_1 + 1032 g_2
+= q + 195660q^3 + 12080128q^4 + 44656110q^5 - \cdots." />
+</div></p></div>
+<div class="admonition " id="ex:vmb36">
+<p class="first admonition-title">Example 2.23</p>
+<p>When <img class="math" src="_images/math/4f5199e107f26a45ab7a959fc96ed93c4e1eb31c.png" alt="k=36" />, the Miller basis including <img class="math" src="_images/math/dc996570a1dbe87c088b9d65db29e6f0f54bfc62.png" alt="f_0" /> is</p>
+<div class="last math">
+<p><img src="_images/math/575ea3ca08d94f180fe54bd9e77c8f1faa998bac.png" alt="f_0 &amp;= 1 + \quad\,\,\, 6218175600q^4 + 15281788354560q^5 + \cdots,\\
+f_1 &amp;= \,\,\,\,\,\,  q + \quad\,\, 57093088q^4 + \,\,\,\,\,\,\,\,\,\,37927345230q^5 +\cdots,\\
+
+f_2 &amp;=  \qquad q^2 +  \,\,\,\,\,\,194184q^4 + \quad\,\,\,\,\,\,\,\,\,\,\,\,\,\,\, 7442432q^5 + \cdots,\\
+
+f_3 &amp;=  \qquad\quad\,\, q^3 -\,\,\,\,\,\,\,\,\,\, 72q^4 +\qquad\quad\,\,\,\,\,\,\,\,\,\,\,\,  2484q^5 + \cdots." />
+</div></p></div>
+<div class="admonition " id="index-373">
+<p class="first admonition-title">Example 2.24</p>
+<p>The Sage command <tt class="xref docutils literal"><span class="pre">victor_miller_basis</span></tt>  computes the Miller
+basis to any desired precision given <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">victor_miller_basis</span><span class="p">(</span><span class="mf">28</span><span class="p">,</span><span class="mf">5</span><span class="p">)</span>
+<span class="go">[</span>
+<span class="go">1 + 15590400*q^3 + 36957286800*q^4 + O(q^5),</span>
+<span class="go">q + 151740*q^3 + 61032448*q^4 + O(q^5),</span>
+<span class="go">q^2 + 192*q^3 - 8280*q^4 + O(q^5)</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition " id="rem:elkies">
+<p class="first admonition-title">Remark 2.25</p>
+<p class="last">To write <img class="math" src="_images/math/a9b5ceb7ac7acf20c3ba9ce8ae1835e1e5192145.png" alt="f \in M_k" /> as a polynomial in <img class="math" src="_images/math/1a97996c8e5e403ffb2c283c5963ffba0c0222f8.png" alt="E_4" /> and <img class="math" src="_images/math/a1a55a8cc8e79af192d02d08500f9fd08d3605c2.png" alt="E_6" />,
+it is wasteful to compute the Miller basis.  Instead,
+use the upper triangular (but not echelon!) basis <img class="math" src="_images/math/1b4e410f4e937d3ca7c81352cf8e13f109d3e0c1.png" alt="\Delta^j
+F_6^{2(d-j)+a} F_4^b" />, and match coefficients from <img class="math" src="_images/math/031c4bc7b088ea10a111261a4eb16770c94d286f.png" alt="q^0" /> to <img class="math" src="_images/math/6f68232582c78ad24eda647973b2cd771094041d.png" alt="q^d" />.</p>
+</div>
+</div>
+<div class="section" id="hecke-operators">
+<span id="sec-hecke-one"></span><h2>Hecke Operators<a class="headerlink" href="#hecke-operators" title="Permalink to this headline">¶</a></h2>
+<p>In this section we define Hecke operators on level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> modular forms and
+derive their basic properties.  We will not give proofs of the
+analogous properties for Hecke operators on higher level modular
+forms, since the proofs are clearest in the level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> case, and the
+general case is similar (see, e.g., [<a class="reference external" href="bibliography.html#lan95"><strong>Lan95</strong></a>]).</p>
+<p>For any positive integer <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, let</p>
+<div class="math">
+<p><img src="_images/math/9f79f81a7bd331669e85492f1bb6019f5c6f46e4.png" alt="X_n = \left\{\mtwo{a}{b}{0}{d} \in \Mat_2(\Z) \,\,:\,\,
+a\geq 1,\,\, ad=n, \text{ and } 0\leq b &lt;d\right\}." />
+</div></p><p>Note that the set <img class="math" src="_images/math/74d9b71f24bec81e0e4411b64e51c7ae415fb838.png" alt="X_n" /> is in bijection with the set of subgroups of
+<img class="math" src="_images/math/d2bab728242348c297bb62ab190de912bc0b3eeb.png" alt="\Z^2" /> of index <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />, where <img class="math" src="_images/math/ef266e427b1fbc975a53a99646778c9a640d8f56.png" alt="\abcd{a}{b}{c}{d}" /> corresponds to
+<img class="math" src="_images/math/a647c7b7b8ce3d69b83412d684d0663e459762a7.png" alt="L=\Z\cdot (a,b) + \Z\cdot (0,d)" />, as one can see using
+Hermite normal form, which is the analogue over <img class="math" src="_images/math/325dee00b013782b6b1c920637728d687b12db43.png" alt="\Z" /> of
+echelon form (see <a class="reference external" href="linear_algebra.html#ex:hnf"><em>Exercise 7.5</em></a>).</p>
+<p>Recall from <a href="#equation-eqn:bargamma">(?)</a> that
+if <img class="math" src="_images/math/5c177a4b938a8f86c7bb25c23edbaa8370f301ba.png" alt="\gamma=\abcd{a}{b}{c}{d}\in\GL_2(\Q)" />, then</p>
+<div class="math">
+<p><img src="_images/math/bff7a83af850b2fdab4cb1b4e8046e96f6f77d5d.png" alt="f^{[\gamma]_k} = \det(\gamma)^{k-1} (cz+d)^{-k} f(\gamma(z))." />
+</div></p><div class="admonition " id="defn:hecke_op">
+<p class="first admonition-title">Definition 2.26</p>
+<p>The <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" /> Hecke operator <img class="math" src="_images/math/9e5cea4cb7e03dcde75f83ab7fd26a0ba97243c8.png" alt="T_{n,k}" /> of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />
+is the operator on the set of functions on <img class="math" src="_images/math/077c14927538d8f1a0a52edb45aa52d108bd2359.png" alt="\h" /> defined by</p>
+<div class="last math">
+<p><img src="_images/math/2975551bab9235dcc02d45318fe540c1837257ba.png" alt="T_{n,k}(f) = \sum_{\gamma \in X_n}
+f^{[\gamma]_k}." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 2.27</p>
+<p class="last">It would make more sense to write <img class="math" src="_images/math/9e5cea4cb7e03dcde75f83ab7fd26a0ba97243c8.png" alt="T_{n,k}" /> on the right, e.g.,
+<img class="math" src="_images/math/aba00cf8b9869903fd04a500e2a2a43981b5f3d8.png" alt="f|T_{n,k}" />, since <img class="math" src="_images/math/9e5cea4cb7e03dcde75f83ab7fd26a0ba97243c8.png" alt="T_{n,k}" /> is defined using
+a right group action.
+However, if <img class="math" src="_images/math/801b47ae438758187fc0bc81ba245d2dc49e81a7.png" alt="n,m" /> are integers, then the action of <img class="math" src="_images/math/9e5cea4cb7e03dcde75f83ab7fd26a0ba97243c8.png" alt="T_{n,k}" /> and
+<img class="math" src="_images/math/b3aa2622ec7a327e32c5a8301af8bd6e0ebc1f89.png" alt="T_{m,k}" /> on weakly modular functions commutes (by
+<a class="reference internal" href="#prop:hecke_com"><em>Proposition 2.29</em></a> below), so it makes no difference
+whether we view the Hecke operators of given weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> as
+acting on the right or left.</p>
+</div>
+<div class="admonition " id="prop:tn_presweak">
+<p class="first admonition-title">Proposition 2.28</p>
+<p class="last">If <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is a weakly modular function of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />, then so is
+<img class="math" src="_images/math/1dfdb16fb96d42e5a259ec76e38225dea4475e4a.png" alt="T_{n,k}(f)" />; if <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is a modular function, then so is <img class="math" src="_images/math/1dfdb16fb96d42e5a259ec76e38225dea4475e4a.png" alt="T_{n,k}(f)" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Suppose <img class="math" src="_images/math/cf83a14e1a45b28ba06a1de246eec9f4d2b96b88.png" alt="\gamma\in\SL_2(\Z)" />.  Since <img class="math" src="_images/math/66981fa3920210c6ad8dbe5e968783d5dd7520c3.png" alt="\gamma" />
+induces an automorphism of <img class="math" src="_images/math/d2bab728242348c297bb62ab190de912bc0b3eeb.png" alt="\Z^2" />,
+<tt class="docutils literal"><span class="pre">X_n</span> <span class="pre">\cdot</span> <span class="pre">\gamma</span> <span class="pre">=</span> <span class="pre">\{</span> <span class="pre">\delta</span> <span class="pre">\gamma</span> <span class="pre">:</span> <span class="pre">\delta\in</span> <span class="pre">X_n\}</span></tt>
+is also in bijection with the subgroups
+of <img class="math" src="_images/math/d2bab728242348c297bb62ab190de912bc0b3eeb.png" alt="\Z^2" /> of index <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />.
+For each element <img class="math" src="_images/math/5ac86caac6f8298f5c457dbf963adc72775f008f.png" alt="\delta\gamma \in X_n\cdot \gamma" />, there
+is <img class="math" src="_images/math/9cd8567dca86e0144fce0fc7bb5c1d825e0112e2.png" alt="\sigma\in\SL_2(\Z)" /> such that <img class="math" src="_images/math/657fa3ad2d44c79127a48a0be271415250c25655.png" alt="\sigma\delta\gamma\in X_n" /> (the
+element <img class="math" src="_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma" />
+transforms <img class="math" src="_images/math/dbcd36ef047b3674d14ae5359a06fff01640e898.png" alt="\delta\gamma" /> to Hermite normal form),
+and the set of elements <img class="math" src="_images/math/01d1b76abc85eb048c388d782d71d9c0c96055f7.png" alt="\sigma\delta\gamma" /> is thus equal to <img class="math" src="_images/math/74d9b71f24bec81e0e4411b64e51c7ae415fb838.png" alt="X_n" />.
+Thus</p>
+<div class="math">
+<p><img src="_images/math/e062631401777247317d291efa1866f952a4f144.png" alt="T_{n,k}(f) = \sum_{\sigma\delta\gamma\in X_n} f^{[\sigma\delta\gamma]_k}
+           = \sum_{\delta\in X_n} f^{[\delta\gamma]_k}
+           = T_{n,k}(f)^{[\gamma]_k}." />
+</div></p><p class="last">A finite sum of meromorphic function is
+meromorphic, so <img class="math" src="_images/math/1dfdb16fb96d42e5a259ec76e38225dea4475e4a.png" alt="T_{n,k}(f)" /> is weakly modular.
+If <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is holomorphic on <img class="math" src="_images/math/077c14927538d8f1a0a52edb45aa52d108bd2359.png" alt="\h" />, then
+each <img class="math" src="_images/math/b4038f97856102c91ed970b75d1e4e69bda3dcac.png" alt="f^{[\delta]_k}" /> is holomorphic on <img class="math" src="_images/math/077c14927538d8f1a0a52edb45aa52d108bd2359.png" alt="\h" /> for <img class="math" src="_images/math/aa110df815a663a0757ca692f0d0d90b1224fbd9.png" alt="\delta \in X_n" />.
+A finite sum of holomorphic functions is holomorphic,
+so <img class="math" src="_images/math/1dfdb16fb96d42e5a259ec76e38225dea4475e4a.png" alt="T_{n,k}(f)" /> is holomorphic.</p>
+</div>
+<p>We will frequently drop <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> from the notation in <img class="math" src="_images/math/9e5cea4cb7e03dcde75f83ab7fd26a0ba97243c8.png" alt="T_{n,k}" />, since
+the weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> is implicit in the modular function to which
+we apply the Hecke operator.  Henceforth we make the
+convention that if we write <img class="math" src="_images/math/7012ae3046697fbe43c5f3b95d790e8df31c9fce.png" alt="T_{n}(f)" /> and if <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is modular,
+then we mean <img class="math" src="_images/math/1dfdb16fb96d42e5a259ec76e38225dea4475e4a.png" alt="T_{n,k}(f)" />, where <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> is the weight of <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />.</p>
+<div class="admonition " id="prop:hecke_com">
+<p class="first admonition-title">Proposition 2.29</p>
+<p>On weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> modular functions we have</p>
+<div class="math" id="equation-eqn:hecke_mul">
+<p><span class="eqno">(4)</span><img src="_images/math/ac40d6e95d578b8e7b1b9e07ef384fdec7320974.png" alt="T_{mn} = T_{m} T_{n} \qquad\qquad\qquad\qquad\quad
+ \text{if }(m,n)=1," />
+</div></p><p>and</p>
+<div class="last math" id="equation-eqn:hecke_recur">
+<p><span class="eqno">(5)</span><img src="_images/math/4d5eaec3c46e8a9933aec503318159a32053d2ae.png" alt="T_{p^n} = T_{p^{n-1}} T_p\, -\, p^{k-1} T_{p^{n-2}} \qquad\!\!
+\text{if $p$ is prime}." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p>Let <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> be a subgroup of index <img class="math" src="_images/math/150c08478d63c3d2f5cc0de4222ea9183673d7ef.png" alt="mn" />.  The quotient <img class="math" src="_images/math/e1cf52ac8643fa0f0f9800fc4b421f8c2d700195.png" alt="\Z^2/L" /> is an
+abelian group of order <img class="math" src="_images/math/150c08478d63c3d2f5cc0de4222ea9183673d7ef.png" alt="mn" />, and <img class="math" src="_images/math/40f0af09a76ae30d1f4f2039fc4bbfefdd6a7811.png" alt="(m,n)=1" />, so <img class="math" src="_images/math/e1cf52ac8643fa0f0f9800fc4b421f8c2d700195.png" alt="\Z^2/L" /> decomposes
+uniquely as a direct sum of a subgroup of order <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> with a subgroup of
+order <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />.  Thus there exists a unique subgroup <img class="math" src="_images/math/3fffc14c948a05ca9822f1af77eb4c812530b655.png" alt="L'" /> such that
+<img class="math" src="_images/math/c9ffe1be9f8958ad5a8017c25041fd692c9a1c4f.png" alt="L\subset L'\subset \Z^2" />, and <img class="math" src="_images/math/3fffc14c948a05ca9822f1af77eb4c812530b655.png" alt="L'" /> has index <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> in <img class="math" src="_images/math/d2bab728242348c297bb62ab190de912bc0b3eeb.png" alt="\Z^2" />.  The
+subgroup <img class="math" src="_images/math/3fffc14c948a05ca9822f1af77eb4c812530b655.png" alt="L'" /> corresponds to an element of <img class="math" src="_images/math/525a7f9521ad7a4196b587063cba77bbf08e6b63.png" alt="X_m" />, and the index <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />
+subgroup <img class="math" src="_images/math/46277c4b2a8bd6bba350e15ade76cb02a6421c20.png" alt="L\subset L'" /> corresponds to multiplying that element on
+the right by some uniquely determined element of <img class="math" src="_images/math/74d9b71f24bec81e0e4411b64e51c7ae415fb838.png" alt="X_n" />.  We thus
+have</p>
+<div class="math">
+<p><img src="_images/math/5d04cf1965bed62de5c9725419681a6db1e71823.png" alt="\SL_2(\Z) \cdot X_{m} \cdot X_n = \SL_2(\Z) \cdot X_{mn}" />
+</div></p><p>i.e., the set products of elements in <img class="math" src="_images/math/525a7f9521ad7a4196b587063cba77bbf08e6b63.png" alt="X_m" /> with elements of <img class="math" src="_images/math/74d9b71f24bec81e0e4411b64e51c7ae415fb838.png" alt="X_n" />
+equal the elements of <img class="math" src="_images/math/7f43563afaf98723a60e9506104d5b330d4f1a1f.png" alt="X_{mn}" />, up to <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />-equivalence.
+Thus for any <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />, we have
+<img class="math" src="_images/math/b37a28c6c0d80bd358b10879f4ff8f46ee9616a7.png" alt="T_{mn}(f) = T_{n}(T_m(f))" />.  Applying this formula with <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> and <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" />
+swapped yields the equality <img class="math" src="_images/math/8df900c0ed55c5f443486550927de106366f7041.png" alt="T_{mn} = T_{m} T_{n}" />.</p>
+<p>We will show that <img class="math" src="_images/math/614a418bd989321a6e4f0965d9f671bc4da4f25b.png" alt="T_{p^n} + p^{k-1} T_{p^{n-2}} = T_p T_{p^{n-1}}" />.
+Suppose <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> is a weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> weakly modular function.
+Using that
+<img class="math" src="_images/math/a0c72b82e67f74ba14cb69254e42a41e2f04dd00.png" alt="f^{[\abcd{p}{0}{0}{p}]_k} = (p^2)^{k-1}p^{-k} f = p^{k-2} f" />,
+we have</p>
+<div class="math">
+<p><img src="_images/math/7c8f9950a3cfd59fa16b60111ce8315954949be6.png" alt="\sum_{x\in X_{p^n}} f^{[x]_k}\,\, +\,\, p^{k-1}\!\!\! \sum_{x\in
+    X_{p^{n-2}}} f^{[x]_k}
+ =  \sum_{x\in X_{p^n}} f^{[x]_k} \,\,\,+\, p\!\!\!\! \sum_{x\in pX_{p^{n-2}}}
+f^{[x]_k}." />
+</div></p><p>Also</p>
+<div class="math">
+<p><img src="_images/math/c9a5138e7976e44cedb64f4a91556a57ec24b5e0.png" alt="T_p T_{p^{n-1}}(f) = \sum_{y\in X_p} \sum_{x\in X_{p^{n-1}}}
+(f^{[x]_k})^{[y]_k} = \sum_{x \in X_{p^{n-1}}\cdot X_p}
+f^{[x]_k}." />
+</div></p><p>Thus it suffices to show that <img class="math" src="_images/math/0fb18016d9c2cfc93d2fa2c6fc97d3535cce8c8d.png" alt="X_{p^n}" /> disjoint union <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> copies
+of <img class="math" src="_images/math/156e09e88090196c80a83b6070377235fd236c36.png" alt="p X_{p^{n-2}}" /> is equal to <img class="math" src="_images/math/8b9e5bf248542028808fed0f16dd95a244f7442f.png" alt="X_{p^{n-1}}\cdot X_p" />, where we
+consider elements with multiplicities and up to left
+<img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />-equivalence (i.e., the left action of <img class="math" src="_images/math/03efd9d1dd9aa04843b5096ad7073ce28c31de60.png" alt="\SL_2(\Z)" />).</p>
+<p>Suppose <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> is a subgroup of <img class="math" src="_images/math/d2bab728242348c297bb62ab190de912bc0b3eeb.png" alt="\Z^2" /> of index <img class="math" src="_images/math/4f284850aa8df581404b2dbecc37eabce44eb96b.png" alt="p^n" />, so <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" />
+corresponds to an element of <img class="math" src="_images/math/0fb18016d9c2cfc93d2fa2c6fc97d3535cce8c8d.png" alt="X_{p^n}" />.  First suppose <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> is not
+contained in <img class="math" src="_images/math/6500ca123b6b58cd8a7d5762f3047f2a74a1df12.png" alt="p\Z^2" />.  Then the image of <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> in <img class="math" src="_images/math/3e4cb5111df0771f957417d211dfe0b6887276a6.png" alt="\Z^2/p\Z^2 =
+(\Z/p\Z)^2" /> is of order <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />, so if <img class="math" src="_images/math/3ceb89ea31cf650802b6daf56e1328cfe560ebc0.png" alt="L'=p\Z^2 + L" />, then
+<img class="math" src="_images/math/622433093ac24748be582aaa4e6c33180dd595ac.png" alt="[\Z^2:L']=p" /> and <img class="math" src="_images/math/88dfabd0870de05840df7d28f33609e3b01d3d3f.png" alt="[L:L']=p^{n-1}" />, and <img class="math" src="_images/math/3fffc14c948a05ca9822f1af77eb4c812530b655.png" alt="L'" /> is the only subgroup
+with this property.  Second, suppose that <img class="math" src="_images/math/9ac07820dbe608e445f4ac858a73511ff94b63a6.png" alt="L\subset p\Z^2" /> if of
+index <img class="math" src="_images/math/4f284850aa8df581404b2dbecc37eabce44eb96b.png" alt="p^n" /> and that <img class="math" src="_images/math/237175a0eee62523fac3fcd1b4cef7bfab683d44.png" alt="x\in X_{p^n}" /> corresponds to <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" />.  Then every
+one of the <img class="math" src="_images/math/5d58d0cd6161c8c4be4d6284f59ec576295093e1.png" alt="p+1" /> subgroups <img class="math" src="_images/math/52eb96c7e5c737174fb4559a89c595806edeb2eb.png" alt="L'\subset \Z^2" /> of index <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />
+contains <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" />. Thus there are <img class="math" src="_images/math/5d58d0cd6161c8c4be4d6284f59ec576295093e1.png" alt="p+1" /> chains <img class="math" src="_images/math/c9ffe1be9f8958ad5a8017c25041fd692c9a1c4f.png" alt="L\subset L'\subset \Z^2" />
+with <img class="math" src="_images/math/622433093ac24748be582aaa4e6c33180dd595ac.png" alt="[\Z^2:L']=p" />.</p>
+<p class="last">The chains <img class="math" src="_images/math/e2a857ae51c1db89ad3faa3ee4aa4c48896cd9aa.png" alt="L\subset L'\subset\Z^2" /> with <img class="math" src="_images/math/622433093ac24748be582aaa4e6c33180dd595ac.png" alt="[\Z^2:L']=p" /> and
+<img class="math" src="_images/math/342dacddc04c5b8e4d3a46dea8035f0b056ea7ef.png" alt="[\Z^2:L]=p^{n-1}" /> are in bijection with the elements of
+<img class="math" src="_images/math/8b9e5bf248542028808fed0f16dd95a244f7442f.png" alt="X_{p^{n-1}}\cdot X_p" />.  On the other hand the union of <img class="math" src="_images/math/0fb18016d9c2cfc93d2fa2c6fc97d3535cce8c8d.png" alt="X_{p^n}" /> with
+<img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> copies of <img class="math" src="_images/math/156e09e88090196c80a83b6070377235fd236c36.png" alt="p X_{p^{n-2}}" /> corresponds to the subgroups <img class="math" src="_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L" /> of index
+<img class="math" src="_images/math/02c54d0508a274236013ae835bc16143a4dabbe5.png" alt="p^{n}" />, but with those that contain <img class="math" src="_images/math/6500ca123b6b58cd8a7d5762f3047f2a74a1df12.png" alt="p\Z^2" /> counted <img class="math" src="_images/math/5d58d0cd6161c8c4be4d6284f59ec576295093e1.png" alt="p+1" /> times. The
+structure of the set of chains <img class="math" src="_images/math/e2a857ae51c1db89ad3faa3ee4aa4c48896cd9aa.png" alt="L\subset L'\subset\Z^2" /> that we
+derived in the previous paragraph gives the result.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Corollary 2.30</p>
+<p class="last">The Hecke operator <img class="math" src="_images/math/a5edd86d68b5479ecfe543af54e88cbada101ab8.png" alt="T_{p^n}" />, for prime <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />, is a polynomial
+in <img class="math" src="_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p" /> with integer coefficients, i.e., <img class="math" src="_images/math/14242ccaa8ee4a0a3d343e971ab3d103b0d148e6.png" alt="T_{p^n}\in\Z[T_p]" />.
+If <img class="math" src="_images/math/801b47ae438758187fc0bc81ba245d2dc49e81a7.png" alt="n,m" /> are any integers, then <img class="math" src="_images/math/4c51096e95d0532dc2e625465791a655e938f510.png" alt="T_n T_m = T_m T_n" /></p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">The first statement follows from <a href="#equation-eqn:hecke_recur">(5)</a> of
+<a class="reference internal" href="#prop:hecke_com"><em>Proposition 2.29</em></a>.  It then follows that
+<img class="math" src="_images/math/4c51096e95d0532dc2e625465791a655e938f510.png" alt="T_n T_m = T_m T_n" /> when <img class="math" src="_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m" /> and <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> are both powers of a single prime <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />.
+Combining this with <a href="#equation-eqn:hecke_mul">(4)</a> gives the second
+statement in general.</p>
+</div>
+<div class="admonition " id="prop:qexptn">
+<p class="first admonition-title">Proposition 2.31</p>
+<p>Let <img class="math" src="_images/math/646e9d86ad1e1cde886c9c31bf30adcd32d17571.png" alt="f = \sum_{n\in\Z} a_n q^n" /> be a modular function
+of weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.
+Then</p>
+<div class="math">
+<p><img src="_images/math/2c1a6e7228364677113c626bf4c69e2efb285369.png" alt="T_{n}(f) = \sum_{m\in\Z}
+\left(\sum_{1\leq d\,\mid\, \gcd(n,m)} d^{k-1} a_{mn/d^2}\right) q^m." />
+</div></p><p>In particular, if <img class="math" src="_images/math/74fd85afeb25627a961382162e87d1969b921837.png" alt="n=p" /> is prime, then</p>
+<div class="math">
+<p><img src="_images/math/6ef3f3dcb164f8295388ab9768e27ef8f8fc8e01.png" alt="T_p(f) = \sum_{m\in \Z} \left(a_{mp} + p^{k-1} a_{m/p}\right) q^m," />
+</div></p><p class="last">where <img class="math" src="_images/math/d4ddf1200dad828ac98bba21cb5ff310a2ca3c7f.png" alt="a_{m/p}=0" /> if <img class="math" src="_images/math/d86f5d31b51a844ff2a8cd264c30cbde8c2a1120.png" alt="m/p\not\in\Z" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">This is proved in [<a class="reference external" href="bibliography.html#ser73"><strong>Ser73</strong></a>, Section  VII.5.3] by writing
+out <img class="math" src="_images/math/7966effb5f6b9f10dc43d52a22a57737a8305fa7.png" alt="T_n(f)" /> explicitly and using that
+<img class="math" src="_images/math/5dad52e638554b237510e61e613d80060857a468.png" alt="\sum_{0\leq b&lt;d} e^{2\pi i bm/d}" /> is <img class="math" src="_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d" /> if <img class="math" src="_images/math/7dcf1e5a9d1c58f299f40703b997d7db680f93b9.png" alt="d\mid m" /> and <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" /> otherwise.</p>
+</div>
+<div class="admonition " id="cor:tpres">
+<p class="first admonition-title">Corollary 2.32</p>
+<p class="last">The Hecke operators preserve <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> and <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 2.33</p>
+<p class="last">Alternatively, for <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> the above corollary is
+<a class="reference internal" href="#prop:tn_presweak"><em>Proposition 2.28</em></a>, and for <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" /> we see from the
+definitions that if <img class="math" src="_images/math/3362b8b99ae87335c7292a83629ea9703c9b4235.png" alt="f(\infty)=0" />, then <img class="math" src="_images/math/e7b7bfdbaeef96b0b998b4d0a0a7c9505921f26f.png" alt="T_n f" /> also vanishes
+at <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.34</p>
+<p>Recall from <a href="#equation-eqn:ekexp">(3)</a> that</p>
+<div class="math">
+<p><img src="_images/math/1284c56f6c19d8b7b8653af0e57587f2544fac9d.png" alt="E_4 = \frac{1}{240} + q + 9q^2 + 28q^3 + 73q^4 + 126q^5 + 252q^6 + 344q^7
+      +\cdots." />
+</div></p><p>Using the formula of <a class="reference internal" href="#prop:qexptn"><em>Proposition 2.31</em></a>, we see that</p>
+<div class="math">
+<p><img src="_images/math/73c22593bd4f585063aa23c8b5f0fd0e9298432f.png" alt="T_2(E_4) = (1/240 + 2^3\cdot (1/240)) + 9q + (73 + 2^3\cdot 1) q^2 + \cdots." />
+</div></p><p>Since <img class="math" src="_images/math/2b0f83f18342a9acbda51a6899ef8fc7ac9dfea3.png" alt="M_4" /> has dimension <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> and since we have proved that <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" />
+preserves <img class="math" src="_images/math/2b0f83f18342a9acbda51a6899ef8fc7ac9dfea3.png" alt="M_4" />, we know that <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> acts as a scalar.  Thus
+we know just from the constant coefficient of <img class="math" src="_images/math/0bf6ba1a834b1e0d2eabfbad6182f412ec6d86db.png" alt="T_2(E_4)" /> that</p>
+<div class="math">
+<p><img src="_images/math/0d057e5286bc66a24912bd7c3742d7e54a9a8bf3.png" alt="T_2(E_4) = 9 E_4." />
+</div></p><p>More generally, for <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> prime we see by inspection of
+the constant coefficient of <img class="math" src="_images/math/1f98d7977849cefa571e3039aebc2d5d120273d7.png" alt="T_p(E_4)" /> that</p>
+<div class="math">
+<p><img src="_images/math/d518f0beb9778fac5e3691611e71513337d71bf0.png" alt="T_p(E_4) = (1+p^3)E_4." />
+</div></p><p>In fact</p>
+<div class="math">
+<p><img src="_images/math/dde3223d0ffb825d5d9100e52377d81700f54436.png" alt="T_n(E_k) = \sigma_{k-1}(n) E_k," />
+</div></p><p class="last">for any integer <img class="math" src="_images/math/9ccd696a5d0cbab8337ceb8a4cdfa202a54a6eae.png" alt="n\geq 1" /> and even weight <img class="math" src="_images/math/3736a55b0da1d74205bb37de71884e9833d024e6.png" alt="k\geq 4" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.35</p>
+<p class="last">By Corollary <a class="reference internal" href="#cor:tpres"><em>Corollary 2.32</em></a>, the Hecke operators <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> also
+preserve the subspace <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" /> of <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />.  Since <img class="math" src="_images/math/ffe24f6d0a28d857642f16f8a9f6d75eced3d2fd.png" alt="S_{12}" /> has dimension
+<img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" /> (spanned by <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />), we see that <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> is an eigenvector
+for every <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />.  Since the coefficient of <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" /> in the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion
+of <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, the eigenvalue of <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> on <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /> is the <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" />
+coefficient of <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />.  Since <img class="math" src="_images/math/2b078776176d7c706b9a6f05364c613e1e260fd4.png" alt="T_{nm}=T_n T_m" /> for <img class="math" src="_images/math/65391cf96abecb9045f64df43754f70df1681079.png" alt="\gcd(n,m)=1" />,
+we have proved the nonobvious fact that the
+<span class="target" id="index-374"></span><em>Ramanujan function</em> <img class="math" src="_images/math/456f051f0d6a8b0f2745b1cd63a4b26003858880.png" alt="\tau(n)" /> that gives the <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" />
+coefficient of <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />    is a multiplicative function, i.e.,
+if <img class="math" src="_images/math/65391cf96abecb9045f64df43754f70df1681079.png" alt="\gcd(n,m)=1" />, then <img class="math" src="_images/math/b8d8a876c208d3283643ab31738b56a937161d29.png" alt="\tau(nm)=\tau(n)\tau(m)" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Remark 2.36</p>
+<p class="last">The Hecke operators respect the decomposition
+<img class="math" src="_images/math/f0c8024f88b91855afbb307e3a5be5ec82e779ec.png" alt="M_k = S_k \oplus \C E_k" />, i.e., for all <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> the series <img class="math" src="_images/math/916a2c2a72c7a444e30aad3c3ca025517887bf00.png" alt="E_k" /> are
+eigenvectors for all <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" />.</p>
+</div>
+</div>
+<div class="section" id="computing-hecke-operators">
+<h2>Computing Hecke Operators<a class="headerlink" href="#computing-hecke-operators" title="Permalink to this headline">¶</a></h2>
+<p>This section is about how to compute matrices
+of Hecke operators on <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />.</p>
+<div class="admonition ">
+<p class="first admonition-title">Algorithm 2.37</p>
+<p>This algorithm computes the matrix of the Hecke operator <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> on the
+Miller basis for <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />.</p>
+<ol class="last arabic">
+<li><p class="first">[Dimension] Compute <img class="math" src="_images/math/48e069d72a8bba9e3811ee8490063671da7a41e6.png" alt="d= \dim(M_k)-1" /> using
+<a class="reference internal" href="#cor:dim1"><em>Corollary 2.16</em></a>.</p>
+</li>
+<li><p class="first">[Basis] Using <a class="reference internal" href="#lem:vm"><em>Lemma 2.20</em></a>, compute the echelon basis
+<img class="math" src="_images/math/84013d332325e61bdb960bb5964804692b4b6c08.png" alt="f_0,\ldots, f_d" /> for <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" /> <img class="math" src="_images/math/9075c23d86a76b1bb138686df9088e87d024add5.png" alt="\pmod{q^{dn+1}}" />.</p>
+</li>
+<li><p class="first">[Hecke operator] Using <a class="reference internal" href="#prop:qexptn"><em>Proposition 2.31</em></a>, compute
+for each <img class="math" src="_images/math/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png" alt="i" /> the image <img class="math" src="_images/math/90914e26ac6078dd38dae466063a79a8564d8ba7.png" alt="T_n(f_i) \pmod{q^{d+1}}" /> .</p>
+</li>
+<li id="usevm"><p class="first">[Write in terms of basis] The elements <img class="math" src="_images/math/bf4eb4ac2070f2d8477e5991c74aec8fb6dcdc32.png" alt="T_n(f_i)
+\pmod{q^{d+1}}" /> determine linear combinations of</p>
+<div class="math">
+<p><img src="_images/math/45b0df71544c7bb33197ad4262c54e75fce0f67c.png" alt="f_0,f_1,\ldots, f_d \pmod{q^d}." />
+</div></p><p>These linear combinations are easy to find once we compute
+<img class="math" src="_images/math/90914e26ac6078dd38dae466063a79a8564d8ba7.png" alt="T_n(f_i) \pmod{q^{d+1}}" />, since our basis of <img class="math" src="_images/math/61c594c97b61f72af93af4e61894b3f16a3bbb30.png" alt="f_i" /> is in
+echelon form.  The linear combinations are just the coefficients
+of the power series <img class="math" src="_images/math/aa027e0cdfbd474afe076bc9cafde14b68b63b11.png" alt="T_n(f_i)" /> up to and including <img class="math" src="_images/math/6f68232582c78ad24eda647973b2cd771094041d.png" alt="q^d" />.</p>
+</li>
+<li><p class="first">[Write down matrix] The matrix of <img class="math" src="_images/math/82f4341a1efbe1a890de160de023b4e4b84ef444.png" alt="T_n" /> acting from the right
+relative to the basis <img class="math" src="_images/math/b3caf0517175445e8fb06881ad19464edc213d4d.png" alt="f_0, \ldots, f_d" /> is the matrix whose
+rows are the linear combinations found in the previous step,
+i.e., whose rows are the coefficients of <img class="math" src="_images/math/aa027e0cdfbd474afe076bc9cafde14b68b63b11.png" alt="T_n(f_i)" />.</p>
+</li>
+</ol>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">By <a class="reference internal" href="#prop:qexptn"><em>Proposition 2.31</em></a>, the <img class="math" src="_images/math/841821582e6920a0ed168655e376e734b74eabe0.png" alt="d^{th}" /> coefficient
+of <img class="math" src="_images/math/7966effb5f6b9f10dc43d52a22a57737a8305fa7.png" alt="T_n(f)" /> involves only <img class="math" src="_images/math/2b1dd7ab524bf7bb9c2cd145570b651b69621168.png" alt="a_{dn}" /> and smaller-indexed coefficients
+of <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" />. We need only compute a modular form <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> modulo <img class="math" src="_images/math/d515583613f7b065c7e6e18c3718d5dc2944bcb9.png" alt="q^{dn+1}" /> in
+order to compute <img class="math" src="_images/math/7966effb5f6b9f10dc43d52a22a57737a8305fa7.png" alt="T_n(f)" /> modulo <img class="math" src="_images/math/2b7a4afeb2237ecc2118d7df11a2c9dc785392c8.png" alt="q^{d+1}" />.
+Uniqueness in step <a class="reference internal" href="#usevm"><em>(4)</em></a> follows from <a class="reference internal" href="#lem:vm"><em>Lemma 2.20</em></a>
+above.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.38</p>
+<p>We compute the Hecke operator <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on <img class="math" src="_images/math/8d9dc7f06438a470e4ad9392c4d56861f2d63bcd.png" alt="M_{12}" /> using the above
+algorithm.</p>
+<ol class="arabic">
+<li><p class="first">[Compute dimension] We have <img class="math" src="_images/math/5fce78d8018ec27a97aee73a4c0e805b84dc142f.png" alt="d=2 - 1 = 1" />.</p>
+</li>
+<li><p class="first">[Compute basis] Compute up to (but not including) the
+coefficient of <img class="math" src="_images/math/069785680fc4070c4a1420cb75d592bd61188c9b.png" alt="q^{dn+1} = q^{1\cdot 2 + 1} = q^3" />.  As given in
+the proof of <a class="reference internal" href="#lem:vm"><em>Lemma 2.20</em></a>, we have</p>
+<div class="math">
+<p><img src="_images/math/6099147218e48d07c47453642d54fbc10e12a648.png" alt="F_4 = 1 + 240q + 2160q^2 + \cdots \quad\text{and}\quad
+F_6 = 1 - 504q - 16632q^2 + \cdots." />
+</div></p><p>Thus $M_{12}$ has basis</p>
+<div class="math">
+<p><img src="_images/math/57f51707dd9315b0d81280dcf427e0402c9788f4.png" alt="f_0 = 1 + 196560q^{2} + \cdots
+\quad\text{and}\quad
+f_1 = q - 24q^{2} + \cdots." />
+</div></p><p id="index-375">Sage does the arithmetic in the above calculation as follows:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">R</span><span class="o">.&lt;</span><span class="n">q</span><span class="o">&gt;</span> <span class="o">=</span> <span class="n">QQ</span><span class="p">[[</span><span class="s">&#39;q&#39;</span><span class="p">]]</span>
+<span class="gp">sage: </span><span class="n">F4</span> <span class="o">=</span>  <span class="mf">240</span> <span class="o">*</span> <span class="n">eisenstein_series_qexp</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="mf">3</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">F6</span> <span class="o">=</span> <span class="o">-</span><span class="mf">504</span> <span class="o">*</span> <span class="n">eisenstein_series_qexp</span><span class="p">(</span><span class="mf">6</span><span class="p">,</span><span class="mf">3</span><span class="p">)</span>
+<span class="gp">sage: </span><span class="n">F4</span><span class="o">^</span><span class="mf">3</span>
+<span class="go">1 + 720*q + 179280*q^2 + O(q^3)</span>
+<span class="gp">sage: </span><span class="n">Delta</span> <span class="o">=</span> <span class="p">(</span><span class="n">F4</span><span class="o">^</span><span class="mf">3</span> <span class="o">-</span> <span class="n">F6</span><span class="o">^</span><span class="mf">2</span><span class="p">)</span><span class="o">/</span><span class="mf">1728</span><span class="p">;</span> <span class="n">Delta</span>
+<span class="go">q - 24*q^2 + O(q^3)</span>
+<span class="gp">sage: </span><span class="n">F4</span><span class="o">^</span><span class="mf">3</span> <span class="o">-</span> <span class="mf">720</span><span class="o">*</span><span class="n">Delta</span>
+<span class="go">1 + 196560*q^2 + O(q^3)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">[Compute Hecke operator] In each case letting <img class="math" src="_images/math/6f1a2b6b7c193f9ba2b2134a59f1da5addcfbc98.png" alt="a_n" /> denote
+the <img class="math" src="_images/math/2fa62a365c27d4f2c298262b3e8c7c224550c20a.png" alt="n^{th}" /> coefficient of <img class="math" src="_images/math/dc996570a1dbe87c088b9d65db29e6f0f54bfc62.png" alt="f_0" /> or <img class="math" src="_images/math/37a9e7fca70e2dce829d902af2088735306bc1a3.png" alt="f_1" />, respectively, we
+have</p>
+<div class="math">
+<p><img src="_images/math/647ada9959d6f569996cdc424f02b2abf719b88f.png" alt="T_2(f_0) &amp;= T_2 (1 + 196560q^{2} + \cdots) \\
+         &amp;= (a_0 + 2^{11} a_0) q^0 + (a_2 + 2^{11} a_{1/2})q^1 + \cdots\\
+         &amp;= 2049  + 196560q + \cdots," />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/a5ef30ba0661842843f50e754f65c87009a65251.png" alt="T_2(f_1) &amp;= T_2 (q - 24q^{2} + \cdots) \\
+         &amp;= (a_0 + 2^{11} a_0) q^0 + (a_2 + 2^{11} a_{1/2})q^1 + \cdots\\
+         &amp;= 0 -24 q + \cdots." />
+</div></p><p>(Note that <img class="math" src="_images/math/6f3e5aa9c8e90f6c74752e63eeea3ffdcf4282c3.png" alt="a_{1/2} = 0" />.)</p>
+</li>
+<li><p class="first">[Write in terms of basis] We read off at once that</p>
+<div class="math">
+<p><img src="_images/math/33e61e5f1b918afaa87ffe8e683886849bd13506.png" alt="T_2(f_0) = 2049 f_0 + 196560 f_1
+\quad\text{and}\quad
+T_2(f_1) = 0 f_0 + (-24)f_1." />
+</div></p></li>
+<li><p class="first">[Write down matrix] Thus the matrix of <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" />, acting from the
+right on the basis <img class="math" src="_images/math/dc996570a1dbe87c088b9d65db29e6f0f54bfc62.png" alt="f_0" />, <img class="math" src="_images/math/37a9e7fca70e2dce829d902af2088735306bc1a3.png" alt="f_1" />, is</p>
+<div class="math">
+<p><img src="_images/math/236f7eda5d832193ba1491b6b9cc9eb3833e4f47.png" alt="T_2 = \mtwo{2049}{196560}{0}{-24}." />
+</div></p></li>
+</ol>
+<p class="last">As a check note that the characteristic polynomial of <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> is
+<img class="math" src="_images/math/926472bd88a1a973b281d6b12c152ad9d05a508b.png" alt="(x-2049)(x+24)" /> and that <img class="math" src="_images/math/e6572103433796f3c9aa508656daabdafb2f706b.png" alt="2049 = 1 + 2^{11}" /> is the sum of the
+<img class="math" src="_images/math/40738b6a63559ea881256ef40e087a93c5989665.png" alt="11^{th}" /> powers of the divisors of <img class="math" src="_images/math/41c544263a265ff15498ee45f7392c5f86c6d151.png" alt="2" />.</p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.39</p>
+<p>The Hecke operator <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on <img class="math" src="_images/math/5a4cd6a5e721fa586a0bcf7880372a46e6a39904.png" alt="M_{36}" /> with respect to the echelon
+basis is</p>
+<div class="math">
+<p><img src="_images/math/9bd8f3f20b8278d2eb1fbe3a65cb28188b2b2ed4.png" alt="\left(
+\begin{matrix}
+\hfill 34359738369&amp;\hfill0&amp;\hfill6218175600&amp;\hfill9026867482214400\\
+0&amp;\hfill0&amp;\hfill34416831456&amp;\hfill5681332472832\\
+0&amp;\hfill1&amp;\hfill194184&amp;\hfill-197264484\\
+0&amp;\hfill0&amp;\hfill-72&amp;\hfill-54528\\
+\end{matrix}\right)." />
+</div></p><p>It has characteristic polynomial</p>
+<div class="math">
+<p><img src="_images/math/e03fa123cd012fac0d9b3e7ddbf56de1e5c1d61e.png" alt="(x - 34359738369) \cdot
+(x^3 - 139656x^2 - 59208339456x - 1467625047588864)," />
+</div></p><p>where the cubic factor is irreducible.</p>
+<p id="index-376">The <tt class="xref docutils literal"><span class="pre">echelon_form</span></tt> command creates the space of modular forms
+but with basis in echelon form (which is not the default).</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">M</span> <span class="o">=</span> <span class="n">ModularForms</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="mf">36</span><span class="p">,</span> <span class="n">prec</span><span class="o">=</span><span class="mf">6</span><span class="p">)</span><span class="o">.</span><span class="n">echelon_form</span><span class="p">()</span>
+<span class="gp">sage: </span><span class="n">M</span><span class="o">.</span><span class="n">basis</span><span class="p">()</span>
+<span class="go">[</span>
+<span class="go">1 + 6218175600*q^4 + 15281788354560*q^5 + O(q^6),</span>
+<span class="go">q + 57093088*q^4 + 37927345230*q^5 + O(q^6),</span>
+<span class="go">q^2 + 194184*q^4 + 7442432*q^5 + O(q^6),</span>
+<span class="go">q^3 - 72*q^4 + 2484*q^5 + O(q^6)</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<p>Next we compute the matrix of the Hecke operator <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" />.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">T2</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">hecke_matrix</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span> <span class="n">T2</span>
+<span class="go">[34359738369   0       6218175600 9026867482214400]</span>
+<span class="go">[          0   0      34416831456    5681332472832]</span>
+<span class="go">[          0   1           194184       -197264484]</span>
+<span class="go">[          0   0              -72           -54528]</span>
+</pre></div>
+</div>
+<p>Finally we compute and factor its characteristic polynomial.</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">T2</span><span class="o">.</span><span class="n">charpoly</span><span class="p">()</span><span class="o">.</span><span class="n">factor</span><span class="p">()</span>
+<span class="go">(x - 34359738369) * (x^3 - 139656*x^2 - 59208339456*x - 1467625047588864)</span>
+</pre></div>
+</div>
+</div>
+<p>The following is a famous open problem about Hecke operators on
+modular forms of level <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.  It generalizes our above observation that
+the characteristic polynomial of <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on <img class="math" src="_images/math/2d2e634a37481384d574ce449c610d1af04f04bc.png" alt="M_k" />, for <img class="math" src="_images/math/7c1ebf09ca14da1b4a1798b69b3afc4f8860b6e6.png" alt="k=12, 36" />,
+factors as a product of a linear factor and an irreducible factor.</p>
+<div class="admonition " id="index-377">
+<p class="first admonition-title">Conjuecture 2.40</p>
+<p class="last">The characteristic polynomial of <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" /> is irreducible for
+any <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.</p>
+</div>
+<p>Kevin Buzzard observed that in several specific cases the Galois group of
+the characteristic polynomial of <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> is the full symmetric group
+(see [<a class="reference external" href="bibliography.html#buz96"><strong>Buz96</strong></a>]).  See also [<a class="reference external" href="bibliography.html#fj02"><strong>FJ02</strong></a>] for more
+evidence for the following conjecture:</p>
+<div class="admonition ">
+<p class="first admonition-title">Conjuecture 2.41</p>
+<p class="last">For all primes <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> and all even <img class="math" src="_images/math/58a0ef476cf5452cdb5a980c9697dc1068e0731b.png" alt="k\geq 2" /> the characteristic
+polynomial of <img class="math" src="_images/math/4e96dad9ecee2df31e31ec08eb652c9cd79e07d6.png" alt="T_{p,k}" /> acting on <img class="math" src="_images/math/e880b118bfa7c5db071a4ed8bb0890168702843f.png" alt="S_k" /> is irreducible.</p>
+</div>
+</div>
+<div class="section" id="fast-computation-of-fourier-coefficients">
+<span id="sec-fasttau"></span><h2>Fast Computation of Fourier Coefficients<a class="headerlink" href="#fast-computation-of-fourier-coefficients" title="Permalink to this headline">¶</a></h2>
+<p>How difficult is it to compute prime-indexed coefficients of</p>
+<div class="math">
+<p><img src="_images/math/8a0ad225a7282ac618f2bf4bfb275e87878ef93c.png" alt="\Delta = \sum_{n=1}^{\infty} \tau(n) q^n
+       = q - 24q^2 + 252q^3 - 1472q^4 + 4830q^5 - 6048q^6 + \cdots?" />
+</div></p><div class="admonition " id="conj:edixhoven">
+<p class="first admonition-title">Theorem 2.42</p>
+<p class="last">Let <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> be a prime.  There is a probabilistic algorithm to compute
+<img class="math" src="_images/math/6072c4c51eae6fd2fe921aed70b9ee71b6374f33.png" alt="\tau(p)" />, for prime <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />, that has expected running time polynomial
+in <img class="math" src="_images/math/f350466da22f1ebfa5fbf77838e64d98dded4892.png" alt="\log(p)" /></p>
+</div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">See [<a class="reference external" href="bibliography.html#ecdj-06"><strong>ECdJ+06</strong></a>].</p>
+</div>
+<p>More generally, if <img class="math" src="_images/math/fd6fc1939889671e5af6a4eb51ad2d66397d1ade.png" alt="f=\sum a_n q^n" /> is an eigenform in some space
+<img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" />, where <img class="math" src="_images/math/58a0ef476cf5452cdb5a980c9697dc1068e0731b.png" alt="k\geq 2" />, then one expects that there is an
+algorithm to compute <img class="math" src="_images/math/a2205a574bf35511af0c75a074c072406257086d.png" alt="a_p" /> in time polynomial in <img class="math" src="_images/math/f350466da22f1ebfa5fbf77838e64d98dded4892.png" alt="\log(p)" />.  Bas
+Edixhoven, Jean-Marc Couveignes and Robin de Jong have proved that
+<img class="math" src="_images/math/6072c4c51eae6fd2fe921aed70b9ee71b6374f33.png" alt="\tau(p)" /> can be computed in polynomial time; their approach involves
+sophisticated techniques from arithmetic geometry (e.g., &#8216;etale
+cohomology, motives, Arakelov theory). The ideas they use are inspired
+by the ones introduced by Schoof, Elkies and Atkin for quickly
+counting points on elliptic curves over finite fields (see
+[<a class="reference external" href="bibliography.html#sch95"><strong>Sch95</strong></a>]).</p>
+<p>Edixhoven describes (in an email to the author) the strategy as
+follows:</p>
+<ol class="arabic simple">
+<li>We compute the mod <img class="math" src="_images/math/63c17c295325f731666c7d74952b563a01e00fcc.png" alt="\ell" /> Galois representation <img class="math" src="_images/math/0027034d8a10372a06deaf4f4084c01956587479.png" alt="\rho" /> associated
+to <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" />.  In particular, we produce a polynomial <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> such that
+<img class="math" src="_images/math/a27f547d7ccef1a3d0d72faf6ea89c499211f71a.png" alt="\Q[x]/(f)" /> is the fixed field of <img class="math" src="_images/math/98f291ae313627527a000ec77996017e57fe8db0.png" alt="\ker(\rho)" />. This is then used
+to obtain <img class="math" src="_images/math/5f1c00525ed96687f027314ae41f1b0571706e9b.png" alt="\tau(p) \pmod{\ell}" /> and to do a Schoof-like algorithm
+for computing <img class="math" src="_images/math/6072c4c51eae6fd2fe921aed70b9ee71b6374f33.png" alt="\tau(p)" />.</li>
+<li>We compute the field of definition of suitable points of
+order <img class="math" src="_images/math/63c17c295325f731666c7d74952b563a01e00fcc.png" alt="\ell" /> on the modular Jacobian <img class="math" src="_images/math/59781a133a019ebf0e5b17120a04007dd92d1e69.png" alt="J_1(\ell)" /> to do part (1) (see
+[<a class="reference external" href="bibliography.html#ds05"><strong>DS05</strong></a>, Ch. 6] for the definition of <img class="math" src="_images/math/59781a133a019ebf0e5b17120a04007dd92d1e69.png" alt="J_1(\ell)" />).</li>
+<li>The method is to approximate the polynomial <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> in some sense
+(e.g., over the complex numbers or modulo many small primes <img class="math" src="_images/math/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" alt="r" />)
+and to use an estimate from Arakelov theory to determine a
+precision that will suffice.</li>
+</ol>
+</div>
+<div class="section" id="fast-computation-of-bernoulli-numbers">
+<span id="sec-bercomp"></span><h2>Fast Computation of Bernoulli Numbers<a class="headerlink" href="#fast-computation-of-bernoulli-numbers" title="Permalink to this headline">¶</a></h2>
+<p>This section, which was written jointly with Kevin McGown, is about
+computing the Bernoulli numbers <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" />, for <img class="math" src="_images/math/0f0d43e758d9cef0fe802a89ff590f52ee8d766f.png" alt="n\geq 0" />, defined in
+Section <a class="reference internal" href="#sec-fourexpeis"><em>Fourier Expansions of Eisenstein Series</em></a> by</p>
+<div class="math" id="equation-eqn:def_bernoulli2}">
+<p><span class="eqno">(6)</span><img src="_images/math/eb3aca29ee1d49ba597429e3d7e04858ca0fd8cd.png" alt="\frac{x}{e^x - 1} = \sum_{n=0}^{\infty} B_n \frac{x^n}{n!}." />
+</div></p><p>One way to compute <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> is to multiply both sides of
+<a href="#equation-eqn:def_bernoulli2">(?)</a> by <img class="math" src="_images/math/4f75c1d8279360dd464c4ecc804eb39c85f6a106.png" alt="e^x-1" /> and equate coefficients of
+<img class="math" src="_images/math/ed37074680c9a1021930252ec06774565e68320d.png" alt="x^{n+1}" /> to obtain the recurrence</p>
+<div class="math">
+<p><img src="_images/math/1fcd1c38e59bae05c4d2ff6958f30602e2228ba7.png" alt="B_0=1\text{,}
+\qquad
+B_n=-\frac{1}{n+1}\cdot \sum_{k=0}^{n-1}\binom{n+1}{k}B_{k}." />
+</div></p><p>This recurrence provides a straightforward and easy-to-implement
+method for calculating <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> if one is interested in
+computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> for all <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> up to some bound.
+For example,</p>
+<div class="math">
+<p><img src="_images/math/c8deeae134b2d4a1b1b3493eb22710a08b5c3f1f.png" alt="B_1 = - \frac{1}{2} \cdot \left( \binom{2}{0} B_0\right) =
+-\frac{1}{2}" />
+</div></p><p>and</p>
+<div class="math">
+<p><img src="_images/math/169de13548c4b48996deb25d7ae4ccd0fe6c276a.png" alt="B_2 = -\frac{1}{3} \cdot \left( \binom{3}{0} B_0 + \binom{3}{1} B_1  \right)
+    = -\frac{1}{3} \cdot \left( 1 - \frac{3}{2}\right) = \frac{1}{6}." />
+</div></p><p>However, computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> via the recurrence is slow; it requires
+summing over many large terms, it requires storing the numbers
+<img class="math" src="_images/math/a37e5172d6215874e2dc6ff2b93736ce99e2eda6.png" alt="B_0,\dots,B_{n-1}" />, and it takes only limited advantage of
+asymptotically fast arithmetic algorithms.  There is also an inductive
+procedure to compute Bernoulli numbers that resembles Pascal&#8217;s
+triangle called the Akiyama-Tanigawa algorithm (see
+[<a class="reference external" href="bibliography.html#kan00"><strong>Kan00</strong></a>]).</p>
+<p>Another approach to computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> is to use Newton
+iteration and asymptotically fast polynomial arithmetic to approximate
+<img class="math" src="_images/math/ee6cfa5a268ec424955eccda2d02ab4171c7d136.png" alt="1/(e^x -1)" />.  This method yields a very fast algorithm to compute
+<img class="math" src="_images/math/9af9a9b48a1a06522f8b3dd19711beda72a05ac2.png" alt="B_0, B_2,\ldots, B_{p-3}" /> modulo <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" />.
+See [<a class="reference external" href="bibliography.html#bcs92"><strong>BCS92</strong></a>] for an application of this
+method modulo a prime <img class="math" src="_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p" /> to the verification of
+Fermat&#8217;s last theorem for irregular primes up to one million.</p>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.43</p>
+<p>David Harvey implemented the algorithm of [<a class="reference external" href="bibliography.html#bcs92"><strong>BCS92</strong></a>]
+in Sage as the command <tt class="xref docutils literal"><span class="pre">bernoulli_mod_p</span></tt>:</p>
+<div class="last highlight-python" id="index-378"><div class="highlight"><pre><span class="gp">sage: </span><span class="n">bernoulli_mod_p</span><span class="p">(</span><span class="mf">23</span><span class="p">)</span>
+<span class="go">[1, 4, 13, 17, 13, 6, 10, 5, 10, 9, 15]</span>
+</pre></div>
+</div>
+</div>
+<p>A third way to compute <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> uses
+an algorithm based on <a class="reference internal" href="#prop:zeta_even"><em>Proposition 2.8</em></a>,
+which we explain below (<a class="reference internal" href="#alg:ber"><em>Algorithm 2.45</em></a>).
+This algorithm appears to
+have been independently invented by several people: by Bernd C.
+Kellner (see [<a class="reference external" href="bibliography.html#kel06"><strong>Kel06</strong></a>]); by Bill Dayl; and by H. Cohen and
+K. Belabas.</p>
+<p>We compute <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> as an exact rational number
+by approximating <img class="math" src="_images/math/07d87504c467e1363d366b967093ab1782ff46be.png" alt="\zeta(n)" /> to very high precision using
+<a class="reference internal" href="#prop:zeta_even"><em>Proposition 2.8</em></a>, the
+Euler product</p>
+<div class="math">
+<p><img src="_images/math/7cf917a7dd5ca620f7f1ba49df4d33c7867630b0.png" alt="\zeta(s)=\sum_{m=1}^\infty m^{-s} =\prod_{p\text{ prime}} (1-p^{-s})^{-1}," />
+</div></p><p>and the following theorem:</p>
+<div class="admonition " id="thm:clausenvs">
+<p class="first admonition-title">Theorem 2.44</p>
+<p>For even <img class="math" src="_images/math/47affecc93688552c8eca8bc13560d52b4cc28a9.png" alt="n\geq 2" />,</p>
+<div class="last math">
+<p><img src="_images/math/cf798781f9aebab7d1fca1af344e92f74a5c4b1d.png" alt="\denom(B_n)=\prod_{p-1 \,\mid\, n} p." />
+</div></p></div>
+<div class="admonition ">
+<p class="first admonition-title">Proof</p>
+<p class="last">See [<a class="reference external" href="bibliography.html#lan95"><strong>Lan95</strong></a>, Ch. X, Thm. 2.1].</p>
+</div>
+</div>
+<div class="section" id="the-number-of-digits-of">
+<span id="sec-bernnum"></span><h2>The Number of Digits of <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /><a class="headerlink" href="#the-number-of-digits-of" title="Permalink to this headline">¶</a></h2>
+<p>The following is a new quick way to compute the number of digits of
+the numerator of <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" />.  For example, using it we can compute the
+number of digits of <img class="math" src="_images/math/4804bf73dd65c287895b284b9520adc241be7f43.png" alt="B_{10^{50}}" /> in less than a second.</p>
+<p>By <a class="reference internal" href="#thm:clausenvs"><em>Theorem 2.44</em></a> we have
+<img class="math" src="_images/math/9ae6bb746358a7d9e9e67a48d69d5265254485c3.png" alt="d_n = \denom(B_n) = \prod_{p-1\mid n} p" />.  The number of digits of
+the numerator is thus</p>
+<div class="math">
+<p><img src="_images/math/ddf904912a185dbfee4114c80a3a4954f7bdd352.png" alt="\lceil \log_{10}(d_n \cdot |B_n|) \rceil." />
+</div></p><p>But</p>
+<div class="math">
+<p><img src="_images/math/f8b342d221c29f45b0b3abff625a143e12f88ee3.png" alt="\log(|B_n|) &amp;= \log\left(\frac{2\cdot n!}{(2\pi)^n}\,\zeta(n)\right)\\
+            &amp;= \log(2) + \log(n!) - n\log(2) - n\log(\pi) +
+            \log(\zeta(n))," />
+</div></p><p>and <img class="math" src="_images/math/9fe784a8da69f53e383bfcb0d0de9d7b27338d14.png" alt="\zeta(n)\sim 1" /> so <img class="math" src="_images/math/6a9a5402fc22965218486793c0097e297d230020.png" alt="\log(\zeta(n))\sim 0" />.
+Finally, Stirling&#8217;s formula (see [<a class="reference external" href="bibliography.html#ahl78"><strong>Ahl78</strong></a>, pg. 198&#8211;206])
+gives a fast way to compute <img class="math" src="_images/math/42386f77d538716737879997b944b77c8e50a02e.png" alt="\log(n!) = \log(\Gamma(n+1))" />:</p>
+<div class="math" id="equation-eqn:loggamma">
+<p><span class="eqno">(7)</span><img src="_images/math/29b0042fa3d2173e3a1fde71fc308a424a64e46b.png" alt="\log(\Gamma(z)) ``=\text{''}
+\frac{\log(2\pi)}{2} + \left(z - \frac{1}{2}\right)\log(z)
+          - z + \sum_{m=1}^{\infty}
+          \frac{B_{2m}}{2m(2m-1)z^{2m-1}}." />
+</div></p><p>We put quotes around the equality sign because <img class="math" src="_images/math/45b53c838f10bd91c24f51712ed20e7aacf8c162.png" alt="\log(\Gamma(z))" /> does
+not converge to its Laurent series.  Indeed, note that for any fixed
+value of <img class="math" src="_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z" /> the summands on the right side go to <img class="math" src="_images/math/b671f1bb7e4ee86584347d5d22f1dc8abdb5bef2.png" alt="\infty" /> as
+<img class="math" src="_images/math/32fbb5f05fca8f8f3539218a382c79f7a9b8e474.png" alt="m\to\infty" />!  Nonetheless, we can use this formula to very efficiently
+compute <img class="math" src="_images/math/45b53c838f10bd91c24f51712ed20e7aacf8c162.png" alt="\log(\Gamma(z))" />, since if we truncate the sum, then the
+error is smaller than the next term in the infinite sum.</p>
+<div class="section" id="computing-exactly">
+<h3>Computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> Exactly<a class="headerlink" href="#computing-exactly" title="Permalink to this headline">¶</a></h3>
+<p>We return to the problem of computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" />.  Let</p>
+<div class="math">
+<p><img src="_images/math/c9364a2e4b772378cdc3144e406371ea22477d55.png" alt="K=\frac{2\cdot n!}{(2\pi)^n}" />
+</div></p><p>so <img class="math" src="_images/math/5fa36f8deeecb154f4798ff69c1103c6995d607c.png" alt="|B_n|=K\zeta(n)" />.  Write</p>
+<div class="math">
+<p><img src="_images/math/dcaac12608036bd474c09188db903f698aabc49f.png" alt="B_n=\frac{a}{d}," />
+</div></p><p>with <img class="math" src="_images/math/4a37fb5469d3ecad95c201a648c6d4c8afcc2d23.png" alt="a,d\in\Z" />, <img class="math" src="_images/math/ac467a62d6dd97e1188ee807bca589fa925ed05c.png" alt="d\geq 1" />, and <img class="math" src="_images/math/d79be8c9e1c805cca80aaff32fcc272c86fae910.png" alt="\gcd(a,d)=1" />.
+It is elementary
+to show that <img class="math" src="_images/math/18bb915999dbdd16efd782f8a74de69c378ffd09.png" alt="a=(-1)^{n/2+1}\;|a|" /> for even <img class="math" src="_images/math/47affecc93688552c8eca8bc13560d52b4cc28a9.png" alt="n\geq 2" />.
+Suppose that using the Euler product we approximate
+<img class="math" src="_images/math/07d87504c467e1363d366b967093ab1782ff46be.png" alt="\zeta(n)" /> from below by a number <img class="math" src="_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z" /> such that</p>
+<div class="math">
+<p><img src="_images/math/2d01b5e11f2ddc1ac2d61aff31300a918b2b0c2d.png" alt="0\leq \zeta(m)-z&lt;\frac{1}{Kd}." />
+</div></p><p>Then <img class="math" src="_images/math/e31b27a31aed366f0ed3f299dba9195fe784cbe9.png" alt="0\leq |B_n| - zK &lt; d^{-1};" /> hence <img class="math" src="_images/math/d0e10f1ecbea4e7c2a9b339a66af38d45a73e1de.png" alt="0\leq |a| - zKd &lt; 1." />
+It follows that <img class="math" src="_images/math/3a8b9637cae093b2b9e795cc7286058ea9105361.png" alt="|a|=\lceil zKd\rceil" />
+and hence <img class="math" src="_images/math/9daea660f7adbb88388a9f44a7f5a6eb0cf2364b.png" alt="a=(-1)^{n/2+1}\;\lceil zKd\rceil." /></p>
+<p>It remains to compute <img class="math" src="_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z" />.
+Consider the following problem:
+given <img class="math" src="_images/math/3562537368e36dea3be3c2bfe72f07750c03bf79.png" alt="s&gt;1" /> and
+<img class="math" src="_images/math/bf21a058f4bd55383f6aa08c87c8a41458447f5f.png" alt="\varepsilon&gt;0" />, find <img class="math" src="_images/math/93360cbdc9e42297853b8193003e55ed180de4fb.png" alt="M\in\Z_+" /> so that</p>
+<div class="math">
+<p><img src="_images/math/0e9cbc0e665a5debb63652dd7a21da106d4fd78f.png" alt="z=\prod_{p\leq M} (1-p^{-s})^{-1}" />
+</div></p><p>satisfies <img class="math" src="_images/math/2f290d174dd4cf70ead8766639fbace603ae2d30.png" alt="0\leq\zeta(s)-z&lt;\varepsilon" />.
+We always have <img class="math" src="_images/math/9806231c0fbb08ce4ba6a46de80c0a61297366cb.png" alt="0\leq\zeta(s)-z" />.
+Also,</p>
+<div class="math">
+<p><img src="_images/math/528261c3ccc5816bba8173aacbdfd6f815a11c1f.png" alt="\sum_{n\leq M} n^{-s}\leq\prod_{p\leq M} (1-p^{-s})^{-1}," />
+</div></p><p>so</p>
+<div class="math">
+<p><img src="_images/math/16f11ed7385b9c737445f47edc18d876157d3320.png" alt="\zeta(s)-z \leq
+  \sum_{n=M+1}^\infty n^{-s}
+\leq
+  \int_M^\infty x^{-s}\;dx
+=
+  \frac{1}{(s-1)M^{s-1}}." />
+</div></p><p>Thus if <img class="math" src="_images/math/da760aad3342c2adb09789887d1c50cac643f1f3.png" alt="M&gt;\varepsilon^{-1/(s-1)}" />, then</p>
+<div class="math">
+<p><img src="_images/math/164f6ac35706d6b1660351cddf36a81eb8a6546a.png" alt="\frac{1}{(s-1)M^{s-1}}
+\leq
+\frac{1}{M^{s-1}}
+&lt;
+\varepsilon
+\,," />
+</div></p><p>so <img class="math" src="_images/math/d1973324213a4ad3f2ba0dee30f361f5b4885083.png" alt="\zeta(s)-z&lt;\varepsilon" />, as required.
+For our purposes, we have <img class="math" src="_images/math/a3bcf4d17c73ee62fb33667223f5731906156bc5.png" alt="s=n" /> and <img class="math" src="_images/math/9db1cf78a2577707a172a84134e48f47ed7f3c36.png" alt="\varepsilon=(Kd)^{-1}" />,
+so it suffices to take <img class="math" src="_images/math/704f5e27a946614ed120bed326afda4b953f790a.png" alt="M&gt;(Kd)^{1/(n-1)}" />.</p>
+<div class="admonition " id="alg:ber">
+<p class="first admonition-title">Algorithm 2.45</p>
+<p>Given an integer <img class="math" src="_images/math/0f0d43e758d9cef0fe802a89ff590f52ee8d766f.png" alt="n\geq 0" />, this algorithm computes
+the Bernoulli number <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> as an exact rational number.</p>
+<ol class="last arabic simple">
+<li>[Special cases] If <img class="math" src="_images/math/02349576cee613512cdf301a365f06c0760acab5.png" alt="n=0" />, return <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />; if <img class="math" src="_images/math/1d96ecc15129c5631ba4a2c6578e91e3d13e3baf.png" alt="n=1" />, return <img class="math" src="_images/math/9c0935f19767bef282a174dea1c15011e246720b.png" alt="-1/2" />;
+if <img class="math" src="_images/math/811f76ab716762dc2652ba611378a1816b671893.png" alt="n\geq 3" /> is odd, return <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.</li>
+<li id="alg-ber-compk">[Factorial factor] Compute
+<img class="math" src="_images/math/4e7fc92d186043cd4ac28dd45bbd745979ba69df.png" alt="\ds K=\frac{2 \cdot n!}{(2\pi)^n}" />
+to sufficiently many digits of precision so
+the ceiling in step <a class="reference internal" href="#alg-ber-num"><em>(6)</em></a> is uniquely determined
+(this precision can be determined using
+Section <a class="reference internal" href="#sec-bernnum"><em>The Number of Digits of </em></a>).</li>
+<li>[Denominator] Compute <img class="math" src="_images/math/0ba9920e424c6db1ad9ce7c715c51a78e9b0ca77.png" alt="\ds d=\prod_{p-1 | n} p" />.</li>
+<li id="alg-ber-compm">[Bound] Compute
+<img class="math" src="_images/math/8fef413686e1c16acc8eb6a2ab8bb33eebbb4bd0.png" alt="\ds M = \left\lceil (K d)^{1/(n-1)} \right\rceil." /></li>
+<li id="alg-ber-approx">[Approximate <img class="math" src="_images/math/07d87504c467e1363d366b967093ab1782ff46be.png" alt="\zeta(n)" />] Compute
+<img class="math" src="_images/math/17f81bb0554ec65d1cfd62c7d5ad09ea368f01c1.png" alt="\ds z = \prod_{p\leq M} (1-p^{-n})^{-1}" />.</li>
+<li id="alg-ber-num">[Numerator] Compute
+<img class="math" src="_images/math/ef6c7223f6b7c03691b004f9db117314d8ad4398.png" alt="\ds a = (-1)^{n/2+1}\,\lceil d K z \rceil" />.</li>
+<li>[Output <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" />] Return <img class="math" src="_images/math/6dc4fbc972f1f17fb8f17963da0fbfdf1170c9ae.png" alt="\ds \frac{a}{d}" />.</li>
+</ol>
+</div>
+<p>In step <a class="reference internal" href="#alg-ber-approx"><em>(5)</em></a> use a sieve to compute all primes
+<img class="math" src="_images/math/4e5578d86969f2289265e4bc78d96b1a8381ce7e.png" alt="p\leq M" /> efficiently (which is fast, since <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> is so small).  In
+step <a class="reference internal" href="#alg-ber-compm"><em>(4)</em></a> we may replace <img class="math" src="_images/math/5d1e4485dc90c450e8c76826516c1b2ccb8fce16.png" alt="M" /> by any integer greater
+than the one specified by the formula, so we do not have to compute
+<img class="math" src="_images/math/172684cdf5271a7ac0088336648bdd009a65a433.png" alt="(Kd)^{1/(n-1)}" /> to very high precision.</p>
+<p>In Section <a class="reference external" href="eisenstein.html#sec-genber"><em>Computing Generalized Bernoulli Numbers Analytically</em></a> below we will generalize the above
+algorithm.</p>
+<div class="admonition ">
+<p class="first admonition-title">Example 2.46</p>
+<p>We illustrate <a class="reference internal" href="#alg:ber"><em>Algorithm 2.45</em></a> by computing <img class="math" src="_images/math/bd63f9726d6a09f2b63a0b93b390029d3dd94bf9.png" alt="B_{50}" />.
+Using 135 binary digits of precision, we compute</p>
+<div class="math">
+<p><img src="_images/math/018de435d67d81008d540d27bf965504288ed6aa.png" alt="K=7500866746076957704747736.71552473164563479." />
+</div></p><p>The divisors of <img class="math" src="_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n" /> are <img class="math" src="_images/math/38a2415a844d2020f7925eb29e3df2d4601964b1.png" alt="1, 2, 5, 10, 25, 50" />, so</p>
+<div class="math">
+<p><img src="_images/math/ac71671345c78b76fa92cc96fc3be350968e6bc0.png" alt="d = 2\cdot 3\cdot 11=66." />
+</div></p><p>We find <img class="math" src="_images/math/420396c15fd4ab7e1d5df61c5e951fa785a447b4.png" alt="M=4" /> and compute</p>
+<div class="math">
+<p><img src="_images/math/1abf9707e24f3caba58c84d96cc9c954b6fe83f4.png" alt="z = 1.00000000000000088817842109308159029835012." />
+</div></p><p>Finally we compute</p>
+<div class="math">
+<p><img src="_images/math/29e22d5abba2a155fd082809bf7d227092323e65.png" alt="dKz = 495057205241079648212477524.999999994425778," />
+</div></p><p>so</p>
+<div class="last math">
+<p><img src="_images/math/eb760a562647b40a7cf7e27fc3593cc67591241a.png" alt="B_{50}=\frac{495057205241079648212477525}{66}." />
+</div></p></div>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="admonition " id="ex:zetaval">
+<p class="first admonition-title">Exercise 2.1</p>
+<p class="last">Using <a class="reference internal" href="#prop:zeta_even"><em>Proposition 2.8</em></a> and the table found <a class="reference internal" href="#tbl-bern"><em>here</em></a>, compute
+<img class="math" src="_images/math/aec55d0e4ae3b8dc0b4aae86f79d0644a94cdfca.png" alt="\sum_{n=1}^{\infty}\frac{1}{n^{26}}" /> explicitly.</p>
+</div>
+<div class="admonition " id="ex:odd_bernoulli">
+<p class="first admonition-title">Exercise 2.2</p>
+<p class="last">Prove that if <img class="math" src="_images/math/65262bf247c4a3c6114a8223d249dc9702619d3e.png" alt="n&gt;1" /> is odd, then the Bernoulli number <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> is <img class="math" src="_images/math/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" alt="0" />.</p>
+</div>
+<div class="admonition " id="ex:expeis">
+<p class="first admonition-title">Exercise 2.3</p>
+<p class="last">Use <a href="#equation-eqn:ekexp">(3)</a> to write down the coefficients of <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />, <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />,
+<img class="math" src="_images/math/88bb97ca2ab6cdd3823e982b86f796662e4a58c3.png" alt="q^2" />, and <img class="math" src="_images/math/2a556b4ccf5391107e42b30b377234ec5c3dfbcf.png" alt="q^3" /> of the Eisenstein series <img class="math" src="_images/math/81137d3d06cac52630af07c7a7ba965f649f5626.png" alt="E_8" />.</p>
+</div>
+<div class="admonition " id="ex:g4g6quo">
+<p class="first admonition-title">Exercise 2.4</p>
+<p>Suppose <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> is a positive integer with <img class="math" src="_images/math/242334270c49c4b7b0b3d4e13380c9b9b817e3d3.png" alt="k\equiv 0 \pmod{12}" />.
+Suppose <img class="math" src="_images/math/7db0e2cd17a9f1b5c18d6446998ab97fb564d5d5.png" alt="a,b\geq 0" /> are integers with <img class="math" src="_images/math/1de94b40622c322a97c54cbf438a661f06b3fdd9.png" alt="4a + 6b = k" />.</p>
+<ol class="last arabic simple">
+<li>Prove <img class="math" src="_images/math/0443390ced68efb55adb6bb99ac0413888e87ab1.png" alt="3 \mid a" />.</li>
+<li>Show that
+<img class="math" src="_images/math/73c5d948a7c738b785d3c9ba56574455cc3e0269.png" alt="\ds G_4^a \cdot G_6^b \,/\, G_6^{\frac{k}{6}} = \left(G_4^3 / G_6^2 \right)^{\frac{a}{3}}." /></li>
+</ol>
+</div>
+<div class="admonition " id="ex:vm">
+<p class="first admonition-title">Exercise 2.5</p>
+<p class="last">Compute the Miller basis for <img class="math" src="_images/math/a7a2e3382ec6b3a6c6c526bfa6e8ff4317af010d.png" alt="M_{28}(\SL_2(\Z))" /> with precision
+<img class="math" src="_images/math/efb9e86b4faf0cd9e85415b013c780c9c49b5f89.png" alt="O(q^8)" />.  Your answer will look like <a class="reference internal" href="#ex:vmb36"><em>Example 2.23</em></a>.</p>
+</div>
+<div class="admonition " id="ex:elkies28">
+<p class="first admonition-title">Exercise 2.6</p>
+<p class="last">Consider the cusp form <img class="math" src="_images/math/2cc63d66b5ee73855935a24fe4b6c84202c8fba5.png" alt="f = q^2 + 192 q^3 - 8280 q^4 + \cdots" /> in
+<img class="math" src="_images/math/0b10de3b0685f31c070c849e1c6e248ceedc613f.png" alt="S_{28}(\SL_2(\Z))" />.  Write <img class="math" src="_images/math/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" alt="f" /> as a polynomial in <img class="math" src="_images/math/1a97996c8e5e403ffb2c283c5963ffba0c0222f8.png" alt="E_4" /> and <img class="math" src="_images/math/a1a55a8cc8e79af192d02d08500f9fd08d3605c2.png" alt="E_6" />
+(see <a class="reference internal" href="#rem:elkies"><em>Remark 2.25</em></a>).</p>
+</div>
+<div class="admonition " id="ex:fkint">
+<p class="first admonition-title">Exercise 2.7</p>
+<p class="last">Let <img class="math" src="_images/math/fd296c0d32cbc903718590eef7c4b77ef1a75a8e.png" alt="G_k" /> be the weight <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" /> Eisenstein series from
+equation <a href="#equation-eqn:gk">(1)</a>.  Let <img class="math" src="_images/math/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png" alt="c" /> be the complex number so that the
+constant coefficient of the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion of <img class="math" src="_images/math/6bdd21983d97fa46f036fde7e496e4cdf4603917.png" alt="g = c \cdot G_k" />
+is <img class="math" src="_images/math/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" alt="1" />.  Is it always the case that the <img class="math" src="_images/math/0615acc3725de21025457e7d6f7694dab8e2f758.png" alt="q" />-expansion of <img class="math" src="_images/math/311cabda3a9b09f0dde217303ca9d1cd9201dcf6.png" alt="g" /> lies
+in <img class="math" src="_images/math/30d204f5b49a5587d441b79d89f4914df9d5461a.png" alt="\Z[[q]]" />?</p>
+</div>
+<div class="admonition " id="ex:vm32t2">
+<p class="first admonition-title">Exercise 2.8</p>
+<p class="last">Compute the matrix of the Hecke operator <img class="math" src="_images/math/40db9b6f10ff583906d78a06a76e08e04381bc1a.png" alt="T_2" /> on the Miller basis
+for <img class="math" src="_images/math/a1208682255fa7084f4d71a2f22886f8fd3ed3cd.png" alt="M_{32}(\SL_2(\Z))" />.  Then compute its characteristic
+polynomial and verify it factors as a product of two irreducible
+polynomials.</p>
+</div>
+<p><strong>What Next?</strong> Much of the rest of this book is about methods for
+computing subspaces of <img class="math" src="_images/math/415f7b40093c8f1921cc3f89a3ebd58a2d687103.png" alt="M_k(\Gamma_1(N))" /> for general <img class="math" src="_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N" /> and <img class="math" src="_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k" />.
+These general methods are more complicated than the methods presented
+in this chapter, since there are many more modular forms of small
+weight and it can be difficult to obtain them.  Forms of level <img class="math" src="_images/math/0c9c0479fbd8aad814e20f8d875602b38a115c4d.png" alt="N&gt;1" />
+have subtle connections with elliptic curves, abelian varieties, and
+motives.  Read on for more!</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Modular Forms of Level 1</a><ul>
+<li><a class="reference external" href="#examples-of-modular-forms-of-level-1">Examples of Modular Forms of Level 1</a><ul>
+<li><a class="reference external" href="#the-cusp-form">The Cusp Form <img class="math" src="_images/math/0a737670d481129e2ead6d7223437f3cf70ea53f.png" alt="\Delta" /></a></li>
+<li><a class="reference external" href="#fourier-expansions-of-eisenstein-series">Fourier Expansions of Eisenstein Series</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#structure-theorem-for-level-1-modular-forms">Structure Theorem for Level 1 Modular Forms</a></li>
+<li><a class="reference external" href="#the-miller-basis">The Miller Basis</a></li>
+<li><a class="reference external" href="#hecke-operators">Hecke Operators</a></li>
+<li><a class="reference external" href="#computing-hecke-operators">Computing Hecke Operators</a></li>
+<li><a class="reference external" href="#fast-computation-of-fourier-coefficients">Fast Computation of Fourier Coefficients</a></li>
+<li><a class="reference external" href="#fast-computation-of-bernoulli-numbers">Fast Computation of Bernoulli Numbers</a></li>
+<li><a class="reference external" href="#the-number-of-digits-of">The Number of Digits of <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /></a><ul>
+<li><a class="reference external" href="#computing-exactly">Computing <img class="math" src="_images/math/9be2b1de79fff66db67de3b18303bdd2912b7ae6.png" alt="B_n" /> Exactly</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#exercises">Exercises</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="modform.html" title="previous chapter">Modular Forms</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="weight_two.html" title="next chapter">Modular Forms of Weight 2</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/level_one.txt">Show Source</a></li>
+            </ul>
+    
+          <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" /> <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+    <br><br>
+    <h3>
+    <a
+href="http://www.ams.org/bookstore?co1=AND&co2=AND&co3=AND&d=BOOK&f=G&fn=105&l=100&op1=AND&op2=AND&op3=AND&p=1&pg1=&pg2=&pg3=ALLF&r=12&s1=&s2=&s3=modular%20forms&subject=genint&u=">
+Purchase a hardcopy of this book from the AMS</a></h3>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="weight_two.html" title="Modular Forms of Weight 2"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modform.html" title="Modular Forms"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Modular Forms, A Computational Approach v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2009, William Stein.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.5.1.
+    </div>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"c56c591b59be469aa916eeb2b6ecdcc9","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

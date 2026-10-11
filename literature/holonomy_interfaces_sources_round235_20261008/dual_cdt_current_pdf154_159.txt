@@ -1,0 +1,385 @@
+154                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+In particular, the Y (2) integral involving log |L(τ ) − L(σ)| becomes, after dividing
+the integral up into four pieces, an integral of
+
+                                             L(τ )
+                         log |L(τ ) − L(σ)| + log     − L(σ)
+                                            L(τ ) − 1
+                              L(σ)           L(τ )        L(σ)
+               + log L(τ ) −          + log           −        .
+                             L(σ) − 1       L(τ ) − 1 L(σ) − 1
+
+But now (using only the multiplicativity property of the logarithm and some ele-
+mentary algebra) this is exactly
+
+                          L(τ )              L(σ)
+         2 log L(τ ) +             − L(σ) −          = 2 log |H(τ ) − H(σ)|.
+                         L(τ ) − 1          L(σ) − 1
+
+Taking into account the factors of 2 coming from the various scalings, this means
+that the integral in the Y0 (2) domain is precisely double the integral in the Y (2)
+domain. On the other hand, the conformal radius is also squared (this is clear for
+the factors of ψY (2) and ψY0 (2) together with the equality |h′ (0)| = 256 = |λ′ (0)|2 ),
+                                                   Pr doubled. At the same time, in
+and so the logarithm of the conformal radius is also
+the context of Lemma 9.0.3, the invariant σ = i=1 ci is also doubled, and so is
+the invariant τ (b) in the context of Theorem 2.5.1.
+   In summary, the bound (9.0.22) applied to dimQ(x) H and dimQ(y) Hw=1 (which
+are equal by equation (9.0.21)) gives the same result in both cases. This therefore
+gives a (rough) equivalence between these two problems on both the arithmetic
+and the analytic sides. However, it is also important to note is that this crisp
+equivalence of the bounds only applies to the framework of the crude denominator
+types as stated in Theorem 2.5.1 or Lemma 9.0.3, and that there is still a difference
+once we start to consider refined denominators data, such as with the τ ♯ from the
+added integrals in § 6. We shall see in § 10.3 that it can then be advantageous to
+perform the φY (2) ⇝ φY0 (2) analytic descent passage that we detailed in this Basic
+Remark.                                                                                △
+
+
+
+
+         10. Pure functions on P1 ∖ {0, 1, ∞} and on P1 ∖ {0, 4, ∞}
+    The goal of this section is to write down a number of G-functions with nice
+integrality properties on P1 ∖ {0, 1, ∞}, and then, using the translation discussion
+in § 9, on P1 ∖ {0, 4, ∞} as well, where the point y = 4 should be though of as an
+elliptic point of order 2. In terms of local systems on an orbifold, the proper way
+to think of these domains is as the modular curves Y (2) in the coordinate x = λ,
+and respectively, Y0 (2) in the coordinate y = x2 /(x − 1) = λ2 /(λ − 1) = h.
+
+
+
+10.1. Five functions of type [1, . . . , n]2 on P1 ∖ {0, 1, ∞}. There are four ob-
+vious Q(x)-linearly independent G-functions we can write down on P1 ∖ {0, 1, ∞}
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                       155
+
+
+with denominator type τ = [1, 2, 3, . . . , n]2 . Namely:
+
+                                                 A1 (x) = 1,
+                                                            ∞
+                                                           X   xn
+                                 A2 (x) = − log(1 − x) =          ,
+                                                           n=1
+                                                               n
+                                                                ∞
+                                                                        !2
+                                             2
+                                                               X   xn                (10.1.1)
+                                  A3 (x) = log (1 − x) =                     ,
+                                                               n=1
+                                                                   n
+                                                          ∞
+                                                         X   xn
+                                      A4 (x) = Li2 (x) =        .
+                                                         n=1
+                                                             n2
+
+Clearly A2 (x) additionally has type τ = [1, 2, 3, . . . , n], and A3 (x) has denominator
+type [1, 2, . . . , n][1, 2, . . . , n/2]. These functions are linearly independent over Q(x).
+Using symmetrizations, we also obtain 4 linearly independent functions over Q(y).
+These can be given explicitly as follows:
+
+   B1 (y) = 1,
+              ∞                                                          √ 
+              X              (n − 2)!n!         p                           y
+   B2 (y) =         2y n ·              = 2y − 2 y(4 − y) arcsin
+              n=2
+                               (2n)!                                       2
+               ∞
+              X     (n − 1)!2             √
+   B3 (y) =         yn ·      = 2 arcsin( y/2)2
+            n=1
+                      (2n)!
+                                                           
+                                   x                         x
+   B4 (y) = Sym− Li2 (y) = x −             Li2 (x) − Li2
+                                 x−1                       x−1                       (10.1.2)
+                                    √ 
+                                        y
+                          Z arcsin
+                p                      2
+          = − 2 y(4 − y)
+                                   y
+                ∞          n
+                                                                   !
+               X y n+1 X 2k      
+                                     2n − 2k
+                                              
+                                                            1
+          = 4·
+               n=0
+                   16n          k     n − k (2k − 1)(2n − 2k + 1)2
+                                    k=0
+                             2
+                        4y   31y 3   389y 4
+          = − 4y +         +       +        + ....
+                         9   900     88200
+   These functions all have denominator type subsumed by [1, 2, . . . , 2n]2 (for a
+more precise description, see Lemma 10.2.2 and Remark 10.2.3).
+   We spent a possibly embarrassing period of time believing that the four func-
+tions A1 (x), . . . , A4 (x) spanned the Q(x)-vector space of functions on P1 ∖{0, 1, ∞}
+with denominator type τ = [1, 2, . . . , n]2 . However, there is also a fifth function one
+can write down. It arises more naturally in the Q(y)-domain, namely as
+                    ∞
+                              (n − 1)!2
+                                                                    
+                    X
+                             n                             1/2 1 1 y
+        B5 (y) =     y ·                      = y · 3 F2          ; .                (10.1.3)
+                 n=1
+                         (2n − 1)! · (2n − 1)              3/2 3/2 4
+
+The function B5 (y) arises in Nesterenko’s approximations [Nes16] to Catalan’s con-
+stant G = L(2, χ−4 ) [Cat1882] in association with the equality
+
+                                             B5 (4) = 8G                             (10.1.4)
+156                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+due to Nielsen [Nie1909, page 166]. Here B5 (y) is of type [1, 2, 3, . . . , 2n]2 (and even
+somewhat better than this, see Lemma 10.2.2). One can easily define a correspond-
+ing function
+                                                                  
+                                           1/2 1 1 1           x
+                A5 (x) = J(x) = x · 3 F2          ;     x+                          (10.1.5)
+                                           3/2 3/2 4        x−1
+on P1 ∖ {0, 1, ∞} with denominator type τ = [1, 2, 3, . . . , n]2 , which we originally
+missed! If
+                                  d2                      d
+                  L = 2x(1 − x)2 2 + (2 − x)(1 − x)           + 1,
+                                 dx                     dx
+then LJ(x) = 2 − 2x. We also see that
+                               dJ(x)
+                   2x(x − 1)         − xJ(x) = 2(1 − x) log(1 − x).                (10.1.6)
+                                dx
+   From the differential equation we see that J(x) is defined on P1 ∖ {0, 1, ∞}. The
+solutions to the homogenous differential equation L(F ) = 0 are given by
+                                          √
+                                  A(x) = 1 − x,
+                                                                    √
+                √                √           1 √
+                                                                          
+                                                               1+ 1−x
+       B(x) = 1 − x · arctanh( 1 − x) = · 1 − x · log               √        .
+                                             2                 1− 1−x
+   Using the method of variation of parameters, an explicit solution to the ODE is
+given by H(x) defined as follows:
+ √                √                      √                 √              √     
+2 1 − x·arctanh( 1 − x) log(−1+x)−2 1 − x −Li2 − 1 − x + Li2                 1−x ,
+and, having made suitable choices for the various analytic continuations of these
+terms, one can write
+                                                       π2
+                          J(x) = H(x) − 2πiB(x) +         A(x).
+                                                       2
+In retrospect, an easier (if equivalent) way to write a new Q(x)-linearly independent
+function (that gives the same span as J(x)) while remaining entirely on P1 ∖
+{0, 1, ∞} is to consider the integral:
+                                        Z x
+                                   1        log(1 − t)
+                                √             √        dt.                    (10.1.7)
+                                  1−x 0 t 1−t
+What is surprising in this formulation is the unexpected lack of extra powers of 2 in
+the denominators of the Taylor series expansion of (10.1.7). While the individual
+          √
+factors 1/ 1 − x and log(1−x)
+                        R
+                            √
+                           x 1−x
+                                 dx have 2-adic convergence discs |x|2 < 1/4 at
+x = 0, their product overconverges to the full unit open 2-adic disc |x|2 < 1.
+Remark 10.1.8. One can prove that the k ∈ N>0 for which the Taylor series of
+                                  logk−1 (1 − x)
+                               Z
+                          1
+                       √              √          dx                  (10.1.9)
+                         1−x         x 1−x
+converges on the 2-adic unit disc |x|2 < 1 are exactly the positive even integers,
+and that for these k, the Taylor expansion belongs to
+                                                       ∞
+                                  logk−1 (1 − x)                xn
+                              Z
+                          1                           X
+             Jk (x) := √              √          dx ∈                     Z.
+                         1−x         x 1−x            n=1
+                                                          [1, . . . , n]k
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                     157
+
+
+This defines a sequence J2 , J4 , J6 , . . . (with J2 = J) of G-functions holonomic on
+P1 ∖ {0, 1, ∞}, of denominator types xn /[1, . . . , n]∗ , and independent over the mul-
+tiple polylogarithm ring § 10.3.                                                      △
+10.2. Added integrations. We define two more functions B6 (y) and B7 (y) as
+follows:
+
+                                              √            ∞
+                                     2 arcsin( y/2)2               (n − 1)!2
+               Z                 Z
+                   B3 (y)                                 X
+    B6 (y) =              dy =                       dy =     yn ·           ,
+                     y                       y            n=1
+                                                                    n(2n)!
+               Z                                                                     (10.2.1)
+                   B4 (y)
+    B7 (y) =              dy.
+                     y
+   We have:
+Lemma 10.2.2. The denominator types of Bi (y) for i = 1, . . . 7, as defined in
+equations (10.1.2), (10.1.3), and (10.2.1) are as follows:
+   (1) B1 (y) has trivial denominator type.
+   (2) B2 (y) has denominator type [1, 2, , . . . , 2n].
+   (3) B3 (y) has denominator type [1, 2, . . . , 2n]n.
+   (4) B4 (y) has denominator type [1, 2, , . . . , 2n]2 .
+   (5) B5 (y) has denominator type [1, 2, , . . . , 2n](2n − 1), and thus in particular
+        of denominator type [1, 2, . . . , 2n]2 .
+   (6) B6 (y) has denominator type [1, 2, . . . , 2n]n2 , and thus in particular of de-
+        nominator type [1, . . . , n][1, . . . , 2n]n, and a fortiori [1, 2, . . . , 2n]2 n.
+   (7) B7 (y) has denominator type [1, 2, , . . . , 2n]2 n.
+Proof. This follows in the case of B4 (y) from Lemma 9.0.3, and in the case of B7 (y)
+from direct integration from the n = 4 case. For the remainder, it follows by direct
+computation since there is an explicit expression in terms of factorials for the general
+coefficient.                                                                          □
+Remark 10.2.3. In fact the denominators of these functions have a somewhat
+                                                                 2n
+                                    Q can be relaxed to n(n − 1) n . In practice this
+better type, namely the [1, . . . , 2n]
+means that the prime product 2n/3<p<n p is absent from the [1, . . . , 2n] part of
+these denominators. This remark seems to not make any improvement in the setup
+for Theorem A, but the possibility of canceling prime products could be useful to
+exploit in other contexts.                                                         △
+   We shall prove in § 12 that the seven functions Bi (y) are linearly independent
+over Q(y).
+10.3. The multiple polylogarithm ring. (This section is more of an extended
+aside and can be omitted on first reading.) Over P1 ∖ {0, 1, ∞}, a basic construc-
+tion of G-functions of type [1, . . . , n]• is supplied by the single variable multiple
+polylogarithm functions
+                                            X             x n1
+                    Lik1 ,...,kd (x) =                 k1 k2       kd
+                                                                      .        (10.3.1)
+                                       n1 >n2 >...>nd n1 n2 · · · nd
+
+Of these, the following eight functions form a maximal Q(x)-linearly independent
+set with type n[1, . . . , n]2 :
+         1,    Li1 ,   Li1,1 ,   Li2 ,   Li1,1,1 ,   Li1 · Li2 ,   Li1,2 ,   Li3 .   (10.3.2)
+158                        F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+In Remark 10.1.8, we found that the multiple polylogarithms do not exhaust all
+the P1 ∖ {0, 1, ∞} functions of the type [1, . . . , n]• , and in particular, that we can
+add to (10.3.2) a ninth independent function (10.1.7) of the [1, . . . , n]2 type. By
+symmetrization, these nine Q(x)-linearly independent functions go to nine Q(y)-
+linearly independent functions on P1 ∖ {0, 4, ∞} with Z/2 local monodromies at
+the elliptic point y = 4. However, whereas in Lemma 9.0.3 we proved that the
+two symmetrization operations F (x) ⇝ F ± (y) take the type [1, . . . , n]σ to the
+type [1, . . . , 2n]σ , an examination of the polynomials (9.0.7) of the proof reveals
+that the plus symmetrization F + takes the integrated type n[1, . . . , n]σ to the
+integrated type n[1, . . . , 2n]σ , but the minus symmetrization F − spoils the in-
+tegrated type n[1, . . . , n]σ into [1, . . . , 2n]σ+1 . This is why, as it turns out, the
+nine Q(x)-independent functions of type n[1, . . . , n]2 on P1 ∖ {0, 1, ∞} go to only
+seven Q(y)-independent functions of type n[1, . . . , 2n]2 : the above Bi (y). A sim-
+ilar remark shall apply to § 12.1, where under a supposed Q-linear dependency
+among 1, ζ(2), L(2, χ−3 ) we would get as many as 17 independent functions over
+x ∈ P1 ∖ {0, 1/9, −1/8, 1, ∞} with the integrated type n[1, . . . , n]2 and holomor-
+phic at {0, 1/9, −1/8} (only the above-listed nine of which really exist), but only 14
+of the symmetrizations (seven of them genuine) have the corresponding integrated
+type n[1, . . . , 2n]2 .
+   One of the key ideas in our paper is that while — as explained                    Q in Basic Re-
+mark 9.0.20 — our holonomy           bounds     are equivalent for the data    (φ;  [1, . . . , bn]) :=
+  λ2 /(λ − 1), [1, . . . , 2n]2 and (φ; [1, . . . , bn]) := λ, [1, . . . , n]2 , the integrated
+                                              Q
+type
+                           Y
+                              ne [1, . . . , bn]) := λ2 /(λ − 1), n[1, . . . , 2n]2
+                                                                                    
+                     (φ;
+
+yields significantly better bounds than the integrated type
+                          Y
+                             ne [1, . . . , bn]) := λ, n[1, . . . , n]2 ;
+                                                                       
+                      (φ;
+
+so much so that the 14 functions in the former type turn out to be a far stronger
+constraint than the 17 functions in the latter type. We elaborate on this comparison
+in our next remark.
+
+Remark 10.3.3. (This remark is best appreciated after reading the entire proof of
+Theorem A, although it still makes the most sense to place it in this section.) The
+above 17 functions of denominator type n[1, . . . , n]2 fit into the following refined
+denominators scheme in Theorem 6.0.2:
+                                                                           t
+              0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+       b :=
+              0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+and the integrations vector
+
+                         e := (0, 1, 1, 1, 1, 1, 1, 1; 0; 0, 0, 0, 0, 1, 1, 1, 1).
+
+The first eight entries here are indexed by the row (10.3.2), in precisely this or-
+der, where, in view of the term maxi (ei ) in the definition (6.0.5) of τ ♯ , we opt to
+subsume Li2 into the type n[1, . . . , n] and Li3 into the type n[1, . . . , n]2 . The ninth
+entry is the function (10.1.7). Finally, writing H(x) ∈ QJxK for the function in
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                  159
+
+
+Proposition 11.1.8 below, the eight last entries are the fictive functions
+                                                        
+                                        x              x
+                   H(x), H ′ (x), H           , H′            ,
+                                      x−1             x−1
+                                                    
+                                         Z H x − H(0)
+                      H(x) − H(0)
+                   Z
+                                                 x−1
+                                    dx,                         dx,
+                            x                        x
+                                                    
+                                         Z H x − H(0)
+                      H(x) − H(0)
+                   Z
+                                                 x−1
+                                    dx,                         dx,
+                          x−1                     x−1
+which turn out to be Q(x)-linearly independent and holonomic on P1 ∖{0, 1/9, −1/8, 1, ∞}.
+  Recall that τ (b; e) = τ ♭ (b) + τ ♯ (e) is built out of two pieces. For these denomi-
+nator types, we calculate
+                   (1 + 3) · 0 + (5 + 7) · 1 + (9 + 11 + 13 + . . . + 33) · 2
+           τ ♭ (b) =
+                                              172
+                   558
+                 =     = 1.93079584 . . . ,
+                   289
+which improves over the crude main denominator cap σ = 2. The value for τ ♭ (b)
+we obtain here is even better than the corresponding value 191/49 = 2 · 1.948979 . . .
+that we will useR in § 13; for here we could further exploit the special integrated
+type n of Li1 = dx/(x − 1). But for the other piece τ ♯ (e) of τ (b; e) we get
+
+                        τ ♯ (e) = 83711/242760 = 0.34483 . . . ,
+with the optimal ξ in (6.0.5) being a certain short interval containing the choice ξ =
+57/40. In total here,
+       τ (b; e) = 558/289 + 83711/242760 = 552431/242760 = 2.275626 . . . .
+This is very much inferior to the value 16603/3920 = 2 · 2.1173 . . . in (13.0.6), and
+the three additional functions are not nearly enough to compensate, as we now
+explain.
+   To look into the numerics of the holonomy quotients, we can choose the map φ
+as the optimal map of the form
+          φ(z) := λ(G(z)),       G : (D, 0) → (D, 0),       φ′ (0) = 16G′ (0),
+where concretely G can be (for example) the Riemann mapping for the topological
+disc inside D constrained by any simple closed contour that encircles the origin,
+precisely like the contours we study in § A. To be admissible, the contour must
+not enclose any of the non-real fiber points in λ−1 (1/9) and λ−1 (−1/8), but let us
+even ignore this constraint since it will only make the numerics worse. Then the
+holonomy bound, which would have to compare to m = 17, is by the quotient
+                      RR
+                        T2
+                           log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                                                    552431      .           (10.3.4)
+                            log 16 + log |G′ (0)| − 242760
+Using a (lightly) optimized choice Gob(0.92, 110, 23) from the gobble contours de-
+fined in § A.2, we find that |G′ (0)| = 0.9163768 . . . and the quotient (10.3.4) comes
+out to approximately 22.7527, a rather long distance from the requisite threshold
+of 17.                                                                               △
+

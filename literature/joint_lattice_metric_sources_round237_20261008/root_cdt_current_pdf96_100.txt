@@ -1,0 +1,269 @@
+96                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+is the associated inner product giving the quadratic form ∥e∥= p⟨e, e⟩, and
+e1, . . . , er is any Z-module basis of E.
+
+  Let MQ denote the equivalence classes (places) of absolute values Q →[0, ∞).
+At the place v ∈MQ, we select the representative absolute value  | · |v with the
+usual normalizations:  | · |∞is the usual absolute value for the archimedean place
+∞∈MQ, and |p|p = 1/p for the p-adic place p ∈MQ. Thus Qv∈MQ |x|v = 1 for
+all x ∈Q×. Let M Qfin := MQ ∖{∞} denote the set of all finite places of Q, which
+is identified with the set of rational primes.
+  Along with the quadratic form ∥·∥on ER, it is convenient to consider the p-adic
+norms ∥· ∥p defined on EQp by
+
+                                     r
+         X ciei   := max |ci|p.
+                                         p    1≤i≤r
+                               i=1
+
+Note that ∥· ∥p is independent of the choice of the basis e1, . . . , er of E: more
+intrinsically, we have pZ for the value group of ∥· ∥p, with ∥w∥p = p−n  if and
+only  if w ∈E ⊗Z pnZp and w /∈E ⊗Z pn+1Zp. Thus the Euclidean structure
+combines with the integral lattice structure E of the Q-vector space EQ := E ⊗Z Q
+to define an adelic metric (EQ, (∥·∥v)v∈MQ). Conversely, we can recover the lattice
+E ⊂EQ ⊂ER as the w ∈EQ defined by the simultaneous conditions ∥w∥p ≤1 for
+all primes p.
+   In these notations, the arithmetic degree formula (7.2.3) takes the following
+adelic form:
+                                   ( r      )                                  r            X                    −                                         min   Xdeg  E = −1             log det  ⟨vi, vj⟩                                                                        log ∥wi∥p    ,                                 i,j=1d         2                                                                    fin     w1,...,wr∈EQp                                                                    i=1                            p∈M                                Q                                            SpanZp{wi}=SpanZp{vi}
+
+where {v1, . . . , vr} is any Q-basis of EQ.
+  Given two Euclidean lattices E, F, let E ⊕F denote E ⊕F equipped with the
+norm given by the orthogonal direct sum of the norms on the subspaces ER and FR.
+By definition, we have
+
+                     deg (E ⊕F) = deg (E) + deg (F).                   (7.2.4)       d    d  d
+
+7.2.5. Slopes of Euclidean lattices and heights of morphisms.
+
+Definition 7.2.6. The slope bµ(E) of a Euclidean lattice E = (E, ∥· ∥) is definedas
+                                   deg E
+                               bµ(E) := rankd E ∈R.
+The maximal slope of E is defined as
+                           bµmax(E) := 0⊊Fsup⊆E bµ(F),
+
+where F runs through all nonzero Z-submodules of E and F denotes the induced
+Euclidean lattice of F equipped with the quadratic form obtained from restricting
+∥· ∥to FR.
+
+  The following lemma follows from the definition.
+
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)               97
+
+Lemma 7.2.7. Let E, F be two Euclidean lattices.  Let E ⊗F denote E ⊗Z F
+equipped with the tensor norm. Then we have
+                             bµ(E ⊗F) = bµ(E) + bµ(F).
+Proof. See, for instance, [Che09, Lemma 2.3], which we briefly summarize here. By
+definition of the arithmetic degree, we have deg (E) = deg (∧rank EE), and for any             d  d
+two rank 1 Euclidean lattices L1, L2, we have deg (L1 ⊗L2) = deg (L1) + deg (L2).              d    d  d
+Note that
+           ∧rank E⊗F (E ⊗F) ∼= (∧rank EE)⊗rank F ⊗(∧rank F F)⊗rank E.
+
+Thus
+              deg (E ⊗F) = (rank F) deg (E) + (rank E) deg (F),     d      d     d
+completing the proof of the lemma.                         □
+
+  Consider two Euclidean lattices E = (E, ∥·∥E) and F = (F, ∥·∥F ) and an injective
+homomorphism ψ  : EQ ,→FQ.  If ψ sends the Euclidean lattice E isometrically
+into a sublattice of F, then bµ(E) ≤bµmax(F) by the definition of the maximal slope.
+In general, the slope of the source lattice E can be upper-estimated in terms of the
+maximal slope of the range lattice F and the height of the homomorphism ψ.
+
+Definition 7.2.8. The local v-adic height (at a place v ∈MQ) of the monomor-
+phism ψ is defined as the logarithm of the norm of the induced monomorphism
+
+                     EQv, ∥· ∥E,v ,→ FQv, ∥· ∥F,v
+
+of normed Qv-vector spaces:
+                                  ∥ψ(e)∥F,v               ∥ψ(e)∥F,v
+          hv(ψ) :=   sup    log      =  sup   log                 .
+                   e∈EQv ∖{0}      ∥e∥E,v     e∈E∖{0}      ∥e∥E,v
+
+The global height of ψ is the sum of the local v-adic heights over all places v ∈MQ:
+
+                           h(ψ) := X hv(ψ).
+                              v∈MQ
+
+  The tautological inequality bµ(E) ≤bµmax(F) for the isometric injections E ,→F
+then generalizes to arbitrary monomorphisms ψ : EQ ,→FQ, in the following way.
+
+Lemma 7.2.9 ([Bos01], Prop. 4.5). For every monomorphism
+
+                       ψ : EQ ,→FQ
+
+of the induced Q-vector spaces of the Euclidean lattices E and F, we have
+                             bµ(E) ≤bµmax(F) + h(ψ).                      (7.2.10)
+7.2.11. Bost’s slopes inequality. For filtered Euclidean lattices, the slopes inequal-
+ity (7.2.10) generalizes as follows. Let F be a free Z-module, which we no longer
+require to be of finite rank. We assume that there is a filtration on FQ
+               F Q•  : FQ = F Q(0) ⊇F Q(1) ⊇F Q(2) ⊇· · ·
+with finite-dimensional graded quotients Grn(F Q)•  := F Q(n) /F Q(n+1) and such that
+∩∞n=0F Q(i) = {0}.
+
+98                       F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+  We consider E, ψ as in § 7.2.5.  In particular, the linear monomorphism ψ  :
+EQ ,→FQ induces a filtration on E:
+        E•  : E = E(0) ⊇E(1) ⊇· · · ,  where E(n) = E ∩ψ−1(F Q(n) ).
+
+Note that since E is a finite rank free Z-module and ψ is injective, we have that
+Grn(E•) are finite rank free Z-modules and the above filtration stabilizes to {0}
+after finitely many steps. Moreover, the restriction of ∥· ∥E to E(n) gives E(n) a
+Euclidean lattice structure and the corresponding quotient metric on E(n)/E(n+1)
+equipped it with a Euclidean lattice structure E(n)/E(n+1).
+  We also assume that each graded quotient piece Grn(F Q)•   is endowed with a
+Euclidean lattice structure. More precisely, for each n, we have a Euclidean lattice
+
+                           G(n) =  G(n), ∥· ∥G(n)  ,
+where G(n) ⊂Grn(F Q(n) ) a Z-submodule such that G(n)Q = Grn(F Q(n) ).
+  The map ψ induces a linear monomorphism between the graded quotients:
+                          ψ(n)D   : Grn(E•)Q ,→Grn(F Q)•                     (7.2.12)
+and its height h(ψ(n)D ) is defined using the above-mentioned Euclidean lattices struc-
+tures E(n)/E(n+1) and G(n).
+
+Lemma 7.2.13 ([Bos01], Prop. 4.6). In this situation,
+
+           ∞
+                                                            i                                                                                                       .         (7.2.14)        deg          (E) ≤ X rank (E(n)/E(n+1))h                                         D )   d                                           bµmax(G(n)) + h(ψ(n)
+                 n=0
+
+Note that the above sum is a finite sum since E(N) = 0 for N ≫1.
+
+7.3. The Bost–Charles bound. We follow [Bos20, BC22] with a slight modifi-
+cation to take denominators into account.
+  We recall the setting of their work for our application. Consider X = P1Z and
+the line bundle L := O(1) on X. We denote by x := X1/X0 the coordinate of
+(an affine line in) P1Z = Proj Z[X0, X1], and then for D ∈Z>0 we follow the usual
+identifications L = O([0]) (here [0] denotes the divisor of the point x = 0) and
+Z[1/x]≤D = Γ(X, L⊗D).
+
+7.3.1. The Bost–Charles metric. Following the ideas in [BC22, §§8.2, 8.3], using
+φ  : (D, 0) →(P1(C), 0), we endow L = O(1) with the Hermitian metric ∥· ∥L
+defined by
+
+                        
+                                          1
+            ∥1(y)∥L := exp − X  log+ |z| =  Y     |z|,
+                                  z∈φ−1(y)            z∈D, φ(z)=y
+
+where 1 = 1[0] is the canonical section (“constant function”) of L = O([0]) cor-
+responding to the divisor [0], and y ∈P1(C).  This Hermitian metric has Cb∆
+regularity in the sense of Bost–Charles (see [BC22, §§ 4.1.1, 4.2.1.2]). We shall
+denote this Hermitian line bundle by O(1), or by O(1)φ if we wish to indicate the
+dependence on φ. We work in the framework of arithmetic intersection theory using
+such Hermitian line bundles and Arakelov divisors with Cb∆regularity in the sense
+of Bost–Charles [BC22, §4.5].
+
+            THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3)               99
+
+Remark 7.3.2. In [BC22], the Hermitian metric of § 7.3.1 is given by the Arakelov
+divisor ([0], φ∗ log+ |z|−1)  . More precisely, in the sense of [BC22, §6.2.1 using
+Example 4.3.1], we have the compactly supported Arakelov divisor ([0], log+ |z|−1)
+on the smooth formal-analytic (hereafter, f.-a.) arithmetic surface
+                           eV(φ) := (Spf ZJxK, (D, 0), iφ)
+                                      ≃
+over Z, where           x 7→φ                        defines                         an                             isomorphism
+coordinate         on D,               and we                        use the                              assumption                                            thatCJxKφ′(0)−→CJzK̸= 0), and(herethusz denotesits compo-the
+sitional        inverse               induces                    an                        isomorphism                                                                     : Spf                                         iφ
+or   [BC22,            §6.1.1]                   for the                         general                                    definition                                               of                                      smoothCJxK f.-a.∼= bD0.arithmeticSee [Bos20,surface§10.6.1]over
+a number field, and § 6.4.1.1 in loc. cit.  for this construction eV(φ), which also
+comes with a distinguished nonconstant regular function (ι, φ) : eV(φ) →A1Z on the
+f.-a.     arithmetic                 surface;                            cf [BC22, §7.1.1.1].                                          Here,                                                               ι :                                                                Z
+is  the       natural formal                     immersion.                                  In the setting                                                       of                                               [BC22,                                                  Spf ZJxK§7.2.1],,→SpectheZ[x]Arakelov= A1
+divisor ([0], φ∗(log+ |z|−1)) is the direct image of ([0], log+ |z|−1) by the morphism
+(ι, φ) : eV(φ) →A1Z, where the pushforward map φ∗on Green functions is defined
+in [BC22, §3.4.2.1]. By [BC22, Corollary 4.4.2(ii)], this pushforward map preserves
+Cb∆regularity of Green functions, which is essential for having a well-behaved arith-
+metic intersection theory. The explicit formula of the Hermitian metric associated
+to φ∗(log+ |z|−1) is given in [BC22, §5.1.2].                  △
+
+7.3.3. Direct images and arithmetic Hilbert–Samuel. Fix a smooth probability mea-
+                                              √−1  dz∧d¯z
+sure ν on P1(C), for instance the Fubini–Study form ωFS =  2π  (1+|z|2)2 ; the choice
+of ν is immaterial to the proof. As in [BC22, § 6], the Hermitian metric on L com-
+bines with fiberwise integration over the manifold X(C) to define a Euclidean lattice
+structure on the Z-module Γ(X, L⊗D). Explicitly, we norm s ∈Γ(X, L⊗D) by
+
+                     sZ
+                       ∥s∥:=         ∥s∥2 ν.
+                                      L
+                                    X(C)
+
+                                      ⊗D
+Following [BC22, § 6.1.2.2], we denote by ΓL2  X, ν; L      this Euclidean lattice.
+Up to the integration metric weight ν, in a D →∞asymptotic sense, this is
+essentially the zeroth direct image of L = O(1)φ under the structure morphism
+eV(φ) →Spec Z. As in [BC22, §8, Theorem 8.2.5], we can express the arithmetic
+Hilbert–Samuel formula on the arithmetic surface X = P1Z into the form
+
+                        ⊗D    1
+                 deg ΓL2  X, ν; L   =        · L)D2 + o(D2).              (7.3.4)      d                2(L
+When the Hermitian metric in L = O(1) is smooth, this formula is due to Zhang
+[Zha95, Theorem 1.4] with an additional input by Bost in comparing two Hermit-
+ian metrics in the proof of [Bos20, Theorem 10.3.2]. Zhang’s theorem is a refine-
+ment to (non-pointwise-strict) semipositive curvature (Chern form) c1(L, ∥· ∥) ≥0
+of the work of Gillet–Soul´e [GS92] and Bismut–Vasserot [BV89]; see also Abbes–
+Bouche [AB95] for an outline of a more direct approach.  Following the idea in
+[Bos99, §5] and [BC22, §§3–4] to separate the Green function into a smooth Green
+function and a Cb∆function, the same arithmetic Hilbert–Samuel formula holds for
+ample line bundles with Cb∆Hermitian metrics of pointwise non-negative Chern
+form (as defined in [BC22, § 4.2.1.2]), and so the formula is also valid in our setting.
+
+100                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+   In terms of φ, Bost and Charles [BC22, Theorem 5.4.1 and Proposition 5.4.2]
+provide the following formula for the self-intersection number:
+
+                      ZZ
+ (L · L) =  O(1)φ · O(1)φ =      log |φ(z) −φ(w)| µHaar(z) µHaar(w) = bT(1, φ).
+                              T2
+                                                                                  (7.3.5)
+  We will review their computation in our mild generalization in Lemma 7.4.5
+further down.
+
+Proof of Theorem 7.0.1. Note that the choice of b is not unique; we may permute
+the columns of b without changing the form of the fi. Therefore, after a suitable
+permutation of the columns, we may assume u1 ≤u2 ≤. . . ≤ur. We keep this
+convention for all the proofs in § 7.
+  For D ∈N, we take for our evaluation module the following free Z-module of
+rank m(D + 1):
+
+                  r   uh+1
+                                          [1, . . . , ξD]ei
+     ED := M M                                    fi · Z[1/x]≤D,        (7.3.6)
+                               [1, . . . , yh+1D] · · · [1, . . . , yrD]
+             h=0 i=uh+1
+
+where u0 := 0, ur+1 := m, ξ ∈[0, m] and yh ∈[0, bhm] ⊂R are auxiliary parameters
+to be optimized in the proof. Note that the indexing of ED in equation (7.3.6)
+differs slightly from the notation of § 2.13.1; the difference amounts to considering
+polynomials of degree < D rather than ≤D. We use this normalization — which
+asymptotically makes no difference and so is ultimately an aesthetic choice — so
+that we can talk below about sections of L⊗D rather than L⊗(D−1).
+  To endow ED with a Euclidean norm, we take the orthogonal direct sum (7.3.6)
+of the lattices
+                           [1, . . . , ξD]ei
+                           ⊂Γ X, L⊗D     ,                                           R                [1, . . . , yh+1D] · · · [1, . . . , yrD]Z[1/x]≤D
+
+with each of these summands inheriting the norm induced from O(1)φ = L. We
+shall denote this Euclidean lattice by ED.
+  By (7.3.4) and (7.3.5), we have
+
+                                             r        m  !!        m
+   deg    ED =                 O(1)φ.O(1)φ + X uhyh −ξ X ei   D2 + o(D2) d              2
+                                 h=1            i=1
+                                                                                  (7.3.7)
+                                   r        m  !        m
+      =              2 bT(1, φ) + X uhyh −ξ X ei   D2 + o(D2).
+                         h=1           i=1
+
+                                                        as the formal completion                                           b  Let X denote XQ = P1Q. We identify Spf QJxK = X0
+of X at its closed subscheme 0.  This designates fi(x) ∈Γ(X0,                                                   b                                     O X0),b    for i =
+1, . . . , m. Let Γ(X0,             b              L⊗D) denote the global sections of L⊗D|X0;b  these get identified
+with
+                      Γ(X0, L⊗D) =         =: FQ.                      b                             x−DQJxK
+(Here, x−DQJxK denotes the Q-vector space generated by xk, where k ≥−D.)Thus fiΓ(X, L⊗D) ⊂Γ(X0, L⊗D), and we have the evaluation map                   b
+                                    m
+           ψD : ED ⊗Z Q ,→FQ,    (Qi)1≤i≤m 7→ X fiQi,           (7.3.8)
+                                                          i=1

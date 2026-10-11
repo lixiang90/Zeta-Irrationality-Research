@@ -1,0 +1,47 @@
+{
+  "description": "Exact symbolic certificates; actual independence is proved in the companion report.",
+  "system_matrix": "Matrix([[0, 0, 0, 0], [0, 0, 1, 0], [1/(32 - 32*w), (8*w - 3)/(16 - 16*w), (3*w - 2)/(2 - 2*w), 0], [0, -10*w/(1 - 4*w), -12*w/(1 - 4*w), 2*w/(1 - 4*w)]])",
+  "cyclic_determinant": "w**3*(8*w - 35)/(16*(w - 1)**2*(4*w - 1)**3)",
+  "cyclic_det_scope": "Formal row determinant, not by itself proof of actual function independence.",
+  "hypergeometric_coefficient_ratios": [
+    "8/35",
+    "16/33",
+    "8/13",
+    "224/323",
+    "120/161",
+    "176/225",
+    "728/899"
+  ],
+  "L2_F_jet": "1/32",
+  "f_X_equation_jet": "0",
+  "a_tilde_n1_n3": [
+    "-5/3",
+    "-569/105",
+    "-189946/10395"
+  ],
+  "rational_relation_residues": {
+    "0": {
+      "matrix": "Matrix([[0, 3/16], [-1, 1]])",
+      "spectrum": [
+        "1/4",
+        "3/4"
+      ]
+    },
+    "1/4": {
+      "matrix": "Matrix([[-1/2, 0], [0, -1/2]])",
+      "spectrum": [
+        "-1/2",
+        "-1/2"
+      ]
+    },
+    "1": {
+      "matrix": "Matrix([[0, 5/16], [0, 1/2]])",
+      "spectrum": [
+        "0",
+        "1/2"
+      ]
+    }
+  },
+  "H_infinity": "Matrix([[-1/2, 1/2], [-1, 1]])",
+  "all_checks_passed": true
+}

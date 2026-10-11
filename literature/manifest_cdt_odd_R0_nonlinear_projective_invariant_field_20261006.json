@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-10-06",
+  "status": "FROZEN",
+  "scope": "NEW full-scale paper proof of actual wedge stabilizers/invariant fields, rational differential and finite-algebraic local outputs, all transported origin branches, conifold/infinity classification and rational holomorphic-disk common domains. No numerical irrationality/transcendence or Lean theorem.",
+  "proof": {
+    "file": "research/cdt_odd_R0_nonlinear_projective_invariant_field_20261006.md",
+    "sha256": "ec6ad8fedb27a1eea5fcbcdc8afed0b58a4e13cf6a393568c8274c9d16afd59b",
+    "author_full_reread": true,
+    "equations": "N1-N27",
+    "independent_final_full_reads_passed": ["quarter_actual_rank", "toric_chow_completion", "root"],
+    "independent_read_scope": "Both peers and root actually read complete final ec6 proof, including N26 fixed-q/uniform-recovery correction, separate W/y0 nonmembership, N10a rational disk common-domain and N27 rank equality. Separate NEW review files are recorded independently to avoid circular receipt/review hashing.",
+    "unfrozen_revision_note": "Initial 6d4df372fa64fe4ca79d5c95a5bed6d3d63ea77ea8e20ef51799e5ae4ef1df58 said constant J(q) was not in the fixed-q field. Quarter independently caught this. Final candidate distinguishes fixed-q constant membership from uniform q-free recovery, proves W/y0 nonmembership directly via the actual stabilizer, and adds N10a/N27. Old frozen files unchanged."
+  },
+  "baseline": {
+    "main_file": "research/cdt_odd_background_progress_20261006.md",
+    "main_sha256": "1e0161b49ee96adae6cc30e9e7c89ca667b81877fd484919b86e7fd38e105f4c",
+    "actual_read_scope": "Main sections85-93 full text; delivery beginning/tail and selected current scope metadata. Main tail additionally showed79-84; no assertion of whole main reread.",
+    "delivery_file": "research/cdt_odd_delivery_20261006.json",
+    "delivery_sha256": "720729da5652eddff514b331c177b1fde7749af4fa38ce3e9cf65d60708b66a3",
+    "frozen_math_inputs": 366,
+    "proof_review_count": 108,
+    "registered_pdf_files": 78,
+    "registered_pdf_pages": 4476,
+    "local_links": 1202,
+    "counts_are_archival_not_actual_reading_or_math_validation": true
+  },
+  "primary_sources": [
+    {
+      "title": "Introduction to the Galois Theory of Linear Differential Equations",
+      "author": "Michael F. Singer",
+      "version": "Existing author-hosted LMS lectures snapshot, published2009",
+      "url": "https://singer.math.ncsu.edu/papers/LMSlectures.pdf",
+      "file": "literature/singer2009_differential_galois_lms_author_20261006.pdf",
+      "pages": 82,
+      "bytes": 537902,
+      "sha256": "c805d45ed54e0e6734b4d7f125c197364b9eccab2a7e09a8c26c3bf63cf5db96",
+      "actual_read_pdf_pages_this_round": [1, 13, 14, 17, 20, 26],
+      "actual_read_scope": "Theorem1.3.9 PV correspondence; Corollary1.3.10 connected fixed field and algebraic closure; Proposition1.3.20/Corollary1.3.21 torsor action; Schlesinger Proposition1.3.27; regular-singular local differential group. Not a full82-page read.",
+      "new_download": false,
+      "original_acquisition_receipt": "literature/manifest_cdt_odd_affine_galois_20261006.json",
+      "tls_note": "Existing receipt records normal Windows HTTPS certificate validation. This round only read existing bytes and verified the author URL via official search; no download or TLS exception.",
+      "source_processing_note": "Initial fitz text output raised GBK UnicodeEncodeError before page text; then stdout was explicitly UTF8 and all six listed pages were actually read. Source processing is not a mathematical producer."
+    },
+    {
+      "title": "Arithmetic holonomy bounds and effective Diophantine approximation",
+      "authors": "Frank Calegari, Vesselin Dimitrov, Yunqing Tang",
+      "version": "Existing project20-page snapshot; bibliographic label arXiv2510.04156v1 in the previously frozen source receipt",
+      "url": "https://arxiv.org/abs/2510.04156v1",
+      "file": "literature/cdt2025_arithmetic_holonomy.pdf",
+      "pages": 20,
+      "bytes": 751610,
+      "sha256": "5f403f337fed8bfd776348a04aaaec7d57ca6f90c31dd871ed793bf24239c8f1",
+      "actual_read_pdf_pages_this_round": [3, 4],
+      "actual_read_scope": "Theorem2.1 meromorphic formal-function, LCM-species and holonomic assumptions; verification that current N11 does not conflate general rational functions with automatically holonomic candidates. The primary text was actually read, not inferred from the abstract. Not a full20-page reread.",
+      "new_download": false,
+      "original_acquisition_receipt": "literature/manifest_cdt_odd_R0_endpoint_flag_holonomy_interface_20261006.json",
+      "tls_note": "Existing fixed bytes only. No new download, no TLS exception."
+    }
+  ],
+  "mathematical_inputs": [
+    {
+      "file": "research/cdt_odd_R0_endpoint_sensitive_exterior_packet_20261006.md",
+      "sha256": "b02f39ae453143b72572bef7e91e53697bed90388108e79b267e27168dae96ef",
+      "actual_read_scope_this_round": "E1-E7a first combined output; then complete E8-E13 separately, including E20.3/E22/E28-E30. Combined output truncation was detected and followed by bounded supplementary reading. No producer executed."
+    },
+    {
+      "file": "research/cdt_odd_R0_endpoint_flag_holonomy_interface_20261006.md",
+      "sha256": "af728ecbebe3ac4827f7388706d4c5892896437e625e1bf4a0671b949bff28b5",
+      "actual_read_scope_this_round": "Main text output, then complete H1-H4 separately after combined budget truncation; H5-H10 output also read. Exact linear no-go scope retained."
+    },
+    {
+      "file": "research/cdt_odd_R0_actual_vanishing_orbit_lattice_20261006.md",
+      "sha256": "baf29ee041a0ea48c4b64c517cf0712f24c52c4c98893e4c74a98698c7e05586",
+      "actual_read_scope_this_round": "O24-O25 and surrounding section6 onward excerpt; selected exact primitive row and period injectivity references. Prior full independent review is historical, not claimed anew this round."
+    },
+    {
+      "file": "research/cdt_odd_R0_real_Betti_normalization_20261006.md",
+      "sha256": "dd541870010dc296993f512252e6b359bec2a1c147b382d288637078ef9c490f",
+      "actual_read_scope_this_round": "Section6 R20-R25 full actual text and nearby R26; distinguishes physical M0, signed U=-M0, actual double cover M0^2. Prior full read not claimed anew."
+    },
+    {
+      "file": "research/cdt_odd_R0_origin_orbit_mod8_obstruction_20261006.md",
+      "sha256": "a510202c396b90fd95abc99fbba950cf6a8a53870f01b769a336ee380bf756dc",
+      "actual_read_scope_this_round": "Full M1-M17 and all scope statements; independent paper verification of allword congruence, period/Kummer intertwining, finite covers and complete current-packet disk meromorphy theorem."
+    }
+  ],
+  "new_independent_review_authored": {
+    "file": "research/cdt_odd_R0_origin_orbit_mod8_arithmetic_independent_review_20261006.md",
+    "sha256": "615a30cfed0d6696fd36c3b132ae62b23fcdb867e488e58af7273dc995da9338",
+    "status": "FROZEN",
+    "actual_full_reread": true,
+    "scope": "Full final quarter a510 proof. Matrix/inverse mod8; exact cycle-to-period and Kummer sign; allword/cover obstruction; linear jump kernel; rational disk loops; complete inherited all-place budget. No general root-output common-domain claim."
+  },
+  "new_primary_pdf_download_count": 0,
+  "new_primary_pdf_download_pages": 0,
+  "own_new_mathematical_producer_count": 0,
+  "own_new_mathematical_producer_execution_count": 0,
+  "old_or_peer_mathematical_producer_execution_import_rerun_count": 0,
+  "read_only_source_utilities": ["PowerShell Get-Content and Get-FileHash", "rg", "inline Python fitz extraction with UTF8 stdout"],
+  "postproof_future_source_locator_note": "After ec6 was final, a read-only fitz scan of the existing Milne659-page PDF located simply-connected/isogeny page indices and snippets for a possible later holonomic algebraic-root argument. No complete new Milne theorem page was read and no such future conclusion is asserted in this round. Root explicitly kept that question for a separate next-round NEW proof.",
+  "scope_limits": [
+    "Rational outputs use a fixed q-free formula; fixed-q complex constants already belong to C(x), so uniform recovery is a separate statement.",
+    "Finite algebraic roots are handled by minimal-polynomial coefficients, not falsely asserted to be PV elements.",
+    "The rational holomorphic-disk common-domain theorem N10a does not cover new ordinary discriminant branchpoints of algebraic roots.",
+    "All-place budgets and finite D-finite/CDT rank of new ratios are not inherited for free from rank10/tau329/50/rho3.5log2.",
+    "New independent periods, nonalgebraic gauges/integral transforms, jump-aware holonomy and arbitrary nonlocal-word quotient classification remain outside this proof.",
+    "Target alpha0 algebraicity is not equivalent to rationality/algebraicity of R0-M0."
+  ]
+}

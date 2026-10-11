@@ -1,0 +1,345 @@
+                                                           APÉRY LIMITS FOR ELLIPTIC L-VALUES
+
+                                                               CHRISTOPH KOUTSCHAN AND WADIM ZUDILIN
+
+                                                  Abstract. For an (irreducible) recurrence equation with coefficients from Z[n]
+arXiv:2111.08796v1 [math.NT] 16 Nov 2021
+
+
+
+
+                                                  and its two linearly independent rational solutions un , vn , the limit of un /vn as
+                                                  n → ∞, when exists, is called the Apéry limit. We give a construction that realises
+                                                  certain quotients of L-values of elliptic curves as Apéry limits.
+
+
+                                             Apéry’s famous proof [10] of the irrationality of ζ(3) displayed a particular phe-
+                                           nomenon (which could have been certainly dismissed if discussed in the arithmetic
+                                           context of some boring quantities). One considers the recurrence equation
+                                              (n + 1)3 vn+1 − (2n + 1)(17n2 + 17n + 5)vn + n3 vn−1 = 0 for n = 1, 2, . . . .             (1)
+                                           and its two rational solutions un and vn , where n ≥ 0, originating from the initial
+                                           data u0 = 0, u1 = 6 and v0 = 1, v1 = 5. Then vn are in fact integral for any n ≥ 0
+                                           and the denominators of un have a moderate growth with n — certainly not like n!3
+                                           as suggested by the recursion — but O(C n ) as n → ∞, for some C > 1. Namely,
+                                           Dn3 un ∈ Z for all n ≥ 1, where Dn denotes the least common multiple of 1, 2, . . . , n;
+                                                               1/n
+                                           the asymptotics Dn → e as n → ∞ is a consequence of the prime number theorem.
+                                           An important additional property is that the quotient un /vn → ζ(3) as n → ∞ (and
+                                           also un /vn 6= ζ(3) for all n); even sharper: vn ζ(3) − un → 0 as n → ∞; and at the
+                                           highest level of sharpness we have Dn3 (vn ζ(3) − un ) → 0 as n → ∞. It is the latter
+                                           sharpest form that leads to the conclusion ζ(3) ∈    / Q. But already the arithmetic
+                                           properties of un , vn coupled with the ‘irrational’ limit relation un /vn → ζ(3) as
+                                           n → ∞ are phenomenal.
+                                              One way to prove all the above claims in one shot is to cast the sequence In =
+                                           vn ζ(3) − un as the Beukers triple integral [4]
+                                                     1 1 1 1 xn (1 − x)n y n (1 − y)n z n (1 − z)n
+                                                      Z Z Z
+                                               In =                                                dx dy dz for n = 1, 2, . . . .
+                                                     2 0 0 0             (1 − (1 − xy)z)n+1
+                                           A routine use of creative telescoping machinery, based on the Almkvist–Zeilberger
+                                           algorithm [2] (in fact, its multivariable version [3]), then shows that In indeed sat-
+                                           isfies (1), while the evaluations I0 = ζ(3) and I1 = 5ζ(3) − 6 are straightforward.
+                                           The arithmetic and analytic properties follow from the analysis of the integrals In
+                                           performed in [4]; more practically, they can be predicted/checked numerically based
+                                           on the recurrence equation (1).
+                                              A common belief is that we have a better understanding of the phenomenon these
+                                           days. Namely, we possess some (highly non-systematic!) recipes and strategies (see,
+
+                                             Date: 16 November 2021.
+                                             2020 Mathematics Subject Classification. Primary 11F67; Secondary 11G05, 11G40, 11J70,
+                                           11R06, 14K20, 33F10, 39A06.
+                                             Research of the first author is supported by the Austrian Science Fund (FWF) grant F5011-
+                                           N15. Research of the second author is supported by the Dutch Research Council (NWO) grant
+                                           OCENW.KLEIN.006.
+                                                                                           1
+2                       CHRISTOPH KOUTSCHAN AND WADIM ZUDILIN
+
+for example, [1, 6, 7, 13, 15, 16]) for getting other meaningful constants c as Apéry
+limits — in other words, there are (irreducible) recurrence equations with coefficients
+from Z[n] such that for two rational solutions un , vn we have un /vn → c as n → ∞
+and the denominators of un , vn are growing at most exponentially in n. (We may also
+consider weak Apéry limits when the latter condition on the growth of denominators
+is dropped.) Though one would definitely like to draw some conclusions about the
+irrationality of those constants c, this constraint for the arithmetic to be in the
+sharpest form would severly shorten the existing list of known Apéry limits; for
+example, it would throw out Catalan’s constant from the list. A very basic question
+is then as follows.
+Question. What real numbers can be realised as Apéry limits?
+   Without going at any depth into this direction, we present here a (‘weak’) con-
+struction of Apéry limits which are related to the L-values of elliptic curves (or of
+weight 2 modular forms). The construction emanates from identities, most of which
+remain conjectural, between the L-values and Mahler measures.
+     Consider the family of double integrals
+                       Z 1 Z 1 n−1/2
+                              x       (1 − x)n−1/2 y n−1/2 (1 − y)n
+              Jn (z) =                                                dx dy
+                        0   0            (1 − zxy)n+1/2
+                        Γ(n + 21 )3 Γ(n + 1)
+                                                                              
+                                                     n + 12 , n + 21 , n + 21
+                     =                       · 3 F2                           z .
+                       Γ(2n + 1)Γ(2n + 23 )            2n + 1, 2n + 23
+Thanks to the nice hypergeometric representation, a recurrence equation satisfied by
+the double integral can be computed using Zeilberger’s fast summation algorithm [3,
+14], which is based on the method of creative telescoping. It leads to the following
+third-order recurrence equation:
+4z 4 (2n + 1)2 (n + 1)2 16(27z − 32)n4 − 16(69z − 86)n3
+    + 8(108z − 143)n2 − 4(55z − 76)n + 3(7z − 10) Jn+1
+                                                   
+
+    + z 2 256(3z + 8)(27z − 32)n8 − 256(3z + 8)(15z − 22)n7
+      − 64(651z 2 + 661z − 1744)n6 + 192(59z 2 − 186)n5
+      + 16(1503z 2 + 697z − 3610)n4 − 16(79z 2 − 290z + 116)n3
+      − 4(569z 2 − 381z − 580)n2 + 4(11z 2 − 44z + 18)n + 3(4z + 3)(7z − 10) Jn
+                                                                            
+
+    + 4n 64(3z 2 − 20z + 16)(27z − 32)n7 − 384(3z 2 − 20z + 16)(7z − 9)n6
+      − 16(411z 3 − 2698z 2 + 3988z − 1696)n5 + 64(183z 3 − 1372z 2 + 2339z − 1134)n4
+      + 4(531z 3 − 1400z 2 − 424z + 1240)n3 − 8(571z 3 − 4001z 2 + 6532z − 3060)n2
+      + (151z 3 − 4742z 2 + 11596z − 6888)n + 12(14z 2 − 29z − 30)(z − 1) Jn−1
+                                                                         
+
+    + 4n(n − 1)(2n − 3)2 (z − 1) 16(27z − 32)n4 + 48(13z − 14)n3
+      + 8(18z − 11)n2 − 4(19z − 24)n − (7z + 6) Jn−2 = 0.
+                                                
+
+Furthermore, if we take
+                                     1                        Z 1Z       1
+                                          , 12 , 21                                     dx dy
+           λ(z) = J0 (z) = 2π 3 F2    2             z       =                                           ,
+                                          1, 23
+                                                                               p
+                                                                 0     0           x(1 − x)y(1 − zxy)
+                             APÉRY LIMITS FOR ELLIPTIC L-VALUES                                        3
+                            1                           1
+                                 , 12                                  dx
+                                                  Z
+          ρ1 (z) = π 2 F1    2        z       =                                      ,
+                                 1
+                                                              p
+                                                      0           x(1 − x)(1 − zx)
+                           1       1
+                                                             1
+                                                                  √
+                                                                     1 − zx
+                                                      Z
+                           −2,
+          ρ2 (z) = π 2 F1           2     z       =                          dx,
+                            1
+                                                                  p
+                                                          0         x(1 − x)
+then J0 (z) = λ(z),
+                3 + 4z       5(1 − z)       13
+    J1 (z) = −           λ −          ρ1 +      ρ2 ,
+                  4z 2          z2         2z 2
+              105 + 480z + 64z 2        3151 − 2167z − 984z 2      7247 + 3452z
+     J2 (z) =                      λ +                        ρ1 −               ρ2 ;
+                       64z 4                    144z 4                288z 4
+in other words, each Jn (z) is a Q(z)-linear combination of λ(z), ρ1 (z), ρ2 (z). For
+z −1 ∈ Z\{±1} we find out experimentally that the coefficients an , bn , cn (depending,
+of course, on this z −1 ) in the representation
+                                 Jn (z) = an λ(z) + bn ρ1 (z) + cn ρ2 (z)
+satisfy
+             z n 24n an , z n 24n D2n
+                                   2
+                                      bn , z n 24n D2n
+                                                    2
+                                                       cn ∈ Z                for n = 0, 1, 2, . . . .
+  Now observe that
+                                                           
+             Jn Jn+1           an an+1                  bn bn+1
+       det             = det             · λ(z) + det             · ρ1 (z)
+             cn cn+1           cn cn+1                 cn cn+1
+for n = 0, 1, 2, . . . . The sequences
+                                                                                          
+                               an an+1                                       b b
+                 An = det                                     and Bn = − det n n+1
+                               cn cn+1                                       cn cn+1
+satisfy the following third-order (again!) recurrence equation which is the exterior
+square of the recurrence for Jn :
+4(n + 1)(n + 2)2 (2n + 1)2 (2n + 3)2 z 8 p0 (n)p0 (n − 1)An+1
+ − 4(n + 1)2 (2n + 1)2 z 4 p0 (n − 1) 64(3z 2 − 20z + 16)(27z − 32)n7
+   + 64(3z 2 − 20z + 16)(147z − 170)n6 + 16(3369z 3 − 26678z 2 + 44012z − 20576)n5
+   + 16(2457z 3 − 20918z 2 + 34376z − 15896)n4
+   + 4(843z 3 − 16808z 2 + 29432z − 13736)n3 − 4(1445z 3 − 6794z 2 + 9600z − 4144)n2
+   − (741z 3 − 6922z 2 + 10772z − 4728)n + z 2 (131z − 66) An
+                                                          
+
+ − n(2n − 1)2 (1 − z)z 2 p0 (n + 1) 256(3z + 8)(27z − 32)n8
+   − 256(3z + 8)(15z − 22)n7 − 64(651z 2 + 661z − 1744)n6 + 192(59z 2 − 186)n5
+   + 16(1503z 2 + 697z − 3610)n4 − 16(79z 2 − 290z + 116)n3
+   − 4(569z 2 − 381z − 580)n2 + 4(11z 2 − 44z + 18)n + 3(4z + 3)(7z − 10) An−1
+                                                                         
+
+ − 4(n − 1)n2 (2n − 3)2 (2n − 1)2 (1 − z)2 p0 (n)p0 (n + 1)An−2 = 0,
+where
+p0 (n) = 16(27z − 32)n4 + 48(13z − 14)n3 + 8(18z − 11)n2 − 4(19z − 24)n − (7z + 6)
+4                    CHRISTOPH KOUTSCHAN AND WADIM ZUDILIN
+
+and
+                            13          395z 2 − 1051z + 591
+                       A0 =      , A1 =                      ,
+                            2z 2                  72z 6
+                  15196z 4 − 201551z 3 + 548091z 2 − 543600z + 183120
+             A2 =                                                     ,
+                                         3600z 10
+and
+                                        1117z 2 − 2299z + 1182
+                       B0 = 0,     B1 =                        ,
+                                                  72z 6
+                     6867z 4 − 65547z 3 + 156430z 2 − 143530z + 45780
+               B2 =                                                   .
+                                           450z 10
+Furthermore, by construction
+                                          Bn     λ
+                                     lim     =
+                                    n→∞ An       ρ1
+and, still only experimentally and for z −1 ∈ Z \ {±1},
+                                                         2
+        z 2n+2 22n D2n (n + 1)(2n + 1)2 An , z 2n+2 22n D2n (n + 1)(2n + 1)2 Bn ∈ Z
+for n = 0, 1, 2, . . . . In other words, the number λ/ρ1 (but also the quotients λ/ρ2
+and ρ1 /ρ2 ) are (weak) Apéry limits for the values of z in consideration.
+    For real k > 0 with k 2 ∈ Z \ {0, 16}, the Mahler measure
+             µ(k) = m(X + X −1 + Y + Y −1 + k)
+                      1                                       dX dY
+                            ZZ
+                  =             log |X + X −1 + Y + Y −1 + k|
+                    (2πi) 2                                   X Y
+                           |X|=|Y |=1
+
+is expected to be rationally proportional to the L-value
+                                                 N
+                                 L′ (E, 0) =         L(E, 2)
+                                               (2π)2
+of the elliptic curve E = Ek : X + X −1 + Y + Y −1 + √       k = 0 of√conductor N =
+Nk = N(Ek ). This is actually proven [5] when k = 1, 2, 2, 2 2 and 3 for the
+corresponding elliptic curves 15a8, 56a1, 24a4, 32a1 and 21a4 labeled in accordance
+with the database [9]; the first number in the label indicates the conductor.
+   For the range 0 < k < 4 we have the formula
+                                              , 2 , 2 k2
+                                          1 1 1         
+                                   k
+                           µ(k) = · 3 F2    2              ,
+                                   4          1, 23   16
+thus linking µ(k) to z −1/2 λ(z)/π at z = k 2 /16. Furthermore, the quantity z −1/2 ρ1 (z)
+in this case is rationally proportional to the imaginary part of the nonreal period of
+the same curve, while z −1/2 ρ2 (z) is a Q-linear combination of the imaginary parts of
+the nonreal period and the corresponding quasi-period. It means that in many cases
+we can record z −1/2 ρ1 (z) as a rational multiple of√the central L-value of a quadratic
+twist of the curve E. For example, when k = 2 2 (hence z = 1/2) the quadratic
+twist of the CM elliptic curve of conductor 32 coincides with itself and we have
+         1       √                   √ L(E, 2)             1     √
+       λ       = 2 2 πL′ (E, 0) = 16 2              and ρ1        = 4 2 L(E, 1),
+           2                                  π               2
+                         APÉRY LIMITS FOR ELLIPTIC L-VALUES                              5
+
+so that the recursion above with the choice z = 1/2 realises the quotient L(E, 2)/
+(πL(E, 1)) as an Apéry limit for an elliptic curve of conductor 32. When k = 1 we
+get
+           1                          L(E, 2)                1 1
+         λ       = 8πL′ (E, 0) = 30                   and ρ1         = L(E, χ−4 , 1)
+            16                              π                   16      2
+for the twist of the elliptic curve by the quadratic character χ−4 = −4
+                                                                              
+                                                                            ·
+                                                                                ; this means
+that the quotient L(E, 2)/(πL(E, χ−4 , 1)) for an elliptic curve of conductor 15 is
+realised as an Apéry limit.
+   Clearly, the range 0 < k < 4 has a limited supply of elliptic L-values. When
+k > 4, one can write                                   
+                                                1       16
+                                     µ(k) =         f       ,
+                                               2π       k2
+where
+                                          3 3               
+                               z     z          , 2 , 1, 1
+           f (z) = −π log          + 4 F3     2             z
+                               16 4             2, 2, 2
+                      Z 1                                 √
+                             −1/2         −1/2       1 − 1 − zx
+                 =−        x      (1 − x)      log        √        dx
+                       0                             1 + 1 − zx
+                   Z 1 Z 1 −1/2
+                             x     (1 − x)−1/2 (1 − zx)1/2 y −1/2
+                 =                                                  dx dy
+                    0    0             1 − (1 − zx)y
+                     Z 1 Z 1 −1/2
+                               x     (1 − x)−1/2 (1 − x/Z)1/2 (1 − y)−1/2
+                 =Z                                                       dx dy,
+                       0    0                  x(1 − y) + yZ
+with Z = z −1 > 1. At this point we see that the integrals resemble the integrals
+                          Z 1Z 1
+                     −l−m          xj (1 − x)h y k (1 − y)l
+                   Z                                 j+k−m+1
+                                                             dx dy,
+                           0  0 (x(1 − y) + yZ)
+
+with h, j, k, l, m non-negative integers, appearing in the linear independence results
+for the dilogarithm [11, 12]. This similarity suggests looking at the family
+                   Z 1 Z 1 n−1/2
+                          x      (1 − x)2n−1/2 (1 − x/Z)1/2 y n (1 − y)n−1/2
+        Ln (Z) =                                                             dx dy,
+                    0   0               (x(1 − y) + yZ)n+1
+where Z = z −1 is a large (positive) integer. We tackle this double integral by iterated
+applications of creative telescoping: while the first integration (no matter whether
+one starts with x or with y) can be done with the Almkvist–Zeilberger algorithm, the
+second one requires more general holonomic methods, since the integrand is not any
+more hyperexponential. Using the Mathematica package HolonomicFunctions [8],
+where these algorithms are implemented, we find that the integral Ln (Z) satisfies
+a lengthy fourth-order recurrence equation. Moreover, it turns out that Ln (Z) is a
+Q(Z)-linear combination of ρ1 = ρ1 (1/Z), ρ2 = ρ2 (1/Z), σ1 = L0 (Z) and
+                         Z 1 Z 1 −1/2
+                                 x     (1 − x)1/2 (1 − x/Z)1/2 (1 − y)1/2
+          σ2 = σ2 (Z) =                                                   dx dy.
+                          0   0              x(1 − y) + yZ
+One can produce a recurrence equation out of the one for Ln (Z) to cast, for example,
+σ1 /ρ1 as an Apéry limit. Because this finding does not meet any reasonable aesthetic
+requirements and does not imply anything (to be claimed) irrational, we leave it
+outside this note.
+6                      CHRISTOPH KOUTSCHAN AND WADIM ZUDILIN
+
+                                         References
+ [1] G. Almkvist, D. van Straten and W. Zudilin, Apéry limits of differential equations of
+     order 4 and 5, in Modular forms and string duality (Banff, June 3–8, 2006), N. Yui, H. Verrill
+     and C. F. Doran (eds.), Fields Inst. Commun. Ser. 54 (Amer. Math. Soc., Providence, RI,
+     2008), 105–123.
+ [2] G. Almkvist and D. Zeilberger, The method of differentiating under the integral sign, J.
+     Symbolic Comput. 10:6 (1990), 571–591.
+ [3] M. Apagodu and D. Zeilberger, Multi-variable Zeilberger and Almkvist–Zeilberger al-
+     gorithms and the sharpening of Wilf–Zeilberger theory, Adv. in Appl. Math. 37:2 (2006),
+     139–152.
+ [4] F. Beukers, A note on the irrationality of ζ(2) and ζ(3), Bull. London Math. Soc. 11:3
+     (1979), 268–272.
+ [5] F. Brunault and W. Zudilin, Many variations of Mahler measures: a lasting symphony,
+     Aust. Math. Soc. Lecture Ser. 28 (Cambridge University Press, Cambridge, 2020).
+ [6] M. Chamberland and A. Straub, Apéry limits: experiments and proofs, Amer. Math.
+     Monthly 128:9 (2021), 811–824 .
+ [7] R. Dougherty-Bliss, C. Koutschan and D. Zeilberger, Tweaking the Beukers inte-
+     grals in search of more miraculous irrationality proofs à la Apéry, Ramanujan J. (to appear);
+     Preprint arXiv:2101.08308 [math.NT] (2021).
+ [8] C. Koutschan, HolonomicFunctions (user’s guide), RISC Report 10-01 (2010),
+     http://www.risc.jku.at/research/combinat/software/HolonomicFunctions/.
+ [9] The LMFDB Collaboration,             The L-functions and modular forms database,
+     http://www.lmfdb.org, 2021 (online; accessed 12 October 2021).
+[10] A. van der Poorten, A proof that Euler missed. . . Apéry’s proof of the irrationality of
+     ζ(3). An informal report, Math. Intelligencer 1:4 (1978/79), 195–203.
+[11] G. Rhin and C. Viola, The permutation group method for the dilogarithm, Ann. Scuola
+     Norm. Sup. Pisa Cl. Sci. (5) 4:3 (2005), 389–437.
+[12] C. Viola and W. Zudilin, Linear independence of dilogarithmic values, J. Reine Angew.
+     Math. 736 (2018), 193–223.
+[13] D. B. Zagier, Integral solutions of Apéry-like recurrence equations, in Groups and symme-
+     tries, CRM Proc. Lecture Notes 47 (Amer. Math. Soc., Providence, RI, 2009), 349–366.
+[14] D. Zeilberger, A fast algorithm for proving terminating hypergeometric identities, Disc.
+     Math. 80:2 (1990), 207–211.
+[15] W. Zudilin, The birthday boy problem, Preprint arXiv:2108.06586 [math.NT] (2021).
+[16] W. Zudilin, Apéry limits and Mahler measures, Preprint arXiv:2109.12972 [math.NT]
+     (2021).
+
+  Johann Radon Institute for Computational and Applied Mathematics (RICAM),
+Austrian Academy of Sciences, Altenberger Straße 69, A-4040 Linz, Austria
+  Email address: christoph.koutschan@ricam.oeaw.ac.at
+
+  Department of Mathematics, IMAPP, Radboud University, PO Box 9010, 6500 GL
+Nijmegen, Netherlands
+  Email address: w.zudilin@math.ru.nl
+

@@ -1,0 +1,114 @@
+{
+  "receipt_stem": "cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006",
+  "date": "2026-10-06",
+  "state": "final_independently_reviewed_frozen",
+  "scope": "NEW source receipt and NEW polynomial-module proof; all previously frozen inputs and all old or peer mathematical producers remain read-only",
+  "proof": {
+    "path": "research/cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006.md",
+    "sha256": "452d0271f294b304f3b8bd2a65b343ae5e8b1af128267750e7c9118862066be2",
+    "author_actual_saved_full_read": true,
+    "paper_proved": [
+      "actual scalar rank2 and symmetric matrix rank4 polynomial graph bases and critical determinant indices",
+      "self-contained shifted weak-Popov existence, predictable degree and intrinsic defect multiset",
+      "unimodular symplectic pairing and exact defect pairs (-d,d) and (-d2,-d1,d1,d2)",
+      "actual corank G0=d and corank M5=d1+d2 for all auxiliary p=18r+1",
+      "exact padded principal-subresultant normalization and scalar target index 4r+1",
+      "explicit full ambient determinant units with unknown complementary target minor retained",
+      "hand-proved actual p37 r2 nonperfect intermediate Hankel profile counterexample"
+    ],
+    "not_proved": [
+      "simultaneous target determinant units at infinitely many auxiliary primes",
+      "all-r balanced shifted degrees",
+      "closed factorial formula for either truncated target determinant",
+      "new arithmetic costs or numerical irrationality conclusion"
+    ]
+  },
+  "frozen_inputs": [
+    {
+      "path": "research/cdt_odd_paired_auxiliary_units_structure_20261006.md",
+      "sha256": "dcc6d4d670dbcc3960936d3ee1b21a877f73c03e2ba65c479c9d550e0624a8a5",
+      "actual_current_round_read": "U14-U28 used by the proof; related source/Pearson material was consulted without a claim of new whole-document read after combined-output tail truncation",
+      "modified": false
+    }
+  ],
+  "new_primary_sources": [
+    {
+      "title": "Fraction-Free Computation of Matrix Rational Interpolants and Matrix GCDs",
+      "authors": ["Bernhard Beckermann", "George Labahn"],
+      "year": 2000,
+      "source_url": "https://cs.uwaterloo.ca/~glabahn/Papers/exact.pdf",
+      "path": "literature/cdt_paired_auxiliary_pade_sources_20261006/beckermann_labahn2000_fraction_free_matrix_interpolants.pdf",
+      "sha256": "be8c6e160d89d313c04ad5b3a9ec375d3a138a59aeb79d085c204bb3799397ec",
+      "pdf_pages": 31,
+      "actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "not_read_pdf_pages": "16-31",
+      "read_method": "saved PDF UTF-8 full text output for PDF1-9 and PDF10-15, inspected without truncation",
+      "download_method": "PowerShell Invoke-WebRequest, normal verified TLS; no certificate bypass",
+      "used_scope": "normal points versus controllable data, Mahler/leading-degree systems, perfect-path recurrence's explicit nonzero prerequisites; not an actual-target normality theorem"
+    },
+    {
+      "title": "Subresultants, Sylvester sums and the rational interpolation problem",
+      "authors": ["Carlos D'Andrea", "Teresa Krick", "Agnes Szanto"],
+      "version": "arXiv:1211.6895v3, banner 22 Mar 2014; PDF title foot prints Date October 14, 2018",
+      "source_url": "https://arxiv.org/pdf/1211.6895v3",
+      "path": "literature/cdt_paired_auxiliary_pade_sources_20261006/dandrea_krick_szanto2014_subresultants_rational_interpolation_arxiv1211_6895v3.pdf",
+      "sha256": "ae342d1a2085ce1052f8e78e1b9ff8e58d74ffab6343e6465753b291bf98ae65",
+      "pdf_pages": 14,
+      "actual_read_pdf_pages": [1, 2, 3, 4, 5, 6, 7, 8],
+      "not_read_pdf_pages": "9-14",
+      "read_method": "saved PDF UTF-8 full text output for PDF1-8, inspected without truncation",
+      "download_method": "PowerShell Invoke-WebRequest, normal verified TLS; no certificate bypass",
+      "used_scope": "PDF3 padded monic subresultant convention; PDF4-5 PRS and reconstruction nonzero conditions; PDF8 determinantal interpolation does not remove nonzero conditions"
+    }
+  ],
+  "new_source_pdf_count": 2,
+  "new_source_pdf_total_pages": 45,
+  "actual_distinct_source_pdf_pages_read": 23,
+  "independent_mathematical_review_confirmations": [
+    {
+      "reviewer": "root",
+      "notification_received": "full paper D8-D25 and full Python static review passed; saved JSON five cases and all 14 scalar/42 matrix compact fields supplementarily read after initial raw-output truncation",
+      "does_not_claim": "root raw JSON all literal lines manually read"
+    },
+    {
+      "reviewer": "toric_chow_completion",
+      "notification_received": "full paper, full Python, complete JSON and candidate receipt 2f6f actual read; frozen dcc6 U1-U35 full reread; all paper mathematics passed",
+      "independent_primary_pdf_pages_read": "Beckermann-Labahn PDF1-15; D'Andrea-Krick-Szanto PDF1-8, 23 distinct pages",
+      "new_downloads_by_reviewer": 0,
+      "peer_mathematical_producer_execute_import_rerun": 0
+    }
+  ],
+  "new_own_mathematical_producer": {
+    "python_path": "research/cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006_verify.py",
+    "python_sha256": "0000ef0f9b98659874603579fc9cf60d1ed5572940f1c150ab007fdd1fa84504",
+    "json_path": "research/cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006_verify.json",
+    "json_sha256": "e751f6c57b27ccf4624bd12b27827bd3edbcfb3e9413d08162238cef2ec7bef7",
+    "execution_count": 1,
+    "history": [
+      {
+        "command": "python research/cdt_odd_paired_auxiliary_pade_symplectic_defect_20261006_verify.py",
+        "first_and_only_run": true,
+        "exit_code": 0,
+        "output_preexistence_guard": true
+      }
+    ],
+    "imports": ["pathlib", "json", "hashlib"],
+    "reads_imports_executes_old_or_peer_producers": false,
+    "actual_saved_python_full_static_read": true,
+    "actual_saved_json_full_static_read": true,
+    "mechanism_scope": "five previously examined r=1,2,4,6,7 only; exact graph reduction, actual symmetric form, defect/corank identities, scalar principal-subresultant sign and PRS degree flags",
+    "scalar_profiles": 14,
+    "matrix_profiles": 42,
+    "not_a_prime_table_extension": true,
+    "not_verified_by_probe": [
+      "all-scale lemmas D8-D24",
+      "ambient determinant closed factors D22-D23",
+      "infinite simultaneous target units",
+      "all-prime costs or numerical irrationality"
+    ]
+  },
+  "old_mathematical_producer_executions_imports_reruns": 0,
+  "peer_mathematical_producer_executions_imports_reruns": 0,
+  "old_frozen_proofs_or_receipts_modified": 0,
+  "ordinary_source_processing": "source downloads, saved PDF text extraction and SHA/metadata reads only, distinct from mathematical producer execution"
+}

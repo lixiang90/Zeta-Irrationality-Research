@@ -1,0 +1,52 @@
+Invent. math. 108:575-633 (1992)
+                                                                                 In tionss
+                                                                                 mathematicae
+                                                                                 9 Springer-Verlag 1992
+
+
+
+
+An algorithmic proof theory for hypergeometric
+(ordinary and "q") multisum]integral identities
+Herbert S. Wilf* and Doron Zeilberger**
+Department of Mathematics, University of Pennsylvania, Philadelphia, PA 19104, USA
+Department of Mathematics, Temple University, Philadelphia, PA 19122, USA
+
+
+Summary. It is shown that every 'proper-hypergeometric' multisum/integral
+identity, or q-identity, with a fixed number of summations and/or integration
+signs, possesses a short, computer-constructible proof. We give a fast algorithm
+for finding such proofs. Most of the identities that involve the classical special
+functions of mathematical physics are readily reducible to the kind of identities
+treated here. We give many examples of the method, including computer-generat-
+ed proofs of identities of Mehta-Dyson, Selberg, Hille-Hardy, q-Saalsch/itz, and
+others. The prospect of using the method for proving multivariate identities
+that involve an arbitrary number of summations/integrations is discussed.
+
+Contents
+Preface . . . . . . . . . . . . . . . . . . . . . . . . . . . .                         . . . . . . .   575
+1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . .                       . . . . . . .   578
+2. The fundamental theorem of hypergeometric summation/integration                       ........       590
+3. Recurrence operators via Sister Celine's technique . . . . . . . . . . . . . . . .                   595
+4. The r-variable case . . . . . . . . . . . . . . . . . . . . . .                      . . . . . . .   605
+5. Generalization to q-sums and q-multisums . . . . . . . . . . . . . . . . . . .                       611
+6. Examples . . . . . . . . . . . . . . . . . . . . . . . . . .                         . . . . . . .   616
+References . . . . . . . . . . . . . . . . . . . . . . . . . . .                        . . . . . . .   630
+
+
+
+
+Preface
+
+We now know [Z1, WZ1] that a large class of special function identities and
+binomial coefficient identities, are verifiable in a finite number of steps, since
+they can be embedded in the class of holonomic function identities, the elements
+of which are specifiable by a finite amount of data. Alas, the finite is usually
+a very big finite, and for most identities the holonomic approach [Z1], that
+uses an elimination algorithm in the Weyl algebra, is only of theoretical interest.
+In [Z2, Z3, WZ1], and [ W Z 2 ] , it was shown that for single sum terminating
+hypergeometric identities (i.e. binomial) and transformation formulas there exists
+
+ * Supported in part by the U.S. Officeof Naval Research
+** Supported in part by the U.S. National Science Foundation
+

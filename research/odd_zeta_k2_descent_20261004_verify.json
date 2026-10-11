@@ -1,0 +1,63 @@
+{
+  "status": "exact_function_field_inputs_passed",
+  "curve": "Y^2=s^8-14*s^4+1",
+  "coefficient_field": "Q(i,sqrt(2))",
+  "symbol_action": {
+    "sigma": {
+      "Splus": "Splus",
+      "Sminus": "Sminus"
+    },
+    "tau": {
+      "Splus": "Splus",
+      "Sminus": "Sminus"
+    },
+    "delta": {
+      "Splus": "Sminus",
+      "Sminus": "Splus"
+    },
+    "iota": {
+      "Splus": "-Splus",
+      "Sminus": "-Sminus"
+    }
+  },
+  "V4_quotient": {
+    "R": "s**2 + s**(-2)",
+    "W": "Y/s**2",
+    "equation": "W^2=R^2-16",
+    "parameter": "t=(R+W)/4",
+    "inverse_R": "2*(t+1/t)",
+    "inverse_W": "2*(t-1/t)",
+    "degree": "4, by four distinct automorphisms and quartic for s"
+  },
+  "basepoint": {
+    "s": "0",
+    "Y": "1",
+    "unit_residues": {
+      "uplus": "1",
+      "uminus": "1",
+      "Fplus": "-1",
+      "Fminus": "-1"
+    }
+  },
+  "horizontal_tame_pullback_pairs": [
+    {
+      "y": "4*i",
+      "plus": "2",
+      "minus": "1/2",
+      "product": "1"
+    },
+    {
+      "y": "-4*i",
+      "plus": "1/2",
+      "minus": "2",
+      "product": "1"
+    }
+  ],
+  "theorem_not_computationally_checked": "Rost integral transfer/basechange and residue compatibility, Bass-Tate exact sequence and specialization imply 4*T=0.",
+  "not_claimed": [
+    "T=0 integrally",
+    "nonzero elliptic regulator",
+    "period irrationality",
+    "arithmetic-model verification"
+  ]
+}

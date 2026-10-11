@@ -1,0 +1,189 @@
+                THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                   33
+
+
+where the second term is regular at x = 1/4. In general, just like in Basic Re-
+mark 2.10.1, for any meromorphic function f (x) around x = 1/4 we have the
+                     1
+                          R x f (t)
+meromorphy of √1−4x             √
+                            1/4 1−4t
+                                      dt near x = 1/4 (with both factors switching
+signs under the monodromy operator T ). Consequently, the x = 1/4 monodromy
+operator T acts by
+                  T (HA ) = −HA = HA − 2HA ,
+                                           Z 1/4
+                                                     1        1
+                  T (HB ) = HB − 2HA                     √          dt,
+                                             0     1 − t    1 − 4t
+                                           Z 1/4
+                                                   log(1 − t)       1
+                  T (HC ) = HC − 2HA                            √        dt.
+                                             0       1−t          1 − 4t
+A straightforward integrations reveals the holonomic coefficient
+                      Z 1/4
+                                1      1             π
+                                   √         dt = √ = L(1, χ−3 ),
+                       0      1 − t 1 − 4t          3 3
+reaffirming (2.11.16). An only slightly more involved integration — or a computing
+package — leads to the evaluation of
+                                         log(1 − x)
+                                     Z
+                                                          1
+                            V (x) :=                  √          dx
+                                           1−x          1 − 4x
+as
+                                                                                 
+                     r                     r
+        2i              1 − 4x               1 − 4x                  4(1 − x)
+      − √ arctan                 arctan              − i log 
+                                                                                   
+                             3                    3                               2 
+          3
+                                                                         q      
+                                                                     1 + 1−4x3
+                q                
+                       4x−1
+        2i                3    −1
+      + √ Li2  q                  ,
+          3            4x−1
+                               +1
+                        3
+
+whereupon the familiar formulas
+                                   1     π
+                           arctan √ = ,
+                                     3   6
+                                           π
+                            L(1, χ−3 ) = √ ,
+                                         3 3
+                                           π2
+                             Li2 (−1) = − ,
+                                           12    √
+                             
+                               2πi/3
+                                          π2       3
+                        Li2 e          =−     +i      L(2, χ−3 )
+                                           18     2
+straightforwardly evaluate the requisite holonomic coefficient
+    Z 1/4
+          log(1 − t)     1
+                     √         dt = V (1/4) − V (0) = L(1, χ−3 ) log 3 − L(2, χ−3 ).
+      0     1−t        1 − 4t
+The lemma follows from these integral evaluations. The special value (2.11.15),
+which we used in the preceding derivation, is none√other than the Dirichlet class
+number formula for the complex quadratic field Q( −3).                               □
+   From part (∗) that we already proved in Theorem 2.8.4 (assuming Theorem 2.5.1,
+whose treatment is in § 7), we can thus readily derive a Q-linear independence
+result out of the circumstance that the x = 1/4 local monodromy operator T
+34                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+simultaneously transforms HA , HB , HC , and HD by a scalar multiple of the common
+function HA . The linear independence thus sifting through is for the holonomic
+coefficients in these monodromies:
+Theorem 2.11.17. The three periods
+                              π                       π
+                         1, √ ,        3L(2, χ−3 ) − √ log 3
+                               3                       3
+are Q-linearly independent.
+   In particular, the Mahler measure
+                         Z 1Z 1
+           (1 + x + y)4                 (1 + e2πis + e2πit )4
+         
+      m                   =        log                        ds dt ∈
+                                                                    /Q        (2.11.18)
+                3           0    0                3
+is irrational.
+Proof. By Lemma 2.11.13, a C-linear combination
+                        f (x) = aHA (x) + bHB (x) + cHD (x)                   (2.11.19)
+overconverges at the singularity x = 1/4 if and only if
+                                                           
+                             π         π
+                     a+b √ +c          √ log 3 − L(2, χ−3 ) = 0.
+                           3 3        3 3
+If this relation held with some nonzero integer vector (a, b, c) ∈ Z3 ∖ {(0, 0, 0)}, the
+combination (2.11.19) would have had all the requirements of Theorem 2.8.4 with
+δ := 1/4. Yet, clearly, f (x) does not vary holonomically on P1 ∖ {0, 1, ∞}, only on
+P1 ∖ {0, δ, 1, ∞} = P1 ∖ {0, 1/4, 1, ∞}.
+    The irrationality of the Mahler measure (2.11.18) follows immediately by Smyth’s
+formula (1.1.2), which we can rewrite as
+             (1 + x + y)4
+                          
+         m                   = 4m(1 + x + y) − log 3
+                   3
+                                √
+                               3 3                       3L(2, χ−2 ) − √π3 log 3
+                             =      L(2, χ−3 ) − log 3 =          √             .
+                                π                                π 3
+This concludes the proof assuming Theorem 2.5.1, which we already proved to
+imply the requisite part (∗) of Theorem 2.8.4.
+  Theorem 2.5.1 will be proved in § 7, and the full Theorem 2.8.4 (which we did
+not need in the preceding argument) will be completed in § 6.8.              □
+2.12. How we prove holonomy bounds. We distinguish three principal steps:
+     (i) Setting up an auxiliary polynomials module Pm(Q1 , . . . , Qm ), by which we
+         consider auxiliary functions such as F := i=1 Qi fi or its multivariable
+         generalizations.
+    (ii) Arranging a Dirichlet box principle or Thue–Siegel lemma for the unknown
+         coefficients of the auxiliary polynomials Qi to have the associated func-
+         tion F vanish to a high order at x = 0.
+   (iii) Performing a Diophantine analysis of the lowest order coefficient of the
+         auxiliary function F .
+In especially favorable circumstances such as Hermite’s approximants to the expo-
+nential function [Her1874, Her1893] or the ensuing approximants to the logarithm
+and binomial functions [Chu79, Chu83b], step (ii) is replaced by an explicit con-
+struction of the requisite polynomials Qi . Some simplest examples are discussed
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                              35
+
+
+in § 3.3. Such constructions, in the rare occasions that they are possible, usually
+lead to stronger quantitative results than (ii). For our intricate applications, how-
+ever, as well as for the abstract theorems, some form of the Dirichlet box principle
+is essential.
+   The simplest arrangement, which already obtains some (rather poor) holonomy
+bound on the maximal number m of Q(x)-linearly independent functions, is the
+following. A commonly used corollary of Siegel’s lemma [BG06, Lemma 2.9.1] states
+that for a linear homogeneous system of M linear equations in which the coefficients
+are rational integers of absolute values bounded exponentially in a parameter α,
+while the number N of free variables is no less than twice the number of equations to
+be solved (N ≥ 2M ), there exist solutions whose components are rational integers,
+not all zero, and with absolute values bounded exponentially in max (α, log N ).
+(Cramer’s formula constructs explicitly a nonzero solution of the linear system as
+soon as the number of free variables strictly exceeds the number of equations; but
+the determinantal expression of this solution gives in general a bound which is
+exponential in M α rather than α; in our setting with M ≍ α, this means that the
+Cramer solution is bounded exponentially in α2 rather than α. For Hermite–Padé
+approximants to holonomic functions this is not a methodological limitation but
+actually the correct size in a majority of naturally occurring cases; cf. [BC97b] for
+a complete study of the algebraic case.)
+   Following Thue [Thu77, § 11], we can improve the upper bound on the solution
+of the linear system, from exponential in α to asymptotically subexponential in α,
+by using N = (1 + C)M free variables for a large constant C. Siegel’s lemma
+then supplies nontrivial solutions in rational integers bounded in magnitude by
+exp O (α/C) ; this becomes subexponential in the asymptotic where C → ∞
+after α → ∞. Hence, if we have a Q(x)-linearly independent set f1 , . . . , fm with
+denominators of the type An+1 [1, . . . , bn]σ and with m sufficiently big with regard to
+A, b, σ, and the smallest convergence radius of an fi (x) (this is ultimately handled
+in Lemma 6.2.6, in a high-dimensional setting that we will need for proving our
+refined bounds), Siegel’s lemma guarantees the existence of a nonzero auxiliary
+function
+                        m
+                        X
+             F (x) :=         Qi (x)fi (x) = βxn + O(xn+1 ) ∈ QJxK,           β ∈ Q×
+                        i=1
+
+that vanishes to some high order n at x = 0, all the while involving integer poly-
+nomials Qi ∈ Z[x] whose degrees and coefficients, taken on the logarithmic scale,10
+are smaller than an arbitrary desired linear rate cn in the vanishing order n.
+    But the meaning of “an arbitrary desired linear rate cn” is that an arbitrarily
+small c > 0 is attainable when the number m of independent functions fi (x) is
+supposed correspondingly large: giving a combined number of as many as N =
+mD undetermined coefficients for the auxiliary polynomial m-tuple (Q1 , . . . , Qm ) ∈
+Z[x]⊕m
+     deg<D . Making this quantitative will ultimately read into holonomy bounds
+such as (2.5.4). To explain where those derive from, observe that if the functions
+fi (x) are of the denominator type [1, . . . , b1 n] · · · [1, . . . , br n], then since the auxiliary
+Qi (x) have integer coefficients, the lowest order coefficient β ∈ Q× is some nonzero
+
+   10This means that all these polynomials have degrees smaller than cn and rational integer
+coefficients with absolute values ≪ ecn .
+

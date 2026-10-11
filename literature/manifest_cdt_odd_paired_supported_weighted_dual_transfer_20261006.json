@@ -1,0 +1,149 @@
+{
+  "schema": "actual_source_and_read_scope_receipt_v1",
+  "date": "2026-10-06",
+  "completed_date": "2026-10-07",
+  "author": "toric_chow_completion",
+  "status": "final_author_root_and_formal_cross_reviewed_frozen_readonly",
+  "round_baseline": "487 frozen mathematical inputs",
+  "proof": {
+    "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006.md",
+    "sha256": "3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334",
+    "scope": "T1-T9, equations T1-T18; supported coefficient-space rank, graph deletion, lambda>=3 priced gap, all-place signed normalization scale; T18 not included in paid rate"
+  },
+  "own_distinct_first_only_producer": {
+    "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.py",
+    "sha256": "92b737b19375e973c97b67830477b10313b365f617df6dc5e0f193e74bd0aa94",
+    "result_path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.json",
+    "result_sha256": "a37ce3e552a6ded9efaa48f07ca268ec207000d4a165cc4e072ba52dc31f1694",
+    "guard": "exclusive-create result before mathematics; failure state/source preserved; no rerun",
+    "successful_first_runs": 1,
+    "failed_runs": 0,
+    "reruns": 0,
+    "old_peer_execute_import_rerun": 0,
+    "finite_prime_samples": 0,
+    "closed_affine_update_domain": ["1/4", "2"],
+    "old_literal_rows": 113,
+    "old_rows_intersecting_update": 106,
+    "safe_new_candidates": 27,
+    "internal_arrangement_cells": 213,
+    "saved_merged_records": 98,
+    "endpoint_area_checks": 12141,
+    "no_claim": "The saved JSON does not contain 213 individual arrangement-cell records."
+  },
+  "mathematical_result": {
+    "paid_gain": "589881521281691/20345444272717200",
+    "signed_same_S_scale_A": "800671681093752110193539327219/19860629178118281482813083200",
+    "same_window_1_over_216_already_in_common_max": true,
+    "normalization": "D_A(X)/Q_n in Z[X]; bound concerns log|Q_n^{-1}|, not raw minimum integer denominator",
+    "endpoint_scope": "Uniform 1116 on open fixed-floor cells only. Finite rational jump/endpoints use exact T11 or old fallback, costing O(n log n)=o(n^2). Closed affine checks concern polynomial extensions and the integral."
+  },
+  "author_actual_reads_this_round": [
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006.md",
+      "sha256": "3a4b58d6d0fbad83e13268e4b30d73030caf8461c99a4db0acb5681ba1625334",
+      "scope": "Complete final T1-T9/equations T1-T18 actually read; earlier f181 full read, then root-discovered floor-jump issue repaired in unfrozen T6/T8 and complete 3a4 reread. Successful PY/JSON unchanged."
+    },
+    {
+      "path": "research/cdt_odd_background_progress_20261006.md",
+      "read_snapshot_sha256": "ee3475aa18e73d8477d0cdece0a5e7504cfb99e3d5a52d6a66cfa1f2e7536837",
+      "scope": "Sections 133-137 in full; no full-main claim. Parent-owned continuing progress file is not frozen by this receipt."
+    },
+    {
+      "path": "research/cdt_odd_paired_weighted_jet_global_optimization_20261006.md",
+      "sha256": "1b7923801d7ff734d278163350d661516abf78fde0687976c4db1d6ef4c6f34f",
+      "scope": "Actual full text O1-O11, including all equations O1-O20; readonly."
+    },
+    {
+      "path": "research/cdt_odd_paired_weighted_jet_global_optimization_20261006_verify.json",
+      "sha256": "5bb704e25707379253bb7733d86c44a354c917bc4c12b96fcd34dfda70bf2863",
+      "scope": "All metadata and all 113 combined-bound lo/hi/slope/intercept fields; no this-round full-other-fields claim. Readonly, not executed."
+    },
+    {
+      "path": "research/cdt_odd_paired_actual_unit_sector_rank_20261006.md",
+      "sha256": "e4830013ad948599c4e1bb76113aeed3a8b6df23b32a9d575052cd97d7f6fac8",
+      "scope": "Actual complete text U1-U10 and all U1-U21 equations this round, without truncation; producer not executed/imported."
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.py",
+      "scope": "Complete static source before its only first run. Successful source then readonly."
+    },
+    {
+      "path": "research/cdt_odd_paired_supported_weighted_dual_transfer_20261006_verify.json",
+      "scope": "All metadata and all 98 merged records, every saved field. Initial combined output middle truncation repaired by separate reads of lines 700-1399 and 1400-end. No 213-record claim."
+    },
+    {
+      "path": "research/cdt_odd_paired_selected_jet_primitive_support_20261006.md",
+      "sha256": "35ed9d8e9b3f1f5ea70c4e742d1e26c262d6d529823987bdc0478128fdd35880",
+      "scope": "Complete P1-P8/all P1-P15 equations; independently checked supported coefficient-source interpolation, projection rank, matched counts, pair/loop pricing and exact 1/216. MD-only: peer source, JSON and receipt not read."
+    }
+  ],
+  "formal_peer_review_authored": {
+    "path": "research/cdt_odd_paired_fixed_middle_racah_border_independent_review_20261006.md",
+    "sha256": "763e586e86ec1d967f9540e0d142743db43ca55c7eabfab8bc875df2a9c92e89",
+    "state": "complete actual self-read and frozen",
+    "peer_principal_path": "research/cdt_odd_paired_fixed_middle_racah_border_20261006.md",
+    "peer_principal_sha256": "2e04fe760174e006b697de7e8756cce85734f695010ac43c0f74e0fbc20e2f24",
+    "peer_static_source_sha256": "f36a0ca4740926620306db99be3c4e07bc04c97d52ef4b67b498de410518395d",
+    "peer_saved_JSON_sha256": "c99024507adc6419cde98bef171c63c44aa4090e30075bbe4c13edb3b03f5a62",
+    "scope": "Full eleven-section R1-R30 paper, complete static source, every field of all three saved r1/r2/r4 cases, full candidate receipt 00f7a8ab04a4b1bd68a0872c55a651a27c431dceffe39338ac03f9f00cdd804b, and full frozen f988 paper reread. No producer execution/import or finite-to-infinite unit claim."
+  },
+  "review_primary_actual_reads": [
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/koekoek_swarttouw1998_askey_scheme_report98_17.pdf",
+      "sha256": "cca44bd484fabaada8b8e2b52700a319890edac9488f3026d54256e85b4ca23e",
+      "actual_complete_text_pages": [28,29,30],
+      "distinct_pages": 3,
+      "scope": "Equations 1.2.1-1.2.5. Initial GBK read-only extraction failure repaired by UTF8 complete read; not a mathematical producer failure."
+    },
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/manas_fernandez_gonzalez2021_pearson_I_arxiv2107_01747v3.pdf",
+      "sha256": "43393a73930abe79405729233b4374dafca777dc26dd7279184083dfa48aa769",
+      "actual_complete_text_pages": [1,2,3,8,9],
+      "distinct_pages": 5,
+      "scope": "Gram normality premises and Theorem1 theta(0)=0/full-support boundary."
+    },
+    {
+      "path": "literature/cdt_paired_pearson_rankone_sources_20261006/li_long_tu2021_whipple_7F6_arxiv2103_08858v2.pdf",
+      "sha256": "e6ed59bdac95b1f9345520a9354847052fa222de71256dea73ef636ecf54603e",
+      "actual_complete_text_pages": [1,2],
+      "distinct_pages": 2,
+      "scope": "Primitive hypergeometric datum and Katz-family hypotheses; no automatic fixed-target unit inference."
+    }
+  ],
+  "new_primary_archives": [],
+  "principal_new_pdf_downloads": 0,
+  "principal_new_primary_pages_read": 0,
+  "review_primary_distinct_pages_actually_read": 10,
+  "review_primary_union_note": "All ten pages are within the arithmetic author's 22-page read scope; no new archive or team-union-page increment.",
+  "formal_root_review": {
+    "path": "research/cdt_odd_paired_supported_racah_depth4_root_review_20261006.md",
+    "sha256": "b720e79b859ddb3b5f16b908fedd794e7ca378c9c2c598bbeaf5dd6fc8c13828",
+    "author_of_this_receipt_actual_read": "Complete six-section review, all text and displayed formulas, readonly; no claim of complete principal reading for the separate root depth4 paper.",
+    "root_actual_scope_for_own_principal": "Complete final 3a4 T1-T9/T1-T18, full static successful PY92b, all saved JSONa37 metadata and 98 merged records every field; 213 cells are internal count only; literal113 fields compared readonly against frozen baseline.",
+    "root_discovered_repair": "Floor jump endpoint handling repaired in unfrozen T6/T8 without changing successful PY/JSON or the integral."
+  },
+  "quarter_MD_only_crosscheck": {
+    "confirmation": "Quarter reported actual complete final3a4 T1-T9/T1-T18 paper reading and independently checked supported rank, graph deletion, priced unit gap, ragged inequality, exact window, O(n log n) endpoint fallback and uncounted a1 lambda2 extension.",
+    "scope": "MD-only, no quarter full-source/JSON/receipt claim for this principal. No separate formal review file claimed."
+  },
+  "formal_arithmetic_cross_review": {
+    "path": "research/cdt_odd_paired_supported_jet_transfer_independent_review_20261006.md",
+    "sha256": "5e2201638eedae6fdb47600f6cd2cf8defcf60cf34061c01c100e0778e43af5d",
+    "author_of_this_receipt_actual_read": "Complete final V1-V7, every paragraph and displayed formula, readonly.",
+    "cross_reviewer_scope": "Complete final3a4 paper, complete static successful source92b, every field of saved JSONa37 metadata and all98merged records; internal213 count not treated as savedrecords; no execution/import/rerun.",
+    "candidate_receipt_scope": "The formal reviewer accurately pins the candidate snapshot actually read, 633f6bc78ad2b42b8c7d1cca3a8ee2fdcfdcc676a63bcff64601667cb97f20b2, not this future final receipt."
+  },
+  "finalization_notes": {
+    "old_inputs_changed": false,
+    "successful_math_source_or_JSON_changed_after_first_run": false,
+    "mathematical_scope_frozen": "Own principal3a4/PY92b/JSONa37 and formal Racah review763 permanently readonly; this final NEW receipt is one-way and does not require peer future final receipt hashes.",
+    "mutable_main": "ee347 is a historical actual reading snapshot only. Continuing main/audit are parent-owned and no future current-byte match is required.",
+    "future_review_addition_plan": "none"
+  },
+  "not_proved": [
+    "Actual Gram Smith equality",
+    "Infinite target nonzero",
+    "Strict margin",
+    "New zeta, L-value, or Catalan irrationality or independence theorem"
+  ]
+}

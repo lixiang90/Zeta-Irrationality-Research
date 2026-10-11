@@ -1,0 +1,219 @@
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )               171
+
+
+that is, adding another integral. Then the argument would have proceeded exactly
+as above except now we could only deduce that N0 ≥ 1 rather than N0 ≥ 2. Then,
+writing
+                                   q−1
+                           Q(y) =      + q0 + q1 y + q2 y 2 ,
+                                    y
+just as in equation (12.1.11), we would have found that
+                 a−1  a−2 a−3        52542464y 13 q2 + . . .
+          a0 +       + 2 + 3 =
+                  y    y   y      3
+                               36y (−1 + 118y − 122y 2 + 144y 3 )4
+There is now a unique choice of the parameters qi up to scalar which allows us to
+remove a single factor of the numerator, namely (up to scalar)
+                                   1
+                          Q(y) =     − 278 − 844y − 4644y 2 .
+                                   y
+With this choice of b3 (y) as coming from equation (12.1.10), the powers of (144y 3 −
+122y 2 + 118y − 1) disappear completely, and we arrive at the equality
+                                a−1  a−2 a−3 676  2
+                         a0 +       + 2 + 3 = 2 + 3.
+                                 y    y   y  9y  y
+This, of course, does now have solutions. This reflects that there is a linear depen-
+dence between these functions. In fact, there is already a C(y)-linear dependence
+between the functions
+         Z             Z
+            GA (y)       GA (y)
+                   dy,          dy, GA (y), G′A (y), G′′A (y), G′′′
+                                                                A (y), and 1.
+              y2           y3
+Note as another consistency check with the solution a−2 = 676/9 and a−3 = 2, we
+have (in analogy with equation 12.1.6) that
+                     GA (y)       GA (y)       GA (y)   676 GA (y)    GA (y)
+   a0 GA (y) + a−1          + a−2        + a−3        =            +2
+                       y           y2           y3        9  y2         y3
+                                                        4    866 68728
+                                                      = 3+ 2 −            + ...
+                                                        y    9y       3
+with no 1/y term, consistent with it being a derivative of a meromorphic function
+at y = 0.                                                                      △
+
+     13. Proof of the linear independence of 1, ζ(2), and L(2, χ−3 )
+   In this section, we complete the proof of Theorem A using the results of Appen-
+dix A. The argument is by a contradiction, by proving that a certain G-function
+cannot exist. Suppose for the contradiction that there exists a Q-linear relation
+among the periods 1, ζ(2), L(2, χ−3 ), which we could write as
+                          a + b · L(2, χ−3 )/2 + c · ζ(2)/4 = 0              (13.0.1)
+with some rational integers a, b, c ∈ Z, not all zero. Proposition 11.1.8 then con-
+structs a certain G-function H(x) ∈ QJxK with denominator type [1, . . . , n]2 and
+continuing holonomically on P1 ∖ {0, 1/9, 1, ∞}.
+   Now § 11.2 converts the G-function H(x) to a G-function G(y) := Sym+ H(x) ∈
+QJyK in the symmetrization coordinate
+                          y := x + x/(x − 1) = x2 /(x − 1).
+172                     F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Lemma 11.2.2 shows that the denominator type of G(y) ∈ QJyK is [1, . . . , 2n]2 .
+On the other hand, G(y) is holonomic on y ∈ P1 ∖ {0, 4, ∞, −1/72}, holomorphic
+on y ∈ C ∖ [4, ∞), and with Z/2 local monodromy around y = 4.
+  We apply Theorem 6.0.2 with the 14 × 2 denominators type array
+                                                            t
+                0 2 2 2 2 2 2 2 2 2 2 2 2 2
+        b :=                                                           (13.0.2)
+                0 0 0 2 2 2 2 2 2 2 2 2 2 2
+and the integrations vector
+
+                          e := (0, 0, 1; 0, 0, 0, 0, 0, 0; 1, 1, 1, 1, 1),
+
+taking over in (6.0.9) after replacing the letter x there by the symmetrization letter
+
+                            y := x + x/(x − 1) = x2 /(x − 1);
+
+and taking the following ordered list of functions {fi }14
+                                                        i=1 , see (10.1.2), (10.1.4), and
+(10.2.1):
+           B1 (y), B2 (y), B3 (y); B4 (y), B5 (y), G(y), G′ (y), G′′ (y), G′′′ (y),
+                                    G(y) − G(0)           G(y) − G(0) − G′ (0)y
+                      Z           Z                    Z
+      B6 (y), B7 (y),   G(y) dy,                   dy,                              dy.
+                                           y                          y2
+The Q(y)-linear independence of these 14 functions was proved in Lemma 12.1.1.
+The denominator types were computed in Lemma 10.2.2. For the integrals, we
+note that the shift in indexing caused by dividing by powers of y means that
+these functions are not literally of denominator type n[1, 2, . . . , 2n]2 but rather
+of type n[1, 2, . . . , 2n + 3]2 ; this is not an issue by Remark 6.0.12.
+   Let us denote by HY0 (2) the 14-dimensional Q(y)-linear span of these functions.
+For the analytic maps φ figuring in the various holonomy bounds we have developed,
+we take restrictions φ(rz) of the holomorphic mapping φ ∈ O(D) of Lemma A.4.4.
+From Corollary 9.0.19 used with Σ0Y0 (2) := {−1/72}, Σ1Y0 (2) := ∅, φY0 (2) := φ,
+and UY0 (2) a sufficiently small open neighborhood of the line segment [−1/72, 0],
+we have the analyticity φ∗ HY0 (2) ⊂ M(D).
+
+
+
+
+          Figure 13.0.3. The ξ ∈ [1.325, 3] fragment of the graph of (6ξ +
+          Iξ14 (ξ))/98, displaying the interval ξ ∈ [2, 13/6] as the identical
+          minimizer.
+                 THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                173
+
+
+  For the denominator rates, we calculate
+             1 · 0 + (3 + 5) · 2 + (7 + 9 + 11 + 13 + . . . + 27) · 4    191
+    τ ♭ (b) =                                                         =       (13.0.4)
+                                        142                                49
+and, from Figure 13.0.3 which reveals ξ ∈ [2, 13/6] to be the identical minimizer,
+                                      ( m                           )
+                  ♯       2              X
+                                                                  m
+                τ (e) = 2 min          ξ       ei + max ei Iξ (ξ)
+                         m ξ∈[0,m]       i=1
+                                                     1≤i≤m
+                                  (               )                           (13.0.5)
+                                    6ξ + Iξ14 (ξ)     12 + I214 (2)   27
+                      = min                         =               =    .
+                         ξ∈[0,14]       98                98          80
+  We obtain
+                                191 27        16603
+       τ (b; e) = τ ♭ (b) + τ ♯ (e) =+      =       = 4.235459 . . . ,     (13.0.6)
+                                 49      80    3920
+arriving at the number 191   27    16603
+                        49 + 80 = 3920 in (A.5.1).
+   We can now connect to our holonomy bounds to prove Theorem A. By Proposi-
+tion 11.1.8 and Lemma 12.1.1, we have a set of m = 14 (holonomic) functions lin-
+early independent over Q(y) that are in QJyK with the denominator types (13.0.2),
+contingent upon the Q-linear dependency (13.0.1). Hence it suffices to prove that
+(any one of) our holonomy bounds yields m < 14: this will refute (13.0.1).
+   For example:
+Proof via Theorem 7.0.1. Applying Theorem 7.0.1, we obtain the upper bound m ≤
+13.9938 . . ., as computed in (A.5.1).                                       □
+Proof via Theorem 6.0.2. Apply Theorem 6.0.2 with l = 1, r0 = e−1/2 , γ1 = 14 ·
+0.209 = 2.926; we pick this particular parameter based on the numerics in Exam-
+ple 7.6.8. In this case, we have
+                            Z 1
+                                      ∗
+                                2t · gφ,γ (t) dt = 11.316, . . .
+                               0
+and thus the holonomy bound reads
+                                     1            1
+                     11.316 . . . +    · 2.9262 ·
+                                    14            2
+m≤                                                           = 13.730 . . . < 14.
+               5448339453535586608000000000            27 191
+     log 256 ·                                      −     +
+               8658833407565631122430056127            80   49
+                                                                                 □
+Proof via Theorem 7.1.6. With the choice of parameters as in Example 7.4.6 with r0 =
+e−1/2 and r1 = 1, we obtain the bound (see equation 7.4.7)
+                                   m ≤ 13.7206 . . . < 14.                          □
+   Of course we may also apply other holonomicity bounds in § 7. See Example 7.4.6
+with four parameters ri rather than two, and Examples 7.5.9 and 7.6.8.
+Remark 13.0.7. Had we stayed in the cruder           framework e = 0 of Theorem 2.5.1
+without added integrals, we would have had to        augment b to the array
+                                                                      t
+                   0 2 2 2 2 2 2 2                   2 2 2 2 2 2
+          b′ :=  0 0 0 2 2 2 2 2                    2 2 2 2 2 2  .
+                   0 0 1 0 0 0 0 0                   0 1 1 1 1 1
+174                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+Note that although this b′ is not of the particular form in Theorem 6.0.2, we could
+apply the more general denominator formula (8.0.2) in Theorem 8.0.1. However, for
+the sake of simplicity, we give a good enough estimate of τ ♭♭ (b′ ) which is sufficient
+to illustrate the necessity of working with nonzero e. On one hand, the upper
+bound argument in Remark 8.0.6 applies to those b′ such that every column in b′
+has two values including one of which is 0. Therefore we have τ ♭♭ (b′ ) ≤ (2 + 2 +
+1) − 1412 (12 · 2 + 32 · 2 + 82 · 1) = 32
+                                       7 = 4.571 . . ..
+   On the other hand, by the definition of (8.0.2), we have an easy lower bound
+by only considering n satisfying that nj1 > nj2 implies ij1 ≥ ij2 and then we
+have τ ♭♭ (b′ ) is at least
+1 · 0 + 3 · 2 + 5 · (2 + 1) + (7 + 9 + . . . + 17) · (2 + 2) + (19 + 21 + 23 + 25 + 27) · (2 + 2 + 1)
+                                                   142
+       884
+    =       = 4.510 . . . ,
+       196
+a significantly worse value than (13.0.6).                                                     △
+
+                          14. Products of two logarithms
+   In this section, we apply our methods to certain products of logarithms. Baker’s
+theorem [Bak22] gives a definitive result for linear forms in logarithms, even over Q,
+but we still do not know how to show that log 2 · log 3 or π · log 2 is irrational. While
+our methods cannot (as yet!) handle those cases either, we do prove Theorem C,
+which we recall again here:
+                                                                      m            1
+Theorem 14.0.1. Let m, n ∈ Z ∖ {−1, 0} be integers such that              − 1 < 6.
+                                                                       n         10
+Then                                                
+                                       1             1
+                             log 1 +        log 1 +                           (14.0.2)
+                                       m            n
+is irrational. Moreover, for m ̸= n, the following are linearly independent over Q:
+                                                               
+                   1                 1                 1            1
+      1, log 1 +       , log 1 +         , log 1 +         log 1 +      .     (14.0.3)
+                   m                 n                m             n
+Remark 14.0.4. We could certainly improve the constant 10−6 by our meth-
+ods, but some computation suggests that it is unlikely one could do better than
+(say) 10−4 , and most likely not even that far; we make this choice of constant for
+its relative simplicity.                                                         △
+   The degenerate case of m = n is a trivial consequence of the transcendence
+of log r for r > 0 in Q ∖ {1}, and so we shall assume that m ̸= n. We begin by
+recalling a proof of the irrationality of
+                                              
+                                             1
+                                     log 1 +                           (14.0.5)
+                                             m
+for m ≥ 1 from [AR79, AR80, Chu79, vdP79, vdP80]), based on the method of
+Apéry limits. It is closely related to the construction we recounted in Basic Re-
+mark 2.10.1, and also to the Hermite–Padé construction in § 3.3.7 for the logarithm
+function.
+   Let a > 1 be an integer. The function
+                                                    ∞
+                                        1          X
+                      A(a, x) := √               =     un (a)xn              (14.0.6)
+                                   1 − 2ax + x2    n=0
+

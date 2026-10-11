@@ -1,0 +1,218 @@
+590                                                                H.S. W i l f a n d D. Z e i l b e r g e r
+
+
+on the other extreme, but given our predilections, we prefer to be discrete, whenev-
+er possible.
+    After the discrete version of the operator is found, one gets back the original
+operator by substituting qk for x and Ek for Qx. This is legitimate because
+our proof and our algorithm use only the commutation relation Ek qk=qqkEk,
+which is "isomorphic" to Q~x=qxQ~. In the accompanying certificate (see
+below) we substitute (C)k for (c)~/(cx)~.
+
+
+2. The fundamental theorem of hypergeometric summationfintegration
+
+2.1 Introduction
+
+We need two more concepts.
+Definition. A function F(kx .... , k,, y~ . . . . , y~) vanishes at infinity, if for every
+variable kl and y j,
+                       lira F ( k , y ) = 0 , lira F ( k , y ) = 0 .
+                           Ikd-~ ~o                 lyjl ~ co
+
+
+Definition. An integral-sum
+
+(general-integral-sum)        .g(n, x)..=~ S F(n, k, x, y) dy,
+                                          k y
+
+is pointwise trivially evaluable, if for every specific specialization of the auxiliary
+variables (parameters) n, x there is an algorithm that will evaluate it.
+    For example, in the case of pure sums that are terminating
+
+(general-s urn)                       g (n).'= ~ F (n, k),
+                                                k
+
+where the sum is always finite for every specific choice of n (since F(n,.) has
+finite support), we have both properties.
+    We are now ready for the fundamental theorem of hypergeometric summation-
+integration.
+The fundamental theorem. Let Ak, denote the forward difference operator in ki:
+Ak,.-=(Ki- 1). Let F(n, kl . . . . . kr, Yl .... ,Ys) (resp. F(x, kl, ...,kr, Yl ..... ys)) be
+hypergeometric and holonomic (both hold if it is proper-hypergeometric) in (k,
+y) and n (resp. x), where n, k are discrete variables and x, y are continuous variables.
+There exists a linear ordinary recurrence (resp. differential) operator with polyno-
+mial coefficients P (N, n) (resp. P (D~, x)), and rational functions (in all the variables)
+R1 ..... Rr, Sx ..... S~ such that
+
+(2.1.1)        P(N, n) F (resp. P(Dx, x) F)= ~, Ak,(Ri F)+ ~" Drj(S 1F).
+                                                    i=1          j=l
+
+
+   Furthermore, if F is proper-hypergeometric, it is possible to find a priori
+bounds for the order of P(N, n) (resp. P(Dx, x)), and it is possible to predict
+denominators for Ri and Si.
+Algorithmic theory for hypergeometric multisum/integral identities                                            591
+
+    It is easy to see that once the operator P(N, n) (or P(Dx, x)) and the rational
+functions R~ and St are given, the verification of (2.1.1) is a purely routine matter.
+Indeed, dividing through by F, and taking advantage of the hypergeometric
+form, it is seen that (2.1.1) reduces, in any given instance, to a finite identity
+involving sums and products of rational functions, and hence, by clearing denom-
+inators, of polynomials. Of course, thanks to our algorithm, the generation of
+(2.1.1), in any given case, is also a purely routine matter.
+Proof of the fundamental theorem. By the fundamental lemma, there exists an
+operator
+                                 A(n; gn, E k. . . . . . Ek.; Dr,, ..., D y )
+
+annihilating F. It is possible to write (in many ways):
+
+(2.1.2)   A(n; E,,    E k . . . . . . Ek~ ; Dr . . . . . . Drs)=
+
+             P(n, E,)-- ~ (Ek,--1) Bi(n; E,, Eke, ..., Ekr; Dr,, ..., Dr)
+                             i=1
+
+
+              - ~" Dy~ Bj(n; E,, Ek,, .... Eke; Dr,,..., Dys).
+                j=l
+
+
+Now apply F to the above operator equation. Since the operator A annihilates
+F, we get that
+
+
+(2.1.3)    0 = P(n, E.) F -- ~ (Ekl- I) Bi(n, E.,                  E k. . . . . .   ERr;Dr ...... Drs ) F
+                                   i=1
+
+
+                               - ~ Dr~ B~(n, E., Ek...... Ek,.; D r ...... Dr) F.
+                                   j=l
+
+
+    Since F is hypergeometric, Ek, F/F, and Dr~ F/F are rational functions. It
+follows by induction that for any " o p e r a t o r monomial"
+
+
+(Op-Mon)                                 Mon:=E• ~ f i E~: FI D#yJ
+                                                         i=1        j=l
+
+
+(MonF)/F is a rational function. Hence for any operator
+
+               T(n, kl , ..., kr; Yl ..... Ys; En, Ek . . . . . .             Ekr;   Dr . . . . . .   Drs)'
+
+TF/F is a rational function, since T is a linear combination with coefficients
+that are polynomials in all of the variables, of operator monomials. In particular,
+
+                                     B,(F)=RiF,                Bj(F)=SjF,
+
+for some rational functions R~ and St. Putting these in (2.1.3) completes the
+proof. The case in which the auxiliary variable is x rather than n is similar. []
+592                                                                 H.S. Wilfand D. Zeilberger
+
+   In proving the fundamental theorem, we used the fact that we could find
+an operator annihilating F of the form
+                                          s
+
+                             P(N, n)-- Z Ai Bi-- ~ Dy~ Bj.
+                                         i-1          j=l
+
+
+If P(N, n) (or P(Dx, x)) happens to be the zero operator, then it is possible
+to use (2.1.1) to get another, nonzero, operator that annihilates f(n) (resp. f(x).)
+    Because of the fundamental lemma, we had that the B i and /3j had the
+additional "nice" property that they were independent of (k 1, ..., kr; Yl . . . . , Y s ) "
+Gert Almkvist observed that this luxury is unnecessary for the fundamental
+theorem to work! Although both the proofs in [ZlJ and the new elementary
+proof for proper-hypergeometric functions given in section 4 are constructive,
+they yield far from optimal operators P(N, n) and accompanying certificates
+R~, Sj, and hence are mainly of theoretical value.
+    The significance of the fundamental theorem is manifest from its
+Fundamental eoroUary. / f F(n, k, y) (resp. F(x, k, y)) is as above, and vanishes
+at infinity for every fixed n (resp. x), then
+(2.1.4)         f(n) :=~. ~ V(n, k, y) dy (resp. f ( x ) : = Z ~ F(x, k, y) dy)
+                        k                                   k
+
+
+satisfies a linear recurrence (resp. differential) equation with polynomial coeffi-
+cients:
+(2.1.5)               P(N, n)f(n)=O            (resp. P(D x, x)f(x)=O).
+Proof. Sum-integrate (2.1.1) w.r.t, kl, ..., k,, Yl ..... Ys.      []
+    Extending the terminology of [-WZ2], we call the rational functions Ri,
+Sj the certificates of the identity (2.1.5).
+
+
+2.2 How to find P(N, n) and the certificates
+
+Now that we have the theoretical certitude that there exist a P(N, n) and certifi-
+cates R~, Sj that are rational functions, such that (2.1.1) is true, we can use
+(2.1.1) itself to find them! All we do is use the method of undetermined coeffi-
+cients. We first "guess" the order of P(N, n), say L, and set
+                                                 L
+
+(2.2.1)                            P(N, n)= ~ bi(n) N ~,
+                                                i=0
+
+
+where bi(n) are as yet unknown polynomials (or rational functions) in n.
+    In practice there is no guessing, we just start with the optimistic extreme
+L = 0, try it, and work our way up. We know that eventually we will be successful,
+and, for discrete proper-hypergeometric functions, we can find an effective upper
+bound for L (see theorem 4.1 below). Next we have to "guess', or rather predict,
+the denominators of the rational functions Ri and Sj. This is always possible,
+since by looking at the functional equation obtained from (2.1.1), by plugging
+in (2.2.1) and then dividing throughout by F, it is possible to predict both
+Algorithmic theory for hypergeometric multisum/integral identities                  593
+
+the " w o r s t " and the " b e s t " conceivable denominators for the certificates /~,
+Sj. Then one tries out all the possibilities from best to worst. Details, describing
+various shortcuts, will appear in the above-mentioned forthcoming paper. Final-
+ly, we determine the "generic" degrees of the polynomials that are the numera-
+tors of the R i and S j, express them generically, with undetermined coefficients,
+and put it all in the above-mentioned functional equation implied by (2.1.1).
+We then clear denominators, and equate coefficients of all the monomials
+
+                                    k~...k~yq~...y~ ".
+    What results is a huge system of linear equations in the unknowns bi and
+the coefficients of the numerators of the certificates, over the "ground field"
+of rational functions in n. If we find a nonzero solution, we are done. If not,
+just make the denominators "bigger", or increase L. The fundamental theorem
+promises you eventual success.
+    Luckily, in most real life examples the computer time is not prohibitive,
+as we will illustrate with the numerous examples given in section 6.
+
+
+2.3 How to prove identities fast: WZ-tuples
+
+Suppose we have to prove an identity of the form
+
+(general-identity)        ZSF(n, k, y ) d y = Z I G(n, k', y ' ) d y
+                          k                     k'
+
+
+
+     Let's call the left side Left ~") and the right side Right ("). We find an operator
+P(N, n) annihilating Left ("~ and an operator P(N, n) annihilating Right ~"), with
+the appropriate certificates. If, as is usually the case, P and P are identical,
+this proves the identity once the initial conditions Left ~")=Righfl "),
+n = 0, 1.... , L - 1 are checked. This is always trivial if, as we assume, the integral-
+sums in question are pointwise trivially evaluable. In the rare event that P
+and P are different, one can use the Euclidean algorithm (adapted to the non-
+commutative ring of linear recurrence operators with polynomial coefficients)
+to find a " m i n i m a l " operator A(N, n) such that both P and P are left multiples
+of it. It follows that both Lef(") and Righfl ") are annihilated by A(N, n) if
+it is true up to n=max(order(P), order(P)). In the above, we tacitly assumed
+that the coefficients of the leading terms of both P and P do not have positive
+integer zeroes. It they do, just shift the starting value of n to the largest such,
+and check the identity case by case until then (we do not know of any case
+where this actually happens).
+     The treatment for integral-sums whose free variable is a continuous x rather
+than a discrete n is similar. If, as in the "general integral-sum" the free variables
+are multi: Left(n, x), Right(n, x), then one does things for every single variable
+separately, or builds up one variable at a time.
+     A very important special case is that in which Right ("~is a plain hypergeomet-
+ric term. In that case we can divide by it, and get an identity of the form
+
+(explicitly-evaluable)             ~ S F(n, k, y) d y = 1
+                                    k
+

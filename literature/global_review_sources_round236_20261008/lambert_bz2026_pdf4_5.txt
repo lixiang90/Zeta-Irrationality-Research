@@ -1,0 +1,96 @@
+4                         FRANCIS BROWN AND WADIM ZUDILIN
+
+where f1 , . . . , fn : X → Gm are morphisms from an algebraic variety X defined over
+Q to the multiplicative group Gm , the ai ∈ C are complex parameters, γ ⊂ X(C) is
+a (locally finite) chain of integration, and ω is a differential form of degree equal to
+the dimension of γ. In the present note, X = M0,n , the moduli space of Riemann
+spheres with n = 8 marked points, the f1 , . . . , f8 are cross-ratios, the ai are integers,
+and ω is the 5-form on the second line of (1). The combinatorial, arithmetic and
+analytic structures that we have unearthed in this particular case may point to the
+existence of general theorems for Mellin transforms in algebraic geometry. We hope
+that our results may serve as inspiration for future research along these lines.
+   Since our main task is to emphasise the ideas and methods behind the analysis
+of the integrals (1), we have tried to stay non-technical in our exposition as far as
+possible, and details of proofs which are either obtainable by finite calculation, or
+have been verified by computer computation, are omitted. Each section presents
+different mathematical features and structures underlying the integrals (1) and ends
+with some suggestions for generalisation. For the benefit of the reader, we have tried
+to keep our narrative self-contained, and clear and uncluttered by technical details
+as far as possible.
+
+
+                             2. Totally symmetric case
+  We first focus our attention on the ‘totally symmetric’ case when all the parame-
+ters a1 , . . . , a8 are equal,
+                                       a1 = · · · = a8 = n.
+This also means that all the exponents in (1) including b24 , b14 , b57 , b35 , b36 are equal
+to n:
+                                                                                        n
+                                    t1 (t2 − t1 )(t3 − t2 )(t4 − t3 )(t5 − t4 )(1 − t5 )
+                         Z     Z
+  In = I(n, . . . , n) =   ···
+                                          (t3 − t1 )t3 (1 − t4 )(t4 − t2 )(t5 − t2 )
+                      0<t1 <t2 <···<t5 <1
+                                              dt1 dt2 dt3 dt4 dt5
+                                ×                                              .
+                                    (t3 − t1 )t3 (1 − t4 )(t4 − t2 )(t5 − t2 )
+It is the simplest possible choice of the parameters; as we will witness later, the
+transformation group G acts trivially in this case.
+   The integrals In are effectively computed (up to n = 10) using Panzer’s Hyper-
+Int [15]. We find out that we indeed have
+
+                   In = Qn · (2ζ(5) + 4ζ(3)ζ(2)) − 4P̂n · ζ(2) − 2Pn                     (5)
+
+for this range; more specifically,
+
+                             Q0 = 1, Q1 = 21, Q2 = 2989,
+                       101         344923                87     1190161
+        P̂0 = 0, P̂1 =     , P̂2 =        , P0 = 0, P1 = , P2 =
+                        4            96                   4       384
+                     ON CELLULAR RATIONAL APPROXIMATIONS TO ζ(5)                                    5
+
+for n = 0, 1, 2. Then Koutschan’s HolonomicFunctions [11] produces a third order
+Apéry-type recursion for the integrals In :
+2(2n + 1)(41218n3 − 48459n2 + 20010n − 2871)(n + 1)5 In+1
+     − (97604224n9 + 178061760n8 + 72005308n7 − 48634688n6 − 39076836n5
+       + 2622730n4 + 7581006n3 + 920112n2 − 543402n − 120582)In
+     − 2n(3874492n8 − 2617900n7 − 3144314n6 + 2947148n5 + 647130n4 − 1182926n3
+       + 115771n2 + 170716n − 44541)In−1
+     + n(41218n3 + 75195n2 + 46746n + 9898)(n − 1)5 In−2 = 0,                 where n = 2, 3, . . . ,
+
+which is also satisfied by the rational coefficients Qn , P̂n , Pn . This already proves
+the decomposition (5), so that In = 2In′ + 4In′′ ζ(2) with In′ = Qn ζ(5) − Pn and
+In′′ = Qn ζ(3) − P̂n . The characteristic polynomial of the recurrence equation is
+                                    4λ3 − 2368λ2 − 188λ + 1 .
+If
+       λ1 = 0.00500378 . . . ,    λ2 = −0.08438431 . . .       and λ3 = 592.07938053 . . .
+denote its roots (ordered according to their absolute value), then a standard locali-
+sation procedure leads to the asymptotics
+                                 log |In |
+                          lim              = log |λ1 | = −5.29756135 . . . ,
+                        n→∞         n
+                      log |In′ |           log |In′′ |
+                  lim             = lim                = log |λ2 | = −2.47237372 . . .
+                 n→∞     n          n→∞       n
+and
+            log |Qn |       log |P̂n |       log |Pn |
+         lim          = lim            = lim           = log |λ3 | = 6.38364071 . . . .
+        n→∞    n        n→∞    n         n→∞    n
+Finally, based on an extensive computation of the rational coefficients Qn , P̂n , Pn we
+observe experimentally that
+                         Qn , d2n d2n P̂n , d5n Pn ∈ Z for n = 0, 1, 2, . . . ,                   (6)
+where dn denotes the least common multiple of 1, 2, . . . , n. As we show later,
+                 n           2 Xn           2                      
+                X     n + k1   n         n + k2       n        n + k 1 + k2
+          Qn =                                                                                    (7)
+               k =0
+                        n      k1 k =0     n         k2             n
+                     1                         2
+
+
+implying in particular that the coefficients Qn are integral. The validity of this
+formula can be independently established by verifying, again on the basis of [11],
+that the double sum on the right-hand side satisfies the above recursion.
+   The approximating forms are similar in spirit to the ones for 1, ζ(2), ζ(3) con-
+structed in [28, Section 2] (although their characteristic polynomials have two roots
+

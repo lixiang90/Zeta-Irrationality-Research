@@ -1,0 +1,264 @@
+{
+  "round": 242,
+  "date": "2026-10-09",
+  "classification": "progress",
+  "goal_status": "active",
+  "new_numerical_irrationality_or_independence_theorem": false,
+  "formal_global_review": {
+    "last": 240,
+    "counter_reset_this_round": false,
+    "next_scheduled": 244,
+    "interval": 4,
+    "reason": "Align global review with the bounded 241-244 main window."
+  },
+  "object": {
+    "target": "3 zeta(3) + zeta(5)",
+    "kernel": "D_n^4 / D_(5n)",
+    "matrix_size": "3n",
+    "normalization": "Qtilde = S_n^(3n) Q_n / F_n",
+    "primitive_ratio": "P_n = d_n Qtilde, positive rational d_n"
+  },
+  "paid": [
+    "Whole-coefficient greedy CRT lower bound for p^2>5n, all pairs and other residue classes.",
+    "Whole binomial basis preserves F_n and bounds all small prime powers by o(n^2).",
+    "All integer-polynomial residue moments are multiples of S_n; class moments obtained by integer Euler indicators.",
+    "All non-p harmonic heads have graded polynomial expansions giving weighted head valuation at least floor(5n/p) for n<p<=5n, p>=11.",
+    "Complete remainder W_p(T) is divisible by p^max(1,floor(5n/p)-1), including quotient and parameter coefficients.",
+    "Whole-coefficient double-minor/Vandermonde bound preserves S_n and F_n and gives signed outer leading upper 12.",
+    "Whole-prime net upper log d_n <= (1009/40+o(1)) n^2 on Q_n nonzero scales, with inherited unbounded scales from round241.",
+    "Independent full paper reviews of the strong head, macroscopic rate, and final progress report."
+  ],
+  "not_paid": [
+    "Strict same-object whole-prime rate below 6.",
+    "Complete independent certification of the original -6 analytic FstarInput.",
+    "A new numerical irrationality or linear independence theorem.",
+    "Lean kernel verification, complete import/repository audit, remote freshness, or global novelty."
+  ],
+  "arithmetic_upper": {
+    "inner": "529/40",
+    "outer": "12",
+    "whole": "1009/40",
+    "outer_3_to_5": "0",
+    "dominant_outer_2_to_3": "53/8",
+    "selected_upper_profile_integral_lower": "36/5",
+    "selected_profile_lower_is_actual_fee_lower": false
+  },
+  "correction": "The proposed s=3 total-rank saving was withdrawn: negative-slot count is 4n-p<h; final profile retains 2+2x.",
+  "bounded_main_window": [
+    241,
+    244
+  ],
+  "next_gate": "Round243: same complete filtered residual determinant, all coefficients, extra macroscopic Gauss content especially on 2n<p<3n; no extra prime sampling.",
+  "sources": {
+    "pinned_repository": "dtq1997/zeta2-zeta3-linear-independence",
+    "pinned_commit": "669c92bf7a3728e0de9ad80c373bc29fb5ca3d58",
+    "root_new_downloads": 0,
+    "scope_records": [
+      {
+        "path": "literature/logistic_gauss_budget_round242_20261009/root_reading_scope.md",
+        "bytes": 3774,
+        "sha256": "d9e623d7506ae13c6aa738b3fe3640e03333486b37b10ee5c2304d3a35524f92"
+      },
+      {
+        "path": "literature/logistic_gauss_budget_round242_20261009/alternative_reading_scope.md",
+        "bytes": 2450,
+        "sha256": "cb012e037314871e16f54283adb0264a03a6b4e2b72033fbc38c171cd75fac92"
+      },
+      {
+        "path": "literature/logistic_gauss_budget_round242_20261009/dual_reading_scope.md",
+        "bytes": 3687,
+        "sha256": "015c989574732fbfc5850edcc378395b0cb446a880dea08caae3f109940648d3"
+      },
+      {
+        "path": "literature/logistic_gauss_budget_round242_20261009/dual_strong_head_reading_scope.md",
+        "bytes": 1657,
+        "sha256": "66e49c288137e6a871ca126b712e438a33a69c12d034cd3d48bad94a17c4c93c"
+      },
+      {
+        "path": "literature/logistic_gauss_budget_round242_20261009/packet_reading_scope.md",
+        "bytes": 4337,
+        "sha256": "f13eaf593e662f9ec059f348c362fe05fb810354b74f6d95467981de4ab9ea21"
+      }
+    ]
+  },
+  "runs": {
+    "mathematics": 0,
+    "cas_or_interval": 0,
+    "prime_or_parameter_scans": 0,
+    "lean": 0,
+    "git_mutations": 0,
+    "old_archive_producers": 0,
+    "this_documentary_archive": 1
+  },
+  "previous_manifest": {
+    "path": "literature/manifest_logistic_prime_edge_round241_20261008.json",
+    "bytes": 13300,
+    "sha256": "1422d90cdb98d92c882e02d675e761a778fdeabcaa3dcd1bca88dac71030e107"
+  },
+  "previous_main": {
+    "bytes": 654733,
+    "sha256": "43cf5b7f45b6991b3c5c21515eaab48cfd6cfd672032b05b89baa5dc283e1ad7"
+  },
+  "report": {
+    "path": "research/research_logistic_gauss_progress_round242_20261009.md",
+    "bytes": 4355,
+    "sha256": "b82eb3821dd08a2084243aaf1e833c00f47c2a6038c790e6a4e42f1177cf26ae"
+  },
+  "strong_certificate": {
+    "path": "research/logistic_gauss_graded_head_round242_20261009.md",
+    "bytes": 9113,
+    "sha256": "1daeea8510afa88179d877bbd1a68481ea225d06b4020156411120fd09d46ca5"
+  },
+  "rate": {
+    "path": "research/logistic_gauss_rate_round242_20261009.md",
+    "bytes": 11788,
+    "sha256": "30b39e40c5581e495cc96e18a903b36ea46354fd7c6cba3d658a48092f2b4631"
+  },
+  "new_main": {
+    "path": "research/cdt_odd_background_progress_20261006.md",
+    "bytes": 659090,
+    "sha256": "34250b248883040071c78300917eeda339a63b169ea0dc7fa5c32caca07b3c67"
+  },
+  "files": [
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/alternative_reading_scope.md",
+      "bytes": 2450,
+      "sha256": "cb012e037314871e16f54283adb0264a03a6b4e2b72033fbc38c171cd75fac92"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/alternative_sources/Zeta32_Arith_Greedy.lean",
+      "bytes": 6852,
+      "sha256": "d37e692a8cedfc045af834492f1d57f9184068f60d65f73d503f897763e7aa83"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/dual_reading_scope.md",
+      "bytes": 3687,
+      "sha256": "015c989574732fbfc5850edcc378395b0cb446a880dea08caae3f109940648d3"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/dual_sources/Moments.lean",
+      "bytes": 8031,
+      "sha256": "5c729a70cb0dad6711fffc9efb7abbded8ccc305ce2ea9dc84d2c342260609f0"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/dual_sources/RankOne.lean",
+      "bytes": 18005,
+      "sha256": "93cb89f917693489ca353d3d790a7c8a34cbeb114069e73f4f60da153e7cab43"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/dual_strong_head_reading_scope.md",
+      "bytes": 1657,
+      "sha256": "66e49c288137e6a871ca126b712e438a33a69c12d034cd3d48bad94a17c4c93c"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_reading_scope.md",
+      "bytes": 4337,
+      "sha256": "f13eaf593e662f9ec059f348c362fe05fb810354b74f6d95467981de4ab9ea21"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Distribution.lean",
+      "bytes": 561,
+      "sha256": "dc180b613f1daef16d7e79b2f051e12ca4e63c80eb7d2a0c6e8787e9bdfb4e6c"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Greedy.lean",
+      "bytes": 6852,
+      "sha256": "d37e692a8cedfc045af834492f1d57f9184068f60d65f73d503f897763e7aa83"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Local_Alloc.lean",
+      "bytes": 6484,
+      "sha256": "e18ab3f8e03f73bd291c36235c2494364621b13060f16bdd1598f39fee7388da"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Outer.lean",
+      "bytes": 8604,
+      "sha256": "5dbb12c1d80c8320f85e68ef0a37baefd8c0bb63651ad719f38e2d9a8f41f725"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Profiles.lean",
+      "bytes": 678,
+      "sha256": "debca2f072cc455ce7ea1eaed6fdf642969c62c6c089805ca9da816d36339bc2"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Relaxed.lean",
+      "bytes": 8282,
+      "sha256": "58d12364e5500e5d7e0eb834205f29e8ee703aea3329ebb2f0924c0523c3b1a7"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Sum_Main.lean",
+      "bytes": 21698,
+      "sha256": "33338bedf29b6047e28c749b0d259d02a3a8e138aef978cdfe54b4e510ccfa15"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/packet_sources/Zeta32_Arith_Sum_Numerics.lean",
+      "bytes": 5639,
+      "sha256": "3422ab2efe92f8804658dca77f0b5eac6bf8fa93d29efe32ba9f6516e711da37"
+    },
+    {
+      "path": "literature/logistic_gauss_budget_round242_20261009/root_reading_scope.md",
+      "bytes": 3774,
+      "sha256": "d9e623d7506ae13c6aa738b3fe3640e03333486b37b10ee5c2304d3a35524f92"
+    },
+    {
+      "path": "research/archive_round242_20261009.py",
+      "bytes": 6490,
+      "sha256": "eb479cf25200825e0d103fd50aa1d0a0f329e6d2077706b96fb687e773299a14"
+    },
+    {
+      "path": "research/logistic_gauss_arithmetic_round242_20261009.md",
+      "bytes": 8719,
+      "sha256": "0b2bdf55e221aa353b90aaabaf96b4545d0daa69465e2941166c36cad4191cdf"
+    },
+    {
+      "path": "research/logistic_gauss_graded_head_round242_20261009.md",
+      "bytes": 9113,
+      "sha256": "1daeea8510afa88179d877bbd1a68481ea225d06b4020156411120fd09d46ca5"
+    },
+    {
+      "path": "research/logistic_gauss_outer_pdiv_review_round242_20261009.md",
+      "bytes": 3632,
+      "sha256": "4e4910e85e2c60e699d367b7d4495d2838f88b8d0f386dfaca90b0888219bb22"
+    },
+    {
+      "path": "research/logistic_gauss_outer_round242_20261009.md",
+      "bytes": 9354,
+      "sha256": "994ea8727792abc787e8b4b27db5171dc171f23a29bbd7793584eb8c4a9f416c"
+    },
+    {
+      "path": "research/logistic_gauss_outer_strong_head_round242_20261009.md",
+      "bytes": 7948,
+      "sha256": "a6fbdddd8d96c57b7accb8c04f8fd3dfef5f6998b97cd1785b0dd5ec9c4c9ce3"
+    },
+    {
+      "path": "research/logistic_gauss_rate_round242_20261009.md",
+      "bytes": 11788,
+      "sha256": "30b39e40c5581e495cc96e18a903b36ea46354fd7c6cba3d658a48092f2b4631"
+    },
+    {
+      "path": "research/research_global_review_policy.md",
+      "bytes": 6141,
+      "sha256": "3b009d8a08aedb4192ae52cc6724250110afe367692ef68a15792e2c217fd26c"
+    },
+    {
+      "path": "research/research_logistic_gauss_progress_round242_20261009.md",
+      "bytes": 4355,
+      "sha256": "b82eb3821dd08a2084243aaf1e833c00f47c2a6038c790e6a4e42f1177cf26ae"
+    },
+    {
+      "path": "research/research_round242_gauss_rate_review_20261009.md",
+      "bytes": 2615,
+      "sha256": "9acfd29c15b4865ea5787831548c4069b65ec2c7592be48fa7977770cf225d79"
+    },
+    {
+      "path": "research/research_round242_graded_head_review_20261009.md",
+      "bytes": 2490,
+      "sha256": "06f5efa6b08505a6ea31fee7f395acf5976049aef3f3c815143dea2e29d9f6d5"
+    },
+    {
+      "path": "research/research_round242_progress_review_20261009.md",
+      "bytes": 2705,
+      "sha256": "ed5c77e882d4479f1998811adc2eb82041d7982cbf8550756c8b45a91c711dc3"
+    }
+  ]
+}

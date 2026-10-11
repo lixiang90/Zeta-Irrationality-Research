@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-06",
+  "scope": "NEW all-n dyadic denominator theorem for actual conifold-normalized g0,g1,g2,h; odd-prime Christol-Dwork consequences remain conditional on generic radius one.",
+  "proof": {
+    "path": "research/cdt_odd_R0_conifold_effective_denominator_20261006.md",
+    "sha256": "fea01700aa99716201ad0e36b161557f98f8e783755d7bfe144f434d1d59d3f8",
+    "actual_author_full_read": true
+  },
+  "new_mathematical_files": [
+    {
+      "path": "research/cdt_odd_R0_conifold_effective_denominator_20261006_probe.py",
+      "sha256": "6bae4c3b34b3bb006fa6a6b697251d8a9ff4543c797693ec4414eb66f1a27c6f"
+    },
+    {
+      "path": "research/cdt_odd_R0_conifold_effective_denominator_20261006_probe.json",
+      "sha256": "b275f2481c3f02b571ccadd447d5a776d58842eaa2614bde5c67ecb0bb801ebf"
+    },
+    {
+      "path": "research/cdt_odd_R0_conifold_effective_denominator_20261006_symbolic_verify.py",
+      "sha256": "7ac54b6094f4346673c1a931ced683fbf7143fe162af6b5caa200f01e48c1c01"
+    },
+    {
+      "path": "research/cdt_odd_R0_conifold_effective_denominator_20261006_symbolic_verify.json",
+      "sha256": "305eb28b0d38bef698b02ae7871dc54e65b359742d310f7909022d1a0abfbc34"
+    }
+  ],
+  "new_primary_sources": [
+    {
+      "title": "Travaux de Dwork",
+      "author": "Nicholas M. Katz",
+      "local_path": "literature/katz1972_travaux_de_dwork_author_20261006.pdf",
+      "version": "Seminaire Bourbaki 1971-1972, expose409, February1972; author-hosted Numdam scan",
+      "source_url": "https://web.math.princeton.edu/~nmk/old/travdwork.pdf",
+      "sha256": "b885d13a652d87763c5864eb22238f0695613a3dab774507e2ba570a487eca1a",
+      "pdf_pages": 35,
+      "actual_current_round_pdf_pages": [
+        9,
+        10,
+        11,
+        12,
+        23
+      ],
+      "actual_visual_pages": [
+        10,
+        23
+      ],
+      "scope": "Proposition3.1.2 and geometric section7; proper smooth and locally-free de Rham cohomology hypotheses explicitly retained. Not a proof of good reduction/local freeness for the actual project family.",
+      "normal_TLS": true
+    }
+  ],
+  "reused_primary_sources": [
+    {
+      "title": "Denominators of the coefficients of G-functions",
+      "local_path": "literature/fischler_rivoal2017_G_function_denominators_published_20261006.pdf",
+      "version": "Published formal primary",
+      "source_url": "https://rivoal.perso.math.cnrs.fr/articles/dengfn.pdf",
+      "sha256": "c36b46c110aa378caba371897b7ab45959941d10f8d61311496868bcd004dc68",
+      "pdf_pages": 12,
+      "actual_current_round_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "scope": "Shearing, Theorem3 four hypotheses and exact small-prime exponent"
+    },
+    {
+      "title": "On p-adic differential equations IV",
+      "local_path": "literature/dwork1973_generalized_hypergeometric_iv_20261006.pdf",
+      "sha256": "ceaff9777f65cabb2b603f1faf50478866e4d5f1c9f359492189a273de3ae4d5",
+      "pdf_pages": 22,
+      "actual_current_round_pdf_pages": [
+        1
+      ],
+      "scope": "Metadata and keywords only; no application of a full Frobenius theorem claimed"
+    },
+    {
+      "title": "Dwork Crystals I",
+      "local_path": "literature/beukers_vlasenko2021_dwork_crystals_i_v4_20261006.pdf",
+      "version": "arXiv1903.11155v4",
+      "sha256": "729d5bdcc739556f4d01096b089c96be42571e40db5c0cd537a0331175d86eb6",
+      "pdf_pages": 33,
+      "actual_current_round_pdf_pages": [
+        1
+      ],
+      "scope": "Metadata, introduction and keywords only; no full generic-radius proof inferred"
+    },
+    {
+      "title": "On the differential equations satisfied by period matrices",
+      "local_path": "literature/katz1968_period_matrices.pdf",
+      "sha256": "b61113ecfae34fc60c4f81eaddb65243c0f6dfc5931a2a8016adfd40aa83e5a8",
+      "pdf_pages": 37,
+      "actual_current_round_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "scope": "Opening pages and keyword locations; not full technical theorem reading"
+    }
+  ],
+  "new_primary_pdf_files": 1,
+  "new_primary_pdf_pages": 35,
+  "new_mathematical_producer_runs": 2,
+  "old_or_peer_mathematical_producers_executed_or_imported": 0,
+  "execution_record": "Each NEW own producer executed exactly once. Symbolic verifier13 checks passed; finite probe degree180. All-n theorem is the written direct (nI-R)^-1 recursion, not finite checks. Own unfrozen paper math delimiters repaired and positive square root bound clarified after independent review; producers never rerun. Curl initially returned a running session; premature fitz read failed on incomplete download. Same download session completed successfully; only completed35-page hash is archived. Reading PNGs are scratch, not new PDF/mathematical producers.",
+  "not_claimed": [
+    "All odd primes have generic radius one for the actual family",
+    "Sharp or optimal dyadic exponent",
+    "Algebraicity of actual endpoint jets",
+    "New special-value irrationality, linear independence or Lean"
+  ]
+}

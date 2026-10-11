@@ -1,0 +1,162 @@
+{
+  "status": "all_own_exact_matrix_checks_passed",
+  "checked_at_utc": "2026-10-06T07:41:55.410597+00:00",
+  "producer_sha256": "0f00023b927881f1cf824be2e50b1177dde6654a8db7799eb98538697b044dc0",
+  "report_sha256": "baf29ee041a0ea48c4b64c517cf0712f24c52c4c98893e4c74a98698c7e05586",
+  "scope": "Exact matrices and polynomial identities only. Actual cycles, degree-one integral projection, unimodularity, and index256 are established by the paper, not machine verified.",
+  "producer_execution_number": 1,
+  "old_or_peer_producer_imports_or_executions": 0,
+  "checks": [
+    "Gram skew",
+    "Pfaffian -256",
+    "Gram determinant 2^16",
+    "unimodular basis change",
+    "integral alternating blocks 8J and -32J",
+    "Gram SNF 8,8,32,32",
+    "U integer determinant one",
+    "M0 integer determinant one",
+    "M1 integer determinant one",
+    "U preserves Gram",
+    "M0 preserves Gram",
+    "M1 preserves Gram",
+    "physical M0 characteristic (z+1)^4",
+    "physical M0M1 characteristic (z-1)^4",
+    "PL exact rank-one",
+    "A order four nilpotent",
+    "N square integral expression",
+    "N cube integral expression",
+    "N cube primitive v ell",
+    "explicit 6N",
+    "symbolic all-k transport at one",
+    "symbolic all-k group law",
+    "symbolic all-k actual intersection polynomial",
+    "real involution integer",
+    "real involution anti-symplectic",
+    "real involution reverses U",
+    "GammaV intersection row -8ell",
+    "GammaV equals N^3 delta /2",
+    "rank-one Gamma expression",
+    "remaining real cycle actual integral coordinates",
+    "remaining real cycle conjugation minus",
+    "remaining real cycle delta orthogonal",
+    "remaining cycle divisibility 16 in orbit lattice",
+    "double physical loop cubic charge eight",
+    "double physical loop logarithm cubic charge eight",
+    "dual orbit lattice exact denominator32",
+    "formal GammaV added index two",
+    "formal GammaV added Gram SNF8,8,16,16"
+  ],
+  "check_count": 38,
+  "intersection_polynomial": "8*k**3/3 + 16*k/3",
+  "gram_pfaffian": -256,
+  "gram_determinant": 65536,
+  "gram_smith_invariant_factors": [
+    8,
+    8,
+    32,
+    32
+  ],
+  "origin_cube_vector": [
+    -1,
+    3,
+    -3,
+    1
+  ],
+  "origin_cube_integer_row": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "GammaV_orbit_coordinates": [
+    "-1/2",
+    "3/2",
+    "-3/2",
+    "1/2"
+  ],
+  "remaining_integral_cycle_orbit_coordinates": [
+    -3,
+    4,
+    -1,
+    0
+  ],
+  "physical_M0": [
+    [
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      -1,
+      0,
+      0,
+      -4
+    ],
+    [
+      0,
+      -1,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      -1,
+      -4
+    ]
+  ],
+  "physical_M1": [
+    [
+      1,
+      -8,
+      -32,
+      -88
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "signed_U": [
+    [
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      1,
+      0,
+      0,
+      4
+    ],
+    [
+      0,
+      1,
+      0,
+      -6
+    ],
+    [
+      0,
+      0,
+      1,
+      4
+    ]
+  ],
+  "dual_orbit_lattice_denominator": 32
+}

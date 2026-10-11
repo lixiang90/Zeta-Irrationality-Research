@@ -1,0 +1,108 @@
+{
+  "scope": "Finite rational/algebraic checks; no proof of all-prime valuations, global rank, analytic leaf, or numeric irrationality.",
+  "execution_history": [
+    "first single execution; see exit status in delivery review"
+  ],
+  "checks": [
+    {
+      "name": "actual Q9 all listed primes n=0..96",
+      "passed": true
+    },
+    {
+      "name": "all J coefficients n=0..96 are 2-units",
+      "passed": true
+    },
+    {
+      "name": "exact least J prefix denominator N=0..96",
+      "passed": true
+    },
+    {
+      "name": "exact least H prefix denominator N=0..96",
+      "passed": true
+    },
+    {
+      "name": "inert p3 denominator not deleted c2",
+      "passed": true
+    },
+    {
+      "name": "J coefficient forcing recurrence all n=1..96",
+      "passed": true
+    },
+    {
+      "name": "actual full-prefix packet p=5 N=5",
+      "passed": true
+    },
+    {
+      "name": "actual L1,L2,derivatives prefix p=5",
+      "passed": true
+    },
+    {
+      "name": "QT top degree and p-unit p=5",
+      "passed": true
+    },
+    {
+      "name": "actual full-prefix packet p=13 N=41",
+      "passed": true
+    },
+    {
+      "name": "actual L1,L2,derivatives prefix p=13",
+      "passed": true
+    },
+    {
+      "name": "QT top degree and p-unit p=13",
+      "passed": true
+    },
+    {
+      "name": "actual full-prefix packet p=17 N=71",
+      "passed": true
+    },
+    {
+      "name": "actual L1,L2,derivatives prefix p=17",
+      "passed": true
+    },
+    {
+      "name": "QT top degree and p-unit p=17",
+      "passed": true
+    },
+    {
+      "name": "generic clearing identity",
+      "passed": true
+    },
+    {
+      "name": "generic conjugation theta coefficient",
+      "passed": true
+    },
+    {
+      "name": "generic conjugation constant coefficient",
+      "passed": true
+    },
+    {
+      "name": "generic nested L2 modp theta coefficient",
+      "passed": true
+    },
+    {
+      "name": "generic nested L2 modp constant coefficient",
+      "passed": true
+    },
+    {
+      "name": "ordinary full-density max transport",
+      "passed": true
+    },
+    {
+      "name": "split two-layer prime integral",
+      "passed": true
+    },
+    {
+      "name": "same-rank-five normalized kappa",
+      "passed": true
+    },
+    {
+      "name": "Gamma quarter endpoint multiplier arithmetic",
+      "passed": true
+    }
+  ],
+  "finite_check_count": 24,
+  "all_passed": true,
+  "numeric_irrationality_proved": false,
+  "lean_verified": false
+}

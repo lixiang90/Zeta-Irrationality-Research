@@ -1,0 +1,79 @@
+{
+  "schema": "independent-source-receipt-v1",
+  "date": "2026-10-06",
+  "agent": "/root/quarter_actual_rank",
+  "status": "FROZEN",
+  "proof": {
+    "path": "research/cdt_odd_paired_head_free_integral_lattice_20261006.md",
+    "sha256": "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b",
+    "actual_final_author_full_reread": true,
+    "scope": "Sections I1-I10, equations I1-I25: explicit saturated integer-valued paired basis, primitive constraint quotient, exact raw-row/pair index, Newton and evaluation norm distinctions, exact covolume Gram and Plucker formulas, actual height bounds, auxiliary-prime negative-evaluation rank, and a common-minor all-finite-place bridge retaining largest-row factorial costs and a fixed rational parameter denominator.",
+    "unfrozen_history": [
+      "a763fd65b00df553084a51b5d1157cec65b21d5f2266713b691c495b798f522f: complete first author reread, I1-I22, then supplied to root and peers.",
+      "98327aff18cfb9dc6af373eb5462730e497cb26a57128aca8414edc0efa6d2db: added the explicit common-minor finite-place bridge I23-I25, complete author reread.",
+      "a4c53b689ce59ff9d91885589933188a431e4b89de81f83148055fa0c18f157a: explicitly paid fixed r denominator D^(2n) in both arithmetic and analytic scalar normalization, complete author reread. I1-I22 unchanged.",
+      "5b7947c8d26747ca0eb7abac8b3ed5b7cbbe0828170ffe74d7ac51215b1fef5b: independent arithmetic reviewer correctly required the LP domain sqrt(8n)<p<=6n; only this domain was narrowed in the unfrozen NEW proof, and p>6n has a separate integrality proof. Complete final author reread and root independent final full read passed. Frozen after approval."
+    ]
+  },
+  "new_independent_review": {
+    "path": "research/cdt_odd_paired_head_free_analytic_plucker_independent_review_20261006.md",
+    "sha256": "5b9b5ff67c7aeaea6be24a03a8d9734e15c404aa56dec5c9a577c34ca2ca5d3e",
+    "actual_final_author_full_reread": true,
+    "reviewed_peer_proof": "research/cdt_odd_paired_head_free_analytic_plucker_root_20261006.md",
+    "reviewed_peer_proof_sha256": "cf341860474546dc0d5a2a630ae73f6bbf50426fa7ee8c100975c6a2b1688e38",
+    "actual_read_scope": "Full root sections R1-R6 and equations R1-R16 without truncation; total-variation Hermitian Gram, actual mandatory high Plucker support, weighted L2 estimates, degree and same-object comparison gate checked. Own lattice proof is an author input, never counted as independent self-review."
+  },
+  "actual_read_mathematical_inputs": [
+    {
+      "path": "research/cdt_odd_mixed_double_pole_primitive_lattice_review_20261006.md",
+      "sha256": "93c9e1705cc63160ce7c212501df79b23b10b249d42acd26a715a538315b8ac8",
+      "actual_read_this_round": "Actual full reread of sections P1-P9 and all equations P1-P20, without truncated output. P15 is an equation within section P7.",
+      "used_scope": "Actual paired rational subspace, head cancellation, original integer-valued lattice, normalization warning and fixed-s residue-minor bounds.",
+      "operations": "Read only and SHA256 verification; no modification or producer execution."
+    }
+  ],
+  "primary_source_scope": {
+    "new_primary_pdf_downloads": 0,
+    "new_primary_repository_source_files": 0,
+    "own_lattice_proof_primary_pdf_pages_actually_read_this_round": 0,
+    "independent_analytic_review_primary_pdf_pages_actually_read_this_round": 11,
+    "primary_pdf_pages_actually_read_this_round_by_this_agent": 11,
+    "note": "The lattice proof is elementary and self-contained after the frozen paired-space input. Previous-round Lai PDF readings are not counted again. Integer interpolation, Bezout, exterior primitives/Cauchy-Binet, Wilson and Stirling are proved or applied with explicit steps in the new paper. Peer new mathematical probes are not proof inputs to this file. Brown8 and Monien3 current actual pages belong to the separate analytic independent review; Saff was not read by this agent.",
+    "actual_primary_review_sources": [
+      {
+        "path": "literature/brown2026_mellin_transfinite_diameter_arxiv2604_20741v1_20261006.pdf",
+        "sha256": "fcbcc22ee7504b9e057c534c0e5fae3f3812af8548d132cd2018ce4857a20bef",
+        "primary_url": "https://arxiv.org/pdf/2604.20741v1",
+        "pages": 34,
+        "actual_pdf_pages": [7,8,9,10,21,22,23,24],
+        "actual_scope": "Positive real-form/generator hypotheses, generalized module Vandermonde, determinant identity, nonzero and period-span criteria. Not claimed full34-page reading.",
+        "own_download_count": 0
+      },
+      {
+        "path": "literature/monien2009_hankel_dirichlet_arxiv0901_1883v1_20261006.pdf",
+        "sha256": "2c75a17ba33a84e95269601ebb218fdbf8fdbf249882f8b22b49e0c86fb5d7ef",
+        "primary_url": "https://arxiv.org/pdf/0901.1883v1",
+        "pages": 12,
+        "actual_pdf_pages": [1,2,3],
+        "actual_scope": "Actual consecutive-zeta determinant object, complete Theorem2.1 discrete formula and positive-coefficient Lemma2.3. No reduction to the paired target or full12-page reading claimed.",
+        "own_download_count": 0
+      }
+    ],
+    "tls_scope": "These new archive bytes were acquired by root with default verified TLS; this agent only read the local files and did no network download or TLS exception. The root acquisition receipt is independently maintained."
+  },
+  "execution_audit": {
+    "own_new_mathematical_producer_files": [],
+    "own_new_mathematical_producer_runs": 0,
+    "old_or_peer_mathematical_producer_execute_import_rerun": 0,
+    "external_lean_runs": 0,
+    "frozen_old_or_peer_files_modified": [],
+    "source_processing": "Read-only mathematical-source text, PDF text extraction and SHA256 operations only."
+  },
+  "limitations": [
+    "The exact raw index is not free scalar Gauss-content savings; the same index squares the raw versus saturated Gram determinant.",
+    "Evaluation-norm lower fees are not Newton-norm, analytic determinant, or actual arithmetic-cost lower bounds.",
+    "The all-prime bridge is a safe common-minor bound, not optimal primitive content or a matched strict margin.",
+    "Negative-evaluation rank does not prove the restricted leading weighted form or its weak jet block is nondegenerate.",
+    "No infinite nonzero rational-specialization theorem, new zeta/L/Catalan number theorem, or Lean theorem for this restricted family is claimed."
+  ]
+}

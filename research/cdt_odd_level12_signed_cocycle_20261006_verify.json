@@ -1,0 +1,137 @@
+{
+  "scope": "NEW fixed symbolic identities; no search, no imported producer",
+  "checks": [
+    {
+      "name": "M determinant12",
+      "passed": true
+    },
+    {
+      "name": "M tracezero",
+      "passed": true
+    },
+    {
+      "name": "M central square",
+      "passed": true
+    },
+    {
+      "name": "Mprime determinant12",
+      "passed": true
+    },
+    {
+      "name": "Mprime central square",
+      "passed": true
+    },
+    {
+      "name": "Mprime coset ratio",
+      "passed": true
+    },
+    {
+      "name": "eta W conjugate",
+      "passed": true
+    },
+    {
+      "name": "eta membership determinant1",
+      "passed": true
+    },
+    {
+      "name": "W eta scalar TminusW",
+      "passed": true
+    },
+    {
+      "name": "tau2 eta unchanged",
+      "passed": true
+    },
+    {
+      "name": "tau eta",
+      "passed": true
+    },
+    {
+      "name": "negative weight slash right action",
+      "passed": true
+    },
+    {
+      "name": "completed translation defect",
+      "passed": true
+    },
+    {
+      "name": "completed reciprocal W coefficient",
+      "passed": true
+    },
+    {
+      "name": "translation W polynomial",
+      "passed": true
+    },
+    {
+      "name": "Theta tau2 exact cancellation",
+      "passed": true
+    },
+    {
+      "name": "actual eta defect",
+      "passed": true
+    },
+    {
+      "name": "base positive discriminant",
+      "passed": true
+    },
+    {
+      "name": "Pn zero at0",
+      "passed": true
+    },
+    {
+      "name": "Pn base at1",
+      "passed": true
+    },
+    {
+      "name": "full integer recurrence",
+      "passed": true
+    },
+    {
+      "name": "full inverse recurrence",
+      "passed": true
+    },
+    {
+      "name": "all n discriminant",
+      "passed": true
+    },
+    {
+      "name": "Jn full symbolic matrix",
+      "passed": true
+    },
+    {
+      "name": "Jn determinant",
+      "passed": true
+    },
+    {
+      "name": "Jn trace",
+      "passed": true
+    },
+    {
+      "name": "Jn full endpoint",
+      "passed": true
+    },
+    {
+      "name": "Jn exact scalar period",
+      "passed": true
+    },
+    {
+      "name": "Jn invariant quadratic",
+      "passed": true
+    },
+    {
+      "name": "Jn period fixed n1",
+      "passed": true
+    },
+    {
+      "name": "numerator quadratic positive discriminant",
+      "passed": true
+    },
+    {
+      "name": "denominator quadratic positive discriminant",
+      "passed": true
+    }
+  ],
+  "passed": 32,
+  "eta_polynomial": "2073600*t**2 + 529920*t + 44160",
+  "eta_n_polynomial": "529920*n**2*t + 44160*n + t**2*(2119680*n**3 - 46080*n)",
+  "Jn_Tate_coefficient": "1920*n*(644*n**2 + 552*n + 147)/(84*n**2 + 48*n + 7)"
+}

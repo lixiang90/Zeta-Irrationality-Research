@@ -1,0 +1,80 @@
+{
+  "as_of": "2026-10-05",
+  "sources": [
+    {
+      "file": "smet_vanassche2008_mellin_author.pdf",
+      "title": "Mellin transforms for multiple Jacobi–Piñeiro polynomials",
+      "authors": "Christophe Smet; Walter Van Assche",
+      "version": "Author PDF dated August 6, 2008, 25 pages",
+      "page_url": "https://wis.kuleuven.be/analyse/members/walter/mellin.pdf",
+      "pdf_urls": [
+        "https://wis.kuleuven.be/analyse/members/walter/mellin.pdf"
+      ],
+      "category": "confluent_multiple_orthogonality",
+      "status": "Theorem 2.4 exactly matches the project's confluent diagonal log-moment family after normalization; no automatic endpoint nonzero theorem.",
+      "notes": "r=q, alpha=0, multiindex(n,...,n), author Mellin variable s=z-1. Fixed author bytes archived."
+    },
+    {
+      "file": "kalmykov_lysov_shukla2026_jacobi_pineiro_asymptotics_v1.pdf",
+      "title": "Strong asymptotics for Jacobi-Piñeiro orthogonal polynomials",
+      "authors": "Sergei Kalmykov; Vladimir Lysov; Vinay Shukla",
+      "version": "arXiv:2608.20594v1, submitted 2026-08-20",
+      "page_url": "https://arxiv.org/abs/2608.20594v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2608.20594v1"
+      ],
+      "category": "strong_asymptotics_scope_comparison",
+      "status": "Nonconfluent two-weight strong asymptotics; not a theorem for the q=7 confluent target.",
+      "notes": "Keep separate the diagonal global theorem and Theorem 7.1 off-diagonal beta=0 variant; the alpha1-alpha2 not in Z assumption excludes confluence."
+    },
+    {
+      "file": "lysov2019_jacobi_pineiro_integral_representations.pdf",
+      "title": "Integral representations for the Jacobi–Piñeiro polynomials and the functions of the second kind",
+      "authors": "V.G. Lysov",
+      "version": "Probl.Anal.Issues Anal.8(26):3(2019),83–95,13 pages; DOI10.15393/j3.art.2019.6830",
+      "page_url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=pa&option_lang=eng&paperid=274&what=fullt",
+      "pdf_urls": [
+        "https://www.mathnet.ru/php/getFT.phtml?jrnid=pa&option_lang=eng&paperid=274&what=fullt"
+      ],
+      "category": "second_kind_function_scope",
+      "status": "Two nonconfluent weights; correct separated second-kind function template, not q7 confluent endpoint theorem."
+    },
+    {
+      "file": "neuschel_vanassche2016_zero_distribution_v2.pdf",
+      "title": "Asymptotic zero distribution of Jacobi-Piñeiro and multiple Laguerre polynomials",
+      "authors": "Thorsten Neuschel; Walter Van Assche",
+      "version": "arXiv:1509.04542v2, submission stamp 2016-01-07; PDF internal author date 2018-08-15",
+      "page_url": "https://arxiv.org/abs/1509.04542v2",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1509.04542v2"
+      ],
+      "category": "zero_distribution_scope",
+      "status": "Type-II zero distribution; does not give highest Cauchy component endpoint decay or nonzero.",
+      "notes": "Keep both arXiv and internal author dates; no inferred extra arXiv version."
+    },
+    {
+      "file": "wolfs2024_multiple_orthogonal_hypergeometric_v2.pdf",
+      "title": "Applications of multiple orthogonal polynomials with hypergeometric moment generating functions",
+      "authors": "Thomas Wolfs",
+      "version": "arXiv:2401.08312v2, 2024-04-16,39 pages",
+      "page_url": "https://arxiv.org/abs/2401.08312v2",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2401.08312v2"
+      ],
+      "category": "hypergeometric_pade_scope",
+      "status": "Theorem 5.10 p<q factorial margin; polylog p=q boundary is explicitly outside this proof."
+    },
+    {
+      "file": "fidalgo_lopez2010_nikishin_perfect_v1.pdf",
+      "title": "Nikishin systems are perfect",
+      "authors": "U. Fidalgo Prieto; G. López Lagomasino",
+      "version": "arXiv:1001.0554v1, 2010-01-04,39 pages",
+      "page_url": "https://arxiv.org/abs/1001.0554v1",
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1001.0554v1"
+      ],
+      "category": "nikishin_scope",
+      "status": "Perfectness and asymptotics require actual generating measures/support/regularity; AT property alone insufficient."
+    }
+  ]
+}

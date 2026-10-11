@@ -1,0 +1,273 @@
+16                         F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+The high dimensional method, on the other hand, leads to an even more precise
+bound in the denominators aspect, a refinement that could be useful in further
+developments or applications of our method.
+Basic Remark 2.4.4. A basic way to understand the definition of g ∗ (t) in equa-
+tion (2.4.1) is as follows. Assume that g(t) is a continuous (and hence bounded)
+function on [0, 1]. If g(t) is monotonically increasing, then g ∗ (t) = g(t). For g(t) ar-
+bitrary, let gn (t) for n ≥ 1 denote the piecewise constant step function which takes
+the value g(k/n) on the interval Ik = [(k − 1)/n, k/n) for k = 1, . . . , n (extending
+the final interval In to include 1). The functions gn (t) converge uniformly to g(t)
+as n → ∞. Now let gn∗ (t) denote the step function which is also constant in the n
+intervals I1 , . . ., In , except now taking the n respective values
+                                {g(1/n), g(2/n), g(3/n), . . . g(n/n)}
+rearranged in increasing order (hence the name). Then gn∗ (t) is the increasing
+rearrangement of gn (t), and the functions gn∗ (t) converge uniformly to g ∗ (t). △
+2.5. Arithmetic holonomy bounds, basic form. Our first main result is the
+following simultaneous strengthening of all the holonomy bounds or arithmetic ra-
+tionality or algebraicity criteria that we have explicitly stated so far.
+Theorem 2.5.1. Consider two positive integers m, r ∈ N>0 and an m × r rect-
+angular array of nonnegative real numbers b := bi,j 1≤i≤m, 1≤j≤r , all of whose
+columns are of the form:
+        0 = b1,j = · · · = buj ,j < buj +1,j = · · · = bm,j =: bj ,                        ∀j = 1, . . . , r,
+for some uj ∈ {0, 1, . . . , m}. Let
+                            σi := bi,1 + . . . + bi,r ,                 i = 1, . . . , m
+be the i-th row sum, and define
+                               m                          r
+                           1 X                        1 X 2
+               τ (b) :=           (2i − 1)σ i = σ m −       u bj ∈ [0, σm ].                                    (2.5.2)
+                           m2 i=1                     m2 j=1 j
+
+Further, consider a holomorphic mapping φ : (D, 0) → (C, 0) with derivative (con-
+formal size) satisfying |φ′ (0)| > eσm .
+   Suppose there exists an m-tuple f1 , . . . , fm ∈ QJxK of Q(x)-linearly independent
+formal functions with denominator types of the form
+                   ∞
+                   X                                  xn
+        fi (x) =         ai,n                                                     ,    ai,n ∈ Z,                (2.5.3)
+                   n=0
+                                [1, . . . , bi,1 · n] · · · [1, . . . , bi,r · n]
+
+such that fi (φ(z)) ∈ CJzK is the germ of a meromorphic function on |z| < 1, for
+all i = 1, . . . , m. Then we have the bound
+                           ZZ
+                                 log |φ(z) − φ(w)| µHaar (z)µHaar (w)
+                              T2
+                       m≤                                             .  (2.5.4)
+                                       log |φ′ (0)| − τ (b)
+If, moreover, all functions fi are a priori assumed to be holonomic, the condition
+|φ′ (0)| > eσm can be relaxed to |φ′ (0)| > eτ (b) .
+                  THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                    17
+
+
+   With elementary methods based on the phenomenon of measure concentration in
+high dimensions, we prove directly in § 6 the following variant using the increasing
+rearrangement function:
+       ZZ                                                  Z 1
+             log (max(|φ(z)|, φ(w)|) µHaar (z)µHaar (w)         2t · (log |φ(e2πit ))∗ dt
+          T2                                                 0
+ m≤                                                      =                                .
+                       log |φ′ (0)| − τ (b)                     log |φ′ (0)| − τ (b)
+                                                                                    (2.5.5)
+   To highlight the similarity of τ (b) with the increasing rearrangement function
+that emerges from a simple probabilistic consideration, let us note (writing σ0 := 0)
+that the weighted average in (2.5.2) can be expressed in a form rather similar
+to (2.4.2):
+             m     Z i/m              Z 1      m
+                                                                         !
+            X                                  X
+    τ (b) =     σi           2t dt =      2t ·   (σi − σi−1 )χ[0,i/m] (t) dt.       (2.5.6)
+            i=1     (i−1)/m           0        i=1
+                                               Pm
+Noting the monotonicity of the step function i=1 (σi −σi−1 )χ[0,i/m] (t), our require-
+ment that b is column-wise nondecreasing serves as the counterpart for denomi-
+nators of the increasing rearrangement function (log |φ|)∗ . As remarked above, we
+will see in § 8.1 that the Bost–Charles integral in (2.5.4) can be tightly majorized
+    R1
+by 0 2t · (log |φ(e2πit )|)∗ dt, with the effect that the bound (2.5.4) implies the
+bound (2.5.5). For either of the rearrangement integrals (2.5.5) and (2.5.6), the inte-
+gration weight 2t arises as the cumulative distribution function of ([0, 1], µLebesgue ).
+One mechanism for both these improvements over (2.2.3) is held by the concentra-
+tion of measure phenomenon § 4; it is explained in § 6.1.
+   For the rather rudimentary shape of the denominator type form (2.5.3) in our
+statement of Theorem 2.5.1, a single variable proof is nevertheless also possible, as
+we discover with the slopes method in § 7.3. In that context, both the denominators
+rate term τ (b) and the Bost–Charles double integral term in (2.5.4) emerge from
+the computation of the covolume of the Euclidean lattice of auxiliary polynomial
+functions chosen in the usual Diophantine analysis proof scheme: the former as the
+minimizer of a multivariable quadratic form arising from a basic template sought for
+the integral structure, and the latter as the “infinite part” based on a combination
+(due to Bost and Charles [BC22, § 5]) of the Poincaré–Lelong formula in complex
+analysis and the arithmetic Hilbert–Samuel formula in Arakelov theory.
+
+2.6. Siegel’s G-functions. As discussed above, Theorem 2.5.1 has a crude qual-
+itative corollary which we may read as an arithmetic holonomicity criterion. It is
+due to André [And89, § VIII 1.6] (where the set of places V in loc. cit. must be
+assumed to be finite); in a slightly different context, the first holonomicity result
+of such a kind is probably the one discovered by Perelli and Zannier [PZ84, Thm.
+1 B].
+Corollary 2.6.1. If a formal function f ∈ QJxK has rational coefficients of the
+form
+                      ∞
+                     X                        xn
+             f (x) =     an                                           , an ∈ Z (2.6.2)
+                     n=0
+                            [1, . . . , b1 n] · · · [1, . . . , br n]
+and admits an analytic mapping φ : (D, 0) → (C, 0) with conformal size |φ′ (0)| >
+eb1 +...+br and such that the composite function germ f (φ(z)) ∈ CJzK is the germ of
+18                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+a meromorphic function on D, then f (x) is a holonomic function: there exists a
+nonzero linear differential operator L with Q[x]-coefficients that satisfies L(f ) = 0.
+
+   In this paper, we will exhibit and exploit such f ∈ QJxK whose holonomicity can
+be recognized by this criterion. The special form of the denominators (2.6.2) then
+situates us more specifically into the context of Siegel’s theory of G-functions; in
+particular, see Remark 3.2.12 for a discussion, the linear differential operator L can
+a posteriori be taken to be of the Fuchsian class with only regular singular points
+and with rational exponents [DGS94, III 6.1, VII 2.1, and VIII 1.5]. A major open
+question, which is closely related to the discussion of § 15.2 with implications to
+irrationality proofs and effective Siegel integral points problems, is to control the
+possible apparent singularities of the linear differential operator L in a minimal-
+order inhomogeneous ODE L(f ) ∈ Q[x].
+
+Basic Remark 2.6.3. A simplest example is f (x) = log(1−x), with type given by
+(b1 , . . . , br ) = (1) and minimal differential operator L := (1 − x)(d/dx)2 − (d/dx),
+varying holonomically on the domain Ω = C ∖ {1} to define a rank-2 local system
+                                            
+                                    SpanC 1, log(1 − x)
+on Ω with monodromy the infinite cyclic group generated by the unipotent matrix
+                                              
+                                        1    0
+                            T :=                 .
+                                     −2πi 1
+This expresses the fact that the analytic continuation process T — the local mon-
+odromy operator — for log(1 − x) under the counterclockwise direction along a
+simple closed loop encircling the singularity {1} leaves f1 := 1 invariant but adds
+to f2 := log(1 − x) the period −2πi times f1 :
+
+                 T k (log(1 − x)) = log(1 − x) − 2πik,         T k (1) = 1.
+This holonomic example is furthermore recognized as a case of the holonomicity
+criterion Corollary 2.6.1, for instance with the multivalent choice φ(z) := 1 − e−Rz
+for any R > e, or the multivalent choice φ(z) := λ(z) with |φ′ (0)| = 16 > e, or the
+univalent choice φ(z) := 4z/(1 + z)2 with |φ′ (0)| = 4 > e.
+   In Theorem 2.5.1, the denominators type is captured by the 2 × 1 matrix b =
+(0, 1)t , with τ (b) = (1 · 0 + 3 · 1)/22 = 3/4. For the choice φ(z) := 4z/(1 + z)2 ,
+the holonomy quotient is log 4/(log 4 − 3/4) ≈ 2.1787, an upper bound on the
+dimension m = 2 of this local system.                                             △
+
+   In § 11, we will make a thorough study of Zagier’s holonomic functions [Zag09]
+that endow the numbers ζ(2) and L(2, χ−3 ) similarly as periods in a much more
+complicated local system spread over the domain Ω = C ∖ {0, 1/9, 1} ∼         = H/Γ0 (6).
+For this local system, which emerged from analyzing the form of the recursion
+from Apéry’s ζ(2) irrationality proof [Ape79, Coh78, vdP79] and is based on the
+theory of Eichler integrals, we will now have the main integrality type xn /[1, . . . , n]2 .
+We will then reduce the Q-linear independence problem of 1, ζ(2), L(2, χ−3 ) to
+a Diophantine analysis problem on the nonexistence of a G-function of the type
+xn /[1, . . . , n]2 and with certain analytic properties: specifically, our task becomes
+to prove that Zagier’s local system cannot contain a nonzero QJxK element which
+is regular — overconvergent — at the singularities {0, 1/9}.
+                   THE LINEAR INDEPENDENCE OF 1, ζ(2), AND L(2, χ−3 )                              19
+
+
+    A direct application of (2.5.4), see § 2.11 further down in this section, suffices
+for proving the irrationality of the mixed period
+                                  log 3
+                    L(2, χ−3 ) − π √ = L(2, χ−3 ) − L(1, χ−3 ) log 3.
+                                  3 3
+(Another irrationality result for a√mixed period is √ Beukers’s proof [Beu87, Thm 4]
+using modular forms that ζ(3) − 5 5 L(3, χ5 ) ∈  / Q( 5).) For the irrationality proof
+of the pure L(2, χ−3 ), as discussed in § 2.3, we need an even finer result than this to
+also take into account the integrals of the functions. These more elaborate versions
+of Theorem 2.5.1 (including Theorems 6.0.2, 7.0.1, 7.1.6, and 7.1.13) are deferred to
+§ 6 and § 7 below where they are proved. The particular application to Theorem A
+is fairly delicate, and among the many local systems generating ζ(2) and L(2, χ−3 )
+among their holonomic coefficients, the choice that ends up working for us is highly
+reducible (although with nonsolvable monodromy) and involves integrations that
+lead to denominators essentially8 of the form n[1, . . . , 2n]2 .
+2.7. Univalent holonomy bounds and an arithmetic characterization of
+the logarithm. We now consider the specialization of Theorem 2.5.1 to the set-
+ting where the map φ is univalent. We remark that although, for general φ, we
+have various improvements of Theorem 2.5.1, such as Theorems 7.1.6 and 7.6.4
+(assuming e in loc. cit. is 0), in the case of univalent φ, all these reduce to the
+same Theorem 2.7.1 below.
+   For Ω ⊂ C a contractible domain containing 0, the Riemann mapping theorem
+                                         ≃
+supplies a biholomorphic map φ : D −     → Ω with φ(0) = 0, which by Schwarz’s
+lemma is uniquely defined up to pre-composing by a circle rotation. That makes
+the absolute value |φ′ (0)| ∈ (0, ∞] well-defined; we denote it by ρ(Ω, 0) and call
+it the conformal mapping radius of the pointed contractible domain (Ω, 0). The
+holomorphic mapping φ : D → C is said to be univalent if it is biholomorphic onto
+its image, or equivalently, if φ : D ,→ C is injective.
+Theorem 2.7.1 (Univalent holonomy bound). Under the notations and assump-
+tions of Theorem 2.5.1, consider Ω ⊂ C a contractible domain with 0 ∈ Ω and
+having a conformal mapping radius ρ(Ω, 0) > eτ (b) . For any m-tuple of Q(x)-
+linearly independent formal functions of the type (2.5.3) and meromorphic in Ω,
+the following holonomy bound holds:
+                                              log ρ(Ω, 0)
+                                    m≤                        .
+                                          log ρ(Ω, 0) − τ (b)
+Proof. This follows directly from Theorem 2.5.1. The point to observe is that the
+Bost–Charles double integral term satisfies the inequality
+              ZZ
+                    log |φ(z) − φ(w)| µHaar (z)µHaar (w) ≥ log |φ′ (0)|,
+                     T2
+with equality if and only if φ : D ,→ C is univalent on the open disc. To see this,
+simply observe that the univalence is equivalent to having the bivariate holomorphic
+function
+                    φ(z) − φ(w)
+                                 = φ′ (0) + O (|z| + |w|) ∈ O(D2 )
+                       z−w
+   8More precisely, of the form n[1, . . . , 2n + 3]2 , but this can more or less be treated as having
+the shape n[1, . . . , 2n]2 , by Remark 6.0.12.
+20                      F. CALEGARI, V. DIMITROV, AND Y. TANG
+
+
+to be nonvanishing throughout the unit polydisc. Hence the function
+                                      φ(z) − φ(w)
+                 G(z, w) := log                   : D2 → R ∪ {−∞}
+                                         z−w
+is plurisubharmonic, and harmonic if and only if φ is univalent. Both claims now
+follow upon remarking that G(0, 0) = log |φ′ (0)| while
+     ZZ                                ZZ
+          G(z, w) µHaar (z)µHaar (w) =     log |φ(z) − φ(w)| µHaar (z)µHaar (w),
+       T2                                        T2
+                                      1
+                        RR
+by the basic integral    T2
+                              log   |z−w|   µHaar (z)µHaar (w) = 0.                   □
+   We note the following application of Theorem 2.7.1 to the logarithm function,
+which is the example of Basic Remark 2.6.3.
+                                        P∞
+Theorem 2.7.2. Suppose f (x) = n=0 an xn ∈ QJxK is a power series such that:
+    (1) [1, . . . , n]an ∈ Z for all n ∈ N.
+    (2) f (x) is holomorphic on C ∖ [1, ∞).
+Then
+                              f (x) = Q0 (x) + Q1 (x) log(1 − x)
+                                                       
+                                                    1
+for some rational functions Q0 , Q1 ∈ Q x,                ⊂ Q(x).
+                                                 1−x
+   We view Theorem 2.7.2 as an arithmetic characterization of the logarithm func-
+tion.
+Proof. We consider the contractible domain Ω := C ∖ [1, ∞), of conformal map-
+ping radius ρ(Ω, 0) = 4 with the Riemann map φ(z) = 4z/(1 + z)2 . Applying
+Theorem 2.7.1 with m = 3, r = 1, and b = (0, 1, 1)t with τ (b) = 8/9, the numerol-
+ogy
+                               log 4
+                                        = 2.787050 . . . < 3                    (2.7.3)
+                            log 4 − 8/9
+proves that there is no third such function Q(x)-linearly independent from the two
+known examples f1 = 1 and f2 = log(1 − x) for the type (2.6.2) with (b1 , . . . , br ) =
+(1) and analytic on Ω = C ∖ [1, ∞). This means that all such examples are of the
+form Q0 (x) + Q1 (x) log(1 − x) with Q0 (x), Q1 (x) ∈ Q(x).                            
+   At this point, we know that f (x) is regular (holomorphic) on C ∖ [1, ∞) ∩ Q ,
+and that every point x ̸= 1 in C is at worst a meromorphic pole of f (x). It remains
+to prove two things:
+                                                   h           i
+     (i) Q0 (x) and Q1 (x) are from the subring Q x, x1 , 1−x1
+                                                                 of Q(x).
+   (ii) It is impossible to have Q0 (x), Q1 (x) ∈ Q[x, 1/x] without having both
+        Q0 (x), Q1 (x) ∈ Q[x].
+Indeed, (ii) gives what we want assuming (i) and upon changing f (x) to (1−x)k f (x)
+with a sufficiently high power k ∈ N to clear the (1 − x) denominators from Q0 (x)
+and Q1 (x).
+   We first prove (ii). Suppose Q0 (x) and Q1 (x) are not both in Q[x]. If
+                               Q1 (x) ∈ Q[x] ⊂ (1/x)Q[x],
+then Q1 (x) log(1−x) is holomorphic at x = 0, but then Q0 (x) = f (x)−Q1 (x) log(1−
+x) is also holomorphic at x = 0 and then Q0 (x) ∈ Q[x]. Hence we may assume
+that Q1 (x) ∈ Q[x, 1/x]∖Q[x]. After multiplying f (x) by the correct power of x and
+

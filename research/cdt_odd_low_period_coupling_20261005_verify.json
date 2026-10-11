@@ -1,0 +1,945 @@
+{
+  "status": "exact_low_period_coupling_checks_passed",
+  "fixed_check_count": 228,
+  "prefix_length": 36,
+  "checks": [
+    {
+      "name": "chi_even_and_mean_zero",
+      "passed": true
+    },
+    {
+      "name": "E2_chi_constant",
+      "passed": true
+    },
+    {
+      "name": "E4_chi_constant",
+      "passed": true
+    },
+    {
+      "name": "L_chi_minus1",
+      "passed": true
+    },
+    {
+      "name": "L_chi_minus3",
+      "passed": true
+    },
+    {
+      "name": "gauss_sum_square",
+      "passed": true
+    },
+    {
+      "name": "G_actual_reciprocal",
+      "passed": true
+    },
+    {
+      "name": "half_kernel_reciprocal",
+      "passed": true
+    },
+    {
+      "name": "half_kernel_oldform_identity",
+      "passed": true
+    },
+    {
+      "name": "level10_weight4_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight4_square_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight4_eigen1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight4_square_eigen1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight2_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight2_square_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight2_eigen1",
+      "passed": true
+    },
+    {
+      "name": "level10_weight2_square_eigen1",
+      "passed": true
+    },
+    {
+      "name": "level10_Lminus1",
+      "passed": true
+    },
+    {
+      "name": "level10_Lminus2",
+      "passed": true
+    },
+    {
+      "name": "level10_Lplus2",
+      "passed": true
+    },
+    {
+      "name": "level10_Lminus3",
+      "passed": true
+    },
+    {
+      "name": "level10_Frcke_minus_period_polynomial",
+      "passed": true
+    },
+    {
+      "name": "level10_Frcke_plus_period_polynomial",
+      "passed": true
+    },
+    {
+      "name": "level10_Bminus_L1",
+      "passed": true
+    },
+    {
+      "name": "level10_Bplus_L1",
+      "passed": true
+    },
+    {
+      "name": "gamma_level_and_character",
+      "passed": true
+    },
+    {
+      "name": "sigma_trace_and_square",
+      "passed": true
+    },
+    {
+      "name": "sigma_actual_shifted_fricke",
+      "passed": true
+    },
+    {
+      "name": "sigma_gauge_factor",
+      "passed": true
+    },
+    {
+      "name": "D_cusp_zero",
+      "passed": true
+    },
+    {
+      "name": "D_cusp_antisymmetric",
+      "passed": true
+    },
+    {
+      "name": "D_fourier_decomposition_at_all_primitive13_roots",
+      "passed": true
+    },
+    {
+      "name": "Eg_minus3_over13",
+      "passed": true,
+      "detail": "-45/338"
+    },
+    {
+      "name": "Fg_minus3_over13",
+      "passed": true,
+      "detail": "18/4225"
+    },
+    {
+      "name": "kappa_minus3_over13",
+      "passed": true,
+      "detail": "-6/65"
+    },
+    {
+      "name": "f_actual_kernel_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_3",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_3",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_4",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_4",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_5",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_5",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_6",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_6",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_7",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_7",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_8",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_8",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_9",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_9",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_10",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_10",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_12",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_12",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_13",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_13",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_14",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_14",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_15",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_15",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_16",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_16",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_17",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_17",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_18",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_18",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_19",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_19",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_20",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_20",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_21",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_21",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_22",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_22",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_23",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_23",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_24",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_24",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_25",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_25",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_26",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_26",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_27",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_27",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_28",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_28",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_29",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_29",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_30",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_30",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_31",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_31",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_32",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_32",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_33",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_33",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_34",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_34",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_35",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_35",
+      "passed": true
+    },
+    {
+      "name": "f_actual_kernel_coefficient_36",
+      "passed": true
+    },
+    {
+      "name": "f_complete_safe_integer_coefficient_36",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_1",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_2",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_3",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_3",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_3",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_4",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_4",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_4",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_5",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_5",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_5",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_6",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_6",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_6",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_7",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_7",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_7",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_8",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_8",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_8",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_9",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_9",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_9",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_10",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_10",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_10",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_11",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_12",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_12",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_12",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_13",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_13",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_13",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_14",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_14",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_14",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_15",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_15",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_15",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_16",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_16",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_16",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_17",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_17",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_17",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_18",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_18",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_18",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_19",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_19",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_19",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_20",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_20",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_20",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_21",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_21",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_21",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_22",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_22",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_22",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_23",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_23",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_23",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_24",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_24",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_24",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_25",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_25",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_25",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_26",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_26",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_26",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_27",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_27",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_27",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_28",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_28",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_28",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_29",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_29",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_29",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_30",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_30",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_30",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_31",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_31",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_31",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_32",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_32",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_32",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_33",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_33",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_33",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_34",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_34",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_34",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_35",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_35",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_35",
+      "passed": true
+    },
+    {
+      "name": "g_actual_kernel_coefficient_36",
+      "passed": true
+    },
+    {
+      "name": "g_complete_safe_integer_coefficient_36",
+      "passed": true
+    },
+    {
+      "name": "true_ramanujan13_trace_coefficient_36",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_weight4_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_weight4_eigen1",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_weight2_eigen-1",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_weight2_eigen1",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_two_middle_zeros",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_Lminus3",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_L1",
+      "passed": true
+    },
+    {
+      "name": "independent_level20_plus_period",
+      "passed": true
+    },
+    {
+      "name": "zeta3_source_constant_zero",
+      "passed": true
+    },
+    {
+      "name": "zeta3_source_fricke_anti",
+      "passed": true
+    },
+    {
+      "name": "zeta3_source_middle_zero",
+      "passed": true
+    },
+    {
+      "name": "zeta3_source_L3_multiplier",
+      "passed": true
+    },
+    {
+      "name": "zeta3_source_L1_multiplier",
+      "passed": true
+    }
+  ],
+  "exact_cusp": {
+    "h": "-3/13",
+    "effective_fricke_level": 1690,
+    "Eg": "-45/338",
+    "Fg": "18/4225",
+    "kappa": "-6/65"
+  },
+  "safe_full_prefix_models": {
+    "f": "4 L_N^3 O_Q(sqrt5)",
+    "g": "2 L_N O_Q(sqrt5)"
+  },
+  "analytic_proofs_supplied_by_report": [
+    "true Fricke period polynomials",
+    "radial cusp limits and root reciprocal identities",
+    "Bernoulli evaluation and sigma regular projection"
+  ],
+  "not_proved": [
+    "new numerical irrationality or linear independence",
+    "a simultaneous admissible CDT cover at level 10",
+    "optimal full-scale denominators or content",
+    "a strict arithmetic holonomy contradiction",
+    "Lean formal verification"
+  ]
+}

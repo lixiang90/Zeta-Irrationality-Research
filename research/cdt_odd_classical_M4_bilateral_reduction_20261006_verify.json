@@ -1,0 +1,88 @@
+{
+  "purpose": "NEW fixed symbolic normalization certificate; no numerical fitting or research search",
+  "execution_history": "First execution; all checks passed. No frozen or peer producer executed/imported.",
+  "scope_exclusions": [
+    "No verification by finite checks of analytic Gamma bounds or full Fourier theorem",
+    "No arithmetic integrality, leaf, Smith gain, or irrationality theorem"
+  ],
+  "count": 19,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "cos4 fixed fourth Taylor",
+      "passed": true
+    },
+    {
+      "name": "sin4 fixed fourth Taylor",
+      "passed": true
+    },
+    {
+      "name": "C derivative 0",
+      "passed": true
+    },
+    {
+      "name": "C derivative 1",
+      "passed": true
+    },
+    {
+      "name": "C derivative 2",
+      "passed": true
+    },
+    {
+      "name": "C derivative 3",
+      "passed": true
+    },
+    {
+      "name": "C derivative 4",
+      "passed": true
+    },
+    {
+      "name": "three-mode order3 -1",
+      "passed": true
+    },
+    {
+      "name": "three-mode order4 -1",
+      "passed": true
+    },
+    {
+      "name": "three-mode order3 0",
+      "passed": true
+    },
+    {
+      "name": "three-mode order4 0",
+      "passed": true
+    },
+    {
+      "name": "three-mode order3 1",
+      "passed": true
+    },
+    {
+      "name": "three-mode order4 1",
+      "passed": true
+    },
+    {
+      "name": "M3 exact normalization",
+      "passed": true
+    },
+    {
+      "name": "M4 exact normalization",
+      "passed": true
+    },
+    {
+      "name": "M3 L3 multiplier",
+      "passed": true
+    },
+    {
+      "name": "Gamma H coefficient cancellation",
+      "passed": true
+    },
+    {
+      "name": "theta half fourth difference",
+      "passed": true
+    },
+    {
+      "name": "B16 constant",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-06",
+  "scope": "NEW exact complete cusp basis/W decomposition/integral q model, eta anti normalization by Sturm, positive-source ratio identities, full two-block reflection family. No period independence, third zero generator, or numerical irrationality theorem.",
+  "execution_history": "First execution passed47 checks; second replaces two dimension bookkeeping checks by actual Fricke eigenspace rank checks and passes47. No old or peer producer import/execution; no word/parameter/prime scan.",
+  "passed": 47,
+  "checks": [
+    {
+      "name": "full finite cusp polynomial degree9",
+      "passed": true
+    },
+    {
+      "name": "nine distinct finite cusps",
+      "passed": true
+    },
+    {
+      "name": "Fricke cusp polynomial exact",
+      "passed": true
+    },
+    {
+      "name": "C0 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C0 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C1 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C1 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C2 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C2 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C3 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C3 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C4 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C4 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C5 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C5 diamond character",
+      "passed": true
+    },
+    {
+      "name": "C6 exact W coefficient",
+      "passed": true
+    },
+    {
+      "name": "C6 diamond character",
+      "passed": true
+    },
+    {
+      "name": "trivial cusp anti dimension1",
+      "passed": true
+    },
+    {
+      "name": "chi cusp anti dimension2",
+      "passed": true
+    },
+    {
+      "name": "all fixed q u equation",
+      "passed": true
+    },
+    {
+      "name": "16C0 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C0 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C1 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C1 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C2 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C2 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C3 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C3 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C4 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C4 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C5 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C5 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "16C6 fixed coefficients integral",
+      "passed": true
+    },
+    {
+      "name": "16C6 leading coefficient -1",
+      "passed": true
+    },
+    {
+      "name": "full seven basis independent fixed jets",
+      "passed": true
+    },
+    {
+      "name": "anti trivial eta identity Sturm coefficients1..8",
+      "passed": true
+    },
+    {
+      "name": "anti trivial eta identity extra coefficients9..11",
+      "passed": true
+    },
+    {
+      "name": "positive chi source ratio exact",
+      "passed": true
+    },
+    {
+      "name": "ratio lower endpoint3r",
+      "passed": true
+    },
+    {
+      "name": "ratio upper endpoint4+r",
+      "passed": true
+    },
+    {
+      "name": "ratio derivative exact negative on1<x<r",
+      "passed": true
+    },
+    {
+      "name": "two block full scalar factor",
+      "passed": true
+    },
+    {
+      "name": "extra root numerator positive branch1",
+      "passed": true
+    },
+    {
+      "name": "extra root strictly less denominator branch1",
+      "passed": true
+    },
+    {
+      "name": "extra root numerator positive branch-1",
+      "passed": true
+    },
+    {
+      "name": "extra root strictly less denominator branch-1",
+      "passed": true
+    },
+    {
+      "name": "n0 only T conjugacy",
+      "passed": true
+    }
+  ],
+  "C16_coefficients1_to11": {
+    "0": [
+      -1,
+      4,
+      -9,
+      12,
+      -8,
+      0,
+      10,
+      -16,
+      27,
+      -40,
+      40
+    ],
+    "1": [
+      -1,
+      2,
+      -1,
+      -4,
+      10,
+      -6,
+      0,
+      8,
+      -9,
+      12,
+      -28
+    ],
+    "2": [
+      -1,
+      0,
+      3,
+      -4,
+      0,
+      12,
+      -6,
+      0,
+      3,
+      -8,
+      0
+    ],
+    "3": [
+      -1,
+      -2,
+      3,
+      4,
+      -6,
+      6,
+      16,
+      -8,
+      -9,
+      -12,
+      -12
+    ],
+    "4": [
+      -1,
+      -4,
+      -1,
+      12,
+      8,
+      -8,
+      10,
+      16,
+      -21,
+      -40,
+      -40
+    ],
+    "5": [
+      -1,
+      -6,
+      -9,
+      12,
+      42,
+      18,
+      -32,
+      -24,
+      -9,
+      -36,
+      -60
+    ],
+    "6": [
+      -1,
+      -8,
+      -21,
+      -4,
+      80,
+      132,
+      -6,
+      -224,
+      -237,
+      -8,
+      240
+    ]
+  },
+  "anti_trivial_eta_coefficients1_to8": [
+    "1",
+    "-6",
+    "-3",
+    "12",
+    "6",
+    "18",
+    "-16",
+    "-24"
+  ],
+  "two_block_scalar": "7728*m**2*n**3 - 168*m**2*n + 4416*m*n**3 + 1932*m*n**2 - 96*m*n + 644*n**3 + 552*n**2 + 147*n",
+  "period_ratio_interval": [
+    "3*sqrt(3)",
+    "4+sqrt(3)"
+  ]
+}

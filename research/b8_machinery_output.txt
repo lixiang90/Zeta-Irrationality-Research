@@ -1,0 +1,31 @@
+=== 1. 生成函数（截断 m<M 与闭式比较） ===
+conv=plus t=0.2: diff = -1.0532e-45
+conv=plus t=0.5: diff = -2.2717e-33
+conv=minus t=0.2: diff = -1.0532e-45
+conv=minus t=0.5: diff = -2.2717e-33
+
+=== 2. 差分恒等式 tau_8(P(X+1)-P(X)) = P^{(6)}(0)/720  [B_1=+1/2] ===
+deg=1: diff = 0.0
+deg=5: diff = 0.0
+deg=6: diff = 0.0
+deg=7: diff = 0.0
+deg=8: diff = 0.0
+deg=11: diff = 0.0
+
+=== 3. 分布恒等式 sum_a e^{at} F0(pt) = p^6 F0(t)  [B_1=-1/2] ===
+p=2 t=0.13: diff = -1.0196e-56
+p=2 t=0.31: diff = 0.0
+p=3 t=0.13: diff = -8.1566e-56
+p=3 t=0.31: diff = 5.2202e-54
+p=5 t=0.13: diff = -3.9152e-54
+p=5 t=0.31: diff = -3.341e-52
+p=7 t=0.13: diff = 0.0
+p=7 t=0.31: diff = -2.0046e-51
+p=11 t=0.13: diff = 1.6705e-52
+p=11 t=0.31: diff = 0.0
+
+=== 4. von Staudt 界 v_p(kappa_d) >= -1  (7<=p<=59, 5<=d<=79) ===
+违规数 = 0
+
+=== 5. 调和损失 v_p(H_j^{(7)}) >= -7*floor(log_p j)  (j<400, p-adic 赋值追踪) ===
+违规数 = 0

@@ -1,0 +1,540 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "checks": [
+    {
+      "name": "binomial_hypergeometric_2_13",
+      "passed": true,
+      "n": 2,
+      "p": 13,
+      "d": 1,
+      "m": 10,
+      "e": 1,
+      "C_mod_p": 4,
+      "argument_coefficients": [
+        1,
+        10
+      ]
+    },
+    {
+      "name": "truncated_ode_2_13",
+      "passed": true,
+      "residue_coefficients": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "preselected_unit",
+      "passed": true,
+      "C_mod_p": 4
+    },
+    {
+      "name": "binomial_hypergeometric_7_19",
+      "passed": true,
+      "n": 7,
+      "p": 19,
+      "d": 11,
+      "m": 11,
+      "e": 11,
+      "C_mod_p": 0,
+      "argument_coefficients": [
+        1,
+        7,
+        9,
+        16,
+        11,
+        16,
+        16,
+        11,
+        16,
+        9,
+        7,
+        1
+      ]
+    },
+    {
+      "name": "truncated_ode_7_19",
+      "passed": true,
+      "residue_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_reversal_7_19",
+      "passed": true,
+      "terms_mod_p": [
+        1,
+        12,
+        9,
+        3,
+        11,
+        3,
+        16,
+        8,
+        16,
+        10,
+        7,
+        18
+      ]
+    },
+    {
+      "name": "binomial_hypergeometric_23_37",
+      "passed": true,
+      "n": 23,
+      "p": 37,
+      "d": 13,
+      "m": 13,
+      "e": 13,
+      "C_mod_p": 0,
+      "argument_coefficients": [
+        1,
+        9,
+        9,
+        26,
+        34,
+        10,
+        26,
+        26,
+        10,
+        34,
+        26,
+        9,
+        9,
+        1
+      ]
+    },
+    {
+      "name": "truncated_ode_23_37",
+      "passed": true,
+      "residue_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_reversal_23_37",
+      "passed": true,
+      "terms_mod_p": [
+        1,
+        28,
+        9,
+        11,
+        34,
+        27,
+        26,
+        11,
+        10,
+        3,
+        26,
+        28,
+        9,
+        36
+      ]
+    },
+    {
+      "name": "binomial_hypergeometric_31_83",
+      "passed": true,
+      "n": 31,
+      "p": 83,
+      "d": 51,
+      "m": 51,
+      "e": 51,
+      "C_mod_p": 0,
+      "argument_coefficients": [
+        1,
+        41,
+        9,
+        11,
+        81,
+        28,
+        26,
+        63,
+        7,
+        21,
+        29,
+        68,
+        59,
+        70,
+        37,
+        75,
+        77,
+        10,
+        9,
+        75,
+        49,
+        7,
+        59,
+        23,
+        77,
+        49,
+        49,
+        77,
+        23,
+        59,
+        7,
+        49,
+        75,
+        9,
+        10,
+        77,
+        75,
+        37,
+        70,
+        59,
+        68,
+        29,
+        21,
+        7,
+        63,
+        26,
+        28,
+        81,
+        11,
+        9,
+        41,
+        1
+      ]
+    },
+    {
+      "name": "truncated_ode_31_83",
+      "passed": true,
+      "residue_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exact_reversal_31_83",
+      "passed": true,
+      "terms_mod_p": [
+        1,
+        42,
+        9,
+        72,
+        81,
+        55,
+        26,
+        20,
+        7,
+        62,
+        29,
+        15,
+        59,
+        13,
+        37,
+        8,
+        77,
+        73,
+        9,
+        8,
+        49,
+        76,
+        59,
+        60,
+        77,
+        34,
+        49,
+        6,
+        23,
+        24,
+        7,
+        34,
+        75,
+        74,
+        10,
+        6,
+        75,
+        46,
+        70,
+        24,
+        68,
+        54,
+        21,
+        76,
+        63,
+        57,
+        28,
+        2,
+        11,
+        74,
+        41,
+        82
+      ]
+    },
+    {
+      "name": "constant_difference_first_reversal",
+      "passed": true
+    },
+    {
+      "name": "nonzero_difference_degree_twelve",
+      "passed": true,
+      "formal_degree": 12,
+      "leading_coefficient": "7*(d - m)*(m + 1)"
+    },
+    {
+      "name": "constant_difference_second_reversal",
+      "passed": true
+    },
+    {
+      "name": "index_polynomial_all_values_11",
+      "passed": true,
+      "degree": 10,
+      "roots": []
+    },
+    {
+      "name": "exact_root_gcd_11",
+      "passed": true,
+      "gcd_coefficients": [
+        1
+      ]
+    },
+    {
+      "name": "nonzero_endpoint_values_11",
+      "passed": true
+    },
+    {
+      "name": "index_polynomial_all_values_19",
+      "passed": true,
+      "degree": 18,
+      "roots": [
+        7
+      ]
+    },
+    {
+      "name": "exact_root_gcd_19",
+      "passed": true,
+      "gcd_coefficients": [
+        1,
+        12
+      ]
+    },
+    {
+      "name": "nonzero_endpoint_values_19",
+      "passed": true
+    },
+    {
+      "name": "constant_term_q2_n1",
+      "passed": true,
+      "constant_term": 18
+    },
+    {
+      "name": "constant_term_q2_n2",
+      "passed": true,
+      "constant_term": 878
+    },
+    {
+      "name": "newton_scaling_minimum_seven",
+      "passed": true,
+      "newton_cube": [
+        -1,
+        7
+      ],
+      "dimension": 7,
+      "integer_interior_count_unscaled": 823543,
+      "minimum_integer_scaling": 7
+    },
+    {
+      "name": "partial_lucas_17_1_1",
+      "passed": true,
+      "p": 17,
+      "a": 1,
+      "b": 1,
+      "lhs": 9,
+      "rhs": 9
+    },
+    {
+      "name": "partial_lucas_29_1_3",
+      "passed": true,
+      "p": 29,
+      "a": 1,
+      "b": 3,
+      "lhs": 22,
+      "rhs": 22
+    },
+    {
+      "name": "counterexample_to_full_scalar_lucas",
+      "passed": true,
+      "p": 11,
+      "a": 1,
+      "b": 2,
+      "lhs": 2,
+      "rhs": 4,
+      "scope": "Rules out an all-prime scalar Lucas identity, not matrix Cartier models."
+    }
+  ],
+  "number_of_checks": 27,
+  "index_polynomials": [
+    {
+      "p": 11,
+      "coefficients_ascending_mod_p": [
+        1,
+        8,
+        10,
+        9,
+        1,
+        5,
+        8,
+        0,
+        10,
+        2,
+        6
+      ],
+      "values": [
+        1,
+        5,
+        7,
+        4,
+        9,
+        5,
+        5,
+        3,
+        5,
+        4,
+        1
+      ],
+      "roots": [],
+      "scope": "Two fixed polynomials; no asymptotic root-count inference."
+    },
+    {
+      "p": 19,
+      "coefficients_ascending_mod_p": [
+        1,
+        10,
+        1,
+        2,
+        16,
+        13,
+        1,
+        4,
+        13,
+        5,
+        6,
+        4,
+        8,
+        8,
+        15,
+        18,
+        11,
+        1,
+        13
+      ],
+      "values": [
+        1,
+        17,
+        7,
+        9,
+        2,
+        17,
+        10,
+        0,
+        6,
+        8,
+        11,
+        13,
+        6,
+        10,
+        4,
+        8,
+        13,
+        15,
+        1
+      ],
+      "roots": [
+        7
+      ],
+      "scope": "Two fixed polynomials; no asymptotic root-count inference."
+    }
+  ],
+  "withdrawn_source_not_used": {
+    "arxiv": "1601.06765",
+    "withdrawal_version": "v4",
+    "withdrawal_date": "2020-04-23",
+    "comments": "Errors in paper uncorrected. Kenneth Ward passed away June 2019",
+    "input_to_proofs": false
+  },
+  "unproved": [
+    "uniform index-root count o(p)",
+    "weighted exceptional-prime upper bound",
+    "density of higher-jet zero sets"
+  ],
+  "script_sha256": "8d3f2254265944bad91b497768cadb3cd10f7dee840090b2594e90e587cc16a0",
+  "report_sha256": "c539cc35792769f141deca440c5d47a65e745037358c6b7688cdc03e73a54157"
+}

@@ -1,0 +1,58 @@
+                  Hankel determinants of harmonic numbers and related topics
+                                                         Johann Cigler
+                                                 Fakultät für Mathematik
+                                                    Universität Wien
+                                                johann.cigler@univie.ac.at
+Abstract.
+We give an overview of known results about Hilbert matrices from the point of view of
+orthogonal polynomials and compute Hankel determinants of harmonic numbers and related
+topics.
+Introduction
+                                                     n
+                                                         1
+We consider harmonic numbers Hn                          and more generally polynomials
+                                                    k 1 k
+              n
+                    st k
+Hn (t, s)                 for some s  0. Our aim is the computation of the Hankel determinants
+             k 1 k  s  1
+
+
+det  Hi j (t, s)
+                      n
+                                 . In order to make the paper self-contained we also derive some well-
+                      i , j 0
+                                                               n
+                                    1 
+known facts about Hilbert matrices                      from the point of view of orthogonal
+                                    i  j  1 i , j  0
+polynomials.
+I want to thank Tewodros Amdeberhan and Fedor Petrov for providing answers to my
+questions on MathOverflow, Carsten Schneider for showing me how to use his summation
+package Sigma, Christian Krattenthaler for alternative proofs of (2.14) and (4.1) and Helmut
+Prodinger for reference [10].
+
+
+1. Some background material
+Let me begin with some well-known background material connected with the approach to
+Hankel determinants via orthogonal polynomials (cf. e.g. [3],[5],[6],[7]).
+
+Let  a(n)n0 be a sequence of real numbers with a (0)  1.
+
+If no Hankel determinant det(a(i  j))i, j 0 , n   , vanishes, then the monic polynomials
+                                      n
+
+
+
+
+                                                            a(0)  a(1)         a(n  1)1
+                                                                                           
+                                                            a(1)  a(2)         a(n)    x
+                                        1
+                      p(n, x)                         det  a(2) a(3)        a(n  1) x2              (1.1)
+                                det(a(i  j ))in,j10                                      
+                                                                                       
+                                                            a(n) a(n  1)    a(2n  1) xn 
+                                                           
+                                                              1
+
