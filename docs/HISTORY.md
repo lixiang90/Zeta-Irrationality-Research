@@ -15,6 +15,7 @@
 | AP指定组合首证书（262） | 逐类换基障碍、自然费用32/27、全图λ<10/9、无穷远全叶log² | 自然模型失败；仅次数分布仍不足；需要实际联合整数格或新周期源 |
 | 实际联合评价格（263） | 本period的sharp degree4p、全块support、明确Smith/Bockstein及balanced整jet指数改善 | 真正超出固定换基；未付正确leading短向量与同metric足够净预算，仅给剩余一轮裁决 |
 | 净预算裁决（264） | 完整单变量指数下界331/84、balanced消去核保留信用、原monomial box桥 | index-only BC入口关闭；Cauchy高度保证仍不足，原两轮窗口结束；非intrinsic/全部tensor排除 |
+| 正式来源选择（265） | Catalan偶滤波自然清整的正净指数、wheel插入收敛/系数障碍、M₀,₈固定3:1投影 | 尚无充分预算；下一步只核完整共同系数向量，不恢复旧参数优化 |
 
 ## 阅读顺序
 
@@ -25,6 +26,7 @@
 5. [第260轮全局复盘](../research/research_global_review_round260_20261010.md)、[标准入口停止证书](../research/refined_budget_gate_round261_20261010.md)及[第262轮续研结算](../research/research_next_route_progress_round262_20261012.md)：这一阶段的资源决定。
 6. [第263轮提前正式复盘](../research/research_global_review_round263_20261013.md)及[当前STATE](../research/STATE.md)：持久目标、当前窗口及恢复入口。
 7. [第264轮费用证明](../research/joint_budget_bridge_round264.md)及[轮次结算](../research/research_round264_report_20261013.md)：明确到期窗口的停止范围和剩余费用。
+8. [第265轮正式来源选择](../research/source_selection_round265.md)：真实构造、拒绝范围与下一项有期限的来源核查。
 
 ## 当前门槛
 
