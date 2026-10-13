@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第265轮（2026-10-13）：完成正式来源比较，保存自然Catalan滤波、wheel插入和免费Wronskian转接的限定障碍；选定M₀,₈的固定3:1共同系数向量作下一轮来源核查，尚未通过数值净预算准入。文献和形式化资产继续保留。
+研究记录更新至第266轮（2026-10-13）：在原canonical分量识别下建立M₀,₈完整两坐标的Barnes全素数幂安全界，记录原下降式归一化纠错；补齐群的全部幂次仅增加次线性信用，仍未通过数值净预算。限期来源核查已结束，下一轮作宏观准入复盘。文献和形式化资产继续保留。
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第265轮正式来源选择](research/source_selection_round265.md) · [第264轮结算](research/research_round264_report_20261013.md) |
+| 最新研究结算与宏观选择 | [第266轮完整向量核查](research/m08_target_vector_round266.md) · [第265轮正式来源选择](research/source_selection_round265.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览
@@ -83,7 +83,7 @@ lake env lean scripts/FormalizationAudit.lean
 
 当前目标、稳定窗口、停止范围与复盘计数只在 `research/program.json` 维护，STATE由工具生成。上下文压缩后先读STATE，再沿命题证据恢复；组织和局部no-go不能替代新的数值定理。
 
-263–264实际评价格窗口已经结束，未否定intrinsic jump费用或全部联合格方法。265重新比较最终接口，选择M₀,₈中对指定3ζ(3)+ζ(5)的完整primitive pair核查；不借原积分的快衰减、正性或ζ5单栏实验清整，见[最新选择](research/source_selection_round265.md)。
+263–264实际评价格窗口已经结束。265选择M₀,₈中对指定3ζ(3)+ζ(5)的完整primitive pair核查；266给直接安全模型并明确其费用不足，结束这一轮来源核查。没有证明actual primitive费用下界，重开仍须有改变完整预算的新内容机制，见[最新结算](research/m08_target_vector_round266.md)。
 
 ## 来源与许可
 

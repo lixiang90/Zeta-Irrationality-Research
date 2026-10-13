@@ -16,6 +16,7 @@
 | 实际联合评价格（263） | 本period的sharp degree4p、全块support、明确Smith/Bockstein及balanced整jet指数改善 | 真正超出固定换基；未付正确leading短向量与同metric足够净预算，仅给剩余一轮裁决 |
 | 净预算裁决（264） | 完整单变量指数下界331/84、balanced消去核保留信用、原monomial box桥 | index-only BC入口关闭；Cauchy高度保证仍不足，原两轮窗口结束；非intrinsic/全部tensor排除 |
 | 正式来源选择（265） | Catalan偶滤波自然清整的正净指数、wheel插入收敛/系数障碍、M₀,₈固定3:1投影 | 尚无充分预算；下一步只核完整共同系数向量，不恢复旧参数优化 |
+| 完整向量来源核查（266） | 直接Barnes全素数幂安全模型、下降factor2/Mellin符号纠错、群全幂信用仅o(n) | 清整上界仍不足；一轮窗口结束，不把upper失败冒充本原费用lower |
 
 ## 阅读顺序
 
@@ -27,6 +28,7 @@
 6. [第263轮提前正式复盘](../research/research_global_review_round263_20261013.md)及[当前STATE](../research/STATE.md)：持久目标、当前窗口及恢复入口。
 7. [第264轮费用证明](../research/joint_budget_bridge_round264.md)及[轮次结算](../research/research_round264_report_20261013.md)：明确到期窗口的停止范围和剩余费用。
 8. [第265轮正式来源选择](../research/source_selection_round265.md)：真实构造、拒绝范围与下一项有期限的来源核查。
+9. [第266轮完整向量模型与结算](../research/m08_target_vector_round266.md)：原文归一化、全部素数幂及真正本原倍率的适用范围。
 
 ## 当前门槛
 

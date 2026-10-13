@@ -22,6 +22,7 @@
 | 实际联合评价格与宏观goal（263） | [正式复盘](research_global_review_round263_20261013.md)、[support/Frobenius](joint_evaluation_support_round263_20261013.md)、[完整Smith与balanced格](joint_evaluation_lattice_round263_20261013.md) |
 | 完整index下界与leading-box裁决（264） | [费用证明](joint_budget_bridge_round264.md)、[轮次结算](research_round264_report_20261013.md) |
 | 正式来源比较与M₀,₈共同向量（265） | [正式选择及首证书](source_selection_round265.md)、[266来源核查](m08_target_vector_charter_round266_20261013.md) |
+| M₀,₈完整安全模型及源纠错（266） | [数学模型与结算](m08_target_vector_round266.md)、[267宏观准入任务](source_gate_charter_round267_20261013.md) |
 
 ## 数据与历史记录
 

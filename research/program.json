@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 6,
+  "revision": 7,
   "updated_at": "2026-10-13",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,37 +22,40 @@
     ]
   },
   "review": {
-    "last_completed_round": 265,
+    "last_completed_round": 266,
     "last_global_review_round": 265,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 5,
+    "rounds_without_feasibility_progress": 6,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/source_selection_round265.md"
   },
   "current_task": {
-    "id": "round266_m08_target_vector_source",
-    "round": 266,
+    "id": "round267_global_admission_review",
+    "round": 267,
     "status": "in_progress",
-    "route_id": "m08_target_vector",
-    "entry": "research/m08_target_vector_charter_round266_20261013.md",
-    "deliverable": "建立固定M₀,₈ canonical完整目标pair的真实模型，裁决全素数幂共同内容是否有足够新机制；不足即结束这一轮源核查。",
-    "next_decisive_question": "Σ₇ factorial symmetry及原Barnes/下降定义能否在完整(Q,P+3P̂)上给实质足够的新内容？",
-    "pass_condition": "完整两坐标、全部prime powers及真正primitive倍率的收益有望严格跨同对象实际衰减；作者数值常数另须认证后才准入实施。",
-    "stop_condition": "最多一轮；只有旧单栏upper、有限头、局部gcd或未量化内容即结束。不扩大参数、orbit/prime扫描或改名延续。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round267_20261013.md",
+    "deliverable": "主动提前正式比较真实新机制、完整指定数值出口与机会成本，作有证据且有期限的投入决定。",
+    "next_decisive_question": "哪些真正不同构造能改变指定数值投影、全部有理反证或同对象足够净预算，且超出已闭实现？",
+    "pass_condition": "一手身份或自证全尺度机制明确数值、完整period向量、全处/primitive费用和严格解析门槛，才登记有界实施；没有预先准入新来源。",
+    "stop_condition": "一轮完成正式决策；不扩已闭参数、群/prime扫描或给旧数学窗口改名。已知推论和候选列表不替数值目标。",
     "must_read": [
+      "research/m08_target_vector_round266.md",
       "research/source_selection_round265.md",
-      "literature/brown_zudilin_cellular.pdf"
+      "docs/RESEARCH_DIRECTIONS.md",
+      "literature/brown2026_mellin_transfinite_diameter_arxiv2604_20741v1_20261006.pdf",
+      "literature/fischler2020_dirichlet_irrationality.pdf"
     ],
     "expected_outputs": [
-      "research/m08_target_vector_round266.md"
+      "research/global_admission_review_round267.md"
     ],
     "next_actions": [
-      "从原double-Barnes和下降积分固定Q、P、P̂，核同一归一化完整安全整数pair；实验式(28)不用作定理。",
-      "分析Σ₇对完整R=P+3P̂的全素数幂内容与δ=d/gcd(dR,dQ)，将同对象费用对上实际E。",
-      "若没有足以改变约18.05n定位缺口的实质机制，完成停止证书；如有则另付严格衰减/非零和新颖性核查，登记有界实施。"
+      "按完整最终接口账复盘全路线；先核Brown2026定量Mellin与Dirichlet/超几何来源能否隔离指定目标。",
+      "只读足以改变决策的一手构造/定理和全尺度费用，不把ambient维数、已知推论或更多局部界作数值准入。",
+      "作明确继续/停止/转向与期限决定；保留停滞计数与各已闭数学source重开证据门槛。"
     ],
-    "window_id": "m08_vector_source_verification_266"
+    "window_id": "global_source_gate_267"
   },
   "routes": [
     {
@@ -173,32 +176,35 @@
     },
     {
       "id": "new_period_source",
-      "name": "新周期来源的正式宏观筛选（265已完成）",
-      "status": "unadmitted_candidates",
+      "name": "未准入来源的定期宏观比较",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
         "research/next_route_carrier_20261012.md",
         "research/research_round264_report_20261013.md",
         "research/source_selection_charter_round265_20261013.md",
-        "research/source_selection_round265.md"
+        "research/source_selection_round265.md",
+        "research/m08_target_vector_round266.md",
+        "research/source_gate_charter_round267_20261013.md"
       ],
-      "gap": "Catalan自然偶滤波实际增长；wheel自然插入投影/收敛失败；mixed免费Wronskian/同号正矩转接无效。未有候选通过数值净预算；选择不同M₀,₈来源的一轮核查。",
-      "reopen_condition": "新的具体来源改变完整目标接口及实际净预算；不能给同一筛选或已闭窗口改名续期。"
+      "gap": "266未给充分数值预算。267主动提前比较真正不同来源的指定出口、全部反证及同对象成本；不是恢复已闭数学实现。",
+      "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
       "id": "m08_target_vector",
       "name": "M₀,₈固定3:1完整向量（仅来源核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "X=3ζ(3)+ζ(5)无理",
       "source_key": "bz_m08_fixed_a_8_16_10_15_12_16_18_13_X31",
       "evidence": [
         "research/source_selection_round265.md",
         "research/m08_target_vector_charter_round266_20261013.md",
-        "literature/brown_zudilin_cellular.pdf"
+        "literature/brown_zudilin_cellular.pdf",
+        "research/m08_target_vector_round266.md"
       ],
-      "gap": "共同Q的目标投影已核；canonical完整pair的全素数幂内容未付，作者报告的慢衰减及约18.05n定位缺口尚未独立认证。未准入数值实施。",
-      "reopen_condition": "266最多一轮来源验证；仅完整pair的新实质内容及足够同对象净预算可登记后续有界实施，不扩参数/orbit或借K5模型。"
+      "gap": "266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。",
+      "reopen_condition": "同一完整canonical pair的新全尺度或同一无界子列内容，连同实际E严格衰减/非零，足以改变完整预算；补高次幂、固定群重排、局部头或任务改名不够。"
     }
   ],
   "claims": [
@@ -593,6 +599,179 @@
         }
       ],
       "audit": "待266完整向量模型、同对象预算与独立复核；未准入数值实施。",
+      "status": "superseded",
+      "replaced_by": "c266_safe_pair",
+      "correction": "266已给来源graded识别下的完整安全模型、下降源纠错和群全幂边界；没有充分primitive内容或数值净预算。原足够收益首问题未被升级为定理，一轮核查停止。"
+    },
+    {
+      "id": "c266_normalization",
+      "type": "reviewed_written_structure",
+      "statement": "原PDF14(22)与canonical I″及J3定义有factor2冲突；PDF11双Mellin log表达须乘(−1)^(α+β−2)。",
+      "scope": "仅原v3所述公式的归一化/转录纠错；匹配ζ3系数不证明修正后canonical常数桥，原PDF保留不覆盖。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§1",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_barnes_pf",
+      "type": "reviewed_written_structure",
+      "statement": "实际固定族double-Barnes核(2)及PF系数d15n^(2−α)d16n^(2−β)c∈Z覆盖全部素数幂。",
+      "scope": "固定非对称a、原尺度与明确两条Barnes线；不覆盖全部orbit或全部M₀,₈族。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§2/(2)–(4)",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_finite_tail",
+      "type": "reviewed_written_structure",
+      "statement": "基本Barnes积分weight0、单独weight2分量分别由d(k+ℓ)^(α+β+1)、d(k+ℓ)^(α+β−1)清整。",
+      "scope": "明确半域合并、Mellin符号和同权MZV分量；不是用未知跨权数值独立性识别canonical数值。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§3/(5)–(7)",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_safe_pair",
+      "type": "conditional",
+      "statement": "采用原(4)同一canonical graded系数识别，则4d32n^5(Q,P+3P̂)∈Z²；安全倍率率160。",
+      "scope": "原canonical分量识别为来源输入，本轮未从头重证非对称族全cohomology/额外权抵消；安全upper不足不证明actual primitive lower。",
+      "dependencies": [
+        "c265_m08_projection",
+        "c266_barnes_pf",
+        "c266_finite_tail"
+      ],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§§2–3/(8)–(9)",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。 Barnes/PF/有限尾由descent与symmetry独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_descent_coeff",
+      "type": "reviewed_written_structure",
+      "statement": "固定显式J3下降积分有d29n³B_k∈Z，且ΣC_kA_k=Q。",
+      "scope": "各18n≤k≤26n的明确定义积分；尚不单凭系数匹配认领canonical P̂=½ΣC_kB_k。",
+      "dependencies": [
+        "c266_normalization"
+      ],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§§1、4",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。 下降留数由barnes与symmetry独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_descent_canonical",
+      "type": "conditional",
+      "statement": "若补证修正后的伴随cycle常数桥，则2d29n³P̂∈Z。",
+      "scope": "所需常数项桥未独证；不拿这一强化下降界代替已付的直接Barnes模型。",
+      "dependencies": [
+        "c266_descent_coeff"
+      ],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§4末",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_group_full_power",
+      "type": "reviewed_written_structure",
+      "statement": "固定Σ7 factorial信用的精确全幂模型max在幂次和外；补原Φ遗漏小素数仅增o(n)。",
+      "scope": "明确Hamilton路径floor及固定F；只拒绝免费全幂线性改进，不给target primitive lower。完整pair移交须先有各orbit完整清整，固定代表安全界不能直接移交。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§5/(10)–(11)",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。 路径模型由barnes与descent独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c266_primitive",
+      "type": "reviewed_written_structure",
+      "statement": "v_pδ=−min(v_pQ,v_pR)；同一无界子列的实际非零与δ|E|→0足够反证固定X有理。",
+      "scope": "完整canonical pair；严格liminf费用<b只为充分条件，指数等号可能有次指数收益；有理假设下的条件费用下界不是无条件lower。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/m08_target_vector_round266.md",
+          "position": "§6/(12)",
+          "sha256": "abba15cb375cd370eb3d601eb628ace8a25b2427999862c200b09840ddb0347a"
+        }
+      ],
+      "audit": "主代理独立重建，三位审阅者全文交叉复读；各作者自审不计独审。未Lean、未运行数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_source_gate",
+      "type": "pending",
+      "statement": "267正式比较真正不同构造能否支付明确指定数值与同对象充分净预算，尚无新来源预先准入。",
+      "scope": "主动提前宏观决策；266结束后265以来仅1轮，267若仍无改善才达其后2轮早评门槛。已闭数学窗口继续关闭。",
+      "dependencies": [
+        "c266_safe_pair",
+        "c266_group_full_power"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round267_20261013.md",
+          "position": "首问题、通过与停止",
+          "sha256": "84908289d3bde3806f6d40c3a997a24053f3ea5332febff9436ea8f44975b8d7"
+        }
+      ],
+      "audit": "待267实际一手构造比较与独审；候选或ambient维数不替数值目标。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -678,6 +857,42 @@
         "research/m08_target_vector_charter_round266_20261013.md"
       ],
       "reopen_condition": "完整pair的全处新内容确有达到同对象实际衰减门槛的机制才登记后续实施；否则266结束，不扩参数/orbit或改名续期。"
+    },
+    {
+      "id": "d266_close_m08_source",
+      "round": 266,
+      "decision": "一轮M₀,₈完整pair来源核查到期，关闭该实现的默认投入；安全模型与源纠错保存，不准入数值实施。",
+      "scope": "固定canonical pair及本轮group费用模型；不否定全部M₀,₈方法或X无理性。",
+      "claim_ids": [
+        "c266_normalization",
+        "c266_safe_pair",
+        "c266_descent_coeff",
+        "c266_group_full_power",
+        "c266_primitive"
+      ],
+      "evidence": [
+        "research/m08_target_vector_round266.md"
+      ],
+      "reopen_condition": "实际完整pair新全尺度/同一无界子列内容与严格非零/衰减有足够净预算，不由小素数补齐、旧群扫描或改名续期。"
+    },
+    {
+      "id": "d266_plan_macro_review",
+      "round": 266,
+      "decision": "安排267主动提前正式宏观准入比较，最多一轮；仅恢复定期资源决策，不重开任何已闭数学source。",
+      "scope": "265之后现在1完成轮；267若无改善达2轮早评。保留总停滞6，数学源各自停止范围不变。",
+      "claim_ids": [
+        "c266_safe_pair",
+        "c266_group_full_power",
+        "c267_source_gate"
+      ],
+      "evidence": [
+        "research/m08_target_vector_round266.md",
+        "research/source_gate_charter_round267_20261013.md"
+      ],
+      "reopening_evidence": [
+        "research/m08_target_vector_round266.md"
+      ],
+      "reopen_condition": "定期宏观比較不代表数学准入；新实现/已闭source须另有改变障碍的实证。"
     }
   ],
   "windows": [
@@ -707,13 +922,26 @@
     {
       "first_round": 266,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "m08_vector_source_verification_266",
       "route_id": "m08_target_vector",
       "source_key": "bz_m08_fixed_a_8_16_10_15_12_16_18_13_X31",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d265_formal_source_selection",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d266_close_m08_source"
+    },
+    {
+      "first_round": 267,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_267",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d266_plan_macro_review",
+      "reopening_decision_id": "d266_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -768,6 +996,16 @@
       "report": "research/source_selection_round265.md",
       "outputs": [
         "research/source_selection_round265.md"
+      ]
+    },
+    {
+      "round": 266,
+      "kind": "diagnostic_structure_and_source_correction",
+      "feasibility_progress": false,
+      "window_id": "m08_vector_source_verification_266",
+      "report": "research/m08_target_vector_round266.md",
+      "outputs": [
+        "research/m08_target_vector_round266.md"
       ]
     }
   ]
