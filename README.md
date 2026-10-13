@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第267轮（2026-10-13）：完成Mellin、周期Dirichlet和非显式Siegel构造的正式宏观比较。后者在固定参数下已有完整整数形式的严格误差界，但指定目标的可见性和消元费用仍未支付；下一窗口限一轮核查这两项。文献和形式化资产继续保留。
+研究记录更新至第268轮（2026-10-13）：构造满足原Siegel证书却看不见指定目标的无界选择族；另证实际全行共同因子及nuisance秩下界。支付新信用后，标准消元的完整安全上界仍不足，限期来源核查结束。文献和形式化资产继续保留。
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第267轮正式比较](research/global_admission_review_round267.md) · [第268轮目标商任务](research/siegel_target_quotient_charter_round268_20261013.md) |
+| 最新研究结算与宏观选择 | [第268轮目标商结算](research/siegel_target_quotient_round268.md) · [第269轮宏观任务](research/source_gate_charter_round269_20261013.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览
@@ -83,7 +83,7 @@ lake env lean scripts/FormalizationAudit.lean
 
 当前目标、稳定窗口、停止范围与复盘计数只在 `research/program.json` 维护，STATE由工具生成。上下文压缩后先读STATE，再沿命题证据恢复；组织和局部no-go不能替代新的数值定理。
 
-263–264实际评价格窗口和266的M₀,₈来源核查均已结束。267比较真正不同的来源，选择固定非显式Siegel构造中 `X=3ζ(3)+ζ(5)` 的目标商作一轮核查。源误差虽已严格趋零，仍须证明目标在行空间中可见，并找到两条独立输出的低费用来源代表；这两项未付，不准入数值实施。见[最新比较与完整门槛](research/global_admission_review_round267.md)。
+263–264实际评价格窗口、266的M₀,₈核查及268的固定Siegel目标商核查均已结束。268排除了“任意合格选择自动成功”的论证；另一种好选择及两个低费独立输出仍未证明。实际行内容信用没有使完整标准消元预算转负，重开须有具体选择或额外内容机制。下一轮作正式宏观资源比较，见[最新证书与停止范围](research/siegel_target_quotient_round268.md)。
 
 ## 来源与许可
 

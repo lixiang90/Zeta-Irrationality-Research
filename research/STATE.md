@@ -2,33 +2,33 @@
 
 > 权威账：`program.json`。由 `python scripts/research_state.py render` 生成；不要手改本文件。
 
-修订 8 · 更新 2026-10-13 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
+修订 9 · 更新 2026-10-13 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
 
 最终目标：取得至少一项明确指定ζ/L特殊值的新无理性或有理线性无关结论，付清同对象完整证明与独立复核。
 数值目标已实现：否。诊断资产与组织维护不能替代此项。
 
 ## 当前窗口
 
-- 任务：`round268_siegel_target_quotient`；轮次 268；状态 `in_progress`；主路线 `siegel_target_quotient`。
-- 入口：[research/siegel_target_quotient_charter_round268_20261013.md](../research/siegel_target_quotient_charter_round268_20261013.md)。
-- 本阶段交付：固定非显式Siegel完整p,k packet的目标像及两独立输出来源费用裁决，最多一轮来源核查。
-- 首问题：S5能否沿同一合格无界族成立，且Γ_n两个独立输出能否支付γ<−logα_S的真实来源范数？
-- 通过：合格选择量词、目标像rank2、实际两输出来源代表/primitive费用及严格γ余量同对象匹配，才登记后续有界实施；原全packet衰减本身不够。
-- 停止：一轮结束；仅rank、定义、有限头、旧cofactor upper或未量化信用即关闭。不得参数/n/prime扫描或改名续期。
-- 持久窗口 `siegel_target_quotient_source_268`：已完成 0/1 轮；整理和task改名不计新窗口。
+- 任务：`round269_global_source_review`；轮次 269；状态 `in_progress`；主路线 `new_period_source`。
+- 入口：[research/source_gate_charter_round269_20261013.md](../research/source_gate_charter_round269_20261013.md)。
+- 本阶段交付：正式比较不同真实来源、完整指定目标及机会成本，给有证据且有期限的资源决定。
+- 首问题：哪项超出已闭packet/模型/普通消元的新机制能同时改变指定目标投影、全部反证和同对象足够净预算？
+- 通过：一手身份或自证全尺度机制明确数值、完整period向量、实际非零/秩、全处来源费用和严格解析门槛，才登记有界实施；无预先准入。
+- 停止：一轮完成正式决策；不重复已闭参数/n/prime窗口，不把存在好选择未排除、宽span或候选列表当数值准入。
+- 持久窗口 `global_source_gate_269`：已完成 0/1 轮；整理和task改名不计新窗口。
 
 ## 宏观复盘
 
-- 完成研究轮 267；最近正式复盘 267；其后 0 轮。
-- 连续未改善可行性 7 轮；现在须复盘：否。
+- 完成研究轮 268；最近正式复盘 267；其后 1 轮。
+- 连续未改善可行性 8 轮；现在须复盘：否。
 - 此前停滞已正式处理至第267轮；计数保留，提前检查按其后至少两个完成轮触发。
 - 默认复盘 271；最迟 275；两轮核心停滞提前。
 
 ## 下一动作
 
-1. 从原Theorem4合格族及全部p,k构造B/H/Λ/K/Γ；核S5，不借旧2019满秩或generic猜测。
-2. 在同一无界族核目标像rank2，并寻找实际来源代表范数/primitive信用；区别大量短kernel与短非零输出。
-3. 本轮裁决是否有充分γ<−logα_S预算；若没有则结束此来源窗口，保存停止范围并按宏观账继续。
+1. 恢复全路线最短未付接口及精确停止范围，先拦截旧source伪新发现。
+2. 比较真正不同的period/算术/数值投影机制；只核足以改变完整目标预算的一手定义与定理。
+3. 一轮作继续/停止/转向和期限决定；保持最终数值目标与停滞计数，不以改名或局部资产续期。
 
 ## 全路线状态
 
@@ -43,14 +43,14 @@
 | χ−8 RV与原生增长行列式 | `parked` | 实际无界非零与严格净指数仍缺；安全上界失败非全方法否定。 |
 | 混合rank3标准/标量AP入口 | `closed_implementation` | 自然cap32/27及仅辅助分布cap≥8/9均不足；c≠0极点出口关闭。 |
 | 实际联合评价格/Frobenius首证书 | `closed_implementation` | 264证明单变量completejet index-only入口失败；balanced leading-box可证但高度保证仍不足。两轮窗口结束，intrinsic费用及全部tensor未被否定。 |
-| 未准入来源的定期宏观比较 | `unadmitted_candidates` | 267正式比较已完成，没有候选通过完整数值预算；选择不同非显式Siegel packet仅核目标像和来源范数，未重开旧数学实现。 |
+| 未准入来源的定期宏观比较 | `investigating` | 268未改善完整数值准入；269主动提前正式比较不同真实来源与全部目标接口，只恢复定期资源决策，不重开已闭数学source。 |
 | M₀,₈固定3:1完整向量（仅来源核查） | `closed_implementation` | 266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。 |
-| 非显式Siegel固定目标商（仅来源核查） | `investigating` | 固定全packet已有严格误差界α<e^-92；S5目标可见性、合格族选择量词及两独立输出的低费来源代表未付，不准入数值实施。 |
+| 非显式Siegel固定目标商（仅来源核查） | `closed_implementation` | 268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。 |
 
 ## 恢复所需证据
 
+- [research/siegel_target_quotient_round268.md](../research/siegel_target_quotient_round268.md)
 - [research/global_admission_review_round267.md](../research/global_admission_review_round267.md)
-- [literature/fischler_siegel_odd_zeta.pdf](../literature/fischler_siegel_odd_zeta.pdf)
 - [docs/RESEARCH_DIRECTIONS.md](../docs/RESEARCH_DIRECTIONS.md)
 - [长期goal](../docs/RESEARCH_GOAL.md) · [恢复协议](../AGENTS.md) · [通用组织方法](../docs/LONG_RESEARCH_WORKFLOW.md)
 

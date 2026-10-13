@@ -18,6 +18,7 @@
 | 正式来源选择（265） | Catalan偶滤波自然清整的正净指数、wheel插入收敛/系数障碍、M₀,₈固定3:1投影 | 尚无充分预算；下一步只核完整共同系数向量，不恢复旧参数优化 |
 | 完整向量来源核查（266） | 直接Barnes全素数幂安全模型、下降factor2/Mellin符号纠错、群全幂信用仅o(n) | 清整上界仍不足；一轮窗口结束，不把upper失败冒充本原费用lower |
 | 正式来源宏观比较（267） | Mellin严格量词、周期Dirichlet完整消元与divisor阻碍、非显式Siegel全packet严格误差界 | 没有新数值准入；选择不同原生packet的目标商，仅给一轮可见性和真实选择器费用核查 |
+| Siegel目标商裁决（268） | 同原证书坏族、实际全行15.6指数内容信用、nuisance秩至少180 | 普遍选择保证被证伪，完整标准消元upper仍不足；好选择未排除，一轮窗口到期结束 |
 
 ## 阅读顺序
 
@@ -31,6 +32,7 @@
 8. [第265轮正式来源选择](../research/source_selection_round265.md)：真实构造、拒绝范围与下一项有期限的来源核查。
 9. [第266轮完整向量模型与结算](../research/m08_target_vector_round266.md)：原文归一化、全部素数幂及真正本原倍率的适用范围。
 10. [第267轮正式比较](../research/global_admission_review_round267.md)：按指定数值、完整反证与同对象费用选择下一来源；[第268轮任务](../research/siegel_target_quotient_charter_round268_20261013.md)限定首证书和到期停止条件。
+11. [第268轮目标商结算](../research/siegel_target_quotient_round268.md)：同证书实际反例与真实行约分信用，限定停止范围；下一轮[正式宏观任务](../research/source_gate_charter_round269_20261013.md)。
 
 ## 当前门槛
 

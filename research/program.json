@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 8,
+  "revision": 9,
   "updated_at": "2026-10-13",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,38 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 267,
+    "last_completed_round": 268,
     "last_global_review_round": 267,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 7,
+    "rounds_without_feasibility_progress": 8,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_admission_review_round267.md"
   },
   "current_task": {
-    "id": "round268_siegel_target_quotient",
-    "round": 268,
+    "id": "round269_global_source_review",
+    "round": 269,
     "status": "in_progress",
-    "route_id": "siegel_target_quotient",
-    "entry": "research/siegel_target_quotient_charter_round268_20261013.md",
-    "deliverable": "固定非显式Siegel完整p,k packet的目标像及两独立输出来源费用裁决，最多一轮来源核查。",
-    "next_decisive_question": "S5能否沿同一合格无界族成立，且Γ_n两个独立输出能否支付γ<−logα_S的真实来源范数？",
-    "pass_condition": "合格选择量词、目标像rank2、实际两输出来源代表/primitive费用及严格γ余量同对象匹配，才登记后续有界实施；原全packet衰减本身不够。",
-    "stop_condition": "一轮结束；仅rank、定义、有限头、旧cofactor upper或未量化信用即关闭。不得参数/n/prime扫描或改名续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round269_20261013.md",
+    "deliverable": "正式比较不同真实来源、完整指定目标及机会成本，给有证据且有期限的资源决定。",
+    "next_decisive_question": "哪项超出已闭packet/模型/普通消元的新机制能同时改变指定目标投影、全部反证和同对象足够净预算？",
+    "pass_condition": "一手身份或自证全尺度机制明确数值、完整period向量、实际非零/秩、全处来源费用和严格解析门槛，才登记有界实施；无预先准入。",
+    "stop_condition": "一轮完成正式决策；不重复已闭参数/n/prime窗口，不把存在好选择未排除、宽span或候选列表当数值准入。",
     "must_read": [
+      "research/siegel_target_quotient_round268.md",
       "research/global_admission_review_round267.md",
-      "literature/fischler_siegel_odd_zeta.pdf",
       "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/siegel_target_quotient_round268.md"
+      "research/global_source_review_round269.md"
     ],
     "next_actions": [
-      "从原Theorem4合格族及全部p,k构造B/H/Λ/K/Γ；核S5，不借旧2019满秩或generic猜测。",
-      "在同一无界族核目标像rank2，并寻找实际来源代表范数/primitive信用；区别大量短kernel与短非零输出。",
-      "本轮裁决是否有充分γ<−logα_S预算；若没有则结束此来源窗口，保存停止范围并按宏观账继续。"
+      "恢复全路线最短未付接口及精确停止范围，先拦截旧source伪新发现。",
+      "比较真正不同的period/算术/数值投影机制；只核足以改变完整目标预算的一手定义与定理。",
+      "一轮作继续/停止/转向和期限决定；保持最终数值目标与停滞计数，不以改名或局部资产续期。"
     ],
-    "window_id": "siegel_target_quotient_source_268"
+    "window_id": "global_source_gate_269"
   },
   "routes": [
     {
@@ -175,7 +175,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -186,9 +186,11 @@
         "research/m08_target_vector_round266.md",
         "research/source_gate_charter_round267_20261013.md",
         "research/global_admission_review_round267.md",
-        "research/siegel_target_quotient_charter_round268_20261013.md"
+        "research/siegel_target_quotient_charter_round268_20261013.md",
+        "research/siegel_target_quotient_round268.md",
+        "research/source_gate_charter_round269_20261013.md"
       ],
-      "gap": "267正式比较已完成，没有候选通过完整数值预算；选择不同非显式Siegel packet仅核目标像和来源范数，未重开旧数学实现。",
+      "gap": "268未改善完整数值准入；269主动提前正式比较不同真实来源与全部目标接口，只恢复定期资源决策，不重开已闭数学source。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -209,16 +211,17 @@
     {
       "id": "siegel_target_quotient",
       "name": "非显式Siegel固定目标商（仅来源核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "X=3ζ(3)+ζ(5)无理",
       "source_key": "fischler_siegel_a1000_h360_X31_target_quotient",
       "evidence": [
         "research/global_admission_review_round267.md",
         "research/siegel_target_quotient_charter_round268_20261013.md",
-        "literature/fischler_siegel_odd_zeta.pdf"
+        "literature/fischler_siegel_odd_zeta.pdf",
+        "research/siegel_target_quotient_round268.md"
       ],
-      "gap": "固定全packet已有严格误差界α<e^-92；S5目标可见性、合格族选择量词及两独立输出的低费来源代表未付，不准入数值实施。",
-      "reopen_condition": "一轮核查中，同一合格无界族的实际目标像与来源范数/本原信用实质改变完整预算才登记后续实施；rank、定义、有限头、旧余子式upper或参数/n/prime扫描不续期。"
+      "gap": "268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。",
+      "reopen_condition": "保持同一χ/统一余项、排除固定坏核并付两个独立短输出的具体选择或额外全尺度内容机制；可能选好、rank2、饱和、已证G/D、扩大n/参数或改名不够。"
     }
   ],
   "claims": [
@@ -985,6 +988,174 @@
         }
       ],
       "audit": "待268实际目标像/来源范数证书；不预先准入数值实施。",
+      "status": "superseded",
+      "replaced_by": "c268_bad_family",
+      "correction": "268已给同原预算实际坏族，所有合格选择版本的S5被证伪；存在好族未排除且低费两输出未付。已付G/D与q下界只改变已审费用资产，完整标准upper仍正；一轮来源核查到期结束。"
+    },
+    {
+      "id": "c268_bad_family",
+      "type": "reviewed_written_structure",
+      "statement": "新增±1 log tower jets与原精确soft成本的Lemma1构造给同原χ合格无界坏族，logχ−logχ_*>1/4。",
+      "scope": "固定S1全部参数，充分大50倍数；原Theorem4(i)–(iii)保持统一余项，ii/iii可取零；存在此族不否定存在好选择。",
+      "dependencies": [
+        "c267_siegel_fixed_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§2.1–2.2，B1–B3",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 Lemma1；Proposition2；原§3.5",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "根与两位代理分别重建源约束/精确软主项及χ费用；来源范数代理保存后独审核全量词。纸面常数，无扫描/Lean。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_bad_kernel_rank",
+      "type": "reviewed_written_structure",
+      "statement": "该实际合格族原全部p,k行共同核有偶栏零，压缩B_n核v与e_X配对−46/45，Γ_n秩恰1。",
+      "scope": "真实固定X=3ζ3+ζ5与完整B/H/Λ/K/Γ；A必为零、e0由原Proposition3可见。只证伪普遍S5，非所有合格族失败。",
+      "dependencies": [
+        "c268_bad_family"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§2.3，B4",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 原4.6、4.8、4.10与Proposition3",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "原p身份和两tower半和独证；固定C/真实奇权转换、e0与清分母复核，三位保存稿核对。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_bad_source_lower",
+      "type": "reviewed_written_structure",
+      "statement": "坏族任何非零商像的所有来源代表及实际本原代表均有liminf log范数/n≥−logα_S。",
+      "scope": "包括加任意K向量及c/|U|；真实非零常数输出的整数lower。仅限构造坏族，不是所有好族的来源范数下界。",
+      "dependencies": [
+        "c268_bad_kernel_rank",
+        "c267_siegel_fixed_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§2.4",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        }
+      ],
+      "audit": "根与反证代理独立非零常数/triangle推导，来源范数代理保存后独审核实际primitive量词。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_row_credit",
+      "type": "reviewed_written_structure",
+      "statement": "原显式δ_s,k实现下所有B_n系数含G=d_(2rn+2)^2，指数15.6；全部H_n联合含G·2^(2rn+1)。",
+      "scope": "含常数栏的G；非恒定栏额外dyadic，常数栏只统一固定2。不是精确gcd，不适用于任意Prop2 witness；非零输出g≥G才可领取c/g信用。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§3，C1–C3",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 §3.4 Step3；原hybrid递推与4.10",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "来源范数代理Taylor互异指标证明，根重建；另两位独核全部constant、dyadic及显式δ限制，无真实数值独立性假设。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_high_rank",
+      "type": "reviewed_written_structure",
+      "statement": "所有非零合格族n>11时b≥12；实际高奇权三角minor给180≤rankH_n≤679。",
+      "scope": "原全部p,k、同一真实H高权列；不需generic或固定b子列；不是指定数值独立。",
+      "dependencies": [
+        "c267_siegel_cutoff",
+        "c267_siegel_fixed_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§4 b与三角minor",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 原4.6、4.8与Theorem4(i)",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "根自证分母次数和最高权三角结构，三位独核保存稿；未以有限rank样本推全尺度。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_cofactor_after_credit",
+      "type": "reviewed_written_structure",
+      "statement": "投入全部已证G/D后，完整标准cofactor误差上包络指数E_n仍严格大于2940。",
+      "scope": "q=实际rankH；G^(q+1)D^q信用无重复，条件于rank2才选两输出。只证明已公布upper保证不足，非最优实际primitive费用lower或所有好族no-go。",
+      "dependencies": [
+        "c268_row_credit",
+        "c268_high_rank",
+        "c267_siegel_fixed_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§4，C4",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        }
+      ],
+      "audit": "根重建pivot/circuit和g本原化，三位独核指数与无重复信用；完整包络未改变数值准入。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_macro_gate",
+      "type": "pending",
+      "statement": "269主动提前正式比较不同来源和完整目标接口，没有候选预先准入。",
+      "scope": "定期macro_selection最多一轮，268结束后267以来1轮，269届时2轮早评；旧数学source停止范围保持。",
+      "dependencies": [
+        "c268_bad_source_lower",
+        "c268_cofactor_after_credit"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round269_20261013.md",
+          "position": "首问题、通过与停止",
+          "sha256": "aaab25024944dd9bc6211f836c67ed0edc8f04616ad1dacd2fea84c0ba78f48b"
+        },
+        {
+          "path": "research/siegel_target_quotient_round268.md",
+          "position": "§5决定",
+          "sha256": "5445f7fbff87ab72f0d457cc9d102954441212e82aaef2f9cd616ef6363f8938"
+        }
+      ],
+      "audit": "待269具体一手来源/全尺度机制比较与独审；候选列表不替最终数值目标。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -1127,6 +1298,43 @@
         "research/siegel_target_quotient_charter_round268_20261013.md"
       ],
       "reopen_condition": "只在同一实际对象的目标可见性和足够低费两输出有实证改变后登记新有界实施；否则268到期结束，不扫描或改名续期。"
+    },
+    {
+      "id": "d268_close_siegel_source",
+      "round": 268,
+      "decision": "一轮固定Siegel目标商核查到期，关闭该实现默认投入；保留同证书坏族、实际行内容及q秩资产，不准入数值实施。",
+      "scope": "普遍S5有实际反例；给足已证内容后的标准cofactor upper仍不足。存在好选择/额外真实内容未被排除，不否定X或全部selector方法。",
+      "claim_ids": [
+        "c268_bad_family",
+        "c268_bad_kernel_rank",
+        "c268_bad_source_lower",
+        "c268_row_credit",
+        "c268_high_rank",
+        "c268_cofactor_after_credit"
+      ],
+      "evidence": [
+        "research/siegel_target_quotient_round268.md"
+      ],
+      "reopen_condition": "同原预算排除固定坏核的具体合格选择机制，并支付两个独立低费输出；只可能选好、G/D、rank2或新文件不够。"
+    },
+    {
+      "id": "d268_plan_macro_review",
+      "round": 268,
+      "decision": "安排269主动提前正式宏观资源比较，最多一轮；仅恢复定期决策，不重开任何已闭数学source。",
+      "scope": "267后目前1完成轮，269届时达到两轮核心停滞早评门槛；总停滞保留8。",
+      "claim_ids": [
+        "c268_bad_source_lower",
+        "c268_cofactor_after_credit",
+        "c269_macro_gate"
+      ],
+      "evidence": [
+        "research/siegel_target_quotient_round268.md",
+        "research/source_gate_charter_round269_20261013.md"
+      ],
+      "reopening_evidence": [
+        "research/siegel_target_quotient_round268.md"
+      ],
+      "reopen_condition": "macro不等于数学准入；新实施或重开须另给改变完整指定值预算的实证。"
     }
   ],
   "windows": [
@@ -1181,13 +1389,26 @@
     {
       "first_round": 268,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "siegel_target_quotient_source_268",
       "route_id": "siegel_target_quotient",
       "source_key": "fischler_siegel_a1000_h360_X31_target_quotient",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d267_formal_admission_review",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d268_close_siegel_source"
+    },
+    {
+      "first_round": 269,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_269",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d268_plan_macro_review",
+      "reopening_decision_id": "d268_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -1262,6 +1483,16 @@
       "report": "research/global_admission_review_round267.md",
       "outputs": [
         "research/global_admission_review_round267.md"
+      ]
+    },
+    {
+      "round": 268,
+      "kind": "diagnostic_structure_and_source_budget",
+      "feasibility_progress": false,
+      "window_id": "siegel_target_quotient_source_268",
+      "report": "research/siegel_target_quotient_round268.md",
+      "outputs": [
+        "research/siegel_target_quotient_round268.md"
       ]
     }
   ]
