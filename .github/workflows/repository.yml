@@ -13,4 +13,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/check_repository.py
+      - run: python scripts/research_state.py check
+      - run: python -m unittest discover -s scripts -p test_research_state.py
       - run: python scripts/restore_assets.py --all --verify-only

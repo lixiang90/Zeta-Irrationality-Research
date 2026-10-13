@@ -13,6 +13,7 @@
 | χ−8增长行列式 | 真实实积分、完整前缀减层与全多项式内容改善 | 净指数未转负；混合行列式不自动继承正Gram非零 |
 | 四项混合周期 | 完整关系消芽、整数反演、最小场与实际rank3 | 最新证书给λ<7/4、标准τ≥16/9，停止这一固定入口 |
 | AP指定组合首证书（262） | 逐类换基障碍、自然费用32/27、全图λ<10/9、无穷远全叶log² | 自然模型失败；仅次数分布仍不足；需要实际联合整数格或新周期源 |
+| 实际联合评价格（263） | 本period的sharp degree4p、全块support、明确Smith/Bockstein及balanced整jet指数改善 | 真正超出固定换基；未付正确leading短向量与同metric足够净预算，仅给剩余一轮裁决 |
 
 ## 阅读顺序
 
@@ -20,12 +21,13 @@
 2. [ζ(5)方法重读](../research/zeta5_method_research_expansion_20261004.md)：正性、全部系数整性与净衰减。
 3. [总体策略](../research/odd_zeta_global_strategy_20261004.md)：周期背景与指定数值目标的量词差距。
 4. [周期与整模型](../research/period_holonomy_progress_20261005.md)：闭合推论与模型限制。
-5. [最近正式全局复盘](../research/research_global_review_round260_20261010.md)、[标准入口停止证书](../research/refined_budget_gate_round261_20261010.md)及[第262轮续研结算](../research/research_next_route_progress_round262_20261012.md)：当前资源决定。
+5. [第260轮全局复盘](../research/research_global_review_round260_20261010.md)、[标准入口停止证书](../research/refined_budget_gate_round261_20261010.md)及[第262轮续研结算](../research/research_next_route_progress_round262_20261012.md)：这一阶段的资源决定。
+6. [第263轮提前正式复盘](../research/research_global_review_round263_20261013.md)及[当前STATE](../research/STATE.md)：持久目标、当前窗口及恢复入口。
 
 ## 当前门槛
 
 AP过滤已给特定关系类的前缀增长率改善；262证明自然均衡标量费用32/27不足，而仅利用辅助次数分布的模型下界8/9仍不能通过所选严格判据。匹配新定理未建立，不继续实现已知不足的模型。重开须先有实际联合评价格的新全尺度内容或改变强制奇点的新周期源，并重新结算净预算。
 
-全局复盘默认每4个完成研究轮次，最迟8轮；连续两轮核心准入或净可行性没有推进时提前。结构障碍立即停止其适用范围内投入。文档、有限头、归档与坐标改名不自动续期。
+全局复盘默认每4个完成研究轮次，最迟8轮；连续两轮核心准入或净可行性没有推进时提前。263已完成提前正式复盘；最新计数和稳定窗口只以STATE为准，不在多个历史稿维护。结构障碍立即停止其适用范围内投入。文档、有限头、归档与坐标改名不自动续期。
 
 冗长累计总稿、管理记录与一次性归档运行器的原始字节保存在[历史归档](../archives/history.zip)，目录及散列见[历史清单](../archives/history-manifest.json)。这些记录用于追溯，不应直接重跑或覆盖新阅读入口。

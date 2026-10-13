@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "revision": 4,
+  "updated_at": "2026-10-13",
+  "goal": {
+    "id": "specified_zeta_l_irrationality",
+    "status": "active",
+    "achieved": false,
+    "charter": "docs/RESEARCH_GOAL.md",
+    "objective": "取得至少一项明确指定ζ/L特殊值的新无理性或有理线性无关结论，付清同对象完整证明与独立复核。",
+    "success_criteria": [
+      "明确数值、完整量词及真实目标投影",
+      "同对象完整算术费用与实际非零/函数秩",
+      "严格解析净余量和适用定理",
+      "独立复核、来源与实际范围内新颖性核查"
+    ],
+    "not_success": [
+      "组织维护",
+      "有限实验",
+      "已知推论",
+      "局部结构或停止证书"
+    ]
+  },
+  "review": {
+    "last_completed_round": 263,
+    "last_global_review_round": 263,
+    "default_interval": 4,
+    "maximum_interval": 8,
+    "rounds_without_feasibility_progress": 3,
+    "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
+    "evidence": "research/research_global_review_round263_20261013.md"
+  },
+  "current_task": {
+    "id": "round264_joint_net_budget",
+    "round": 264,
+    "status": "in_progress",
+    "route_id": "ap_joint",
+    "entry": "research/joint_budget_charter_round264_20261013.md",
+    "deliverable": "一轮裁决真实整jet格、消去source、正确leading-cell及同metric短向量的足够净预算桥。",
+    "next_decisive_question": "263已证实际Smith信用能否进入正确leading构造并跨完整严格门槛？",
+    "pass_condition": "明确实际整数格及全部费用，收益有望使所选BC接口τ_eff<(2/3)log3；不被source index/metric抵消。",
+    "stop_condition": "264结束时无足够净预算证据，则关闭当前稳定窗口；禁止用局部新引理、task改名或仅Bockstein计算续期。",
+    "must_read": [
+      "research/research_global_review_round263_20261013.md",
+      "research/joint_evaluation_support_round263_20261013.md",
+      "research/joint_evaluation_lattice_round263_20261013.md"
+    ],
+    "expected_outputs": [
+      "research/joint_budget_bridge_round264.md"
+    ],
+    "next_actions": [
+      "先做已知信用与可能额外信用的量级/机会成本裁决。",
+      "将真实CRT格与CDT6.3消去约束相交，核短整向量、correct leading cell及原metric。",
+      "只有足够预算桥指出确实需要且有用时才核第二Smith层；264后无足够证据则关窗并转宏观来源选择。"
+    ],
+    "window_id": "ap_joint_frobenius_263"
+  },
+  "routes": [
+    {
+      "id": "zeta5_baseline",
+      "name": "ζ(5)形式化基线",
+      "status": "completed_baseline",
+      "target": "ζ(5)无理（既有上游）",
+      "source_key": "pinned_mo271_zeta5",
+      "evidence": [
+        "docs/FORMALIZATION.md"
+      ],
+      "gap": "不是本项目新数值目标；镜像占位与绝对版分开。",
+      "reopen_condition": "出现上游/桥接实际错误或用户要求复核。"
+    },
+    {
+      "id": "zeta7_gram",
+      "name": "ζ(7)Gram与整数格",
+      "status": "parked",
+      "target": "ζ(7)无理",
+      "source_key": "zeta7_fixed_gram",
+      "evidence": [
+        "research/restart_analysis.md",
+        "research/zeta7_research_progress_20261004.md"
+      ],
+      "gap": "同一整数输出的无界非零及负本原二次指数未闭合。",
+      "reopen_condition": "改变头块/宏观内容的新全尺度机制；不是扩大已闭参数高度。"
+    },
+    {
+      "id": "k5_combination",
+      "name": "3ζ(3)+ζ(5)与K5",
+      "status": "parked",
+      "target": "指定3:1组合无理",
+      "source_key": "k5_fixed_projection",
+      "evidence": [
+        "research/research_logistic_residual_progress_round243_20261009.md"
+      ],
+      "gap": "完整内容改进与实能量未给严格净余量。",
+      "reopen_condition": "同对象全素数内容或真实能量的新定理。"
+    },
+    {
+      "id": "log_moment",
+      "name": "对数矩与Padé",
+      "status": "parked",
+      "target": "新的指定奇ζ/L值",
+      "source_key": "odd_log_moment_full_primitive",
+      "evidence": [
+        "research/odd_zeta_primitive_routes_progress_20261005.md"
+      ],
+      "gap": "真实约分根/本原费用尚未跨解析门槛。",
+      "reopen_condition": "全尺度异常内容控制或不同真实正测度成本机制。"
+    },
+    {
+      "id": "period_corollaries",
+      "name": "已知周期分类推论",
+      "status": "completed_known_corollaries",
+      "target": "已有CDT的具体推论",
+      "source_key": "cdt_known_period_classes",
+      "evidence": [
+        "research/period_holonomy_progress_20261005.md"
+      ],
+      "gap": "没有隔离新的指定值；不计作新宏观成功。",
+      "reopen_condition": "找到已有定理不直接覆盖的真实数值出口与完整桥。"
+    },
+    {
+      "id": "odd_cm_fricke",
+      "name": "奇权、CM与χ−7Fricke",
+      "status": "parked",
+      "target": "新的指定ζ/L值",
+      "source_key": "fixed_odd_cm_fricke_families",
+      "evidence": [
+        "research/research_global_review_round252_20261010.md",
+        "research/research_cm_admission_progress_round245_20261010.md"
+      ],
+      "gap": "强制恢复背景、全叶奇点与所审费用/能量障碍。",
+      "reopen_condition": "改变真实周期源、全叶解析域或完整有限处信用。"
+    },
+    {
+      "id": "chi8",
+      "name": "χ−8 RV与原生增长行列式",
+      "status": "parked",
+      "target": "L(2,χ−8)无理",
+      "source_key": "fixed_rv_native_chi8",
+      "evidence": [
+        "research/research_rv_chi8_budget_progress_round254_20261010.md",
+        "research/research_native_chi8_progress_round257_20261010.md"
+      ],
+      "gap": "实际无界非零与严格净指数仍缺；安全上界失败非全方法否定。",
+      "reopen_condition": "同对象非零机制与完整净费用实质改变。"
+    },
+    {
+      "id": "mixed_ap_scalar",
+      "name": "混合rank3标准/标量AP入口",
+      "status": "closed_implementation",
+      "target": "ζ(2)±2G分别无理",
+      "source_key": "mixed_rank3_s_level24",
+      "evidence": [
+        "research/research_next_route_progress_round262_20261012.md"
+      ],
+      "gap": "自然cap32/27及仅辅助分布cap≥8/9均不足；c≠0极点出口关闭。",
+      "reopen_condition": "超出标量cap的实际联合内容，或改变真实载体/适用分析接口。"
+    },
+    {
+      "id": "ap_joint",
+      "name": "实际联合评价格/Frobenius首证书",
+      "status": "investigating",
+      "target": "ζ(2)±2G分别无理",
+      "source_key": "mixed_rank3_s_level24_actual_evaluation",
+      "evidence": [
+        "research/joint_evaluation_support_round263_20261013.md",
+        "research/joint_evaluation_lattice_round263_20261013.md",
+        "research/research_global_review_round263_20261013.md"
+      ],
+      "gap": "已证本载体Frobenius exact4p和完整Smith/CRT收益；仍缺足够净预算的leading-box/同metric桥。",
+      "new_mechanism": "degree随p的Frobenius polynomial gauge；262固定有理基底障碍不覆盖它。",
+      "reopen_condition": "稳定窗口剩264一轮；无足够净预算证据关窗，重开须新机制决策及证据。"
+    },
+    {
+      "id": "new_period_source",
+      "name": "真正不同周期源",
+      "status": "unadmitted_candidates",
+      "target": "新指定ζ/L数值出口",
+      "source_key": "unselected_new_carrier",
+      "evidence": [
+        "research/next_route_carrier_20261012.md"
+      ],
+      "gap": "未选出同时有真实投影、完整触发与净可行性的来源。",
+      "reopen_condition": "全局证书改变强制resonance和同对象预算；不同文件名不够。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c262_natural_cap",
+      "type": "reviewed_written_structure",
+      "statement": "本固定rank3的自然AP标量prefix cap最优固定基底值32/27。",
+      "scope": "指定cap；非所有actual evaluation下界，非新holonomy定理。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/next_route_ap_cost_20261012.md",
+          "position": "§§2–4",
+          "sha256": "82fbe43294dde5aa3b3de3d7721270f1e679baeab40bb4a3193e2ab5157a2f4b"
+        }
+      ],
+      "audit": "262独立书面复核；未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c262_cover",
+      "type": "reviewed_written_structure",
+      "statement": "全部所述共同全纯图λ<log3<10/9。",
+      "scope": "同一s坐标的两实点省略域；非所有载体/接口。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/next_route_cover_bound_20261012.md",
+          "position": "(1)–(4)",
+          "sha256": "b1a353493852e74824d9d95c267ca3164691282fdd27afc2bc7a9fda0fb7b29e"
+        }
+      ],
+      "audit": "262两份独立规范/积分/常数复核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c262_infinity",
+      "type": "reviewed_written_structure",
+      "statement": "c≠0时H无穷远所有叶强制−c log²x；共同亚纯s图无极点。",
+      "scope": "固定实际载体与c≠0，覆盖指定±目标全部反证类。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/next_route_carrier_20261012.md",
+          "position": "§2",
+          "sha256": "878da853af24ebd1fbb46b87775042c8fa58621e959efae3ab462c14cd9b0524"
+        }
+      ],
+      "audit": "262完整算子、Laurent及variation独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c262_aux_cap",
+      "type": "reviewed_written_structure",
+      "statement": "仅辅助k分布的合法scalar prefix cap≥8/9。",
+      "scope": "cap下界，非实际coeff/Smith费用下界。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/next_route_ap_cost_20261012.md",
+          "position": "§7",
+          "sha256": "82fbe43294dde5aa3b3de3d7721270f1e679baeab40bb4a3193e2ab5157a2f4b"
+        }
+      ],
+      "audit": "262合法n=k常数坐标、active residual独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c262_bc_gate",
+      "type": "reviewed_written_structure",
+      "statement": "所选BC rank3严格矛盾必要τ_eff<(2/3)log3<20/27。",
+      "scope": "未精化与261所审两种合法凸性修正；必要非充分。",
+      "dependencies": [
+        "c262_cover"
+      ],
+      "evidence": [
+        {
+          "path": "research/research_next_route_progress_round262_20261012.md",
+          "position": "§3",
+          "sha256": "a681e2cb37771fe6fd9f634eeb5978df1250df4fa3debd94b9f96de63dc74063"
+        }
+      ],
+      "audit": "262同图分子下界与费用范围独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c263_frobenius_pending",
+      "type": "pending",
+      "statement": "本A(s)有degree随p的准确Frobenius gauge及primitive最小degree；实际评价的完整指数需核。",
+      "scope": "不得从别的Legendre载体或Q(s)不可约性借结论。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/joint_evaluation_charter_round263_20261013.md",
+          "position": "首命题",
+          "sha256": "f4bf8907bb47003fc07eca6fe124855290a8a21738c8daa59771f277a11a6425"
+        }
+      ],
+      "audit": "待技术稿和独立核验。",
+      "status": "superseded",
+      "replaced_by": "c263_frobenius",
+      "correction": "263书面推导与独立审阅已给本载体精确degree4p，不再只是待证线索；完整净预算仍未支付。"
+    },
+    {
+      "id": "c263_frobenius",
+      "type": "reviewed_written_structure",
+      "statement": "本实际period的Lucas拉回给平方自由H_p，degree恰4p；尺度依赖联合行消去完整最高p^-2 packet。",
+      "scope": "Hasse polynomial对p>=5；实际packet排除固定坏素数并限N<p²；非新τ或数值定理。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/joint_evaluation_support_round263_20261013.md",
+          "position": "S2–S5",
+          "sha256": "7016b513723049911d60038c4abafcdd1f48635a0361ea9865bd6b47ad90c89d"
+        }
+      ],
+      "audit": "父代理与独立审阅者全文数学复核；未Lean。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c263_support",
+      "type": "reviewed_written_structure",
+      "statement": "首AP block平方分母support等于A_u modp；native A_1..A_p-1无12连零。",
+      "scope": "不是每个coeff都有p²；不从单行support密度推高维实际费用。",
+      "dependencies": [
+        "c263_frobenius"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_evaluation_support_round263_20261013.md",
+          "position": "S1/S4",
+          "sha256": "7016b513723049911d60038c4abafcdd1f48635a0361ea9865bd6b47ad90c89d"
+        }
+      ],
+      "audit": "完整packet、primitive ODE与反向递推独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c263_smith",
+      "type": "reviewed_written_structure",
+      "statement": "明确有限Toeplitz整jet逆像格；局部完整index为p^(2r+rank β)，longjet最高kernel维数D−4p+1。",
+      "scope": "N<p²且相应好素数；high-layer index与完整index区别保留，β第二层未计算。",
+      "dependencies": [
+        "c263_frobenius"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_evaluation_lattice_round263_20261013.md",
+          "position": "§§1–5",
+          "sha256": "a6bb35cd730e7bf07fdef5fb0d24a5e48db73a12cdc1f5a12b500784e32e7c27"
+        }
+      ],
+      "audit": "父代理与独立审阅者复核Bockstein、Smith、窗口及CRT upper。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c263_tensor",
+      "type": "reviewed_written_structure",
+      "statement": "balanced/discrepancy全整jet格相对安全source有保守gross指数信用至少dDR/96。",
+      "scope": "完整D,d矩阵与ordered asymptotic；保持source整数，未付leading-box/同metric净τ。",
+      "dependencies": [
+        "c263_smith"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_evaluation_lattice_round263_20261013.md",
+          "position": "§§6–8/(25)–(29)",
+          "sha256": "a6bb35cd730e7bf07fdef5fb0d24a5e48db73a12cdc1f5a12b500784e32e7c27"
+        }
+      ],
+      "audit": "选列image p-torsion、binomial count、common-factor整数饱和独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c264_net_bridge",
+      "type": "pending",
+      "statement": "真实整jet格与正确leading消去source在原metric下有足够短整向量，并产生足够数值净余量。",
+      "scope": "必须跨c262_bc_gate；gross指数不能直接相减于scalar cap。",
+      "dependencies": [
+        "c263_tensor",
+        "c262_bc_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_budget_charter_round264_20261013.md",
+          "position": "唯一首命题",
+          "sha256": "bd95de4140a385a88dcabc97580888bb416f88256455a630064c2fbc8d2cd7c9"
+        }
+      ],
+      "audit": "待下一轮证明；当前未准入数值反证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d262_close_scalar",
+      "round": 262,
+      "decision": "停止固定来源的自然AP、换基、地图及仅次数排序实现。",
+      "scope": "mixed_rank3_s_level24的已审标量接口；数值目标不被否定。",
+      "claim_ids": [
+        "c262_natural_cap",
+        "c262_cover",
+        "c262_infinity",
+        "c262_aux_cap",
+        "c262_bc_gate"
+      ],
+      "evidence": [
+        "research/research_next_route_progress_round262_20261012.md"
+      ],
+      "reopen_condition": "actual joint lattice内容或真正新period/分析机制。"
+    },
+    {
+      "id": "d263_bounded_gate",
+      "round": 263,
+      "decision": "提前宏观复盘；只准入真实有限评价格与尺度依赖Frobenius首证书，最多两轮。",
+      "scope": "不恢复任何已闭旧参数窗口。",
+      "claim_ids": [
+        "c262_bc_gate"
+      ],
+      "evidence": [
+        "research/joint_evaluation_charter_round263_20261013.md"
+      ],
+      "reopen_condition": "首证书给可检查的宏观净收益，才进入匹配高度/全素数幂下一关。"
+    },
+    {
+      "id": "d263_formal_review",
+      "round": 263,
+      "decision": "提前正式全路线复盘；保存真实新Frobenius/评价格资产，只给足够净预算桥剩余一轮。",
+      "scope": "不把组织维护或局部Smith信用算作数值准入改善；264后不得改名续期。",
+      "claim_ids": [
+        "c263_frobenius",
+        "c263_smith",
+        "c263_tensor",
+        "c262_bc_gate"
+      ],
+      "evidence": [
+        "research/research_global_review_round263_20261013.md",
+        "research/joint_budget_charter_round264_20261013.md"
+      ],
+      "reopen_condition": "匹配同对象预算桥达到严格门槛；否则结束窗口并比较真正新源。"
+    }
+  ],
+  "windows": [
+    {
+      "first_round": 263,
+      "maximum_completed_rounds": 2,
+      "completed_rounds": 1,
+      "id": "ap_joint_frobenius_263",
+      "route_id": "ap_joint",
+      "source_key": "mixed_rank3_s_level24_actual_evaluation",
+      "status": "active",
+      "decision_id": "d263_bounded_gate"
+    }
+  ],
+  "completed_rounds": [
+    {
+      "round": 261,
+      "kind": "diagnostic",
+      "feasibility_progress": false,
+      "report": "research/refined_budget_gate_round261_20261010.md",
+      "outputs": [
+        "research/refined_budget_gate_round261_20261010.md"
+      ]
+    },
+    {
+      "round": 262,
+      "kind": "diagnostic",
+      "feasibility_progress": false,
+      "report": "research/research_next_route_progress_round262_20261012.md",
+      "outputs": [
+        "research/next_route_ap_cost_20261012.md",
+        "research/next_route_cover_bound_20261012.md",
+        "research/next_route_carrier_20261012.md"
+      ]
+    },
+    {
+      "round": 263,
+      "kind": "diagnostic_structure",
+      "feasibility_progress": false,
+      "window_id": "ap_joint_frobenius_263",
+      "report": "research/research_global_review_round263_20261013.md",
+      "outputs": [
+        "research/joint_evaluation_support_round263_20261013.md",
+        "research/joint_evaluation_lattice_round263_20261013.md",
+        "research/research_global_review_round263_20261013.md"
+      ]
+    }
+  ]
+}
