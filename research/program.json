@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 7,
+  "revision": 8,
   "updated_at": "2026-10-13",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,40 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 266,
-    "last_global_review_round": 265,
+    "last_completed_round": 267,
+    "last_global_review_round": 267,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 6,
+    "rounds_without_feasibility_progress": 7,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/source_selection_round265.md"
+    "evidence": "research/global_admission_review_round267.md"
   },
   "current_task": {
-    "id": "round267_global_admission_review",
-    "round": 267,
+    "id": "round268_siegel_target_quotient",
+    "round": 268,
     "status": "in_progress",
-    "route_id": "new_period_source",
-    "entry": "research/source_gate_charter_round267_20261013.md",
-    "deliverable": "主动提前正式比较真实新机制、完整指定数值出口与机会成本，作有证据且有期限的投入决定。",
-    "next_decisive_question": "哪些真正不同构造能改变指定数值投影、全部有理反证或同对象足够净预算，且超出已闭实现？",
-    "pass_condition": "一手身份或自证全尺度机制明确数值、完整period向量、全处/primitive费用和严格解析门槛，才登记有界实施；没有预先准入新来源。",
-    "stop_condition": "一轮完成正式决策；不扩已闭参数、群/prime扫描或给旧数学窗口改名。已知推论和候选列表不替数值目标。",
+    "route_id": "siegel_target_quotient",
+    "entry": "research/siegel_target_quotient_charter_round268_20261013.md",
+    "deliverable": "固定非显式Siegel完整p,k packet的目标像及两独立输出来源费用裁决，最多一轮来源核查。",
+    "next_decisive_question": "S5能否沿同一合格无界族成立，且Γ_n两个独立输出能否支付γ<−logα_S的真实来源范数？",
+    "pass_condition": "合格选择量词、目标像rank2、实际两输出来源代表/primitive费用及严格γ余量同对象匹配，才登记后续有界实施；原全packet衰减本身不够。",
+    "stop_condition": "一轮结束；仅rank、定义、有限头、旧cofactor upper或未量化信用即关闭。不得参数/n/prime扫描或改名续期。",
     "must_read": [
-      "research/m08_target_vector_round266.md",
-      "research/source_selection_round265.md",
-      "docs/RESEARCH_DIRECTIONS.md",
-      "literature/brown2026_mellin_transfinite_diameter_arxiv2604_20741v1_20261006.pdf",
-      "literature/fischler2020_dirichlet_irrationality.pdf"
+      "research/global_admission_review_round267.md",
+      "literature/fischler_siegel_odd_zeta.pdf",
+      "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/global_admission_review_round267.md"
+      "research/siegel_target_quotient_round268.md"
     ],
     "next_actions": [
-      "按完整最终接口账复盘全路线；先核Brown2026定量Mellin与Dirichlet/超几何来源能否隔离指定目标。",
-      "只读足以改变决策的一手构造/定理和全尺度费用，不把ambient维数、已知推论或更多局部界作数值准入。",
-      "作明确继续/停止/转向与期限决定；保留停滞计数与各已闭数学source重开证据门槛。"
+      "从原Theorem4合格族及全部p,k构造B/H/Λ/K/Γ；核S5，不借旧2019满秩或generic猜测。",
+      "在同一无界族核目标像rank2，并寻找实际来源代表范数/primitive信用；区别大量短kernel与短非零输出。",
+      "本轮裁决是否有充分γ<−logα_S预算；若没有则结束此来源窗口，保存停止范围并按宏观账继续。"
     ],
-    "window_id": "global_source_gate_267"
+    "window_id": "siegel_target_quotient_source_268"
   },
   "routes": [
     {
@@ -177,7 +175,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "investigating",
+      "status": "unadmitted_candidates",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -186,9 +184,11 @@
         "research/source_selection_charter_round265_20261013.md",
         "research/source_selection_round265.md",
         "research/m08_target_vector_round266.md",
-        "research/source_gate_charter_round267_20261013.md"
+        "research/source_gate_charter_round267_20261013.md",
+        "research/global_admission_review_round267.md",
+        "research/siegel_target_quotient_charter_round268_20261013.md"
       ],
-      "gap": "266未给充分数值预算。267主动提前比较真正不同来源的指定出口、全部反证及同对象成本；不是恢复已闭数学实现。",
+      "gap": "267正式比较已完成，没有候选通过完整数值预算；选择不同非显式Siegel packet仅核目标像和来源范数，未重开旧数学实现。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -205,6 +205,20 @@
       ],
       "gap": "266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。",
       "reopen_condition": "同一完整canonical pair的新全尺度或同一无界子列内容，连同实际E严格衰减/非零，足以改变完整预算；补高次幂、固定群重排、局部头或任务改名不够。"
+    },
+    {
+      "id": "siegel_target_quotient",
+      "name": "非显式Siegel固定目标商（仅来源核查）",
+      "status": "investigating",
+      "target": "X=3ζ(3)+ζ(5)无理",
+      "source_key": "fischler_siegel_a1000_h360_X31_target_quotient",
+      "evidence": [
+        "research/global_admission_review_round267.md",
+        "research/siegel_target_quotient_charter_round268_20261013.md",
+        "literature/fischler_siegel_odd_zeta.pdf"
+      ],
+      "gap": "固定全packet已有严格误差界α<e^-92；S5目标可见性、合格族选择量词及两独立输出的低费来源代表未付，不准入数值实施。",
+      "reopen_condition": "一轮核查中，同一合格无界族的实际目标像与来源范数/本原信用实质改变完整预算才登记后续实施；rank、定义、有限头、旧余子式upper或参数/n/prime扫描不续期。"
     }
   ],
   "claims": [
@@ -772,6 +786,205 @@
         }
       ],
       "audit": "待267实际一手构造比较与独审；候选或ambient维数不替数值目标。",
+      "status": "superseded",
+      "replaced_by": "c267_selector_interface",
+      "correction": "267已完成正式一手来源比较和独审，未给新数值准入；仅登记不同非显式packet的一轮目标商核查。旧待证入口不被升级为数值定理。"
+    },
+    {
+      "id": "c267_mellin_scope",
+      "type": "reviewed_written_structure",
+      "statement": "严格Mellin负e指数及e/N→∞吸收固定目标全部有理分母；印出任意矩阵Lemma7.8的趋零弱式有反例。",
+      "scope": "Brown v1已审范围；不否定Criterion1.3/1.4或实际正Mellin例；形式投影交不冒充数值span交，自由rank须取真实函数商。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§2",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/brown2026_mellin_transfinite_diameter_arxiv2604_20741v1_20261006.pdf",
+          "position": "PDF1–5、20–23、25–27；Lemma7.8",
+          "sha256": "fcbcc22ee7504b9e057c534c0e5fae3f3812af8548d132cd2018ce4857a20bef"
+        }
+      ],
+      "audit": "主代理重建rational分母/弱式反例；Lai/Siegel任务代理独核严格口、Heine、投影及自由rank；最终保存稿复读，未Lean。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_dirichlet_cost",
+      "type": "reviewed_written_structure",
+      "statement": "2019 ζ/χ−8完整系数包的普通余子式误差upper α_D β_D^(m−1)在全合法参数域指数为正。",
+      "scope": "保留全部finite heads、prime powers及实际压缩系数rank m+1；upper不足不是最优primitive费用lower，非全部Dirichlet方法否定。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§3完整清整、α_D/β_D",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/fischler2020_dirichlet_irrationality.pdf",
+          "position": "v1 PDF1–11、19–20",
+          "sha256": "8faaf867a2d2b5ef608f53190cd5cef01e6ca79eabf97d397f009e8672e768e7"
+        }
+      ],
+      "audit": "主代理独立不等式；Brown任务与Lai/Siegel任务代理分别独核投影rank、全费用和正upper。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_divisor_filter",
+      "type": "reviewed_written_structure",
+      "statement": "原N=DT divisor packet中固定ζ7或χ−8 L2的其他权消元方程超过可用divisor自由度，只能零权重。",
+      "scope": "限原N=DT及合法a,r,T；不涵盖改变least period、packet、算术或所有滤波。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§3 divisor/Vandermonde",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/fischler2020_dirichlet_irrationality.pdf",
+          "position": "原§3.2",
+          "sha256": "8faaf867a2d2b5ef608f53190cd5cef01e6ca79eabf97d397f009e8672e768e7"
+        }
+      ],
+      "audit": "主代理重建τ(D)≤D≤floor((a−1)/(3T))≤m−1；两位独审核广义Vandermonde范围。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_lai_rz_scope",
+      "type": "reviewed_written_structure",
+      "statement": "已核Lai v3与Rivoal–Zudilin半整数构造输出宽奇ζ/β集合；不提供本轮指定目标预算。",
+      "scope": "Lai 1.009正文定理与1.119356/ζ75 Claims标签分开；RZ Φ_s(-1)=2^sβ(s)按定义恢复，显示数值margin未独证。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§3末、§4首",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/lai2026_ball_rivoal_improvements.pdf",
+          "position": "v3 PDF1–4",
+          "sha256": "217a0cf3e9b717d536bac9b4e38a94f6f443ab0b689ea29e851bd9ef5a49822c"
+        },
+        {
+          "path": "literature/rivoal_zudilin2003_catalan_relatives.pdf",
+          "position": "PDF4–5",
+          "sha256": "24da4f15fcb76df57e6bfc9150d6753ed32e20538b6589023baa33c487744edf"
+        }
+      ],
+      "audit": "来源身份/量词定向核查，RZ标量由定义独证；不认证作者辅助数值常数或全球新颖性。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_siegel_cutoff",
+      "type": "reviewed_written_structure",
+      "statement": "固定Siegel全部p,k原生外推行不能同时在形式权坐标中纯化为最高权5的指定目标。",
+      "scope": "S1参数、非零最高P_b、K>(r+1)n和完整k范围；三角多项式超过n零点强迫P_b=0；不排除整数行选择器或假设数值独立。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§4三角多项式",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 §4.2–4.6",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "主代理独立导数/符号及三角基重建，Brown任务与2019任务代理独核；最终q符号/t≥2修订复读通过。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_siegel_fixed_budget",
+      "type": "reviewed_written_structure",
+      "statement": "S1固定a1000,h360,r3.9,κ10.58,ω12,Ω300的合格族全packet有logα_S<−4623/50及logβ_S<1168/5。",
+      "scope": "调用原Theorem4(i)–(iii)、Lemmas5–6及Proposition3；同一无界50倍数族、统一渐近证书且n充分大，未认证有效起点；没有支付目标selector费用。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "S1–S3",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 Theorem4；Lemmas5–6；Proposition3；PDF39",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "保守e/log纸面界独证；两位独审重算全部参数条件和三项有理粗界；无数值优化、CAS或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c267_selector_interface",
+      "type": "conditional",
+      "statement": "若同一合格Siegel族目标像rank2且有两独立输出来源范数exp(γn+o(n))、γ<−logα_S，则X=3ζ3+ζ5无理。",
+      "scope": "实际B/H/Λ/K/Γ及固定C清整；S5、两短非零像和实际primitive信用均未证，只有充分接口，没有新数值定理。",
+      "dependencies": [
+        "c267_siegel_fixed_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "S4–S5及两输出反证",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        },
+        {
+          "path": "research/siegel_target_quotient_charter_round268_20261013.md",
+          "position": "首证书和全费用门槛",
+          "sha256": "1839fe274ed9e3e5a673e48b3d0759e807beb4c2107dd065505636f14b1d2790"
+        },
+        {
+          "path": "literature/fischler_siegel_odd_zeta.pdf",
+          "position": "v3 Proposition3弱kernel；原全部p,k形式",
+          "sha256": "39fa3b82b09ad56dbc8364acd6b27e5fb5683f548f62583e82e78b1500ddffaa"
+        }
+      ],
+      "audit": "主代理对全部X=u/v量词重建，两位独审核行空间/kernel对偶、两输出非零及统一族量词；条件尚未支付。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c268_target_image",
+      "type": "pending",
+      "statement": "沿同一合格无界族核e_X可见，并裁决两独立目标输出是否有足够低费真实来源代表。",
+      "scope": "一轮source_verification；需所有合格族或保持同一χ/余项证书的存在族，不由generic、有限头、同b或目标饱和领取结论。",
+      "dependencies": [
+        "c267_siegel_fixed_budget",
+        "c267_selector_interface"
+      ],
+      "evidence": [
+        {
+          "path": "research/siegel_target_quotient_charter_round268_20261013.md",
+          "position": "固定对象、首问题、通过与停止",
+          "sha256": "1839fe274ed9e3e5a673e48b3d0759e807beb4c2107dd065505636f14b1d2790"
+        },
+        {
+          "path": "research/global_admission_review_round267.md",
+          "position": "§5–6",
+          "sha256": "6a13516a15d8771fd1949ef37806c73042889708b8a3ea2b4802a2852dd98394"
+        }
+      ],
+      "audit": "待268实际目标像/来源范数证书；不预先准入数值实施。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -893,6 +1106,27 @@
         "research/m08_target_vector_round266.md"
       ],
       "reopen_condition": "定期宏观比較不代表数学准入；新实现/已闭source须另有改变障碍的实证。"
+    },
+    {
+      "id": "d267_formal_admission_review",
+      "round": 267,
+      "decision": "完成提前正式全路线比较，关闭267宏观窗口；未准入数值实施，只给固定非显式Siegel目标商一轮来源核查。",
+      "scope": "新actual p,k packet与222显式稳定空间、227四解包及266 M₀,₈不同；统一合格族与两独立短输出费用尚缺，所有旧数学窗口保持关闭。",
+      "claim_ids": [
+        "c267_mellin_scope",
+        "c267_dirichlet_cost",
+        "c267_divisor_filter",
+        "c267_lai_rz_scope",
+        "c267_siegel_cutoff",
+        "c267_siegel_fixed_budget",
+        "c267_selector_interface",
+        "c268_target_image"
+      ],
+      "evidence": [
+        "research/global_admission_review_round267.md",
+        "research/siegel_target_quotient_charter_round268_20261013.md"
+      ],
+      "reopen_condition": "只在同一实际对象的目标可见性和足够低费两输出有实证改变后登记新有界实施；否则268到期结束，不扫描或改名续期。"
     }
   ],
   "windows": [
@@ -934,14 +1168,26 @@
     {
       "first_round": 267,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "global_source_gate_267",
       "route_id": "new_period_source",
       "source_key": "unselected_new_carrier",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d266_plan_macro_review",
       "reopening_decision_id": "d266_plan_macro_review",
-      "kind": "macro_selection"
+      "kind": "macro_selection",
+      "closure_decision_id": "d267_formal_admission_review"
+    },
+    {
+      "first_round": 268,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "siegel_target_quotient_source_268",
+      "route_id": "siegel_target_quotient",
+      "source_key": "fischler_siegel_a1000_h360_X31_target_quotient",
+      "status": "active",
+      "decision_id": "d267_formal_admission_review",
+      "kind": "source_verification"
     }
   ],
   "completed_rounds": [
@@ -1006,6 +1252,16 @@
       "report": "research/m08_target_vector_round266.md",
       "outputs": [
         "research/m08_target_vector_round266.md"
+      ]
+    },
+    {
+      "round": 267,
+      "kind": "formal_selection_and_diagnostic_structure",
+      "feasibility_progress": false,
+      "window_id": "global_source_gate_267",
+      "report": "research/global_admission_review_round267.md",
+      "outputs": [
+        "research/global_admission_review_round267.md"
       ]
     }
   ]

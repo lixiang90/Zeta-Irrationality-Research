@@ -17,6 +17,7 @@
 | 净预算裁决（264） | 完整单变量指数下界331/84、balanced消去核保留信用、原monomial box桥 | index-only BC入口关闭；Cauchy高度保证仍不足，原两轮窗口结束；非intrinsic/全部tensor排除 |
 | 正式来源选择（265） | Catalan偶滤波自然清整的正净指数、wheel插入收敛/系数障碍、M₀,₈固定3:1投影 | 尚无充分预算；下一步只核完整共同系数向量，不恢复旧参数优化 |
 | 完整向量来源核查（266） | 直接Barnes全素数幂安全模型、下降factor2/Mellin符号纠错、群全幂信用仅o(n) | 清整上界仍不足；一轮窗口结束，不把upper失败冒充本原费用lower |
+| 正式来源宏观比较（267） | Mellin严格量词、周期Dirichlet完整消元与divisor阻碍、非显式Siegel全packet严格误差界 | 没有新数值准入；选择不同原生packet的目标商，仅给一轮可见性和真实选择器费用核查 |
 
 ## 阅读顺序
 
@@ -29,6 +30,7 @@
 7. [第264轮费用证明](../research/joint_budget_bridge_round264.md)及[轮次结算](../research/research_round264_report_20261013.md)：明确到期窗口的停止范围和剩余费用。
 8. [第265轮正式来源选择](../research/source_selection_round265.md)：真实构造、拒绝范围与下一项有期限的来源核查。
 9. [第266轮完整向量模型与结算](../research/m08_target_vector_round266.md)：原文归一化、全部素数幂及真正本原倍率的适用范围。
+10. [第267轮正式比较](../research/global_admission_review_round267.md)：按指定数值、完整反证与同对象费用选择下一来源；[第268轮任务](../research/siegel_target_quotient_charter_round268_20261013.md)限定首证书和到期停止条件。
 
 ## 当前门槛
 
