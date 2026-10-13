@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 4,
+  "revision": 5,
   "updated_at": "2026-10-13",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,38 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 263,
+    "last_completed_round": 264,
     "last_global_review_round": 263,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 3,
+    "rounds_without_feasibility_progress": 4,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/research_global_review_round263_20261013.md"
   },
   "current_task": {
-    "id": "round264_joint_net_budget",
-    "round": 264,
+    "id": "round265_global_source_selection",
+    "round": 265,
     "status": "in_progress",
-    "route_id": "ap_joint",
-    "entry": "research/joint_budget_charter_round264_20261013.md",
-    "deliverable": "一轮裁决真实整jet格、消去source、正确leading-cell及同metric短向量的足够净预算桥。",
-    "next_decisive_question": "263已证实际Smith信用能否进入正确leading构造并跨完整严格门槛？",
-    "pass_condition": "明确实际整数格及全部费用，收益有望使所选BC接口τ_eff<(2/3)log3；不被source index/metric抵消。",
-    "stop_condition": "264结束时无足够净预算证据，则关闭当前稳定窗口；禁止用局部新引理、task改名或仅Bockstein计算续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_selection_charter_round265_20261013.md",
+    "deliverable": "正式比较真实来源/负graded机制及机会成本，选择一个有证据、可裁决的下一首命题。",
+    "next_decisive_question": "哪项实际新机制最先有望付清指定数值投影、完整反证及同对象净预算？",
+    "pass_condition": "具体一手构造和公式改变已知障碍，实际全尺度预算有望过门槛；再登记有界数学窗口。",
+    "stop_condition": "一轮完成正式投入决定；不能用泛泛候选列表、旧导子/参数或改名延续265筛选窗口。",
     "must_read": [
+      "research/research_round264_report_20261013.md",
       "research/research_global_review_round263_20261013.md",
-      "research/joint_evaluation_support_round263_20261013.md",
-      "research/joint_evaluation_lattice_round263_20261013.md"
+      "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/joint_budget_bridge_round264.md"
+      "research/source_selection_round265.md"
     ],
     "next_actions": [
-      "先做已知信用与可能额外信用的量级/机会成本裁决。",
-      "将真实CRT格与CDT6.3消去约束相交，核短整向量、correct leading cell及原metric。",
-      "只有足够预算桥指出确实需要且有用时才核第二Smith层；264后无足够证据则关窗并转宏观来源选择。"
+      "按同一最终接口账比较至少两种真实机制与保留旧路线的机会成本。",
+      "核一手端点、原生算子/坐标、全处费用与全叶域，不跨来源拼接资产。",
+      "作正式继续/停止/转向决策，登记具体首命题和有界窗口；维持新数值总目标。"
     ],
-    "window_id": "ap_joint_frobenius_263"
+    "window_id": "global_source_admission_265"
   },
   "routes": [
     {
@@ -158,29 +158,33 @@
     {
       "id": "ap_joint",
       "name": "实际联合评价格/Frobenius首证书",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "ζ(2)±2G分别无理",
       "source_key": "mixed_rank3_s_level24_actual_evaluation",
       "evidence": [
         "research/joint_evaluation_support_round263_20261013.md",
         "research/joint_evaluation_lattice_round263_20261013.md",
-        "research/research_global_review_round263_20261013.md"
+        "research/research_global_review_round263_20261013.md",
+        "research/joint_budget_bridge_round264.md",
+        "research/research_round264_report_20261013.md"
       ],
-      "gap": "已证本载体Frobenius exact4p和完整Smith/CRT收益；仍缺足够净预算的leading-box/同metric桥。",
+      "gap": "264证明单变量completejet index-only入口失败；balanced leading-box可证但高度保证仍不足。两轮窗口结束，intrinsic费用及全部tensor未被否定。",
       "new_mechanism": "degree随p的Frobenius polynomial gauge；262固定有理基底障碍不覆盖它。",
-      "reopen_condition": "稳定窗口剩264一轮；无足够净预算证据关窗，重开须新机制决策及证据。"
+      "reopen_condition": "新同对象统一或无界子列的负graded信用证明达到必要量级，或有独立预算的新真实carrier/接口；不以β扫描、局部核或任务改名续期。"
     },
     {
       "id": "new_period_source",
-      "name": "真正不同周期源",
-      "status": "unadmitted_candidates",
+      "name": "真正不同周期源（当前仅宏观准入筛选）",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
-        "research/next_route_carrier_20261012.md"
+        "research/next_route_carrier_20261012.md",
+        "research/research_round264_report_20261013.md",
+        "research/source_selection_charter_round265_20261013.md"
       ],
-      "gap": "未选出同时有真实投影、完整触发与净可行性的来源。",
-      "reopen_condition": "全局证书改变强制resonance和同对象预算；不同文件名不够。"
+      "gap": "尚未准入新数学来源；265比较真实投影、完整触发、原生费用/解析域及机会成本，选择下一首命题。",
+      "reopen_condition": "筛选窗口最多一轮；实际新载体需明确证据和有界任务，不恢复已闭旧参数。"
     }
   ],
   "claims": [
@@ -389,6 +393,70 @@
         }
       ],
       "audit": "待下一轮证明；当前未准入数值反证。",
+      "status": "superseded",
+      "replaced_by": "c264_coarse_box",
+      "correction": "264已付leading交集和保守box桥，但不足数值净预算；原BC充分桥未完成，停止本稳定窗口。待证任务没有被升级为充分定理。"
+    },
+    {
+      "id": "c264_index_lower",
+      "type": "reviewed_written_structure",
+      "statement": "实际完整一变量整jet canonical格的指数率liminf至少331/84，原BC index-only入口即使第二层理想也失败。",
+      "scope": "本实际s与全部±反证类，N=3D+O(1)；不是intrinsic actual-jump费用下界，非全部tensor或metrics no-go。",
+      "dependencies": [
+        "c263_frobenius",
+        "c263_smith",
+        "c262_bc_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_budget_bridge_round264.md",
+          "position": "§§1–2/(3)–(8)",
+          "sha256": "9be191c4e0c4c64fccac0cefadd3fb01a203fdf51d994b777f5578b30b5b53b5"
+        }
+      ],
+      "audit": "主代理及两位独立审阅者全文纸核(1)–(15)；norm范围、删尾正部、统一/子列量词按审阅修正；未Lean。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c264_coarse_box",
+      "type": "reviewed_written_structure",
+      "statement": "balanced整jet格与正确leading消去核交保留gross信用；原monomial短向量高度upper85/32每dD，Cauchy费85/48。",
+      "scope": "完整jump cube、原integer source及有序渐近；Cauchy/rearrangement upper不足，未认领BC τ或实际最小高度lower。",
+      "dependencies": [
+        "c263_tensor",
+        "c263_smith"
+      ],
+      "evidence": [
+        {
+          "path": "research/joint_budget_bridge_round264.md",
+          "position": "§§3–5/(9)–(15)",
+          "sha256": "9be191c4e0c4c64fccac0cefadd3fb01a203fdf51d994b777f5578b30b5b53b5"
+        }
+      ],
+      "audit": "主代理及两位独立审阅者全文纸核(1)–(15)；norm范围、删尾正部、统一/子列量词按审阅修正；未Lean。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c265_source_admission",
+      "type": "pending",
+      "statement": "下一真实机制同时改变数值投影/完整关系与同对象净预算，尚待宏观来源比较。",
+      "scope": "没有预先准入新载体；不能换已知推论或给旧窗口改名。",
+      "dependencies": [
+        "c264_index_lower",
+        "c264_coarse_box"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_selection_charter_round265_20261013.md",
+          "position": "本轮交付与准入账",
+          "sha256": "d4608139932d800406a8baa0e1dfcad18b94369766fb59cc22fe3fa9613c8cb2"
+        }
+      ],
+      "audit": "待265真实比较与独立核查。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -441,18 +509,45 @@
         "research/joint_budget_charter_round264_20261013.md"
       ],
       "reopen_condition": "匹配同对象预算桥达到严格门槛；否则结束窗口并比较真正新源。"
+    },
+    {
+      "id": "d264_close_joint_window",
+      "round": 264,
+      "decision": "两轮稳定窗口到期，关闭Frobenius/完整整jet实现的默认投入；下一轮正式宏观来源准入选择。",
+      "scope": "单变量index-only入口有实际lower；balanced box证书upper失败；不否定intrinsic负graded费用或全部联合格。",
+      "claim_ids": [
+        "c264_index_lower",
+        "c264_coarse_box"
+      ],
+      "evidence": [
+        "research/research_round264_report_20261013.md",
+        "research/joint_budget_bridge_round264.md"
+      ],
+      "reopen_condition": "同对象统一或无界子列的负graded证明超过331/84−3log3，或不同真实carrier/接口的独立足够预算；不是β扫描或改名。"
     }
   ],
   "windows": [
     {
       "first_round": 263,
       "maximum_completed_rounds": 2,
-      "completed_rounds": 1,
+      "completed_rounds": 2,
       "id": "ap_joint_frobenius_263",
       "route_id": "ap_joint",
       "source_key": "mixed_rank3_s_level24_actual_evaluation",
+      "status": "closed",
+      "decision_id": "d263_bounded_gate",
+      "closure_decision_id": "d264_close_joint_window"
+    },
+    {
+      "first_round": 265,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_admission_265",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
       "status": "active",
-      "decision_id": "d263_bounded_gate"
+      "decision_id": "d264_close_joint_window",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -486,6 +581,17 @@
         "research/joint_evaluation_support_round263_20261013.md",
         "research/joint_evaluation_lattice_round263_20261013.md",
         "research/research_global_review_round263_20261013.md"
+      ]
+    },
+    {
+      "round": 264,
+      "kind": "diagnostic_structure",
+      "feasibility_progress": false,
+      "window_id": "ap_joint_frobenius_263",
+      "report": "research/research_round264_report_20261013.md",
+      "outputs": [
+        "research/joint_budget_bridge_round264.md",
+        "research/research_round264_report_20261013.md"
       ]
     }
   ]

@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第263轮（2026-10-13）：建立跨轮次恢复协议并启动长期goal；在实际联合评价格中证明尺度依赖Frobenius关系与完整Smith层收益。尚未取得足够的数值净预算，文献和形式化资产继续保留。
+研究记录更新至第264轮（2026-10-13）：实际联合评价格已有Frobenius与Smith层证书；本轮补上完整整jet指数下界和leading-box桥，现有费用仍不足，关闭到期窗口并转回宏观来源选择。文献和形式化资产继续保留。
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新宏观选择与研究证据 | [第263轮正式复盘](research/research_global_review_round263_20261013.md) |
+| 最新研究结算与宏观选择 | [第264轮结算](research/research_round264_report_20261013.md) · [第263轮正式复盘](research/research_global_review_round263_20261013.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览
@@ -83,7 +83,7 @@ lake env lean scripts/FormalizationAudit.lean
 
 当前目标、稳定窗口、停止范围与复盘计数只在 `research/program.json` 维护，STATE由工具生成。上下文压缩后先读STATE，再沿命题证据恢复；组织和局部no-go不能替代新的数值定理。
 
-262已关闭自然AP标量入口。263识别本载体次数恰4p的Frobenius消去行，写出实际完整评价格并证明保守宏观指数收益；该收益未成为新的τ。当前短窗口仅余一轮检验正确leading构造、短整向量及同metric的足够净预算，不能因局部kernel改名续期，见[最新正式决定](research/research_global_review_round263_20261013.md)。
+262已关闭自然AP标量入口。263识别次数恰4p的Frobenius消去行并证明真实格收益；264证明完整单变量index-only入口仍失败，balanced leading-box的当前保证也不足。原稳定窗口已结束，未否定intrinsic jump费用或全部联合格方法，见[最新结算](research/research_round264_report_20261013.md)。
 
 ## 来源与许可
 

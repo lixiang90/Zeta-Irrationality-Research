@@ -20,6 +20,7 @@
 | 标准入口停止与 AP 候选的原始门槛 | [第261轮联合证书](refined_budget_gate_round261_20261010.md)、[进展报告](refined_budget_progress_round261_20261010.md) |
 | AP指定组合首证书（262） | [第262轮结算](research_next_route_progress_round262_20261012.md)、[费用证明](next_route_ap_cost_20261012.md)、[全图上界](next_route_cover_bound_20261012.md)、[无穷远与载体](next_route_carrier_20261012.md)、[目标检索](next_route_novelty_20261012.md) |
 | 实际联合评价格与宏观goal（263） | [正式复盘](research_global_review_round263_20261013.md)、[support/Frobenius](joint_evaluation_support_round263_20261013.md)、[完整Smith与balanced格](joint_evaluation_lattice_round263_20261013.md) |
+| 完整index下界与leading-box裁决（264） | [费用证明](joint_budget_bridge_round264.md)、[轮次结算](research_round264_report_20261013.md) |
 
 ## 数据与历史记录
 

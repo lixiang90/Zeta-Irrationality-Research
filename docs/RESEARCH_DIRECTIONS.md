@@ -1,6 +1,6 @@
 # 研究方向、成果与边界
 
-本文把分散的研究记录按数学问题整理，更新至第263轮（2026年10月13日）；后续纠错优先于早期乐观判断。它是一份成果地图，不是新的证明或全球新颖性审查。当前可变任务与路线决定以[STATE](../research/STATE.md)为准。完整推导、原始计算、独审记录和文献版本仍在 `research/` 与 `literature/`。
+本文把分散的研究记录按数学问题整理，更新至第264轮（2026年10月13日）；后续纠错优先于早期乐观判断。它是一份成果地图，不是新的证明或全球新颖性审查。当前可变任务与路线决定以[STATE](../research/STATE.md)为准。完整推导、原始计算、独审记录和文献版本仍在 `research/` 与 `literature/`。
 
 阅读时区分三类证据：**已证结构**有书面全尺度论证；**有限证书**只覆盖声明的尺度、参数或截断；**待证接口**尚不能进入最终反证。多数后续成果尚未 Lean 形式化。本次整理没有重新全量构建 Lean，也没有重算全部历史证书。
 
@@ -78,7 +78,9 @@ AP 素数同余类过滤的完整前缀分母是真实资产：某些特殊关�
 
 这些费用是明确定义模型的值或下界，匹配 AP holonomy 定理尚未建立；不是所有实际评价格的下界。后续需要作用于实际联合整数格的新全尺度内容，或改变强制奇点的真实周期载体。本轮没有准入另一来源，也没有证明目标不可能。见[混合来源](../research/research_source_selection_progress_round259_20261010.md)、[第261轮停止证书](../research/refined_budget_progress_round261_20261010.md)及[第262轮最新结算](../research/research_next_route_progress_round262_20261012.md)。
 
-263转向真实有限评价格，证明本period的Frobenius联合行degree恰4p，能杀掉最高平方分母packet；首block support无12连零，但不处处非零。完整Toeplitz/Smith格及balanced tensor选列给真实整jet指数upper改善。它是随素数变化的机制，固定换基障碍不覆盖；gross信用仍未成为适用的新τ。下一关只检验足够净预算的同metric、正确leading与短向量桥，见[263正式复盘](../research/research_global_review_round263_20261013.md)。
+263转向真实有限评价格，证明本period的Frobenius联合行degree恰4p，能杀掉最高平方分母packet；首block support无12连零，但不处处非零。完整Toeplitz/Smith格及balanced tensor选列给真实整jet指数upper改善。它是随素数变化的机制，固定换基障碍不覆盖，见[263正式复盘](../research/research_global_review_round263_20261013.md)。
+
+264进一步证明实际完整单变量index率至少331/84，原BC的index-only入口即使第二Smith层理想也失败。balanced消去核保留gross信用，原monomial短向量桥也成立，但Cauchy源高度保证85/48仍不足，不能冒称BC τ。原窗口到期关闭；intrinsic jump负graded信用和全部tensor方法未被排除，见[264结算](../research/research_round264_report_20261013.md)。
 
 ## 9. 动机、K₂ 与相对周期：精确身份先于数值反证
 
