@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第279轮（2026-10-20）：完成全路线复盘；同一输出的连分式改写不减本原费用，删除平移前缀后裸线性率为0。单值复Beta给纯ζ7系数，但正则化配对尚未付秩、非零和净预算；下一轮只核固定非对角9jet来源。仍无新无理性定理，连续停滞3轮，文献与形式化资产继续保留。
+研究记录更新至第280轮（2026-10-20）：从实际收敛积分独证单值复Beta非对角配对；固定9jet矩阵在规模至少8时实际秩恰8，规模至少9的行列式恒零，目标系数秩1。该增长实现一轮到期关闭；仍无新无理性定理，连续停滞4轮，转281全路线比较。文献与形式化资产继续保留。
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第279轮全路线比较](research/global_source_review_round279.md) · [单值复Beta来源与边界](research/period_source_gate_round279.md) · [第280轮最小来源任务](research/sv_beta_pairing_charter_round280_20261020.md) |
+| 最新研究结算与宏观选择 | [第280轮精确公式与秩裁决](research/sv_beta_pairing_round280.md) · [第279轮全路线比较](research/global_source_review_round279.md) · [第281轮宏观任务](research/source_gate_charter_round281_20261020.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览

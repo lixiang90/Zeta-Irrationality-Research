@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 20,
+  "revision": 21,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,39 +22,39 @@
     ]
   },
   "review": {
-    "last_completed_round": 279,
+    "last_completed_round": 280,
     "last_global_review_round": 279,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 3,
+    "rounds_without_feasibility_progress": 4,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_source_review_round279.md"
   },
   "current_task": {
-    "id": "round280_sv_beta_pairing_source",
-    "round": 280,
+    "id": "round281_global_source_gate",
+    "round": 281,
     "status": "in_progress",
-    "route_id": "single_valued_beta_jet",
-    "entry": "research/sv_beta_pairing_charter_round280_20261020.md",
-    "deliverable": "固定非对角正则化9jet的确切来源、完整周期和全m实际/目标秩；有界秩或无新selector即到期关闭。",
-    "next_decisive_question": "该实际非对角配对是否可分并有统一固定jet秩界，还是确有能改变最终缺口的新目标输出？",
-    "pass_condition": "独证完整非对角公式/周期和实际秩；数值实施另须全反证非零、全部费用及含degree·log v的严格趋零。",
-    "stop_condition": "最多一轮；公式未证、统一有界秩、仅原对角纯化或无新selector/余项即关闭，不升jet或改名续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round281_20261020.md",
+    "deliverable": "固定单值来源精确关闭后的全路线机会成本比较；选择同对象新机制或准确拒绝及最小来源任务。",
+    "next_decisive_question": "哪项已付新机制能改变指定数值的完整费用、真实余项或数值关系触发，值得优先？",
+    "pass_condition": "真实对象/完整反证/净门槛、新机制证据和有期限首任务；有足够净预算和独审前不准入数值实施。",
+    "stop_condition": "宏观最多一轮；复Beta另一固定jet、同输出J分数、单mirror或未排除不重开；无候选给准确范围和最小来源核查。",
     "must_read": [
+      "research/sv_beta_pairing_round280.md",
       "research/global_source_review_round279.md",
-      "research/period_source_gate_round279.md",
-      "literature/source_scope_round279_20261020.md",
-      "research/sv_beta_pairing_charter_round280_20261020.md"
+      "docs/RESEARCH_DIRECTIONS.md",
+      "research/source_gate_charter_round281_20261020.md"
     ],
     "expected_outputs": [
-      "research/sv_beta_pairing_round280.md"
+      "research/global_source_review_round281.md"
     ],
     "next_actions": [
-      "从每对实际收敛条带独证非对角复Beta/contiguous公式，核相位、共轭和对角一致性；不从对角取根。",
-      "计算固定9jet完整周期/目标矩阵及全m秩，候选B·v_i·v_j尚待证；退化即停止，不展开费用扫描。",
-      "任何实际新输出必须同对象付全部v的非零和净预算；一轮结算更新账/STATE并同步已授权GitHub。"
+      "复用279全路线量级，纳入280实际rank8/大det恒零，比较最短最终缺口和机会成本，不重读长日志。",
+      "至少两个独立竞争核查；只看能改变完整费用/真实余项/同值触发的新证据，旧关闭范围不改标签续期。",
+      "最多一宏观轮给有量级决定及稳定首任务，保持停滞计数，更新账/STATE并同步已授权GitHub。"
     ],
-    "window_id": "sv_beta_pairing_source_280"
+    "window_id": "global_source_gate_281"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -211,9 +211,11 @@
         "research/global_source_review_round279.md",
         "research/real_source_gate_round279.md",
         "research/period_source_gate_round279.md",
-        "research/primary_source_gate_round279.md"
+        "research/primary_source_gate_round279.md",
+        "research/sv_beta_pairing_round280.md",
+        "research/source_gate_charter_round281_20261020.md"
       ],
-      "gap": "279正式比较无新数值实施准入；只选不同单值复Beta非对角9jet最小来源核查，不重开旧实现。",
+      "gap": "280新source一轮结束、连续4无可行准入/完整净预算改善，281正式全路线比较能改变最终接口的新实证。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -349,17 +351,21 @@
     {
       "id": "single_valued_beta_jet",
       "name": "单值复Beta非对角固定9jet（仅最小来源核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "ζ(7)无理的真实数值出口",
       "source_key": "sv_complex_beta_integer_polynomial_pairing_fixed_9jet",
       "evidence": [
         "research/period_source_gate_round279.md",
         "research/global_source_review_round279.md",
         "research/sv_beta_pairing_charter_round280_20261020.md",
-        "literature/source_scope_round279_20261020.md"
+        "literature/source_scope_round279_20261020.md",
+        "research/sv_beta_pairing_round280.md",
+        "research/sv_beta_formula_round280.md",
+        "research/sv_beta_rank_round280.md",
+        "research/sv_beta_independent_round280.md"
       ],
-      "gap": "仅对角Gamma/纯7jet已付；非对角式、实际增长秩、全反证投影及净预算未付，不领正则化正性。",
-      "reopen_condition": "初次来源核查一轮；退化或无新selector后关闭，重开须有改变全m实际秩/余项/完整费用的新机制。"
+      "gap": "280独证实际K=B vvᵀ，固定9jet m≥8秩恰8/惯性(4,4,m−8)，m≥9det恒0，目标rank1；非零接口失败，一轮关闭。",
+      "reopen_condition": "改变原实际固定秩障碍的新机制，且重付高周期投影/完整费用/实际非零；另一固定jet、改标签、未排除的小minor不够。"
     }
   ],
   "claims": [
@@ -3612,26 +3618,209 @@
     },
     {
       "id": "c280_sv_offdiagonal_gate",
-      "type": "pending",
-      "statement": "核固定P_i=[z(1−z)]^i、i,j=1..m的正则化非对角9jet完整公式/周期及全m实际秩，候选可分式尚待独证。",
-      "scope": "仅一轮来源审查；不从对角推非对角，不领正性；统一有界秩或无新实际selector即停止，不升jet续期。",
+      "type": "reviewed_written_structure",
+      "statement": "280首任务完成：独证实际非对角K=B vi vj，固定9jet实际秩恰8(m≥8)、目标rank1，大规模det恒0；关闭原实现。",
+      "scope": "已证范围仅固定P_i、原AC、固定9jet；未领取正性或新的无理性，未执行281。",
       "dependencies": [
         "c279_sv_beta_diagonal",
-        "c279_sv_positive_boundary"
+        "c279_sv_positive_boundary",
+        "c280_actual_non_diagonal_formula",
+        "c280_sharp_actual_rank",
+        "c280_zero_large_minors"
       ],
       "evidence": [
         {
-          "path": "research/sv_beta_pairing_charter_round280_20261020.md",
-          "position": "固定对象、首命题1–4、完整v门槛与独审纠正",
-          "sha256": "fc1d9cbf78a385ca55f87c04e8c8bf2c44a8ad2205e27cae5bdb9733a75a8436"
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "§1–5",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
         },
         {
-          "path": "research/period_source_gate_round279.md",
-          "position": "P13",
-          "sha256": "c00a9efec61304c2a82907f77cb6aaea20f1ca24cbf217218c403ad0ce5b42bb"
+          "path": "research/sv_beta_formula_round280.md",
+          "position": "F280.2–11",
+          "sha256": "d7ae3255978b0697565b15583dde61a0ea3af03a23dd51e88e73db64afca37a9"
+        },
+        {
+          "path": "research/sv_beta_rank_round280.md",
+          "position": "R1–13",
+          "sha256": "cd9a8a57a9ab612f9546aebbaa43d237301853a2c14e4930b8fbc0a850e038aa"
+        },
+        {
+          "path": "research/sv_beta_independent_round280.md",
+          "position": "I280.1–5",
+          "sha256": "56fae4275a4c52d711892bbfd9c0c99dbee1ab8e9cee6830696c386d537a6c65"
         }
       ],
-      "audit": "未执行280。primary指出初稿无尺度limsup不足，根已补全部d_m log v趋零；仅修章程不计数学进展。",
+      "audit": "根独核三稿，公式/代数/反证三方交审均通过；恒零不是数值反证成功。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c280_actual_non_diagonal_formula",
+      "type": "reviewed_written_structure",
+      "statement": "全部i,j≥1的实际AC积分精确满足Kij=B vi vj，无额外phase；从逐对真实绝对收敛条带自足证明。",
+      "scope": "固定P_i=[z(1−z)]^i、dxdy/π归一；实strip Schwinger/Tonelli/Gaussian/Gamma后恒等延拓；t不变bar t，不从对角取根。",
+      "dependencies": [
+        "c279_sv_beta_diagonal"
+      ],
+      "evidence": [
+        {
+          "path": "research/sv_beta_formula_round280.md",
+          "position": "F280.2–11",
+          "sha256": "d7ae3255978b0697565b15583dde61a0ea3af03a23dd51e88e73db64afca37a9"
+        },
+        {
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "S280.1–4",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
+        },
+        {
+          "path": "research/sv_beta_independent_round280.md",
+          "position": "I1–6、I280.5",
+          "sha256": "56fae4275a4c52d711892bbfd9c0c99dbee1ab8e9cee6830696c386d537a6c65"
+        }
+      ],
+      "audit": "根独立重建并逐式核；rank与audit另独核自含链，audit另从一手一般Beta验证相位/实际域；均通过。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c280_complete_jet_factorization",
+      "type": "reviewed_written_structure",
+      "statement": "完整固定9jet为S7+4ζ3S4+12ζ5S2+8ζ3²S1+36ζ7S0=A H Aᵀ，detH=1；ζ7系数全m≥1实际有理矩阵rank恰1。",
+      "scope": "保留全部背景/有理头，不假设ζ数值独立；v_i一阶零，只有w_i低0..7jet，故总rank≤8。",
+      "dependencies": [
+        "c280_actual_non_diagonal_formula"
+      ],
+      "evidence": [
+        {
+          "path": "research/sv_beta_rank_round280.md",
+          "position": "R1–6、R12",
+          "sha256": "cd9a8a57a9ab612f9546aebbaa43d237301853a2c14e4930b8fbc0a850e038aa"
+        },
+        {
+          "path": "research/sv_beta_formula_round280.md",
+          "position": "F280.12–14",
+          "sha256": "d7ae3255978b0697565b15583dde61a0ea3af03a23dd51e88e73db64afca37a9"
+        },
+        {
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "S280.5",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
+        },
+        {
+          "path": "research/sv_beta_independent_round280.md",
+          "position": "I7–8",
+          "sha256": "56fae4275a4c52d711892bbfd9c0c99dbee1ab8e9cee6830696c386d537a6c65"
+        }
+      ],
+      "audit": "根、formula和audit逐式核完整展开、t²零阶、所有周期及反对角det；无样本。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c280_sharp_actual_rank",
+      "type": "reviewed_written_structure",
+      "statement": "首k行低kjet行列式有正有理闭式；m≥8时实际rank M=8、惯性(4,4,m−8)，有理核维m−8。",
+      "scope": "全部k≥1的共同分母三角评价/Vandermonde证；m<8不从满行A误推不定压缩M满秩。",
+      "dependencies": [
+        "c280_complete_jet_factorization"
+      ],
+      "evidence": [
+        {
+          "path": "research/sv_beta_rank_round280.md",
+          "position": "R7–11及审核补记",
+          "sha256": "cd9a8a57a9ab612f9546aebbaa43d237301853a2c14e4930b8fbc0a850e038aa"
+        },
+        {
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "S280.6–7",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
+        },
+        {
+          "path": "research/sv_beta_independent_round280.md",
+          "position": "I9–11、I280.5",
+          "sha256": "56fae4275a4c52d711892bbfd9c0c99dbee1ab8e9cee6830696c386d537a6c65"
+        }
+      ],
+      "audit": "根、formula及audit独核全k det的符号、4次幂/Pochhammer/分母，及满列/合同惯性，均通过。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c280_zero_large_minors",
+      "type": "reviewed_written_structure",
+      "statement": "所有8×8 minors有理，首8主det为正有理平方，全部9×9以上minor恒0；原m→∞行列式在所有无界子列最终零。",
+      "scope": "固定9jet原增长Gram实现；任何清整/v/尺度因子不能修复实际非零。其它小minor/移动下标/增长jet不被全部否定；任意另固定J的rank≤J−1。",
+      "dependencies": [
+        "c280_sharp_actual_rank"
+      ],
+      "evidence": [
+        {
+          "path": "research/sv_beta_rank_round280.md",
+          "position": "R9–13、R280.5",
+          "sha256": "cd9a8a57a9ab612f9546aebbaa43d237301853a2c14e4930b8fbc0a850e038aa"
+        },
+        {
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "S280.8、§5",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
+        },
+        {
+          "path": "research/sv_beta_independent_round280.md",
+          "position": "I280.3–4",
+          "sha256": "56fae4275a4c52d711892bbfd9c0c99dbee1ab8e9cee6830696c386d537a6c65"
+        }
+      ],
+      "audit": "根、formula与audit核Cauchy-Binet方块分解、完整反证含d log v；不以正minor推PSD。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c280_window_expiry",
+      "type": "reviewed_written_structure",
+      "statement": "固定非对角9jet来源已付自含公式及锐实际rank；一轮按期关闭，feasibility false/停滞4，新增完成轮后须提前281宏观比较。",
+      "scope": "局部全尺度no-go改变继续/停止但不改善完整净预算；goal/numeric未实现，不标blocked。",
+      "dependencies": [
+        "c280_zero_large_minors"
+      ],
+      "evidence": [
+        {
+          "path": "research/sv_beta_pairing_round280.md",
+          "position": "§5",
+          "sha256": "b2da8a15e8c8a5764ae71b39479dcc0ec82717206afe6379cb5848a0b7e84200"
+        },
+        {
+          "path": "research/source_gate_charter_round281_20261020.md",
+          "position": "基线与首问题",
+          "sha256": "6e2be860546dd267c0b0f28b6b4c4d495d6e0aa5846c63b5dc9be45ea028587b"
+        }
+      ],
+      "audit": "根按实际证据结算，audit核完整量词与固定停止范围；组织/诊断不重置计数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c281_macro_gate",
+      "type": "pending",
+      "statement": "281比较全路线真实费用/余项/数值触发新证据，给有量级选择或准确拒绝和最小首任务。",
+      "scope": "宏观最多一轮，不提前执行；旧固定source不因未排除/改jet/标签重开。",
+      "dependencies": [
+        "c280_window_expiry"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round281_20261020.md",
+          "position": "首问题1–5与交付",
+          "sha256": "6e2be860546dd267c0b0f28b6b4c4d495d6e0aa5846c63b5dc9be45ea028587b"
+        }
+      ],
+      "audit": "待下轮实质竞争及正式资源选择；当前无数值准入。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -4208,6 +4397,46 @@
         "literature/source_scope_round279_20261020.md"
       ],
       "reopen_condition": "若固定秩退化或无新selector/余项即关闭；更高jet/新方向须另有改变最终缺口的证据。"
+    },
+    {
+      "id": "d280_close_sv_beta_source",
+      "round": 280,
+      "decision": "原单值复Beta固定非对角9jet一轮到期关闭：m≥9实际det恒0，完整非零接口失败，不再做分母扫描。",
+      "scope": "自足实际来源与锐秩已审；停滞4不重置，不否定全部单值/小minor/增长jet方法。",
+      "claim_ids": [
+        "c280_sv_offdiagonal_gate",
+        "c280_actual_non_diagonal_formula",
+        "c280_complete_jet_factorization",
+        "c280_sharp_actual_rank",
+        "c280_zero_large_minors",
+        "c280_window_expiry"
+      ],
+      "evidence": [
+        "research/sv_beta_pairing_round280.md",
+        "research/sv_beta_formula_round280.md",
+        "research/sv_beta_rank_round280.md",
+        "research/sv_beta_independent_round280.md"
+      ],
+      "reopen_condition": "须有改变此实际固定秩障碍的不同机制，并重新支付完整周期/投影、实际非零和全部净费用；仅提高固定jet或改名不够。"
+    },
+    {
+      "id": "d280_plan_macro_review",
+      "round": 280,
+      "decision": "因280原source结束且连续4未改善，安排281最多一轮正式全路线机会成本比较。",
+      "scope": "最近正式279；新增完成轮后提前复盘，宏观恢复不授权任何旧数学source重开。",
+      "claim_ids": [
+        "c280_window_expiry",
+        "c281_macro_gate"
+      ],
+      "evidence": [
+        "research/sv_beta_pairing_round280.md",
+        "research/source_gate_charter_round281_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/sv_beta_pairing_round280.md",
+        "research/source_gate_charter_round281_20261020.md"
+      ],
+      "reopen_condition": "宏观比较可执行；数学实施仍须同对象新机制实证和有期限首命题。"
     }
   ],
   "windows": [
@@ -4414,13 +4643,26 @@
     {
       "first_round": 280,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "sv_beta_pairing_source_280",
       "route_id": "single_valued_beta_jet",
       "source_key": "sv_complex_beta_integer_polynomial_pairing_fixed_9jet",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d279_select_sv_beta_source",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d280_close_sv_beta_source"
+    },
+    {
+      "first_round": 281,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_281",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d280_plan_macro_review",
+      "reopening_decision_id": "d280_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -4663,6 +4905,20 @@
         "research/period_source_gate_round279.md",
         "research/primary_source_gate_round279.md",
         "literature/source_scope_round279_20261020.md"
+      ]
+    },
+    {
+      "round": 280,
+      "kind": "self_contained_actual_pairing_and_exact_rank_closure",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "window_id": "sv_beta_pairing_source_280",
+      "report": "research/sv_beta_pairing_round280.md",
+      "outputs": [
+        "research/sv_beta_pairing_round280.md",
+        "research/sv_beta_formula_round280.md",
+        "research/sv_beta_rank_round280.md",
+        "research/sv_beta_independent_round280.md"
       ]
     }
   ]

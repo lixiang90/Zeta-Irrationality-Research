@@ -36,3 +36,5 @@
 第277轮新增一手网页、官方正交公式及实际读域见[来源记录](source_scope_round277_20261020.md)；Prévost v1的规范冲突与本轮特化重建分开，原冻结清单不改。
 
 第279轮单值复Beta、一般CMF及旧声称去重的实际一手读域见[来源记录](source_scope_round279_20261020.md)；未证非对角配对、正则化正性和纯目标费用保持待核，原件与冻结清单不改。
+
+第280轮非对角复Beta的一手交叉核查见[公式稿F280.6](../research/sv_beta_formula_round280.md)与[独审I280.2](../research/sv_beta_independent_round280.md)；根另实际读Neretin 2212.09112v2 §1.1–1.2，详见[结算§2](../research/sv_beta_pairing_round280.md)。本特化有自足Gaussian证明，旧文个别收敛印误不采用，未更改文献原件或冻结清单。
