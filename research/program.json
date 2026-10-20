@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 14,
+  "revision": 15,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,7 +22,7 @@
     ]
   },
   "review": {
-    "last_completed_round": 273,
+    "last_completed_round": 274,
     "last_global_review_round": 273,
     "default_interval": 4,
     "maximum_interval": 8,
@@ -31,30 +31,30 @@
     "evidence": "research/global_budget_review_round273.md"
   },
   "current_task": {
-    "id": "round274_abel_primitive_finite_rate",
-    "round": 274,
+    "id": "round275_global_source_gate",
+    "round": 275,
     "status": "in_progress",
-    "route_id": "abel_beta45_positive_gram",
-    "entry": "research/abel_primitive_budget_charter_round274_20261020.md",
-    "deliverable": "固定同一Abel来源和新安全规范，裁决实际实率及剩余完整本原内容能否给严格负二次净率。",
-    "next_decisive_question": "能否对同一实际Q的必要衰减及新内容给全尺度证书，跨过剩余有限二次净门槛？",
-    "pass_condition": "同一实际对象的严格负本原二次预算及独审；全部有理反证/全m非零继续保持，未付前无数值准入。",
-    "stop_condition": "重开最多一完成轮；只有不足安全upper、局部结构、样本或可能有更大内容则到期结束，不重复273旧信用或改名续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round275_20261020.md",
+    "deliverable": "窗口到期后主动全路线机会成本比较，裁决有实证的新来源或旧源机制及有界首任务。",
+    "next_decisive_question": "哪个候选有全尺度证据能改变最短完整数值缺口，值得优先于其它路线？",
+    "pass_condition": "同对象实际目标/全部反证、足够净门槛及新机制证据；只据此安排有界首证书，充分预算前不准入数值实施。",
+    "stop_condition": "宏观任务最多一轮；不以已记账信用、未证Abel block、样本或改名重开旧源；无候选须给准确拒绝范围与最小来源核查。",
     "must_read": [
+      "research/abel_primitive_budget_round274.md",
+      "research/source_gate_charter_round275_20261020.md",
       "research/global_budget_review_round273.md",
-      "research/primitive_mechanism_review_round273.md",
-      "research/primary_mechanism_review_round273.md",
-      "research/abel_beta45_gram_bounds_round272.md"
+      "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/abel_primitive_budget_round274.md"
+      "research/global_source_review_round275.md"
     ],
     "next_actions": [
-      "固定原Y、n=2m−1、唯一p_i/M/Q/λ与新S_hat；先核实际Q全序列二次率，λ≥1提供必要衰减检查。",
-      "若未被必要lower裁决，再付同一新g_hat的全系数/全素数幂信用与实际Gram净率；旧阶乘内容不得二次扣除。",
-      "一轮结束给完整严格预算或准确停止证据并作资源决定；目标仍为新指定数值定理，困难不标blocked/complete。"
+      "比较全部路线已付接口、最短缺口、所需净量级及机会成本；274预算进展不自动延长旧窗口。",
+      "独立核至少两个竞争机制或一手来源；未证block、逐核正性与单尺度证书不替全尺度证据。",
+      "最多一轮完成选择/拒绝和稳定有界首任务；同步权威账、STATE和已授权GitHub仓库。"
     ],
-    "window_id": "abel_primitive_finite_rate_274"
+    "window_id": "global_source_gate_275"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -196,9 +196,11 @@
         "research/global_budget_review_round271.md",
         "research/abel_beta45_budget_round272.md",
         "research/source_gate_charter_round273_20261020.md",
-        "research/global_budget_review_round273.md"
+        "research/global_budget_review_round273.md",
+        "research/abel_primitive_budget_round274.md",
+        "research/source_gate_charter_round275_20261020.md"
       ],
-      "gap": "273正式比较完成；其它旧路线无新准入证据，只凭同Abel完整差商费用与实际旧内容实证，重开原来源274一轮。数值实施仍未准入。",
+      "gap": "274虽有完整净预算改善，同源一轮仍到期；275主动比较全部路线机会成本，尚无新的数学来源准入，不以未证block延续旧源。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -252,7 +254,7 @@
     {
       "id": "abel_beta45_positive_gram",
       "name": "固定Y的Abel正配对（仅预算核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "Y=4β(5)−3β(4)无理",
       "source_key": "abel_half_pole_n2m_minus1_Hermite_product_jets_Y45",
       "evidence": [
@@ -266,11 +268,15 @@
         "research/global_budget_review_round273.md",
         "research/primitive_mechanism_review_round273.md",
         "research/primary_mechanism_review_round273.md",
-        "research/abel_primitive_budget_charter_round274_20261020.md"
+        "research/abel_primitive_budget_charter_round274_20261020.md",
+        "research/abel_primitive_budget_round274.md",
+        "research/abel_primitive_content_round274.md",
+        "research/abel_gram_rate_round274.md",
+        "research/abel_independent_review_round274.md"
       ],
-      "gap": "273固定阶差商已付exp(O(m))全部头/素数幂清整与旧阶乘实际内容，完整净upper降为有限二次常数；实际实率及新规范剩余本原内容未付，尚无严格负率。",
+      "gap": "274完整新内容信用30log2使净upper再改善，但仍为86+18log2+12log6>0；裸Q全序列lower仅−16−10log2，未裁全部负子列。一轮重开到期结束，最优负预算未付。",
       "new_mechanism": "先按至多三阶整数极点部分分式，再付固定阶Taylor差商LCM，避免全部源转monomial的d!；同Q证明旧内容logg=12m²logm+O(m²)。",
-      "reopen_condition": "本次以273完整差商/实际内容证据明确重开，最多一轮；274若仍不足即结束，再重开须新的同对象完整本原预算实证，不能重复旧阶乘信用、更多样本、改名/目标/参数。"
+      "reopen_condition": "须额外改变尚未付全尺度实率/完整本原净预算的新实证；273/274已记账信用、未证top block、逐核正性、更多样本、改目标/参数或改名不够。"
     }
   ],
   "claims": [
@@ -2118,9 +2124,9 @@
     },
     {
       "id": "c274_finite_primitive_budget",
-      "type": "pending",
-      "statement": "待裁决同一实际Q衰减与新规范剩余g_hat的严格负二次净预算。",
-      "scope": "最多一完成轮，原sourcekey/对象不变；全m必要lower与某子列lower分开，旧阶乘信用不双领。",
+      "type": "conditional",
+      "statement": "同一实际Y的无理反证仍要求同一预定无界子列上λQ(Y)严格负二次limsup；274的正upper和负lower未付此条件。",
+      "scope": "实际Y=u/v全部有理反证范围不变；全m非负裸lower也未证，不能排除所有负率子列。274一轮到期关闭，不把条件接口作续期信用。",
       "dependencies": [
         "c273_complete_net_improvement",
         "c271_numeric_gate"
@@ -2130,9 +2136,224 @@
           "path": "research/abel_primitive_budget_charter_round274_20261020.md",
           "position": "首问题、严格门槛及停止",
           "sha256": "41d2e98428f46a552b5c9292027dbecbd1654434fe78417e359c165f7d9fc494"
+        },
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "274.1–274.5及§5",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§7量词与到期",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
         }
       ],
-      "audit": "待274证明和独审，不由任务组织或有限正upper推数值结论。",
+      "audit": "根、实处作者、二处作者及独审分范围核；独立审查I1–I13，条件并未被认证为定理。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": "274到期后以实际成果改写原待裁决表述；充分负率仍未付，非反证所有本原来源。"
+    },
+    {
+      "id": "c274_dyadic_full_content",
+      "type": "reviewed_written_structure",
+      "statement": "同一新规范全系数内容满足2^(mΔ_m)|g_hat，Δ_m=30m+O(logm)，故liminf m^-2logg_hat≥30log2。",
+      "scope": "全部m≥1及原A/B；奇素数费用保留273、2处完整清头，非单minor、旧阶乘双领或最优λ lower。",
+      "dependencies": [
+        "c273_complete_linear_clearing",
+        "c272_primitive_bridge"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_primitive_content_round274.md",
+          "position": "C3–C14",
+          "sha256": "3cfc1b3acf5d5c72741baedc18d274de4bda997b166fae0506ea5c3e1006816c"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§5，I10",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
+        },
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "§2，274.2",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        }
+      ],
+      "audit": "根独立逐式重建C3–C14；独审全文核全系数、Taylor/proper/Euler及全部素数衔接。贡献者不计自身独审；未形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c274_actual_bare_lower",
+      "type": "reviewed_written_structure",
+      "statement": "实际裸Q有全m有限证书274.4，标准LCM渐近给liminf m^-2log|Q(Y)|≥−16−10log2。",
+      "scope": "同一原权、原整数值格及detB归一；常数严格负，仍允许负率无界子列，非安全清整族lower。",
+      "dependencies": [
+        "c272_integer_valued_source",
+        "c271_normalized_bridge"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_gram_rate_round274.md",
+          "position": "R2–R12",
+          "sha256": "71e2ab912dd7ddef3a8dbcc1f5ebd69e8d74e388bf78918f700e45ccc58f2b1d"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§6，I11–I13",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
+        },
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "274.4–274.5",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        }
+      ],
+      "audit": "根与独审分别核全轴权、中心三角整数值基、生成函数范数、最高非零minor及常数。未形式化或渐近扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c274_complete_net_improvement",
+      "type": "reviewed_written_structure",
+      "statement": "完整实际primitive净upper由C*下降30log2至86+18log2+12log6。",
+      "scope": "全部原费用均在274.1；upper仍正，非实际率符号、严格负预算、最优内容或新数值准入。",
+      "dependencies": [
+        "c274_dyadic_full_content",
+        "c272_actual_gram_upper",
+        "c273_complete_net_improvement"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "274.1–274.3",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        },
+        {
+          "path": "research/abel_primitive_content_round274.md",
+          "position": "C1–C2及§4",
+          "sha256": "3cfc1b3acf5d5c72741baedc18d274de4bda997b166fae0506ea5c3e1006816c"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§5及§7",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
+        }
+      ],
+      "audit": "根、独审核完整内容与原Gram upper；两贡献者完整读主稿/275任务并核预算改善、计数及关闭，不越过各自实际审读范围。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c274_single_m2_object",
+      "type": "finite_certificate",
+      "statement": "原对象m=2精确重建Q及λ2=193491763200000；交错级数和有理比较给|Q2(Y)|>42000000。",
+      "scope": "只有固定m=2；mpmath小数为未验证诊断，不作区间证书或全尺度推断。",
+      "dependencies": [
+        "c271_normalized_bridge"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_actual_diagnostic_round274.py",
+          "position": "固定m2精确assertions",
+          "sha256": "e368a493c30db0f989d36851b3ed9e324689b9f8f10a1176c343a701647744fd"
+        },
+        {
+          "path": "research/abel_actual_diagnostic_round274.json",
+          "position": "精确Q/A/B及近似限定",
+          "sha256": "2eda3ea1c9c47f42bcc40508e2c274c69c3f5f36e6fbf9c842def778fce17edc"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§1–§2，I1–I4",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
+        },
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "§4",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        }
+      ],
+      "audit": "根执行一次原对象精确重建exit0；独审只读源码/结果并独立纸核jet、proper/全头接口和有理包络，未复跑。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c274_top_block_gate",
+      "type": "conditional",
+      "statement": "实际最高m系数Birkhoff block若有V_m exp(−o(m²))全尺度lower，将给正裸率18log(3/2)。",
+      "scope": "假设未付；逐核正Laplace、单m非零及有限率lower均不推出它，不允许据条件继续旧窗口。",
+      "dependencies": [
+        "c274_actual_bare_lower"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_gram_rate_round274.md",
+          "position": "R13–R16",
+          "sha256": "71e2ab912dd7ddef3a8dbcc1f5ebd69e8d74e388bf78918f700e45ccc58f2b1d"
+        },
+        {
+          "path": "research/abel_independent_review_round274.md",
+          "position": "§3–§4，I5–I9",
+          "sha256": "0a997b7682d8940c9c5587efa94374f077d178eb9974a78bd0cf8d4adac79664"
+        },
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "§3–§4",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        }
+      ],
+      "audit": "根与两份独立推导核准确外积接口；独审给逐核正性不足的两节点一般反例，明确非实际源反例。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c274_window_expiry",
+      "type": "reviewed_written_structure",
+      "statement": "274有完整净预算改善但未过严格负率准入；原一轮重开到期结束，安排275主动全路线比较。",
+      "scope": "停滞0与期限关闭并行；最近正式复盘273，主动比较因到期而非两轮停滞。不重复已记账信用重开。",
+      "dependencies": [
+        "c274_complete_net_improvement",
+        "c274_finite_primitive_budget"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_primitive_budget_round274.md",
+          "position": "§5",
+          "sha256": "47baf4cbf83b1b77bc96d05f3cc38c5a2c051e1407844fd241700af35e373763"
+        },
+        {
+          "path": "research/source_gate_charter_round275_20261020.md",
+          "position": "既有证据、首问题及工作裁决",
+          "sha256": "e29b56be4018f5d7312b1ca932d38572e539df2bba355854e1d482db2540f315"
+        }
+      ],
+      "audit": "两贡献者完整读主稿与275任务，核同source、1/1到期、feasibility true/数值false及宏观触发计数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c275_macro_gate",
+      "type": "pending",
+      "statement": "待275正式比较全部路线并选择有实证的新来源或旧源机制，给稳定有界窗口与首命题。",
+      "scope": "最多一轮宏观比较；未证Abel block及已记账信用不自动准入旧源，明确机会成本和全部反证范围。",
+      "dependencies": [
+        "c274_window_expiry"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round275_20261020.md",
+          "position": "首问题及1–5裁决",
+          "sha256": "e29b56be4018f5d7312b1ca932d38572e539df2bba355854e1d482db2540f315"
+        }
+      ],
+      "audit": "待275实质比较和独审，当前仅安排宏观任务。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -2465,6 +2686,46 @@
         "research/primary_mechanism_review_round273.md"
       ],
       "reopen_condition": "仅此一轮有证重开；若274不足按期结束，不能以同一旧阶乘信用、样本、改目标/参数或新名字再次续期。"
+    },
+    {
+      "id": "d274_close_abel_finite_budget",
+      "round": 274,
+      "decision": "确认完整二处内容与净upper改善，仍未过充分负率准入；274一轮重开按期关闭。",
+      "scope": "原n=2m−1、Y、唯一基/M/Q/λ同源；全序列裸lower仍负，非最优λ增长或全部Abel no-go。",
+      "claim_ids": [
+        "c274_dyadic_full_content",
+        "c274_actual_bare_lower",
+        "c274_complete_net_improvement",
+        "c274_single_m2_object",
+        "c274_top_block_gate",
+        "c274_window_expiry"
+      ],
+      "evidence": [
+        "research/abel_primitive_budget_round274.md",
+        "research/abel_primitive_content_round274.md",
+        "research/abel_gram_rate_round274.md",
+        "research/abel_independent_review_round274.md"
+      ],
+      "reopen_condition": "须额外全尺度实证改变尚未付的实率/完整本原净预算；不能重复273/274已记账信用、未证block、样本、改名或参数高度。"
+    },
+    {
+      "id": "d274_plan_macro_review",
+      "round": 274,
+      "decision": "安排275最多一轮主动全路线机会成本比较；恢复宏观选择，不重开任何旧数学源。",
+      "scope": "距273正式复盘仅一完成轮，因274窗口到期触发而非两轮停滞；274feasibility true，停滞0，数值false。",
+      "claim_ids": [
+        "c274_window_expiry",
+        "c275_macro_gate"
+      ],
+      "evidence": [
+        "research/abel_primitive_budget_round274.md",
+        "research/source_gate_charter_round275_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/abel_primitive_budget_round274.md",
+        "research/source_gate_charter_round275_20261020.md"
+      ],
+      "reopen_condition": "宏观源选择不等于数学准入；新实施或旧源重开另需改变完整实际缺口的证据和有界首任务。"
     }
   ],
   "windows": [
@@ -2594,14 +2855,27 @@
     {
       "first_round": 274,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "abel_primitive_finite_rate_274",
       "route_id": "abel_beta45_positive_gram",
       "source_key": "abel_half_pole_n2m_minus1_Hermite_product_jets_Y45",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d273_formal_budget_reopening",
       "reopening_decision_id": "d273_formal_budget_reopening",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d274_close_abel_finite_budget"
+    },
+    {
+      "first_round": 275,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_275",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d274_plan_macro_review",
+      "reopening_decision_id": "d274_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -2749,6 +3023,23 @@
         "research/primitive_mechanism_review_round273.md",
         "research/primary_mechanism_review_round273.md",
         "research/global_budget_review_round273.md"
+      ]
+    },
+    {
+      "round": 274,
+      "kind": "full_dyadic_content_and_actual_finite_rate",
+      "feasibility_progress": true,
+      "feasibility_change": "同一完整primitive净upper由86+48log2+12log6严格改善30log2，实际新规范全系数内容已证；非单纯结构/文档/lower重置。",
+      "numeric_admission": false,
+      "window_id": "abel_primitive_finite_rate_274",
+      "report": "research/abel_primitive_budget_round274.md",
+      "outputs": [
+        "research/abel_primitive_budget_round274.md",
+        "research/abel_primitive_content_round274.md",
+        "research/abel_gram_rate_round274.md",
+        "research/abel_independent_review_round274.md",
+        "research/abel_actual_diagnostic_round274.py",
+        "research/abel_actual_diagnostic_round274.json"
       ]
     }
   ]

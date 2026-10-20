@@ -25,6 +25,8 @@
 | Abel完整安全预算裁决（272） | 指数级整数值来源、首一u长除法清全头、确切本原桥、实际Gram上下界 | 指定未约分安全族增长，最优内容未付；一轮窗口到期结束，安全失败不冒充最优no-go |
 | 正式复盘与阶乘内容消除（273） | 固定阶Taylor商给exp(O(m))完整清整，旧actual内容首阶12m²log m已付 | 完整净包络降为有限二次常数，严格负率未付；以新证据只重开同源一轮 |
 
+| 本原二处内容与实率裁决（274） | 新规范完整内容信用30log2、裸Q全尺度有限下界−16−10log2及单m=2严格证书 | 完整净upper仍正、所需非负裸lower未付；预算有进展但一轮到期结束，先作全路线比较 |
+
 ## 阅读顺序
 
 1. [重启审计](../research/restart_analysis.md)：早期数值与形式化进度的纠错。
@@ -43,6 +45,8 @@
 14. [第271轮正式比较](../research/global_budget_review_round271.md)：旧源去重、原纯β4桥纠错和修正固定Y的实际正配对；[272任务](../research/abel_beta45_budget_charter_round272_20261020.md)限定唯一对象及一轮预算裁决。
 15. [第272轮完整预算结算](../research/abel_beta45_budget_round272.md)：整数值与整系数来源的区别、完整Euler/有限头、本原内容桥及指定安全族增长；[273任务](../research/source_gate_charter_round273_20261020.md)恢复正式资源比较。
 16. [第273轮正式比较](../research/global_budget_review_round273.md)：完整固定阶差商、旧阶乘内容及有限净包络改善；[274任务](../research/abel_primitive_budget_charter_round274_20261020.md)只授权同来源一轮有限率本原核查。
+
+17. [第274轮结算](../research/abel_primitive_budget_round274.md)：新内容、实际裸lower与逐核正性边界；[275任务](../research/source_gate_charter_round275_20261020.md)因窗口到期主动比较，不误记为两轮停滞。
 
 ## 当前门槛
 

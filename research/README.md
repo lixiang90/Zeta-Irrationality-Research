@@ -31,6 +31,8 @@
 | Abel整数值来源、全头费用及到期裁决（272） | [结算与本原门槛](abel_beta45_budget_round272.md)、[原Hermite来源](abel_beta45_hermite_structure_round272.md)、[实际Gram上下界](abel_beta45_gram_bounds_round272.md)、[273宏观任务](source_gate_charter_round273_20261020.md) |
 | 正式比较、差商清头与实际阶乘内容（273） | [正式决定与完整净改善](global_budget_review_round273.md)、[技术证书](primitive_mechanism_review_round273.md)、[独审与去重](primary_mechanism_review_round273.md)、[274一轮本原预算](abel_primitive_budget_charter_round274_20261020.md) |
 
+| 完整二处内容、裸实际有限率与到期结算（274） | [结算与资源决定](abel_primitive_budget_round274.md)、[全系数内容](abel_primitive_content_round274.md)、[实际Gram率](abel_gram_rate_round274.md)、[独立审查](abel_independent_review_round274.md)、[275宏观任务](source_gate_charter_round275_20261020.md) |
+
 ## 数据与历史记录
 
 大 JSON 压缩为 `.json.gz`，运行原验证器前用 [恢复工具](../scripts/restore_assets.py)还原。原始字节与散列见[资产清单](../archives/asset-manifest.json)。
