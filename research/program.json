@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 12,
+  "revision": 13,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,38 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 271,
+    "last_completed_round": 272,
     "last_global_review_round": 271,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 11,
+    "rounds_without_feasibility_progress": 12,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_budget_review_round271.md"
   },
   "current_task": {
-    "id": "round272_abel_beta45_budget",
-    "round": 272,
+    "id": "round273_global_budget_review",
+    "round": 273,
     "status": "in_progress",
-    "route_id": "abel_beta45_positive_gram",
-    "entry": "research/abel_beta45_budget_charter_round272_20261020.md",
-    "deliverable": "裁决固定Abel Y配对的同对象完整本原净预算；到期明确通过或结束该实现。",
-    "next_decisive_question": "能否先给实际首一Q_m(Y)的全尺度界，再付全部来源与本原倍率，跨严格负二次净门槛？",
-    "pass_condition": "同一Q_m的全部费用、实际非零与严格负净率（或事先明确的同一无界子列）完整独审；未付前不准入数值实施。",
-    "stop_condition": "最多一完成轮；只有不足安全界、有限样本、局部no-go或可能有大内容则结束，不改尺度/目标/Abel起点/基底续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round273_20261020.md",
+    "deliverable": "正式比较全部路线的真实数值出口与完整本原预算，作有证据、有期限的继续/停止/转向决定。",
+    "next_decisive_question": "哪项超出已闭实现的新实证机制，能改变指定目标投影、全部反证、实际非零及严格本原净预算？",
+    "pass_condition": "一手身份或自证全尺度机制支持具体未付接口，才登记有界来源核查；数值实施须完整同对象严格预算。",
+    "stop_condition": "一轮完成正式资源决定；不以旧source、候选列表、参数扫描、可能大内容或新文档续期。",
     "must_read": [
+      "research/abel_beta45_budget_round272.md",
       "research/global_budget_review_round271.md",
-      "research/abel_beta45_jet_projection_independent_round271.md",
-      "research/abel_beta4_source_independent_round271.md"
+      "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/abel_beta45_budget_round272.md"
+      "research/global_budget_review_round273.md"
     ],
     "next_actions": [
-      "固定271.2–271.7的唯一对象，优先核实际|Q_m(Y)|全m的界；若全序列liminf二次率非负，可结束该负二次接口。",
-      "否则结算Hermite行分母/高度、全部Euler与调和头、2处和所有素数幂、detB归一及完整本原内容；不跨源借费用。",
-      "一轮结束保存严格预算或准确停止证据，作资源决定并同步账；数学困难不把总goal标blocked/complete。"
+      "恢复所有路线最短未付接口和准确停止范围，比较机会成本并拦截旧源伪新发现。",
+      "只核能改变完整指定值预算的新来源/实际内容机制的一手定义与全尺度证据。",
+      "一轮作正式资源决定与期限；数学源重开另须改变其障碍的实证，总goal保持原成功标准。"
     ],
-    "window_id": "abel_beta45_budget_source_272"
+    "window_id": "global_source_gate_273"
   },
   "routes": [
     {
@@ -175,7 +175,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -192,9 +192,11 @@
         "research/global_source_review_round269.md",
         "research/growing_pole_budget_round270.md",
         "research/source_gate_charter_round271_20261020.md",
-        "research/global_budget_review_round271.md"
+        "research/global_budget_review_round271.md",
+        "research/abel_beta45_budget_round272.md",
+        "research/source_gate_charter_round273_20261020.md"
       ],
-      "gap": "271正式全路线比较已完成；外部packet/旧源修订未给固定数值净预算，只选择不同实际Abel Y来源作一轮核查。定期比较不重开旧数学source。",
+      "gap": "272固定Abel来源预算窗口结束；273主动提前正式全路线比较，只恢复资源决策，不自动重开旧数学source。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -248,18 +250,21 @@
     {
       "id": "abel_beta45_positive_gram",
       "name": "固定Y的Abel正配对（仅预算核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "Y=4β(5)−3β(4)无理",
       "source_key": "abel_half_pole_n2m_minus1_Hermite_product_jets_Y45",
       "evidence": [
         "research/global_budget_review_round271.md",
         "research/abel_beta4_source_independent_round271.md",
         "research/abel_beta45_jet_projection_independent_round271.md",
-        "research/abel_beta45_budget_charter_round272_20261020.md"
+        "research/abel_beta45_budget_charter_round272_20261020.md",
+        "research/abel_beta45_hermite_structure_round272.md",
+        "research/abel_beta45_gram_bounds_round272.md",
+        "research/abel_beta45_budget_round272.md"
       ],
-      "gap": "完整目标投影、全m实际正Gram及目标秩m已付；全部Hermite来源/Euler头/本原内容与严格负净率未付。",
+      "gap": "272付指数级整数值来源、全部头/素数幂安全清整及确切本原桥；指定未约分实际安全族有正二次率，最优内容未付，一轮窗口到期结束。不是最优λ或全部Abel no-go。",
       "new_mechanism": "保留实际半极点β5背景，用完整乘积Hermite jets消π3并锁定Y；Abel评价允许degree增长，中心正性付实际非零，非269/270旧Euler源。",
-      "reopen_condition": "本次来源核查最多一轮；到期若不足则结束，重开须有改变同对象实际本原净预算的新全尺度机制，不以正性、样本、改n/m或改名续期。"
+      "reopen_condition": "改变同一实际完整本原内容/实处预算的新全尺度机制与证据；可能有大gcd、正性、局部minor、更多样本、换n/m/目标/起点或改名不够。"
     }
   ],
   "claims": [
@@ -1645,7 +1650,7 @@
       "id": "c271_normalized_bridge",
       "type": "reviewed_written_structure",
       "statement": "Q_m=det(A+ZB)/detB首一次数m，最小清整λQ本原；全部实际Y=u/v给v^mλQ(Y)非零整数。",
-      "scope": "同一实际对象，|Q(Y)|=detM/|detB|；|log|detB||=O(m log m)，来源/头/内容仍未付。",
+      "scope": "同一实际对象，|Q(Y)|=detM/|detB|；|log|detB||=O(m log m)。271当时未付来源/头/内容；272已付完整安全来源/头（c272_all_heads），最优本原内容仍未付。",
       "dependencies": [
         "c271_actual_positive_pair"
       ],
@@ -1654,12 +1659,17 @@
           "path": "research/global_budget_review_round271.md",
           "position": "271.7–271.8、271.10",
           "sha256": "37b96607cd108692ffbfb1c0d1484bea32c9b7005d0b42a9caa9e48f58eb5fc5"
+        },
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "§§1–3，272后安全费用更新",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
         }
       ],
       "audit": "根全文重核保存稿；两位另行重建乘积jet、完整Abel/残数与正性，三位全文复读根报告；原贡献不计自身独审。未Lean形式化，无数学扫描。",
       "status": "current",
       "replaced_by": null,
-      "correction": null
+      "correction": "272后更新费用范围，归一桥本身保持有效；不把当时未付的安全头继续列作当前缺口。"
     },
     {
       "id": "c271_numeric_gate",
@@ -1725,6 +1735,198 @@
         }
       ],
       "audit": "待272完整预算与独审；任务组织不代表数学完成。",
+      "status": "superseded",
+      "replaced_by": "c272_safe_failure",
+      "correction": "272取得实际整数值来源、完整安全清头/本原桥及指定安全族增长证书；最优内容和裸Q下界未付，不能将待证最优预算改成已证否。"
+    },
+    {
+      "id": "c272_integer_valued_source",
+      "type": "reviewed_written_structure",
+      "statement": "同一Hermite基有8d_(4m−3)^2 f_i∈Int(Z)，半步移回K P_i∈Int(Z)，logK=O(m)；T=C d!2^d付整系数。",
+      "scope": "全部m≥1、全部行/系数；整数值、单项式整系数及完整有理核商部费用分开，不领取最优λ收益。",
+      "dependencies": [
+        "c271_product_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_hermite_structure_round272.md",
+          "position": "H1–H14",
+          "sha256": "e9bde92210b4b0bac34368c2c05e5c01135449770886abbdff5c11f44e7c57d1"
+        },
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.1–272.3",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_all_heads",
+      "type": "reviewed_written_structure",
+      "statement": "S=T²d_(4m)^5=2^(12m+2)((6m−2)!)²d_(4m−3)^4d_(4m)^5清全部实际A/B；Euler头借u长除法已整，无额外Euler收费。",
+      "scope": "同一实际来源、全部多项式头/有限调和头、2处及所有素数幂。S是完整安全倍数，非最小清整或费用lower。",
+      "dependencies": [
+        "c272_integer_valued_source",
+        "c271_product_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.4–272.7",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_primitive_bridge",
+      "type": "reviewed_written_structure",
+      "statement": "F=sgn(detSB)det(SA+ZSB)=ΛQ，Λ=|detSB|，g=contentF，λ=Λ/g；实际|F(Y)|=S^m detM。",
+      "scope": "全部系数和全部实际Y=u/v反证；B一般不定，符号/归一未漏，不要求所有非实际有理参数非零，不重复清Q。",
+      "dependencies": [
+        "c272_all_heads",
+        "c271_normalized_bridge"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.8–272.9",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_actual_gram_upper",
+      "type": "reviewed_written_structure",
+      "statement": "全m实际logdetM≤(2+12log6)m²+12m logm+39m log2，归一log|Q(Y)|另加6m logm−m log3。",
+      "scope": "全实轴同一实际矩阵、唯一p_i；正上界非增长lower，不排除裸Q或primitive负子列。",
+      "dependencies": [
+        "c271_actual_positive_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_gram_bounds_round272.md",
+          "position": "G1–G10",
+          "sha256": "8ed4c297392f51536dcb40a0b092fd647f36d16dd721d13af189f974e0245416"
+        },
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.10",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_integer_gram_lower",
+      "type": "reviewed_written_structure",
+      "statement": "T^(2m)detM≥(c*/(6m^4))^m16^(-(5m²−m)/2)，c*=8π²e^-18/(sinhπ)^3。",
+      "scope": "全m≥1；密度常数lower只在|y|≤1，整数最高字典序非零Plücker minor经首一Legendre保留，非预指定最高block，不是裸Q lower。",
+      "dependencies": [
+        "c272_integer_valued_source",
+        "c271_actual_positive_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_gram_bounds_round272.md",
+          "position": "G11–G14",
+          "sha256": "8ed4c297392f51536dcb40a0b092fd647f36d16dd721d13af189f974e0245416"
+        },
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.11–272.12",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_safe_failure",
+      "type": "reviewed_written_structure",
+      "statement": "指定完整安全族S^m detM全序列liminf二次率≥10log2>0；标准LCM渐近加强为20−10log2。",
+      "scope": "未经实际内容约分的同一最终S；所有无界子列都适用，不是否定最优λ、全部Abel方法或Y无理。",
+      "dependencies": [
+        "c272_all_heads",
+        "c272_primitive_bridge",
+        "c272_integer_gram_lower"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_gram_bounds_round272.md",
+          "position": "G15–G18",
+          "sha256": "8ed4c297392f51536dcb40a0b092fd647f36d16dd721d13af189f974e0245416"
+        },
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.13–272.14及初等binomial证书",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c272_content_gate",
+      "type": "conditional",
+      "statement": "若同一primitive输出有严格负二次率，必要liminf m^-2logg>20−10log2；初等版本门槛10log2。",
+      "scope": "必要非充分、未付；全序列/预定无界子列在同一序列取率。g与指定安全S绑定，不能当归一化无关的费用lower。",
+      "dependencies": [
+        "c272_primitive_bridge",
+        "c272_safe_failure"
+      ],
+      "evidence": [
+        {
+          "path": "research/abel_beta45_budget_round272.md",
+          "position": "272.15及量词范围",
+          "sha256": "1a0f2282aa09dc2bdaf91e9deb694a471b99d2545c6833275d2f6db5010a3679"
+        },
+        {
+          "path": "research/abel_beta45_gram_bounds_round272.md",
+          "position": "G18后的同子列κ+δ",
+          "sha256": "8ed4c297392f51536dcb40a0b092fd647f36d16dd721d13af189f974e0245416"
+        }
+      ],
+      "audit": "根全文重建技术稿；其他贡献者分别重建完整头、本原归一、实际upper及整数Plücker lower，全文复读报告；原贡献不计自身独审。未形式化，无数学扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c273_macro_gate",
+      "type": "pending",
+      "statement": "273作主动提前正式宏观资源比较，未预先数值准入任何候选。",
+      "scope": "macro_selection最多一轮，271后届时两轮早评；所有旧数学窗口关闭范围不变，总核心停滞不清零。",
+      "dependencies": [
+        "c272_safe_failure",
+        "c272_content_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round273_20261020.md",
+          "position": "首问题、期限与重开范围",
+          "sha256": "599c2055718282eefd66cf8f366534aff0dd998f1670f5c3009e587debea93f3"
+        }
+      ],
+      "audit": "待273具体全路线比较与独审；定期资源决策不等于数学来源重开或数值目标完成。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -1990,6 +2192,46 @@
         "research/abel_beta45_budget_charter_round272_20261020.md"
       ],
       "reopen_condition": "272若不能给严格足够的同对象预算则到期结束；新实施或旧源重开另须改变实际完整费用/实处障碍的实证，不能改名续期。"
+    },
+    {
+      "id": "d272_close_abel_budget",
+      "round": 272,
+      "decision": "固定Abel Y一轮预算核查到期，关闭该实现默认投入；保存完整安全费用、本原桥与实际安全族增长，不准入数值实施。",
+      "scope": "n=2m−1及271唯一基和本轮S；最优g/λ与裸Q下界仍开放，非所有Abel或Y no-go。",
+      "claim_ids": [
+        "c272_integer_valued_source",
+        "c272_all_heads",
+        "c272_primitive_bridge",
+        "c272_actual_gram_upper",
+        "c272_integer_gram_lower",
+        "c272_safe_failure",
+        "c272_content_gate"
+      ],
+      "evidence": [
+        "research/abel_beta45_budget_round272.md",
+        "research/abel_beta45_hermite_structure_round272.md",
+        "research/abel_beta45_gram_bounds_round272.md"
+      ],
+      "reopen_condition": "改变同一完整实际本原预算的新全尺度内容或实处机制与实证；可能有大gcd、更多样本、正性、局部minor、扩大参数或改名不够。"
+    },
+    {
+      "id": "d272_plan_macro_review",
+      "round": 272,
+      "decision": "安排273主动提前正式全路线资源比较，最多一轮；仅恢复定期决策，不重开旧数学source。",
+      "scope": "271后目前1完成轮，273届时两轮早评；总停滞保留12，旧来源各自关闭范围不变。",
+      "claim_ids": [
+        "c272_safe_failure",
+        "c272_content_gate",
+        "c273_macro_gate"
+      ],
+      "evidence": [
+        "research/abel_beta45_budget_round272.md",
+        "research/source_gate_charter_round273_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/abel_beta45_budget_round272.md"
+      ],
+      "reopen_condition": "宏观比较不代替数学准入；新实施/旧源重开另须改变其完整目标预算的证据。"
     }
   ],
   "windows": [
@@ -2094,13 +2336,26 @@
     {
       "first_round": 272,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "abel_beta45_budget_source_272",
       "route_id": "abel_beta45_positive_gram",
       "source_key": "abel_half_pole_n2m_minus1_Hermite_product_jets_Y45",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d271_formal_abel_selection",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d272_close_abel_budget"
+    },
+    {
+      "first_round": 273,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_273",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d272_plan_macro_review",
+      "reopening_decision_id": "d272_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -2221,6 +2476,18 @@
         "research/primary_source_audit_round271.md",
         "research/abel_beta4_source_independent_round271.md",
         "research/abel_beta45_jet_projection_independent_round271.md"
+      ]
+    },
+    {
+      "round": 272,
+      "kind": "integer_valued_source_and_complete_safe_budget",
+      "feasibility_progress": false,
+      "window_id": "abel_beta45_budget_source_272",
+      "report": "research/abel_beta45_budget_round272.md",
+      "outputs": [
+        "research/abel_beta45_hermite_structure_round272.md",
+        "research/abel_beta45_gram_bounds_round272.md",
+        "research/abel_beta45_budget_round272.md"
       ]
     }
   ]

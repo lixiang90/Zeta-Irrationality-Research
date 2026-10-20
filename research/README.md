@@ -28,6 +28,7 @@
 | 全路线复盘与增长极点纯目标正Gram（269） | [全尺度构造及资源决定](global_source_review_round269.md)、[270完整预算任务](growing_pole_budget_charter_round270_20261020.md) |
 | 实际Euler逆、完整清整与到期停止（270） | [结算与本原门槛](growing_pole_budget_round270.md)、[实际逆](growing_pole_euler_inverse_round270.md)、[有限处](growing_pole_arithmetic_round270.md)、[实处界](growing_pole_gram_bounds_round270.md)、[271宏观任务](source_gate_charter_round271_20261020.md) |
 | 正式比较与固定 Abel Y 正配对（271） | [宏观决定及预算门槛](global_budget_review_round271.md)、[纯β4桥的纠错](abel_beta4_source_independent_round271.md)、[修正目标的独立证明](abel_beta45_jet_projection_independent_round271.md)、[一手来源范围](primary_source_audit_round271.md)、[272一轮预算任务](abel_beta45_budget_charter_round272_20261020.md) |
+| Abel整数值来源、全头费用及到期裁决（272） | [结算与本原门槛](abel_beta45_budget_round272.md)、[原Hermite来源](abel_beta45_hermite_structure_round272.md)、[实际Gram上下界](abel_beta45_gram_bounds_round272.md)、[273宏观任务](source_gate_charter_round273_20261020.md) |
 
 ## 数据与历史记录
 

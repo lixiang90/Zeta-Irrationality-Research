@@ -22,6 +22,7 @@
 | 正式复盘与新正配对（269） | 增长极点 n=8m、完整五周期图、共同纯空间与实际 R_m+XI_m>0，X=ζ(2)+2G | 目标系数秩恰 m；jet 可逆不支付来源高度，完整本原净预算未付，只给一轮核查 |
 | 增长极点完整预算裁决（270） | 显式Hermite/Newton实际逆、exp(O(m))来源、全素数幂清头与确切本原桥 | 指定安全清整族实际增长；最优内容未付，一轮窗口结束，不冒称全部本原方法no-go |
 | 正式比较与Abel固定目标（271） | 半极点残数纠错、Y=4β(5)−3β(4)完整乘积jet、实际正Gram与目标秩m | 只支付投影及全尺度非零，来源jet有n以上素数费用；仅给一轮同对象本原预算核查 |
+| Abel完整安全预算裁决（272） | 指数级整数值来源、首一u长除法清全头、确切本原桥、实际Gram上下界 | 指定未约分安全族增长，最优内容未付；一轮窗口到期结束，安全失败不冒充最优no-go |
 
 ## 阅读顺序
 
@@ -39,6 +40,7 @@
 12. [第269轮正式复盘与全尺度纯配对](../research/global_source_review_round269.md)：不同真实对象改变固定分母秩一障碍；[270任务](../research/growing_pole_budget_charter_round270_20261020.md)限定同一构造的高度、完整清整与净预算。
 13. [第270轮完整预算结算](../research/growing_pole_budget_round270.md)：实际逆与全部费用链、认证安全族的增长下界、最优内容的必要门槛；[271任务](../research/source_gate_charter_round271_20261020.md)恢复正式资源比较。
 14. [第271轮正式比较](../research/global_budget_review_round271.md)：旧源去重、原纯β4桥纠错和修正固定Y的实际正配对；[272任务](../research/abel_beta45_budget_charter_round272_20261020.md)限定唯一对象及一轮预算裁决。
+15. [第272轮完整预算结算](../research/abel_beta45_budget_round272.md)：整数值与整系数来源的区别、完整Euler/有限头、本原内容桥及指定安全族增长；[273任务](../research/source_gate_charter_round273_20261020.md)恢复正式资源比较。
 
 ## 当前门槛
 
