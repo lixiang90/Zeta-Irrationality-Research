@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 9,
-  "updated_at": "2026-10-13",
+  "revision": 10,
+  "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
     "status": "active",
@@ -22,38 +22,37 @@
     ]
   },
   "review": {
-    "last_completed_round": 268,
-    "last_global_review_round": 267,
+    "last_completed_round": 269,
+    "last_global_review_round": 269,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 8,
+    "rounds_without_feasibility_progress": 9,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/global_admission_review_round267.md"
+    "evidence": "research/global_source_review_round269.md"
   },
   "current_task": {
-    "id": "round269_global_source_review",
-    "round": 269,
+    "id": "round270_growing_pole_full_budget",
+    "round": 270,
     "status": "in_progress",
-    "route_id": "new_period_source",
-    "entry": "research/source_gate_charter_round269_20261013.md",
-    "deliverable": "正式比较不同真实来源、完整指定目标及机会成本，给有证据且有期限的资源决定。",
-    "next_decisive_question": "哪项超出已闭packet/模型/普通消元的新机制能同时改变指定目标投影、全部反证和同对象足够净预算？",
-    "pass_condition": "一手身份或自证全尺度机制明确数值、完整period向量、实际非零/秩、全处来源费用和严格解析门槛，才登记有界实施；无预先准入。",
-    "stop_condition": "一轮完成正式决策；不重复已闭参数/n/prime窗口，不把存在好选择未排除、宽span或候选列表当数值准入。",
+    "route_id": "growing_pole_pure_gram",
+    "entry": "research/growing_pole_budget_charter_round270_20261020.md",
+    "deliverable": "固定纯目标正Gram的来源高度、完整清整和同对象实处净预算；只一轮来源核查。",
+    "next_decisive_question": "合流Euler jet的实际逆行高与全部有理头能否给足够低的λ_m，匹配同一detM_m的严格负二次率？",
+    "pass_condition": "证明完整同对象预算limsup m^-2(logλ_m+logdetM_m)<0；认证全处上界若已严格足够也可，不重复清基/清Q费用。",
+    "stop_condition": "一轮到期；只有正性/有理性重复、有限样本、inverse-det粗界或无可望严格净收益的安全包络就停止，不调比例/空间或扫描续期。",
     "must_read": [
-      "research/siegel_target_quotient_round268.md",
-      "research/global_admission_review_round267.md",
+      "research/global_source_review_round269.md",
       "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/global_source_review_round269.md"
+      "research/growing_pole_budget_round270.md"
     ],
     "next_actions": [
-      "恢复全路线最短未付接口及精确停止范围，先拦截旧source伪新发现。",
-      "比较真正不同的period/算术/数值投影机制；只核足以改变完整目标预算的一手定义与定理。",
-      "一轮作继续/停止/转向和期限决定；保持最终数值目标与停滞计数，不以改名或局部资产续期。"
+      "从固定G4–G5的合流Euler jet逆给真实基底/行高度；区别小det与inverse行高。",
+      "在同一Q_m下核全部有理头、2处和所有素数幂的清整与本原信用，再配实际Gram实处界。",
+      "一轮共同结算G9并独审；严格不足则按期关闭此实现，保留纠错链和宏观计数。"
     ],
-    "window_id": "global_source_gate_269"
+    "window_id": "growing_pole_budget_source_270"
   },
   "routes": [
     {
@@ -175,7 +174,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "investigating",
+      "status": "unadmitted_candidates",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -188,9 +187,10 @@
         "research/global_admission_review_round267.md",
         "research/siegel_target_quotient_charter_round268_20261013.md",
         "research/siegel_target_quotient_round268.md",
-        "research/source_gate_charter_round269_20261013.md"
+        "research/source_gate_charter_round269_20261013.md",
+        "research/global_source_review_round269.md"
       ],
-      "gap": "268未改善完整数值准入；269主动提前正式比较不同真实来源与全部目标接口，只恢复定期资源决策，不重开已闭数学source。",
+      "gap": "269完成正式全路线比较；新增长极点纯目标正配对只获一轮完整费用核查，未准入数值实施。旧数学source停止范围不变。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -222,6 +222,20 @@
       ],
       "gap": "268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。",
       "reopen_condition": "保持同一χ/统一余项、排除固定坏核并付两个独立短输出的具体选择或额外全尺度内容机制；可能选好、rank2、饱和、已证G/D、扩大n/参数或改名不够。"
+    },
+    {
+      "id": "growing_pole_pure_gram",
+      "name": "增长极点的纯目标正Gram（仅预算核查）",
+      "status": "investigating",
+      "target": "X=ζ(2)+2G无理",
+      "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
+      "evidence": [
+        "research/global_source_review_round269.md",
+        "research/growing_pole_budget_charter_round270_20261020.md"
+      ],
+      "gap": "全尺度共同纯空间、实际R_m+XI_m>0及目标系数秩m已证；同一Q_m全部清整λ_m与实处负净指数未付。",
+      "new_mechanism": "n=8m的高低次数分块及可逆合流Euler jet，显式消去完整三类nuisance双线性形式；不是固定分母秩一源或逐行自由selector。",
+      "reopen_condition": "固定p_i/R_m/Q_m的一轮完整预算核查；只有同对象严格负净余量的实证才登记后续有界实施。若到期不足，不调比例、空间或改名续期。"
     }
   ],
   "claims": [
@@ -1156,6 +1170,182 @@
         }
       ],
       "audit": "待269具体一手来源/全尺度机制比较与独审；候选列表不替最终数值目标。",
+      "status": "superseded",
+      "replaced_by": "c269_selection",
+      "correction": "269正式比较已完成；由全尺度纯目标正配对支持固定对象一轮预算核查，尚无完整数值准入。原任务和268纠错链保留。"
+    },
+    {
+      "id": "c269_source_scope",
+      "type": "reviewed_written_structure",
+      "statement": "已核围道、Apéry及p-adic来源未付当前指定实值的完整同对象预算或关系桥。",
+      "scope": "仅§1明示固定版本及末尾实际选读域；不否定全部方法，不声称全球文献穷尽。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§1及末审阅范围",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "三位来源代理各核其实际primary范围，根综合；原GZ混合式与另行Tate纯化分开，误差指数不当整数形式衰减。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_rank_one",
+      "type": "reviewed_written_structure",
+      "statement": "固定分母纯X正Gram的目标系数秩一；任意非零完整清整后实际值≥[8(D+1)^2 64^D]^-1。",
+      "scope": "含1、次数≤D的有理多项式空间；D=o(m²)无负二次率，包含最优内容与换基，不关闭线性Padé或增长极点对象。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§2.1，Jacobi比较",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_value_content",
+      "type": "reviewed_written_structure",
+      "statement": "非零整数多项式F的全部整数值内容g_val整除d!乘系数内容g_coef。",
+      "scope": "degF=d；d=O(n)额外规范仅O(n logn)，不排除指定q额外估值、真实source行格或其他次数。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§2.2，Newton证明",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_native_map",
+      "type": "reviewed_written_structure",
+      "statement": "增长极点实际正泛函完整原生向量为1,ζ2,G,log2,π；四系数为C1,2Ca,2CL,CaL/4。",
+      "scope": "任意n≥1及有理P；保留全部多项式头和U导数有理栏；形式jet不当实际密度，无周期独立性假设。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§3，G1–G3",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_jet_space",
+      "type": "reviewed_written_structure",
+      "statement": "固定n=8m的有理Euler jet映射对所有m≥1可逆，唯一高低空间满足B1=I及其余三类共同trace为零。",
+      "scope": "固定G4–G5的p_i、deg≤8m−1；G8精确det及−16log2二次率只给可逆尺度，不支付逆行高或本原费用。",
+      "dependencies": [
+        "c269_native_map"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§4，G4–G8",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_pure_pair",
+      "type": "reviewed_written_structure",
+      "statement": "同一实际Gram为R_m+XI_m>0，R_m有理对称；Q_m首一、次数m、目标系数秩m且Q_m(X)>0。",
+      "scope": "全部m≥1，实际X=ζ2+2G；是共同纯空间的真实配对，非ambient rank；没有全部有理点Q_m(q)非零的断言。",
+      "dependencies": [
+        "c269_native_map",
+        "c269_jet_space"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§4–5，G7及Q定义",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_numeric_gate",
+      "type": "conditional",
+      "statement": "若同一Q_m满足limsup m^-2(logλ_m+logdetM_m)<0，则X无理。",
+      "scope": "条件结论，G9未付；λ_m为全部系数最小清整，λ_mQ_m本原；每个X=u/v时v^mP_m(X)为正整数，m logv被吸收。可用严格足够的同对象认证上界。",
+      "dependencies": [
+        "c269_pure_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§5，G9",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根独立推导；三位代理全文复读保存稿并分别重建核心证明；原贡献不计自身独审。未Lean形式化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c269_selection",
+      "type": "reviewed_written_structure",
+      "statement": "269正式全路线比较结束；仅给新实际纯目标正配对一轮同对象完整预算核查。",
+      "scope": "不是数值准入；固定分母、旧AP、M₀,₈和Siegel窗口不重开，连续核心停滞保留9。",
+      "dependencies": [
+        "c269_source_scope",
+        "c269_rank_one",
+        "c269_pure_pair",
+        "c269_numeric_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round269.md",
+          "position": "§1、§5正式决定",
+          "sha256": "37e639567fe47e031e5a95e126dba4c687f576814fdf6e30b4bdb5db1eaff01c"
+        }
+      ],
+      "audit": "根作资源决定；三位全文复读核证据匹配与一轮期限，区分结构资产与完整数值预算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_full_budget",
+      "type": "pending",
+      "statement": "待证固定Euler jet来源高度、全部系数清整及同一实际Gram严格负净预算。",
+      "scope": "source_verification最多一轮；固定n=8m及G4–G5唯一基底，不扫描m/prime/Padé、不换目标或比例。",
+      "dependencies": [
+        "c269_numeric_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_budget_charter_round270_20261020.md",
+          "position": "首证书、充分门槛与停止",
+          "sha256": "39122aac1a3dea81609bfe74ab943d19fa943463d81959a16f49386f29f0e480"
+        }
+      ],
+      "audit": "待270完整预算与独审；任务组织不代表数学已完成。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -1335,6 +1525,28 @@
         "research/siegel_target_quotient_round268.md"
       ],
       "reopen_condition": "macro不等于数学准入；新实施或重开须另给改变完整指定值预算的实证。"
+    },
+    {
+      "id": "d269_formal_source_review",
+      "round": 269,
+      "decision": "完成正式全路线比较并关闭269宏观窗口；全尺度实际纯目标正配对给不同于旧秩一源的机制，只拨270一轮来源预算核查。",
+      "scope": "固定X=ζ2+2G、n=8m、唯一p_i、R_m及Q_m；完整清整/负净指数未付，不宣称新无理性定理或数值实施准入。",
+      "claim_ids": [
+        "c269_source_scope",
+        "c269_rank_one",
+        "c269_value_content",
+        "c269_native_map",
+        "c269_jet_space",
+        "c269_pure_pair",
+        "c269_numeric_gate",
+        "c269_selection",
+        "c270_full_budget"
+      ],
+      "evidence": [
+        "research/global_source_review_round269.md",
+        "research/growing_pole_budget_charter_round270_20261020.md"
+      ],
+      "reopen_condition": "只有同一实际对象全部费用和严格净余量实质改变，才登记后续有界实施；若270不足按期结束，不调参数或改名续期。"
     }
   ],
   "windows": [
@@ -1401,14 +1613,26 @@
     {
       "first_round": 269,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "global_source_gate_269",
       "route_id": "new_period_source",
       "source_key": "unselected_new_carrier",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d268_plan_macro_review",
       "reopening_decision_id": "d268_plan_macro_review",
-      "kind": "macro_selection"
+      "kind": "macro_selection",
+      "closure_decision_id": "d269_formal_source_review"
+    },
+    {
+      "first_round": 270,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "growing_pole_budget_source_270",
+      "route_id": "growing_pole_pure_gram",
+      "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
+      "status": "active",
+      "decision_id": "d269_formal_source_review",
+      "kind": "source_verification"
     }
   ],
   "completed_rounds": [
@@ -1493,6 +1717,16 @@
       "report": "research/siegel_target_quotient_round268.md",
       "outputs": [
         "research/siegel_target_quotient_round268.md"
+      ]
+    },
+    {
+      "round": 269,
+      "kind": "formal_selection_and_constructive_structure",
+      "feasibility_progress": false,
+      "window_id": "global_source_gate_269",
+      "report": "research/global_source_review_round269.md",
+      "outputs": [
+        "research/global_source_review_round269.md"
       ]
     }
   ]

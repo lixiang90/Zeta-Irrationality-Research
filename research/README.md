@@ -25,6 +25,7 @@
 | M₀,₈完整安全模型及源纠错（266） | [数学模型与结算](m08_target_vector_round266.md) |
 | 完整来源宏观比较与选择器费用（267） | [正式比较与证书](global_admission_review_round267.md) |
 | Siegel合格坏族、行内容与目标商停止（268） | [完整证书与结算](siegel_target_quotient_round268.md)、[269宏观任务](source_gate_charter_round269_20261013.md) |
+| 全路线复盘与增长极点纯目标正Gram（269） | [全尺度构造及资源决定](global_source_review_round269.md)、[270完整预算任务](growing_pole_budget_charter_round270_20261020.md) |
 
 ## 数据与历史记录
 
