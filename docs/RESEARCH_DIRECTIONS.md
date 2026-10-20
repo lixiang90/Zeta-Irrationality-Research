@@ -137,3 +137,5 @@ AP 素数同余类过滤的完整前缀分母是真实资产：某些特殊关�
 同轮Xu–Zhao倒数ζ7前缀虽有正余项n⁻⁶，实际全n分母恰含2^(7n)，排该固定前缀全部无界子列。普通Padé互反只交换既约整数对，不给新信用。Markov合法端点修正须按实际总degree计价；自然Möbius在目标有理假设下第二moment仍含无理背景。
 
 **经验：**须识别真实测度是否精确匹配正交系统，再领取平方余项；快速裸逼近、半整数矩及生成多项式分母均不等于最后本原费用。见[277正式决定](../research/global_source_review_round277.md)、[完整来源证明](../research/wilson_square_source_round277.md)及[278限定任务](../research/wilson_square_budget_charter_round278_20261020.md)。
+
+278以实际Newton矩和伴随乘积支付所有奇素数幂，二处在S/q及双镜像中全部取消；给完整r_n=N_n/M_n，实际d_n=M_n/gcd(M_n,N_n)。同一安全净率恰为8+12log2>0；严格负线性净率需要完整共同内容率超过该值，目前未付。单mirror Casoratian/gcd或单n2证书不能控制双mirror/prefix全部抵消。首次完整正safe界不冒作实际费用lower，也不人为设置临时粗阶乘基线领取跨轮进展；窗口到期，停滞2，见[278结算](../research/wilson_square_budget_round278.md)与[279比较任务](../research/source_gate_charter_round279_20261020.md)。

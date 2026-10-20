@@ -199,7 +199,7 @@ def snapshot(data):
     review, task, goal = data['review'], data['current_task'], data['goal']
     window = current_window(data)
     since = review['last_completed_round'] - review['last_global_review_round']
-    early = since >= 2 and review['rounds_without_feasibility_progress'] >= 2
+    early = since >= 1 and review['rounds_without_feasibility_progress'] >= 2
     due = early or since >= review['default_interval']
     next_review = review['last_global_review_round'] + review['default_interval']
     latest_review = review['last_global_review_round'] + review['maximum_interval']
@@ -220,7 +220,7 @@ def snapshot(data):
         '## 宏观复盘', '',
         f'- 完成研究轮 {review["last_completed_round"]}；最近正式复盘 {review["last_global_review_round"]}；其后 {since} 轮。',
         f'- 连续未改善可行性 {review["rounds_without_feasibility_progress"]} 轮；现在须复盘：{"是" if due else "否"}。',
-        f'- 此前停滞已正式处理至第{review["last_global_review_round"]}轮；计数保留，提前检查按其后至少两个完成轮触发。',
+        f'- 正式复盘已处理至第{review["last_global_review_round"]}轮；计数不清零，其后有新完成轮且连续未改善达到2即提前复盘。',
         f'- 默认复盘 {next_review}；最迟 {latest_review}；两轮核心停滞提前。', '',
         '## 下一动作', '',
     ]

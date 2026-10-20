@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 18,
+  "revision": 19,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,39 +22,39 @@
     ]
   },
   "review": {
-    "last_completed_round": 277,
+    "last_completed_round": 278,
     "last_global_review_round": 277,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 1,
+    "rounds_without_feasibility_progress": 2,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_source_review_round277.md"
   },
   "current_task": {
-    "id": "round278_wilson_square_budget",
-    "round": 278,
+    "id": "round279_global_source_gate",
+    "round": 279,
     "status": "in_progress",
-    "route_id": "chi8_wilson_square",
-    "entry": "research/wilson_square_budget_charter_round278_20261020.md",
-    "deliverable": "对W9同一完整χ−8有理逼近付全部实际分母/内容，给严格净率或到期准确裁决。",
-    "next_decisive_question": "实际合并r_n的完整最小分母d_n能否在明确无界子列付到2logρ以下？",
-    "pass_condition": "同对象全素数幂/有理对/真实约分及独审，limsup logd_n/n<2logρ，或等效完整严格负净预算。",
-    "stop_condition": "最多一轮；安全正upper、半整数矩、单q二处或有限gcd不续期；若无净预算改善连续2，下一步提前全路线复盘。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round279_20261020.md",
+    "deliverable": "连续2未改善及窗口到期后的全路线机会成本比较；给新全尺度机制或准确拒绝和最小首任务。",
+    "next_decisive_question": "哪项实际费用、余项或数值关系触发机制能改变指定目标的最短最终缺口，值得优先？",
+    "pass_condition": "同对象完整量词/门槛、新机制实证及有期限首证书；足够净预算/独审前不准入数值实施。",
+    "stop_condition": "宏观最多一轮；单mirror估值、单q二处、固定样本、未证大gcd或换标签不重开；无候选给准确拒绝范围及最小来源核查。",
     "must_read": [
+      "research/wilson_square_budget_round278.md",
       "research/global_source_review_round277.md",
-      "research/wilson_square_source_round277.md",
-      "research/analytic_gate_round277.md",
-      "research/wilson_square_budget_charter_round278_20261020.md"
+      "docs/RESEARCH_DIRECTIONS.md",
+      "research/source_gate_charter_round279_20261020.md"
     ],
     "expected_outputs": [
-      "research/wilson_square_budget_round278.md"
+      "research/global_source_review_round279.md"
     ],
     "next_actions": [
-      "固定W9原两quarter/degree=shift及完整有理对，先核S/q、外a幂、前缀和双镜像最小分母桥。",
-      "独立核全部2处/奇素数幂及共同内容，同W14精确裸率合成完整净预算，不转交旧源费用。",
-      "一轮完成明确通过或到期裁决，更新账/STATE并同步已授权GitHub；连续停滞2须全路线复盘。"
+      "比较全路线真实对象/尺度、已付最终接口、完整净门槛及最短缺口，不默认留在最近source。",
+      "至少两个独立竞争核查；新χ−8须作用于full-g/实际d/余项，旧源遵各自重开证据，不能移交费用。",
+      "最多一轮完成选择或有量级拒绝及稳定有界首任务，更新账/STATE并同步已授权GitHub。"
     ],
-    "window_id": "wilson_square_budget_278"
+    "window_id": "global_source_gate_279"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -205,9 +205,11 @@
         "research/rational_kernel_review_round275.md",
         "research/growing_pole_primitive_round276.md",
         "research/source_gate_charter_round277_20261020.md",
-        "research/global_source_review_round277.md"
+        "research/global_source_review_round277.md",
+        "research/wilson_square_budget_round278.md",
+        "research/source_gate_charter_round279_20261020.md"
       ],
-      "gap": "277正式比较结束；选择新χ−8连续双Hahn实际正交来源，仅付投影/非零/精确裸率，完整费用未付。",
+      "gap": "278新源一轮到期、连续2无可行准入/既审净预算改善；279全路线比较真实费用/余项/关系触发机制。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -325,16 +327,20 @@
     {
       "id": "chi8_wilson_square",
       "name": "χ−8四分点连续双Hahn平方余项（仅完整费用核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "指定L(2,χ−8)无理",
       "source_key": "chi8_lerch_quarter_continuous_dual_hahn_square_n_equals_shift",
       "evidence": [
         "research/wilson_square_source_round277.md",
         "research/global_source_review_round277.md",
-        "research/wilson_square_budget_charter_round278_20261020.md"
+        "research/wilson_square_budget_charter_round278_20261020.md",
+        "research/wilson_square_budget_round278.md",
+        "research/wilson_arithmetic_round278.md",
+        "research/wilson_primitive_round278.md",
+        "research/wilson_independent_round278.md"
       ],
-      "gap": "277已付两quarter纯投影、全n非零及精确裸率−2logρ；实际合并r_n的完整最小分母d_n尚未付。",
-      "reopen_condition": "仅278一轮核W9全对象分母/内容；到期后须有改变完整净预算的全尺度新机制，不以半整数矩、单q二处、旧WZ信用或有限gcd续期。"
+      "gap": "278完整线性奇整数对已付，实际d=M/g；安全净率8+12log2>0，足额全g率未付。一轮到期，非最优费用全子列no-go。",
+      "reopen_condition": "须有同一完整g或实际d/余项的全尺度新机制改变净预算；单mirror局部估值、q二处分母、旧χ−8信用、固定n2/扩大参数或改名不够。"
     }
   ],
   "claims": [
@@ -3182,21 +3188,246 @@
     },
     {
       "id": "c278_complete_cost",
-      "type": "pending",
-      "statement": "待核W9完整r_n既约分母，争取预定无界子列上limsup logd_n/n<2logρ。",
-      "scope": "仅一完成轮；全部素数幂、S/q、a幂、前缀和双镜像共同约分必须同对象；当前没有数值准入。",
+      "type": "conditional",
+      "statement": "278已付完整安全M,N和真d桥，但需full-g liminf>8+12log2的足额信用仍未付，未准入。",
+      "scope": "原W9唯一源、两个quarter/shift=degree；一轮到期，首份正safe不构成负预算或最优no-go。",
       "dependencies": [
         "c277_wilson_actual_rate",
-        "c277_source_choice"
+        "c277_source_choice",
+        "c278_net_content_bridge"
       ],
       "evidence": [
         {
           "path": "research/wilson_square_budget_charter_round278_20261020.md",
           "position": "首命题及1–5",
           "sha256": "2994eede7f24214ec04540602819821e02bbf7dd3f8a0f57e1202c0d491e6c34"
+        },
+        {
+          "path": "research/wilson_square_budget_round278.md",
+          "position": "§4–6",
+          "sha256": "b5dae830442d5cb8f183d96dd14da82a5a2979890b61e4ccff8f8f0807fda5ac"
+        },
+        {
+          "path": "research/wilson_arithmetic_round278.md",
+          "position": "A278.19–23",
+          "sha256": "3816305c3a4c34846f0282a91e51e27c262c42723bd2ac1cd994125d3262d0b1"
         }
       ],
-      "audit": "待278完整费用与独立审查；新来源和裸率不替实际d_n费用。",
+      "audit": "三独立作者及根核同对象全费用，未控制足够共同内容；完整安全增长不排全部实际子列。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_actual_dyadic",
+      "type": "reviewed_written_structure",
+      "statement": "原W9完整r_n在二处整，最小d_n奇；q与S二赋值分别−ν和3−ν。",
+      "scope": "所有n≥1由原monic/伴随及两个quarter合并，n0直接验证；不向实际d转交单q分母。",
+      "dependencies": [
+        "c277_wilson_positive"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_arithmetic_round278.md",
+          "position": "A278.1–5、12–18",
+          "sha256": "3816305c3a4c34846f0282a91e51e27c262c42723bd2ac1cd994125d3262d0b1"
+        },
+        {
+          "path": "research/wilson_primitive_round278.md",
+          "position": "P1–P4",
+          "sha256": "6e7695e6b04f78b9230d09ce00d7dec9d9d8529bc8438877f44349776e02bc69"
+        },
+        {
+          "path": "research/wilson_independent_round278.md",
+          "position": "I278.9–12",
+          "sha256": "0dcec5b3179a88c715b0ad5af49ba6d045e617544f80f9aa3c344612eca89570"
+        }
+      ],
+      "audit": "三作者独立重建，根核唯一末项赋值/伴随首项/外a幂与双镜像半整取消。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_full_integer_pair",
+      "type": "reviewed_written_structure",
+      "statement": "Newton矩与associated乘积支付全奇素数幂，得到W9完整奇整数对r_n=N_n/M_n及线性费用。",
+      "scope": "包含S/q、外a幂、全部prefix和双镜像；M正奇，非最小分母lower。n≥1。",
+      "dependencies": [
+        "c278_actual_dyadic",
+        "c277_wilson_actual_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_arithmetic_round278.md",
+          "position": "A278.3–20",
+          "sha256": "3816305c3a4c34846f0282a91e51e27c262c42723bd2ac1cd994125d3262d0b1"
+        },
+        {
+          "path": "research/wilson_independent_round278.md",
+          "position": "I278.15–22及I278.9",
+          "sha256": "0dcec5b3179a88c715b0ad5af49ba6d045e617544f80f9aa3c344612eca89570"
+        },
+        {
+          "path": "research/wilson_square_budget_round278.md",
+          "position": "§2–4",
+          "sha256": "b5dae830442d5cb8f183d96dd14da82a5a2979890b61e4ccff8f8f0807fda5ac"
+        }
+      ],
+      "audit": "根提出Newton桥并独核全部式；两作者全文审A278.1–23，逐p幂LCM每层0/1无漏头。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_net_content_bridge",
+      "type": "reviewed_written_structure",
+      "statement": "真d=M/gcd(M,N)，安全M|E|精确率κ=8+12log2；同子列净limsup=κ−liminf logg/n。",
+      "scope": "任意预定无界子列；strict负率恰需full-g liminf>κ，未付。安全增长非最优no-go，临界次指数另留。",
+      "dependencies": [
+        "c278_full_integer_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_arithmetic_round278.md",
+          "position": "A278.19–23",
+          "sha256": "3816305c3a4c34846f0282a91e51e27c262c42723bd2ac1cd994125d3262d0b1"
+        },
+        {
+          "path": "research/wilson_square_budget_round278.md",
+          "position": "278.1–3",
+          "sha256": "b5dae830442d5cb8f183d96dd14da82a5a2979890b61e4ccff8f8f0807fda5ac"
+        },
+        {
+          "path": "research/wilson_independent_round278.md",
+          "position": "I278.9–10",
+          "sha256": "0dcec5b3179a88c715b0ad5af49ba6d045e617544f80f9aa3c344612eca89570"
+        }
+      ],
+      "audit": "根和两代理独核完整g、极限与全部实际L=u/v反证；未领不一致子列信用。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_local_content",
+      "type": "reviewed_written_structure",
+      "statement": "单mirror Casoratian给限定gcd(B,C)上界率2；大p两Q赋值不等时可付实际d相应层。",
+      "scope": "仅单mirror upper/大p不等赋值范围；相等赋值和跨mirror/prefix完整g尚未控，不由局部结论续期。",
+      "dependencies": [
+        "c278_full_integer_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_primitive_round278.md",
+          "position": "P6–P8、P6a–P6b",
+          "sha256": "6e7695e6b04f78b9230d09ce00d7dec9d9d8529bc8438877f44349776e02bc69"
+        },
+        {
+          "path": "research/wilson_independent_round278.md",
+          "position": "I278.8–9增补",
+          "sha256": "0dcec5b3179a88c715b0ad5af49ba6d045e617544f80f9aa3c344612eca89570"
+        }
+      ],
+      "audit": "根独核规范及估值上下方向，独审作者重建P6a/b全奇幂和右侧整性。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_fixed_n2",
+      "type": "finite_certificate",
+      "statement": "固定n2的monic/伴随/双quarter有理头与r2精确值通过规范核对，分母奇。",
+      "scope": "仅一个固定n2；一次作者诊断，根Fraction核已有等式，其他审查者不冒领最终大分数重算；不推无界g率。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/wilson_primitive_round278.md",
+          "position": "P6固定n2诊断",
+          "sha256": "6e7695e6b04f78b9230d09ce00d7dec9d9d8529bc8438877f44349776e02bc69"
+        },
+        {
+          "path": "research/wilson_square_budget_round278.md",
+          "position": "§5各自范围",
+          "sha256": "b5dae830442d5cb8f183d96dd14da82a5a2979890b61e4ccff8f8f0807fda5ac"
+        }
+      ],
+      "audit": "根用Fraction核表与r2等式，独审者纸核P2/V2/Q2/H2及有理头；未新增尺度/重跑producer。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_recovery_trigger",
+      "type": "reviewed_written_structure",
+      "statement": "恢复工具在正式复盘后有新完成轮且连续停滞达到2即触发提前复盘；同一已处理快照不重复触发。",
+      "scope": "组织修复，不是数学进展或新轮；保留真实计数，三种边界测试覆盖原遗漏。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "scripts/research_state.py",
+          "position": "snapshot early及说明",
+          "sha256": "04d999ee1758a1479bb051eef6ed27b80cccebfa227e6b9d2996159a80151564"
+        },
+        {
+          "path": "scripts/test_research_state.py",
+          "position": "test_review_does_not_reset_consecutive_stagnation",
+          "sha256": "2e8c40ba37fc1b3d7e40f5974b3577d801a6d43f946355a5d50990c3877b767f"
+        },
+        {
+          "path": "research/wilson_independent_round278.md",
+          "position": "I278.10组织审域",
+          "sha256": "0dcec5b3179a88c715b0ad5af49ba6d045e617544f80f9aa3c344612eca89570"
+        }
+      ],
+      "audit": "独审实际读完整diff确认语义，根运行10项恢复测试；工具只核组织不认证数学。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_window_expiry",
+      "type": "reviewed_written_structure",
+      "statement": "278首份完整正safe界未给足full-g；一轮到期关闭，feasibility false，连续未改善2，安排279宏观。",
+      "scope": "临时粗factorial桥非跨轮既审基线，不以首次正safe/局部no-go/组织修复清零；goal/numeric false。",
+      "dependencies": [
+        "c278_net_content_bridge",
+        "c278_local_content",
+        "c278_complete_cost"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_square_budget_round278.md",
+          "position": "§6",
+          "sha256": "b5dae830442d5cb8f183d96dd14da82a5a2979890b61e4ccff8f8f0807fda5ac"
+        },
+        {
+          "path": "research/source_gate_charter_round279_20261020.md",
+          "position": "触发及1–5",
+          "sha256": "2cc0f474df5bae16b0aee8e9d658ab016b517e51ae8eb9e5899395fdfca59a9e"
+        }
+      ],
+      "audit": "两代理全文审根最终报告/279章程及各自有限读域，计数和关闭范围一致。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c279_macro_gate",
+      "type": "pending",
+      "statement": "待279比较全部路线的实际费用/余项/关系触发证据，给有量级选择和稳定有界首任务。",
+      "scope": "最多一宏观轮；不以局部内容、未排除或改名续期；保持原最终指定数值目标。",
+      "dependencies": [
+        "c278_window_expiry"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round279_20261020.md",
+          "position": "首问题与1–5",
+          "sha256": "2cc0f474df5bae16b0aee8e9d658ab016b517e51ae8eb9e5899395fdfca59a9e"
+        }
+      ],
+      "audit": "待279实质竞争审查及正式选择，不从组织安排推数学准入。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -3690,6 +3921,48 @@
         "research/global_source_review_round277.md"
       ],
       "reopen_condition": "当前来源核查限一轮；后续须有完整净预算实证，无不足upper/局部内容或样本续期。"
+    },
+    {
+      "id": "d278_close_wilson_budget",
+      "round": 278,
+      "decision": "278完整线性安全费用及实际最小分母桥已付，严格共同内容未闭；原一轮结束，数值未准入。",
+      "scope": "原W9双quarter/degree=shift；安全净率κ正非实际最优lower，单mirror不能支付full-g。",
+      "claim_ids": [
+        "c278_actual_dyadic",
+        "c278_full_integer_pair",
+        "c278_net_content_bridge",
+        "c278_local_content",
+        "c278_fixed_n2",
+        "c278_complete_cost",
+        "c278_window_expiry"
+      ],
+      "evidence": [
+        "research/wilson_square_budget_round278.md",
+        "research/wilson_arithmetic_round278.md",
+        "research/wilson_primitive_round278.md",
+        "research/wilson_independent_round278.md"
+      ],
+      "reopen_condition": "完整g或真实费用/余项的全尺度新机制改变净预算；局部估值、样本、旧费用或改名不够。"
+    },
+    {
+      "id": "d278_plan_macro_review",
+      "round": 278,
+      "decision": "因278窗口到期及连续未改善2，安排279最多一轮全路线机会成本比较；恢复工具不再漏此跨macro计数。",
+      "scope": "最近正式277；278后连续2而不清零，goalactive未实现，组织修复不算数学进展。",
+      "claim_ids": [
+        "c278_window_expiry",
+        "c278_recovery_trigger",
+        "c279_macro_gate"
+      ],
+      "evidence": [
+        "research/wilson_square_budget_round278.md",
+        "research/source_gate_charter_round279_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/wilson_square_budget_round278.md",
+        "research/source_gate_charter_round279_20261020.md"
+      ],
+      "reopen_condition": "宏观比较不等于重开旧数学source，候选仍需同对象净量级新实证与有界首任务。"
     }
   ],
   "windows": [
@@ -3871,13 +4144,26 @@
     {
       "first_round": 278,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "wilson_square_budget_278",
       "route_id": "chi8_wilson_square",
       "source_key": "chi8_lerch_quarter_continuous_dual_hahn_square_n_equals_shift",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d277_select_wilson_square",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d278_close_wilson_budget"
+    },
+    {
+      "first_round": 279,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_279",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d278_plan_macro_review",
+      "reopening_decision_id": "d278_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -4091,6 +4377,20 @@
         "research/analytic_gate_round277.md",
         "research/alternative_gate_round277.md",
         "literature/source_scope_round277_20261020.md"
+      ]
+    },
+    {
+      "round": 278,
+      "kind": "complete_linear_safe_budget_and_exact_primitive_bridge",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "window_id": "wilson_square_budget_278",
+      "report": "research/wilson_square_budget_round278.md",
+      "outputs": [
+        "research/wilson_square_budget_round278.md",
+        "research/wilson_arithmetic_round278.md",
+        "research/wilson_primitive_round278.md",
+        "research/wilson_independent_round278.md"
       ]
     }
   ]

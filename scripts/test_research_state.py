@@ -88,6 +88,16 @@ class ResearchRecoveryTests(unittest.TestCase):
             with self.assertRaisesRegex(SystemExit, 'Stale STATE'):
                 research_state.main()
 
+    def test_review_does_not_reset_consecutive_stagnation(self):
+        for since, stagnant, due in [(1, 2, True), (0, 2, False), (1, 1, False)]:
+            with self.subTest(since=since, stagnant=stagnant):
+                data = copy.deepcopy(self.data)
+                data['review'].update(last_global_review_round=277,
+                                      last_completed_round=277 + since,
+                                      rounds_without_feasibility_progress=stagnant)
+                state = research_state.snapshot(data)
+                self.assertIn(f'现在须复盘：{"是" if due else "否"}。', state)
+
 
 if __name__ == '__main__':
     unittest.main()
