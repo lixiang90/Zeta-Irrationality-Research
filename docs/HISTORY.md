@@ -29,6 +29,8 @@
 
 | 正式比较与原X行别内容（275） | 原实际分块及逐行Hermite给全内容信用1+18log2；Markov局部降阶与χ−8实际前缀障碍 | 只有原X完整净upper改善构成重开实证；严格负预算仍缺，只给原source下一轮 |
 
+| 剩余本原与真实实处核查（276） | 新内容率2、逐阶Newton实处upper改善9log2−1、固定m2与有限部纠错 | 净upper仍正，裸非负lower未付；一轮到期，下一步优先能改变实率的证据 |
+
 ## 阅读顺序
 
 1. [重启审计](../research/restart_analysis.md)：早期数值与形式化进度的纠错。
@@ -51,6 +53,8 @@
 17. [第274轮结算](../research/abel_primitive_budget_round274.md)：新内容、实际裸lower与逐核正性边界；[275任务](../research/source_gate_charter_round275_20261020.md)因窗口到期主动比较，不误记为两轮停滞。
 
 18. [第275轮正式复盘](../research/global_source_review_round275.md)：三个独立来源核查、完整行别内容及机会成本决定；[276任务](../research/growing_pole_primitive_charter_round276_20261020.md)保持原X对象、剩余门槛和一轮期限。
+
+19. [第276轮结算](../research/growing_pole_primitive_round276.md)：完整费用、实际实处、有限正定样本和有限部边界；[277任务](../research/source_gate_charter_round277_20261020.md)将减费包络的理论最大收益纳入宏观选择。
 
 ## 当前门槛
 

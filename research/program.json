@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 16,
+  "revision": 17,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,7 +22,7 @@
     ]
   },
   "review": {
-    "last_completed_round": 275,
+    "last_completed_round": 276,
     "last_global_review_round": 275,
     "default_interval": 4,
     "maximum_interval": 8,
@@ -31,30 +31,30 @@
     "evidence": "research/global_source_review_round275.md"
   },
   "current_task": {
-    "id": "round276_growing_pole_primitive",
-    "round": 276,
+    "id": "round277_global_source_gate",
+    "round": 277,
     "status": "in_progress",
-    "route_id": "growing_pole_pure_gram",
-    "entry": "research/growing_pole_primitive_charter_round276_20261020.md",
-    "deliverable": "固定原X、唯一p和新row规范，裁决实际裸Q必要衰减及剩余完整本原负二次预算。",
-    "next_decisive_question": "原实际Q能否满足必要负二次衰减，并在同一完整本原化后给严格负净率？",
-    "pass_condition": "同对象严格负本原limsup及独审，全部实际有理反证/全m非零保持；之后另核完整数值证明与新颖性。",
-    "stop_condition": "重开最多一完成轮；只有不足upper、局部结构、样本或可能还有内容则到期结束，275已领L不双扣或作自动续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round277_20261020.md",
+    "deliverable": "窗口到期后比较能改变实际实率/余项/数值触发的来源，作有量级的选择与有界首任务。",
+    "next_decisive_question": "哪项有全尺度证据的实际实率或余项机制能改变指定数值最终缺口，值得优先？",
+    "pass_condition": "同对象全部量词、足够净门槛、新机制实证及稳定有界首证书；充分预算前不准入数值实施。",
+    "stop_condition": "宏观最多一轮；固定正裸包络下继续减费、未证FP正核、有限PSD或已记账信用不重开旧source。无候选须给准确拒绝范围与最小来源核查。",
     "must_read": [
+      "research/growing_pole_primitive_round276.md",
       "research/global_source_review_round275.md",
-      "research/rational_kernel_review_round275.md",
-      "research/growing_pole_gram_bounds_round270.md",
-      "research/global_source_review_round269.md"
+      "docs/RESEARCH_DIRECTIONS.md",
+      "research/source_gate_charter_round277_20261020.md"
     ],
     "expected_outputs": [
-      "research/growing_pole_primitive_round276.md"
+      "research/global_source_review_round277.md"
     ],
     "next_actions": [
-      "固定原X/n8m/唯一基、M/Q/λ及Λrow；先核实际裸Q全序列二次率，非负liminf才可排全部负二次子列。",
-      "若必要衰减未被否定，再付同一新c_row全系数/全部素数幂信用和实际Gram充分预算；已领L不重复扣。",
-      "一轮给准确预算/停止结算及资源决定；实际goal遵从用户暂停/工具限额，数学困难不标blocked/complete。"
+      "比较全部路线已付最终接口及最短缺口，优先有实证能改变实际实率/余项/关系触发的机制。",
+      "至少两个独立竞争核查；固定正裸包络下继续减费不当数值准入或旧源重开理由。",
+      "最多一轮完成资源决定和稳定有界首任务，更新账/STATE并同步已授权GitHub；用户暂停和工具限额优先。"
     ],
-    "window_id": "growing_pole_primitive_276"
+    "window_id": "global_source_gate_277"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -202,9 +202,11 @@
         "research/global_source_review_round275.md",
         "research/markov_source_review_round275.md",
         "research/primary_alternative_review_round275.md",
-        "research/rational_kernel_review_round275.md"
+        "research/rational_kernel_review_round275.md",
+        "research/growing_pole_primitive_round276.md",
+        "research/source_gate_charter_round277_20261020.md"
       ],
-      "gap": "275正式比较完成，仅原X分块/行别清整给完整预算新信用而获一轮重开；Markov总体分母未控，WZ全N/有界间隔出口被排，稀疏未排；无新数值准入。",
+      "gap": "276一轮到期；277主动全路线比较实际实率/余项及关系触发的新机制。费用理想清零仍不足的固定正裸包络不因再减费重开；无数值准入。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -240,7 +242,7 @@
     {
       "id": "growing_pole_pure_gram",
       "name": "增长极点的纯目标正Gram（仅预算核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "X=ζ(2)+2G无理",
       "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
       "evidence": [
@@ -253,11 +255,15 @@
         "research/rational_kernel_review_round275.md",
         "research/markov_source_review_round275.md",
         "research/global_source_review_round275.md",
-        "research/growing_pole_primitive_charter_round276_20261020.md"
+        "research/growing_pole_primitive_charter_round276_20261020.md",
+        "research/growing_pole_primitive_round276.md",
+        "research/growing_pole_content_round276.md",
+        "research/growing_pole_real_rate_round276.md",
+        "research/growing_pole_independent_round276.md"
       ],
-      "gap": "275同对象完整内容信用1+18log2使净upper降为47+55log2+32h>0；新安全族仍增长，额外c_row与实际实率未付，只以新证据重开276一轮。",
+      "gap": "276新增完整内容率2及真实实处upper改善9log2−1，净upper=46+46log2+32h>0；裸非负lower/R全m PSD/负净率未付。一轮到期关闭，安全增长不等于最优no-go。",
       "new_mechanism": "保留原低高空间，实际乘积先分LL/LH/HH，高高消全部极点、低高只付一次来源；原Hermite RHS逐行r_i=N−i清整，给完整Λrow及旧content精确因子L。",
-      "reopen_condition": "本次仅以275新完整内容/净预算实证重开一轮；276若不足按期结束，再开须额外全尺度row内容/实际实率实证，不能重复275信用、样本、正性、局部minor或改名。"
+      "reopen_condition": "须有改变真实实率包络的全尺度新机制，或同对象完整严格负预算；仅在当前正裸Hadamard包络下再减费、已记账内容/upper、有限PSD、未证FP符号或改名不够。"
     },
     {
       "id": "abel_beta45_positive_gram",
@@ -2445,7 +2451,7 @@
       "id": "c275_row_actual_content",
       "type": "reviewed_written_structure",
       "statement": "同一原Q有Λrow=2^(30m²)d16m^(2m)∏d_(N−i)²；旧新内容精确比L=2^(18m²−2m)∏(d_N/d_(N−i))²，率1+18log2。",
-      "scope": "L为正整数、全系数实际旧内容整除；新c_row仍未知，不能使用新规范再扣旧L。非单minor或最优λ lower。",
+      "scope": "L为正整数、全系数实际旧内容整除，非单minor或最优λ lower；276又付c_row=L# c#、logL#率2，新c#剩余未知，不重复扣旧L。",
       "dependencies": [
         "c275_row_complete_clearing",
         "c270_primitive_bridge"
@@ -2465,12 +2471,17 @@
           "path": "research/global_source_review_round275.md",
           "position": "275.2–275.3",
           "sha256": "a063de400d907b660b19fe49e2bfd09a5b4639d2d32bdb6a6fe8bbe265f2884f"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "276.1–276.2",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
         }
       ],
       "audit": "根和独审分别核整数比、首项归一、同一实际Q及LCM一致渐近；原270关闭链保留。",
       "status": "current",
       "replaced_by": null,
-      "correction": null
+      "correction": "276按实际次数支付row规范中的部分完整内容，旧275精确比仍正确，剩余未知项应指c#。"
     },
     {
       "id": "c275_complete_net_improvement",
@@ -2679,9 +2690,9 @@
     },
     {
       "id": "c276_primitive_budget",
-      "type": "pending",
-      "statement": "待裁决原X同一Q必要衰减及新c_row/实际Gram的严格负二次净预算。",
-      "scope": "最多一完成轮，source/目标/唯一基/尺度不变；全m非负裸lower才排全部负二次子列，275信用不双领。",
+      "type": "conditional",
+      "statement": "同一原X的严格负本原二次预算仍未付；276正upper和负裸lower均不能裁全部负子列。",
+      "scope": "全部实际X=u/v及原Q/λ不变；只有全m非负裸liminf能排所有负二次子列，R2正定仅有限。276一轮到期结束。",
       "dependencies": [
         "c275_complete_net_improvement",
         "c269_numeric_gate"
@@ -2691,9 +2702,288 @@
           "path": "research/growing_pole_primitive_charter_round276_20261020.md",
           "position": "全部对象、充分/必要门槛与停止",
           "sha256": "952856a2e282527d9eb71e1739e2d2936ba4975a6d329555f05e82ea45991ca6"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "§1–§5",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        },
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "§1及§9",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
         }
       ],
-      "audit": "待276实质证明和独审；重开任务不构成数值准入或goal成功。",
+      "audit": "根与三代理分范围核实际对象、完整费用/实处和最终量词；充分负率及全m R PSD未认证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": "276限定窗口已结算，新完整upper改善但目标充分条件未付；不把待证条件改写成已反证。"
+    },
+    {
+      "id": "c276_full_content",
+      "type": "reviewed_written_structure",
+      "statement": "原全部有理头由2^(2a)d_(2a−3)^2清整；h_i=16m−3−2i、E_i=D_i d_hi给Λ#=∏E_i²清同Q全部系数，row内容精确比L#=∏(d16m/d_hi)²，率2。",
+      "scope": "全部m≥1、原低低/低高/高高乘积、有限头、2处及所有p^e；新c#未知，非首项/minor或最优λ lower，275L不双领。",
+      "dependencies": [
+        "c275_row_complete_clearing",
+        "c275_row_actual_content",
+        "c270_all_heads"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_content_round276.md",
+          "position": "C6–C20",
+          "sha256": "edaea0a2b5e195a9b5e5a64e143e615231d2631cd05edf2b9d3d8ea0f42dddaf"
+        },
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "§6独立复核",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "276.1–276.2",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        }
+      ],
+      "audit": "根独立逐式核原proper两残基计数及实际次数；独审代理全文回270/275重建C6–C20，作者不计自审。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_actual_real_upper",
+      "type": "reviewed_written_structure",
+      "statement": "原实际Gram有有限m upper R9；二次limsup≤16log2+1+32h(1/4)，比旧实处upper下降9log2−1。",
+      "scope": "保留第i行binom(m−1,i)数据和Newton每阶2^r后在1≤z≤2求值；原空间不变，正upper不判实际符号，也未得非负裸lower。",
+      "dependencies": [
+        "c270_actual_inverse",
+        "c269_pure_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_real_rate_round276.md",
+          "position": "R4–R12",
+          "sha256": "ab87e332fc0e664440c261c75a45bc51b7a3e92f0489cec809b6841ea4d07b00"
+        },
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "§8实处独审",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        },
+        {
+          "path": "research/growing_pole_content_round276.md",
+          "position": "§6实处独审",
+          "sha256": "edaea0a2b5e195a9b5e5a64e143e615231d2631cd05edf2b9d3d8ea0f42dddaf"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "276.3",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        }
+      ],
+      "audit": "根、有限处作者、独审代理分别核实际数据、逐阶恢复/求值互补、统一Stirling误差及binomial乘积；不借单首辅助多项式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_complete_net_improvement",
+      "type": "reviewed_written_structure",
+      "statement": "同一完整primitive净upper降至46+46log2+32h(1/4)，相对275严格改善1+9log2。",
+      "scope": "含所有费用和实际实处；仍正、numeric false。新安全族κ#=45+16log2−8logρ>0仅给必要剩余内容门槛。",
+      "dependencies": [
+        "c276_full_content",
+        "c276_actual_real_upper",
+        "c270_gram_lower"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "276.1–276.5",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        },
+        {
+          "path": "research/growing_pole_content_round276.md",
+          "position": "C21合并",
+          "sha256": "edaea0a2b5e195a9b5e5a64e143e615231d2631cd05edf2b9d3d8ea0f42dddaf"
+        },
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "§8合并独审",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        }
+      ],
+      "audit": "各证明先独审，三代理完整读根稿/277任务并分范围核组合、同对象、必要充分及期限；未将全m PSD或负率当已证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_single_m2_psd",
+      "type": "finite_certificate",
+      "statement": "固定m=2原G5唯一p和全部有理头精确重建，R2两Sylvester主minor严格正。",
+      "scope": "仅原单尺度；初版节点索引由周期断言捕获后修正，最终全G5及周期断言通过，无m/prime扫描，不推全m R PSD或裸非负率。",
+      "dependencies": [
+        "c269_jet_space",
+        "c269_pure_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_actual_diagnostic_round276.py",
+          "position": "固定m2完整G5/周期断言",
+          "sha256": "fd73404f26ea69f57dc46578c34df1d1232009fd7f7aa61abf6a484081feddc7"
+        },
+        {
+          "path": "research/growing_pole_actual_diagnostic_round276.json",
+          "position": "精确R和两个主minor",
+          "sha256": "f5ed6f8b0ebf37750028c4e6d9cd0975b31cf6d38af6e0ddf3c9e48be838241b"
+        },
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "§3及§9最终源码读域",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "§4单尺度范围",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        }
+      ],
+      "audit": "根仅同一固定对象因索引修复和补G5断言重跑；独审只读最终源码/JSON并以Fraction核现有det等式，未新增样本。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_actual_euler_tail",
+      "type": "reviewed_written_structure",
+      "statement": "原Euler条件具有I276.2收敛尾积分，−1<α<i；G5导出三类零矩及半整数归一化+π。",
+      "scope": "对象y_i=2v_i+z^−(4m−i)，域z>1，非原1<z<2的平方正核；不推出R PSD或det下界。",
+      "dependencies": [
+        "c270_actual_inverse"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "I276.2–I276.4",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        },
+        {
+          "path": "research/growing_pole_real_rate_round276.md",
+          "position": "§6独立尾积分审查",
+          "sha256": "ab87e332fc0e664440c261c75a45bc51b7a3e92f0489cec809b6841ea4d07b00"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "276.6",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        }
+      ],
+      "audit": "根与实处代理分别以逐单项beta积分重建收敛带、求导及整数/半整数符号，作者不计自身独审。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_fp_limit",
+      "type": "reviewed_written_structure",
+      "statement": "原proper Mellin有限部负导数保留C_(L²)有理栏；FP负权不保序的q=1−3/T²例给有限部4>0。",
+      "scope": "仅纠正删二阶栏/从负权推FP负半定的一般提案；不是原G5反例或全方法no-go。",
+      "dependencies": [
+        "c269_native_map"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_independent_round276.md",
+          "position": "I276.5–I276.7",
+          "sha256": "17e6487a68abef789478ea87f2f1d29e6a752d5d270602db04366c352e07cb76"
+        },
+        {
+          "path": "research/growing_pole_real_rate_round276.md",
+          "position": "§5–§6纠错及独核",
+          "sha256": "ab87e332fc0e664440c261c75a45bc51b7a3e92f0489cec809b6841ea4d07b00"
+        },
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "§4有限部范围",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        }
+      ],
+      "audit": "根与独审分别展开α1的π/sinπα及导数、核L²系数；实处作者撤回原简化并独核反例常数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_certificate_ceiling",
+      "type": "conditional",
+      "statement": "在固定当前正裸实处upper且λ≥1的证书组合下，即便安全费全约掉也不能从该upper推出严格负净率。",
+      "scope": "限定当前绝对值/Hadamard包络的能力，不判实际裸率非负或最优方法失败。后续旧源重开须改变实率包络或给完整严格负预算。",
+      "dependencies": [
+        "c276_actual_real_upper",
+        "c276_full_content"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "§5机会成本",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        },
+        {
+          "path": "research/source_gate_charter_round277_20261020.md",
+          "position": "首问题及1–5裁决",
+          "sha256": "258973fb61d54b815d58f070ef6f5c6fd191a7ad6cce08e1de4c1950c850c91e"
+        }
+      ],
+      "audit": "三代理全文核根/277任务，均明确这是现证书限制，不是实际数值no-go；局部grade未合成全信用不入账。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c276_window_expiry",
+      "type": "reviewed_written_structure",
+      "statement": "276完整净预算有改善但无充分负率，原一轮重开到期结束；安排277主动宏观比较。",
+      "scope": "最近formal275、其后一轮、停滞0；因到期而非两轮停滞。保留270/275关闭重开链，不以276已领信用自动续期。",
+      "dependencies": [
+        "c276_complete_net_improvement",
+        "c276_primitive_budget",
+        "c276_certificate_ceiling"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_primitive_round276.md",
+          "position": "§5短结算",
+          "sha256": "66f9fd120f14b384119faec17688a96b9230d897c814038d97874b1f096a62b8"
+        },
+        {
+          "path": "research/source_gate_charter_round277_20261020.md",
+          "position": "触发、完整目标与期限",
+          "sha256": "258973fb61d54b815d58f070ef6f5c6fd191a7ad6cce08e1de4c1950c850c91e"
+        }
+      ],
+      "audit": "三代理全文复核根结算及宏观任务，分范围审同source、量词、feasibility true/numeric false及到期计数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_macro_gate",
+      "type": "pending",
+      "statement": "待277全路线比较能改变实际实率/余项或数值触发的证据，给新候选的稳定有界首证书。",
+      "scope": "最多一宏观轮，固定正裸包络下继续减费不重开；全部反证/目标不偷换。",
+      "dependencies": [
+        "c276_window_expiry"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round277_20261020.md",
+          "position": "首问题及工作裁决",
+          "sha256": "258973fb61d54b815d58f070ef6f5c6fd191a7ad6cce08e1de4c1950c850c91e"
+        }
+      ],
+      "audit": "待277实质比较及独审，组织安排不构成数学准入。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -3100,6 +3390,49 @@
         "research/markov_source_review_round275.md"
       ],
       "reopen_condition": "仅本次一轮有证重开；276不足到期结束。未来须额外全尺度实证改变row内容/实际实率，已记账L、更多样本、正性/局部minor/改名或参数高度不够。"
+    },
+    {
+      "id": "d276_close_remaining_X_budget",
+      "round": 276,
+      "decision": "确认完整预算改善，276原X重开一轮到期结束；未付严格负率或裸全序列非负lower。",
+      "scope": "原n8m/G5唯一p/M/Q/λ、全部实际X=u/v；安全族仍增长但非最优no-go，R2仅有限正定，有限部桥漏项已纠正。",
+      "claim_ids": [
+        "c276_full_content",
+        "c276_actual_real_upper",
+        "c276_complete_net_improvement",
+        "c276_single_m2_psd",
+        "c276_actual_euler_tail",
+        "c276_fp_limit",
+        "c276_certificate_ceiling",
+        "c276_window_expiry"
+      ],
+      "evidence": [
+        "research/growing_pole_primitive_round276.md",
+        "research/growing_pole_content_round276.md",
+        "research/growing_pole_real_rate_round276.md",
+        "research/growing_pole_independent_round276.md"
+      ],
+      "reopen_condition": "须改变当前真实实率包络的全尺度机制，或完整同对象严格负预算；只在现正裸Hadamard包络下再减费、已领276内容/upper、有限PSD、未证FP符号/正核、样本或改名不够。"
+    },
+    {
+      "id": "d276_plan_macro_review",
+      "round": 276,
+      "decision": "安排277最多一轮主动全路线机会成本比较，优先能改变实际实率/余项或关系触发的证据。",
+      "scope": "距275正式复盘一轮、276完整预算进展true/停滞0；因窗口到期触发，不自动重开旧数学source。",
+      "claim_ids": [
+        "c276_window_expiry",
+        "c276_certificate_ceiling",
+        "c277_macro_gate"
+      ],
+      "evidence": [
+        "research/growing_pole_primitive_round276.md",
+        "research/source_gate_charter_round277_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/growing_pole_primitive_round276.md",
+        "research/source_gate_charter_round277_20261020.md"
+      ],
+      "reopen_condition": "宏观比较不等于数学准入；候选须有改变完整最终缺口的实证及有界首任务，不能只优化已证不足的包络。"
     }
   ],
   "windows": [
@@ -3255,14 +3588,27 @@
     {
       "first_round": 276,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "growing_pole_primitive_276",
       "route_id": "growing_pole_pure_gram",
       "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d275_formal_X_reopening",
       "reopening_decision_id": "d275_formal_X_reopening",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d276_close_remaining_X_budget"
+    },
+    {
+      "first_round": 277,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_277",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d276_plan_macro_review",
+      "reopening_decision_id": "d276_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -3443,6 +3789,23 @@
         "research/markov_source_review_round275.md",
         "research/primary_alternative_review_round275.md",
         "literature/source_scope_round275_20261020.md"
+      ]
+    },
+    {
+      "round": 276,
+      "kind": "complete_content_and_actual_euler_real_upper",
+      "feasibility_progress": true,
+      "feasibility_change": "同一完整primitive净upper相对275严格下降1+9log2，由全内容率2及实际实处改善9log2−1合成；非有限PSD、附加结构、FP纠错或文档重置。",
+      "numeric_admission": false,
+      "window_id": "growing_pole_primitive_276",
+      "report": "research/growing_pole_primitive_round276.md",
+      "outputs": [
+        "research/growing_pole_primitive_round276.md",
+        "research/growing_pole_content_round276.md",
+        "research/growing_pole_real_rate_round276.md",
+        "research/growing_pole_independent_round276.md",
+        "research/growing_pole_actual_diagnostic_round276.py",
+        "research/growing_pole_actual_diagnostic_round276.json"
       ]
     }
   ]

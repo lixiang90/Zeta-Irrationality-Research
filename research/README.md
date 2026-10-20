@@ -35,6 +35,8 @@
 
 | 全路线比较、原X行别全内容与新来源障碍（275） | [正式结算与决定](global_source_review_round275.md)、[完整行别费用](rational_kernel_review_round275.md)、[Markov实际边界](markov_source_review_round275.md)、[WZ来源与前缀量词](primary_alternative_review_round275.md)、[276一轮任务](growing_pole_primitive_charter_round276_20261020.md) |
 
+| 原X新内容、实际实处及到期关闭（276） | [完整结算](growing_pole_primitive_round276.md)、[全有理头与内容](growing_pole_content_round276.md)、[逐阶实处](growing_pole_real_rate_round276.md)、[独立复核与FP纠错](growing_pole_independent_round276.md)、[277宏观任务](source_gate_charter_round277_20261020.md) |
+
 ## 数据与历史记录
 
 大 JSON 压缩为 `.json.gz`，运行原验证器前用 [恢复工具](../scripts/restore_assets.py)还原。原始字节与散列见[资产清单](../archives/asset-manifest.json)。
