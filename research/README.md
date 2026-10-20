@@ -35,6 +35,7 @@
 | 原X新内容、实际实处及到期关闭（276） | [完整结算](growing_pole_primitive_round276.md)、[全有理头与内容](growing_pole_content_round276.md)、[逐阶实处](growing_pole_real_rate_round276.md)、[独立复核与FP纠错](growing_pole_independent_round276.md)、[277宏观任务](source_gate_charter_round277_20261020.md) |
 | 全路线实率比较与四分点χ−8新来源（277） | [正式决定](global_source_review_round277.md)、[真实平方余项](wilson_square_source_round277.md)、[Markov竞争](markov_gate_round277.md)、[解析独审](analytic_gate_round277.md)、[一手来源及独审](alternative_gate_round277.md)、[278费用任务](wilson_square_budget_charter_round278_20261020.md) |
 | 连续双Hahn完整线性费用及到期裁决（278） | [完整结算](wilson_square_budget_round278.md)、[全素数幂算术](wilson_arithmetic_round278.md)、[本原桥与局部限制](wilson_primitive_round278.md)、[独立复核](wilson_independent_round278.md)、[279宏观任务](source_gate_charter_round279_20261020.md) |
+| 全输出、真实衰减与单值来源比较（279） | [正式结算](global_source_review_round279.md)、[连分式与固定点余项](real_source_gate_round279.md)、[CMF完整投影](primary_source_gate_round279.md)、[复Beta与正则化边界](period_source_gate_round279.md)、[280非对角9jet任务](sv_beta_pairing_charter_round280_20261020.md) |
 
 ## 数据与历史记录
 
