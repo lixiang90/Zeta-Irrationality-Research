@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 10,
+  "revision": 11,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,37 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 269,
+    "last_completed_round": 270,
     "last_global_review_round": 269,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 9,
+    "rounds_without_feasibility_progress": 10,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_source_review_round269.md"
   },
   "current_task": {
-    "id": "round270_growing_pole_full_budget",
-    "round": 270,
+    "id": "round271_global_budget_review",
+    "round": 271,
     "status": "in_progress",
-    "route_id": "growing_pole_pure_gram",
-    "entry": "research/growing_pole_budget_charter_round270_20261020.md",
-    "deliverable": "固定纯目标正Gram的来源高度、完整清整和同对象实处净预算；只一轮来源核查。",
-    "next_decisive_question": "合流Euler jet的实际逆行高与全部有理头能否给足够低的λ_m，匹配同一detM_m的严格负二次率？",
-    "pass_condition": "证明完整同对象预算limsup m^-2(logλ_m+logdetM_m)<0；认证全处上界若已严格足够也可，不重复清基/清Q费用。",
-    "stop_condition": "一轮到期；只有正性/有理性重复、有限样本、inverse-det粗界或无可望严格净收益的安全包络就停止，不调比例/空间或扫描续期。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round271_20261020.md",
+    "deliverable": "正式比较全部路线的真实数值出口与完整本原预算，作有证据且有期限的资源决定。",
+    "next_decisive_question": "超出已关闭具体实现的新机制，哪项能改变指定目标投影、全部反证、实际非零及严格本原净预算？",
+    "pass_condition": "一手身份或自证全尺度机制支持具体未付接口，才登记有界来源核查；数值实施须完整同对象严格预算。",
+    "stop_condition": "一轮完成正式继续/停止/转向；不以候选列表、旧参数扫描、可能有大内容或新文档续期。",
     "must_read": [
+      "research/growing_pole_budget_round270.md",
       "research/global_source_review_round269.md",
       "docs/RESEARCH_DIRECTIONS.md"
     ],
     "expected_outputs": [
-      "research/growing_pole_budget_round270.md"
+      "research/global_budget_review_round271.md"
     ],
     "next_actions": [
-      "从固定G4–G5的合流Euler jet逆给真实基底/行高度；区别小det与inverse行高。",
-      "在同一Q_m下核全部有理头、2处和所有素数幂的清整与本原信用，再配实际Gram实处界。",
-      "一轮共同结算G9并独审；严格不足则按期关闭此实现，保留纠错链和宏观计数。"
+      "恢复各路线最短未付接口与准确停止范围，比较机会成本，拦截旧source伪新发现。",
+      "只核能改变完整指定值预算的新来源/实际内容机制的一手定义与全尺度证据。",
+      "一轮作资源决定并保存证据与期限；数学源重开另需改变障碍的实证，总goal保持原成功标准。"
     ],
-    "window_id": "growing_pole_budget_source_270"
+    "window_id": "global_source_gate_271"
   },
   "routes": [
     {
@@ -174,7 +175,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -188,9 +189,11 @@
         "research/siegel_target_quotient_charter_round268_20261013.md",
         "research/siegel_target_quotient_round268.md",
         "research/source_gate_charter_round269_20261013.md",
-        "research/global_source_review_round269.md"
+        "research/global_source_review_round269.md",
+        "research/growing_pole_budget_round270.md",
+        "research/source_gate_charter_round271_20261020.md"
       ],
-      "gap": "269完成正式全路线比较；新增长极点纯目标正配对只获一轮完整费用核查，未准入数值实施。旧数学source停止范围不变。",
+      "gap": "270一轮来源预算结束；271作提前正式全路线比较，只恢复资源决策，不自动重开任何已闭数学source。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -226,16 +229,20 @@
     {
       "id": "growing_pole_pure_gram",
       "name": "增长极点的纯目标正Gram（仅预算核查）",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "X=ζ(2)+2G无理",
       "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
       "evidence": [
         "research/global_source_review_round269.md",
-        "research/growing_pole_budget_charter_round270_20261020.md"
+        "research/growing_pole_budget_charter_round270_20261020.md",
+        "research/growing_pole_euler_inverse_round270.md",
+        "research/growing_pole_arithmetic_round270.md",
+        "research/growing_pole_gram_bounds_round270.md",
+        "research/growing_pole_budget_round270.md"
       ],
-      "gap": "全尺度共同纯空间、实际R_m+XI_m>0及目标系数秩m已证；同一Q_m全部清整λ_m与实处负净指数未付。",
+      "gap": "270付实际Euler逆、exp(O(m))来源及全部清整；指定未约分安全族全尺度增长，最优内容未付，一轮预算窗口结束。不是最优λ或全纯Gram no-go。",
       "new_mechanism": "n=8m的高低次数分块及可逆合流Euler jet，显式消去完整三类nuisance双线性形式；不是固定分母秩一源或逐行自由selector。",
-      "reopen_condition": "固定p_i/R_m/Q_m的一轮完整预算核查；只有同对象严格负净余量的实证才登记后续有界实施。若到期不足，不调比例、空间或改名续期。"
+      "reopen_condition": "须有改变固定来源完整本原预算的新全尺度内容/更紧清整或实处机制与实证；可能有大gcd、再证正性/rank、扩大参数或改名不够。"
     }
   ],
   "claims": [
@@ -1346,6 +1353,172 @@
         }
       ],
       "audit": "待270完整预算与独审；任务组织不代表数学已完成。",
+      "status": "superseded",
+      "replaced_by": "c270_safe_failure",
+      "correction": "270来源核查已完成，取得实际逆、全素数幂安全链及指定安全族的增长证书；G9未通过，不能把待证最优预算改写成已反证。"
+    },
+    {
+      "id": "c270_actual_inverse",
+      "type": "reviewed_written_structure",
+      "statement": "固定G5实际逆有Hermite/Newton显式公式；D=2·4^(8m−1)d_(8m−1)清全部p_i，实际系数高度exp(O(m))。",
+      "scope": "全部m≥1及所有i/系数/素数幂；μ=9log2+16h(1/4)。一般逆2d_(2m−1)与本RHS一次LCM分开，非最小基底分母或Q费用。",
+      "dependencies": [
+        "c269_jet_space"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_euler_inverse_round270.md",
+          "position": "E1–E10",
+          "sha256": "6bcb9c510ff43d6dca338aeb4bbf825759733b1fc7b975c7a893d9f113d04f91"
+        },
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "§2，270.2",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_all_heads",
+      "type": "reviewed_written_structure",
+      "statement": "B_n=2^(2n)d_(2n)^2清degP≤2n−2的全部有理头；S=2^(48m−2)d_(8m−1)^2d_(16m)^2使S R_m整。",
+      "scope": "固定同一p_i/R_m；U1单列，奇p^e残基计数和2处独立证明，全头保留。先清基两次再清头，不重复直接清Q。",
+      "dependencies": [
+        "c270_actual_inverse",
+        "c269_native_map"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_arithmetic_round270.md",
+          "position": "§2，A1–A6",
+          "sha256": "afd0d8227de882627273f4a5e903113fc7f234809a760f067b0667bcfe0c5632"
+        },
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "§3，270.3",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_primitive_bridge",
+      "type": "reviewed_written_structure",
+      "statement": "令Λ=S^m、F=det(SR+SZI)、c=content(F)，则λ=Λ/c，F/c本原；任意X=u/v时v^mF(X)/c为正整数。",
+      "scope": "同一全部系数及完整反证；c|Λ，未求实际c，不把安全S赋值当λ下界，也不要求全部有理点非零。",
+      "dependencies": [
+        "c270_all_heads",
+        "c269_pure_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_arithmetic_round270.md",
+          "position": "A7",
+          "sha256": "afd0d8227de882627273f4a5e903113fc7f234809a760f067b0667bcfe0c5632"
+        },
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "270.4",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_gram_lower",
+      "type": "reviewed_written_structure",
+      "statement": "degp_i=8m−1−i、首项1/2；detM≥(5π/128)^m(ρ/4)^(−8m²)16^(−(15m²−m)/2)。",
+      "scope": "固定全部m≥1，ρ=3+2√2。单位圆Parseval与随尺度权同对象；单首辅助最优范数夹界不替换实际纯空间。下界二次率为负，单独不证det增长。",
+      "dependencies": [
+        "c269_pure_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_gram_bounds_round270.md",
+          "position": "B–F1",
+          "sha256": "0c5f95e5d1ffd45388f16adfbb478d83f17d64213ca5f1c6511477962066709a"
+        },
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "270.5",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_safe_failure",
+      "type": "reviewed_written_structure",
+      "statement": "指定Λ=S^m的实际ΛdetM全m>1，且有正二次增长下界κ0=34log2−8logρ；标准LCM渐近再加48。",
+      "scope": "未经内容约分的这一安全族，含所有实际头/2处/prime powers；不是最优λdetM或全部纯目标正Gram no-go。完整安全upper也为同对象。",
+      "dependencies": [
+        "c270_all_heads",
+        "c270_gram_lower",
+        "c270_actual_inverse"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "270.6–270.7及完整upper",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c270_content_gate",
+      "type": "conditional",
+      "statement": "若G9严格负净预算成立，必有liminf m^-2logc_m>48+34log2−8logρ。",
+      "scope": "仅必要条件，未付且非充分；来源S更换时c随之更换，不能把旧κ当不依赖归一化的绝对费用。无需任何率极限存在。",
+      "dependencies": [
+        "c270_primitive_bridge",
+        "c270_safe_failure"
+      ],
+      "evidence": [
+        {
+          "path": "research/growing_pole_budget_round270.md",
+          "position": "270.8",
+          "sha256": "1423ab7179821cf54be0abbc1bb5ab5dcd24da5b2ee919e8e8ae67ae46551f2e"
+        }
+      ],
+      "audit": "根全文独核；另外两位代理全文交叉重建，作者贡献不计自身独审。未Lean形式化，无样本或扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c271_macro_gate",
+      "type": "pending",
+      "statement": "271作提前正式宏观资源比较；没有候选预先数值准入。",
+      "scope": "macro_selection最多一轮，269后届时两轮核心停滞；旧数学source关闭范围与重开证据保留，总停滞不清零。",
+      "dependencies": [
+        "c270_safe_failure",
+        "c270_content_gate"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round271_20261020.md",
+          "position": "首问题、期限与重开范围",
+          "sha256": "a7f78af88f68cae66ac60bca6c7e4e1801b942d785da7f017c9701e0a44aa22d"
+        }
+      ],
+      "audit": "待271具体全路线比较与独审；定期资源复盘不等于数学源重开或数值目标完成。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -1547,6 +1720,46 @@
         "research/growing_pole_budget_charter_round270_20261020.md"
       ],
       "reopen_condition": "只有同一实际对象全部费用和严格净余量实质改变，才登记后续有界实施；若270不足按期结束，不调参数或改名续期。"
+    },
+    {
+      "id": "d270_close_growing_pole_budget",
+      "round": 270,
+      "decision": "一轮固定增长极点预算核查到期，关闭该实现默认投入；保留实际逆、完整费用及实际安全族失败证书，不准入数值实施。",
+      "scope": "n=8m、唯一G5的p_i/R_m/Q_m；未经内容约分的Λ族实际增长，最优c/λ未被否定。",
+      "claim_ids": [
+        "c270_actual_inverse",
+        "c270_all_heads",
+        "c270_primitive_bridge",
+        "c270_gram_lower",
+        "c270_safe_failure",
+        "c270_content_gate"
+      ],
+      "evidence": [
+        "research/growing_pole_budget_round270.md",
+        "research/growing_pole_euler_inverse_round270.md",
+        "research/growing_pole_arithmetic_round270.md",
+        "research/growing_pole_gram_bounds_round270.md"
+      ],
+      "reopen_condition": "改变完整同对象本原预算的新全尺度内容/更紧清整或真实实处机制与实证；可能有大gcd、样本、rank/正性、扩大参数及改名不够。"
+    },
+    {
+      "id": "d270_plan_macro_review",
+      "round": 270,
+      "decision": "安排271主动提前正式全路线资源复盘，最多一轮；只恢复定期决策，不重开已闭数学source。",
+      "scope": "269后目前1完成轮，271届时两轮早评；总停滞保留10，数学来源各自关闭范围不变。",
+      "claim_ids": [
+        "c270_safe_failure",
+        "c270_content_gate",
+        "c271_macro_gate"
+      ],
+      "evidence": [
+        "research/growing_pole_budget_round270.md",
+        "research/source_gate_charter_round271_20261020.md"
+      ],
+      "reopening_evidence": [
+        "research/growing_pole_budget_round270.md"
+      ],
+      "reopen_condition": "宏观比较不代替数学准入；新实施或数学源重开另须改变其完整目标预算的证据。"
     }
   ],
   "windows": [
@@ -1626,13 +1839,26 @@
     {
       "first_round": 270,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "growing_pole_budget_source_270",
       "route_id": "growing_pole_pure_gram",
       "source_key": "cyclotomic_mixed_log_growing_pole_n8m_euler_jet_Xplus",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d269_formal_source_review",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d270_close_growing_pole_budget"
+    },
+    {
+      "first_round": 271,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_271",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d270_plan_macro_review",
+      "reopening_decision_id": "d270_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -1727,6 +1953,19 @@
       "report": "research/global_source_review_round269.md",
       "outputs": [
         "research/global_source_review_round269.md"
+      ]
+    },
+    {
+      "round": 270,
+      "kind": "actual_inverse_and_complete_safe_budget",
+      "feasibility_progress": false,
+      "window_id": "growing_pole_budget_source_270",
+      "report": "research/growing_pole_budget_round270.md",
+      "outputs": [
+        "research/growing_pole_euler_inverse_round270.md",
+        "research/growing_pole_arithmetic_round270.md",
+        "research/growing_pole_gram_bounds_round270.md",
+        "research/growing_pole_budget_round270.md"
       ]
     }
   ]

@@ -2,33 +2,33 @@
 
 > 权威账：`program.json`。由 `python scripts/research_state.py render` 生成；不要手改本文件。
 
-修订 10 · 更新 2026-10-20 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
+修订 11 · 更新 2026-10-20 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
 
 最终目标：取得至少一项明确指定ζ/L特殊值的新无理性或有理线性无关结论，付清同对象完整证明与独立复核。
 数值目标已实现：否。诊断资产与组织维护不能替代此项。
 
 ## 当前窗口
 
-- 任务：`round270_growing_pole_full_budget`；轮次 270；状态 `in_progress`；主路线 `growing_pole_pure_gram`。
-- 入口：[research/growing_pole_budget_charter_round270_20261020.md](../research/growing_pole_budget_charter_round270_20261020.md)。
-- 本阶段交付：固定纯目标正Gram的来源高度、完整清整和同对象实处净预算；只一轮来源核查。
-- 首问题：合流Euler jet的实际逆行高与全部有理头能否给足够低的λ_m，匹配同一detM_m的严格负二次率？
-- 通过：证明完整同对象预算limsup m^-2(logλ_m+logdetM_m)<0；认证全处上界若已严格足够也可，不重复清基/清Q费用。
-- 停止：一轮到期；只有正性/有理性重复、有限样本、inverse-det粗界或无可望严格净收益的安全包络就停止，不调比例/空间或扫描续期。
-- 持久窗口 `growing_pole_budget_source_270`：已完成 0/1 轮；整理和task改名不计新窗口。
+- 任务：`round271_global_budget_review`；轮次 271；状态 `in_progress`；主路线 `new_period_source`。
+- 入口：[research/source_gate_charter_round271_20261020.md](../research/source_gate_charter_round271_20261020.md)。
+- 本阶段交付：正式比较全部路线的真实数值出口与完整本原预算，作有证据且有期限的资源决定。
+- 首问题：超出已关闭具体实现的新机制，哪项能改变指定目标投影、全部反证、实际非零及严格本原净预算？
+- 通过：一手身份或自证全尺度机制支持具体未付接口，才登记有界来源核查；数值实施须完整同对象严格预算。
+- 停止：一轮完成正式继续/停止/转向；不以候选列表、旧参数扫描、可能有大内容或新文档续期。
+- 持久窗口 `global_source_gate_271`：已完成 0/1 轮；整理和task改名不计新窗口。
 
 ## 宏观复盘
 
-- 完成研究轮 269；最近正式复盘 269；其后 0 轮。
-- 连续未改善可行性 9 轮；现在须复盘：否。
+- 完成研究轮 270；最近正式复盘 269；其后 1 轮。
+- 连续未改善可行性 10 轮；现在须复盘：否。
 - 此前停滞已正式处理至第269轮；计数保留，提前检查按其后至少两个完成轮触发。
 - 默认复盘 273；最迟 277；两轮核心停滞提前。
 
 ## 下一动作
 
-1. 从固定G4–G5的合流Euler jet逆给真实基底/行高度；区别小det与inverse行高。
-2. 在同一Q_m下核全部有理头、2处和所有素数幂的清整与本原信用，再配实际Gram实处界。
-3. 一轮共同结算G9并独审；严格不足则按期关闭此实现，保留纠错链和宏观计数。
+1. 恢复各路线最短未付接口与准确停止范围，比较机会成本，拦截旧source伪新发现。
+2. 只核能改变完整指定值预算的新来源/实际内容机制的一手定义与全尺度证据。
+3. 一轮作资源决定并保存证据与期限；数学源重开另需改变障碍的实证，总goal保持原成功标准。
 
 ## 全路线状态
 
@@ -43,13 +43,14 @@
 | χ−8 RV与原生增长行列式 | `parked` | 实际无界非零与严格净指数仍缺；安全上界失败非全方法否定。 |
 | 混合rank3标准/标量AP入口 | `closed_implementation` | 自然cap32/27及仅辅助分布cap≥8/9均不足；c≠0极点出口关闭。 |
 | 实际联合评价格/Frobenius首证书 | `closed_implementation` | 264证明单变量completejet index-only入口失败；balanced leading-box可证但高度保证仍不足。两轮窗口结束，intrinsic费用及全部tensor未被否定。 |
-| 未准入来源的定期宏观比较 | `unadmitted_candidates` | 269完成正式全路线比较；新增长极点纯目标正配对只获一轮完整费用核查，未准入数值实施。旧数学source停止范围不变。 |
+| 未准入来源的定期宏观比较 | `investigating` | 270一轮来源预算结束；271作提前正式全路线比较，只恢复资源决策，不自动重开任何已闭数学source。 |
 | M₀,₈固定3:1完整向量（仅来源核查） | `closed_implementation` | 266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。 |
 | 非显式Siegel固定目标商（仅来源核查） | `closed_implementation` | 268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。 |
-| 增长极点的纯目标正Gram（仅预算核查） | `investigating` | 全尺度共同纯空间、实际R_m+XI_m>0及目标系数秩m已证；同一Q_m全部清整λ_m与实处负净指数未付。 |
+| 增长极点的纯目标正Gram（仅预算核查） | `closed_implementation` | 270付实际Euler逆、exp(O(m))来源及全部清整；指定未约分安全族全尺度增长，最优内容未付，一轮预算窗口结束。不是最优λ或全纯Gram no-go。 |
 
 ## 恢复所需证据
 
+- [research/growing_pole_budget_round270.md](../research/growing_pole_budget_round270.md)
 - [research/global_source_review_round269.md](../research/global_source_review_round269.md)
 - [docs/RESEARCH_DIRECTIONS.md](../docs/RESEARCH_DIRECTIONS.md)
 - [长期goal](../docs/RESEARCH_GOAL.md) · [恢复协议](../AGENTS.md) · [通用组织方法](../docs/LONG_RESEARCH_WORKFLOW.md)

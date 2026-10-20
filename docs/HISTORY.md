@@ -20,6 +20,7 @@
 | 正式来源宏观比较（267） | Mellin严格量词、周期Dirichlet完整消元与divisor阻碍、非显式Siegel全packet严格误差界 | 没有新数值准入；选择不同原生packet的目标商，仅给一轮可见性和真实选择器费用核查 |
 | Siegel目标商裁决（268） | 同原证书坏族、实际全行15.6指数内容信用、nuisance秩至少180 | 普遍选择保证被证伪，完整标准消元upper仍不足；好选择未排除，一轮窗口到期结束 |
 | 正式复盘与新正配对（269） | 增长极点 n=8m、完整五周期图、共同纯空间与实际 R_m+XI_m>0，X=ζ(2)+2G | 目标系数秩恰 m；jet 可逆不支付来源高度，完整本原净预算未付，只给一轮核查 |
+| 增长极点完整预算裁决（270） | 显式Hermite/Newton实际逆、exp(O(m))来源、全素数幂清头与确切本原桥 | 指定安全清整族实际增长；最优内容未付，一轮窗口结束，不冒称全部本原方法no-go |
 
 ## 阅读顺序
 
@@ -35,6 +36,7 @@
 10. [第267轮正式比较](../research/global_admission_review_round267.md)：按指定数值、完整反证与同对象费用选择下一来源；[第268轮任务](../research/siegel_target_quotient_charter_round268_20261013.md)限定首证书和到期停止条件。
 11. [第268轮目标商结算](../research/siegel_target_quotient_round268.md)：同证书实际反例与真实行约分信用，限定停止范围；下一轮[正式宏观任务](../research/source_gate_charter_round269_20261013.md)。
 12. [第269轮正式复盘与全尺度纯配对](../research/global_source_review_round269.md)：不同真实对象改变固定分母秩一障碍；[270任务](../research/growing_pole_budget_charter_round270_20261020.md)限定同一构造的高度、完整清整与净预算。
+13. [第270轮完整预算结算](../research/growing_pole_budget_round270.md)：实际逆与全部费用链、认证安全族的增长下界、最优内容的必要门槛；[271任务](../research/source_gate_charter_round271_20261020.md)恢复正式资源比较。
 
 ## 当前门槛
 
