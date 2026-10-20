@@ -33,6 +33,8 @@
 
 | 完整二处内容、裸实际有限率与到期结算（274） | [结算与资源决定](abel_primitive_budget_round274.md)、[全系数内容](abel_primitive_content_round274.md)、[实际Gram率](abel_gram_rate_round274.md)、[独立审查](abel_independent_review_round274.md)、[275宏观任务](source_gate_charter_round275_20261020.md) |
 
+| 全路线比较、原X行别全内容与新来源障碍（275） | [正式结算与决定](global_source_review_round275.md)、[完整行别费用](rational_kernel_review_round275.md)、[Markov实际边界](markov_source_review_round275.md)、[WZ来源与前缀量词](primary_alternative_review_round275.md)、[276一轮任务](growing_pole_primitive_charter_round276_20261020.md) |
+
 ## 数据与历史记录
 
 大 JSON 压缩为 `.json.gz`，运行原验证器前用 [恢复工具](../scripts/restore_assets.py)还原。原始字节与散列见[资产清单](../archives/asset-manifest.json)。
