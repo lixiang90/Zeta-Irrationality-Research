@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 17,
+  "revision": 18,
   "updated_at": "2026-10-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,39 +22,39 @@
     ]
   },
   "review": {
-    "last_completed_round": 276,
-    "last_global_review_round": 275,
+    "last_completed_round": 277,
+    "last_global_review_round": 277,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 0,
+    "rounds_without_feasibility_progress": 1,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/global_source_review_round275.md"
+    "evidence": "research/global_source_review_round277.md"
   },
   "current_task": {
-    "id": "round277_global_source_gate",
-    "round": 277,
+    "id": "round278_wilson_square_budget",
+    "round": 278,
     "status": "in_progress",
-    "route_id": "new_period_source",
-    "entry": "research/source_gate_charter_round277_20261020.md",
-    "deliverable": "窗口到期后比较能改变实际实率/余项/数值触发的来源，作有量级的选择与有界首任务。",
-    "next_decisive_question": "哪项有全尺度证据的实际实率或余项机制能改变指定数值最终缺口，值得优先？",
-    "pass_condition": "同对象全部量词、足够净门槛、新机制实证及稳定有界首证书；充分预算前不准入数值实施。",
-    "stop_condition": "宏观最多一轮；固定正裸包络下继续减费、未证FP正核、有限PSD或已记账信用不重开旧source。无候选须给准确拒绝范围与最小来源核查。",
+    "route_id": "chi8_wilson_square",
+    "entry": "research/wilson_square_budget_charter_round278_20261020.md",
+    "deliverable": "对W9同一完整χ−8有理逼近付全部实际分母/内容，给严格净率或到期准确裁决。",
+    "next_decisive_question": "实际合并r_n的完整最小分母d_n能否在明确无界子列付到2logρ以下？",
+    "pass_condition": "同对象全素数幂/有理对/真实约分及独审，limsup logd_n/n<2logρ，或等效完整严格负净预算。",
+    "stop_condition": "最多一轮；安全正upper、半整数矩、单q二处或有限gcd不续期；若无净预算改善连续2，下一步提前全路线复盘。",
     "must_read": [
-      "research/growing_pole_primitive_round276.md",
-      "research/global_source_review_round275.md",
-      "docs/RESEARCH_DIRECTIONS.md",
-      "research/source_gate_charter_round277_20261020.md"
+      "research/global_source_review_round277.md",
+      "research/wilson_square_source_round277.md",
+      "research/analytic_gate_round277.md",
+      "research/wilson_square_budget_charter_round278_20261020.md"
     ],
     "expected_outputs": [
-      "research/global_source_review_round277.md"
+      "research/wilson_square_budget_round278.md"
     ],
     "next_actions": [
-      "比较全部路线已付最终接口及最短缺口，优先有实证能改变实际实率/余项/关系触发的机制。",
-      "至少两个独立竞争核查；固定正裸包络下继续减费不当数值准入或旧源重开理由。",
-      "最多一轮完成资源决定和稳定有界首任务，更新账/STATE并同步已授权GitHub；用户暂停和工具限额优先。"
+      "固定W9原两quarter/degree=shift及完整有理对，先核S/q、外a幂、前缀和双镜像最小分母桥。",
+      "独立核全部2处/奇素数幂及共同内容，同W14精确裸率合成完整净预算，不转交旧源费用。",
+      "一轮完成明确通过或到期裁决，更新账/STATE并同步已授权GitHub；连续停滞2须全路线复盘。"
     ],
-    "window_id": "global_source_gate_277"
+    "window_id": "wilson_square_budget_278"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "investigating",
+      "status": "unadmitted_candidates",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -204,9 +204,10 @@
         "research/primary_alternative_review_round275.md",
         "research/rational_kernel_review_round275.md",
         "research/growing_pole_primitive_round276.md",
-        "research/source_gate_charter_round277_20261020.md"
+        "research/source_gate_charter_round277_20261020.md",
+        "research/global_source_review_round277.md"
       ],
-      "gap": "276一轮到期；277主动全路线比较实际实率/余项及关系触发的新机制。费用理想清零仍不足的固定正裸包络不因再减费重开；无数值准入。",
+      "gap": "277正式比较结束；选择新χ−8连续双Hahn实际正交来源，仅付投影/非零/精确裸率，完整费用未付。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -301,9 +302,10 @@
       "evidence": [
         "research/odd_zeta_primitive_routes_progress_20261005.md",
         "research/markov_source_review_round275.md",
-        "research/global_source_review_round275.md"
+        "research/global_source_review_round275.md",
+        "research/markov_gate_round277.md"
       ],
-      "gap": "完整boundary及极层降阶已付，但异常残块、高次幂与detK大素数的实际c_s总体率未控，尚无低于2logρ的全费用证书。",
+      "gap": "完整实际c_s总费用未控；277自然Möbius在完整反证下第二moment仍无理，增长端点按实际总degree无新实率；未否定全部Markov机制。",
       "reopen_condition": "须作用于实际标量Schur商的全尺度估值/恒等式及足够净信用；局部消去、原moment分母、残块样本和大prime扫描不够。"
     },
     {
@@ -319,6 +321,20 @@
       ],
       "gap": "来源恒等式仍为一手输入；纯尾非零/裸率已付，逐项族全N增长且actual prefix全N/有界间隔负率被排，稀疏子列内容未付。",
       "reopen_condition": "须额外给明确间隔趋∞子列的同对象联合内容与严格负线性率证据；快速尾、binary splitting、有限gcd、扩大N或只改pattern标签不够。其它真实pattern须独立来源/预算核查。"
+    },
+    {
+      "id": "chi8_wilson_square",
+      "name": "χ−8四分点连续双Hahn平方余项（仅完整费用核查）",
+      "status": "investigating",
+      "target": "指定L(2,χ−8)无理",
+      "source_key": "chi8_lerch_quarter_continuous_dual_hahn_square_n_equals_shift",
+      "evidence": [
+        "research/wilson_square_source_round277.md",
+        "research/global_source_review_round277.md",
+        "research/wilson_square_budget_charter_round278_20261020.md"
+      ],
+      "gap": "277已付两quarter纯投影、全n非零及精确裸率−2logρ；实际合并r_n的完整最小分母d_n尚未付。",
+      "reopen_condition": "仅278一轮核W9全对象分母/内容；到期后须有改变完整净预算的全尺度新机制，不以半整数矩、单q二处、旧WZ信用或有限gcd续期。"
     }
   ],
   "claims": [
@@ -2970,9 +2986,9 @@
     },
     {
       "id": "c277_macro_gate",
-      "type": "pending",
-      "statement": "待277全路线比较能改变实际实率/余项或数值触发的证据，给新候选的稳定有界首证书。",
-      "scope": "最多一宏观轮，固定正裸包络下继续减费不重开；全部反证/目标不偷换。",
+      "type": "reviewed_written_structure",
+      "statement": "277比较全路线，旧源保持停止；以新连续双Hahn真实平方余项选择278一轮完整费用核查。",
+      "scope": "宏观窗口完成，feasibility false/停滞1，未付完整d_n费用或数值准入；不重开旧X/Abel/WZ。",
       "dependencies": [
         "c276_window_expiry"
       ],
@@ -2981,9 +2997,206 @@
           "path": "research/source_gate_charter_round277_20261020.md",
           "position": "首问题及工作裁决",
           "sha256": "258973fb61d54b815d58f070ef6f5c6fd191a7ad6cce08e1de4c1950c850c91e"
+        },
+        {
+          "path": "research/global_source_review_round277.md",
+          "position": "§1–6正式比较和计数",
+          "sha256": "dbc80d718d4369441d11a4708ee882621862cd940e388eec544517f3b7b78840"
         }
       ],
-      "audit": "待277实质比较及独审，组织安排不构成数学准入。",
+      "audit": "根核三竞争稿；两代理全文审最终宏观/278章程，数学和组织检查分开。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_markov_transform",
+      "type": "reviewed_written_structure",
+      "statement": "自然目标Möbius第二moment在完整反证下仍无理；增长端点匹配按实际总degree不改善原指数。",
+      "scope": "M7覆盖h1目标Möbius普通有理moment接口；M12/M13覆盖任意随s增长非负整数a,b；非全部Markov方法no-go。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/markov_gate_round277.md",
+          "position": "M4–M16及§8",
+          "sha256": "e3d9964e35ac1e3e725be40bbfae1fd0eb7773d86f09e1be752a272cfab557e3"
+        }
+      ],
+      "audit": "作者推导，根独核M7分部积分、M11变分/M12实际degree及完整费用桥。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_old_real_gate",
+      "type": "reviewed_written_structure",
+      "statement": "X与Abel固定正裸upper在理想零费用时仍不足；成功同子列必要费用/剩余内容门槛已明确。",
+      "scope": "只限制当前证书，不证明实际裸率非负或所有最优输出失败；全部有理换基保留归一Q。",
+      "dependencies": [
+        "c276_certificate_ceiling"
+      ],
+      "evidence": [
+        {
+          "path": "research/analytic_gate_round277.md",
+          "position": "A277.1–6及§2–5",
+          "sha256": "ed51561a617b886d1139632852cfc40ebb45f04e7d7313a7a05c5de9c97624ca"
+        }
+      ],
+      "audit": "根独核同子列极限相减、Abel扣30log2后A、detB=o(m²)与换基恒等式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_reciprocal_actual",
+      "type": "reviewed_written_structure",
+      "statement": "固定Xu–Zhao倒数ζ7前缀v2(ν_n)=−7n全n；正误差~1/(6ζ7²n6)，全部无界子列反证值增长。",
+      "scope": "仅ℓ1/j1固定实际前缀；非倒数方法全否定，来源正积分身份保留一手输入。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/alternative_gate_round277.md",
+          "position": "A277.1–6",
+          "sha256": "8394665fba43c6704fad983e921cc8837714e950635c9927c6329dd840a0b30f"
+        },
+        {
+          "path": "research/markov_gate_round277.md",
+          "position": "§8独审",
+          "sha256": "e3d9964e35ac1e3e725be40bbfae1fd0eb7773d86f09e1be752a272cfab557e3"
+        }
+      ],
+      "audit": "根及Markov代理分别独核形式Z2逆、Laplace常数和全子列量词；无扫描。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_pade_inversion",
+      "type": "reviewed_written_structure",
+      "statement": "正规Padé互反交换类型及同一既约整数对，非零有限评价下指数费用和误差不变。",
+      "scope": "固定评价及收敛非零有限值；不覆盖未经证的新非标准多点或尺度条件。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/alternative_gate_round277.md",
+          "position": "A277.7及§8",
+          "sha256": "8394665fba43c6704fad983e921cc8837714e950635c9927c6329dd840a0b30f"
+        },
+        {
+          "path": "research/markov_gate_round277.md",
+          "position": "§8独审",
+          "sha256": "e3d9964e35ac1e3e725be40bbfae1fd0eb7773d86f09e1be752a272cfab557e3"
+        }
+      ],
+      "audit": "根与Markov代理独核互反代数、评价分母比及原Taylor/Padé对象区分。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_wilson_positive",
+      "type": "reviewed_written_structure",
+      "statement": "正确s2/z−1权与连续双Hahn(1,1,1)测度精确匹配；双quarter完整输出纯χ−8、全n误差同号非零。",
+      "scope": "固定W1–W11的原measure、n=degree=shift、quarter1/4和3/4；有理性/半整数矩不等于低本原费用。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/wilson_square_source_round277.md",
+          "position": "W1–W11",
+          "sha256": "351ee6dd6c671bd3d7ab051694779314337a37dbe185ae1e7a2cd616fd4b93f3"
+        },
+        {
+          "path": "research/analytic_gate_round277.md",
+          "position": "§6–8",
+          "sha256": "ed51561a617b886d1139632852cfc40ebb45f04e7d7313a7a05c5de9c97624ca"
+        },
+        {
+          "path": "research/alternative_gate_round277.md",
+          "position": "§6.1及§8",
+          "sha256": "8394665fba43c6704fad983e921cc8837714e950635c9927c6329dd840a0b30f"
+        }
+      ],
+      "audit": "根推导；两代理全文独审权/一导纠错、官方规范、norm、真实平方；第三人另审纯投影/全反证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_wilson_actual_rate",
+      "type": "reviewed_written_structure",
+      "statement": "同一χ−8实际有理逼近r_n有精确bare rate −2log((11+5sqrt5)/2)。",
+      "scope": "W12统一全k正项鞍率；W13 β/Jensen给多项式夹逼；全部n精确极限，尚无完整费用。",
+      "dependencies": [
+        "c277_wilson_positive"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_square_source_round277.md",
+          "position": "W12–W15",
+          "sha256": "351ee6dd6c671bd3d7ab051694779314337a37dbe185ae1e7a2cd616fd4b93f3"
+        },
+        {
+          "path": "research/analytic_gate_round277.md",
+          "position": "§7–8",
+          "sha256": "ed51561a617b886d1139632852cfc40ebb45f04e7d7313a7a05c5de9c97624ca"
+        },
+        {
+          "path": "research/alternative_gate_round277.md",
+          "position": "§8",
+          "sha256": "8394665fba43c6704fad983e921cc8837714e950635c9927c6329dd840a0b30f"
+        }
+      ],
+      "audit": "两代理独核monic次项、β=(n+1)(2n+3)、Jensen方向及quarter一致Stirling；root独核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c277_source_choice",
+      "type": "reviewed_written_structure",
+      "statement": "仅新连续双Hahn来源有真实正交平方机制支持278完整费用首任务，旧源不重开。",
+      "scope": "277完成正式比较，但仅结构新源、完整净预算未改善：feasibility false、停滞1，goal/numeric false。",
+      "dependencies": [
+        "c277_macro_gate",
+        "c277_markov_transform",
+        "c277_old_real_gate",
+        "c277_reciprocal_actual",
+        "c277_wilson_actual_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/global_source_review_round277.md",
+          "position": "§1及§6",
+          "sha256": "dbc80d718d4369441d11a4708ee882621862cd940e388eec544517f3b7b78840"
+        },
+        {
+          "path": "research/wilson_square_budget_charter_round278_20261020.md",
+          "position": "首命题及1–5",
+          "sha256": "2994eede7f24214ec04540602819821e02bbf7dd3f8a0f57e1202c0d491e6c34"
+        }
+      ],
+      "audit": "两代理全文独审最终报告/章程，严格指数充分/必要与临界次指数保留，期限/来源/计数一致。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c278_complete_cost",
+      "type": "pending",
+      "statement": "待核W9完整r_n既约分母，争取预定无界子列上limsup logd_n/n<2logρ。",
+      "scope": "仅一完成轮；全部素数幂、S/q、a幂、前缀和双镜像共同约分必须同对象；当前没有数值准入。",
+      "dependencies": [
+        "c277_wilson_actual_rate",
+        "c277_source_choice"
+      ],
+      "evidence": [
+        {
+          "path": "research/wilson_square_budget_charter_round278_20261020.md",
+          "position": "首命题及1–5",
+          "sha256": "2994eede7f24214ec04540602819821e02bbf7dd3f8a0f57e1202c0d491e6c34"
+        }
+      ],
+      "audit": "待278完整费用与独立审查；新来源和裸率不替实际d_n费用。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -3433,6 +3646,50 @@
         "research/source_gate_charter_round277_20261020.md"
       ],
       "reopen_condition": "宏观比较不等于数学准入；候选须有改变完整最终缺口的实证及有界首任务，不能只优化已证不足的包络。"
+    },
+    {
+      "id": "d277_formal_review",
+      "round": 277,
+      "decision": "完成277全路线比较，旧源保持停止；新倒数前缀全n关闭，计数false/停滞1。",
+      "scope": "不从局部no-go/文档/裸新源领取完整预算进展；goal未实现。",
+      "claim_ids": [
+        "c277_macro_gate",
+        "c277_markov_transform",
+        "c277_old_real_gate",
+        "c277_reciprocal_actual",
+        "c277_pade_inversion"
+      ],
+      "evidence": [
+        "research/global_source_review_round277.md",
+        "research/markov_gate_round277.md",
+        "research/analytic_gate_round277.md",
+        "research/alternative_gate_round277.md"
+      ],
+      "reopen_condition": "旧源仍须符合各自原重开条件；正裸包络下仅减费不重开。"
+    },
+    {
+      "id": "d277_select_wilson_square",
+      "round": 277,
+      "decision": "以实际正交匹配及精确裸率，只给新χ−8连续双Hahn来源278一轮完整费用。",
+      "scope": "新sourcekey不同于WZ/RV/multileaf；费用仍未付，非数值实施准入。",
+      "claim_ids": [
+        "c277_wilson_positive",
+        "c277_wilson_actual_rate",
+        "c277_source_choice",
+        "c278_complete_cost"
+      ],
+      "evidence": [
+        "research/wilson_square_source_round277.md",
+        "research/global_source_review_round277.md",
+        "research/wilson_square_budget_charter_round278_20261020.md",
+        "research/analytic_gate_round277.md",
+        "research/alternative_gate_round277.md"
+      ],
+      "reopening_evidence": [
+        "research/wilson_square_source_round277.md",
+        "research/global_source_review_round277.md"
+      ],
+      "reopen_condition": "当前来源核查限一轮；后续须有完整净预算实证，无不足upper/局部内容或样本续期。"
     }
   ],
   "windows": [
@@ -3601,14 +3858,26 @@
     {
       "first_round": 277,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "global_source_gate_277",
       "route_id": "new_period_source",
       "source_key": "unselected_new_carrier",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d276_plan_macro_review",
       "reopening_decision_id": "d276_plan_macro_review",
-      "kind": "macro_selection"
+      "kind": "macro_selection",
+      "closure_decision_id": "d277_formal_review"
+    },
+    {
+      "first_round": 278,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "wilson_square_budget_278",
+      "route_id": "chi8_wilson_square",
+      "source_key": "chi8_lerch_quarter_continuous_dual_hahn_square_n_equals_shift",
+      "status": "active",
+      "decision_id": "d277_select_wilson_square",
+      "kind": "source_verification"
     }
   ],
   "completed_rounds": [
@@ -3806,6 +4075,22 @@
         "research/growing_pole_independent_round276.md",
         "research/growing_pole_actual_diagnostic_round276.py",
         "research/growing_pole_actual_diagnostic_round276.json"
+      ]
+    },
+    {
+      "round": 277,
+      "kind": "formal_review_and_actual_continuous_dual_hahn_source",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "window_id": "global_source_gate_277",
+      "report": "research/global_source_review_round277.md",
+      "outputs": [
+        "research/global_source_review_round277.md",
+        "research/wilson_square_source_round277.md",
+        "research/markov_gate_round277.md",
+        "research/analytic_gate_round277.md",
+        "research/alternative_gate_round277.md",
+        "literature/source_scope_round277_20261020.md"
       ]
     }
   ]

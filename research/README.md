@@ -30,12 +30,10 @@
 | 正式比较与固定 Abel Y 正配对（271） | [宏观决定及预算门槛](global_budget_review_round271.md)、[纯β4桥的纠错](abel_beta4_source_independent_round271.md)、[修正目标的独立证明](abel_beta45_jet_projection_independent_round271.md)、[一手来源范围](primary_source_audit_round271.md)、[272一轮预算任务](abel_beta45_budget_charter_round272_20261020.md) |
 | Abel整数值来源、全头费用及到期裁决（272） | [结算与本原门槛](abel_beta45_budget_round272.md)、[原Hermite来源](abel_beta45_hermite_structure_round272.md)、[实际Gram上下界](abel_beta45_gram_bounds_round272.md)、[273宏观任务](source_gate_charter_round273_20261020.md) |
 | 正式比较、差商清头与实际阶乘内容（273） | [正式决定与完整净改善](global_budget_review_round273.md)、[技术证书](primitive_mechanism_review_round273.md)、[独审与去重](primary_mechanism_review_round273.md)、[274一轮本原预算](abel_primitive_budget_charter_round274_20261020.md) |
-
 | 完整二处内容、裸实际有限率与到期结算（274） | [结算与资源决定](abel_primitive_budget_round274.md)、[全系数内容](abel_primitive_content_round274.md)、[实际Gram率](abel_gram_rate_round274.md)、[独立审查](abel_independent_review_round274.md)、[275宏观任务](source_gate_charter_round275_20261020.md) |
-
 | 全路线比较、原X行别全内容与新来源障碍（275） | [正式结算与决定](global_source_review_round275.md)、[完整行别费用](rational_kernel_review_round275.md)、[Markov实际边界](markov_source_review_round275.md)、[WZ来源与前缀量词](primary_alternative_review_round275.md)、[276一轮任务](growing_pole_primitive_charter_round276_20261020.md) |
-
 | 原X新内容、实际实处及到期关闭（276） | [完整结算](growing_pole_primitive_round276.md)、[全有理头与内容](growing_pole_content_round276.md)、[逐阶实处](growing_pole_real_rate_round276.md)、[独立复核与FP纠错](growing_pole_independent_round276.md)、[277宏观任务](source_gate_charter_round277_20261020.md) |
+| 全路线实率比较与四分点χ−8新来源（277） | [正式决定](global_source_review_round277.md)、[真实平方余项](wilson_square_source_round277.md)、[Markov竞争](markov_gate_round277.md)、[解析独审](analytic_gate_round277.md)、[一手来源及独审](alternative_gate_round277.md)、[278费用任务](wilson_square_budget_charter_round278_20261020.md) |
 
 ## 数据与历史记录
 

@@ -129,3 +129,11 @@ AP 素数同余类过滤的完整前缀分母是真实资产：某些特殊关�
 275正式比较另按原X自己的低低/低高/高高分块及行别Hermite数据重建全部头与素数幂费用；完整倍数 Λ_row=2^(30m²)d_(16m)^(2m)∏d_(8m−1−i)²，实际旧内容信用率1+18log2。完整净upper降至47+55log2+32h(1/4)，仍正，只以此新实证重开原X一轮。Markov完整边界的局部降阶不能替总体分母率；新WZ χ−8前缀全序列/有界间隔负预算被排，稀疏子列仍未排。见[275全路线结算](../research/global_source_review_round275.md)与[276一轮任务](../research/growing_pole_primitive_charter_round276_20261020.md)。
 
 276按实际各行次数收紧全有理头，新增完整内容率2；保留Newton每阶2^r与实际求值的互补，裸upper下降9log2−1。两项合并完整净upper为46+46log2+32h(1/4)>0，仍未准入。单m=2原R正定不替全m结论；Mellin有限部须保留C_(L²)且不保序，原正核提案未证。一轮重开到期关闭；仅在当前正裸包络下继续减费不能闭合证书，见[276结算与准确范围](../research/growing_pole_primitive_round276.md)及[277宏观任务](../research/source_gate_charter_round277_20261020.md)。
+
+## 11. 四分点 χ−8：精确连续双Hahn余项
+
+277全路线比较发现，在z=−1、s=2特化中，正确的一阶csch导数权乘x²恰为连续双Hahn(1,1,1)测度；原文一般signed权的one-V上界不足以描述它。完整双quarter平移和正交消元给纯L(2,χ−8)有理逼近、每个尺度非零，以及精确裸率−2log((11+5√5)/2)。完整实际既约分母尚未付，数值实施不准入，只给278一轮费用核查。
+
+同轮Xu–Zhao倒数ζ7前缀虽有正余项n⁻⁶，实际全n分母恰含2^(7n)，排该固定前缀全部无界子列。普通Padé互反只交换既约整数对，不给新信用。Markov合法端点修正须按实际总degree计价；自然Möbius在目标有理假设下第二moment仍含无理背景。
+
+**经验：**须识别真实测度是否精确匹配正交系统，再领取平方余项；快速裸逼近、半整数矩及生成多项式分母均不等于最后本原费用。见[277正式决定](../research/global_source_review_round277.md)、[完整来源证明](../research/wilson_square_source_round277.md)及[278限定任务](../research/wilson_square_budget_charter_round278_20261020.md)。
