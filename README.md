@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第282轮（2026-11-20）。对 \(L(2,\chi_{-8})\) 的一族 Markov 有理逼近，已证明每一阶的既约分母均为奇数，并把完整分母上界的对数二次系数从 \(16-\log4\) 降至 \(11\log2\)。这族逼近的误差按线性指数衰减，实际既约分母的线性界仍待证。第281轮同时给出了五圈图逼近 \(\zeta(7)\) 的端点下界，并纠正了 Mellin 路线对相邻行消元的判断。
+研究记录更新至第283轮（2026-11-20）。对每个固定奇权 \(w\ge3\)，同一列有理 Padé 多项式给 \((1-2^{1-w})\zeta(w)\) 的有理逼近，误差每阶为正，对数除以阶数趋于 \(-\log(27/4)\)。这一族还需控制最终既约分母。另一种可依权重选取的短整数多项式能同时消去一整段素数的全部 \(p^w\) 分母。[统一构造与完整证明](research/odd_weight_square_lattice_round283.md)
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第282轮奇分母与完整上界](research/chi8_markov_border_round282.md) · [第281轮全路线复盘](research/global_source_review_round281.md) · [第283轮比较任务](research/source_gate_charter_round283_20261120.md) |
+| 最新研究结算与宏观选择 | [第283轮全权复盘](research/global_source_review_round283.md) · [第284轮既约分母问题](research/odd_weight_square_charter_round284.md) · [第282轮导子8分母](research/chi8_markov_border_round282.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览

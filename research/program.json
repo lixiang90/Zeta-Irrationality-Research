@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 23,
+  "revision": 24,
   "updated_at": "2026-11-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,39 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 282,
-    "last_global_review_round": 281,
+    "last_completed_round": 283,
+    "last_global_review_round": 283,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 6,
+    "rounds_without_feasibility_progress": 7,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/global_source_review_round281.md"
+    "evidence": "research/global_source_review_round283.md"
   },
   "current_task": {
-    "id": "round283_global_source_gate",
-    "round": 283,
+    "id": "round284_odd_pade_scalar_denominator",
+    "round": 284,
     "status": "in_progress",
-    "route_id": "new_period_source",
-    "entry": "research/source_gate_charter_round283_20261120.md",
-    "deliverable": "比较剩余完整奇分母的成本与固定Mellin投影等候选，给出一项有证据的选择或最小来源核查。",
-    "next_decisive_question": "哪个新机制能改善指定值反证所需的目标尺度预算或实际无界非零性？",
-    "pass_condition": "列出真实对象、全部反证、已认证收益、完整剩余门槛和一个限期命题。",
-    "stop_condition": "最多一轮。已经支付的二处和奇素数信用不续费；集合定理或已非零的首对不替代无界证书。",
+    "route_id": "odd_pade_square",
+    "entry": "research/odd_weight_square_charter_round284.md",
+    "deliverable": "对3d<p<4d的反转系数求无界模p证书，把它放回同一既约标量并核权七门槛。",
+    "next_decisive_question": "单位系数的素数对数重量T_d/d是否达到log(27/4)/7，或该段是否存在可证明的实际素数幂消去？",
+    "pass_condition": "给出覆盖范围明确的素数重量或同一有理头消去定理，量化与既约分母预算的差额。",
+    "stop_condition": "限一完成轮。固定d频率、强制整数缩放或仅用充分分母不能充作实际下界；无无界新来源则重新复盘。",
     "must_read": [
-      "research/chi8_markov_border_round282.md",
-      "research/global_source_review_round281.md",
-      "research/mellin_projection_audit_round281.md",
-      "research/source_gate_charter_round283_20261120.md"
+      "research/global_source_review_round283.md",
+      "research/odd_weight_square_lattice_round283.md",
+      "research/odd_weight_square_charter_round284.md"
     ],
     "expected_outputs": [
-      "research/global_source_review_round283.md"
+      "research/odd_pade_scalar_denominator_round284.md"
     ],
     "next_actions": [
-      "以11log2的剩余二次项与η的线性门槛衡量任何同源重开提议。",
-      "核相邻Mellin式无界有效性的真实来源，或新有号Hankel判据的对象与假设；保留281正式全路线比较的其余边界。",
-      "按一轮限期作继续或停止决定并更新账。"
+      "从S4、S5推3d<p<4d的局部通式，保留P(−1)²及全部矩项。",
+      "把已证非零素数的对数重量与log(27/4)/7比较；若发生消去，算它对同一完整分母的实际节省。",
+      "一轮结算并复盘可行性，全部奇权和权七的数值结论分别登记。"
     ],
-    "window_id": "global_source_gate_283"
+    "window_id": "odd_pade_scalar_284"
   },
   "routes": [
     {
@@ -176,7 +175,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "investigating",
+      "status": "unadmitted_candidates",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -217,9 +216,11 @@
         "research/global_source_review_round281.md",
         "research/chi8_markov_border_charter_round282.md",
         "research/chi8_markov_border_round282.md",
-        "research/source_gate_charter_round283_20261120.md"
+        "research/source_gate_charter_round283_20261120.md",
+        "research/odd_weight_family_scope_round283.md",
+        "research/global_source_review_round283.md"
       ],
-      "gap": "282已完成导子8全分母核查；目标线性尺度上仍未准入。283比较无界Mellin消元、剩余奇内容及新文献判据的实际适配。",
+      "gap": "283比较动机、生成函数、Markov与单平方。只选全奇权Padé实际标量的既约分母一轮；导子8与相邻Mellin的旧缺口仍在。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -389,6 +390,20 @@
       ],
       "gap": "实际c_s恒奇。扣除全部二处及已证奇素数内容后，完整剩余分母的对数二次率仍为11log2，目标尺度的线性上界未付。",
       "reopen_condition": "须作用于同一H′,N′的额外奇数共同内容，消去剩余二次项并有通向ηs以下的净收益。已有二处、圆弧及重叠行LCM不能重复扣除。"
+    },
+    {
+      "id": "odd_pade_square",
+      "name": "全奇权对角Padé正平方的实际分母",
+      "status": "investigating",
+      "target": "每个固定奇权ζ(w)无理，先核ζ(7)",
+      "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
+      "evidence": [
+        "research/odd_weight_square_lattice_round283.md",
+        "research/odd_generating_family_round283.md",
+        "research/odd_weight_square_charter_round284.md"
+      ],
+      "gap": "每阶正性、单值投影与真实对数误差率−log(27/4)已证；同一有理数的既约分母线性率未知。",
+      "reopen_condition": "限一轮实际素数带核查；再次投入须有同一标量的新约分或真正负净率来源。"
     }
   ],
   "claims": [
@@ -4070,9 +4085,9 @@
     },
     {
       "id": "c283_macro_gate",
-      "type": "pending",
-      "statement": "比较同一奇整数对的剩余内容、Mellin相邻消元的无界有效性与新有号Hankel判据的实际适用条件，选择一个有界来源任务。",
-      "scope": "283最多一宏观轮；已有样本、已结二处及全路线旧基线不作为新的数学准入。",
+      "type": "reviewed_written_structure",
+      "statement": "完成全部奇权的宏观比较。选取具有单值正余项和精确实指数的显式对角Padé族，只核下一轮实际既约分母。",
+      "scope": "283正式比较包括旧导子8、Mellin、有号Hankel适配和本轮全权结构。任何一条数学实现均未获新的数值证明准入。",
       "dependencies": [
         "c282_residual_quadratic_budget",
         "c281_mellin_first_pair"
@@ -4082,9 +4097,254 @@
           "path": "research/source_gate_charter_round283_20261120.md",
           "position": "首问题及停止条件",
           "sha256": "c5e92695d2d9f176b555d2c071fa084aae600896d24aad1b89d975426f1d07b8"
+        },
+        {
+          "path": "research/odd_weight_family_scope_round283.md",
+          "position": "每个固定权的完整反证",
+          "sha256": "c388d0b604a4f036c7f33a026b753b8b10c48f14ebbfaf6ecebf4eaad3986215"
+        },
+        {
+          "path": "research/global_source_review_round283.md",
+          "position": "全路线取舍",
+          "sha256": "6b3eb35b37555bab85252a3152cdec4aa1562f735c3e2355808123f00486d939"
         }
       ],
-      "audit": "等待新的全路线机会成本比较。",
+      "audit": "保留原章程，依用户对所有固定奇权的取向补记量词；全路线机会成本及停止范围见短结算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_odd_sign_descent",
+      "type": "conditional",
+      "statement": "若ζ(3)不属于Q(ζ(3)²,ζ(3)ζ(5),…)，则数值域有同时变号的Q-自同构，每一奇ζ值均无理。",
+      "scope": "该域不包含关系和数值关系理想的变号稳定性等价；只在动机环已知变号。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_motivic_source_round283.md",
+          "position": "一条足够的数值对称性",
+          "sha256": "aab180d88779f7c397a5b41eacedb3d71a8bb8649025f2e23fb27899cb562738"
+        }
+      ],
+      "audit": "用二次扩域直接推出，并核对Brown、Dupont的动机与数值条件。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_disk_common_denominator",
+      "type": "reviewed_written_structure",
+      "statement": "在固定0<r<1圆盘上，qΣζ(2h+3)z^h到整数Taylor系数解析函数的距离对任意ε>0有下界C(r,ε)q^(−ε)。",
+      "scope": "对全部整数q≥1；权重各用分母、控制有限系数、改变圆盘不在此界内。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_motivic_source_round283.md",
+          "position": "公共分母母函数估计的独立复核",
+          "sha256": "aab180d88779f7c397a5b41eacedb3d71a8bb8649025f2e23fb27899cb562738"
+        }
+      ],
+      "audit": "从正Dirichlet原子用整数差分消去前K项，再由Cauchy估计捕捉一个不可清去的系数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_wz_all_endpoints",
+      "type": "reviewed_written_structure",
+      "statement": "Koecher指定WZ对的任意无界端点在每个固定奇权w上，既约分母乘绝对余项的对数除以T的下极限至少为w−log(3+2√2)>0。",
+      "scope": "T为该对两个端点坐标之和；包括稀疏子列，不外推至其他WZ对或有偿组合。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_generating_family_round283.md",
+          "position": "K5–K8及交叉复核",
+          "sha256": "31e5ff9d556777fcc12a6c78f1f77fc806e3dbc8fd5261a4998548105d2bfb39"
+        }
+      ],
+      "audit": "独立核p^w降阶、粗端点正性、精确解析斜率与PNT。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_markov_prime_weight",
+      "type": "reviewed_written_structure",
+      "statement": "纯η(w)的Markov标量在固定h=⌊s/p⌋≥1的大奇素数处有p^w∤B_s ⇒ v_p(c_s)=w。权七严格负率需要异常素数的对数重量占比超过49.63%。",
+      "scope": "每个固定w≥3；B_s为除尽全部最大子式公因子之后的和，所需比例只是必要条件。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_markov_all_weights_round283.md",
+          "position": "W1–W10",
+          "sha256": "3e60f5bc503da2e99dd04ce88fe1ae7d4a027136af6f11c170e5f309ff5d54b1"
+        },
+        {
+          "path": "research/odd_generating_family_round283.md",
+          "position": "交叉复核 W7–W10",
+          "sha256": "31e5ff9d556777fcc12a6c78f1f77fc806e3dbc8fd5261a4998548105d2bfb39"
+        }
+      ],
+      "audit": "从余子式核与p-adic余类矩形块两次推导，再用固定h后取极限。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_integral_lattice_index",
+      "type": "reviewed_written_structure",
+      "statement": "对该η(w)有理双线性形，整系数多项式次数小于d的满整配对格最小指数满足log I(d,w)/d²→w log2。",
+      "scope": "固定整数w≥1，判满格Minkowski体积保证；不约束单个自配对整数向量的最小值。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_markov_all_weights_round283.md",
+          "position": "全格双线性整性的锐成本 W11–W12",
+          "sha256": "3e60f5bc503da2e99dd04ce88fe1ae7d4a027136af6f11c170e5f309ff5d54b1"
+        }
+      ],
+      "audit": "按满秩矩形块、有限环完美配对与奇素数双曲平面上下夹逼，分别复算大素数尾块与实处体积。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_single_square_criterion",
+      "type": "conditional",
+      "statement": "对每个固定奇权若显式整数二次型Q_w,d在高度2^d内有无界的非零模D整解，则每个ζ(w)无理。",
+      "scope": "D=lcm(1,…,6d−2)^w；只假设目标项有理，无须共同分母或其他权重的性质。完整短解待证。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_lattice_round283.md",
+          "position": "S1–S2",
+          "sha256": "c610879192dfee71551ebde7699fb8984cff11c656cc6e04f3cfdcb06a9ed3d2"
+        },
+        {
+          "path": "research/odd_motivic_source_round283.md",
+          "position": "正积分与短向量候选的独审",
+          "sha256": "aab180d88779f7c397a5b41eacedb3d71a8bb8649025f2e23fb27899cb562738"
+        }
+      ],
+      "audit": "有理头恒等式及正积分极限在同一输出上反证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_square_prime_band",
+      "type": "reviewed_written_structure",
+      "statement": "对每个固定奇权，显式整数多项式使[5d−1,6d−2]中每个素数的p^w在有理头中同时消去。缩放Λ后的真实正余项对数率为5w−log16。",
+      "scope": "同一满次数整数向量，U(0)非零且U(−1)奇；Λ是已证清整倍数，非既约下界。低次U=1已有4w安全分母指数。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_lattice_round283.md",
+          "position": "S3",
+          "sha256": "c610879192dfee71551ebde7699fb8984cff11c656cc6e04f3cfdcb06a9ed3d2"
+        },
+        {
+          "path": "research/odd_markov_all_weights_round283.md",
+          "position": "W13–W14",
+          "sha256": "3e60f5bc503da2e99dd04ce88fe1ae7d4a027136af6f11c170e5f309ff5d54b1"
+        },
+        {
+          "path": "research/odd_motivic_source_round283.md",
+          "position": "正积分与短向量候选的独审",
+          "sha256": "aab180d88779f7c397a5b41eacedb3d71a8bb8649025f2e23fb27899cb562738"
+        }
+      ],
+      "audit": "三角末项、偶代表和非零目标交叉复核；Chebyshev区间估计支付精确裸率。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_square_check_7",
+      "type": "finite_certificate",
+      "statement": "w=7,d=64的一次有理数复算消去该带九个p^7并使ΛB为整数；高度594833740955253482，v₂(P(−1))=64。",
+      "scope": "单例实现复核；不用于推出无界短解。",
+      "dependencies": [
+        "c283_square_prime_band"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_lattice_round283.md",
+          "position": "预定的符号与实现校验",
+          "sha256": "c610879192dfee71551ebde7699fb8984cff11c656cc6e04f3cfdcb06a9ed3d2"
+        }
+      ],
+      "audit": "按整数卷积、精确多项式除法、逐项有理求和与直接赋值独立计算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_pade_scale_invariant_rate",
+      "type": "reviewed_written_structure",
+      "statement": "一列与w无关的有理Padé多项式对所有固定奇权给真实正误差；4d+1≤k≤6d−3的奇矩系数全零，实际标量逼近的对数误差率恰为−log(27/4)。",
+      "scope": "d≥2，P(−1)=±2(2d−1)。r_w,d=−B_w(P)/P(−1)²；实际既约分母指数待证。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_lattice_round283.md",
+          "position": "S4–S6",
+          "sha256": "c610879192dfee71551ebde7699fb8984cff11c656cc6e04f3cfdcb06a9ed3d2"
+        },
+        {
+          "path": "research/odd_generating_family_round283.md",
+          "position": "正平方构造 S4–S7 独审",
+          "sha256": "31e5ff9d556777fcc12a6c78f1f77fc806e3dbc8fd5261a4998548105d2bfb39"
+        }
+      ],
+      "audit": "重心插值与独立二项Bernstein表示交叉推导，验证边界、两端点、唯一性和正区间精确率。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_pade_integer_scale",
+      "type": "reviewed_written_structure",
+      "statement": "令整数倍λ使S5的首一多项式整系数，则liminf log I_w(λP_d)/d≥2(log2+2/3)−log(27/4)>0。",
+      "scope": "全部指定奇阶精确清零的一维族，整数平方规范。既约r_w,d消去λ²，须另核。",
+      "dependencies": [
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_lattice_round283.md",
+          "position": "S5、S7",
+          "sha256": "c610879192dfee71551ebde7699fb8984cff11c656cc6e04f3cfdcb06a9ed3d2"
+        },
+        {
+          "path": "research/odd_generating_family_round283.md",
+          "position": "独审中的Bernstein表示与整数缩放",
+          "sha256": "31e5ff9d556777fcc12a6c78f1f77fc806e3dbc8fd5261a4998548105d2bfb39"
+        }
+      ],
+      "audit": "±1处分别给全部2^m及(4m/3+1,2m]内奇素数，利用PNT核查权重。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_pade_actual_denominator_gate",
+      "type": "pending",
+      "statement": "求3d<p<4d时实际反转系数C_{p,d}模p的非零素数重量，和r_w,d的既约分母门槛log(27/4)比较。",
+      "scope": "284限一来源轮。每个单位系数迫使v_p(c_w,d)=w；权七的全子列排除门槛为liminf T_d/d≥log(27/4)/7。",
+      "dependencies": [
+        "c283_pade_scale_invariant_rate",
+        "c283_pade_integer_scale"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_weight_square_charter_round284.md",
+          "position": "首命题与停止条件",
+          "sha256": "1576353076244d684051fddcdf430d4c07cd276c5787410bcd137e876d2ca4eb"
+        }
+      ],
+      "audit": "待实际无界素数重量或同一标量规模的新消去机制。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -4763,6 +5023,34 @@
         "research/source_gate_charter_round283_20261120.md"
       ],
       "reopen_condition": "以实际新机制选择首命题；无合格者准确拒绝。"
+    },
+    {
+      "id": "d283_select_actual_pade_scalar",
+      "round": 283,
+      "decision": "全路线比较完成。选择一列所有权重共用且实际误差已知的对角Padé标量，限一轮判断未消素数带能否耗尽其误差预算。",
+      "claim_ids": [
+        "c283_macro_gate",
+        "c283_odd_sign_descent",
+        "c283_disk_common_denominator",
+        "c283_wz_all_endpoints",
+        "c283_markov_prime_weight",
+        "c283_integral_lattice_index",
+        "c283_single_square_criterion",
+        "c283_square_prime_band",
+        "c283_pade_scale_invariant_rate",
+        "c283_pade_integer_scale",
+        "c284_pade_actual_denominator_gate"
+      ],
+      "evidence": [
+        "research/global_source_review_round283.md",
+        "research/odd_weight_square_lattice_round283.md",
+        "research/odd_generating_family_round283.md",
+        "research/odd_motivic_source_round283.md",
+        "research/odd_markov_all_weights_round283.md",
+        "research/odd_weight_square_charter_round284.md"
+      ],
+      "scope": "新对象始终为−B_w(P)/P(−1)²的最终既约标量。满格整性、裸整数平方及其他WZ对各有不同费用。",
+      "reopen_condition": "按同一标量的无界素数重量或素数幂消去结算；旧完整奇分母、Mellin、单图与其他来源保留原停止条件。"
     }
   ],
   "windows": [
@@ -5006,14 +5294,26 @@
     {
       "first_round": 283,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "global_source_gate_283",
       "route_id": "new_period_source",
       "source_key": "unselected_new_carrier",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d282_plan_macro_review",
       "reopening_decision_id": "d282_plan_macro_review",
-      "kind": "macro_selection"
+      "kind": "macro_selection",
+      "closure_decision_id": "d283_select_actual_pade_scalar"
+    },
+    {
+      "id": "odd_pade_scalar_284",
+      "kind": "source_verification",
+      "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
+      "route_id": "odd_pade_square",
+      "first_round": 284,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "status": "active",
+      "decision_id": "d283_select_actual_pade_scalar"
     }
   ],
   "completed_rounds": [
@@ -5302,6 +5602,23 @@
         "research/chi8_markov_content_round282.md",
         "research/chi8_markov_minors_round282.md",
         "research/chi8_markov_budget_audit_round282.md"
+      ]
+    },
+    {
+      "round": 283,
+      "kind": "formal_review_all_odd_weights_and_positive_pade_square",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "secondary_budget_change": "同一满次数短整数向量先省下整段wd；另一权重无关的对角Padé标量获得精确实率，最终本原费用未定。",
+      "window_id": "global_source_gate_283",
+      "report": "research/global_source_review_round283.md",
+      "outputs": [
+        "research/global_source_review_round283.md",
+        "research/odd_weight_family_scope_round283.md",
+        "research/odd_weight_square_lattice_round283.md",
+        "research/odd_motivic_source_round283.md",
+        "research/odd_generating_family_round283.md",
+        "research/odd_markov_all_weights_round283.md"
       ]
     }
   ]

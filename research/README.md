@@ -38,6 +38,7 @@
 | 全输出、真实衰减与单值来源比较（279） | [正式结算](global_source_review_round279.md)、[连分式与固定点余项](real_source_gate_round279.md)、[CMF完整投影](primary_source_gate_round279.md)、[复Beta与正则化边界](period_source_gate_round279.md)、[280非对角9jet任务](sv_beta_pairing_charter_round280_20261020.md) |
 | 非对角复Beta自足公式与锐秩关闭（280） | [完整结算](sv_beta_pairing_round280.md)、[实际收敛积分证明](sv_beta_formula_round280.md)、[锐秩与全k minor](sv_beta_rank_round280.md)、[独立来源与量词](sv_beta_independent_round280.md)、[281宏观任务](source_gate_charter_round281_20261020.md) |
 | 固定值投影、五圈图端点与导子8的完整分母（281–282） | [全路线复盘](global_source_review_round281.md)、[奇分母与实际费用](chi8_markov_border_round282.md)、[实处及算术独审](chi8_markov_budget_audit_round282.md)、[下一次比较](source_gate_charter_round283_20261120.md) |
+| 每个指定奇权的统一构造（283） | [宏观复盘](global_source_review_round283.md)、[正积分和对角 Padé 证明](odd_weight_square_lattice_round283.md)、[动机变号与固定圆盘](odd_motivic_source_round283.md)、[WZ 既约分母与交叉复核](odd_generating_family_round283.md)、[Markov 算术与整格](odd_markov_all_weights_round283.md)、[既约分母的首命题](odd_weight_square_charter_round284.md) |
 
 ## 数据与历史记录
 
