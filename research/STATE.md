@@ -2,33 +2,33 @@
 
 > 权威账：`program.json`。由 `python scripts/research_state.py render` 生成；不要手改本文件。
 
-修订 22 · 更新 2026-11-20 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
+修订 23 · 更新 2026-11-20 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
 
 最终目标：取得至少一项明确指定ζ/L特殊值的新无理性或有理线性无关结论，付清同对象完整证明与独立复核。
 数值目标已实现：否。诊断资产与组织维护不能替代此项。
 
 ## 当前窗口
 
-- 任务：`round282_chi8_markov_border`；轮次 282；状态 `in_progress`；主路线 `chi8_markov_border`。
-- 入口：[research/chi8_markov_border_charter_round282.md](../research/chi8_markov_border_charter_round282.md)。
-- 本阶段交付：给原Markov完整H,N的共同内容恒等式，把剩余费用与严格线性门槛比较。
-- 首问题：同一带边分子和分母能否以全尺度共同整除给出log c_s/s<η？
-- 通过：所有L=u/v、同一r_s，明确δ>0及预定无界子列，或准确给出剩余缺口。
-- 停止：一轮到期；仅剩未知行列式比或超线性上界即停止此实现。
-- 持久窗口 `chi8_markov_border_282`：已完成 0/1 轮；整理和task改名不计新窗口。
+- 任务：`round283_global_source_gate`；轮次 283；状态 `in_progress`；主路线 `new_period_source`。
+- 入口：[research/source_gate_charter_round283_20261120.md](../research/source_gate_charter_round283_20261120.md)。
+- 本阶段交付：比较剩余完整奇分母的成本与固定Mellin投影等候选，给出一项有证据的选择或最小来源核查。
+- 首问题：哪个新机制能改善指定值反证所需的目标尺度预算或实际无界非零性？
+- 通过：列出真实对象、全部反证、已认证收益、完整剩余门槛和一个限期命题。
+- 停止：最多一轮。已经支付的二处和奇素数信用不续费；集合定理或已非零的首对不替代无界证书。
+- 持久窗口 `global_source_gate_283`：已完成 0/1 轮；整理和task改名不计新窗口。
 
 ## 宏观复盘
 
-- 完成研究轮 281；最近正式复盘 281；其后 0 轮。
-- 连续未改善可行性 5 轮；现在须复盘：否。
+- 完成研究轮 282；最近正式复盘 281；其后 1 轮。
+- 连续未改善可行性 6 轮；现在须复盘：是。
 - 正式复盘已处理至第281轮；计数不清零，其后有新完成轮且连续未改善达到2即提前复盘。
 - 默认复盘 285；最迟 289；两轮核心停滞提前。
 
 ## 下一动作
 
-1. 扩展子式到实际带边分子，独审同一整数对。
-2. 检验全尺度共同整除和实际剩余上界，与ηs比较。
-3. 结算后更新状态并作下一阶段选择。
+1. 以11log2的剩余二次项与η的线性门槛衡量任何同源重开提议。
+2. 核相邻Mellin式无界有效性的真实来源，或新有号Hankel判据的对象与假设；保留281正式全路线比较的其余边界。
+3. 按一轮限期作继续或停止决定并更新账。
 
 ## 全路线状态
 
@@ -43,7 +43,7 @@
 | χ−8 RV与原生增长行列式 | `parked` | 实际无界非零与严格净指数仍缺；安全上界失败非全方法否定。 |
 | 混合rank3标准/标量AP入口 | `closed_implementation` | 自然cap32/27及仅辅助分布cap≥8/9均不足；c≠0极点出口关闭。 |
 | 实际联合评价格/Frobenius首证书 | `closed_implementation` | 264证明单变量completejet index-only入口失败；balanced leading-box可证但高度保证仍不足。两轮窗口结束，intrinsic费用及全部tensor未被否定。 |
-| 未准入来源的定期宏观比较 | `unadmitted_candidates` | 281比较完成；按到期条件只给χ−8带边分母一轮来源核查。 |
+| 未准入来源的定期宏观比较 | `investigating` | 282已完成导子8全分母核查；目标线性尺度上仍未准入。283比较无界Mellin消元、剩余奇内容及新文献判据的实际适配。 |
 | M₀,₈固定3:1完整向量（仅来源核查） | `closed_implementation` | 266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。 |
 | 非显式Siegel固定目标商（仅来源核查） | `closed_implementation` | 268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。 |
 | 增长极点的纯目标正Gram（仅预算核查） | `closed_implementation` | 276新增完整内容率2及真实实处upper改善9log2−1，净upper=46+46log2+32h>0；裸非负lower/R全m PSD/负净率未付。一轮到期关闭，安全增长不等于最优no-go。 |
@@ -52,14 +52,14 @@
 | χ−8 WZ双镜像的同步截断 | `closed_implementation` | 来源恒等式仍为一手输入；纯尾非零/裸率已付，逐项族全N增长且actual prefix全N/有界间隔负率被排，稀疏子列内容未付。 |
 | χ−8四分点连续双Hahn平方余项（仅完整费用核查） | `closed_implementation` | 278完整线性奇整数对已付，实际d=M/g；安全净率8+12log2>0，足额全g率未付。一轮到期，非最优费用全子列no-go。 |
 | 单值复Beta非对角固定9jet（仅最小来源核查） | `closed_implementation` | 280独证实际K=B vvᵀ，固定9jet m≥8秩恰8/惯性(4,4,m−8)，m≥9det恒0，目标rank1；非零接口失败，一轮关闭。 |
-| χ−8 双余类 Markov 逼近的完整分母 | `investigating` | 实际分子N与分母H的共同内容尚未给出log c_s/s<2log(3+2√2)的全尺度证书。 |
+| χ−8 双余类 Markov 逼近的完整分母 | `closed_implementation` | 实际c_s恒奇。扣除全部二处及已证奇素数内容后，完整剩余分母的对数二次率仍为11log2，目标尺度的线性上界未付。 |
 
 ## 恢复所需证据
 
+- [research/chi8_markov_border_round282.md](../research/chi8_markov_border_round282.md)
 - [research/global_source_review_round281.md](../research/global_source_review_round281.md)
-- [research/full_net_gate_round281.md](../research/full_net_gate_round281.md)
-- [research/markov_candidate_audit_round281.md](../research/markov_candidate_audit_round281.md)
-- [research/chi8_markov_border_charter_round282.md](../research/chi8_markov_border_charter_round282.md)
+- [research/mellin_projection_audit_round281.md](../research/mellin_projection_audit_round281.md)
+- [research/source_gate_charter_round283_20261120.md](../research/source_gate_charter_round283_20261120.md)
 - [长期goal](../docs/RESEARCH_GOAL.md) · [恢复协议](../AGENTS.md) · [通用组织方法](../docs/LONG_RESEARCH_WORKFLOW.md)
 
 状态检查核引用、依赖、计数和摘要一致性；不认证数学，也不替goal工具改变运行状态。恢复时另核工具的暂停/限额状态。

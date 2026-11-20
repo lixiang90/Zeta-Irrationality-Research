@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 22,
+  "revision": 23,
   "updated_at": "2026-11-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,39 +22,39 @@
     ]
   },
   "review": {
-    "last_completed_round": 281,
+    "last_completed_round": 282,
     "last_global_review_round": 281,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 5,
+    "rounds_without_feasibility_progress": 6,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/global_source_review_round281.md"
   },
   "current_task": {
-    "id": "round282_chi8_markov_border",
-    "round": 282,
+    "id": "round283_global_source_gate",
+    "round": 283,
     "status": "in_progress",
-    "route_id": "chi8_markov_border",
-    "entry": "research/chi8_markov_border_charter_round282.md",
-    "deliverable": "给原Markov完整H,N的共同内容恒等式，把剩余费用与严格线性门槛比较。",
-    "next_decisive_question": "同一带边分子和分母能否以全尺度共同整除给出log c_s/s<η？",
-    "pass_condition": "所有L=u/v、同一r_s，明确δ>0及预定无界子列，或准确给出剩余缺口。",
-    "stop_condition": "一轮到期；仅剩未知行列式比或超线性上界即停止此实现。",
+    "route_id": "new_period_source",
+    "entry": "research/source_gate_charter_round283_20261120.md",
+    "deliverable": "比较剩余完整奇分母的成本与固定Mellin投影等候选，给出一项有证据的选择或最小来源核查。",
+    "next_decisive_question": "哪个新机制能改善指定值反证所需的目标尺度预算或实际无界非零性？",
+    "pass_condition": "列出真实对象、全部反证、已认证收益、完整剩余门槛和一个限期命题。",
+    "stop_condition": "最多一轮。已经支付的二处和奇素数信用不续费；集合定理或已非零的首对不替代无界证书。",
     "must_read": [
+      "research/chi8_markov_border_round282.md",
       "research/global_source_review_round281.md",
-      "research/full_net_gate_round281.md",
-      "research/markov_candidate_audit_round281.md",
-      "research/chi8_markov_border_charter_round282.md"
+      "research/mellin_projection_audit_round281.md",
+      "research/source_gate_charter_round283_20261120.md"
     ],
     "expected_outputs": [
-      "research/chi8_markov_border_round282.md"
+      "research/global_source_review_round283.md"
     ],
     "next_actions": [
-      "扩展子式到实际带边分子，独审同一整数对。",
-      "检验全尺度共同整除和实际剩余上界，与ηs比较。",
-      "结算后更新状态并作下一阶段选择。"
+      "以11log2的剩余二次项与η的线性门槛衡量任何同源重开提议。",
+      "核相邻Mellin式无界有效性的真实来源，或新有号Hankel判据的对象与假设；保留281正式全路线比较的其余边界。",
+      "按一轮限期作继续或停止决定并更新账。"
     ],
-    "window_id": "chi8_markov_border_282"
+    "window_id": "global_source_gate_283"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "unadmitted_candidates",
+      "status": "investigating",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -215,9 +215,11 @@
         "research/sv_beta_pairing_round280.md",
         "research/source_gate_charter_round281_20261020.md",
         "research/global_source_review_round281.md",
-        "research/chi8_markov_border_charter_round282.md"
+        "research/chi8_markov_border_charter_round282.md",
+        "research/chi8_markov_border_round282.md",
+        "research/source_gate_charter_round283_20261120.md"
       ],
-      "gap": "281比较完成；按到期条件只给χ−8带边分母一轮来源核查。",
+      "gap": "282已完成导子8全分母核查；目标线性尺度上仍未准入。283比较无界Mellin消元、剩余奇内容及新文献判据的实际适配。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -372,17 +374,21 @@
     {
       "id": "chi8_markov_border",
       "name": "χ−8 双余类 Markov 逼近的完整分母",
-      "status": "investigating",
+      "status": "closed_implementation",
       "target": "L(2,χ−8)无理",
       "source_key": "chi8_mu_four_j_1_and_3_square_at_minus_one",
       "evidence": [
         "research/full_net_gate_round281.md",
         "research/markov_candidate_audit_round281.md",
         "research/global_source_review_round281.md",
-        "research/chi8_markov_border_charter_round282.md"
+        "research/chi8_markov_border_charter_round282.md",
+        "research/chi8_markov_content_round282.md",
+        "research/chi8_markov_minors_round282.md",
+        "research/chi8_markov_budget_audit_round282.md",
+        "research/chi8_markov_border_round282.md"
       ],
-      "gap": "实际分子N与分母H的共同内容尚未给出log c_s/s<2log(3+2√2)的全尺度证书。",
-      "reopen_condition": "须有针对同一完整有理逼近的严格净收益；分母单边的Borchardt分解或样本不延长窗口。"
+      "gap": "实际c_s恒奇。扣除全部二处及已证奇素数内容后，完整剩余分母的对数二次率仍为11log2，目标尺度的线性上界未付。",
+      "reopen_condition": "须作用于同一H′,N′的额外奇数共同内容，消去剩余二次项并有通向ηs以下的净收益。已有二处、圆弧及重叠行LCM不能重复扣除。"
     }
   ],
   "claims": [
@@ -3938,9 +3944,9 @@
     },
     {
       "id": "c282_chi8_border_gate",
-      "type": "pending",
-      "statement": "固定H,N能否同时约去足额内容，使预定无界子列的log c_s/s严格低于η？",
-      "scope": "只准一轮来源核查。",
+      "type": "reviewed_written_structure",
+      "statement": "一轮带边核查完成：显式公因子同时约去两边，其中二进部分精确；余留完整分母的可证上界仍为正二次，未过反证的线性门槛。",
+      "scope": "固定导子8双余类Markov源。该上界不排其他剩余内容、稀疏子列或临界次指数。",
       "dependencies": [
         "c281_chi8_markov_rate"
       ],
@@ -3949,9 +3955,136 @@
           "path": "research/chi8_markov_border_charter_round282.md",
           "position": "首命题与停止条件",
           "sha256": "16393b026867ddf79d777981d9d5dffc780b82ea239d5fbe8f31dbee97447366"
+        },
+        {
+          "path": "research/chi8_markov_border_round282.md",
+          "position": "余下的量级及停止决定",
+          "sha256": "068e25782eea2e3383ac006be63b5fec0fe16d98c9fa270cc55f94a152d14271"
         }
       ],
-      "audit": "等待同一带边分子与分母的完整核查。",
+      "audit": "根及独审分别核完整分子、分母、精确二处和奇素数信用，按原章程到期结算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c282_border_both_coordinates",
+      "type": "reviewed_written_structure",
+      "statement": "H=ΛΣd_k、N=Σ(Λz_k)d_k。d_k是同一整数矩阵删列子式，正平方Cauchy子式表示覆盖两坐标及全部有理头。",
+      "scope": "全部s≥1，z_0=0；单边det的内容不自动转移到N。",
+      "dependencies": [
+        "c281_chi8_markov_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/chi8_markov_minors_round282.md",
+          "position": "M1",
+          "sha256": "62a55394639f54ccbee6385545d36ff20149561096eb8efa3460991365838403"
+        },
+        {
+          "path": "research/chi8_markov_border_round282.md",
+          "position": "同一有理逼近的两个坐标",
+          "sha256": "068e25782eea2e3383ac006be63b5fec0fe16d98c9fa270cc55f94a152d14271"
+        }
+      ],
+      "audit": "从相邻列矩阵、交错余子式和正交算子独立推导；在s=1,2,3用原带边行列式复算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c282_exact_odd_denominators",
+      "type": "reviewed_written_structure",
+      "statement": "每阶实际既约分母c_s均为奇数。原对v₂(gcd(H,N))=v₂(H)=3s²−2Σ_{j<s}s₂(j)−s₂(s)。",
+      "scope": "固定μ_j和原清整Λ的H,N；并未求全体奇素数的实际赋值。",
+      "dependencies": [
+        "c281_chi8_markov_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/chi8_markov_content_round282.md",
+          "position": "C1–C4",
+          "sha256": "6b185691eeb40f76ab1ec50cfe4c76a2918e48a9afbfaf4542f66be5f6bd13da"
+        },
+        {
+          "path": "research/chi8_markov_budget_audit_round282.md",
+          "position": "A2–A3及A5后精确二进复核",
+          "sha256": "c54fa9d9bd10819b23a2ae2d5e93b2396c7ae45bdaa2e83e3abaed269e6490ee"
+        }
+      ],
+      "audit": "根与独审分别核二进均值、奇偶分块的Pascal行列式和带边整除。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c282_prime_arcs",
+      "type": "reviewed_written_structure",
+      "statement": "圆弧行列匹配缺陷给明确奇数G_s整除每个d_k，log G_s/s²→16(1−log2)；其中2s<p<8s的14/3与行LCM重叠。",
+      "scope": "G_s是充分公因子，只核指定p及指数h_p；小素数、高幂和其他抵消可以另有额外内容。",
+      "dependencies": [
+        "c282_border_both_coordinates"
+      ],
+      "evidence": [
+        {
+          "path": "research/chi8_markov_minors_round282.md",
+          "position": "M2–M3四段弧与素数积分",
+          "sha256": "62a55394639f54ccbee6385545d36ff20149561096eb8efa3460991365838403"
+        },
+        {
+          "path": "research/chi8_markov_budget_audit_round282.md",
+          "position": "A4与带边独审",
+          "sha256": "c54fa9d9bd10819b23a2ae2d5e93b2396c7ae45bdaa2e83e3abaed269e6490ee"
+        }
+      ],
+      "audit": "根核剩余类投影、圆弧长度和交错积分，独审核整数端点、带边额外列及各区间重合。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c282_residual_quadratic_budget",
+      "type": "reviewed_written_structure",
+      "statement": "H=Λ^(s+1)det K的对数二次率16−log4；H′=H/(2^T G)的确切二次率11log2，故limsup log c_s/s²≤11log2。",
+      "scope": "每条满足严格线性出口的子列还须log gcd(H′,N′)/s²→11log2且有足够线性余量。未得实际c_s的二次下界或线性上界。",
+      "dependencies": [
+        "c282_exact_odd_denominators",
+        "c282_prime_arcs"
+      ],
+      "evidence": [
+        {
+          "path": "research/chi8_markov_border_round282.md",
+          "position": "余下的量级及停止决定",
+          "sha256": "068e25782eea2e3383ac006be63b5fec0fe16d98c9fa270cc55f94a152d14271"
+        },
+        {
+          "path": "research/chi8_markov_budget_audit_round282.md",
+          "position": "A1与A5",
+          "sha256": "c54fa9d9bd10819b23a2ae2d5e93b2396c7ae45bdaa2e83e3abaed269e6490ee"
+        }
+      ],
+      "audit": "以实测度控制首一正交范数的两端渐近；两种不相交的素数信用各计一次。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c283_macro_gate",
+      "type": "pending",
+      "statement": "比较同一奇整数对的剩余内容、Mellin相邻消元的无界有效性与新有号Hankel判据的实际适用条件，选择一个有界来源任务。",
+      "scope": "283最多一宏观轮；已有样本、已结二处及全路线旧基线不作为新的数学准入。",
+      "dependencies": [
+        "c282_residual_quadratic_budget",
+        "c281_mellin_first_pair"
+      ],
+      "evidence": [
+        {
+          "path": "research/source_gate_charter_round283_20261120.md",
+          "position": "首问题及停止条件",
+          "sha256": "c5e92695d2d9f176b555d2c071fa084aae600896d24aad1b89d975426f1d07b8"
+        }
+      ],
+      "audit": "等待新的全路线机会成本比较。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -4591,6 +4724,45 @@
         "research/chi8_markov_border_charter_round282.md"
       ],
       "reopen_condition": "图Gram须改变端点实率，Mellin须付无界有效消元，旧来源按原停止范围。"
+    },
+    {
+      "id": "d282_close_border",
+      "round": 282,
+      "decision": "按期关闭χ−8带边算术核查。记录每阶奇分母及同一完整二次上界的下降；严格线性预算尚缺。",
+      "scope": "二次上界有全尺度实质改善，数值出口按线性尺度计仍无有限净上界，保留未准入计数。",
+      "claim_ids": [
+        "c282_chi8_border_gate",
+        "c282_border_both_coordinates",
+        "c282_exact_odd_denominators",
+        "c282_prime_arcs",
+        "c282_residual_quadratic_budget"
+      ],
+      "evidence": [
+        "research/chi8_markov_border_round282.md",
+        "research/chi8_markov_content_round282.md",
+        "research/chi8_markov_minors_round282.md",
+        "research/chi8_markov_budget_audit_round282.md"
+      ],
+      "reopen_condition": "须作用于同一H′,N′的额外奇数共同内容，消去剩余二次项并有通向ηs以下的净收益。已有二处、圆弧及重叠行LCM不能重复扣除。"
+    },
+    {
+      "id": "d282_plan_macro_review",
+      "round": 282,
+      "decision": "剩余奇数共同内容仍须覆盖11log2的整个二次项并控制线性余量，转283正式比较。",
+      "scope": "一轮宏观窗口，不自动恢复已结的数学实现。",
+      "claim_ids": [
+        "c282_residual_quadratic_budget",
+        "c283_macro_gate"
+      ],
+      "evidence": [
+        "research/chi8_markov_border_round282.md",
+        "research/source_gate_charter_round283_20261120.md"
+      ],
+      "reopening_evidence": [
+        "research/chi8_markov_border_round282.md",
+        "research/source_gate_charter_round283_20261120.md"
+      ],
+      "reopen_condition": "以实际新机制选择首命题；无合格者准确拒绝。"
     }
   ],
   "windows": [
@@ -4822,13 +4994,26 @@
     {
       "first_round": 282,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "chi8_markov_border_282",
       "route_id": "chi8_markov_border",
       "source_key": "chi8_mu_four_j_1_and_3_square_at_minus_one",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d281_select_markov_border",
-      "kind": "source_verification"
+      "kind": "source_verification",
+      "closure_decision_id": "d282_close_border"
+    },
+    {
+      "first_round": 283,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "global_source_gate_283",
+      "route_id": "new_period_source",
+      "source_key": "unselected_new_carrier",
+      "status": "active",
+      "decision_id": "d282_plan_macro_review",
+      "reopening_decision_id": "d282_plan_macro_review",
+      "kind": "macro_selection"
     }
   ],
   "completed_rounds": [
@@ -5102,6 +5287,21 @@
         "research/zigzag_endpoint_audit_round281.md",
         "research/markov_candidate_audit_round281.md",
         "research/mellin_projection_audit_round281.md"
+      ]
+    },
+    {
+      "round": 282,
+      "kind": "exact_dyadic_and_full_pair_odd_prime_saving",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "secondary_budget_change": "同一H,N的完整上界对数二次系数从16−log4降为11log2；两界按反证所需的线性尺度归一后仍趋正无穷。",
+      "window_id": "chi8_markov_border_282",
+      "report": "research/chi8_markov_border_round282.md",
+      "outputs": [
+        "research/chi8_markov_border_round282.md",
+        "research/chi8_markov_content_round282.md",
+        "research/chi8_markov_minors_round282.md",
+        "research/chi8_markov_budget_audit_round282.md"
       ]
     }
   ]
