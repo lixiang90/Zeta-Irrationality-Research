@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 21,
-  "updated_at": "2026-10-20",
+  "revision": 22,
+  "updated_at": "2026-11-20",
   "goal": {
     "id": "specified_zeta_l_irrationality",
     "status": "active",
@@ -22,39 +22,39 @@
     ]
   },
   "review": {
-    "last_completed_round": 280,
-    "last_global_review_round": 279,
+    "last_completed_round": 281,
+    "last_global_review_round": 281,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 4,
+    "rounds_without_feasibility_progress": 5,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/global_source_review_round279.md"
+    "evidence": "research/global_source_review_round281.md"
   },
   "current_task": {
-    "id": "round281_global_source_gate",
-    "round": 281,
+    "id": "round282_chi8_markov_border",
+    "round": 282,
     "status": "in_progress",
-    "route_id": "new_period_source",
-    "entry": "research/source_gate_charter_round281_20261020.md",
-    "deliverable": "固定单值来源精确关闭后的全路线机会成本比较；选择同对象新机制或准确拒绝及最小来源任务。",
-    "next_decisive_question": "哪项已付新机制能改变指定数值的完整费用、真实余项或数值关系触发，值得优先？",
-    "pass_condition": "真实对象/完整反证/净门槛、新机制证据和有期限首任务；有足够净预算和独审前不准入数值实施。",
-    "stop_condition": "宏观最多一轮；复Beta另一固定jet、同输出J分数、单mirror或未排除不重开；无候选给准确范围和最小来源核查。",
+    "route_id": "chi8_markov_border",
+    "entry": "research/chi8_markov_border_charter_round282.md",
+    "deliverable": "给原Markov完整H,N的共同内容恒等式，把剩余费用与严格线性门槛比较。",
+    "next_decisive_question": "同一带边分子和分母能否以全尺度共同整除给出log c_s/s<η？",
+    "pass_condition": "所有L=u/v、同一r_s，明确δ>0及预定无界子列，或准确给出剩余缺口。",
+    "stop_condition": "一轮到期；仅剩未知行列式比或超线性上界即停止此实现。",
     "must_read": [
-      "research/sv_beta_pairing_round280.md",
-      "research/global_source_review_round279.md",
-      "docs/RESEARCH_DIRECTIONS.md",
-      "research/source_gate_charter_round281_20261020.md"
+      "research/global_source_review_round281.md",
+      "research/full_net_gate_round281.md",
+      "research/markov_candidate_audit_round281.md",
+      "research/chi8_markov_border_charter_round282.md"
     ],
     "expected_outputs": [
-      "research/global_source_review_round281.md"
+      "research/chi8_markov_border_round282.md"
     ],
     "next_actions": [
-      "复用279全路线量级，纳入280实际rank8/大det恒零，比较最短最终缺口和机会成本，不重读长日志。",
-      "至少两个独立竞争核查；只看能改变完整费用/真实余项/同值触发的新证据，旧关闭范围不改标签续期。",
-      "最多一宏观轮给有量级决定及稳定首任务，保持停滞计数，更新账/STATE并同步已授权GitHub。"
+      "扩展子式到实际带边分子，独审同一整数对。",
+      "检验全尺度共同整除和实际剩余上界，与ηs比较。",
+      "结算后更新状态并作下一阶段选择。"
     ],
-    "window_id": "global_source_gate_281"
+    "window_id": "chi8_markov_border_282"
   },
   "routes": [
     {
@@ -176,7 +176,7 @@
     {
       "id": "new_period_source",
       "name": "未准入来源的定期宏观比较",
-      "status": "investigating",
+      "status": "unadmitted_candidates",
       "target": "新指定ζ/L数值出口",
       "source_key": "unselected_new_carrier",
       "evidence": [
@@ -213,9 +213,11 @@
         "research/period_source_gate_round279.md",
         "research/primary_source_gate_round279.md",
         "research/sv_beta_pairing_round280.md",
-        "research/source_gate_charter_round281_20261020.md"
+        "research/source_gate_charter_round281_20261020.md",
+        "research/global_source_review_round281.md",
+        "research/chi8_markov_border_charter_round282.md"
       ],
-      "gap": "280新source一轮结束、连续4无可行准入/完整净预算改善，281正式全路线比较能改变最终接口的新实证。",
+      "gap": "281比较完成；按到期条件只给χ−8带边分母一轮来源核查。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -366,6 +368,21 @@
       ],
       "gap": "280独证实际K=B vvᵀ，固定9jet m≥8秩恰8/惯性(4,4,m−8)，m≥9det恒0，目标rank1；非零接口失败，一轮关闭。",
       "reopen_condition": "改变原实际固定秩障碍的新机制，且重付高周期投影/完整费用/实际非零；另一固定jet、改标签、未排除的小minor不够。"
+    },
+    {
+      "id": "chi8_markov_border",
+      "name": "χ−8 双余类 Markov 逼近的完整分母",
+      "status": "investigating",
+      "target": "L(2,χ−8)无理",
+      "source_key": "chi8_mu_four_j_1_and_3_square_at_minus_one",
+      "evidence": [
+        "research/full_net_gate_round281.md",
+        "research/markov_candidate_audit_round281.md",
+        "research/global_source_review_round281.md",
+        "research/chi8_markov_border_charter_round282.md"
+      ],
+      "gap": "实际分子N与分母H的共同内容尚未给出log c_s/s<2log(3+2√2)的全尺度证书。",
+      "reopen_condition": "须有针对同一完整有理逼近的严格净收益；分母单边的Borchardt分解或样本不延长窗口。"
     }
   ],
   "claims": [
@@ -3807,9 +3824,9 @@
     },
     {
       "id": "c281_macro_gate",
-      "type": "pending",
-      "statement": "281比较全路线真实费用/余项/数值触发新证据，给有量级选择或准确拒绝和最小首任务。",
-      "scope": "宏观最多一轮，不提前执行；旧固定source不因未排除/改jet/标签重开。",
+      "type": "reviewed_written_structure",
+      "statement": "281正式比较完成。图端点余项、双Hahn额外内容和Mellin消元各有范围明确的证书；只选导子8的Markov完整带边分母作一轮来源核查。",
+      "scope": "沿279全路线量级纳入280锐秩及三项候选；无数值实施准入。",
       "dependencies": [
         "c280_window_expiry"
       ],
@@ -3818,9 +3835,123 @@
           "path": "research/source_gate_charter_round281_20261020.md",
           "position": "首问题1–5与交付",
           "sha256": "6e2be860546dd267c0b0f28b6b4c4d495d6e0aa5846c63b5dc9be45ea028587b"
+        },
+        {
+          "path": "research/global_source_review_round281.md",
+          "position": "全路线取舍与教训",
+          "sha256": "ecf10b2f7dc93f5a14d63e2da118d6744d3eb88e7262d63af129ce7beee70940"
         }
       ],
-      "audit": "待下轮实质竞争及正式资源选择；当前无数值准入。",
+      "audit": "三份候选分别由独立审阅者复核，根复核目标、量词、端点计数及比较门槛。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c281_graph_endpoint",
+      "type": "reviewed_written_structure",
+      "statement": "Z5固定Ψ多项式Gram正定而E_m≥k/(m+2)^(1/2)。给定B，前M个本原值绝对值≤B的指标只有O_B(√M)个。",
+      "scope": "每条无界子列排严格负线性率，正上密度子列排任何趋零；稀疏子列次指数、其他权及跨阶组合仍开放。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/numeric_trigger_gate_round281.md",
+          "position": "N1–N14",
+          "sha256": "9040cead519e3cec3064310520f3ebd5548a2894cc293d713c6774c65b731152"
+        },
+        {
+          "path": "research/zigzag_endpoint_audit_round281.md",
+          "position": "角区、精确端点比及计数",
+          "sha256": "01dc4c6d4539d6fb7dd97d9aa8e86e5543676ecb2ff1a421ce4fb0a42f999c53"
+        }
+      ],
+      "audit": "独审以Cauchy端点比重建下界，根复核新增正交方向、严格单调与分母计数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c281_mellin_row",
+      "type": "reviewed_written_structure",
+      "statement": "r=6真实行含ζ5与ζ7；相邻C3交叉组合确实消去ζ5，最终净费用须除整个整数对的gcd。",
+      "scope": "r=5可积Mellin表示限n≤3。全n消元本身不保证真实非零或目标系数非零。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/primary_candidate_gate_round281.md",
+          "position": "P281.1–8，原候选",
+          "sha256": "d26bdcb5d0cf9ac29d5ad456a1b681a4be9fe6bf65cd1701fa632d5bf3a7123f"
+        },
+        {
+          "path": "research/mellin_projection_audit_round281.md",
+          "position": "明确消元及其已证范围",
+          "sha256": "846468e3603503fae390bca3c059021c8af94fcf69e1a9631b4e43a018d6f985"
+        }
+      ],
+      "audit": "独审重建反射、平移头及相邻消元，修正原稿末段对选择器和本原费用的措辞。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c281_mellin_first_pair",
+      "type": "finite_certificate",
+      "statement": "r=6的首对相邻消元在ζ7栏的系数b₁满足b₁/30≡3 (mod 5)。",
+      "scope": "仅n=1,2两个输入。",
+      "dependencies": [
+        "c281_mellin_row"
+      ],
+      "evidence": [
+        {
+          "path": "research/mellin_projection_audit_round281.md",
+          "position": "n=2三个极点的三阶系数",
+          "sha256": "846468e3603503fae390bca3c059021c8af94fcf69e1a9631b4e43a018d6f985"
+        }
+      ],
+      "audit": "独审局部模5，根核中心和两反射极点贡献2、3、3。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c281_chi8_markov_rate",
+      "type": "reviewed_written_structure",
+      "statement": "指定L(2,χ−8)的r_s=bᵀK⁻¹b具有正余项，log(E_s)/s→−2log(3+2√2)；完整c_s=H/gcd(H,N)。",
+      "scope": "全部s≥1；矩项LCM不覆盖所有实际分母。分母行列式有全尺度Borchardt和，分子尚须同账。",
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/full_net_gate_round281.md",
+          "position": "F281.3–10",
+          "sha256": "0d1c0833ddd0afd4890433e61bbc09c801fccf6f21061e36280f46ba97c548a7"
+        },
+        {
+          "path": "research/markov_candidate_audit_round281.md",
+          "position": "正余项、实际分母、Borchardt",
+          "sha256": "a057e4ee02027fac5dddb84c28d566a39aa084a71d5d88f4615b76276c53e9e2"
+        }
+      ],
+      "audit": "独审从平方最小化和Chebyshev/Legendre重建实率，核s=1额外因子与行列式恒等式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c282_chi8_border_gate",
+      "type": "pending",
+      "statement": "固定H,N能否同时约去足额内容，使预定无界子列的log c_s/s严格低于η？",
+      "scope": "只准一轮来源核查。",
+      "dependencies": [
+        "c281_chi8_markov_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/chi8_markov_border_charter_round282.md",
+          "position": "首命题与停止条件",
+          "sha256": "16393b026867ddf79d777981d9d5dffc780b82ea239d5fbe8f31dbee97447366"
+        }
+      ],
+      "audit": "等待同一带边分子与分母的完整核查。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -4437,6 +4568,29 @@
         "research/source_gate_charter_round281_20261020.md"
       ],
       "reopen_condition": "宏观比较可执行；数学实施仍须同对象新机制实证和有期限首命题。"
+    },
+    {
+      "id": "d281_select_markov_border",
+      "round": 281,
+      "decision": "完成宏观复盘，三候选均未获数值准入。只选χ−8双余类Markov完整带边分母一轮。",
+      "scope": "新对象同值正余项和真实Cauchy分解已付；不继承单测度旧对象的费用。",
+      "claim_ids": [
+        "c281_macro_gate",
+        "c281_graph_endpoint",
+        "c281_mellin_row",
+        "c281_mellin_first_pair",
+        "c281_chi8_markov_rate",
+        "c282_chi8_border_gate"
+      ],
+      "evidence": [
+        "research/global_source_review_round281.md",
+        "research/full_net_gate_round281.md",
+        "research/zigzag_endpoint_audit_round281.md",
+        "research/markov_candidate_audit_round281.md",
+        "research/mellin_projection_audit_round281.md",
+        "research/chi8_markov_border_charter_round282.md"
+      ],
+      "reopen_condition": "图Gram须改变端点实率，Mellin须付无界有效消元，旧来源按原停止范围。"
     }
   ],
   "windows": [
@@ -4655,14 +4809,26 @@
     {
       "first_round": 281,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
+      "completed_rounds": 1,
       "id": "global_source_gate_281",
       "route_id": "new_period_source",
       "source_key": "unselected_new_carrier",
-      "status": "active",
+      "status": "closed",
       "decision_id": "d280_plan_macro_review",
       "reopening_decision_id": "d280_plan_macro_review",
-      "kind": "macro_selection"
+      "kind": "macro_selection",
+      "closure_decision_id": "d281_select_markov_border"
+    },
+    {
+      "first_round": 282,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 0,
+      "id": "chi8_markov_border_282",
+      "route_id": "chi8_markov_border",
+      "source_key": "chi8_mu_four_j_1_and_3_square_at_minus_one",
+      "status": "active",
+      "decision_id": "d281_select_markov_border",
+      "kind": "source_verification"
     }
   ],
   "completed_rounds": [
@@ -4919,6 +5085,23 @@
         "research/sv_beta_formula_round280.md",
         "research/sv_beta_rank_round280.md",
         "research/sv_beta_independent_round280.md"
+      ]
+    },
+    {
+      "round": 281,
+      "kind": "formal_review_corrected_projection_and_endpoint_count",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "window_id": "global_source_gate_281",
+      "report": "research/global_source_review_round281.md",
+      "outputs": [
+        "research/global_source_review_round281.md",
+        "research/numeric_trigger_gate_round281.md",
+        "research/full_net_gate_round281.md",
+        "research/primary_candidate_gate_round281.md",
+        "research/zigzag_endpoint_audit_round281.md",
+        "research/markov_candidate_audit_round281.md",
+        "research/mellin_projection_audit_round281.md"
       ]
     }
   ]
