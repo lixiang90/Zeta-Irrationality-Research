@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 24,
-  "updated_at": "2026-11-20",
+  "revision": 25,
+  "updated_at": "2026-11-21",
   "goal": {
     "id": "specified_zeta_l_irrationality",
     "status": "active",
@@ -22,38 +22,38 @@
     ]
   },
   "review": {
-    "last_completed_round": 283,
-    "last_global_review_round": 283,
+    "last_completed_round": 284,
+    "last_global_review_round": 284,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 7,
+    "rounds_without_feasibility_progress": 0,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/global_source_review_round283.md"
+    "evidence": "research/odd_pade_scalar_denominator_round284.md"
   },
   "current_task": {
-    "id": "round284_odd_pade_scalar_denominator",
-    "round": 284,
+    "id": "round285_odd_pade_tied_seven",
+    "round": 285,
     "status": "in_progress",
     "route_id": "odd_pade_square",
-    "entry": "research/odd_weight_square_charter_round284.md",
-    "deliverable": "对3d<p<4d的反转系数求无界模p证书，把它放回同一既约标量并核权七门槛。",
-    "next_decisive_question": "单位系数的素数对数重量T_d/d是否达到log(27/4)/7，或该段是否存在可证明的实际素数幂消去？",
-    "pass_condition": "给出覆盖范围明确的素数重量或同一有理头消去定理，量化与既约分母预算的差额。",
-    "stop_condition": "限一完成轮。固定d频率、强制整数缩放或仅用充分分母不能充作实际下界；无无界新来源则重新复盘。",
+    "entry": "research/odd_pade_tied_terms_charter_round285.md",
+    "deliverable": "在首个权七并列类上估计全和J_d的实际二进抵消并与所有已证素数贡献合并。",
+    "next_decisive_question": "d≡9 mod16、K(d)={1}时，完整Beta和J_d能否损失至少0.2087437…d个二进位？",
+    "pass_condition": "给可核无界估值或反向机制，分开该类与其他全部阶数，比较实际同一标量的严格指数门槛。",
+    "stop_condition": "限一完成轮；只比较两最低项、枚举有限d或再次统计已裁比例都不足以给全和估计。",
     "must_read": [
-      "research/global_source_review_round283.md",
-      "research/odd_weight_square_lattice_round283.md",
-      "research/odd_weight_square_charter_round284.md"
+      "research/odd_pade_scalar_denominator_round284.md",
+      "research/odd_pade_dyadic_minimum_round284.md",
+      "research/odd_pade_tied_terms_charter_round285.md"
     ],
     "expected_outputs": [
-      "research/odd_pade_scalar_denominator_round284.md"
+      "research/odd_pade_tied_terms_round285.md"
     ],
     "next_actions": [
-      "从S4、S5推3d<p<4d的局部通式，保留P(−1)²及全部矩项。",
-      "把已证非零素数的对数重量与log(27/4)/7比较；若发生消去，算它对同一完整分母的实际节省。",
-      "一轮结算并复盘可行性，全部奇权和权七的数值结论分别登记。"
+      "从284的D1、D2写出完整J_d，保留常数头和次低矩。",
+      "检查两单位相消后其余层的统一余数，比较0.2087437…d与同一子列的奇素数贡献。",
+      "按实际量词结算；w≥21的全尺度排除维持。"
     ],
-    "window_id": "odd_pade_scalar_284"
+    "window_id": "odd_pade_tied_seven_285"
   },
   "routes": [
     {
@@ -218,9 +218,10 @@
         "research/chi8_markov_border_round282.md",
         "research/source_gate_charter_round283_20261120.md",
         "research/odd_weight_family_scope_round283.md",
-        "research/global_source_review_round283.md"
+        "research/global_source_review_round283.md",
+        "research/odd_pade_scalar_denominator_round284.md"
       ],
-      "gap": "283比较动机、生成函数、Markov与单平方。只选全奇权Padé实际标量的既约分母一轮；导子8与相邻Mellin的旧缺口仍在。",
+      "gap": "284按用户指向核实际分母并作正式复盘。全权用途的高权端已排，仅选择权七第一并列类；其余来源按283的原范围等候。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -400,10 +401,16 @@
       "evidence": [
         "research/odd_weight_square_lattice_round283.md",
         "research/odd_generating_family_round283.md",
-        "research/odd_weight_square_charter_round284.md"
+        "research/odd_weight_square_charter_round284.md",
+        "research/odd_pade_local_identity_round284.md",
+        "research/odd_pade_prime_cost_round284.md",
+        "research/odd_pade_dyadic_minimum_round284.md",
+        "research/odd_pade_cartier_audit_round284.md",
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_tied_terms_charter_round285.md"
       ],
-      "gap": "每阶正性、单值投影与真实对数误差率−log(27/4)已证；同一有理数的既约分母线性率未知。",
-      "reopen_condition": "限一轮实际素数带核查；再次投入须有同一标量的新约分或真正负净率来源。"
+      "gap": "w≥21的这族全子列已排。权七在下密度超过92.7%的阶数也已排；并列最低项处实际2进抵消与其他素数之和仍未知。",
+      "reopen_condition": "全奇权出口关闭。权七只凭同一r的新整段预算与D2–D3完整Beta矩和，对尚未判的并列类限一轮。"
     }
   ],
   "claims": [
@@ -4330,9 +4337,9 @@
     },
     {
       "id": "c284_pade_actual_denominator_gate",
-      "type": "pending",
-      "statement": "求3d<p<4d时实际反转系数C_{p,d}模p的非零素数重量，和r_w,d的既约分母门槛log(27/4)比较。",
-      "scope": "284限一来源轮。每个单位系数迫使v_p(c_w,d)=w；权七的全子列排除门槛为liminf T_d/d≥log(27/4)/7。",
+      "type": "reviewed_written_structure",
+      "statement": "284核清3d<p<4d的T_d恒为0及第二层条件；并以互不重叠的素数、二进Beta矩和完整分母上界结算同一标量。",
+      "scope": "这族Padé逼近按既约分母乘误差的判据，在每个固定奇权w≥21的所有无界子列均失败；权七另有覆盖下密度超过92.7%的结论。",
       "dependencies": [
         "c283_pade_scale_invariant_rate",
         "c283_pade_integer_scale"
@@ -4342,9 +4349,321 @@
           "path": "research/odd_weight_square_charter_round284.md",
           "position": "首命题与停止条件",
           "sha256": "1576353076244d684051fddcdf430d4c07cd276c5787410bcd137e876d2ca4eb"
+        },
+        {
+          "path": "research/odd_pade_scalar_denominator_round284.md",
+          "position": "原首命题及正式复盘",
+          "sha256": "9012266db100b7ca038afe39fc43f6d4eba4ea32015861eb43cb6ef651c30064"
         }
       ],
-      "audit": "待实际无界素数重量或同一标量规模的新消去机制。",
+      "audit": "保留原章程并沿原S5规范交叉推导。二层反例、全尺度下界、部分尺度密度和完整上界各有独立证据。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_upper_prime_first_layer",
+      "type": "reviewed_written_structure",
+      "statement": "对每个3d<p<4d，C_{p,d}被p整除，T_d=0。该素数在既约分母中的赋值为max(0,w−v_p(C_{p,d}))。",
+      "scope": "原S5首一规范；完整有理头只有k=p的矩非整，目标因子是p单位。",
+      "dependencies": [
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "第一层与L1",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        },
+        {
+          "path": "research/odd_pade_prime_cost_round284.md",
+          "position": "C1和邻带C2",
+          "sha256": "20137f65cef3ac7f6b1ff8d88e589ea68f875c3f4b35ab3686ea1c7037198e87"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "G1–G5",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "Padé接触与Bernstein反转的独立有限域推导，核全部端点。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_upper_prime_second_layer",
+      "type": "reviewed_written_structure",
+      "statement": "设q=(4d−1−p)/2，显式非零有理数R_q使v_p(C_{p,d})=1当且仅当p不整除其分子。",
+      "scope": "每个固定q的例外有限；随d增长的整段例外须另估计。",
+      "dependencies": [
+        "c284_upper_prime_first_layer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "L1 两个递推",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "精确辨别第二层",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "独立Jacobi微分系数与首个奇系数的赋值；用R_q中唯一最低二进项证明其不为零。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_two_exact_exceptions",
+      "type": "finite_certificate",
+      "statement": "C_{103,29}≡24·103² mod 103³，C_{2371,594}≡1564·2371² mod 2371³；两例权七的既约素数幂均为五次。",
+      "scope": "两个固定整数对，只反驳全带总是恰好约掉一层的断言。",
+      "dependencies": [
+        "c284_upper_prime_first_layer"
+      ],
+      "evidence": [
+        {
+          "path": "research/verify_odd_pade_round284.py",
+          "position": "S5精确整系数乘积及除法",
+          "sha256": "062fc56ac4b61874fe5bba22b896a6aa1b0bac253ad627d0c025cd241e99c83a"
+        },
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "两个反例",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "原定义的独立模数复算",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "原S5有理多项式卷积、整除1+x与局部递推相合。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_second_layer_mean_weight",
+      "type": "reviewed_written_structure",
+      "statement": "A_d为首带恰消一层的素数对数重量。其以d加权的A_d/d平均的下极限至少a=4/(19/2+3log2)。",
+      "scope": "利用所有q的分子高度与素数定理；平均率不推出逐d下界。",
+      "dependencies": [
+        "c284_upper_prime_second_layer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "L2–L3",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "正下密度结论的独立复核",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "两类奇公分母、实处Vandermonde与Beta尾界独审；按d及按q两次计算平均面积。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_smaller_prime_units",
+      "type": "reviewed_written_structure",
+      "statement": "固定h≥1和奇权w，若d−1=hp+b，p/4≤b且3(b+1)<p，则所有充分大p在既约标量分母中恰有w层。故全尺度liminf log c/d≥wL，L=0.09541975335…。",
+      "scope": "同一r，在p∤B_w(H_h)等依h,w的有限例外之外；先固定有限h再取极限。",
+      "dependencies": [
+        "c284_upper_prime_first_layer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_prime_cost_round284.md",
+          "position": "C3–C6",
+          "sha256": "20137f65cef3ac7f6b1ff8d88e589ea68f875c3f4b35ab3686ea1c7037198e87"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "另外两类素数对同一既约分母的贡献",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "按位进借逐类核查、完整Cartier等式、固定非零负有理矩及互不相交素数带的独立复核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_high_weight_failure",
+      "type": "reviewed_written_structure",
+      "statement": "每一个固定奇权w≥21都有liminf log(c_{w,d}·|η(w)−r_{w,d}|)/d≥wL−log(27/4)>0。",
+      "scope": "S5这一族的线性反证对所有趋于无穷的d失败；未排其他载体的奇值无理性证明。",
+      "dependencies": [
+        "c283_pade_scale_invariant_rate",
+        "c284_smaller_prime_units"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_scalar_denominator_round284.md",
+          "position": "P1",
+          "sha256": "9012266db100b7ca038afe39fc43f6d4eba4ea32015861eb43cb6ef651c30064"
+        },
+        {
+          "path": "research/odd_pade_prime_cost_round284.md",
+          "position": "C6",
+          "sha256": "20137f65cef3ac7f6b1ff8d88e589ea68f875c3f4b35ab3686ea1c7037198e87"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "C6独审",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "较小素数给实际分母的下界，同标量实率已确证；无独立性或密度假设。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_beta_minimum",
+      "type": "reviewed_written_structure",
+      "statement": "4^d B_w(Q)有精确Beta矩展开。每个连续矩区间的唯一最高二幂给该项的赋值，可能最低者简化为0及有限列表的D_k=2k+ν₂(k)+s₂(k)−ν₂(d−k)。",
+      "scope": "固定w≥3，排除每个二幂前O_w(1)个近端点；命题D3在最低唯一时给出真实v₂(c)=V0−min。并列时须估计全和。",
+      "dependencies": [
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_dyadic_minimum_round284.md",
+          "position": "D1–D3",
+          "sha256": "adeb909863b144c7e6196e356b5a8b7442849a48ba4a30650942c60fec8b0a19"
+        },
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "L4–L5独立基础估值",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "负侧候选与第一并列类",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "对比相邻阶乘比、截去矩的最高二幂及一般2k+j分母为奇的二项式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_dyadic_density",
+      "type": "reviewed_written_structure",
+      "statement": "D3的未判集合的上自然密度不超过Σ 2^(−2k−ν₂(k)−s₂(k)−1)+(2/3)4^(−9)<0.072655。已判集合有v₂(c)≥2d。",
+      "scope": "自然密度给全部阶数的占比，不断言例外中存在成功子列；相邻二幂前O_w(log D)个端点已扣。",
+      "dependencies": [
+        "c284_beta_minimum"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_dyadic_minimum_round284.md",
+          "position": "D3–D4",
+          "sha256": "adeb909863b144c7e6196e356b5a8b7442849a48ba4a30650942c60fec8b0a19"
+        },
+        {
+          "path": "research/odd_pade_local_identity_round284.md",
+          "position": "L4–L5及末段的一般k、D3–D4独立复核",
+          "sha256": "c9e540156f5681bc902e1359ac9604bf70aca8e21bc9ed88ad717778c960a7be"
+        }
+      ],
+      "audit": "唯一候选并列强制精确ν₂(d−k)；两候选时较大下标≥9；k=O(log D)控制无限并集的计数误差。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_weight_seven_density",
+      "type": "reviewed_written_structure",
+      "statement": "在下自然密度至少0.927345的尺度上权七本原误差净率下极限≥2log2+7L−log(27/4)>0.14469。奇素数独自也排除了下密度超过17.318%的尺度。",
+      "scope": "两集合可能重叠，密度不相加；尚不足以排除权七的所有无界子列。",
+      "dependencies": [
+        "c284_dyadic_density",
+        "c284_smaller_prime_units",
+        "c284_second_layer_mean_weight",
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_scalar_denominator_round284.md",
+          "position": "P1–P2",
+          "sha256": "9012266db100b7ca038afe39fc43f6d4eba4ea32015861eb43cb6ef651c30064"
+        },
+        {
+          "path": "research/odd_pade_dyadic_minimum_round284.md",
+          "position": "D4",
+          "sha256": "adeb909863b144c7e6196e356b5a8b7442849a48ba4a30650942c60fec8b0a19"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "两类权重与Abel换算",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        }
+      ],
+      "audit": "较小奇素数、首段奇素数和2处均作用同一既约分母，逐素数相加；部分求和给普通平均界。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c284_full_scalar_upper",
+      "type": "reviewed_written_structure",
+      "statement": "规范多项式系数的最小清整倍数D_d有log D_d/d→π/2；同一标量完整分母满足limsup log c/d≤4w−1+π/2+log2。",
+      "scope": "C7、C8是安全上界。阈值必须与实率−log(27/4)合并，尚未给权七的无理性反证。",
+      "dependencies": [
+        "c284_upper_prime_first_layer",
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_prime_cost_round284.md",
+          "position": "C7–C8",
+          "sha256": "20137f65cef3ac7f6b1ff8d88e589ea68f875c3f4b35ab3686ea1c7037198e87"
+        },
+        {
+          "path": "research/odd_pade_cartier_audit_round284.md",
+          "position": "C8的接触阶数与模p代表",
+          "sha256": "fdd18e03bdb381586bc927d51c09fcb21794c604eceb6293a216603f767c2149"
+        },
+        {
+          "path": "research/odd_pade_scalar_denominator_round284.md",
+          "position": "完整预算与正式复盘",
+          "sha256": "9012266db100b7ca038afe39fc43f6d4eba4ea32015861eb43cb6ef651c30064"
+        }
+      ],
+      "audit": "核多项式本原费用、全矩头、两个互不重叠的奇素数带。C8在同一完整上界再节省π/2−log2。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c285_tied_seven_gate",
+      "type": "pending",
+      "statement": "对权七首个剩余并列类d≡9 mod16、K(d)={1}的完整Beta矩和J_d，核最终抵消能否积累到0.2087437…d级二进位。",
+      "scope": "285只核该剩余类各项总和。即使一类被排，其他并列和近二幂集合仍要独立核。",
+      "dependencies": [
+        "c284_beta_minimum",
+        "c284_weight_seven_density",
+        "c284_smaller_prime_units"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_tied_terms_charter_round285.md",
+          "position": "固定标量、首命题与停止条件",
+          "sha256": "a1515ccae0a57d0646adc8e6f02ac2fa5f695efd54f2da6eb91fbb9324353190"
+        }
+      ],
+      "audit": "待证明整个并列类的严格算术估计或反向无界机制。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -5051,6 +5370,54 @@
       ],
       "scope": "新对象始终为−B_w(P)/P(−1)²的最终既约标量。满格整性、裸整数平方及其他WZ对各有不同费用。",
       "reopen_condition": "按同一标量的无界素数重量或素数幂消去结算；旧完整奇分母、Mellin、单图与其他来源保留原停止条件。"
+    },
+    {
+      "id": "d284_close_all_weight_application",
+      "round": 284,
+      "decision": "结清原3d至4d首带。结束此固定Padé标量的全奇权用途，高权w≥21已有全无界子列下界；权七另有超过92.7%尺度的下界。",
+      "claim_ids": [
+        "c284_pade_actual_denominator_gate",
+        "c284_upper_prime_second_layer",
+        "c284_smaller_prime_units",
+        "c284_high_weight_failure",
+        "c284_weight_seven_density",
+        "c284_full_scalar_upper"
+      ],
+      "evidence": [
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_local_identity_round284.md",
+        "research/odd_pade_prime_cost_round284.md",
+        "research/odd_pade_dyadic_minimum_round284.md",
+        "research/odd_pade_cartier_audit_round284.md"
+      ],
+      "scope": "只关闭S5既约分母乘余项趋零的全权出口。其余Padé、其他平方、自配对短向量及权七残余阶数不在全序列否定范围。",
+      "reopen_condition": "已证w≥21全子列增长不能以扩搜重开；固定权七需要实际剩余机制。"
+    },
+    {
+      "id": "d284_select_tied_seven",
+      "round": 284,
+      "decision": "比较旧路线机会成本后，依新Beta矩最低项公式只选权七首个并列类d≡9 mod16，限一轮。",
+      "claim_ids": [
+        "c284_beta_minimum",
+        "c284_dyadic_density",
+        "c284_weight_seven_density",
+        "c284_full_scalar_upper",
+        "c285_tied_seven_gate"
+      ],
+      "evidence": [
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_dyadic_minimum_round284.md",
+        "research/odd_pade_local_identity_round284.md",
+        "research/odd_pade_tied_terms_charter_round285.md"
+      ],
+      "scope": "同一源键及同一标量，复开专供权七的J_d全和；覆盖不足的素数带及已关高权不重复收费。",
+      "reopen_condition": "出现可估计的完整Beta项抵消；若仅得更多有限余数或零散局部障碍则终止。",
+      "reopening_evidence": [
+        "research/odd_pade_dyadic_minimum_round284.md",
+        "research/odd_pade_local_identity_round284.md",
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_tied_terms_charter_round285.md"
+      ]
     }
   ],
   "windows": [
@@ -5311,9 +5678,22 @@
       "route_id": "odd_pade_square",
       "first_round": 284,
       "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d283_select_actual_pade_scalar",
+      "closure_decision_id": "d284_close_all_weight_application"
+    },
+    {
+      "id": "odd_pade_tied_seven_285",
+      "kind": "source_verification",
+      "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
+      "route_id": "odd_pade_square",
+      "first_round": 285,
+      "maximum_completed_rounds": 1,
       "completed_rounds": 0,
       "status": "active",
-      "decision_id": "d283_select_actual_pade_scalar"
+      "decision_id": "d284_select_tied_seven",
+      "reopening_decision_id": "d284_select_tied_seven"
     }
   ],
   "completed_rounds": [
@@ -5619,6 +5999,23 @@
         "research/odd_motivic_source_round283.md",
         "research/odd_generating_family_round283.md",
         "research/odd_markov_all_weights_round283.md"
+      ]
+    },
+    {
+      "round": 284,
+      "kind": "primitive_denominator_lower_bounds_and_complete_linear_budget",
+      "feasibility_progress": true,
+      "feasibility_change": "同一实际r的线性尺度完整净上界由4w+π−κ降到4w−1+π/2+log2−κ，按所有矩与两个不重叠的实际消去带节省1+π/2−log2。权七新净上界仍为正。本次计数依据完整上界而非局部否定或文档。",
+      "numeric_admission": false,
+      "window_id": "odd_pade_scalar_284",
+      "report": "research/odd_pade_scalar_denominator_round284.md",
+      "outputs": [
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_local_identity_round284.md",
+        "research/odd_pade_prime_cost_round284.md",
+        "research/odd_pade_dyadic_minimum_round284.md",
+        "research/odd_pade_cartier_audit_round284.md",
+        "research/verify_odd_pade_round284.py"
       ]
     }
   ]
