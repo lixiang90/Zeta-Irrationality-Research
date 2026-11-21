@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 25,
+  "revision": 26,
   "updated_at": "2026-11-21",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,36 +22,41 @@
     ]
   },
   "review": {
-    "last_completed_round": 284,
+    "last_completed_round": 285,
     "last_global_review_round": 284,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 0,
+    "rounds_without_feasibility_progress": 1,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/odd_pade_scalar_denominator_round284.md"
   },
   "current_task": {
     "id": "round285_odd_pade_tied_seven",
     "round": 285,
-    "status": "in_progress",
+    "status": "completed",
     "route_id": "odd_pade_square",
-    "entry": "research/odd_pade_tied_terms_charter_round285.md",
-    "deliverable": "在首个权七并列类上估计全和J_d的实际二进抵消并与所有已证素数贡献合并。",
-    "next_decisive_question": "d≡9 mod16、K(d)={1}时，完整Beta和J_d能否损失至少0.2087437…d个二进位？",
-    "pass_condition": "给可核无界估值或反向机制，分开该类与其他全部阶数，比较实际同一标量的严格指数门槛。",
-    "stop_condition": "限一完成轮；只比较两最低项、枚举有限d或再次统计已裁比例都不足以给全和估计。",
+    "entry": "research/odd_pade_tied_terms_round285.md",
+    "deliverable": "同一权七标量的完整模4、模8同余，适用范围、无穷子列反例和阶数下自然密度均已独审。",
+    "next_decisive_question": "在深层未判子列上，双矩同余C2能否给出 T_d^(2,3)/d 的统一下界，或全和在二处能否发生线性抵消？",
+    "pass_condition": "已证明新子类上的精确二阶并与全体已知素数合计。整个首并列类的线性抵消率仍待证。",
+    "stop_condition": "285的一轮已用完。固定精度的继续分支不能决定剩余无界子列的线性率。",
     "must_read": [
-      "research/odd_pade_scalar_denominator_round284.md",
-      "research/odd_pade_dyadic_minimum_round284.md",
-      "research/odd_pade_tied_terms_charter_round285.md"
+      "research/odd_pade_tied_terms_round285.md",
+      "research/odd_pade_tied_lift_round285.md",
+      "research/odd_pade_tied_density_round285.md",
+      "research/odd_pade_prime_cost_round284.md"
     ],
     "expected_outputs": [
-      "research/odd_pade_tied_terms_round285.md"
+      "research/odd_pade_tied_terms_round285.md",
+      "research/odd_pade_mod4_audit_round285.md",
+      "research/odd_pade_tied_lift_round285.md",
+      "research/odd_pade_tied_density_round285.md",
+      "research/verify_odd_pade_tied_round285.py"
     ],
     "next_actions": [
-      "从284的D1、D2写出完整J_d，保留常数头和次低矩。",
-      "检查两单位相消后其余层的统一余数，比较0.2087437…d与同一子列的奇素数贡献。",
-      "按实际量词结算；w≥21的全尺度排除维持。"
+      "对同一既约分母优先核 C2 中 2d<p<3d 的双矩单位所占素数重量。若该重量除以d在所考察子列上的下极限超过0.1773720330…，仅计奇素数即给出正净率。",
+      "二进方向的再投入须有随d增长的全和精度估计，可与0.2087437326…d位门槛比较。同一子列还须计入其余素数。",
+      "尚无新的数值准入。下一次来源选择比较完整净预算，连续两轮未改善则提前作正式复盘。"
     ],
     "window_id": "odd_pade_tied_seven_285"
   },
@@ -219,9 +224,10 @@
         "research/source_gate_charter_round283_20261120.md",
         "research/odd_weight_family_scope_round283.md",
         "research/global_source_review_round283.md",
-        "research/odd_pade_scalar_denominator_round284.md"
+        "research/odd_pade_scalar_denominator_round284.md",
+        "research/odd_pade_tied_terms_round285.md"
       ],
-      "gap": "284按用户指向核实际分母并作正式复盘。全权用途的高权端已排，仅选择权七第一并列类；其余来源按283的原范围等候。",
+      "gap": "284完成正式复盘。285权七并列核查已结算，来源选择优先比较同一既约分母双矩奇素数带的线性重量与深层二进抵消。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -395,7 +401,7 @@
     {
       "id": "odd_pade_square",
       "name": "全奇权对角Padé正平方的实际分母",
-      "status": "investigating",
+      "status": "parked",
       "target": "每个固定奇权ζ(w)无理，先核ζ(7)",
       "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
       "evidence": [
@@ -407,10 +413,15 @@
         "research/odd_pade_dyadic_minimum_round284.md",
         "research/odd_pade_cartier_audit_round284.md",
         "research/odd_pade_scalar_denominator_round284.md",
-        "research/odd_pade_tied_terms_charter_round285.md"
+        "research/odd_pade_tied_terms_charter_round285.md",
+        "research/odd_pade_tied_terms_round285.md",
+        "research/odd_pade_mod4_audit_round285.md",
+        "research/odd_pade_tied_lift_round285.md",
+        "research/odd_pade_tied_density_round285.md",
+        "research/verify_odd_pade_tied_round285.py"
       ],
-      "gap": "w≥21的这族全子列已排。权七在下密度超过92.7%的阶数也已排；并列最低项处实际2进抵消与其他素数之和仍未知。",
-      "reopen_condition": "全奇权出口关闭。权七只凭同一r的新整段预算与D2–D3完整Beta矩和，对尚未判的并列类限一轮。"
+      "gap": "固定奇权w≥21已作全阶排除。权七的已排阶数下自然密度超过97.42186%。深层剩余阶数仍缺同一分母的线性预算。",
+      "reopen_condition": "只在出现能控制ν₂(J_d)/d的全和机制，或C2等整段奇素数的新线性重量证据时重开。固定模数的逐支细分已结算。"
     }
   ],
   "claims": [
@@ -3442,7 +3453,9 @@
         {
           "path": "scripts/test_research_state.py",
           "position": "test_review_does_not_reset_consecutive_stagnation",
-          "sha256": "2e8c40ba37fc1b3d7e40f5974b3577d801a6d43f946355a5d50990c3877b767f"
+          "sha256": "c1edce9bca43061d947f5b7e85466f20492ceadbeca12e416f2df9ea6fbeb4cc",
+          "previous_sha256": "2e8c40ba37fc1b3d7e40f5974b3577d801a6d43f946355a5d50990c3877b767f",
+          "revision_note": "第285轮在两项模拟已耗尽窗口的测试中显式设置运行状态，使其也能从真实已关闭的账本运行。原复盘测试仍按同一三种边界核验。"
         },
         {
           "path": "research/wilson_independent_round278.md",
@@ -4650,7 +4663,7 @@
       "id": "c285_tied_seven_gate",
       "type": "pending",
       "statement": "对权七首个剩余并列类d≡9 mod16、K(d)={1}的完整Beta矩和J_d，核最终抵消能否积累到0.2087437…d级二进位。",
-      "scope": "285只核该剩余类各项总和。即使一类被排，其他并列和近二幂集合仍要独立核。",
+      "scope": "285完成首并列类的全和模4和模8判别。剩余深层是否能达线性抵消仍待证明，其他候选与端点也各有范围。",
       "dependencies": [
         "c284_beta_minimum",
         "c284_weight_seven_density",
@@ -4661,9 +4674,121 @@
           "path": "research/odd_pade_tied_terms_charter_round285.md",
           "position": "固定标量、首命题与停止条件",
           "sha256": "a1515ccae0a57d0646adc8e6f02ac2fa5f695efd54f2da6eb91fbb9324353190"
+        },
+        {
+          "path": "research/odd_pade_tied_terms_round285.md",
+          "position": "T2、三条显式无穷子列及线性门槛",
+          "sha256": "e2b52769c5d5a3194c0e554e54ec3b8e93147d5eb8d46ed9a39b2660bc590664"
         }
       ],
-      "audit": "待证明整个并列类的严格算术估计或反向无界机制。",
+      "audit": "原任务保留为待证的线性命题。两项并列和稀疏修正在独立证据与有限程序中分别核过。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c285_complete_tied_residues",
+      "type": "reviewed_written_structure",
+      "statement": "权七、d≡9 mod16且K(d)={1}时，J_d≡−(1+3/a₀+4ε_d) mod8，其中a₀=(d−1)/8，ε_d标记d>9且ν₂(d−9)=18。模4即Dot公式。",
+      "scope": "只针对同一完整归一标量。25 mod32恰损失1位，9 mod64且ε=0恰损失2位。41 mod64及ε=1只得至少3位。原近幂条件在本支自动成立。",
+      "dependencies": [
+        "c284_beta_minimum"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_mod4_audit_round285.md",
+          "position": "完整和模四、双候选反例与截断",
+          "sha256": "aec45eec5ace68a42a22bfd5c795679d37c4c4dcd74e598163fa54fa6b24c1bc"
+        },
+        {
+          "path": "research/odd_pade_tied_lift_round285.md",
+          "position": "T1和全部指标",
+          "sha256": "592f1caf49bdb0f17872b5130db7317dd5ceb38b17a089e9179d9eedd0859622"
+        },
+        {
+          "path": "research/odd_pade_tied_terms_round285.md",
+          "position": "T2与三个无穷子列",
+          "sha256": "e2b52769c5d5a3194c0e554e54ec3b8e93147d5eb8d46ed9a39b2660bc590664"
+        }
+      ],
+      "audit": "独立从D2筛出一层与二层项，分别核对正指标、六次齐次矩、k=9截尾及Beta比率。三条指数子列重算K(d)，展示适用边界。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c285_finite_scalar_check",
+      "type": "finite_certificate",
+      "statement": "原有理多项式给d=9,25,41,57,73的完整J模8为4,6,0,2,4。由不使用候选分类的Beta和另得d=262153,524297的模8值为0,2。",
+      "scope": "限定程序所列整数与模8精度。所有阶数适用的指标截断度为|t|<E+b+6，单凭截断度不能估计完整J的增长率。",
+      "dependencies": [
+        "c284_beta_minimum"
+      ],
+      "evidence": [
+        {
+          "path": "research/verify_odd_pade_tied_round285.py",
+          "position": "direct_scalar、beta_sum_mod8与给定阶数",
+          "sha256": "df217397ac0df7a0c6b3ff35733e4afb27249b3ef6b9ff20ea49ca93d378805d"
+        },
+        {
+          "path": "research/odd_pade_mod4_audit_round285.md",
+          "position": "阶乘数字和给出的尾界",
+          "sha256": "aec45eec5ace68a42a22bfd5c795679d37c4c4dcd74e598163fa54fa6b24c1bc"
+        }
+      ],
+      "audit": "小阶数同时取完整有理标量、有限差分基准矩与带严格尾界的模8和。大例直接逐个计算保留的Beta矩，检验包含第三项时的余数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c285_weight_seven_density",
+      "type": "reviewed_written_structure",
+      "statement": "权七已证分母乘误差指数增长的阶数下自然密度在模4裁决后大于0.95859551631，在模8裁决后大于0.97421860896。其净率下极限至少0.1446901297…。",
+      "scope": "密度分母是全部正整数阶数。多候选和近幂按284的原界处理。尚未判定深度抵消的稀疏子列或ζ(7)的无理性。",
+      "dependencies": [
+        "c284_weight_seven_density",
+        "c285_complete_tied_residues"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_tied_density_round285.md",
+          "position": "逐项替换旧例外集及同一分母的净率",
+          "sha256": "9c728d8f5e1d7b0c13220790ee5ce95baf3cb45edbd14d210c3173de0c94d24f"
+        },
+        {
+          "path": "research/odd_pade_tied_terms_round285.md",
+          "position": "阶数的密度与剩余问题",
+          "sha256": "e2b52769c5d5a3194c0e554e54ec3b8e93147d5eb8d46ed9a39b2660bc590664"
+        }
+      ],
+      "audit": "替换k=1的例外覆盖，保留其他候选，核有限计数的取整误差与几何尾。直接用同一既约分母的二阶和奇素数下界求净率。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c285_adjacent_prime_band_condition",
+      "type": "conditional",
+      "statement": "若一条权七无界子列上C2中2d<p<3d且p>127的双矩单位对数重量T_d^(2,3)满足liminf T_d^(2,3)/d>log(27/4)/7−L，则该子列仅凭奇素数即有正净率。",
+      "scope": "数值门槛为0.1773720330…。该下界在剩余阶数上仍待证，不能加作已取得的线性信用。",
+      "dependencies": [
+        "c284_smaller_prime_units",
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_prime_cost_round284.md",
+          "position": "C2与同一归一化",
+          "sha256": "20137f65cef3ac7f6b1ff8d88e589ea68f875c3f4b35ab3686ea1c7037198e87"
+        },
+        {
+          "path": "research/odd_pade_tied_density_round285.md",
+          "position": "双矩素数带的条件下界",
+          "sha256": "9c728d8f5e1d7b0c13220790ee5ce95baf3cb45edbd14d210c3173de0c94d24f"
+        }
+      ],
+      "audit": "在p>127时两个固定因子都是单位，C2非零与既约分母准确含p^7等价。素数带和P1中小素数及首带均不交。",
       "status": "current",
       "replaced_by": null,
       "correction": null
@@ -5418,6 +5543,29 @@
         "research/odd_pade_scalar_denominator_round284.md",
         "research/odd_pade_tied_terms_charter_round285.md"
       ]
+    },
+    {
+      "id": "d285_close_fixed_precision_tie",
+      "round": 285,
+      "decision": "完成Dot模4提醒的独审并建立完整模8判别。第一并列类的限期窗口关闭。下一来源问题转向同一既约分母的双矩奇素数线性重量。",
+      "claim_ids": [
+        "c285_tied_seven_gate",
+        "c285_complete_tied_residues",
+        "c285_finite_scalar_check",
+        "c285_weight_seven_density",
+        "c285_adjacent_prime_band_condition",
+        "c284_full_scalar_upper"
+      ],
+      "evidence": [
+        "research/odd_pade_tied_terms_round285.md",
+        "research/odd_pade_mod4_audit_round285.md",
+        "research/odd_pade_tied_lift_round285.md",
+        "research/odd_pade_tied_density_round285.md",
+        "research/verify_odd_pade_tied_round285.py",
+        "research/odd_pade_prime_cost_round284.md"
+      ],
+      "scope": "未裁阶数的线性抵消未定。高权全阶排除有效，权七的正净率下界覆盖本轮所证的阶数集合。",
+      "reopen_condition": "需新证据影响ν₂(J_d)/d或足量奇素数的实际贡献，再与同一标量严格净预算比较。"
     }
   ],
   "windows": [
@@ -5690,10 +5838,11 @@
       "route_id": "odd_pade_square",
       "first_round": 285,
       "maximum_completed_rounds": 1,
-      "completed_rounds": 0,
-      "status": "active",
+      "completed_rounds": 1,
+      "status": "closed",
       "decision_id": "d284_select_tied_seven",
-      "reopening_decision_id": "d284_select_tied_seven"
+      "reopening_decision_id": "d284_select_tied_seven",
+      "closure_decision_id": "d285_close_fixed_precision_tie"
     }
   ],
   "completed_rounds": [
@@ -6016,6 +6165,22 @@
         "research/odd_pade_dyadic_minimum_round284.md",
         "research/odd_pade_cartier_audit_round284.md",
         "research/verify_odd_pade_round284.py"
+      ]
+    },
+    {
+      "round": 285,
+      "kind": "complete_weight_seven_tied_residues_and_density",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "secondary_budget_change": "实际二进赋值在新无穷子类上确定，已排阶数下密度超过97.42186%。完整分母上界及可行数值准入未改，停滞计数加一。",
+      "window_id": "odd_pade_tied_seven_285",
+      "report": "research/odd_pade_tied_terms_round285.md",
+      "outputs": [
+        "research/odd_pade_tied_terms_round285.md",
+        "research/odd_pade_mod4_audit_round285.md",
+        "research/odd_pade_tied_lift_round285.md",
+        "research/odd_pade_tied_density_round285.md",
+        "research/verify_odd_pade_tied_round285.py"
       ]
     }
   ]

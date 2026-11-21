@@ -40,6 +40,7 @@
 | 固定值投影、五圈图端点与导子8的完整分母（281–282） | [全路线复盘](global_source_review_round281.md)、[奇分母与实际费用](chi8_markov_border_round282.md)、[实处及算术独审](chi8_markov_budget_audit_round282.md)、[下一次比较](source_gate_charter_round283_20261120.md) |
 | 每个指定奇权的统一构造（283） | [宏观复盘](global_source_review_round283.md)、[正积分和对角 Padé 证明](odd_weight_square_lattice_round283.md)、[动机变号与固定圆盘](odd_motivic_source_round283.md)、[WZ 既约分母与交叉复核](odd_generating_family_round283.md)、[Markov 算术与整格](odd_markov_all_weights_round283.md)、[既约分母的首命题](odd_weight_square_charter_round284.md) |
 | 奇权 Padé 逼近的既约分母（284） | [结算与适用范围](odd_pade_scalar_denominator_round284.md)、[奇素数的两层判别](odd_pade_local_identity_round284.md)、[较小素数与完整费用](odd_pade_prime_cost_round284.md)、[二进最低项与密度](odd_pade_dyadic_minimum_round284.md)、[交叉复核](odd_pade_cartier_audit_round284.md)、[权七剩余命题](odd_pade_tied_terms_charter_round285.md) |
+| 权七首个并列类的完整余数（285） | [结算及显式无穷子列](odd_pade_tied_terms_round285.md)、[模 4 独审](odd_pade_mod4_audit_round285.md)、[模 8 证明](odd_pade_tied_lift_round285.md)、[下自然密度及净率](odd_pade_tied_density_round285.md)、[算术校验](verify_odd_pade_tied_round285.py) |
 
 ## 数据与历史记录
 

@@ -43,9 +43,9 @@ class ResearchRecoveryTests(unittest.TestCase):
     def test_task_renaming_does_not_extend_an_exhausted_window(self):
         data = copy.deepcopy(self.data)
         window = research_state.current_window(data)
-        window['completed_rounds'] = window['maximum_completed_rounds']
-        data['current_task']['id'] = 'renamed_same_research'
-        data['current_task']['round'] = window['first_round'] + window['completed_rounds']
+        window.update(status='active', completed_rounds=window['maximum_completed_rounds'])
+        data['current_task'].update(id='renamed_same_research', status='in_progress',
+                                    round=window['first_round'] + window['completed_rounds'])
         data['review']['last_completed_round'] = data['current_task']['round'] - 1
         self.assertTrue(any('exhausted or closed' in error
                             for error in research_state.validate(data)))
@@ -53,11 +53,11 @@ class ResearchRecoveryTests(unittest.TestCase):
     def test_a_second_active_window_cannot_hide_the_exhausted_one(self):
         data = copy.deepcopy(self.data)
         old = research_state.current_window(data)
-        old['completed_rounds'] = old['maximum_completed_rounds']
+        old.update(status='active', completed_rounds=old['maximum_completed_rounds'])
         new = dict(old, id='same_source_new_window', completed_rounds=0,
                    first_round=old['first_round'] + old['maximum_completed_rounds'])
         data['windows'].append(new)
-        data['current_task'].update(window_id=new['id'], round=new['first_round'])
+        data['current_task'].update(status='in_progress', window_id=new['id'], round=new['first_round'])
         errors = research_state.validate(data)
         self.assertTrue(any('Multiple active windows' in error for error in errors))
         self.assertTrue(any('Exhausted persistent window' in error for error in errors))

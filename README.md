@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第284轮（2026-11-21）。第283轮的同一列正 Padé 逼近对每个固定奇权有精确误差率 \(-\log(27/4)\)。现在已证明，对所有奇权 \(w\ge21\)，既约分母乘误差沿每条无界子列均指数增长。对权七，在下自然密度超过 \(92.7\%\) 的阶数上也已证明这种增长，剩余阶数的二进抵消仍待判定。[统一构造](research/odd_weight_square_lattice_round283.md) · [既约分母定理](research/odd_pade_scalar_denominator_round284.md)
+研究记录更新至第285轮（2026-11-21）。第283轮的同一列正 Padé 逼近对每个固定奇权有精确误差率 \(-\log(27/4)\)。现在已证明，对所有奇权 \(w\ge21\)，既约分母乘误差沿每条无界子列均指数增长。对权七，完整模 \(8\) 判别把已证增长的阶数下自然密度提高到 \(97.42186\%\) 以上。剩余阶数能否在二处消去与 \(d\) 成正比的位数，仍待判定。[统一构造](research/odd_weight_square_lattice_round283.md) · [既约分母定理](research/odd_pade_scalar_denominator_round284.md) · [权七并列项的完整判别](research/odd_pade_tied_terms_round285.md)
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第284轮既约分母与全路线复盘](research/odd_pade_scalar_denominator_round284.md) · [第285轮权七并列项](research/odd_pade_tied_terms_charter_round285.md) · [第283轮统一结构比较](research/global_source_review_round283.md) |
+| 最新研究结算与宏观选择 | [第284轮既约分母与全路线复盘](research/odd_pade_scalar_denominator_round284.md) · [第285轮权七模 4、模 8 判别](research/odd_pade_tied_terms_round285.md) · [第283轮统一结构比较](research/global_source_review_round283.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览
