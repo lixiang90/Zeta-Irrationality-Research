@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 27,
+  "revision": 28,
   "updated_at": "2026-11-21",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,44 +22,45 @@
     ]
   },
   "review": {
-    "last_completed_round": 286,
-    "last_global_review_round": 286,
+    "last_completed_round": 287,
+    "last_global_review_round": 287,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 2,
+    "rounds_without_feasibility_progress": 3,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/odd_pade_two_moment_round286.md"
+    "evidence": "research/odd_pade_single_ray_round287.md"
   },
   "current_task": {
-    "id": "round286_weight_seven_two_moment_primes",
-    "round": 286,
+    "id": "round287_primitive_denominator_on_specified_ray",
+    "round": 287,
     "status": "completed",
     "route_id": "odd_pade_square",
-    "entry": "research/odd_pade_two_moment_round286.md",
-    "deliverable": "在权七的同一既约分母上证明T_d≤ρd的阶数至X至多Oρ((log X)²)个，对两类真实剩余稀疏阶数给逐组裁决。",
-    "next_decisive_question": "在预定射线 d=2^s−2^18+9 上，W7中log gcd(|num Z_d|,P_d)/d 的上极限是否小于0.8226279669…？",
-    "pass_condition": "已给定近满七层素数重量的例外计数、间距及对指定稀疏家族的无界结论。单条孤立射线的逐阶门槛仍待证。",
-    "stop_condition": "本轮多阶比较已完成。更高密度或更多有限阶数不能回答单阶最大公因数问题。",
+    "entry": "research/odd_pade_single_ray_round287.md",
+    "deliverable": "算清预先指定射线的实际二进分母，核其前两阶的整段七层素数，把同一净率判别推广至固定及缓慢变化的偏移。",
+    "next_decisive_question": "在d_s=2^s−262135上，分开s的奇偶后，Δ_d=(2d−1)²−Z_d的负二次判别式奇部能否受控，使带内加权特征和除以d的上极限小于0.6452559339…？",
+    "pass_condition": "原射线的净率已对所有s证明，两阶逐素数证书、任意固定C的非零反射极限和变化C一致界均完成。奇素数单带的全射线下极限待证。",
+    "stop_condition": "结束固定射线的净率与整分子高度估计。剥掉3d<p<4d后整体高度仍明显超标；额外有限枚举或重写同一终段递推均不作为重开条件。",
     "must_read": [
-      "research/odd_pade_two_moment_round286.md",
-      "research/odd_pade_band_sparse_round286.md",
-      "research/odd_pade_band_weight_round286.md",
-      "research/odd_pade_tied_terms_round285.md"
+      "research/odd_pade_single_ray_round287.md",
+      "research/odd_pade_ray_band_round287.md",
+      "research/odd_pade_ray_audit_round287.md",
+      "research/odd_pade_ray_uniform_round287.md",
+      "research/odd_pade_ray_dyadic_round287.md"
     ],
     "expected_outputs": [
-      "research/odd_pade_two_moment_round286.md",
-      "research/odd_pade_band_sparse_round286.md",
-      "research/odd_pade_band_weight_round286.md",
-      "research/odd_pade_band_cartier_round286.md",
-      "research/odd_pade_band_identity_round286.md",
-      "research/verify_odd_pade_band_round286.py"
+      "research/odd_pade_single_ray_round287.md",
+      "research/odd_pade_ray_band_round287.md",
+      "research/odd_pade_ray_dyadic_round287.md",
+      "research/odd_pade_ray_audit_round287.md",
+      "research/odd_pade_ray_uniform_round287.md",
+      "research/verify_odd_pade_ray_round287.py"
     ],
     "next_actions": [
-      "针对原稀疏射线考察W7的共同有理数。以真实带内素数积截取最大公因数，核是否能对该射线给足量上界。",
-      "若仅得跨阶数的例外计数，保留286的已证范围。重开单阶路线须有改变该最大公因数界的新证据。",
-      "数值目标仍在。优先采用能够改善同一标量完整预算或控制孤立阶数的机制。"
+      "利用Δ_d的负号和精确二阶，识别两个指数奇偶分支上对应负基本判别式的奇部。",
+      "尝试据判别式得到一致的素数估计，或直接控制F3中的加权特征和；另一个按区间截取的公因数界同样可支付0.1773720330…的重量门槛。",
+      "原射线的净率已判正。为取得正向无理性结论，优先能改善同一标量完整分母上界与实率的新构造。"
     ],
-    "window_id": "odd_pade_two_moment_286"
+    "window_id": "odd_pade_fixed_shift_287"
   },
   "routes": [
     {
@@ -227,9 +228,10 @@
         "research/global_source_review_round283.md",
         "research/odd_pade_scalar_denominator_round284.md",
         "research/odd_pade_tied_terms_round285.md",
-        "research/odd_pade_two_moment_round286.md"
+        "research/odd_pade_two_moment_round286.md",
+        "research/odd_pade_single_ray_round287.md"
       ],
-      "gap": "286正式比较了双矩带的稀疏例外、Mellin和Gram的非零、图周期和导子8的本原费用。下一来源问题锁定孤立阶数上的W7公因数。",
+      "gap": "287正式比较了固定二进平移的精确分母、奇带分子的高度障碍、Gram/Mellin的无界非零及图周期、导子8的本原费用。仍无新指定数值准入。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -427,10 +429,17 @@
         "research/odd_pade_band_weight_round286.md",
         "research/odd_pade_band_cartier_round286.md",
         "research/odd_pade_band_identity_round286.md",
-        "research/verify_odd_pade_band_round286.py"
+        "research/verify_odd_pade_band_round286.py",
+        "research/odd_pade_single_ray_charter_round287.md",
+        "research/odd_pade_single_ray_round287.md",
+        "research/odd_pade_ray_band_round287.md",
+        "research/odd_pade_ray_dyadic_round287.md",
+        "research/odd_pade_ray_audit_round287.md",
+        "research/odd_pade_ray_uniform_round287.md",
+        "research/verify_odd_pade_ray_round287.py"
       ],
-      "gap": "高权w≥21全阶排除。权七至X至多O((log X)²)个阶数可能给严格负净率。指定孤立阶数仍缺实际带内最大公因数界。",
-      "reopen_condition": "对预定的极稀疏阶数给出W7的逐阶公因数控制，或出现能改变同一目标完整净预算的机制。"
+      "gap": "权七至X的可能例外至多O((log X)²)，每条固定二次幂平移及显式变化偏移区也排除。纯奇素数带的单阶公因数及其余例外还无一致控制。",
+      "reopen_condition": "有证据控制Δ_d的平方类并得到带内的统一素数估计，或给出其他实际带内公因数界或改善完整净上界的新机制。"
     }
   ],
   "claims": [
@@ -4951,6 +4960,189 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c287_band_integer",
+      "type": "reviewed_written_structure",
+      "statement": "对同一W7有理数有 Z_d=K_d²H_d。整矩阵乘积第一坐标S_d满足 gcd(|S_d|,P_d)=gcd(|num Z_d|,P_d)，每个带内p在乘积的标量分母中恰出现两次。",
+      "scope": "2d<p<3d且p>127，原权七标量，全带所有素数。",
+      "dependencies": [
+        "c286_single_degree_gcd"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_single_ray_round287.md",
+          "position": "F1–F2",
+          "sha256": "facede3639d46d3b913a454989bc8b4f14af4cc1c24094c2a27e5af22123e4b4"
+        },
+        {
+          "path": "research/verify_odd_pade_ray_round287.py",
+          "position": "step、strip_matrix_product与upper_moment_mod_prime",
+          "sha256": "2fd6ec8b93dcca51a310382703d1b981b34d1778cc711227a7ecf5f6bd3b355e"
+        }
+      ],
+      "audit": "由原Jacobi奇偶递推和另一支W2交叉核对。独审复算两个命中指标和顺序，并核九个小阶数的整段。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_two_full_bands",
+      "type": "finite_certificate",
+      "statement": "d=262153、786441的整段分别有19558、54247个素数，全部实际保留七层，两阶G_d均为1。",
+      "scope": "指定射线的s=19、20。该有限证书不决定射线的重量下极限。",
+      "dependencies": [
+        "c287_band_integer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_single_ray_round287.md",
+          "position": "两个开区间及整数位数",
+          "sha256": "facede3639d46d3b913a454989bc8b4f14af4cc1c24094c2a27e5af22123e4b4"
+        },
+        {
+          "path": "research/verify_odd_pade_ray_round287.py",
+          "position": "--ray-exponent 19 --ray-exponent 20",
+          "sha256": "2fd6ec8b93dcca51a310382703d1b981b34d1778cc711227a7ecf5f6bd3b355e"
+        }
+      ],
+      "audit": "埃氏筛和按P_d取模的整数矩阵乘积覆盖整个区间，另用未平方级数抽查两端、中部，并复现已知坏素数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_band_height",
+      "type": "reviewed_written_structure",
+      "statement": "W7的Z_d=A_d/B_d满足 v₂(B_d)=6d−s₂(3d)，实值为2(2d−1)²加正的4^(−d+o(d))。带外Q_d=∏_{3d<p<4d}p可从分子剥离，剥离后的对数高度下极限仍≥6log2−1。",
+      "scope": "共同有理数的二阶公式对全部d≥1。高度与P_d的实际带内公因数区分。",
+      "dependencies": [
+        "c287_band_integer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_ray_band_round287.md",
+          "position": "R1–R4、基准二项式及重复指标",
+          "sha256": "9f5a4076e5fb425d094277d03f585306bc6b29c65118298bc6630652c5a614a6"
+        },
+        {
+          "path": "research/verify_odd_pade_ray_round287.py",
+          "position": "初阶H_d和Z_d的既约分母",
+          "sha256": "2fd6ec8b93dcca51a310382703d1b981b34d1778cc711227a7ecf5f6bd3b355e"
+        }
+      ],
+      "audit": "独立校对Gauss二次变换、Pfaff公式、两种指标奇偶和k=l时的末因子。实积分的归一及上下指数两面均已核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_original_ray_exact",
+      "type": "reviewed_written_structure",
+      "statement": "在d=2^s−262135，s≥19，完整J模64是−20−36/(2^(s−18)−1)。二进消去阶在s=19、20及s≥21分别为3、5、4；v₂(c)=2d+7s−9−v₂(J)。",
+      "scope": "权七同一实际标量。与较小奇素数结合，预定射线的净率下极限≥0.1446901297…。",
+      "dependencies": [
+        "c284_beta_minimum",
+        "c284_smaller_prime_units",
+        "c283_pade_scale_invariant_rate",
+        "c285_complete_tied_residues"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_ray_dyadic_round287.md",
+          "position": "R1–R2和七个负偏移",
+          "sha256": "52138d21f8005c1531dcc42ec9ebf721b16ee0fca1f1913441579323b26ebf16"
+        },
+        {
+          "path": "research/odd_pade_single_ray_round287.md",
+          "position": "逐阶实际分母与净率",
+          "sha256": "facede3639d46d3b913a454989bc8b4f14af4cc1c24094c2a27e5af22123e4b4"
+        },
+        {
+          "path": "research/verify_odd_pade_ray_round287.py",
+          "position": "原始完整D1与小阶有理头",
+          "sha256": "2fd6ec8b93dcca51a310382703d1b981b34d1778cc711227a7ecf5f6bd3b355e"
+        }
+      ],
+      "audit": "用全长补码消去尾项、精确有限乘积算模64。另一推导在反射点得到极限模32为16。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_reflected_limit",
+      "type": "reviewed_written_structure",
+      "statement": "对每个固定正整数C和固定奇权w≥3，J_{w,2^s−C}在Q₂中趋于同一非零有理数。亦覆盖固定C下ν₂(d+C)→∞且2^ν₂(d+C)≥2log₂(4d)的序列。整二幂与固定正偏移另有显式极限或简单极点。",
+      "scope": "二进收敛与原标量，权七净率为正。一般二进趋近若失去速率条件可不收敛。",
+      "dependencies": [
+        "c284_beta_minimum",
+        "c284_smaller_prime_units"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_ray_audit_round287.md",
+          "position": "A1、Wronskian、实符号与正负偏移",
+          "sha256": "3ff489e53c2eba4a40339907082beedd7f02b56d6be93b379164dcd25167dae6"
+        },
+        {
+          "path": "research/odd_pade_single_ray_round287.md",
+          "position": "两组三二幂阶数",
+          "sha256": "facede3639d46d3b913a454989bc8b4f14af4cc1c24094c2a27e5af22123e4b4"
+        }
+      ],
+      "audit": "独立重推反射系数、负尾几何求和、Jacobi方程及奇偶递推符号，原始D1与显式系数复算C≤32。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_variable_shift_bound",
+      "type": "reviewed_written_structure",
+      "statement": "d=2^s−C，若s≥256(C+1)，则v₂(J_{7,d})=v₂(反射极限)且绝对值≤40C；整个变化偏移区的净率下极限≥0.1446901297…。",
+      "scope": "C和s可共同增长。256与40是显式充分常数。",
+      "dependencies": [
+        "c287_reflected_limit",
+        "c284_smaller_prime_units",
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_ray_uniform_round287.md",
+          "position": "U1高度与统一模数",
+          "sha256": "25696d68d770cfcdd28336eac79849ed4af8168b06fb70adbf683d0d486ba5cb"
+        },
+        {
+          "path": "research/odd_pade_ray_audit_round287.md",
+          "position": "A1的实非零",
+          "sha256": "3ff489e53c2eba4a40339907082beedd7f02b56d6be93b379164dcd25167dae6"
+        }
+      ],
+      "audit": "独审逐项核公分母、非零整数高度、有理头、两字长补码、正侧4C处和误差预算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c287_character_threshold",
+      "type": "conditional",
+      "statement": "取Δ_d=(2d−1)²−Z_d<0。带内坏素数均有(Δ_d/p)=1。若指定射线上该特征的加权素数和除以d的上极限小于0.6452559339…，七层重量即可单独过门槛。s≥20时v₂(Δ)的奇偶随s交替。",
+      "scope": "F3及平方类奇偶已证。负基本判别式奇部和随d变化的特征和界未证。",
+      "dependencies": [
+        "c287_band_height",
+        "c286_single_degree_gcd",
+        "c285_adjacent_prime_band_condition"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_single_ray_round287.md",
+          "position": "F3、平方类奇偶与下一项检验",
+          "sha256": "facede3639d46d3b913a454989bc8b4f14af4cc1c24094c2a27e5af22123e4b4"
+        }
+      ],
+      "audit": "p∣G_d时Δ化为非零平方，逐素数以(1−χ)/2计权。用R4与定长补码核二阶；未使用变模数的素数定理。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -5769,6 +5961,50 @@
       ],
       "scope": "近满素数重量的例外至多对数平方。完整分母上界仍未跨过数值反证门槛，旧Gram、Mellin、K5与导子8的停止范围均保留。",
       "reopen_condition": "只在能控制孤立阶数的实际公因数或改变完整净预算时重开相应实现。"
+    },
+    {
+      "id": "d287_open_fixed_shift",
+      "round": 287,
+      "decision": "限一轮研究上轮指定射线的W7公因数与同一标量在固定反射参数处的完整二进极限。",
+      "claim_ids": [
+        "c286_single_degree_gcd",
+        "c285_complete_tied_residues"
+      ],
+      "evidence": [
+        "research/odd_pade_single_ray_charter_round287.md",
+        "research/odd_pade_band_weight_round286.md"
+      ],
+      "scope": "预定d_s=2^s−262135，完整η(7)=a/b反证。",
+      "reopen_condition": "利用W7的整阶公共值和负参数反射后的统一截断；不重做多阶密度。",
+      "reopening_evidence": [
+        "research/odd_pade_single_ray_charter_round287.md",
+        "research/odd_pade_band_weight_round286.md",
+        "research/odd_pade_dyadic_minimum_round284.md"
+      ]
+    },
+    {
+      "id": "d287_close_ray_and_review",
+      "round": 287,
+      "decision": "结算原射线的完整净率与两阶全带证书，正式复盘后关闭这一窗口。继续七层问题需要同一阶数的区间内公因数信息。",
+      "claim_ids": [
+        "c287_band_integer",
+        "c287_two_full_bands",
+        "c287_band_height",
+        "c287_original_ray_exact",
+        "c287_reflected_limit",
+        "c287_variable_shift_bound",
+        "c284_full_scalar_upper",
+        "c287_character_threshold"
+      ],
+      "evidence": [
+        "research/odd_pade_single_ray_round287.md",
+        "research/odd_pade_ray_band_round287.md",
+        "research/odd_pade_ray_dyadic_round287.md",
+        "research/odd_pade_ray_audit_round287.md",
+        "research/odd_pade_ray_uniform_round287.md"
+      ],
+      "scope": "固定及部分变化平移的净率已判正；仅奇素数带的全射线重量和指定值无理性仍未解决。",
+      "reopen_condition": "有证据控制Δ_d的平方类并得到带内的统一素数估计，或给出其他实际带内公因数界或改善完整净上界的新机制。"
     }
   ],
   "windows": [
@@ -6059,6 +6295,19 @@
       "decision_id": "d286_open_two_moment_band",
       "reopening_decision_id": "d286_open_two_moment_band",
       "closure_decision_id": "d286_close_joint_band_and_review"
+    },
+    {
+      "id": "odd_pade_fixed_shift_287",
+      "kind": "source_verification",
+      "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
+      "route_id": "odd_pade_square",
+      "first_round": 287,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d287_open_fixed_shift",
+      "reopening_decision_id": "d287_open_fixed_shift",
+      "closure_decision_id": "d287_close_ray_and_review"
     }
   ],
   "completed_rounds": [
@@ -6414,6 +6663,23 @@
         "research/odd_pade_band_cartier_round286.md",
         "research/odd_pade_band_identity_round286.md",
         "research/verify_odd_pade_band_round286.py"
+      ]
+    },
+    {
+      "round": 287,
+      "kind": "fixed_shift_dyadic_limit_and_full_prime_band_certificates",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "secondary_budget_change": "精确排除原射线、所有固定平移及一段变化偏移，确立整分子剥离后的高度障碍。证明强化必要条件，未改善反证完整上界。",
+      "window_id": "odd_pade_fixed_shift_287",
+      "report": "research/odd_pade_single_ray_round287.md",
+      "outputs": [
+        "research/odd_pade_single_ray_round287.md",
+        "research/odd_pade_ray_band_round287.md",
+        "research/odd_pade_ray_dyadic_round287.md",
+        "research/odd_pade_ray_audit_round287.md",
+        "research/odd_pade_ray_uniform_round287.md",
+        "research/verify_odd_pade_ray_round287.py"
       ]
     }
   ]

@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第286轮（2026-11-21）。第283轮的同一列正 Padé 逼近对每个固定奇权有精确误差率 \(-\log(27/4)\)。对所有奇权 \(w\ge21\)，既约分母乘误差沿每条无界子列均指数增长。对权七，截至 \(X\) 至多有 \(O((\log X)^2)\) 个阶数仍有可能给出严格负净指数。对其余阶数，\(2d<p<3d\) 中实际保留七层分母的素数与较小奇素数已经足以排除这种可能。单独预先指定的极稀疏子列仍待判定。[统一构造](research/odd_weight_square_lattice_round283.md) · [既约分母定理](research/odd_pade_scalar_denominator_round284.md) · [权七七层素数与例外阶数](research/odd_pade_two_moment_round286.md)
+研究记录更新至第287轮（2026-11-21）。对本项目的正 Padé 逼近，所有固定奇权共用同一个多项式及实误差率。\(w\ge21\) 时既约分母乘误差在所有阶数上指数增长。权七到 \(X\) 至多有 \(O((\log X)^2)\) 个阶数可能给出严格负净指数。第287轮进一步排除了每条固定平移 \(d=2^s-C\)（\(C\ge1\)）。在指定的 \(C=262135\) 上算出了每阶的精确二进分母，并对首两个阶数逐素数核实了 \(2d<p<3d\) 的完整第七层。[统一构造](research/odd_weight_square_lattice_round283.md) · [权七例外计数](research/odd_pade_two_moment_round286.md) · [固定平移定理与全素数带证书](research/odd_pade_single_ray_round287.md)
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第286轮双矩素数带及复盘](research/odd_pade_two_moment_round286.md) · [第285轮完整模 8 判别](research/odd_pade_tied_terms_round285.md) · [第284轮权七净预算](research/odd_pade_scalar_denominator_round284.md) |
+| 最新研究结算与宏观选择 | [第287轮孤立射线及复盘](research/odd_pade_single_ray_round287.md) · [第286轮双矩素数带及复盘](research/odd_pade_two_moment_round286.md) · [第285轮完整模 8 判别](research/odd_pade_tied_terms_round285.md) · [第284轮权七净预算](research/odd_pade_scalar_denominator_round284.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览

@@ -2,33 +2,33 @@
 
 > 权威账：`program.json`。由 `python scripts/research_state.py render` 生成；不要手改本文件。
 
-修订 27 · 更新 2026-11-21 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
+修订 28 · 更新 2026-11-21 · goal `specified_zeta_l_irrationality` · 研究账状态 `active`
 
 最终目标：取得至少一项明确指定ζ/L特殊值的新无理性或有理线性无关结论，付清同对象完整证明与独立复核。
 数值目标已实现：否。诊断资产与组织维护不能替代此项。
 
 ## 当前窗口
 
-- 任务：`round286_weight_seven_two_moment_primes`；轮次 286；状态 `completed`；主路线 `odd_pade_square`。
-- 入口：[research/odd_pade_two_moment_round286.md](../research/odd_pade_two_moment_round286.md)。
-- 本阶段交付：在权七的同一既约分母上证明T_d≤ρd的阶数至X至多Oρ((log X)²)个，对两类真实剩余稀疏阶数给逐组裁决。
-- 首问题：在预定射线 d=2^s−2^18+9 上，W7中log gcd(|num Z_d|,P_d)/d 的上极限是否小于0.8226279669…？
-- 通过：已给定近满七层素数重量的例外计数、间距及对指定稀疏家族的无界结论。单条孤立射线的逐阶门槛仍待证。
-- 停止：本轮多阶比较已完成。更高密度或更多有限阶数不能回答单阶最大公因数问题。
-- 持久窗口 `odd_pade_two_moment_286`：已完成 1/1 轮；整理和task改名不计新窗口。
+- 任务：`round287_primitive_denominator_on_specified_ray`；轮次 287；状态 `completed`；主路线 `odd_pade_square`。
+- 入口：[research/odd_pade_single_ray_round287.md](../research/odd_pade_single_ray_round287.md)。
+- 本阶段交付：算清预先指定射线的实际二进分母，核其前两阶的整段七层素数，把同一净率判别推广至固定及缓慢变化的偏移。
+- 首问题：在d_s=2^s−262135上，分开s的奇偶后，Δ_d=(2d−1)²−Z_d的负二次判别式奇部能否受控，使带内加权特征和除以d的上极限小于0.6452559339…？
+- 通过：原射线的净率已对所有s证明，两阶逐素数证书、任意固定C的非零反射极限和变化C一致界均完成。奇素数单带的全射线下极限待证。
+- 停止：结束固定射线的净率与整分子高度估计。剥掉3d<p<4d后整体高度仍明显超标；额外有限枚举或重写同一终段递推均不作为重开条件。
+- 持久窗口 `odd_pade_fixed_shift_287`：已完成 1/1 轮；整理和task改名不计新窗口。
 
 ## 宏观复盘
 
-- 完成研究轮 286；最近正式复盘 286；其后 0 轮。
-- 连续未改善可行性 2 轮；现在须复盘：否。
-- 正式复盘已处理至第286轮；计数不清零，其后有新完成轮且连续未改善达到2即提前复盘。
-- 默认复盘 290；最迟 294；两轮核心停滞提前。
+- 完成研究轮 287；最近正式复盘 287；其后 0 轮。
+- 连续未改善可行性 3 轮；现在须复盘：否。
+- 正式复盘已处理至第287轮；计数不清零，其后有新完成轮且连续未改善达到2即提前复盘。
+- 默认复盘 291；最迟 295；两轮核心停滞提前。
 
 ## 下一动作
 
-1. 针对原稀疏射线考察W7的共同有理数。以真实带内素数积截取最大公因数，核是否能对该射线给足量上界。
-2. 若仅得跨阶数的例外计数，保留286的已证范围。重开单阶路线须有改变该最大公因数界的新证据。
-3. 数值目标仍在。优先采用能够改善同一标量完整预算或控制孤立阶数的机制。
+1. 利用Δ_d的负号和精确二阶，识别两个指数奇偶分支上对应负基本判别式的奇部。
+2. 尝试据判别式得到一致的素数估计，或直接控制F3中的加权特征和；另一个按区间截取的公因数界同样可支付0.1773720330…的重量门槛。
+3. 原射线的净率已判正。为取得正向无理性结论，优先能改善同一标量完整分母上界与实率的新构造。
 
 ## 全路线状态
 
@@ -43,7 +43,7 @@
 | χ−8 RV与原生增长行列式 | `parked` | 实际无界非零与严格净指数仍缺；安全上界失败非全方法否定。 |
 | 混合rank3标准/标量AP入口 | `closed_implementation` | 自然cap32/27及仅辅助分布cap≥8/9均不足；c≠0极点出口关闭。 |
 | 实际联合评价格/Frobenius首证书 | `closed_implementation` | 264证明单变量completejet index-only入口失败；balanced leading-box可证但高度保证仍不足。两轮窗口结束，intrinsic费用及全部tensor未被否定。 |
-| 未准入来源的定期宏观比较 | `unadmitted_candidates` | 286正式比较了双矩带的稀疏例外、Mellin和Gram的非零、图周期和导子8的本原费用。下一来源问题锁定孤立阶数上的W7公因数。 |
+| 未准入来源的定期宏观比较 | `unadmitted_candidates` | 287正式比较了固定二进平移的精确分母、奇带分子的高度障碍、Gram/Mellin的无界非零及图周期、导子8的本原费用。仍无新指定数值准入。 |
 | M₀,₈固定3:1完整向量（仅来源核查） | `closed_implementation` | 266在原canonical graded识别下付直接Barnes完整安全界，未付actual primitive净信用；全群小素数/高次幂补齐仅o(n)，一轮源核查结束。下降常数桥和作者实际率仍未独证。 |
 | 非显式Siegel固定目标商（仅来源核查） | `closed_implementation` | 268构造同原χ/统一余项坏族，普遍目标保证失败；实际全行15.6信用投入完整cofactor upper仍不足，q≥180。一轮到期结束；存在好族及两个低费输出仍未付。 |
 | 增长极点的纯目标正Gram（仅预算核查） | `closed_implementation` | 276新增完整内容率2及真实实处upper改善9log2−1，净upper=46+46log2+32h>0；裸非负lower/R全m PSD/负净率未付。一轮到期关闭，安全增长不等于最优no-go。 |
@@ -53,14 +53,15 @@
 | χ−8四分点连续双Hahn平方余项（仅完整费用核查） | `closed_implementation` | 278完整线性奇整数对已付，实际d=M/g；安全净率8+12log2>0，足额全g率未付。一轮到期，非最优费用全子列no-go。 |
 | 单值复Beta非对角固定9jet（仅最小来源核查） | `closed_implementation` | 280独证实际K=B vvᵀ，固定9jet m≥8秩恰8/惯性(4,4,m−8)，m≥9det恒0，目标rank1；非零接口失败，一轮关闭。 |
 | χ−8 双余类 Markov 逼近的完整分母 | `closed_implementation` | 实际c_s恒奇。扣除全部二处及已证奇素数内容后，完整剩余分母的对数二次率仍为11log2，目标尺度的线性上界未付。 |
-| 全奇权对角Padé正平方的实际分母 | `parked` | 高权w≥21全阶排除。权七至X至多O((log X)²)个阶数可能给严格负净率。指定孤立阶数仍缺实际带内最大公因数界。 |
+| 全奇权对角Padé正平方的实际分母 | `parked` | 权七至X的可能例外至多O((log X)²)，每条固定二次幂平移及显式变化偏移区也排除。纯奇素数带的单阶公因数及其余例外还无一致控制。 |
 
 ## 恢复所需证据
 
-- [research/odd_pade_two_moment_round286.md](../research/odd_pade_two_moment_round286.md)
-- [research/odd_pade_band_sparse_round286.md](../research/odd_pade_band_sparse_round286.md)
-- [research/odd_pade_band_weight_round286.md](../research/odd_pade_band_weight_round286.md)
-- [research/odd_pade_tied_terms_round285.md](../research/odd_pade_tied_terms_round285.md)
+- [research/odd_pade_single_ray_round287.md](../research/odd_pade_single_ray_round287.md)
+- [research/odd_pade_ray_band_round287.md](../research/odd_pade_ray_band_round287.md)
+- [research/odd_pade_ray_audit_round287.md](../research/odd_pade_ray_audit_round287.md)
+- [research/odd_pade_ray_uniform_round287.md](../research/odd_pade_ray_uniform_round287.md)
+- [research/odd_pade_ray_dyadic_round287.md](../research/odd_pade_ray_dyadic_round287.md)
 - [长期goal](../docs/RESEARCH_GOAL.md) · [恢复协议](../AGENTS.md) · [通用组织方法](../docs/LONG_RESEARCH_WORKFLOW.md)
 
 状态检查核引用、依赖、计数和摘要一致性；不认证数学，也不替goal工具改变运行状态。恢复时另核工具的暂停/限额状态。
