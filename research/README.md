@@ -41,6 +41,7 @@
 | 每个指定奇权的统一构造（283） | [宏观复盘](global_source_review_round283.md)、[正积分和对角 Padé 证明](odd_weight_square_lattice_round283.md)、[动机变号与固定圆盘](odd_motivic_source_round283.md)、[WZ 既约分母与交叉复核](odd_generating_family_round283.md)、[Markov 算术与整格](odd_markov_all_weights_round283.md)、[既约分母的首命题](odd_weight_square_charter_round284.md) |
 | 奇权 Padé 逼近的既约分母（284） | [结算与适用范围](odd_pade_scalar_denominator_round284.md)、[奇素数的两层判别](odd_pade_local_identity_round284.md)、[较小素数与完整费用](odd_pade_prime_cost_round284.md)、[二进最低项与密度](odd_pade_dyadic_minimum_round284.md)、[交叉复核](odd_pade_cartier_audit_round284.md)、[权七剩余命题](odd_pade_tied_terms_charter_round285.md) |
 | 权七首个并列类的完整余数（285） | [结算及显式无穷子列](odd_pade_tied_terms_round285.md)、[模 4 独审](odd_pade_mod4_audit_round285.md)、[模 8 证明](odd_pade_tied_lift_round285.md)、[下自然密度及净率](odd_pade_tied_density_round285.md)、[算术校验](verify_odd_pade_tied_round285.py) |
+| 权七双矩素数带与孤立阶数（286） | [结算与正式复盘](odd_pade_two_moment_round286.md)、[例外数量与稀疏家族](odd_pade_band_sparse_round286.md)、[有理递推及逐阶最大公因数](odd_pade_band_weight_round286.md)、[独立复算](verify_odd_pade_band_round286.py) |
 
 ## 数据与历史记录
 

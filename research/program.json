@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 26,
+  "revision": 27,
   "updated_at": "2026-11-21",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,43 +22,44 @@
     ]
   },
   "review": {
-    "last_completed_round": 285,
-    "last_global_review_round": 284,
+    "last_completed_round": 286,
+    "last_global_review_round": 286,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 1,
+    "rounds_without_feasibility_progress": 2,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/odd_pade_scalar_denominator_round284.md"
+    "evidence": "research/odd_pade_two_moment_round286.md"
   },
   "current_task": {
-    "id": "round285_odd_pade_tied_seven",
-    "round": 285,
+    "id": "round286_weight_seven_two_moment_primes",
+    "round": 286,
     "status": "completed",
     "route_id": "odd_pade_square",
-    "entry": "research/odd_pade_tied_terms_round285.md",
-    "deliverable": "同一权七标量的完整模4、模8同余，适用范围、无穷子列反例和阶数下自然密度均已独审。",
-    "next_decisive_question": "在深层未判子列上，双矩同余C2能否给出 T_d^(2,3)/d 的统一下界，或全和在二处能否发生线性抵消？",
-    "pass_condition": "已证明新子类上的精确二阶并与全体已知素数合计。整个首并列类的线性抵消率仍待证。",
-    "stop_condition": "285的一轮已用完。固定精度的继续分支不能决定剩余无界子列的线性率。",
+    "entry": "research/odd_pade_two_moment_round286.md",
+    "deliverable": "在权七的同一既约分母上证明T_d≤ρd的阶数至X至多Oρ((log X)²)个，对两类真实剩余稀疏阶数给逐组裁决。",
+    "next_decisive_question": "在预定射线 d=2^s−2^18+9 上，W7中log gcd(|num Z_d|,P_d)/d 的上极限是否小于0.8226279669…？",
+    "pass_condition": "已给定近满七层素数重量的例外计数、间距及对指定稀疏家族的无界结论。单条孤立射线的逐阶门槛仍待证。",
+    "stop_condition": "本轮多阶比较已完成。更高密度或更多有限阶数不能回答单阶最大公因数问题。",
     "must_read": [
-      "research/odd_pade_tied_terms_round285.md",
-      "research/odd_pade_tied_lift_round285.md",
-      "research/odd_pade_tied_density_round285.md",
-      "research/odd_pade_prime_cost_round284.md"
+      "research/odd_pade_two_moment_round286.md",
+      "research/odd_pade_band_sparse_round286.md",
+      "research/odd_pade_band_weight_round286.md",
+      "research/odd_pade_tied_terms_round285.md"
     ],
     "expected_outputs": [
-      "research/odd_pade_tied_terms_round285.md",
-      "research/odd_pade_mod4_audit_round285.md",
-      "research/odd_pade_tied_lift_round285.md",
-      "research/odd_pade_tied_density_round285.md",
-      "research/verify_odd_pade_tied_round285.py"
+      "research/odd_pade_two_moment_round286.md",
+      "research/odd_pade_band_sparse_round286.md",
+      "research/odd_pade_band_weight_round286.md",
+      "research/odd_pade_band_cartier_round286.md",
+      "research/odd_pade_band_identity_round286.md",
+      "research/verify_odd_pade_band_round286.py"
     ],
     "next_actions": [
-      "对同一既约分母优先核 C2 中 2d<p<3d 的双矩单位所占素数重量。若该重量除以d在所考察子列上的下极限超过0.1773720330…，仅计奇素数即给出正净率。",
-      "二进方向的再投入须有随d增长的全和精度估计，可与0.2087437326…d位门槛比较。同一子列还须计入其余素数。",
-      "尚无新的数值准入。下一次来源选择比较完整净预算，连续两轮未改善则提前作正式复盘。"
+      "针对原稀疏射线考察W7的共同有理数。以真实带内素数积截取最大公因数，核是否能对该射线给足量上界。",
+      "若仅得跨阶数的例外计数，保留286的已证范围。重开单阶路线须有改变该最大公因数界的新证据。",
+      "数值目标仍在。优先采用能够改善同一标量完整预算或控制孤立阶数的机制。"
     ],
-    "window_id": "odd_pade_tied_seven_285"
+    "window_id": "odd_pade_two_moment_286"
   },
   "routes": [
     {
@@ -225,9 +226,10 @@
         "research/odd_weight_family_scope_round283.md",
         "research/global_source_review_round283.md",
         "research/odd_pade_scalar_denominator_round284.md",
-        "research/odd_pade_tied_terms_round285.md"
+        "research/odd_pade_tied_terms_round285.md",
+        "research/odd_pade_two_moment_round286.md"
       ],
-      "gap": "284完成正式复盘。285权七并列核查已结算，来源选择优先比较同一既约分母双矩奇素数带的线性重量与深层二进抵消。",
+      "gap": "286正式比较了双矩带的稀疏例外、Mellin和Gram的非零、图周期和导子8的本原费用。下一来源问题锁定孤立阶数上的W7公因数。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -418,10 +420,17 @@
         "research/odd_pade_mod4_audit_round285.md",
         "research/odd_pade_tied_lift_round285.md",
         "research/odd_pade_tied_density_round285.md",
-        "research/verify_odd_pade_tied_round285.py"
+        "research/verify_odd_pade_tied_round285.py",
+        "research/odd_pade_two_moment_charter_round286.md",
+        "research/odd_pade_two_moment_round286.md",
+        "research/odd_pade_band_sparse_round286.md",
+        "research/odd_pade_band_weight_round286.md",
+        "research/odd_pade_band_cartier_round286.md",
+        "research/odd_pade_band_identity_round286.md",
+        "research/verify_odd_pade_band_round286.py"
       ],
-      "gap": "固定奇权w≥21已作全阶排除。权七的已排阶数下自然密度超过97.42186%。深层剩余阶数仍缺同一分母的线性预算。",
-      "reopen_condition": "只在出现能控制ν₂(J_d)/d的全和机制，或C2等整段奇素数的新线性重量证据时重开。固定模数的逐支细分已结算。"
+      "gap": "高权w≥21全阶排除。权七至X至多O((log X)²)个阶数可能给严格负净率。指定孤立阶数仍缺实际带内最大公因数界。",
+      "reopen_condition": "对预定的极稀疏阶数给出W7的逐阶公因数控制，或出现能改变同一目标完整净预算的机制。"
     }
   ],
   "claims": [
@@ -4792,6 +4801,156 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c286_two_moment_transfer",
+      "type": "reviewed_written_structure",
+      "statement": "每个2d<p<3d且p>127的素数，第七层缺失当且仅当R_q≡0，q=3d−1−p。以完整前缀和及相邻两系数组成的非零三维状态按有理矩阵M(q)转移。",
+      "scope": "固定原权七归一和两矩合并。涉及途中分母时将其纳入整数的因子。极限矩阵可经固定有理换基变为严格全正矩阵。",
+      "dependencies": [
+        "c285_adjacent_prime_band_condition",
+        "c283_pade_scale_invariant_rate"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_band_weight_round286.md",
+          "position": "W2–W6",
+          "sha256": "7e29b92442f5fd9972bc39b65d719f7752e696b2d3142e150959e93ee17355e2"
+        },
+        {
+          "path": "research/odd_pade_band_cartier_round286.md",
+          "position": "相邻参数转移及模p逆推",
+          "sha256": "52e6791e0483a5f875c69c6c38efa9cd9003f38ead11a4593b8fbe8b876b7b17"
+        },
+        {
+          "path": "research/odd_pade_band_sparse_round286.md",
+          "position": "有理换基和所有子式",
+          "sha256": "1b63166c64b5a90ad6789025967b8c7da8bc1fc034a4650d4fb58739a6b556b4"
+        }
+      ],
+      "audit": "从Gauss级数和对称平方方程分别重算双矩前缀、A₂的根和极限矩阵，另用独立有理数计算验证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c286_sparse_denominator_degrees",
+      "type": "reviewed_written_structure",
+      "statement": "对0<ρ<1固定，T_d≤ρd在[1,X]有Oρ((log X)²)个阶数。[D,D+γρD/log D]中至多r−1个，r为满足r(1−ρ)>2的最小整数。",
+      "scope": "适用于实际七层素数的和，常数依ρ。ρ=1/4时每窗最多二阶。特定单条二幂射线仍可能含例外。",
+      "dependencies": [
+        "c286_two_moment_transfer"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_band_sparse_round286.md",
+          "position": "B1–B4",
+          "sha256": "1b63166c64b5a90ad6789025967b8c7da8bc1fc034a4650d4fb58739a6b556b4"
+        },
+        {
+          "path": "research/odd_pade_band_cartier_round286.md",
+          "position": "二维正锥与任意跨度",
+          "sha256": "52e6791e0483a5f875c69c6c38efa9cd9003f38ead11a4593b8fbe8b876b7b17"
+        },
+        {
+          "path": "research/odd_pade_band_identity_round286.md",
+          "position": "实数方向的非零行列式",
+          "sha256": "361f448d56312df6a8c4f79debc73fa217fcacd8b7585f45ef7ba6284d42c06e"
+        }
+      ],
+      "audit": "Cauchy–Binet给任意长度的正子式乘积，另以弦斜率单调独证。将全部共同坏素数装入log高度O(k log d)的非零整数，计入所有转移分母并用素数定理结算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c286_sparse_family_net",
+      "type": "reviewed_written_structure",
+      "statement": "除O(log²X)个阶数外可仅凭两段奇素数给权七净率下界0.5083957686…。在自然密度一集合上T_d/d→1，净率下界达到5.7583957686…。",
+      "scope": "在原41 mod64与ν₂(d−9)=18两支中，对特定短区间、二幂和及二幂平移组给无界裁决。未证明所有孤立子列均被排除。",
+      "dependencies": [
+        "c286_sparse_denominator_degrees",
+        "c284_smaller_prime_units",
+        "c283_pade_scale_invariant_rate",
+        "c285_complete_tied_residues"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_two_moment_round286.md",
+          "position": "实际净率与指定子列",
+          "sha256": "e5d113513f5f558f8f54d884753ce4febc2c24c34ba9e525bf3cbdb14c04a2b1"
+        },
+        {
+          "path": "research/odd_pade_band_sparse_round286.md",
+          "position": "两个残余稀疏家族",
+          "sha256": "1b63166c64b5a90ad6789025967b8c7da8bc1fc034a4650d4fb58739a6b556b4"
+        },
+        {
+          "path": "research/odd_pade_band_weight_round286.md",
+          "position": "坏素数对数总重及密度一",
+          "sha256": "7e29b92442f5fd9972bc39b65d719f7752e696b2d3142e150959e93ee17355e2"
+        }
+      ],
+      "audit": "核K(d)实际为{1}，旧模8条件确实留下所举阶数。7L与中段七层素数不交，选择每层最大者的子列与逐条全证分开。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c286_single_degree_gcd",
+      "type": "reviewed_written_structure",
+      "statement": "Z_d=4(2d−1)²−R_{3d−1}，P_d为双矩带内p>127的素数积，整段丢失七层的对数重恰为log gcd(|num Z_d|,P_d)。",
+      "scope": "对同一实际标量逐d成立。预定子列上的上极限若低于0.8226279669…就可排除该子列，目前未证所有d或指定孤立射线满足此界。",
+      "dependencies": [
+        "c286_two_moment_transfer",
+        "c285_adjacent_prime_band_condition"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_band_weight_round286.md",
+          "position": "W7",
+          "sha256": "7e29b92442f5fd9972bc39b65d719f7752e696b2d3142e150959e93ee17355e2"
+        },
+        {
+          "path": "research/odd_pade_two_moment_round286.md",
+          "position": "正式复盘及孤立阶数的首问题",
+          "sha256": "e5d113513f5f558f8f54d884753ce4febc2c24c34ba9e525bf3cbdb14c04a2b1"
+        },
+        {
+          "path": "research/verify_odd_pade_band_round286.py",
+          "position": "common与原始系数的模p交叉校验",
+          "sha256": "aa6762937ddb4ec82ff54f0f3ba07b9bcb7d26559252a1e034f94ec8d2d81d7a"
+        }
+      ],
+      "audit": "按(1−y^p)^{1/2}的奇偶及2N<3p重算截断、端点单位、归一因子4，每个素数只计一次。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c286_prime359_six_layers",
+      "type": "finite_certificate",
+      "statement": "d=169在原41 mod64深支，28个带内素数中27个保留七层，p=359在实际既约分母中的指数恰为6。",
+      "scope": "单阶有限精确证书。四个测试阶数和26次转移用于校验式子，例外数量由一般证明给出。",
+      "dependencies": [
+        "c285_adjacent_prime_band_condition"
+      ],
+      "evidence": [
+        {
+          "path": "research/verify_odd_pade_band_round286.py",
+          "position": "check_original与精确矩阵校验",
+          "sha256": "aa6762937ddb4ec82ff54f0f3ba07b9bcb7d26559252a1e034f94ec8d2d81d7a"
+        },
+        {
+          "path": "research/odd_pade_band_identity_round286.md",
+          "position": "单素数的反例",
+          "sha256": "361f448d56312df6a8c4f79debc73fa217fcacd8b7585f45ef7ba6284d42c06e"
+        }
+      ],
+      "audit": "首一多项式的两个系数模359²为199·359和231·359，乘359⁷后的真实归一矩模359²为200·359。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -5566,6 +5725,50 @@
       ],
       "scope": "未裁阶数的线性抵消未定。高权全阶排除有效，权七的正净率下界覆盖本轮所证的阶数集合。",
       "reopen_condition": "需新证据影响ν₂(J_d)/d或足量奇素数的实际贡献，再与同一标量严格净预算比较。"
+    },
+    {
+      "id": "d286_open_two_moment_band",
+      "round": 286,
+      "decision": "按用户指向重开同一权七标量一轮，核2d<p<3d的双矩单位对数重量。原二进并列窗口已闭。",
+      "claim_ids": [
+        "c285_adjacent_prime_band_condition",
+        "c285_weight_seven_density"
+      ],
+      "evidence": [
+        "research/odd_pade_two_moment_charter_round286.md",
+        "research/odd_pade_prime_cost_round284.md",
+        "research/odd_pade_tied_density_round285.md",
+        "research/odd_pade_tied_terms_round285.md"
+      ],
+      "scope": "同一既约分母、全部有理反证。纯奇素数所需门槛为κ/7−L。",
+      "reopen_condition": "C2的两个矩及完整合并给可判实际七层单位，支持独立于二处的整带估计。",
+      "reopening_evidence": [
+        "research/odd_pade_tied_density_round285.md",
+        "research/odd_pade_prime_cost_round284.md",
+        "research/odd_pade_two_moment_charter_round286.md"
+      ]
+    },
+    {
+      "id": "d286_close_joint_band_and_review",
+      "round": 286,
+      "decision": "完成全路线正式复盘。双矩素数带的多阶比较到期结算。保留单阶W7精确公因数，下一来源问题聚焦预先指定的稀疏射线。",
+      "claim_ids": [
+        "c286_two_moment_transfer",
+        "c286_sparse_denominator_degrees",
+        "c286_sparse_family_net",
+        "c286_single_degree_gcd",
+        "c286_prime359_six_layers",
+        "c284_full_scalar_upper"
+      ],
+      "evidence": [
+        "research/odd_pade_two_moment_round286.md",
+        "research/odd_pade_band_sparse_round286.md",
+        "research/odd_pade_band_weight_round286.md",
+        "research/odd_pade_band_cartier_round286.md",
+        "research/odd_pade_band_identity_round286.md"
+      ],
+      "scope": "近满素数重量的例外至多对数平方。完整分母上界仍未跨过数值反证门槛，旧Gram、Mellin、K5与导子8的停止范围均保留。",
+      "reopen_condition": "只在能控制孤立阶数的实际公因数或改变完整净预算时重开相应实现。"
     }
   ],
   "windows": [
@@ -5843,6 +6046,19 @@
       "decision_id": "d284_select_tied_seven",
       "reopening_decision_id": "d284_select_tied_seven",
       "closure_decision_id": "d285_close_fixed_precision_tie"
+    },
+    {
+      "id": "odd_pade_two_moment_286",
+      "kind": "source_verification",
+      "source_key": "eta_odd_reciprocal_square_diagonal_pade_scalar",
+      "route_id": "odd_pade_square",
+      "first_round": 286,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d286_open_two_moment_band",
+      "reopening_decision_id": "d286_open_two_moment_band",
+      "closure_decision_id": "d286_close_joint_band_and_review"
     }
   ],
   "completed_rounds": [
@@ -6181,6 +6397,23 @@
         "research/odd_pade_tied_lift_round285.md",
         "research/odd_pade_tied_density_round285.md",
         "research/verify_odd_pade_tied_round285.py"
+      ]
+    },
+    {
+      "round": 286,
+      "kind": "two_moment_prime_weight_and_formal_source_review",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "secondary_budget_change": "正净率的保证范围从固定下密度扩展到至多O(log²X)个例外，并处理多个明确稀疏家族。该下界及逐阶公因数恒等式尚未改善严格反证的完整上界。",
+      "window_id": "odd_pade_two_moment_286",
+      "report": "research/odd_pade_two_moment_round286.md",
+      "outputs": [
+        "research/odd_pade_two_moment_round286.md",
+        "research/odd_pade_band_sparse_round286.md",
+        "research/odd_pade_band_weight_round286.md",
+        "research/odd_pade_band_cartier_round286.md",
+        "research/odd_pade_band_identity_round286.md",
+        "research/verify_odd_pade_band_round286.py"
       ]
     }
   ]
