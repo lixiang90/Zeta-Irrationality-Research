@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 28,
-  "updated_at": "2026-11-21",
+  "revision": 29,
+  "updated_at": "2026-11-22",
   "goal": {
     "id": "specified_zeta_l_irrationality",
     "status": "active",
@@ -22,45 +22,45 @@
     ]
   },
   "review": {
-    "last_completed_round": 287,
+    "last_completed_round": 288,
     "last_global_review_round": 287,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 3,
+    "rounds_without_feasibility_progress": 0,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/odd_pade_single_ray_round287.md"
   },
   "current_task": {
-    "id": "round287_primitive_denominator_on_specified_ray",
-    "round": 287,
+    "id": "round288_direct_weight_seven_positive_moments",
+    "round": 288,
     "status": "completed",
-    "route_id": "odd_pade_square",
-    "entry": "research/odd_pade_single_ray_round287.md",
-    "deliverable": "算清预先指定射线的实际二进分母，核其前两阶的整段七层素数，把同一净率判别推广至固定及缓慢变化的偏移。",
-    "next_decisive_question": "在d_s=2^s−262135上，分开s的奇偶后，Δ_d=(2d−1)²−Z_d的负二次判别式奇部能否受控，使带内加权特征和除以d的上极限小于0.6452559339…？",
-    "pass_condition": "原射线的净率已对所有s证明，两阶逐素数证书、任意固定C的非零反射极限和变化C一致界均完成。奇素数单带的全射线下极限待证。",
-    "stop_condition": "结束固定射线的净率与整分子高度估计。剥掉3d<p<4d后整体高度仍明显超标；额外有限枚举或重写同一终段递推均不作为重开条件。",
+    "route_id": "pure_shifted_mellin",
+    "window_id": "zeta7_contact_weights_288",
+    "entry": "research/zeta7_contact_round288.md",
+    "deliverable": "直接隔离权七，证明M2的正性和M9的精确行列式实率，核同一对象每个大素数的分母及本原预算。",
+    "next_decisive_question": "等斜率时较小P_((p+1)/2−m)的全部系数同被p⁸整除的加权比例，能否在无界子列上超出13.3566%，并最终让首一多项式的实际公分母率小于log1024？",
+    "pass_condition": "全阶非零、精确实率、标量整层递降及各固定斜率的必要比例已证。数值反证的实际严格分母上界待证。",
+    "stop_condition": "一轮投影和解析核查到期。再开需能控制完整多项式的公因子、改变最高素数带的结构或严格改善同一对象的总上界。",
     "must_read": [
-      "research/odd_pade_single_ray_round287.md",
-      "research/odd_pade_ray_band_round287.md",
-      "research/odd_pade_ray_audit_round287.md",
-      "research/odd_pade_ray_uniform_round287.md",
-      "research/odd_pade_ray_dyadic_round287.md"
+      "research/zeta7_contact_round288.md",
+      "research/zeta7_shifted_mellin_round288.md",
+      "research/zeta7_contact_arithmetic_round288.md",
+      "research/verify_zeta7_contact_round288.py",
+      "research/odd_pade_conductor_round288.md"
     ],
     "expected_outputs": [
-      "research/odd_pade_single_ray_round287.md",
-      "research/odd_pade_ray_band_round287.md",
-      "research/odd_pade_ray_dyadic_round287.md",
-      "research/odd_pade_ray_audit_round287.md",
-      "research/odd_pade_ray_uniform_round287.md",
-      "research/verify_odd_pade_ray_round287.py"
+      "research/zeta7_contact_round288.md",
+      "research/zeta7_shifted_mellin_round288.md",
+      "research/zeta7_contact_arithmetic_round288.md",
+      "research/zeta7_contact_real_round288.md",
+      "research/odd_pade_conductor_round288.md",
+      "research/verify_zeta7_contact_round288.py"
     ],
     "next_actions": [
-      "利用Δ_d的负号和精确二阶，识别两个指数奇偶分支上对应负基本判别式的奇部。",
-      "尝试据判别式得到一致的素数估计，或直接控制F3中的加权特征和；另一个按区间截取的公因数界同样可支付0.1773720330…的重量门槛。",
-      "原射线的净率已判正。为取得正向无理性结论，优先能改善同一标量完整分母上界与实率的新构造。"
-    ],
-    "window_id": "odd_pade_fixed_shift_287"
+      "从两个系数的共同整除或多项式矩阵的递推，检验较小P_h在p⁸上的内容；个别系数消零不足以使该素数成为例外。",
+      "若能证明例外带权不足，则结束该斜率的严格指数尝试。若发现足额系统整除，核其真实深度、全素数费用及首一分母d*。",
+      "旧Padé的2d<p<3d仍须控制超几何Z_d的实际带内公因数；已识别的二进平方类不能提供小导子捷径。"
+    ]
   },
   "routes": [
     {
@@ -436,10 +436,29 @@
         "research/odd_pade_ray_dyadic_round287.md",
         "research/odd_pade_ray_audit_round287.md",
         "research/odd_pade_ray_uniform_round287.md",
-        "research/verify_odd_pade_ray_round287.py"
+        "research/verify_odd_pade_ray_round287.py",
+        "research/odd_pade_conductor_round288.md"
       ],
-      "gap": "权七至X的可能例外至多O((log X)²)，每条固定二次幂平移及显式变化偏移区也排除。纯奇素数带的单阶公因数及其余例外还无一致控制。",
+      "gap": "权七至X的可能例外至多O((log X)²)。旧指定射线已排除，真实判别式的奇导子按幂增长。仅以奇素数带控制所有剩余阶数仍缺原Z_d的带内公因数。",
       "reopen_condition": "有证据控制Δ_d的平方类并得到带内的统一素数估计，或给出其他实际带内公因数界或改善完整净上界的新机制。"
+    },
+    {
+      "id": "pure_shifted_mellin",
+      "name": "四阶极点导数的纯权七矩及其既约分母",
+      "status": "parked",
+      "target": "ζ(7)无理",
+      "source_key": "fourth_pole_fourth_derivative_positive_beta_shift_moments",
+      "evidence": [
+        "research/zeta7_contact_charter_round288.md",
+        "research/zeta7_contact_round288.md",
+        "research/zeta7_shifted_mellin_round288.md",
+        "research/zeta7_contact_arithmetic_round288.md",
+        "research/zeta7_contact_real_round288.md",
+        "research/odd_pade_conductor_round288.md",
+        "research/verify_zeta7_contact_round288.py"
+      ],
+      "gap": "裸行列式率−log1024与全阶正性已证，等斜率首一分母上界24仍大于log1024。八层共同整除的实际无界重量待定。",
+      "reopen_condition": "得到矩阵多项式全部系数的共同整除控制、真正改变首个奇异反对角的机制，或同一实际分母严格改进的上界。"
     }
   ],
   "claims": [
@@ -5143,6 +5162,259 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c288_projection",
+      "type": "reviewed_written_structure",
+      "statement": "全部5ℓ≤2n的接触阶数都能隔离ζ(7)，系数有固定显式符号与严格下界。零接触系数为30(−1)^n binom(2n,n)。",
+      "scope": "中心反射的四阶极点，四次导数；下界改变只作用于有理项。",
+      "dependencies": [
+        "c281_mellin_row"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_contact_arithmetic_round288.md",
+          "position": "H1–H4",
+          "sha256": "ac7cb884532f2b28df8efd4f5738a2f2c0bc1e27cde753e74dbca1f407f4a1a8"
+        },
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M1",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "直接展开与终止Dougall导数交叉，处理中心极点、端点和容量上限。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_positive_moment",
+      "type": "reviewed_written_structure",
+      "statement": "零接触时对所有n≥1,b≥0有共同严格正的Beta矩；b/n→β≥0有限时实率精确为−4S(β)。",
+      "scope": "在b=n时线性形式实率−8log2，逼近ζ(7)的绝对误差率−10log2。",
+      "dependencies": [
+        "c288_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M2–M3",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "拆成两个正Beta乘积并对同一积分作微分求和；独立复核有限测度及边界最大点。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_prime_recursion",
+      "type": "reviewed_written_structure",
+      "statement": "对p²>2(n+b+1)的大素数，位数不进位时p⁷A递降至较小A，进位时p⁸A由一个截断二项式和与正有理导数的乘积判定。",
+      "scope": "p≥5；包括消零和端点。对每个固定奇权w≥5同式给w及w+1层。",
+      "dependencies": [
+        "c288_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_contact_arithmetic_round288.md",
+          "position": "H5–H7",
+          "sha256": "ac7cb884532f2b28df8efd4f5738a2f2c0bc1e27cde753e74dbca1f407f4a1a8"
+        },
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M4–M7",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "按低位和模p²展开，独立直接求和核零阶和一次项及进位处的一项调和增量。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_scalar_budget",
+      "type": "reviewed_written_structure",
+      "statement": "对角上一批恰七层素数的重量为(2−2log2)n+o(n)。权七完整本原净上界从16−8log2降到14−6log2。b≤n/8与b≥5n的本原值均指数增长。",
+      "scope": "等斜率本原净下界为7(2−2log2)−10log2。所有奇权w≥13的同一对角标量在每条子列增长。",
+      "dependencies": [
+        "c288_prime_recursion",
+        "c288_positive_moment"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M7–M8、两段参数及高奇权",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        },
+        {
+          "path": "research/zeta7_contact_arithmetic_round288.md",
+          "position": "H7",
+          "sha256": "ac7cb884532f2b28df8efd4f5738a2f2c0bc1e27cde753e74dbca1f407f4a1a8"
+        }
+      ],
+      "audit": "有限高位区间取素数定理再控小素数尾。下界保留g可能来自其他素数的全部负费用。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_contact_real",
+      "type": "reviewed_written_structure",
+      "statement": "正接触的未平移和在ℓ=o(n^(4/9))最终为正且线性对数率为零；临界层有两种符号；ℓ=n/4的精确裸率上极限0.8966379566…。",
+      "scope": "临界极限零点或个别稀疏子列未作精确下界，未和零接触算术混用。",
+      "dependencies": [
+        "c288_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_contact_real_round288.md",
+          "position": "(1)–(4) 及有理根隔离与相位证书",
+          "sha256": "508293dc58a5e1b3a329b153489cd3e297537a2c569d61b6570b2bf2e3a090ce"
+        }
+      ],
+      "audit": "检查原有理函数的相邻比、无限尾、两条谐波与共轭鞍点；稿内有理比较已实际运行。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_hankel_size",
+      "type": "reviewed_written_structure",
+      "statement": "等斜率时每个真实Hankel行列式都严格正，二次实率为−log1024。多项式次数恰m，首项绝对值的二次率为零。首一化的实际公分母d*与本原乘数同二次率。",
+      "scope": "零接触对角，包含1/(i+j+1)。整个多项式有完整安全分母二次率上界24。",
+      "dependencies": [
+        "c288_positive_moment",
+        "c288_prime_recursion"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M9–M10、24上界、反正弦领系数矩",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "核正推前测度和内部密度、Chebyshev上界及Legendre下界；按排列表项核全部素数和矩索引分母。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_hankel_outer",
+      "type": "reviewed_written_structure",
+      "statement": "2m<p<4m−1的首个奇异反对角单位为455/16；右下块给整多项式递降至P_((p+1)/2−m)。较小多项式全系数p阶数t<8时精确保留8e−t。",
+      "scope": "p>13。要获严格负净二次率，对角线需要有子列的p⁸共同整除加权比例严格超过13.3566%。",
+      "dependencies": [
+        "c288_hankel_size",
+        "c288_prime_recursion"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M11–M12 与模p⁸分块",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "p进Gauss赋值环Schur消元，所有素因子计入同一个非零整数κ乘最高次系数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_fixed_slope",
+      "type": "reviewed_written_structure",
+      "statement": "任意固定互素正有理斜率a/c的外带首反对角均为单位（除固定有限素数）。若本原矩行列式有严格负二次率，八层共同整除的重量在相应子列必须超过1−[log4+4S(β)]/[4(1+β)]≥1−log(1+√2)。",
+      "scope": "先固定a,c，再让阶数趋于无穷；不涵盖变斜率或次指数趋零。此为必要条件。",
+      "dependencies": [
+        "c288_hankel_outer"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M13–M14",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        }
+      ],
+      "audit": "独立核非整数二项式的唯一最低赋值、两种不同实支集、领系数1/c和斜率极值。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_old_conductor",
+      "type": "reviewed_written_structure",
+      "statement": "旧Padé的实际判别式导子对所有大d满足q_d>(4d)^η。从s=22起原射线的两个二进平方类分别为−5和−10。匹配二进和上带分裂的其他二次域可以让目标带也全部分裂。",
+      "scope": "η>0 为有效绝对常数。合成算术模型与实际超几何Z_d分开；原2d<p<3d的全射线重量未定。",
+      "dependencies": [
+        "c287_character_threshold",
+        "c287_band_height"
+      ],
+      "evidence": [
+        {
+          "path": "research/odd_pade_conductor_round288.md",
+          "position": "C1–C4，含C1a与例外零",
+          "sha256": "72ab367edaee93395e1049b688af5e12fe770fd40d6c70449022eeb9cbb7b7f0"
+        }
+      ],
+      "audit": "逐项核二进单位；上带完全分裂与Thorner–Zaman小导子带内估计冲突。模型用光滑模数短和与有理平方近似。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_finite",
+      "type": "finite_certificate",
+      "statement": "2758个标量局部同余、373个对角及566个其他斜率的整多项式值比较通过。等斜率m=16,32,64,128共85个带内素数全部保留最高层。",
+      "scope": "只在给定范围。m=32,p=103的较小P20最高次系数为零，P20(0)≡72，故整多项式非零。",
+      "dependencies": [
+        "c288_prime_recursion",
+        "c288_hankel_outer",
+        "c288_fixed_slope"
+      ],
+      "evidence": [
+        {
+          "path": "research/verify_zeta7_contact_round288.py",
+          "position": "从原Laurent系数、有限调和和、整数插值与有限域行列式复算",
+          "sha256": "86a6b5e34a3ef9d23a4cbf96641aa3b9c3271a9c1a20fbf646164ded0a1ace27"
+        },
+        {
+          "path": "research/zeta7_contact_round288.md",
+          "position": "精确有限证书表",
+          "sha256": "baf3b81171003ad6501497d6841aafd109ad8907209377436f607ba7ba0ce3ef"
+        }
+      ],
+      "audit": "完整有理数与独立乘积微分交叉；m+1个互异点验证次数≤m的同余，而非据有限样本推断极限。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c288_target_if",
+      "type": "conditional",
+      "statement": "若对角首一行列式多项式系数的实际公分母满足liminf(log d*)/m²<log1024，则ζ(7)无理。",
+      "scope": "该严格上界未证；也未得到本原值次指数趋零的另项证明。",
+      "dependencies": [
+        "c288_hankel_size",
+        "c288_hankel_outer",
+        "c288_fixed_slope"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shifted_mellin_round288.md",
+          "position": "M9–M14",
+          "sha256": "06efbea58be419d36bf83b8e92fff89bb5d7bc03616949a5c638a3c25f7310d5"
+        },
+        {
+          "path": "research/zeta7_contact_round288.md",
+          "position": "两个实际分母及当前算术缺口",
+          "sha256": "baf3b81171003ad6501497d6841aafd109ad8907209377436f607ba7ba0ce3ef"
+        }
+      ],
+      "audit": "对每个有理反设a/q检验q^mκP_m(ζ(7))为正整数；不将分母下界用于支付反证。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -6005,6 +6277,48 @@
       ],
       "scope": "固定及部分变化平移的净率已判正；仅奇素数带的全射线重量和指定值无理性仍未解决。",
       "reopen_condition": "有证据控制Δ_d的平方类并得到带内的统一素数估计，或给出其他实际带内公因数界或改善完整净上界的新机制。"
+    },
+    {
+      "id": "d288_open_pure_derivative",
+      "round": 288,
+      "decision": "用四阶导数与最多四阶的反射极点直接隔离ζ(7)，并核验原Padé特征导子。限一轮。",
+      "claim_ids": [
+        "c281_mellin_row",
+        "c287_character_threshold"
+      ],
+      "evidence": [
+        "research/zeta7_contact_charter_round288.md"
+      ],
+      "scope": "指定ζ(7)并遍取有理反设；旧六阶极点混合行与新四阶极点的有理函数不同。",
+      "reopen_condition": "零接触和不同平移允许同标量正积分与清整核查。"
+    },
+    {
+      "id": "d288_close_direct_moment",
+      "round": 288,
+      "decision": "结束纯权七投影窗口。所得全阶正矩和完整标量预算支持有条件的正向路线；后续须付整多项式实际分母。",
+      "claim_ids": [
+        "c288_projection",
+        "c288_positive_moment",
+        "c288_prime_recursion",
+        "c288_scalar_budget",
+        "c288_contact_real",
+        "c288_hankel_size",
+        "c288_hankel_outer",
+        "c288_fixed_slope",
+        "c288_old_conductor",
+        "c288_finite",
+        "c288_target_if"
+      ],
+      "evidence": [
+        "research/zeta7_contact_round288.md",
+        "research/zeta7_shifted_mellin_round288.md",
+        "research/zeta7_contact_arithmetic_round288.md",
+        "research/zeta7_contact_real_round288.md",
+        "research/odd_pade_conductor_round288.md",
+        "research/verify_zeta7_contact_round288.py"
+      ],
+      "scope": "可行性改善来自同一标量完整净上界减少2−2log2及真实全阶正矩；有限数据和外带障碍不构成数值准入。",
+      "reopen_condition": "用同一P_h的内容关系判定八层共同整除的重量或给完整d*更低上界；重复算旧素数带、重复有限枚举和只调固定斜率均不足。"
     }
   ],
   "windows": [
@@ -6308,6 +6622,18 @@
       "decision_id": "d287_open_fixed_shift",
       "reopening_decision_id": "d287_open_fixed_shift",
       "closure_decision_id": "d287_close_ray_and_review"
+    },
+    {
+      "id": "zeta7_contact_weights_288",
+      "kind": "source_verification",
+      "source_key": "fourth_pole_fourth_derivative_positive_beta_shift_moments",
+      "route_id": "pure_shifted_mellin",
+      "first_round": 288,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d288_open_pure_derivative",
+      "closure_decision_id": "d288_close_direct_moment"
     }
   ],
   "completed_rounds": [
@@ -6680,6 +7006,23 @@
         "research/odd_pade_ray_audit_round287.md",
         "research/odd_pade_ray_uniform_round287.md",
         "research/verify_odd_pade_ray_round287.py"
+      ]
+    },
+    {
+      "round": 288,
+      "kind": "pure_weight_seven_positive_moments_and_prime_denominator_recursion",
+      "feasibility_progress": true,
+      "numeric_admission": false,
+      "feasibility_change": "已证明全阶实值非零。在同一b=n的实际线性形式上，完整本原净上界由16−8log2降至14−6log2；同源Hankel另有已付的精确容量和首一分母判据。",
+      "window_id": "zeta7_contact_weights_288",
+      "report": "research/zeta7_contact_round288.md",
+      "outputs": [
+        "research/zeta7_contact_round288.md",
+        "research/zeta7_shifted_mellin_round288.md",
+        "research/zeta7_contact_arithmetic_round288.md",
+        "research/zeta7_contact_real_round288.md",
+        "research/odd_pade_conductor_round288.md",
+        "research/verify_zeta7_contact_round288.py"
       ]
     }
   ]
