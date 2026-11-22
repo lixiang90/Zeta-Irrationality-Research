@@ -44,6 +44,7 @@
 | 权七双矩素数带与孤立阶数（286） | [结算与正式复盘](odd_pade_two_moment_round286.md)、[例外数量与稀疏家族](odd_pade_band_sparse_round286.md)、[有理递推及逐阶最大公因数](odd_pade_band_weight_round286.md)、[独立复算](verify_odd_pade_band_round286.py) |
 | 指定射线、七层素数与直接权七矩（287–288） | [旧 Padé 的固定平移](odd_pade_single_ray_round287.md)、[纯权七的轮次结算](zeta7_contact_round288.md)、[真实分母、容量与所有固定斜率](zeta7_shifted_mellin_round288.md) |
 | 权七矩行列式的八层共同整除（289） | [结算与完整分母](zeta7_polynomial_content_round289.md)、[局部深度与有限域判别](zeta7_polynomial_depth_round289.md)、[全阶秩界](zeta7_pencil_structure_round289.md)、[连续阶数证书](zeta7_polynomial_census_round289.md)、[判别式下界](zeta7_actual_cost_round289.md) |
+| 等斜率外带的连续零系数（290） | [结算与正式复盘](zeta7_symbol_contact_round290.md)、[统一多项式与公共系数块](zeta7_master_symbol_round290.md)、[带权与精确公因数](zeta7_horizontal_weight_round290.md)、[核链与递推](zeta7_contact_order_round290.md)、[反射与剩余铅笔](zeta7_reflected_symbol_round290.md) |
 
 ## 数据与历史记录
 

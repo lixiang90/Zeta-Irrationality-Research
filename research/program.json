@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 30,
+  "revision": 31,
   "updated_at": "2026-11-22",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,45 +22,45 @@
     ]
   },
   "review": {
-    "last_completed_round": 289,
-    "last_global_review_round": 287,
+    "last_completed_round": 290,
+    "last_global_review_round": 290,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 1,
+    "rounds_without_feasibility_progress": 2,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/odd_pade_single_ray_round287.md"
+    "evidence": "research/zeta7_symbol_contact_round290.md"
   },
   "current_task": {
-    "id": "round289_outer_band_polynomial_content",
-    "round": 289,
+    "id": "round290_horizontal_symbol_contact",
+    "round": 290,
     "status": "completed",
     "route_id": "pure_shifted_mellin",
-    "window_id": "zeta7_outer_content_289",
-    "entry": "research/zeta7_polynomial_content_round289.md",
-    "deliverable": "对较小P_h的共同整除给出全阶秩界、模p⁸等价条件和完整分母的深度判据，核定连续阶数与全部素数的实际分母。",
-    "next_decisive_question": "当h与m同阶时，能否控制缩放多项式Q从h次到h+⌊e/16⌋次连续消零的无界加权比例，或在深层退化分支上给出足以降低完整d*的实际约分？",
-    "pass_condition": "已确定线性长度的模p连续消零也是成功所需；整个2m<p<4m−1在m≤8192没有八层例外。指定数值及完整分母的严格上界仍待证。",
-    "stop_condition": "一轮结束。只扩大有限前缀不能判定无界比例；再次投入须有无界消零估计、解析恒等式或同一完整分母的更低上界。",
+    "window_id": "zeta7_horizontal_contact_290",
+    "entry": "research/zeta7_symbol_contact_round290.md",
+    "deliverable": "证明固定阶的统一有理多项式、整段公共系数及无界带权的充分条件，并核清有限全带及原分母的区别。",
+    "next_decisive_question": "能否把二十二个公共长块的带内公因数加权和除以 m 的上极限控制在 γ−(47/50)^44 内，或由原完整 d* 得到严格低于 log1024 的下极限？",
+    "pass_condition": "已给固定二十段和线性公共块判据，完整 m≤4500 未发现须消去两项或以上的实例。公因数的无界重量仍待证。",
+    "stop_condition": "本轮到期并正式复盘。单独增加有限前缀或继续标量递推不改善现有数值判据。",
     "must_read": [
-      "research/zeta7_polynomial_content_round289.md",
-      "research/zeta7_polynomial_depth_round289.md",
-      "research/zeta7_pencil_structure_round289.md",
-      "research/zeta7_polynomial_census_round289.md",
-      "research/zeta7_actual_cost_round289.md"
+      "research/zeta7_symbol_contact_round290.md",
+      "research/zeta7_master_symbol_round290.md",
+      "research/zeta7_horizontal_weight_round290.md",
+      "research/zeta7_contact_order_round290.md",
+      "research/zeta7_reflected_symbol_round290.md"
     ],
     "expected_outputs": [
-      "research/zeta7_polynomial_content_round289.md",
-      "research/zeta7_polynomial_depth_round289.md",
-      "research/zeta7_pencil_structure_round289.md",
-      "research/zeta7_polynomial_census_round289.md",
-      "research/zeta7_actual_cost_round289.md",
-      "research/verify_zeta7_polynomial_content_round289.py",
-      "research/verify_zeta7_outer_symbol_round289.py"
+      "research/zeta7_symbol_contact_round290.md",
+      "research/zeta7_master_symbol_round290.md",
+      "research/zeta7_horizontal_weight_round290.md",
+      "research/zeta7_contact_order_round290.md",
+      "research/zeta7_reflected_symbol_round290.md",
+      "research/verify_zeta7_master_symbol_round290.py",
+      "research/verify_zeta7_horizontal_weight_round290.py"
     ],
     "next_actions": [
-      "估计R13中有限域多项式Q的首个非零次数。若从h到h+⌊e/16⌋次同时为零的全带加权上极限至多7.580375925…%，可排除此等斜率的严格指数。",
-      "若有成族的连续消零，依据R1–R3继续检验实际Smith深度，使用R6逐项合并带外素数和领系数，再与log1024作严格比较。",
-      "缺乏新的无界证据时，保留当前完整分母上界24与下界2.0523103038…；下次机会成本复盘仍纳入旧权七Padé的实际带内公因数。"
+      "对二十二个 T9 公共块（σ=47/50）估计与各自带内素数乘积的公因数；若归一加权和的上极限≤0.01009465326…，即可排除此等斜率严格指数。",
+      "也可直接估计 T6 的二十个选定系数或 H8 的全带精确公因数。逐素数或对阶数取平均的稀疏性本身不足以判定上极限。",
+      "正向数值目标须在同一首一分母计入全部有限处及领系数，突破 log1024；后续宏观选择仍比较旧 Padé 的实际公因数和其他完整费用。"
     ]
   },
   "routes": [
@@ -230,9 +230,10 @@
         "research/odd_pade_scalar_denominator_round284.md",
         "research/odd_pade_tied_terms_round285.md",
         "research/odd_pade_two_moment_round286.md",
-        "research/odd_pade_single_ray_round287.md"
+        "research/odd_pade_single_ray_round287.md",
+        "research/zeta7_symbol_contact_round290.md"
       ],
-      "gap": "287正式比较了固定二进平移的精确分母、奇带分子的高度障碍、Gram/Mellin的无界非零及图周期、导子8的本原费用。仍无新指定数值准入。",
+      "gap": "290正式比较了连续系数的实际带权、旧权七 Padé 的共同素因子、正 Gram 的非零与净率、图周期及导子八的费用。指定数值仍待新的准入证据。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -464,10 +465,18 @@
         "research/zeta7_polynomial_census_round289.md",
         "research/zeta7_actual_cost_round289.md",
         "research/verify_zeta7_polynomial_content_round289.py",
-        "research/verify_zeta7_outer_symbol_round289.py"
+        "research/verify_zeta7_outer_symbol_round289.py",
+        "research/zeta7_symbol_contact_charter_round290.md",
+        "research/zeta7_symbol_contact_round290.md",
+        "research/zeta7_master_symbol_round290.md",
+        "research/zeta7_horizontal_weight_round290.md",
+        "research/zeta7_contact_order_round290.md",
+        "research/zeta7_reflected_symbol_round290.md",
+        "research/verify_zeta7_master_symbol_round290.py",
+        "research/verify_zeta7_horizontal_weight_round290.py"
       ],
-      "gap": "等斜率实际首一分母的全阶下率至少2.0523103038…，完整上率至多24。m≤8192的八层例外为零；无界加权深度与跨越log1024仍待定。",
-      "reopen_condition": "控制缩放多项式Q连续线性多项系数消零的无界带权、给退化核的新解析恒等式，或实际降低同一d*的完整上界。"
+      "gap": "二十段的未检重量为7.56573379%，二十二个公共长块也可检验；缺带内公因数的无界率。完整 d* 的已证下率为2.0523103038…、上率为24。",
+      "reopen_condition": "需有同阶长块的带内共同素因子上界、实际深层约分的成族恒等式或同一分母的更低完整上界。"
     }
   ],
   "claims": [
@@ -5656,6 +5665,287 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c290_master",
+      "type": "reviewed_written_structure",
+      "statement": "半整数插值 L_m 在每个带内素数处约化成相应的单项式 x^h。固定 m 的同一有理多项式在原 Y 变量逐系数约化为整带全部 Q。另有只含一阶调和数的局部铅笔。",
+      "scope": "任意 m、2m<p<4m−1，包括 p=5,7,13。只识别模 p 的最高极点。",
+      "dependencies": [
+        "c289_rescaled_symbol"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T1–T4",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "pole_coefficients、interpolation、harmonic_shadow、run",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        }
+      ],
+      "audit": "反转列的符号和 h 位移经独立推导；原八阶有理矩、一次调和数与公共系数三种构造逐项核对。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_smith_power",
+      "type": "reviewed_written_structure",
+      "statement": "若 p>13 且 det B_m 为单位，所问事件等价于 rank(A_m^(s+1))≤e−s；插值乘法矩阵在带中全部 p 的 Smith 指数由 m 对 h 的商余精确决定。",
+      "scope": "s=⌊e/16⌋+1。矩阵幂判别只在领系数为单位时使用。",
+      "dependencies": [
+        "c290_master",
+        "c289_pencil_corank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T5 与插值矩阵的 Smith 指数",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "smith_check 和矩阵幂测试",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        }
+      ],
+      "audit": "用像与核维增量检查幂判别，Eisenstein 分解给出逐层维数；228 次幂测试与 76 次整数 Smith 核对。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_bulk_chain",
+      "type": "reviewed_written_structure",
+      "statement": "在 h,e 与 m 同阶的纯事件上，核形式的 Y 进 Smith 链中有一条长度至少为 Ω(√m)；一维核且 Q 非零时强制线性维的共同全迷向 Krylov 子空间。",
+      "scope": "含恒零和领系数非单位分支，线性维结论限定 r=1 且 Q 非零。",
+      "dependencies": [
+        "c289_pencil_corank",
+        "c289_rescaled_symbol"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_contact_order_round290.md",
+          "position": "C7–C11",
+          "sha256": "80d95844a307e87a8661a0e8f13970ef673f69af2f02aab97e0cb663554f46c1"
+        },
+        {
+          "path": "research/zeta7_reflected_symbol_round290.md",
+          "position": "S8–S9",
+          "sha256": "091b580695abb809b05dc11411691f4a2c797c212f5f34ad331178b344fd68cb"
+        }
+      ],
+      "audit": "两种独立合同消元分别给出形式幂级数链和 e−r 阶线性铅笔；核维比较不替代根重数估计。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_scalar_symbol",
+      "type": "reviewed_written_structure",
+      "statement": "半整数行列式条目满足一阶非齐次递推，与 Guillera 有限和相连。固定素数的合格区间中，标量部分和取指定值的次数为 O(1+L^(2/3))。",
+      "scope": "仅限条目与空间变量；阶数随 m 变化的 Y 铅笔另需检验。",
+      "dependencies": [
+        "c289_rescaled_symbol"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_contact_order_round290.md",
+          "position": "C1–C4a，C6，实际最小递推阶表",
+          "sha256": "80d95844a307e87a8661a0e8f13970ef673f69af2f02aab97e0cb663554f46c1"
+        },
+        {
+          "path": "research/zeta7_reflected_symbol_round290.md",
+          "position": "反射、高侧系数与空间重数界 S1–S7",
+          "sha256": "091b580695abb809b05dc11411691f4a2c797c212f5f34ad331178b344fd68cb"
+        }
+      ],
+      "audit": "两份望远镜推导与首项辨识互核；差多项式计数只用于标量的取值。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_horizontal_gcd",
+      "type": "reviewed_written_structure",
+      "statement": "固定 m 时用相同阶数的费马商交错矩阵刻画 leading B_h 的核；一个 Pfaffian 整数公因数给出首个零系数的素集。原整数铅笔前缀的公因数精确恢复纯事件的全部素数。",
+      "scope": "固定阶的整带；H4 的平均密度反例只检验推理量词。",
+      "dependencies": [
+        "c289_pencil_corank",
+        "c289_rescaled_symbol"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_horizontal_weight_round290.md",
+          "position": "H1–H8，正实特化及稀疏子列反例",
+          "sha256": "e2c7290cd2fd392c3499c1963f60756d99521423c44625eeb88212fc8a762e6e"
+        },
+        {
+          "path": "research/verify_zeta7_horizontal_weight_round290.py",
+          "position": "complement、全带首项与原铅笔的复算",
+          "sha256": "9db517da3af01d31d94d579331d601acc48dc5a0cf9672ff8e4546a7711f92ec"
+        }
+      ],
+      "audit": "微分矩阵与互补逆给首项判别，整值原铅笔给逐项判别，439 个有限实例核对互补秩。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_geometric_cover",
+      "type": "reviewed_written_structure",
+      "statement": "设ρ=15/16。用 t 个公共下标分段，纯事件的加权上极限至多为 ρ^(2t) 加 m^−1∑ρ^j log d_m,j 的上极限。以未覆盖重量全计时，任意十九个单下标的端点代价已高于 γ。",
+      "scope": "固定 t，每个 m 允许改变下标；最小性限于单下标区间覆盖。二十段的 7.56573379% 仅属端点。",
+      "dependencies": [
+        "c290_master",
+        "c289_depth_weight"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T6、端点分部求和及单下标最优性",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/zeta7_horizontal_weight_round290.md",
+          "position": "H4 的加权极限",
+          "sha256": "e2c7290cd2fd392c3499c1963f60756d99521423c44625eeb88212fc8a762e6e"
+        }
+      ],
+      "audit": "直接核验进位和端点，用 −log(e/m) 中的递减密度独立检查覆盖最优性。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_positive_factors",
+      "type": "reviewed_written_structure",
+      "statement": "公共多项式实根且常数项非零，拉盖尔表达式逐阶为正。参数化后的系数有 T8 强制因子，连续两项以上的公共实零点恰为指定的整数节点。",
+      "scope": "实根与强制因子给非零证书；可剥去的参数因子在受检素数处均为单位。",
+      "dependencies": [
+        "c290_master",
+        "c290_smith_power"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T7–T8 及公共实零点",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "factor_check、拉盖尔严格不等式",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        }
+      ],
+      "audit": "独立反证复核实根性、导数重数、Smith 小子式估值，精确核验531个正量和27个参数多项式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_long_blocks",
+      "type": "conditional",
+      "statement": "二十段单系数的带内公因数加权对数和若为 o(m)，就排除等斜率的严格指数。也可用固定二十二个线性长度公共系数块，只须加权和除以 m 的上极限≤γ−(47/50)^44。",
+      "scope": "γ=1−4log2/3；以 σ=47/50 构造二十二块，允许余量 1.00946533 个百分点。所需公因数上界未证。",
+      "dependencies": [
+        "c290_master",
+        "c290_geometric_cover",
+        "c290_positive_factors",
+        "c289_depth_weight"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T6、T7、T9，端点与块长表",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/zeta7_symbol_contact_round290.md",
+          "position": "固定阶数下的二十个算术条件",
+          "sha256": "40b94d896371bfe221136b4567ae15579cf5e76d5dbd64d07f08aa82d15c3b38"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "long_block_check",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        }
+      ],
+      "audit": "最不利 e 决定块两端；用另一审阅者复核取整、固定段数下的最短长度和门槛差。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_finite_pure",
+      "type": "finite_certificate",
+      "statement": "在 m≤4500 的整个开带共 2,245,995 对，12 对满足纯事件，全部 e≤15。p>13 且 p≤18000 的 4,350,788 对中有7个纯事件。",
+      "scope": "系数区间含两项或更多时，所列完整有限前缀没有例子。p≤13 的全部7对由原矩补核。",
+      "dependencies": [
+        "c289_finite_symbol",
+        "c289_rescaled_symbol",
+        "c290_master"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_horizontal_weight_round290.md",
+          "position": "H4 前的逐阶表与有限统计",
+          "sha256": "e2c7290cd2fd392c3499c1963f60756d99521423c44625eeb88212fc8a762e6e"
+        },
+        {
+          "path": "research/zeta7_symbol_contact_round290.md",
+          "position": "哪些素数会被计入",
+          "sha256": "40b94d896371bfe221136b4567ae15579cf5e76d5dbd64d07f08aa82d15c3b38"
+        },
+        {
+          "path": "research/verify_zeta7_horizontal_weight_round290.py",
+          "position": "--self-check --prime-cap 18000",
+          "sha256": "9db517da3af01d31d94d579331d601acc48dc5a0cf9672ff8e4546a7711f92ec"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "run，含所有小素数与原矩对照",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        }
+      ],
+      "audit": "按素数、按连续阶数两种边界分别计数；继承逐奇异点核形式的独立精确证书，用原有理矩另检全部小素数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c290_finite_cover",
+      "type": "finite_certificate",
+      "statement": "m≤112、p>13 的二十段覆盖 1,652 对，17 对公共系数为零而其中3对满足原事件。首次多计为 m=32,p=71，四次系数22、五次系数0。",
+      "scope": "有限诊断，单个系数提供必要条件，段内全部素数权还需无界估计。",
+      "dependencies": [
+        "c290_master",
+        "c290_geometric_cover"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_master_symbol_round290.md",
+          "position": "T9 后的比较",
+          "sha256": "5590525bc1d991f6ce9f0a7cde2eefb0ecec24b5fae26119bec3fb5c844c5a5b"
+        },
+        {
+          "path": "research/verify_zeta7_master_symbol_round290.py",
+          "position": "strip_scan，--strips 112",
+          "sha256": "34450a8bcc7567b215d611f084a041c79d01a6701fe4668928bb2c1f4531ba92"
+        },
+        {
+          "path": "research/zeta7_symbol_contact_round290.md",
+          "position": "有限单系数检验",
+          "sha256": "40b94d896371bfe221136b4567ae15579cf5e76d5dbd64d07f08aa82d15c3b38"
+        }
+      ],
+      "audit": "逐素数用有限域特征多项式或插值直接检查整串；首个多计另从同一有理多项式精确约化。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -6606,6 +6896,56 @@
       ],
       "scope": "有全阶结构、有限反证和实际分母下界，无正向数值准入，完整分母上界仍为24。",
       "reopen_condition": "需有R13事件的无界带权估计、退化核的解析恒等式或同对象完整费用的更低上界。"
+    },
+    {
+      "id": "d290_open_horizontal_symbol",
+      "round": 290,
+      "decision": "依第289轮的必要条件，以跨素数统一插值和剩余铅笔核链重开一次连续消零核查。",
+      "claim_ids": [
+        "c289_rescaled_symbol",
+        "c289_depth_weight"
+      ],
+      "evidence": [
+        "research/zeta7_symbol_contact_charter_round290.md",
+        "research/zeta7_polynomial_depth_round289.md"
+      ],
+      "reopening_evidence": [
+        "research/zeta7_symbol_contact_charter_round290.md",
+        "research/zeta7_polynomial_depth_round289.md"
+      ],
+      "scope": "固定同一等斜率 P_m，研究 h,e 随 m 增长的纯有限域事件。",
+      "reopen_condition": "R13 把原成功子列约束到一组可用逐系数整段检验的模 p 事件。"
+    },
+    {
+      "id": "d290_close_contact_and_review",
+      "round": 290,
+      "decision": "二十段及长块的无界公因数率未取得。结算本轮并提前进行正式全路线复盘，结束继续扩大前缀和研究标量空间递推的投入。",
+      "claim_ids": [
+        "c290_master",
+        "c290_smith_power",
+        "c290_bulk_chain",
+        "c290_scalar_symbol",
+        "c290_horizontal_gcd",
+        "c290_geometric_cover",
+        "c290_positive_factors",
+        "c290_long_blocks",
+        "c290_finite_pure",
+        "c290_finite_cover"
+      ],
+      "evidence": [
+        "research/zeta7_symbol_contact_round290.md",
+        "research/zeta7_master_symbol_round290.md",
+        "research/zeta7_horizontal_weight_round290.md",
+        "research/zeta7_contact_order_round290.md",
+        "research/zeta7_reflected_symbol_round290.md",
+        "research/verify_zeta7_master_symbol_round290.py",
+        "research/verify_zeta7_horizontal_weight_round290.py",
+        "research/odd_pade_single_ray_round287.md",
+        "research/global_source_review_round281.md",
+        "research/chi8_markov_border_round282.md"
+      ],
+      "scope": "保留全阶居中核链、系数块与有限证书；既未排除等斜率严格指数，也未取得指定数值结论。",
+      "reopen_condition": "对 T6/T9 或 H8 提供实质跨素数估计，或降低同一 d* 的完整上界。"
     }
   ],
   "windows": [
@@ -6934,6 +7274,19 @@
       "decision_id": "d289_open_outer_content",
       "reopening_decision_id": "d289_open_outer_content",
       "closure_decision_id": "d289_close_outer_content"
+    },
+    {
+      "id": "zeta7_horizontal_contact_290",
+      "kind": "source_verification",
+      "source_key": "fourth_pole_fourth_derivative_positive_beta_shift_moments",
+      "route_id": "pure_shifted_mellin",
+      "first_round": 290,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d290_open_horizontal_symbol",
+      "reopening_decision_id": "d290_open_horizontal_symbol",
+      "closure_decision_id": "d290_close_contact_and_review"
     }
   ],
   "completed_rounds": [
@@ -7341,6 +7694,24 @@
         "research/zeta7_actual_cost_round289.md",
         "research/verify_zeta7_polynomial_content_round289.py",
         "research/verify_zeta7_outer_symbol_round289.py"
+      ]
+    },
+    {
+      "round": 290,
+      "kind": "horizontal_symbol_contact_and_global_review",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "feasibility_change": "给出全带统一的公共系数长块与有限反证；无界带权、正向准入及原完整分母上界均未获改善。",
+      "window_id": "zeta7_horizontal_contact_290",
+      "report": "research/zeta7_symbol_contact_round290.md",
+      "outputs": [
+        "research/zeta7_symbol_contact_round290.md",
+        "research/zeta7_master_symbol_round290.md",
+        "research/zeta7_horizontal_weight_round290.md",
+        "research/zeta7_contact_order_round290.md",
+        "research/zeta7_reflected_symbol_round290.md",
+        "research/verify_zeta7_master_symbol_round290.py",
+        "research/verify_zeta7_horizontal_weight_round290.py"
       ]
     }
   ]
