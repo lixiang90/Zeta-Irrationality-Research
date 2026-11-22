@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 29,
+  "revision": 30,
   "updated_at": "2026-11-22",
   "goal": {
     "id": "specified_zeta_l_irrationality",
@@ -22,44 +22,45 @@
     ]
   },
   "review": {
-    "last_completed_round": 288,
+    "last_completed_round": 289,
     "last_global_review_round": 287,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 0,
+    "rounds_without_feasibility_progress": 1,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
     "evidence": "research/odd_pade_single_ray_round287.md"
   },
   "current_task": {
-    "id": "round288_direct_weight_seven_positive_moments",
-    "round": 288,
+    "id": "round289_outer_band_polynomial_content",
+    "round": 289,
     "status": "completed",
     "route_id": "pure_shifted_mellin",
-    "window_id": "zeta7_contact_weights_288",
-    "entry": "research/zeta7_contact_round288.md",
-    "deliverable": "直接隔离权七，证明M2的正性和M9的精确行列式实率，核同一对象每个大素数的分母及本原预算。",
-    "next_decisive_question": "等斜率时较小P_((p+1)/2−m)的全部系数同被p⁸整除的加权比例，能否在无界子列上超出13.3566%，并最终让首一多项式的实际公分母率小于log1024？",
-    "pass_condition": "全阶非零、精确实率、标量整层递降及各固定斜率的必要比例已证。数值反证的实际严格分母上界待证。",
-    "stop_condition": "一轮投影和解析核查到期。再开需能控制完整多项式的公因子、改变最高素数带的结构或严格改善同一对象的总上界。",
+    "window_id": "zeta7_outer_content_289",
+    "entry": "research/zeta7_polynomial_content_round289.md",
+    "deliverable": "对较小P_h的共同整除给出全阶秩界、模p⁸等价条件和完整分母的深度判据，核定连续阶数与全部素数的实际分母。",
+    "next_decisive_question": "当h与m同阶时，能否控制缩放多项式Q从h次到h+⌊e/16⌋次连续消零的无界加权比例，或在深层退化分支上给出足以降低完整d*的实际约分？",
+    "pass_condition": "已确定线性长度的模p连续消零也是成功所需；整个2m<p<4m−1在m≤8192没有八层例外。指定数值及完整分母的严格上界仍待证。",
+    "stop_condition": "一轮结束。只扩大有限前缀不能判定无界比例；再次投入须有无界消零估计、解析恒等式或同一完整分母的更低上界。",
     "must_read": [
-      "research/zeta7_contact_round288.md",
-      "research/zeta7_shifted_mellin_round288.md",
-      "research/zeta7_contact_arithmetic_round288.md",
-      "research/verify_zeta7_contact_round288.py",
-      "research/odd_pade_conductor_round288.md"
+      "research/zeta7_polynomial_content_round289.md",
+      "research/zeta7_polynomial_depth_round289.md",
+      "research/zeta7_pencil_structure_round289.md",
+      "research/zeta7_polynomial_census_round289.md",
+      "research/zeta7_actual_cost_round289.md"
     ],
     "expected_outputs": [
-      "research/zeta7_contact_round288.md",
-      "research/zeta7_shifted_mellin_round288.md",
-      "research/zeta7_contact_arithmetic_round288.md",
-      "research/zeta7_contact_real_round288.md",
-      "research/odd_pade_conductor_round288.md",
-      "research/verify_zeta7_contact_round288.py"
+      "research/zeta7_polynomial_content_round289.md",
+      "research/zeta7_polynomial_depth_round289.md",
+      "research/zeta7_pencil_structure_round289.md",
+      "research/zeta7_polynomial_census_round289.md",
+      "research/zeta7_actual_cost_round289.md",
+      "research/verify_zeta7_polynomial_content_round289.py",
+      "research/verify_zeta7_outer_symbol_round289.py"
     ],
     "next_actions": [
-      "从两个系数的共同整除或多项式矩阵的递推，检验较小P_h在p⁸上的内容；个别系数消零不足以使该素数成为例外。",
-      "若能证明例外带权不足，则结束该斜率的严格指数尝试。若发现足额系统整除，核其真实深度、全素数费用及首一分母d*。",
-      "旧Padé的2d<p<3d仍须控制超几何Z_d的实际带内公因数；已识别的二进平方类不能提供小导子捷径。"
+      "估计R13中有限域多项式Q的首个非零次数。若从h到h+⌊e/16⌋次同时为零的全带加权上极限至多7.580375925…%，可排除此等斜率的严格指数。",
+      "若有成族的连续消零，依据R1–R3继续检验实际Smith深度，使用R6逐项合并带外素数和领系数，再与log1024作严格比较。",
+      "缺乏新的无界证据时，保留当前完整分母上界24与下界2.0523103038…；下次机会成本复盘仍纳入旧权七Padé的实际带内公因数。"
     ]
   },
   "routes": [
@@ -455,10 +456,18 @@
         "research/zeta7_contact_arithmetic_round288.md",
         "research/zeta7_contact_real_round288.md",
         "research/odd_pade_conductor_round288.md",
-        "research/verify_zeta7_contact_round288.py"
+        "research/verify_zeta7_contact_round288.py",
+        "research/zeta7_polynomial_content_charter_round289.md",
+        "research/zeta7_polynomial_content_round289.md",
+        "research/zeta7_polynomial_depth_round289.md",
+        "research/zeta7_pencil_structure_round289.md",
+        "research/zeta7_polynomial_census_round289.md",
+        "research/zeta7_actual_cost_round289.md",
+        "research/verify_zeta7_polynomial_content_round289.py",
+        "research/verify_zeta7_outer_symbol_round289.py"
       ],
-      "gap": "裸行列式率−log1024与全阶正性已证，等斜率首一分母上界24仍大于log1024。八层共同整除的实际无界重量待定。",
-      "reopen_condition": "得到矩阵多项式全部系数的共同整除控制、真正改变首个奇异反对角的机制，或同一实际分母严格改进的上界。"
+      "gap": "等斜率实际首一分母的全阶下率至少2.0523103038…，完整上率至多24。m≤8192的八层例外为零；无界加权深度与跨越log1024仍待定。",
+      "reopen_condition": "控制缩放多项式Q连续线性多项系数消零的无界带权、给退化核的新解析恒等式，或实际降低同一d*的完整上界。"
     }
   ],
   "claims": [
@@ -5415,6 +5424,238 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c289_pencil_corank",
+      "type": "reviewed_written_structure",
+      "statement": "外带小矩阵铅笔模p的亏秩至多为领系数矩阵亏秩r≤⌊√(h/2)⌋。模p⁸全系数消零等价于一个至多r阶的截断行列式消零。",
+      "scope": "等斜率，任意h与p>max(13,4h−2)；核维数本身不控制单方向的p进深度。",
+      "dependencies": [
+        "c288_hankel_outer"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_pencil_structure_round289.md",
+          "position": "Q1–Q4",
+          "sha256": "25ffe540a8e2c36286afc5d87e4af59c34f5e420164bb5f95f294394cb950474"
+        }
+      ],
+      "audit": "用全有限域微分与Wronskian计数证明，相同秩界另由秩一交换子得到；Q4在有限截断环内消元。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_actual_smith",
+      "type": "reviewed_written_structure",
+      "statement": "完整首一分母在外带的实际指数为8e+v_p(b_m)−v(det S)；S与小矩阵前八层的Smith核一致，继续消元的矩阵只有r₈阶。",
+      "scope": "对所有外带p>13成立；S中保留原完整矩阵的Schur修正。",
+      "dependencies": [
+        "c288_hankel_outer",
+        "c289_pencil_corank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_polynomial_depth_round289.md",
+          "position": "R1–R6",
+          "sha256": "ff4fc62cbf15452cc359e7c3bb5a6bcb1807cf48930d44515969bd5a57538d29"
+        }
+      ],
+      "audit": "在Gauss赋值环中追踪单位块的行列式、领系数及每一层核的实际深度。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_rescaled_symbol",
+      "type": "reviewed_written_structure",
+      "statement": "用p^(8m)P_m(Y/p⁸)定义有限域多项式Q；核上的Γ非退化当且仅当[Y^(h+r)]Q非零，此时完整分母至少保留8(e−r)+v_p(b_m)层。",
+      "scope": "p>13的全部外带素数；退化后仍可能在更高系数保留分母。",
+      "dependencies": [
+        "c288_hankel_outer",
+        "c289_pencil_corank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_polynomial_depth_round289.md",
+          "position": "R10–R11",
+          "sha256": "ff4fc62cbf15452cc359e7c3bb5a6bcb1807cf48930d44515969bd5a57538d29"
+        },
+        {
+          "path": "research/zeta7_actual_cost_round289.md",
+          "position": "D7–D9",
+          "sha256": "f05cb50d03ce20f818e76028fe0d29d5ea21914a2c119efa84f5955fceaee5d6"
+        }
+      ],
+      "audit": "原矩几何与缩放变量分别消元；反三角逆给出[z^(e−1)]c_uc_w/f的另一计算式。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_depth_weight",
+      "type": "conditional",
+      "statement": "若实际分母率沿无界子列有固定严格余量，则核形式退化且八层后同向深度至少m^(1/3)的权重下极限超过13.35660243%，深度至少√m的超过2.31921311%。前一集合中兼有Q从h次到h+⌊e/16⌋次连续消零的全带重量超过7.58037592%。",
+      "scope": "权重始终为e log p；均为必要条件，子列是否存在以及带外全部费用未判定。",
+      "dependencies": [
+        "c289_actual_smith",
+        "c289_rescaled_symbol",
+        "c288_target_if"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_polynomial_depth_round289.md",
+          "position": "R7–R8、R12–R13",
+          "sha256": "ff4fc62cbf15452cc359e7c3bb5a6bcb1807cf48930d44515969bd5a57538d29"
+        }
+      ],
+      "audit": "由秩界逐素数估损，素数定理给带权积分；连续消零用Q的首个非零系数限制实际损失。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_endpoint_height",
+      "type": "reviewed_written_structure",
+      "statement": "令J_h为中心二项式矩行列式与Hilbert行列式之比。J_h是正整数，v₂(J_h)=h且J_h/2^h≤2^(2h(h−1))。所以若8log₂p>2h(h−1)，可排除小多项式的八层例外。",
+      "scope": "不限h；端点h≤2√log₂p所占对数重量仅为o(m²)。",
+      "dependencies": [
+        "c288_hankel_outer"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_polynomial_census_round289.md",
+          "position": "N6–N8",
+          "sha256": "e827c5b87d7db1b486ac317cd93af56a3a3240a2ba691ee5eb92e4ed104683fe"
+        },
+        {
+          "path": "research/zeta7_polynomial_depth_round289.md",
+          "position": "R9",
+          "sha256": "ff4fc62cbf15452cc359e7c3bb5a6bcb1807cf48930d44515969bd5a57538d29"
+        }
+      ],
+      "audit": "逐素数幂匹配覆盖排列表项，二幂反对角给唯一奇匹配；反射的两个测度用logdet凹性比较。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_denominator_discriminant",
+      "type": "reviewed_written_structure",
+      "statement": "整个实际d*满足下极限二次率至少2.0523103038…；判别式还可计入外带已保留深度的非负加项。",
+      "scope": "对所有增长阶数，具体常数见D1；仍小于log1024。此前同对象完整上界为24。",
+      "dependencies": [
+        "c288_hankel_size",
+        "c288_hankel_outer"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_actual_cost_round289.md",
+          "position": "D1–D6",
+          "sha256": "f05cb50d03ce20f818e76028fe0d29d5ea21914a2c119efa84f5955fceaee5d6"
+        }
+      ],
+      "audit": "相反支撑上用xq测试排除重根；对非零本原整数判别式同时处理有限处与混合Vandermonde实处，避免重复计数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_fixed_h_gcd",
+      "type": "finite_certificate",
+      "statement": "对每个1≤h≤240，原P_h的领系数与次领系数分子去掉p≤max(13,4h−2)后的公因数为1，因此该范围内全部外带素数都有单位系数。",
+      "scope": "小阶h有限，所覆盖素数p没有上限；另用常数项与领系数独立覆盖h≤128。",
+      "dependencies": [
+        "c288_projection",
+        "c288_hankel_outer"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_pencil_structure_round289.md",
+          "position": "Q5及精确有理数程序",
+          "sha256": "25ffe540a8e2c36286afc5d87e4af59c34f5e420164bb5f95f294394cb950474"
+        },
+        {
+          "path": "research/zeta7_polynomial_census_round289.md",
+          "position": "N3",
+          "sha256": "e827c5b87d7db1b486ac317cd93af56a3a3240a2ba691ee5eb92e4ed104683fe"
+        },
+        {
+          "path": "research/verify_zeta7_polynomial_content_round289.py",
+          "position": "all_prime_witnesses",
+          "sha256": "f0d97cf32509c77467d51fd38222075a4a9819ae0ca73d5ca29a94fe2e8f4203"
+        }
+      ],
+      "audit": "首一正交多项式范数及迹给最高两个系数；有理常数项以凝聚法独立计算。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_finite_band",
+      "type": "finite_certificate",
+      "statement": "连续1≤m≤8192的整个开区间含6982679对，八层例外为零。d₁*=1024，每个2≤m≤8192均满足d_m*>1024^(m²)。",
+      "scope": "p>13的6982672对均有单位；7个小素数对中只有(2,5)共含一层。1≤m≤64直接算完整整数，60≤m≤8192用同一分母的外带因子。",
+      "dependencies": [
+        "c288_hankel_outer",
+        "c289_actual_smith"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_polynomial_census_round289.md",
+          "position": "N1–N5",
+          "sha256": "e827c5b87d7db1b486ac317cd93af56a3a3240a2ba691ee5eb92e4ed104683fe"
+        },
+        {
+          "path": "research/verify_zeta7_polynomial_content_round289.py",
+          "position": "check_band、band_budget、all_exact_pencils",
+          "sha256": "f0d97cf32509c77467d51fd38222075a4a9819ae0ca73d5ca29a94fe2e8f4203"
+        },
+        {
+          "path": "research/verify_zeta7_outer_symbol_round289.py",
+          "position": "small_primes",
+          "sha256": "5eabef57fff3379b34c593e7556a9da44a534a192367d2503c2617ec1b2e37c8"
+        },
+        {
+          "path": "research/zeta7_polynomial_content_round289.md",
+          "position": "八层例外有多少",
+          "sha256": "fadbdee8d4df14ad7fbb0cd7affc3c87bce99d8e9122c1a33635171aa9e066c8"
+        }
+      ],
+      "audit": "有理矩/模矩交叉、连分数与稠密行列式交叉、下降阶乘基完整内容、整数位数夹逼和七对小素数的直接有理核验。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c289_finite_symbol",
+      "type": "finite_certificate",
+      "statement": "13<p≤18000全部合法阶数中494对B_h奇异，皆为一维且Γ非退化；以另一实现连续m≤1024的138021对中99个奇异对亦全部非退化。",
+      "scope": "两种有限覆盖按不同边界定义，范围有重叠；不推断无界素数比例。",
+      "dependencies": [
+        "c289_rescaled_symbol"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_actual_cost_round289.md",
+          "position": "D7–D9及正常阶计算",
+          "sha256": "f05cb50d03ce20f818e76028fe0d29d5ea21914a2c119efa84f5955fceaee5d6"
+        },
+        {
+          "path": "research/zeta7_polynomial_depth_round289.md",
+          "position": "R10–R12有限复核",
+          "sha256": "ff4fc62cbf15452cc359e7c3bb5a6bcb1807cf48930d44515969bd5a57538d29"
+        },
+        {
+          "path": "research/verify_zeta7_outer_symbol_round289.py",
+          "position": "radical_form、direct_check、census",
+          "sha256": "5eabef57fff3379b34c593e7556a9da44a534a192367d2503c2617ec1b2e37c8"
+        }
+      ],
+      "audit": "正常阶、首一核多项式与稠密核独立核对；五个特定阶数从原有理矩插值全Q。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -6319,6 +6560,52 @@
       ],
       "scope": "可行性改善来自同一标量完整净上界减少2−2log2及真实全阶正矩；有限数据和外带障碍不构成数值准入。",
       "reopen_condition": "用同一P_h的内容关系判定八层共同整除的重量或给完整d*更低上界；重复算旧素数带、重复有限枚举和只调固定斜率均不足。"
+    },
+    {
+      "id": "d289_open_outer_content",
+      "round": 289,
+      "decision": "以小矩阵全系数和实际Schur块的Smith深度重开一次等斜率算术核查。",
+      "claim_ids": [
+        "c288_hankel_outer",
+        "c288_target_if"
+      ],
+      "evidence": [
+        "research/zeta7_polynomial_content_charter_round289.md",
+        "research/zeta7_shifted_mellin_round288.md"
+      ],
+      "reopening_evidence": [
+        "research/zeta7_polynomial_content_charter_round289.md",
+        "research/zeta7_shifted_mellin_round288.md"
+      ],
+      "scope": "固定P_m与d_m*；以整块模p⁸的秩与深度追踪大素数的实际约分。",
+      "reopen_condition": "第288轮M11–M12提供从原矩阵向完整小多项式递降的入口。"
+    },
+    {
+      "id": "d289_close_outer_content",
+      "round": 289,
+      "decision": "结算一次八层共同整除窗口。保留有限域连续消零与实际深度的可核判据，结束单纯扩大样本的投入。",
+      "claim_ids": [
+        "c289_pencil_corank",
+        "c289_actual_smith",
+        "c289_rescaled_symbol",
+        "c289_depth_weight",
+        "c289_endpoint_height",
+        "c289_denominator_discriminant",
+        "c289_fixed_h_gcd",
+        "c289_finite_band",
+        "c289_finite_symbol"
+      ],
+      "evidence": [
+        "research/zeta7_polynomial_content_round289.md",
+        "research/zeta7_polynomial_depth_round289.md",
+        "research/zeta7_pencil_structure_round289.md",
+        "research/zeta7_polynomial_census_round289.md",
+        "research/zeta7_actual_cost_round289.md",
+        "research/verify_zeta7_polynomial_content_round289.py",
+        "research/verify_zeta7_outer_symbol_round289.py"
+      ],
+      "scope": "有全阶结构、有限反证和实际分母下界，无正向数值准入，完整分母上界仍为24。",
+      "reopen_condition": "需有R13事件的无界带权估计、退化核的解析恒等式或同对象完整费用的更低上界。"
     }
   ],
   "windows": [
@@ -6634,6 +6921,19 @@
       "status": "closed",
       "decision_id": "d288_open_pure_derivative",
       "closure_decision_id": "d288_close_direct_moment"
+    },
+    {
+      "id": "zeta7_outer_content_289",
+      "kind": "source_verification",
+      "source_key": "fourth_pole_fourth_derivative_positive_beta_shift_moments",
+      "route_id": "pure_shifted_mellin",
+      "first_round": 289,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d289_open_outer_content",
+      "reopening_decision_id": "d289_open_outer_content",
+      "closure_decision_id": "d289_close_outer_content"
     }
   ],
   "completed_rounds": [
@@ -7023,6 +7323,24 @@
         "research/zeta7_contact_real_round288.md",
         "research/odd_pade_conductor_round288.md",
         "research/verify_zeta7_contact_round288.py"
+      ]
+    },
+    {
+      "round": 289,
+      "kind": "outer_band_polynomial_content_and_actual_monic_denominator",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "feasibility_change": "无界必要条件及实际分母下界增强，未降低正向完整上界或取得指定数值准入。",
+      "window_id": "zeta7_outer_content_289",
+      "report": "research/zeta7_polynomial_content_round289.md",
+      "outputs": [
+        "research/zeta7_polynomial_content_round289.md",
+        "research/zeta7_polynomial_depth_round289.md",
+        "research/zeta7_pencil_structure_round289.md",
+        "research/zeta7_polynomial_census_round289.md",
+        "research/zeta7_actual_cost_round289.md",
+        "research/verify_zeta7_polynomial_content_round289.py",
+        "research/verify_zeta7_outer_symbol_round289.py"
       ]
     }
   ]
