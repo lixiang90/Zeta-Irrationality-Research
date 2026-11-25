@@ -4,7 +4,7 @@
 
 **当前结论：ζ(5) 的绝对版沿用固定上游形式化并完成本地桥接；本项目尚未得到 ζ(7)、3ζ(3)+ζ(5) 或后续指定 ζ/L 值的新无理性定理。** 已有成果包括已知定理的具体数值推论、全尺度结构引理、有限尺度的完整参数族排除，以及范围明确的算术和解析障碍。
 
-研究记录更新至第290轮（2026-11-22）。对权七等斜率行列式，已将每阶 \(2m<p<4m-1\) 的全部有限域多项式写成同一有理多项式的约化。要排除严格分母指数，只须控制二十个指定系数的带内公因数；也可选二十二个长度与 \(m\) 成正比的公共系数块。已算清覆盖的重量及允许余量，无界公因数估计仍待证明。在 \(1\le m\le4500\) 的全带 2,245,995 对中，出现的 12 个例子都只要求一个系数为零。此前已核实每个 \(2\le m\le8192\) 的完整首一分母均超过 \(1024^{m^2}\)。[第290轮结算](research/zeta7_symbol_contact_round290.md) · [二十段与公共长块](research/zeta7_master_symbol_round290.md) · [完整分母的整数证书](research/zeta7_polynomial_census_round289.md)
+研究记录更新至第291轮（2026-11-25）。固定极点参数、改变求和起点，得到每阶非零的纯 \(\zeta(7)\) 线性逼近。一个显式选择的误差衰减常数恰为 \(11.09263630\ldots\)，既约分母的全部素因子均不超过 \(4n\)。在一条无界子列上获得严格负指数，要求最高素数带中按 \(\log p\) 加权的平均约分深度超过 \(2.45368184\ldots\) 层。模 \(p^8\) 可逐个确定深度，已检验的6,603对中最高深度为一层。无界子列的重量分布仍待证明。[第291轮突破口与取舍](research/zeta7_opportunities_round291.md) · [精确判据与有限证书](research/zeta7_shift_window_round291.md)
 
 ## 从哪里开始
 
@@ -17,7 +17,7 @@
 | 数据恢复、证书复核与 Lean 构建 | [复现指南](docs/REPRODUCIBILITY.md) |
 | 原始论文、版本与阅读地图 | [文献指南](docs/BIBLIOGRAPHY.md) · [文献库](literature/README.md) |
 | 恢复当前目标、路线与下一命题 | [当前STATE](research/STATE.md) · [长期goal](docs/RESEARCH_GOAL.md) |
-| 最新研究结算与宏观选择 | [第290轮连续零系数及复盘](research/zeta7_symbol_contact_round290.md) · [第289轮八层共同整除与实际分母](research/zeta7_polynomial_content_round289.md) · [第288轮纯权七正矩](research/zeta7_contact_round288.md) · [第287轮孤立射线及复盘](research/odd_pade_single_ray_round287.md) · [第286轮双矩素数带及复盘](research/odd_pade_two_moment_round286.md) |
+| 最新研究结算与宏观选择 | [第291轮权七突破口与秩一平移](research/zeta7_opportunities_round291.md) · [第290轮连续零系数及复盘](research/zeta7_symbol_contact_round290.md) · [第289轮八层共同整除与实际分母](research/zeta7_polynomial_content_round289.md) · [第288轮纯权七正矩](research/zeta7_contact_round288.md) · [第287轮孤立射线及复盘](research/odd_pade_single_ray_round287.md) |
 | 其他长期研究也可复用的组织方法 | [持久工作协议](docs/LONG_RESEARCH_WORKFLOW.md) |
 
 ## 研究成果概览

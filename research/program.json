@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": 31,
-  "updated_at": "2026-11-22",
+  "revision": 32,
+  "updated_at": "2026-11-25",
   "goal": {
     "id": "specified_zeta_l_irrationality",
     "status": "active",
@@ -22,45 +22,45 @@
     ]
   },
   "review": {
-    "last_completed_round": 290,
-    "last_global_review_round": 290,
+    "last_completed_round": 291,
+    "last_global_review_round": 291,
     "default_interval": 4,
     "maximum_interval": 8,
-    "rounds_without_feasibility_progress": 2,
+    "rounds_without_feasibility_progress": 3,
     "policy": "2轮未改善可行准入/净预算提前复盘；组织和诊断资产不重置。",
-    "evidence": "research/zeta7_symbol_contact_round290.md"
+    "evidence": "research/zeta7_opportunities_round291.md"
   },
   "current_task": {
-    "id": "round290_horizontal_symbol_contact",
-    "round": 290,
+    "id": "round291_specified_zeta7_review",
+    "round": 291,
     "status": "completed",
     "route_id": "pure_shifted_mellin",
-    "window_id": "zeta7_horizontal_contact_290",
-    "entry": "research/zeta7_symbol_contact_round290.md",
-    "deliverable": "证明固定阶的统一有理多项式、整段公共系数及无界带权的充分条件，并核清有限全带及原分母的区别。",
-    "next_decisive_question": "能否把二十二个公共长块的带内公因数加权和除以 m 的上极限控制在 γ−(47/50)^44 内，或由原完整 d* 得到严格低于 log1024 的下极限？",
-    "pass_condition": "已给固定二十段和线性公共块判据，完整 m≤4500 未发现须消去两项或以上的实例。公因数的无界重量仍待证。",
-    "stop_condition": "本轮到期并正式复盘。单独增加有限前缀或继续标量递推不改善现有数值判据。",
+    "window_id": "zeta7_fixed_n_shift_291",
+    "entry": "research/zeta7_opportunities_round291.md",
+    "deliverable": "完成指定 ζ(7) 的全路线比较；给出最优有理根与显式平方各自的实际误差和分母判据，推导全带的八层精确算术。",
+    "next_decisive_question": "能否控制 2n<p<4n 中 T_(n,p) 三阶整除的加权占比，或沿无界子列使完整显式分母的线性指数低于 C*？",
+    "pass_condition": "已给每阶纯线性正误差、有理根大起点等参数排除、显式平方的准确实率、全带完整局部深度及跨奇权最高层判据。",
+    "stop_condition": "本轮按任务书正式复盘。两种逼近均缺成功无界子列。单独延长有限扫描或优化实处常数不足以支付尚缺的算术成本。",
     "must_read": [
-      "research/zeta7_symbol_contact_round290.md",
-      "research/zeta7_master_symbol_round290.md",
-      "research/zeta7_horizontal_weight_round290.md",
-      "research/zeta7_contact_order_round290.md",
-      "research/zeta7_reflected_symbol_round290.md"
+      "research/zeta7_opportunities_round291.md",
+      "research/zeta7_shift_window_round291.md",
+      "research/zeta7_shift_christoffel_round291.md",
+      "research/zeta7_shift_primitive_round291.md",
+      "research/zeta7_route_audit_round291.md"
     ],
     "expected_outputs": [
-      "research/zeta7_symbol_contact_round290.md",
-      "research/zeta7_master_symbol_round290.md",
-      "research/zeta7_horizontal_weight_round290.md",
-      "research/zeta7_contact_order_round290.md",
-      "research/zeta7_reflected_symbol_round290.md",
-      "research/verify_zeta7_master_symbol_round290.py",
-      "research/verify_zeta7_horizontal_weight_round290.py"
+      "research/zeta7_opportunities_round291.md",
+      "research/zeta7_shift_window_round291.md",
+      "research/zeta7_shift_christoffel_round291.md",
+      "research/zeta7_shift_primitive_round291.md",
+      "research/zeta7_route_audit_round291.md",
+      "research/verify_zeta7_shift_window_round291.py",
+      "research/zeta7_shift_rank_charter_round291.md"
     ],
     "next_actions": [
-      "对二十二个 T9 公共块（σ=47/50）估计与各自带内素数乘积的公因数；若归一加权和的上极限≤0.01009465326…，即可排除此等斜率严格指数。",
-      "也可直接估计 T6 的二十个选定系数或 H8 的全带精确公因数。逐素数或对阶数取平均的稀疏性本身不足以判定上极限。",
-      "正向数值目标须在同一首一分母计入全部有限处及领系数，突破 log1024；后续宏观选择仍比较旧 Padé 的实际公因数和其他完整费用。"
+      "对 n=3d、2n<p<4n 的 P14，研究 p³|T_(n,p) 的逐阶 log p 加权占比。若全序列上极限≤1−C*/12（7.5613641…%），即可排除显式平方的严格指数。也可用 P12 的权无关标量统一控制最高层。",
+      "正向需证明同一显式分母的下极限指数小于 11.09263630…（精确值 C*），包括全部较小素数。最优根需另查 q_out，等斜率的22个块仍以 d* 的 log1024 判据单算。",
+      "备选相邻 Mellin 行须在同一无界子列证明 ζ(7) 系数和实际余项非零，再付本原费用。一般正平方格可凭全模数高度受控的短解重开。"
     ]
   },
   "routes": [
@@ -231,9 +231,11 @@
         "research/odd_pade_tied_terms_round285.md",
         "research/odd_pade_two_moment_round286.md",
         "research/odd_pade_single_ray_round287.md",
-        "research/zeta7_symbol_contact_round290.md"
+        "research/zeta7_symbol_contact_round290.md",
+        "research/zeta7_opportunities_round291.md",
+        "research/zeta7_route_audit_round291.md"
       ],
-      "gap": "290正式比较了连续系数的实际带权、旧权七 Padé 的共同素因子、正 Gram 的非零与净率、图周期及导子八的费用。指定数值仍待新的准入证据。",
+      "gap": "291按已跟踪文库和21条路线，比较固定阶数移位、一般整数平方格、等斜率全维行列式、相邻 Mellin 投影和已有纠错。需对同一纯目标有理数得到无界非零及严格的完整分母收益。",
       "reopen_condition": "定期宏观窗口最多一轮；数学源重开或新实施另须有改变障碍的实质证据与有界任务，候选列表不等于准入。"
     },
     {
@@ -473,10 +475,17 @@
         "research/zeta7_contact_order_round290.md",
         "research/zeta7_reflected_symbol_round290.md",
         "research/verify_zeta7_master_symbol_round290.py",
-        "research/verify_zeta7_horizontal_weight_round290.py"
+        "research/verify_zeta7_horizontal_weight_round290.py",
+        "research/zeta7_opportunities_round291.md",
+        "research/zeta7_shift_window_round291.md",
+        "research/zeta7_shift_christoffel_round291.md",
+        "research/zeta7_shift_primitive_round291.md",
+        "research/zeta7_route_audit_round291.md",
+        "research/verify_zeta7_shift_window_round291.py",
+        "research/zeta7_shift_rank_charter_round291.md"
       ],
-      "gap": "二十段的未检重量为7.56573379%，二十二个公共长块也可检验；缺带内公因数的无界率。完整 d* 的已证下率为2.0523103038…、上率为24。",
-      "reopen_condition": "需有同阶长块的带内共同素因子上界、实际深层约分的成族恒等式或同一分母的更低完整上界。"
+      "gap": "显式平方的实际实率为 −C*，完整分母乘误差上界率 24.0352…>0。最高带平均约分深度能否在无界子列超过 8−C*/2 未定；最优根另有 p>4n 的行列式因子。旧等斜率的22个公共块公因数仍无上极限估计。",
+      "reopen_condition": "对 P14 的模 p² 或 p³ 事件给出跨素数的无界权重或深层约分，或取得同一显式分母的严格净预算。对最优根需 P9 外部部分的无界控制；旧等斜率可由原22个块或实际完整 d* 重开。"
     }
   ],
   "claims": [
@@ -5946,6 +5955,409 @@
       "status": "current",
       "replaced_by": null,
       "correction": null
+    },
+    {
+      "id": "c291_rank",
+      "type": "reviewed_written_structure",
+      "statement": "固定极点阶数 n 后，全部移位的 ζ(7) 系数相同；每个平移 Hankel 行列式对目标恰为一次。其有理根的误差是端点归一的正 Christoffel 极小值。",
+      "scope": "n≥1、s≥0、k=m−1≥0。相同 n 的矩，目标只限 ζ(7)=a/b。",
+      "dependencies": [
+        "c288_projection",
+        "c288_positive_moment"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P1",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/zeta7_shift_christoffel_round291.md",
+          "position": "秩一与端点极小值",
+          "sha256": "5e9b4fe12ef82039c2e87f6bc3ef0f0fc716d5f59454e749c3903bf1ba343c6a"
+        },
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "秩一约分式",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "按单位行列式多项式基将目标移至一个角，严格正的余子式再作 Schur 补。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_small_rank",
+      "type": "reviewed_written_structure",
+      "statement": "k²log(n+s+k+2)=o(n)、s/n→β≥0 有限时，真正既约分母的下指数至少为 7W(β)；k=o(n) 时真实误差的准确线性率为 −4S(β)−log4。",
+      "scope": "固定高位带后令带数趋于无穷。未从小维数估计外推到 k∼n。",
+      "dependencies": [
+        "c291_rank",
+        "c288_prime_recursion"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P2–P5",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "arithmetic_examples",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        },
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "七层分母",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "取模后的矩全部共用一个正有理 Hankel 行列式，其清整高度控制所有受检素数的例外总重。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_small_shift",
+      "type": "reviewed_written_structure",
+      "statement": "对全部 0≤s/n≤23/100，若 k²log(n+s+k+2)=o(n)，有 liminf n⁻¹ log(q|ζ(7)−r|)≥1/50。",
+      "scope": "窗口全部无界整数子列；误差和 q 均取原根。",
+      "dependencies": [
+        "c291_small_rank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P6",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "uniform_prime_windows",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "230 个小区间及128个高位素数带用精确有理对数界同时覆盖连续参数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_real_bounds",
+      "type": "reviewed_written_structure",
+      "statement": "在 s=n 且固定 k 时，加速比等价于 k!(2/(225n))^k；n=s=k∈3ℕ 时最优根的实误差衰减率下极限至少 C*=11.09263630…、上极限至多 12.77139189…。",
+      "scope": "前一断言逐固定 k；后一为同阶维数，仅为最优根的二侧界。",
+      "dependencies": [
+        "c291_rank",
+        "c288_positive_moment"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P6a–P8",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "endpoint_rate",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "在中心用四维高斯的固定阶矩，或对试验平方作精确极值；反向在闭内区间用端点 Legendre 核。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_cofactor",
+      "type": "conditional",
+      "statement": "最优根 q 含有 h=den(l vᵀC⁻¹v)；p∤lB_n 处两者赋值相同。同阶射线的 q 全部下指数小于 C* 足以证明 ζ(7) 无理，p>4n 部分下指数大于 C^* 足以排除此射线。",
+      "scope": "只对原最优有理根。两个渐近条件均未取得。",
+      "dependencies": [
+        "c291_rank",
+        "c291_real_bounds"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P7–P9",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "balanced_denominators",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "对互素分子加整倍数保持互素；小素数与新外部素数分别检查。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_explicit",
+      "type": "reviewed_written_structure",
+      "statement": "显式平方 U=X^d(5X−1)^{2d} 产生独立的纯线性有理数。其正误差的准确率为 −C*，每个既约分母的素因子均≤4n，安全分母还可扣除 λn/3 的对数重量。",
+      "scope": "n=3d，使用 A_{3d,5d+j} 的明确组合。完整净上界 24.0352…>0。",
+      "dependencies": [
+        "c291_rank",
+        "c291_real_bounds",
+        "c288_prime_recursion"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P10–P11",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "balanced_denominators",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "内点盒给相同试验式的实下界；逐个 Lucas 末位审查整列的共同倍数及不进位节省。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_band",
+      "type": "reviewed_written_structure",
+      "statement": "对 2n<p<4n、p>7，有 v_p(q̂)=8 当且仅当 p 不整除 J_(4n−p) 的分子。该标量有显式二进估值，全部与12互素的 h 上非零。足够大的 p、4n−p≤log(p)/13 时第八层必保留。",
+      "scope": "仅为显式平方。窄端点的重量为次线性。",
+      "dependencies": [
+        "c291_explicit"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P12 及分子高度",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "top_numerator",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        },
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "显式试验向量的 P12–P15",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "按 b+c≥p 反射求和。二进处最后一项有唯一最低赋值，再控制普通分子的高度。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_depth",
+      "type": "reviewed_written_structure",
+      "statement": "四个 Laurent 系数给 2n<p<4n 中 v_p(q̂)=8−min(8,v_p(T_(n,p))) 的模 p⁸ 精确判据。",
+      "scope": "n=3d，p>7；包含八层全部丢失的情形。T 随 n 和 p 变动。",
+      "dependencies": [
+        "c291_band"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P14",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "lost_layers，balanced_denominators",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        },
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "四项 Laurent 重算",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "在实际调和数中单独取分母 p 的一项，其余乘 p⁸ 后全消，再逐素数与整条有理数约分对照。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_threshold",
+      "type": "conditional",
+      "statement": "于同一显式平方取得严格负指数，必要条件是最高素数带平均丢层数下极限>8−C*/2=2.4536818479…。丢至少一、二、三层的权重下极限分别须超过 1−C*/16、1−C*/14、1−C*/12。",
+      "scope": "最高带的 log p 权。满足门槛仍须计算全部层和其余素数。净指数为零时的次指数趋零未被裁定。",
+      "dependencies": [
+        "c291_explicit",
+        "c291_depth"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P13–P15",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "显式试验向量的 P12–P15",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "实际分母取对数并以素数定理算整带重量；保留各层的符号及上下极限方向。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_finite",
+      "type": "finite_certificate",
+      "statement": "11个同阶样本核证实际分母乘误差大于1。n=36 的最优根分母、p>144 部分及显式分母分别有37190、35908、1750位。n=3,6,…,360 的6603对素数中6589对保留八层，其余14对全保留七层。",
+      "scope": "有限计算。按 n 计，丢层权重占比最大有理上界为25.6725%（n=6）。",
+      "dependencies": [
+        "c291_cofactor",
+        "c291_depth"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P9、P12、P14 的样本",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "balanced_denominators，top_band",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "有理矩、Euler 正级数余项、模 p⁸ 与真实分母交叉核对，权重用有理上下界。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_odd_weights",
+      "type": "conditional",
+      "statement": "对各个固定奇权 w≥5，同一显式平方有相同实率 −C*，且 p>max(7,w) 的 2n<p<4n 中，最高 w+1 层恰由同一 J_(4n−p) 判定。若任意高奇权均能取得严格负指数，最高层消失权重占比的全序列上极限必为 1。",
+      "scope": "每个 w 先固定再令 n=3d 趋无穷。允许各权使用不同子列。",
+      "dependencies": [
+        "c291_band",
+        "c291_explicit",
+        "c288_projection"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P16",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/verify_zeta7_shift_window_round291.py",
+          "position": "other_odd_weights",
+          "sha256": "b9494b91f0c5d1a198d53de77e78a4d2af6d845df3451fb953981774ca9ebcd4"
+        }
+      ],
+      "audit": "计算最高调和项的系数 binom(w,3) 并核其为单位。正测度仅改变对数幂，在同一内点达到相同指数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_pair",
+      "type": "reviewed_written_structure",
+      "statement": "s=n、0≤k<l、l²log(n+l+2)=o(n) 时，n<p<2n 中除去 o(n) 对数重量后，两维根差的赋值恰为 −9；两者的 q×误差之最大值有正的线性对数下率 18.5−24log2。",
+      "scope": "联合排除同阶的两个同时成功。素因子可分配给不同维数，单个维数仍有空间。",
+      "dependencies": [
+        "c291_small_rank",
+        "c291_rank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_primitive_round291.md",
+          "position": "A1–A2",
+          "sha256": "609b8562556a5d95677fb4ee21123d6786bc4a8efa9c191161f890a35c568bd9"
+        }
+      ],
+      "audit": "用未求导正矩下的正交多项式证明两个二次修正的差严格为正，再以同一正有理数的高度剔除零剩余。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_endpoint",
+      "type": "reviewed_written_structure",
+      "statement": "原根在固定 n 的所有 m+s→∞ 规模上都有含常数的 Jacobi 误差主项。每个整数比例方向的准确线性误差率存在，为一元带权极值的下确界；n=o(m+s) 时在 m+s+n 尺度的对数误差率为零。",
+      "scope": "只对同 n 移位的最优根。比例域实率不决定任何真实分母。",
+      "dependencies": [
+        "c291_rank"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_christoffel_round291.md",
+          "position": "E2–E8",
+          "sha256": "5e9b4fe12ef82039c2e87f6bc3ef0f0fc716d5f59454e749c3903bf1ba343c6a"
+        },
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P8 后的比例极限",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        }
+      ],
+      "audit": "由四对数坐标的单纯形积分得到密度上下界，端点用归一化 Jacobi 核，比例方向以 Markov 不等式及次乘性比较范数。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_far_shift",
+      "type": "reviewed_written_structure",
+      "statement": "s→∞、L=n+2m、mL(1+log(1+s/L))=o(s) 时，最优根的 log(q)/s→7，误差的对数除以 s 趋零。尤其固定 m 时覆盖全部 n=o(s)。",
+      "scope": "允许 n,m 随起点增长。真分母和实误差来自同一根。",
+      "dependencies": [
+        "c291_rank",
+        "c291_endpoint"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_route_audit_round291.md",
+          "position": "A1–A3",
+          "sha256": "f74918aa8e823cf161c5fb48eaae543770a9cadcc28ec6786fff37efc864f4f8"
+        },
+        {
+          "path": "research/zeta7_shift_window_round291.md",
+          "position": "P17",
+          "sha256": "1df79c9bb65c9d1017d43968f818f22e142446b20e53c696accf46a4de6c0a85"
+        },
+        {
+          "path": "research/zeta7_shift_christoffel_round291.md",
+          "position": "E6",
+          "sha256": "5e9b4fe12ef82039c2e87f6bc3ef0f0fc716d5f59454e749c3903bf1ba343c6a"
+        }
+      ],
+      "audit": "减去 H_s^(7)，其分母的准确率由大素数段给出。短区间的最小公倍数整除 d_L binom(s+L,L)，清整后行列式根的分母只改变 o(s)。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
+    },
+    {
+      "id": "c291_integer_filter",
+      "type": "reviewed_written_structure",
+      "statement": "任意 n/N→α>0、(m−1)/N→δ>0、s/N→β≥0，都有明确存在的整系数试验多项式，使未除目标系数的正平方余项比同一输入的最远单项严格指数改善，通用整倍数 d_(n+s+2m−2)^8 相同。",
+      "scope": "逐固定比例选择 u,v 和 θ；只对通用整倍数和未归一化余项作比较。最优或显式根的实际约分均须另算。",
+      "dependencies": [
+        "c291_endpoint",
+        "c288_positive_moment"
+      ],
+      "evidence": [
+        {
+          "path": "research/zeta7_shift_christoffel_round291.md",
+          "position": "E9 前的全比例论证",
+          "sha256": "5e9b4fe12ef82039c2e87f6bc3ef0f0fc716d5f59454e749c3903bf1ba343c6a"
+        }
+      ],
+      "audit": "在原唯一最优点选择小的线性整系数残差，以正的小比例混合；在其余紧集保留严格间隙。",
+      "status": "current",
+      "replaced_by": null,
+      "correction": null
     }
   ],
   "decisions": [
@@ -6946,6 +7358,64 @@
       ],
       "scope": "保留全阶居中核链、系数块与有限证书；既未排除等斜率严格指数，也未取得指定数值结论。",
       "reopen_condition": "对 T6/T9 或 H8 提供实质跨素数估计，或降低同一 d* 的完整上界。"
+    },
+    {
+      "id": "d291_open_shift_rank",
+      "round": 291,
+      "decision": "固定一阶的全部移位保留相同目标系数，把原满次数多项式改变为每阶精确的一次有理根；另允许同一矩集合中的显式正平方。",
+      "claim_ids": [
+        "c288_projection",
+        "c288_positive_moment",
+        "c288_hankel_size"
+      ],
+      "evidence": [
+        "research/zeta7_shift_rank_charter_round291.md",
+        "research/zeta7_shifted_mellin_round288.md",
+        "research/zeta7_route_audit_round291.md"
+      ],
+      "reopening_evidence": [
+        "research/zeta7_shift_rank_charter_round291.md",
+        "research/zeta7_shifted_mellin_round288.md",
+        "research/zeta7_route_audit_round291.md"
+      ],
+      "scope": "固定 n 的平移 Hankel 与同一批矩中的显式平方，参数可共同增长。两条有理逼近各自结算完整约分、实误差和原反证。",
+      "reopen_condition": "固定一阶的全部移位保留相同目标系数，把原满次数多项式改变为每阶精确的一次有理根；另允许同一矩集合中的显式正平方。"
+    },
+    {
+      "id": "d291_close_shift_and_review",
+      "round": 291,
+      "decision": "本轮按任务书正式复盘。两种逼近均缺成功无界子列。单独延长有限扫描或优化实处常数不足以支付尚缺的算术成本。",
+      "claim_ids": [
+        "c291_rank",
+        "c291_small_rank",
+        "c291_small_shift",
+        "c291_real_bounds",
+        "c291_cofactor",
+        "c291_explicit",
+        "c291_band",
+        "c291_depth",
+        "c291_threshold",
+        "c291_finite",
+        "c291_odd_weights",
+        "c291_pair",
+        "c291_endpoint",
+        "c291_far_shift",
+        "c291_integer_filter"
+      ],
+      "evidence": [
+        "research/zeta7_opportunities_round291.md",
+        "research/zeta7_shift_window_round291.md",
+        "research/zeta7_shift_christoffel_round291.md",
+        "research/zeta7_shift_primitive_round291.md",
+        "research/zeta7_route_audit_round291.md",
+        "research/verify_zeta7_shift_window_round291.py",
+        "research/zeta7_shift_rank_charter_round291.md",
+        "research/zeta7_master_symbol_round290.md",
+        "research/mellin_projection_audit_round281.md",
+        "research/odd_weight_square_lattice_round283.md"
+      ],
+      "scope": "固定 n 的平移 Hankel 与同一批矩中的显式平方，参数可共同增长。两条有理逼近各自结算完整约分、实误差和原反证。",
+      "reopen_condition": "对 P14 的模 p² 或 p³ 事件给出跨素数的无界权重或深层约分，或取得同一显式分母的严格净预算。对最优根需 P9 外部部分的无界控制；旧等斜率可由原22个块或实际完整 d* 重开。"
     }
   ],
   "windows": [
@@ -7287,6 +7757,19 @@
       "decision_id": "d290_open_horizontal_symbol",
       "reopening_decision_id": "d290_open_horizontal_symbol",
       "closure_decision_id": "d290_close_contact_and_review"
+    },
+    {
+      "id": "zeta7_fixed_n_shift_291",
+      "kind": "source_verification",
+      "source_key": "fourth_pole_fourth_derivative_positive_beta_shift_moments",
+      "route_id": "pure_shifted_mellin",
+      "first_round": 291,
+      "maximum_completed_rounds": 1,
+      "completed_rounds": 1,
+      "status": "closed",
+      "decision_id": "d291_open_shift_rank",
+      "reopening_decision_id": "d291_open_shift_rank",
+      "closure_decision_id": "d291_close_shift_and_review"
     }
   ],
   "completed_rounds": [
@@ -7712,6 +8195,24 @@
         "research/zeta7_reflected_symbol_round290.md",
         "research/verify_zeta7_master_symbol_round290.py",
         "research/verify_zeta7_horizontal_weight_round290.py"
+      ]
+    },
+    {
+      "round": 291,
+      "kind": "fixed_n_rank_one_shift_and_global_review",
+      "feasibility_progress": false,
+      "numeric_admission": false,
+      "feasibility_change": "新显式平方有一次尺度全费用与准确实率，最高带可逐素数核全深度；已证完整净上界仍为正。没有取得指定值准入，亦无已有候选负净预算的改善。",
+      "window_id": "zeta7_fixed_n_shift_291",
+      "report": "research/zeta7_opportunities_round291.md",
+      "outputs": [
+        "research/zeta7_opportunities_round291.md",
+        "research/zeta7_shift_window_round291.md",
+        "research/zeta7_shift_christoffel_round291.md",
+        "research/zeta7_shift_primitive_round291.md",
+        "research/zeta7_route_audit_round291.md",
+        "research/verify_zeta7_shift_window_round291.py",
+        "research/zeta7_shift_rank_charter_round291.md"
       ]
     }
   ]
